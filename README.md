@@ -1,6 +1,8 @@
-# Noctvale
+<p align="center">
+  <img src="images/noctvale-white.svg" alt="Noctvale" width="400">
+</p>
 
-*A Grimdark Fantasy Skirmish Game in a Cursed Land*
+<p align="center"><em>A Grimdark Fantasy Skirmish Game in a Cursed Land</em></p>
 
 Noctvale is an original grimdark tabletop skirmish miniatures game where small warbands clash across cursed lands in search of powerful relic fragments. Combat is lethal, warbands grow through campaign play, and exploration carries both rewards and danger.
 
