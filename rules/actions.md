@@ -43,6 +43,31 @@ Attack with a **ranged weapon**.
 ### Cast
 Cast a spell. Spells **can be cast while in melee**.
 
+### Aim
+Prepare a careful shot. Grants **+2 to the Strike Pool** on the fighter's next **Ranged or Cast** action this activation.
+
+### Mercy Kill
+Execute a **Stunned** enemy within 1". The Stunned fighter is immediately **Out of Action**. *(See conditions.md)*
+
+---
+
+## Tactical Actions
+
+### Defend
+Brace for incoming attacks. The fighter gains **+1 Df** until their next activation.
+
+### Hide
+The fighter becomes **Hidden**. The fighter must be **touching terrain** to Hide.
+
+A Hidden fighter **cannot be targeted** by Ranged or Cast actions beyond **6"**.
+
+The fighter **loses Hidden** when they perform any **Combat action** (Melee, Ranged, Cast, Aim, or Mercy Kill), **Charge**, **Climb**, **Jump**, or **move within 6" of an enemy**.
+
+A Hidden fighter may still Move, Scramble, Defend, Interact, Recover, or Help without losing Hidden — as long as they remain touching terrain.
+
+### Overwatch
+Forgo the fighter's remaining activation to give them an **Overwatch token**. The token allows the fighter to perform a **single action as a reaction** to an enemy model completing an action. *(See special-rules.md for full Overwatch rules.)*
+
 ---
 
 ## Interaction Actions
@@ -54,10 +79,7 @@ Open doors, search objects, pick up items.
 Attempt to stand up from **Downed** state. *(See conditions.md)*
 
 ### Help
-Assist a **Stunned** ally within 1". *(See conditions.md)*
-
-### Mercy Kill
-Execute a **Stunned** enemy within 1". *(See conditions.md)*
+Assist a **Downed or Stunned** ally within 1". *(See conditions.md)*
 
 ---
 
@@ -89,4 +111,11 @@ The current source doc does not fully define a turn sequence or initiative syste
 - 2 actions per activation keeps the game moving without overly complex turn structures
 - Retreat as a Luck roll adds risk to disengaging — escape isn't guaranteed
 - Spells being castable in melee prevents "safe zones" and keeps magic integrated with close-quarters fighting
+- Aim at +2 Strike Pool makes Aim + Shoot competitive with Shoot + Shoot — rewarding preparation without restricting action freedom
+- Defend as +1 Df uses the same lever as Cover, giving fighters a meaningful option when they can't attack or retreat
+- Overwatch is listed as a formal action so players can see it alongside their other options during activation
 - The turn structure and initiative system are among the biggest **playtest blockers** — these need to be finalized before first testing
+- Hide requires touching terrain — simple, physical, no adjudication arguments about "am I in cover from all angles"
+- Hidden blocks targeting beyond 6" rather than granting a stat bonus — creates a binary decision (close the distance or find another target) instead of a modifier to track
+- Combat actions and Charge break Hidden, but movement doesn't — a fighter can reposition while staying concealed as long as they hug terrain
+- Hide pairs naturally with Ranged Reactions: a fighter who gets shot at can react by Hiding (if touching terrain), forcing the shooter to close the gap next time

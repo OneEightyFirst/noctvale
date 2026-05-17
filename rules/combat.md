@@ -75,6 +75,18 @@ Firearms gain criticals against **all targets**, regardless of weapon type.
 
 ---
 
+## Ranged Reaction
+
+When a fighter is targeted by a **Ranged** action, the target may perform a **single free action** after the attack sequence is fully resolved. This reaction does not cost the target any of their normal actions.
+
+- The reaction triggers whenever the target is **selected as a target**, regardless of whether the attack hits or misses.
+- The target may choose **any single action** from the action list (Move, Charge, Melee, Ranged, Defend, Retreat, etc.).
+- If the target is **Downed or Out of Action** after the attack resolves, they may not react.
+- **A fighter may not perform a Ranged Reaction during their own player's turn.** The active player's fighters cannot react to return fire. This means the sequence is always: shoot → react → done.
+- **Cast actions do not trigger Ranged Reactions.** Only Ranged weapon attacks trigger this rule.
+
+---
+
 ## Design Explorations
 
 Ideas explored during development that may inform future iteration:
@@ -118,3 +130,7 @@ Ideas explored during development that may inform future iteration:
 - The Strike Pool (Attacks × Damage) creates a single dice pool rather than separate attack and damage rolls — this keeps combat fast
 - Criticals as unblockable 6s add meaningful tension without a separate crit table
 - The weapon triangle rewards list-building awareness and tactical positioning
+- Ranged Reactions keep ranged combat deadly without making it oppressive — every shot gives the target agency
+- Triggering on target selection (not just hits) means even missed shots have a cost, discouraging low-odds spam
+- Reactions only happen on the opponent's turn — the active player accepts the risk of return fire without recourse, giving the target the last word
+- Cast not triggering reactions gives magic a distinct tactical niche — safer to use but less accessible than ranged weapons
