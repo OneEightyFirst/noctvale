@@ -43,7 +43,7 @@ Warbands battle for relic fragments scattered across a cursed land. Fighters gro
 
 ---
 
-## Design Method: Sam Pearson Vision Approach
+## Design Method: Vision-Led Approach
 
 The recommended process for evaluating mechanics and direction:
 
@@ -54,7 +54,7 @@ The recommended process for evaluating mechanics and direction:
 5. Use the ranked tenets to evaluate mechanics
 6. A lower-ranked tenet may be broken only to serve a higher-ranked tenet
 
-### Five Core Parts Every Wargame Needs (Sam Pearson)
+### Five Core Parts Every Wargame Needs
 
 1. **Turn sequence** — shapes everything else
 2. **Combat** — how units move, shoot, and fight

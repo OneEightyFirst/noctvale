@@ -120,7 +120,7 @@ Ideas explored during development that may inform future iteration:
 ### Key Design Tension
 - Does Noctvale want fast Strike Pool lethality, or dramatic back-and-forth melee duels?
 - If keeping Strike Pool, what creates the duelist / tank distinction?
-- If adopting opposed melee (like Black Death City), what happens to the weapon and magic critical triangles?
+- If adopting opposed melee, what happens to the weapon and magic critical triangles?
 - If keeping defense dice, how does armor always matter without crits bypassing too much?
 
 ---

@@ -91,18 +91,30 @@ Assist a **Downed or Stunned** ally within 1". *(See conditions.md)*
 
 ---
 
-## Turn Structure & Activation Notes
+## Turn Structure
 
-The current source doc does not fully define a turn sequence or initiative system. Key influences and considerations from design discussion:
+The game is played over a series of **rounds**. Each round follows this sequence:
 
-- Alternating activation fits frantic skirmish games (Warcry, Kill Team)
-- Sam Pearson (Black Death City) recommends **one move and one action** rather than two unrestricted actions, to prevent double-move / double-attack incentives:
-  - Double move creates weird positioning incentives
-  - Double attack punishes charging and encourages static play
-  - Ranged fighters may camp and shoot twice
-- **Surge activations** (from Kill Team) can soften activation-count imbalance: the player who runs out of activations first can activate fighters a second time, but with only one move or action instead of both
-- Underdog action-economy mechanics prevent outnumbered warbands from being helpless
-- Overwatch tokens serve as an existing action economy balancing mechanic (see `special-rules.md`)
+### 1. Start of Round
+
+- **Determine initiative.** The player with **fewer remaining activations** (fighters not yet Out of Action) has initiative and activates first. If both players have equal activations, the player with initiative from the **scenario setup** goes first (and retains it for future ties).
+- **Distribute Overwatch tokens.** If one player has fewer activations than the other, they receive a number of **Overwatch tokens equal to the difference**. *(See special-rules.md.)*
+
+### 2. Alternating Activations
+
+Players take turns activating **one fighter at a time**, alternating back and forth.
+
+When a fighter is activated, they may perform **2 actions** chosen from the action list. Actions may be taken in any combination and in any order.
+
+After a fighter's activation is complete, the other player activates one of their fighters, and so on.
+
+### 3. End of Round
+
+The round ends when **all fighters on both sides** have been activated or have forgone their activation (e.g., to gain Overwatch tokens).
+
+If one player runs out of fighters to activate before the other, the remaining player **activates their remaining fighters normally**, one at a time. The player who ran out may spend any unspent **Overwatch tokens** as reactions during these activations.
+
+Begin a new round at Step 1.
 
 ---
 
@@ -114,7 +126,9 @@ The current source doc does not fully define a turn sequence or initiative syste
 - Aim at +2 Strike Pool makes Aim + Shoot competitive with Shoot + Shoot — rewarding preparation without restricting action freedom
 - Defend as +1 Df uses the same lever as Cover, giving fighters a meaningful option when they can't attack or retreat
 - Overwatch is listed as a formal action so players can see it alongside their other options during activation
-- The turn structure and initiative system are among the biggest **playtest blockers** — these need to be finalized before first testing
+- Underdog initiative (fewer models = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first
+- Scenario-determined initiative for ties keeps round 1 clean and avoids a dice-off every round
+- No surge activations — Overwatch tokens handle activation imbalance without adding another subsystem
 - Hide requires touching terrain — simple, physical, no adjudication arguments about "am I in cover from all angles"
 - Hidden blocks targeting beyond 6" rather than granting a stat bonus — creates a binary decision (close the distance or find another target) instead of a modifier to track
 - Combat actions and Charge break Hidden, but movement doesn't — a fighter can reposition while staying concealed as long as they hug terrain
