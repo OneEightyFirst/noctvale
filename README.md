@@ -12,7 +12,8 @@ This repository contains the working design documents for Noctvale — rules, lo
 
 ```
 noctvale.md              — Core rules and setting document
-_overview.md             — Project overview, design method, and playtest roadmap
+_overview.md             — Project overview, design method, and design principles
+todo.md                  — Playtest roadmap, open decisions, and phase checklist
 rules/
   core-rules.md          — Stat abbreviations and species profiles
   combat.md              — Strike Pool system, criticals, weapon & magic triangles
@@ -33,7 +34,7 @@ Mordheim, Necromunda, Warcry, Kill Team, Space Hulk, classic Warhammer, and OSR 
 
 ## Status
 
-Actively in development. Not yet playtested. See `_overview.md` for the current playtest blocker list.
+Actively in development. Not yet playtested. See `todo.md` for the phased playtest roadmap.
 
 ## License
 

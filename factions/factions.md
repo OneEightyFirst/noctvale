@@ -58,16 +58,6 @@ Early and current faction groupings include:
 
 ---
 
-## Hunter Subtypes
-
-Potential specialization within hunter-type factions:
-
-- **Witch Hunters:** No magic; guns and technology
-- **Vampire Hunters:** Stakes, crossbows, and Holy / Light magic
-- **Werewolf Hunters:** Silver, metallurgy, and possibly a wererat / Skaven-adjacent option
-
----
-
 ## Design Notes
 
 - "The Nobility" is the preferred broad vampire faction name — vampires are noble houses, not necessarily a single kingdom anymore
@@ -75,12 +65,5 @@ Potential specialization within hunter-type factions:
 - Iron Law / corrupt constabulary represents oppressive law after the fall
 - There is interest in mixed or flipped alignments, such as a dark-side faction using "good" magic
 - 12 factions gives strong variety for campaign play and warband identity
-- Faction rules, special abilities, and roster restrictions — **to be developed**
 
----
-
-## Open Questions
-
-- Do factions align to magic triangles? (e.g., Arcane Conclave → Arcane, Infernal Pact → Infernal, Coven → Blood or Nature?)
-- Are there faction-exclusive weapons or unit types?
-- Do factions have campaign-level mechanics (reputation, alliances, rivalries)?
+See [todo.md](../todo.md) for faction mechanical identity tasks, hunter subtype concepts, and open design questions.

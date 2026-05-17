@@ -49,7 +49,8 @@ Armor adds **red defense dice** to the defense pool but **reduces the fighter's 
 | Armor | +Red Defense Dice | Lk Penalty | Notes |
 |---|---|---|---|
 | Light Armor | +1 | -1 Lk | Leather, slight agility loss |
-| Heavy Armor | +2 | -2 Lk | Plate, significant agility loss |
+| Medium Armor | +2 | -2 Lk | Chainmail, moderate agility loss |
+| Heavy Armor | +3 | -3 Lk | Plate, severe agility loss |
 
 ---
 
@@ -62,6 +63,6 @@ Armor adds **red defense dice** to the defense pool but **reduces the fighter's 
 - Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
 - Blunderbuss is pure Might, short range, and devastating — the gun equivalent of a war axe
 - Long Rifle has the highest Mt bonus and longest range but is harder to load (7+)
-- Armor adds red defense dice but penalizes Lk — a genuine tradeoff, not a pure upgrade. Tanks get tougher but slower, less evasive, and worse at Lk checks (Jump, Retreat)
-- Dwarves (Lk 1) barely notice the Lk penalty from Heavy Armor — they're already at the floor. Elves (Lk 3) lose their core identity by armoring up. This naturally steers species toward their thematic gear
+- Three armor tiers (Light/Medium/Heavy) at +1/+2/+3 red defense dice with matching -1/-2/-3 Lk penalties — a genuine tradeoff, not a pure upgrade. Tanks get tougher but slower, less evasive, and worse at Lk checks (Jump, Retreat)
+- Dwarves (Lk 1) barely notice even Heavy Armor's -3 Lk — they're already at the floor. Elves (Lk 3) in Heavy Armor drop to Lk 1 and lose their core identity. This naturally steers species toward their thematic gear
 - A Dagger or Shortbow can slip past heavy plate since the defender's blue defense is gutted

@@ -44,7 +44,7 @@ Attack with a **ranged weapon**. The target must be within the weapon's minimum 
 Cast a spell or fire a firearm. Roll **2d6** against the spell's casting difficulty or the firearm's loading difficulty. If successful, resolve the attack using the spell/firearm as a weapon. Spells **can be cast while in melee**. *(See magic.md for 2d6 outcomes: Mishap, Overcharge, etc.)*
 
 ### Aim
-Prepare a careful shot. Grants **+1 die of the weapon's dominant color** on the fighter's next **Ranged or Cast** action this activation. The dominant color is whichever stat the weapon adds more of (+Mt = red, +Lk = blue).
+Prepare a careful shot. Grants **+1 die of the weapon's dominant color** and **critical hits on natural 6s** on the fighter's next **Ranged** action this activation. The dominant color is whichever stat the weapon adds more of (+Mt = red, +Lk = blue). If tied, the player chooses.
 
 ### Mercy Kill
 Execute a **Stunned** enemy within 1". The Stunned fighter is immediately **Out of Action**. *(See conditions.md)*
@@ -91,6 +91,22 @@ Assist a **Downed or Stunned** ally within 1". *(See conditions.md)*
 
 ---
 
+## Round at a Glance
+
+> **1. Start of Round**
+> - Determine initiative — fewer activations goes first (ties: scenario setup)
+> - Distribute Overwatch tokens — underdog receives tokens equal to the activation difference
+>
+> **2. Alternating Activations**
+> - Players alternate activating one fighter at a time (2 actions each)
+> - When one player runs out of fighters, the other activates remaining fighters one at a time; the player who ran out may spend Overwatch tokens as reactions
+>
+> **3. End of Round**
+> - Round ends when all fighters have activated or forgone activation
+> - Return to Step 1
+
+---
+
 ## Turn Structure
 
 The game is played over a series of **rounds**. Each round follows this sequence:
@@ -123,7 +139,7 @@ Begin a new round at Step 1.
 - 2 actions per activation keeps the game moving without overly complex turn structures
 - Retreat as a Lk check adds risk to disengaging — escape isn't guaranteed
 - Spells being castable in melee prevents "safe zones" and keeps magic integrated with close-quarters fighting
-- Aim adds +1 die of the weapon's dominant color, reinforcing the weapon's identity rather than generically boosting the pool
+- Aim adds +1 die of the weapon's dominant color and unlocks crits on natural 6s — it costs half an activation, so the tradeoff is tempo for precision. This is the only crit path for conventional ranged weapons (bows, crossbows); firearms crit inherently
 - Brace as +1 red (Mt) defense die rewards tough fighters for hunkering down — Dwarves love it, Elves prefer other options
 - Overwatch is listed as a formal action so players can see it alongside their other options during activation
 - Underdog initiative (fewer models = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first

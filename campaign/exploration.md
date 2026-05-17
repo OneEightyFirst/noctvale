@@ -55,33 +55,9 @@ Players may choose to **push** after their initial roll.
 
 ---
 
-## Possible Castle Setting Pivot
-
-A recent idea proposed during design:
-
-- The whole game could take place in **a single castle**
-- Every battle opponents play could be set in the **minutes after the High King's betrayal / turning**
-- This would shift Noctvale from a broad cursed-land campaign to a **concentrated crisis setting**
-
-### Potential implications:
-- Stronger focus on **rooms, corridors, courtyards, gates, chapels, vaults, kitchens, crypts, towers, and servant passages**
-- Campaign exploration could become **castle-zone exploration**
-- Factions could represent forces **trapped inside or rushing to exploit the betrayal**
-- The setting could become more **immediate and coherent** for first playtest scenarios
-- The relic-fragment economy might become **relic shards, keys, blood seals, royal edicts, sacred brands**, or similar castle-specific objectives
-
----
-
-## Territory & Campaign Ideas
-
-- **Duchies / holdings** as territory mechanics
-- Post-battle **feeding costs** by warband size / wealth
-- **Territory exchange** minigame
-- The game may need clearer **first-playtest scenario rules**
-
----
-
 ## Design Notes
+
+See [todo.md](../todo.md) for the castle setting pivot discussion, territory/campaign ideas, and open design decisions.
 
 - Rolling per surviving hero ties exploration success to keeping your fighters alive
 - The 6-dice cap prevents large warbands from dominating exploration automatically

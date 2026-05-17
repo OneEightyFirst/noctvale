@@ -39,12 +39,16 @@ Each die that meets the threshold is a **hit**. Hits retain their color (red hit
 
 ### Step 3: Determine Criticals
 
-If the attacker has **weapon advantage** (see Weapon Triangle), any natural **6** is a **critical hit**.
+Any natural **6** is a **critical hit** if any of the following apply:
 
-- Critical hits **cannot be blocked** by defense dice.
-- Critical hits retain their color for tracking purposes but bypass defense entirely.
+- The attacker has **weapon advantage** (see Weapon Triangle)
+- The attacker has **magic advantage** (see Magic Triangles)
+- The attacker is using a **firearm** (crits against all targets)
+- The attacker used the **Aim** action before a Ranged attack
 
-If the attacker does **not** have weapon advantage, 6s are normal hits.
+Critical hits **cannot be blocked** by defense dice. Critical hits retain their color for tracking purposes but bypass defense entirely.
+
+If none of the above apply, 6s are normal hits.
 
 ### Step 4: Defender Rolls Defense Dice
 
