@@ -38,6 +38,18 @@ Fragments are sold using a **supply and demand curve** — selling more at once 
 
 ---
 
+## Alternate Economy Ideas (Castle Setting)
+
+If the game pivots to the single-castle betrayal setting, the relic-fragment economy might be replaced or rebranded with castle-specific objectives:
+
+- Relic shards
+- Keys
+- Blood seals
+- Royal edicts
+- Sacred brands
+
+---
+
 ## Design Notes
 
 - The discount curve discourages hoarding large quantities to sell at once — smaller, more frequent sells are more efficient per fragment

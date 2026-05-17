@@ -60,18 +60,56 @@ Having advantage over the opposing weapon type grants critical hits on 6s.
 
 Two separate triangles govern magic vs. magic interactions.
 
-### Light Triangle
+### Mystic Triangle
 ```
 Light > Infernal > Arcane > Light
 ```
 
-### Dark Triangle
+### Natural Triangle
 ```
 Nature > Necromancy > Blood > Nature
 ```
 
 ### Firearms
 Firearms gain criticals against **all targets**, regardless of weapon type.
+
+---
+
+## Design Explorations
+
+Ideas explored during development that may inform future iteration:
+
+### Defense and Survivability Alternatives
+- Subtractive defenses: Luck suppresses Attacks, Armor suppresses Damage
+- +1 / -1 adjustments based on stat comparisons
+- Defense dice based on Luck and Might comparisons
+- Base defense of 1 blue + 1 red plus adjustments from comparisons
+
+### Colored Dice Pool Experiments
+- Red dice for Might (Mt), Blue dice for Luck (Lk)
+- Max dice pool caps tested: 6 and 8
+- Color-specific blocking: blue blocks blue, red blocks red, two red may block one blue
+- Considered as an alternative to or evolution of Strike Pool / defense systems
+
+### To-Hit and Stat Framework Explorations
+- Pivot explored from "5+" target-number system toward "stat + die = threshold" to make higher numbers intuitively better
+- Target of ≥8 discussed to preserve natural 1s as failures (1 + 6 should not always hit)
+- CC / RC as to-hit skills; Lk and Mt to determine number of dice rolled
+- Might (Mt) explored as a merged Strength / Toughness stat
+- Wounds plus Defense handled survival
+- Defense dice responding to Lk / Mt comparisons: +1 die for being 1 higher, +2 dice for being 2 higher
+
+### Ranged Combat Notes
+- RC used to hit in ranged combat
+- Ranged Strike Pool may derive from weapon stats rather than fighter stats
+- Ranged / magic crits should probably be rarer than melee crits
+- One idea: ranged / magic crits on pairs of 6s; sniper designs might reduce to single die
+
+### Key Design Tension
+- Does Noctvale want fast Strike Pool lethality, or dramatic back-and-forth melee duels?
+- If keeping Strike Pool, what creates the duelist / tank distinction?
+- If adopting opposed melee (like Black Death City), what happens to the weapon and magic critical triangles?
+- If keeping defense dice, how does armor always matter without crits bypassing too much?
 
 ---
 

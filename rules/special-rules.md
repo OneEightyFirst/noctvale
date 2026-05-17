@@ -41,9 +41,11 @@ When a fighter is attacking multiple enemies:
 
 Overwatch compensates for numerical disadvantage.
 
-**Trigger:** If one warband has fewer fighters than the opposing warband, they receive **Overwatch tokens equal to the difference**.
+**Trigger:** At the start of the round, the player with the fewer number of activations receives a number of **Overwatch tokens equal to the difference in activations**.
 
-**Using a token:** A fighter may spend an Overwatch token **instead of activating** to perform a single **reaction action** in response to an enemy action.
+**Forgo activation:** A player may also choose to **forgo a model's activation** and give that model an Overwatch token.
+
+**Using a token:** The token allows that model to perform a **single action as a reaction** to an enemy model completing an action.
 
 ### Valid Reaction Actions
 - Move

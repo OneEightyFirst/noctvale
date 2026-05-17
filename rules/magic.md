@@ -32,12 +32,12 @@ Six magic classes exist in Noctvale:
 
 Two separate triangles govern how magic interacts with opposing magic.
 
-### Light Triangle
+### Mystic Triangle
 ```
 Light > Infernal > Arcane > Light
 ```
 
-### Dark Triangle
+### Natural Triangle
 ```
 Nature > Necromancy > Blood > Nature
 ```
@@ -49,6 +49,51 @@ Having advantage in the triangle grants **critical hits** when attacking with ma
 ## Spell Design Rule
 
 Each magic class contains at least **one ranged damage spell** functionally similar to **Arcane Bolt** — a baseline offensive option that every caster type can access.
+
+---
+
+## Spell Concepts
+
+Example spells discussed during design:
+
+| Spell | Class | Notes |
+|---|---|---|
+| Arcane Bolt | Arcane | 20-inch, fast / high Luck style spell |
+| Radiant damage spell | Light | 12-inch, high Might; +2 Might against Undead |
+| Thorn Volley | Nature | Template / shotgun-like spell |
+| Deathbolt | Necromancy | All blue dice, ignores armor, 10+ to cast, dodgeable |
+
+---
+
+## Status & Affliction Ideas
+
+Magic may inflict status effects tied to specific domains:
+
+| Affliction | Associated Domain |
+|---|---|
+| Enfeebled | Blood |
+| Weakened | Necromancy |
+| *(TBD)* | Infernal |
+
+Arcane, Radiant (Light), and Nature spells could potentially **remove** these afflictions, creating a cleanse / debuff dynamic between magic categories.
+
+---
+
+## Magic Combat Notes
+
+- Ranged and magic criticals should probably be **rarer** than melee criticals
+- One idea: ranged / magic crits on **pairs of 6s** rather than single 6s
+- Sniper-type designs might reduce the crit requirement to a single die
+- Stronger effects on high or critical cast rolls were discussed (beyond simple success/fail)
+
+---
+
+## Magic Domain Alignment
+
+Magic is grouped into two broad moral categories:
+
+- **Accepted ("good") magic:** Light, Arcane, Nature
+- **Forbidden ("bad") magic:** Infernal, Blood, Necromancy
 
 ---
 
