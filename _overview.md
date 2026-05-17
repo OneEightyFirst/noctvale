@@ -30,7 +30,8 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small warbands cl
 | Conditions (Downed, Stunned, OOA) | `rules/conditions.md` |
 | Actions & Engagement | `rules/actions.md` |
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
-| Magic System & Classes | `rules/magic.md` |
+| Magic System, Firearms & Classes | `rules/magic.md` |
+| Equipment (Weapons & Armor) | `rules/equipment.md` |
 | Exploration Phase | `campaign/exploration.md` |
 | Relic Fragment Economy | `campaign/economy.md` |
 | Factions | `factions/factions.md` |
@@ -76,67 +77,9 @@ Campaign play is an optional sixth part, but for Noctvale it is effectively cent
 
 ---
 
-## Prototype Priority
+## Playtest Roadmap
 
-A working prototype is a vertical slice, not a complete game. For Noctvale's first playable prototype:
-
-- A working turn structure
-- A working combat system
-- One scenario
-- Two skeletal warbands
-- Enough setting to make those warbands and scenario feel like Noctvale
-- A minimal campaign / exploration stub after the battle
-
-Turn structure and combat need to be nearly complete. List building, scenarios, and setting only need thin slices.
-
----
-
-## Current Playtest Blockers
-
-The biggest blockers before first playtesting:
-
-1. Finalizing the turn structure
-2. Finalizing the combat resolution loop
-3. Deciding whether the game stays broad Noctvale or pivots to the single-castle betrayal setting
-4. Creating two minimal playable warbands
-5. Creating one test scenario
-6. Creating a small weapon list
-7. Creating a minimal spell list if magic is included in the first test
-8. Creating fighter cards or a roster sheet
-9. Creating terrain / board assumptions
-10. Clarifying win conditions
-11. Clarifying how exploration / relic fragments interact with first-playtest progression
-12. Running at least one solo dry run to find rules holes
-
----
-
-## External Game Comparison Pool
-
-Games repeatedly relevant to Noctvale recommendations:
-
-| Game | Relevance |
-|---|---|
-| Mordheim | Campaign skirmish, injuries, exploration, warband progression, gothic city tone |
-| Necromunda | Campaign gang progression, post-battle economy, injury, equipment depth |
-| Warcry | Compact alternating activation, fast melee resolution, simple profiles |
-| Kill Team | Alternating activations, melee attack/parry decisions, action economy |
-| Warhammer 40k 2nd Ed. | Emergent play, war-as-simulation, wild vehicle / weapon outcomes |
-| Age of Sigmar | Modern stat and rend vocabulary, Spearhead-style simplification and underdog mechanisms |
-| Space Hulk | Overwatch tension, jamming, simple inputs with crunchy outputs |
-| Bolt Action | Dice bag activation comparison point |
-| Star Wars Legion | Alternating activation example |
-| Kings of War | Mass battle where units remain intact until removed |
-| WH Underworlds / Combat Patrol / Spearhead | Fixed-list or constrained-list comparison points |
-| OSR RPGs | Old-school feel, danger, emergent stories, streamlined modern presentation |
-
----
-
-## Tools & Production Needs
-
-- Printable cards with cut marks
-- Templating and layout automation
-- Memory layer / Markdown file source of truth for game design work
-- Useful project structure should include: core rules, lore/setting, faction design, warband roster templates, weapon/spell tables, scenario packet, playtest checklist, card template files, design notes / changelog
+See [todo.md](todo.md) for the full phased roadmap, playtest blockers, open design decisions, and external game references.
 
 ---
 

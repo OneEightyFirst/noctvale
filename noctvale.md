@@ -167,13 +167,13 @@ Higher values are better for all stats. Stat checks use d6 + stat ≥ 8.
 
 Combat uses a Red/Blue dice pool system. Red dice represent Might. Blue dice represent Luck.
 
-Strike Pool = Attacks × Damage. The fighter's Mt:Lk ratio determines the red/blue split.
+Strike Pool = fighter's Mt (red dice) + Lk (blue dice) + weapon modifiers. Weapons add +Mt and/or +Lk directly.
 
 Example weapon:
 
-Iron Sword | Melee | Engagement | A1 | D4 | Ac0
+Iron Sword | Melee | Engagement | +2 Mt
 
-Strike Pool = 4 dice. A Human (Mt 2, Lk 2) rolls 2 red + 2 blue.
+A Human (Mt 2, Lk 2) with an Iron Sword rolls 4 red + 2 blue = 6 dice.
 
 Each die rolls d6 + CC ≥ 8 (melee) or d6 + RC ≥ 8 (ranged) to hit.
 
@@ -185,7 +185,7 @@ Defenders roll a defense pool: base 1 red die + 1 blue die, plus bonus dice from
 
 - Red defense dice block red hits (d6 + Mt ≥ 8)
 - Blue defense dice block blue hits (d6 + Lk ≥ 8)
-- Two red defense successes may block one blue hit
+- Two red defense successes may block one blue hit, and vice versa (2:1 crossover)
 - Crits cannot be blocked
 
 ---
@@ -352,7 +352,7 @@ Parts of the miniature extending beyond the base are ignored.
 
 If more than half of the model is obscured, the target has cover.
 
-Cover grants +1 red defense die.
+Cover grants +1 blue defense die (rolled with Lk).
 
 ---
 
@@ -397,7 +397,7 @@ Examples:
 
 If a friendly fighter is also engaged with the same enemy:
 
-+1 red die to the Strike Pool
++1 die to the Strike Pool (attacker's choice of red or blue)
 
 ---
 

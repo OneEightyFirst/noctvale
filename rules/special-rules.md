@@ -14,7 +14,19 @@ Parts of the miniature extending beyond the base are **ignored**.
 
 If **more than half** of the target model is obscured, the target has cover.
 
-**Cover grants +1 red defense die.**
+**Cover grants +1 blue defense die** (rolled with Lk).
+
+---
+
+## Range
+
+Ranged weapons and spells have a **minimum range** and a **maximum range**.
+
+- A target **closer than the minimum range** cannot be targeted.
+- A target **beyond the maximum range** cannot be targeted.
+- There are no modifiers for distance — if the target is in range, the attack is at full effectiveness.
+
+Most ranged weapons have a **minimum range of 3"**. Pistols have **no minimum range**.
 
 ---
 
@@ -60,14 +72,14 @@ Overwatch compensates for numerical disadvantage.
 
 If a friendly fighter is **also engaged** with the same enemy:
 
-**+1 red die to the Strike Pool**
+**+1 die to the Strike Pool (attacker's choice of red or blue)**
 
 ---
 
 ## Design Notes
 
 - LoS model-to-model (ignoring base overhang) keeps it simple and consistent with most skirmish conventions
-- Cover as +1 red defense die integrates cleanly with the color-matched defense system
+- Cover as +1 blue (Lk) defense die represents using terrain to dodge — Elves thrive in cover, Dwarves prefer to Brace
 - Falling damage as a per-2" Lk check scales naturally with height
 - Overwatch as a catch-up mechanic prevents outnumbered players from being steamrolled by activation order
-- Gang Up is a small but meaningful reward for coordinated positioning
+- Gang Up gives the attacker a free die of their choice — lets them shore up a weakness or double down on a strength

@@ -28,7 +28,7 @@ Move across open space up to Movement value. Must pass a **Lk check** (d6 + Lk �
 ### Retreat
 Attempt to leave engagement range. Roll a **Lk check** (d6 + Lk ≥ 8).
 
-On failure: the opponent may make an **opportunity attack** — but only if they are not currently engaged with another enemy.
+On failure: the opponent may make a **free Melee attack** using the full attack sequence (Strike Pool, red/blue split, to-hit, defense) — but only if they are not currently engaged with another enemy. This does not cost the opponent any actions.
 
 ---
 
@@ -38,13 +38,13 @@ On failure: the opponent may make an **opportunity attack** — but only if they
 Attack an enemy **within engagement range** using a melee weapon.
 
 ### Ranged
-Attack with a **ranged weapon**.
+Attack with a **ranged weapon**. The target must be within the weapon's minimum and maximum range. *(See special-rules.md.)*
 
 ### Cast
-Cast a spell. Spells **can be cast while in melee**.
+Cast a spell or fire a firearm. Roll **2d6** against the spell's casting difficulty or the firearm's loading difficulty. If successful, resolve the attack using the spell/firearm as a weapon. Spells **can be cast while in melee**. *(See magic.md for 2d6 outcomes: Mishap, Overcharge, etc.)*
 
 ### Aim
-Prepare a careful shot. Grants **+2 to the Strike Pool** on the fighter's next **Ranged or Cast** action this activation.
+Prepare a careful shot. Grants **+1 die of the weapon's dominant color** on the fighter's next **Ranged or Cast** action this activation. The dominant color is whichever stat the weapon adds more of (+Mt = red, +Lk = blue).
 
 ### Mercy Kill
 Execute a **Stunned** enemy within 1". The Stunned fighter is immediately **Out of Action**. *(See conditions.md)*
@@ -53,8 +53,8 @@ Execute a **Stunned** enemy within 1". The Stunned fighter is immediately **Out 
 
 ## Tactical Actions
 
-### Defend
-Brace for incoming attacks. The fighter gains **+1 red defense die** until their next activation.
+### Brace
+Hunker down and absorb incoming attacks. The fighter gains **+1 red defense die** (rolled with Mt) until their next activation.
 
 ### Hide
 The fighter becomes **Hidden**. The fighter must be **touching terrain** to Hide.
@@ -63,7 +63,7 @@ A Hidden fighter **cannot be targeted** by Ranged or Cast actions beyond **6"**.
 
 The fighter **loses Hidden** when they perform any **Combat action** (Melee, Ranged, Cast, Aim, or Mercy Kill), **Charge**, **Climb**, **Jump**, or **move within 6" of an enemy**.
 
-A Hidden fighter may still Move, Scramble, Defend, Interact, Recover, or Help without losing Hidden — as long as they remain touching terrain.
+A Hidden fighter may still Move, Scramble, Brace, Interact, Recover, or Help without losing Hidden — as long as they remain touching terrain.
 
 ### Overwatch
 Forgo the fighter's remaining activation to give them an **Overwatch token**. The token allows the fighter to perform a **single action as a reaction** to an enemy model completing an action. *(See special-rules.md for full Overwatch rules.)*
@@ -123,8 +123,8 @@ Begin a new round at Step 1.
 - 2 actions per activation keeps the game moving without overly complex turn structures
 - Retreat as a Lk check adds risk to disengaging — escape isn't guaranteed
 - Spells being castable in melee prevents "safe zones" and keeps magic integrated with close-quarters fighting
-- Aim at +2 Strike Pool makes Aim + Shoot competitive with Shoot + Shoot — rewarding preparation without restricting action freedom
-- Defend as +1 red defense die gives fighters a meaningful option when they can't attack or retreat
+- Aim adds +1 die of the weapon's dominant color, reinforcing the weapon's identity rather than generically boosting the pool
+- Brace as +1 red (Mt) defense die rewards tough fighters for hunkering down — Dwarves love it, Elves prefer other options
 - Overwatch is listed as a formal action so players can see it alongside their other options during activation
 - Underdog initiative (fewer models = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first
 - Scenario-determined initiative for ties keeps round 1 clean and avoids a dice-off every round
