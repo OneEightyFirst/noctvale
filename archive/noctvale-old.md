@@ -119,7 +119,7 @@ The empire is gone. But the war never truly ended.
 Noctvale is built around several core systems:
 
 - Lethal skirmish combat
-- Red/Blue dice pool combat resolution
+- Strike Pool combat resolution
 - Weapon and magic critical triangles
 - Campaign exploration and relic fragment economy
 - Small warband tactical gameplay
@@ -132,61 +132,64 @@ Combat outcomes are decisive, but the Downed system allows dramatic survivals.
 
 | Stat | Meaning |
 |-----|-----|
-| M | Movement (inches) |
+| M | Movement |
 | CC | Close Combat |
 | RC | Ranged Combat |
-| Mt | Might |
-| Lk | Luck |
+| St | Strength |
+| T | Toughness |
 | Sa | Sanity |
+| L | Luck |
+| Df | Defense Dice |
 | W | Wounds |
 
-Higher values are better for all stats. Stat checks use d6 + stat ≥ 8.
+Lower values are better when rolling target numbers.
 
 ---
 
 # Baseline Species Profiles
 
 ### Human Fighter
-| M | CC | RC | Mt | Lk | Sa | W |
-|---|---|---|---|---|---|---|
-| 6" | 3 | 3 | 2 | 2 | 3 | 3 |
+Human Fighter | M 6" | CC 5+ | RC 5+ | St 5+ | T 5+ | Sa 5+ | L 5+ | Df 2 | W 3
 
 ### Elf Fighter
-| M | CC | RC | Mt | Lk | Sa | W |
-|---|---|---|---|---|---|---|
-| 7" | 3 | 3 | 1 | 3 | 3 | 1 |
+Elf Fighter | M 7" | CC 5+ | RC 5+ | St 5+ | T 5+ | Sa 5+ | L 4+ | Df 2 | W 1
 
 ### Dwarf Fighter
-| M | CC | RC | Mt | Lk | Sa | W |
-|---|---|---|---|---|---|---|
-| 5" | 3 | 3 | 3 | 1 | 3 | 4 |
+Dwarf Fighter | M 5" | CC 5+ | RC 5+ | St 5+ | T 5+ | Sa 5+ | L 6+ | Df 2 | W 4
 
 ---
 
 # Combat System
 
-Combat uses a Red/Blue dice pool system. Red dice represent Might. Blue dice represent Luck.
+Combat uses a Strike Pool system.
 
-Strike Pool = Attacks × Damage. The fighter's Mt:Lk ratio determines the red/blue split.
+Strike Pool = Attacks × Damage
 
 Example weapon:
 
-Iron Sword | Melee | Engagement | A1 | D4 | Ac0
+Iron Sword | Melee | R E | A1 | D4 | Ac0
 
-Strike Pool = 4 dice. A Human (Mt 2, Lk 2) rolls 2 red + 2 blue.
+Strike Pool = 4 dice
 
-Each die rolls d6 + CC ≥ 8 (melee) or d6 + RC ≥ 8 (ranged) to hit.
+---
+
+## Strength vs Toughness
+
+Strength and Toughness modify the final Strike Pool.
+
+- If Strength is better than the defender's Toughness, the attacker gains dice.
+- If Toughness is better than the attacker’s Strength, dice are reduced.
+
+These modifiers apply after weapon dice are generated.
 
 ---
 
 ## Defense
 
-Defenders roll a defense pool: base 1 red die + 1 blue die, plus bonus dice from Mt/Lk comparisons and armor.
+Defenders roll Defense Dice (Df).
 
-- Red defense dice block red hits (d6 + Mt ≥ 8)
-- Blue defense dice block blue hits (d6 + Lk ≥ 8)
-- Two red defense successes may block one blue hit
-- Crits cannot be blocked
+- Each success blocks one strike.
+- Crits cannot be blocked by defense dice.
 
 ---
 
@@ -196,7 +199,7 @@ Criticals are determined by weapon triangles.
 
 If a weapon has advantage over another weapon type:
 
-- Critical hits occur on natural 6s
+- Critical hits occur on 6s
 - Critical hits cannot be blocked
 
 ---
@@ -294,10 +297,10 @@ Scramble
 Half movement through difficult terrain. Cannot end in engagement.
 
 Jump  
-Move up to movement across open space. Must pass a Lk check (d6 + Lk ≥ 8). Cannot end in engagement.
+Move up to movement across open space. Must pass a Luck roll. Cannot end in engagement.
 
 Retreat  
-Attempt to leave engagement. Roll a Lk check (d6 + Lk ≥ 8).
+Attempt to leave engagement. Roll Luck.
 
 Failure allows the opponent an opportunity attack if they are not engaged with another enemy.
 
@@ -352,13 +355,13 @@ Parts of the miniature extending beyond the base are ignored.
 
 If more than half of the model is obscured, the target has cover.
 
-Cover grants +1 red defense die.
+Cover grants +1 Defense Die.
 
 ---
 
 # Falling
 
-Roll a Lk check (d6 + Lk ≥ 8) when falling.
+Roll Luck when falling.
 
 For every 2 inches fallen, roll one die.
 
@@ -397,7 +400,7 @@ Examples:
 
 If a friendly fighter is also engaged with the same enemy:
 
-+1 red die to the Strike Pool
++1 to the Strike Pool
 
 ---
 

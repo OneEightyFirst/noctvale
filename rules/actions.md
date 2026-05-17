@@ -23,10 +23,10 @@ Move vertically at **half movement**. Cannot end in engagement range.
 Move at **half movement** through difficult terrain. Cannot end in engagement range.
 
 ### Jump
-Move across open space up to Movement value. Must pass a **Luck roll**. Cannot end in engagement range.
+Move across open space up to Movement value. Must pass a **Lk check** (d6 + Lk ≥ 8). Cannot end in engagement range.
 
 ### Retreat
-Attempt to leave engagement range. Roll **Luck**.
+Attempt to leave engagement range. Roll a **Lk check** (d6 + Lk ≥ 8).
 
 On failure: the opponent may make an **opportunity attack** — but only if they are not currently engaged with another enemy.
 
@@ -54,7 +54,7 @@ Execute a **Stunned** enemy within 1". The Stunned fighter is immediately **Out 
 ## Tactical Actions
 
 ### Defend
-Brace for incoming attacks. The fighter gains **+1 Df** until their next activation.
+Brace for incoming attacks. The fighter gains **+1 red defense die** until their next activation.
 
 ### Hide
 The fighter becomes **Hidden**. The fighter must be **touching terrain** to Hide.
@@ -121,10 +121,10 @@ Begin a new round at Step 1.
 ## Design Notes
 
 - 2 actions per activation keeps the game moving without overly complex turn structures
-- Retreat as a Luck roll adds risk to disengaging — escape isn't guaranteed
+- Retreat as a Lk check adds risk to disengaging — escape isn't guaranteed
 - Spells being castable in melee prevents "safe zones" and keeps magic integrated with close-quarters fighting
 - Aim at +2 Strike Pool makes Aim + Shoot competitive with Shoot + Shoot — rewarding preparation without restricting action freedom
-- Defend as +1 Df uses the same lever as Cover, giving fighters a meaningful option when they can't attack or retreat
+- Defend as +1 red defense die gives fighters a meaningful option when they can't attack or retreat
 - Overwatch is listed as a formal action so players can see it alongside their other options during activation
 - Underdog initiative (fewer models = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first
 - Scenario-determined initiative for ties keeps round 1 clean and avoids a dice-off every round

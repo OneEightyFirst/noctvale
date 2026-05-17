@@ -14,13 +14,13 @@ Parts of the miniature extending beyond the base are **ignored**.
 
 If **more than half** of the target model is obscured, the target has cover.
 
-**Cover grants +1 Defense Die.**
+**Cover grants +1 red defense die.**
 
 ---
 
 ## Falling
 
-Roll Luck when a fighter falls.
+Roll a **Lk check** (d6 + Lk ≥ 8) when a fighter falls.
 
 For every **2 inches fallen**, roll one die.
 
@@ -60,14 +60,14 @@ Overwatch compensates for numerical disadvantage.
 
 If a friendly fighter is **also engaged** with the same enemy:
 
-**+1 to the Strike Pool**
+**+1 red die to the Strike Pool**
 
 ---
 
 ## Design Notes
 
 - LoS model-to-model (ignoring base overhang) keeps it simple and consistent with most skirmish conventions
-- Cover as +1 Df die integrates cleanly with the defense roll system rather than adding a separate save
-- Falling damage as a per-2" Luck roll scales naturally with height
+- Cover as +1 red defense die integrates cleanly with the color-matched defense system
+- Falling damage as a per-2" Lk check scales naturally with height
 - Overwatch as a catch-up mechanic prevents outnumbered players from being steamrolled by activation order
 - Gang Up is a small but meaningful reward for coordinated positioning
