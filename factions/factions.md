@@ -57,15 +57,15 @@ The named factions of Noctvale are established combinations with their own histo
 
 ## Domains
 
-| Domain | Triangle | Type |
-|---|---|---|
-| Light | Mystic | Accepted |
-| Arcane | Mystic | Accepted |
-| Nature | Natural | Accepted |
-| Blood | Natural | Forbidden |
-| Necromancy | Natural | Forbidden |
-| Infernal | Mystic | Forbidden |
-| None | — | — |
+| Domain | Triangle |
+|---|---|
+| Light | Mystic |
+| Arcane | Mystic |
+| Infernal | Mystic |
+| Nature | Natural |
+| Necromancy | Natural |
+| Blood | Natural |
+| None | — |
 
 Each domain provides a spell list and domain-specific skills. The **None** domain provides no spells but grants access to **firearms**.
 
