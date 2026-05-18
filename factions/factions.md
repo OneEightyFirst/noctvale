@@ -18,14 +18,38 @@ The named factions of Noctvale are established combinations with their own histo
 
 ## Archetypes
 
-| Archetype | Armor Access | Weapon Access | Firearms | Max Casters |
-|---|---|---|---|---|
-| Knights | Heavy | Heavy weapons, tower shields | None domain only | 1 |
-| Hunters | Medium | All weapon types | None domain only | 1 |
-| Folk | Light | Basic weapons | None domain only | 1 |
-| Cult | None | Limited weapons | None domain only | 3 |
+### Knights
+- **Armor:** Up to Heavy
+- **Weapons:** Basic weapons, long weapons (polearms, halberds), heavy weapons (Great Sword, War Axe)
+- **Shields:** Buckler, Shield, Tower Shield
+- **Firearms:** Limited (Blunderbuss, Musket) — None domain only
+- **Max Casters:** 1
 
-**Firearms** are exclusive to warbands with the **None** domain. Magic and gunpowder are mutually exclusive paths to power.
+### Hunters
+- **Armor:** Up to Medium
+- **Weapons:** Basic weapons, long weapons (polearms, halberds)
+- **Shields:** Buckler, Shield
+- **Firearms:** All — None domain only
+- **Max Casters:** 1
+
+### Folk
+- **Armor:** Up to Light
+- **Weapons:** Basic weapons, long weapons (polearms, halberds)
+- **Shields:** Buckler, Shield
+- **Firearms:** Limited (Blunderbuss, Musket) — None domain only
+- **Max Casters:** 1
+
+### Cult
+- **Domain Restriction:** Cannot choose None — Cult must have a magic domain
+- **Armor:** None
+- **Weapons:** Basic weapons only
+- **Shields:** None
+- **Firearms:** None
+- **Max Casters:** 3
+
+**Basic weapons:** Dagger, Sword, Hand Axe, Spear, Shortbow.
+
+**Firearms** are exclusive to warbands with the **None** domain. Magic and gunpowder are mutually exclusive paths to power. Hunters + None get the full firearms list; other archetypes + None get Blunderbuss and Musket only.
 
 **Alchemy** (potions, poisons) is available to all warbands regardless of archetype or domain.
 
