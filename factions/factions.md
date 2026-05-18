@@ -62,7 +62,7 @@ The named factions of Noctvale are established combinations with their own histo
 | Light | Mystic | Accepted |
 | Arcane | Mystic | Accepted |
 | Nature | Natural | Accepted |
-| Blood | Mystic | Forbidden |
+| Blood | Natural | Forbidden |
 | Necromancy | Natural | Forbidden |
 | Infernal | Mystic | Forbidden |
 | None | — | — |
