@@ -150,6 +150,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [ ] **Exploration location tables:** Discovery tables per location type (Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard) — referenced in exploration.md but not yet written
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by warband size, territory exchange minigame
+- [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
 
 ### Hunter Subtype Design
 

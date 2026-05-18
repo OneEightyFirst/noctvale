@@ -18,13 +18,13 @@ A fighter attacking **unarmed** uses only their base Mt and Lk.
 
 | Weapon | Type | Range | +Mt | +Lk |
 |---|---|---|---|---|
-| Iron Sword | Melee | Engagement | +2 | — |
+| Sword | Melee | Engagement | +1 | +1 |
 
-A Human (Mt 2, Lk 2) with an Iron Sword: **(2+2) red + (2+0) blue = 4 red + 2 blue = 6 dice**
+A Human (Mt 2, Lk 2) with a Sword: **(2+1) red + (2+1) blue = 3 red + 3 blue = 6 dice**
 
 | Fighter | Base Mt | Base Lk | Weapon | Red | Blue | Total |
 |---|---|---|---|---|---|---|
-| Human (Mt 2, Lk 2) | 2 | 2 | Iron Sword (+2 Mt) | 4 | 2 | 6 |
+| Human (Mt 2, Lk 2) | 2 | 2 | Sword (+1 Mt, +1 Lk) | 3 | 3 | 6 |
 | Elf (Mt 1, Lk 3) | 1 | 3 | Shortbow (+2 Lk) | 1 | 5 | 6 |
 | Dwarf (Mt 3, Lk 1) | 3 | 1 | War Axe (+2 Mt) | 5 | 1 | 6 |
 
@@ -46,7 +46,7 @@ Any natural **6** is a **critical hit** if any of the following apply:
 - The attacker is using a **firearm** (crits against all targets)
 - The attacker used the **Aim** action before a Ranged attack
 
-Critical hits **cannot be blocked** by defense dice. Critical hits retain their color for tracking purposes but bypass defense entirely.
+Critical hits **cannot be blocked** by normal defense successes — only by a **critical defense success** (from Heavy Armor rescue). Critical hits retain their color for tracking purposes.
 
 If none of the above apply, 6s are normal hits.
 
@@ -63,10 +63,18 @@ Then compare **Mt** and **Lk** between attacker and defender:
 
 If the attacker's Mt or Lk exceeds the defender's, there is no penalty — the defender simply doesn't gain bonus dice for that color.
 
-**Armor** equipment adds additional **red defense dice** to the pool. *(See equipment.md for armor values.)*
-
 For **red defense dice**, roll **d6 + Mt ≥ 8** (toughness absorbs the blow).
 For **blue defense dice**, roll **d6 + Lk ≥ 8** (reflexes deflect the blow).
+
+#### Armor Rescue
+
+After rolling defense dice, **armor rescues red misses** — turning failed red defense dice into successes:
+
+- **Light Armor:** Turn **1 red miss** into a **normal success**
+- **Medium Armor:** Turn **2 red misses** into **normal successes**
+- **Heavy Armor:** Turn **2 red misses** into **normal successes**, **OR** turn **1 red miss** into a **critical success** (can block a critical hit)
+
+The defender chooses which red misses to rescue. Rescued dice follow all normal blocking rules.
 
 Each successful defense die **blocks one hit** of the matching color:
 
@@ -75,7 +83,7 @@ Each successful defense die **blocks one hit** of the matching color:
 - **Two successful red defense dice may block one blue hit** (brute force can overcome finesse, but at 2:1 cost)
 - **Two successful blue defense dice may block one red hit** (finesse can overcome brute force, but at 2:1 cost)
 
-Critical hits **cannot be blocked**.
+Critical hits **cannot be blocked** by normal defense successes. Only a **critical defense success** (from Heavy Armor rescue) can block a critical hit.
 
 ### Step 5: Apply Wounds
 
@@ -134,20 +142,20 @@ Firearms use the **2d6 loading gate** (same as magic casting) and gain criticals
 
 ## Combat Example
 
-**Attacker:** Human Fighter (CC 3, Mt 2, Lk 2) wielding an Iron Sword (+2 Mt)
-**Defender:** Dwarf Fighter (CC 3, Mt 3, Lk 1) wielding a Battle Axe (+2 Mt)
+**Attacker:** Human Fighter (CC 3, Mt 2, Lk 2) wielding a Sword (+1 Mt, +1 Lk)
+**Defender:** Dwarf Fighter (CC 3, Mt 3, Lk 1) wielding a Battle Axe (+2 Mt), wearing Medium Armor
 
-**Step 1:** Human Strike Pool = (Mt 2 + Sword 2) red + (Lk 2) blue = **4 red + 2 blue = 6 dice**
+**Step 1:** Human Strike Pool = (Mt 2 + Sword 1) red + (Lk 2 + Sword 1) blue = **3 red + 3 blue = 6 dice**
 
 **Step 2:** Roll each die, adding CC 3. Need ≥ 8 (so 5+ on the die).
 - Red die 1: rolls 5 → 5 + 3 = 8 → **red hit**
 - Red die 2: rolls 2 → 2 + 3 = 5 → miss
-- Red die 3: rolls 3 → 3 + 3 = 6 → miss
-- Red die 4: rolls 1 → auto-miss
+- Red die 3: rolls 1 → auto-miss
 - Blue die 1: rolls 6 → auto-hit → **blue hit**
-- Blue die 2: rolls 4 → 4 + 3 = 7 → miss
+- Blue die 2: rolls 5 → 5 + 3 = 8 → **blue hit**
+- Blue die 3: rolls 4 → 4 + 3 = 7 → miss
 
-Result: 1 red hit, 1 blue hit (2 hits total)
+Result: 1 red hit, 2 blue hits (3 hits total)
 
 **Step 3:** Sword vs Axe → Sword has advantage. The natural 6 on Blue die 1 is a **critical blue hit** (unblockable).
 
@@ -158,13 +166,19 @@ Result: 1 red hit, 1 blue hit (2 hits total)
 - Total defense: 2 red dice + 1 blue die
 
 Roll defense:
-- Red die 1: d6 + Mt 3 → rolls 5 → 8 → **success** (blocks the red hit)
+- Red die 1: d6 + Mt 3 → rolls 5 → 8 → **success**
 - Red die 2: d6 + Mt 3 → rolls 3 → 6 → fail
 - Blue die 1: d6 + Lk 1 → rolls 4 → 5 → fail
 
-The red hit is blocked. The critical blue hit cannot be blocked.
+**Armor Rescue:** The Dwarf wears Medium Armor — rescue 2 red misses. Red die 2 (rolled 6) becomes a **normal red success**. Only 1 red die missed, so 1 rescue is used.
 
-**Step 5:** 1 unblocked wound. The Dwarf takes 1 Wound (4 → 3 remaining).
+Defense results: 2 red successes, 0 blue successes.
+- Red success 1 blocks the red hit (1:1 same color)
+- Red success 2: no more red hits to block. Could block a blue hit at 2:1, but only 1 red success remains — not enough.
+
+The critical blue hit cannot be blocked. The normal blue hit is unblocked.
+
+**Step 5:** 2 unblocked wounds. The Dwarf takes 2 Wounds (4 → 2 remaining).
 
 ---
 
@@ -176,10 +190,11 @@ The red hit is blocked. The critical blue hit cannot be blocked.
 - The 2:1 crossover ratio (2R blocks 1B, 2B blocks 1R) means any fighter CAN deal with mismatched hits, but at double cost — color-matched defense is always more efficient
 - Criticals as unblockable 6s add tension without a separate crit table, and the weapon triangle rewards tactical awareness
 - Defense scaling with Mt/Lk comparisons means fighting someone stronger than you is harder to survive — stat advantages compound across attack and defense
-- Armor adding red defense dice means heavy armor is most effective against Might-based attacks and less effective against Luck-based finesse — thematic and mechanically distinct
+- Armor rescuing red defense misses means heavy armor is most effective against Might-based attacks and less effective against Luck-based finesse — thematic and mechanically distinct
 - Ranged Reactions keep ranged combat deadly without making it oppressive — every shot gives the target agency
 - Triggering on target selection (not just hits) means even missed shots have a cost, discouraging low-odds spam
 - Reactions only happen on the opponent's turn — the active player accepts the risk of return fire without recourse, giving the target the last word
 - Cast not triggering reactions gives magic a distinct tactical niche — safer to use but less accessible than ranged weapons
-- Melee is one-directional (attacker rolls, defender defends) — the person who charges first has the initiative advantage, and the "lock" of engagement plus opportunity attacks on failed Retreat provides the defender's counterplay
-- **Playtest note:** If melee feels too safe for the attacker, consider adding a free counter-attack for the defender (mirroring Ranged Reactions)
+- Melee is one-directional (attacker rolls, defender defends) — the person who charges first has the initiative advantage, earning weapon triangle crits. The defender's counterplay is engaging on their own activation (as the attacker, with their own weapon triangle crits) or disengaging via Retreat
+- Armor rescue turns red defense misses into successes rather than adding dice or flat damage reduction — the defender chooses which misses to rescue, creating a decision point. Since rescued dice are red, they block red hits at 1:1 but blue hits at 2:1, making finesse attacks naturally effective against armor
+- Heavy Armor's crit rescue option (1 red miss → crit success) is the only way to block incoming critical hits with armor — this makes Heavy Armor a qualitative upgrade, not just a numerical one

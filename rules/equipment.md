@@ -6,9 +6,9 @@
 
 | Weapon | +Mt | +Lk | Category | Notes |
 |---|---|---|---|---|
-| Dagger | — | +2 | Sword | Fast, finesse |
-| Iron Sword | +2 | — | Sword | Baseline melee |
-| Great Sword | +3 | +1 | Sword | Heavy, powerful |
+| Dagger | — | +1 | Sword | Fast, finesse |
+| Sword | +1 | +1 | Sword | Balanced baseline |
+| Great Sword | +2 | +1 | Sword | Heavy, powerful |
 | Hand Axe | +2 | — | Axe | Baseline axe |
 | War Axe | +3 | — | Axe | Heavy hitter |
 | Spear | +1 | +1 | Spear | Balanced |
@@ -23,7 +23,7 @@ Minimum range 3" unless noted.
 | Weapon | Range | +Mt | +Lk | Notes |
 |---|---|---|---|---|
 | Shortbow | 3"–18" | — | +2 | Fast, Lk-dominant |
-| Longbow | 3"–24" | — | +3 | Longer range, stronger |
+| Longbow | 3"–24" | — | +2 | Longer range, stronger |
 | Crossbow | 3"–24" | +2 | — | Mt-dominant, mechanical |
 | Heavy Crossbow | 3"–30" | +3 | — | Slow, powerful |
 
@@ -44,13 +44,15 @@ Firearms use the **2d6 loading gate**. Double 1s = Misfire, double 6s = Overchar
 
 ## Armor
 
-Armor adds **red defense dice** to the defense pool but **reduces the fighter's Lk** (to a minimum of 1). This penalty applies to the fighter's base Lk stat, affecting attack pools, defense dice, and all Lk checks.
+Armor **rescues red defense misses** — turning failed red defense dice into successes after rolling the defense pool. Armor does not add dice or modify stats.
 
-| Armor | +Red Defense Dice | Lk Penalty | Notes |
-|---|---|---|---|
-| Light Armor | +1 | -1 Lk | Leather, slight agility loss |
-| Medium Armor | +2 | -2 Lk | Chainmail, moderate agility loss |
-| Heavy Armor | +3 | -3 Lk | Plate, severe agility loss |
+| Armor | Rescue | Notes |
+|---|---|---|
+| Light Armor | 1 red miss → normal success | Leather, padded |
+| Medium Armor | 2 red misses → normal successes | Chainmail, brigandine |
+| Heavy Armor | 2 red misses → normal successes **OR** 1 red miss → crit success | Plate, full harness |
+
+Heavy Armor's crit rescue is the only way to block incoming critical hits with armor. The defender chooses which option to use after seeing the attacker's hits.
 
 ---
 
@@ -63,6 +65,7 @@ Armor adds **red defense dice** to the defense pool but **reduces the fighter's 
 - Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
 - Blunderbuss is pure Might, short range, and devastating — the gun equivalent of a war axe
 - Long Rifle has the highest Mt bonus and longest range but is harder to load (7+)
-- Three armor tiers (Light/Medium/Heavy) at +1/+2/+3 red defense dice with matching -1/-2/-3 Lk penalties — a genuine tradeoff, not a pure upgrade. Tanks get tougher but slower, less evasive, and worse at Lk checks (Jump, Retreat)
-- Dwarves (Lk 1) barely notice even Heavy Armor's -3 Lk — they're already at the floor. Elves (Lk 3) in Heavy Armor drop to Lk 1 and lose their core identity. This naturally steers species toward their thematic gear
-- A Dagger or Shortbow can slip past heavy plate since the defender's blue defense is gutted
+- Armor rescues red defense misses (1/2/2-or-crit) rather than adding dice or penalizing stats — no tradeoff, just protection. The cost is in crowns, not in agility
+- Since rescued dice are red, they block red hits at 1:1 but blue hits at 2:1 — finesse weapons (Daggers, bows) naturally bypass armor without any special rule
+- Heavy Armor's crit rescue option is a qualitative jump: it's the only way to block critical hits with armor, making it worth the price premium
+- Armor has no Lk penalty — an Elf in plate is still agile, just expensive. Species gear choices are driven by cost and role, not stat penalties
