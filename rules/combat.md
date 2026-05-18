@@ -66,15 +66,16 @@ If the attacker's Mt or Lk exceeds the defender's, there is no penalty — the d
 For **red defense dice**, roll **d6 + Mt ≥ 8** (toughness absorbs the blow).
 For **blue defense dice**, roll **d6 + Lk ≥ 8** (reflexes deflect the blow).
 
-#### Armor Rescue
+#### Armor & Shield Rescue
 
-After rolling defense dice, **armor rescues red misses** — turning failed red defense dice into successes:
+After rolling defense dice, **armor and shields rescue misses** — turning failed defense dice into successes:
 
-- **Light Armor:** Turn **1 red miss** into a **normal success**
-- **Medium Armor:** Turn **2 red misses** into **normal successes**
-- **Heavy Armor:** Turn **2 red misses** into **normal successes**, **OR** turn **1 red miss** into a **critical success** (can block a critical hit)
+- **Armor** rescues **red** misses: Light (1), Medium (2), Heavy (2 normal OR 1 crit)
+- **Shields** rescue **red and/or blue** misses: Buckler (1 blue), Shield (1 red + 1 blue), Tower Shield (2 red + 1 blue)
 
-The defender chooses which red misses to rescue. Rescued dice follow all normal blocking rules.
+Armor and shield rescues **stack**. The defender chooses which misses to rescue. Rescued dice follow all normal blocking rules. *(See equipment.md for full tables.)*
+
+Heavy Armor's crit rescue (1 red miss → critical success) is the only way to block incoming critical hits with equipment.
 
 Each successful defense die **blocks one hit** of the matching color:
 

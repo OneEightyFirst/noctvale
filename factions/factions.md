@@ -1,10 +1,76 @@
 # Factions
 
-Twelve factions exist in Noctvale, divided loosely by alignment and origin.
+---
+
+## Building a Warband
+
+Every warband is built from two choices: an **Archetype** and a **Domain**.
+
+Your **Archetype** determines how your warband fights — what equipment they can carry, how many fighters you field, and how many casters you can bring.
+
+Your **Domain** determines what supernatural powers your warband wields — your spell list, your position in the magic triangles, and your domain-specific skills. Choose **None** if your warband rejects or lacks magic entirely.
+
+**Archetype + Domain = Faction.**
+
+The named factions of Noctvale are established combinations with their own history, exclusive skills, and unique equipment. Players may use a named faction or create their own combination.
 
 ---
 
-## Faction List
+## Archetypes
+
+| Archetype | Armor Access | Weapon Access | Firearms | Max Casters |
+|---|---|---|---|---|
+| Knights | Heavy | Heavy weapons, tower shields | None domain only | 1 |
+| Hunters | Medium | All weapon types | None domain only | 1 |
+| Folk | Light | Basic weapons | None domain only | 1 |
+| Cult | None | Limited weapons | None domain only | 3 |
+
+**Firearms** are exclusive to warbands with the **None** domain. Magic and gunpowder are mutually exclusive paths to power.
+
+**Alchemy** (potions, poisons) is available to all warbands regardless of archetype or domain.
+
+---
+
+## Domains
+
+| Domain | Triangle | Type |
+|---|---|---|
+| Light | Mystic | Accepted |
+| Arcane | Mystic | Accepted |
+| Nature | Natural | Accepted |
+| Blood | Mystic | Forbidden |
+| Necromancy | Natural | Forbidden |
+| Infernal | Mystic | Forbidden |
+| None | — | — |
+
+Each domain provides a spell list and domain-specific skills. The **None** domain provides no spells but grants access to **firearms**.
+
+---
+
+## Named Factions
+
+Twelve established factions exist in Noctvale. Each is a specific Archetype + Domain combination with unique lore, faction-specific skills, and exclusive equipment.
+
+| Faction | Archetype | Domain | Identity |
+|---|---|---|---|
+| Phoenix Guard | Knights | Light | Elite knights, former High King's personal guard |
+| Nobility | Knights | Blood | Vampire aristocracy, decadent noble houses |
+| Radiant Crusade | Hunters | Light | Holy warriors sworn to destroy undead |
+| Inquisition | Hunters | None | Anti-magic zealots, guns and denial |
+| Silver Hunt | Hunters | None | Monster hunters, alchemy and silver weapons |
+| Nightpack | Hunters | Nature | Werebeast packs, shapeshifter warbands |
+| Coven | Cult | Nature | Witches banding together for survival |
+| Arcane Conclave | Cult | Arcane | Scholars and mages seeking supernatural knowledge |
+| Grave Wardens | Cult | Necromancy | Necromancers commanding the restless dead |
+| Infernal Pact | Cult | Infernal | Demonic cult brotherhoods |
+| Village Watch | Folk | None | Ordinary townsfolk defending their homes |
+| Iron Law | Folk | None | Corrupted remnants of imperial law |
+
+Two factions can share the same Archetype and Domain but play differently through faction-specific skills and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + None, but the Inquisition specializes in anti-magic denial while the Silver Hunt specializes in alchemy, poisons, and silver weaponry.
+
+---
+
+## Faction Lore
 
 ### Phoenix Guard
 Elite hunters and knights tied to the old crown and the fall of the Vampire King. The Phoenix Guard were the High King's personal guard, with a Round Table-like feel. After the fall, they split three ways: four rebelled, four hid, and four joined the turned King. The Phoenix Guard ultimately slew the turned King.
@@ -13,7 +79,7 @@ Elite hunters and knights tied to the old crown and the fall of the Vampire King
 Holy warriors sworn to destroy undead corruption. They swore sacred vows during the Hundred Years of War and continue their crusade across Noctvale.
 
 ### Inquisition
-Anti-magic zealots, potentially opposed to all magic because magic is blamed for the fall of the empire. They declared all magic a corruption that had doomed the realm.
+Anti-magic zealots, opposed to all magic because magic is blamed for the fall of the empire. They declared all magic a corruption that had doomed the realm.
 
 ### Silver Hunt
 Monster hunters, especially targeting werebeasts and wild horrors. They tracked the monstrous beasts that spread through the wild lands during the war.
@@ -22,7 +88,7 @@ Monster hunters, especially targeting werebeasts and wild horrors. They tracked 
 Scholars and mages seeking supernatural knowledge. Originally advised the emperor before the fall. They seek knowledge of the supernatural forces now unleashed across Noctvale.
 
 ### Village Watch
-Ordinary townsfolk defending their homes. Horde archetype. Explicitly not led by sheriffs — these are civilian defenders, not a law enforcement faction. Villages formed watches to protect their homes from all the horrors that roam the land.
+Ordinary townsfolk defending their homes. Not led by sheriffs — these are civilian defenders, not a law enforcement faction. Villages formed watches to protect their homes from all the horrors that roam the land.
 
 ### Iron Law
 Corrupted remnants of imperial law and constabulary. In the absence of the empire's authority, those who once enforced the law took power for themselves. They now rule through fear, chains, and the barrel of a gun.
@@ -44,26 +110,14 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 
 ---
 
-## Faction Categories
-
-Early and current faction groupings include:
-
-- **Knights:** Phoenix Guard, Radiant Crusade
-- **Hunters:** Inquisition, Silver Hunt
-- **Villagers:** Village Watch
-- **Shapeshifters:** Nightpack
-- **Cults:** Coven, Infernal Pact, Grave Wardens
-- **Authority:** Iron Law, Nobility
-- **Scholars:** Arcane Conclave
-
----
-
 ## Design Notes
 
-- "The Nobility" is the preferred broad vampire faction name — vampires are noble houses, not necessarily a single kingdom anymore
-- Village Watch is a horde archetype
-- Iron Law / corrupt constabulary represents oppressive law after the fall
-- There is interest in mixed or flipped alignments, such as a dark-side faction using "good" magic
-- 12 factions gives strong variety for campaign play and warband identity
-
-See [todo.md](../todo.md) for faction mechanical identity tasks, hunter subtype concepts, and open design questions.
+- **Archetype + Domain = Faction** is the core warband-building system — two choices create your identity
+- Named factions are preset combinations with lore and exclusive gear, but players can create custom combinations
+- Two factions with the same Archetype + Domain are differentiated by faction-specific skills and exclusive equipment (Inquisition vs Silver Hunt)
+- Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
+- Cult gets 3 casters but no armor — glass cannon by design
+- Firearms are exclusive to None domain — magic and gunpowder are parallel power systems, not stacking ones
+- Alchemy (potions, poisons) is available to all — it's equipment, not magic
+- "The Nobility" is the preferred vampire faction name — they are noble houses, not a single kingdom
+- Village Watch and Iron Law are both Folk + None by default, but players could just as easily run Folk + Nature (a druidic village), Folk + Infernal (a corrupted township), etc. — the named factions are starting points, not constraints
