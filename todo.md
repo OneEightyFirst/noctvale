@@ -39,11 +39,11 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 
 Create a small playtest weapon list covering the weapon triangle + ranged + firearms.
 
-- [ ] At least one Sword, one Axe, one Spear (melee triangle)
-- [ ] At least one Bow/Crossbow (ranged, Lk-based)
-- [ ] At least one Firearm (crits vs all targets)
-- [ ] Define +Mt / +Lk / range / any special traits per weapon
-- [ ] Create weapon table in a new `equipment/weapons.md` or similar
+- [x] At least one Sword, one Axe, one Spear (melee triangle)
+- [x] At least one Bow/Crossbow (ranged, Lk-based)
+- [x] At least one Firearm (crits vs all targets)
+- [x] Define +Mt / +Lk / range / any special traits per weapon
+- [x] Create weapon table in `rules/weapons.md`
 
 ---
 
@@ -151,6 +151,17 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by warband size, territory exchange minigame
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
+
+### Infernal Summoning
+
+Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant.
+
+- [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer models to own)
+- [ ] Decide if variants are mechanically distinct stat lines or cosmetic with minor trait swaps
+- [ ] Confirm all daemons share a "Daemon" keyword (for Radiant Strike +1 Mt vs Daemons)
+- [ ] Decide if Imp wings have a mechanical fly rule or are visual only
+- [ ] Decide how many summon rolls a warband gets (caster count? fixed? points budget?)
+- [ ] Design the 6 in-game Infernal spells (summoning is pre-game, so all slots are open)
 
 ### Hunter Subtype Design
 

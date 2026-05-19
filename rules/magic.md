@@ -98,7 +98,7 @@ Example spells discussed during design:
 | Spell | Class | Difficulty | +Mt | +Lk | Range | Notes |
 |---|---|---|---|---|---|---|
 | Arcane Bolt | Arcane | 7+ | — | +3 | 20" | Fast, high-finesse spell |
-| Radiant Strike | Light | 7+ | +3 | — | 12" | Raw power; +2 Mt vs Undead |
+| Radiant Strike | Light | 7+ | +3 | — | 12" | Raw power; +1 Mt vs Undead and Daemons |
 | Thorn Volley | Nature | 8+ | +2 | +2 | 12" | Template / shotgun-like |
 | Deathbolt | Necromancy | 10+ | — | +4 | 18" | All blue dice, ignores armor |
 

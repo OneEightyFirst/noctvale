@@ -31,7 +31,8 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small warbands cl
 | Actions & Engagement | `rules/actions.md` |
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
 | Magic System, Firearms & Classes | `rules/magic.md` |
-| Equipment (Weapons & Armor) | `rules/equipment.md` |
+| Weapons (Melee, Ranged, Firearms, Materials) | `rules/weapons.md` |
+| Equipment (Armor, Shields, Alchemy) | `rules/equipment.md` |
 | Exploration Phase | `campaign/exploration.md` |
 | Relic Fragment Economy | `campaign/economy.md` |
 | Factions | `factions/factions.md` |

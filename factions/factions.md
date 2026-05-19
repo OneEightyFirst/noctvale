@@ -96,6 +96,8 @@ Two factions can share the same Archetype and Domain but play differently throug
 
 ## Faction Lore
 
+> **Note:** The lore below is placeholder material — shorthand notes and rough sketches to establish tone and direction. Final lore will be written by a human author.
+
 ### Phoenix Guard
 Elite hunters and knights tied to the old crown and the fall of the Vampire King. The Phoenix Guard were the High King's personal guard, with a Round Table-like feel. After the fall, they split three ways: four rebelled, four hid, and four joined the turned King. The Phoenix Guard ultimately slew the turned King.
 
