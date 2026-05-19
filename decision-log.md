@@ -26,11 +26,27 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
-## 2026-05-19 — Firearms loading gate now 2d6 + Lk
+## 2026-05-19 — Stat bounds: all stats range 1–6
 
-**Decision:** Firearms loading check changed from flat 2d6 to 2d6 + Lk. Difficulties increased by +3 (calibrated to Lk 3 baseline). Pistol/Blunderbuss/Musket now 9+, Long Rifle now 10+.
+**Decision:** All stats (M, CC, RC, Mt, Lk, Wi, Sa, W) range from 1 to 6. A stat of 1 means the fighter is disabled for that stat — they cannot perform actions requiring it. A stat of 6 is peak — only natural 1 fails (83% success).
 
-**Reasoning:** With magic now using 2d6 + Wi, flat 2d6 for firearms felt inconsistent. Lk fits thematically — loading a black powder weapon under pressure is partly luck. This also means high-Lk fighters (Elves at Lk 3) are as reliable as Humans, while low-Lk fighters (Dwarves at Lk 1) struggle with firearms, which feels right.
+**The meaningful tiers:**
+- 1 = Disabled (auto-fail, can't attempt)
+- 2 = Minimal (17%, nat 6 only)
+- 3 = Baseline (33%)
+- 4 = Skilled (50%)
+- 5 = Expert (67%)
+- 6 = Peak (83%)
+
+**Reasoning:** Below 2, the math is identical (nat 6 auto-success only). Above 6, the math is identical (nat 1 auto-fail only). The 1–6 range ensures every stat point matters and creates real consequences for injuries that drop stats.
+
+---
+
+## 2026-05-19 — Firearms loading gate is flat 2d6 (no stat)
+
+**Decision:** Firearms use flat 2d6 vs difficulty 6+ for all weapons. No stat is added. All firearms have the same loading difficulty.
+
+**Reasoning:** A misfire is an equipment failure, not a user error. A veteran and a recruit have the same chance of a misfire — the veteran is better because they hit more often (higher RC), not because the gun fires more reliably. This also keeps firearms simpler than magic and avoids double-dipping with RC (which already handles accuracy). All firearms share 6+ difficulty because the loading process is fundamentally the same across weapon types.
 
 ---
 

@@ -37,7 +37,7 @@ Spell damage is decoupled from the caster's physical stats — magic power comes
 
 Firearms use the same 2d6 gate system as magic, representing the unreliability of black powder weapons.
 
-The shooter rolls **2d6 + Lk** against the firearm's **loading difficulty**.
+The shooter rolls **2d6** against the firearm's **loading difficulty**. No stat is added — the gun either works or it doesn't.
 
 | Result | Effect |
 |---|---|
@@ -195,7 +195,7 @@ Magic is grouped into two broad moral categories:
 - The Mishap system means every spell is a calculated risk, not a guaranteed tool
 - Spell damage is flat (not added to caster stats) — a spell's power comes from the spell itself, not the caster's physical strength. This decouples magical and physical identity
 - Spells produce larger dice pools than weapons (5-6 dice vs 2-4 from weapon modifiers) as the payoff for the casting gate — a sword always works, a spell might fizzle or backfire
-- Firearms use the 2d6 + Lk gate (luck-based) while magic uses 2d6 + Wi (will-based) — both are "unreliable but powerful" gated systems, but keyed to different stats
+- Firearms use a flat 2d6 gate (no stat) while magic uses 2d6 + Wi — guns are purely mechanical (misfire is equipment failure), while casting improves with the caster's Will
 - Mirroring the weapon triangle with magic triangles creates a unified advantage-and-critical framework across all combat types
 - Firearms gaining crits against all targets (outside the triangle) is their payoff for the loading risk
 - Cast not triggering Ranged Reactions gives magic a distinct tactical niche compared to conventional ranged weapons

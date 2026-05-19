@@ -37,16 +37,16 @@ Minimum range 3" unless noted.
 
 ## Firearms
 
-Firearms use the **2d6 + Lk loading gate**. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). **Firearms are exclusive to warbands with the None domain.**
+Firearms use a **flat 2d6 loading gate** — no stat is added. Misfires are equipment failures, not user errors. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). **Firearms are exclusive to warbands with the None domain.**
 
 Firearms generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats.
 
 | Weapon | Hands | Range | Difficulty | Mt | Lk | Notes |
 |---|---|---|---|---|---|---|
-| Pistol | 1H | 0"–12" | 9+ | 5 | 2 | No min range |
-| Long Rifle | 2H | 3"–30" | 10+ | 6 | 2 | Long range, hard to load |
-| Blunderbuss | 2H | 0"–10" | 9+ | 6 | — | No min range, short range, brutal |
-| Musket | 2H | 3"–24" | 9+ | 5 | 3 | Standard infantry firearm |
+| Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range |
+| Long Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range |
+| Blunderbuss | 2H | 0"–10" | 6+ | 6 | — | No min range, short range, brutal |
+| Musket | 2H | 3"–24" | 6+ | 5 | 3 | Standard infantry firearm |
 
 ---
 
@@ -65,10 +65,10 @@ Weapons can be made from special materials that grant bonuses against specific f
 - Melee weapons range from +2 (baseline) to +4 total dice — enough variety without power creep
 - Daggers are pure Lk, great swords are Mt-heavy with a Lk bonus — the weapon's character is built into its color contribution
 - Ranged weapons are Lk-dominant (bows) or Mt-dominant (crossbows), creating distinct tactical identities
-- Firearms generate flat Strike Pools (like spells) rather than adding to base stats — the gun's power comes from the weapon, not the shooter. Gated behind the 2d6 + Lk loading check — high risk, high reward
+- Firearms generate flat Strike Pools (like spells) rather than adding to base stats — the gun's power comes from the weapon, not the shooter. Gated behind a flat 2d6 loading check (no stat added) — misfires are equipment failures, not user errors
 - Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
 - Blunderbuss is pure Might (6 Mt, no Lk), short range, and devastating — the gun equivalent of a war axe
-- Long Rifle has the highest Mt bonus and longest range but is harder to load (10+)
+- Long Rifle has the highest Mt bonus and longest range
 - Silver weapons are a pure counter-pick: expensive, no general benefit, devastating against Nightpack and Nobility specifically
 - Firearms are exclusive to None domain warbands — magic and gunpowder are parallel power systems, not stacking ones
 - 3 weapon slots allow meaningful loadout decisions: Sword + Shield + Dagger, Longbow + Dagger, Pistol + Sword + Buckler, Great Sword + Pistol, etc.

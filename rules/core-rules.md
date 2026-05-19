@@ -19,12 +19,30 @@
 
 ---
 
+## Stat Bounds
+
+All stats range from **1 to 6**.
+
+| Value | Meaning |
+|---|---|
+| 1 | Disabled — cannot perform actions requiring this stat |
+| 2 | Minimal (17% — natural 6 only) |
+| 3 | Baseline (33%) |
+| 4 | Skilled (50%) |
+| 5 | Expert (67%) |
+| 6 | Peak (83% — only natural 1 fails) |
+
+A stat of **1** means the fighter is effectively unable to use that stat. If CC drops to 1, they cannot fight in melee. If RC drops to 1, they cannot use ranged weapons. If Mt or Lk drops to 1, they contribute 0 dice of that color. If Wi drops to 1, they cannot cast spells. If Sa drops to 1, they automatically fail all Sanity tests.
+
+---
+
 ## Stat Rolls
 
 When a stat is tested, roll **d6 + stat ≥ 8** to succeed.
 
 - A natural **1** always fails.
 - A natural **6** always succeeds.
+- A stat of **1** automatically fails — the action cannot be attempted.
 
 This applies to CC and RC when attacking, and to other stat checks (Sa, Lk, Wi) when called for by the rules.
 
@@ -62,6 +80,7 @@ A fighter's **Mt** stat determines their red dice. Their **Lk** stat determines 
 
 ## Design Notes
 
+- All stats range from 1 to 6. Stat 1 = disabled (can't attempt), Stat 6 = peak (only nat 1 fails). Every point between 2 and 6 represents a ~17% improvement
 - All stats are higher-is-better, eliminating the confusion of mixed stat directions
 - The beat-8 threshold (d6 + stat ≥ 8) preserves natural 1s as failures and makes stat differences meaningful: each +1 to a stat improves hit rate by ~17%
 - Mt and Lk as raw dice counts create immediate mechanical identity: high-Mt fighters hit hard and defend with toughness, high-Lk fighters are precise and defend with evasion. Weapons add directly to these stats, so the pool is always fighter + weapon combined
