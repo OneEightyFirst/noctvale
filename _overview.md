@@ -28,6 +28,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small warbands cl
 | Stats & Species Profiles | `rules/core-rules.md` |
 | Combat (Red/Blue Dice Pool, Crits, Defense) | `rules/combat.md` |
 | Conditions (Downed, Stunned, OOA) | `rules/conditions.md` |
+| Sanity (Fear, Panic, Insanity) | `rules/sanity.md` |
 | Actions & Engagement | `rules/actions.md` |
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
 | Magic System, Firearms & Classes | `rules/magic.md` |

@@ -4,6 +4,45 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-19 — Warband size targets
+
+**Decision:** Normal warband size is 5–10 models. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.
+
+**Fighter tiers:** 4 levels — Leader, Caster/Special, Champion, Troop. Archetype determines how many of each you can bring. Cult gets 3 max casters; all other archetypes get 1.
+
+**Edge case noted:** An Infernal Cult warband with 3 casters could theoretically summon enough Imps (post-alpha summoning system) to hit the upper bound if everything goes right. Even in that extreme, the cap should stay around 20 models on the table.
+
+**Status:** Bounds not yet defined. Needs roster-building rules.
+
+---
+
+## 2026-05-19 — Sanity mechanics (Fear, Panic, Insanity)
+
+**Decision:** Three tiers of Sanity effects, all tested with d6 + Sa >= 8:
+
+- **Fear** — Cannot move closer to the source for the rest of your turn.
+- **Panic** — Cannot move closer + must spend at least 1 action moving full movement away from source.
+- **Insanity** — Roll on the Insanity Table (1d6): 1=attack closest model (opponent chooses, not the source), 2–3=move toward nearest board edge (both actions), 4–5=freeze (both actions spent), 6=berserk (charge/shoot source with +2 Mt / +1 Lk, -1 to hit).
+
+**Test timing:** Triggers when a fighter activates within range + LoS of the source, or when charging/charged (melee variant). Default range is 6" + LoS unless the model/spell specifies otherwise.
+
+**Pass:** Immune to that specific source for the rest of the game.
+
+**Fail:** Effect applies. At the start of the fighter's next activation, test again before acting. Pass = act normally. Fail = effect repeats.
+
+**Fear/Panic/Insanity are keywords on specific models and spells, not domain-wide traits.** Not all models in a domain cause fear — it's per profile.
+
+**Fearless** keyword grants immunity to all three.
+
+**Domain tendencies (not rules):**
+- Blood, Necromancy, Infernal — more likely to have fear-causing models
+- Light — fear against Blood, Necromancy, Infernal
+- Nature, Arcane — some fear-causing models
+- Infernal, Arcane — tend toward blanket fear (not domain-targeted)
+- None — access to Fearless abilities
+
+---
+
 ## 2026-05-19 — Sanity stat retained
 
 **Decision:** Sa (Sanity) remains in the stat line for future use with horror, morale, and magical effects. Mechanic to be designed.
