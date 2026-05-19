@@ -152,9 +152,9 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by warband size, territory exchange minigame
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
 
-### Infernal Summoning
+### Infernal Summoning (post-alpha)
 
-Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant.
+Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other warband member — summoning tables are a post-alpha feature.**
 
 - [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer models to own)
 - [ ] Decide if variants are mechanically distinct stat lines or cosmetic with minor trait swaps

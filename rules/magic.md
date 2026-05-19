@@ -13,7 +13,7 @@ Casting a spell is a single **Cast** action. The caster rolls **2d6** against th
 
 | Result | Effect |
 |---|---|
-| **Double 1s** | **Mishap** — the spell fails and the caster suffers the spell's unique backlash effect |
+| **Double 1s** | **Mishap** — the spell fails and the spell's unique backlash occurs (see individual spell descriptions) |
 | **Below difficulty** | The spell fizzles. The action is spent, nothing happens |
 | **Meets or exceeds difficulty** | The spell goes off. Resolve the attack normally |
 | **Double 6s** | **Overcharge** — the spell goes off and all dice in the Strike Pool auto-succeed as hits. Still roll to check for natural 6s (criticals) |
@@ -85,22 +85,83 @@ Having advantage in the triangle grants **critical hits** when attacking with ma
 
 ---
 
-## Spell Design Rule
+## Spell Lists
 
-Each magic class contains at least **one ranged damage spell** functionally similar to **Arcane Bolt** — a baseline offensive option that every caster type can access.
+Each domain has **6 spells**. At least one must be a ranged damage spell.
 
----
+### Light
 
-## Spell Concepts
-
-Example spells discussed during design:
-
-| Spell | Class | Difficulty | +Mt | +Lk | Range | Notes |
+| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Arcane Bolt | Arcane | 7+ | — | +3 | 20" | Fast, high-finesse spell |
-| Radiant Strike | Light | 7+ | +3 | — | 12" | Raw power; +1 Mt vs Undead and Daemons |
-| Thorn Volley | Nature | 8+ | +2 | +2 | 12" | Template / shotgun-like |
-| Deathbolt | Necromancy | 10+ | — | +4 | 18" | All blue dice, ignores armor |
+| Radiant Strike | 7+ | +3 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
+| Holy Light | 7+ | — | — | 12" from caster | All models within 12" lose cover and Hidden condition | *(TBD)* |
+| Heal | 6+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
+| *(TBD — AoE attack)* | 7+ | +3 | +1 | 3" blast from caster | Hits all models in radius | Caster takes the damage |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+
+### Arcane
+
+| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+|---|---|---|---|---|---|---|
+| Arcane Bolt | 7+ | — | +3 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+
+### Infernal
+
+The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
+
+- **Imps** — Usually small, fairly weak, with wings
+- **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
+- **Maulers** — Large, bulky creatures, most of the time humanoid in shape
+
+For alpha, daemons are recruited like any other warband member. Pre-game summoning tables are a post-alpha feature (see todo.md).
+
+| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+|---|---|---|---|---|---|---|
+| *(TBD — attack)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+
+### Nature
+
+| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+|---|---|---|---|---|---|---|
+| Thorn Volley | 8+ | +2 | +2 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+
+### Necromancy
+
+| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+|---|---|---|---|---|---|---|
+| Deathbolt | 10+ | — | +4 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+
+### Blood
+
+| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+|---|---|---|---|---|---|---|
+| *(TBD — attack)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
+| *(TBD)* | | | | | | |
 
 ---
 
