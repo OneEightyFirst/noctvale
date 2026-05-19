@@ -26,6 +26,14 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-19 — Firearms loading gate now 2d6 + Lk
+
+**Decision:** Firearms loading check changed from flat 2d6 to 2d6 + Lk. Difficulties increased by +3 (calibrated to Lk 3 baseline). Pistol/Blunderbuss/Musket now 9+, Long Rifle now 10+.
+
+**Reasoning:** With magic now using 2d6 + Wi, flat 2d6 for firearms felt inconsistent. Lk fits thematically — loading a black powder weapon under pressure is partly luck. This also means high-Lk fighters (Elves at Lk 3) are as reliable as Humans, while low-Lk fighters (Dwarves at Lk 1) struggle with firearms, which feels right.
+
+---
+
 ## 2026-05-19 — Warband size targets
 
 **Decision:** Normal warband size is 5–10 models. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.
