@@ -4,6 +4,28 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-19 — Wi (Will) stat added, flat spell damage, new casting difficulties
+
+**Decisions:**
+
+1. **New stat: Wi (Will)** added to the stat line between Lk and Sa. Represents the ability to channel supernatural power — works for both divine/spiritual and arcane/intellectual magic.
+
+2. **Casting is now 2d6 + Wi vs difficulty** (was flat 2d6 vs difficulty). Firearms remain flat 2d6 — they're mechanical, not magical.
+
+3. **Baseline Wi is 3** for all species. Casters are expected to have Wi 4 (role-based, not species-based). Non-casters have Wi 3 but can technically attempt spells at reduced odds.
+
+4. **Spell difficulties increased by +4** so that a Wi 4 caster has the same success rates as the old flat 2d6 system:
+   - Old 6+ → New 10+ (~72% at Wi 4)
+   - Old 7+ → New 11+ (~58% at Wi 4)
+   - Old 8+ → New 12+ (~42% at Wi 4)
+   - Old 10+ → New 14+ (~17% at Wi 4)
+
+5. **Spell damage is now flat, not additive.** Spells define their own Mt/Lk values as a complete Strike Pool, not as modifiers to the caster's base stats. A spell with 5 Mt always produces 5 red dice regardless of who casts it. Magic power comes from the spell, not the caster's body.
+
+**Reasoning:** Wi as a stat makes caster quality meaningful — a Wi 5 veteran is noticeably better than a Wi 3 novice. Flat spell damage decouples physical and magical identity, so an Elf caster and a Dwarf caster produce the same spell output. Difficulties calibrated to Wi 4 so existing balance math is preserved.
+
+---
+
 ## 2026-05-19 — Warband size targets
 
 **Decision:** Normal warband size is 5–10 models. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.

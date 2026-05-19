@@ -4,7 +4,7 @@
 
 ## Casting
 
-Casting a spell is a single **Cast** action. The caster rolls **2d6** against the spell's **casting difficulty**.
+Casting a spell is a single **Cast** action. The caster rolls **2d6 + Wi** against the spell's **casting difficulty**.
 
 - Spells can be cast **while in melee**
 - Cast actions **do not trigger Ranged Reactions**
@@ -20,16 +20,16 @@ Casting a spell is a single **Cast** action. The caster rolls **2d6** against th
 
 ### Damage Spells
 
-If the spell deals damage, it acts as a **temporary weapon**. The spell defines +Mt and/or +Lk values, a range, and any special properties.
+If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Lk values — these are **not added to the caster's base stats**. A spell with 5 Mt / 2 Lk always produces 5 red dice and 2 blue dice, regardless of who casts it.
 
 Once the spell goes off, resolve the attack using the standard combat sequence:
 
-1. **Build Strike Pool** — fighter's base Mt/Lk + the spell's +Mt/+Lk
+1. **Build Strike Pool** — use the spell's Mt/Lk values (flat, not additive)
 2. **Roll to hit** — d6 + RC ≥ 8 for ranged spells, d6 + CC ≥ 8 for melee spells
 3. **Defender rolls defense** — normal defense pool rules apply
 4. **Apply wounds** — as normal
 
-Spells are generally **more powerful than standard weapons** (+3 or +4 rather than +2), compensating for the casting gate and Mishap risk.
+Spell damage is decoupled from the caster's physical stats — magic power comes from the spell, not the caster's body.
 
 ---
 
@@ -91,20 +91,20 @@ Each domain has **6 spells**. At least one must be a ranged damage spell.
 
 ### Light
 
-| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Radiant Strike | 7+ | +3 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
-| Holy Light | 7+ | — | — | 12" from caster | All models within 12" lose cover and Hidden condition | *(TBD)* |
-| Heal | 6+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
-| *(TBD — AoE attack)* | 7+ | +3 | +1 | 3" blast from caster | Hits all models in radius | Caster takes the damage |
+| Radiant Strike | 11+ | 5 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
+| Holy Light | 11+ | — | — | 12" from caster | All models within 12" lose cover and Hidden condition | *(TBD)* |
+| Heal | 10+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
+| *(TBD — AoE attack)* | 11+ | 5 | 2 | 3" blast from caster | Hits all models in radius | Caster takes the damage |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 
 ### Arcane
 
-| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Arcane Bolt | 7+ | — | +3 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
+| Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -121,7 +121,7 @@ The hells hold infinite daemonic entities of different shapes and sizes. To help
 
 For alpha, daemons are recruited like any other warband member. Pre-game summoning tables are a post-alpha feature (see todo.md).
 
-| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | *(TBD — attack)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -132,9 +132,9 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 ### Nature
 
-| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Thorn Volley | 8+ | +2 | +2 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
+| Thorn Volley | 12+ | 4 | 4 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -143,9 +143,9 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 ### Necromancy
 
-| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Deathbolt | 10+ | — | +4 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
+| Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -154,7 +154,7 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 ### Blood
 
-| Spell | Difficulty | +Mt | +Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | *(TBD — attack)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -190,12 +190,14 @@ Magic is grouped into two broad moral categories:
 
 ## Design Notes
 
-- 2d6 casting (rather than a single d6) gives a bell curve — most spells go off, but Mishaps on double 1s are rare and dramatic (~2.8%)
+- 2d6 + Wi casting gives a bell curve modified by the caster's Will — better casters are more reliable. Difficulties are calibrated so Wi 4 (standard caster) matches the original flat 2d6 odds
 - Double 6s Overcharge is equally rare (~2.8%) and creates spectacular moments without adding complexity — all hits land, just check for crits
 - The Mishap system means every spell is a calculated risk, not a guaranteed tool
-- Spells being more powerful than weapons (+3/+4 vs +2) is the payoff for the casting gate — a sword always works, a spell might fizzle or backfire
+- Spell damage is flat (not added to caster stats) — a spell's power comes from the spell itself, not the caster's physical strength. This decouples magical and physical identity
+- Spells produce larger dice pools than weapons (5-6 dice vs 2-4 from weapon modifiers) as the payoff for the casting gate — a sword always works, a spell might fizzle or backfire
 - Firearms sharing the 2d6 gate with magic unifies two "unreliable but powerful" systems under one mechanic — guns are the martial equivalent of spellcasting
 - Mirroring the weapon triangle with magic triangles creates a unified advantage-and-critical framework across all combat types
 - Firearms gaining crits against all targets (outside the triangle) is their payoff for the loading risk
 - Cast not triggering Ranged Reactions gives magic a distinct tactical niche compared to conventional ranged weapons
 - The "at least one Arcane Bolt equivalent" ensures every magic class has offensive utility
+- Wi baseline is 3 for all species; casters are expected to have Wi 4+. A Wi 3 non-caster can technically attempt spells but at reduced odds
