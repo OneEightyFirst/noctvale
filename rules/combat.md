@@ -20,13 +20,13 @@ A fighter attacking **unarmed** uses only their base Mt and Lk.
 |---|---|---|---|---|
 | Sword | Melee | Engagement | +1 | +1 |
 
-A Human (Mt 2, Lk 2) with a Sword: **(2+1) red + (2+1) blue = 3 red + 3 blue = 6 dice**
+A Human (Mt 3, Lk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
 
 | Fighter | Base Mt | Base Lk | Weapon | Red | Blue | Total |
 |---|---|---|---|---|---|---|
-| Human (Mt 2, Lk 2) | 2 | 2 | Sword (+1 Mt, +1 Lk) | 3 | 3 | 6 |
-| Elf (Mt 1, Lk 3) | 1 | 3 | Shortbow (+2 Lk) | 1 | 5 | 6 |
-| Dwarf (Mt 3, Lk 1) | 3 | 1 | War Axe (+2 Mt) | 5 | 1 | 6 |
+| Human (Mt 3, Lk 4) | 3 | 4 | Sword (+1 Mt, +1 Lk) | 4 | 5 | 9 |
+| Elf (Mt 3, Lk 4) | 3 | 4 | Shortbow (+2 Lk) | 3 | 6 | 9 |
+| Dwarf (Mt 4, Lk 3) | 4 | 3 | War Axe (+2 Mt) | 6 | 3 | 9 |
 
 ### Step 2: Roll to Hit
 
@@ -143,43 +143,46 @@ Firearms use the **2d6 loading gate** (same as magic casting) and gain criticals
 
 ## Combat Example
 
-**Attacker:** Human Fighter (CC 3, Mt 2, Lk 2) wielding a Sword (+1 Mt, +1 Lk)
-**Defender:** Dwarf Fighter (CC 3, Mt 3, Lk 1) wielding a Battle Axe (+2 Mt), wearing Medium Armor
+**Attacker:** Human Fighter (CC 3, Mt 3, Lk 4) wielding a Sword (+1 Mt, +1 Lk)
+**Defender:** Dwarf Fighter (CC 3, Mt 4, Lk 3) wielding a Battle Axe (+2 Mt), wearing Medium Armor
 
-**Step 1:** Human Strike Pool = (Mt 2 + Sword 1) red + (Lk 2 + Sword 1) blue = **3 red + 3 blue = 6 dice**
+**Step 1:** Human Strike Pool = (Mt 3 + Sword 1) red + (Lk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
 
 **Step 2:** Roll each die, adding CC 3. Need ≥ 8 (so 5+ on the die).
 - Red die 1: rolls 5 → 5 + 3 = 8 → **red hit**
 - Red die 2: rolls 2 → 2 + 3 = 5 → miss
 - Red die 3: rolls 1 → auto-miss
+- Red die 4: rolls 4 → 4 + 3 = 7 → miss
 - Blue die 1: rolls 6 → auto-hit → **blue hit**
 - Blue die 2: rolls 5 → 5 + 3 = 8 → **blue hit**
 - Blue die 3: rolls 4 → 4 + 3 = 7 → miss
+- Blue die 4: rolls 3 → 3 + 3 = 6 → miss
+- Blue die 5: rolls 5 → 5 + 3 = 8 → **blue hit**
 
-Result: 1 red hit, 2 blue hits (3 hits total)
+Result: 1 red hit, 3 blue hits (4 hits total)
 
 **Step 3:** Sword vs Axe → Sword has advantage. The natural 6 on Blue die 1 is a **critical blue hit** (unblockable).
 
 **Step 4:** Dwarf defense pool:
 - Base: 1 red + 1 blue
-- Mt comparison: Dwarf Mt 3 vs Human Mt 2 → Dwarf Mt is 1 higher → +1 red defense die
-- Lk comparison: Dwarf Lk 1 vs Human Lk 2 → Dwarf Lk is lower → no bonus
+- Mt comparison: Dwarf Mt 4 vs Human Mt 3 → Dwarf Mt is 1 higher → +1 red defense die
+- Lk comparison: Dwarf Lk 3 vs Human Lk 4 → Human Lk is higher → no bonus
 - Total defense: 2 red dice + 1 blue die
 
 Roll defense:
-- Red die 1: d6 + Mt 3 → rolls 5 → 8 → **success**
-- Red die 2: d6 + Mt 3 → rolls 3 → 6 → fail
-- Blue die 1: d6 + Lk 1 → rolls 4 → 5 → fail
+- Red die 1: d6 + Mt 4 → rolls 4 → 8 → **success**
+- Red die 2: d6 + Mt 4 → rolls 3 → 7 → fail
+- Blue die 1: d6 + Lk 3 → rolls 4 → 7 → fail
 
-**Armor Rescue:** The Dwarf wears Medium Armor — rescue 2 red misses. Red die 2 (rolled 6) becomes a **normal red success**. Only 1 red die missed, so 1 rescue is used.
+**Armor Rescue:** The Dwarf wears Medium Armor — rescue 2 red misses. Red die 2 failed, so 1 rescue is used → **normal red success**. Blue die 1 failed but Medium Armor only rescues red misses.
 
 Defense results: 2 red successes, 0 blue successes.
 - Red success 1 blocks the red hit (1:1 same color)
 - Red success 2: no more red hits to block. Could block a blue hit at 2:1, but only 1 red success remains — not enough.
 
-The critical blue hit cannot be blocked. The normal blue hit is unblocked.
+The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 
-**Step 5:** 2 unblocked wounds. The Dwarf takes 2 Wounds (4 → 2 remaining).
+**Step 5:** 3 unblocked wounds. The Dwarf takes 3 Wounds (4 → 1 remaining).
 
 ---
 

@@ -87,7 +87,7 @@ Having advantage in the triangle grants **critical hits** when attacking with ma
 
 ## Spell Lists
 
-Each domain has **6 spells**. At least one must be a ranged damage spell.
+Each domain has a **standard ranged attack spell** (not counted toward the limit) plus **6 additional spells**.
 
 ### Light
 
@@ -96,16 +96,17 @@ Each domain has **6 spells**. At least one must be a ranged damage spell.
 | Radiant Strike | 11+ | 5 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
 | Holy Light | 11+ | — | — | 12" from caster | All models within 12" lose cover and Hidden condition | *(TBD)* |
 | Heal | 10+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
-| *(TBD — AoE attack)* | 11+ | 5 | 2 | 3" blast from caster | Hits all models in radius | Caster takes the damage |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+| Purge the Faithless | 11+ | 5 | 2 | 3" blast from caster | Hits all models in radius | Caster takes the damage |
+| Shield of Faith | 11+ | — | — | 12" | Target gains +2 red defense dice and causes Fear. Lasts until the start of the caster's next activation | *(TBD)* |
+| Horrors Relived | 12+ | Target's Sa | — | 12" | Ranged attack; Strike Pool Mt equals the target's Sa stat | Caster takes the damage (using target's Sa as Mt) |
+| Unwavering Resolve | 10+ | — | — | 8" from caster | All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation | *(TBD)* |
 
 ### Arcane
 
 | Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
-| *(TBD)* | | | | | | |
+| Arcane Shield | 11+ | — | — | Self | Caster is immune to all spells. At the start of the caster's next activation, roll 1d6 — on 1–2 the shield disappears | *(TBD)* |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -146,11 +147,21 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 | Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
+| Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See Skeleton profile below | The Skeleton appears hostile — your opponent controls it for its single activation |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+
+#### Skeleton Profile
+
+| M | CC | RC | Mt | Lk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
+
+**Equipment:** Sword and Shield (already included in Mt/Lk). Cannot be changed.
+
+**Keywords:** Undead. Fearless. Immune to Sanity tests.
 
 ### Blood
 

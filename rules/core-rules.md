@@ -53,17 +53,17 @@ This applies to CC and RC when attacking, and to other stat checks (Sa, Lk, Wi) 
 ### Human Fighter
 | M | CC | RC | Mt | Lk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|
-| 6" | 3 | 3 | 2 | 2 | 3 | 3 | 3 |
+| 6" | 3 | 3 | 3 | 4 | 3 | 4 | 3 |
 
 ### Elf Fighter
 | M | CC | RC | Mt | Lk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|
-| 7" | 3 | 3 | 1 | 3 | 3 | 3 | 1 |
+| 7" | 3 | 3 | 3 | 4 | 4 | 3 | 2 |
 
 ### Dwarf Fighter
 | M | CC | RC | Mt | Lk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|
-| 5" | 3 | 3 | 3 | 1 | 3 | 3 | 4 |
+| 5" | 3 | 3 | 4 | 3 | 3 | 3 | 4 |
 
 ---
 
@@ -84,7 +84,7 @@ A fighter's **Mt** stat determines their red dice. Their **Lk** stat determines 
 - All stats are higher-is-better, eliminating the confusion of mixed stat directions
 - The beat-8 threshold (d6 + stat ≥ 8) preserves natural 1s as failures and makes stat differences meaningful: each +1 to a stat improves hit rate by ~17%
 - Mt and Lk as raw dice counts create immediate mechanical identity: high-Mt fighters hit hard and defend with toughness, high-Lk fighters are precise and defend with evasion. Weapons add directly to these stats, so the pool is always fighter + weapon combined
-- Humans are balanced (2/2), Elves are finesse-heavy (1/3), Dwarves are might-heavy (3/1) — differentiation is built into the stat line rather than needing special rules
+- Humans are lucky and mentally resilient (Lk 4, Sa 4), Elves are agile and mystical (Lk 4, Wi 4, fast, fragile), Dwarves are tough and sturdy (Mt 4, W 4, slow) — all species are competent at baseline, with species identity expressed as specialty bonuses rather than crippling weaknesses
 - Df is no longer a separate stat — defense is derived from base dice (1 red + 1 blue) plus Mt/Lk comparisons
 - Wi (Will) is the casting stat — added to 2d6 for spellcasting. Baseline 3 for all species; casters are expected to have Wi 4+. Spell difficulties are calibrated so Wi 4 matches the old flat 2d6 odds
 - Sa (Sanity) is the mental defense stat — used to resist Fear, Panic, and Insanity (see sanity.md)

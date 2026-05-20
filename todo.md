@@ -88,7 +88,32 @@ Define mechanical identity for all 12 factions (special rule, magic alignment, c
 
 ---
 
-## Phase 5b: Playtest Rosters
+## Phase 5b: Archetype & Domain Skills
+
+Define skill lists for each archetype and each domain. Skills are the primary mechanical differentiation layer — archetypes define how a warband fights, domains define what supernatural tools they bring, and skills make those choices feel distinct on the table.
+
+- [ ] Decide skill structure (passive abilities, activated abilities, or both)
+- [ ] Decide how skills are acquired (built into fighter type, purchased with XP, chosen at warband creation, etc.)
+- [ ] Decide skill count per list (e.g., 6 per archetype, 6 per domain)
+- [ ] Write Archetype skill lists:
+  - [ ] Knights
+  - [ ] Hunters
+  - [ ] Folk
+  - [ ] Cult
+- [ ] Write Domain skill lists:
+  - [ ] Light
+  - [ ] Arcane
+  - [ ] Infernal
+  - [ ] Nature
+  - [ ] Necromancy
+  - [ ] Blood
+  - [ ] None
+- [ ] Decide if named factions get 1–2 exclusive faction skills on top of archetype + domain skills
+- [ ] Confirm skills don't duplicate or conflict with spells, equipment, or special rules
+
+---
+
+## Phase 5c: Playtest Rosters
 
 Build full playtest rosters for Silver Hunt and Nightpack.
 
@@ -96,6 +121,7 @@ Build full playtest rosters for Silver Hunt and Nightpack.
 - [ ] Assign stat lines (based on species baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
 - [ ] Assign spells from Phase 4 list (if applicable)
+- [ ] Assign skills from Phase 5b lists
 - [ ] Set warband size / point budget (or fixed roster for first test)
 - [ ] Calculate total warband cost and verify balance parity
 
@@ -118,7 +144,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 
 Create fighter card template and warband roster sheet.
 
-- [ ] Design fighter card layout (stats, weapons, spells, wounds, conditions)
+- [ ] Design fighter card layout (stats, weapons, spells, skills, wounds, conditions)
 - [ ] Create printable card template with cut marks
 - [ ] Design warband roster sheet (fighter list, equipment, fragments, currency)
 - [ ] Decide on templating / layout tool
@@ -146,6 +172,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [ ] **Setting scope:** Broad cursed-land Noctvale vs. single-castle betrayal setting — this affects scenarios, exploration, economy flavor, and faction framing
 - [ ] **Castle pivot implications:** If the game takes place in a single castle, exploration becomes castle-zone exploration; factions represent forces trapped inside or rushing to exploit the betrayal; relic fragments could become keys, blood seals, royal edicts, sacred brands, etc.
 - [ ] **Warband building system:** Points-based, fixed lists (Spearhead-style), or constrained draft?
+- [ ] **Species costing:** Elves and Dwarves should cost more than Humans when list building — Humans are the true baseline, Elves/Dwarves pay a premium for specialty bonuses (Wi 4 + M 7" for Elves, Mt 4 + W 4 for Dwarves)
 - [ ] **Campaign injury / advancement system:** Post-game consequences for Out of Action fighters (injuries, death, stat gains) — referenced in conditions.md but not yet written
 - [ ] **Exploration location tables:** Discovery tables per location type (Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard) — referenced in exploration.md but not yet written
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
