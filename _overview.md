@@ -39,6 +39,10 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small warbands cl
 | Relic Fragment Economy | `campaign/economy.md` |
 | Factions | `factions/factions.md` |
 | Decision Log | `decision-log.md` |
+| Reference Material | `reference-material.md` |
+| Rosewater 20 Lessons | `reference-rosewater-20-lessons.md` |
+| Schreiber Game Balance | `reference-schreiber-game-balance.md` |
+| Balance Insights (Applied) | `reference-balance-insights.md` |
 
 ---
 

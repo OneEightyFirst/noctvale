@@ -47,6 +47,12 @@ Firearms generate a **flat Strike Pool** — the values below are the complete p
 | Long Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range |
 | Blunderbuss | 2H | 0"–10" | 6+ | 6 | — | No min range, short range, brutal |
 | Musket | 2H | 3"–24" | 6+ | 5 | 3 | Standard infantry firearm |
+| Flintlock Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range, Single Shot |
+| Flintlock Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range, Single Shot |
+| Flintlock Blunderbuss | 2H | 0"–10" | 6+ | 6 | — | No min range, short range, brutal, Single Shot |
+| Flintlock Musket | 2H | 3"–24" | 6+ | 5 | 3 | Single Shot |
+
+**Single Shot:** This weapon can only be fired once per game. After firing, it cannot be reloaded.
 
 ---
 
@@ -69,6 +75,7 @@ Weapons can be made from special materials that grant bonuses against specific f
 - Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
 - Blunderbuss is pure Might (6 Mt, no Lk), short range, and devastating — the gun equivalent of a war axe
 - Long Rifle has the highest Mt bonus and longest range
+- Flintlock variants are identical to their standard counterparts but Single Shot (one fire per game) and cheaper — a budget option for warbands that want firearm alpha strikes without paying full price for reloadable guns
 - Silver weapons are a pure counter-pick: expensive, no general benefit, devastating against Nightpack and Nobility specifically
 - Firearms are exclusive to None domain warbands — magic and gunpowder are parallel power systems, not stacking ones
 - 3 weapon slots allow meaningful loadout decisions: Sword + Shield + Dagger, Longbow + Dagger, Pistol + Sword + Buckler, Great Sword + Pistol, etc.

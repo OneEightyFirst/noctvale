@@ -172,11 +172,12 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [ ] **Setting scope:** Broad cursed-land Noctvale vs. single-castle betrayal setting — this affects scenarios, exploration, economy flavor, and faction framing
 - [ ] **Castle pivot implications:** If the game takes place in a single castle, exploration becomes castle-zone exploration; factions represent forces trapped inside or rushing to exploit the betrayal; relic fragments could become keys, blood seals, royal edicts, sacred brands, etc.
 - [ ] **Warband building system:** Points-based, fixed lists (Spearhead-style), or constrained draft?
-- [ ] **Species costing:** Elves and Dwarves should cost more than Humans when list building — Humans are the true baseline, Elves/Dwarves pay a premium for specialty bonuses (Wi 4 + M 7" for Elves, Mt 4 + W 4 for Dwarves)
+- [ ] **Species costing:** Elves and Dwarves should cost more than Humans when list building — Humans are the true baseline, Elves/Dwarves pay a premium for specialty bonuses (Wi 4 + M 7" for Elves, Mt 4 + M 5" for Dwarves). W is normalized to 3 across all species (see decision log 2026-05-20)
 - [ ] **Campaign injury / advancement system:** Post-game consequences for Out of Action fighters (injuries, death, stat gains) — referenced in conditions.md but not yet written
 - [ ] **Exploration location tables:** Discovery tables per location type (Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard) — referenced in exploration.md but not yet written
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by warband size, territory exchange minigame
+- [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
 
 ### Infernal Summoning (post-alpha)

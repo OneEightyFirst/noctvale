@@ -4,13 +4,25 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-20 — All species normalized to W 3
+
+**Decision:** All species now share W 3. Dwarves reduced from W 4, Elves raised from W 2.
+
+**Reasoning:** Wounds multiplicatively amplifies every piece of defensive gear — armor saves, shield saves, toughness rolls all become more valuable with more wounds to protect. W 4 Dwarves weren't "33% tougher" than W 3 Humans; they got 33% more value from every defensive die. W 2 Elves weren't just "a bit fragile"; they got roughly half the value from the same equipment. This made Wounds nearly impossible to price correctly in a points system.
+
+With W normalized, defensive differentiation comes from stats (Mt for toughness), armor tiers, shields, and special rules — all of which scale linearly and are easier to cost. Dwarves remain tough through Mt 4 and access to heavy armor. Elves remain fragile through lighter armor access and lower Mt, without being catastrophically so.
+
+**Ripple effects:** Species costing is simplified — the multiplicative W problem is eliminated. Dwarf identity shifts to "tough through armor and Mt" rather than "tough through raw wounds." Elf identity shifts from "glass cannon" to "lightly armored but not paper." Special rules (e.g., a "Stubborn Constitution" feel-no-pain ability for Dwarves) can reintroduce wound-like resilience at a precise point cost if needed later.
+
+---
+
 ## 2026-05-19 — Species stat overhaul: baseline 3, specialty bonuses
 
 **Decision:** All stats baseline at 3 (5+ to succeed). Each species gets two specialty bonuses (+1 to specific stats) that define their identity, plus movement and wound variation.
 
 **Old baselines:** Human Mt 2/Lk 2, Elf Mt 1/Lk 3, Dwarf Mt 3/Lk 1.
 
-**New profiles:**
+**New profiles (as of this date — W later normalized, see 2026-05-20):**
 - **Human:** Mt 3, Lk 4, Wi 3, Sa 4, M 6", W 3 — lucky and mentally resilient
 - **Elf:** Mt 3, Lk 4, Wi 4, Sa 3, M 7", W 2 — agile and mystical
 - **Dwarf:** Mt 4, Lk 3, Wi 3, Sa 3, M 5", W 4 — tough and sturdy
@@ -18,6 +30,8 @@ Decisions made during design, with reasoning. Newest entries at the top.
 **Reasoning:** Every fighter should pass stat tests at a realistic baseline (33% at stat 3). Species differentiation is expressed as specialty bonuses rather than crippling weaknesses. Humans are resilient (Lk + Sa), Elves are the natural caster species (Lk + Wi, fast, fragile), Dwarves are physical (Mt + W, slow, durable). Humans and Elves share Lk 4 but diverge on their second bonus (Sa vs Wi) and survivability (W 3 vs W 2).
 
 **Ripple effects:** Strike pools are larger (Human + Sword = 9 dice). Defense Mt/Lk comparisons are tighter between species. Skeleton profile updated to Mt 4/Lk 5 with Sword baked in. Elf W raised from 1 to 2.
+
+> **Superseded (2026-05-20):** W values later normalized to 3 for all species. See decision log entry 2026-05-20.
 
 ---
 
