@@ -4,6 +4,26 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-24 — Throwing stars, slings, bombs, smoke bombs, auto-fail rule
+
+**Decisions:**
+
+1. **Throwing Stars** added as an additive ranged weapon (+1 Lk, 1H, 0"–8", no min range). A pocket ranged option for close-quarters fighters.
+
+2. **Sling** added with a flat Strike Pool (2 Mt / 1 Lk) — weaker than the cheapest firearm (Pistol at 5/2). Uses normal RC to-hit roll, no loading gate. The cheapest ranged option in the game, available to everyone.
+
+3. **Bombs** added as thrown AoE explosives (3" blast, None domain only). Mechanic: declare target direction → roll 2d6 gunpowder gate (≥ 6+, double 1s = explodes in hand) → roll d6 + Mt for max distance. On pass, place blast anywhere along the line. On fail, scatter die determines direction. Flat Strike Pool (3 Mt / 2 Lk).
+
+4. **Smoke Bombs** use the same bomb mechanics but deal no damage — create a 6" cloud blocking LoS until end of round.
+
+5. **Auto-fail rule** added to core rules: a fighter may choose to automatically fail any test without rolling. Primary use case is dropping a smoke bomb at your own feet for instant cover, but applies universally.
+
+6. **Scatter die** (physical, with arrows on multiple sides and a bullseye) is a required game component for bomb scatter resolution.
+
+**Reasoning:** Slings fill the gap between melee and firearms for warbands that can't afford (or aren't allowed) gunpowder. Throwing stars give any fighter a close-range ranged option without committing to a 2H weapon. Bombs give None domain warbands AoE capability that firearms lack, with the tradeoff of unpredictable distance and scatter risk. The Mt-based distance (d6 + Mt) makes strong fighters better throwers. Smoke bombs are pure utility — the 6" cloud and auto-fail combo creates a defensive tool that rewards tactical play.
+
+---
+
 ## 2026-05-20 — All species normalized to W 3
 
 **Decision:** All species now share W 3. Dwarves reduced from W 4, Elves raised from W 2.
