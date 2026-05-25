@@ -43,6 +43,7 @@ When a stat is tested, roll **d6 + stat ≥ 8** to succeed.
 - A natural **1** always fails.
 - A natural **6** always succeeds.
 - A stat of **1** automatically fails — the action cannot be attempted.
+- A fighter may **choose to automatically fail** any test without rolling.
 
 This applies to CC and RC when attacking, and to other stat checks (Sa, Lk, Wi) when called for by the rules.
 

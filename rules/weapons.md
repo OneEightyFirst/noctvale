@@ -32,6 +32,17 @@ Minimum range 3" unless noted.
 | Longbow | 2H | 3"–24" | — | +2 | Longer range, stronger |
 | Crossbow | 2H | 3"–24" | +2 | — | Mt-dominant, mechanical |
 | Heavy Crossbow | 2H | 3"–30" | +3 | — | Slow, powerful |
+| Throwing Stars | 1H | 0"–8" | — | +1 | No min range, thrown |
+
+---
+
+## Slings
+
+Slings generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats. Slings use a normal ranged attack roll (d6 + RC ≥ 8) to hit. No loading gate.
+
+| Weapon | Hands | Range | Mt | Lk | Notes |
+|---|---|---|---|---|---|
+| Sling | 1H | 3"–12" | 2 | 1 | Cheap, one-handed |
 
 ---
 
@@ -56,6 +67,30 @@ Firearms generate a **flat Strike Pool** — the values below are the complete p
 
 ---
 
+## Bombs
+
+Bombs are thrown explosives with a flat Strike Pool that hits all models (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **Bombs are exclusive to warbands with the None domain** (gunpowder).
+
+### Throwing a Bomb
+
+1. **Declare a target** (pick a direction/point you're aiming at).
+2. **Roll 2d6** (gunpowder gate, same as firearms):
+   - **Double 1s:** Bomb explodes in the thrower's hand. Center the blast template on the thrower.
+   - **Fail (not double 1s):** Bomb is still thrown but scatters. Roll **d6 + Mt** for distance in inches, then roll a **scatter die** for direction (relative to the declared target). The bomb detonates where it lands.
+   - **Pass (≥ 6+):** Bomb is on target. Roll **d6 + Mt** for maximum distance in inches — place the blast marker anywhere along that line up to the rolled distance.
+3. All models (friend and foe) under the blast template suffer the Strike Pool.
+
+### Bomb Table
+
+| Weapon | Hands | Distance | Mt | Lk | Notes |
+|---|---|---|---|---|---|
+| Bomb | 1H | d6 + Mt | 3 | 2 | 3" blast, Single Shot |
+| Smoke Bomb | 1H | d6 + Mt | — | — | 6" blast, Single Shot, Smoke |
+
+**Smoke:** Creates a 6" cloud that blocks line of sight for all models. The cloud remains until the end of the round. A fighter may choose to auto-fail the 2d6 gate (see core rules) to detonate the smoke bomb at their feet, creating instant cover centered on themselves.
+
+---
+
 ## Weapon Materials
 
 Weapons can be made from special materials that grant bonuses against specific factions. Material upgrades increase the weapon's cost but do not take a weapon slot.
@@ -76,6 +111,10 @@ Weapons can be made from special materials that grant bonuses against specific f
 - Blunderbuss is pure Might (6 Mt, no Lk), short range, and devastating — the gun equivalent of a war axe
 - Long Rifle has the highest Mt bonus and longest range
 - Flintlock variants are identical to their standard counterparts but Single Shot (one fire per game) and cheaper — a budget option for warbands that want firearm alpha strikes without paying full price for reloadable guns
+- Slings use flat pools like firearms but weaker (2 Mt / 1 Lk vs Pistol's 5 Mt / 2 Lk) and require no loading gate — the cheapest ranged option, available to everyone
+- Throwing Stars are additive (+1 Lk), no minimum range, 1H — a pocket ranged option for close-quarters fighters
+- Bombs use the same 2d6 gunpowder gate as firearms (≥ 6+, double 1s = explodes in hand). Distance is d6 + Mt inches — on a pass you place the blast anywhere along that line, on a fail it scatters (scatter die for direction). Strong fighters throw farther
+- Smoke Bombs share bomb mechanics but deal no damage — pure utility for blocking LoS
 - Silver weapons are a pure counter-pick: expensive, no general benefit, devastating against Nightpack and Nobility specifically
 - Firearms are exclusive to None domain warbands — magic and gunpowder are parallel power systems, not stacking ones
 - 3 weapon slots allow meaningful loadout decisions: Sword + Shield + Dagger, Longbow + Dagger, Pistol + Sword + Buckler, Great Sword + Pistol, etc.
