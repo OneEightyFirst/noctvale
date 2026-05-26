@@ -16,7 +16,7 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ## 2026-05-26 — Influence Bubble equipment (Relic, Instrument)
 
-**Decision:** Added the Influence Bubble mechanic — equipment that projects a passive area effect around the bearer. Two items added: Relic (+1 Sa, 6", passive, 2 slots) and Instrument (+1" M, 6", costs 1 action per turn, 1 slot).
+**Decision:** Added the Influence Bubble mechanic — equipment that projects a passive area effect around the bearer. Two items added: Relic (+1 Sa, 6", passive, 2 slots) and Instrument (+1" M, 6", costs 1 action per turn, 2 slots).
 
 **Key rules:**
 - Bearer must be Active (suppressed while Downed/Stunned/OOA)
@@ -24,7 +24,7 @@ Decisions made during design, with reasoning. Newest entries at the top.
 - Bearer benefits from their own bubble
 - Same-item bubbles do not stack (two Relics = more coverage, not +2 Sa)
 
-**Reasoning:** Influence Bubbles create high-value support pieces that opponents want to prioritize. Relic at 2 weapon slots makes the bearer a dedicated support fighter. Instrument at 1 slot is cheaper but costs an action each turn, halving the bearer's combat output. Item names are deliberately generic — a Relic can be a banner, totem, censer, or anything else; an Instrument can be a drum, horn, bell, etc.
+**Reasoning:** Influence Bubbles create high-value support pieces that opponents want to prioritize. Relic at 2 weapon slots makes the bearer a dedicated support fighter. Instrument at 2 slots also limits weapon options, and costs an action each turn on top of that, halving the bearer's combat output. Item names are deliberately generic — a Relic can be a banner, totem, censer, or anything else; an Instrument can be a drum, horn, bell, etc.
 
 ---
 

@@ -65,7 +65,7 @@ Influence equipment is **permanent** (not consumed between games). Each item tak
 | Item | Slots | Influence (friendly) | Range | Notes |
 |---|---|---|---|---|
 | Relic | 2 | +1 Sa | 6" | Passive |
-| Instrument | 1 | +1" M | 6" | Requires 1 action to activate each turn |
+| Instrument | 2 | +1" M | 6" | Requires 1 action to activate each turn |
 
 The Instrument's Influence Bubble is not passive — the bearer must spend **1 action per turn** playing the instrument. If they do not spend the action, the Influence Bubble is inactive that turn.
 
@@ -87,6 +87,6 @@ The Instrument's Influence Bubble is not passive — the bearer must spend **1 a
 - No LoS requirement keeps Influence Bubbles simple and avoids the "can my banner see through this wall" question — they represent proximity, not awareness
 - Same-item non-stacking prevents warband-wide stat inflation from spamming banners — two banners cover more area, not more bonus
 - Relic at 2 weapon slots is a real investment: the bearer carries it and one sidearm at most, making them a support piece, not a frontline fighter
-- Instrument requires an action each turn, creating tension — the bearer contributes to the warband's speed but sacrifices half their own actions to do it
+- Instrument at 2 slots plus an action each turn is a heavy investment — the bearer contributes to the warband's speed but sacrifices weapon flexibility and half their own actions to do it
 - The bearer benefits from their own Influence Bubble — a relic bearer steadies their own nerves, an instrument player keeps their own pace
 - Relic and Instrument are deliberately generic names — players model and flavor them however fits their warband
