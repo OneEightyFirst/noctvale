@@ -4,6 +4,60 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-26 — Shadowmeld (Nature) and Nightfall (Blood) spells
+
+**Decision:** Two thematically paired darkness spells — one for Nature, one for Blood. Same concept (shadow/darkness), opposite application.
+
+**Shadowmeld (Nature):**
+- Target friendly fighter gains **Hidden**. While under this spell, the target **does not need to remain within 1" of terrain** to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy as normal. Lasts until the caster's next activation.
+- **Mishap:** The shadow inverts — enemies gain **+1 to hit** the target with ranged weapons and spells until the start of the caster's next activation.
+- **Design intent:** The spell *is* the shadow — it follows the fighter, letting them cross open ground while Hidden. Defensive/evasive, fitting Nature's protective identity.
+
+**Nightfall (Blood):**
+- Target friendly Blood domain fighter is engulfed in a shadow bubble. **No ranged weapons or spells can target into or out of the bubble.** The target gains **+1 to hit with CC** while within the bubble. Lasts until the caster's next activation.
+- **Mishap:** Bright light erupts instead — enemies gain **+1 to hit** the caster with ranged weapons, and the caster suffers **-1 Mt** until the start of their next activation.
+- **Design intent:** The vampire chooses to step into darkness — it's a self-buff, not an enemy lockdown. The darkness cuts both ways (no friendly ranged/spells can help either). Pairs with Enthrall (pull enemies into engagement) and Predator's Grace (close distance before darkness drops). Targets friendly Blood domain models specifically, not just any friendly fighter.
+
+**Reasoning:** Both spells use shadow but from opposite directions — Nature hides in it (defensive), Blood fights in it (aggressive). Nightfall targets friendly Blood domain fighters specifically to prevent it from being used as a ranged shutdown tool against enemies.
+
+**Ripple effect:** "Touching terrain" replaced with "within 1" of terrain" globally in Hidden rules (actions.md) for clarity.
+
+**Open questions:**
+- Casting difficulties not yet assigned for either spell.
+- Nightfall's bubble size — is it just the model's base, or does it extend outward? Current read is model-only (1" engagement range defines the "inside").
+
+---
+
+## 2026-05-26 — Blood domain identity and spell list (draft)
+
+**Decision:** Blood is the buff/debuff domain, themed around vampiric predation and hedonism. Blood magic draws power from living blood — vitality, hunger, transformation, excess. It is the domain of the Nobility (Knights + Blood).
+
+**Vampires are undead** — technically dead but sustained by blood magic. They carry the **Undead** keyword (Radiant Strike's +1 Mt vs Undead applies). The distinction from Necromancy: a necromancer's skeleton is a puppet with no will; a vampire is a predator whose blood magic gives it will, intelligence, and power of its own. Necromancy's triangle advantage over Blood (crits) represents necromancers exploiting the death at a vampire's core — but expressed mechanically through the triangle, not through "control" effects.
+
+**Domain distinction:**
+- **Necromancy** = dominion over death itself. Corpses, bones, spirits, decay. The dead are tools.
+- **Blood** = power drawn from living blood. Vitality, hunger, transformation, predation. Buff/debuff identity.
+
+**Draft spell list:**
+- **Leech** (freebie attack) — Ranged attack; if target takes ≥1 wound, caster heals 1 wound. Mishap: caster takes the damage.
+- **Bleed** — Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding condition — 1 wound immediately, test Wi each activation until passed or dead. Mishap: caster gains Bleeding.
+- **Blood Frenzy** — Friendly target gains +3 Mt, -1 to hit. Lasts until caster's next activation.
+- **Predator's Grace** — Friendly target gains +1" M, +1 Sk. Lasts until caster's next activation.
+- **Unholy Vigor** — Friendly target regains 1 wound. If at full wounds, +1 red defense die instead. Lasts until caster's next activation.
+- **Enthrall** — Target enemy within 8" must pass Wi check or immediately take one Move action in a direction chosen by the caster. Mishap: a friendly fighter (opponent's choice) takes the move instead.
+- **Feast of Excess** — Friendly target gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned (keeps wounds but vulnerable).
+
+**Open questions:**
+- Bleed difficulty — very strong vs low-Wi targets (Wi 3 = 33% chance to shake per turn). Warrants high difficulty (12+ or 14+).
+- Feast of Excess → Stunned — in the current wound state system, Stunned is normally part of the Active → Downed → Stunned → OOA chain. A fighter Stunned from Feast still has wounds. Can they be Mercy Killed? Do they need Help to recover, or do they automatically revert to Active after one turn? Needs a ruling.
+- Bleeding is a new condition not yet defined in conditions.md.
+- Remaining Mishaps TBD for Blood Frenzy, Predator's Grace, Unholy Vigor, Feast of Excess.
+- Casting difficulties not yet assigned for any Blood spell.
+
+**Affliction confirmed:** Enfeebled is Blood's signature affliction (strips Mt and Sk — drains vitality). Weakened belongs to Necromancy.
+
+---
+
 ## 2026-05-26 — Lk (Luck) renamed to Sk (Skill)
 
 **Decision:** The stat abbreviation Lk (Luck) is now Sk (Skill) across all rules and references. Blue dice represent Skill — finesse, reflexes, precision, trained technique.
