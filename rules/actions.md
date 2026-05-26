@@ -23,10 +23,10 @@ Move vertically at **half movement**. Cannot end in engagement range.
 Move at **half movement** through difficult terrain. Cannot end in engagement range.
 
 ### Jump
-Move across open space up to Movement value. Must pass a **Lk check** (d6 + Lk ≥ 8). Cannot end in engagement range.
+Move across open space up to Movement value. Must pass a **Sk check** (d6 + Sk ≥ 8). Cannot end in engagement range.
 
 ### Retreat
-Attempt to leave engagement range. Roll a **Lk check** (d6 + Lk ≥ 8).
+Attempt to leave engagement range. Roll a **Sk check** (d6 + Sk ≥ 8).
 
 On failure: the opponent may make a **free Melee attack** using the full attack sequence (Strike Pool, red/blue split, to-hit, defense) — but only if they are not currently engaged with another enemy. This does not cost the opponent any actions.
 
@@ -44,7 +44,7 @@ Attack with a **ranged weapon**. The target must be within the weapon's minimum 
 Cast a spell or fire a firearm. Roll **2d6** against the spell's casting difficulty or the firearm's loading difficulty. If successful, resolve the attack using the spell/firearm as a weapon. Spells **can be cast while in melee**. *(See magic.md for 2d6 outcomes: Mishap, Overcharge, etc.)*
 
 ### Aim
-Prepare a careful shot. Grants **+1 die of the weapon's dominant color** and **critical hits on natural 6s** on the fighter's next **Ranged** action this activation. The dominant color is whichever stat the weapon adds more of (+Mt = red, +Lk = blue). If tied, the player chooses.
+Prepare a careful shot. Grants **+1 die of the weapon's dominant color** and **critical hits on natural 6s** on the fighter's next **Ranged** action this activation. The dominant color is whichever stat the weapon adds more of (+Mt = red, +Sk = blue). If tied, the player chooses.
 
 ### Mercy Kill
 Execute a **Stunned** enemy within 1". The Stunned fighter is immediately **Out of Action**. *(See conditions.md)*
@@ -137,7 +137,7 @@ Begin a new round at Step 1.
 ## Design Notes
 
 - 2 actions per activation keeps the game moving without overly complex turn structures
-- Retreat as a Lk check adds risk to disengaging — escape isn't guaranteed
+- Retreat as a Sk check adds risk to disengaging — escape isn't guaranteed
 - Spells being castable in melee prevents "safe zones" and keeps magic integrated with close-quarters fighting
 - Aim adds +1 die of the weapon's dominant color and unlocks crits on natural 6s — it costs half an activation, so the tradeoff is tempo for precision. This is the only crit path for conventional ranged weapons (bows, crossbows); firearms crit inherently
 - Brace as +1 red (Mt) defense die rewards tough fighters for hunkering down — Dwarves love it, Elves prefer other options

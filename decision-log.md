@@ -4,15 +4,39 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-26 — Lk (Luck) renamed to Sk (Skill)
+
+**Decision:** The stat abbreviation Lk (Luck) is now Sk (Skill) across all rules and references. Blue dice represent Skill — finesse, reflexes, precision, trained technique.
+
+**Reasoning:** "Luck" implied randomness and fate, which didn't match what the stat actually governs. A fighter with high blue dice isn't lucky — they're trained, precise, and technically proficient. "Skill" better describes what the stat mechanically represents: the ability to land precise strikes, dodge through reflexes, and outmaneuver opponents. The abbreviation Sk avoids collision with any existing stat.
+
+**Ripple effects:** Global rename across all active rules files. Archive files left unchanged as historical snapshots.
+
+---
+
+## 2026-05-26 — Influence Bubble equipment (Relic, Instrument)
+
+**Decision:** Added the Influence Bubble mechanic — equipment that projects a passive area effect around the bearer. Two items added: Relic (+1 Sa, 6", passive, 2 slots) and Instrument (+1" M, 6", costs 1 action per turn, 1 slot).
+
+**Key rules:**
+- Bearer must be Active (suppressed while Downed/Stunned/OOA)
+- No LoS required (proximity, not vision)
+- Bearer benefits from their own bubble
+- Same-item bubbles do not stack (two Relics = more coverage, not +2 Sa)
+
+**Reasoning:** Influence Bubbles create high-value support pieces that opponents want to prioritize. Relic at 2 weapon slots makes the bearer a dedicated support fighter. Instrument at 1 slot is cheaper but costs an action each turn, halving the bearer's combat output. Item names are deliberately generic — a Relic can be a banner, totem, censer, or anything else; an Instrument can be a drum, horn, bell, etc.
+
+---
+
 ## 2026-05-24 — Throwing stars, slings, bombs, smoke bombs, auto-fail rule
 
 **Decisions:**
 
-1. **Throwing Stars** added as an additive ranged weapon (+1 Lk, 1H, 0"–8", no min range). A pocket ranged option for close-quarters fighters.
+1. **Throwing Stars** added as an additive ranged weapon (+1 Sk, 1H, 0"–8", no min range). A pocket ranged option for close-quarters fighters.
 
-2. **Sling** added with a flat Strike Pool (2 Mt / 1 Lk) — weaker than the cheapest firearm (Pistol at 5/2). Uses normal RC to-hit roll, no loading gate. The cheapest ranged option in the game, available to everyone.
+2. **Sling** added with a flat Strike Pool (2 Mt / 1 Sk) — weaker than the cheapest firearm (Pistol at 5/2). Uses normal RC to-hit roll, no loading gate. The cheapest ranged option in the game, available to everyone.
 
-3. **Bombs** added as thrown AoE explosives (3" blast, None domain only). Mechanic: declare target direction → roll 2d6 gunpowder gate (≥ 6+, double 1s = explodes in hand) → roll d6 + Mt for max distance. On pass, place blast anywhere along the line. On fail, scatter die determines direction. Flat Strike Pool (3 Mt / 2 Lk).
+3. **Bombs** added as thrown AoE explosives (3" blast, None domain only). Mechanic: declare target direction → roll 2d6 gunpowder gate (≥ 6+, double 1s = explodes in hand) → roll d6 + Mt for max distance. On pass, place blast anywhere along the line. On fail, scatter die determines direction. Flat Strike Pool (3 Mt / 2 Sk).
 
 4. **Smoke Bombs** use the same bomb mechanics but deal no damage — create a 6" cloud blocking LoS until end of round.
 
@@ -40,16 +64,16 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 **Decision:** All stats baseline at 3 (5+ to succeed). Each species gets two specialty bonuses (+1 to specific stats) that define their identity, plus movement and wound variation.
 
-**Old baselines:** Human Mt 2/Lk 2, Elf Mt 1/Lk 3, Dwarf Mt 3/Lk 1.
+**Old baselines:** Human Mt 2/Sk 2, Elf Mt 1/Sk 3, Dwarf Mt 3/Sk 1.
 
 **New profiles (as of this date — W later normalized, see 2026-05-20):**
-- **Human:** Mt 3, Lk 4, Wi 3, Sa 4, M 6", W 3 — lucky and mentally resilient
-- **Elf:** Mt 3, Lk 4, Wi 4, Sa 3, M 7", W 2 — agile and mystical
-- **Dwarf:** Mt 4, Lk 3, Wi 3, Sa 3, M 5", W 4 — tough and sturdy
+- **Human:** Mt 3, Sk 4, Wi 3, Sa 4, M 6", W 3 — lucky and mentally resilient
+- **Elf:** Mt 3, Sk 4, Wi 4, Sa 3, M 7", W 2 — agile and mystical
+- **Dwarf:** Mt 4, Sk 3, Wi 3, Sa 3, M 5", W 4 — tough and sturdy
 
-**Reasoning:** Every fighter should pass stat tests at a realistic baseline (33% at stat 3). Species differentiation is expressed as specialty bonuses rather than crippling weaknesses. Humans are resilient (Lk + Sa), Elves are the natural caster species (Lk + Wi, fast, fragile), Dwarves are physical (Mt + W, slow, durable). Humans and Elves share Lk 4 but diverge on their second bonus (Sa vs Wi) and survivability (W 3 vs W 2).
+**Reasoning:** Every fighter should pass stat tests at a realistic baseline (33% at stat 3). Species differentiation is expressed as specialty bonuses rather than crippling weaknesses. Humans are resilient (Sk + Sa), Elves are the natural caster species (Sk + Wi, fast, fragile), Dwarves are physical (Mt + W, slow, durable). Humans and Elves share Sk 4 but diverge on their second bonus (Sa vs Wi) and survivability (W 3 vs W 2).
 
-**Ripple effects:** Strike pools are larger (Human + Sword = 9 dice). Defense Mt/Lk comparisons are tighter between species. Skeleton profile updated to Mt 4/Lk 5 with Sword baked in. Elf W raised from 1 to 2.
+**Ripple effects:** Strike pools are larger (Human + Sword = 9 dice). Defense Mt/Sk comparisons are tighter between species. Skeleton profile updated to Mt 4/Sk 5 with Sword baked in. Elf W raised from 1 to 2.
 
 > **Superseded (2026-05-20):** W values later normalized to 3 for all species. See decision log entry 2026-05-20.
 
@@ -59,7 +83,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 **Decisions:**
 
-1. **New stat: Wi (Will)** added to the stat line between Lk and Sa. Represents the ability to channel supernatural power — works for both divine/spiritual and arcane/intellectual magic.
+1. **New stat: Wi (Will)** added to the stat line between Sk and Sa. Represents the ability to channel supernatural power — works for both divine/spiritual and arcane/intellectual magic.
 
 2. **Casting is now 2d6 + Wi vs difficulty** (was flat 2d6 vs difficulty). Firearms remain flat 2d6 — they're mechanical, not magical.
 
@@ -71,7 +95,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
    - Old 8+ → New 12+ (~42% at Wi 4)
    - Old 10+ → New 14+ (~17% at Wi 4)
 
-5. **Spell damage is now flat, not additive.** Spells define their own Mt/Lk values as a complete Strike Pool, not as modifiers to the caster's base stats. A spell with 5 Mt always produces 5 red dice regardless of who casts it. Magic power comes from the spell, not the caster's body.
+5. **Spell damage is now flat, not additive.** Spells define their own Mt/Sk values as a complete Strike Pool, not as modifiers to the caster's base stats. A spell with 5 Mt always produces 5 red dice regardless of who casts it. Magic power comes from the spell, not the caster's body.
 
 **Reasoning:** Wi as a stat makes caster quality meaningful — a Wi 5 veteran is noticeably better than a Wi 3 novice. Flat spell damage decouples physical and magical identity, so an Elf caster and a Dwarf caster produce the same spell output. Difficulties calibrated to Wi 4 so existing balance math is preserved.
 
@@ -79,7 +103,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 ## 2026-05-19 — Stat bounds: all stats range 1–6
 
-**Decision:** All stats (M, CC, RC, Mt, Lk, Wi, Sa, W) range from 1 to 6. A stat of 1 means the fighter is disabled for that stat — they cannot perform actions requiring it. A stat of 6 is peak — only natural 1 fails (83% success).
+**Decision:** All stats (M, CC, RC, Mt, Sk, Wi, Sa, W) range from 1 to 6. A stat of 1 means the fighter is disabled for that stat — they cannot perform actions requiring it. A stat of 6 is peak — only natural 1 fails (83% success).
 
 **The meaningful tiers:**
 - 1 = Disabled (auto-fail, can't attempt)
@@ -119,7 +143,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 - **Fear** — Cannot move closer to the source for the rest of your turn.
 - **Panic** — Cannot move closer + must spend at least 1 action moving full movement away from source.
-- **Insanity** — Roll on the Insanity Table (1d6): 1=attack closest model (opponent chooses, not the source), 2–3=move toward nearest board edge (both actions), 4–5=freeze (both actions spent), 6=berserk (charge/shoot source with +2 Mt / +1 Lk, -1 to hit).
+- **Insanity** — Roll on the Insanity Table (1d6): 1=attack closest model (opponent chooses, not the source), 2–3=move toward nearest board edge (both actions), 4–5=freeze (both actions spent), 6=berserk (charge/shoot source with +2 Mt / +1 Sk, -1 to hit).
 
 **Test timing:** Triggers when a fighter activates within range + LoS of the source, or when charging/charged (melee variant). Default range is 6" + LoS unless the model/spell specifies otherwise.
 
@@ -162,10 +186,10 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 - **Radiant Strike** — 7+, +3 Mt, 12", +1 Mt vs Undead and Daemons. Mishap: caster takes the damage.
 - **Holy Light** — 7+, 12" from caster, strips cover and Hidden condition from all models in range. Reveal/utility spell, not damage.
 - **Heal** — 6+, 1" range, restore 1 wound + improve wound state by one step. Mishap: deal 1 wound to target instead.
-- **AoE attack (unnamed)** — 7+, +3 Mt / +1 Lk, 3" blast from caster, hits all models in radius. Mishap: caster takes the damage.
+- **AoE attack (unnamed)** — 7+, +3 Mt / +1 Sk, 3" blast from caster, hits all models in radius. Mishap: caster takes the damage.
 - 2 slots remaining (TBD).
 
-**Reasoning:** 7+ is the standard Light difficulty. The AoE attack at 7+ with +3 Mt / +1 Lk is justified by the caster needing to be surrounded by enemies to use it — positional risk compensates for multi-target value. Heal at 6+ is the easiest spell, justified by 1" touch range and the caster spending their activation on support.
+**Reasoning:** 7+ is the standard Light difficulty. The AoE attack at 7+ with +3 Mt / +1 Sk is justified by the caster needing to be surrounded by enemies to use it — positional risk compensates for multi-target value. Heal at 6+ is the easiest spell, justified by 1" touch range and the caster spending their activation on support.
 
 ---
 

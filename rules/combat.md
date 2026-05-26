@@ -6,27 +6,27 @@
 
 ### Step 1: Build the Strike Pool
 
-The Strike Pool is the fighter's **Mt + Lk**, modified by their weapon.
+The Strike Pool is the fighter's **Mt + Sk**, modified by their weapon.
 
 - The fighter's **Mt** = red dice
-- The fighter's **Lk** = blue dice
-- The weapon adds **+Mt** (red dice) and/or **+Lk** (blue dice)
+- The fighter's **Sk** = blue dice
+- The weapon adds **+Mt** (red dice) and/or **+Sk** (blue dice)
 
-A fighter attacking **unarmed** uses only their base Mt and Lk.
+A fighter attacking **unarmed** uses only their base Mt and Sk.
 
 ### Example
 
-| Weapon | Type | Range | +Mt | +Lk |
+| Weapon | Type | Range | +Mt | +Sk |
 |---|---|---|---|---|
 | Sword | Melee | Engagement | +1 | +1 |
 
-A Human (Mt 3, Lk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
+A Human (Mt 3, Sk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
 
-| Fighter | Base Mt | Base Lk | Weapon | Red | Blue | Total |
+| Fighter | Base Mt | Base Sk | Weapon | Red | Blue | Total |
 |---|---|---|---|---|---|---|
-| Human (Mt 3, Lk 4) | 3 | 4 | Sword (+1 Mt, +1 Lk) | 4 | 5 | 9 |
-| Elf (Mt 3, Lk 4) | 3 | 4 | Shortbow (+2 Lk) | 3 | 6 | 9 |
-| Dwarf (Mt 4, Lk 3) | 4 | 3 | War Axe (+2 Mt) | 6 | 3 | 9 |
+| Human (Mt 3, Sk 4) | 3 | 4 | Sword (+1 Mt, +1 Sk) | 4 | 5 | 9 |
+| Elf (Mt 3, Sk 4) | 3 | 4 | Shortbow (+2 Sk) | 3 | 6 | 9 |
+| Dwarf (Mt 4, Sk 3) | 4 | 3 | War Axe (+2 Mt) | 6 | 3 | 9 |
 
 ### Step 2: Roll to Hit
 
@@ -56,15 +56,15 @@ The defender generates a defense pool:
 
 **Base defense: 1 red die + 1 blue die**
 
-Then compare **Mt** and **Lk** between attacker and defender:
+Then compare **Mt** and **Sk** between attacker and defender:
 
 - For each point the defender's **Mt exceeds** the attacker's Mt → **+1 red defense die**
-- For each point the defender's **Lk exceeds** the attacker's Lk → **+1 blue defense die**
+- For each point the defender's **Sk exceeds** the attacker's Sk → **+1 blue defense die**
 
-If the attacker's Mt or Lk exceeds the defender's, there is no penalty — the defender simply doesn't gain bonus dice for that color.
+If the attacker's Mt or Sk exceeds the defender's, there is no penalty — the defender simply doesn't gain bonus dice for that color.
 
 For **red defense dice**, roll **d6 + Mt ≥ 8** (toughness absorbs the blow).
-For **blue defense dice**, roll **d6 + Lk ≥ 8** (reflexes deflect the blow).
+For **blue defense dice**, roll **d6 + Sk ≥ 8** (reflexes deflect the blow).
 
 #### Armor & Shield Rescue
 
@@ -143,10 +143,10 @@ Firearms use the **2d6 loading gate** (same as magic casting) and gain criticals
 
 ## Combat Example
 
-**Attacker:** Human Fighter (CC 3, Mt 3, Lk 4) wielding a Sword (+1 Mt, +1 Lk)
-**Defender:** Dwarf Fighter (CC 3, Mt 4, Lk 3) wielding a Battle Axe (+2 Mt), wearing Medium Armor
+**Attacker:** Human Fighter (CC 3, Mt 3, Sk 4) wielding a Sword (+1 Mt, +1 Sk)
+**Defender:** Dwarf Fighter (CC 3, Mt 4, Sk 3) wielding a Battle Axe (+2 Mt), wearing Medium Armor
 
-**Step 1:** Human Strike Pool = (Mt 3 + Sword 1) red + (Lk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
+**Step 1:** Human Strike Pool = (Mt 3 + Sword 1) red + (Sk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
 
 **Step 2:** Roll each die, adding CC 3. Need ≥ 8 (so 5+ on the die).
 - Red die 1: rolls 5 → 5 + 3 = 8 → **red hit**
@@ -166,13 +166,13 @@ Result: 1 red hit, 3 blue hits (4 hits total)
 **Step 4:** Dwarf defense pool:
 - Base: 1 red + 1 blue
 - Mt comparison: Dwarf Mt 4 vs Human Mt 3 → Dwarf Mt is 1 higher → +1 red defense die
-- Lk comparison: Dwarf Lk 3 vs Human Lk 4 → Human Lk is higher → no bonus
+- Sk comparison: Dwarf Sk 3 vs Human Sk 4 → Human Sk is higher → no bonus
 - Total defense: 2 red dice + 1 blue die
 
 Roll defense:
 - Red die 1: d6 + Mt 4 → rolls 4 → 8 → **success**
 - Red die 2: d6 + Mt 4 → rolls 3 → 7 → fail
-- Blue die 1: d6 + Lk 3 → rolls 4 → 7 → fail
+- Blue die 1: d6 + Sk 3 → rolls 4 → 7 → fail
 
 **Armor Rescue:** The Dwarf wears Medium Armor — rescue 2 red misses. Red die 2 failed, so 1 rescue is used → **normal red success**. Blue die 1 failed but Medium Armor only rescues red misses.
 
@@ -188,13 +188,13 @@ The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 
 ## Design Notes
 
-- The Strike Pool (base Mt/Lk + weapon modifiers) builds directly from the fighter's identity — no separate attack/damage multiplication step
-- Weapons add to Mt or Lk, so a weapon's character is inherent: a sword adds Might, a bow adds Luck. The fighter and weapon combine into a single pool
-- The red/blue split creates the duelist vs tank distinction: high-Mt fighters generate red hits (blockable by armor), high-Lk fighters generate blue hits (require finesse or 2:1 brute force to block)
+- The Strike Pool (base Mt/Sk + weapon modifiers) builds directly from the fighter's identity — no separate attack/damage multiplication step
+- Weapons add to Mt or Sk, so a weapon's character is inherent: a sword adds Might, a bow adds Skill. The fighter and weapon combine into a single pool
+- The red/blue split creates the duelist vs tank distinction: high-Mt fighters generate red hits (blockable by armor), high-Sk fighters generate blue hits (require finesse or 2:1 brute force to block)
 - The 2:1 crossover ratio (2R blocks 1B, 2B blocks 1R) means any fighter CAN deal with mismatched hits, but at double cost — color-matched defense is always more efficient
 - Criticals as unblockable 6s add tension without a separate crit table, and the weapon triangle rewards tactical awareness
-- Defense scaling with Mt/Lk comparisons means fighting someone stronger than you is harder to survive — stat advantages compound across attack and defense
-- Armor rescuing red defense misses means heavy armor is most effective against Might-based attacks and less effective against Luck-based finesse — thematic and mechanically distinct
+- Defense scaling with Mt/Sk comparisons means fighting someone stronger than you is harder to survive — stat advantages compound across attack and defense
+- Armor rescuing red defense misses means heavy armor is most effective against Might-based attacks and less effective against Skill-based finesse — thematic and mechanically distinct
 - Ranged Reactions keep ranged combat deadly without making it oppressive — every shot gives the target agency
 - Triggering on target selection (not just hits) means even missed shots have a cost, discouraging low-odds spam
 - Reactions only happen on the opponent's turn — the active player accepts the risk of return fire without recourse, giving the target the last word

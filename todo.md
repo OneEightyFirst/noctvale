@@ -22,10 +22,10 @@ Design and write the complete turn structure (initiative, activation pattern, ro
 
 Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, step-by-step example).
 
-- [x] Strike Pool = Mt + Lk + weapon modifiers
+- [x] Strike Pool = Mt + Sk + weapon modifiers
 - [x] To-hit: d6 + CC ≥ 8 (melee) / d6 + RC ≥ 8 (ranged)
 - [x] Criticals from weapon triangle advantage (natural 6s)
-- [x] Defense pool: base 1R + 1B, +dice from Mt/Lk comparison, +armor
+- [x] Defense pool: base 1R + 1B, +dice from Mt/Sk comparison, +armor
 - [x] 2:1 crossover blocking
 - [x] Wound application → Downed → Stunned → OOA
 - [x] Full worked combat example in combat.md
@@ -40,9 +40,9 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 Create a small playtest weapon list covering the weapon triangle + ranged + firearms.
 
 - [x] At least one Sword, one Axe, one Spear (melee triangle)
-- [x] At least one Bow/Crossbow (ranged, Lk-based)
+- [x] At least one Bow/Crossbow (ranged, Sk-based)
 - [x] At least one Firearm (crits vs all targets)
-- [x] Define +Mt / +Lk / range / any special traits per weapon
+- [x] Define +Mt / +Sk / range / any special traits per weapon
 - [x] Create weapon table in `rules/weapons.md`
 
 ---

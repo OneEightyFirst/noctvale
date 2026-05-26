@@ -20,11 +20,11 @@ Casting a spell is a single **Cast** action. The caster rolls **2d6 + Wi** again
 
 ### Damage Spells
 
-If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Lk values — these are **not added to the caster's base stats**. A spell with 5 Mt / 2 Lk always produces 5 red dice and 2 blue dice, regardless of who casts it.
+If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Sk values — these are **not added to the caster's base stats**. A spell with 5 Mt / 2 Sk always produces 5 red dice and 2 blue dice, regardless of who casts it.
 
 Once the spell goes off, resolve the attack using the standard combat sequence:
 
-1. **Build Strike Pool** — use the spell's Mt/Lk values (flat, not additive)
+1. **Build Strike Pool** — use the spell's Mt/Sk values (flat, not additive)
 2. **Roll to hit** — d6 + RC ≥ 8 for ranged spells, d6 + CC ≥ 8 for melee spells
 3. **Defender rolls defense** — normal defense pool rules apply
 4. **Apply wounds** — as normal
@@ -91,7 +91,7 @@ Each domain has a **standard ranged attack spell** (not counted toward the limit
 
 ### Light
 
-| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Radiant Strike | 11+ | 5 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
 | Holy Light | 11+ | — | — | 12" from caster | All models within 12" lose cover and Hidden condition | *(TBD)* |
@@ -103,7 +103,7 @@ Each domain has a **standard ranged attack spell** (not counted toward the limit
 
 ### Arcane
 
-| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
 | Arcane Shield | 11+ | — | — | Self | Caster is immune to all spells. At the start of the caster's next activation, roll 1d6 — on 1–2 the shield disappears | *(TBD)* |
@@ -122,7 +122,7 @@ The hells hold infinite daemonic entities of different shapes and sizes. To help
 
 For alpha, daemons are recruited like any other warband member. Pre-game summoning tables are a post-alpha feature (see todo.md).
 
-| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | *(TBD — attack)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -133,7 +133,7 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 ### Nature
 
-| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Thorn Volley | 12+ | 4 | 4 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
 | *(TBD)* | | | | | | |
@@ -144,7 +144,7 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 ### Necromancy
 
-| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
 | Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See Skeleton profile below | The Skeleton appears hostile — your opponent controls it for its single activation |
@@ -155,17 +155,17 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 #### Skeleton Profile
 
-| M | CC | RC | Mt | Lk | Wi | Sa | W |
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|
 | 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
 
-**Equipment:** Sword and Shield (already included in Mt/Lk). Cannot be changed.
+**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
 
 **Keywords:** Undead. Fearless. Immune to Sanity tests.
 
 ### Blood
 
-| Spell | Difficulty | Mt | Lk | Range | Effect | Mishap |
+| Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | *(TBD — attack)* | | | | | | |
 | *(TBD)* | | | | | | |

@@ -60,7 +60,7 @@ Roll on the **Insanity Table (1d6)**:
 - 1 — **Frenzy:** Attack the closest model (chosen by your opponent). It cannot be the source of the Insanity.
 - 2–3 — **Flee:** Spend both actions moving toward the nearest board edge.
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
-- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity with **+2 Mt** and **+1 Lk** but **-1 to hit**. If their primary weapon is ranged, they spend both actions firing at the source with **-1 to hit**.
+- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity with **+2 Mt** and **+1 Sk** but **-1 to hit**. If their primary weapon is ranged, they spend both actions firing at the source with **-1 to hit**.
 
 ---
 

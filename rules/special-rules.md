@@ -14,7 +14,7 @@ Parts of the miniature extending beyond the base are **ignored**.
 
 If **more than half** of the target model is obscured, the target has cover.
 
-**Cover grants +1 blue defense die** (rolled with Lk).
+**Cover grants +1 blue defense die** (rolled with Sk).
 
 ---
 
@@ -32,7 +32,7 @@ Most ranged weapons have a **minimum range of 3"**. Pistols have **no minimum ra
 
 ## Falling
 
-Roll a **Lk check** (d6 + Lk ≥ 8) when a fighter falls.
+Roll a **Sk check** (d6 + Sk ≥ 8) when a fighter falls.
 
 For every **2 inches fallen**, roll one die.
 
@@ -79,7 +79,7 @@ If a friendly fighter is **also engaged** with the same enemy:
 ## Design Notes
 
 - LoS model-to-model (ignoring base overhang) keeps it simple and consistent with most skirmish conventions
-- Cover as +1 blue (Lk) defense die represents using terrain to dodge — Elves thrive in cover, Dwarves prefer to Brace
-- Falling damage as a per-2" Lk check scales naturally with height
+- Cover as +1 blue (Sk) defense die represents using terrain to dodge — Elves thrive in cover, Dwarves prefer to Brace
+- Falling damage as a per-2" Sk check scales naturally with height
 - Overwatch as a catch-up mechanic prevents outnumbered players from being steamrolled by activation order
 - Gang Up gives the attacker a free die of their choice — lets them shore up a weakness or double down on a strength

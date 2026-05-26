@@ -10,7 +10,7 @@ Each fighter has **3 weapon slots**. One-handed weapons and shields take **1 slo
 
 ## Melee Weapons
 
-| Weapon | Hands | +Mt | +Lk | Category | Notes |
+| Weapon | Hands | +Mt | +Sk | Category | Notes |
 |---|---|---|---|---|---|
 | Dagger | 1H | — | +1 | Sword | Fast, finesse |
 | Sword | 1H | +1 | +1 | Sword | Balanced baseline |
@@ -26,9 +26,9 @@ Each fighter has **3 weapon slots**. One-handed weapons and shields take **1 slo
 
 Minimum range 3" unless noted.
 
-| Weapon | Hands | Range | +Mt | +Lk | Notes |
+| Weapon | Hands | Range | +Mt | +Sk | Notes |
 |---|---|---|---|---|---|
-| Shortbow | 2H | 3"–18" | — | +2 | Fast, Lk-dominant |
+| Shortbow | 2H | 3"–18" | — | +2 | Fast, Sk-dominant |
 | Longbow | 2H | 3"–24" | — | +2 | Longer range, stronger |
 | Crossbow | 2H | 3"–24" | +2 | — | Mt-dominant, mechanical |
 | Heavy Crossbow | 2H | 3"–30" | +3 | — | Slow, powerful |
@@ -40,7 +40,7 @@ Minimum range 3" unless noted.
 
 Slings generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats. Slings use a normal ranged attack roll (d6 + RC ≥ 8) to hit. No loading gate.
 
-| Weapon | Hands | Range | Mt | Lk | Notes |
+| Weapon | Hands | Range | Mt | Sk | Notes |
 |---|---|---|---|---|---|
 | Sling | 1H | 3"–12" | 2 | 1 | Cheap, one-handed |
 
@@ -52,7 +52,7 @@ Firearms use a **flat 2d6 loading gate** — no stat is added. Misfires are equi
 
 Firearms generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats.
 
-| Weapon | Hands | Range | Difficulty | Mt | Lk | Notes |
+| Weapon | Hands | Range | Difficulty | Mt | Sk | Notes |
 |---|---|---|---|---|---|---|
 | Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range |
 | Long Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range |
@@ -82,7 +82,7 @@ Bombs are thrown explosives with a flat Strike Pool that hits all models (friend
 
 ### Bomb Table
 
-| Weapon | Hands | Distance | Mt | Lk | Notes |
+| Weapon | Hands | Distance | Mt | Sk | Notes |
 |---|---|---|---|---|---|
 | Bomb | 1H | d6 + Mt | 3 | 2 | 3" blast, Single Shot |
 | Smoke Bomb | 1H | d6 + Mt | — | — | 6" blast, Single Shot, Smoke |
@@ -104,15 +104,15 @@ Weapons can be made from special materials that grant bonuses against specific f
 ## Design Notes
 
 - Melee weapons range from +2 (baseline) to +4 total dice — enough variety without power creep
-- Daggers are pure Lk, great swords are Mt-heavy with a Lk bonus — the weapon's character is built into its color contribution
-- Ranged weapons are Lk-dominant (bows) or Mt-dominant (crossbows), creating distinct tactical identities
+- Daggers are pure Sk, great swords are Mt-heavy with a Sk bonus — the weapon's character is built into its color contribution
+- Ranged weapons are Sk-dominant (bows) or Mt-dominant (crossbows), creating distinct tactical identities
 - Firearms generate flat Strike Pools (like spells) rather than adding to base stats — the gun's power comes from the weapon, not the shooter. Gated behind a flat 2d6 loading check (no stat added) — misfires are equipment failures, not user errors
 - Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
-- Blunderbuss is pure Might (6 Mt, no Lk), short range, and devastating — the gun equivalent of a war axe
+- Blunderbuss is pure Might (6 Mt, no Sk), short range, and devastating — the gun equivalent of a war axe
 - Long Rifle has the highest Mt bonus and longest range
 - Flintlock variants are identical to their standard counterparts but Single Shot (one fire per game) and cheaper — a budget option for warbands that want firearm alpha strikes without paying full price for reloadable guns
-- Slings use flat pools like firearms but weaker (2 Mt / 1 Lk vs Pistol's 5 Mt / 2 Lk) and require no loading gate — the cheapest ranged option, available to everyone
-- Throwing Stars are additive (+1 Lk), no minimum range, 1H — a pocket ranged option for close-quarters fighters
+- Slings use flat pools like firearms but weaker (2 Mt / 1 Sk vs Pistol's 5 Mt / 2 Sk) and require no loading gate — the cheapest ranged option, available to everyone
+- Throwing Stars are additive (+1 Sk), no minimum range, 1H — a pocket ranged option for close-quarters fighters
 - Bombs use the same 2d6 gunpowder gate as firearms (≥ 6+, double 1s = explodes in hand). Distance is d6 + Mt inches — on a pass you place the blast anywhere along that line, on a fail it scatters (scatter die for direction). Strong fighters throw farther
 - Smoke Bombs share bomb mechanics but deal no damage — pure utility for blocking LoS
 - Silver weapons are a pure counter-pick: expensive, no general benefit, devastating against Nightpack and Nobility specifically

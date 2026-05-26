@@ -136,7 +136,7 @@ Combat outcomes are decisive, but the Downed system allows dramatic survivals.
 | CC | Close Combat |
 | RC | Ranged Combat |
 | Mt | Might |
-| Lk | Luck |
+| Sk | Skill |
 | Sa | Sanity |
 | W | Wounds |
 
@@ -147,17 +147,17 @@ Higher values are better for all stats. Stat checks use d6 + stat ≥ 8.
 # Baseline Species Profiles
 
 ### Human Fighter
-| M | CC | RC | Mt | Lk | Sa | W |
+| M | CC | RC | Mt | Sk | Sa | W |
 |---|---|---|---|---|---|---|
 | 6" | 3 | 3 | 2 | 2 | 3 | 3 |
 
 ### Elf Fighter
-| M | CC | RC | Mt | Lk | Sa | W |
+| M | CC | RC | Mt | Sk | Sa | W |
 |---|---|---|---|---|---|---|
 | 7" | 3 | 3 | 1 | 3 | 3 | 1 |
 
 ### Dwarf Fighter
-| M | CC | RC | Mt | Lk | Sa | W |
+| M | CC | RC | Mt | Sk | Sa | W |
 |---|---|---|---|---|---|---|
 | 5" | 3 | 3 | 3 | 1 | 3 | 4 |
 
@@ -165,15 +165,15 @@ Higher values are better for all stats. Stat checks use d6 + stat ≥ 8.
 
 # Combat System
 
-Combat uses a Red/Blue dice pool system. Red dice represent Might. Blue dice represent Luck.
+Combat uses a Red/Blue dice pool system. Red dice represent Might. Blue dice represent Skill.
 
-Strike Pool = fighter's Mt (red dice) + Lk (blue dice) + weapon modifiers. Weapons add +Mt and/or +Lk directly.
+Strike Pool = fighter's Mt (red dice) + Sk (blue dice) + weapon modifiers. Weapons add +Mt and/or +Sk directly.
 
 Example weapon:
 
 Iron Sword | Melee | Engagement | +2 Mt
 
-A Human (Mt 2, Lk 2) with an Iron Sword rolls 4 red + 2 blue = 6 dice.
+A Human (Mt 2, Sk 2) with an Iron Sword rolls 4 red + 2 blue = 6 dice.
 
 Each die rolls d6 + CC ≥ 8 (melee) or d6 + RC ≥ 8 (ranged) to hit.
 
@@ -181,10 +181,10 @@ Each die rolls d6 + CC ≥ 8 (melee) or d6 + RC ≥ 8 (ranged) to hit.
 
 ## Defense
 
-Defenders roll a defense pool: base 1 red die + 1 blue die, plus bonus dice from Mt/Lk comparisons and armor.
+Defenders roll a defense pool: base 1 red die + 1 blue die, plus bonus dice from Mt/Sk comparisons and armor.
 
 - Red defense dice block red hits (d6 + Mt ≥ 8)
-- Blue defense dice block blue hits (d6 + Lk ≥ 8)
+- Blue defense dice block blue hits (d6 + Sk ≥ 8)
 - Two red defense successes may block one blue hit, and vice versa (2:1 crossover)
 - Crits cannot be blocked
 
@@ -294,10 +294,10 @@ Scramble
 Half movement through difficult terrain. Cannot end in engagement.
 
 Jump  
-Move up to movement across open space. Must pass a Lk check (d6 + Lk ≥ 8). Cannot end in engagement.
+Move up to movement across open space. Must pass a Sk check (d6 + Sk ≥ 8). Cannot end in engagement.
 
 Retreat  
-Attempt to leave engagement. Roll a Lk check (d6 + Lk ≥ 8).
+Attempt to leave engagement. Roll a Sk check (d6 + Sk ≥ 8).
 
 Failure allows the opponent an opportunity attack if they are not engaged with another enemy.
 
@@ -352,13 +352,13 @@ Parts of the miniature extending beyond the base are ignored.
 
 If more than half of the model is obscured, the target has cover.
 
-Cover grants +1 blue defense die (rolled with Lk).
+Cover grants +1 blue defense die (rolled with Sk).
 
 ---
 
 # Falling
 
-Roll a Lk check (d6 + Lk ≥ 8) when falling.
+Roll a Sk check (d6 + Sk ≥ 8) when falling.
 
 For every 2 inches fallen, roll one die.
 
