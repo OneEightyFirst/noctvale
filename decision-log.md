@@ -4,6 +4,47 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-26 — Arcane, Nature, and Necromancy spell lists
+
+**Arcane — complete (freebie + 6):**
+Arcane is raw magical mastery — precision, control, energy manipulation. Three damage spells (Arcane Bolt, Fireball, Arcane Barrage), three utility/control (Arcane Shield, Telekinesis, Displacement, Slow).
+
+New spells:
+- **Fireball** — Large blast, 18". Three outcomes: pass = on target, normal fail = scatters (scatter die + d6"), Mishap (double 1s) = blast centers on caster. Matches existing bomb scatter mechanics.
+- **Telekinesis** — Move any model 6" directly toward or away from caster. No target check.
+- **Displacement** — Teleport friendly fighter 6" in any direction, ignores terrain/engagement.
+- **Arcane Barrage** — 3 automatic Sk hits (blue), no Strike Pool roll, no to-hit roll. Guaranteed damage on successful cast, defender rolls defense normally.
+- **Slow** — Target enemy loses 1 action on next activation.
+
+**Nature — complete (freebie + 6):**
+Nature is the dangerous wild — poison, shadow, beasts, the dark forest. Serves werewolves, skaven, and witches equally.
+
+New spells (Shadowmeld logged separately):
+- **Venom** — Target must pass Mt check or suffer Poisoned (-1 Mt, -1 Sk). Body-based resistance, not willpower.
+- **Feral Form** — Friendly target gains +2 Mt, +1" M, but cannot use ranged weapons or cast. Primal transformation.
+- **Entangle** — Target enemy M reduced to 0, cannot Move/Charge/Climb/Scramble/Jump/Retreat.
+- **Summon Swarm** — Place a Swarm within 3", activates immediately with 2 actions then disappears. Low Mt (2), high Sk (6) — many small precise hits. Swarm profile added.
+- **Dread Chorus** — All enemies within 8" must pass Sa test or gain Fear of the caster. The howl, the skittering, the chant.
+
+**Necromancy — partial (freebie + 5 of 6, 1 slot TBD):**
+Necromancy is dominion over death — the dead are tools, the living wither. Grave Wardens (Cult + Necromancy) are the named faction.
+
+New spells:
+- **Raise Dead** — Bring back a friendly OOA fighter within 3" with 1 wound, Undead, Fearless. Activates immediately with 2 actions then goes OOA permanently. Mishap: opponent controls the raised fighter.
+- **Cursed Ground** — Large blast within 12". Models in zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check. Mishap: centers on caster.
+- **Wither** — Target enemy suffers -1 Mt, -1 Sk, -1" M. Applies Weakened condition. Heavier debuff than Blood's Enfeeble.
+- **Bone Blast** — Blast centered on caster, 1 Mt / 4 Sk hit to all models except caster. Bone shrapnel — mostly blue dice. Mirror of Light's Purge the Faithless (self-centered AoE) with inverted dice profile.
+- 1 slot remains TBD.
+
+**Open questions:**
+- Necromancy still needs 1 more spell.
+- Casting difficulties not yet assigned for most new spells across all domains.
+- Weakened condition not yet defined in conditions.md.
+- Poisoned condition not yet defined in conditions.md.
+- Many Mishaps still TBD.
+
+---
+
 ## 2026-05-26 — Shadowmeld (Nature) and Nightfall (Blood) spells
 
 **Decision:** Two thematically paired darkness spells — one for Nature, one for Blood. Same concept (shadow/darkness), opposite application.

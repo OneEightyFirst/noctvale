@@ -107,10 +107,11 @@ Each domain has a **standard ranged attack spell** (not counted toward the limit
 |---|---|---|---|---|---|---|
 | Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
 | Arcane Shield | 11+ | — | — | Self | Caster is immune to all spells. At the start of the caster's next activation, roll 1d6 — on 1–2 the shield disappears | *(TBD)* |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+| Fireball | *(TBD)* | *(TBD)* | *(TBD)* | 18" | Choose a point within 18". All models within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
+| Telekinesis | *(TBD)* | — | — | 12" | Move any model (friendly or enemy) up to 6" directly toward or directly away from the caster. No check required by the target | *(TBD)* |
+| Displacement | *(TBD)* | — | — | 12" | Target friendly fighter is instantly moved up to 6" in any direction. Ignores terrain, engagement, and intervening models. Cannot end inside terrain or another model's base | *(TBD)* |
+| Arcane Barrage | *(TBD)* | — | — | *(TBD)* | On successful cast, inflict 3 automatic Sk hits (blue). No Strike Pool roll, no to-hit roll — hits go straight to defender's defense pool. Defender rolls defense as normal | *(TBD)* |
+| Slow | *(TBD)* | — | — | *(TBD)* | Target enemy loses 1 action on their next activation (activates with 1 action instead of 2) | *(TBD)* |
 
 ### Infernal
 
@@ -136,11 +137,22 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Thorn Volley | 12+ | 4 | 4 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+| Shadowmeld | *(TBD)* | — | — | 12" | Target friendly fighter gains Hidden. Does not need to remain within 1" of terrain to stay Hidden. Hidden still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy | Enemies gain +1 to hit the target with ranged weapons and spells until the start of the caster's next activation |
+| Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned — suffer -1 Mt and -1 Sk until the start of the caster's next activation | *(TBD)* |
+| Feral Form | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
+| Entangle | *(TBD)* | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
+| Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See Swarm profile below | The Swarm appears hostile — your opponent controls it for its single activation |
+| Dread Chorus | *(TBD)* | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test (d6 + Sa ≥ 8) or gain Fear of the caster until the start of the caster's next activation | *(TBD)* |
+
+#### Swarm Profile
+
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 6" | 3 | — | 2 | 6 | 1 | 1 | 1 |
+
+**Equipment:** Natural weapons (baked into Mt/Sk). Cannot be changed.
+
+**Keywords:** Fearless. Immune to Sanity tests.
 
 ### Necromancy
 
@@ -148,9 +160,10 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
 | Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See Skeleton profile below | The Skeleton appears hostile — your opponent controls it for its single activation |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+| Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went Out of Action this game. Place them within 3" of the caster with 1 wound, Undead keyword, and Fearless. They activate immediately with 2 actions, then go Out of Action permanently at the end of their activation | Your opponent places and controls the raised fighter instead |
+| Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All models in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
+| Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
+| Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All models under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
 | *(TBD)* | | | | | | |
 
 #### Skeleton Profile
@@ -167,12 +180,13 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| *(TBD — attack)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+| Leech | *(TBD)* | *(TBD)* | *(TBD)* | *(TBD)* | Ranged attack; if target takes ≥1 wound, caster heals 1 wound | Caster takes the damage |
+| Bleed | *(TBD)* | — | — | *(TBD)* | Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding condition — suffer 1 wound immediately, test Wi each activation until passed or dead | Caster gains Bleeding instead |
+| Blood Frenzy | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +3 Mt, -1 to hit. Lasts until the start of the caster's next activation | *(TBD)* |
+| Predator's Grace | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
+| Enthrall | *(TBD)* | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
+| Feast of Excess | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned (keeps wounds but vulnerable) | *(TBD)* |
+| Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly Blood domain fighter is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target gains +1 to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies gain +1 to hit caster with ranged weapons, caster suffers -1 Mt until start of next activation |
 
 ---
 
