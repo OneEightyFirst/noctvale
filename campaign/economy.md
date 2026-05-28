@@ -6,7 +6,7 @@
 
 Relic Fragments are the **primary campaign resource**.
 
-They represent shattered pieces of powerful ancient relics scattered across the cursed land. Warbands search ruins and battlefields to recover them.
+They represent shattered pieces of powerful ancient relics scattered across the cursed land. Retinues search ruins and battlefields to recover them.
 
 ---
 
@@ -42,6 +42,6 @@ Fragments are sold using a **supply and demand curve** — selling more at once 
 
 - The discount curve discourages hoarding large quantities to sell at once — smaller, more frequent sells are more efficient per fragment
 - This creates a cash flow decision: sell now for reliable income, or stockpile for a bigger payday?
-- Relic Fragments as the campaign currency ties the exploration phase directly to warband progression
+- Relic Fragments as the campaign currency ties the exploration phase directly to retinue progression
 
 See [todo.md](../todo.md) for castle setting economy alternatives, fragment spending ideas, and open design decisions.

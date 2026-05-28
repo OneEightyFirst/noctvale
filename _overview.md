@@ -6,7 +6,7 @@
 
 ## Elevator Pitch
 
-Noctvale is a grimdark tabletop skirmish miniatures game where small warbands clash across cursed lands in search of powerful relic fragments. Combat is lethal, warbands grow through campaign play, and exploration carries both rewards and danger.
+Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful relic fragments. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
 
 ---
 
@@ -16,7 +16,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small warbands cl
 - **Red/Blue dice pool resolution** — fast, tactile dice economy with distinct fighter archetypes
 - **Weapon & magic triangles** — rock-paper-scissors advantage layers
 - **Downed system** — dramatic last-chance survivals before death
-- **Campaign progression** — warbands grow, earn, and suffer across sessions
+- **Campaign progression** — retinues grow, earn, and suffer across sessions
 - **Relic fragment economy** — the currency that drives the campaign loop
 
 ---
@@ -48,7 +48,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small warbands cl
 
 ## Game Summary
 
-Warbands battle for relic fragments scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.
+Retinues battle for relic fragments scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.
 
 ---
 
@@ -67,7 +67,7 @@ The recommended process for evaluating mechanics and direction:
 
 1. **Turn sequence** — shapes everything else
 2. **Combat** — how units move, shoot, and fight
-3. **List building** — how players assemble their warbands
+3. **List building** — how players assemble their retinues
 4. **Scenarios** — what must the players do to win
 5. **Setting** — who is fighting and why
 

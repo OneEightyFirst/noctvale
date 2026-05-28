@@ -121,7 +121,7 @@ The hells hold infinite daemonic entities of different shapes and sizes. To help
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
 
-For alpha, daemons are recruited like any other warband member. Pre-game summoning tables are a post-alpha feature (see todo.md).
+For alpha, daemons are recruited like any other retinue member. Pre-game summoning tables are a post-alpha feature (see todo.md).
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|

@@ -72,11 +72,11 @@ A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. 
 
 ## Design Notes
 
-- Fear/Panic/Insanity are keywords assigned to specific models and spells, not domain-wide traits — a vampire lord might cause Fear, but the thralls in the same warband do not
+- Fear/Panic/Insanity are keywords assigned to specific models and spells, not domain-wide traits — a vampire lord might cause Fear, but the thralls in the same retinue do not
 - The three tiers escalate in consequence (hesitation → retreat → loss of control) but do not chain into each other — a model causes Fear OR Panic OR Insanity, not a progression
 - Pass-once-per-source means a brave fighter who holds their nerve is done worrying, while a fighter who fails is stuck testing each turn — creating tension without endless dice rolling against models you've already faced down
 - The Insanity table is weighted toward the middle: Freeze (4–5) is the most common result, Frenzy (1) and Berserk (6) are rare extremes
 - Berserk is intentionally not entirely bad — "so scared you snap and fight like a cornered animal" is more interesting than all-negative outcomes
 - 6" default range keeps fear as a close-quarters threat, not something that locks down the whole board
-- Fearless as a keyword gives None domain warbands a unique defensive advantage against magic-heavy opponents, compensating for their lack of spells
+- Fearless as a keyword gives None domain retinues a unique defensive advantage against magic-heavy opponents, compensating for their lack of spells
 - Sa 3 baseline means d6 + 3 ≥ 8, so fighters need a 5+ to pass (~33% chance). Fear effects are genuinely threatening at baseline stats

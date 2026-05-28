@@ -35,6 +35,22 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 
 ---
 
+## Phase 2b: Line of Sight, Cover & Targeting
+
+Rules in `rules/special-rules.md`; cross-refs in `actions.md` and `combat.md`.
+
+- [x] Line of sight: visible-or-not from firing fighter's PoV; ignore past-base overhang
+- [x] Cover: any intervening terrain between shooter and target (terrain >1" from shooter) → +1 blue defense die
+- [x] Ranged and Cast require line of sight to enemy targets
+- [x] Friendly fighters: do not block LoS; may move through friendlies (not end on their bases)
+- [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
+- [x] Clustered enemies: same-retinue models within 1" of declared target → Sk check or retarget
+- [x] Enemy fighters block line of sight normally
+- [ ] Smoke / other LoS-blocking effects — smoke in `weapons.md`; confirm no gaps vs terrain rules
+- [ ] Dedicated rules for enemy models blocking shots (beyond LoS) if playtest shows gaps
+
+---
+
 ## Phase 3: Playtest Weapon List
 
 Create a small playtest weapon list covering the weapon triangle + ranged + firearms.
@@ -90,10 +106,10 @@ Define mechanical identity for all 12 factions (special rule, magic alignment, c
 
 ## Phase 5b: Archetype & Domain Skills
 
-Define skill lists for each archetype and each domain. Skills are the primary mechanical differentiation layer — archetypes define how a warband fights, domains define what supernatural tools they bring, and skills make those choices feel distinct on the table.
+Define skill lists for each archetype and each domain. Skills are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and skills make those choices feel distinct on the table.
 
 - [ ] Decide skill structure (passive abilities, activated abilities, or both)
-- [ ] Decide how skills are acquired (built into fighter type, purchased with XP, chosen at warband creation, etc.)
+- [ ] Decide how skills are acquired (built into fighter type, purchased with XP, chosen at retinue creation, etc.)
 - [ ] Decide skill count per list (e.g., 6 per archetype, 6 per domain)
 - [ ] Write Archetype skill lists:
   - [ ] Knights
@@ -117,13 +133,13 @@ Define skill lists for each archetype and each domain. Skills are the primary me
 
 Build full playtest rosters for Silver Hunt and Nightpack.
 
-- [ ] Define fighter types per warband (leader, heroes, henchmen)
+- [ ] Define fighter types per retinue (leader, heroes, henchmen)
 - [ ] Assign stat lines (based on species baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
 - [ ] Assign spells from Phase 4 list (if applicable)
 - [ ] Assign skills from Phase 5b lists
-- [ ] Set warband size / point budget (or fixed roster for first test)
-- [ ] Calculate total warband cost and verify balance parity
+- [ ] Set retinue size / point budget (or fixed roster for first test)
+- [ ] Calculate total retinue cost and verify balance parity
 
 ---
 
@@ -142,11 +158,11 @@ Write one complete scenario with deployment, terrain, and win conditions.
 
 ## Phase 7: Fighter Cards & Roster Sheet
 
-Create fighter card template and warband roster sheet.
+Create fighter card template and retinue roster sheet.
 
 - [ ] Design fighter card layout (stats, weapons, spells, skills, wounds, conditions)
 - [ ] Create printable card template with cut marks
-- [ ] Design warband roster sheet (fighter list, equipment, fragments, currency)
+- [ ] Design retinue roster sheet (fighter list, equipment, fragments, currency)
 - [ ] Decide on templating / layout tool
 
 ---
@@ -167,28 +183,32 @@ Solo dry run and rules-gap notes.
 
 Things identified across the design docs that don't fit neatly into one phase.
 
+### Terminology
+
+- [x] **Retinue** replaces **warband** as the player's list-for-a-fight; **Faction** remains Archetype + Domain (see decision log 2026-05-28)
+
 ### Open Design Decisions
 
 - [ ] **Setting scope:** Broad cursed-land Noctvale vs. single-castle betrayal setting — this affects scenarios, exploration, economy flavor, and faction framing
 - [ ] **Castle pivot implications:** If the game takes place in a single castle, exploration becomes castle-zone exploration; factions represent forces trapped inside or rushing to exploit the betrayal; relic fragments could become keys, blood seals, royal edicts, sacred brands, etc.
-- [ ] **Warband building system:** Points-based, fixed lists (Spearhead-style), or constrained draft?
+- [ ] **Retinue building system:** Points-based, fixed lists (Spearhead-style), or constrained draft?
 - [ ] **Species costing:** Elves and Dwarves should cost more than Humans when list building — Humans are the true baseline, Elves/Dwarves pay a premium for specialty bonuses (Wi 4 + M 7" for Elves, Mt 4 + M 5" for Dwarves). W is normalized to 3 across all species (see decision log 2026-05-20)
 - [ ] **Campaign injury / advancement system:** Post-game consequences for Out of Action fighters (injuries, death, stat gains) — referenced in conditions.md but not yet written
 - [ ] **Exploration location tables:** Discovery tables per location type (Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard) — referenced in exploration.md but not yet written
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
-- [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by warband size, territory exchange minigame
+- [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
 
 ### Infernal Summoning (post-alpha)
 
-Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other warband member — summoning tables are a post-alpha feature.**
+Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other retinue member — summoning tables are a post-alpha feature.**
 
 - [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer models to own)
 - [ ] Decide if variants are mechanically distinct stat lines or cosmetic with minor trait swaps
 - [ ] Confirm all daemons share a "Daemon" keyword (for Radiant Strike +1 Mt vs Daemons)
 - [ ] Decide if Imp wings have a mechanical fly rule or are visual only
-- [ ] Decide how many summon rolls a warband gets (caster count? fixed? points budget?)
+- [ ] Decide how many summon rolls a retinue gets (caster count? fixed? points budget?)
 - [ ] Design the 6 in-game Infernal spells (summoning is pre-game, so all slots are open)
 
 ### Hunter Subtype Design

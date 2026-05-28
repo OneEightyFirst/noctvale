@@ -4,7 +4,31 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
-## 2026-05-28 — Line of sight and cover (terrain bands)
+## 2026-05-28 — Retinue (replaces warband)
+
+**Decision:** The player's list-for-a-fight is called a **retinue**, not a warband. **Faction** remains the named Archetype + Domain identity (Phoenix Guard, etc.). Lore for Nightpack no longer says werebeasts "formed warbands/retinues" — they **became what is now called The Nightpack**. Terminology updated across rules, campaign, factions, README, and `_overview.md`.
+
+**Reasoning:** Warband reads too Mordheim/Viking; retinue fits gothic post-imperial leaders with followers and relic-hunting expeditions.
+
+---
+
+## 2026-05-28 — Intervening fighters
+
+**Decision:** Friendly retinue members do not block LoS; fighters may move through friendlies (not end on their bases). **Friendly in the line of fire:** for **Cast** with firearms or damage spells only, if a friendly lies between attacker and declared target and the attack misses (gate passed, target took no wounds; not Mishap/Misfire), roll 1d6 — on 1, resolve 1 hit on the closest intervening friendly. **Clustered enemies:** when declaring a **Ranged** or **Cast** target, if other enemies from the same retinue are within 1" of the declared target, Sk check (d6 + Sk ≥ 8); on fail, retarget the sole other fighter or random choice among all within 1".
+
+**Reasoning:** Friendlies are not terrain. Firearms and magic wild shots punish careless lanes. Clustered retinues reflect firing into a mob without full competitive targeting rules.
+
+---
+
+## 2026-05-28 — Line of sight and cover (simplified)
+
+**Decision:** Dropped percentage bands. **Line of sight:** from the firing fighter's PoV, if you can see the target (body on/above base, ignore past-base overhang), you have LoS; otherwise not a valid **Ranged** or **Cast** target. **Cover:** if any intervening terrain lies between shooter and target and is **more than 1" from the firing fighter**, +1 blue defense die (unchanged effect).
+
+**Reasoning:** Faster narrative adjudication than 25/90% eyeballing. The 1" exclusion stops hugging a wall from granting cover on shots where the shooter is flush against their own terrain.
+
+---
+
+## 2026-05-28 — Line of sight and cover (terrain bands) — superseded
 
 **Decision:** Replaced the two-sentence LoS rule and “more than half obscured = cover” with a single **terrain-only** visibility check from the **firing fighter’s point of view**. Target silhouette is the body on and above the base; parts past the base edge are ignored. **Less than 25%** obscured by intervening terrain = in the open; **25%–90%** = in cover (+1 blue defense die); **more than 90%** = no line of sight for Ranged or Cast. **Ranged** and **Cast** (enemy targets) now explicitly require line of sight in `actions.md`.
 
@@ -161,7 +185,7 @@ New spells:
 
 6. **Scatter die** (physical, with arrows on multiple sides and a bullseye) is a required game component for bomb scatter resolution.
 
-**Reasoning:** Slings fill the gap between melee and firearms for warbands that can't afford (or aren't allowed) gunpowder. Throwing stars give any fighter a close-range ranged option without committing to a 2H weapon. Bombs give None domain warbands AoE capability that firearms lack, with the tradeoff of unpredictable distance and scatter risk. The Mt-based distance (d6 + Mt) makes strong fighters better throwers. Smoke bombs are pure utility — the 6" cloud and auto-fail combo creates a defensive tool that rewards tactical play.
+**Reasoning:** Slings fill the gap between melee and firearms for retinues that can't afford (or aren't allowed) gunpowder. Throwing stars give any fighter a close-range ranged option without committing to a 2H weapon. Bombs give None domain retinues AoE capability that firearms lack, with the tradeoff of unpredictable distance and scatter risk. The Mt-based distance (d6 + Mt) makes strong fighters better throwers. Smoke bombs are pure utility — the 6" cloud and auto-fail combo creates a defensive tool that rewards tactical play.
 
 ---
 
@@ -242,13 +266,13 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 ---
 
-## 2026-05-19 — Warband size targets
+## 2026-05-19 — Retinue size targets
 
-**Decision:** Normal warband size is 5–10 models. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.
+**Decision:** Normal retinue size is 5–10 models. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.
 
 **Fighter tiers:** 4 levels — Leader, Caster/Special, Champion, Troop. Archetype determines how many of each you can bring. Cult gets 3 max casters; all other archetypes get 1.
 
-**Edge case noted:** An Infernal Cult warband with 3 casters could theoretically summon enough Imps (post-alpha summoning system) to hit the upper bound if everything goes right. Even in that extreme, the cap should stay around 20 models on the table.
+**Edge case noted:** An Infernal Cult retinue with 3 casters could theoretically summon enough Imps (post-alpha summoning system) to hit the upper bound if everything goes right. Even in that extreme, the cap should stay around 20 models on the table.
 
 **Status:** Bounds not yet defined. Needs roster-building rules.
 
@@ -320,7 +344,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 ## 2026-05-19 — Daemons recruited normally for alpha
 
-**Decision:** For the alpha version, daemons are recruited like any other warband member. Pre-game summoning tables (1d6 to determine tier, then variant roll) are deferred to post-alpha.
+**Decision:** For the alpha version, daemons are recruited like any other retinue member. Pre-game summoning tables (1d6 to determine tier, then variant roll) are deferred to post-alpha.
 
 **Reasoning:** Summoning tables add complexity and require players to own extra models. Better to get the core game working first and layer summoning on later. Community feedback on random roster tolerance is pending.
 

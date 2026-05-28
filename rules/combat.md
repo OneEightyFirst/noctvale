@@ -4,6 +4,8 @@
 
 ## Attack Sequence
 
+Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendly fighters in the line of fire** may change or affect targeting — see **Intervening Fighters** in special-rules.md.
+
 ### Step 1: Build the Strike Pool
 
 The Strike Pool is the fighter's **Mt + Sk**, modified by their weapon.
@@ -95,6 +97,8 @@ Each unblocked hit inflicts **1 Wound**.
 - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
 
 Downed fighters defend with their **full pool**. Stunned fighters defend with **red dice only** (no blue). *(See conditions.md for full wound state rules.)*
+
+After Step 5, if the attack **missed** the declared enemy target and a **friendly fighter** was in the line of fire (firearms and damage spells only), apply **Friendly in the Line of Fire** from special-rules.md.
 
 ---
 

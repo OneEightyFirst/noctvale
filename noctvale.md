@@ -3,7 +3,7 @@
 
 *A Grimdark Fantasy Skirmish Game in a Cursed Land*
 
-Noctvale is a grimdark tabletop skirmish miniatures game where small warbands clash across cursed lands in search of powerful relic fragments. Combat is lethal, warbands grow through campaign play, and exploration carries both rewards and danger.
+Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful relic fragments. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
 
 ---
 
@@ -57,7 +57,7 @@ Meanwhile darker powers took root in the shadows.
 
 Witches were forced to band together in secret covens to protect themselves from those who believed that all magic — and all who were different — were evil and deserved to be purged.
 
-The Infernal Pact formed secret brotherhoods devoted to demonic powers. The Grave Wardens learned to command the restless dead rising from endless battlefields. And in the wilderness, savage packs of werebeasts formed the warbands now called The Nightpack.
+The Infernal Pact formed secret brotherhoods devoted to demonic powers. The Grave Wardens learned to command the restless dead rising from endless battlefields. And in the wilderness, savage packs of werebeasts became what is now called The Nightpack.
 
 The war became more than rebellion. It became a struggle for the soul of the world.
 
@@ -110,7 +110,7 @@ The empire is gone. But the war never truly ended.
 - **"Crown Roads"** is the preferred infrastructure term rather than "Imperial Roads."
 - The earlier concept name for the setting was **Morvallow**, but **Noctvale** became preferred.
 - The game is influenced by Mordheim-style campaign skirmish play, grimdark fantasy, Gothic horror, Warcry, Kill Team, Necromunda, and classic Warhammer design principles.
-- The desired feel is lethal, narrative, campaign-driven skirmish combat where small warbands fight through cursed lands or possibly a concentrated castle/city-scale location.
+- The desired feel is lethal, narrative, campaign-driven skirmish combat where small retinues fight through cursed lands or possibly a concentrated castle/city-scale location.
 
 ---
 
@@ -122,7 +122,7 @@ Noctvale is built around several core systems:
 - Red/Blue dice pool combat resolution
 - Weapon and magic critical triangles
 - Campaign exploration and relic fragment economy
-- Small warband tactical gameplay
+- Small retinue tactical gameplay
 
 Combat outcomes are decisive, but the Downed system allows dramatic survivals.
 
@@ -342,9 +342,7 @@ Execute a stunned enemy.
 
 # Line of Sight and Cover
 
-Ranged attacks and Cast actions that select an enemy require line of sight unless a rule says otherwise. Judge from the firing fighter's point of view. Use the target's body on and above its base; ignore parts extending past the base edge.
-
-Intervening terrain: less than 25% obscured = in the open; 25%–90% = in cover (+1 blue defense die); more than 90% = no line of sight.
+Ranged attacks and Cast actions that select an enemy require line of sight unless a rule says otherwise. Judge from the firing fighter's point of view. Use the target's body on and above its base; ignore parts extending past the base edge. If you can see the target, you have line of sight. If any intervening terrain more than 1" from the shooter lies between shooter and target, the target has cover (+1 blue defense die).
 
 *(Full rules: rules/special-rules.md.)*
 
@@ -420,7 +418,7 @@ Infernal
 
 # Exploration Phase
 
-After each battle, warbands explore the surrounding area.
+After each battle, retinues explore the surrounding area.
 
 ## Step 1: Determine Location
 
@@ -478,7 +476,7 @@ Relic fragments are the primary campaign resource.
 
 Fragments represent shattered pieces of powerful ancient relics scattered across the cursed land.
 
-Warbands search ruins and battlefields to recover them.
+Retinues search ruins and battlefields to recover them.
 
 ---
 
@@ -527,4 +525,4 @@ Village Watch are ordinary townsfolk defending their homes, not led by sheriffs.
 
 # Game Summary
 
-Noctvale is a grimdark campaign skirmish game where warbands battle for relic fragments scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.
+Noctvale is a grimdark campaign skirmish game where retinues battle for relic fragments scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.

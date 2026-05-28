@@ -2,13 +2,13 @@
 
 ---
 
-## Building a Warband
+## Building a Retinue
 
-Every warband is built from two choices: an **Archetype** and a **Domain**.
+Every retinue is built from two choices: an **Archetype** and a **Domain**.
 
-Your **Archetype** determines how your warband fights — what equipment they can carry, how many fighters you field, and how many casters you can bring.
+Your **Archetype** determines how your retinue fights — what equipment they can carry, how many fighters you field, and how many casters you can bring.
 
-Your **Domain** determines what supernatural powers your warband wields — your spell list, your position in the magic triangles, and your domain-specific skills. Choose **None** if your warband rejects or lacks magic entirely.
+Your **Domain** determines what supernatural powers your retinue wields — your spell list, your position in the magic triangles, and your domain-specific skills. Choose **None** if your retinue rejects or lacks magic entirely.
 
 **Archetype + Domain = Faction.**
 
@@ -49,9 +49,9 @@ The named factions of Noctvale are established combinations with their own histo
 
 **Basic weapons:** Dagger, Sword, Hand Axe, Spear, Shortbow.
 
-**Firearms** are exclusive to warbands with the **None** domain. Magic and gunpowder are mutually exclusive paths to power. Hunters + None get the full firearms list; other archetypes + None get Blunderbuss and Musket only.
+**Firearms** are exclusive to retinues with the **None** domain. Magic and gunpowder are mutually exclusive paths to power. Hunters + None get the full firearms list; other archetypes + None get Blunderbuss and Musket only.
 
-**Alchemy** (potions, poisons) is available to all warbands regardless of archetype or domain.
+**Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
 
 ---
 
@@ -82,7 +82,7 @@ Twelve established factions exist in Noctvale. Each is a specific Archetype + Do
 | Radiant Crusade | Hunters | Light | Holy warriors sworn to destroy undead |
 | Inquisition | Hunters | None | Anti-magic zealots, guns and denial |
 | Silver Hunt | Hunters | None | Monster hunters, alchemy and silver weapons |
-| Nightpack | Hunters | Nature | Werebeast packs, shapeshifter warbands |
+| Nightpack | Hunters | Nature | Werebeast packs, shapeshifter retinues |
 | Coven | Cult | Nature | Witches banding together for survival |
 | Arcane Conclave | Cult | Arcane | Scholars and mages seeking supernatural knowledge |
 | Grave Wardens | Cult | Necromancy | Necromancers commanding the restless dead |
@@ -123,7 +123,7 @@ Corrupted remnants of imperial law and constabulary. In the absence of the empir
 Witches banding together for survival after persecution. Forced to form secret covens to protect themselves from those who believed all magic — and all who were different — were evil and deserved to be purged.
 
 ### Nightpack
-Werebeast packs and shapeshifter warbands. Savage packs that formed in the wilderness during the long war.
+Werebeast packs and shapeshifter retinues. Savage packs that formed in the wilderness during the long war.
 
 ### Grave Wardens
 Necromantic faction commanding restless dead. They learned to command the dead rising from the endless battlefields of the Hundred Years of War.
@@ -138,7 +138,7 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 
 ## Design Notes
 
-- **Archetype + Domain = Faction** is the core warband-building system — two choices create your identity
+- **Archetype + Domain = Faction** is the core retinue-building system — two choices create your identity
 - Named factions are preset combinations with lore and exclusive gear, but players can create custom combinations
 - Two factions with the same Archetype + Domain are differentiated by faction-specific skills and exclusive equipment (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile

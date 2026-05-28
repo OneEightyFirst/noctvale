@@ -32,11 +32,11 @@ Armor and shield rescues **stack**. A fighter in Medium Armor with a Shield resc
 
 ## Alchemy
 
-Alchemy is **equipment, not magic** — any warband can purchase potions and poisons regardless of archetype or domain. Alchemical items are **consumable** (one game only, purchased before the match).
+Alchemy is **equipment, not magic** — any retinue can purchase potions and poisons regardless of archetype or domain. Alchemical items are **consumable** (one game only, purchased before the match).
 
 ### Poisons
 
-Poisons are applied to a single weapon during warband setup. **One poison per weapon.** Poisons do not take a weapon slot.
+Poisons are applied to a single weapon during retinue setup. **One poison per weapon.** Poisons do not take a weapon slot.
 
 | Poison | Effect | Notes |
 |---|---|---|
@@ -60,7 +60,7 @@ Some equipment projects a passive effect in an area around the bearer. This area
 
 ### Influence Equipment
 
-Influence equipment is **permanent** (not consumed between games). Each item takes weapon slots as noted. A relic can be anything from a faction banner, to the totem of an unknown god, to a censer. An instrument can be a war drum, a horn, a bell, or whatever fits the warband.
+Influence equipment is **permanent** (not consumed between games). Each item takes weapon slots as noted. A relic can be anything from a faction banner, to the totem of an unknown god, to a censer. An instrument can be a war drum, a horn, a bell, or whatever fits the retinue.
 
 | Item | Slots | Influence (friendly) | Range | Notes |
 |---|---|---|---|---|
@@ -79,14 +79,14 @@ The Instrument's Influence Bubble is not passive — the bearer must spend **1 a
 - Armor has no Sk penalty — an Elf in plate is still agile, just expensive. Species gear choices are driven by cost and role, not stat penalties
 - Buckler rescues blue (finesse defense), armor rescues red (toughness defense) — different colors for different fighting styles. Shields bridge both
 - Shields take a weapon slot, so defensive investment costs offensive flexibility — a Sword + Shield fighter has 1 slot left (Dagger backup), while a Great Sword fighter has 1 slot free but no shield
-- Alchemy is equipment, not a domain — any warband can buy potions and poisons, keeping it accessible without creating a "magic class"
+- Alchemy is equipment, not a domain — any retinue can buy potions and poisons, keeping it accessible without creating a "magic class"
 - Poisons are consumable (one game) and one per weapon — a recurring crown drain that creates campaign-level purchasing decisions
 - Silversbane inflicts a movement penalty rather than damage, making it tactically distinct from other poisons — it restricts positioning, the most valuable resource in a skirmish game
 - Faction-exclusive alchemy (Silversbane for Silver Hunt) differentiates factions that share the same Archetype + Domain
 - Influence Bubbles are suppressed when the bearer is Downed/Stunned/OOA — killing or downing the banner bearer silences the bubble, making them a high-value target
 - No LoS requirement keeps Influence Bubbles simple and avoids the "can my banner see through this wall" question — they represent proximity, not awareness
-- Same-item non-stacking prevents warband-wide stat inflation from spamming banners — two banners cover more area, not more bonus
+- Same-item non-stacking prevents retinue-wide stat inflation from spamming banners — two banners cover more area, not more bonus
 - Relic at 2 weapon slots is a real investment: the bearer carries it and one sidearm at most, making them a support piece, not a frontline fighter
-- Instrument at 2 slots plus an action each turn is a heavy investment — the bearer contributes to the warband's speed but sacrifices weapon flexibility and half their own actions to do it
+- Instrument at 2 slots plus an action each turn is a heavy investment — the bearer contributes to the retinue's speed but sacrifices weapon flexibility and half their own actions to do it
 - The bearer benefits from their own Influence Bubble — a relic bearer steadies their own nerves, an instrument player keeps their own pace
-- Relic and Instrument are deliberately generic names — players model and flavor them however fits their warband
+- Relic and Instrument are deliberately generic names — players model and flavor them however fits their retinue

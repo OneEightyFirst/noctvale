@@ -11,10 +11,10 @@ Each fighter has **2 actions** per activation.
 ## Movement Actions
 
 ### Move
-Move up to the fighter's Movement (M) value.
+Move up to the fighter's Movement (M) value. Fighters may move through friendly fighters but cannot end on another fighter's base. *(See special-rules.md — Intervening Fighters.)*
 
 ### Charge
-Move up to the fighter's Movement value. Must end in **engagement range** of an enemy.
+Move up to the fighter's Movement value. Must end in **engagement range** of an enemy. Fighters may move through friendly fighters during the charge but cannot end on another fighter's base. *(See special-rules.md — Intervening Fighters.)*
 
 ### Climb
 Move vertically at **half movement**. Cannot end in engagement range.

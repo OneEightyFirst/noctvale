@@ -1,12 +1,12 @@
 # Exploration Phase
 
-After each battle, warbands explore the surrounding area.
+After each battle, retinues explore the surrounding area.
 
 ---
 
 ## Step 1: Determine Location
 
-Roll **1d6** to determine where the warband is exploring.
+Roll **1d6** to determine where the retinue is exploring.
 
 | Roll | Location |
 |---|---|
@@ -23,7 +23,7 @@ Roll **1d6** to determine where the warband is exploring.
 
 Roll **1d6 per surviving hero**.
 
-Maximum of **6 dice** regardless of warband size.
+Maximum of **6 dice** regardless of retinue size.
 
 ---
 
@@ -60,7 +60,7 @@ Players may choose to **push** after their initial roll.
 See [todo.md](../todo.md) for the castle setting pivot discussion, territory/campaign ideas, and open design decisions.
 
 - Rolling per surviving hero ties exploration success to keeping your fighters alive
-- The 6-dice cap prevents large warbands from dominating exploration automatically
+- The 6-dice cap prevents large retinues from dominating exploration automatically
 - "Best 3" means you're always hoping for good high rolls, not just quantity
 - Push the Search is a high-risk high-reward gamble: ignore bad rolls, but you risk more Mishaps
 - Location flavor (Ruins, Chapel, Graveyard, etc.) sets up location-specific discovery tables to be written

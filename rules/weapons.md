@@ -48,7 +48,7 @@ Slings generate a **flat Strike Pool** — the values below are the complete poo
 
 ## Firearms
 
-Firearms use a **flat 2d6 loading gate** — no stat is added. Misfires are equipment failures, not user errors. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). **Firearms are exclusive to warbands with the None domain.**
+Firearms use a **flat 2d6 loading gate** — no stat is added. Misfires are equipment failures, not user errors. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). **Firearms are exclusive to retinues with the None domain.**
 
 Firearms generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats.
 
@@ -69,7 +69,7 @@ Firearms generate a **flat Strike Pool** — the values below are the complete p
 
 ## Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all models (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **Bombs are exclusive to warbands with the None domain** (gunpowder).
+Bombs are thrown explosives with a flat Strike Pool that hits all models (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **Bombs are exclusive to retinues with the None domain** (gunpowder).
 
 ### Throwing a Bomb
 
@@ -110,11 +110,11 @@ Weapons can be made from special materials that grant bonuses against specific f
 - Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
 - Blunderbuss is pure Might (6 Mt, no Sk), short range, and devastating — the gun equivalent of a war axe
 - Long Rifle has the highest Mt bonus and longest range
-- Flintlock variants are identical to their standard counterparts but Single Shot (one fire per game) and cheaper — a budget option for warbands that want firearm alpha strikes without paying full price for reloadable guns
+- Flintlock variants are identical to their standard counterparts but Single Shot (one fire per game) and cheaper — a budget option for retinues that want firearm alpha strikes without paying full price for reloadable guns
 - Slings use flat pools like firearms but weaker (2 Mt / 1 Sk vs Pistol's 5 Mt / 2 Sk) and require no loading gate — the cheapest ranged option, available to everyone
 - Throwing Stars are additive (+1 Sk), no minimum range, 1H — a pocket ranged option for close-quarters fighters
 - Bombs use the same 2d6 gunpowder gate as firearms (≥ 6+, double 1s = explodes in hand). Distance is d6 + Mt inches — on a pass you place the blast anywhere along that line, on a fail it scatters (scatter die for direction). Strong fighters throw farther
 - Smoke Bombs share bomb mechanics but deal no damage — pure utility for blocking LoS
 - Silver weapons are a pure counter-pick: expensive, no general benefit, devastating against Nightpack and Nobility specifically
-- Firearms are exclusive to None domain warbands — magic and gunpowder are parallel power systems, not stacking ones
+- Firearms are exclusive to None domain retinues — magic and gunpowder are parallel power systems, not stacking ones
 - 3 weapon slots allow meaningful loadout decisions: Sword + Shield + Dagger, Longbow + Dagger, Pistol + Sword + Buckler, Great Sword + Pistol, etc.
