@@ -38,10 +38,10 @@ On failure: the opponent may make a **free Melee attack** using the full attack 
 Attack an enemy **within engagement range** using a melee weapon.
 
 ### Ranged
-Attack with a **ranged weapon**. The target must be within the weapon's minimum and maximum range. *(See special-rules.md.)*
+Attack with a **ranged weapon**. The target must be within the weapon's minimum and maximum range and within **line of sight**. *(See special-rules.md.)*
 
 ### Cast
-Cast a spell or fire a firearm. Roll **2d6** against the spell's casting difficulty or the firearm's loading difficulty. If successful, resolve the attack using the spell/firearm as a weapon. Spells **can be cast while in melee**. *(See magic.md for 2d6 outcomes: Mishap, Overcharge, etc.)*
+Cast a spell or fire a firearm. Roll **2d6** against the spell's casting difficulty or the firearm's loading difficulty. If successful, resolve the attack using the spell/firearm as a weapon. Spells **can be cast while in melee**. Enemy targets must be in range and within **line of sight** unless the spell says otherwise. *(See magic.md for 2d6 outcomes: Mishap, Overcharge, etc.; see special-rules.md for line of sight and cover.)*
 
 ### Aim
 Prepare a careful shot. Grants **+1 die of the weapon's dominant color** and **critical hits on natural 6s** on the fighter's next **Ranged** action this activation. The dominant color is whichever stat the weapon adds more of (+Mt = red, +Sk = blue). If tied, the player chooses.
@@ -145,7 +145,7 @@ Begin a new round at Step 1.
 - Underdog initiative (fewer models = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first
 - Scenario-determined initiative for ties keeps round 1 clean and avoids a dice-off every round
 - No surge activations — Overwatch tokens handle activation imbalance without adding another subsystem
-- Hide requires within 1" of terrain — simple, physical, no adjudication arguments about "am I in cover from all angles"
+- Hide requires within 1" of terrain — simple, physical; cover is judged from the firing fighter (see special-rules.md)
 - Hidden blocks targeting beyond 6" rather than granting a stat bonus — creates a binary decision (close the distance or find another target) instead of a modifier to track
 - Combat actions and Charge break Hidden, but movement doesn't — a fighter can reposition while staying concealed as long as they hug terrain
 - Hide pairs naturally with Ranged Reactions: a fighter who gets shot at can react by Hiding (if within 1" of terrain), forcing the shooter to close the gap next time

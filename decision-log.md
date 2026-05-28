@@ -4,6 +4,14 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-28 — Line of sight and cover (terrain bands)
+
+**Decision:** Replaced the two-sentence LoS rule and “more than half obscured = cover” with a single **terrain-only** visibility check from the **firing fighter’s point of view**. Target silhouette is the body on and above the base; parts past the base edge are ignored. **Less than 25%** obscured by intervening terrain = in the open; **25%–90%** = in cover (+1 blue defense die); **more than 90%** = no line of sight for Ranged or Cast. **Ranged** and **Cast** (enemy targets) now explicitly require line of sight in `actions.md`.
+
+**Reasoning:** Percentage bands avoid “sliver visible” arguments while staying narrative (no Kill Team cover lines). Terrain-only keeps fighter blocking and smoke on separate rules. Cover effect unchanged (+1 blue defense die).
+
+---
+
 ## 2026-05-27 — Bone Circle (Necromancy) — first trap spell
 
 **Decision:** Added Bone Circle as Necromancy's 6th spell, completing the domain. Bone Circle is the game's first **trap spell** — a persistent damage zone that triggers on any model that starts their activation in it, ends their activation in it, or moves through it.

@@ -340,19 +340,13 @@ Execute a stunned enemy.
 
 ---
 
-# Line of Sight
+# Line of Sight and Cover
 
-Line of sight is drawn model to model.
+Ranged attacks and Cast actions that select an enemy require line of sight unless a rule says otherwise. Judge from the firing fighter's point of view. Use the target's body on and above its base; ignore parts extending past the base edge.
 
-Parts of the miniature extending beyond the base are ignored.
+Intervening terrain: less than 25% obscured = in the open; 25%–90% = in cover (+1 blue defense die); more than 90% = no line of sight.
 
----
-
-# Cover
-
-If more than half of the model is obscured, the target has cover.
-
-Cover grants +1 blue defense die (rolled with Sk).
+*(Full rules: rules/special-rules.md.)*
 
 ---
 

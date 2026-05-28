@@ -2,19 +2,25 @@
 
 ---
 
-## Line of Sight
+## Line of Sight and Cover
 
-Line of sight is drawn **model to model**.
+**Ranged** attacks and **Cast** actions that select an enemy target require **line of sight** unless a rule says otherwise. *(See actions.md.)*
 
-Parts of the miniature extending beyond the base are **ignored**.
+### How to check
 
----
+Judge from the **firing fighter's point of view** (stoop to the firing model's height if needed).
 
-## Cover
+**Target silhouette:** The target's body on and above its base. **Ignore** any part of the miniature that extends past the edge of the base (weapons, banners, cloaks, etc.).
 
-If **more than half** of the target model is obscured, the target has cover.
+Estimate how much of that silhouette is obscured by **intervening terrain** — terrain features between the firing fighter and the target.
 
-**Cover grants +1 blue defense die** (rolled with Sk).
+| Obscured by intervening terrain | Result |
+|---|---|
+| **Less than 25%** | **In the open** — line of sight, no cover |
+| **25%–90%** | **In cover** — line of sight |
+| **More than 90%** | **No line of sight** — not a valid target for **Ranged** or **Cast** |
+
+**Cover grants +1 blue defense die** (rolled with Sk) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard attack sequence.
 
 ---
 
@@ -78,7 +84,8 @@ If a friendly fighter is **also engaged** with the same enemy:
 
 ## Design Notes
 
-- LoS model-to-model (ignoring base overhang) keeps it simple and consistent with most skirmish conventions
+- Visibility from the firing fighter's PoV with ignored base overhang avoids sculpt arguments while staying narrative
+- Three terrain-only bands (<25% / 25–90% / >90%) eliminate "sliver behind a ruin" disputes
 - Cover as +1 blue (Sk) defense die represents using terrain to dodge — Elves thrive in cover, Dwarves prefer to Brace
 - Falling damage as a per-2" Sk check scales naturally with height
 - Overwatch as a catch-up mechanic prevents outnumbered players from being steamrolled by activation order
