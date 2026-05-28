@@ -164,7 +164,7 @@ For alpha, daemons are recruited like any other warband member. Pre-game summoni
 | Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All models in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
 | Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
 | Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All models under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
-| *(TBD)* | | | | | | |
+| Bone Circle | *(TBD)* | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any model that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
 
 #### Skeleton Profile
 

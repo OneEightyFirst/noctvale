@@ -4,6 +4,20 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-27 — Bone Circle (Necromancy) — first trap spell
+
+**Decision:** Added Bone Circle as Necromancy's 6th spell, completing the domain. Bone Circle is the game's first **trap spell** — a persistent damage zone that triggers on any model that starts their activation in it, ends their activation in it, or moves through it.
+
+**Bone Circle:** Choose a point within 12". Place a 3" blast template. Any model in the zone takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation. Mishap: zone centers on the caster.
+
+**Reasoning:** Area denial through persistent damage is a new mechanic — no other spell does this. Distinct from Cursed Ground (immediate debuff zone with -1 M and a one-time Sk check) because Bone Circle triggers repeatedly on movement. Creates tactical decisions: do you walk through and eat the hit, or spend actions going around?
+
+**Necromancy is now complete (freebie + 6):** Deathbolt, Summon Skeleton, Raise Dead, Cursed Ground, Wither, Bone Blast, Bone Circle.
+
+**Open:** Infernal is the last domain with no spells.
+
+---
+
 ## 2026-05-26 — Arcane, Nature, and Necromancy spell lists
 
 **Arcane — complete (freebie + 6):**
