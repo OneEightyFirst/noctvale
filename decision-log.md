@@ -29,9 +29,17 @@ Older entries below may predate this convention and lack a hash until backfilled
 
 ---
 
+## 2026-05-28 — Fix decision log commit hash
+
+**Commit:** `dd78139`
+
+**Decision:** Correct **`Commit:`** on the "one entry per commit" section — amend changed HEAD from `b358c84` to `ba118c9`.
+
+---
+
 ## 2026-05-28 — Decision log: one entry per commit
 
-**Commit:** `b358c84`
+**Commit:** `ba118c9`
 
 **Decision:** Restructure recent log entries to **one section per git commit**, each with a **`Commit:`** short hash. Add **How to use this log** workflow: update `decision-log.md` **before** every commit, stage it with the change, insert hash after commit. Add `.cursor/rules/decision-log-before-commit.mdc` so agents follow this every time.
 
