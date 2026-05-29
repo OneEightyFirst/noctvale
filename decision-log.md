@@ -8,56 +8,43 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ### Workflow
 
-1. **Draft** — Add **one** new section at the top (below this heading). Describe every design change in the staged diff: **Decision** + **Reasoning**.
-2. **Stage** — Include `decision-log.md` in the same commit as the rule/campaign/todo changes.
-3. **Commit** — Run `git commit` as usual.
-4. **Hash** — Set **`Commit:`** `short-hash` on that section (`git rev-parse --short HEAD`). If you amended, run `git rev-parse --short HEAD` **again** after the amend, update the log, then amend once more to fold in the hash (unpushed commits only).
+1. **Draft** — Add **one** new section at the top (below this heading). Use **`## YYYY-MM-DD — Title`** — the date is the correlation key (no commit hash).
+2. **Write** — **Decision** + **Reasoning** for everything in the staged diff.
+3. **Stage** — Include `decision-log.md` in the same commit as the rule/campaign/todo changes.
+4. **Commit** — One log section per commit. Same day, multiple commits? Use distinct titles.
 
-**One entry per commit.** Do not split a single commit across multiple sections. Do not commit design work without a matching log entry.
+Do not commit design work without a matching log entry.
 
 ### Entry format
 
 | Field | Required |
 |---|---|
-| `## YYYY-MM-DD — Title` | Yes — matches commit intent |
-| **`Commit:`** `hash` | Yes — after commit (enables `git log` ↔ log diff) |
+| `## YYYY-MM-DD — Title` | Yes — date + short title; matches commit intent |
 | **Decision** | Yes |
 | **Reasoning** | Yes when not obvious |
-| **Superseded by:** `hash` | When replacing an older decision |
+| **Superseded by:** `YYYY-MM-DD — Title` | When replacing an older decision |
 
-Older entries below may predate this convention and lack a hash until backfilled.
-
----
-
-## 2026-05-28 — Decision log hash after amend
-
-**Commit:** `a0ce15b`
-
-**Decision:** Document that **`Commit:`** must be taken from `git rev-parse --short HEAD` **after** any amend. Fix fix-up entry hash to match final HEAD.
+To compare with git history: `git log --since=YYYY-MM-DD --until=YYYY-MM-DD+1` and match commit messages to log titles.
 
 ---
 
-## 2026-05-28 — Fix decision log commit hash
+## 2026-05-28 — Decision log: date + title, not commit hash
 
-**Commit:** `b512184`
+**Decision:** Drop **`Commit:`** hash lines. Correlate entries with **`## YYYY-MM-DD — Title`** only — one section per commit; same-day commits use distinct titles. Update workflow and `.cursor/rules/decision-log-before-commit.mdc`. Remove hash-only meta entries.
 
-**Decision:** Correct **`Commit:`** on the "one entry per commit" section — amend changed HEAD from `b358c84` to `ba118c9`.
+**Reasoning:** Date is known before commit; no post-commit amend or hash fix-up.
 
 ---
 
 ## 2026-05-28 — Decision log: one entry per commit
 
-**Commit:** `ba118c9`
+**Decision:** Restructure log to **one section per git commit**. Update `decision-log.md` **before** every commit and stage it with the change. Add `.cursor/rules/decision-log-before-commit.mdc`.
 
-**Decision:** Restructure recent log entries to **one section per git commit**, each with a **`Commit:`** short hash. Add **How to use this log** workflow: update `decision-log.md` **before** every commit, stage it with the change, insert hash after commit. Add `.cursor/rules/decision-log-before-commit.mdc` so agents follow this every time.
-
-**Reasoning:** Lets you diff `git log` against the decision log and catch drift; avoids ten micro-entries for one commit.
+**Reasoning:** Match git history to design rationale without ten micro-entries for one commit.
 
 ---
 
 ## 2026-05-28 — Weapons taxonomy, hammers, retinue identity doc
-
-**Commit:** `dc93b17`
 
 **Decision:** Reorganize `rules/weapons.md` by access category. **Melee:** Basic · Long · Heavy · Exotic. **Spear** in **Long**. Add **Mace** (Basic) and **War Hammer** (Heavy) — **Hammer** type outside the triangle; natural 6s crit vs **Heavy Armor** only; no triangle crits when either fighter wields a Hammer (`combat.md` updated).
 
@@ -71,8 +58,6 @@ Move `factions/factions.md` → **`rules/retinue.md`** (Archetypes, Domains, nam
 
 ## 2026-05-28 — Retinue building, post-game charts, campaign economy
 
-**Commit:** `e8d5cb8`
-
 **Decision:** Add **`rules/retinue-building.md`** — generic classes (Leader / Elite / Specialist / Rank), Archetype slot caps, **1000 Crown** budget (5 Crown increments), fighter and wargear costs. **Mayor** (Folk Leader), **Theurge** (Cult Leader, replaces Magister), **Tracker** (Hunter Specialist). Knights: no Rank (Knight + Squire only). **Caster** is a keyword (+25 Crowns), not a class.
 
 Add **`campaign/post-game.md`** — chart-driven loop: Battle Spoils, Survival, Serious Injury, XP spend (Skill/Keyword 2 XP, Stat 5 XP, no levels), Stat/Keyword advancement charts, Fragment nudges. Update **`campaign/exploration.md`** with Mishap chart and Ruins discovery. Bump fragment sell base **15 → 20** Crowns in **`campaign/economy.md`**.
@@ -85,13 +70,11 @@ Add **`campaign/post-game.md`** — chart-driven loop: Battle Spoils, Survival, 
 
 ## 2026-05-28 — Retinue terminology, intervening fighters, LoS simplified
 
-**Commit:** `6f47e29`
-
 **Decision:** Adopt **retinue** (not warband) for the player's list-for-a-fight. **Faction** remains optional named preset (Phoenix Guard, etc.).
 
 **Intervening fighters:** friendlies do not block LoS; move through friendlies allowed. Friendly-in-line-of-fire for firearms/damage spells on miss (1d6 → 1 hits intervening friendly). Clustered enemies: Sk check to retarget when shooting into a mob.
 
-**LoS & cover:** drop percentage bands from `f0e0495`. Binary LoS from shooter's PoV; cover = intervening terrain **>1"** from shooter (+1 blue defense die).
+**LoS & cover:** drop percentage bands (see superseded terrain-bands entry below). Binary LoS from shooter's PoV; cover = intervening terrain **>1"** from shooter (+1 blue defense die).
 
 **Reasoning:** Retinue fits gothic post-imperial tone. Wild shots and mob targeting add friction without competitive targeting rules. Simpler LoS adjudication at the table.
 
@@ -99,17 +82,15 @@ Add **`campaign/post-game.md`** — chart-driven loop: Battle Spoils, Survival, 
 
 ## 2026-05-28 — Line of sight and cover (terrain bands) — superseded
 
-**Commit:** `f0e0495` · **Superseded by:** `6f47e29`
+**Superseded by:** 2026-05-28 — Retinue terminology, intervening fighters, LoS simplified
 
 **Decision:** Terrain-only visibility from firing fighter's PoV. **25%–90%** obscured = cover (+1 blue defense die); **>90%** = no LoS.
 
-**Reasoning:** Percentage bands reduce sliver arguments. Replaced by binary LoS in `6f47e29`.
+**Reasoning:** Percentage bands reduce sliver arguments. Replaced by binary LoS in the entry above.
 
 ---
 
 ## 2026-05-27 — Bone Circle (Necromancy) — first trap spell
-
-**Commit:** `86f5969`
 
 **Decision:** Added Bone Circle as Necromancy's 6th spell, completing the domain. Bone Circle is the game's first **trap spell** — a persistent damage zone that triggers on any model that starts their activation in it, ends their activation in it, or moves through it.
 

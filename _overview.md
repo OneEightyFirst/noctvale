@@ -40,7 +40,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | Relic Fragment Economy | `campaign/economy.md` |
 | Retinue (Archetypes & Domains) | `rules/retinue.md` |
 | Retinue Building | `rules/retinue-building.md` |
-| Decision Log | `decision-log.md` (update **before every commit** — see `.cursor/rules/decision-log-before-commit.mdc`) |
+| Decision Log | `decision-log.md` (one entry per commit — **date + title**; update before every commit) |
 | Reference Material | `reference-material.md` |
 | Rosewater 20 Lessons | `reference-rosewater-20-lessons.md` |
 | Schreiber Game Balance | `reference-schreiber-game-balance.md` |
