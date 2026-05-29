@@ -88,9 +88,9 @@ The Stunned fighter is immediately **Out of Action** — no defense roll is made
 
 ## Design Notes
 
-- Downed creates a dramatic tension window — the fighter isn't dead yet and still defends at full strength
-- Downed → Stunned on any unblocked hit means enemies must commit real attacks (not just chip damage) to push through a full defense pool
-- Stunned fighters lose all blue defense dice — high-Sk fighters like Elves become extremely vulnerable, while high-Mt fighters like Dwarves barely notice the penalty
-- The Recover table is risk-based: players have to decide whether to push for a stand-up or accept remaining Downed
-- Help has genuine risk (roll of 1 = OOA) which makes it a meaningful decision, not a free action
+- Downed creates a dramatic tension window — the fighter still defends at full strength
+- Downed → Stunned on any unblocked hit means enemies must commit real attacks to push through a full defense pool
+- Stunned fighters lose all blue defense dice — high-Sk fighters like Elves become extremely vulnerable; high-Mt fighters like Dwarves feel the penalty less
+- The Recover table is risk-based: push for a stand-up or accept remaining Downed
+- Help has genuine risk (roll of 1 = OOA) — a meaningful decision with real stakes
 - Mercy Kill bypasses defense entirely, giving aggressive players a reliable way to finish Stunned enemies up close

@@ -2,6 +2,28 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
+## 2026-05-29 — Rulebook style guide and rules editorial pass
+
+**Decision:** Added `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` (canonical terminology, formatting, action blocks, shared boxouts, checklist) and `NOCTVALE_DESIGN_TENETS.md`. Added `rules/_shared-snippets.md` as the master copy for verbatim **Attack Sequence**, **Apply Wounds**, **Casting Roll**, and **Primer Roll** boxes, repeated in `combat.md`, `actions.md`, `magic.md`, and `weapons.md`. Applied editorial conventions across active rules and campaign docs: **fighter** not model/unit, **retinue** not warband, **`"`** inches, US spelling, **casting roll** / **primer roll** (not **gate**), **skip activation** (not forgo/forgone), structured action blocks in `actions.md`, **Sequence at a Glance** in `campaign/exploration.md`, Domain **limits** / Tradition **unlock** wording. Removed draft `NOCTVALE_INFERRED_RULEBOOK_STYLE_GUIDE.md` — its adopted patterns live in the canonical style guide only.
+
+**Reasoning:** One style source for writers and agents; shared sub-routines repeated at point of use so players do not hunt cross-refs mid-combat. **Gate** and **forgo** read wrong for Noctvale tone. Inferred guide was a working document; keeping two guides invited drift.
+
+**Supersedes:** Any informal “gate” / “loading gate” / “forgo activation” wording in player-facing rules (historical entries in this log unchanged).
+
+## 2026-05-29 — Arcane rework: Hoarfrost replaces Arcane Barrage
+
+**Decision:** Removed **Arcane Barrage**. Added **Hoarfrost** — placed large blast (18", same reach as Fireball). Persistent ice hazard until the caster's next activation; affects friends and enemies. When a fighter **ends any movement** in the zone: Sk check (d6 + Sk ≥ 8). Pass → slide d6" in movement direction. Fail → scatter die + d6" slide. Natural 1 on the check die → **Downed** at end of slide. Slide stopped by terrain, wall, or another base → 1 Wound. **Mishap:** blast centers on the caster.
+
+**Reasoning:** Arcane Barrage was a third damage spell overlapping Bolt. Hoarfrost pairs with **Fireball** as the control blast (fire = damage, ice = movement hazard) and reuses scatter/slide mechanics from bombs and falling (Sk check, nat 1 always fails per core rules). **Hoarfrost** — the rime word, but readable: white crust ice that looks harmless until you step wrong.
+
+**Supersedes:** Partial intent of 2026-05-29 — Cut Arcane Barrage (open slot now filled).
+
+## 2026-05-29 — Cut Arcane Barrage
+
+**Decision:** Removed **Arcane Barrage** from the Arcane spell list. Arcane now has one open slot among its six non-freebie spells (freebie **Arcane Bolt** unchanged).
+
+**Reasoning:** Arcane carried three damage spells (Bolt, Fireball, Barrage). Barrage overlapped Bolt’s precision-damage role without adding positioning or combo play. Cutting it trims redundant damage and frees a slot for a reworked Arcane identity (e.g. placed terrain blast paired with Fireball). Remaining Arcane damage: **Arcane Bolt** (single-target) and **Fireball** (large blast).
+
 ## How to use this log
 
 **Update this file before every git commit.** The decision log is part of the commit, not an afterthought.
@@ -78,7 +100,7 @@ Add **`campaign/post-game.md`** — chart-driven loop: Battle Spoils, Survival, 
 
 ## 2026-05-28 — Retinue terminology, intervening fighters, LoS simplified
 
-**Decision:** Adopt **retinue** (not warband) for the player's list-for-a-fight. **Faction** remains optional named preset (Phoenix Guard, etc.).
+**Decision:** Adopt **retinue** for the player's list-for-a-fight. **Faction** remains optional named preset (Phoenix Guard, etc.).
 
 **Intervening fighters:** friendlies do not block LoS; move through friendlies allowed. Friendly-in-line-of-fire for firearms/damage spells on miss (1d6 → 1 hits intervening friendly). Clustered enemies: Sk check to retarget when shooting into a mob.
 
@@ -100,9 +122,9 @@ Add **`campaign/post-game.md`** — chart-driven loop: Battle Spoils, Survival, 
 
 ## 2026-05-27 — Bone Circle (Necromancy) — first trap spell
 
-**Decision:** Added Bone Circle as Necromancy's 6th spell, completing the domain. Bone Circle is the game's first **trap spell** — a persistent damage zone that triggers on any model that starts their activation in it, ends their activation in it, or moves through it.
+**Decision:** Added Bone Circle as Necromancy's 6th spell, completing the domain. Bone Circle is the game's first **trap spell** — a persistent damage zone that triggers on any fighter that starts their activation in it, ends their activation in it, or moves through it.
 
-**Bone Circle:** Choose a point within 12". Place a 3" blast template. Any model in the zone takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation. Mishap: zone centers on the caster.
+**Bone Circle:** Choose a point within 12". Place a 3" blast template. Any fighter in the zone takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation. Mishap: zone centers on the caster.
 
 **Reasoning:** Area denial through persistent damage is a new mechanic — no other spell does this. Distinct from Cursed Ground (immediate debuff zone with -1 M and a one-time Sk check) because Bone Circle triggers repeatedly on movement. Creates tactical decisions: do you walk through and eat the hit, or spend actions going around?
 
@@ -119,7 +141,7 @@ Arcane is raw magical mastery — precision, control, energy manipulation. Three
 
 New spells:
 - **Fireball** — Large blast, 18". Three outcomes: pass = on target, normal fail = scatters (scatter die + d6"), Mishap (double 1s) = blast centers on caster. Matches existing bomb scatter mechanics.
-- **Telekinesis** — Move any model 6" directly toward or away from caster. No target check.
+- **Telekinesis** — Move any fighter 6" directly toward or away from caster. No target check.
 - **Displacement** — Teleport friendly fighter 6" in any direction, ignores terrain/engagement.
 - **Arcane Barrage** — 3 automatic Sk hits (blue), no Strike Pool roll, no to-hit roll. Guaranteed damage on successful cast, defender rolls defense normally.
 - **Slow** — Target enemy loses 1 action on next activation.
@@ -141,7 +163,7 @@ New spells:
 - **Raise Dead** — Bring back a friendly OOA fighter within 3" with 1 wound, Undead, Fearless. Activates immediately with 2 actions then goes OOA permanently. Mishap: opponent controls the raised fighter.
 - **Cursed Ground** — Large blast within 12". Models in zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check. Mishap: centers on caster.
 - **Wither** — Target enemy suffers -1 Mt, -1 Sk, -1" M. Applies Weakened condition. Heavier debuff than Blood's Enfeeble.
-- **Bone Blast** — Blast centered on caster, 1 Mt / 4 Sk hit to all models except caster. Bone shrapnel — mostly blue dice. Mirror of Light's Purge the Faithless (self-centered AoE) with inverted dice profile.
+- **Bone Blast** — Blast centered on caster, 1 Mt / 4 Sk hit to all fighters except caster. Bone shrapnel — mostly blue dice. Mirror of Light's Purge the Faithless (self-centered AoE) with inverted dice profile.
 - 1 slot remains TBD.
 
 **Open questions:**
@@ -165,7 +187,7 @@ New spells:
 **Nightfall (Blood):**
 - Target friendly Blood domain fighter is engulfed in a shadow bubble. **No ranged weapons or spells can target into or out of the bubble.** The target gains **+1 to hit with CC** while within the bubble. Lasts until the caster's next activation.
 - **Mishap:** Bright light erupts instead — enemies gain **+1 to hit** the caster with ranged weapons, and the caster suffers **-1 Mt** until the start of their next activation.
-- **Design intent:** The vampire chooses to step into darkness — it's a self-buff, not an enemy lockdown. The darkness cuts both ways (no friendly ranged/spells can help either). Pairs with Enthrall (pull enemies into engagement) and Predator's Grace (close distance before darkness drops). Targets friendly Blood domain models specifically, not just any friendly fighter.
+- **Design intent:** The vampire chooses to step into darkness — it's a self-buff, not an enemy lockdown. The darkness cuts both ways (no friendly ranged/spells can help either). Pairs with Enthrall (pull enemies into engagement) and Predator's Grace (close distance before darkness drops). Targets friendly Blood domain fighters specifically.
 
 **Reasoning:** Both spells use shadow but from opposite directions — Nature hides in it (defensive), Blood fights in it (aggressive). Nightfall targets friendly Blood domain fighters specifically to prevent it from being used as a ranged shutdown tool against enemies.
 
@@ -173,7 +195,7 @@ New spells:
 
 **Open questions:**
 - Casting difficulties not yet assigned for either spell.
-- Nightfall's bubble size — is it just the model's base, or does it extend outward? Current read is model-only (1" engagement range defines the "inside").
+- Nightfall's bubble size — is it just the fighter's base, or does it extend outward? Current read is fighter-only (1" engagement range defines the "inside").
 
 ---
 
@@ -330,11 +352,11 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 ## 2026-05-19 — Retinue size targets
 
-**Decision:** Normal retinue size is 5–10 models. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.
+**Decision:** Normal retinue size is 5–10 fighters. Absolute maximum ~20, more realistically ~15. These are targets, not hard rules yet.
 
 **Fighter tiers:** 4 levels — Leader, Caster/Special, Champion, Troop. Archetype determines how many of each you can bring. Cult gets 3 max casters; all other archetypes get 1.
 
-**Edge case noted:** An Infernal Cult retinue with 3 casters could theoretically summon enough Imps (post-alpha summoning system) to hit the upper bound if everything goes right. Even in that extreme, the cap should stay around 20 models on the table.
+**Edge case noted:** An Infernal Cult retinue with 3 casters could theoretically summon enough Imps (post-alpha summoning system) to hit the upper bound if everything goes right. Even in that extreme, the cap should stay around 20 fighters on the table.
 
 **Status:** Superseded by 2026-05-28 retinue-building rules. Bounds defined in `rules/retinue-building.md`.
 
@@ -346,22 +368,22 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 - **Fear** — Cannot move closer to the source for the rest of your turn.
 - **Panic** — Cannot move closer + must spend at least 1 action moving full movement away from source.
-- **Insanity** — Roll on the Insanity Table (1d6): 1=attack closest model (opponent chooses, not the source), 2–3=move toward nearest board edge (both actions), 4–5=freeze (both actions spent), 6=berserk (charge/shoot source with +2 Mt / +1 Sk, -1 to hit).
+- **Insanity** — Roll on the Insanity Table (1d6): 1=attack closest fighter (opponent chooses, not the source), 2–3=move toward nearest board edge (both actions), 4–5=freeze (both actions spent), 6=berserk (charge/shoot source with +2 Mt / +1 Sk, -1 to hit).
 
-**Test timing:** Triggers when a fighter activates within range + LoS of the source, or when charging/charged (melee variant). Default range is 6" + LoS unless the model/spell specifies otherwise.
+**Test timing:** Triggers when a fighter activates within range + LoS of the source, or when charging/charged (melee variant). Default range is 6" + LoS unless the fighter/spell specifies otherwise.
 
 **Pass:** Immune to that specific source for the rest of the game.
 
 **Fail:** Effect applies. At the start of the fighter's next activation, test again before acting. Pass = act normally. Fail = effect repeats.
 
-**Fear/Panic/Insanity are keywords on specific models and spells, not domain-wide traits.** Not all models in a domain cause fear — it's per profile.
+**Fear/Panic/Insanity are keywords on specific fighters and spells.** Fear is per profile, not domain-wide.
 
 **Fearless** keyword grants immunity to all three.
 
 **Domain tendencies (not rules):**
-- Blood, Necromancy, Infernal — more likely to have fear-causing models
+- Blood, Necromancy, Infernal — more likely to have fear-causing fighters
 - Light — fear against Blood, Necromancy, Infernal
-- Nature, Arcane — some fear-causing models
+- Nature, Arcane — some fear-causing fighters
 - Infernal, Arcane — tend toward blanket fear (not domain-targeted)
 - None — access to Fearless abilities
 
@@ -387,9 +409,9 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 **Decisions made:**
 - **Radiant Strike** — 7+, +3 Mt, 12", +1 Mt vs Undead and Daemons. Mishap: caster takes the damage.
-- **Holy Light** — 7+, 12" from caster, strips cover and Hidden condition from all models in range. Reveal/utility spell, not damage.
+- **Holy Light** — 7+, 12" from caster, strips cover and Hidden condition from all fighters in range. Reveal/utility spell, not damage.
 - **Heal** — 6+, 1" range, restore 1 wound + improve wound state by one step. Mishap: deal 1 wound to target instead.
-- **AoE attack (unnamed)** — 7+, +3 Mt / +1 Sk, 3" blast from caster, hits all models in radius. Mishap: caster takes the damage.
+- **AoE attack (unnamed)** — 7+, +3 Mt / +1 Sk, 3" blast from caster, hits all fighters in radius. Mishap: caster takes the damage.
 - 2 slots remaining (TBD).
 
 **Reasoning:** 7+ is the standard Light difficulty. The AoE attack at 7+ with +3 Mt / +1 Sk is justified by the caster needing to be surrounded by enemies to use it — positional risk compensates for multi-target value. Heal at 6+ is the easiest spell, justified by 1" touch range and the caster spending their activation on support.
@@ -408,7 +430,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 **Decision:** For the alpha version, daemons are recruited like any other retinue member. Pre-game summoning tables (1d6 to determine tier, then variant roll) are deferred to post-alpha.
 
-**Reasoning:** Summoning tables add complexity and require players to own extra models. Better to get the core game working first and layer summoning on later. Community feedback on random roster tolerance is pending.
+**Reasoning:** Summoning tables add complexity and require players to field extra fighters. Better to get the core game working first and layer summoning on later. Community feedback on random roster tolerance is pending.
 
 ---
 

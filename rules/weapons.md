@@ -44,14 +44,14 @@ Ranged weapons split into two families. **Magic and gunpowder do not mix** on th
 
 #### Gunpowder weapons — firearms
 
-Firearms use a **flat 2d6 loading gate** (difficulty 6+, no stat added). Misfires are equipment failures, not user errors. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — values below are the complete pool, not added to the shooter's base stats.
+Firearms use a **flat primer roll** (**2d6**, difficulty **6+**, no stat added). Misfires are equipment failures. Double 1s = **Misfire**, double 6s = **Overcharge**. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — values below are the complete pool, independent of the shooter's base stats.
 
 | Tier | Role | Weapons |
 |---|---|---|
 | **Basic** | Standard-issue infantry gunpowder | Musket, Blunderbuss |
 | **Refined** | Refined personal arms — sidearm and precision rifle | Pistol, Long Rifle |
 
-**Flintlock** is a **keyword** (not a tier). Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per game; cannot reload). See [Keywords](#keywords).
+**Flintlock** is a **keyword**. Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per game; cannot reload). See [Keywords](#keywords).
 
 #### Gunpowder weapons — bombs
 
@@ -66,7 +66,7 @@ Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use p
 Apply to a **firearm** at recruitment:
 
 - **−25 Crowns** (after base weapon cost)
-- **Single Shot** — may fire once per game; cannot reload
+- **Single Shot** — may fire once per game; cannot reload *(one use per battle)*
 
 Any firearm may take Flintlock. A Refined Pistol with Flintlock costs 90 − 25 = **65 Crowns**.
 
@@ -115,7 +115,7 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 | Weapon | Hands | Range | +Mt | +Sk | Notes |
 |---|---|---|---|---|---|
 | Shortbow | 2H | 3"–18" | — | +2 | Fast, Sk-dominant |
-| Sling | 1H | 3"–12" | 2 | 1 | Flat Strike Pool; normal RC to hit; no loading gate |
+| Sling | 1H | 3"–12" | 2 | 1 | Flat Strike Pool; normal RC to hit; no primer roll |
 | Throwing Stars | 1H | 0"–8" | — | +1 | No min range, thrown; additive |
 
 ### Long
@@ -131,7 +131,7 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 |---|---|---|---|---|---|
 | Heavy Crossbow | 2H | 3"–30" | +3 | — | Slow, powerful |
 
-*Slings generate a flat Strike Pool (2 Mt / 1 Sk) — not added to the shooter's base stats. Uses a normal ranged attack roll (d6 + RC ≥ 8) to hit.*
+*Slings generate a flat Strike Pool (2 Mt / 1 Sk), independent of the shooter's base stats. Uses a normal ranged attack roll (d6 + RC ≥ 8) to hit.*
 
 ---
 
@@ -153,20 +153,55 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 | Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range; refined sidearm |
 | Long Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range; precision piece |
 
+> ### Primer Roll (2d6)
+>
+> Roll **2d6** against the firearm's loading difficulty. No stat is added.
+>
+> | Result | Effect |
+> |---|---|
+> | **Double 1s** | **Misfire** — see weapon notes |
+> | **Below difficulty** | The gun fails to fire. The action is spent |
+> | **Meets or exceeds difficulty** | The gun fires. Resolve the **Attack Sequence** |
+> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
+
+> ### Attack Sequence
+>
+> **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+>
+> **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
+>
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by **Heavy Armor** crit rescue.
+>
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **rescue** misses. *(See `equipment.md`.)*
+>
+> **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
+
+> ### Apply Wounds
+>
+> Each unblocked hit inflicts **1 Wound**.
+>
+> - When a fighter reaches **0 Wounds**, they become **Downed**.
+> - An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
+> - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
+>
+> **Downed** fighters defend with their full pool. **Stunned** fighters defend with **red dice only** (no blue).
+
+*(Full step-by-step rules: `combat.md`.)*
+
 ---
 
 ## Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all models (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **None Domain only** (gunpowder).
+Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **None Domain only** (gunpowder).
 
 ### Throwing a Bomb
 
 1. **Declare a target** (pick a direction/point you're aiming at).
-2. **Roll 2d6** (gunpowder gate, same as firearms):
+2. **Roll the primer roll** (**2d6**, same as firearms):
    - **Double 1s:** Bomb explodes in the thrower's hand. Center the blast template on the thrower.
-   - **Fail (not double 1s):** Bomb is still thrown but scatters. Roll **d6 + Mt** for distance in inches, then roll a **scatter die** for direction (relative to the declared target). The bomb detonates where it lands.
-   - **Pass (≥ 6+):** Bomb is on target. Roll **d6 + Mt** for maximum distance in inches — place the blast marker anywhere along that line up to the rolled distance.
-3. All models (friend and foe) under the blast template suffer the Strike Pool.
+   - **Fail (not double 1s):** Bomb is still thrown but scatters. Roll **d6 + Mt**. Move the detonation point that many **"** from the declared target, using a **scatter die** for direction.
+   - **Pass (≥ 6+):** Bomb is on target. Roll **d6 + Mt** for maximum distance — place the blast marker anywhere along the line to the declared target up to that many **"**.
+3. All fighters (friend and foe) under the blast template suffer the Strike Pool.
 
 ### Bomb Table
 
@@ -175,7 +210,7 @@ Bombs are thrown explosives with a flat Strike Pool that hits all models (friend
 | Bomb | 1H | d6 + Mt | 3 | 2 | 3" blast, Single Shot |
 | Smoke Bomb | 1H | d6 + Mt | — | — | 6" blast, Single Shot, Smoke |
 
-**Smoke:** Creates a 6" cloud that blocks line of sight for all models. The cloud remains until the end of the round. A fighter may choose to auto-fail the 2d6 gate (see core rules) to detonate the smoke bomb at their feet, creating instant cover centered on themselves.
+**Smoke:** Creates a 6" cloud that blocks line of sight for all fighters. The cloud remains until the end of the round. A fighter may choose to deliberately fail the **primer roll** to detonate the smoke bomb at their feet, creating instant cover centered on themselves.
 
 ---
 
@@ -193,8 +228,8 @@ Weapons can be made from special materials that grant bonuses against specific f
 
 - **Hammer type** — plate-breakers; no triangle crits, but natural 6s crit vs **Heavy Armor** only. Makes hammers a counter-pick to Knights without rewriting the triangle
 - **Refined firearms** — Pistol and Long Rifle; personal arms vs Basic-issue Musket/Blunderbuss
-- **Flintlock keyword** — budget Single Shot on any firearm; not a separate weapon line
-- **Spear** is **Long** (reach), not Basic
-- Firearms generate flat Strike Pools — the gun's power comes from the weapon, not the shooter
-- Slings: weakest flat pool, no loading gate — cheapest missile option
+- **Flintlock keyword** — budget Single Shot option on any firearm
+- **Spear** is **Long** (reach)
+- Firearms generate flat Strike Pools — power comes from the weapon profile
+- Slings: weakest flat pool, no primer roll — cheapest missile option
 - Silver weapons are a pure counter-pick against Nightpack and Nobility

@@ -13,7 +13,7 @@ Every retinue is built in two layers:
 
 Retinue building uses **constrained points**: a **Crown budget** plus **composition limits** per Archetype. Each Archetype uses its own tier names; slots are capped so the roster cannot exceed the Archetype maximum.
 
-For the alpha playtest, use a **1000 Crown** budget. Campaign retinues also start at 1000 Crowns; between games, spend earnings from sold Relic Fragments (see `campaign/economy.md`).
+For the alpha playtest, use a **1000 Crown** budget. Campaign retinues also start at **1000 Crowns** and **1000 Retinue Rating** (Veteran Value 0 on every fighter). Between games, spend earnings from sold Relic Fragments (see `campaign/economy.md`). After campaign advances, update **Retinue Rating** (see [Veteran Value](../campaign/post-game.md#veteran-value--retinue-rating)).
 
 Every Crown cost in this file is a multiple of **5 Crowns**.
 
@@ -25,7 +25,7 @@ Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same buil
 
 1. Choose **Archetype**, **Domain**, and **Tradition** (see `retinue.md` — one Tradition per retinue, allowed for your Archetype on that Domain).
 2. Set your **Crown budget** (1000 for alpha skirmish).
-3. Recruit fighters within your Archetype's **model count** and **tier limits** (below).
+3. Recruit fighters within your Archetype's **fighter count** and **tier limits** (below).
 4. Assign each fighter a **species** and **tier profile**.
 5. Equip each fighter within Archetype melee, missile, and gunpowder access and **weapon slot** limits. Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see `rules/weapons.md`).
 6. Assign **keywords** and spells — fighters with the **Caster** keyword know 3 Domain spells (see Keywords below).
@@ -43,7 +43,7 @@ Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same buil
 | Folk | 6 | 8–12 | 15 |
 | Cult | 5 | 5–8 | 10 |
 
-Every retinue must include exactly **1 Leader**. Fill remaining slots from your Archetype's tier caps below — the caps are tuned so the maximum models **including the Leader** match the table above.
+Every retinue must include exactly **1 Leader**. Fill remaining slots from your Archetype's tier caps below — the caps are tuned so the maximum fighters **including the Leader** match the table above.
 
 | Archetype | Leader | Follower slots | **Max** |
 |---|---|---|---|
@@ -83,7 +83,7 @@ Named factions may use different flavor titles in lore without changing class na
 
 **Traditions** (Witches, Crusaders, etc.) are retinue-wide identity chosen at step 1 — see `retinue.md`. This section covers **keywords** on individual fighters.
 
-Keywords are tags on a fighter profile. They stack with class — they do not replace class.
+Keywords are tags on a fighter profile. They stack with class.
 
 Keywords can come from:
 
@@ -101,7 +101,7 @@ A fighter with the **Caster** keyword:
 
 Spell choice is free at list creation. The Domain freebie attack spell counts toward the 3. **+25 Crowns** when adding Caster at recruitment *(alpha)*.
 
-If a fighter takes Caster on a class that normally grants a **+1 stat** bonus (Leader, Specialist, or Elite), they use the **Caster** profile instead of that class bonus — they do not get both.
+If a fighter takes Caster on a class that normally grants a **+1 stat** bonus (Leader, Specialist, or Elite), they use the **Caster** profile **or** that class bonus — one or the other.
 
 ### Caster keyword — roster creation
 
@@ -130,26 +130,26 @@ No Rank class — every follower is a **Knight** or **Squire**.
 
 | Class | Count | Profile |
 |---|---|---|
-| **Lord** | 1 (required) | Species baseline + **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa). Max 5 at creation. May take **Caster** keyword instead of class bonus. |
+| **Lord** | 1 (required) | Species baseline + **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa). Max 5 at creation. May take **Caster** keyword or the class +1 stat bonus. |
 | **Knight** | 0–4 | Elite — +1 Mt or +1 Sk. |
-| **Squire** | 0–5 | Specialist — +1 CC or +1 RC; or take **Caster** keyword instead of class bonus |
+| **Squire** | 0–5 | Specialist — +1 CC or +1 RC; or **Caster** keyword |
 
 ### Hunters *(max 12)*
 
 | Class | Count | Profile |
 |---|---|---|
-| **Captain** | 1 (required) | Species baseline + **+1** to one stat. Max 5 at creation. May take **Caster** keyword instead of class bonus. |
+| **Captain** | 1 (required) | Species baseline + **+1** to one stat. Max 5 at creation. May take **Caster** keyword or the class +1 stat bonus. |
 | **Stalker** | 0–4 | Elite — +1 Mt or +1 Sk. |
-| **Tracker** | 0–3 | Specialist — +1 CC or +1 RC; or take **Caster** keyword instead of class bonus |
+| **Tracker** | 0–3 | Specialist — +1 CC or +1 RC; or **Caster** keyword |
 | **Hand** | 0–4 | Rank — species baseline; no class bonus. |
 
 ### Folk *(max 15)*
 
 | Class | Count | Profile |
 |---|---|---|
-| **Mayor** | 1 (required) | Species baseline + **+1** to one stat. Max 5 at creation. May take **Caster** keyword instead of class bonus. |
+| **Mayor** | 1 (required) | Species baseline + **+1** to one stat. Max 5 at creation. May take **Caster** keyword or the class +1 stat bonus. |
 | **Guildsman** | 0–3 | Elite — +1 Mt or +1 Sk. |
-| **Militiaman** | 0–5 | Specialist — +1 CC or +1 RC; or take **Caster** keyword instead of class bonus |
+| **Militiaman** | 0–5 | Specialist — +1 CC or +1 RC; or **Caster** keyword |
 | **Townsfolk** | 0–6 | Rank — species baseline; no class bonus. |
 
 ### Cult *(max 10)*
@@ -166,7 +166,7 @@ No Elite class. Magic lives on **Leader** and **Specialist** via the **Caster** 
 
 ## Domain Composition
 
-**Domain** changes *how many* of each class you can field (within the Archetype maximum), not the class names. It also gates magic vs gunpowder and spell lists (see `retinue.md`).
+**Domain** sets how many of each class you can field within the Archetype maximum. It also determines access to magic vs gunpowder and spell lists (see `retinue.md`).
 
 Composition tables per Archetype × Domain — **to be added**.
 
@@ -188,7 +188,7 @@ Species premium applies once per fighter, regardless of tier.
 
 ## Equipment & Spells
 
-### Archetype and Domain gates
+### Archetype and Domain limits
 
 Equipment access follows `retinue.md`:
 
@@ -216,7 +216,7 @@ One poison per weapon, applied during retinue setup. Poisons are consumable (one
 
 All costs are **alpha values** — adjust after playtest balance. Every price is a multiple of **5 Crowns**.
 
-**Budgeting:** at a typical roster size (roughly 7–10 models), fighter recruitment should land around **450–550 Crowns**, leaving **450–550** for weapons, armor, shields, poisons, and other wargear. Larger rosters spend more on bodies and have less kit per fighter — that is intentional.
+**Budgeting:** at a typical roster size (roughly 7–10 fighters), fighter recruitment should land around **450–550 Crowns**, leaving **450–550** for weapons, armor, shields, poisons, and other wargear. Larger rosters spend more on bodies and have less kit per fighter — that is intentional.
 
 ### Fighters (Human baseline)
 
@@ -330,7 +330,7 @@ Silver Hunt and other factions may require Silver on specific fighters — pay t
 
 ## Example: Hunters + None (1000 Crowns)
 
-Silver Hunt-style retinue (Hunters + None), 7 models:
+Silver Hunt-style retinue (Hunters + None), 7 fighters:
 
 | Fighter | Class | Keywords | Species | Cost |
 |---|---|---|---|---|
@@ -355,6 +355,7 @@ Before play, confirm:
 - [ ] Each class within Archetype slot caps (see roster table)
 - [ ] Fighters with **Caster** keyword: count within Archetype max; None Domain has none; Wi 4+ and 3 Domain spells each
 - [ ] Total cost ≤ Crown budget
+- [ ] **Retinue Rating** = Roster Cost + sum of Veteran Value on each fighter (campaign)
 - [ ] Each fighter within Archetype melee, missile, gunpowder, armor, and shield access
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] No stat above 5 at creation (except species baselines that start at 4)
@@ -364,9 +365,9 @@ Before play, confirm:
 
 ## Design Notes
 
-- **Class + keyword** — class is roster slot and stat bonus; **Caster** is a keyword, not a class. Same pattern can extend to other keywords (Fearless, Undead, etc.).
+- **Class + keyword** — class is roster slot and stat bonus; **Caster** is a keyword (+25 Crowns). Same pattern extends to other keywords (Fearless, Undead, etc.).
 - **Acolytes** are Rank only at creation; [Keyword Advancement](../campaign/post-game.md) may grant **Caster** later.
-- **Domain** will adjust class *counts*, not rename classes. Composition tables TBD.
-- **Knights** have no Rank tier — all followers are Knight or Squire. **Hunters** use **Tracker** as Specialist (+1 CC/RC or Caster build).
-- **Constrained points** (budget + composition slots) keeps Folk horde, Knights elite, and Cult glass-cannon identities without fixed Spearhead-style lists.
+- **Domain** adjusts class *counts* within Archetype caps. Composition tables TBD.
+- **Knights** field Knight and Squire only. **Hunters** use **Tracker** as Specialist (+1 CC/RC or Caster build).
+- **Constrained points** (budget + composition slots) defines Folk horde, Knights elite, and Cult glass-cannon identities.
 - Crown costs target a **1000 Crown** standard retinue with roughly half the budget on fighters and half on wargear at typical roster size; revisit after Silver Hunt / Nightpack playtest rosters (Phase 5c).

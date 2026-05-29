@@ -6,7 +6,7 @@
 
 | Stat | Meaning |
 |---|---|
-| M | Movement (inches) |
+| M | Movement (") |
 | CC | Close Combat |
 | RC | Ranged Combat |
 | Mt | Might |
@@ -85,7 +85,7 @@ A fighter's **Mt** stat determines their red dice. Their **Sk** stat determines 
 - All stats are higher-is-better, eliminating the confusion of mixed stat directions
 - The beat-8 threshold (d6 + stat ≥ 8) preserves natural 1s as failures and makes stat differences meaningful: each +1 to a stat improves hit rate by ~17%
 - Mt and Sk as raw dice counts create immediate mechanical identity: high-Mt fighters hit hard and defend with toughness, high-Sk fighters are precise and defend with evasion. Weapons add directly to these stats, so the pool is always fighter + weapon combined
-- Humans are the true baseline (all 3s except Sa 4), Elves are agile and mystical (Sk 4, Wi 4, fast), Dwarves are tough and sturdy (Mt 4, slow) — species identity is expressed as specialty bonuses rather than crippling weaknesses
+- Humans are the true baseline (all 3s except Sa 4), Elves are agile and mystical (Sk 4, Wi 4, fast), Dwarves are tough and sturdy (Mt 4, slow) — species identity comes through specialty bonuses
 - All species share W 3 — Wounds is too dominant a stat to vary across species (it multiplicatively amplifies all defensive gear), so durability differences come from armor, toughness, and special rules instead
 - Df is no longer a separate stat — defense is derived from base dice (1 red + 1 blue) plus Mt/Sk comparisons
 - Wi (Will) is the casting stat — added to 2d6 for spellcasting. Baseline 3 for all species; casters are expected to have Wi 4+. Spell difficulties are calibrated so Wi 4 matches the old flat 2d6 odds

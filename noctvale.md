@@ -107,10 +107,10 @@ The empire is gone. But the war never truly ended.
 - Accepted magics in the realm: **Arcane, Nature, and Light**.
 - Illegal or forbidden magics: **Necromancy, Blood, and Infernal**.
 - The Phoenix Guard later split three ways after the fall: four rebelled, four hid, four joined the turned King.
-- **"Crown Roads"** is the preferred infrastructure term rather than "Imperial Roads."
-- The earlier concept name for the setting was **Morvallow**, but **Noctvale** became preferred.
-- The game is influenced by Mordheim-style campaign skirmish play, grimdark fantasy, Gothic horror, Warcry, Kill Team, Necromunda, and classic Warhammer design principles.
-- The desired feel is lethal, narrative, campaign-driven skirmish combat where small retinues fight through cursed lands or possibly a concentrated castle/city-scale location.
+- **"Crown Roads"** — the realm's main road network.
+- The setting is a vast meteor-scarred valley roughly the size of Ireland, where small retinues fight across ruins, Crown Roads, and haunted wilds.
+- Lethal, narrative, campaign-driven skirmish combat.
+- Influences: Mordheim-style campaign skirmish play, grimdark fantasy, Gothic horror, Warcry, Kill Team, Necromunda, and classic Warhammer design principles.
 
 ---
 
@@ -132,7 +132,7 @@ Combat outcomes are decisive, but the Downed system allows dramatic survivals.
 
 | Stat | Meaning |
 |-----|-----|
-| M | Movement (inches) |
+| M | Movement (") |
 | CC | Close Combat |
 | RC | Ranged Combat |
 | Mt | Might |
@@ -225,7 +225,7 @@ Firearms gain criticals against all targets.
 
 # Downed Mechanic
 
-When a fighter reaches 0 Wounds, they become Downed instead of immediately dying.
+When a fighter reaches 0 Wounds, they become **Downed**.
 
 ## Downed
 
@@ -334,9 +334,9 @@ Execute a stunned enemy.
 
 # Engagement Rules
 
-- Engagement range is 1 inch
+- Engagement range is **1"**
 - No facing system
-- Models are treated as aware in all directions
+- Fighters are treated as aware in all directions
 
 ---
 
@@ -352,7 +352,7 @@ Ranged attacks and Cast actions that select an enemy require line of sight unles
 
 Roll a Sk check (d6 + Sk ≥ 8) when falling.
 
-For every 2 inches fallen, roll one die.
+For every **2"** fallen, roll one die.
 
 Each 4+ result causes 1 wound.
 
@@ -371,9 +371,9 @@ When attacking multiple enemies:
 
 At the start of the round, the player with the fewer number of activations receives a number of Overwatch tokens equal to the difference in activations.
 
-A player may also choose to forgo a model's activation and give that model an Overwatch token.
+A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
 
-The token allows that model to perform a single action as a reaction to an enemy model completing an action.
+The token allows that fighter to perform a single action as a reaction to an enemy fighter completing an action.
 
 Examples:
 

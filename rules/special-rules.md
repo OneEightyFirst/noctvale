@@ -6,7 +6,7 @@
 
 **Ranged** attacks and **Cast** actions that select an enemy target require **line of sight** unless a rule says otherwise. *(See actions.md.)*
 
-Judge from the **firing fighter's point of view** (stoop to the firing model's height if needed). Use the target's body on and above its base. **Ignore** any part of the miniature that extends past the edge of the base (weapons, banners, cloaks, etc.).
+Judge from the **firing fighter's point of view** (stoop to the firing fighter's height if needed). Use the target's body on and above its base. **Ignore** any part extending past the edge of the base (weapons, banners, cloaks, etc.).
 
 ### Line of sight
 
@@ -34,7 +34,7 @@ Fighters may **move through** friendly fighters during **Move**, **Charge**, **S
 
 When making a **Cast** action with a **firearm** or **damage spell**, if a **friendly fighter** lies **between** the attacker and the declared enemy target — a straight line from the center of the attacker's base to the center of the target's base crosses the friendly's base — and the attack **misses**, roll **1d6**. On a **1**, that friendly is hit.
 
-**Miss** means the attack was resolved (the casting or loading roll succeeded) but the **declared enemy target took no wounds** from that action. It does not include a **Mishap** or **Misfire** (double 1s on the 2d6 gate), or a failed gate (the spell fizzles or the firearm fails to fire).
+**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no wounds** from that action. It does not include a **Mishap** or **Misfire** (double 1s), or a failed roll (the spell fizzles or the firearm fails to fire).
 
 On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
 
@@ -68,7 +68,7 @@ Most ranged weapons have a **minimum range of 3"**. Pistols have **no minimum ra
 
 Roll a **Sk check** (d6 + Sk ≥ 8) when a fighter falls.
 
-For every **2 inches fallen**, roll one die.
+For every **2"** fallen, roll one die.
 
 Each result of **4+** causes **1 Wound**.
 
@@ -89,9 +89,9 @@ Overwatch compensates for numerical disadvantage.
 
 **Trigger:** At the start of the round, the player with the fewer number of activations receives a number of **Overwatch tokens equal to the difference in activations**.
 
-**Forgo activation:** A player may also choose to **forgo a model's activation** and give that model an Overwatch token.
+**Skip activation:** A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
 
-**Using a token:** The token allows that model to perform a **single action as a reaction** to an enemy model completing an action.
+**Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
 
 ### Valid Reaction Actions
 - Move
@@ -118,4 +118,4 @@ If a friendly fighter is **also engaged** with the same enemy:
 - Falling damage as a per-2" Sk check scales naturally with height
 - Overwatch as a catch-up mechanic prevents outnumbered players from being steamrolled by activation order
 - Gang Up gives the attacker a free die of their choice — lets them shore up a weakness or double down on a strength
-- Friendly models are transparent for movement and LoS; firearms and magic pay for shooting through friends on a miss, and tight enemy clusters demand a Sk check to pick the right target
+- Friendly fighters are transparent for movement and LoS; firearms and magic pay for shooting through friends on a miss, and tight enemy clusters demand a Sk check to pick the right target

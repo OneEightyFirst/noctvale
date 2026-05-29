@@ -32,7 +32,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | Actions & Engagement | `rules/actions.md` |
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
 | Magic System, Firearms & Classes | `rules/magic.md` |
-| Skills (Archetype & Domain) | `rules/skills.md` |
+| Feats (Archetype & Domain) | `rules/feats.md` |
 | Weapons (Melee, Ranged, Firearms, Materials) | `rules/weapons.md` |
 | Equipment (Armor, Shields, Alchemy) | `rules/equipment.md` |
 | Exploration Phase | `campaign/exploration.md` |
@@ -77,13 +77,12 @@ Campaign play is an optional sixth part, but for Noctvale it is effectively cent
 
 ### Design Principles
 
-- A wargame's vision should guide mechanics — don't choose mechanics only because they are individually appealing
-- Avoid "Homer's car": a pile of liked features without a cohesive vision
-- Natural English rules are preferred over excessive jargon
+- Mechanics should serve a cohesive vision — every rule earns its place
+- Use natural English; minimize jargon
 - Underdog mechanics and negative feedback loops help prevent death spirals
 - Emergent play creates memorable stories through unexpected but rules-driven events
 - War-as-simulation favors mechanics that feel like a living world
-- Prefer streamlined inputs with crunchy outputs; avoid crunchy inputs with trivial outputs
+- Streamlined inputs, crunchy outputs
 
 ---
 

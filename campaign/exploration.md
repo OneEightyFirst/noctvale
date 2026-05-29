@@ -4,6 +4,16 @@ Part of the [post-game sequence](post-game.md) (Step 4). After each battle, reti
 
 ---
 
+## Sequence at a Glance
+
+> **1. Determine Location** — Roll **1d6** on the Location table
+> **2. Roll Exploration Dice** — **1d6** per surviving fighter (max **6**)
+> **3. Resolve Mishaps** — Each **1** triggers a Mishap
+> **4. Resolve Discoveries** — Best **3** dice from Step 2, one chart per location
+> **Optional:** **Push the Search** — Reroll all dice; **1** or **2** = Mishap
+
+---
+
 ## Step 1: Determine Location
 
 Roll **1d6** to determine where the retinue is exploring.
@@ -21,7 +31,7 @@ Roll **1d6** to determine where the retinue is exploring.
 
 ## Step 2: Roll Exploration Dice
 
-Roll **1d6 per surviving fighter** (Active at battle end — not Out of Action, not Convalescent).
+Roll **1d6 per surviving fighter** (Active at battle end).
 
 Maximum of **6 dice** regardless of retinue size.
 
@@ -76,17 +86,17 @@ Players may choose to **push** after their initial roll.
 - Ignore all current results
 - Reroll **all** dice
 
-**Risk:** On a pushed roll, results of **1 or 2** = Mishap (instead of just 1).
+**Risk:** On a pushed roll, results of **1 or 2** = Mishap.
 
 ---
 
 ## Design Notes
 
-See [todo.md](../todo.md) for the castle setting pivot discussion, territory/campaign ideas, and open design decisions.
+See [todo.md](../todo.md) for territory/campaign ideas and open design decisions.
 
-- Rolling per surviving hero ties exploration success to keeping your fighters alive
+- Rolling per surviving fighter ties exploration success to keeping your fighters alive
 - The 6-dice cap prevents large retinues from dominating exploration automatically
-- "Best 3" means you're always hoping for good high rolls, not just quantity
+- "Best 3" rewards high rolls over volume
 - Push the Search is a high-risk high-reward gamble: ignore bad rolls, but you risk more Mishaps
 - Location discovery charts follow the same pattern as **Ruins** — one d6 table per location (Warhammer Quest / Mordheim treasure-chart style)
 - Mishap chart links to [post-game Serious Injury](post-game.md#step-3-serious-injury-chart) for lasting wounds

@@ -40,9 +40,9 @@ Fragments are sold for **Crowns** using a **supply and demand curve** — sellin
 
 ## Design Notes
 
-- Base rate is **20 Crowns** per fragment sold alone — a modest bump from the prior 15 to keep campaign income in step with the **1000 Crown** retinue budget without matching it dollar-for-dollar
+- Base rate is **20 Crowns** per fragment sold alone — tuned to keep campaign income in step with the **1000 Crown** retinue budget
 - The discount curve discourages hoarding large quantities to sell at once — smaller, more frequent sells are more efficient per fragment
 - This creates a cash flow decision: sell now for reliable income, or stockpile for a bigger payday?
 - Relic Fragments as the campaign currency ties the exploration phase directly to retinue progression
 
-See [post-game.md](post-game.md). Advancement spends XP (2 skill/keyword, 5 stat); Fragment nudges are separate.
+See [post-game.md](post-game.md). Advancement spends XP (2 feat/keyword, 5 stat); Fragment nudges are separate. **Retinue Rating** = Roster Cost + Veteran Value for matchup balance.

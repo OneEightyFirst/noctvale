@@ -4,51 +4,78 @@
 
 ## Casting
 
-Casting a spell is a single **Cast** action. The caster rolls **2d6 + Wi** against the spell's **casting difficulty**.
+Casting a spell is a single **Cast** action. Roll the **Casting Roll** (below).
 
 - Spells can be cast **while in melee**
 - Cast actions **do not trigger Ranged Reactions**
 
-### 2d6 Outcomes
-
-| Result | Effect |
-|---|---|
-| **Double 1s** | **Mishap** — the spell fails and the spell's unique backlash occurs (see individual spell descriptions) |
-| **Below difficulty** | The spell fizzles. The action is spent, nothing happens |
-| **Meets or exceeds difficulty** | The spell goes off. Resolve the attack normally |
-| **Double 6s** | **Overcharge** — the spell goes off and all dice in the Strike Pool auto-succeed as hits. Still roll to check for natural 6s (criticals) |
+> ### Casting Roll (2d6 + Wi)
+>
+> Roll **2d6 + Wi** against the spell's casting difficulty.
+>
+> | Result | Effect |
+> |---|---|
+> | **Double 1s** | **Mishap** — the spell fails and the spell's backlash occurs |
+> | **Below difficulty** | The spell fizzles. The action is spent |
+> | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence** |
+> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
 
 ### Damage Spells
 
-If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Sk values — these are **not added to the caster's base stats**. A spell with 5 Mt / 2 Sk always produces 5 red dice and 2 blue dice, regardless of who casts it.
+If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Sk values — a fixed pool regardless of who casts it. A spell with 5 Mt / 2 Sk always produces 5 red dice and 2 blue dice.
 
-Once the spell goes off, resolve the attack using the standard combat sequence:
+Once the spell goes off, resolve the attack using the **Attack Sequence** (below).
 
-1. **Build Strike Pool** — use the spell's Mt/Sk values (flat, not additive)
-2. **Roll to hit** — d6 + RC ≥ 8 for ranged spells, d6 + CC ≥ 8 for melee spells
-3. **Defender rolls defense** — normal defense pool rules apply
-4. **Apply wounds** — as normal
-
-Spell damage is decoupled from the caster's physical stats — magic power comes from the spell, not the caster's body.
+Spell damage is decoupled from the caster's physical stats — magic power comes from the spell profile.
 
 ---
 
 ## Firearms
 
-Firearms use the same 2d6 gate system as magic, representing the unreliability of black powder weapons.
+Firearms use the same **2d6** structure as the **Casting Roll**, representing the unreliability of black powder weapons.
 
-The shooter rolls **2d6** against the firearm's **loading difficulty**. No stat is added — the gun either works or it doesn't.
-
-| Result | Effect |
-|---|---|
-| **Double 1s** | **Misfire** — the gun explodes. The shooter takes damage *(Misfire effects to be defined per weapon)* |
-| **Below difficulty** | The gun fails to fire. The action is spent |
-| **Meets or exceeds difficulty** | The gun fires. Resolve the attack normally |
-| **Double 6s** | **Overcharge** — the gun fires and all dice in the Strike Pool auto-succeed as hits. Still roll for crits |
+> ### Primer Roll (2d6)
+>
+> Roll **2d6** against the firearm's loading difficulty. No stat is added.
+>
+> | Result | Effect |
+> |---|---|
+> | **Double 1s** | **Misfire** — see weapon notes |
+> | **Below difficulty** | The gun fails to fire. The action is spent |
+> | **Meets or exceeds difficulty** | The gun fires. Resolve the **Attack Sequence** |
+> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
 
 Firearms gain **critical hits against all targets**, regardless of weapon type — they exist outside the weapon triangle.
 
-Once the firearm fires, resolve the attack using the standard combat sequence, the same as a damage spell.
+Once the firearm fires, resolve the attack using the **Attack Sequence** (below).
+
+---
+
+## Attack Sequence
+
+> ### Attack Sequence
+>
+> **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+>
+> **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
+>
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by **Heavy Armor** crit rescue.
+>
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **rescue** misses. *(See `equipment.md`.)*
+>
+> **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
+
+> ### Apply Wounds
+>
+> Each unblocked hit inflicts **1 Wound**.
+>
+> - When a fighter reaches **0 Wounds**, they become **Downed**.
+> - An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
+> - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
+>
+> **Downed** fighters defend with their full pool. **Stunned** fighters defend with **red dice only** (no blue).
+
+*(Full step-by-step rules: `combat.md`.)*
 
 ---
 
@@ -94,9 +121,9 @@ Each domain has a **standard ranged attack spell** (not counted toward the limit
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Radiant Strike | 11+ | 5 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
-| Holy Light | 11+ | — | — | 12" from caster | All models within 12" lose cover and Hidden condition | *(TBD)* |
+| Holy Light | 11+ | — | — | 12" from caster | All fighters within 12" lose cover and Hidden condition | *(TBD)* |
 | Heal | 10+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
-| Purge the Faithless | 11+ | 5 | 2 | 3" blast from caster | Hits all models in radius | Caster takes the damage |
+| Purge the Faithless | 11+ | 5 | 2 | 3" blast from caster | Hits all fighters in radius | Caster takes the damage |
 | Shield of Faith | 11+ | — | — | 12" | Target gains +2 red defense dice and causes Fear. Lasts until the start of the caster's next activation | *(TBD)* |
 | Horrors Relived | 12+ | Target's Sa | — | 12" | Ranged attack; Strike Pool Mt equals the target's Sa stat | Caster takes the damage (using target's Sa as Mt) |
 | Unwavering Resolve | 10+ | — | — | 8" from caster | All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation | *(TBD)* |
@@ -107,10 +134,10 @@ Each domain has a **standard ranged attack spell** (not counted toward the limit
 |---|---|---|---|---|---|---|
 | Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
 | Arcane Shield | 11+ | — | — | Self | Caster is immune to all spells. At the start of the caster's next activation, roll 1d6 — on 1–2 the shield disappears | *(TBD)* |
-| Fireball | *(TBD)* | *(TBD)* | *(TBD)* | 18" | Choose a point within 18". All models within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
-| Telekinesis | *(TBD)* | — | — | 12" | Move any model (friendly or enemy) up to 6" directly toward or directly away from the caster. No check required by the target | *(TBD)* |
-| Displacement | *(TBD)* | — | — | 12" | Target friendly fighter is instantly moved up to 6" in any direction. Ignores terrain, engagement, and intervening models. Cannot end inside terrain or another model's base | *(TBD)* |
-| Arcane Barrage | *(TBD)* | — | — | *(TBD)* | On successful cast, inflict 3 automatic Sk hits (blue). No Strike Pool roll, no to-hit roll — hits go straight to defender's defense pool. Defender rolls defense as normal | *(TBD)* |
+| Fireball | *(TBD)* | *(TBD)* | *(TBD)* | 18" | Choose a point within 18". All fighters within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
+| Telekinesis | *(TBD)* | — | — | 12" | Move any fighter (friendly or enemy) up to 6" directly toward or directly away from the caster. No check required by the target | *(TBD)* |
+| Displacement | *(TBD)* | — | — | 12" | Target friendly fighter is instantly moved up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base | *(TBD)* |
+| Hoarfrost | *(TBD)* | — | — | 18" | Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. When a fighter ends any movement in the zone, roll a Sk check (d6 + Sk ≥ 8). **Pass:** slide d6" in the same direction it was moving. **Fail:** scatter die + slide d6". If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, suffer 1 Wound | **Mishap:** Blast centers on the caster |
 | Slow | *(TBD)* | — | — | *(TBD)* | Target enemy loses 1 action on their next activation (activates with 1 action instead of 2) | *(TBD)* |
 
 ### Infernal
@@ -161,10 +188,10 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
 | Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See Skeleton profile below | The Skeleton appears hostile — your opponent controls it for its single activation |
 | Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went Out of Action this game. Place them within 3" of the caster with 1 wound, Undead keyword, and Fearless. They activate immediately with 2 actions, then go Out of Action permanently at the end of their activation | Your opponent places and controls the raised fighter instead |
-| Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All models in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
+| Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
 | Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
-| Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All models under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
-| Bone Circle | *(TBD)* | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any model that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
+| Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
+| Bone Circle | *(TBD)* | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
 
 #### Skeleton Profile
 
@@ -217,10 +244,10 @@ Magic is grouped into two broad moral categories:
 
 - 2d6 + Wi casting gives a bell curve modified by the caster's Will — better casters are more reliable. Difficulties are calibrated so Wi 4 (standard caster) matches the original flat 2d6 odds
 - Double 6s Overcharge is equally rare (~2.8%) and creates spectacular moments without adding complexity — all hits land, just check for crits
-- The Mishap system means every spell is a calculated risk, not a guaranteed tool
-- Spell damage is flat (not added to caster stats) — a spell's power comes from the spell itself, not the caster's physical strength. This decouples magical and physical identity
-- Spells produce larger dice pools than weapons (5-6 dice vs 2-4 from weapon modifiers) as the payoff for the casting gate — a sword always works, a spell might fizzle or backfire
-- Firearms use a flat 2d6 gate (no stat) while magic uses 2d6 + Wi — guns are purely mechanical (misfire is equipment failure), while casting improves with the caster's Will
+- The Mishap system means every spell is a calculated risk
+- Spell damage is flat — power comes from the spell profile, decoupling magical and physical identity
+- Spells produce larger dice pools than weapons (5-6 dice vs 2-4 from weapon modifiers) as the payoff for the **casting roll** — a sword always works, a spell might fizzle or backfire
+- Firearms use a flat **primer roll** (no stat) while magic uses **2d6 + Wi** — guns are purely mechanical (misfire is equipment failure), while casting improves with the caster's Will
 - Mirroring the weapon triangle with magic triangles creates a unified advantage-and-critical framework across all combat types
 - Firearms gaining crits against all targets (outside the triangle) is their payoff for the loading risk
 - Cast not triggering Ranged Reactions gives magic a distinct tactical niche compared to conventional ranged weapons

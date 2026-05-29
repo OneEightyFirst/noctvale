@@ -44,10 +44,10 @@ Rules in `rules/special-rules.md`; cross-refs in `actions.md` and `combat.md`.
 - [x] Ranged and Cast require line of sight to enemy targets
 - [x] Friendly fighters: do not block LoS; may move through friendlies (not end on their bases)
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
-- [x] Clustered enemies: same-retinue models within 1" of declared target → Sk check or retarget
+- [x] Clustered enemies: same-retinue fighters within 1" of declared target → Sk check or retarget
 - [x] Enemy fighters block line of sight normally
 - [ ] Smoke / other LoS-blocking effects — smoke in `weapons.md`; confirm no gaps vs terrain rules
-- [ ] Dedicated rules for enemy models blocking shots (beyond LoS) if playtest shows gaps
+- [ ] Dedicated rules for enemy fighters blocking shots (beyond LoS) if playtest shows gaps
 
 ---
 
@@ -75,20 +75,20 @@ Write 2–3 spells per magic class relevant to Silver Hunt and Nightpack.
 
 ---
 
-## Phase 5b: Archetype & Domain Skills
+## Phase 5b: Archetype & Domain Feats
 
-Define skill lists for each archetype and each domain. Skills are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and skills make those choices feel distinct on the table.
+Define feat lists for each archetype and each domain. Feats are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and feats make those choices feel distinct on the table.
 
-- [ ] Write **Tradition** skill lists (one package per Tradition per Domain where it is shared — e.g. Witches on Nature vs Arcane)
-- [ ] Decide skill structure (passive abilities, activated abilities, or both)
-- [ ] Decide how skills are acquired (built into fighter type, purchased with XP, chosen at retinue creation, etc.)
-- [ ] Decide skill count per list (e.g., 6 per archetype, 6 per domain)
-- [ ] Write Archetype skill lists:
+- [ ] Write **Tradition** feat lists (one package per Tradition per Domain where it is shared — e.g. Witches on Nature vs Arcane)
+- [ ] Decide feat structure (passive abilities, activated abilities, or both)
+- [ ] Decide how feats are acquired (built into fighter type, purchased with XP, chosen at retinue creation, etc.)
+- [ ] Decide feat count per list (e.g., 6 per archetype, 6 per domain)
+- [ ] Write Archetype feat lists:
   - [ ] Knights
   - [ ] Hunters
   - [ ] Folk
   - [ ] Cult
-- [ ] Write Domain skill lists:
+- [ ] Write Domain feat lists:
   - [ ] Light
   - [ ] Arcane
   - [ ] Infernal
@@ -96,8 +96,8 @@ Define skill lists for each archetype and each domain. Skills are the primary me
   - [ ] Necromancy
   - [ ] Blood
   - [ ] None
-- [ ] Decide if named factions get 1–2 exclusive faction skills on top of archetype + domain skills
-- [ ] Confirm skills don't duplicate or conflict with spells, equipment, or special rules
+- [ ] Decide if named factions get 1–2 exclusive faction feats on top of archetype + domain feats
+- [ ] Confirm feats don't duplicate or conflict with spells, equipment, or special rules
 
 ---
 
@@ -109,7 +109,7 @@ Build full playtest rosters for Silver Hunt and Nightpack.
 - [ ] Assign stat lines (based on species baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
 - [ ] Assign spells from Phase 4 list (if applicable)
-- [ ] Assign skills from Phase 5b lists
+- [ ] Assign feats from Phase 5b lists
 - [x] Set retinue size / point budget — **1000 Crowns**, composition limits per Archetype (`rules/retinue-building.md`)
 - [ ] Calculate total retinue cost and verify balance parity
 
@@ -132,7 +132,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 
 Create fighter card template and retinue roster sheet.
 
-- [ ] Design fighter card layout (stats, weapons, spells, skills, wounds, conditions)
+- [ ] Design fighter card layout (stats, weapons, spells, feats, wounds, conditions, Veteran Value)
 - [ ] Create printable card template with cut marks
 - [ ] Design retinue roster sheet (fighter list, equipment, fragments, currency)
 - [ ] Decide on templating / layout tool
@@ -157,13 +157,15 @@ Things identified across the design docs that don't fit neatly into one phase.
 
 ### Terminology
 
-- [x] **Retinue** replaces **warband** as the player's list-for-a-fight; **Faction** remains Archetype + Domain (see decision log 2026-05-28)
+- [x] **Retinue** is the player's list-for-a-fight; **Faction** remains Archetype + Domain (see decision log 2026-05-28)
 
 ### Open Design Decisions
 
+- [ ] **Spell table format:** Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards
+- [ ] **Armor/shield defense terminology:** Revisit **rescue** for failed defense dice → success conversion — alternatives may read clearer at the table (`equipment.md`, `combat.md`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates after playtest
+- [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest
 - [ ] **Exploration location tables:** Ruins done; Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard — discovery charts TBD (`campaign/exploration.md`)
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
@@ -174,7 +176,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 
 Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other retinue member — summoning tables are a post-alpha feature.**
 
-- [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer models to own)
+- [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer fighters to field)
 - [ ] Decide if variants are mechanically distinct stat lines or cosmetic with minor trait swaps
 - [ ] Confirm all daemons share a "Daemon" keyword (for Radiant Strike +1 Mt vs Daemons)
 - [ ] Decide if Imp wings have a mechanical fly rule or are visual only
@@ -229,13 +231,13 @@ Games relevant to Noctvale design decisions:
 |---|---|
 | Levels | 0–10 per character |
 | Earn XP | Survive encounter, kill zombies/opponents, scenario goals |
-| On advancement | Spend XP: **2** (skill/keyword) or **5** (stat); roll chart; optional Fragment nudge |
+| On advancement | Spend XP: **2** (feat/keyword) or **5** (stat); roll chart; optional Fragment nudge |
 | Stat raise | Roll on random stat table → spend **banked XP** to nudge/modify the result |
 | Skill gain | Pick one of the fighter's **Skill Types** (5 groups × 6 skills = 30 skills) → roll on that table → spend XP to nudge |
 | Skill Types | Eligibility lists on each character archetype — not powers themselves |
 | Starting skills | Pregen archetypes have fixed packages; **Survivor** type lets you pick starting skills (custom build within keyword rules) |
 | Between games | Injury table, supply loot → Scavenge Points, recruit, refuge jobs/upgrades, **The Talk** (convert mismatched keyword to Leader's) |
 
-**Noctvale hooks:** Spend XP bank (no levels) — Skill/Keyword **2 XP**, Stat **5 XP**; Fragment nudge 1 or 2. Caster keyword via Keyword chart when eligible.
+**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**; Fragment nudge 1 or 2. Caster keyword via Keyword chart when eligible. **Retinue Rating** = Roster Cost + Veteran Value (Crowns) for matchup balance.
 
-**Caveat:** Reviews note spending XP to nudge makes **stat bumps often outperform** narrow skills — tune carefully if we use random tables.
+**Caveat:** Reviews note spending XP to nudge makes **stat bumps often outperform** narrow feats — tune carefully if we use random tables.

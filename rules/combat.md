@@ -6,6 +6,18 @@
 
 Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendly fighters in the line of fire** may change or affect targeting — see **Intervening Fighters** in special-rules.md.
 
+> ### Attack Sequence
+>
+> **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+>
+> **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
+>
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by **Heavy Armor** crit rescue.
+>
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **rescue** misses. *(See `equipment.md`.)*
+>
+> **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
+
 ### Step 1: Build the Strike Pool
 
 The Strike Pool is the fighter's **Mt + Sk**, modified by their weapon.
@@ -91,13 +103,17 @@ Critical hits **cannot be blocked** by normal defense successes. Only a **critic
 
 ### Step 5: Apply Wounds
 
-Each unblocked hit inflicts **1 Wound**.
+> ### Apply Wounds
+>
+> Each unblocked hit inflicts **1 Wound**.
+>
+> - When a fighter reaches **0 Wounds**, they become **Downed**.
+> - An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
+> - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
+>
+> **Downed** fighters defend with their full pool. **Stunned** fighters defend with **red dice only** (no blue).
 
-- When a fighter reaches **0 Wounds**, they become **Downed**.
-- An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
-- An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
-
-Downed fighters defend with their **full pool**. Stunned fighters defend with **red dice only** (no blue). *(See conditions.md for full wound state rules.)*
+*(See `conditions.md` for full wound state rules.)*
 
 After Step 5, if the attack **missed** the declared enemy target and a **friendly fighter** was in the line of fire (firearms and damage spells only), apply **Friendly in the Line of Fire** from special-rules.md.
 
@@ -144,7 +160,7 @@ Nature > Necromancy > Blood > Nature
 ```
 
 ### Firearms
-Firearms use the **2d6 loading gate** (same as magic casting) and gain criticals against **all targets**, regardless of weapon type. *(See magic.md for the full 2d6 gate system.)*
+Firearms use the **primer roll** (same **2d6** structure as the **casting roll**) and gain criticals against **all targets**, regardless of weapon type. *(See `magic.md` and `weapons.md`.)*
 
 ---
 
@@ -203,9 +219,9 @@ The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 - Defense scaling with Mt/Sk comparisons means fighting someone stronger than you is harder to survive — stat advantages compound across attack and defense
 - Armor rescuing red defense misses means heavy armor is most effective against Might-based attacks and less effective against Skill-based finesse — thematic and mechanically distinct
 - Ranged Reactions keep ranged combat deadly without making it oppressive — every shot gives the target agency
-- Triggering on target selection (not just hits) means even missed shots have a cost, discouraging low-odds spam
+- Triggering on target selection means even missed shots have a cost, discouraging low-odds spam
 - Reactions only happen on the opponent's turn — the active player accepts the risk of return fire without recourse, giving the target the last word
 - Cast not triggering reactions gives magic a distinct tactical niche — safer to use but less accessible than ranged weapons
 - Melee is one-directional (attacker rolls, defender defends) — the person who charges first has the initiative advantage, earning weapon triangle crits. The defender's counterplay is engaging on their own activation (as the attacker, with their own weapon triangle crits) or disengaging via Retreat
-- Armor rescue turns red defense misses into successes rather than adding dice or flat damage reduction — the defender chooses which misses to rescue, creating a decision point. Since rescued dice are red, they block red hits at 1:1 but blue hits at 2:1, making finesse attacks naturally effective against armor
-- Heavy Armor's crit rescue option (1 red miss → crit success) is the only way to block incoming critical hits with armor — this makes Heavy Armor a qualitative upgrade, not just a numerical one
+- Armor rescue turns red defense misses into successes — the defender chooses which misses to rescue, creating a decision point. Since rescued dice are red, they block red hits at 1:1 but blue hits at 2:1, making finesse attacks effective against armor
+- Heavy Armor's crit rescue option (1 red miss → crit success) is the way to block incoming critical hits with armor — a qualitative upgrade beyond raw dice count

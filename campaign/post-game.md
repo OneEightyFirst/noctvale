@@ -12,7 +12,7 @@ This is the campaign loop: **injuries → exploration → advancement → econom
 2. **Out of Action** — every fighter who ended the battle Out of Action rolls **Survival**
 3. **Serious Injury** — any fighter directed to this chart rolls **2d6**
 4. **Exploration** — [exploration phase](exploration.md) (location, dice, mishaps, discoveries)
-5. **Experience** — award XP; any fighter who levels up rolls **Advancement**
+5. **Experience** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 6. **Economy** — sell fragments, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
 
 ---
@@ -110,11 +110,11 @@ Spend XP from a fighter's bank to roll on **one** advancement chart. Pay the cos
 
 | Advancement | XP cost | Roll |
 |---|---|---|
-| **Skill** | **2** | 2d6 on Skill Advancement Chart *(TBD — use Keyword until `rules/skills.md` exists)* |
+| **Feat** | **2** | 2d6 on Feat Advancement Chart *(TBD — use Keyword until `rules/feats.md` exists)* |
 | **Keyword** | **2** | 2d6 on Keyword Advancement Chart |
 | **Stat** | **5** | 2d6 on Stat Advancement Chart |
 
-**Stats cost more than skills.** Raw stat growth is a major investment; skills and keywords are the usual progression spend.
+**Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
 **Keyword eligibility:** Same rules as before — Archetype, class, Domain, and retinue Caster limits apply.
 
@@ -125,7 +125,7 @@ Before resolving a post-game roll, you may spend Relic Fragments from **Fragment
 | Roll | Fragment cost |
 |---|---|
 | Survival, Serious Injury | 1 |
-| **Skill** or **Keyword** Advancement | 1 |
+| **Feat** or **Keyword** Advancement | 1 |
 | **Stat** Advancement | **2** |
 
 Fragment nudges are separate from XP — paying XP buys the roll; paying Fragments steers it.
@@ -155,7 +155,7 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 2d6 | Result |
 |---|---|
 | 2 | **Cursed** — Sa −1 (minimum 1). No keyword. |
-| 3–4 | **No change** — take a free **Skill** roll instead (when skills exist), or accept nothing. |
+| 3–4 | **No change** — take a free **Feat** roll instead (when feats exist), or accept nothing. |
 | 5–6 | **Steady** — +1 Sa permanently (max 6); no new keyword. |
 | 7 | **Hardened** — gain **Fearless** keyword. |
 | 8 | **Oathbound** — gain **Fearless** keyword **or** +1 Wi (max 6), your choice. |
@@ -164,6 +164,30 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
 
 **Gaining Caster mid-campaign:** Assign 3 spells from the retinue's Domain. The fighter must have Wi 4+ (raise Wi to 4 if needed). Cult **Acolytes** may gain Caster here; other Archetypes only if under the retinue's max Caster count and None Domain does not apply.
+
+---
+
+### Veteran Value & Retinue Rating
+
+There are **no levels**, but campaigns still need a single number for matchup fairness. Every lasting campaign change has a **Veteran Crown** value. Track **Veteran Value** on each fighter card; add or subtract when a permanent result applies (advancement, Scarred, Serious Injury, etc.).
+
+**Retinue Rating** = **Roster Cost** (fighters + gear on the roster sheet) **+** sum of every fighter's **Veteran Value**.
+
+| Lasting change | Veteran Crowns |
+|---|---|
+| **Feat** gained | +15 |
+| **Fearless** keyword gained | +15 |
+| **Caster** keyword gained | +25 |
+| **+1** to any stat (advancement) | +25 |
+| **Peak** or **Ascendant** (stat + Fearless in one roll) | +40 *(25 + 15 — do not also add the parts separately)* |
+| **Marked** (Fearless + CC or RC) | +40 |
+| **−1** to any stat (Scarred, injury, Setback, Cursed) | −25 |
+
+**Not counted:** unspent XP, temporary conditions, flavor-only results (e.g. **Marked** on Serious Injury), or gear bought/sold — gear is already in **Roster Cost**.
+
+**Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger. A fresh **1000 Crown** roster is **1000** rating; a veteran retinue might sit at **1150–1300** after several games.
+
+Record **Retinue Rating** on the roster sheet next to Roster Cost.
 
 ---
 
@@ -177,11 +201,12 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
 ## Design Notes
 
-- **Charts first** — post-game is table-driven like Mordheim/Necromunda/Warhammer Quest, not a points-buy skill tree.
+- **Charts first** — post-game is table-driven like Mordheim/Necromunda/Warhammer Quest.
 - **Survival before Serious Injury** — most OOA fighters live; the 1 result and Serious Injury 2/12 are the death pressure.
 - **Scarred vs Serious Injury** — d6 Survival is the quick pass; 2d6 Serious is the memorable lasting wound.
-- **XP bank, not levels** — earn from deeds, spend on advancement. Skill/Keyword **2 XP**; Stat **5 XP**.
-- **Stat vs skill cost** — stats are the premium spend; nudging stat rolls costs **2 Fragments** vs **1** for skill/keyword.
-- **Keyword chart** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes), not a class rename.
-- **Skill chart** — placeholder until Phase 5b; use Keyword path until `rules/skills.md` exists.
+- **XP bank** — earn from deeds, spend on advancement. Feat/Keyword **2 XP**; Stat **5 XP**.
+- **Retinue Rating** — Roster Cost + Veteran Value; one Crown total for matchup fairness (see Veteran Value table above).
+- **Stat vs feat cost** — stats are the premium spend; nudging stat rolls costs **2 Fragments** vs **1** for feat/keyword.
+- **Keyword chart** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes).
+- **Feat chart** — placeholder until Phase 5b; use Keyword path until `rules/feats.md` exists.
 - Open: convalescent fighters and retinue minimum size; injury recovery through downtime; Death Trigger on Slain results.

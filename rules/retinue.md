@@ -1,6 +1,6 @@
 # Retinue
 
-Your **retinue** is the warband you field — fighters, gear, and (if your Domain allows) spells. This file covers **identity**: Archetype, Domain, and optional named presets. For Crown costs, class slots, and the roster checklist, see **`retinue-building.md`**.
+Your **retinue** is the force you field — fighters, gear, and (if your Domain allows) spells. This file covers **identity**: Archetype, Domain, and optional named presets. For Crown costs, class slots, and the roster checklist, see **`retinue-building.md`**.
 
 ---
 
@@ -10,11 +10,11 @@ Every retinue is built from two choices: an **Archetype** and a **Domain**.
 
 Your **Archetype** determines how your retinue fights — melee and missile access, armor cap, shields, gunpowder access, roster size, and caster limits.
 
-Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific skills. Choose **None** if your retinue rejects or lacks magic entirely.
+Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific feats. Choose **None** if your retinue rejects or lacks magic entirely.
 
 **Archetype + Domain** is your retinue's mechanical identity on the table.
 
-**Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets** — established Archetype + Domain pairings with lore, exclusive skills, and unique equipment. Use one for flavor or build any legal Archetype + Domain combination yourself.
+**Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets** — established Archetype + Domain pairings with lore, exclusive feats, and unique equipment. Use one for flavor or build any legal Archetype + Domain combination yourself.
 
 ---
 
@@ -57,7 +57,7 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 
 **Gunpowder weapons** (firearms and bombs) are exclusive to retinues with the **None** domain. Magic and gunpowder are mutually exclusive paths to power.
 
-**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). Hunters + None get both tiers; Knights and Folk + None get **Basic only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot) — not a separate tier.
+**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). Hunters + None get both tiers; Knights and Folk + None get **Basic only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
 
 **Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
 
@@ -75,17 +75,17 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 | Blood | Natural |
 | None | — |
 
-Each domain provides a spell list and domain-specific skills. The **None** domain provides no spells but grants access to **gunpowder weapons**.
+Each domain provides a spell list and domain-specific feats. The **None** domain provides no spells but grants access to **gunpowder weapons**.
 
 ---
 
 ## Traditions
 
-After you choose **Archetype** and **Domain**, choose **one Tradition** for the whole retinue. Traditions are plural labels (**Witches**, **Crusaders**) — the warband’s shared identity, not a tag on a single fighter.
+After you choose **Archetype** and **Domain**, choose **one Tradition** for the whole retinue. Traditions are plural labels (**Witches**, **Crusaders**) — shared identity for the entire retinue.
 
-Traditions will gate **tradition skills** (Phase 5b) and optional gear. They do not replace Domain spells or the **Caster** keyword (see `retinue-building.md`).
+Traditions unlock **tradition feats** (Phase 5b) and optional gear alongside Domain spells and the **Caster** keyword (see `retinue-building.md`).
 
-**Cross-domain traditions:** the same name can appear on more than one Domain list. Your Archetype must be allowed for that name **on the Domain you chose**. Tradition skills differ by Domain — e.g. **Witches** on Nature vs Arcane.
+**Cross-domain traditions:** the same name can appear on more than one Domain list. Your Archetype must be allowed for that name **on the Domain you chose**. Tradition feats differ by Domain — e.g. **Witches** on Nature vs Arcane.
 
 | Tradition | Domains | Archetypes |
 |---|---|---|
@@ -189,7 +189,7 @@ Optional starting Tradition when using a preset (any allowed Tradition is legal)
 
 ## Named Faction Presets
 
-Twelve established factions exist in Noctvale lore. Each is a specific Archetype + Domain pairing with placeholder lore below, plus (when written) faction-specific skills and exclusive equipment.
+Twelve established factions exist in Noctvale lore. Each is a specific Archetype + Domain pairing with placeholder lore below, plus (when written) faction-specific feats and exclusive equipment.
 
 | Faction | Archetype | Domain | Identity |
 |---|---|---|---|
@@ -206,7 +206,7 @@ Twelve established factions exist in Noctvale lore. Each is a specific Archetype
 | Village Watch | Folk | None | Ordinary townsfolk defending their homes |
 | Iron Law | Folk | None | Corrupted remnants of imperial law |
 
-Two presets can share the same Archetype + Domain but play differently through exclusive skills and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + None — Inquisition leans anti-magic denial; Silver Hunt leans alchemy, poisons, and silver weapons.
+Two presets can share the same Archetype + Domain but play differently through exclusive feats and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + None — Inquisition leans anti-magic denial; Silver Hunt leans alchemy, poisons, and silver weapons.
 
 ---
 
@@ -230,7 +230,7 @@ Monster hunters, especially targeting werebeasts and wild horrors. They tracked 
 Scholars and mages seeking supernatural knowledge. Originally advised the emperor before the fall. They seek knowledge of the supernatural forces now unleashed across Noctvale.
 
 ### Village Watch
-Ordinary townsfolk defending their homes. Not led by sheriffs — these are civilian defenders, not a law enforcement faction. Villages formed watches to protect their homes from all the horrors that roam the land.
+Ordinary townsfolk defending their homes. Civilian defenders — villages formed watches during the long war to protect their homes from the horrors that roam the land.
 
 ### Iron Law
 Corrupted remnants of imperial law and constabulary. In the absence of the empire's authority, those who once enforced the law took power for themselves. They now rule through fear, chains, and the barrel of a gun.
@@ -254,11 +254,11 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 
 ## Design Notes
 
-- **Retinue** is the list you play; **Archetype + Domain + Tradition** is how you build it; **named factions** are optional lore presets, not required labels
-- Named presets can share Archetype + Domain — differentiate with exclusive skills and gear (Inquisition vs Silver Hunt)
+- **Retinue** is the list you play; **Archetype + Domain + Tradition** is how you build it; **named factions** are optional lore presets
+- Named presets can share Archetype + Domain — differentiate with exclusive feats and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
-- Cult gets 3 casters but no armor — glass cannon by design
-- **Missile weapons** for all retinues; **gunpowder** for None only — parallel power systems, not stacking
-- Alchemy is equipment, not magic — available to all
-- "The Nobility" is the preferred vampire preset name — noble houses, not a single kingdom
-- Village Watch and Iron Law are both Folk + None presets; players can run Folk + Nature, Folk + Infernal, etc. — presets are starting points, not constraints
+- Cult gets 3 casters and no armor — glass cannon by design
+- **Missile weapons** for all retinues; **gunpowder** for None domain — parallel power paths
+- Alchemy is equipment available to all retinues
+- **The Nobility** — vampire preset built around noble houses
+- Village Watch and Iron Law are both Folk + None presets; players can also run Folk + Nature, Folk + Infernal, etc. — presets are starting points

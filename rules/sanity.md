@@ -13,11 +13,11 @@ When a Sanity test is required, roll **d6 + Sa ≥ 8**.
 
 ## Fear, Panic, and Insanity
 
-Certain models and spells carry the **Fear**, **Panic**, or **Insanity** keyword. When a fighter activates within range and line of sight of such a source, they must pass a Sanity test.
+Certain fighters and spells carry the **Fear**, **Panic**, or **Insanity** keyword. When a fighter activates within range and line of sight of such a source, they must pass a Sanity test.
 
 ### Default Range
 
-The default trigger range is **6" + line of sight**. Models and spells may specify a different range or restrict the trigger to **melee only** (charging or being charged).
+The default trigger range is **6" + line of sight**. Fighters and spells may specify a different range or restrict the trigger to **melee only** (charging or being charged).
 
 ### Keyword Format
 
@@ -57,7 +57,7 @@ Cannot move **closer to the source** of fear. In addition, the fighter must spen
 
 Roll on the **Insanity Table (1d6)**:
 
-- 1 — **Frenzy:** Attack the closest model (chosen by your opponent). It cannot be the source of the Insanity.
+- 1 — **Frenzy:** Attack the closest fighter (chosen by your opponent). It cannot be the source of the Insanity.
 - 2–3 — **Flee:** Spend both actions moving toward the nearest board edge.
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
 - 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity with **+2 Mt** and **+1 Sk** but **-1 to hit**. If their primary weapon is ranged, they spend both actions firing at the source with **-1 to hit**.
@@ -72,11 +72,11 @@ A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. 
 
 ## Design Notes
 
-- Fear/Panic/Insanity are keywords assigned to specific models and spells, not domain-wide traits — a vampire lord might cause Fear, but the thralls in the same retinue do not
-- The three tiers escalate in consequence (hesitation → retreat → loss of control) but do not chain into each other — a model causes Fear OR Panic OR Insanity, not a progression
-- Pass-once-per-source means a brave fighter who holds their nerve is done worrying, while a fighter who fails is stuck testing each turn — creating tension without endless dice rolling against models you've already faced down
+- Fear/Panic/Insanity are keywords assigned to specific fighters and spells — a vampire lord might cause Fear, but the thralls in the same retinue do not
+- The three tiers escalate in consequence (hesitation → retreat → loss of control). Each source applies Fear, Panic, or Insanity — one tier per source.
+- Pass-once-per-source means a brave fighter who holds their nerve is done worrying, while a fighter who fails is stuck testing each turn — creating tension without endless dice rolling against fighters you've already faced down
 - The Insanity table is weighted toward the middle: Freeze (4–5) is the most common result, Frenzy (1) and Berserk (6) are rare extremes
-- Berserk is intentionally not entirely bad — "so scared you snap and fight like a cornered animal" is more interesting than all-negative outcomes
+- Berserk can snap a terrified fighter into sudden aggression — fear that sometimes backfires on the source
 - 6" default range keeps fear as a close-quarters threat, not something that locks down the whole board
 - Fearless as a keyword gives None domain retinues a unique defensive advantage against magic-heavy opponents, compensating for their lack of spells
 - Sa 3 baseline means d6 + 3 ≥ 8, so fighters need a 5+ to pass (~33% chance). Fear effects are genuinely threatening at baseline stats

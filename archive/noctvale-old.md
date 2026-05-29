@@ -337,7 +337,7 @@ Execute a stunned enemy.
 
 # Engagement Rules
 
-- Engagement range is 1 inch
+- Engagement range is **1"**
 - No facing system
 - Models are treated as aware in all directions
 
@@ -345,15 +345,13 @@ Execute a stunned enemy.
 
 # Line of Sight
 
-Line of sight is drawn model to model.
-
-Parts of the miniature extending beyond the base are ignored.
+Line of sight is drawn fighter to fighter. Parts extending beyond the base are ignored.
 
 ---
 
 # Cover
 
-If more than half of the model is obscured, the target has cover.
+If more than half of the fighter is obscured, the target has cover.
 
 Cover grants +1 Defense Die.
 
@@ -363,7 +361,7 @@ Cover grants +1 Defense Die.
 
 Roll Luck when falling.
 
-For every 2 inches fallen, roll one die.
+For every **2"** fallen, roll one die.
 
 Each 4+ result causes 1 wound.
 
@@ -382,9 +380,9 @@ When attacking multiple enemies:
 
 At the start of the round, the player with the fewer number of activations receives a number of Overwatch tokens equal to the difference in activations.
 
-A player may also choose to forgo a model's activation and give that model an Overwatch token.
+A player may also choose to forgo a fighter's activation and give that fighter an Overwatch token.
 
-The token allows that model to perform a single action as a reaction to an enemy model completing an action.
+The token allows that fighter to perform a single action as a reaction to an enemy fighter completing an action.
 
 Examples:
 
