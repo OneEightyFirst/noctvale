@@ -11,7 +11,7 @@ Decisions made during design, with reasoning. Newest entries at the top.
 1. **Draft** — Add **one** new section at the top (below this heading). Describe every design change in the staged diff: **Decision** + **Reasoning**.
 2. **Stage** — Include `decision-log.md` in the same commit as the rule/campaign/todo changes.
 3. **Commit** — Run `git commit` as usual.
-4. **Hash** — Set **`Commit:`** `short-hash` on that section (`git rev-parse --short HEAD`). Prefer folding the hash into the same commit via amend when the commit is still local and unpushed.
+4. **Hash** — Set **`Commit:`** `short-hash` on that section (`git rev-parse --short HEAD`). If you amended, run `git rev-parse --short HEAD` **again** after the amend, update the log, then amend once more to fold in the hash (unpushed commits only).
 
 **One entry per commit.** Do not split a single commit across multiple sections. Do not commit design work without a matching log entry.
 
@@ -29,9 +29,17 @@ Older entries below may predate this convention and lack a hash until backfilled
 
 ---
 
+## 2026-05-28 — Decision log hash after amend
+
+**Commit:** *(fill after commit)*
+
+**Decision:** Document that **`Commit:`** must be taken from `git rev-parse --short HEAD` **after** any amend. Fix fix-up entry hash to match final HEAD.
+
+---
+
 ## 2026-05-28 — Fix decision log commit hash
 
-**Commit:** `dd78139`
+**Commit:** `b512184`
 
 **Decision:** Correct **`Commit:`** on the "one entry per commit" section — amend changed HEAD from `b358c84` to `ba118c9`.
 

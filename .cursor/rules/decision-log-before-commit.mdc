@@ -13,7 +13,7 @@ Whenever you create a git commit in this repo (user asked, or you are finishing 
 
 1. **Before `git commit`** — Add **one** new section at the **top** of `decision-log.md` (below "How to use this log"). Summarize every design decision in the staged changes: what changed and why. Do not split one commit across multiple sections.
 2. **Stage `decision-log.md`** together with the other files in that commit.
-3. **After `git commit` succeeds** — Set **`Commit:`** `short-hash` on that new section (`git rev-parse --short HEAD`). If the commit is unpushed and amend is allowed (HEAD is yours this session, not pushed), run `git add decision-log.md && git commit --amend --no-edit` so the hash is in the same commit. Otherwise make a tiny follow-up commit that only adds the hash.
+3. **After `git commit` succeeds** — Set **`Commit:`** `short-hash` on that new section (`git rev-parse --short HEAD`). If you amended to fold in the log, run `git rev-parse --short HEAD` **again** after the amend, update the hash, and amend once more when still unpushed.
 4. **Never commit** design/rule/campaign/todo changes without updating the decision log first — except pure typo/formatting with no design meaning.
 
 ## Entry format
