@@ -1,6 +1,6 @@
 # Exploration Phase
 
-After each battle, retinues explore the surrounding area.
+Part of the [post-game sequence](post-game.md) (Step 4). After each battle, retinues explore the surrounding area.
 
 ---
 
@@ -21,7 +21,7 @@ Roll **1d6** to determine where the retinue is exploring.
 
 ## Step 2: Roll Exploration Dice
 
-Roll **1d6 per surviving hero**.
+Roll **1d6 per surviving fighter** (Active at battle end — not Out of Action, not Convalescent).
 
 Maximum of **6 dice** regardless of retinue size.
 
@@ -29,17 +29,42 @@ Maximum of **6 dice** regardless of retinue size.
 
 ## Step 3: Resolve Mishaps
 
-Any die showing **1** triggers a **Mishap**.
+Any die showing **1** triggers a **Mishap**. Mishaps affect a fighter of **your choice**.
 
-Mishaps affect a fighter of **your choice**.
+Roll **1d6** on the Mishap Chart below (or apply the listed result if the exploration rules specify a subtable).
+
+---
+
+## Mishap Chart
+
+| d6 | Mishap |
+|---|---|
+| 1 | **Lost** — fighter misses the **next battle**. |
+| 2 | **Injured** — roll on [Serious Injury Chart](post-game.md#step-3-serious-injury-chart) (2d6). |
+| 3 | **Spooked** — Sa −1 until the start of the **next battle** (temporary). |
+| 4 | **Equipment** — one weapon or armor piece is **damaged**; pay half its Crown cost to repair before the next battle, or fight without it. |
+| 5 | **Separated** — retinue finds **1 fewer Relic Fragment** this exploration (minimum 0). |
+| 6 | **Close Call** — no effect; the fighter learns from it (+1 Experience). |
 
 ---
 
 ## Step 4: Resolve Discoveries
 
-Take the **best 3 dice** and resolve them as discoveries on the location table.
+Take the **best 3 dice** from Step 2. For each die, consult the **Discovery Chart** for your location (below).
 
-*(Location discovery tables — to be developed)*
+Each discovery die resolves independently. A die showing **1** already triggered a Mishap in Step 3 — do not also resolve it as a discovery.
+
+### Ruins — Discovery Chart
+
+| Die | Discovery |
+|---|---|
+| 2 | **Rubble** — 1 Relic Fragment. |
+| 3 | **Scrap** — 10 Crowns of salable gear *(abstract)*. |
+| 4 | **Shard** — 1 Relic Fragment. |
+| 5 | **Cache** — 2 Relic Fragments. |
+| 6 | **Vault** — 2 Relic Fragments; roll once on [Battle Spoils](post-game.md#step-1-scenario-results) and gain that many additional fragments. |
+
+*(Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard — charts TBD.)*
 
 ---
 
@@ -63,4 +88,5 @@ See [todo.md](../todo.md) for the castle setting pivot discussion, territory/cam
 - The 6-dice cap prevents large retinues from dominating exploration automatically
 - "Best 3" means you're always hoping for good high rolls, not just quantity
 - Push the Search is a high-risk high-reward gamble: ignore bad rolls, but you risk more Mishaps
-- Location flavor (Ruins, Chapel, Graveyard, etc.) sets up location-specific discovery tables to be written
+- Location discovery charts follow the same pattern as **Ruins** — one d6 table per location (Warhammer Quest / Mordheim treasure-chart style)
+- Mishap chart links to [post-game Serious Injury](post-game.md#step-3-serious-injury-chart) for lasting wounds

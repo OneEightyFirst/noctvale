@@ -14,6 +14,8 @@ Your **Domain** determines what supernatural powers your retinue wields — your
 
 The named factions of Noctvale are established combinations with their own history, exclusive skills, and unique equipment. Players may use a named faction or create their own combination.
 
+For Crown budgets, fighter tiers, model limits, and equipment costs, see **`rules/retinue-building.md`**.
+
 ---
 
 ## Archetypes

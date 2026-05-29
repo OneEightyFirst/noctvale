@@ -133,12 +133,12 @@ Define skill lists for each archetype and each domain. Skills are the primary me
 
 Build full playtest rosters for Silver Hunt and Nightpack.
 
-- [ ] Define fighter types per retinue (leader, heroes, henchmen)
+- [x] Define fighter types per retinue (Leader, Caster/Special, Champion, Troop — see `rules/retinue-building.md`)
 - [ ] Assign stat lines (based on species baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
 - [ ] Assign spells from Phase 4 list (if applicable)
 - [ ] Assign skills from Phase 5b lists
-- [ ] Set retinue size / point budget (or fixed roster for first test)
+- [x] Set retinue size / point budget — **1000 Crowns**, composition limits per Archetype (`rules/retinue-building.md`)
 - [ ] Calculate total retinue cost and verify balance parity
 
 ---
@@ -191,10 +191,10 @@ Things identified across the design docs that don't fit neatly into one phase.
 
 - [ ] **Setting scope:** Broad cursed-land Noctvale vs. single-castle betrayal setting — this affects scenarios, exploration, economy flavor, and faction framing
 - [ ] **Castle pivot implications:** If the game takes place in a single castle, exploration becomes castle-zone exploration; factions represent forces trapped inside or rushing to exploit the betrayal; relic fragments could become keys, blood seals, royal edicts, sacred brands, etc.
-- [ ] **Retinue building system:** Points-based, fixed lists (Spearhead-style), or constrained draft?
-- [ ] **Species costing:** Elves and Dwarves should cost more than Humans when list building — Humans are the true baseline, Elves/Dwarves pay a premium for specialty bonuses (Wi 4 + M 7" for Elves, Mt 4 + M 5" for Dwarves). W is normalized to 3 across all species (see decision log 2026-05-20)
-- [ ] **Campaign injury / advancement system:** Post-game consequences for Out of Action fighters (injuries, death, stat gains) — referenced in conditions.md but not yet written
-- [ ] **Exploration location tables:** Discovery tables per location type (Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard) — referenced in exploration.md but not yet written
+- [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
+- [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
+- [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates after playtest
+- [ ] **Exploration location tables:** Ruins done; Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard — discovery charts TBD (`campaign/exploration.md`)
 - [ ] **Relic fragment spending:** What can fragments be spent on beyond selling? (crafting, upgrades, relic assembly)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
@@ -243,3 +243,29 @@ Games relevant to Noctvale design decisions:
 | Kings of War | Mass battle where units remain intact until removed |
 | WH Underworlds / Combat Patrol / Spearhead | Fixed-list or constrained-list comparison points |
 | OSR RPGs | Old-school feel, danger, emergent stories, streamlined modern presentation |
+| [Last Days: Zombie Apocalypse](#last-days-zombie-apocalypse) | Keyword = group cohesion; Leader sets composition; skill types gate level-ups; campaign loop (XP → stat or skill); Scavenge Points + Refuge |
+
+#### Last Days: Zombie Apocalypse
+
+*Ash Barker, Osprey Games (2018). Original homebrew ~2009 — **not** a port of Frostgrave, Necromunda, or Chain Reaction.*
+
+**Rules engine:** Own system. d6 + stat vs target (7+ to hit shooting); opposed d6 melee; action points per model; five-phase turn (Menace → Action → Shooting → CQC → End). Familiar skirmish ingredients, but the campaign + group-building layer is bespoke.
+
+**Design influences** (per author/reviews): Mordheim/Necromunda-style campaign progression; refuge upgrades; post-game chart loops reminiscent of Warhammer Quest; AP phase structure compared to Wreck Age / Relicblade.
+
+**Leveling system (worth stealing ideas from):**
+
+| Step | Last Days |
+|---|---|
+| Levels | 0–10 per character |
+| Earn XP | Survive encounter, kill zombies/opponents, scenario goals |
+| On advancement | Spend XP: **2** (skill/keyword) or **5** (stat); roll chart; optional Fragment nudge |
+| Stat raise | Roll on random stat table → spend **banked XP** to nudge/modify the result |
+| Skill gain | Pick one of the fighter's **Skill Types** (5 groups × 6 skills = 30 skills) → roll on that table → spend XP to nudge |
+| Skill Types | Eligibility lists on each character archetype — not powers themselves |
+| Starting skills | Pregen archetypes have fixed packages; **Survivor** type lets you pick starting skills (custom build within keyword rules) |
+| Between games | Injury table, supply loot → Scavenge Points, recruit, refuge jobs/upgrades, **The Talk** (convert mismatched keyword to Leader's) |
+
+**Noctvale hooks:** Spend XP bank (no levels) — Skill/Keyword **2 XP**, Stat **5 XP**; Fragment nudge 1 or 2. Caster keyword via Keyword chart when eligible.
+
+**Caveat:** Reviews note spending XP to nudge makes **stat bumps often outperform** narrow skills — tune carefully if we use random tables.

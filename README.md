@@ -24,7 +24,8 @@ rules/
   special-rules.md       — Line of Sight, Cover, Falling, Overwatch, Gang Up
   magic.md               — Casting, magic classes, spell concepts
 campaign/
-  exploration.md         — Post-battle exploration phase
+  post-game.md           — Post-battle charts (injury, advancement, spoils)
+  exploration.md         — Exploration phase (mishap & discovery charts)
   economy.md             — Relic Fragment economy and selling curve
 factions/
   factions.md            — All 12 factions with descriptions and design notes

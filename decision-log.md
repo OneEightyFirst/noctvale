@@ -4,6 +4,96 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-28 — Cult Leader renamed Theurge
+
+**Decision:** Cult Leader class name is **Theurge** (replaces **Magister**). Greek *theos* + *ergon* — one who performs divine/ritual work. Fits a leader who always casts without sounding academic.
+
+---
+
+## 2026-05-28 — Standard retinue 1000 Crowns
+
+**Decision:** Standard retinue budget is **1000 Crowns** (skirmish and campaign start). All Crown costs use **5 Crown increments**. Fighter bases: Leader **125**, Elite **75**, Specialist **60**, Rank **40**; Caster **+25**, Elf/Dwarf **+10**. Wargear prices scaled to match (~2.5× prior alpha, rounded to nearest 5).
+
+**Budgeting target:** ~450–550 Crowns on fighters at typical roster size (7–10 models), leaving the rest for weapons, armor, and consumables.
+
+**Fragment sell curve:** base rate **20 Crowns** per fragment (was 15) — slight bump to stay in step with the larger budget; same discount-band shape in `campaign/economy.md`.
+
+**Reasoning:** More room to kit out fighters without changing composition caps; clean arithmetic at the table.
+
+---
+
+## 2026-05-28 — Knights drop Rank; Hunters regain Specialist
+
+**Decision:** **Knights** lose the **Hanger-on** Rank class — rosters are Lord + Knight (Elite) + Squire (Specialist) only. Slots: Knight 0–4, Squire 0–5 (max **10**). **Hunters** regain a **Specialist** class: **Tracker** (0–3), +1 CC or RC or Caster build. Hand slots trim to 0–4 so max stays **12** (Stalker 0–4 + Tracker 0–3 + Hand 0–4).
+
+**Caster eligibility:** Hunters Caster keyword moves from Leader/Elite to **Leader, Specialist** (Captain or Tracker) — same pattern as Knights and Folk.
+
+**Reasoning:** Knights stay elite with no cannon-fodder Rank. Hunters get a proper middle tier instead of folding Specialist into Stalker.
+
+---
+
+## 2026-05-28 — Post-game charts (Mordheim / Necromunda / Warhammer Quest)
+
+**Decision:** Campaign loop is **chart-driven**. Full sequence in `campaign/post-game.md`.
+
+**Charts (alpha):** Battle Spoils (2d6) · Survival (d6) · Serious Injury (2d6) · Exploration Mishap (d6) · Ruins Discovery (d6) · Stat Advancement (2d6) · Keyword Advancement (2d6, includes **Caster** unlock).
+
+**Nudge:** Spend 1 Relic Fragment from the current battle to ±1 any post-game roll (before resolving).
+
+**XP → spend on advancement** (Skill/Keyword 2 XP, Stat 5 XP); nudge with Fragments (1 or 2). No level thresholds.
+
+---
+
+## 2026-05-28 — Last Days reference (leveling & keywords)
+
+**Note:** [Last Days: Zombie Apocalypse](https://www.ospreypublishing.com/us/last-days-zombie-apocalypse-9781472826695/) (Ash Barker, Osprey 2018). External reference in `todo.md`.
+
+**Own system** — not Frostgrave. **Leveling:** stat OR skill on level-up, random table + spend currency to nudge. **Keyword lesson:** Last Days keywords are recruitment cohesion; Noctvale **Caster** is a capability keyword. Nudge mechanic adapted as Relic Fragment spend in `campaign/post-game.md`.
+
+---
+
+## 2026-05-28 — Caster as keyword
+
+**Decision:** **Caster** is a **keyword**, not a class. Classes are Leader, Elite, Specialist, Rank only.
+
+**Caster keyword:** Wi 4+, 3 Domain spells, Cast action. +25 Crowns at recruitment. Taking Caster on a class with a +1 stat bonus replaces that bonus.
+
+**Who may take Caster at creation:**
+
+| Archetype | Eligible classes | Max |
+|---|---|---|
+| Knights | Leader, Specialist | 1 |
+| Hunters | Leader, Specialist | 1 |
+| Folk | Leader, Specialist | 1 |
+| Cult | Leader, Specialist | 3 |
+
+**Cult:** Theurge (Leader) always has Caster. Adept (Specialist) 0–2 always have Caster. Acolyte (Rank) may gain Caster via [Keyword Advancement](campaign/post-game.md#keyword-advancement-chart).
+
+**None Domain:** Caster keyword unavailable.
+
+**Reasoning:** Separates roster slot from magical ability; opens campaign progression to grant Caster without changing class. Cult identity = magic on Leader and Specialist tiers.
+
+---
+
+## 2026-05-28 — Archetype roster tiers
+
+**Decision:** Each Archetype uses its own tier names and slot caps. Maximum models match prior targets: **Knights 10, Hunters 12, Folk 15, Cult 10**.
+
+| Archetype | Leader | Slots | Max |
+|---|---|---|---|
+| Knights | Lord | Knight 0–4, Squire 0–5 | 10 |
+| Hunters | Captain | Stalker 0–4, Tracker 0–3, Hand 0–4 | 12 |
+| Folk | Mayor | Guildsman 0–3, Militiaman 0–5, Townsfolk 0–6 | 15 |
+| Cult | Theurge (always Caster) | Adept 0–2, Acolyte 0–7 | 10 |
+
+**Casters:** Cult Theurge always casts; up to 2 Adepts (3 Casters max). Other Archetypes: 1 Caster max, built on Leader or middle tier. None Domain: no Casters.
+
+**Economy:** 1000 Crown budget (alpha); all costs in 5 Crown increments. Human baseline fighters Leader 125 / Elite 75 / Specialist 60 / Rank 40; Caster +25; Elf/Dwarf +10. Full rules in `rules/retinue-building.md`.
+
+**Reasoning:** Archetype names sell identity on the roster. Generic classes stay constant; Domain will shift composition counts. **Cult** is Casters + Rank only — glass cannon, no fighter elite tier. Folk Leader is **Mayor**.
+
+---
+
 ## 2026-05-28 — Retinue (replaces warband)
 
 **Decision:** The player's list-for-a-fight is called a **retinue**, not a warband. **Faction** remains the named Archetype + Domain identity (Phoenix Guard, etc.). Lore for Nightpack no longer says werebeasts "formed warbands/retinues" — they **became what is now called The Nightpack**. Terminology updated across rules, campaign, factions, README, and `_overview.md`.
@@ -274,7 +364,7 @@ With W normalized, defensive differentiation comes from stats (Mt for toughness)
 
 **Edge case noted:** An Infernal Cult retinue with 3 casters could theoretically summon enough Imps (post-alpha summoning system) to hit the upper bound if everything goes right. Even in that extreme, the cap should stay around 20 models on the table.
 
-**Status:** Bounds not yet defined. Needs roster-building rules.
+**Status:** Superseded by 2026-05-28 retinue-building rules. Bounds defined in `rules/retinue-building.md`.
 
 ---
 
