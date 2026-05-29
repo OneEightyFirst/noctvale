@@ -31,7 +31,7 @@ Older entries below may predate this convention and lack a hash until backfilled
 
 ## 2026-05-28 — Decision log hash after amend
 
-**Commit:** *(fill after commit)*
+**Commit:** `a0ce15b`
 
 **Decision:** Document that **`Commit:`** must be taken from `git rev-parse --short HEAD` **after** any amend. Fix fix-up entry hash to match final HEAD.
 
