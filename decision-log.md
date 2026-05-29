@@ -2,169 +2,98 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
----
+## How to use this log
 
-## 2026-05-28 — Retinue doc moved to rules/
+**Update this file before every git commit.** The decision log is part of the commit, not an afterthought.
 
-**Decision:** `factions/factions.md` → **`rules/retinue.md`**. File covers Archetype, Domain, and named faction **presets** (lore). Mechanical roster building stays in `retinue-building.md`. Removed empty `factions/` folder.
+### Workflow
 
----
+1. **Draft** — Add **one** new section at the top (below this heading). Describe every design change in the staged diff: **Decision** + **Reasoning**.
+2. **Stage** — Include `decision-log.md` in the same commit as the rule/campaign/todo changes.
+3. **Commit** — Run `git commit` as usual.
+4. **Hash** — Set **`Commit:`** `short-hash` on that section (`git rev-parse --short HEAD`). Prefer folding the hash into the same commit via amend when the commit is still local and unpushed.
 
-## 2026-05-28 — Hammers, Spear to Long, gunpowder tiers simplified
+**One entry per commit.** Do not split a single commit across multiple sections. Do not commit design work without a matching log entry.
 
-**Decision:** **Spear** moves to **Long** melee. Add **Mace** (Basic, Hammer) and **War Hammer** (Heavy, Hammer). **Hammer** weapon type is outside the triangle — natural 6s crit vs **Heavy Armor** only; no triangle crits when either fighter wields a Hammer.
+### Entry format
 
-**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle — refined personal arms). **Flintlock** is a keyword on any firearm: −25 Crowns, Single Shot. Removed Field tier and separate Flintlock weapon lines.
+| Field | Required |
+|---|---|
+| `## YYYY-MM-DD — Title` | Yes — matches commit intent |
+| **`Commit:`** `hash` | Yes — after commit (enables `git log` ↔ log diff) |
+| **Decision** | Yes |
+| **Reasoning** | Yes when not obvious |
+| **Superseded by:** `hash` | When replacing an older decision |
 
-**Archetype gunpowder:** Hunters + None — both tiers. Knights/Folk + None — Basic only.
-
-**Reasoning:** Refined names the "modern" sidearm/rifle without Field. Flintlock as keyword keeps one stat line per gun.
-
----
-
-## 2026-05-28 — Weapon category taxonomy
-
-**Decision:** Reorganize weapons by access category in `rules/weapons.md`.
-
-**Melee:** Basic · Long · Heavy · Exotic (empty in alpha).
-
-**Ranged:** split into **Missile weapons** (bows, crossbows, slings, thrown — **all retinues**) and **Gunpowder weapons** (None Domain only).
-
-**Missile subcategories:** Basic (Sling, Shortbow, Throwing Stars) · Long (Longbow, Crossbow) · Heavy (Heavy Crossbow).
-
-**Gunpowder firearm tiers:** **Basic** (Musket, Blunderbuss) · **Refined** (Pistol, Long Rifle). **Flintlock** keyword (−25 Crowns, Single Shot) on any firearm.
-
-**Archetype gunpowder access:** Hunters + None — both tiers. Knights/Folk + None — Basic only. Cult — no gunpowder; **all missile weapons** allowed.
-
-**Melee:** Spear in **Long**. **Hammer** type (Mace, War Hammer) — crits vs Heavy Armor, outside triangle.
-
-**Reasoning:** Cult can shoot crossbows; gunpowder stays None-only. Regular taxonomy for roster building and faction gates.
+Older entries below may predate this convention and lack a hash until backfilled.
 
 ---
 
-## 2026-05-28 — Cult Leader renamed Theurge
+## 2026-05-28 — Decision log: one entry per commit
 
-**Decision:** Cult Leader class name is **Theurge** (replaces **Magister**). Greek *theos* + *ergon* — one who performs divine/ritual work. Fits a leader who always casts without sounding academic.
+**Commit:** `b358c84`
 
----
+**Decision:** Restructure recent log entries to **one section per git commit**, each with a **`Commit:`** short hash. Add **How to use this log** workflow: update `decision-log.md` **before** every commit, stage it with the change, insert hash after commit. Add `.cursor/rules/decision-log-before-commit.mdc` so agents follow this every time.
 
-## 2026-05-28 — Standard retinue 1000 Crowns
-
-**Decision:** Standard retinue budget is **1000 Crowns** (skirmish and campaign start). All Crown costs use **5 Crown increments**. Fighter bases: Leader **125**, Elite **75**, Specialist **60**, Rank **40**; Caster **+25**, Elf/Dwarf **+10**. Wargear prices scaled to match (~2.5× prior alpha, rounded to nearest 5).
-
-**Budgeting target:** ~450–550 Crowns on fighters at typical roster size (7–10 models), leaving the rest for weapons, armor, and consumables.
-
-**Fragment sell curve:** base rate **20 Crowns** per fragment (was 15) — slight bump to stay in step with the larger budget; same discount-band shape in `campaign/economy.md`.
-
-**Reasoning:** More room to kit out fighters without changing composition caps; clean arithmetic at the table.
+**Reasoning:** Lets you diff `git log` against the decision log and catch drift; avoids ten micro-entries for one commit.
 
 ---
 
-## 2026-05-28 — Knights drop Rank; Hunters regain Specialist
+## 2026-05-28 — Weapons taxonomy, hammers, retinue identity doc
 
-**Decision:** **Knights** lose the **Hanger-on** Rank class — rosters are Lord + Knight (Elite) + Squire (Specialist) only. Slots: Knight 0–4, Squire 0–5 (max **10**). **Hunters** regain a **Specialist** class: **Tracker** (0–3), +1 CC or RC or Caster build. Hand slots trim to 0–4 so max stays **12** (Stalker 0–4 + Tracker 0–3 + Hand 0–4).
+**Commit:** `dc93b17`
 
-**Caster eligibility:** Hunters Caster keyword moves from Leader/Elite to **Leader, Specialist** (Captain or Tracker) — same pattern as Knights and Folk.
+**Decision:** Reorganize `rules/weapons.md` by access category. **Melee:** Basic · Long · Heavy · Exotic. **Spear** in **Long**. Add **Mace** (Basic) and **War Hammer** (Heavy) — **Hammer** type outside the triangle; natural 6s crit vs **Heavy Armor** only; no triangle crits when either fighter wields a Hammer (`combat.md` updated).
 
-**Reasoning:** Knights stay elite with no cannon-fodder Rank. Hunters get a proper middle tier instead of folding Specialist into Stalker.
+**Ranged:** **Missile weapons** (all retinues) vs **Gunpowder** (None only). Gunpowder firearms: **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot). Hunters + None get both tiers; Knights/Folk + None get Basic only.
 
----
+Move `factions/factions.md` → **`rules/retinue.md`** (Archetypes, Domains, named presets, lore). Mechanical building stays in `retinue-building.md`. Remove `factions/` folder.
 
-## 2026-05-28 — Post-game charts (Mordheim / Necromunda / Warhammer Quest)
-
-**Decision:** Campaign loop is **chart-driven**. Full sequence in `campaign/post-game.md`.
-
-**Charts (alpha):** Battle Spoils (2d6) · Survival (d6) · Serious Injury (2d6) · Exploration Mishap (d6) · Ruins Discovery (d6) · Stat Advancement (2d6) · Keyword Advancement (2d6, includes **Caster** unlock).
-
-**Nudge:** Spend 1 Relic Fragment from the current battle to ±1 any post-game roll (before resolving).
-
-**XP → spend on advancement** (Skill/Keyword 2 XP, Stat 5 XP); nudge with Fragments (1 or 2). No level thresholds.
+**Reasoning:** Cult can take crossbows; gunpowder stays None-only. Refined labels personal arms vs issue weapons. Flintlock as keyword avoids duplicate stat lines. Retinue doc lives with other roster rules.
 
 ---
 
-## 2026-05-28 — Last Days reference (leveling & keywords)
+## 2026-05-28 — Retinue building, post-game charts, campaign economy
 
-**Note:** [Last Days: Zombie Apocalypse](https://www.ospreypublishing.com/us/last-days-zombie-apocalypse-9781472826695/) (Ash Barker, Osprey 2018). External reference in `todo.md`.
+**Commit:** `e8d5cb8`
 
-**Own system** — not Frostgrave. **Leveling:** stat OR skill on level-up, random table + spend currency to nudge. **Keyword lesson:** Last Days keywords are recruitment cohesion; Noctvale **Caster** is a capability keyword. Nudge mechanic adapted as Relic Fragment spend in `campaign/post-game.md`.
+**Decision:** Add **`rules/retinue-building.md`** — generic classes (Leader / Elite / Specialist / Rank), Archetype slot caps, **1000 Crown** budget (5 Crown increments), fighter and wargear costs. **Mayor** (Folk Leader), **Theurge** (Cult Leader, replaces Magister), **Tracker** (Hunter Specialist). Knights: no Rank (Knight + Squire only). **Caster** is a keyword (+25 Crowns), not a class.
 
----
+Add **`campaign/post-game.md`** — chart-driven loop: Battle Spoils, Survival, Serious Injury, XP spend (Skill/Keyword 2 XP, Stat 5 XP, no levels), Stat/Keyword advancement charts, Fragment nudges. Update **`campaign/exploration.md`** with Mishap chart and Ruins discovery. Bump fragment sell base **15 → 20** Crowns in **`campaign/economy.md`**.
 
-## 2026-05-28 — Caster as keyword
+**Reference:** Last Days (Osprey 2018) noted in `todo.md` for XP + nudge inspiration — own system, not ported.
 
-**Decision:** **Caster** is a **keyword**, not a class. Classes are Leader, Elite, Specialist, Rank only.
-
-**Caster keyword:** Wi 4+, 3 Domain spells, Cast action. +25 Crowns at recruitment. Taking Caster on a class with a +1 stat bonus replaces that bonus.
-
-**Who may take Caster at creation:**
-
-| Archetype | Eligible classes | Max |
-|---|---|---|
-| Knights | Leader, Specialist | 1 |
-| Hunters | Leader, Specialist | 1 |
-| Folk | Leader, Specialist | 1 |
-| Cult | Leader, Specialist | 3 |
-
-**Cult:** Theurge (Leader) always has Caster. Adept (Specialist) 0–2 always have Caster. Acolyte (Rank) may gain Caster via [Keyword Advancement](campaign/post-game.md#keyword-advancement-chart).
-
-**None Domain:** Caster keyword unavailable.
-
-**Reasoning:** Separates roster slot from magical ability; opens campaign progression to grant Caster without changing class. Cult identity = magic on Leader and Specialist tiers.
+**Reasoning:** Constrained points + composition slots define roster identity. Campaign progression is chart-driven with spend-based XP, not level thresholds.
 
 ---
 
-## 2026-05-28 — Archetype roster tiers
+## 2026-05-28 — Retinue terminology, intervening fighters, LoS simplified
 
-**Decision:** Each Archetype uses its own tier names and slot caps. Maximum models match prior targets: **Knights 10, Hunters 12, Folk 15, Cult 10**.
+**Commit:** `6f47e29`
 
-| Archetype | Leader | Slots | Max |
-|---|---|---|---|
-| Knights | Lord | Knight 0–4, Squire 0–5 | 10 |
-| Hunters | Captain | Stalker 0–4, Tracker 0–3, Hand 0–4 | 12 |
-| Folk | Mayor | Guildsman 0–3, Militiaman 0–5, Townsfolk 0–6 | 15 |
-| Cult | Theurge (always Caster) | Adept 0–2, Acolyte 0–7 | 10 |
+**Decision:** Adopt **retinue** (not warband) for the player's list-for-a-fight. **Faction** remains optional named preset (Phoenix Guard, etc.).
 
-**Casters:** Cult Theurge always casts; up to 2 Adepts (3 Casters max). Other Archetypes: 1 Caster max, built on Leader or middle tier. None Domain: no Casters.
+**Intervening fighters:** friendlies do not block LoS; move through friendlies allowed. Friendly-in-line-of-fire for firearms/damage spells on miss (1d6 → 1 hits intervening friendly). Clustered enemies: Sk check to retarget when shooting into a mob.
 
-**Economy:** 1000 Crown budget (alpha); all costs in 5 Crown increments. Human baseline fighters Leader 125 / Elite 75 / Specialist 60 / Rank 40; Caster +25; Elf/Dwarf +10. Full rules in `rules/retinue-building.md`.
+**LoS & cover:** drop percentage bands from `f0e0495`. Binary LoS from shooter's PoV; cover = intervening terrain **>1"** from shooter (+1 blue defense die).
 
-**Reasoning:** Archetype names sell identity on the roster. Generic classes stay constant; Domain will shift composition counts. **Cult** is Casters + Rank only — glass cannon, no fighter elite tier. Folk Leader is **Mayor**.
-
----
-
-## 2026-05-28 — Retinue (replaces warband)
-
-**Decision:** The player's list-for-a-fight is called a **retinue**, not a warband. **Faction** remains the named Archetype + Domain identity (Phoenix Guard, etc.). Lore for Nightpack no longer says werebeasts "formed warbands/retinues" — they **became what is now called The Nightpack**. Terminology updated across rules, campaign, factions, README, and `_overview.md`.
-
-**Reasoning:** Warband reads too Mordheim/Viking; retinue fits gothic post-imperial leaders with followers and relic-hunting expeditions.
-
----
-
-## 2026-05-28 — Intervening fighters
-
-**Decision:** Friendly retinue members do not block LoS; fighters may move through friendlies (not end on their bases). **Friendly in the line of fire:** for **Cast** with firearms or damage spells only, if a friendly lies between attacker and declared target and the attack misses (gate passed, target took no wounds; not Mishap/Misfire), roll 1d6 — on 1, resolve 1 hit on the closest intervening friendly. **Clustered enemies:** when declaring a **Ranged** or **Cast** target, if other enemies from the same retinue are within 1" of the declared target, Sk check (d6 + Sk ≥ 8); on fail, retarget the sole other fighter or random choice among all within 1".
-
-**Reasoning:** Friendlies are not terrain. Firearms and magic wild shots punish careless lanes. Clustered retinues reflect firing into a mob without full competitive targeting rules.
-
----
-
-## 2026-05-28 — Line of sight and cover (simplified)
-
-**Decision:** Dropped percentage bands. **Line of sight:** from the firing fighter's PoV, if you can see the target (body on/above base, ignore past-base overhang), you have LoS; otherwise not a valid **Ranged** or **Cast** target. **Cover:** if any intervening terrain lies between shooter and target and is **more than 1" from the firing fighter**, +1 blue defense die (unchanged effect).
-
-**Reasoning:** Faster narrative adjudication than 25/90% eyeballing. The 1" exclusion stops hugging a wall from granting cover on shots where the shooter is flush against their own terrain.
+**Reasoning:** Retinue fits gothic post-imperial tone. Wild shots and mob targeting add friction without competitive targeting rules. Simpler LoS adjudication at the table.
 
 ---
 
 ## 2026-05-28 — Line of sight and cover (terrain bands) — superseded
 
-**Decision:** Replaced the two-sentence LoS rule and “more than half obscured = cover” with a single **terrain-only** visibility check from the **firing fighter’s point of view**. Target silhouette is the body on and above the base; parts past the base edge are ignored. **Less than 25%** obscured by intervening terrain = in the open; **25%–90%** = in cover (+1 blue defense die); **more than 90%** = no line of sight for Ranged or Cast. **Ranged** and **Cast** (enemy targets) now explicitly require line of sight in `actions.md`.
+**Commit:** `f0e0495` · **Superseded by:** `6f47e29`
 
-**Reasoning:** Percentage bands avoid “sliver visible” arguments while staying narrative (no Kill Team cover lines). Terrain-only keeps fighter blocking and smoke on separate rules. Cover effect unchanged (+1 blue defense die).
+**Decision:** Terrain-only visibility from firing fighter's PoV. **25%–90%** obscured = cover (+1 blue defense die); **>90%** = no LoS.
+
+**Reasoning:** Percentage bands reduce sliver arguments. Replaced by binary LoS in `6f47e29`.
 
 ---
 
 ## 2026-05-27 — Bone Circle (Necromancy) — first trap spell
+
+**Commit:** `86f5969`
 
 **Decision:** Added Bone Circle as Necromancy's 6th spell, completing the domain. Bone Circle is the game's first **trap spell** — a persistent damage zone that triggers on any model that starts their activation in it, ends their activation in it, or moves through it.
 
