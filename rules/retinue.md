@@ -159,8 +159,8 @@ All Blood traditions are **hedonistic noble houses** — appetite, sport, and st
 
 ### Archetype × Domain (at a glance)
 
-| | Light | Arcane | Infernal | Nature | Necromancy | Blood | None |
-|---|---|---|---|---|---|---|
+| Archetype | Light | Arcane | Infernal | Nature | Necromancy | Blood | None |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | **Knights** | Crusaders, Paladins | Spellblades, Sorcerers | Hellknights, Damned | Grove-keepers, Hedge-walkers | Sepulchers, Wightlords | Vampires, Dynasts | Constables, Ironbound |
 | **Hunters** | Paladins, Luminaries | Spellblades, Witches | Hellknights, Binders | Beastmen, Hedge-walkers | Bone-priests, Wightlords | Dynasts, Revelers | Zealots, Alchemists |
 | **Folk** | Crusaders, Penitents | Ritualists, Witches | Ritualists, Damned | Witches, Grove-keepers | Morticians, Sepulchers | Revelers, Courtiers | Constables, Alchemists |
