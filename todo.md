@@ -75,39 +75,11 @@ Write 2–3 spells per magic class relevant to Silver Hunt and Nightpack.
 
 ---
 
-## Phase 5a: Faction Mechanical Identity
-
-Define mechanical identity for all 12 factions (special rule, magic alignment, composition).
-
-- [ ] Assign magic class alignment per faction (Arcane Conclave → Arcane, Infernal Pact → Infernal, etc.)
-- [ ] Define one signature special rule per faction
-- [ ] Define composition archetype (elite, horde, balanced, etc.)
-- [ ] Decide if factions have exclusive weapons or unit types
-- [ ] Decide if factions have campaign-level mechanics (reputation, alliances, rivalries)
-
-### Faction Checklist
-
-| Faction | Magic | Special Rule | Composition | Status |
-|---|---|---|---|---|
-| Phoenix Guard | | | | |
-| Radiant Crusade | | | | |
-| Inquisition | | | | |
-| Silver Hunt | | | | |
-| Arcane Conclave | | | | |
-| Village Watch | | | Horde | |
-| Iron Law | | | | |
-| Coven | | | | |
-| Nightpack | | | | |
-| Grave Wardens | | | | |
-| Nobility | | | | |
-| Infernal Pact | | | | |
-
----
-
 ## Phase 5b: Archetype & Domain Skills
 
 Define skill lists for each archetype and each domain. Skills are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and skills make those choices feel distinct on the table.
 
+- [ ] Write **Tradition** skill lists (one package per Tradition per Domain where it is shared — e.g. Witches on Nature vs Arcane)
 - [ ] Decide skill structure (passive abilities, activated abilities, or both)
 - [ ] Decide how skills are acquired (built into fighter type, purchased with XP, chosen at retinue creation, etc.)
 - [ ] Decide skill count per list (e.g., 6 per archetype, 6 per domain)
@@ -189,8 +161,6 @@ Things identified across the design docs that don't fit neatly into one phase.
 
 ### Open Design Decisions
 
-- [ ] **Setting scope:** Broad cursed-land Noctvale vs. single-castle betrayal setting — this affects scenarios, exploration, economy flavor, and faction framing
-- [ ] **Castle pivot implications:** If the game takes place in a single castle, exploration becomes castle-zone exploration; factions represent forces trapped inside or rushing to exploit the betrayal; relic fragments could become keys, blood seals, royal edicts, sacred brands, etc.
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
 - [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates after playtest

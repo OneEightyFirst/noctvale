@@ -79,6 +79,114 @@ Each domain provides a spell list and domain-specific skills. The **None** domai
 
 ---
 
+## Traditions
+
+After you choose **Archetype** and **Domain**, choose **one Tradition** for the whole retinue. Traditions are plural labels (**Witches**, **Crusaders**) — the warband’s shared identity, not a tag on a single fighter.
+
+Traditions will gate **tradition skills** (Phase 5b) and optional gear. They do not replace Domain spells or the **Caster** keyword (see `retinue-building.md`).
+
+**Cross-domain traditions:** the same name can appear on more than one Domain list. Your Archetype must be allowed for that name **on the Domain you chose**. Tradition skills differ by Domain — e.g. **Witches** on Nature vs Arcane.
+
+| Tradition | Domains | Archetypes |
+|---|---|---|
+| **Witches** | Nature, Arcane | Nature: Cult, Folk — Arcane: Hunters, Folk |
+| **Ritualists** | Arcane, Infernal | Folk, Cult |
+
+### Light
+
+| Tradition | Archetypes |
+|---|---|
+| **Crusaders** | Knights, Folk |
+| **Paladins** | Hunters, Knights |
+| **Penitents** | Cult, Folk |
+| **Luminaries** | Hunters, Cult |
+
+### Arcane
+
+| Tradition | Archetypes |
+|---|---|
+| **Spellblades** | Knights, Hunters |
+| **Ritualists** | Folk, Cult |
+| **Sorcerers** | Knights, Cult |
+| **Witches** | Hunters, Folk |
+
+### Infernal
+
+| Tradition | Archetypes |
+|---|---|
+| **Ritualists** | Folk, Cult |
+| **Binders** | Hunters, Cult |
+| **Hellknights** | Knights, Hunters |
+| **Damned** | Knights, Folk |
+
+### Nature
+
+| Tradition | Archetypes |
+|---|---|
+| **Witches** | Cult, Folk |
+| **Grove-keepers** | Knights, Folk |
+| **Beastmen** | Hunters, Cult |
+| **Hedge-walkers** | Hunters, Knights |
+
+### Necromancy
+
+| Tradition | Archetypes |
+|---|---|
+| **Morticians** | Cult, Folk |
+| **Bone-priests** | Cult, Hunters |
+| **Sepulchers** | Knights, Folk |
+| **Wightlords** | Knights, Hunters |
+
+### Blood
+
+All Blood traditions are **hedonistic noble houses** — appetite, sport, and status, not peasant curse-magic.
+
+| Tradition | Archetypes |
+|---|---|
+| **Vampires** | Knights, Cult |
+| **Dynasts** | Knights, Hunters |
+| **Revelers** | Hunters, Folk |
+| **Courtiers** | Cult, Folk |
+
+### None
+
+| Tradition | Archetypes |
+|---|---|
+| **Zealots** | Hunters, Cult |
+| **Constables** | Knights, Folk |
+| **Alchemists** | Hunters, Folk |
+| **Ironbound** | Knights, Cult |
+
+### Archetype × Domain (at a glance)
+
+| | Light | Arcane | Infernal | Nature | Necromancy | Blood | None |
+|---|---|---|---|---|---|---|
+| **Knights** | Crusaders, Paladins | Spellblades, Sorcerers | Hellknights, Damned | Grove-keepers, Hedge-walkers | Sepulchers, Wightlords | Vampires, Dynasts | Constables, Ironbound |
+| **Hunters** | Paladins, Luminaries | Spellblades, Witches | Hellknights, Binders | Beastmen, Hedge-walkers | Bone-priests, Wightlords | Dynasts, Revelers | Zealots, Alchemists |
+| **Folk** | Crusaders, Penitents | Ritualists, Witches | Ritualists, Damned | Witches, Grove-keepers | Morticians, Sepulchers | Revelers, Courtiers | Constables, Alchemists |
+| **Cult** | Penitents, Luminaries | Ritualists, Sorcerers | Ritualists, Binders | Witches, Beastmen | Morticians, Bone-priests | Vampires, Courtiers | Zealots, Ironbound |
+
+### Named preset defaults
+
+Optional starting Tradition when using a preset (any allowed Tradition is legal):
+
+| Preset | Default Tradition |
+|---|---|
+| Phoenix Guard | Crusaders |
+| Radiant Crusade | Paladins |
+| Nobility | Vampires |
+| Coven | Witches |
+| Nightpack | Beastmen |
+| Arcane Conclave | Ritualists |
+| Grave Wardens | Morticians |
+| Infernal Pact | Ritualists |
+| Inquisition | Zealots |
+| Silver Hunt | Alchemists |
+| Village Watch | Constables |
+| Iron Law | Ironbound |
+
+---
+
 ## Named Faction Presets
 
 Twelve established factions exist in Noctvale lore. Each is a specific Archetype + Domain pairing with placeholder lore below, plus (when written) faction-specific skills and exclusive equipment.
@@ -146,7 +254,7 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 
 ## Design Notes
 
-- **Retinue** is the list you play; **Archetype + Domain** is how you build it; **named factions** are optional lore presets, not required labels
+- **Retinue** is the list you play; **Archetype + Domain + Tradition** is how you build it; **named factions** are optional lore presets, not required labels
 - Named presets can share Archetype + Domain — differentiate with exclusive skills and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
 - Cult gets 3 casters but no armor — glass cannon by design

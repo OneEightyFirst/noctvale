@@ -23,7 +23,7 @@ Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same buil
 
 ## Building Steps
 
-1. Choose **Archetype** and **Domain** (and optionally a named faction for lore and exclusive gear).
+1. Choose **Archetype**, **Domain**, and **Tradition** (see `retinue.md` — one Tradition per retinue, allowed for your Archetype on that Domain).
 2. Set your **Crown budget** (1000 for alpha skirmish).
 3. Recruit fighters within your Archetype's **model count** and **tier limits** (below).
 4. Assign each fighter a **species** and **tier profile**.
@@ -80,6 +80,8 @@ Named factions may use different flavor titles in lore without changing class na
 ---
 
 ## Keywords
+
+**Traditions** (Witches, Crusaders, etc.) are retinue-wide identity chosen at step 1 — see `retinue.md`. This section covers **keywords** on individual fighters.
 
 Keywords are tags on a fighter profile. They stack with class — they do not replace class.
 

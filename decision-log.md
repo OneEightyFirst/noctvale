@@ -28,6 +28,14 @@ To compare with git history: `git log --since=YYYY-MM-DD --until=YYYY-MM-DD+1` a
 
 ---
 
+## 2026-05-28 — Retinue Traditions (domain + archetype identity)
+
+**Decision:** Add **Traditions** — one plural label per retinue (e.g. **Witches**, **Beastmen**, **Vampires**), chosen after Archetype + Domain. Each Domain offers four Traditions; each Archetype may pick two of them on that Domain (2×2 grid). **Cross-domain names:** **Witches** (Nature: Cult/Folk; Arcane: Hunters/Folk) and **Ritualists** (Arcane + Infernal: Folk/Cult) — same name, different tradition skills per Domain. Light: **Crusaders** on Knights/Folk, **Paladins** on Hunters/Knights (swapped from an earlier draft). Nature: **Beastmen** not Skinchangers. Blood: all four options are hedonistic noble identity (**Vampires**, **Dynasts**, **Revelers**, **Courtiers**). Arcane Knights/Cult: **Sorcerers**. Necromancy: **Sepulchers**, **Wightlords** (single-word labels). Document in `rules/retinue.md`; building step 1 in `retinue-building.md`. Remove Phase 5a faction-mechanical checklist and open setting-scope / castle-pivot items from `todo.md`.
+
+**Reasoning:** Traditions differentiate retinues that share Archetype + Domain (Inquisition vs Silver Hunt) without a separate “faction mechanics” phase. Shared names reduce vocabulary sprawl and match lore (hedge Witches on Arcane, covens on Nature). Plural names signal whole-retinue identity. Tradition skills deferred to Phase 5b.
+
+---
+
 ## 2026-05-28 — Decision log: date + title, not commit hash
 
 **Decision:** Drop **`Commit:`** hash lines. Correlate entries with **`## YYYY-MM-DD — Title`** only — one section per commit; same-day commits use distinct titles. Update workflow and `.cursor/rules/decision-log-before-commit.mdc`. Remove hash-only meta entries.
