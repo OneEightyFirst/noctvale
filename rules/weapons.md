@@ -2,6 +2,76 @@
 
 ---
 
+## Weapon Categories
+
+Every weapon belongs to an **access category** (what your retinue may buy) and a **weapon type** (Sword, Axe, Spear, or Hammer — used for critical hits in melee).
+
+### Melee — access categories
+
+| Category | Role | Weapons |
+|---|---|---|
+| **Basic** | Standard one-handed kit | Dagger, Sword, Hand Axe, Mace |
+| **Long** | Reach and polearms | Spear, Halberd |
+| **Heavy** | Two-handed power weapons | Great Sword, War Axe, War Hammer |
+| **Exotic** | Rare or specialist melee | *(none in alpha)* |
+
+### Melee — weapon types
+
+| Type | Critical hits |
+|---|---|
+| **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([combat.md](combat.md#weapon-triangle)) |
+| **Hammer** | **Outside the triangle** — natural 6s crit only vs targets wearing **Heavy Armor** |
+
+### Ranged — access categories
+
+Ranged weapons split into two families. **Magic and gunpowder do not mix** on the same retinue (None Domain only).
+
+| Family | Role | Who may take |
+|---|---|---|
+| **Missile weapons** | Bows, crossbows, slings, thrown — no gunpowder | **All retinues** |
+| **Gunpowder weapons** | Firearms and bombs | **None Domain only** |
+
+**Missile weapons** is the standard term for non-gunpowder ranged weapons.
+
+#### Missile weapons
+
+| Category | Weapons |
+|---|---|
+| **Basic** | Sling, Shortbow, Throwing Stars |
+| **Long** | Longbow, Crossbow |
+| **Heavy** | Heavy Crossbow |
+| **Exotic** | *(none in alpha)* |
+
+#### Gunpowder weapons — firearms
+
+Firearms use a **flat 2d6 loading gate** (difficulty 6+, no stat added). Misfires are equipment failures, not user errors. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — values below are the complete pool, not added to the shooter's base stats.
+
+| Tier | Role | Weapons |
+|---|---|---|
+| **Basic** | Standard-issue infantry gunpowder | Musket, Blunderbuss |
+| **Refined** | Refined personal arms — sidearm and precision rifle | Pistol, Long Rifle |
+
+**Flintlock** is a **keyword** (not a tier). Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per game; cannot reload). See [Keywords](#keywords).
+
+#### Gunpowder weapons — bombs
+
+Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per game. None Domain only.
+
+---
+
+## Keywords
+
+### Flintlock
+
+Apply to a **firearm** at recruitment:
+
+- **−25 Crowns** (after base weapon cost)
+- **Single Shot** — may fire once per game; cannot reload
+
+Any firearm may take Flintlock. A Refined Pistol with Flintlock costs 90 − 25 = **65 Crowns**.
+
+---
+
 ## Weapon Slots
 
 Each fighter has **3 weapon slots**. One-handed weapons and shields take **1 slot**. Two-handed weapons take **2 slots**.
@@ -10,66 +80,84 @@ Each fighter has **3 weapon slots**. One-handed weapons and shields take **1 slo
 
 ## Melee Weapons
 
-| Weapon | Hands | +Mt | +Sk | Category | Notes |
+### Basic
+
+| Weapon | Hands | +Mt | +Sk | Type | Notes |
 |---|---|---|---|---|---|
 | Dagger | 1H | — | +1 | Sword | Fast, finesse |
 | Sword | 1H | +1 | +1 | Sword | Balanced baseline |
-| Great Sword | 2H | +2 | +1 | Sword | Heavy, powerful |
 | Hand Axe | 1H | +2 | — | Axe | Baseline axe |
-| War Axe | 2H | +3 | — | Axe | Heavy hitter |
-| Spear | 1H | +1 | +1 | Spear | Balanced |
+| Mace | 1H | +2 | — | Hammer | Anti-plate; crits vs Heavy Armor only |
+
+### Long
+
+| Weapon | Hands | +Mt | +Sk | Type | Notes |
+|---|---|---|---|---|---|
+| Spear | 1H | +1 | +1 | Spear | Balanced reach |
 | Halberd | 2H | +2 | +1 | Spear | Reach, versatile |
+
+### Heavy
+
+| Weapon | Hands | +Mt | +Sk | Type | Notes |
+|---|---|---|---|---|---|
+| Great Sword | 2H | +2 | +1 | Sword | Heavy, powerful |
+| War Axe | 2H | +3 | — | Axe | Heavy hitter |
+| War Hammer | 2H | +3 | — | Hammer | Anti-plate; crits vs Heavy Armor only |
 
 ---
 
-## Ranged Weapons
+## Missile Weapons
 
-Minimum range 3" unless noted.
+Minimum range **3"** unless noted. Missile weapons are available to **all retinues** regardless of Archetype or Domain.
+
+### Basic
 
 | Weapon | Hands | Range | +Mt | +Sk | Notes |
 |---|---|---|---|---|---|
 | Shortbow | 2H | 3"–18" | — | +2 | Fast, Sk-dominant |
+| Sling | 1H | 3"–12" | 2 | 1 | Flat Strike Pool; normal RC to hit; no loading gate |
+| Throwing Stars | 1H | 0"–8" | — | +1 | No min range, thrown; additive |
+
+### Long
+
+| Weapon | Hands | Range | +Mt | +Sk | Notes |
+|---|---|---|---|---|---|
 | Longbow | 2H | 3"–24" | — | +2 | Longer range, stronger |
 | Crossbow | 2H | 3"–24" | +2 | — | Mt-dominant, mechanical |
-| Heavy Crossbow | 2H | 3"–30" | +3 | — | Slow, powerful |
-| Throwing Stars | 1H | 0"–8" | — | +1 | No min range, thrown |
 
----
+### Heavy
 
-## Slings
-
-Slings generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats. Slings use a normal ranged attack roll (d6 + RC ≥ 8) to hit. No loading gate.
-
-| Weapon | Hands | Range | Mt | Sk | Notes |
+| Weapon | Hands | Range | +Mt | +Sk | Notes |
 |---|---|---|---|---|---|
-| Sling | 1H | 3"–12" | 2 | 1 | Cheap, one-handed |
+| Heavy Crossbow | 2H | 3"–30" | +3 | — | Slow, powerful |
+
+*Slings generate a flat Strike Pool (2 Mt / 1 Sk) — not added to the shooter's base stats. Uses a normal ranged attack roll (d6 + RC ≥ 8) to hit.*
 
 ---
 
-## Firearms
+## Gunpowder Weapons — Firearms
 
-Firearms use a **flat 2d6 loading gate** — no stat is added. Misfires are equipment failures, not user errors. Double 1s = Misfire, double 6s = Overcharge. Firearms gain **critical hits against all targets** (outside the weapon triangle). **Firearms are exclusive to retinues with the None domain.**
+**None Domain only.** See [retinue.md](retinue.md) for which firearm **tiers** each Archetype may take.
 
-Firearms generate a **flat Strike Pool** — the values below are the complete pool, not added to the shooter's base stats.
+### Basic
 
 | Weapon | Hands | Range | Difficulty | Mt | Sk | Notes |
 |---|---|---|---|---|---|---|
-| Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range |
-| Long Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range |
-| Blunderbuss | 2H | 0"–10" | 6+ | 6 | — | No min range, short range, brutal |
 | Musket | 2H | 3"–24" | 6+ | 5 | 3 | Standard infantry firearm |
-| Flintlock Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range, Single Shot |
-| Flintlock Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range, Single Shot |
-| Flintlock Blunderbuss | 2H | 0"–10" | 6+ | 6 | — | No min range, short range, brutal, Single Shot |
-| Flintlock Musket | 2H | 3"–24" | 6+ | 5 | 3 | Single Shot |
+| Blunderbuss | 2H | 0"–10" | 6+ | 6 | — | No min range, short range, brutal |
 
-**Single Shot:** This weapon can only be fired once per game. After firing, it cannot be reloaded.
+### Refined
+
+| Weapon | Hands | Range | Difficulty | Mt | Sk | Notes |
+|---|---|---|---|---|---|---|
+| Pistol | 1H | 0"–12" | 6+ | 5 | 2 | No min range; refined sidearm |
+| Long Rifle | 2H | 3"–30" | 6+ | 6 | 2 | Long range; precision piece |
 
 ---
 
 ## Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all models (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **Bombs are exclusive to retinues with the None domain** (gunpowder).
+Bombs are thrown explosives with a flat Strike Pool that hits all models (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **None Domain only** (gunpowder).
 
 ### Throwing a Bomb
 
@@ -103,18 +191,10 @@ Weapons can be made from special materials that grant bonuses against specific f
 
 ## Design Notes
 
-- Melee weapons range from +2 (baseline) to +4 total dice — enough variety without power creep
-- Daggers are pure Sk, great swords are Mt-heavy with a Sk bonus — the weapon's character is built into its color contribution
-- Ranged weapons are Sk-dominant (bows) or Mt-dominant (crossbows), creating distinct tactical identities
-- Firearms generate flat Strike Pools (like spells) rather than adding to base stats — the gun's power comes from the weapon, not the shooter. Gated behind a flat 2d6 loading check (no stat added) — misfires are equipment failures, not user errors
-- Pistols have no minimum range, making them the only ranged option in close quarters (besides spells)
-- Blunderbuss is pure Might (6 Mt, no Sk), short range, and devastating — the gun equivalent of a war axe
-- Long Rifle has the highest Mt bonus and longest range
-- Flintlock variants are identical to their standard counterparts but Single Shot (one fire per game) and cheaper — a budget option for retinues that want firearm alpha strikes without paying full price for reloadable guns
-- Slings use flat pools like firearms but weaker (2 Mt / 1 Sk vs Pistol's 5 Mt / 2 Sk) and require no loading gate — the cheapest ranged option, available to everyone
-- Throwing Stars are additive (+1 Sk), no minimum range, 1H — a pocket ranged option for close-quarters fighters
-- Bombs use the same 2d6 gunpowder gate as firearms (≥ 6+, double 1s = explodes in hand). Distance is d6 + Mt inches — on a pass you place the blast anywhere along that line, on a fail it scatters (scatter die for direction). Strong fighters throw farther
-- Smoke Bombs share bomb mechanics but deal no damage — pure utility for blocking LoS
-- Silver weapons are a pure counter-pick: expensive, no general benefit, devastating against Nightpack and Nobility specifically
-- Firearms are exclusive to None domain retinues — magic and gunpowder are parallel power systems, not stacking ones
-- 3 weapon slots allow meaningful loadout decisions: Sword + Shield + Dagger, Longbow + Dagger, Pistol + Sword + Buckler, Great Sword + Pistol, etc.
+- **Hammer type** — plate-breakers; no triangle crits, but natural 6s crit vs **Heavy Armor** only. Makes hammers a counter-pick to Knights without rewriting the triangle
+- **Refined firearms** — Pistol and Long Rifle; personal arms vs Basic-issue Musket/Blunderbuss
+- **Flintlock keyword** — budget Single Shot on any firearm; not a separate weapon line
+- **Spear** is **Long** (reach), not Basic
+- Firearms generate flat Strike Pools — the gun's power comes from the weapon, not the shooter
+- Slings: weakest flat pool, no loading gate — cheapest missile option
+- Silver weapons are a pure counter-pick against Nightpack and Nobility

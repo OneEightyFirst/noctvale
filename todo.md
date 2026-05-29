@@ -213,7 +213,7 @@ Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps
 
 ### Hunter Subtype Design
 
-Potential specialization within hunter factions (from factions.md):
+Potential specialization within hunter presets (from `rules/retinue.md`):
 
 - Witch Hunters — no magic; guns and technology
 - Vampire Hunters — stakes, crossbows, Light magic

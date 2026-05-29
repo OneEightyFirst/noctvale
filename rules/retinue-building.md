@@ -8,7 +8,7 @@ How players assemble the fighters, gear, and spells they bring to a skirmish.
 
 Every retinue is built in two layers:
 
-1. **Identity** — choose an **Archetype** and **Domain** (see `factions/factions.md`). This sets equipment access, caster limits, and spell lists.
+1. **Identity** — choose an **Archetype** and **Domain** (see `retinue.md`). This sets equipment access, caster limits, and spell lists.
 2. **Roster** — spend **Crowns** to recruit fighters, equip them, and (for casters) assign spells.
 
 Retinue building uses **constrained points**: a **Crown budget** plus **composition limits** per Archetype. Each Archetype uses its own tier names; slots are capped so the roster cannot exceed the Archetype maximum.
@@ -27,7 +27,7 @@ Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same buil
 2. Set your **Crown budget** (1000 for alpha skirmish).
 3. Recruit fighters within your Archetype's **model count** and **tier limits** (below).
 4. Assign each fighter a **species** and **tier profile**.
-5. Equip each fighter within Archetype armor/weapon access and **weapon slot** limits.
+5. Equip each fighter within Archetype melee, missile, and gunpowder access and **weapon slot** limits. Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see `rules/weapons.md`).
 6. Assign **keywords** and spells — fighters with the **Caster** keyword know 3 Domain spells (see Keywords below).
 7. Purchase **alchemy** and apply poisons during setup (one poison per weapon).
 8. Verify the roster against the **checklist** at the end of this file.
@@ -164,7 +164,7 @@ No Elite class. Magic lives on **Leader** and **Specialist** via the **Caster** 
 
 ## Domain Composition
 
-**Domain** changes *how many* of each class you can field (within the Archetype maximum), not the class names. It also gates magic vs gunpowder and spell lists (see `factions/factions.md`).
+**Domain** changes *how many* of each class you can field (within the Archetype maximum), not the class names. It also gates magic vs gunpowder and spell lists (see `retinue.md`).
 
 Composition tables per Archetype × Domain — **to be added**.
 
@@ -188,11 +188,12 @@ Species premium applies once per fighter, regardless of tier.
 
 ### Archetype and Domain gates
 
-Equipment access follows `factions/factions.md`:
+Equipment access follows `retinue.md`:
 
-- Archetype sets armor cap, weapon categories, shield access, and firearm access.
-- **None** Domain grants firearms; all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
-- **Cult** cannot choose None and cannot use firearms.
+- Archetype sets **melee** category access (Basic / Long / Heavy / Exotic), armor cap, shield access, and **gunpowder** tier access.
+- **Missile weapons** (bows, crossbows, slings, thrown) are available to **all retinues** — including Cult.
+- **None** Domain grants **gunpowder weapons** (firearms and bombs); all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
+- **Cult** cannot choose None and cannot use gunpowder.
 - Alchemy is available to all retinues.
 
 ### Weapon slots
@@ -235,41 +236,47 @@ Use the fighter's **class** for base cost. Add modifiers below.
 
 ### Melee Weapons
 
-| Weapon | Cost |
-|---|---|
-| Dagger | 10 |
-| Sword | 25 |
-| Great Sword | 50 |
-| Hand Axe | 20 |
-| War Axe | 45 |
-| Spear | 25 |
-| Halberd | 45 |
+| Category | Weapon | Cost |
+|---|---|---|
+| Basic | Dagger | 10 |
+| Basic | Sword | 25 |
+| Basic | Hand Axe | 20 |
+| Basic | Mace | 20 |
+| Long | Spear | 25 |
+| Long | Halberd | 45 |
+| Heavy | Great Sword | 50 |
+| Heavy | War Axe | 45 |
+| Heavy | War Hammer | 45 |
 
-### Ranged Weapons
+### Missile Weapons
 
-| Weapon | Cost |
-|---|---|
-| Shortbow | 40 |
-| Longbow | 50 |
-| Crossbow | 65 |
-| Heavy Crossbow | 90 |
-| Throwing Stars | 10 |
-| Sling | 20 |
+All retinues. See `rules/weapons.md` for categories.
 
-### Firearms (None Domain only)
+| Category | Weapon | Cost |
+|---|---|---|
+| Basic | Sling | 20 |
+| Basic | Shortbow | 40 |
+| Basic | Throwing Stars | 10 |
+| Long | Longbow | 50 |
+| Long | Crossbow | 65 |
+| Heavy | Heavy Crossbow | 90 |
 
-| Weapon | Cost |
-|---|---|
-| Pistol | 90 |
-| Blunderbuss | 115 |
-| Musket | 100 |
-| Long Rifle | 125 |
-| Flintlock Pistol | 65 |
-| Flintlock Musket | 75 |
+### Gunpowder — Firearms (None Domain only)
 
-Flintlock variants are Single Shot (one use per game).
+| Tier | Weapon | Cost |
+|---|---|---|
+| Basic | Musket | 100 |
+| Basic | Blunderbuss | 115 |
+| Refined | Pistol | 90 |
+| Refined | Long Rifle | 125 |
 
-### Bombs (None Domain only)
+| Keyword | Effect | Cost |
+|---|---|---|
+| **Flintlock** | Single Shot — one fire per game | −25 *(applied to firearm cost)* |
+
+**Archetype access:** Hunters + None — Basic + Refined. Knights and Folk + None — **Basic only** (Musket, Blunderbuss).
+
+### Gunpowder — Bombs (None Domain only)
 
 | Item | Cost |
 |---|---|
@@ -346,7 +353,7 @@ Before play, confirm:
 - [ ] Each class within Archetype slot caps (see roster table)
 - [ ] Fighters with **Caster** keyword: count within Archetype max; None Domain has none; Wi 4+ and 3 Domain spells each
 - [ ] Total cost ≤ Crown budget
-- [ ] Each fighter within Archetype armor/weapon/shield/firearm access
+- [ ] Each fighter within Archetype melee, missile, gunpowder, armor, and shield access
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] No stat above 5 at creation (except species baselines that start at 4)
 - [ ] Poisons: one per weapon, applied at setup

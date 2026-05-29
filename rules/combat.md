@@ -43,7 +43,8 @@ Each die that meets the threshold is a **hit**. Hits retain their color (red hit
 
 Any natural **6** is a **critical hit** if any of the following apply:
 
-- The attacker has **weapon advantage** (see Weapon Triangle)
+- The attacker has **weapon triangle advantage** (see Weapon Triangle) — Sword, Axe, or Spear only
+- The attacker wields a **Hammer** and the target is wearing **Heavy Armor**
 - The attacker has **magic advantage** (see Magic Triangles)
 - The attacker is using a **firearm** (crits against all targets)
 - The attacker used the **Aim** action before a Ranged attack
@@ -122,7 +123,9 @@ When a fighter is targeted by a **Ranged** action, the target may perform a **si
 Sword > Axe > Spear > Sword
 ```
 
-Having advantage over the opposing weapon type grants critical hits on natural 6s.
+Having advantage over the opposing weapon type grants critical hits on natural 6s. Only **Sword**, **Axe**, and **Spear** participate in the triangle.
+
+**Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in **Heavy Armor**). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange.
 
 ---
 

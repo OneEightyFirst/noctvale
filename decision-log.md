@@ -4,6 +4,44 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ---
 
+## 2026-05-28 — Retinue doc moved to rules/
+
+**Decision:** `factions/factions.md` → **`rules/retinue.md`**. File covers Archetype, Domain, and named faction **presets** (lore). Mechanical roster building stays in `retinue-building.md`. Removed empty `factions/` folder.
+
+---
+
+## 2026-05-28 — Hammers, Spear to Long, gunpowder tiers simplified
+
+**Decision:** **Spear** moves to **Long** melee. Add **Mace** (Basic, Hammer) and **War Hammer** (Heavy, Hammer). **Hammer** weapon type is outside the triangle — natural 6s crit vs **Heavy Armor** only; no triangle crits when either fighter wields a Hammer.
+
+**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle — refined personal arms). **Flintlock** is a keyword on any firearm: −25 Crowns, Single Shot. Removed Field tier and separate Flintlock weapon lines.
+
+**Archetype gunpowder:** Hunters + None — both tiers. Knights/Folk + None — Basic only.
+
+**Reasoning:** Refined names the "modern" sidearm/rifle without Field. Flintlock as keyword keeps one stat line per gun.
+
+---
+
+## 2026-05-28 — Weapon category taxonomy
+
+**Decision:** Reorganize weapons by access category in `rules/weapons.md`.
+
+**Melee:** Basic · Long · Heavy · Exotic (empty in alpha).
+
+**Ranged:** split into **Missile weapons** (bows, crossbows, slings, thrown — **all retinues**) and **Gunpowder weapons** (None Domain only).
+
+**Missile subcategories:** Basic (Sling, Shortbow, Throwing Stars) · Long (Longbow, Crossbow) · Heavy (Heavy Crossbow).
+
+**Gunpowder firearm tiers:** **Basic** (Musket, Blunderbuss) · **Refined** (Pistol, Long Rifle). **Flintlock** keyword (−25 Crowns, Single Shot) on any firearm.
+
+**Archetype gunpowder access:** Hunters + None — both tiers. Knights/Folk + None — Basic only. Cult — no gunpowder; **all missile weapons** allowed.
+
+**Melee:** Spear in **Long**. **Hammer** type (Mace, War Hammer) — crits vs Heavy Armor, outside triangle.
+
+**Reasoning:** Cult can shoot crossbows; gunpowder stays None-only. Regular taxonomy for roster building and faction gates.
+
+---
+
 ## 2026-05-28 — Cult Leader renamed Theurge
 
 **Decision:** Cult Leader class name is **Theurge** (replaces **Magister**). Greek *theos* + *ergon* — one who performs divine/ritual work. Fits a leader who always casts without sounding academic.

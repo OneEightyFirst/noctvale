@@ -1,57 +1,63 @@
-# Factions
+# Retinue
+
+Your **retinue** is the warband you field — fighters, gear, and (if your Domain allows) spells. This file covers **identity**: Archetype, Domain, and optional named presets. For Crown costs, class slots, and the roster checklist, see **`retinue-building.md`**.
 
 ---
 
-## Building a Retinue
+## Identity
 
 Every retinue is built from two choices: an **Archetype** and a **Domain**.
 
-Your **Archetype** determines how your retinue fights — what equipment they can carry, how many fighters you field, and how many casters you can bring.
+Your **Archetype** determines how your retinue fights — melee and missile access, armor cap, shields, gunpowder access, roster size, and caster limits.
 
-Your **Domain** determines what supernatural powers your retinue wields — your spell list, your position in the magic triangles, and your domain-specific skills. Choose **None** if your retinue rejects or lacks magic entirely.
+Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific skills. Choose **None** if your retinue rejects or lacks magic entirely.
 
-**Archetype + Domain = Faction.**
+**Archetype + Domain** is your retinue's mechanical identity on the table.
 
-The named factions of Noctvale are established combinations with their own history, exclusive skills, and unique equipment. Players may use a named faction or create their own combination.
-
-For Crown budgets, fighter tiers, model limits, and equipment costs, see **`rules/retinue-building.md`**.
+**Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets** — established Archetype + Domain pairings with lore, exclusive skills, and unique equipment. Use one for flavor or build any legal Archetype + Domain combination yourself.
 
 ---
 
 ## Archetypes
 
+Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** access. **Missile weapons** (bows, crossbows, slings, thrown) are available to **every retinue** — see `weapons.md`.
+
 ### Knights
 - **Armor:** Up to Heavy
-- **Weapons:** Basic weapons, long weapons (polearms, halberds), heavy weapons (Great Sword, War Axe)
+- **Melee:** Basic, Long, Heavy
+- **Missile weapons:** All
 - **Shields:** Buckler, Shield, Tower Shield
-- **Firearms:** Limited (Blunderbuss, Musket) — None domain only
+- **Gunpowder:** Basic (Musket, Blunderbuss) — None domain only
 - **Max Casters:** 1
 
 ### Hunters
 - **Armor:** Up to Medium
-- **Weapons:** Basic weapons, long weapons (polearms, halberds)
+- **Melee:** Basic, Long
+- **Missile weapons:** All
 - **Shields:** Buckler, Shield
-- **Firearms:** All — None domain only
+- **Gunpowder:** Basic + Refined — None domain only
 - **Max Casters:** 1
 
 ### Folk
 - **Armor:** Up to Light
-- **Weapons:** Basic weapons, long weapons (polearms, halberds)
+- **Melee:** Basic, Long
+- **Missile weapons:** All
 - **Shields:** Buckler, Shield
-- **Firearms:** Limited (Blunderbuss, Musket) — None domain only
+- **Gunpowder:** Basic (Musket, Blunderbuss) — None domain only
 - **Max Casters:** 1
 
 ### Cult
 - **Domain Restriction:** Cannot choose None — Cult must have a magic domain
 - **Armor:** None
-- **Weapons:** Basic weapons only
+- **Melee:** Basic only
+- **Missile weapons:** All
 - **Shields:** None
-- **Firearms:** None
+- **Gunpowder:** None
 - **Max Casters:** 3
 
-**Basic weapons:** Dagger, Sword, Hand Axe, Spear, Shortbow.
+**Gunpowder weapons** (firearms and bombs) are exclusive to retinues with the **None** domain. Magic and gunpowder are mutually exclusive paths to power.
 
-**Firearms** are exclusive to retinues with the **None** domain. Magic and gunpowder are mutually exclusive paths to power. Hunters + None get the full firearms list; other archetypes + None get Blunderbuss and Musket only.
+**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). Hunters + None get both tiers; Knights and Folk + None get **Basic only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot) — not a separate tier.
 
 **Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
 
@@ -69,13 +75,13 @@ For Crown budgets, fighter tiers, model limits, and equipment costs, see **`rule
 | Blood | Natural |
 | None | — |
 
-Each domain provides a spell list and domain-specific skills. The **None** domain provides no spells but grants access to **firearms**.
+Each domain provides a spell list and domain-specific skills. The **None** domain provides no spells but grants access to **gunpowder weapons**.
 
 ---
 
-## Named Factions
+## Named Faction Presets
 
-Twelve established factions exist in Noctvale. Each is a specific Archetype + Domain combination with unique lore, faction-specific skills, and exclusive equipment.
+Twelve established factions exist in Noctvale lore. Each is a specific Archetype + Domain pairing with placeholder lore below, plus (when written) faction-specific skills and exclusive equipment.
 
 | Faction | Archetype | Domain | Identity |
 |---|---|---|---|
@@ -92,13 +98,13 @@ Twelve established factions exist in Noctvale. Each is a specific Archetype + Do
 | Village Watch | Folk | None | Ordinary townsfolk defending their homes |
 | Iron Law | Folk | None | Corrupted remnants of imperial law |
 
-Two factions can share the same Archetype and Domain but play differently through faction-specific skills and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + None, but the Inquisition specializes in anti-magic denial while the Silver Hunt specializes in alchemy, poisons, and silver weaponry.
+Two presets can share the same Archetype + Domain but play differently through exclusive skills and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + None — Inquisition leans anti-magic denial; Silver Hunt leans alchemy, poisons, and silver weapons.
 
 ---
 
-## Faction Lore
+## Preset Lore
 
-> **Note:** The lore below is placeholder material — shorthand notes and rough sketches to establish tone and direction. Final lore will be written by a human author.
+> **Note:** Placeholder material — shorthand notes to establish tone. Final lore will be written by a human author.
 
 ### Phoenix Guard
 Elite hunters and knights tied to the old crown and the fall of the Vampire King. The Phoenix Guard were the High King's personal guard, with a Round Table-like feel. After the fall, they split three ways: four rebelled, four hid, and four joined the turned King. The Phoenix Guard ultimately slew the turned King.
@@ -140,12 +146,11 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 
 ## Design Notes
 
-- **Archetype + Domain = Faction** is the core retinue-building system — two choices create your identity
-- Named factions are preset combinations with lore and exclusive gear, but players can create custom combinations
-- Two factions with the same Archetype + Domain are differentiated by faction-specific skills and exclusive equipment (Inquisition vs Silver Hunt)
+- **Retinue** is the list you play; **Archetype + Domain** is how you build it; **named factions** are optional lore presets, not required labels
+- Named presets can share Archetype + Domain — differentiate with exclusive skills and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
 - Cult gets 3 casters but no armor — glass cannon by design
-- Firearms are exclusive to None domain — magic and gunpowder are parallel power systems, not stacking ones
-- Alchemy (potions, poisons) is available to all — it's equipment, not magic
-- "The Nobility" is the preferred vampire faction name — they are noble houses, not a single kingdom
-- Village Watch and Iron Law are both Folk + None by default, but players could just as easily run Folk + Nature (a druidic village), Folk + Infernal (a corrupted township), etc. — the named factions are starting points, not constraints
+- **Missile weapons** for all retinues; **gunpowder** for None only — parallel power systems, not stacking
+- Alchemy is equipment, not magic — available to all
+- "The Nobility" is the preferred vampire preset name — noble houses, not a single kingdom
+- Village Watch and Iron Law are both Folk + None presets; players can run Folk + Nature, Folk + Infernal, etc. — presets are starting points, not constraints

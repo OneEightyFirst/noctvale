@@ -8,7 +8,7 @@ Noctvale is an original grimdark tabletop skirmish miniatures game where small r
 
 ## What Is This?
 
-This repository contains the working design documents for Noctvale — rules, lore, faction design, and campaign systems. Everything here is a living document, actively being developed toward a playable prototype.
+This repository contains the working design documents for Noctvale — rules, retinue design, and campaign systems. Everything here is a living document, actively being developed toward a playable prototype.
 
 ## Repo Structure
 
@@ -23,12 +23,14 @@ rules/
   actions.md             — Actions, movement, engagement rules
   special-rules.md       — Line of Sight, Cover, Falling, Overwatch, Gang Up
   magic.md               — Casting, magic classes, spell concepts
+  weapons.md             — Melee, missile, and gunpowder weapon categories
+  equipment.md           — Armor, shields, alchemy, influence items
+  retinue.md             — Archetypes, Domains, and twelve named faction presets (lore)
+  retinue-building.md    — Crown budgets, composition limits, and roster checklist
 campaign/
   post-game.md           — Post-battle charts (injury, advancement, spoils)
   exploration.md         — Exploration phase (mishap & discovery charts)
   economy.md             — Relic Fragment economy and selling curve
-factions/
-  factions.md            — All 12 factions with descriptions and design notes
 ```
 
 ## Design Influences
