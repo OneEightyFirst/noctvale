@@ -2,6 +2,12 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
+## 2026-05-31 — Radiant Strike seven-die profile
+
+**Decision:** Changed **Radiant Strike** from 5 Mt to **4 Mt / 3 Sk**. Its +1 Mt bonus against Undead and Daemons remains unchanged.
+
+**Reasoning:** Standard Domain attack spells should target a seven-die baseline, adjusted as needed for their special rules. The mixed pool gives Light a balanced baseline attack while its anti-Undead and anti-Daemon rider still pushes the spell toward Mt against its intended targets.
+
 ## 2026-05-29 — Rulebook style guide and rules editorial pass
 
 **Decision:** Added `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` (canonical terminology, formatting, action blocks, shared boxouts, checklist) and `NOCTVALE_DESIGN_TENETS.md`. Added `rules/_shared-snippets.md` as the master copy for verbatim **Attack Sequence**, **Apply Wounds**, **Casting Roll**, and **Primer Roll** boxes, repeated in `combat.md`, `actions.md`, `magic.md`, and `weapons.md`. Applied editorial conventions across active rules and campaign docs: **fighter** not model/unit, **retinue** not warband, **`"`** inches, US spelling, **casting roll** / **primer roll** (not **gate**), **skip activation** (not forgo/forgone), structured action blocks in `actions.md`, **Sequence at a Glance** in `campaign/exploration.md`, Domain **limits** / Tradition **unlock** wording. Removed draft `NOCTVALE_INFERRED_RULEBOOK_STYLE_GUIDE.md` — its adopted patterns live in the canonical style guide only.

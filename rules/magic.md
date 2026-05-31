@@ -120,7 +120,7 @@ Each domain has a **standard ranged attack spell** (not counted toward the limit
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Radiant Strike | 11+ | 5 | — | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
+| Radiant Strike | 11+ | 4 | 3 | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
 | Holy Light | 11+ | — | — | 12" from caster | All fighters within 12" lose cover and Hidden condition | *(TBD)* |
 | Heal | 10+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
 | Purge the Faithless | 11+ | 5 | 2 | 3" blast from caster | Hits all fighters in radius | Caster takes the damage |
