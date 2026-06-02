@@ -16,7 +16,6 @@ This repository contains the working design documents for Noctvale — rules, re
 noctvale.md              — Core rules and setting document
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
-scenarios.md             — Battle scenarios
 rules/
   core-rules.md          — Stat abbreviations and species profiles
   combat.md              — Strike Pool system, criticals, weapon & magic triangles
@@ -29,6 +28,7 @@ rules/
   retinue.md             — Archetypes, Domains, and twelve named faction presets (lore)
   retinue-building.md    — Crown budgets, composition limits, and roster checklist
 campaign/
+  scenarios.md           — Battle scenarios
   post-game.md           — Post-battle charts (injury, advancement, spoils)
   exploration.md         — Exploration phase (mishap & discovery charts)
   economy.md             — Relic Fragment economy and selling curve

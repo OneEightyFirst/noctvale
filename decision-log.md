@@ -2,6 +2,17 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
+## 2026-06-02 — Move scenarios into campaign folder
+
+**Decision:** Move `scenarios.md` to `campaign/scenarios.md`. Update repository
+references and the relative link from **Loot the Dead** to the **Battle Spoils**
+table.
+
+**Reasoning:** Scenarios determine battle results and rewards, so they belong
+beside exploration, post-game, and economy rules in `campaign/`.
+
+---
+
 ## 2026-06-02 — Starter scenario and standard battle set-up
 
 **Decision:** `scenarios.md` now contains **Loot the Dead**, the core starter

@@ -69,4 +69,4 @@ The winning retinue also:
 
 - Keeps the Crowns carried by its fighters remaining on the board.
 - Searches the battlefield and rolls once on the [**Battle Spoils**
-  table](campaign/post-game.md#step-1-scenario-results).
+  table](post-game.md#step-1-scenario-results).
