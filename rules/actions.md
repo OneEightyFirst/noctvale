@@ -198,10 +198,60 @@ Assist a **Downed** or **Stunned** ally **within 1"**.
 
 ---
 
+## Escape
+
+When making a **Move** action, a fighter may leave the board through any edge
+if they have enough movement to reach it. Remove the fighter from the board.
+They have **Escaped** and cannot return during this battle.
+
+An **Escaped** fighter is not **Out of Action** and does not roll on the
+Survival chart after the battle.
+
+---
+
+## Ending the Battle
+
+The battle ends immediately when only one retinue has fighters remaining on
+the board. That retinue wins.
+
+---
+
+## Standard Battle Set-Up
+
+Use a **3' × 3'** board. Use this procedure unless the scenario states
+otherwise.
+
+### 1. Determine Initiative
+
+The player with fewer activations in their retinue has initiative. If both
+players have the same number of activations, each player rolls **2d6**. The
+player with the highest result has initiative. Reroll ties.
+
+### 2. Choose Deployment Edges
+
+The player with initiative chooses a board edge as their deployment edge. The
+opposing player uses the opposite edge. Each player's deployment zone extends
+**6"** inward from their deployment edge.
+
+### 3. Form Deployment Groups
+
+Each player divides their retinue into **3 deployment groups** as evenly as
+possible. If the fighters cannot be divided evenly, that player chooses which
+groups contain the additional fighters.
+
+### 4. Deploy Retinues
+
+Starting with the player with initiative, players alternate setting up one
+deployment group at a time within their deployment zones until both retinues
+have been deployed.
+
+---
+
 ## Round at a Glance
 
 > **1. Start of Round**
-> - Determine initiative — fewer activations goes first (ties: scenario setup)
+> - Round 1: use initiative from battle set-up
+> - Later rounds: fewer activations goes first (ties: previous initiative)
 > - Distribute Overwatch tokens — underdog receives tokens equal to the activation difference
 >
 > **2. Alternating Activations**
@@ -220,7 +270,13 @@ The game is played over a series of **rounds**. Each round follows this sequence
 
 ### 1. Start of Round
 
-- **Determine initiative.** The player with **fewer remaining activations** (fighters not yet Out of Action) has initiative and activates first. If both players have equal activations, the player with initiative from the **scenario setup** goes first (and retains it for future ties).
+- **Determine initiative.** During the first round, use the initiative determined
+  during battle set-up. During each subsequent round, the player with **fewer
+  remaining activations** has initiative and activates first. If both players
+  have the same number of remaining activations, the player who previously had
+  initiative retains it. Fighters who are **Out of Action** do not count as
+  remaining activations. **Escaped** fighters are no longer on the board and do
+  not count as remaining activations.
 - **Distribute Overwatch tokens.** If one player has fewer activations than the other, they receive a number of **Overwatch tokens equal to the difference**. *(See `special-rules.md`.)*
 
 ### 2. Alternating Activations
@@ -300,7 +356,7 @@ Begin a new round at Step 1.
 - Brace as +1 red (Mt) defense die rewards tough fighters for hunkering down — Dwarves love it, Elves prefer other options
 - Overwatch is listed as a formal action so players can see it alongside their other options during activation
 - Underdog initiative (fewer fighters = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first
-- Scenario-determined initiative for ties keeps round 1 clean and avoids a dice-off every round
+- Starting initiative determines tied rounds without requiring a new dice-off every round
 - No surge activations — Overwatch tokens handle activation imbalance without adding another subsystem
 - Hide requires within 1" of terrain — simple, physical; cover is judged from the firing fighter (see special-rules.md)
 - Hidden blocks targeting beyond 6" — close the distance or find another target

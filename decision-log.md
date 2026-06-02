@@ -2,6 +2,38 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
+## 2026-06-02 — Starter scenario and standard battle set-up
+
+**Decision:** `scenarios.md` now contains **Loot the Dead**, the core starter
+scenario. Battles use a **3' × 3'** board with **6"** deployment zones unless a
+scenario states otherwise. Players divide their retinues into 3 groups and
+alternate deploying one group at a time.
+
+**Initiative:** The player with fewer activations begins with initiative. If
+both retinues have the same number of activations, each player rolls **2d6**.
+The highest result has initiative; reroll ties. During later rounds, the player
+with fewer remaining activations has initiative. The previous initiative holder
+retains initiative when activation counts are tied.
+
+**Battle ending:** A battle ends immediately when only one retinue has fighters
+remaining on the board. A fighter may use a **Move** action to leave the board
+through any edge. That fighter has **Escaped**, cannot return during the battle,
+and does not roll on the Survival chart.
+
+**Loot the Dead:** A fighter who takes an enemy **Out of Action** with a
+**Melee** action or **Mercy Kill** searches the defeated fighter. Roll **1d6**:
+1–2 finds 0 Crowns, 3–4 finds 5 Crowns, and 5–6 finds 10 Crowns. Add any Crowns
+already carried by the defeated fighter. A fighter may carry a maximum of 50
+Crowns. Ranged attacks, spells, and other effects do not allow a search. The
+winner searches the battlefield and rolls once on the **Battle Spoils** table.
+
+**Reasoning:** The scenario teaches the standard set-up and core battle-ending
+rules while adding a visible push-your-luck decision: secure a fighter's purse
+by escaping or remain on the board to contest victory and the battlefield
+search.
+
+---
+
 ## 2026-05-31 — Radiant Strike seven-die profile
 
 **Decision:** Changed **Radiant Strike** from 5 Mt to **4 Mt / 3 Sk**. Its +1 Mt bonus against Undead and Daemons remains unchanged.

@@ -16,6 +16,7 @@ This repository contains the working design documents for Noctvale — rules, re
 noctvale.md              — Core rules and setting document
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
+scenarios.md             — Battle scenarios
 rules/
   core-rules.md          — Stat abbreviations and species profiles
   combat.md              — Strike Pool system, criticals, weapon & magic triangles
