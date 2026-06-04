@@ -9,10 +9,55 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
-## 2026-06-04 — Looting objective module and Relic economy
+## 2026-06-04 — Forest scenario section cleanup
 
-**Decision:** Add **Looting** as a reusable objective module in `campaign/scenarios.md`.
-When a scenario uses **Looting**, it places **Relic markers**. A fighter within
+**Decision:** Move the left/right forest-edge reference from **Deployment** to
+**The Advancing Forest** in **The Forest Creeps Ever Onward**. Remove the
+redundant note that Relics carried by fighters still on the board are lost.
+
+**Reasoning:** The left/right reference is only needed when rolling for the
+advancing forest edge. The Relic note was unnecessary because the battle ends
+only when all fighters have **Escaped** or been taken **Out of Action**.
+
+---
+
+## 2026-06-04 — Relic placement clarity in forest scenario
+
+**Decision:** In **The Forest Creeps Ever Onward**, players cannot place more
+than **1 Relic marker** inside the same terrain piece. Before the battle,
+players should agree which terrain pieces count as single terrain pieces.
+
+**Reasoning:** The restriction prevents Relic clustering inside one large
+building or ambiguous terrain feature. The pre-battle agreement keeps the rule
+usable across handmade, modular, and irregular terrain.
+
+---
+
+## 2026-06-04 — Repeat scenario objectives and collaboration workflow
+
+**Decision:** Do not keep a separate objective module file. Scenario objective
+rules such as **Looting** are repeated in the scenario packet that uses them, so
+players do not need to chase cross-references during a battle.
+
+Clarify the Noctvale collaboration workflow in `AGENTS.md`: proposal-first
+applies when the user is exploring ideas or asking to think through tradeoffs.
+Direct correction or implementation language such as "this should be this",
+"why didn't you change this?", "make this change", or "approved" is treated as
+approval to act after reading the relevant files.
+
+**Reasoning:** Scenario files should contain scenario packets, while reusable
+objective rules should appear at point of use. This matches the existing
+shared-snippet principle: rules can have a design source, but player-facing
+procedures should be repeated where players need them. The workflow
+clarification preserves design discussion when the user wants to brainstorm, but
+removes friction when the user is directly asking for a known change.
+
+---
+
+## 2026-06-04 — Looting rules and Relic economy
+
+**Decision:** Add **Looting** rules to the forest scenario in
+`campaign/scenarios.md`. The scenario places **Relic markers**. A fighter within
 **1"** may use **Interact** to pick up a Relic marker. Relics are carried by
 the fighter, may be dropped with **Interact**, are dropped if the fighter is
 taken **Out of Action**, and are recovered if the fighter **Escapes**. A fighter
@@ -41,15 +86,14 @@ covers the board at the end of round 6. Fighters may **Escape** through any
 edge except the advancing forest edge. The retinue that recovers the most
 Relics wins.
 
-**Reasoning:** Looting as an objective module creates a reusable objective
-alongside future modules such as Last Fighter Standing or Defending. Relic
-markers keep battle play concrete: pick up Relics, escape with Relics, sell
-Relics for Crowns. The supply and demand curve restores the intended
-Mordheim-like economy pressure. Removing Relic Fragments keeps the campaign
-resource loop focused: find Relics, sell Relics, spend Crowns. The advancing
-forest gives the land a clear mechanical bite, prevents camping, and creates a
-push-your-luck choice: search one more building, fight for dropped Relics, or
-escape before the forest takes the board.
+**Reasoning:** Looting rules keep battle play concrete: pick up Relics, escape
+with Relics, sell Relics for Crowns. Repeating the procedure inside each
+scenario keeps scenario packets self-contained at the table. The supply and
+demand curve restores the intended Mordheim-like economy pressure. Removing
+Relic Fragments keeps the campaign resource loop focused: find Relics, sell
+Relics, spend Crowns. The advancing forest gives the land a clear mechanical
+bite, prevents camping, and creates a push-your-luck choice: search one more
+building, fight for dropped Relics, or escape before the forest takes the board.
 
 ---
 

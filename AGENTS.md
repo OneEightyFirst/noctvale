@@ -34,17 +34,25 @@ making a commit.
 
 ## Collaboration Workflow
 
-For Noctvale design and rules work, use a proposal-first workflow.
+For Noctvale design and rules work, use a proposal-first workflow when the
+user is exploring an idea or asking to think through tradeoffs.
 
-Do not edit files immediately. First propose the change, explain the design
-tradeoffs, and wait for the user's approval. Once the user approves a direction,
-apply the edits.
+Do not edit files immediately when the user uses exploratory language such as
+"what about this?", "let's think through this", "I have an idea", or asks for
+options. First propose the change, explain the design tradeoffs, and wait for
+the user's approval. Once the user approves a direction, apply the edits.
+
+When the user gives direct correction or implementation language such as "this
+should be this", "why didn't you change this?", "make this change", or "approved",
+treat that as approval to act and apply the edits after reading the relevant
+files.
 
 You may edit without a proposal for:
 
 - Purely mechanical cleanup
 - Typo fixes
 - Changes the user explicitly asks you to make directly
+- Direct corrections or approved directions from the user
 
 Default rhythm:
 

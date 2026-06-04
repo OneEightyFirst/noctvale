@@ -2,40 +2,6 @@
 
 ---
 
-## Objective Modules
-
-Objective modules are reusable scenario objectives.
-
-### Looting
-
-When a scenario uses **Looting**, place the listed number of **Relic markers**
-on the board.
-
-A fighter **within 1"** of a Relic marker may use an **Interact** action to
-pick it up. Each **Interact** action picks up **1 Relic marker**. Remove the
-Relic marker from the board. The fighter is now carrying **1 Relic**.
-
-A fighter may carry **1 Relic**.
-
-A fighter carrying a Relic cannot pick up another Relic.
-
-Carrying a Relic does not reduce a fighter's movement or actions.
-
-A fighter carrying a Relic may use an **Interact** action to drop it. Place
-the Relic marker in base contact with the fighter.
-
-If a fighter carrying a Relic is taken **Out of Action**, that fighter's
-controlling player places the Relic marker in base contact with that fighter
-before removing them.
-
-If a fighter carrying a Relic **Escapes**, set that Relic aside. It has been
-**recovered** by that fighter's retinue.
-
-Relics carried by fighters still on the board when the battle ends are
-recovered unless the scenario states otherwise.
-
----
-
 ## Loot the Dead
 
 *[Fluff text here]*
@@ -130,8 +96,7 @@ opposing player uses the opposite edge. Each player's deployment zone extends
 **6"** inward from their deployment edge.
 
 The two board edges not chosen as deployment edges are the possible forest
-edges. The left and right possible forest edges are judged from the player with
-initiative's deployment edge, looking toward the opposing deployment edge.
+edges.
 
 Each player divides their retinue into **3 deployment groups** as evenly as
 possible. If the fighters cannot be divided evenly, that player chooses which
@@ -143,13 +108,38 @@ have been deployed.
 
 ### Looting
 
-This scenario uses [Looting](#looting).
-
 Place **5 Relic markers**. Starting with the player with initiative, players
 alternate placing **1 Relic marker** at a time. Each Relic marker must be
 placed on the ground floor of a terrain piece.
 
+Players cannot place more than **1 Relic marker** inside the same terrain
+piece. Before the battle, players should agree which terrain pieces count as
+single terrain pieces.
+
+A fighter **within 1"** of a Relic marker may use an **Interact** action to
+pick it up. Each **Interact** action picks up **1 Relic marker**. Remove the
+Relic marker from the board. The fighter is now carrying **1 Relic**.
+
+A fighter may carry **1 Relic**.
+
+A fighter carrying a Relic cannot pick up another Relic.
+
+Carrying a Relic does not reduce a fighter's movement or actions.
+
+A fighter carrying a Relic may use an **Interact** action to drop it. Place
+the Relic marker in base contact with the fighter.
+
+If a fighter carrying a Relic is taken **Out of Action**, that fighter's
+controlling player places the Relic marker in base contact with that fighter
+before removing them.
+
+If a fighter carrying a Relic **Escapes**, set that Relic aside. It has been
+**recovered** by that fighter's retinue.
+
 ### The Advancing Forest
+
+The left and right possible forest edges are judged from the player with
+initiative's deployment edge, looking toward the opposing deployment edge.
 
 At the end of round 1, roll **1d6**:
 
