@@ -6,7 +6,7 @@
 
 ## Elevator Pitch
 
-Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful relic fragments. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
+Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful Relics. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
 
 ---
 
@@ -17,7 +17,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 - **Weapon & magic triangles** — rock-paper-scissors advantage layers
 - **Downed system** — dramatic last-chance survivals before death
 - **Campaign progression** — retinues grow, earn, and suffer across sessions
-- **Relic fragment economy** — the currency that drives the campaign loop
+- **Relic economy** — the currency loop that drives the campaign
 
 ---
 
@@ -37,7 +37,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | Equipment (Armor, Shields, Alchemy) | `rules/equipment.md` |
 | Exploration Phase | `campaign/exploration.md` |
 | Post-Game Charts | `campaign/post-game.md` |
-| Relic Fragment Economy | `campaign/economy.md` |
+| Relic Economy | `campaign/economy.md` |
 | Retinue (Archetypes & Domains) | `rules/retinue.md` |
 | Retinue Building | `rules/retinue-building.md` |
 | Scenarios | `campaign/scenarios.md` |
@@ -51,7 +51,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 
 ## Game Summary
 
-Retinues battle for relic fragments scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.
+Retinues battle for Relics scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.
 
 ---
 

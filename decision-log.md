@@ -2,6 +2,57 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
+## Ideas
+
+Concepts under discussion. Remove an entry when it is implemented and capture
+the final rule in the dated decision-log entry for that commit.
+
+---
+
+## 2026-06-04 — Looting objective module and Relic economy
+
+**Decision:** Add **Looting** as a reusable objective module in `campaign/scenarios.md`.
+When a scenario uses **Looting**, it places **Relic markers**. A fighter within
+**1"** may use **Interact** to pick up a Relic marker. Relics are carried by
+the fighter, may be dropped with **Interact**, are dropped if the fighter is
+taken **Out of Action**, and are recovered if the fighter **Escapes**. A fighter
+may carry **1 Relic**. Carrying a Relic does not reduce movement or actions.
+If a fighter carrying a Relic is taken **Out of Action**, that fighter's
+controlling player places the Relic marker in base contact before removing the
+fighter.
+
+Make **Relics** the sole Wyrdstone-equivalent campaign resource. Relics sell
+for Crowns using the restored supply and demand curve from the older
+documentation: 1 Relic = 15 Crowns, 2 = 30, 3 = 40, 4 = 55, 5 = 70, 6 = 80,
+7 = 95, 8 = 110. Remove Relic Fragments and Fragment nudges from the active
+campaign loop.
+
+Update the **Ruins** exploration chart so every successful discovery finds
+Relics. Update overview and campaign-loop language so retinues hunt Relics,
+sell Relics for Crowns, then spend Crowns to recruit fighters and buy gear.
+
+Add **The Forest Creeps Ever Onward** as a scenario draft. Starting with the
+player with initiative, players alternate placing **5 Relic markers** on the
+ground floor of terrain pieces while a forest advances from one non-deployment
+edge. The forest edge is selected at the end of round 1. The forest then covers
+**6"** more of the board at the end of each round, measured from the original
+advancing edge: **6"** after round 1, **12"** after round 2, and so on until it
+covers the board at the end of round 6. Fighters may **Escape** through any
+edge except the advancing forest edge. The retinue that recovers the most
+Relics wins.
+
+**Reasoning:** Looting as an objective module creates a reusable objective
+alongside future modules such as Last Fighter Standing or Defending. Relic
+markers keep battle play concrete: pick up Relics, escape with Relics, sell
+Relics for Crowns. The supply and demand curve restores the intended
+Mordheim-like economy pressure. Removing Relic Fragments keeps the campaign
+resource loop focused: find Relics, sell Relics, spend Crowns. The advancing
+forest gives the land a clear mechanical bite, prevents camping, and creates a
+push-your-luck choice: search one more building, fight for dropped Relics, or
+escape before the forest takes the board.
+
+---
+
 ## 2026-06-02 — Move scenarios into campaign folder
 
 **Decision:** Move `scenarios.md` to `campaign/scenarios.md`. Update repository

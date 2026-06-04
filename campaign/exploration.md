@@ -53,7 +53,7 @@ Roll **1d6** on the Mishap Chart below (or apply the listed result if the explor
 | 2 | **Injured** — roll on [Serious Injury Chart](post-game.md#step-3-serious-injury-chart) (2d6). |
 | 3 | **Spooked** — Sa −1 until the start of the **next battle** (temporary). |
 | 4 | **Equipment** — one weapon or armor piece is **damaged**; pay half its Crown cost to repair before the next battle, or fight without it. |
-| 5 | **Separated** — retinue finds **1 fewer Relic Fragment** this exploration (minimum 0). |
+| 5 | **Separated** — retinue finds **1 fewer Relic** this exploration (minimum 0). |
 | 6 | **Close Call** — no effect; the fighter learns from it (+1 Experience). |
 
 ---
@@ -68,11 +68,11 @@ Each discovery die resolves independently. A die showing **1** already triggered
 
 | Die | Discovery |
 |---|---|
-| 2 | **Rubble** — 1 Relic Fragment. |
-| 3 | **Scrap** — 10 Crowns of salable gear *(abstract)*. |
-| 4 | **Shard** — 1 Relic Fragment. |
-| 5 | **Cache** — 2 Relic Fragments. |
-| 6 | **Vault** — 2 Relic Fragments; roll once on [Battle Spoils](post-game.md#step-1-scenario-results) and gain that many additional fragments. |
+| 2 | **Rubble** — 1 Relic. |
+| 3 | **Tarnished Relic** — 1 Relic. |
+| 4 | **Shard** — 1 Relic. |
+| 5 | **Cache** — 2 Relics. |
+| 6 | **Vault** — 2 Relics; roll once on [Battle Spoils](post-game.md#step-1-scenario-results) and gain that many additional Relics. |
 
 *(Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard — charts TBD.)*
 

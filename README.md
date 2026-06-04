@@ -4,7 +4,7 @@
 
 <p align="center"><em>A Grimdark Fantasy Skirmish Game in a Cursed Land</em></p>
 
-Noctvale is an original grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful relic fragments. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
+Noctvale is an original grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful Relics. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
 
 ## What Is This?
 
@@ -31,7 +31,7 @@ campaign/
   scenarios.md           — Battle scenarios
   post-game.md           — Post-battle charts (injury, advancement, spoils)
   exploration.md         — Exploration phase (mishap & discovery charts)
-  economy.md             — Relic Fragment economy and selling curve
+  economy.md             — Relic economy and selling curve
 ```
 
 ## Design Influences

@@ -2,36 +2,38 @@
 
 After each battle, resolve the steps below **in order**. Each step uses **charts** — roll on the table, apply the result, then move on.
 
-This is the campaign loop: **injuries → exploration → advancement → economy**. Influences: Mordheim casualty rolls, Necromunda lasting injuries, Warhammer Quest post-quest events, Last Days XP + nudge.
+This is the campaign loop: **injuries → exploration → advancement → economy**. Influences: Mordheim casualty rolls, Necromunda lasting injuries, and Warhammer Quest post-quest events.
 
 ---
 
 ## Sequence at a Glance
 
-1. **Scenario Results** — victory rewards, Relic Fragments earned on the table
+1. **Scenario Results** — victory rewards and Relics recovered on the table
 2. **Out of Action** — every fighter who ended the battle Out of Action rolls **Survival**
 3. **Serious Injury** — any fighter directed to this chart rolls **2d6**
 4. **Exploration** — [exploration phase](exploration.md) (location, dice, mishaps, discoveries)
 5. **Experience** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
-6. **Economy** — sell fragments, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
+6. **Economy** — sell Relics, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
 
 ---
 
 ## Step 1: Scenario Results
 
-Resolve the scenario's victory rewards and any Relic Fragments placed as objectives.
+Resolve the scenario's victory rewards and any Relics recovered on the table.
 
-If the scenario has no fragment payout, roll **Battle Spoils** once per retinue:
+Set recovered Relics aside until Step 6.
+
+If the scenario has no Relic payout, roll **Battle Spoils** once per retinue:
 
 | 2d6 | Battle Spoils |
 |---|---|
-| 2 | Cursed ground — lose 1 fragment recovered this battle (minimum 0) |
-| 3–4 | Scant pickings — 0 fragments |
-| 5–9 | Scraps — 1 fragment |
-| 10–11 | Strong haul — 2 fragments |
-| 12 | Bounty — 3 fragments |
+| 2 | Cursed ground — lose 1 Relic recovered this battle (minimum 0) |
+| 3–4 | Scant pickings — 0 Relics |
+| 5–9 | Scraps — 1 Relic |
+| 10–11 | Strong haul — 2 Relics |
+| 12 | Bounty — 3 Relics |
 
-Set **Fragments this battle** aside until Step 6.
+Set recovered Relics aside until Step 6.
 
 ---
 
@@ -78,7 +80,8 @@ Permanent injuries reduce stats. Stats cannot drop below **1**. Campaign advance
 
 Run the [Exploration Phase](exploration.md).
 
-Exploration may award Relic Fragments, Crown-equivalent loot, and Mishaps. Add exploration fragments to **Fragments this battle**.
+Exploration may award Relics and Mishaps. Set recovered Relics aside until
+Step 6.
 
 ---
 
@@ -98,7 +101,7 @@ Add XP to each fighter's bank when the condition applies:
 | **Miraculous** (Serious Injury 2d6) | +2 |
 | **Close Call** (Exploration Mishap d6) | +1 |
 | Retinue achieved a scenario objective | +1 *(once per fighter)* |
-| Each Relic Fragment the retinue recovered this battle | +1 *(every fighter)* |
+| Each Relic the retinue recovered this battle | +1 *(every fighter)* |
 | Slain an enemy **Leader** | +2 *(to the fighter who delivered the killing blow)* |
 | Scenario bonus *(when listed)* | As written |
 
@@ -117,20 +120,6 @@ Spend XP from a fighter's bank to roll on **one** advancement chart. Pay the cos
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
 **Keyword eligibility:** Same rules as before — Archetype, class, Domain, and retinue Caster limits apply.
-
-### Nudging Rolls (Relic Fragments)
-
-Before resolving a post-game roll, you may spend Relic Fragments from **Fragments this battle** (not yet sold) to adjust the result by **+1 or −1**. One nudge per roll. Cannot nudge below 2 or above 12 on 2d6 charts.
-
-| Roll | Fragment cost |
-|---|---|
-| Survival, Serious Injury | 1 |
-| **Feat** or **Keyword** Advancement | 1 |
-| **Stat** Advancement | **2** |
-
-Fragment nudges are separate from XP — paying XP buys the roll; paying Fragments steers it.
-
----
 
 ### Stat Advancement Chart
 
@@ -193,8 +182,8 @@ Record **Retinue Rating** on the roster sheet next to Roster Cost.
 
 ## Step 6: Economy
 
-1. Total **Fragments this battle** (scenario + exploration).
-2. Sell fragments for Crowns ([economy.md](economy.md)) or hoard for better rates.
+1. Total Relics recovered this battle (scenario + exploration).
+2. Sell Relics for Crowns ([economy.md](economy.md#selling-relics)).
 3. Recruit fighters, buy gear, pay upkeep *(upkeep TBD)*.
 
 ---
@@ -206,7 +195,6 @@ Record **Retinue Rating** on the roster sheet next to Roster Cost.
 - **Scarred vs Serious Injury** — d6 Survival is the quick pass; 2d6 Serious is the memorable lasting wound.
 - **XP bank** — earn from deeds, spend on advancement. Feat/Keyword **2 XP**; Stat **5 XP**.
 - **Retinue Rating** — Roster Cost + Veteran Value; one Crown total for matchup fairness (see Veteran Value table above).
-- **Stat vs feat cost** — stats are the premium spend; nudging stat rolls costs **2 Fragments** vs **1** for feat/keyword.
 - **Keyword chart** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes).
 - **Feat chart** — placeholder until Phase 5b; use Keyword path until `rules/feats.md` exists.
 - Open: convalescent fighters and retinue minimum size; injury recovery through downtime; Death Trigger on Slain results.

@@ -31,3 +31,37 @@ Before finalizing rules text, run through the Quick Checklist at the end of
 Use `NOCTVALE_DESIGN_TENETS.md` to evaluate whether a proposed mechanic belongs
 in the game. Use `decision-log.md` to record the reason for a rules change when
 making a commit.
+
+## Collaboration Workflow
+
+For Noctvale design and rules work, use a proposal-first workflow.
+
+Do not edit files immediately. First propose the change, explain the design
+tradeoffs, and wait for the user's approval. Once the user approves a direction,
+apply the edits.
+
+You may edit without a proposal for:
+
+- Purely mechanical cleanup
+- Typo fixes
+- Changes the user explicitly asks you to make directly
+
+Default rhythm:
+
+1. Read the relevant files.
+2. Summarize the issue or design tension.
+3. Propose 1-3 concrete options.
+4. Wait for the user to pick or revise an option.
+5. Apply the approved change.
+6. Summarize exactly what changed.
+
+## Capturing Ideas
+
+When the user introduces a concept with language such as "I have an idea,"
+"another idea," or "idea for a scenario," add it to the **Ideas** section near
+the top of `decision-log.md`.
+
+Record enough detail to preserve the concept without treating it as a finalized
+rule. Update the idea entry as the discussion develops. When the concept is
+implemented in the repository, remove it from **Ideas** and capture the final
+decision in the normal dated decision-log entry for that commit.

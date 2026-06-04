@@ -3,7 +3,7 @@
 
 *A Grimdark Fantasy Skirmish Game in a Cursed Land*
 
-Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful relic fragments. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
+Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful Relics. Combat is lethal, retinues grow through campaign play, and exploration carries both rewards and danger.
 
 ---
 
@@ -121,7 +121,7 @@ Noctvale is built around several core systems:
 - Lethal skirmish combat
 - Red/Blue dice pool combat resolution
 - Weapon and magic critical triangles
-- Campaign exploration and relic fragment economy
+- Campaign exploration and Relic economy
 - Small retinue tactical gameplay
 
 Combat outcomes are decisive, but the Downed system allows dramatic survivals.
@@ -470,21 +470,21 @@ However:
 
 ---
 
-# Relic Fragments
+# Relics
 
-Relic fragments are the primary campaign resource.
+Relics are the primary campaign resource.
 
-Fragments represent shattered pieces of powerful ancient relics scattered across the cursed land.
+Relics represent powerful ancient objects scattered across the cursed land.
 
 Retinues search ruins and battlefields to recover them.
 
 ---
 
-# Selling Relic Fragments
+# Selling Relics
 
-Fragments sell using a supply and demand curve.
+Relics sell using a supply and demand curve.
 
-| Fragments | Value |
+| Relics | Value |
 |-----|-----|
 | 1 | 15 |
 | 2 | 30 |
@@ -497,10 +497,10 @@ Fragments sell using a supply and demand curve.
 
 Discount bands:
 
-1 fragment = 15  
-2 fragments = 30  
-3–5 fragments = (15 × fragments) − 5  
-6–8 fragments = (15 × fragments) − 10
+1 Relic = 15  
+2 Relics = 30  
+3–5 Relics = (15 × Relics) − 5  
+6–8 Relics = (15 × Relics) − 10
 
 ---
 
@@ -525,4 +525,4 @@ Village Watch are ordinary townsfolk defending their homes, not led by sheriffs.
 
 # Game Summary
 
-Noctvale is a grimdark campaign skirmish game where retinues battle for relic fragments scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.
+Noctvale is a grimdark campaign skirmish game where retinues battle for Relics scattered across a cursed land. Fighters grow stronger through campaigns, exploration carries both treasure and danger, and every battle risks death or survival through the Downed system.

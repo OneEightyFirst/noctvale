@@ -1,29 +1,43 @@
-# Economy — Relic Fragments
+# Economy — Relics and Crowns
 
 ---
 
-## What Are Relic Fragments?
+## Campaign Resources
 
-Relic Fragments are the **primary campaign resource**.
+Retinues recover **Relics** during scenarios and exploration.
 
-They represent shattered pieces of powerful ancient relics scattered across the cursed land. Retinues search ruins and battlefields to recover them.
+Sell Relics for **Crowns** during the Economy step. Spend Crowns to recruit
+fighters, buy gear, and maintain the retinue.
 
 ---
 
-## Selling Relic Fragments
+## What Are Relics?
 
-Fragments are sold for **Crowns** using a **supply and demand curve** — selling more at once yields diminishing returns per fragment. All sell values are multiples of **5 Crowns** (see [retinue building](../rules/retinue-building.md) for the standard **1000 Crown** budget).
+Relics are the **primary campaign resource**.
 
-| Fragments Sold | Total Value |
+They represent powerful ancient objects scattered across the cursed land.
+Retinues search ruins, battlefields, shrines, and settlements to recover them.
+
+Recovered Relics are campaign treasures, not the **Relic** influence equipment
+in `rules/equipment.md`.
+
+---
+
+## Selling Relics
+
+Relics are sold for **Crowns** using a **supply and demand curve** — selling
+more at once yields diminishing returns per Relic.
+
+| Relics Sold | Total Value |
 |---|---|
-| 1 | 20 |
-| 2 | 40 |
-| 3 | 55 |
-| 4 | 75 |
-| 5 | 95 |
-| 6 | 110 |
-| 7 | 130 |
-| 8 | 150 |
+| 1 | 15 |
+| 2 | 30 |
+| 3 | 40 |
+| 4 | 55 |
+| 5 | 70 |
+| 6 | 80 |
+| 7 | 95 |
+| 8 | 110 |
 
 ---
 
@@ -31,18 +45,18 @@ Fragments are sold for **Crowns** using a **supply and demand curve** — sellin
 
 | Quantity | Formula |
 |---|---|
-| 1 fragment | 20 |
-| 2 fragments | 40 |
-| 3–5 fragments | (20 × fragments) − 5 |
-| 6–8 fragments | (20 × fragments) − 10 |
+| 1 Relic | 15 |
+| 2 Relics | 30 |
+| 3–5 Relics | (15 × Relics) − 5 |
+| 6–8 Relics | (15 × Relics) − 10 |
 
 ---
 
 ## Design Notes
 
-- Base rate is **20 Crowns** per fragment sold alone — tuned to keep campaign income in step with the **1000 Crown** retinue budget
-- The discount curve discourages hoarding large quantities to sell at once — smaller, more frequent sells are more efficient per fragment
+- Base rate is **15 Crowns** per Relic sold alone
+- The discount curve discourages hoarding large quantities to sell at once — smaller, more frequent sales are more efficient per Relic
 - This creates a cash flow decision: sell now for reliable income, or stockpile for a bigger payday?
-- Relic Fragments as the campaign currency ties the exploration phase directly to retinue progression
+- Relics as the campaign resource tie scenario objectives and exploration directly to retinue progression
 
-See [post-game.md](post-game.md). Advancement spends XP (2 feat/keyword, 5 stat); Fragment nudges are separate. **Retinue Rating** = Roster Cost + Veteran Value for matchup balance.
+See [post-game.md](post-game.md). Advancement spends XP (2 feat/keyword, 5 stat). **Retinue Rating** = Roster Cost + Veteran Value for matchup balance.

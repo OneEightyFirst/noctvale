@@ -13,7 +13,7 @@ Every retinue is built in two layers:
 
 Retinue building uses **constrained points**: a **Crown budget** plus **composition limits** per Archetype. Each Archetype uses its own tier names; slots are capped so the roster cannot exceed the Archetype maximum.
 
-For the alpha playtest, use a **1000 Crown** budget. Campaign retinues also start at **1000 Crowns** and **1000 Retinue Rating** (Veteran Value 0 on every fighter). Between games, spend earnings from sold Relic Fragments (see `campaign/economy.md`). After campaign advances, update **Retinue Rating** (see [Veteran Value](../campaign/post-game.md#veteran-value--retinue-rating)).
+For the alpha playtest, use a **1000 Crown** budget. Campaign retinues also start at **1000 Crowns** and **1000 Retinue Rating** (Veteran Value 0 on every fighter). Between games, spend earnings from sold Relics (see `campaign/economy.md`). After campaign advances, update **Retinue Rating** (see [Veteran Value](../campaign/post-game.md#veteran-value--retinue-rating)).
 
 Every Crown cost in this file is a multiple of **5 Crowns**.
 

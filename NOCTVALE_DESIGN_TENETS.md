@@ -10,7 +10,7 @@ Use this document when writing rules, evaluating playtest feedback, or deciding 
 
 ## Elevator Pitch (~100 words)
 
-Noctvale is a grimdark fantasy skirmish wargame set in a vast meteor-scarred valley roughly the size of Ireland, where small **retinues** hunt **Relic Fragments** across ruins, Crown Roads, and haunted wilds. Combat is fast and lethal: red-and-blue dice pools, weapon and magic triangles, and a **Downed** state that keeps fights dramatic while leaving room for recovery and mercy kills. Between battles, chart-driven exploration, injuries, and fragment economy grow, scar, and bankrupt your retinue. **Archetype**, **Domain**, and **Tradition** define how you fight — gunpowder or magic, plate or cult glass cannons — so every list reads on the table. Classic Mordheim/Necromunda campaign feel, cleaner modern skirmish rules.
+Noctvale is a grimdark fantasy skirmish wargame set in a vast meteor-scarred valley roughly the size of Ireland, where small **retinues** hunt **Relics** across ruins, Crown Roads, and haunted wilds. Combat is fast and lethal: red-and-blue dice pools, weapon and magic triangles, and a **Downed** state that keeps fights dramatic while leaving room for recovery and mercy kills. Between battles, chart-driven exploration, injuries, and the Relic economy grow, scar, and bankrupt your retinue. **Archetype**, **Domain**, and **Tradition** define how you fight — gunpowder or magic, plate or cult glass cannons — so every list reads on the table. Classic Mordheim/Necromunda campaign feel, cleaner modern skirmish rules.
 
 ---
 
@@ -80,13 +80,13 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *The campaign is the game.*
 
-**Explanation:** A single skirmish matters because it feeds a loop: injuries → exploration → advancement → economy. Relic Fragments tie scenario objectives, exploration gambles, and post-game nudges into one resource. Veterans grow through XP spend (banked between battles) and Veteran Crowns for matchup fairness.
+**Explanation:** A single skirmish matters because it feeds a loop: injuries → exploration → advancement → economy. Relics tie scenario objectives, exploration gambles, and the Crown economy into one loop. Veterans grow through XP spend (banked between battles) and Veteran Crowns for matchup fairness.
 
-**Mechanically:** Post-game sequence is chart-driven (Survival, Serious Injury, advancement charts). Exploration rolls per surviving hero, caps at six dice, Mishaps on 1s, Push the Search for high-risk rerolls. Fragment sell curve rewards timing. Retinue Rating = Roster Cost + Veteran Value.
+**Mechanically:** Post-game sequence is chart-driven (Survival, Serious Injury, advancement charts). Exploration rolls per surviving fighter, caps at six dice, Mishaps on 1s, Push the Search for high-risk rerolls. Relics sell on a supply and demand curve. Retinue Rating = Roster Cost + Veteran Value.
 
-**Protects:** Consequence carryover. Economic pressure alongside power growth. Player choice to spend XP or hoard fragments.
+**Protects:** Consequence carryover. Economic pressure alongside power growth. Player choice to spend XP or sell Relics.
 
-**Apply it:** Route scenario rewards through fragments, XP spend, or exploration discoveries. Let players choose whether to buy advancement rolls.
+**Apply it:** Route scenario rewards through Relics, XP spend, or exploration discoveries. Let players choose whether to buy advancement rolls.
 
 **vs. peers:** Direct lineage to **Mordheim** exploration/injury charts and **Necromunda** post-battle economy. More structured than **Warcry**'s light campaign layer. **Stargrave** shares chart-driven exploration DNA.
 
@@ -98,7 +98,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Being outnumbered should hurt — without freezing you out of the round. Negative feedback loops prevent activation snowballs. The player behind on the table gets initiative tools and reaction options so comeback swings stay plausible.
 
-**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; skip activation to bank more. Ranged Reactions give targets agency when shot at. Fragment nudges let players steer post-game charts. **TODO:** Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
+**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; skip activation to bank more. Ranged Reactions give targets agency when shot at. **TODO:** Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
 
 **Protects:** Meaningful decisions when losing. Fixed underdog compensation over random activation order.
 
@@ -167,7 +167,7 @@ When evaluating a new mechanic, ask:
 - [ ] Does it add a new subsystem, keyword, or phase? Is that cost justified?
 
 ### Campaign & economy
-- [ ] Does it connect to Relic Fragments, XP spend, or post-game charts?
+- [ ] Does it connect to Relics, XP spend, or post-game charts?
 - [ ] Does it create a real choice (sell now vs. hoard, push exploration vs. stop, spend XP on stat vs. feat)?
 - [ ] Does it update Veteran Value / Retinue Rating fairly?
 
@@ -179,7 +179,7 @@ When evaluating a new mechanic, ask:
 ### Setting & tone
 - [ ] Would this produce a story someone retells after the session?
 - [ ] Is the consequence grim and fair?
-- [ ] Does it sound like Noctvale (retinue, fragments, cursed land)?
+- [ ] Does it sound like Noctvale (retinue, Relics, cursed land)?
 
 ### Peer sanity check
 - [ ] Does this fit Noctvale on its own terms?
@@ -190,7 +190,6 @@ When evaluating a new mechanic, ask:
 ## Open Questions (TODO)
 
 - **Death Trigger:** On Out of Action — morale, faction payoff, environmental response (`todo.md`).
-- **Fragment spending beyond selling:** Crafting, relic assembly, upgrades (`campaign/economy.md`).
 - **Feat system (Phase 5b):** Archetype and Domain feat lists — serve Tenet 2 within Tenet 3's complexity budget.
 - **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses still TBD (`rules/sanity.md`).
 

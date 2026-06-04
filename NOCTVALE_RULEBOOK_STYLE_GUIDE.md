@@ -123,7 +123,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
 | keyword | No in prose | **Caster**, **Fear**, **Fearless** — bold the keyword name |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
-| Relic Fragment(s) | Yes | Campaign resource |
+| Relic(s) | Yes | Campaign treasure; also an influence item when listed in equipment |
 
 ### Combat terms
 
