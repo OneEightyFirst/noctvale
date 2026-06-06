@@ -10,7 +10,7 @@ Every retinue is built from two choices: an **Archetype** and a **Domain**.
 
 Your **Archetype** determines how your retinue fights — melee and missile access, armor cap, shields, gunpowder access, roster size, and caster limits.
 
-Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific feats. Choose **None** if your retinue rejects or lacks magic entirely.
+Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific feats. Choose **Mortal** if your retinue rejects or lacks magic entirely.
 
 **Archetype + Domain** is your retinue's mechanical identity on the table.
 
@@ -27,7 +27,7 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 - **Melee:** Basic, Long, Heavy
 - **Missile weapons:** All
 - **Shields:** Buckler, Shield, Tower Shield
-- **Gunpowder:** Basic (Musket, Blunderbuss) — None domain only
+- **Gunpowder:** Basic (Musket, Blunderbuss) — Mortal Domain only
 - **Max Casters:** 1
 
 ### Hunters
@@ -35,7 +35,7 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 - **Melee:** Basic, Long
 - **Missile weapons:** All
 - **Shields:** Buckler, Shield
-- **Gunpowder:** Basic + Refined — None domain only
+- **Gunpowder:** Basic + Refined — Mortal Domain only
 - **Max Casters:** 1
 
 ### Folk
@@ -43,11 +43,11 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 - **Melee:** Basic, Long
 - **Missile weapons:** All
 - **Shields:** Buckler, Shield
-- **Gunpowder:** Basic (Musket, Blunderbuss) — None domain only
+- **Gunpowder:** Basic (Musket, Blunderbuss) — Mortal Domain only
 - **Max Casters:** 1
 
 ### Cult
-- **Domain Restriction:** Cannot choose None — Cult must have a magic domain
+- **Domain Restriction:** Cannot choose Mortal — Cult must have a magic Domain
 - **Armor:** None
 - **Melee:** Basic only
 - **Missile weapons:** All
@@ -55,9 +55,9 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 - **Gunpowder:** None
 - **Max Casters:** 3
 
-**Gunpowder weapons** (firearms and bombs) are exclusive to retinues with the **None** domain. Magic and gunpowder are mutually exclusive paths to power.
+**Gunpowder weapons** (firearms and bombs) are exclusive to retinues with the **Mortal** Domain. Magic and gunpowder are mutually exclusive paths to power.
 
-**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). Hunters + None get both tiers; Knights and Folk + None get **Basic only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
+**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
 
 **Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
 
@@ -73,9 +73,9 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 | Nature | Natural |
 | Necromancy | Natural |
 | Blood | Natural |
-| None | — |
+| Mortal | — |
 
-Each domain provides a spell list and domain-specific feats. The **None** domain provides no spells but grants access to **gunpowder weapons**.
+Each Domain provides a spell list and Domain-specific feats. The **Mortal** Domain provides no spells but grants access to **gunpowder weapons**.
 
 ---
 
@@ -148,7 +148,7 @@ All Blood traditions are **hedonistic noble houses** — appetite, sport, and st
 | **Revelers** | Hunters, Folk |
 | **Courtiers** | Cult, Folk |
 
-### None
+### Mortal
 
 | Tradition | Archetypes |
 |---|---|
@@ -159,7 +159,7 @@ All Blood traditions are **hedonistic noble houses** — appetite, sport, and st
 
 ### Archetype × Domain (at a glance)
 
-| Archetype | Light | Arcane | Infernal | Nature | Necromancy | Blood | None |
+| Archetype | Light | Arcane | Infernal | Nature | Necromancy | Blood | Mortal |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Knights** | Crusaders, Paladins | Spellblades, Sorcerers | Hellknights, Damned | Grove-keepers, Hedge-walkers | Sepulchers, Wightlords | Vampires, Dynasts | Constables, Ironbound |
 | **Hunters** | Paladins, Luminaries | Spellblades, Witches | Hellknights, Binders | Beastmen, Hedge-walkers | Bone-priests, Wightlords | Dynasts, Revelers | Zealots, Alchemists |
@@ -196,17 +196,17 @@ Twelve established factions exist in Noctvale lore. Each is a specific Archetype
 | Phoenix Guard | Knights | Light | Elite knights, former High King's personal guard |
 | Nobility | Knights | Blood | Vampire aristocracy, decadent noble houses |
 | Radiant Crusade | Hunters | Light | Holy warriors sworn to destroy undead |
-| Inquisition | Hunters | None | Anti-magic zealots, guns and denial |
-| Silver Hunt | Hunters | None | Monster hunters, alchemy and silver weapons |
+| Inquisition | Hunters | Mortal | Anti-magic zealots, guns and denial |
+| Silver Hunt | Hunters | Mortal | Monster hunters, alchemy and silver weapons |
 | Nightpack | Hunters | Nature | Werebeast packs, shapeshifter retinues |
 | Coven | Cult | Nature | Witches banding together for survival |
 | Arcane Conclave | Cult | Arcane | Scholars and mages seeking supernatural knowledge |
 | Grave Wardens | Cult | Necromancy | Necromancers commanding the restless dead |
 | Infernal Pact | Cult | Infernal | Demonic cult brotherhoods |
-| Village Watch | Folk | None | Ordinary townsfolk defending their homes |
-| Iron Law | Folk | None | Corrupted remnants of imperial law |
+| Village Watch | Folk | Mortal | Ordinary townsfolk defending their homes |
+| Iron Law | Folk | Mortal | Corrupted remnants of imperial law |
 
-Two presets can share the same Archetype + Domain but play differently through exclusive feats and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + None — Inquisition leans anti-magic denial; Silver Hunt leans alchemy, poisons, and silver weapons.
+Two presets can share the same Archetype + Domain but play differently through exclusive feats and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + Mortal — Inquisition leans anti-magic denial; Silver Hunt leans alchemy, poisons, and silver weapons.
 
 ---
 
@@ -258,7 +258,7 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 - Named presets can share Archetype + Domain — differentiate with exclusive feats and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
 - Cult gets 3 casters and no armor — glass cannon by design
-- **Missile weapons** for all retinues; **gunpowder** for None domain — parallel power paths
+- **Missile weapons** for all retinues; **gunpowder** for Mortal Domain — parallel power paths
 - Alchemy is equipment available to all retinues
 - **The Nobility** — vampire preset built around noble houses
-- Village Watch and Iron Law are both Folk + None presets; players can also run Folk + Nature, Folk + Infernal, etc. — presets are starting points
+- Village Watch and Iron Law are both Folk + Mortal presets; players can also run Folk + Nature, Folk + Infernal, etc. — presets are starting points

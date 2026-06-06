@@ -24,12 +24,12 @@ Every weapon belongs to an **access category** (what your retinue may buy) and a
 
 ### Ranged — access categories
 
-Ranged weapons split into two families. **Magic and gunpowder do not mix** on the same retinue (None Domain only).
+Ranged weapons split into two families. **Magic and gunpowder do not mix** on the same retinue (Mortal Domain only).
 
 | Family | Role | Who may take |
 |---|---|---|
 | **Missile weapons** | Bows, crossbows, slings, thrown — no gunpowder | **All retinues** |
-| **Gunpowder weapons** | Firearms and bombs | **None Domain only** |
+| **Gunpowder weapons** | Firearms and bombs | **Mortal Domain only** |
 
 **Missile weapons** is the standard term for non-gunpowder ranged weapons.
 
@@ -55,7 +55,7 @@ Firearms use a **flat primer roll** (**2d6**, difficulty **6+**, no stat added).
 
 #### Gunpowder weapons — bombs
 
-Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per game. None Domain only.
+Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per game. Mortal Domain only.
 
 ---
 
@@ -137,7 +137,7 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 
 ## Gunpowder Weapons — Firearms
 
-**None Domain only.** See [retinue.md](retinue.md) for which firearm **tiers** each Archetype may take.
+**Mortal Domain only.** See [retinue.md](retinue.md) for which firearm **tiers** each Archetype may take.
 
 ### Basic
 
@@ -170,9 +170,9 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 >
 > **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
 >
-> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by **Heavy Armor** crit rescue.
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **rescue** misses. *(See `equipment.md`.)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See `equipment.md`.)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -192,7 +192,7 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 
 ## Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **None Domain only** (gunpowder).
+Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **Mortal Domain only** (gunpowder).
 
 ### Throwing a Bomb
 

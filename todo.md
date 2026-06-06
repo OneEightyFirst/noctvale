@@ -95,7 +95,7 @@ Define feat lists for each archetype and each domain. Feats are the primary mech
   - [ ] Nature
   - [ ] Necromancy
   - [ ] Blood
-  - [ ] None
+  - [ ] Mortal
 - [ ] Decide if named factions get 1–2 exclusive faction feats on top of archetype + domain feats
 - [ ] Confirm feats don't duplicate or conflict with spells, equipment, or special rules
 
@@ -162,7 +162,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 ### Open Design Decisions
 
 - [ ] **Spell table format:** Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards
-- [ ] **Armor/shield defense terminology:** Revisit **rescue** for failed defense dice → success conversion — alternatives may read clearer at the table (`equipment.md`, `combat.md`)
+- [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`equipment.md`, `combat.md`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
 - [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest

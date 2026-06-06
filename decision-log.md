@@ -7,6 +7,69 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
+- **Feat guardrail:** Feats should express retinue identity without flattening
+  the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
+  actions, reusable rerolls, and feats that are effectively spells without a
+  **casting roll**. Prefer feats that bend existing levers: **Brace**, **Help**,
+  **Recover**, **Aim**, **Overwatch**, **Mishap**, exploration, armor/shield
+  defense conversion, weapon or magic triangle advantage, and wound states.
+
+---
+
+## 2026-06-06 — Armor conversion terminology and tuning
+
+**Decision:** Replace armor/shield **rescue** terminology with **convert** in
+active rules. Armor and shields now **convert** failed defense dice into
+successful defense dice after the defense roll. This is distinct from Kill
+Team-style **retain** language: retaining keeps a die as a success, while
+converting changes a failed defense die into a success after the roll.
+
+Tune armor conversion:
+
+| Armor | Conversion |
+|---|---|
+| **Light Armor** | Convert 2 failed red or blue defense dice into 1 normal success. |
+| **Medium Armor** | Convert 1 failed red defense die into 1 normal success. |
+| **Heavy Armor** | Convert 1 failed red defense die into 1 normal success **or** convert 2 failed red defense dice into 1 critical success. |
+
+Shields keep their existing conversion quantities, updated to the new wording.
+
+**Reasoning:** The old armor values were too reliable when stacked with
+**Brace**, shields, and defensive feats such as **Hold the Line**. The new
+Light Armor supports agile fighters by allowing red or blue failures, while
+Medium Armor and Heavy Armor remain mostly red-defense protection. Heavy Armor
+keeps its special identity as the armor tier that can produce a critical
+defense success.
+
+---
+
+## 2026-06-05 — First feat rule and Hold the Line
+
+**Decision:** Add `rules/feats.md` with initial feat rules, feat eligibility,
+and **Hold the Line** as the first **Knights** Archetype feat. **Hold the Line**
+lets a fighter who uses **Brace** choose another friendly fighter within **1"**;
+that fighter gains **+1 red defense die** until the bracing fighter's next
+activation. Add a default rule that duplicate copies of the same named feat do
+not stack on one fighter at the same time.
+
+**Reasoning:** Feats should express retinue identity by bending existing levers,
+not by adding generic power. **Hold the Line** makes Knights better at forming a
+defensive wall through **Brace** while preserving the action cost and avoiding
+broad permanent bonuses. The non-stacking rule prevents multiple nearby copies
+from piling the same feat onto one defender.
+
+---
+
+## 2026-06-05 — Mortal Domain rename
+
+**Decision:** Rename the **None** Domain to **Mortal** in active player-facing
+rules and roadmap text.
+
+**Reasoning:** **Mortal** reads as a real retinue identity rather than a blank
+or missing choice. It keeps the Domain's role clear: retinues that reject or
+lack magic trade Domain spells and the **Caster** keyword for gunpowder,
+alchemy-forward play, anti-magic tools, and Fearless-style discipline.
+
 ---
 
 ## 2026-06-04 — Forest scenario section cleanup

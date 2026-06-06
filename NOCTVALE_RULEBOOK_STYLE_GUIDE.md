@@ -54,7 +54,7 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 > The fighter **cannot** end their movement on another fighter's base.
 
 **Player choice**
-> The defender **chooses** which misses to rescue.
+> The defender **chooses** which failed defense dice to convert.
 
 ### Words to avoid in rules text
 
@@ -117,7 +117,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | Term | Capitalize? | Notes |
 |---|---|---|
 | Archetype | Yes | Knights, Hunters, Folk, Cult |
-| Domain | Yes | Light, Arcane, Nature, Blood, Necromancy, Infernal, **None** |
+| Domain | Yes | Light, Arcane, Nature, Blood, Necromancy, Infernal, **Mortal** |
 | Tradition | Yes | Witches, Crusaders, etc. — one per retinue |
 | Faction | Yes | Named preset (Phoenix Guard, Silver Hunt, …) |
 | class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
@@ -421,7 +421,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 | **feat** / **tradition feat** entries | Phase 5b — extend this guide when feat format is locked |
 | **damage** vs **wound** | Some spell blurbs still say “damage”; prefer **hit** / **Wound** |
 | **Spell table format** | Refine column layout, Effect/Mishap wording, card reminders |
-| **Armor/shield rescue** | Revisit terminology for failed defense → success conversion |
+| **Armor/shield conversion** | Failed defense dice → successful defense dice |
 | Scatter die | Define scatter die notation in `weapons.md` |
 | Opponent-controlled fighters | Standard phrase for “your opponent controls it for its activation” |
 

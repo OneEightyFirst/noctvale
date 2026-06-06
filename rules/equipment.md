@@ -4,29 +4,38 @@
 
 ## Armor
 
-Armor **rescues red defense misses** — turning failed red defense dice into successes after rolling the defense pool. Armor does not add dice or modify stats.
+Armor **converts failed defense dice into successes** after rolling the defense pool. Armor does not add dice or modify stats.
 
-| Armor | Rescue | Notes |
+| Armor | Conversion | Notes |
 |---|---|---|
-| Light Armor | 1 red miss → normal success | Leather, padded |
-| Medium Armor | 2 red misses → normal successes | Chainmail, brigandine |
-| Heavy Armor | 2 red misses → normal successes **OR** 1 red miss → crit success | Plate, full harness |
+| Light Armor | 2 failed red or blue defense dice → 1 normal success | Leather, padded |
+| Medium Armor | 1 failed red defense die → 1 normal success | Chainmail, brigandine |
+| Heavy Armor | 1 failed red defense die → 1 normal success **OR** 2 failed red defense dice → 1 critical success | Plate, full harness |
 
-Heavy Armor's crit rescue is the only way to block incoming critical hits with armor. The defender chooses which option to use after seeing the attacker's hits.
+A converted die is a successful defense die. Use it to block hits as normal.
+
+For **Light Armor**, if you spend 1 failed red defense die and 1 failed blue
+defense die, choose whether the converted success is red or blue.
+
+Heavy Armor's critical success is the only armor effect that can block incoming
+critical hits. The defender chooses which option to use after seeing the
+attacker's hits.
 
 ---
 
 ## Shields
 
-Shields **rescue defense misses** after rolling the defense pool, similar to armor. Shields take **1 weapon slot**.
+Shields **convert failed defense dice into successes** after rolling the defense
+pool, similar to armor. Shields take **1 weapon slot**.
 
-| Shield | Rescue | Notes |
+| Shield | Conversion | Notes |
 |---|---|---|
-| Buckler | 1 blue miss → normal success | Light, parrying |
-| Shield | 1 red miss + 1 blue miss → normal successes | Standard defense |
-| Tower Shield | 2 red misses + 1 blue miss → normal successes | Heavy, full cover |
+| Buckler | 1 failed blue defense die → 1 normal success | Light, parrying |
+| Shield | 1 failed red defense die + 1 failed blue defense die → normal successes | Standard defense |
+| Tower Shield | 2 failed red defense dice + 1 failed blue defense die → normal successes | Heavy, full cover |
 
-Armor and shield rescues **stack**. A fighter in Medium Armor with a Shield rescues 3 red misses and 1 blue miss total.
+Armor and shield conversions **stack**. A fighter in Medium Armor with a Shield
+converts 2 failed red defense dice and 1 failed blue defense die total.
 
 ---
 
@@ -42,7 +51,7 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 |---|---|---|
 | Adder's Kiss | +1 Sk to the weapon's strike pool | Subtle, fast-acting |
 | Blight Extract | Unblocked hits inflict **Poisoned** (-1 Mt for the rest of the game) | Weakening toxin |
-| Vitriol | Unblocked hits ignore 1 armor rescue | Acid, eats through plate |
+| Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
 | Widow's Tears | Unblocked hits inflict 2 wounds instead of 1 | Lethal, expensive |
 | Silversbane | -1" Movement vs **Nightpack** and **Nobility** only (does not stack) | Silver Hunt exclusive |
 
@@ -73,11 +82,11 @@ The Instrument's Influence Bubble is not passive — the bearer must spend **1 a
 
 ## Design Notes
 
-- Armor rescues red defense misses (1/2/2-or-crit) — protection paid for in crowns
-- Since rescued dice are red, they block red hits at 1:1 but blue hits at 2:1 — finesse weapons (Daggers, bows) bypass armor through color mismatch
-- Heavy Armor's crit rescue option is a qualitative jump: it blocks critical hits with armor, worth the price premium
+- Armor converts failed defense dice into successes after rolling the defense pool — protection paid for in crowns
+- Most armor conversion produces red successes, which block red hits at 1:1 but blue hits at 2:1 — finesse weapons (Daggers, bows) bypass armor through color mismatch
+- Heavy Armor's critical success option is a qualitative jump: it blocks critical hits with armor, worth the price premium
 - Armor has no Sk penalty — an Elf in plate is still agile, just expensive. Species gear choices are driven by cost and role
-- Buckler rescues blue (finesse defense), armor rescues red (toughness defense) — different colors for different fighting styles. Shields bridge both
+- Buckler converts blue (finesse defense), armor mostly converts red (toughness defense), and Light Armor can convert mixed failures — different colors for different fighting styles. Shields bridge both
 - Shields take a weapon slot, so defensive investment costs offensive flexibility — a Sword + Shield fighter has 1 slot left (Dagger backup), while a Great Sword fighter has 1 slot free but no shield
 - Alchemy is equipment any retinue can buy — potions and poisons without a dedicated magic class
 - Poisons are consumable (one game) and one per weapon — a recurring crown drain that creates campaign-level purchasing decisions

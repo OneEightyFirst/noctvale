@@ -78,5 +78,5 @@ A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. 
 - The Insanity table is weighted toward the middle: Freeze (4–5) is the most common result, Frenzy (1) and Berserk (6) are rare extremes
 - Berserk can snap a terrified fighter into sudden aggression — fear that sometimes backfires on the source
 - 6" default range keeps fear as a close-quarters threat, not something that locks down the whole board
-- Fearless as a keyword gives None domain retinues a unique defensive advantage against magic-heavy opponents, compensating for their lack of spells
+- Fearless as a keyword gives Mortal Domain retinues a unique defensive advantage against magic-heavy opponents, compensating for their lack of spells
 - Sa 3 baseline means d6 + 3 ≥ 8, so fighters need a 5+ to pass (~33% chance). Fear effects are genuinely threatening at baseline stats

@@ -48,13 +48,13 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *Identity through constraints.*
 
-**Explanation:** A Noctvale list should be readable at a glance. Archetype sets how you fight (armor, melee access, casters, gunpowder). Domain sets supernatural tools — or None, for gunpowder. Tradition differentiates presets that share the same skeleton. Named factions (Phoenix Guard, Silver Hunt, etc.) are optional lore presets on top of Archetype + Domain + Tradition.
+**Explanation:** A Noctvale list should be readable at a glance. Archetype sets how you fight (armor, melee access, casters, gunpowder). Domain sets supernatural tools — or Mortal, for gunpowder. Tradition differentiates presets that share the same skeleton. Named factions (Phoenix Guard, Silver Hunt, etc.) are optional lore presets on top of Archetype + Domain + Tradition.
 
-**Mechanically:** 1000 Crown budget + composition slot caps. Magic and gunpowder are separate paths (None domain for firearms). Cult fields three casters and no armor; Knights field Heavy armor and one caster. Equipment, weapon type, and species baselines spread power across the roster.
+**Mechanically:** 1000 Crown budget + composition slot caps. Magic and gunpowder are separate paths (Mortal Domain for firearms). Cult fields three casters and no armor; Knights field Heavy armor and one caster. Equipment, weapon type, and species baselines spread power across the roster.
 
 **Protects:** Distinct retinue silhouettes. Gunpowder vs. magic as a real list-building fork. Faction flavor through feats and gear on shared Archetype + Domain bones.
 
-**Apply it:** Universal missile weapons fit every retinue. Domain-specific power belongs in spells, domain feats, or None-domain gunpowder — route blessed pistols through those layers.
+**Apply it:** Universal missile weapons fit every retinue. Domain-specific power belongs in spells, Domain feats, or Mortal gunpowder — route blessed pistols through those layers.
 
 **vs. peers:** Closer to **Necromunda** gang identity or **Frostgrave** school limits than **Warcry**'s loose warband construction or **Marvel: Crisis Protocol**'s free-form pairing.
 
@@ -112,9 +112,9 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *Gear and matchups matter.*
 
-**Explanation:** Equipment choices change how a fight plays. Weapon triangles, magic triangles, armor rescue, and counter-picks (hammers vs. Heavy Armor, silver vs. Nobility/Nightpack) reward preparation and target selection. Positioning and engagement rules make melee dangerous without a facing subsystem.
+**Explanation:** Equipment choices change how a fight plays. Weapon triangles, magic triangles, armor conversion, and counter-picks (hammers vs. Heavy Armor, silver vs. Nobility/Nightpack) reward preparation and target selection. Positioning and engagement rules make melee dangerous without a facing subsystem.
 
-**Mechanically:** Sword > Axe > Spear > Sword (attacker only). Mystic and Natural magic triangles. Firearms crit vs. all; conventional ranged needs Aim for crits. Heavy Armor rescues red misses; hammers crit vs. Heavy Armor only. Gang Up, Brace, Hide, Charge/Retreat, friendly-fire on missed gun/magic shots. Melee is one-directional — charge first, earn triangle crits.
+**Mechanically:** Sword > Axe > Spear > Sword (attacker only). Mystic and Natural magic triangles. Firearms crit vs. all; conventional ranged needs Aim for crits. Heavy Armor converts failed red defense dice and can create a critical defense success; hammers crit vs. Heavy Armor only. Gang Up, Brace, Hide, Charge/Retreat, friendly-fire on missed gun/magic shots. Melee is one-directional — charge first, earn triangle crits.
 
 **Protects:** Matchup literacy. Counter-picks with explicit rules (Hammer, Silver). Positioning as a resource.
 
@@ -158,7 +158,7 @@ When evaluating a new mechanic, ask:
 ### Identity & list building
 - [ ] Can I tell what kind of retinue this supports from the mechanic alone?
 - [ ] Does it respect Archetype access (armor, melee tier, casters, gunpowder)?
-- [ ] Does it respect Domain boundaries (magic vs. None/gunpowder)?
+- [ ] Does it respect Domain boundaries (magic vs. Mortal/gunpowder)?
 - [ ] Does it duplicate an existing spell, feat, or equipment effect?
 
 ### Clarity & pace

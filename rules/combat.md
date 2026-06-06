@@ -12,9 +12,9 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 >
 > **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
 >
-> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by **Heavy Armor** crit rescue.
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **rescue** misses. *(See `equipment.md`.)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See `equipment.md`.)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -61,7 +61,7 @@ Any natural **6** is a **critical hit** if any of the following apply:
 - The attacker is using a **firearm** (crits against all targets)
 - The attacker used the **Aim** action before a Ranged attack
 
-Critical hits **cannot be blocked** by normal defense successes — only by a **critical defense success** (from Heavy Armor rescue). Critical hits retain their color for tracking purposes.
+Critical hits **cannot be blocked** by normal defense successes — only by a **critical defense success** from Heavy Armor. Critical hits retain their color for tracking purposes.
 
 If none of the above apply, 6s are normal hits.
 
@@ -81,16 +81,16 @@ If the attacker's Mt or Sk exceeds the defender's, there is no penalty — the d
 For **red defense dice**, roll **d6 + Mt ≥ 8** (toughness absorbs the blow).
 For **blue defense dice**, roll **d6 + Sk ≥ 8** (reflexes deflect the blow).
 
-#### Armor & Shield Rescue
+#### Armor & Shield Conversion
 
-After rolling defense dice, **armor and shields rescue misses** — turning failed defense dice into successes:
+After rolling defense dice, **armor and shields convert failed defense dice into successes**:
 
-- **Armor** rescues **red** misses: Light (1), Medium (2), Heavy (2 normal OR 1 crit)
-- **Shields** rescue **red and/or blue** misses: Buckler (1 blue), Shield (1 red + 1 blue), Tower Shield (2 red + 1 blue)
+- **Armor** converts failed defense dice: Light (2 red or blue → 1 normal success), Medium (1 red → 1 normal success), Heavy (1 red → 1 normal success OR 2 red → 1 critical success)
+- **Shields** convert failed red and/or blue defense dice: Buckler (1 blue), Shield (1 red + 1 blue), Tower Shield (2 red + 1 blue)
 
-Armor and shield rescues **stack**. The defender chooses which misses to rescue. Rescued dice follow all normal blocking rules. *(See equipment.md for full tables.)*
+Armor and shield conversions **stack**. The defender chooses which failed defense dice to convert. Converted dice follow all normal blocking rules. *(See equipment.md for full tables.)*
 
-Heavy Armor's crit rescue (1 red miss → critical success) is the only way to block incoming critical hits with equipment.
+Heavy Armor's critical success is the only way to block incoming critical hits with equipment.
 
 Each successful defense die **blocks one hit** of the matching color:
 
@@ -99,7 +99,7 @@ Each successful defense die **blocks one hit** of the matching color:
 - **Two successful red defense dice may block one blue hit** (brute force can overcome finesse, but at 2:1 cost)
 - **Two successful blue defense dice may block one red hit** (finesse can overcome brute force, but at 2:1 cost)
 
-Critical hits **cannot be blocked** by normal defense successes. Only a **critical defense success** (from Heavy Armor rescue) can block a critical hit.
+Critical hits **cannot be blocked** by normal defense successes. Only a **critical defense success** from Heavy Armor can block a critical hit.
 
 ### Step 5: Apply Wounds
 
@@ -197,7 +197,7 @@ Roll defense:
 - Red die 2: d6 + Mt 4 → rolls 3 → 7 → fail
 - Blue die 1: d6 + Sk 3 → rolls 4 → 7 → fail
 
-**Armor Rescue:** The Dwarf wears Medium Armor — rescue 2 red misses. Red die 2 failed, so 1 rescue is used → **normal red success**. Blue die 1 failed but Medium Armor only rescues red misses.
+**Armor Conversion:** The Dwarf wears Medium Armor — convert 1 failed red defense die into 1 normal success. Red die 2 failed, so it becomes a **normal red success**. Blue die 1 failed but Medium Armor only converts failed red defense dice.
 
 Defense results: 2 red successes, 0 blue successes.
 - Red success 1 blocks the red hit (1:1 same color)
@@ -223,5 +223,5 @@ The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 - Reactions only happen on the opponent's turn — the active player accepts the risk of return fire without recourse, giving the target the last word
 - Cast not triggering reactions gives magic a distinct tactical niche — safer to use but less accessible than ranged weapons
 - Melee is one-directional (attacker rolls, defender defends) — the person who charges first has the initiative advantage, earning weapon triangle crits. The defender's counterplay is engaging on their own activation (as the attacker, with their own weapon triangle crits) or disengaging via Retreat
-- Armor rescue turns red defense misses into successes — the defender chooses which misses to rescue, creating a decision point. Since rescued dice are red, they block red hits at 1:1 but blue hits at 2:1, making finesse attacks effective against armor
-- Heavy Armor's crit rescue option (1 red miss → crit success) is the way to block incoming critical hits with armor — a qualitative upgrade beyond raw dice count
+- Armor conversion turns failed defense dice into successes — the defender chooses which failed dice to convert, creating a decision point. Since most converted dice are red, they block red hits at 1:1 but blue hits at 2:1, making finesse attacks effective against armor
+- Heavy Armor's critical success option is the way to block incoming critical hits with armor — a qualitative upgrade beyond raw dice count

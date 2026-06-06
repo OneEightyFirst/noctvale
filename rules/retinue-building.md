@@ -105,7 +105,7 @@ If a fighter takes Caster on a class that normally grants a **+1 stat** bonus (L
 
 ### Caster keyword — roster creation
 
-**None Domain:** no fighter may take the Caster keyword. Magic and gunpowder do not mix.
+**Mortal Domain:** no fighter may take the Caster keyword. Magic and gunpowder do not mix.
 
 | Archetype | Classes that *may* take Caster | Max fighters with Caster |
 |---|---|---|
@@ -194,8 +194,8 @@ Equipment access follows `retinue.md`:
 
 - Archetype sets **melee** category access (Basic / Long / Heavy / Exotic), armor cap, shield access, and **gunpowder** tier access.
 - **Missile weapons** (bows, crossbows, slings, thrown) are available to **all retinues** — including Cult.
-- **None** Domain grants **gunpowder weapons** (firearms and bombs); all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
-- **Cult** cannot choose None and cannot use gunpowder.
+- **Mortal** Domain grants **gunpowder weapons** (firearms and bombs); all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
+- **Cult** cannot choose Mortal and cannot use gunpowder.
 - Alchemy is available to all retinues.
 
 ### Weapon slots
@@ -263,7 +263,7 @@ All retinues. See `rules/weapons.md` for categories.
 | Long | Crossbow | 65 |
 | Heavy | Heavy Crossbow | 90 |
 
-### Gunpowder — Firearms (None Domain only)
+### Gunpowder — Firearms (Mortal Domain only)
 
 | Tier | Weapon | Cost |
 |---|---|---|
@@ -276,9 +276,9 @@ All retinues. See `rules/weapons.md` for categories.
 |---|---|---|
 | **Flintlock** | Single Shot — one fire per game | −25 *(applied to firearm cost)* |
 
-**Archetype access:** Hunters + None — Basic + Refined. Knights and Folk + None — **Basic only** (Musket, Blunderbuss).
+**Archetype access:** Hunters + Mortal — Basic + Refined. Knights and Folk + Mortal — **Basic only** (Musket, Blunderbuss).
 
-### Gunpowder — Bombs (None Domain only)
+### Gunpowder — Bombs (Mortal Domain only)
 
 | Item | Cost |
 |---|---|
@@ -328,9 +328,9 @@ Silver Hunt and other factions may require Silver on specific fighters — pay t
 
 ---
 
-## Example: Hunters + None (1000 Crowns)
+## Example: Hunters + Mortal (1000 Crowns)
 
-Silver Hunt-style retinue (Hunters + None), 7 fighters:
+Silver Hunt-style retinue (Hunters + Mortal), 7 fighters:
 
 | Fighter | Class | Keywords | Species | Cost |
 |---|---|---|---|---|
@@ -349,11 +349,11 @@ Remaining **500 Crowns** for weapons, armor, poisons, and bombs across seven fig
 
 Before play, confirm:
 
-- [ ] Archetype + Domain chosen; Cult is not None
+- [ ] Archetype + Domain chosen; Cult is not Mortal
 - [ ] Model count within Archetype min/max
 - [ ] Exactly 1 Leader (Lord, Captain, Mayor, or Theurge)
 - [ ] Each class within Archetype slot caps (see roster table)
-- [ ] Fighters with **Caster** keyword: count within Archetype max; None Domain has none; Wi 4+ and 3 Domain spells each
+- [ ] Fighters with **Caster** keyword: count within Archetype max; Mortal Domain has none; Wi 4+ and 3 Domain spells each
 - [ ] Total cost ≤ Crown budget
 - [ ] **Retinue Rating** = Roster Cost + sum of Veteran Value on each fighter (campaign)
 - [ ] Each fighter within Archetype melee, missile, gunpowder, armor, and shield access

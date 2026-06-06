@@ -113,7 +113,7 @@ Spend XP from a fighter's bank to roll on **one** advancement chart. Pay the cos
 
 | Advancement | XP cost | Roll |
 |---|---|---|
-| **Feat** | **2** | 2d6 on Feat Advancement Chart *(TBD — use Keyword until `rules/feats.md` exists)* |
+| **Feat** | **2** | 2d6 on [Feat Advancement Chart](../rules/feats.md#feat-advancement-chart) *(use Keyword until feat lists are complete)* |
 | **Keyword** | **2** | 2d6 on Keyword Advancement Chart |
 | **Stat** | **5** | 2d6 on Stat Advancement Chart |
 
@@ -152,7 +152,7 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 11 | **Marked** — gain **Fearless** and +1 to CC or RC (max 6). |
 | 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
 
-**Gaining Caster mid-campaign:** Assign 3 spells from the retinue's Domain. The fighter must have Wi 4+ (raise Wi to 4 if needed). Cult **Acolytes** may gain Caster here; other Archetypes only if under the retinue's max Caster count and None Domain does not apply.
+**Gaining Caster mid-campaign:** Assign 3 spells from the retinue's Domain. The fighter must have Wi 4+ (raise Wi to 4 if needed). Cult **Acolytes** may gain Caster here; other Archetypes only if under the retinue's max Caster count and Mortal Domain does not apply.
 
 ---
 
@@ -196,5 +196,5 @@ Record **Retinue Rating** on the roster sheet next to Roster Cost.
 - **XP bank** — earn from deeds, spend on advancement. Feat/Keyword **2 XP**; Stat **5 XP**.
 - **Retinue Rating** — Roster Cost + Veteran Value; one Crown total for matchup fairness (see Veteran Value table above).
 - **Keyword chart** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes).
-- **Feat chart** — placeholder until Phase 5b; use Keyword path until `rules/feats.md` exists.
+- **Feat chart** — placeholder until Phase 5b lists are complete; use Keyword path until then.
 - Open: convalescent fighters and retinue minimum size; injury recovery through downtime; Death Trigger on Slain results.
