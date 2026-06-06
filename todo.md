@@ -124,7 +124,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 - [ ] Write victory conditions (Relics, kill count, control, escape, etc.)
 - [ ] Define round limit or end-of-game trigger
 - [ ] Include any scenario-specific special rules
-- [ ] Determine how exploration / Relics interact with first-playtest progression
+- [x] Determine how Survival Rolls / Relics interact with first-playtest progression
 
 ---
 
@@ -166,7 +166,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
 - [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest
-- [ ] **Exploration location tables:** Ruins done; Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard — discovery charts TBD (`campaign/exploration.md`)
+- [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/survival-rolls.md`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
@@ -222,7 +222,7 @@ Games relevant to Noctvale design decisions:
 
 **Rules engine:** Own system. d6 + stat vs target (7+ to hit shooting); opposed d6 melee; action points per model; five-phase turn (Menace → Action → Shooting → CQC → End). Familiar skirmish ingredients, but the campaign + group-building layer is bespoke.
 
-**Design influences** (per author/reviews): Mordheim/Necromunda-style campaign progression; refuge upgrades; post-game chart loops reminiscent of Warhammer Quest; AP phase structure compared to Wreck Age / Relicblade.
+**Design influences** (per author/reviews): Mordheim/Necromunda-style campaign progression; refuge upgrades; post-game table loops reminiscent of Warhammer Quest; AP phase structure compared to Wreck Age / Relicblade.
 
 **Leveling system (worth stealing ideas from):**
 
@@ -230,13 +230,13 @@ Games relevant to Noctvale design decisions:
 |---|---|
 | Levels | 0–10 per character |
 | Earn XP | Survive encounter, kill zombies/opponents, scenario goals |
-| On advancement | Spend XP: **2** (feat/keyword) or **5** (stat); roll chart |
+| On advancement | Spend XP: **2** (feat/keyword) or **5** (stat); roll table |
 | Stat raise | Roll on random stat table after spending **banked XP** |
 | Skill gain | Pick one of the fighter's **Skill Types** (5 groups × 6 skills = 30 skills) → roll on that table |
 | Skill Types | Eligibility lists on each character archetype — not powers themselves |
 | Starting skills | Pregen archetypes have fixed packages; **Survivor** type lets you pick starting skills (custom build within keyword rules) |
 | Between games | Injury table, supply loot → Scavenge Points, recruit, refuge jobs/upgrades, **The Talk** (convert mismatched keyword to Leader's) |
 
-**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**. Caster keyword via Keyword chart when eligible. **Retinue Rating** = Roster Cost + Veteran Value (Crowns) for matchup balance.
+**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**. Caster keyword via Keyword table when eligible. **Retinue Rating** = Roster Cost + Veteran Value (Crowns) for matchup balance.
 
 **Caveat:** Reviews note random stat bumps can outperform narrow feats — tune carefully if we use random tables.

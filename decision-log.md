@@ -11,8 +11,212 @@ the final rule in the dated decision-log entry for that commit.
   the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
   actions, reusable rerolls, and feats that are effectively spells without a
   **casting roll**. Prefer feats that bend existing levers: **Brace**, **Help**,
-  **Recover**, **Aim**, **Overwatch**, **Mishap**, exploration, armor/shield
+  **Recover**, **Aim**, **Overwatch**, **Mishap**, Survival Rolls, armor/shield
   defense conversion, weapon or magic triangle advantage, and wound states.
+
+- **Optional Folk feat/equipment idea — Family Heirloom:** A chosen fighter's
+  weapon becomes a family heirloom and gains a future **Fine Craftsmanship**
+  trait. This may belong better as optional equipment, a campaign reward, or a
+  Tradition/faction feature than as a core Folk Archetype feat.
+
+---
+
+## 2026-06-06 — Lock campaign table terminology
+
+**Decision:** Use **table**, not **chart**, in player-facing rules text. Rename
+the first post-battle fighter consequence table to the **Casualty Table**.
+Rename the severe follow-up table from **Serious Injury Chart** to the
+**Doom Table**. Keep **Survival Roll** for the retinue-level post-battle
+reward roll.
+
+Update `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` with the locked campaign terms:
+**Casualty Table**, **Doom Table**, **Survival Roll**, and **table** instead of
+**chart**. Update active campaign/rules references, advancement table headings,
+and links to match the new anchors.
+
+**Reasoning:** **Survival Roll** now means a retinue-level salvage/reward roll,
+so the old fighter-level Survival wording caused a collision. **Casualty Table**
+plainly describes the first Out of Action pass. **Doom Table** fits Noctvale's
+tone and covers more than injuries: death, permanent scars, uncanny
+consequences, and miraculous recovery.
+
+---
+
+## 2026-06-06 — Replace exploration with Survival Rolls
+
+**Decision:** Replace the old Exploration Phase with **Survival Rolls** in
+`campaign/survival-rolls.md`. Any random reward roll uses **2d6**: natural
+double 1 resolves the roll's **Mishap** result, natural double 6 resolves its
+**Bonus** result, and modifiers change only the total after natural doubles are
+checked. Modifiers cannot create result **2** or result **12**.
+
+Scenarios are chosen or rolled first. Each scenario defines its battlefield
+location: fixed, random from the Battlefield Location Table, or a smaller
+scenario-specific location table. Scenario rewards are static and remain the
+strongest reward lane. Survival Rolls are random middle-value rewards. Looting
+is the weakest reward lane and happens during the battle.
+
+After scenario rewards, the winning retinue rolls on the battlefield location's
+Survival table. The losing retinue rolls on the Generic Survival table. In a
+draw, both retinues roll Generic. Update **Looting Buildings** and **Rifling
+Their Pockets** to 2d6 random reward rolls. Remove active **Battle Spoils** use
+from the post-game sequence. Update **Pathfinder** to interact with Survival
+Roll Mishaps instead of old exploration dice.
+
+**Reasoning:** This keeps scenario victory meaningful by making scenario rewards
+static and strongest, while Survival Rolls help the losing retinue recover
+without pretending both retinues control the same battlefield after the battle.
+Location matters because it is the board location defined by the scenario, and
+the winner has time to search it. The 2d6 double rule gives all random reward
+rolls one consistent language.
+
+---
+
+## 2026-06-06 — Add universal building looting
+
+**Decision:** Add **Looting Buildings** to `campaign/scenarios.md` as a scenario
+rule used in every scenario unless the scenario states otherwise. Before
+deployment, players agree which terrain pieces are **buildings**. A fighter
+inside a building may use the separate **Loot** action to search that building.
+Each building can be looted once per battle. Loot is added to post-battle
+rewards and cannot be equipped or spent during the battle. **Many Hands** adds
+**+1** to the loot roll if 2 or more friendly fighters are inside the same
+building when a fighter loots it. A modified result cannot exceed **6**.
+
+Use a squished **1d6** table:
+
+| 1d6 | Find |
+|---|---|
+| 1 | **Trap** — resolve 2 red hits and 2 blue hits against the fighter. |
+| 2–3 | **Basic weapon** — the retinue gains 1 legal Basic weapon after the battle. |
+| 4–5 | **15 Crowns** |
+| 6 | **Relic** |
+
+Update **The Forest Creeps Ever Onward** to use **Looting Buildings** instead
+of placed Relic markers. The retinue that recovers the most Relics through
+Looting Buildings wins.
+
+**Reasoning:** The compressed loot table keeps building searches fast and
+useful without creating separate carry/drop rules for every find. One search
+per building prevents unlimited farming while keeping ruins relevant in every
+scenario.
+
+---
+
+## 2026-06-06 — Add Blood for the Rite
+
+**Decision:** Add **Blood for the Rite** as a **Cult** Archetype feat. Once per
+battle, before the fighter makes a stat roll or **casting roll**, choose another
+friendly fighter within **12"**. That fighter suffers **1 Wound** and the rolling
+fighter adds **+1** to the roll. The wound can reduce the chosen fighter to 0
+Wounds and cause them to become **Downed**.
+
+**Reasoning:** The feat gives Cult a sacrifice lever without relying on a reroll
+or free spell effect. The cost is concrete and can create real wound-state
+pressure.
+
+---
+
+## 2026-06-06 — Add Stubborn Lot
+
+**Decision:** Add **Stubborn Lot** as a **Folk** Archetype feat. When the fighter
+uses **Help**, a roll of **1** counts as **2** if another friendly fighter is
+within **1"** of this fighter or the assisted fighter.
+
+**Reasoning:** The feat expresses Folk as communal and stubborn without
+duplicating Hunter field medicine. It improves the worst **Help** result only
+when nearby friendly fighters are present.
+
+---
+
+## 2026-06-06 — Add reroll limit
+
+**Decision:** Add a global reroll limit to `rules/core-rules.md`: a die can
+never be rerolled more than once. If more than one rule would let a player
+reroll the same die, choose one of those rules; the second result stands.
+
+**Reasoning:** Reroll effects such as **Patient Shot** need a global stacking
+limit before more feats and special rules add reroll hooks.
+
+---
+
+## 2026-06-06 — Add first Hunter feats
+
+**Decision:** Add **Marked Quarry**, **Patient Shot**, **Field Dressing**, and
+**Pathfinder** as **Hunters** Archetype feats.
+
+**Marked Quarry:** At the start of the battle, choose 1 enemy fighter. When the
+hunter attacks the chosen fighter, add **1 red die** or **1 blue die** to their
+Strike Pool.
+
+**Patient Shot:** When the hunter uses **Aim**, their next **Ranged** attack
+this activation may reroll 1 natural 1 in the Strike Pool.
+
+**Field Dressing:** When the hunter uses **Help** on a **Downed** friendly
+fighter, add **+1** to the **Help** roll.
+
+**Pathfinder:** During Exploration, if the hunter is a surviving fighter, ignore
+1 exploration die result of **1**. That die finds nothing and does not cause a
+Mishap.
+
+**Reasoning:** These feats express Hunters through pursuit, field support, and
+campaign safety. They bend existing levers: Strike Pool color choice against a
+single marked enemy, **Aim**, the **Help** roll, and exploration Mishaps.
+
+---
+
+## 2026-06-06 — Add To Me, Brothers!
+
+**Decision:** Add **To Me, Brothers!** as a **Knights** Archetype feat. Once per
+battle, when the fighter uses **Brace**, choose up to 2 friendly fighters within
+**12"**. Each chosen fighter may move up to **6"** toward this fighter. A fighter
+cannot use this movement to enter engagement range.
+
+**Reasoning:** The feat expresses knightly rallying and formation play without
+granting attacks, full actions, to-hit bonuses, or rerolls. Tying the call to
+**Brace** makes the knight a defensive anchor, while the engagement restriction
+keeps the movement from becoming a hidden **Charge**.
+
+---
+
+## 2026-06-06 — Add Iron Discipline
+
+**Decision:** Add **Iron Discipline** as a **Knights** Archetype feat. The
+fighter cannot become **Downed**. When they would become **Downed**, they remain
+Active with 0 Wounds instead. While they have 0 Wounds, any unblocked hit pushes
+them to **Stunned** as if they were Downed.
+
+**Reasoning:** The feat expresses a disciplined fighter standing tall when they
+should collapse, without ignoring later hits or bypassing the **Stunned** and
+**Out of Action** states. It bends the wound-state ladder rather than adding a
+generic defensive bonus.
+
+---
+
+## 2026-06-06 — Add Vow of Pursuit
+
+**Decision:** Add **Vow of Pursuit** as a **Knights** Archetype feat. When the
+fighter attacks an enemy fighter that took a friendly fighter **Out of Action**
+this battle, add **2 red dice** to the fighter's Strike Pool.
+
+**Reasoning:** The feat expresses knightly vengeance without granting a broad
+to-hit bonus, extra action, or reusable reroll. The trigger is narrow and tied
+to a dramatic battle event.
+
+---
+
+## 2026-06-06 — Dice and roll modifier wording
+
+**Decision:** Clarify modifier wording in `NOCTVALE_RULEBOOK_STYLE_GUIDE.md`.
+Use **+1 Mt** or **+1 Sk** only when a rule changes a fighter's stat or a weapon
+table's **+Mt / +Sk** modifier. When a rule adds dice without changing a stat,
+name the dice directly: **add 2 red dice to the Strike Pool**, **add 1 blue die
+to the Strike Pool**, or **gain +1 red defense die**. For attack accuracy, use
+**add +1 to the roll to hit**.
+
+**Reasoning:** Feats need consistent language before lists expand. Dice added
+to a pool, stat changes, and roll modifiers are different mechanical levers and
+should read differently at the table.
 
 ---
 

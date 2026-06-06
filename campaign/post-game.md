@@ -1,19 +1,22 @@
 # Post-Game Sequence
 
-After each battle, resolve the steps below **in order**. Each step uses **charts** — roll on the table, apply the result, then move on.
+After each battle, resolve the steps below **in order**. Each step uses tables
+or scenario rewards — apply the result, then move on.
 
-This is the campaign loop: **injuries → exploration → advancement → economy**. Influences: Mordheim casualty rolls, Necromunda lasting injuries, and Warhammer Quest post-quest events.
+This is the campaign loop: **injuries → Survival Rolls → economy → advancement**.
+Influences: Mordheim casualty rolls, Necromunda lasting injuries, and Warhammer
+Quest post-quest events.
 
 ---
 
 ## Sequence at a Glance
 
 1. **Scenario Results** — victory rewards and Relics recovered on the table
-2. **Out of Action** — every fighter who ended the battle Out of Action rolls **Survival**
-3. **Serious Injury** — any fighter directed to this chart rolls **2d6**
-4. **Exploration** — [exploration phase](exploration.md) (location, dice, mishaps, discoveries)
-5. **Experience** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
-6. **Economy** — sell Relics, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
+2. **Casualties** — every fighter who ended the battle Out of Action rolls on the **Casualty Table**
+3. **Doom** — any fighter directed to this table rolls **2d6**
+4. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](survival-rolls.md))
+5. **Economy** — sell Relics, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
+6. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 
 ---
 
@@ -21,32 +24,24 @@ This is the campaign loop: **injuries → exploration → advancement → econom
 
 Resolve the scenario's victory rewards and any Relics recovered on the table.
 
-Set recovered Relics aside until Step 6.
+Scenario rewards are static. Do not roll for scenario rewards.
 
-If the scenario has no Relic payout, roll **Battle Spoils** once per retinue:
-
-| 2d6 | Battle Spoils |
-|---|---|
-| 2 | Cursed ground — lose 1 Relic recovered this battle (minimum 0) |
-| 3–4 | Scant pickings — 0 Relics |
-| 5–9 | Scraps — 1 Relic |
-| 10–11 | Strong haul — 2 Relics |
-| 12 | Bounty — 3 Relics |
-
-Set recovered Relics aside until Step 6.
+Set recovered Relics aside until Step 5.
 
 ---
 
-## Step 2: Survival Chart
+## Step 2: Casualty Table
 
-Each fighter who was **Out of Action** when the battle ended rolls **1d6** on this chart.
+Each fighter who was **Out of Action** when the battle ended rolls **1d6** on
+this table.
 
-Fighters who were **Downed or Stunned** but not Out of Action skip this chart — they are battered but return next battle with no roll.
+Fighters who were **Downed or Stunned** but not Out of Action skip this table —
+they are battered but return next battle with no roll.
 
 | d6 | Result |
 |---|---|
-| 1 | **Slain** — remove the fighter from your retinue. Skip Steps 3–5 for this fighter. |
-| 2 | **Grievous** — roll on the **Serious Injury Chart** (2d6). |
+| 1 | **Slain** — remove the fighter from your retinue. Skip Doom and Experience for this fighter. |
+| 2 | **Grievous** — roll on the **Doom Table** (2d6). |
 | 3 | **Scarred** — return next battle; permanently **−1** to one stat of your choice (minimum 1). |
 | 4 | **Convalescent** — survives but **misses the next battle**. |
 | 5 | **Battered** — return next battle; no permanent effect. |
@@ -54,13 +49,14 @@ Fighters who were **Downed or Stunned** but not Out of Action skip this chart �
 
 ---
 
-## Step 3: Serious Injury Chart
+## Step 3: Doom Table
 
-Roll **2d6** when directed from Survival (Grievous), or from an Exploration Mishap (if noted).
+Roll **2d6** when directed from the **Casualty Table** (Grievous), or from a
+Survival Roll Mishap if noted.
 
 Permanent injuries reduce stats. Stats cannot drop below **1**. Campaign advancement may later raise stats again (max **6**).
 
-| 2d6 | Injury |
+| 2d6 | Doom |
 |---|---|
 | 2 | **Slain** — remove the fighter from your retinue. |
 | 3 | **Crippled** — M −1". |
@@ -71,21 +67,30 @@ Permanent injuries reduce stats. Stats cannot drop below **1**. Campaign advance
 | 8 | **Head Wound** — Wi −1 **or** Sa −1 (your choice). |
 | 9 | **Chest Wound** — Mt −1. |
 | 10 | **Ruined Eye** — RC −1 **or** Sk −1 (your choice). |
-| 11 | **Spirit-Touched** — roll on [Exploration Mishaps](exploration.md#mishap-chart) as if you had rolled a 1 on an exploration die (apply to this fighter). |
+| 11 | **Spirit-Touched** — the fighter misses the next battle. |
 | 12 | **Miraculous** — full recovery; gain **+2 Experience**. |
 
 ---
 
-## Step 4: Exploration
+## Step 4: Survival Rolls
 
-Run the [Exploration Phase](exploration.md).
+Run [Survival Rolls](survival-rolls.md).
 
-Exploration may award Relics and Mishaps. Set recovered Relics aside until
-Step 6.
+Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics
+aside until Step 5.
 
 ---
 
-## Step 5: Experience & Advancement
+## Step 5: Economy
+
+1. Total Relics recovered this battle from scenario rewards, Looting, and
+   Survival Rolls.
+2. Sell Relics for Crowns ([economy.md](economy.md#selling-relics)).
+3. Recruit fighters, buy gear, pay upkeep *(upkeep TBD)*.
+
+---
+
+## Step 6: Experience & Advancement
 
 XP is a **bank per fighter** — earned from specific deeds, **spent** to buy advancement rolls. There are **no levels** and no thresholds. If you have the XP, you can spend it (usually at the end of this step, between battles).
 
@@ -96,10 +101,9 @@ Add XP to each fighter's bank when the condition applies:
 | Source | XP |
 |---|---|
 | Fought in the battle (Active at battle end) | +1 |
-| Went Out of Action but survived post-game Survival | +1 |
-| **Hardy** (Survival d6) | +1 |
-| **Miraculous** (Serious Injury 2d6) | +2 |
-| **Close Call** (Exploration Mishap d6) | +1 |
+| Went Out of Action but survived the Casualty Table | +1 |
+| **Hardy** (Casualty Table d6) | +1 |
+| **Miraculous** (Doom Table 2d6) | +2 |
 | Retinue achieved a scenario objective | +1 *(once per fighter)* |
 | Each Relic the retinue recovered this battle | +1 *(every fighter)* |
 | Slain an enemy **Leader** | +2 *(to the fighter who delivered the killing blow)* |
@@ -109,19 +113,19 @@ Track **Experience** on the fighter card as a running total. Unspent XP carries 
 
 ### Spending XP — Advancement Rolls
 
-Spend XP from a fighter's bank to roll on **one** advancement chart. Pay the cost **before** rolling; deduct XP immediately. You may spend multiple times on the same fighter in one post-game if they can afford it.
+Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cost **before** rolling; deduct XP immediately. You may spend multiple times on the same fighter in one post-game if they can afford it.
 
 | Advancement | XP cost | Roll |
 |---|---|---|
-| **Feat** | **2** | 2d6 on [Feat Advancement Chart](../rules/feats.md#feat-advancement-chart) *(use Keyword until feat lists are complete)* |
-| **Keyword** | **2** | 2d6 on Keyword Advancement Chart |
-| **Stat** | **5** | 2d6 on Stat Advancement Chart |
+| **Feat** | **2** | 2d6 on [Feat Advancement Table](../rules/feats.md#feat-advancement-table) *(use Keyword until feat lists are complete)* |
+| **Keyword** | **2** | 2d6 on Keyword Advancement Table |
+| **Stat** | **5** | 2d6 on Stat Advancement Table |
 
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
 **Keyword eligibility:** Same rules as before — Archetype, class, Domain, and retinue Caster limits apply.
 
-### Stat Advancement Chart
+### Stat Advancement Table
 
 Roll **2d6** after spending **5 XP** on Stat Advancement.
 
@@ -135,7 +139,7 @@ Roll **2d6** after spending **5 XP** on Stat Advancement.
 
 ---
 
-### Keyword Advancement Chart
+### Keyword Advancement Table
 
 Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
@@ -158,7 +162,7 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
 ### Veteran Value & Retinue Rating
 
-There are **no levels**, but campaigns still need a single number for matchup fairness. Every lasting campaign change has a **Veteran Crown** value. Track **Veteran Value** on each fighter card; add or subtract when a permanent result applies (advancement, Scarred, Serious Injury, etc.).
+There are **no levels**, but campaigns still need a single number for matchup fairness. Every lasting campaign change has a **Veteran Crown** value. Track **Veteran Value** on each fighter card; add or subtract when a permanent result applies (advancement, Scarred, Doom, etc.).
 
 **Retinue Rating** = **Roster Cost** (fighters + gear on the roster sheet) **+** sum of every fighter's **Veteran Value**.
 
@@ -172,29 +176,20 @@ There are **no levels**, but campaigns still need a single number for matchup fa
 | **Marked** (Fearless + CC or RC) | +40 |
 | **−1** to any stat (Scarred, injury, Setback, Cursed) | −25 |
 
-**Not counted:** unspent XP, temporary conditions, flavor-only results (e.g. **Marked** on Serious Injury), or gear bought/sold — gear is already in **Roster Cost**.
+**Not counted:** unspent XP, temporary conditions, flavor-only results (e.g. **Surface Scars** on the Doom Table), or gear bought/sold — gear is already in **Roster Cost**.
 
 **Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger. A fresh **1000 Crown** roster is **1000** rating; a veteran retinue might sit at **1150–1300** after several games.
 
 Record **Retinue Rating** on the roster sheet next to Roster Cost.
 
----
-
-## Step 6: Economy
-
-1. Total Relics recovered this battle (scenario + exploration).
-2. Sell Relics for Crowns ([economy.md](economy.md#selling-relics)).
-3. Recruit fighters, buy gear, pay upkeep *(upkeep TBD)*.
-
----
-
 ## Design Notes
 
-- **Charts first** — post-game is table-driven like Mordheim/Necromunda/Warhammer Quest.
-- **Survival before Serious Injury** — most OOA fighters live; the 1 result and Serious Injury 2/12 are the death pressure.
-- **Scarred vs Serious Injury** — d6 Survival is the quick pass; 2d6 Serious is the memorable lasting wound.
+- **Tables first** — post-game is table-driven like Mordheim/Necromunda/Warhammer Quest.
+- **Casualty Table before Doom Table** — most Out of Action fighters live; Casualty Table 1 and Doom Table 2 are the death pressure.
+- **Scarred vs Doom** — the Casualty Table is the quick pass; Doom is the memorable lasting consequence.
+- **Survival Rolls** — the winner controls the battlefield location; the loser uses the safer Generic table. Draws send both retinues to Generic.
 - **XP bank** — earn from deeds, spend on advancement. Feat/Keyword **2 XP**; Stat **5 XP**.
 - **Retinue Rating** — Roster Cost + Veteran Value; one Crown total for matchup fairness (see Veteran Value table above).
-- **Keyword chart** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes).
-- **Feat chart** — placeholder until Phase 5b lists are complete; use Keyword path until then.
+- **Keyword table** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes).
+- **Feat table** — placeholder until Phase 5b lists are complete; use Keyword path until then.
 - Open: convalescent fighters and retinue minimum size; injury recovery through downtime; Death Trigger on Slain results.

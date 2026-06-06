@@ -49,6 +49,15 @@ This applies to CC and RC when attacking, and to other stat checks (Sa, Sk, Wi) 
 
 ---
 
+## Rerolls
+
+A die can never be rerolled more than once.
+
+If more than one rule would let you reroll the same die, choose one of those
+rules. The second result stands.
+
+---
+
 ## Baseline Species Profiles
 
 ### Human Fighter

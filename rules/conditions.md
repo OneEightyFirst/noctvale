@@ -59,7 +59,9 @@ A **Mercy Kill** (within 1") bypasses defense entirely — the Stunned fighter i
 
 ## Out of Action
 
-A fighter is removed from the game. Resolve post-game consequences in [Survival Chart](../campaign/post-game.md#step-2-survival-chart) and [Serious Injury Chart](../campaign/post-game.md#step-3-serious-injury-chart).
+A fighter is removed from the game. Resolve post-game consequences in the
+[Casualty Table](../campaign/post-game.md#step-2-casualty-table) and
+[Doom Table](../campaign/post-game.md#step-3-doom-table).
 
 ---
 

@@ -184,7 +184,7 @@ Gunpowder access: **Basic**, **Refined**
 | Gunpowder / firearms | **primer roll** — **2d6** (difficulty **6+**) for firearms; no stat added |
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
 | Natural results | **natural 1**, **natural 6** |
-| Chart roll | **Roll 1d6:** then table |
+| Table roll | **Roll 1d6:** then table |
 | Dice colors | **red die**, **blue die** — lowercase color |
 
 **Don't:** D6, 2D6, “on a 4+” for stat checks (Noctvale uses **≥ 8** on d6+stat, or **6+** / **11+** on 2d6 rolls). Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
@@ -228,9 +228,19 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 | Stat bonus | **+1 Mt**, **+2 Sk** |
 | Stat penalty | **−1 Mt** (unicode minus) |
 | Die bonus | **+1 red defense die** |
+| Strike Pool dice | **add 2 red dice to the Strike Pool** |
+| To-hit modifier | **add +1 to the roll to hit** |
 | Crown cost | **−25 Crowns** |
 
 Use **+** / **−** with a space before the number in prose.
+
+Use **+1 Mt** or **+1 Sk** only when a rule changes the fighter's stat or a
+weapon table's **+Mt / +Sk** modifier. When a rule adds dice without changing a
+stat, name the dice directly: **add 2 red dice to the Strike Pool**, **add 1
+blue die to the Strike Pool**, or **gain +1 red defense die**.
+
+For attack accuracy, use **add +1 to the roll to hit**. Do not write **+1 Mt**
+or **+1 red die** when the rule modifies the **d6 + CC/RC** roll.
 
 ---
 
@@ -283,7 +293,7 @@ Use reminders to point at canonical rules — not to sneak in new mechanics. Rem
 | Full rule elsewhere | *(See conditions.md.)* |
 | Named subsection | *(See combat.md — Ranged Reaction.)* |
 | First keyword on a page | **Single Shot** — one use per battle; cannot reload |
-| Card / chart only | Icon or one-line reminder — **TODO:** reminder icon set not defined |
+| Card / table only | Icon or one-line reminder — **TODO:** reminder icon set not defined |
 
 **Card reminder tone** — shorter, no file paths:
 
@@ -302,7 +312,7 @@ Each action in `actions.md` uses this block order:
 
 Multi-step procedures use **Step 1**, **Step 2**, … Post-game and campaign steps use the same numbering.
 
-**At a glance** boxes (blockquote `>`) open any subsystem that runs every turn or every battle — turn structure, post-game, exploration. Five to eight lines; no new rules in the box.
+**At a glance** boxes (blockquote `>`) open any subsystem that runs every turn or every battle — turn structure, post-game, Survival Rolls. Five to eight lines; no new rules in the box.
 
 ---
 
@@ -405,9 +415,18 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 > **Stunned** — Cannot move or act. Defends with **red dice only**. Any unblocked hit → **Out of Action**.
 
-### Campaign chart intro
+### Campaign table intro
 
-> Each fighter who was **Out of Action** when the battle ended rolls **1d6** on the Survival chart.
+> Each fighter who was **Out of Action** when the battle ended rolls **1d6** on the **Casualty Table**.
+
+### Locked campaign terms
+
+| Term | Use |
+|---|---|
+| **Casualty Table** | First post-battle table for fighters who ended the battle **Out of Action** |
+| **Doom Table** | Severe follow-up table for **Grievous** casualties and specific Mishaps |
+| **Survival Roll** | Retinue-level post-battle reward roll |
+| **table** | Use instead of **chart** in player-facing rules |
 
 ---
 

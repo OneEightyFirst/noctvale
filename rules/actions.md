@@ -150,7 +150,7 @@ While **Hidden**:
 
 - Cannot be targeted by **Ranged** or **Cast** actions beyond **6"**
 - Lose **Hidden** when performing any **Combat action** (**Melee**, **Ranged**, **Cast**, **Aim**, or **Mercy Kill**), **Charge**, **Climb**, **Jump**, or moving **within 6"** of an enemy
-- May still **Move**, **Scramble**, **Brace**, **Interact**, **Recover**, or **Help** without losing **Hidden** — as long as they remain **within 1"** of terrain**
+- May still **Move**, **Scramble**, **Brace**, **Interact**, **Loot**, **Recover**, or **Help** without losing **Hidden** — as long as they remain **within 1"** of terrain
 
 ### Overwatch
 
@@ -170,7 +170,15 @@ The token allows the fighter to perform a **single action as a reaction** when a
 
 **Cost:** 1 action
 
-Open doors, search objects, or pick up items.
+Open doors, operate scenario objects, or pick up items.
+
+### Loot
+
+**Cost:** 1 action
+
+Search a building for valuables.
+
+*(See `../campaign/scenarios.md`.)*
 
 ### Recover
 
@@ -205,7 +213,7 @@ if they have enough movement to reach it. Remove the fighter from the board.
 They have **Escaped** and cannot return during this battle.
 
 An **Escaped** fighter is not **Out of Action** and does not roll on the
-Survival chart after the battle.
+Casualty Table after the battle.
 
 ---
 

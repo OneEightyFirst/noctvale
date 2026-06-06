@@ -164,7 +164,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Thorn Volley | 12+ | 4 | 4 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
-| Shadowmeld | *(TBD)* | — | — | 12" | Target friendly fighter gains Hidden. Does not need to remain within 1" of terrain to stay Hidden. Hidden still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy | Enemies gain +1 to hit the target with ranged weapons and spells until the start of the caster's next activation |
+| Shadowmeld | *(TBD)* | — | — | 12" | Target friendly fighter gains Hidden. Does not need to remain within 1" of terrain to stay Hidden. Hidden still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy | Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation |
 | Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned — suffer -1 Mt and -1 Sk until the start of the caster's next activation | *(TBD)* |
 | Feral Form | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
 | Entangle | *(TBD)* | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
@@ -209,11 +209,11 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 |---|---|---|---|---|---|---|
 | Leech | *(TBD)* | *(TBD)* | *(TBD)* | *(TBD)* | Ranged attack; if target takes ≥1 wound, caster heals 1 wound | Caster takes the damage |
 | Bleed | *(TBD)* | — | — | *(TBD)* | Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding condition — suffer 1 wound immediately, test Wi each activation until passed or dead | Caster gains Bleeding instead |
-| Blood Frenzy | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +3 Mt, -1 to hit. Lasts until the start of the caster's next activation | *(TBD)* |
+| Blood Frenzy | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation | *(TBD)* |
 | Predator's Grace | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
 | Enthrall | *(TBD)* | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
 | Feast of Excess | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned (keeps wounds but vulnerable) | *(TBD)* |
-| Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly Blood domain fighter is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target gains +1 to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies gain +1 to hit caster with ranged weapons, caster suffers -1 Mt until start of next activation |
+| Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly Blood domain fighter is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation |
 
 ---
 

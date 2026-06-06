@@ -2,9 +2,63 @@
 
 ---
 
+## Scenario Rules
+
+Use these rules in every scenario unless the scenario states otherwise.
+
+Random reward rolls use the [Reward Roll Rule](survival-rolls.md#reward-roll-rule).
+
+### Battle Setup
+
+Choose or roll a scenario first. The scenario then tells players how to
+determine the battlefield location.
+
+A scenario may:
+
+- Name a fixed battlefield location.
+- Tell players to roll on the [Battlefield Location Table](survival-rolls.md#battlefield-location-table).
+- Provide its own smaller battlefield location table.
+
+The battlefield location determines which Survival table the winning retinue
+uses after the battle.
+
+### Looting Buildings
+
+Before deployment, players agree which terrain pieces are **buildings**.
+
+A fighter inside a building may use a **Loot** action to search that building.
+Each building can be looted once per battle. After resolving the loot roll,
+mark that building as searched.
+
+Loot found this way is added to the retinue's post-battle rewards. It cannot
+be equipped or spent during the battle.
+
+**Many Hands:** If 2 or more friendly fighters are inside the same building
+when a fighter loots it, add **+1** to the loot roll. A modified result cannot
+exceed **11**. Check natural double 1 and natural double 6 before applying this
+modifier.
+
+Roll **2d6**:
+
+| 2d6 | Find |
+|---|---|
+| 2 | **Mishap: Trap** — resolve 2 red hits and 2 blue hits against the fighter. The fighter rolls defense as normal. |
+| 3–4 | **Empty Room** — no reward. |
+| 5–6 | **Loose Goods** — gain **5 Crowns**. |
+| 7–8 | **Useful Find** — gain **10 Crowns**. |
+| 9–10 | **Basic Weapon** — after the battle, the retinue gains 1 legal Basic weapon. |
+| 11 | **Relic** — set aside 1 recovered Relic until the Economy step. |
+| 12 | **Bonus: Hidden Cache** — set aside 1 recovered Relic and gain **10 Crowns**. |
+
+---
+
 ## Loot the Dead
 
 *[Fluff text here]*
+
+### Battlefield Location
+
+Roll on the [Battlefield Location Table](survival-rolls.md#battlefield-location-table).
 
 ### Terrain
 
@@ -31,13 +85,16 @@ have been deployed.
 ### Rifling Their Pockets
 
 When a fighter takes an enemy fighter **Out of Action** with a **Melee** action
-or **Mercy Kill**, roll **1d6** for the defeated fighter:
+or **Mercy Kill**, roll **2d6** for the defeated fighter:
 
-| 1d6 | Crowns Found |
+| 2d6 | Crowns Found |
 |---|---:|
-| 1–2 | 0 Crowns |
-| 3–4 | 5 Crowns |
-| 5–6 | 10 Crowns |
+| 2 | **Mishap: Hidden Blade** — the searching fighter suffers 1 red hit and 1 blue hit. The fighter rolls defense as normal. |
+| 3–5 | 0 Crowns |
+| 6–8 | 5 Crowns |
+| 9–10 | 10 Crowns |
+| 11 | 15 Crowns |
+| 12 | **Bonus: Heavy Purse** — 20 Crowns |
 
 Add the Crowns found and any Crowns already carried by the defeated fighter to
 the victorious fighter's purse.
@@ -54,7 +111,7 @@ if they have enough movement to reach it. Remove the fighter from the board.
 They have **Escaped** and cannot return during this battle.
 
 An **Escaped** fighter is not **Out of Action** and does not roll on the
-Survival chart after the battle.
+Casualty Table after the battle.
 
 ### Ending the Battle
 
@@ -68,14 +125,17 @@ Each retinue keeps the Crowns carried by its **Escaped** fighters.
 The winning retinue also:
 
 - Keeps the Crowns carried by its fighters remaining on the board.
-- Searches the battlefield and rolls once on the [**Battle Spoils**
-  table](post-game.md#step-1-scenario-results).
+- Recovers **2 Relics**.
 
 ---
 
 ## The Forest Creeps Ever Onward
 
 *[Fluff text here]*
+
+### Battlefield Location
+
+This scenario is fought in a **Hidden Grove**.
 
 ### Terrain
 
@@ -108,33 +168,10 @@ have been deployed.
 
 ### Looting
 
-Place **5 Relic markers**. Starting with the player with initiative, players
-alternate placing **1 Relic marker** at a time. Each Relic marker must be
-placed on the ground floor of a terrain piece.
+Use **Looting Buildings**.
 
-Players cannot place more than **1 Relic marker** inside the same terrain
-piece. Before the battle, players should agree which terrain pieces count as
-single terrain pieces.
-
-A fighter **within 1"** of a Relic marker may use an **Interact** action to
-pick it up. Each **Interact** action picks up **1 Relic marker**. Remove the
-Relic marker from the board. The fighter is now carrying **1 Relic**.
-
-A fighter may carry **1 Relic**.
-
-A fighter carrying a Relic cannot pick up another Relic.
-
-Carrying a Relic does not reduce a fighter's movement or actions.
-
-A fighter carrying a Relic may use an **Interact** action to drop it. Place
-the Relic marker in base contact with the fighter.
-
-If a fighter carrying a Relic is taken **Out of Action**, that fighter's
-controlling player places the Relic marker in base contact with that fighter
-before removing them.
-
-If a fighter carrying a Relic **Escapes**, set that Relic aside. It has been
-**recovered** by that fighter's retinue.
+Relics found through Looting Buildings are recovered by the finding fighter's
+retinue.
 
 ### The Advancing Forest
 
@@ -164,8 +201,7 @@ advancing forest edge. Measure from that edge each time:
 
 Move the tree pieces inward to mark the new forest edge.
 
-Any fighter inside the covered area is taken **Out of Action**. Relics carried
-by a fighter taken **Out of Action** by the forest are lost.
+Any fighter inside the covered area is taken **Out of Action**.
 
 ### Escape
 
@@ -175,7 +211,7 @@ Remove the fighter from the board. They have **Escaped** and cannot return
 during this battle.
 
 An **Escaped** fighter is not **Out of Action** and does not roll on the
-Survival chart after the battle.
+Casualty Table after the battle.
 
 ### Ending the Battle
 
@@ -187,10 +223,11 @@ If any fighters remain on the board at the end of round 6, they are taken
 
 ### Rewards
 
-The retinue that recovered the most Relics wins.
+The retinue that recovered the most Relics through Looting Buildings wins.
 
 If both retinues recovered the same number of Relics, the retinue with more
 fighters who **Escaped** wins. If there is still a tie, the battle is a draw.
 
-Each retinue keeps the Relics it recovered. Relics carried by fighters still on
-the board when the battle ends are lost.
+Each retinue keeps the Relics it recovered.
+
+The winning retinue recovers **2 additional Relics**.

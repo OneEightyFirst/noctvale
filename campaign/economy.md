@@ -4,7 +4,7 @@
 
 ## Campaign Resources
 
-Retinues recover **Relics** during scenarios and exploration.
+Retinues recover **Relics** during scenarios, Looting, and Survival Rolls.
 
 Sell Relics for **Crowns** during the Economy step. Spend Crowns to recruit
 fighters, buy gear, and maintain the retinue.
@@ -57,6 +57,6 @@ more at once yields diminishing returns per Relic.
 - Base rate is **15 Crowns** per Relic sold alone
 - The discount curve discourages hoarding large quantities to sell at once — smaller, more frequent sales are more efficient per Relic
 - This creates a cash flow decision: sell now for reliable income, or stockpile for a bigger payday?
-- Relics as the campaign resource tie scenario objectives and exploration directly to retinue progression
+- Relics as the campaign resource tie scenario objectives, Looting, and Survival Rolls directly to retinue progression
 
 See [post-game.md](post-game.md). Advancement spends XP (2 feat/keyword, 5 stat). **Retinue Rating** = Roster Cost + Veteran Value for matchup balance.

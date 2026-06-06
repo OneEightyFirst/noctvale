@@ -220,7 +220,7 @@ Weapons can be made from special materials that grant bonuses against specific f
 
 | Material | Effect | Notes |
 |---|---|---|
-| Silver | +1 to hit vs **Nightpack** and **Nobility** only | Expensive, no general benefit |
+| Silver | Add +1 to the roll to hit vs **Nightpack** and **Nobility** only | Expensive, no general benefit |
 
 ---
 

@@ -10,7 +10,7 @@ Use this document when writing rules, evaluating playtest feedback, or deciding 
 
 ## Elevator Pitch (~100 words)
 
-Noctvale is a grimdark fantasy skirmish wargame set in a vast meteor-scarred valley roughly the size of Ireland, where small **retinues** hunt **Relics** across ruins, Crown Roads, and haunted wilds. Combat is fast and lethal: red-and-blue dice pools, weapon and magic triangles, and a **Downed** state that keeps fights dramatic while leaving room for recovery and mercy kills. Between battles, chart-driven exploration, injuries, and the Relic economy grow, scar, and bankrupt your retinue. **Archetype**, **Domain**, and **Tradition** define how you fight — gunpowder or magic, plate or cult glass cannons — so every list reads on the table. Classic Mordheim/Necromunda campaign feel, cleaner modern skirmish rules.
+Noctvale is a grimdark fantasy skirmish wargame set in a vast meteor-scarred valley roughly the size of Ireland, where small **retinues** hunt **Relics** across ruins, Crown Roads, and haunted wilds. Combat is fast and lethal: red-and-blue dice pools, weapon and magic triangles, and a **Downed** state that keeps fights dramatic while leaving room for recovery and mercy kills. Between battles, table-driven Survival Rolls, injuries, and the Relic economy grow, scar, and bankrupt your retinue. **Archetype**, **Domain**, and **Tradition** define how you fight — gunpowder or magic, plate or cult glass cannons — so every list reads on the table. Classic Mordheim/Necromunda campaign feel, cleaner modern skirmish rules.
 
 ---
 
@@ -34,9 +34,9 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Combat should feel dangerous every activation. Fighters routinely leave battles wounded, Downed, or Out of Action. The Downed → Stunned → Out of Action pipeline creates tension windows where allies recover, enemies mercy-kill, and outcomes feel earned.
 
-**Mechanically:** Wounds are few (baseline W 3). Unblocked hits apply wounds; at 0 Wounds a fighter becomes Downed. Recovery, Help, and post-game Survival charts carry real risk (rolls of 1 can kill or cripple). Most fighters survive most battles; death and lasting injury are possible, memorable, and chart-driven.
+**Mechanically:** Wounds are few (baseline W 3). Unblocked hits apply wounds; at 0 Wounds a fighter becomes Downed. Recovery, Help, and the post-game Casualty Table carry real risk (rolls of 1 can kill or cripple). Most fighters survive most battles; death and lasting injury are possible, memorable, and table-driven.
 
-**Protects:** Dramatic wound states on the table. Chart-driven casualties after the battle. Finishers via Stunned → Mercy Kill.
+**Protects:** Dramatic wound states on the table. Table-driven casualties after the battle. Finishers via Stunned → Mercy Kill.
 
 **Apply it:** Route lethal pressure through the Downed pipeline. Use Mercy Kill for reliable close-range finishes. Reserve instant removal for post-game Survival rolls and scenario-specific rules.
 
@@ -66,7 +66,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Players make meaningful choices before dice hit the table. Resolution is fast to explain and rich in outcome. Natural English over jargon. One roll forks into several consequences.
 
-**Mechanically:** Strike Pool = Mt + Sk + weapon (one roll phase). To-hit: d6 + CC/RC ≥ 8. Defense: red blocks red, blue blocks blue, 2:1 crossover. Casting: **casting roll** / **primer roll** with Mishap/Overcharge forks. Binary line of sight; cover is +1 blue die. Post-game: chart roll → apply result → move on.
+**Mechanically:** Strike Pool = Mt + Sk + weapon (one roll phase). To-hit: d6 + CC/RC ≥ 8. Defense: red blocks red, blue blocks blue, 2:1 crossover. Casting: **casting roll** / **primer roll** with Mishap/Overcharge forks. Binary line of sight; cover is +1 blue die. Post-game: table roll → apply result → move on.
 
 **Protects:** Single-phase melee (attacker strikes, defender defends). Counterplay on your own activation. Table speed without sacrificing texture.
 
@@ -80,15 +80,15 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *The campaign is the game.*
 
-**Explanation:** A single skirmish matters because it feeds a loop: injuries → exploration → advancement → economy. Relics tie scenario objectives, exploration gambles, and the Crown economy into one loop. Veterans grow through XP spend (banked between battles) and Veteran Crowns for matchup fairness.
+**Explanation:** A single skirmish matters because it feeds a loop: injuries → Survival Rolls → economy → advancement. Relics tie scenario objectives, battlefield survival, and the Crown economy into one loop. Veterans grow through XP spend (banked between battles) and Veteran Crowns for matchup fairness.
 
-**Mechanically:** Post-game sequence is chart-driven (Survival, Serious Injury, advancement charts). Exploration rolls per surviving fighter, caps at six dice, Mishaps on 1s, Push the Search for high-risk rerolls. Relics sell on a supply and demand curve. Retinue Rating = Roster Cost + Veteran Value.
+**Mechanically:** Post-game sequence is table-driven (Casualty Table, Doom Table, Survival Rolls, advancement tables). Random reward rolls use **2d6**: natural double 1 = Mishap, natural double 6 = Bonus. Scenario rewards are static and strongest; Survival Rolls are middle-value; Looting is weakest. Relics sell on a supply and demand curve. Retinue Rating = Roster Cost + Veteran Value.
 
 **Protects:** Consequence carryover. Economic pressure alongside power growth. Player choice to spend XP or sell Relics.
 
-**Apply it:** Route scenario rewards through Relics, XP spend, or exploration discoveries. Let players choose whether to buy advancement rolls.
+**Apply it:** Route scenario rewards through static Relic, XP, or objective payouts. Use Survival Rolls for random post-battle rewards. Let players choose whether to buy advancement rolls.
 
-**vs. peers:** Direct lineage to **Mordheim** exploration/injury charts and **Necromunda** post-battle economy. More structured than **Warcry**'s light campaign layer. **Stargrave** shares chart-driven exploration DNA.
+**vs. peers:** Direct lineage to **Mordheim** exploration/injury tables and **Necromunda** post-battle economy. More structured than **Warcry**'s light campaign layer. **Stargrave** shares table-driven salvage DNA.
 
 ---
 
@@ -128,15 +128,15 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *Grim world, emergent friction.*
 
-**Explanation:** Noctvale is a cursed post-imperial ruin — Valecoria fallen, the Hundred Years of War over but never ended. Rules produce stories that feel like the setting: mishaps, fear, wild shots, exploration gone wrong, magic backlash. Simulation texture earns its place when it stays lean.
+**Explanation:** Noctvale is a cursed post-imperial ruin — Valecoria fallen, the Hundred Years of War over but never ended. Rules produce stories that feel like the setting: mishaps, fear, wild shots, Survival Rolls gone wrong, magic backlash. Simulation texture earns its place when it stays lean.
 
-**Mechanically:** Mishaps on spell double-1s and exploration 1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly in line of fire. Falling damage. Push the Search risk. Cursed Battle Spoils. Insanity table includes Berserk — fear that can snap back on the source. **TODO:** Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
+**Mechanically:** Mishaps on spell double-1s and random reward double-1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly in line of fire. Falling damage. Survival Roll Mishaps. Insanity table includes Berserk — fear that can snap back on the source. **TODO:** Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
 
-**Protects:** Mechanical bite matching grimdark tone. Player decisions to court risk (Push the Search, risky casts). Lore in `noctvale.md`; consequences in the rules.
+**Protects:** Mechanical bite matching grimdark tone. Player decisions to court risk through scenario objectives, Looting, and risky casts. Lore in `noctvale.md`; consequences in the rules.
 
 **Apply it:** Mishaps belong in core rules with real teeth. Flavor-only text stays in setting docs. A Mishap should be memorable — sometimes worse than a failed cast.
 
-**vs. peers:** **Mordheim**'s chaos and injury randomness are the tone target, modernized. **Frostgrave**'s exploration danger is kin. Leaner and more lethal than **Infinity**'s tactical purity.
+**vs. peers:** **Mordheim**'s chaos and injury randomness are the tone target, modernized. **Frostgrave**'s post-battle danger is kin. Leaner and more lethal than **Infinity**'s tactical purity.
 
 ---
 
@@ -168,7 +168,7 @@ When evaluating a new mechanic, ask:
 
 ### Campaign & economy
 - [ ] Does it connect to Relics, XP spend, or post-game charts?
-- [ ] Does it create a real choice (sell now vs. hoard, push exploration vs. stop, spend XP on stat vs. feat)?
+- [ ] Does it create a real choice (sell now vs. hoard, Loot instead of fighting, spend XP on stat vs. feat)?
 - [ ] Does it update Veteran Value / Retinue Rating fairly?
 
 ### Balance & underdog play

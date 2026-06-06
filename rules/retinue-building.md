@@ -114,7 +114,7 @@ If a fighter takes Caster on a class that normally grants a **+1 stat** bonus (L
 | Folk | Leader, Specialist | 1 |
 | Cult | Leader, Specialist | 3 |
 
-**Cult:** the **Theurge** (Leader) **always** has the Caster keyword. Up to **2 Adepts** (Specialist) also take Caster. **Acolytes** (Rank) do not start with Caster — they may **gain** it via [Keyword Advancement](post-game.md#keyword-advancement-chart).
+**Cult:** the **Theurge** (Leader) **always** has the Caster keyword. Up to **2 Adepts** (Specialist) also take Caster. **Acolytes** (Rank) do not start with Caster — they may **gain** it via [Keyword Advancement](../campaign/post-game.md#keyword-advancement-table).
 
 **Knights, Hunters, Folk:** at most **1** fighter in the retinue has Caster at creation.
 
@@ -160,7 +160,7 @@ No Elite class. Magic lives on **Leader** and **Specialist** via the **Caster** 
 |---|---|---|
 | **Theurge** | 1 (required) | Leader — **Caster** keyword (required), + **+1** to one stat. Max 5 at creation. |
 | **Adept** | 0–2 | Specialist — **Caster** keyword (required). Wi 4+, 3 Domain spells. |
-| **Acolyte** | 0–7 | Rank — species baseline; no class bonus. May gain **Caster** via [Keyword Advancement](../campaign/post-game.md#keyword-advancement-chart). |
+| **Acolyte** | 0–7 | Rank — species baseline; no class bonus. May gain **Caster** via [Keyword Advancement](../campaign/post-game.md#keyword-advancement-table). |
 
 ---
 
