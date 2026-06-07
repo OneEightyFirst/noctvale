@@ -13,6 +13,16 @@ the final rule in the dated decision-log entry for that commit.
   **casting roll**. Prefer feats that bend existing levers: **Brace**, **Help**,
   **Recover**, **Aim**, **Overwatch**, **Mishap**, Survival Rolls, armor/shield
   defense conversion, weapon or magic triangle advantage, and wound states.
+- **Open campaign decisions:** Decide whether upkeep exists, how convalescent
+  fighters interact with minimum retinue size, whether downtime can heal
+  injuries, and whether **Slain** or **Out of Action** triggers an in-battle
+  death response.
+- **Open roster decisions:** Add Domain composition tables, finish Domain feat
+  lists, decide Shadow Market access for alchemy, and assign recruitment costs
+  for Animals and Daemons.
+- **Open magic decisions:** Finish spell difficulties, ranges, Mishaps, and
+  unresolved status/affliction names before treating `rules/magic.md` as
+  playtest-ready.
 
 ---
 

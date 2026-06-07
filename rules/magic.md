@@ -1,5 +1,8 @@
 # Magic
 
+Open spell difficulties, ranges, Mishaps, and status names are tracked in
+`decision-log.md` Ideas. Spell entries marked **TBD** are not playtest-ready.
+
 ---
 
 ## Casting
@@ -177,7 +180,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
 | Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See `profiles.md` | The Skeleton appears hostile — your opponent controls it for its single activation |
-| Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went Out of Action this game. Place them within 3" of the caster with 1 wound, Undead keyword, and Fearless. They activate immediately with 2 actions, then go Out of Action permanently at the end of their activation | Your opponent places and controls the raised fighter instead |
+| Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation | Your opponent places and controls the raised fighter instead |
 | Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
 | Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
 | Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |

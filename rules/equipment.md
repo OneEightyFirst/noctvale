@@ -41,7 +41,7 @@ converts 2 failed red defense dice and 1 failed blue defense die total.
 
 ## Alchemy
 
-Alchemy is **equipment** — any retinue can purchase potions and poisons regardless of archetype or domain. Alchemical items are **consumable** (one game only, purchased before the match).
+Alchemy is **equipment** — any retinue can purchase potions and poisons regardless of Archetype or Domain. Alchemical items are **consumable** (one battle only, purchased before the battle).
 
 ### Poisons
 
@@ -89,10 +89,10 @@ The Instrument's Influence Bubble is not passive — the bearer must spend **1 a
 - Buckler converts blue (finesse defense), armor mostly converts red (toughness defense), and Light Armor can convert mixed failures — different colors for different fighting styles. Shields bridge both
 - Shields take a weapon slot, so defensive investment costs offensive flexibility — a Sword + Shield fighter has 1 slot left (Dagger backup), while a Great Sword fighter has 1 slot free but no shield
 - Alchemy is equipment any retinue can buy — potions and poisons without a dedicated magic class
-- Poisons are consumable (one game) and one per weapon — a recurring crown drain that creates campaign-level purchasing decisions
+- Poisons are consumable (one battle) and one per weapon — a recurring Crown drain that creates campaign-level purchasing decisions
 - Silversbane inflicts a movement penalty — tactically distinct from damage poisons, restricting positioning
 - Faction-exclusive alchemy (Silversbane for Silver Hunt) differentiates factions that share the same Archetype + Domain
-- Influence Bubbles are suppressed when the bearer is Downed/Stunned/OOA — downing the banner bearer silences the bubble, making them a high-value target
+- Influence Bubbles are suppressed when the bearer is **Downed**, **Stunned**, or **Out of Action** — downing the banner bearer silences the bubble, making them a high-value target
 - Influence Bubbles use proximity only — no line-of-sight checks
 - Duplicate Influence items from the same source each grant +1 Sa within range; two banners cover more area
 - Relic at 2 weapon slots is a real investment: the bearer carries it and one sidearm at most — a support piece

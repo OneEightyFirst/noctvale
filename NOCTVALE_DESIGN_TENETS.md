@@ -40,7 +40,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Apply it:** Route lethal pressure through the Downed pipeline. Use Mercy Kill for reliable close-range finishes. Reserve instant removal for post-game Survival rolls and scenario-specific rules.
 
-**vs. peers:** **Kill Team** and **Necromunda** resolve lasting injuries primarily after the battle; Noctvale adds a defined on-table survival window before charts. Kin to **Mordheim** casualty tension, with Downed as the hinge.
+**vs. peers:** **Kill Team** and **Necromunda** resolve lasting injuries primarily after the battle; Noctvale adds a defined on-table survival window before post-battle tables. Kin to **Mordheim** casualty tension, with Downed as the hinge.
 
 ---
 
@@ -88,7 +88,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Apply it:** Route scenario rewards through static Relic, XP, or objective payouts. Use Survival Rolls for random post-battle rewards. Let players choose whether to buy advancement rolls.
 
-**vs. peers:** Direct lineage to **Mordheim** exploration/injury tables and **Necromunda** post-battle economy. More structured than **Warcry**'s light campaign layer. **Stargrave** shares table-driven salvage DNA.
+**vs. peers:** Direct lineage to **Mordheim** salvage/injury tables and **Necromunda** post-battle economy. More structured than **Warcry**'s light campaign layer. **Stargrave** shares table-driven salvage DNA.
 
 ---
 
@@ -98,7 +98,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Being outnumbered should hurt — without freezing you out of the round. Negative feedback loops prevent activation snowballs. The player behind on the table gets initiative tools and reaction options so comeback swings stay plausible.
 
-**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; skip activation to bank more. Ranged Reactions give targets agency when shot at. **TODO:** Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
+**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; skip activation to bank more. Ranged Reactions give targets agency when shot at. Open: Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
 
 **Protects:** Meaningful decisions when losing. Fixed underdog compensation over random activation order.
 
@@ -130,7 +130,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Noctvale is a cursed post-imperial ruin — Valecoria fallen, the Hundred Years of War over but never ended. Rules produce stories that feel like the setting: mishaps, fear, wild shots, Survival Rolls gone wrong, magic backlash. Simulation texture earns its place when it stays lean.
 
-**Mechanically:** Mishaps on spell double-1s and random reward double-1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly in line of fire. Falling damage. Survival Roll Mishaps. Insanity table includes Berserk — fear that can snap back on the source. **TODO:** Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
+**Mechanically:** Mishaps on spell double-1s and random reward double-1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly in line of fire. Falling damage. Survival Roll Mishaps. Insanity table includes Berserk — fear that can snap back on the source. Open: Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
 
 **Protects:** Mechanical bite matching grimdark tone. Player decisions to court risk through scenario objectives, Looting, and risky casts. Lore in `noctvale.md`; consequences in the rules.
 
@@ -147,7 +147,7 @@ When evaluating a new mechanic, ask:
 ### Fit & priority
 - [ ] Which tenet(s) does this serve? Which does it weaken?
 - [ ] If it bends a lower tenet, does it clearly strengthen a higher one?
-- [ ] Does this belong in core rules, campaign charts, or a single scenario?
+- [ ] Does this belong in core rules, campaign tables, or a single scenario?
 
 ### Combat & lethality
 - [ ] Does damage flow through Wounds → Downed → Stunned → Out of Action?
@@ -167,7 +167,7 @@ When evaluating a new mechanic, ask:
 - [ ] Does it add a new subsystem, keyword, or phase? Is that cost justified?
 
 ### Campaign & economy
-- [ ] Does it connect to Relics, XP spend, or post-game charts?
+- [ ] Does it connect to Relics, XP spend, or post-game tables?
 - [ ] Does it create a real choice (sell now vs. hoard, Loot instead of fighting, spend XP on stat vs. feat)?
 - [ ] Does it update Veteran Value / Retinue Rating fairly?
 
@@ -187,11 +187,13 @@ When evaluating a new mechanic, ask:
 
 ---
 
-## Open Questions (TODO)
+## Open Questions
 
-- **Death Trigger:** On Out of Action — morale, faction payoff, environmental response (`todo.md`).
-- **Feat system (Phase 5b):** Archetype and Domain feat lists — serve Tenet 2 within Tenet 3's complexity budget.
-- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses still TBD (`rules/sanity.md`).
+See `decision-log.md` Ideas for unresolved design decisions.
+
+- **Death Trigger:** On Out of Action — morale, faction payoff, environmental response.
+- **Feat system:** Domain feat lists — serve Tenet 2 within Tenet 3's complexity budget.
+- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/sanity.md`).
 
 ---
 

@@ -34,13 +34,13 @@ wounds. A Poisoned fighter suffers **−1 Mt** for the rest of the battle.
 
 ## Animals
 
-Animal profiles are TBD.
+Animal profiles are an open roster decision tracked in `decision-log.md` Ideas.
 
 ---
 
 ## Daemons
 
-Daemon profiles are TBD.
+Daemon profiles are an open roster decision tracked in `decision-log.md` Ideas.
 
 ---
 

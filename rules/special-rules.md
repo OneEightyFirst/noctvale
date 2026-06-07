@@ -94,11 +94,11 @@ Overwatch compensates for numerical disadvantage.
 **Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
 
 ### Valid Reaction Actions
-- Move
-- Shoot
-- Charge
-- Fight
-- Retreat
+- **Move**
+- **Ranged**
+- **Charge**
+- **Melee**
+- **Retreat**
 
 ---
 

@@ -13,7 +13,7 @@ This repository contains the working design documents for Noctvale — rules, re
 ## Repo Structure
 
 ```
-noctvale.md              — Core rules and setting document
+noctvale.md              — Setting document and current rules index
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
 rules/

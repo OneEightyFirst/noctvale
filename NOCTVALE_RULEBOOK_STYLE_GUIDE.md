@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This guide keeps Noctvale rules **clear, consistent, and readable** as the game grows. Use it when writing or editing any player-facing rules text — core rules, campaign charts, weapon and spell entries, fighter cards, and scenario packets.
+This guide keeps Noctvale rules **clear, consistent, and readable** as the game grows. Use it when writing or editing any player-facing rules text — core rules, campaign tables, weapon and spell entries, fighter cards, and scenario packets.
 
 Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decision-log.md` (why a rule changed)
 
@@ -142,7 +142,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 
 Always bold the state name: **Downed**, **Stunned**, **Out of Action**, **Hidden**.
 
-Write **Out of Action** in full the first time in a section. **OOA** is acceptable in charts, design notes, and tight card space only.
+Write **Out of Action** in full the first time in a section. **OOA** is acceptable in tables, design notes, and tight card space only.
 
 ### Equipment tiers
 
@@ -434,10 +434,11 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 | Topic | Status |
 |---|---|
+| Design TODOs | Track unresolved rules decisions in `decision-log.md` Ideas |
 | Fighter card typography | Action names, stat order, reminder box layout |
 | Condition icons | Downed / Stunned / Hidden on cards |
 | **OOA** on cards | Abbreviation vs full **Out of Action** |
-| **feat** / **tradition feat** entries | Phase 5b — extend this guide when feat format is locked |
+| **feat** / **Domain feat** entries | Extend this guide when feat format is locked |
 | **damage** vs **wound** | Some spell blurbs still say “damage”; prefer **hit** / **Wound** |
 | **Spell table format** | Refine column layout, Effect/Mishap wording, card reminders |
 | **Armor/shield conversion** | Failed defense dice → successful defense dice |

@@ -234,7 +234,8 @@ If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
 and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 
 **Binders:** This retinue may recruit Daemons as Rank fighters. Daemon profiles
-and recruitment costs are TBD.
+and recruitment costs are an open roster decision tracked in `decision-log.md`
+Ideas.
 
 **Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
 fighters wearing armor gain **Fear**.
@@ -340,7 +341,7 @@ fighter gain **Fear**.
 ## Named Faction Presets
 
 Twelve established factions exist in Noctvale lore. Each is an example
-Archetype + Domain pairing with a suggested Tradition and placeholder lore
+Archetype + Domain pairing with a suggested Tradition and draft lore
 below. Named factions do not grant exclusive rules, feats, equipment, or
 exceptions.
 

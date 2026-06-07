@@ -34,7 +34,7 @@ Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same buil
 
 ---
 
-## Model Count
+## Fighter Count
 
 | Archetype | Minimum | Target | Maximum |
 |---|---|---|---|
@@ -90,7 +90,7 @@ Keywords are tags on a fighter profile. They stack with class.
 Keywords can come from:
 
 - **Roster creation** — Archetype and Domain define which classes *may* take which keywords
-- **Campaign advancement** — fighters can **gain** keywords between games *(rules TBD in campaign progression)*
+- **Campaign advancement** — fighters can **gain** keywords between games through [Keyword Advancement](../campaign/post-game.md#keyword-advancement-table)
 - **Abilities, equipment, spells, and conditions** — e.g. Fear, Fearless, Undead *(see `rules/sanity.md`, `rules/magic.md`)*
 
 ### Caster
@@ -210,7 +210,8 @@ Only fighters with the **Caster** keyword know spells. Assign **3 spells** from 
 
 ### Poisons
 
-One poison per weapon, applied during retinue setup. Poisons are consumable (one game).
+One poison per weapon, applied during retinue setup. Poisons are consumable
+(one battle).
 
 ---
 
@@ -276,7 +277,7 @@ All retinues. See `rules/weapons.md` for categories.
 
 | Keyword | Effect | Cost |
 |---|---|---|
-| **Flintlock** | Single Shot — one fire per game | −25 *(applied to firearm cost)* |
+| **Flintlock** | Single Shot — one fire per battle | −25 *(applied to firearm cost)* |
 
 **Archetype access:** Hunters + Mortal — Basic + Refined. Knights and Folk + Mortal — **Basic only** (Musket, Blunderbuss).
 
@@ -352,7 +353,7 @@ Remaining **500 Crowns** for weapons, armor, poisons, and bombs across seven fig
 Before play, confirm:
 
 - [ ] Archetype + Domain chosen; Cult is not Mortal
-- [ ] Model count within Archetype min/max
+- [ ] Fighter count within Archetype min/max
 - [ ] Exactly 1 Leader (Lord, Captain, Mayor, or Theurge)
 - [ ] Each class within Archetype slot caps (see roster table)
 - [ ] Fighters with **Caster** keyword: count within Archetype max; Mortal Domain has none; Wi 4+ and 3 Domain spells each
@@ -369,7 +370,7 @@ Before play, confirm:
 
 - **Class + keyword** — class is roster slot and stat bonus; **Caster** is a keyword (+25 Crowns). Same pattern extends to other keywords (Fearless, Undead, etc.).
 - **Acolytes** are Rank only at creation; [Keyword Advancement](../campaign/post-game.md) may grant **Caster** later.
-- **Domain** adjusts class *counts* within Archetype caps. Composition tables TBD.
+- **Domain** adjusts class *counts* within Archetype caps. Composition tables are an open roster decision tracked in `decision-log.md` Ideas.
 - **Knights** field Knight and Squire only. **Hunters** use **Tracker** as Specialist (+1 CC/RC or Caster build).
 - **Constrained points** (budget + composition slots) defines Folk horde, Knights elite, and Cult glass-cannon identities.
 - Crown costs target a **1000 Crown** standard retinue with roughly half the budget on fighters and half on wargear at typical roster size; revisit after Silver Hunt / Nightpack playtest rosters (Phase 5c).

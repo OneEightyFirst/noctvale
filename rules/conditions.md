@@ -59,7 +59,7 @@ A **Mercy Kill** (within 1") bypasses defense entirely — the Stunned fighter i
 
 ## Out of Action
 
-A fighter is removed from the game. Resolve post-game consequences in the
+A fighter is removed from the battle. Resolve post-game consequences in the
 [Casualty Table](../campaign/post-game.md#step-2-casualty-table) and
 [Doom Table](../campaign/post-game.md#step-3-doom-table).
 
@@ -94,5 +94,5 @@ The Stunned fighter is immediately **Out of Action** — no defense roll is made
 - Downed → Stunned on any unblocked hit means enemies must commit real attacks to push through a full defense pool
 - Stunned fighters lose all blue defense dice — high-Sk fighters like Elves become extremely vulnerable; high-Mt fighters like Dwarves feel the penalty less
 - The Recover table is risk-based: push for a stand-up or accept remaining Downed
-- Help has genuine risk (roll of 1 = OOA) — a meaningful decision with real stakes
+- Help has genuine risk (roll of 1 = **Out of Action**) — a meaningful decision with real stakes
 - Mercy Kill bypasses defense entirely, giving aggressive players a reliable way to finish Stunned enemies up close

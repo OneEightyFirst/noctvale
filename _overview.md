@@ -15,7 +15,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 - **Lethal combat** — fights are decisive and dangerous
 - **Red/Blue dice pool resolution** — fast, tactile dice economy with distinct fighter archetypes
 - **Weapon & magic triangles** — rock-paper-scissors advantage layers
-- **Downed system** — dramatic last-chance survivals before death
+- **Downed system** — dramatic last-chance survivals before lasting consequences
 - **Campaign progression** — retinues grow, earn, and suffer across sessions
 - **Relic economy** — the currency loop that drives the campaign
 
@@ -27,32 +27,30 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 |---|---|
 | Stats & Species Profiles | `rules/core-rules.md` |
 | Combat (Red/Blue Dice Pool, Crits, Defense) | `rules/combat.md` |
-| Conditions (Downed, Stunned, OOA) | `rules/conditions.md` |
+| Conditions (Downed, Stunned, Out of Action) | `rules/conditions.md` |
 | Sanity (Fear, Panic, Insanity) | `rules/sanity.md` |
 | Actions & Engagement | `rules/actions.md` |
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
-| Magic System, Firearms & Classes | `rules/magic.md` |
+| Magic System, Firearms & Domains | `rules/magic.md` |
 | Creature & Special Fighter Profiles | `rules/profiles.md` |
 | Feats (Archetype & Domain) | `rules/feats.md` |
 | Weapons (Melee, Ranged, Firearms, Materials) | `rules/weapons.md` |
 | Equipment (Armor, Shields, Alchemy) | `rules/equipment.md` |
 | Survival Rolls | `campaign/survival-rolls.md` |
-| Post-Game Tables | `campaign/post-game.md` |
+| Post-Game Sequence | `campaign/post-game.md` |
 | Relic Economy | `campaign/economy.md` |
-| Retinue (Archetypes & Domains) | `rules/retinue.md` |
+| Retinue (Archetypes, Domains, Traditions) | `rules/retinue.md` |
 | Retinue Building | `rules/retinue-building.md` |
 | Scenarios | `campaign/scenarios.md` |
 | Decision Log | `decision-log.md` (one entry per commit — **date + title**; update before every commit) |
-| Reference Material | `reference-material.md` |
-| Rosewater 20 Lessons | `reference-rosewater-20-lessons.md` |
-| Schreiber Game Balance | `reference-schreiber-game-balance.md` |
-| Balance Insights (Applied) | `reference-balance-insights.md` |
 
 ---
 
 ## Game Summary
 
-Retinues battle for Relics scattered across a cursed land. Fighters grow stronger through campaigns, Survival Rolls carry both treasure and danger, and every battle risks death or survival through the Downed system.
+Retinues battle for Relics scattered across a cursed land. Fighters grow
+stronger through campaigns, Survival Rolls carry both treasure and danger, and
+every battle risks lasting consequences through the **Downed** system.
 
 ---
 

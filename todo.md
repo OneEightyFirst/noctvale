@@ -165,7 +165,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`equipment.md`, `combat.md`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [ ] **Campaign injury / advancement system:** Alpha charts in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest
+- [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest
 - [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/survival-rolls.md`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination

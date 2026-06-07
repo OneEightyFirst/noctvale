@@ -12,7 +12,7 @@ Quest post-quest events.
 ## Sequence at a Glance
 
 1. **Scenario Results** — victory rewards and Relics recovered on the table
-2. **Casualties** — every fighter who ended the battle Out of Action rolls on the **Casualty Table**
+2. **Casualties** — every fighter who ended the battle **Out of Action** rolls on the **Casualty Table**
 3. **Doom** — any fighter directed to this table rolls **2d6**
 4. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](survival-rolls.md))
 5. **Economy** — sell Relics, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
@@ -86,7 +86,7 @@ aside until Step 5.
 1. Total Relics recovered this battle from scenario rewards, Looting, and
    Survival Rolls.
 2. Sell Relics for Crowns ([economy.md](economy.md#selling-relics)).
-3. Recruit fighters, buy gear, pay upkeep *(upkeep TBD)*.
+3. Recruit fighters and buy gear.
 
 ---
 
@@ -101,12 +101,12 @@ Add XP to each fighter's bank when the condition applies:
 | Source | XP |
 |---|---|
 | Fought in the battle (Active at battle end) | +1 |
-| Went Out of Action but survived the Casualty Table | +1 |
+| Went **Out of Action** but survived the Casualty Table | +1 |
 | **Hardy** (Casualty Table d6) | +1 |
 | **Miraculous** (Doom Table 2d6) | +2 |
 | Retinue achieved a scenario objective | +1 *(once per fighter)* |
 | Each Relic the retinue recovered this battle | +1 *(every fighter)* |
-| Slain an enemy **Leader** | +2 *(to the fighter who delivered the killing blow)* |
+| Took an enemy **Leader** **Out of Action** | +2 *(to the fighter who resolved the action)* |
 | Scenario bonus *(when listed)* | As written |
 
 Track **Experience** on the fighter card as a running total. Unspent XP carries forward.
@@ -117,7 +117,7 @@ Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cos
 
 | Advancement | XP cost | Roll |
 |---|---|---|
-| **Feat** | **2** | 2d6 on [Feat Advancement Table](../rules/feats.md#feat-advancement-table) *(use Keyword until feat lists are complete)* |
+| **Feat** | **2** | 2d6 on [Feat Advancement Table](../rules/feats.md#feat-advancement-table) *(use Keyword until eligible feat lists are complete)* |
 | **Keyword** | **2** | 2d6 on Keyword Advancement Table |
 | **Stat** | **5** | 2d6 on Stat Advancement Table |
 
@@ -148,7 +148,7 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 2d6 | Result |
 |---|---|
 | 2 | **Cursed** — Sa −1 (minimum 1). No keyword. |
-| 3–4 | **No change** — take a free **Feat** roll instead (when feats exist), or accept nothing. |
+| 3–4 | **No change** — take a free **Feat** roll instead if an eligible feat list is available, or accept nothing. |
 | 5–6 | **Steady** — +1 Sa permanently (max 6); no new keyword. |
 | 7 | **Hardened** — gain **Fearless** keyword. |
 | 8 | **Oathbound** — gain **Fearless** keyword **or** +1 Wi (max 6), your choice. |
@@ -191,5 +191,5 @@ Record **Retinue Rating** on the roster sheet next to Roster Cost.
 - **XP bank** — earn from deeds, spend on advancement. Feat/Keyword **2 XP**; Stat **5 XP**.
 - **Retinue Rating** — Roster Cost + Veteran Value; one Crown total for matchup fairness (see Veteran Value table above).
 - **Keyword table** — Caster is a campaign unlock for eligible classes (especially Cult Acolytes).
-- **Feat table** — placeholder until Phase 5b lists are complete; use Keyword path until then.
-- Open: convalescent fighters and retinue minimum size; injury recovery through downtime; Death Trigger on Slain results.
+- **Feat table** — use Keyword path until eligible Archetype and Domain feat lists are complete.
+- Open decisions are tracked in `decision-log.md` Ideas.

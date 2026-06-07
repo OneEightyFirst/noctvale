@@ -51,11 +51,11 @@ Firearms use a **flat primer roll** (**2d6**, difficulty **6+**, no stat added).
 | **Basic** | Standard-issue infantry gunpowder | Musket, Blunderbuss |
 | **Refined** | Refined personal arms — sidearm and precision rifle | Pistol, Long Rifle |
 
-**Flintlock** is a **keyword**. Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per game; cannot reload). See [Keywords](#keywords).
+**Flintlock** is a **keyword**. Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per battle; cannot reload). See [Keywords](#keywords).
 
 #### Gunpowder weapons — bombs
 
-Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per game. Mortal Domain only.
+Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Mortal Domain only.
 
 ---
 
@@ -66,7 +66,7 @@ Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use p
 Apply to a **firearm** at recruitment:
 
 - **−25 Crowns** (after base weapon cost)
-- **Single Shot** — may fire once per game; cannot reload *(one use per battle)*
+- **Single Shot** — may fire once per battle; cannot reload
 
 Any firearm may take Flintlock. A Refined Pistol with Flintlock costs 90 − 25 = **65 Crowns**.
 
@@ -192,7 +192,7 @@ Minimum range **3"** unless noted. Missile weapons are available to **all retinu
 
 ## Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per game). **Mortal Domain only** (gunpowder).
+Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per battle). **Mortal Domain only** (gunpowder).
 
 ### Throwing a Bomb
 
