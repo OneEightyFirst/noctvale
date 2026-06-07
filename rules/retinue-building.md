@@ -81,7 +81,9 @@ Named factions may use different flavor titles in lore without changing class na
 
 ## Keywords
 
-**Traditions** (Witches, Crusaders, etc.) are retinue-wide identity chosen at step 1 — see `retinue.md`. This section covers **keywords** on individual fighters.
+**Traditions** (Witches, Crusaders, etc.) are retinue-wide identity chosen at
+step 1 — see `retinue.md`. This section covers **keywords** on individual
+fighters.
 
 Keywords are tags on a fighter profile. They stack with class.
 

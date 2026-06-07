@@ -14,7 +14,11 @@ Your **Domain** determines what supernatural powers your retinue wields — spel
 
 **Archetype + Domain** is your retinue's mechanical identity on the table.
 
-**Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets** — established Archetype + Domain pairings with lore, exclusive feats, and unique equipment. Use one for flavor or build any legal Archetype + Domain combination yourself.
+**Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets**
+and examples — established Archetype + Domain pairings with lore and suggested
+Traditions. They do not grant exclusive rules, feats, equipment, or exceptions.
+Use one for flavor or build any legal Archetype + Domain + Tradition
+combination yourself.
 
 ---
 
@@ -83,14 +87,7 @@ Each Domain provides a spell list and Domain-specific feats. The **Mortal** Doma
 
 After you choose **Archetype** and **Domain**, choose **one Tradition** for the whole retinue. Traditions are plural labels (**Witches**, **Crusaders**) — shared identity for the entire retinue.
 
-Traditions unlock **tradition feats** (Phase 5b) and optional gear alongside Domain spells and the **Caster** keyword (see `retinue-building.md`).
-
-**Cross-domain traditions:** the same name can appear on more than one Domain list. Your Archetype must be allowed for that name **on the Domain you chose**. Tradition feats differ by Domain — e.g. **Witches** on Nature vs Arcane.
-
-| Tradition | Domains | Archetypes |
-|---|---|---|
-| **Witches** | Nature, Arcane | Nature: Cult, Folk — Arcane: Hunters, Folk |
-| **Ritualists** | Arcane, Infernal | Folk, Cult |
+Traditions grant one retinue-wide special rule chosen at roster creation.
 
 ### Light
 
@@ -108,13 +105,13 @@ Traditions unlock **tradition feats** (Phase 5b) and optional gear alongside Dom
 | **Spellblades** | Knights, Hunters |
 | **Ritualists** | Folk, Cult |
 | **Sorcerers** | Knights, Cult |
-| **Witches** | Hunters, Folk |
+| **Runecasters** | Hunters, Folk |
 
 ### Infernal
 
 | Tradition | Archetypes |
 |---|---|
-| **Ritualists** | Folk, Cult |
+| **Diabolists** | Folk, Cult |
 | **Binders** | Hunters, Cult |
 | **Hellknights** | Knights, Hunters |
 | **Damned** | Knights, Folk |
@@ -132,7 +129,7 @@ Traditions unlock **tradition feats** (Phase 5b) and optional gear alongside Dom
 
 | Tradition | Archetypes |
 |---|---|
-| **Morticians** | Cult, Folk |
+| **Bell-keepers** | Cult, Folk |
 | **Bone-priests** | Cult, Hunters |
 | **Sepulchers** | Knights, Folk |
 | **Wightlords** | Knights, Hunters |
@@ -152,19 +149,19 @@ All Blood traditions are **hedonistic noble houses** — appetite, sport, and st
 
 | Tradition | Archetypes |
 |---|---|
-| **Zealots** | Hunters, Cult |
+| **Zealots** | Hunters |
 | **Constables** | Knights, Folk |
 | **Alchemists** | Hunters, Folk |
-| **Ironbound** | Knights, Cult |
+| **Ironbound** | Knights |
 
 ### Archetype × Domain (at a glance)
 
 | Archetype | Light | Arcane | Infernal | Nature | Necromancy | Blood | Mortal |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Knights** | Crusaders, Paladins | Spellblades, Sorcerers | Hellknights, Damned | Grove-keepers, Hedge-walkers | Sepulchers, Wightlords | Vampires, Dynasts | Constables, Ironbound |
-| **Hunters** | Paladins, Luminaries | Spellblades, Witches | Hellknights, Binders | Beastmen, Hedge-walkers | Bone-priests, Wightlords | Dynasts, Revelers | Zealots, Alchemists |
-| **Folk** | Crusaders, Penitents | Ritualists, Witches | Ritualists, Damned | Witches, Grove-keepers | Morticians, Sepulchers | Revelers, Courtiers | Constables, Alchemists |
-| **Cult** | Penitents, Luminaries | Ritualists, Sorcerers | Ritualists, Binders | Witches, Beastmen | Morticians, Bone-priests | Vampires, Courtiers | Zealots, Ironbound |
+| **Hunters** | Paladins, Luminaries | Spellblades, Runecasters | Hellknights, Binders | Beastmen, Hedge-walkers | Bone-priests, Wightlords | Dynasts, Revelers | Zealots, Alchemists |
+| **Folk** | Crusaders, Penitents | Ritualists, Runecasters | Diabolists, Damned | Witches, Grove-keepers | Bell-keepers, Sepulchers | Revelers, Courtiers | Constables, Alchemists |
+| **Cult** | Penitents, Luminaries | Ritualists, Sorcerers | Diabolists, Binders | Witches, Beastmen | Bell-keepers, Bone-priests | Vampires, Courtiers | — |
 
 ### Named preset defaults
 
@@ -178,18 +175,174 @@ Optional starting Tradition when using a preset (any allowed Tradition is legal)
 | Coven | Witches |
 | Nightpack | Beastmen |
 | Arcane Conclave | Ritualists |
-| Grave Wardens | Morticians |
-| Infernal Pact | Ritualists |
+| Grave Wardens | Bell-keepers |
+| Infernal Pact | Diabolists |
 | Inquisition | Zealots |
 | Silver Hunt | Alchemists |
 | Village Watch | Constables |
 | Iron Law | Ironbound |
 
+### Tradition Special Rules
+
+#### Light
+
+**Crusaders:** Friendly fighters within **1"** of at least one other friendly
+fighter add **+1 Sa** to **Fear**, **Panic**, and **Insanity** tests.
+
+**Paladins:** Once per round, when a friendly fighter becomes **Downed**, one
+friendly fighter within **6"** may move up to **3"** toward them. This move
+cannot enter engagement range.
+
+**Penitents:** While a friendly fighter has fewer than their starting Wounds,
+they gain **+1" M**.
+
+**Luminaries:** At the start of each round, choose one enemy fighter within line
+of sight of any friendly fighter. That enemy loses **Hidden**.
+
+#### Arcane
+
+**Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
+they carry gain **Arcane**.
+
+**Arcane:** When this fighter attacks with this weapon, they may change 1 failed
+Strike Pool die into a normal hit. The hit keeps the die's color and cannot
+become a critical hit.
+
+**Ritualists:** Before deployment, place one ritual circle wholly within your
+deployment zone. Friendly **Caster** fighters within **1"** of it add **+1** to
+casting rolls. If they roll a Mishap, they suffer **1 Wound** after resolving
+it.
+
+**Sorcerers:** Friendly **Caster** fighters may each know 1 additional spell for
+**+10 Crowns**. When a **Caster** who knows an additional spell this way rolls a
+Mishap, they suffer **1 Wound** after resolving it.
+
+**Runecasters:** This retinue may buy Rune-stones for **15 Crowns**.
+
+Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
+Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
+**casting roll**, they may discard the Rune-stones to reroll that roll. The
+second result stands. Remove the Rune-stones from the roster after the battle.
+
+#### Infernal
+
+**Diabolists:** Once per battle, at the start of a friendly fighter's
+activation, that fighter may suffer **1 Wound** to gain **+1 Mt** and **+1 Sa**
+until the end of the battle.
+
+If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
+and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
+
+**Binders:** This retinue may recruit Daemons as Rank fighters. Daemon profiles
+and recruitment costs are TBD.
+
+**Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
+fighters wearing armor gain **Fear**.
+
+**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+rolling on the Casualty Table for one of those fighters, subtract **1** from the
+roll.
+
+#### Nature
+
+**Witches:** Once per round, when an enemy fighter within **12"** of a friendly
+**Caster** makes a stat roll or **casting roll**, subtract **1** from that roll.
+
+**Grove-keepers:** After terrain is set, choose one terrain piece outside both
+deployment zones. Friendly fighters within **1"** of it add **+1** to
+**Recover** rolls.
+
+**Beastmen:** Choose one beast-mark for the retinue: **Wolf**, **Rat**, **Bear**,
+or **Serpent**. All fighters cost **+10 Crowns** and gain the chosen rule.
+
+**Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee
+weapon: **+2 Mt**, **+1 Sk**, Axe.
+
+**Rat:** Fighters may carry 1 additional one-handed weapon. This extra weapon
+cannot be a shield, firearm, bomb, or two-handed weapon.
+
+**Bear:** Fighters gain **+1 Mt** and **−1 Sa**. Sa cannot be reduced below 1.
+
+**Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may
+inflict **Poisoned** instead of 1 Wound. A Poisoned fighter suffers **−1 Mt** for
+the rest of the battle.
+
+**Hedge-walkers:** During deployment, up to 2 friendly fighters may start
+**Hidden** if each is within **1"** of terrain and outside the enemy deployment
+zone.
+
+#### Necromancy
+
+**Bell-keepers:** Once per battle, when a friendly fighter is taken **Out of
+Action**, replace that fighter with a Zombie until the end of the battle. Place
+the Zombie where the fighter was. The Zombie joins your retinue for the rest of
+the battle. See `profiles.md`.
+
+After the battle, roll on the Casualty Table for the original fighter as normal.
+If the original fighter is **Slain** and the Zombie is not **Out of Action**, the
+Zombie joins your retinue. Otherwise, remove the Zombie from your roster.
+
+**Bone-priests:** This retinue may recruit Skeletons as Rank fighters up to its
+normal Rank class cap: up to 4 Skeletons for Hunters or up to 7 Skeletons for
+Cult. Skeletons count toward the retinue's maximum number of fighters and cannot
+gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
+See `profiles.md`.
+
+**Sepulchers:** When a friendly fighter becomes **Downed** or **Stunned**, they
+gain **Fear** until they become Active or **Out of Action**.
+
+**Wightlords:** All fighters cost **+20 Crowns** and gain **Undead** and
+**Fearless**.
+
+#### Blood
+
+**Vampires:** All fighters cost **+20 Crowns**. When a friendly fighter takes an
+enemy fighter **Out of Action** with **Melee** or **Mercy Kill**, restore
+**1 Wound** to that friendly fighter.
+
+**Dynasts:** At roster creation, choose up to 3 melee weapons in this retinue to
+be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
+
+When a fighter attacks with an heirloom weapon, add **+1** to the roll to hit.
+
+If a fighter carrying an heirloom weapon is **Slain**, the weapon passes to the
+friendly fighter in the retinue with the highest Mt. If there is a tie, choose
+one tied fighter.
+
+If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps
+the heirloom weapon but cannot use it. If the original retinue ransoms the
+captured fighter, add **+10 Crowns** to the ransom cost to recover the heirloom
+weapon.
+
+**Revelers:** At the start of a friendly fighter's activation, they may suffer
+**1 Wound** to gain **+2" M** until the end of that activation.
+
+**Courtiers:** This retinue starts with **+100 Crowns**. Each fighter in this
+retinue starts each battle with 1 fewer Wound than their W value, to a minimum of
+1 Wound.
+
+#### Mortal
+
+**Zealots:** When a friendly fighter attacks an enemy **Caster**, add **+1** to
+the roll to hit.
+
+**Constables:** Enemy fighters cannot **Retreat** while within engagement range
+of a friendly fighter from this retinue.
+
+**Alchemists:** This retinue may buy alchemical weapons and alchemical
+consumables without rolling on the Shadow Market table.
+
+**Ironbound:** Friendly fighters within **1"** of at least one other friendly
+fighter gain **Fear**.
+
 ---
 
 ## Named Faction Presets
 
-Twelve established factions exist in Noctvale lore. Each is a specific Archetype + Domain pairing with placeholder lore below, plus (when written) faction-specific feats and exclusive equipment.
+Twelve established factions exist in Noctvale lore. Each is an example
+Archetype + Domain pairing with a suggested Tradition and placeholder lore
+below. Named factions do not grant exclusive rules, feats, equipment, or
+exceptions.
 
 | Faction | Archetype | Domain | Identity |
 |---|---|---|---|
@@ -206,7 +359,10 @@ Twelve established factions exist in Noctvale lore. Each is a specific Archetype
 | Village Watch | Folk | Mortal | Ordinary townsfolk defending their homes |
 | Iron Law | Folk | Mortal | Corrupted remnants of imperial law |
 
-Two presets can share the same Archetype + Domain but play differently through exclusive feats and equipment. The **Inquisition** and **Silver Hunt** are both Hunters + Mortal — Inquisition leans anti-magic denial; Silver Hunt leans alchemy, poisons, and silver weapons.
+Two presets can share the same Archetype + Domain but suggest different
+Traditions, equipment, and playstyle. The **Inquisition** and **Silver Hunt**
+are both Hunters + Mortal — Inquisition leans Zealots, anti-magic denial, and
+guns; Silver Hunt leans Alchemists, poisons, and silver weapons.
 
 ---
 
@@ -236,7 +392,9 @@ Ordinary townsfolk defending their homes. Civilian defenders — villages formed
 Corrupted remnants of imperial law and constabulary. In the absence of the empire's authority, those who once enforced the law took power for themselves. They now rule through fear, chains, and the barrel of a gun.
 
 ### Coven
-Witches banding together for survival after persecution. Forced to form secret covens to protect themselves from those who believed all magic — and all who were different — were evil and deserved to be purged.
+Witches banding together for survival after persecution. Forced to form secret
+covens to protect themselves from those who believed all magic — and all who
+were different — were evil and deserved to be purged.
 
 ### Nightpack
 Werebeast packs and shapeshifter retinues. Savage packs that formed in the wilderness during the long war.
@@ -255,7 +413,8 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
 ## Design Notes
 
 - **Retinue** is the list you play; **Archetype + Domain + Tradition** is how you build it; **named factions** are optional lore presets
-- Named presets can share Archetype + Domain — differentiate with exclusive feats and gear (Inquisition vs Silver Hunt)
+- Named presets can share Archetype + Domain — differentiate with suggested
+  Tradition, roster choices, and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
 - Cult gets 3 casters and no armor — glass cannon by design
 - **Missile weapons** for all retinues; **gunpowder** for Mortal Domain — parallel power paths

@@ -14,10 +14,72 @@ the final rule in the dated decision-log entry for that commit.
   **Recover**, **Aim**, **Overwatch**, **Mishap**, Survival Rolls, armor/shield
   defense conversion, weapon or magic triangle advantage, and wound states.
 
-- **Optional Folk feat/equipment idea — Family Heirloom:** A chosen fighter's
-  weapon becomes a family heirloom and gains a future **Fine Craftsmanship**
-  trait. This may belong better as optional equipment, a campaign reward, or a
-  Tradition/faction feature than as a core Folk Archetype feat.
+---
+
+## 2026-06-07 — Lock Traditions as retinue-wide special rules
+
+**Decision:** Reframe **Traditions** from future feat lists into one
+retinue-wide special rule chosen at roster creation. Remove **Tradition feats**
+from feat eligibility; feats now come from Archetype and Domain lists. Named
+factions remain lore/example presets only and do not grant exclusive mechanics.
+
+Add special rules for every current Tradition in `rules/retinue.md`:
+
+- **Light:** **Crusaders** support nearby discipline, **Paladins** move toward
+  newly Downed friendly fighters, **Penitents** move faster while wounded, and
+  **Luminaries** strip **Hidden** from one visible enemy each round.
+- **Arcane:** **Spellblades** pay +5 Crowns per fighter for **Arcane** melee
+  weapons that convert one failed Strike Pool die into a normal hit;
+  **Ritualists** use a deployment-zone ritual circle for stronger casting with
+  Mishap risk; **Sorcerers** may buy one extra spell per Caster with Mishap
+  wound risk; **Runecasters** may buy Rune-stones that discard for one reroll.
+- **Infernal:** Rename Infernal **Ritualists** to **Diabolists**. **Diabolists**
+  can wound themselves for temporary **+1 Mt** and **+1 Sa**, then suffer a
+  penalty if Downed. **Binders** may recruit Daemons as Rank fighters, with
+  Daemon profiles and costs deferred. **Hellknights** pay more for armor but
+  gain **Fear** while wearing it. **Damned** non-Casters cost less and suffer a
+  Casualty Table penalty.
+- **Nature:** Keep **Witches** for Nature only. **Witches** use the hex-bag rule
+  to subtract **1** from an enemy stat roll or **casting roll** near a friendly
+  Caster once per round. **Grove-keepers** choose a terrain piece that improves
+  nearby **Recover** rolls. **Beastmen** choose one beast-mark (**Wolf**, **Rat**,
+  **Bear**, or **Serpent**) for the whole retinue. **Hedge-walkers** can deploy
+  up to 2 fighters **Hidden** near terrain.
+- **Necromancy:** Rename **Morticians** to **Bell-keepers**. **Bell-keepers**
+  replace one friendly fighter taken **Out of Action** with a Zombie until the
+  end of the battle; the Zombie joins the retinue only if the original fighter
+  is **Slain** and the Zombie survives. **Bone-priests** may recruit Skeletons as
+  Rank fighters up to the Archetype's normal Rank cap. **Sepulchers** gain
+  guardian **Fear** while Downed or Stunned. **Wightlords** pay +20 Crowns per
+  fighter for **Undead** and **Fearless**.
+- **Blood:** **Vampires** pay +20 Crowns per fighter and heal after taking an
+  enemy **Out of Action** with **Melee** or **Mercy Kill**. **Dynasts** begin
+  with up to 3 heirloom melee weapons that add **+1** to hit and pass through
+  the retinue on death; captured heirlooms add **+10 Crowns** to ransom.
+  **Revelers** can suffer a wound for **+2" M** during an activation.
+  **Courtiers** start with +100 Crowns but each fighter starts each battle with
+  1 fewer Wound, minimum 1.
+- **Mortal:** Remove invalid **Cult + Mortal** Tradition options because Cult
+  cannot choose Mortal. **Zealots** are Hunters only and gain **+1** to hit
+  enemy Casters. **Constables** prevent enemy **Retreat** while engaged.
+  **Alchemists** may buy alchemical weapons and consumables without rolling on
+  the future **Shadow Market** table. **Ironbound** are Knights only and gain
+  **Fear** while within **1"** of another friendly fighter.
+
+Create `rules/profiles.md` as the shared home for special profiles. Move
+Skeleton and Swarm profiles out of `rules/magic.md`, add a Zombie profile, and
+leave placeholder sections for Animals and Daemons. Zombie unarmed attacks
+inflict **Poisoned** in addition to normal wounds.
+
+**Reasoning:** Tradition is the layer that makes a retinue read differently at
+creation. A third full feat axis would bloat the rules count beyond the desired
+Necromunda/Mordheim skill footprint and delay identity until campaign
+advancement. One retinue-wide special rule keeps Tradition distinct from
+Archetype feats and Domain feats: Archetype still owns battlefield structure,
+Domain still owns magic or Mortal gunpowder, and Tradition now owns inherited
+body, practice, status, rite, tools, or culture. The design pass also removed
+confusing repeated Tradition names: **Runecasters** replaced Arcane Witches, and
+**Diabolists** replaced Infernal Ritualists.
 
 ---
 

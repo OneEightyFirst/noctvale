@@ -17,8 +17,6 @@ retinue:
 
 - Archetype feats
 - Domain feats
-- Tradition feats
-- Named faction feats, if using a named faction preset
 
 If two copies of the same named feat would affect one fighter at the same time,
 apply the feat once.

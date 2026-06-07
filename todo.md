@@ -79,7 +79,7 @@ Write 2–3 spells per magic class relevant to Silver Hunt and Nightpack.
 
 Define feat lists for each archetype and each domain. Feats are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and feats make those choices feel distinct on the table.
 
-- [ ] Write **Tradition** feat lists (one package per Tradition per Domain where it is shared — e.g. Witches on Nature vs Arcane)
+- [x] Write **Tradition** special rules (one retinue-wide rule per Tradition)
 - [ ] Decide feat structure (passive abilities, activated abilities, or both)
 - [ ] Decide how feats are acquired (built into fighter type, purchased with XP, chosen at retinue creation, etc.)
 - [ ] Decide feat count per list (e.g., 6 per archetype, 6 per domain)
@@ -96,7 +96,7 @@ Define feat lists for each archetype and each domain. Feats are the primary mech
   - [ ] Necromancy
   - [ ] Blood
   - [ ] Mortal
-- [ ] Decide if named factions get 1–2 exclusive faction feats on top of archetype + domain feats
+- [x] Named factions are lore/example presets only; they do not grant exclusive feats, equipment, or rules
 - [ ] Confirm feats don't duplicate or conflict with spells, equipment, or special rules
 
 ---

@@ -168,40 +168,20 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned — suffer -1 Mt and -1 Sk until the start of the caster's next activation | *(TBD)* |
 | Feral Form | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
 | Entangle | *(TBD)* | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
-| Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See Swarm profile below | The Swarm appears hostile — your opponent controls it for its single activation |
+| Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See `profiles.md` | The Swarm appears hostile — your opponent controls it for its single activation |
 | Dread Chorus | *(TBD)* | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test (d6 + Sa ≥ 8) or gain Fear of the caster until the start of the caster's next activation | *(TBD)* |
-
-#### Swarm Profile
-
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 6" | 3 | — | 2 | 6 | 1 | 1 | 1 |
-
-**Equipment:** Natural weapons (baked into Mt/Sk). Cannot be changed.
-
-**Keywords:** Fearless. Immune to Sanity tests.
 
 ### Necromancy
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
-| Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See Skeleton profile below | The Skeleton appears hostile — your opponent controls it for its single activation |
+| Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See `profiles.md` | The Skeleton appears hostile — your opponent controls it for its single activation |
 | Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went Out of Action this game. Place them within 3" of the caster with 1 wound, Undead keyword, and Fearless. They activate immediately with 2 actions, then go Out of Action permanently at the end of their activation | Your opponent places and controls the raised fighter instead |
 | Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
 | Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
 | Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
 | Bone Circle | *(TBD)* | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
-
-#### Skeleton Profile
-
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
-
-**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
-
-**Keywords:** Undead. Fearless. Immune to Sanity tests.
 
 ### Blood
 
