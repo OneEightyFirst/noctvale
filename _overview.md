@@ -31,11 +31,10 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | Sanity (Fear, Panic, Insanity) | `rules/sanity.md` |
 | Actions & Engagement | `rules/actions.md` |
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
-| Magic System, Firearms & Domains | `rules/magic.md` |
+| Magic System (casting, triangles, spell lists) | `rules/magic.md` |
 | Creature & Special Fighter Profiles | `rules/profiles.md` |
 | Feats (Archetype & Domain) | `rules/feats.md` |
-| Weapons (Melee, Ranged, Firearms, Materials) | `rules/weapons.md` |
-| Equipment (Armor, Shields, Alchemy) | `rules/equipment.md` |
+| Gear (weapons and equipment) | `rules/gear.md` |
 | Survival Rolls | `campaign/survival-rolls.md` |
 | Post-Game Sequence | `campaign/post-game.md` |
 | Relic Economy | `campaign/economy.md` |

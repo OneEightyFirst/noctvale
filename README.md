@@ -22,11 +22,11 @@ rules/
   conditions.md          — Downed, Stunned, Out of Action, Recover, Help, Mercy Kill
   actions.md             — Actions, movement, engagement rules
   special-rules.md       — Line of Sight, Cover, Falling, Overwatch, Gang Up
-  magic.md               — Casting, magic classes, spell concepts
-  weapons.md             — Melee, missile, and gunpowder weapon categories
-  equipment.md           — Armor, shields, alchemy, influence items
-  retinue.md             — Archetypes, Domains, and twelve named faction presets (lore)
-  retinue-building.md    — Crown budgets, composition limits, and roster checklist
+  gear.md                — Weapons and equipment: costs, profiles, and combat rules
+  magic.md               — Casting, magic triangles, Domain spell lists, spell resolution
+  retinue.md             — Archetypes, Domains, Traditions, and named faction presets
+  creating-a-retinue.md  — Player guide: step-by-step roster creation
+  retinue-building.md    — Reference: Crown budgets, composition limits, design notes
 campaign/
   scenarios.md           — Battle scenarios
   post-game.md           — Post-battle sequence, injuries, economy, advancement

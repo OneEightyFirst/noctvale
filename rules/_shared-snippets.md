@@ -28,7 +28,7 @@
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See `equipment.md`.)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See [Gear — Equipment](gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -38,7 +38,7 @@
 
 > ### Casting Roll (2d6 + Wi)
 >
-> Roll **2d6 + Wi** against the spell's casting difficulty.
+> Roll **2d6 + Wi** against the spell's **casting difficulty** (see spell profile).
 >
 > | Result | Effect |
 > |---|---|
@@ -51,9 +51,11 @@
 
 ## Primer Roll
 
-> ### Primer Roll (2d6)
+> ### Primer Roll (2d6 + Sk)
 >
-> Roll **2d6** against the firearm's loading difficulty. No stat is added.
+> Roll **2d6 + Sk** against the weapon's **primer difficulty** (see weapon profile).
+>
+> Profile values assume a **Human** shooter (**Sk 3**). At other **Sk**, use **primer difficulty − 3 + Sk**.
 >
 > | Result | Effect |
 > |---|---|

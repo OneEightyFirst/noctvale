@@ -46,7 +46,7 @@ Rules in `rules/special-rules.md`; cross-refs in `actions.md` and `combat.md`.
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
 - [x] Clustered enemies: same-retinue fighters within 1" of declared target → Sk check or retarget
 - [x] Enemy fighters block line of sight normally
-- [ ] Smoke / other LoS-blocking effects — smoke in `weapons.md`; confirm no gaps vs terrain rules
+- [ ] Smoke / other LoS-blocking effects — smoke in `gear.md`; confirm no gaps vs terrain rules
 - [ ] Dedicated rules for enemy fighters blocking shots (beyond LoS) if playtest shows gaps
 
 ---
@@ -59,7 +59,7 @@ Create a small playtest weapon list covering the weapon triangle + ranged + fire
 - [x] At least one Bow/Crossbow (ranged, Sk-based)
 - [x] At least one Firearm (crits vs all targets)
 - [x] Define +Mt / +Sk / range / any special traits per weapon
-- [x] Create weapon table in `rules/weapons.md`
+- [x] Create weapon table in `rules/gear.md`
 
 ---
 
@@ -126,6 +126,12 @@ Write one complete scenario with deployment, terrain, and win conditions.
 - [ ] Include any scenario-specific special rules
 - [x] Determine how Survival Rolls / Relics interact with first-playtest progression
 
+### Scenario concept: There's a Reason They Have a Horn
+
+- [ ] Both retinues are trying to bring down and harvest the unicorn
+- [ ] The unicorn is a deadly creature, not just an objective marker
+- [ ] Battlefield: a clearing in the middle of a forest, with scattered buildings around the edge
+
 ---
 
 ## Phase 7: Fighter Cards & Roster Sheet
@@ -162,10 +168,11 @@ Things identified across the design docs that don't fit neatly into one phase.
 ### Open Design Decisions
 
 - [ ] **Spell table format:** Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards
-- [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`equipment.md`, `combat.md`)
+- [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`gear.md`, `combat.md`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
 - [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest
+- [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/feats.md`, `rules/gear.md`, `rules/retinue.md`.
 - [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/survival-rolls.md`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination

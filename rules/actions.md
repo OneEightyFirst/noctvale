@@ -101,9 +101,9 @@ Cast a spell or fire a firearm.
 
 **Spell:** Roll the **Casting Roll** (below). If the spell goes off, resolve the attack using the **Attack Sequence**.
 
-**Firearm:** Roll the **Primer Roll** (below). If the gun fires, resolve the attack using the **Attack Sequence**.
+**Firearm:** Roll the **Primer Roll** (below) for the chosen firearm — or once per **Pistol** when firing a **Brace of pistols** (see [Gear — Weapons](gear.md#weapons)). If the gun fires, resolve the attack using the **Attack Sequence**.
 
-*(See `magic.md`, `weapons.md`, and `special-rules.md`.)*
+*(See [Magic](magic.md), [Gear](gear.md), and [Special Rules](special-rules.md).)*
 
 ### Aim
 
@@ -315,7 +315,7 @@ Begin a new round at Step 1.
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See `equipment.md`.)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See [Gear — Equipment](gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -340,9 +340,11 @@ Begin a new round at Step 1.
 > | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence** |
 > | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
 
-> ### Primer Roll (2d6)
+> ### Primer Roll (2d6 + Sk)
 >
-> Roll **2d6** against the firearm's loading difficulty. No stat is added.
+> Roll **2d6 + Sk** against the weapon's **primer difficulty** (see weapon profile).
+>
+> Profile values assume a **Human** shooter (**Sk 3**). At other **Sk**, use **primer difficulty − 3 + Sk**.
 >
 > | Result | Effect |
 > |---|---|

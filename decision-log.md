@@ -26,6 +26,50 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-07 — Proficiency feats, gear chapter, and roster guide
+
+**Decision:** Fighters gain weapon access through the **Proficiency** feat — the
+first entry on each Archetype feat list. Reorganize weapons by proficiency
+(**One-Handed**, **Two-Handed**, **Archery**, **Thrown**, **Firearms**) instead
+of Basic / Long / Heavy. Merge `rules/weapons.md` and `rules/equipment.md` into
+`rules/gear.md`. Add `rules/creating-a-retinue.md` as the step-by-step player
+guide; trim duplicate tables from `rules/retinue-building.md`.
+
+**Proficiency:**
+
+- Assign feat picks at roster creation: Leader and Elite **2**, Specialist **1 +
+  built-in**, Rank **1**. Each **Proficiency** pick must be a different weapon
+  proficiency. Campaign advancement may grant additional feats later.
+- Archetype menus: Knights and Hunters — One-Handed, Two-Handed, Archery,
+  Thrown; Folk — One-Handed, Archery, Thrown; Cult — One-Handed, Archery.
+- **Firearms** is **not** on Archetype lists — it is the **Proficiency** entry
+  on the **Mortal** Domain feat list only.
+- **Archery** includes bows and crossbows. Shields require One-Handed or
+  Two-Handed proficiency and Archetype shield access.
+- Specialist built-ins: **Squire** — One-Handed; **Tracker** — Archery or
+  Firearms (choose one; Firearms requires Mortal); **Militiaman** — Two-Handed;
+  **Adept** — none (**Caster** is the specialty).
+
+**Gear and roster guide:**
+
+- Weapon triangle types (Sword, Axe, Spear, Hammer) stay on individual weapon
+  profiles for crits only — not for roster organization.
+- Survival Roll **Broken Goods** grants a legal **One-Handed** melee weapon.
+- Consolidate Caster, Silver, and influence-equipment wording across roster
+  files. **Caster** at creation replaces the class stat bonus — no +25 Crown
+  surcharge. Silver and **Silversbane** target **Undead** / **Werebeast**, not
+  named factions.
+
+**Reasoning:** Per-fighter weapon specialization makes Rank bodies read on the
+table without activation-time proficiency checks. Splitting **Firearms** onto
+the Mortal Domain feat list keeps gunpowder on the magic-vs-mortal identity
+fork. One-Handed / Two-Handed / Archery / Thrown maps to how players already
+build loadouts and avoids forcing Hammer and crossbows into a strict melee
+triangle taxonomy. A single **gear** chapter and player walkthrough reduce hunt-
+and-peck during list building.
+
+---
+
 ## 2026-06-07 — Lock Traditions as retinue-wide special rules
 
 **Decision:** Reframe **Traditions** from future feat lists into one

@@ -1,6 +1,6 @@
 # Retinue
 
-Your **retinue** is the force you field — fighters, gear, and (if your Domain allows) spells. This file covers **identity**: Archetype, Domain, and optional named presets. For Crown costs, class slots, and the roster checklist, see **`retinue-building.md`**.
+Your **retinue** is the force you field — fighters, gear, and (if your Domain allows) spells. This file covers **identity**: Archetype, Domain, and optional named presets. To build a roster, start with **[Creating a Retinue](creating-a-retinue.md)**. For reference costs and design notes, see **[Retinue Building](retinue-building.md)**.
 
 ---
 
@@ -8,7 +8,9 @@ Your **retinue** is the force you field — fighters, gear, and (if your Domain 
 
 Every retinue is built from two choices: an **Archetype** and a **Domain**.
 
-Your **Archetype** determines how your retinue fights — melee and missile access, armor cap, shields, gunpowder access, roster size, and caster limits.
+Your **Archetype** determines how your retinue fights — weapon proficiency
+options, armor cap, shields, gunpowder tier access, roster size, and caster
+limits.
 
 Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific feats. Choose **Mortal** if your retinue rejects or lacks magic entirely.
 
@@ -24,44 +26,51 @@ combination yourself.
 
 ## Archetypes
 
-Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** access. **Missile weapons** (bows, crossbows, slings, thrown) are available to **every retinue** — see `weapons.md`.
+Archetype sets which options appear on each fighter's **Proficiency** feat,
+plus **armor** cap, **shields**, and **firearm tier** access. See [Feats —
+Proficiency](feats.md#archetype-feats) and [Gear — Weapon
+proficiencies](gear.md#weapon-proficiencies).
+
+Each fighter must have the matching proficiency to equip a weapon. Assign feat
+picks at roster creation (see [Feats — Feat picks at roster
+creation](feats.md#feat-picks-at-roster-creation)).
 
 ### Knights
+- **Proficiency:** One-Handed, Two-Handed, Archery, Thrown
 - **Armor:** Up to Heavy
-- **Melee:** Basic, Long, Heavy
-- **Missile weapons:** All
 - **Shields:** Buckler, Shield, Tower Shield
-- **Gunpowder:** Basic (Musket, Blunderbuss) — Mortal Domain only
+- **Firearms tier:** Basic (Musket, Blunderbuss) — Mortal Domain only
 - **Max Casters:** 1
 
 ### Hunters
+- **Proficiency:** One-Handed, Two-Handed, Archery, Thrown
 - **Armor:** Up to Medium
-- **Melee:** Basic, Long
-- **Missile weapons:** All
 - **Shields:** Buckler, Shield
-- **Gunpowder:** Basic + Refined — Mortal Domain only
+- **Firearms tier:** Basic + Refined (Pistol, Long Rifle) — Mortal Domain only
 - **Max Casters:** 1
 
 ### Folk
+- **Proficiency:** One-Handed, Archery, Thrown
 - **Armor:** Up to Light
-- **Melee:** Basic, Long
-- **Missile weapons:** All
 - **Shields:** Buckler, Shield
-- **Gunpowder:** Basic (Musket, Blunderbuss) — Mortal Domain only
+- **Firearms tier:** Basic (Musket, Blunderbuss) — Mortal Domain only
 - **Max Casters:** 1
 
 ### Cult
 - **Domain Restriction:** Cannot choose Mortal — Cult must have a magic Domain
+- **Proficiency:** One-Handed, Archery
 - **Armor:** None
-- **Melee:** Basic only
-- **Missile weapons:** All
 - **Shields:** None
-- **Gunpowder:** None
+- **Firearms:** None
 - **Max Casters:** 3
 
-**Gunpowder weapons** (firearms and bombs) are exclusive to retinues with the **Mortal** Domain. Magic and gunpowder are mutually exclusive paths to power.
+**Firearms** (firearms and bombs) require the **Firearms** proficiency from the
+**Mortal** Domain feat list. Magic and gunpowder are mutually exclusive paths to
+power.
 
-**Gunpowder tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
+**Firearm tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long
+Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic
+only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
 
 **Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
 
@@ -79,7 +88,12 @@ Archetype sets **melee** access, **armor** cap, **shields**, and **gunpowder** a
 | Blood | Natural |
 | Mortal | — |
 
-Each Domain provides a spell list and Domain-specific feats. The **Mortal** Domain provides no spells but grants access to **gunpowder weapons**.
+Each Domain provides a spell list and Domain-specific feats. The **Mortal**
+Domain provides no spells but grants the **Firearms** proficiency (see
+[Feats — Domain Feats](feats.md#domain-feats)) and access to gunpowder weapons
+(see [Gear](gear.md)).
+
+Spell lists: [Magic](magic.md) · Gear (weapons and equipment): [Gear](gear.md)
 
 ---
 
@@ -154,14 +168,17 @@ All Blood traditions are **hedonistic noble houses** — appetite, sport, and st
 | **Alchemists** | Hunters, Folk |
 | **Ironbound** | Knights |
 
-### Archetype × Domain (at a glance)
+### Domain × Archetype (at a glance)
 
-| Archetype | Light | Arcane | Infernal | Nature | Necromancy | Blood | Mortal |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **Knights** | Crusaders, Paladins | Spellblades, Sorcerers | Hellknights, Damned | Grove-keepers, Hedge-walkers | Sepulchers, Wightlords | Vampires, Dynasts | Constables, Ironbound |
-| **Hunters** | Paladins, Luminaries | Spellblades, Runecasters | Hellknights, Binders | Beastmen, Hedge-walkers | Bone-priests, Wightlords | Dynasts, Revelers | Zealots, Alchemists |
-| **Folk** | Crusaders, Penitents | Ritualists, Runecasters | Diabolists, Damned | Witches, Grove-keepers | Bell-keepers, Sepulchers | Revelers, Courtiers | Constables, Alchemists |
-| **Cult** | Penitents, Luminaries | Ritualists, Sorcerers | Diabolists, Binders | Witches, Beastmen | Bell-keepers, Bone-priests | Vampires, Courtiers | — |
+| Domain | Knights | Hunters | Folk | Cult |
+| --- | --- | --- | --- | --- |
+| **Light** | Crusaders, Paladins | Paladins, Luminaries | Crusaders, Penitents | Penitents, Luminaries |
+| **Arcane** | Spellblades, Sorcerers | Spellblades, Runecasters | Ritualists, Runecasters | Ritualists, Sorcerers |
+| **Infernal** | Hellknights, Damned | Hellknights, Binders | Diabolists, Damned | Diabolists, Binders |
+| **Nature** | Grove-keepers, Hedge-walkers | Beastmen, Hedge-walkers | Witches, Grove-keepers | Witches, Beastmen |
+| **Necromancy** | Sepulchers, Wightlords | Bone-priests, Wightlords | Bell-keepers, Sepulchers | Bell-keepers, Bone-priests |
+| **Blood** | Vampires, Dynasts | Dynasts, Revelers | Revelers, Courtiers | Vampires, Courtiers |
+| **Mortal** | Constables, Ironbound | Zealots, Alchemists | Constables, Alchemists | — |
 
 ### Named preset defaults
 
@@ -418,7 +435,7 @@ Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that fo
   Tradition, roster choices, and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
 - Cult gets 3 casters and no armor — glass cannon by design
-- **Missile weapons** for all retinues; **gunpowder** for Mortal Domain — parallel power paths
+- **Proficiency** at creation makes each fighter a weapon specialist; **Firearms** on the Mortal Domain feat list — parallel power paths to magic
 - Alchemy is equipment available to all retinues
 - **The Nobility** — vampire preset built around noble houses
 - Village Watch and Iron Law are both Folk + Mortal presets; players can also run Folk + Nature, Folk + Infernal, etc. — presets are starting points

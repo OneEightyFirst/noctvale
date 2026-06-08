@@ -17,7 +17,9 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 5. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
 6. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
 7. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — master copy in `rules/_shared-snippets.md`.
-8. **Write for someone who wasn’t in the room.** State what the game *is*, not what it used to be.
+8. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
+9. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
+10. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](../campaign/economy.md)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](retinue.md#domains)**).
 
 ---
 
@@ -123,7 +125,8 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
 | keyword | No in prose | **Caster**, **Fear**, **Fearless** — bold the keyword name |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
-| Relic(s) | Yes | Campaign treasure; also an influence item when listed in equipment |
+| Relic(s) | Yes | Campaign treasure recovered in scenarios |
+| Relic or Instrument | Yes | Roster influence equipment — **Relic** (+1 Sa) or **Instrument** (+1" M); not campaign treasure |
 
 ### Combat terms
 
@@ -181,7 +184,7 @@ Gunpowder access: **Basic**, **Refined**
 | Multiple dice | **2d6**, **3d6** — lowercase **d**, no space |
 | Stat check | **d6 + Sk ≥ 8** |
 | Casting | **casting roll** — **2d6 + Wi** vs difficulty |
-| Gunpowder / firearms | **primer roll** — **2d6** (difficulty **6+**) for firearms; no stat added |
+| Gunpowder / firearms | **primer roll** — **2d6 + Sk** vs **primer difficulty** (weapon profile); **RC** governs the **Attack Sequence** to-hit roll |
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
 | Natural results | **natural 1**, **natural 6** |
 | Table roll | **Roll 1d6:** then table |
@@ -248,15 +251,15 @@ or **+1 red die** when the rule modifies the **d6 + CC/RC** roll.
 
 ### Weapon table columns (standard)
 
-`| Weapon | Hands | Range | Difficulty | +Mt | +Sk | Notes |`
+`| Weapon | Hands | Range | Primer | +Mt | +Sk | Notes |`
 
 - **Range:** `3"–18"` for missiles; **Engagement** for melee.
-- **Difficulty:** **primer roll** target (`6+`) for firearms, or **—** for melee/missiles without a primer roll.
+- **Primer:** **2d6 + Sk** vs profile value; **—** for weapons without a primer roll. Profile values assume **Sk 3**; adjust per the **Primer Roll** box in `_shared-snippets.md`.
 - **Notes:** traits comma-separated — **Single Shot**, **Smoke**, **Flintlock** keyword callouts.
 
 ### Weapon trait line (short)
 
-> **Musket** · 2H · 3"–24" · primer roll 6+ · 5 Mt / 3 Sk · crits vs all targets
+> **Musket** · 2H · 3"–24" · primer **9+** · 5 Mt / 3 Sk · crits vs all targets
 
 ### Spell line (short)
 
@@ -442,7 +445,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 | **damage** vs **wound** | Some spell blurbs still say “damage”; prefer **hit** / **Wound** |
 | **Spell table format** | Refine column layout, Effect/Mishap wording, card reminders |
 | **Armor/shield conversion** | Failed defense dice → successful defense dice |
-| Scatter die | Define scatter die notation in `weapons.md` |
+| Scatter die | Define scatter die notation in `rules/gear.md` (Bombs) |
 | Opponent-controlled fighters | Standard phrase for “your opponent controls it for its activation” |
 
 ---
@@ -453,16 +456,19 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 - [ ] Actions and conditions **bold** on first use in the section
 - [ ] Distances use **"** notation
 - [ ] Dice use **1d6** / **2d6** / **d6 + stat ≥ 8**; **casting roll** / **primer roll** (not **gate**)
+- [ ] Table data not duplicated in surrounding prose
+- [ ] No superseded rules or rename callouts in player text
 - [ ] US spelling
 - [ ] **fighter** not **model** / **unit**
 - [ ] **retinue** not **warband**
 - [ ] **skip activation** not **forgo** / **forgone**
 - [ ] Shared sub-routines **repeated verbatim** where relevant (master: `rules/_shared-snippets.md`)
-- [ ] One-off rules cross-ref with `filename.md` reminders
+- [ ] Cross-refs use markdown links with readable labels (not raw file paths in backticks)
+- [ ] One-off rules link to the canonical file (subsystem name as link text)
 - [ ] No lore or designer history in procedure text
 - [ ] One clear outcome per bullet
 - [ ] **At a glance** box if the subsystem runs every turn or every battle
 
 ---
 
-*Last updated: 2026-05-29. Derived from `rules/`, `campaign/`, `noctvale.md`, and `NOCTVALE_DESIGN_TENETS.md`.*
+*Last updated: 2026-06-07. Derived from `rules/`, `campaign/`, `noctvale.md`, and `NOCTVALE_DESIGN_TENETS.md`.*

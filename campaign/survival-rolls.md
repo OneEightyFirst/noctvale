@@ -86,7 +86,7 @@ Use the battlefield location's table when the retinue won the scenario.
 |---|---|
 | 2 | **Mishap: Collapse** — choose 1 surviving fighter; that fighter rolls on the [Doom Table](post-game.md#step-3-doom-table). |
 | 3–4 | **Picked Clean** — gain **10 Crowns**. |
-| 5–6 | **Broken Goods** — gain 1 legal Basic weapon. |
+| 5–6 | **Broken Goods** — gain 1 legal **One-Handed** melee weapon. |
 | 7–8 | **Buried Relic** — recover **1 Relic**. |
 | 9–10 | **Sealed Cache** — recover **1 Relic** and gain **15 Crowns**. |
 | 11 | **Hidden Vault** — recover **2 Relics**. |

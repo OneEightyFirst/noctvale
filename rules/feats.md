@@ -1,7 +1,6 @@
 # Feats
 
-Feats are named rules gained through campaign advancement. They express a
-fighter's retinue identity beyond stats, weapons, and spells.
+Feats express a fighter's identity beyond stats, weapons, and spells.
 
 Feats should bend existing rules instead of replacing them. A feat may improve
 or modify an action, defense roll, wound state, post-game roll, or campaign
@@ -23,17 +22,63 @@ apply the feat once.
 
 ---
 
+## Feat picks at roster creation
+
+When you recruit each fighter, assign feats from your eligible lists. Most of
+these picks are **Proficiency** (weapon training). Campaign advancement may
+grant additional feats later (see [Feat Advancement Table](#feat-advancement-table)).
+
+
+| Class | Feat picks |
+|---|---|
+| **Leader** | 2 |
+| **Elite** | 2 |
+| **Specialist** | 1 chosen + 1 built-in proficiency (below) |
+| **Rank** | 1 |
+
+Each **Proficiency** pick must choose a **different** weapon proficiency. A
+fighter cannot equip a weapon unless they have the matching proficiency.
+
+### Built-in proficiencies (Specialist)
+
+| Specialist | Archetype | Built-in proficiency |
+|---|---|---|
+| **Squire** | Knights | **One-Handed** |
+| **Tracker** | Hunters | **Archery** or **Firearms** *(choose one; **Firearms** requires **Mortal** Domain)* |
+| **Militiaman** | Folk | **Two-Handed** |
+| **Adept** | Cult | *(none — **Caster** is the specialty)* |
+
+The built-in proficiency does not count against the Specialist's 1 chosen feat
+pick.
+
+---
+
 ## Feat Advancement Table
 
 The feat lists are incomplete. Until each eligible list has enough entries for
-campaign advancement, use the [Keyword Advancement Table](../campaign/post-game.md#keyword-advancement-table)
-instead.
+campaign advancement, use the [Keyword Advancement
+Table](../campaign/post-game.md#keyword-advancement-table) instead.
 
 ---
 
 ## Archetype Feats
 
 ### Knights
+
+#### Proficiency
+
+Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or
+**Thrown**. You may equip any weapon in that proficiency your retinue is allowed
+to buy.
+
+You may take this feat more than once. Each time, choose a **different**
+proficiency.
+
+**Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
+may equip a shield allowed by your Archetype. **Archery** and **Thrown** do not
+grant shield access.
+
+Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
 
 #### Hold the Line
 
@@ -61,6 +106,21 @@ Action** this battle, add **2 red dice** to this fighter's Strike Pool.
 
 ### Hunters
 
+#### Proficiency
+
+Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or
+**Thrown**. You may equip any weapon in that proficiency your retinue is allowed
+to buy.
+
+You may take this feat more than once. Each time, choose a **different**
+proficiency.
+
+**Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
+may equip a shield allowed by your Archetype. **Archery** and **Thrown** do not
+grant shield access.
+
+Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
+
 #### Marked Quarry
 
 At the start of the battle, choose 1 enemy fighter.
@@ -86,12 +146,37 @@ instead.
 
 ### Folk
 
+#### Proficiency
+
+Choose one weapon proficiency: **One-Handed**, **Archery**, or **Thrown**. You
+may equip any weapon in that proficiency your retinue is allowed to buy.
+
+You may take this feat more than once. Each time, choose a **different**
+proficiency.
+
+**Shield access:** **One-Handed** grants shield access if your Archetype allows
+shields. **Archery** and **Thrown** do not grant shield access.
+
+Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
+
 #### Stubborn Lot
 
 When this fighter uses **Help**, a roll of **1** counts as **2** if another
 friendly fighter is within **1"** of this fighter or the assisted fighter.
 
 ### Cult
+
+#### Proficiency
+
+Choose one weapon proficiency: **One-Handed** or **Archery**. You may equip any
+weapon in that proficiency your retinue is allowed to buy.
+
+You may take this feat more than once. Each time, choose a **different**
+proficiency.
+
+**Archery** does not grant shield access. Cult fighters cannot equip shields.
+
+Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
 
 #### Blood for the Rite
 
@@ -101,3 +186,18 @@ Add **+1** to the roll.
 
 This wound can reduce the chosen fighter to 0 Wounds and cause them to become
 **Downed**.
+
+---
+
+## Domain Feats
+
+### Mortal
+
+#### Proficiency
+
+Choose **Firearms**. You may equip any firearm or bomb your retinue is allowed
+to buy (see [Gear — Firearms](gear.md#firearms)).
+
+**Firearms** does not grant shield access.
+
+Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).

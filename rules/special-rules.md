@@ -34,7 +34,7 @@ Fighters may **move through** friendly fighters during **Move**, **Charge**, **S
 
 When making a **Cast** action with a **firearm** or **damage spell**, if a **friendly fighter** lies **between** the attacker and the declared enemy target — a straight line from the center of the attacker's base to the center of the target's base crosses the friendly's base — and the attack **misses**, roll **1d6**. On a **1**, that friendly is hit.
 
-**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no wounds** from that action. It does not include a **Mishap** or **Misfire** (double 1s), or a failed roll (the spell fizzles or the firearm fails to fire).
+**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no wounds** from that action. It does not include a **Mishap** or **Misfire** (**double 1s** on the **casting roll** or **primer roll**), or a failed roll (the spell fizzles or the firearm fails to fire).
 
 On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
 

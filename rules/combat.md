@@ -14,7 +14,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See `equipment.md`.)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See [Gear — Equipment](gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -88,7 +88,7 @@ After rolling defense dice, **armor and shields convert failed defense dice into
 - **Armor** converts failed defense dice: Light (2 red or blue → 1 normal success), Medium (1 red → 1 normal success), Heavy (1 red → 1 normal success OR 2 red → 1 critical success)
 - **Shields** convert failed red and/or blue defense dice: Buckler (1 blue), Shield (1 red + 1 blue), Tower Shield (2 red + 1 blue)
 
-Armor and shield conversions **stack**. The defender chooses which failed defense dice to convert. Converted dice follow all normal blocking rules. *(See equipment.md for full tables.)*
+Armor and shield conversions **stack**. The defender chooses which failed defense dice to convert. Converted dice follow all normal blocking rules. *(See [Gear — Equipment](gear.md#equipment) for full tables.)*
 
 Heavy Armor's critical success is the only way to block incoming critical hits with equipment.
 
@@ -160,7 +160,7 @@ Nature > Necromancy > Blood > Nature
 ```
 
 ### Firearms
-Firearms use the **primer roll** (same **2d6** structure as the **casting roll**) and gain criticals against **all targets**, regardless of weapon type. *(See `magic.md` and `weapons.md`.)*
+Firearms use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. *(See [Gear — Weapons](gear.md#weapons).)*
 
 ---
 

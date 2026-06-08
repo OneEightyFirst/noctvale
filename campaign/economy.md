@@ -19,7 +19,7 @@ They represent powerful ancient objects scattered across the cursed land.
 Retinues search ruins, battlefields, shrines, and settlements to recover them.
 
 Recovered Relics are campaign treasures, not the **Relic** influence equipment
-in `rules/equipment.md`.
+in [Gear — Equipment](../rules/gear.md#equipment).
 
 ---
 

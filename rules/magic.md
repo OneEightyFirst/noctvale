@@ -31,26 +31,7 @@ Once the spell goes off, resolve the attack using the **Attack Sequence** (below
 
 Spell damage is decoupled from the caster's physical stats — magic power comes from the spell profile.
 
----
-
-## Firearms
-
-Firearms use the same **2d6** structure as the **Casting Roll**, representing the unreliability of black powder weapons.
-
-> ### Primer Roll (2d6)
->
-> Roll **2d6** against the firearm's loading difficulty. No stat is added.
->
-> | Result | Effect |
-> |---|---|
-> | **Double 1s** | **Misfire** — see weapon notes |
-> | **Below difficulty** | The gun fails to fire. The action is spent |
-> | **Meets or exceeds difficulty** | The gun fires. Resolve the **Attack Sequence** |
-> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
-
-Firearms gain **critical hits against all targets**, regardless of weapon type — they exist outside the weapon triangle.
-
-Once the firearm fires, resolve the attack using the **Attack Sequence** (below).
+Gunpowder is not magic — see [Gear](gear.md).
 
 ---
 
@@ -64,7 +45,7 @@ Once the firearm fires, resolve the attack using the **Attack Sequence** (below)
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See `equipment.md`.)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See [Gear — Equipment](gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -78,7 +59,7 @@ Once the firearm fires, resolve the attack using the **Attack Sequence** (below)
 >
 > **Downed** fighters defend with their full pool. **Stunned** fighters defend with **red dice only** (no blue).
 
-*(Full step-by-step rules: `combat.md`.)*
+*(Full step-by-step rules: [Combat](combat.md).)*
 
 ---
 
@@ -115,9 +96,17 @@ Having advantage in the triangle grants **critical hits** when attacking with ma
 
 ---
 
-## Spell Lists
+## Domain Spell Lists
 
-Each domain has a **standard ranged attack spell** (not counted toward the limit) plus **6 additional spells**.
+Domain identity (Archetype access, magic triangle, feats): [Retinue](retinue.md#domains).
+
+### Spell selection
+
+Casters choose **3 spells** from their retinue's Domain list at recruitment. Each Domain's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley, Deathbolt, etc.) counts as one of those choices.
+
+Spells marked *(TBD)* are not yet playtest-ready.
+
+Each domain has a standard ranged attack spell plus **6 additional spells**.
 
 ### Light
 
@@ -151,7 +140,7 @@ The hells hold infinite daemonic entities of different shapes and sizes. To help
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
 
-For alpha, daemons are recruited like any other retinue member. Pre-game summoning tables are a post-alpha feature (see todo.md).
+For alpha, daemons are recruited like any other retinue member. Pre-game summoning tables are a post-alpha feature (see `todo.md`).
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
@@ -171,7 +160,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned — suffer -1 Mt and -1 Sk until the start of the caster's next activation | *(TBD)* |
 | Feral Form | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
 | Entangle | *(TBD)* | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
-| Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See `profiles.md` | The Swarm appears hostile — your opponent controls it for its single activation |
+| Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](profiles.md) | The Swarm appears hostile — your opponent controls it for its single activation |
 | Dread Chorus | *(TBD)* | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test (d6 + Sa ≥ 8) or gain Fear of the caster until the start of the caster's next activation | *(TBD)* |
 
 ### Necromancy
@@ -179,7 +168,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
-| Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See `profiles.md` | The Skeleton appears hostile — your opponent controls it for its single activation |
+| Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See [Profiles](profiles.md) | The Skeleton appears hostile — your opponent controls it for its single activation |
 | Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation | Your opponent places and controls the raised fighter instead |
 | Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
 | Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
@@ -197,6 +186,10 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Enthrall | *(TBD)* | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
 | Feast of Excess | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned (keeps wounds but vulnerable) | *(TBD)* |
 | Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly Blood domain fighter is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation |
+
+### Mortal
+
+No spells. The **Mortal** Domain grants access to **gunpowder weapons** instead — see [Gear](gear.md).
 
 ---
 
@@ -230,7 +223,7 @@ Magic is grouped into two broad moral categories:
 - The Mishap system means every spell is a calculated risk
 - Spell damage is flat — power comes from the spell profile, decoupling magical and physical identity
 - Spells produce larger dice pools than weapons (5-6 dice vs 2-4 from weapon modifiers) as the payoff for the **casting roll** — a sword always works, a spell might fizzle or backfire
-- Firearms use a flat **primer roll** (no stat) while magic uses **2d6 + Wi** — guns are purely mechanical (misfire is equipment failure), while casting improves with the caster's Will
+- Firearms use **2d6 + Sk** on the **primer roll** while magic uses **2d6 + Wi** on the **casting roll** — same roll structure, different stat
 - Mirroring the weapon triangle with magic triangles creates a unified advantage-and-critical framework across all combat types
 - Firearms gaining crits against all targets (outside the triangle) is their payoff for the loading risk
 - Cast not triggering Ranged Reactions gives magic a distinct tactical niche compared to conventional ranged weapons

@@ -137,9 +137,10 @@ For current rules procedures, use the modular rule files:
 | Wound states | `rules/conditions.md` |
 | Line of sight, Overwatch, and other table rules | `rules/special-rules.md` |
 | Retinue identity | `rules/retinue.md` |
-| Retinue building | `rules/retinue-building.md` |
-| Magic and firearms | `rules/magic.md` |
-| Weapons and equipment | `rules/weapons.md`, `rules/equipment.md` |
+| Creating a retinue (player guide) | `rules/creating-a-retinue.md` |
+| Retinue building (reference) | `rules/retinue-building.md` |
+| Gear (weapons and equipment) | `rules/gear.md` |
+| Magic (casting and spells) | `rules/magic.md` |
 | Scenarios | `campaign/scenarios.md` |
 | Post-game sequence | `campaign/post-game.md` |
 | Survival Rolls | `campaign/survival-rolls.md` |
