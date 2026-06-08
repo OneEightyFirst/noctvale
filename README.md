@@ -24,8 +24,13 @@ rules/
   special-rules.md       — Line of Sight, Cover, Falling, Overwatch, Gang Up
   gear.md                — Weapons and equipment: costs, profiles, and combat rules
   magic.md               — Casting, magic triangles, Domain spell lists, spell resolution
-  retinue.md             — Archetypes, Domains, Traditions, and named faction presets
-  creating-a-retinue.md  — Player guide: step-by-step roster creation
+  retinue.md             — Shared identity: Domains, Traditions, named faction index
+  archetypes/            — Archetype chapters (fluff + how to build each retinue)
+    knights.md
+    hunters.md
+    folk.md
+    cult.md
+  creating-a-retinue.md  — Player guide: budget, species, equip, verify
   retinue-building.md    — Reference: Crown budgets, composition limits, design notes
 campaign/
   scenarios.md           — Battle scenarios

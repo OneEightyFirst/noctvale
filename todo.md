@@ -101,6 +101,19 @@ Define feat lists for each archetype and each domain. Feats are the primary mech
 
 ---
 
+## Phase 5a: Archetype rulebook chapters
+
+Restructure `rules/archetypes/` for rulebook readability (Mordheim warband style).
+
+- [x] Split one file per Archetype (Knights, Hunters, Folk, Cult)
+- [ ] **Rethink "class"** — Leader / Elite / Specialist / Rank is internal jargon; find player-facing term (role? tier? fighter type?) or drop the generic label and use only archetype names (Lord, Theurge, etc.)
+- [x] Restructure recruit section: one heading per fighter type, species profile table (M through W + Cost), prose for slot limits — **all four archetype chapters** (`rules/archetypes/`)
+- [x] Propagate new leader/caster/spell rules to `retinue-building.md`, `feats.md`, `magic.md`, `creating-a-retinue.md`, `campaign/post-game.md`
+- [ ] Reduce gratuitous tables — fighter count, archetype access, and similar as short prose where a table adds no scan value
+- [ ] Resolve creation stat-cap wording — "no stat above 5" / "except species baselines at 4" has no `decision-log.md` entry; confirm intent or remove
+
+---
+
 ## Phase 5c: Playtest Rosters
 
 Build full playtest rosters for Silver Hunt and Nightpack.

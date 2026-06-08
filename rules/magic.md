@@ -102,7 +102,15 @@ Domain identity (Archetype access, magic triangle, feats): [Retinue](retinue.md#
 
 ### Spell selection
 
-Casters choose **3 spells** from their retinue's Domain list at recruitment. Each Domain's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley, Deathbolt, etc.) counts as one of those choices.
+At recruitment, **Caster** fighters choose spells from their retinue's Domain
+list. Count depends on fighter type (see [Archetype
+chapters](archetypes/knights.md) and [Retinue Building — Caster](retinue-building.md#caster--roster-creation)):
+
+- **Leader** with **Caster** (Lord, Captain, Mayor) or **Theurge:** **2** spells
+- **Adept:** **1** spell
+
+Each Domain's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley,
+Deathbolt, etc.) counts as one of those choices.
 
 Spells marked *(TBD)* are not yet playtest-ready.
 
@@ -228,4 +236,4 @@ Magic is grouped into two broad moral categories:
 - Firearms gaining crits against all targets (outside the triangle) is their payoff for the loading risk
 - Cast not triggering Ranged Reactions gives magic a distinct tactical niche compared to conventional ranged weapons
 - The "at least one Arcane Bolt equivalent" ensures every magic class has offensive utility
-- Wi baseline is 3 for all species; casters are expected to have Wi 4+. A Wi 3 non-caster can technically attempt spells but at reduced odds
+- Wi baseline is 3 for Humans; recruitment bonuses and advancement raise caster Wi. A Wi 3 caster attempts spells at reduced odds

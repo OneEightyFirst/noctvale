@@ -97,5 +97,5 @@ A fighter's **Mt** stat determines their red dice. Their **Sk** stat determines 
 - Humans are the true baseline (all 3s except Sa 4), Elves are agile and mystical (Sk 4, Wi 4, fast), Dwarves are tough and sturdy (Mt 4, slow) — species identity comes through specialty bonuses
 - All species share W 3 — Wounds is too dominant a stat to vary across species (it multiplicatively amplifies all defensive gear), so durability differences come from armor, toughness, and special rules instead
 - Df is no longer a separate stat — defense is derived from base dice (1 red + 1 blue) plus Mt/Sk comparisons
-- Wi (Will) is the casting stat — added to 2d6 for spellcasting. Baseline 3 for all species; casters are expected to have Wi 4+. Spell difficulties are calibrated so Wi 4 matches the old flat 2d6 odds
+- Wi (Will) is the casting stat — added to 2d6 for spellcasting. Baseline 3 for Humans; recruitment stat bonuses and campaign advancement raise Wi on casters. Spell difficulties are calibrated so Wi 4 matches the old flat 2d6 odds
 - Sa (Sanity) is the mental defense stat — used to resist Fear, Panic, and Insanity (see sanity.md)

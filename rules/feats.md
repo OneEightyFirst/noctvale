@@ -24,17 +24,13 @@ apply the feat once.
 
 ## Feat picks at roster creation
 
-When you recruit each fighter, assign feats from your eligible lists. Most of
-these picks are **Proficiency** (weapon training). Campaign advancement may
-grant additional feats later (see [Feat Advancement Table](#feat-advancement-table)).
+When you recruit each fighter, assign feats from your Archetype feat list and
+(any) eligible Domain feat list. Each **[Archetype chapter](archetypes/knights.md)**
+lists the feats available to that retinue. **Mortal** retinues also have
+**Firearms** on the Domain feat list.
 
-
-| Class | Feat picks |
-|---|---|
-| **Leader** | 2 |
-| **Elite** | 2 |
-| **Specialist** | 1 chosen + 1 built-in proficiency (below) |
-| **Rank** | 1 |
+Campaign advancement may grant additional feats later (see [Feat Advancement
+Table](#feat-advancement-table)).
 
 Each **Proficiency** pick must choose a **different** weapon proficiency. A
 fighter cannot equip a weapon unless they have the matching proficiency.

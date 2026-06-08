@@ -137,6 +137,7 @@ For current rules procedures, use the modular rule files:
 | Wound states | `rules/conditions.md` |
 | Line of sight, Overwatch, and other table rules | `rules/special-rules.md` |
 | Retinue identity | `rules/retinue.md` |
+| Archetype chapters | `rules/archetypes/` (Knights, Hunters, Folk, Cult) |
 | Creating a retinue (player guide) | `rules/creating-a-retinue.md` |
 | Retinue building (reference) | `rules/retinue-building.md` |
 | Gear (weapons and equipment) | `rules/gear.md` |

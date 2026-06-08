@@ -152,11 +152,11 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 5–6 | **Steady** — +1 Sa permanently (max 6); no new keyword. |
 | 7 | **Hardened** — gain **Fearless** keyword. |
 | 8 | **Oathbound** — gain **Fearless** keyword **or** +1 Wi (max 6), your choice. |
-| 9–10 | **Gifted** — if eligible, gain **Caster** keyword (Wi 4+, assign 3 Domain spells). If not eligible, +1 Wi instead. |
+| 9–10 | **Gifted** — if eligible, gain **Caster** keyword and assign Domain spells (Leader-type **2**, Adept-type or **Acolyte** **1**). If not eligible, +1 Wi instead. |
 | 11 | **Marked** — gain **Fearless** and +1 to CC or RC (max 6). |
 | 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
 
-**Gaining Caster mid-campaign:** Assign 3 spells from the retinue's Domain. The fighter must have Wi 4+ (raise Wi to 4 if needed). Cult **Acolytes** may gain Caster here; other Archetypes only if under the retinue's max Caster count and Mortal Domain does not apply.
+**Gaining Caster mid-campaign:** Assign Domain spells per fighter type — **2** for a Leader who gains **Caster**, **1** for an **Adept** or **Acolyte**. Cult **Acolytes** may gain **Caster** here; other Archetypes only if under the retinue's max **Caster** count and **Mortal** Domain does not apply.
 
 ---
 

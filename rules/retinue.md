@@ -1,6 +1,15 @@
 # Retinue
 
-Your **retinue** is the force you field — fighters, gear, and (if your Domain allows) spells. This file covers **identity**: Archetype, Domain, and optional named presets. To build a roster, start with **[Creating a Retinue](creating-a-retinue.md)**. For reference costs and design notes, see **[Retinue Building](retinue-building.md)**.
+Your **retinue** is the force you field — fighters, gear, and (if your Domain allows) spells. This file covers shared **identity** rules: what Archetype, Domain, and Tradition mean, plus Domain and Tradition reference tables.
+
+To build a roster, start with **[Creating a Retinue](creating-a-retinue.md)** and your Archetype chapter:
+
+- **[Knights](archetypes/knights.md)**
+- **[Hunters](archetypes/hunters.md)**
+- **[Folk](archetypes/folk.md)**
+- **[Cult](archetypes/cult.md)**
+
+For reference costs and design notes, see **[Retinue Building](retinue-building.md)**.
 
 ---
 
@@ -27,42 +36,16 @@ combination yourself.
 ## Archetypes
 
 Archetype sets which options appear on each fighter's **Proficiency** feat,
-plus **armor** cap, **shields**, and **firearm tier** access. See [Feats —
-Proficiency](feats.md#archetype-feats) and [Gear — Weapon
-proficiencies](gear.md#weapon-proficiencies).
+plus **armor** cap, **shields**, and **firearm tier** access. Each Archetype has
+its own rulebook chapter with fluff, building rules, example factions, and a
+roster checklist.
 
-Each fighter must have the matching proficiency to equip a weapon. Assign feat
-picks at roster creation (see [Feats — Feat picks at roster
-creation](feats.md#feat-picks-at-roster-creation)).
-
-### Knights
-- **Proficiency:** One-Handed, Two-Handed, Archery, Thrown
-- **Armor:** Up to Heavy
-- **Shields:** Buckler, Shield, Tower Shield
-- **Firearms tier:** Basic (Musket, Blunderbuss) — Mortal Domain only
-- **Max Casters:** 1
-
-### Hunters
-- **Proficiency:** One-Handed, Two-Handed, Archery, Thrown
-- **Armor:** Up to Medium
-- **Shields:** Buckler, Shield
-- **Firearms tier:** Basic + Refined (Pistol, Long Rifle) — Mortal Domain only
-- **Max Casters:** 1
-
-### Folk
-- **Proficiency:** One-Handed, Archery, Thrown
-- **Armor:** Up to Light
-- **Shields:** Buckler, Shield
-- **Firearms tier:** Basic (Musket, Blunderbuss) — Mortal Domain only
-- **Max Casters:** 1
-
-### Cult
-- **Domain Restriction:** Cannot choose Mortal — Cult must have a magic Domain
-- **Proficiency:** One-Handed, Archery
-- **Armor:** None
-- **Shields:** None
-- **Firearms:** None
-- **Max Casters:** 3
+| Archetype | At a glance | Chapter |
+|---|---|---|
+| **Knights** | 5–10 fighters, Heavy armor, 1 caster | **[Knights](archetypes/knights.md)** |
+| **Hunters** | 5–12 fighters, Medium armor, refined firearms, 1 caster | **[Hunters](archetypes/hunters.md)** |
+| **Folk** | 6–15 fighters, Light armor, 1 caster | **[Folk](archetypes/folk.md)** |
+| **Cult** | 5–10 fighters, no armor, 3 casters, no Mortal Domain | **[Cult](archetypes/cult.md)** |
 
 **Firearms** (firearms and bombs) require the **Firearms** proficiency from the
 **Mortal** Domain feat list. Magic and gunpowder are mutually exclusive paths to
@@ -73,6 +56,8 @@ Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic
 only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
 
 **Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
+
+Proficiency and feat picks: [Feats](feats.md) · Weapon lists: [Gear](gear.md)
 
 ---
 
@@ -197,7 +182,7 @@ Optional starting Tradition when using a preset (any allowed Tradition is legal)
 | Inquisition | Zealots |
 | Silver Hunt | Alchemists |
 | Village Watch | Constables |
-| Iron Law | Ironbound |
+| Iron Law | Constables |
 
 ### Tradition Special Rules
 
@@ -386,45 +371,14 @@ guns; Silver Hunt leans Alchemists, poisons, and silver weapons.
 
 ## Preset Lore
 
-> **Note:** Placeholder material — shorthand notes to establish tone. Final lore will be written by a human author.
+> **Note:** Placeholder material — shorthand notes to establish tone. Final lore will be written by a human author. Expanded faction blurbs live in each **[Archetype chapter](archetypes/knights.md)** under **Example Factions**.
 
-### Phoenix Guard
-Elite hunters and knights tied to the old crown and the fall of the Vampire King. The Phoenix Guard were the High King's personal guard, with a Round Table-like feel. After the fall, they split three ways: four rebelled, four hid, and four joined the turned King. The Phoenix Guard ultimately slew the turned King.
-
-### Radiant Crusade
-Holy warriors sworn to destroy undead corruption. They swore sacred vows during the Hundred Years of War and continue their crusade across Noctvale.
-
-### Inquisition
-Anti-magic zealots, opposed to all magic because magic is blamed for the fall of the empire. They declared all magic a corruption that had doomed the realm.
-
-### Silver Hunt
-Monster hunters, especially targeting werebeasts and wild horrors. They tracked the monstrous beasts that spread through the wild lands during the war.
-
-### Arcane Conclave
-Scholars and mages seeking supernatural knowledge. Originally advised the emperor before the fall. They seek knowledge of the supernatural forces now unleashed across Noctvale.
-
-### Village Watch
-Ordinary townsfolk defending their homes. Civilian defenders — villages formed watches during the long war to protect their homes from the horrors that roam the land.
-
-### Iron Law
-Corrupted remnants of imperial law and constabulary. In the absence of the empire's authority, those who once enforced the law took power for themselves. They now rule through fear, chains, and the barrel of a gun.
-
-### Coven
-Witches banding together for survival after persecution. Forced to form secret
-covens to protect themselves from those who believed all magic — and all who
-were different — were evil and deserved to be purged.
-
-### Nightpack
-Werebeast packs and shapeshifter retinues. Savage packs that formed in the wilderness during the long war.
-
-### Grave Wardens
-Necromantic faction commanding restless dead. They learned to command the dead rising from the endless battlefields of the Hundred Years of War.
-
-### Nobility
-Vampire aristocracy. Decadent noble houses, lavish revelries, hunting parties, and predation. Scattered across ruined estates and dark fortresses, they no longer attempt to rule as kings but instead indulge in endless decadence, treating the shattered lands as their private playground.
-
-### Infernal Pact
-Demonic cult brotherhoods. Secret brotherhoods devoted to demonic powers that formed in the shadows during the war.
+| Faction | Archetype chapter |
+|---|---|
+| Phoenix Guard, Nobility | [Knights](archetypes/knights.md) |
+| Silver Hunt, Radiant Crusade, Inquisition, Nightpack | [Hunters](archetypes/hunters.md) |
+| Village Watch, Iron Law | [Folk](archetypes/folk.md) |
+| Coven, Arcane Conclave, Grave Wardens, Infernal Pact | [Cult](archetypes/cult.md) |
 
 ---
 

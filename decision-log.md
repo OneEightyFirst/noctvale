@@ -26,6 +26,36 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-07 — Archetype rulebook chapters and roster creation sync
+
+**Decision:** Add **`rules/archetypes/`** — one Mordheim-style chapter per Archetype
+(Knights, Hunters, Folk, Cult) with fluff, Domain × Tradition options, a shared
+**Species** table (Cost: — / +10), fighter-type recruit blocks (slot counts in
+headings), inline feat lists, and archetype checklists. Trim
+**`creating-a-retinue.md`** to budget, archetype picker, species-cost note,
+equip, and verify — building detail lives in the archetype chapters.
+
+**Leader profile (all Archetypes):** +1 to **2** different stats at recruitment.
+Optional **Caster** on non-**Mortal** Domains — knows **2** Domain spells. No
+automatic Wi 4; Wi comes from species + recruitment bonuses.
+
+**Cult:** **Theurge** — required **Caster**, +2 stats, 2 spells. **Adept** —
+required **Caster**, +1 stat, 1 spell. **Acolyte** — species baseline only.
+
+**Elite / Specialist / Rank:** unchanged costs (75 / 60 / 40). Elite +1 Mt or
++1 Sk; Specialist +1 stat plus built-in proficiencies (Squire, Tracker,
+Militiaman). Sync **`retinue-building.md`**, **`magic.md`**, **`feats.md`**,
+**`creating-a-retinue.md`**, and **`campaign/post-game.md`** to match. Remove
+drifted creation stat-cap prose and “Caster replaces stat bonus” / auto Wi 4+
+wording.
+
+**Reasoning:** Self-contained archetype chapters read like a rulebook warband
+list. Species + cost in one table reduces cross-referencing. Leaders earn magic
+through recruitment choices and Wi investment, not a flat caster tax. Spell counts
+scale by fighter role (2 on Leader/Theurge, 1 on Adept).
+
+---
+
 ## 2026-06-07 — Proficiency feats, gear chapter, and roster guide
 
 **Decision:** Fighters gain weapon access through the **Proficiency** feat — the
