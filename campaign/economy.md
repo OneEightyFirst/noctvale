@@ -18,8 +18,9 @@ Relics are the **primary campaign resource**.
 They represent powerful ancient objects scattered across the cursed land.
 Retinues search ruins, battlefields, shrines, and settlements to recover them.
 
-Recovered Relics are campaign treasures, not the **Relic** influence equipment
-in [Gear — Equipment](../rules/gear.md#equipment).
+Recovered Relics are campaign treasures, not the roster **Relic** (**Sphere of
+Influence** gear) in [Gear — Sphere of
+Influence](../rules/gear.md#sphere-of-influence).
 
 ---
 

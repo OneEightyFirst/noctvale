@@ -253,6 +253,12 @@ Starting with the player with initiative, players alternate setting up one
 deployment group at a time within their deployment zones until both retinues
 have been deployed.
 
+Fighters with **Infiltrate** are not placed during this step — they are held in
+reserve off the board. *(See [Feats — Infiltrate](feats.md#infiltrate).)*
+
+After both retinues are deployed, resolve **Infiltrate** placements immediately
+before the first round begins.
+
 ---
 
 ## Round at a Glance

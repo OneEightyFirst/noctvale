@@ -34,7 +34,7 @@ wounds. A Poisoned fighter suffers **−1 Mt** for the rest of the battle.
 
 ## Animals
 
-Animal profiles are an open roster decision tracked in `decision-log.md` Ideas.
+Companion profiles and rules: [Companions](companions.md).
 
 ---
 

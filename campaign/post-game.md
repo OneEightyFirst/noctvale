@@ -13,10 +13,11 @@ Quest post-quest events.
 
 1. **Scenario Results** — victory rewards and Relics recovered on the table
 2. **Casualties** — every fighter who ended the battle **Out of Action** rolls on the **Casualty Table**
-3. **Doom** — any fighter directed to this table rolls **2d6**
-4. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](survival-rolls.md))
-5. **Economy** — sell Relics, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
-6. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
+3. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#companion-recovery))
+4. **Doom** — any fighter directed to this table rolls **2d6**
+5. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](survival-rolls.md))
+6. **Economy** — sell Relics, recruit, equip ([economy.md](economy.md), [retinue building](../rules/retinue-building.md))
+7. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 
 ---
 
@@ -26,7 +27,7 @@ Resolve the scenario's victory rewards and any Relics recovered on the table.
 
 Scenario rewards are static. Do not roll for scenario rewards.
 
-Set recovered Relics aside until Step 5.
+Set recovered Relics aside until Step 6.
 
 ---
 
@@ -37,6 +38,9 @@ this table.
 
 Fighters who were **Downed or Stunned** but not Out of Action skip this table —
 they are battered but return next battle with no roll.
+
+**Companions** are not fighters — they never roll on this table. See [Companion
+Recovery](#companion-recovery).
 
 | d6 | Result |
 |---|---|
@@ -49,7 +53,22 @@ they are battered but return next battle with no roll.
 
 ---
 
-## Step 3: Doom Table
+## Step 3: Companion Recovery
+
+Each **Companion** that was **Out of Action** when the battle ended rolls
+**1d6**:
+
+| d6 | Result |
+|---|---|
+| 1–4 | **Recovering** — the **Companion** misses the **next battle**. |
+| 5–6 | **Fine** — return as normal. |
+
+**Companions** are never removed from the roster and never roll on the
+**Casualty Table** or **Doom Table**.
+
+---
+
+## Step 4: Doom Table
 
 Roll **2d6** when directed from the **Casualty Table** (Grievous), or from a
 Survival Roll Mishap if noted.
@@ -72,16 +91,16 @@ Permanent injuries reduce stats. Stats cannot drop below **1**. Campaign advance
 
 ---
 
-## Step 4: Survival Rolls
+## Step 5: Survival Rolls
 
 Run [Survival Rolls](survival-rolls.md).
 
 Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics
-aside until Step 5.
+aside until Step 6.
 
 ---
 
-## Step 5: Economy
+## Step 6: Economy
 
 1. Total Relics recovered this battle from scenario rewards, Looting, and
    Survival Rolls.
@@ -90,7 +109,7 @@ aside until Step 5.
 
 ---
 
-## Step 6: Experience & Advancement
+## Step 7: Experience & Advancement
 
 XP is a **bank per fighter** — earned from specific deeds, **spent** to buy advancement rolls. There are **no levels** and no thresholds. If you have the XP, you can spend it (usually at the end of this step, between battles).
 

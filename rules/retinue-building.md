@@ -177,7 +177,9 @@ Equipment access follows [Retinue](retinue.md):
 
 ### Weapon slots
 
-Each fighter has **3 weapon slots**. One-handed weapons and shields take 1 slot; two-handed weapons take 2. Influence items (**Relic** or **Instrument** — roster gear, not campaign **Relics**) take 2 slots each.
+Each fighter has **3 weapon slots**. One-handed weapons and shields take 1 slot;
+two-handed weapons take 2. **Relic** and **Instrument** (roster **Sphere of
+Influence** gear — not campaign **Relics**) take 2 slots each.
 
 ### Spells
 

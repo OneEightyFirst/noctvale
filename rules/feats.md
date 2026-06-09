@@ -194,6 +194,30 @@ Table](../campaign/post-game.md#keyword-advancement-table) for that Domain.
 **Caster-only cap:** Each Domain feat list may include at most **one** feat
 marked **Caster only**. **Cult** Domain lists may include more when written.
 
+Some feats appear on more than one Domain list. Each shared feat is defined once
+below; the heading notes which Domains include it.
+
+#### Infiltrate *(Nature · Blood · Infernal)*
+
+If this fighter would be set up during deployment, they may be held in reserve
+off the board instead.
+
+Immediately before the start of the first round, their controlling player may
+set them up anywhere on the battlefield where no enemy fighter has **line of
+sight** to them and they are not **within 12"** of any enemy fighter.
+
+If both players have fighters with **Infiltrate**, alternate placing one
+fighter at a time, starting with the winner of a roll-off (**1d6** each; reroll
+ties).
+
+#### Animal Handling *(Nature · Mortal · Arcane)*
+
+This fighter may field **one** **Companion** purchased from [Gear —
+Companions](gear.md#companions). Record the **Companion** on this fighter's
+roster entry.
+
+Companion rules: [Companions](companions.md).
+
 ### Light
 
 #### Warded
@@ -235,3 +259,5 @@ enemy fighter, they may perform **Hurl**.
 After this fighter completes a **Charge** that ends **within engagement range**
 of an enemy, they may perform **Hurl** once without spending an action. If they
 do, they cannot make a **Melee** attack during that activation.
+
+### Blood

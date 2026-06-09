@@ -33,6 +33,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
 | Magic System (casting, triangles, spell lists) | `rules/magic.md` |
 | Creature & Special Fighter Profiles | `rules/profiles.md` |
+| Companions | `rules/companions.md` |
 | Feats (Archetype & Domain) | `rules/feats.md` |
 | Gear (weapons and equipment) | `rules/gear.md` |
 | Survival Rolls | `campaign/survival-rolls.md` |

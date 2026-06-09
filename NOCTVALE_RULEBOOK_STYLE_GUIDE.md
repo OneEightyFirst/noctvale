@@ -127,7 +127,8 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | keyword | No in prose | **Caster**, **Fear**, **Fearless** — bold the keyword name |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
 | Relic(s) | Yes | Campaign treasure recovered in scenarios |
-| Relic or Instrument | Yes | Roster influence equipment — **Relic** (+1 Sa) or **Instrument** (+1" M); not campaign treasure |
+| Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 Sa) or **Instrument** (+1" M); not campaign treasure |
+| Sphere of Influence | Yes | Area effect from **Relic**, **Instrument**, or qualifying **Companion** |
 
 ### Combat terms
 

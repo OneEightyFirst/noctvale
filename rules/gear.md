@@ -2,7 +2,7 @@
 
 **Gear** is everything fighters carry into battle: **weapons** (by proficiency:
 One-Handed, Two-Handed, Archery, Thrown, Firearms) and **equipment** (armor,
-shields, alchemy, influence). This chapter covers Crown costs, profiles, and
+shields, alchemy, and **Sphere of Influence** gear). This chapter covers Crown costs, profiles, and
 combat rules for both.
 
 Every Crown cost is a multiple of **5 Crowns**.
@@ -143,9 +143,10 @@ Bombs are **Single Shot** (one use per battle).
 
 ---
 
-### Crown costs — influence *(Relic or Instrument)*
+### Crown costs — Sphere of Influence *(Relic or Instrument)*
 
-**Relic** and **Instrument** here are roster influence gear — not a campaign **Relic** recovered in scenarios.
+**Relic** and **Instrument** here are roster gear with a **Sphere of Influence**
+— not a campaign **Relic** recovered in scenarios.
 
 
 | Item           | Slots | Cost | Effect                                                                      |
@@ -181,6 +182,25 @@ Alchemy is available to every retinue. Apply **one poison per weapon** during ro
 
 
 Poisons are **consumable** (one battle only).
+
+---
+
+### Companions
+
+Requires **Animal Handling** on the **Handler** (see [Feats — Animal
+Handling](feats.md#animal-handling-nature--mortal--arcane)). Each **Handler**
+fields one **Companion**; companions do **not** use weapon slots.
+
+Rules and profiles: [Companions](companions.md).
+
+
+| Companion | Cost |
+| --- | --- |
+| **Hound** | 40 |
+| **Hawk** | 50 |
+| **Cat** | 35 |
+| **Giant Rat** | 30 |
+| **Rat Swarm** | 45 |
 
 ---
 
@@ -346,7 +366,7 @@ Bombs are thrown explosives with a flat Strike Pool that hits all fighters (frie
 
 ## Equipment
 
-Combat rules for armor, shields, alchemy, and influence gear. Crown costs: [Roster building](#roster-building) above.
+Combat rules for armor, shields, alchemy, and **Sphere of Influence** gear. Crown costs: [Roster building](#roster-building) above.
 
 ### Armor
 
@@ -392,23 +412,28 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 | Widow's Tears | Unblocked hits inflict 2 wounds instead of 1 | Lethal, expensive |
 | Silversbane | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |
 
-### Influence
+### Sphere of Influence
 
-Some equipment projects a passive effect in an area around the bearer. This area is called the **Influence Bubble**.
+Some equipment and **Companions** project a passive effect in an area around
+the bearer or **Companion**. This area is the **Sphere of Influence**.
 
-- The effect applies to all valid targets (friendly or enemy, as noted) **within the stated range** of the bearer, measured from the bearer's base.
-- The bearer **is affected** by their own Influence Bubble.
-- Influence Bubbles **do not require line of sight** — they represent presence, sound, or proximity, not vision.
-- The bearer must be **Active** — Influence Bubbles are suppressed while the bearer is Downed, Stunned, or Out of Action.
-- Influence Bubbles from the same item **do not stack**. If two friendly fighters carry War Banners, a fighter within range of both still receives only +1 Sa.
+- The effect applies to all valid targets (friendly or enemy, as noted) **within the stated range**, measured from the bearer's or **Companion**'s base.
+- The bearer **is affected** by their own **Sphere of Influence**.
+- **Spheres of Influence** **do not require line of sight** — they represent presence, sound, or proximity, not vision.
+- The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions skip **Downed** and **Stunned** — see [Companions](companions.md).)*
+- **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Relics**, a fighter within range of both still receives only **+1 Sa**.
 
-#### Influence equipment
+#### Relic and Instrument
 
-Influence equipment is **permanent** (not consumed between games). Each item takes weapon slots as noted. **Relic** and **Instrument** here are roster influence gear — not a campaign **Relic** recovered in scenarios.
+**Relic** and **Instrument** are **permanent** (not consumed between games). Each
+item takes weapon slots as noted. They are roster gear — not a campaign **Relic**
+recovered in scenarios.
 
-| Item | Slots | Influence (friendly) | Range | Notes |
+| Item | Slots | Effect (friendly) | Range | Notes |
 |---|---|---|---|---|
 | Relic | 2 | +1 Sa | 6" | Passive |
 | Instrument | 2 | +1" M | 6" | Requires 1 action to activate each turn |
 
-The Instrument's Influence Bubble is not passive — the bearer must spend **1 action per turn** playing the instrument. If they do not spend the action, the Influence Bubble is inactive that turn.
+The **Instrument**'s **Sphere of Influence** is not passive — the bearer must
+spend **1 action per turn** playing the instrument. If they do not spend the
+action, the **Sphere of Influence** is inactive that turn.

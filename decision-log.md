@@ -24,12 +24,39 @@ the final rule in the dated decision-log entry for that commit.
   injuries, and whether **Slain** or **Out of Action** triggers an in-battle
   death response.
 - **Open roster decisions:** Add Domain composition tables, finish remaining
-  Domain feat entries (Light needs 3 more; Nature and other Domains need more),
-  decide Shadow Market access for alchemy, and assign recruitment costs for
-  Animals and Daemons.
+  Domain feat entries, decide Shadow Market access for alchemy. **Companion**
+  profiles and campaign recovery are locked — see `rules/companions.md`.
 - **Open magic decisions:** Finish spell difficulties, ranges, Mishaps, and
   unresolved status/affliction names before treating `rules/magic.md` as
   playtest-ready.
+
+---
+
+## 2026-06-09 — Infiltrate, Animal Handling, companions, and Sphere of Influence
+
+**Decision:** Consolidate **Infiltrate** as one shared Domain feat *(Nature · Blood ·
+Infernal)* with deployment hooks in `rules/actions.md`. Add **Animal Handling**
+*(Nature · Mortal · Arcane)* and **`rules/companions.md`**.
+
+**Companions:** **Handler** / **Companion** roster gear — no retinue slot, no weapon
+slots. Co-move on Handler **Move**, **Charge**, **Scramble**, **Climb**, **Jump**,
+or **Retreat** (stay in **tether**); **1** extra action after Handler activation.
+**Tamed** uses Handler **M**, **Wi**, **Sa**. Wounds: **Out of Action** only — no
+**Downed**/**Stunned**. Post-game **Companion Recovery** (**1d6**: **1–4** miss
+next battle, **5–6** fine); never **Casualty**/**Doom**. Profiles: **Hound**,
+**Hawk**, **Cat**, **Giant Rat**, **Rat Swarm**.
+
+**Sphere of Influence:** Rename **Influence Bubble** → **Sphere of Influence**
+(`gear.md`, companions, style guide, economy). Companion bubbles: **Nature** or
+**Mortal** Handler **+1 Sa**; **Arcane** **+1 Wi** — Handler within **6"** of
+**Hawk** or **Cat**.
+
+**Workflow:** `.cursor/rules/decision-log-before-commit.mdc` — run `date` in shell
+before log dates; do not use session metadata.
+
+**Reasoning:** Mordheim/Necromunda-style domain feats and pets without activation
+tax. **Sphere of Influence** unifies gear and familiar auras. OOA-only + light
+recovery keeps companions on the table. Shell `date` avoids stale heading dates.
 
 ---
 
@@ -851,6 +878,9 @@ New spells:
 ---
 
 ## 2026-05-26 — Influence Bubble equipment (Relic, Instrument)
+
+**Superseded by:** 2026-06-09 — Infiltrate, Animal Handling, companions, and Sphere of Influence
+(display name only).
 
 **Decision:** Added the Influence Bubble mechanic — equipment that projects a passive area effect around the bearer. Two items added: Relic (+1 Sa, 6", passive, 2 slots) and Instrument (+1" M, 6", costs 1 action per turn, 2 slots).
 
