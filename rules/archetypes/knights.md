@@ -8,25 +8,11 @@ Armored champions and sworn companies — the heirs of Valecoria's martial order
 
 ## Building a Knights Retinue
 
-Every Knights retinue needs three identity choices — **Domain**, **Tradition**, and your fighter roster — then gear and (if applicable) spells. Start with **1000 Crowns** for skirmish or a new campaign.
+Choose **one Tradition**, then recruit and equip your fighters. Start with **1000 Crowns** for skirmish or a new campaign.
 
-### 1. Choose Domain and Tradition
+### Tradition
 
-Your **Domain** sets your spell list (if any) and whether you may use gunpowder. **Mortal** is the only Domain without magic.
-
-After you choose a Domain, pick **one Tradition** for the whole retinue. Each Domain offers two Traditions for **Knights**:
-
-| Domain | Traditions |
-|---|---|
-| **Light** | Crusaders, Paladins |
-| **Arcane** | Spellblades, Sorcerers |
-| **Infernal** | Hellknights, Damned |
-| **Nature** | Grove-keepers, Hedge-walkers |
-| **Necromancy** | Sepulchers, Wightlords |
-| **Blood** | Vampires, Dynasts |
-| **Mortal** | Constables, Ironbound |
-
-Record your chosen Tradition and its special rule below. Some Traditions change fighter or equipment costs.
+Choose **one Tradition** for the whole retinue. Your Tradition sets your **Domain** — spell list and magic path, or **Mortal** and gunpowder — and one retinue-wide special rule. Record your choice on your roster sheet. Some Traditions change fighter or equipment costs.
 
 #### Light
 
@@ -42,9 +28,9 @@ cannot enter engagement range.
 **Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
 they carry gain **Arcane**.
 
-**Arcane:** When this fighter attacks with this weapon, they may change 1 failed
-Strike Pool die into a normal hit. The hit keeps the die's color and cannot
-become a critical hit.
+> **Arcane** — When this fighter attacks with this weapon, they may change 1 failed
+> Strike Pool die into a normal hit. The hit keeps the die's color and cannot
+> become a critical hit.
 
 **Sorcerers:** Friendly **Caster** fighters may each know 1 additional spell for
 **+10 Crowns**. When a **Caster** who knows an additional spell this way rolls a
@@ -109,22 +95,35 @@ Spell lists: [Magic](../magic.md) · Domain overview: [Domains](../retinue.md#do
 
 ---
 
-### 2. What Knights Retinues Can Field
+### Knights Feats
 
-- **Proficiencies:** One-Handed, Two-Handed, Archery, Thrown
-- **Armor:** up to Heavy
-- **Shields:** Buckler, Shield, Tower Shield
-- **Firearms** *(Mortal only):* Basic tier (Musket, Blunderbuss)
-- **Casters:** **1** at most (Lord only)
+**Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
+**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+your retinue is allowed to buy. You may take this feat more than once. Each time,
+choose a **different** proficiency. **One-Handed** and **Two-Handed** grant shield
+access; **Archery**, **Thrown**, and **Firearms** do not.
 
-**Mortal** Domain: no **Caster**. All other Domains: Lord may take **Caster**.
-Magic and gunpowder do not mix — a retinue has one path or the other.
+**Hold the Line:** When this fighter uses **Brace**, choose another friendly
+fighter within **1"**. That fighter gains **+1 red defense die** until this
+fighter's next activation.
 
-**Alchemy** (potions, poisons) is available to all retinues regardless of Domain.
+**To Me, Brothers!:** Once per battle, when this fighter uses **Brace**, choose
+up to 2 friendly fighters within **12"**. Each chosen fighter may move up to
+**6"** toward this fighter. A fighter cannot use this movement to enter
+engagement range.
+
+**Iron Discipline:** This fighter cannot become **Downed**. When this fighter
+would become **Downed**, they remain Active with 0 Wounds instead. While this
+fighter has 0 Wounds, any unblocked hit pushes them to **Stunned** as if they
+were Downed.
+
+**Vow of Pursuit:** When this fighter attacks an enemy fighter that took a
+friendly fighter **Out of Action** this battle, add **2 red dice** to this
+fighter's Strike Pool.
 
 ---
 
-### 3. Recruit Fighters
+### Recruit Fighters
 
 Recruit **5–10** fighters: **1 Lord**, **0–4 Knight**, **0–5 Squire**.
 
@@ -156,38 +155,9 @@ At recruitment, add **+1 Mt** or **+1 Sk**.
 **Specialist**. At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or
 Sa). Built-in **One-Handed** proficiency.
 
-#### Knights feats
-
-**Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**.
-You may equip any weapon in that proficiency your retinue is allowed to buy. You
-may take this feat more than once. Each time, choose a **different**
-proficiency. **One-Handed** and **Two-Handed** grant shield access; **Archery**
-and **Thrown** do not.
-
-**Firearms** *(Mortal Domain only):* Choose **Firearms**. You may equip any
-firearm or bomb your retinue is allowed to buy. Does not grant shield access.
-
-**Hold the Line:** When this fighter uses **Brace**, choose another friendly
-fighter within **1"**. That fighter gains **+1 red defense die** until this
-fighter's next activation.
-
-**To Me, Brothers!:** Once per battle, when this fighter uses **Brace**, choose
-up to 2 friendly fighters within **12"**. Each chosen fighter may move up to
-**6"** toward this fighter. A fighter cannot use this movement to enter
-engagement range.
-
-**Iron Discipline:** This fighter cannot become **Downed**. When this fighter
-would become **Downed**, they remain Active with 0 Wounds instead. While this
-fighter has 0 Wounds, any unblocked hit pushes them to **Stunned** as if they
-were Downed.
-
-**Vow of Pursuit:** When this fighter attacks an enemy fighter that took a
-friendly fighter **Out of Action** this battle, add **2 red dice** to this
-fighter's Strike Pool.
-
 ---
 
-### 4. Equip Your Fighters
+### Equip Your Fighters
 
 A fighter cannot equip a weapon unless they have the matching **Proficiency**.
 
@@ -228,7 +198,7 @@ Other Knights combinations are legal — **Hellknights** + Infernal, **Spellblad
 
 Before your first battle, confirm:
 
-- [ ] Domain and Tradition chosen and recorded
+- [ ] Tradition chosen and recorded (sets Domain)
 - [ ] Fighter count within 5–10
 - [ ] **1 Lord**, **0–4 Knight**, **0–5 Squire**
 - [ ] **Caster:** at most 1 on Lord; **Mortal** has none; Lord knows **2** Domain spells if **Caster**

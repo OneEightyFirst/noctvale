@@ -49,7 +49,11 @@ A fighter becomes **Stunned** from a Recover roll of 1, or from taking an unbloc
 - Cannot move
 - Cannot act
 - Cannot attempt Recover
+- Does **not** take an activation — they are excluded from **activation count** and alternating activation order
 - Defends with **red dice only** (Mt-based defense, no blue dice)
+
+A fighter who becomes **Stunned** before activating this round does not activate
+this round.
 
 Any **unblocked hit** on a Stunned fighter pushes them to **Out of Action**.
 
@@ -93,6 +97,7 @@ The Stunned fighter is immediately **Out of Action** — no defense roll is made
 - Downed creates a dramatic tension window — the fighter still defends at full strength
 - Downed → Stunned on any unblocked hit means enemies must commit real attacks to push through a full defense pool
 - Stunned fighters lose all blue defense dice — high-Sk fighters like Elves become extremely vulnerable; high-Mt fighters like Dwarves feel the penalty less
+- Stunned fighters skip the activation order — no empty activations; allies must **Help** or enemies **Mercy Kill** on someone else's turn
 - The Recover table is risk-based: push for a stand-up or accept remaining Downed
 - Help has genuine risk (roll of 1 = **Out of Action**) — a meaningful decision with real stakes
 - Mercy Kill bypasses defense entirely, giving aggressive players a reliable way to finish Stunned enemies up close

@@ -259,15 +259,17 @@ have been deployed.
 
 > **1. Start of Round**
 > - Round 1: use initiative from battle set-up
-> - Later rounds: fewer activations goes first (ties: previous initiative)
-> - Distribute Overwatch tokens — underdog receives tokens equal to the activation difference
+> - Later rounds: lower **activation count** goes first (ties: previous initiative)
+> - **Activation count** = **Active** and **Downed** fighters only — not **Stunned**, **Out of Action**, or **Escaped**
+> - Distribute Overwatch tokens — underdog receives tokens equal to the activation-count difference
 >
 > **2. Alternating Activations**
 > - Players alternate activating one fighter at a time (**2 actions** each)
+> - **Stunned** fighters do not activate
 > - When one player runs out of fighters, the other activates remaining fighters one at a time; the player who ran out may spend Overwatch tokens as reactions
 >
 > **3. End of Round**
-> - Round ends when all fighters have activated or skipped their activation
+> - Round ends when every eligible fighter has activated or skipped their activation
 > - Return to Step 1
 
 ---
@@ -276,16 +278,28 @@ have been deployed.
 
 The game is played over a series of **rounds**. Each round follows this sequence:
 
+### Activation Count
+
+Each player has an **activation count** — the number of their fighters on the
+board who can still take an activation this round.
+
+**Count toward activation count:** **Active** and **Downed** fighters.
+
+**Do not count:** **Out of Action**, **Stunned**, and **Escaped** fighters.
+
+Use activation count for initiative, **Overwatch** distribution, and determining
+when a player has no fighters left to activate. *(See `conditions.md` — **Stunned**
+fighters do not take activations.)*
+
 ### 1. Start of Round
 
 - **Determine initiative.** During the first round, use the initiative determined
-  during battle set-up. During each subsequent round, the player with **fewer
-  remaining activations** has initiative and activates first. If both players
-  have the same number of remaining activations, the player who previously had
-  initiative retains it. Fighters who are **Out of Action** do not count as
-  remaining activations. **Escaped** fighters are no longer on the board and do
-  not count as remaining activations.
-- **Distribute Overwatch tokens.** If one player has fewer activations than the other, they receive a number of **Overwatch tokens equal to the difference**. *(See `special-rules.md`.)*
+  during battle set-up. During each subsequent round, the player with the **lower
+  activation count** has initiative and activates first. If both players have
+  the same activation count, the player who previously had initiative retains it.
+- **Distribute Overwatch tokens.** If one player has a lower activation count
+  than the other, they receive a number of **Overwatch tokens equal to the
+  difference**. *(See `special-rules.md`.)*
 
 ### 2. Alternating Activations
 
@@ -295,11 +309,19 @@ When a fighter is activated, they may perform **2 actions** chosen from the acti
 
 After a fighter's activation is complete, the other player activates one of their fighters, and so on.
 
+Only fighters who count toward **activation count** may be activated or **skip
+their activation** for **Overwatch**.
+
 ### 3. End of Round
 
-The round ends when **all fighters on both sides** have been activated or have **skipped their activation** (for example, to gain **Overwatch tokens**).
+The round ends when **every fighter who counts toward activation count** has
+been activated or has **skipped their activation** (for example, to gain
+**Overwatch tokens**).
 
-If one player runs out of fighters to activate before the other, the remaining player **activates their remaining fighters normally**, one at a time. The player who ran out may spend any unspent **Overwatch tokens** as reactions during these activations.
+If one player has no fighters left to activate before the other, the remaining
+player **activates their remaining fighters normally**, one at a time. The player
+who ran out may spend any unspent **Overwatch tokens** as reactions during these
+activations.
 
 Begin a new round at Step 1.
 
@@ -368,6 +390,7 @@ Begin a new round at Step 1.
 - Underdog initiative (fewer fighters = go first) is a negative feedback loop that prevents snowballing — the losing player always gets to act first
 - Starting initiative determines tied rounds without requiring a new dice-off every round
 - No surge activations — Overwatch tokens handle activation imbalance without adding another subsystem
+- **Stunned** and **Out of Action** fighters are excluded from activation count — no dead activations, and underdog math reflects fighters who can still act
 - Hide requires within 1" of terrain — simple, physical; cover is judged from the firing fighter (see special-rules.md)
 - Hidden blocks targeting beyond 6" — close the distance or find another target
 - Combat actions and Charge break Hidden, but movement doesn't — a fighter can reposition while staying concealed as long as they hug terrain

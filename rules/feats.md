@@ -24,10 +24,9 @@ apply the feat once.
 
 ## Feat picks at roster creation
 
-When you recruit each fighter, assign feats from your Archetype feat list and
-(any) eligible Domain feat list. Each **[Archetype chapter](archetypes/knights.md)**
-lists the feats available to that retinue. **Mortal** retinues also have
-**Firearms** on the Domain feat list.
+When you recruit each fighter, assign feats from your Archetype feat list. Each
+**[Archetype chapter](archetypes/knights.md)** lists the feats available to that
+retinue. **Mortal** retinues add **Firearms** to the **Proficiency** menu.
 
 Campaign advancement may grant additional feats later (see [Feat Advancement
 Table](#feat-advancement-table)).
@@ -63,16 +62,16 @@ Table](../campaign/post-game.md#keyword-advancement-table) instead.
 
 #### Proficiency
 
-Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or
-**Thrown**. You may equip any weapon in that proficiency your retinue is allowed
-to buy.
+Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**,
+**Thrown**, or **Firearms** *(Mortal Domain only)*. You may equip any weapon in
+that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
 **Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
-may equip a shield allowed by your Archetype. **Archery** and **Thrown** do not
-grant shield access.
+may equip a shield allowed by your Archetype. **Archery**, **Thrown**, and
+**Firearms** do not grant shield access.
 
 Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
 
@@ -104,16 +103,16 @@ Action** this battle, add **2 red dice** to this fighter's Strike Pool.
 
 #### Proficiency
 
-Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or
-**Thrown**. You may equip any weapon in that proficiency your retinue is allowed
-to buy.
+Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**,
+**Thrown**, or **Firearms** *(Mortal Domain only)*. You may equip any weapon in
+that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
 **Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
-may equip a shield allowed by your Archetype. **Archery** and **Thrown** do not
-grant shield access.
+may equip a shield allowed by your Archetype. **Archery**, **Thrown**, and
+**Firearms** do not grant shield access.
 
 Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
 
@@ -144,14 +143,15 @@ instead.
 
 #### Proficiency
 
-Choose one weapon proficiency: **One-Handed**, **Archery**, or **Thrown**. You
-may equip any weapon in that proficiency your retinue is allowed to buy.
+Choose one weapon proficiency: **One-Handed**, **Archery**, **Thrown**, or
+**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
 **Shield access:** **One-Handed** grants shield access if your Archetype allows
-shields. **Archery** and **Thrown** do not grant shield access.
+shields. **Archery**, **Thrown**, and **Firearms** do not grant shield access.
 
 Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
 
@@ -187,13 +187,21 @@ This wound can reduce the chosen fighter to 0 Wounds and cause them to become
 
 ## Domain Feats
 
-### Mortal
+Domain feat lists are in progress. Until a list has enough entries for campaign
+advancement, use the [Keyword Advancement
+Table](../campaign/post-game.md#keyword-advancement-table) for that Domain.
 
-#### Proficiency
+**Caster-only cap:** Each Domain feat list may include at most **one** feat
+marked **Caster only**. **Cult** Domain lists may include more when written.
 
-Choose **Firearms**. You may equip any firearm or bomb your retinue is allowed
-to buy (see [Gear — Firearms](gear.md#firearms)).
+### Light
 
-**Firearms** does not grant shield access.
+#### Warded
 
-Weapon lists: [Gear — Weapon proficiencies](gear.md#weapon-proficiencies).
+When this fighter is the target of a hostile **Cast** action, roll **1d6**. On
+**4+**, the spell fizzles against this fighter.
+
+#### Absolute Faith
+
+This fighter may reroll failed **Fear**, **Panic**, and **Insanity** tests. They
+must accept the second result.

@@ -15,30 +15,15 @@ and refusing to break.
 
 ## Building a Folk Retinue
 
-Every Folk retinue needs three identity choices — **Domain**, **Tradition**, and
-your fighter roster — then gear and (if applicable) spells. Start with **1000
+Choose **one Tradition**, then recruit and equip your fighters. Start with **1000
 Crowns** for skirmish or a new campaign.
 
-### 1. Choose Domain and Tradition
+### Tradition
 
-Your **Domain** sets your spell list (if any) and whether you may use gunpowder.
-**Mortal** is the only Domain without magic.
-
-After you choose a Domain, pick **one Tradition** for the whole retinue. Each
-Domain offers two Traditions for **Folk**:
-
-| Domain | Traditions |
-|---|---|
-| **Light** | Crusaders, Penitents |
-| **Arcane** | Ritualists, Runecasters |
-| **Infernal** | Diabolists, Damned |
-| **Nature** | Witches, Grove-keepers |
-| **Necromancy** | Bell-keepers, Sepulchers |
-| **Blood** | Revelers, Courtiers |
-| **Mortal** | Constables, Alchemists |
-
-Record your chosen Tradition and its special rule below. Some Traditions change
-fighter or equipment costs.
+Choose **one Tradition** for the whole retinue. Your Tradition sets your
+**Domain** — spell list and magic path, or **Mortal** and gunpowder — and one
+retinue-wide special rule. Record your choice on your roster sheet. Some
+Traditions change fighter or equipment costs.
 
 #### Light
 
@@ -119,25 +104,22 @@ Spell lists: [Magic](../magic.md) · Domain overview: [Domains](../retinue.md#do
 
 ---
 
-### 2. What Folk Retinues Can Field
+### Folk Feats
 
-- **Proficiencies:** One-Handed, Archery, Thrown
-- **Armor:** up to Light
-- **Shields:** Buckler, Shield
-- **Firearms** *(Mortal only):* Basic tier (Musket, Blunderbuss)
-- **Casters:** **1** at most (Mayor only)
+**Proficiency:** Choose **One-Handed**, **Archery**, **Thrown**, or **Firearms**
+*(Mortal Domain only)*. You may equip any weapon in that proficiency your retinue
+is allowed to buy. You may take this feat more than once. Each time, choose a
+**different** proficiency. **One-Handed** grants shield access; **Archery**,
+**Thrown**, and **Firearms** do not. Folk **Militiaman** has built-in
+**Two-Handed** proficiency — not on this menu.
 
-**Mortal** Domain: no **Caster**. All other Domains: Mayor may take **Caster**.
-Magic and gunpowder do not mix — a retinue has one path or the other.
-
-Folk **Militiaman** may carry two-handed weapons via built-in **Two-Handed**
-proficiency — this is not on the general Folk proficiency menu.
-
-**Alchemy** (potions, poisons) is available to all retinues regardless of Domain.
+**Stubborn Lot:** When this fighter uses **Help**, a roll of **1** counts as **2**
+if another friendly fighter is within **1"** of this fighter or the assisted
+fighter.
 
 ---
 
-### 3. Recruit Fighters
+### Recruit Fighters
 
 Recruit **6–15** fighters: **1 Mayor**, **0–3 Guildsman**, **0–5 Militiaman**,
 **0–6 Townsfolk**.
@@ -174,23 +156,9 @@ Sa). Built-in **Two-Handed** proficiency.
 
 Species baseline only.
 
-#### Folk feats
-
-**Proficiency:** Choose **One-Handed**, **Archery**, or **Thrown**. You may
-equip any weapon in that proficiency your retinue is allowed to buy. You may
-take this feat more than once. Each time, choose a **different** proficiency.
-**One-Handed** grants shield access; **Archery** and **Thrown** do not.
-
-**Firearms** *(Mortal Domain only):* Choose **Firearms**. You may equip any
-firearm or bomb your retinue is allowed to buy. Does not grant shield access.
-
-**Stubborn Lot:** When this fighter uses **Help**, a roll of **1** counts as **2**
-if another friendly fighter is within **1"** of this fighter or the assisted
-fighter.
-
 ---
 
-### 4. Equip Your Fighters
+### Equip Your Fighters
 
 A fighter cannot equip a weapon unless they have the matching **Proficiency**.
 
@@ -229,7 +197,7 @@ defenses against things in the night. Folk + Nature (**Witches**, **Grove-keeper
 
 Before your first battle, confirm:
 
-- [ ] Domain and Tradition chosen and recorded
+- [ ] Tradition chosen and recorded (sets Domain)
 - [ ] Fighter count within 6–15
 - [ ] **1 Mayor**, **0–3 Guildsman**, **0–5 Militiaman**, **0–6 Townsfolk**
 - [ ] **Caster:** at most 1 on Mayor; **Mortal** has none; Mayor knows **2** Domain spells if **Caster**

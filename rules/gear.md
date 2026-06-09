@@ -264,7 +264,7 @@ critical hits in melee). Fighters gain proficiencies through the **Proficiency**
 feat at roster creation (see [Feats](feats.md)).
 
 Your **Archetype** sets which proficiencies appear on that fighter's
-**Proficiency** menu. **Firearms** is on the **Mortal** Domain feat list only.
+**Proficiency** menu. **Firearms** is on that menu for **Mortal** retinues only.
 **Magic and gunpowder do not mix** on the same retinue.
 
 | Proficiency | Weapons | Shields |

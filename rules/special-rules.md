@@ -87,7 +87,7 @@ When a fighter is attacking multiple enemies:
 
 Overwatch compensates for numerical disadvantage.
 
-**Trigger:** At the start of the round, the player with the fewer number of activations receives a number of **Overwatch tokens equal to the difference in activations**.
+**Trigger:** At the start of the round, the player with the lower **activation count** receives a number of **Overwatch tokens equal to the difference**. *(See [Actions — Activation Count](actions.md#activation-count).)*
 
 **Skip activation:** A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
 

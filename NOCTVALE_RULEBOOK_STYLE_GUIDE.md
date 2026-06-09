@@ -79,8 +79,9 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 |---|---|
 | **game** | A full session — one or more battles in a campaign, or a standalone skirmish |
 | **battle** | One table encounter from deployment to end condition |
-| **round** | Everyone activates once (see turn structure in `actions.md`) |
+| **round** | Every eligible fighter activates once (see turn structure in `actions.md`) |
 | **activation** | One fighter's turn — **2 actions** |
+| **activation count** | Fighters who can activate this round — **Active** and **Downed** only; not **Stunned**, **Out of Action**, or **Escaped** |
 | **action** | One thing a fighter does during an activation (**Move**, **Melee**, etc.) |
 | **reaction** | A free single action outside the fighter's activation (**Ranged Reaction**, Overwatch) |
 | **player** | Person controlling a retinue |

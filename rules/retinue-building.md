@@ -171,7 +171,7 @@ Equipment access follows [Retinue](retinue.md):
 
 - Each fighter equips weapons matching their **Proficiency** feats (see [Feats](feats.md)).
 - Archetype sets which options appear on each fighter's **Proficiency** feat, plus armor cap, shield access, and **firearm tier** access.
-- **Mortal** Domain grants **Proficiency — Firearms** on the Domain feat list; all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
+- **Mortal** Domain adds **Firearms** to the **Proficiency** menu; all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
 - **Cult** cannot choose Mortal and cannot take **Firearms**.
 - Alchemy is available to all retinues.
 

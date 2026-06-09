@@ -15,31 +15,16 @@ gunpowder do not mix.
 
 ## Building a Cult Retinue
 
-Every Cult retinue needs three identity choices — **Domain**, **Tradition**, and
-your fighter roster — then gear and spells. Start with **1000 Crowns** for
-skirmish or a new campaign.
+Choose **one Tradition**, then recruit and equip your fighters. Start with **1000
+Crowns** for skirmish or a new campaign. Cult retinues cannot choose **Mortal**
+— every Tradition sets a magic Domain.
 
-### 1. Choose Domain and Tradition
+### Tradition
 
-Your **Domain** sets your spell list and supernatural tools. **Cult** cannot
-choose **Mortal** — Cult retinues must take a magic Domain.
-
-After you choose a Domain, pick **one Tradition** for the whole retinue. Each
-Domain offers two Traditions for **Cult**:
-
-
-| Domain         | Traditions                 |
-| -------------- | -------------------------- |
-| **Light**      | Penitents, Luminaries      |
-| **Arcane**     | Ritualists, Sorcerers      |
-| **Infernal**   | Diabolists, Binders        |
-| **Nature**     | Witches, Beastmen          |
-| **Necromancy** | Bell-keepers, Bone-priests |
-| **Blood**      | Vampires, Courtiers        |
-
-
-Record your chosen Tradition and its special rule below. Some Traditions change
-fighter or equipment costs.
+Choose **one Tradition** for the whole retinue. Your Tradition sets your
+**Domain** — spell list and supernatural tools — and one retinue-wide special
+rule. Record your choice on your roster sheet. Some Traditions change fighter or
+equipment costs.
 
 #### Light
 
@@ -123,20 +108,20 @@ Spell lists: [Magic](../magic.md) · Domain overview: [Domains](../retinue.md#do
 
 ---
 
-### 2. What Cult Retinues Can Field
+### Cult Feats
 
-- **Proficiencies:** One-Handed, Archery
-- **Armor and shields:** none
-- **Firearms:** none
-- **Casters:** up to **3** at creation (Theurge + up to 2 Adepts)
-- **Domain:** any magic Domain — cannot choose **Mortal**
+**Proficiency:** Choose **One-Handed** or **Archery**. You may equip any weapon
+in that proficiency your retinue is allowed to buy. You may take this feat more
+than once. Each time, choose a **different** proficiency.
 
-Each fighter must have the matching proficiency to equip a weapon. **Alchemy**
-(potions, poisons) is available to all retinues regardless of Domain.
+**Blood for the Rite:** Once per battle, before this fighter makes a stat roll
+or **casting roll**, choose another friendly fighter within **12"**. That
+fighter suffers **1 Wound**. Add **+1** to the roll. This wound can reduce the
+chosen fighter to 0 Wounds and cause them to become **Downed**.
 
 ---
 
-### 3. Recruit Fighters
+### Recruit Fighters
 
 Recruit **5–10** fighters: **1 Theurge**, **0–2 Adept**, **0–7 Acolyte**.
 
@@ -180,20 +165,9 @@ spell from your Domain list. May take the **Cast** action.
 
 Species baseline only.
 
-#### Cult feats
-
-**Proficiency:** Choose **One-Handed** or **Archery**. You may equip any weapon
-in that proficiency your retinue is allowed to buy. You may take this feat more
-than once. Each time, choose a **different** proficiency.
-
-**Blood for the Rite:** Once per battle, before this fighter makes a stat roll
-or **casting roll**, choose another friendly fighter within **12"**. That
-fighter suffers **1 Wound**. Add **+1** to the roll. This wound can reduce the
-chosen fighter to 0 Wounds and cause them to become **Downed**.
-
 ---
 
-### 4. Equip Your Fighters
+### Equip Your Fighters
 
 A fighter cannot equip a weapon unless they have the matching **Proficiency**.
 
@@ -243,7 +217,7 @@ the war.
 
 Before your first battle, confirm:
 
-- [ ] Domain chosen (not **Mortal**); Tradition chosen and recorded
+- [ ] Tradition chosen and recorded (sets Domain; not **Mortal**)
 - [ ] Fighter count within 5–10
 - [ ] Exactly 1 **Theurge**
 - [ ] **Adepts** 0–2, **Acolytes** 0–7

@@ -7,6 +7,12 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
+- **Domain feat lists (in progress):** Model feats on Mordheim/Necromunda skills —
+  one lever per entry, named like skills, gated where needed (e.g. **Caster
+  only**). **Light** started with **Warded** and **Absolute Faith**; three more
+  Light feats still open. **Max one Caster-only feat per Domain** feat list;
+  **Cult** may break that cap when its list is written. Rejected first-pass
+  caster-support / wound-trade feats.
 - **Feat guardrail:** Feats should express retinue identity without flattening
   the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
   actions, reusable rerolls, and feats that are effectively spells without a
@@ -17,12 +23,41 @@ the final rule in the dated decision-log entry for that commit.
   fighters interact with minimum retinue size, whether downtime can heal
   injuries, and whether **Slain** or **Out of Action** triggers an in-battle
   death response.
-- **Open roster decisions:** Add Domain composition tables, finish Domain feat
-  lists, decide Shadow Market access for alchemy, and assign recruitment costs
-  for Animals and Daemons.
+- **Open roster decisions:** Add Domain composition tables, finish remaining
+  Domain feat entries (Light needs 3 more; other Domains not started), decide
+  Shadow Market access for alchemy, and assign recruitment costs for Animals
+  and Daemons.
 - **Open magic decisions:** Finish spell difficulties, ranges, Mishaps, and
   unresolved status/affliction names before treating `rules/magic.md` as
   playtest-ready.
+
+---
+
+## 2026-06-08 — Activation count, archetype chapter trim, Mortal Firearms, Light feats start
+
+**Decision:** Lock **activation count** for initiative and **Overwatch** — count
+**Active** and **Downed** fighters only; **Stunned** fighters do not activate and
+do not count. Document in `rules/actions.md`, `rules/conditions.md`, style guide,
+and `rules/special-rules.md`.
+
+Trim archetype chapters: **Tradition** first (sets **Domain**), inline **Archetype
+feats** block, drop redundant Domain × Tradition tables and numbered build steps.
+Remove separate **Mortal** Domain **Proficiency** feat — **Firearms** is an extra
+option on the Archetype **Proficiency** menu when the retinue is **Mortal** only.
+Sync `rules/feats.md`, `rules/gear.md`, `rules/retinue.md`, and
+`rules/retinue-building.md`.
+
+Start **Light** Domain feats (Mordheim/Necromunda skill style): **Warded** and
+**Absolute Faith** approved. **Domain feat policy:** at most **one Caster-only**
+feat per Domain list; **Cult** may exceed that when its Domain list is written.
+Light list incomplete (three feats still to design).
+
+**Reasoning:** Stunned skipping activation avoids dead turns and fixes underdog
+math. Tradition-first chapters read faster at the table. Mortal gunpowder as a
+**Proficiency** menu fork keeps one feat pick system instead of a parallel Domain
+feat for a single proficiency. Domain feats should read like campaign skills,
+not bespoke subsystems; the two approved Light feats are defensive sanity/magic
+bends any fighter can take.
 
 ---
 

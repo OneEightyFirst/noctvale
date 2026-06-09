@@ -47,9 +47,9 @@ roster checklist.
 | **Folk** | 6–15 fighters, Light armor, 1 caster | **[Folk](archetypes/folk.md)** |
 | **Cult** | 5–10 fighters, no armor, 3 casters, no Mortal Domain | **[Cult](archetypes/cult.md)** |
 
-**Firearms** (firearms and bombs) require the **Firearms** proficiency from the
-**Mortal** Domain feat list. Magic and gunpowder are mutually exclusive paths to
-power.
+**Firearms** (firearms and bombs) require the **Firearms** proficiency on the
+**Proficiency** menu *(Mortal Domain only)*. Magic and gunpowder are mutually
+exclusive paths to power.
 
 **Firearm tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long
 Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic
@@ -74,9 +74,8 @@ Proficiency and feat picks: [Feats](feats.md) · Weapon lists: [Gear](gear.md)
 | Mortal | — |
 
 Each Domain provides a spell list and Domain-specific feats. The **Mortal**
-Domain provides no spells but grants the **Firearms** proficiency (see
-[Feats — Domain Feats](feats.md#domain-feats)) and access to gunpowder weapons
-(see [Gear](gear.md)).
+Domain provides no spells but adds **Firearms** to the **Proficiency** menu and
+access to gunpowder weapons (see [Gear](gear.md)).
 
 Spell lists: [Magic](magic.md) · Gear (weapons and equipment): [Gear](gear.md)
 
@@ -206,9 +205,9 @@ of sight of any friendly fighter. That enemy loses **Hidden**.
 **Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
 they carry gain **Arcane**.
 
-**Arcane:** When this fighter attacks with this weapon, they may change 1 failed
-Strike Pool die into a normal hit. The hit keeps the die's color and cannot
-become a critical hit.
+> **Arcane** — When this fighter attacks with this weapon, they may change 1 failed
+> Strike Pool die into a normal hit. The hit keeps the die's color and cannot
+> become a critical hit.
 
 **Ritualists:** Before deployment, place one ritual circle wholly within your
 deployment zone. Friendly **Caster** fighters within **1"** of it add **+1** to
@@ -389,7 +388,7 @@ guns; Silver Hunt leans Alchemists, poisons, and silver weapons.
   Tradition, roster choices, and gear (Inquisition vs Silver Hunt)
 - Knights are elite and armored, Hunters are versatile, Folk are numerous, Cult are magically powerful but fragile
 - Cult gets 3 casters and no armor — glass cannon by design
-- **Proficiency** at creation makes each fighter a weapon specialist; **Firearms** on the Mortal Domain feat list — parallel power paths to magic
+- **Proficiency** at creation makes each fighter a weapon specialist; **Firearms** on the **Proficiency** menu when **Mortal** — parallel power paths to magic
 - Alchemy is equipment available to all retinues
 - **The Nobility** — vampire preset built around noble houses
 - Village Watch and Iron Law are both Folk + Mortal presets; players can also run Folk + Nature, Folk + Infernal, etc. — presets are starting points

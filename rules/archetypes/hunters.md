@@ -11,25 +11,11 @@ ranged play, pursuit, and flexible roster composition.
 
 ## Building a Hunters Retinue
 
-Every Hunters retinue needs three identity choices — **Domain**, **Tradition**, and your fighter roster — then gear and (if applicable) spells. Start with **1000 Crowns** for skirmish or a new campaign.
+Choose **one Tradition**, then recruit and equip your fighters. Start with **1000 Crowns** for skirmish or a new campaign.
 
-### 1. Choose Domain and Tradition
+### Tradition
 
-Your **Domain** sets your spell list (if any) and whether you may use gunpowder. **Mortal** is the only Domain without magic.
-
-After you choose a Domain, pick **one Tradition** for the whole retinue. Each Domain offers two Traditions for **Hunters**:
-
-| Domain | Traditions |
-|---|---|
-| **Light** | Paladins, Luminaries |
-| **Arcane** | Spellblades, Runecasters |
-| **Infernal** | Hellknights, Binders |
-| **Nature** | Beastmen, Hedge-walkers |
-| **Necromancy** | Bone-priests, Wightlords |
-| **Blood** | Dynasts, Revelers |
-| **Mortal** | Zealots, Alchemists |
-
-Record your chosen Tradition and its special rule below. Some Traditions change fighter or equipment costs.
+Choose **one Tradition** for the whole retinue. Your Tradition sets your **Domain** — spell list and magic path, or **Mortal** and gunpowder — and one retinue-wide special rule. Record your choice on your roster sheet. Some Traditions change fighter or equipment costs.
 
 #### Light
 
@@ -45,9 +31,9 @@ of sight of any friendly fighter. That enemy loses **Hidden**.
 **Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
 they carry gain **Arcane**.
 
-**Arcane:** When this fighter attacks with this weapon, they may change 1 failed
-Strike Pool die into a normal hit. The hit keeps the die's color and cannot
-become a critical hit.
+> **Arcane** — When this fighter attacks with this weapon, they may change 1 failed
+> Strike Pool die into a normal hit. The hit keeps the die's color and cannot
+> become a critical hit.
 
 **Runecasters:** This retinue may buy Rune-stones for **15 Crowns**.
 
@@ -126,22 +112,31 @@ Spell lists: [Magic](../magic.md) · Domain overview: [Domains](../retinue.md#do
 
 ---
 
-### 2. What Hunters Retinues Can Field
+### Hunters Feats
 
-- **Proficiencies:** One-Handed, Two-Handed, Archery, Thrown
-- **Armor:** up to Medium
-- **Shields:** Buckler, Shield
-- **Firearms** *(Mortal only):* Basic + Refined (Musket, Blunderbuss, Pistol, Long Rifle)
-- **Casters:** **1** at most (Captain only)
+**Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
+**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+your retinue is allowed to buy. You may take this feat more than once. Each time,
+choose a **different** proficiency. **One-Handed** and **Two-Handed** grant shield
+access; **Archery**, **Thrown**, and **Firearms** do not.
 
-**Mortal** Domain: no **Caster**. All other Domains: Captain may take **Caster**.
-Magic and gunpowder do not mix — a retinue has one path or the other.
+**Marked Quarry:** At the start of the battle, choose 1 enemy fighter. When this
+fighter attacks the chosen fighter, add **1 red die** or **1 blue die** to this
+fighter's Strike Pool.
 
-**Alchemy** (potions, poisons) is available to all retinues regardless of Domain.
+**Patient Shot:** When this fighter uses **Aim**, their next **Ranged** attack
+this activation may reroll 1 natural 1 in the Strike Pool.
+
+**Field Dressing:** When this fighter uses **Help** on a **Downed** friendly
+fighter, add **+1** to the **Help** roll.
+
+**Pathfinder:** During Survival Rolls, if this fighter is a surviving fighter and
+your retinue rolls natural double 1, you may ignore the Mishap. Treat the
+result as **3** instead.
 
 ---
 
-### 3. Recruit Fighters
+### Recruit Fighters
 
 Recruit **5–12** fighters: **1 Captain**, **0–4 Stalker**, **0–3 Tracker**,
 **0–4 Hand**.
@@ -179,34 +174,9 @@ requires **Mortal** Domain)*.
 
 Species baseline only.
 
-#### Hunters feats
-
-**Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**.
-You may equip any weapon in that proficiency your retinue is allowed to buy. You
-may take this feat more than once. Each time, choose a **different**
-proficiency. **One-Handed** and **Two-Handed** grant shield access; **Archery**
-and **Thrown** do not.
-
-**Firearms** *(Mortal Domain only):* Choose **Firearms**. You may equip any
-firearm or bomb your retinue is allowed to buy. Does not grant shield access.
-
-**Marked Quarry:** At the start of the battle, choose 1 enemy fighter. When this
-fighter attacks the chosen fighter, add **1 red die** or **1 blue die** to this
-fighter's Strike Pool.
-
-**Patient Shot:** When this fighter uses **Aim**, their next **Ranged** attack
-this activation may reroll 1 natural 1 in the Strike Pool.
-
-**Field Dressing:** When this fighter uses **Help** on a **Downed** friendly
-fighter, add **+1** to the **Help** roll.
-
-**Pathfinder:** During Survival Rolls, if this fighter is a surviving fighter and
-your retinue rolls natural double 1, you may ignore the Mishap. Treat the
-result as **3** instead.
-
 ---
 
-### 4. Equip Your Fighters
+### Equip Your Fighters
 
 A fighter cannot equip a weapon unless they have the matching **Proficiency**.
 
@@ -278,7 +248,7 @@ equipment access. **110 Crowns** remain unspent.
 
 Before your first battle, confirm:
 
-- [ ] Domain and Tradition chosen and recorded
+- [ ] Tradition chosen and recorded (sets Domain)
 - [ ] Fighter count within 5–12
 - [ ] **1 Captain**, **0–4 Stalker**, **0–3 Tracker**, **0–4 Hand**
 - [ ] **Caster:** at most 1 on Captain; **Mortal** has none; Captain knows **2** Domain spells if **Caster**
