@@ -9,10 +9,10 @@ the final rule in the dated decision-log entry for that commit.
 
 - **Domain feat lists (in progress):** Model feats on Mordheim/Necromunda skills —
   one lever per entry, named like skills, gated where needed (e.g. **Caster
-  only**). **Light** started with **Warded** and **Absolute Faith**; three more
-  Light feats still open. **Max one Caster-only feat per Domain** feat list;
-  **Cult** may break that cap when its list is written. Rejected first-pass
-  caster-support / wound-trade feats.
+  only**). **Light:** **Warded**, **Absolute Faith** (three more open).
+  **Nature:** **Bear's Strength** locked. **Max one Caster-only feat per Domain**
+  feat list; **Cult** may break that cap when its list is written. Rejected
+  first-pass caster-support / wound-trade feats.
 - **Feat guardrail:** Feats should express retinue identity without flattening
   the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
   actions, reusable rerolls, and feats that are effectively spells without a
@@ -24,12 +24,31 @@ the final rule in the dated decision-log entry for that commit.
   injuries, and whether **Slain** or **Out of Action** triggers an in-battle
   death response.
 - **Open roster decisions:** Add Domain composition tables, finish remaining
-  Domain feat entries (Light needs 3 more; other Domains not started), decide
-  Shadow Market access for alchemy, and assign recruitment costs for Animals
-  and Daemons.
+  Domain feat entries (Light needs 3 more; Nature and other Domains need more),
+  decide Shadow Market access for alchemy, and assign recruitment costs for
+  Animals and Daemons.
 - **Open magic decisions:** Finish spell difficulties, ranges, Mishaps, and
   unresolved status/affliction names before treating `rules/magic.md` as
   playtest-ready.
+
+---
+
+## 2026-06-08 — Bear's Strength Nature domain feat
+
+**Decision:** Add **Bear's Strength** to the **Nature** Domain feat list in
+`rules/feats.md`. The fighter gains **Hurl** — a **1 action** grapple throw
+(Necromunda **Hurl** translated): target an engaged enemy, or a **Downed** or
+**Stunned** enemy within **1"**; enemy **Sk check** to resist; on failure move
+**d3"** and apply wound-state changes (**Active** or **Downed** → **Stunned**);
+collision with **terrain** or an **Active** fighter's base stops movement and
+deals **1 hit** at **2 Mt / 1 Sk** (second fighter hit also becomes
+**Stunned**). After **Charge**, may **Hurl** once without spending an action
+instead of **Melee** that activation.
+
+**Reasoning:** Necromunda-style skill that grants a named action rather than a
+passive buff. Fits Beastmen / bear-mark fantasy and Noctvale wound states
+without permanent stat changes. Collision damage uses a flat Strike Pool and
+the standard **Attack Sequence**.
 
 ---
 

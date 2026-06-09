@@ -205,3 +205,33 @@ When this fighter is the target of a hostile **Cast** action, roll **1d6**. On
 
 This fighter may reroll failed **Fear**, **Panic**, and **Insanity** tests. They
 must accept the second result.
+
+### Nature
+
+#### Bear's Strength
+
+While this fighter is **Active** and **within engagement range** of at least one
+enemy fighter, they may perform **Hurl**.
+
+> **Hurl** — **Cost:** 1 action
+>
+> Choose one enemy fighter **within engagement range** of this fighter, or one
+> **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
+>
+> The chosen fighter makes a **Sk check** (d6 + Sk ≥ 8).
+>
+> - **Pass:** No effect.
+> - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
+>   - If the target was **Active**, they become **Stunned** after moving.
+>   - If the target was **Downed**, they become **Stunned** after moving.
+>   - A **Stunned** target remains **Stunned**.
+>   - If the target's move stops because their base contacts **terrain** or an
+>     **Active** fighter's base, they suffer **1 hit** at **2 Mt / 1 Sk**.
+>   - If the collision involves another fighter's base, that fighter also
+>     suffers the same hit and becomes **Stunned**.
+>
+> Resolve each hit using the **Attack Sequence**.
+
+After this fighter completes a **Charge** that ends **within engagement range**
+of an enemy, they may perform **Hurl** once without spending an action. If they
+do, they cannot make a **Melee** attack during that activation.
