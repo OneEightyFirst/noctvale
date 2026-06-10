@@ -193,7 +193,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Predator's Grace | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
 | Enthrall | *(TBD)* | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
 | Feast of Excess | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned (keeps wounds but vulnerable) | *(TBD)* |
-| Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly Blood domain fighter is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation |
+| Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly fighter with **Vampire** is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation |
 
 ### Mortal
 

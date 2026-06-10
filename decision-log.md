@@ -7,6 +7,8 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
+- **Vampire abilities:** Per-fighter pick list for **Vampires** Tradition *(1
+  ability each — names and rules TBD)*.
 - **Domain feat lists:** All **seven Domains** at **five** — see `rules/feats.md`.
   **Nature:** **Sure Footed**, **Camouflage**; **Lightning Reflexes** removed
   *(Mortal · Light only)*; **Animal Handling** → Universal. **Mortal** (**Null**),
@@ -30,6 +32,30 @@ the final rule in the dated decision-log entry for that commit.
   treating `rules/magic.md` as playtest-ready. **Afflictions**, **difficult terrain**,
   **stat modifier cap** (**±3**), and **project Fear** language are locked — see
   `rules/conditions.md`, `rules/special-rules.md`, `rules/sanity.md`.
+
+---
+
+## 2026-06-10 — Vampire keyword and Vampires Tradition
+
+**Decision:** Add **Vampire** creature-type keyword in `rules/retinue-building.md`.
+**Vampires** Tradition grants **Vampire** at roster creation to each **Leader**,
+**Elite**, and **Specialist** (**+20 Crowns** each). **Rank** fighters do not
+gain **Vampire**. **Vampire** counts as **Undead** for silver weapons,
+**Radiant Strike**, and similar rules. Tradition base ability: when a **Vampire**
+takes an enemy **Out of Action** with **Melee** or **Mercy Kill**, restore **1
+Wound** to that fighter. Each **Vampire** also chooses **1** vampire ability from
+a list *(TBD — record on roster sheet)*. **Nightfall** targets friendly fighters
+with **Vampire**. Fighters with **Vampire** pay **2 XP** more than the normal
+cost to buy post-game advancement (**Feat** **4**, **Keyword** **4**, **Stat**
+**7**); surcharge only — does not modify **2d6** advancement results.
+
+**Reasoning:** True vampires are **Leader**/**Elite**/**Specialist** nobility;
+**Rank** servants stay mortal thralls without the keyword or recruitment
+surcharge. **Undead** implication matches hunter and holy-magic interactions
+without duplicating **Wightlords**-style mindless undead. Feed-on-kill stays the
+shared tradition rule; per-fighter ability picks are reserved for a follow-up
+list. Slower advancement trades campaign power growth for a strong on-table
+predator package.
 
 ---
 

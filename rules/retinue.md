@@ -299,9 +299,15 @@ fighter **projects Fear**.
 
 #### Blood
 
-**Vampires:** All fighters cost **+20 Crowns**. When a friendly fighter takes an
-enemy fighter **Out of Action** with **Melee** or **Mercy Kill**, restore
-**1 Wound** to that friendly fighter.
+**Vampires:** At roster creation, each **Leader**, **Elite**, and **Specialist**
+in this retinue gains the **Vampire** keyword and costs **+20 Crowns**. **Rank**
+fighters do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
+vampire ability *(list TBD — record on the roster sheet)*. When a fighter with
+**Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy
+Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay
+**2 XP** more than the normal cost to buy each post-game advancement (see
+[Post-Game — Spending
+XP](../campaign/post-game.md#spending-xp--advancement-rolls)).
 
 **Dynasts:** At roster creation, choose up to 3 melee weapons in this retinue to
 be heirloom weapons. No fighter may carry more than 1 heirloom weapon.

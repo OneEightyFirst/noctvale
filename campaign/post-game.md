@@ -140,6 +140,11 @@ Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cos
 | **Keyword** | **2** | 2d6 on Keyword Advancement Table |
 | **Stat** | **5** | 2d6 on Stat Advancement Table |
 
+Fighters with the **Vampire** keyword must pay **2 XP** more than the normal
+advancement cost before they may buy that advancement — **Feat** **4**,
+**Keyword** **4**, **Stat** **7**. This adds to the **XP** price only; it does
+not modify the **2d6** result.
+
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
 **Keyword eligibility:** Same rules as before — Archetype, class, Domain, and retinue Caster limits apply.

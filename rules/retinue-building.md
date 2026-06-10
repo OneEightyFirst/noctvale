@@ -124,6 +124,19 @@ counts toward a fighter's spell allowance.
 | Folk | 1 |
 | Cult | 3 |
 
+### Vampire
+
+Creature-type keyword. A fighter with **Vampire** counts as **Undead** for any
+rule that checks **Undead** (silver weapons, **Radiant Strike**, and similar).
+
+**Vampires** Tradition grants **Vampire** at roster creation to each **Leader**,
+**Elite**, and **Specialist** in the retinue. **Rank** fighters do not gain
+**Vampire** from that Tradition.
+
+Fighters with **Vampire** pay **2 XP** more than the normal cost to buy each
+post-game advancement (**Feat**, **Keyword**, or **Stat**). See [Post-Game —
+Spending XP](../campaign/post-game.md#spending-xp--advancement-rolls).
+
 Full profiles, species tables, and feat lists: [Archetype chapters](archetypes/knights.md).
 
 ---

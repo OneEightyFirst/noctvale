@@ -125,7 +125,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | Tradition | Yes | Witches, Crusaders, etc. — one per retinue |
 | Faction | Yes | Named preset (Phoenix Guard, Silver Hunt, …) |
 | class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
-| keyword | No in prose | **Caster**, **Fear**, **Fearless** — bold the keyword name |
+| keyword | No in prose | **Caster**, **Fear**, **Fearless**, **Undead**, **Vampire** — bold the keyword name |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
 | difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **M** |
 | affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `conditions.md` |
