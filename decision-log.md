@@ -7,28 +7,64 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
-- **Domain feat lists (in progress):** Model feats on Mordheim/Necromunda skills —
-  one lever per entry, named like skills, gated where needed (e.g. **Caster
-  only**). **Light:** **Warded**, **Absolute Faith** (three more open).
-  **Nature:** **Bear's Strength** locked. **Max one Caster-only feat per Domain**
-  feat list; **Cult** may break that cap when its list is written. Rejected
-  first-pass caster-support / wound-trade feats.
+- **Domain feat lists:** All **seven Domains** at **five** entries — see
+  `rules/feats.md`. **Universal feats:** **four** locked, **one** open.
+  **Archetype** lists: Knights, Hunters, Cult, Folk at **five** each.
 - **Feat guardrail:** Feats should express retinue identity without flattening
   the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
   actions, reusable rerolls, and feats that are effectively spells without a
   **casting roll**. Prefer feats that bend existing levers: **Brace**, **Help**,
   **Recover**, **Aim**, **Overwatch**, **Mishap**, Survival Rolls, armor/shield
-  defense conversion, weapon or magic triangle advantage, and wound states.
+  defense conversion, weapon or magic triangle advantage, and wound states. **No
+  feat may require another named feat.**
 - **Open campaign decisions:** Decide whether upkeep exists, how convalescent
   fighters interact with minimum retinue size, whether downtime can heal
   injuries, and whether **Slain** or **Out of Action** triggers an in-battle
   death response.
-- **Open roster decisions:** Add Domain composition tables, finish remaining
-  Domain feat entries, decide Shadow Market access for alchemy. **Companion**
+- **Open roster decisions:** Add Domain composition tables; decide Shadow Market
+  access for alchemy; write **Feat Advancement Table** and last **Universal** feat
+  slot. **Companion**
   profiles and campaign recovery are locked — see `rules/companions.md`.
 - **Open magic decisions:** Finish spell difficulties, ranges, Mishaps, and
   unresolved status/affliction names before treating `rules/magic.md` as
   playtest-ready.
+
+---
+
+## 2026-06-09 — Domain and archetype feat lists; firearms on Ranged
+
+**Decision:** Complete all **seven Domain** feat lists at five entries each and
+fill **Cult** and **Folk** **Archetype** lists to five. Add **Universal feats**
+(**Line Breaker**, **Blacksmith's Arms**, **Dodge**, **Guard** — one slot still
+open). **Firearms** use **Ranged**, not **Cast**; **Brace of Pistols** is
+holster equipment (1 slot, 2 **Pistols**); **Gunslinger** / **Deadeye** on
+**Mortal** Domain list. Style guide: **Universal feat**, **charge follow-up**
+phrasing. **No feat may require another named feat.**
+
+**Domain highlights:** **Heave** *(Nature · Blood · Infernal)* replaces
+**Bear's Strength**; **Unstoppable Faith** *(Light)*; **Warded** *(Light ·
+Arcane)*; **Arcane** — **Conduit**, **Second Sight**, **Steady Weave**
+*(**Caster only**)*; **Necromancy** — **Bind the Dead** *(**Caster only**;
+**Summon Skeleton** persists)*, **Bone Ward**, **Death's Chill**; **Infernal**
+— **Daemonic Wings**, **Devil's Pact**; **Blood** — **Thrill of Agony**;
+shared **Infiltrate**, **Acrobat**, **Animal Handling**, **Lightning Reflexes**,
+**Hard to Kill** as listed in `rules/feats.md`.
+
+**Archetype highlights:** **Cult** — **Magic Armor**, **Chant** *(**Fear**
+**Sphere of Influence** when **2+** other Cultists **within 1"**)*, **Convoke**
+*(**Caster only**)*; **Folk** — **Shoulder to Shoulder**, **Raise the Watch**,
+**Skilled Craftsman** *(one weapon **+1 Mt** or **+1 Sk**, swappable between
+battles)*.
+
+**Universal:** **Guard** — once per round **Intercept** a hostile **Ranged**
+attack or **Cast** targeting a friendly **Leader**, **Elite**, or **Caster**
+**within 3"**; redirect to this fighter.
+
+**Reasoning:** Feat lists now support roster identity and campaign advancement
+prep ( **Feat Advancement Table** still TBD). Gunpowder on **Ranged** separates
+magic from firearms and enables **Dodge** vs **Ranged** only. Cult/Folk feats
+express conclave fear, escort armor, mob defense, and guild craftsmanship without
+flattening core combat.
 
 ---
 

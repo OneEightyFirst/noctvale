@@ -117,6 +117,19 @@ is allowed to buy. You may take this feat more than once. Each time, choose a
 if another friendly fighter is within **1"** of this fighter or the assisted
 fighter.
 
+**Shoulder to Shoulder:** While this fighter is **within 1"** of at least one
+other friendly fighter, add **+1 blue defense die** when rolling defense against
+a **Melee** attack.
+
+**Raise the Watch:** Once per battle, when a friendly fighter **within 6"**
+becomes **Downed**, this fighter may move up to **6"** toward that fighter. This
+move cannot enter engagement range.
+
+**Skilled Craftsman:** This fighter may upgrade **one** weapon they own. Apply
+**+1 Mt** or **+1 Sk** to that weapon *(choose when you select it)*. Only **one**
+weapon may have this upgrade at a time. Change which weapon is upgraded between
+battles. Record the chosen weapon and upgrade on this fighter's roster entry.
+
 ---
 
 ### Recruit Fighters

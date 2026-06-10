@@ -121,6 +121,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 |---|---|---|
 | Archetype | Yes | Knights, Hunters, Folk, Cult |
 | Domain | Yes | Light, Arcane, Nature, Blood, Necromancy, Infernal, **Mortal** |
+| Universal feat | Yes | Any fighter — cross-Domain list (**Line Breaker**, **Blacksmith's Arms**, …) |
 | Tradition | Yes | Witches, Crusaders, etc. — one per retinue |
 | Faction | Yes | Named preset (Phoenix Guard, Silver Hunt, …) |
 | class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
@@ -140,6 +141,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | critical hit | Lowercase; **critical** as adjective OK |
 | natural 1 / natural 6 | Lowercase |
 | weapon triangle advantage | Lowercase phrase |
+| charge follow-up | **Melee** immediately following **Charge** during the same activation — no other actions between them |
 | Mishap / Misfire / Overcharge | Capitalize — spell outcomes |
 | Ranged Reaction | Capitalize — named rule |
 

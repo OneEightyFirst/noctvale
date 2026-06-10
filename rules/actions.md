@@ -80,30 +80,34 @@ Resolve the attack using the **Attack Sequence** (below).
 
 **Cost:** 1 action
 
-Attack with a **ranged weapon**.
+Attack with a **ranged weapon** — bows, crossbows, firearms, and other weapons
+that use this action.
 
 - Target must be within the weapon's minimum and maximum range
 - Target must be within **line of sight**
 
-Resolve the attack using the **Attack Sequence** (below).
+**Bow or crossbow:** Resolve the attack using the **Attack Sequence** (below).
 
-*(See `special-rules.md`.)*
+**Firearm:** Roll the **Primer Roll** (below). If the gun fires, resolve the
+attack using the **Attack Sequence**. **Pistols:** see [Gear —
+Pistols](gear.md#pistols) and [Feats — Gunslinger](feats.md#gunslinger).
+
+*(See [Gear](gear.md) and [Special Rules](special-rules.md).)*
 
 ### Cast
 
 **Cost:** 1 action
 
-Cast a spell or fire a firearm.
+Cast a spell.
 
 - Spells may be cast **while in melee**
 - Enemy targets must be in range and within **line of sight** unless the spell says otherwise
 - **Cast** actions do not trigger **Ranged Reactions**
 
-**Spell:** Roll the **Casting Roll** (below). If the spell goes off, resolve the attack using the **Attack Sequence**.
+Roll the **Casting Roll** (below). If the spell goes off, resolve the attack
+using the **Attack Sequence**.
 
-**Firearm:** Roll the **Primer Roll** (below) for the chosen firearm — or once per **Pistol** when firing a **Brace of pistols** (see [Gear — Weapons](gear.md#weapons)). If the gun fires, resolve the attack using the **Attack Sequence**.
-
-*(See [Magic](magic.md), [Gear](gear.md), and [Special Rules](special-rules.md).)*
+*(See [Magic](magic.md).)*
 
 ### Aim
 

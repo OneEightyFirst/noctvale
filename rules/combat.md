@@ -160,7 +160,10 @@ Nature > Necromancy > Blood > Nature
 ```
 
 ### Firearms
-Firearms use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. *(See [Gear — Weapons](gear.md#weapons).)*
+
+Firearms are fired with the **Ranged** action. They use the **primer roll** and
+gain criticals against **all targets**, regardless of weapon type. *(See [Gear —
+Weapons](gear.md#weapons).)*
 
 ---
 

@@ -19,6 +19,7 @@ Each fighter has **3 weapon slots**.
 | Item                        | Slots |
 | --------------------------- | ----- |
 | One-handed weapon or shield | 1     |
+| **Brace of Pistols** *(2 Pistols)* | 1     |
 | Two-handed weapon           | 2     |
 | Relic or Instrument         | 2     |
 
@@ -104,6 +105,11 @@ Available to **every retinue**.
 | Refined | Long Rifle  | 125  | Hunters only           |
 
 
+| Item               | Cost | Notes                                      |
+| ------------------ | ---- | ------------------------------------------ |
+| Brace of Pistols   | 25   | **Mortal Domain only** — holds **2 Pistols** in **1 weapon slot** |
+
+
 ---
 
 ### Crown costs — bombs *(Mortal Domain only)*
@@ -124,9 +130,9 @@ Bombs are **Single Shot** (one use per battle).
 
 | Armor        | Cost | Archetype cap          |
 | ------------ | ---- | ---------------------- |
-| Light Armor  | 50   | Folk, Hunters, Knights |
-| Medium Armor | 115  | Hunters, Knights       |
-| Heavy Armor  | 185  | Knights only           |
+| Light Armor  | 50   | Folk, Hunters, Knights; **Cult** with **Magic Armor** |
+| Medium Armor | 115  | Hunters, Knights; **Cult** with **Magic Armor**       |
+| Heavy Armor  | 185  | Knights only; **Cult** with **Magic Armor**           |
 
 
 ---
@@ -317,8 +323,9 @@ Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use p
 
 ### Firearms
 
-Requires the **Firearms** proficiency and the **Mortal** Domain. See
-[Retinue](retinue.md) for which firearm **tiers** each Archetype may buy.
+Firearms are fired with the **Ranged** action. Requires the **Firearms**
+proficiency and the **Mortal** Domain. See [Retinue](retinue.md) for which
+firearm **tiers** each Archetype may buy.
 
 > ### Primer Roll (2d6 + Sk)
 >
@@ -333,18 +340,30 @@ Requires the **Firearms** proficiency and the **Mortal** Domain. See
 > | **Meets or exceeds difficulty** | The gun fires. Resolve the **Attack Sequence** |
 > | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
 
-#### Dual pistols
+#### Pistols
 
-A fighter may carry up to **2 Pistols** (each takes **1 weapon slot**).
+A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no
+**Brace of Pistols** uses **2 weapon slots**.
 
-- **Fire a Pistol:** Choose one equipped Pistol. Resolve the **Primer Roll** and **Attack Sequence** normally.
-- **Brace of pistols:** One **Cast** action. Declare one or two targets in range and line of sight. Roll the **Primer Roll** once for each equipped Pistol (assign each shot to a target before rolling). Each successful primer resolves a separate **Attack Sequence**. Failed primers are resolved normally; the action is still spent once.
+**Brace of Pistols** — equipment that takes **1 weapon slot** and holds **2
+Pistols**. Requires the **Firearms** proficiency. **Mortal Domain only**. Crown
+cost: [Roster building](#crown-costs--firearms-mortal-domain-only).
+
+- **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**.
+  Resolve the **Primer Roll** and **Attack Sequence** normally.
+- **Gunslinger** *(Mortal Domain feat)*: One **Ranged** action fires both
+  **Pistols** in the fighter's **Brace of Pistols** (or both equipped **Pistols**
+  if carried without a **Brace**) — each with its own **Primer Roll** and
+  **Attack Sequence**. The fighter cannot take another **Ranged** action during
+  that activation. See [Feats — Gunslinger](feats.md#gunslinger).
 
 ### Bombs
 
 Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per battle). **Mortal Domain only** (gunpowder).
 
 #### Throwing a bomb
+
+Use the **Ranged** action.
 
 1. **Declare a target** (pick a direction/point you're aiming at).
 2. **Roll the primer roll** (see [Bomb table](#bomb-table)):
@@ -395,6 +414,15 @@ Shields **convert failed defense dice into successes** after rolling the defense
 | Tower Shield | 2 failed red defense dice + 1 failed blue defense die → normal successes | Heavy, full cover |
 
 Armor and shield conversions **stack**. A fighter in Medium Armor with a Shield converts 2 failed red defense dice and 1 failed blue defense die total.
+
+### Brace of Pistols
+
+**Brace of Pistols** is holster equipment — not a weapon. It takes **1 weapon
+slot** and holds **2 Pistols**. The **Pistols** must still be purchased
+separately. Requires the **Firearms** proficiency. **Mortal Domain only**.
+
+Without a **Brace of Pistols**, each **Pistol** uses **1 weapon slot** on its
+own.
 
 ### Alchemy
 

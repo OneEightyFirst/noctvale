@@ -231,9 +231,9 @@ Magic is grouped into two broad moral categories:
 - The Mishap system means every spell is a calculated risk
 - Spell damage is flat — power comes from the spell profile, decoupling magical and physical identity
 - Spells produce larger dice pools than weapons (5-6 dice vs 2-4 from weapon modifiers) as the payoff for the **casting roll** — a sword always works, a spell might fizzle or backfire
-- Firearms use **2d6 + Sk** on the **primer roll** while magic uses **2d6 + Wi** on the **casting roll** — same roll structure, different stat
+- Firearms use **Ranged** and a **primer roll** (**2d6 + Sk**); magic uses **Cast** and a **casting roll** (**2d6 + Wi**) — same roll structure, different action and stat
 - Mirroring the weapon triangle with magic triangles creates a unified advantage-and-critical framework across all combat types
 - Firearms gaining crits against all targets (outside the triangle) is their payoff for the loading risk
-- Cast not triggering Ranged Reactions gives magic a distinct tactical niche compared to conventional ranged weapons
+- **Cast** not triggering **Ranged Reactions** gives magic a distinct tactical niche compared to gunpowder and bows
 - The "at least one Arcane Bolt equivalent" ensures every magic class has offensive utility
 - Wi baseline is 3 for Humans; recruitment bonuses and advancement raise caster Wi. A Wi 3 caster attempts spells at reduced odds

@@ -119,6 +119,20 @@ or **casting roll**, choose another friendly fighter within **12"**. That
 fighter suffers **1 Wound**. Add **+1** to the roll. This wound can reduce the
 chosen fighter to 0 Wounds and cause them to become **Downed**.
 
+**Magic Armor:** This fighter may equip **Light Armor**, **Medium Armor**, or
+**Heavy Armor**.
+
+**Chant:** When **2 or more** other friendly **Cult** fighters have their bases
+**within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of
+Influence** with range **6"**. When an enemy fighter activates while within this
+**Sphere of Influence**, they must pass a Sanity test for **Fear** with this
+fighter as the source. See **[Fear](../sanity.md#fear)** and **[Sphere of
+Influence](../gear.md#sphere-of-influence)**.
+
+**Convoke:** **Caster only.** When this fighter makes a **casting roll** and **1
+or more** other friendly **Cult** fighters with **Caster** are **within 6"**, add
+**+1** to the roll.
+
 ---
 
 ### Recruit Fighters
@@ -172,7 +186,7 @@ Species baseline only.
 A fighter cannot equip a weapon unless they have the matching **Proficiency**.
 
 Each fighter has **3 weapon slots**. Buy gear from [Gear](../gear.md). Cult
-fighters wear no armor and cannot carry shields.
+fighters wear no armor and cannot carry shields unless a feat says otherwise.
 
 ---
 
