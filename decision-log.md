@@ -2,6 +2,21 @@
 
 Decisions made during design, with reasoning. Newest entries at the top.
 
+## How to use this log
+
+`decision-log.md` is the primary handoff artifact for current design state.
+
+- Keep `## Ideas` near the top for provisional concepts and unresolved design
+  decisions.
+- Add one dated section per commit below `## Ideas` and its divider.
+- Use `## YYYY-MM-DD — Title`; match the title to the commit intent.
+- Write `**Decision:**` for what changed and `**Reasoning:**` for why it changed.
+- Remove or update Ideas entries when they become implemented rules.
+- Do not include commit hashes.
+
+Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
+date.
+
 ## Ideas
 
 Concepts under discussion. Remove an entry when it is implemented and capture
@@ -32,6 +47,28 @@ the final rule in the dated decision-log entry for that commit.
   treating `rules/magic.md` as playtest-ready. **Afflictions**, **difficult terrain**,
   **stat modifier cap** (**±3**), and **project Fear** language are locked — see
   `rules/conditions.md`, `rules/special-rules.md`, `rules/sanity.md`.
+
+---
+
+## 2026-06-10 — Codex workflow and repo skills
+
+**Decision:** Move Noctvale agent workflow to Codex-native surfaces. `AGENTS.md`
+now owns the decision-log workflow, including shell-date lookup, one dated entry
+per design commit, Ideas cleanup, and staging `decision-log.md` with the files it
+explains. Add repo-scoped Codex skills under `.agents/skills/` for rules work and
+decision-log updates. Add a repo-scoped Git publishing skill for explicit
+commit/push requests only; it checks the diff, ensures the decision log is
+current, stages relevant files, commits, and pushes the current branch. Remove
+the obsolete Cursor rule file and ignore local OS / design-application artifacts
+that should not appear as accidental untracked changes.
+
+**Reasoning:** The project is moving fully to Codex, so recurring workflow
+instructions should live where Codex loads them automatically or through
+repo-scoped skills. Keeping the decision-log insertion rules at the top of the
+log removes the stale buried anchor and makes the current workflow visible to
+agents and humans. Keeping publish behavior in its own opt-in skill preserves
+the rule that commits and pushes happen only when requested. Ignoring local
+artifacts keeps future sessions focused on intentional design changes.
 
 ---
 
@@ -759,32 +796,6 @@ search.
 **Decision:** Removed **Arcane Barrage** from the Arcane spell list. Arcane now has one open slot among its six non-freebie spells (freebie **Arcane Bolt** unchanged).
 
 **Reasoning:** Arcane carried three damage spells (Bolt, Fireball, Barrage). Barrage overlapped Bolt’s precision-damage role without adding positioning or combo play. Cutting it trims redundant damage and frees a slot for a reworked Arcane identity (e.g. placed terrain blast paired with Fireball). Remaining Arcane damage: **Arcane Bolt** (single-target) and **Fireball** (large blast).
-
-## How to use this log
-
-**Update this file before every git commit.** The decision log is part of the commit, not an afterthought.
-
-### Workflow
-
-1. **Draft** — Add **one** new section at the top (below this heading). Use **`## YYYY-MM-DD — Title`** — the date is the correlation key (no commit hash).
-2. **Write** — **Decision** + **Reasoning** for everything in the staged diff.
-3. **Stage** — Include `decision-log.md` in the same commit as the rule/campaign/todo changes.
-4. **Commit** — One log section per commit. Same day, multiple commits? Use distinct titles.
-
-Do not commit design work without a matching log entry.
-
-### Entry format
-
-| Field | Required |
-|---|---|
-| `## YYYY-MM-DD — Title` | Yes — date + short title; matches commit intent |
-| **Decision** | Yes |
-| **Reasoning** | Yes when not obvious |
-| **Superseded by:** `YYYY-MM-DD — Title` | When replacing an older decision |
-
-To compare with git history: `git log --since=YYYY-MM-DD --until=YYYY-MM-DD+1` and match commit messages to log titles.
-
----
 
 ## 2026-05-28 — Retinue Traditions (domain + archetype identity)
 

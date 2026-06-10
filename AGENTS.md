@@ -32,6 +32,27 @@ Use `NOCTVALE_DESIGN_TENETS.md` to evaluate whether a proposed mechanic belongs
 in the game. Use `decision-log.md` to record the reason for a rules change when
 making a commit.
 
+### Decision Log Workflow
+
+`decision-log.md` is the primary handoff artifact for current design state.
+Keep it newest-first.
+
+Before committing design, rules, campaign, scenario, roster, gear, spell, feat,
+or structural documentation changes:
+
+1. Run `date '+%Y-%m-%d %H:%M %Z'` in the shell. Use that date for the log
+   entry; do not rely on conversation metadata.
+2. Add one new `## YYYY-MM-DD — Title` section in `decision-log.md` below the
+   `## Ideas` section and its divider.
+3. Use `**Decision:**` to summarize what changed and `**Reasoning:**` to capture
+   why the change belongs in Noctvale.
+4. If the change implements or closes an item from `## Ideas`, remove or update
+   that idea in the same edit.
+5. Stage `decision-log.md` with the files it explains.
+
+Skip the decision log only for typo, whitespace, or link-only changes with no
+design meaning.
+
 ## Collaboration Workflow
 
 For Noctvale design and rules work, use a proposal-first workflow when the
@@ -62,6 +83,25 @@ Default rhythm:
 4. Wait for the user to pick or revise an option.
 5. Apply the approved change.
 6. Summarize exactly what changed.
+
+## Git Publishing
+
+Commit and push only when the user explicitly asks for it with language such as
+"commit," "push," "publish," or "update the repo." Do not commit or push on your
+own initiative.
+
+When the user asks to commit or push:
+
+1. Review `git status` and the relevant diff.
+2. Make sure `decision-log.md` is updated for any design-bearing change.
+3. Stage only the files that belong to the requested work.
+4. Commit with a concise message that matches the decision-log entry.
+5. Push the current branch.
+
+If Git metadata writes fail because `.git` is not writable, request the narrow
+filesystem permission needed for `.git` and continue after it is granted. If a
+remote push succeeds but local tracking refs fail to update, verify the remote
+head before repairing local refs.
 
 ## Capturing Ideas
 
