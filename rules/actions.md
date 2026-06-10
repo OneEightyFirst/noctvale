@@ -44,7 +44,8 @@ Move vertically at **half M**.
 
 **Cost:** 1 action
 
-Move at **half M** through difficult terrain.
+Move at **half M** through **difficult terrain** (see [Special Rules — Difficult
+Terrain](special-rules.md#difficult-terrain)).
 
 - Cannot end **within engagement range**
 

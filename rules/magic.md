@@ -124,7 +124,7 @@ Each domain has a standard ranged attack spell plus **6 additional spells**.
 | Holy Light | 11+ | — | — | 12" from caster | All fighters within 12" lose cover and Hidden condition | *(TBD)* |
 | Heal | 10+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
 | Purge the Faithless | 11+ | 5 | 2 | 3" blast from caster | Hits all fighters in radius | Caster takes the damage |
-| Shield of Faith | 11+ | — | — | 12" | Target gains +2 red defense dice and causes Fear. Lasts until the start of the caster's next activation | *(TBD)* |
+| Shield of Faith | 11+ | — | — | 12" | Target gains +2 red defense dice and **projects Fear**. Lasts until the start of the caster's next activation | *(TBD)* |
 | Horrors Relived | 12+ | Target's Sa | — | 12" | Ranged attack; Strike Pool Mt equals the target's Sa stat | Caster takes the damage (using target's Sa as Mt) |
 | Unwavering Resolve | 10+ | — | — | 8" from caster | All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation | *(TBD)* |
 
@@ -165,11 +165,11 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 |---|---|---|---|---|---|---|
 | Thorn Volley | 12+ | 4 | 4 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
 | Shadowmeld | *(TBD)* | — | — | 12" | Target friendly fighter gains Hidden. Does not need to remain within 1" of terrain to stay Hidden. Hidden still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy | Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation |
-| Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned — suffer -1 Mt and -1 Sk until the start of the caster's next activation | *(TBD)* |
+| Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: **Poisoned** — see [Conditions — Poisoned](conditions.md#poisoned) | *(TBD)* |
 | Feral Form | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
 | Entangle | *(TBD)* | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
 | Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](profiles.md) | The Swarm appears hostile — your opponent controls it for its single activation |
-| Dread Chorus | *(TBD)* | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test (d6 + Sa ≥ 8) or gain Fear of the caster until the start of the caster's next activation | *(TBD)* |
+| Dread Chorus | *(TBD)* | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test for **Fear** with the caster as the source | *(TBD)* |
 
 ### Necromancy
 
@@ -179,7 +179,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See [Profiles](profiles.md) | The Skeleton appears hostile — your opponent controls it for its single activation |
 | Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation | Your opponent places and controls the raised fighter instead |
 | Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
-| Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers -1 Mt, -1 Sk, -1" M until the start of the caster's next activation. Applies the Weakened condition | *(TBD)* |
+| Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](conditions.md#weakened) | *(TBD)* |
 | Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
 | Bone Circle | *(TBD)* | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
 
@@ -188,7 +188,7 @@ For alpha, daemons are recruited like any other retinue member. Pre-game summoni
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Leech | *(TBD)* | *(TBD)* | *(TBD)* | *(TBD)* | Ranged attack; if target takes ≥1 wound, caster heals 1 wound | Caster takes the damage |
-| Bleed | *(TBD)* | — | — | *(TBD)* | Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding condition — suffer 1 wound immediately, test Wi each activation until passed or dead | Caster gains Bleeding instead |
+| Bleed | *(TBD)* | — | — | *(TBD)* | Target must pass Wi check (d6 + Wi ≥ 8). Fail: **Bleeding** — see [Conditions — Bleeding](conditions.md#bleeding) | Caster gains **Bleeding** instead |
 | Blood Frenzy | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation | *(TBD)* |
 | Predator's Grace | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
 | Enthrall | *(TBD)* | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
@@ -201,17 +201,23 @@ No spells. The **Mortal** Domain grants access to **gunpowder weapons** instead 
 
 ---
 
-## Status & Affliction Ideas
+## Afflictions
 
-Magic may inflict status effects tied to specific domains:
+**Poisoned**, **Weakened**, **Enfeebled**, and **Bleeding** are defined in
+[Conditions](conditions.md#afflictions). Domain association:
 
 | Affliction | Associated Domain |
 |---|---|
-| Enfeebled | Blood |
-| Weakened | Necromancy |
+| **Enfeebled** | Blood |
+| **Weakened** | Necromancy |
+| **Poisoned** | Nature *(and gear, traditions)* |
 | *(TBD)* | Infernal |
 
-Arcane, Radiant (Light), and Nature spells could potentially **remove** these afflictions, creating a cleanse / debuff dynamic between magic categories.
+Arcane, Light, and Nature spells could potentially **remove** these afflictions,
+creating a cleanse / debuff dynamic between magic categories.
+
+Stat bonuses and penalties from stacked effects cannot exceed **+3** or **−3** per
+stat — see [Special Rules — Stat Modifiers](special-rules.md#stat-modifiers).
 
 ---
 

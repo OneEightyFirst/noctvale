@@ -13,7 +13,12 @@ When a Sanity test is required, roll **d6 + Sa ≥ 8**.
 
 ## Fear, Panic, and Insanity
 
-Certain fighters and spells carry the **Fear**, **Panic**, or **Insanity** keyword. When a fighter activates within range and line of sight of such a source, they must pass a Sanity test.
+Fighters and effects that frighten others **project Fear**, **project Panic**,
+or **project Insanity** — they carry the matching keyword and are the **source**
+of that effect.
+
+When a fighter activates within range and line of sight of such a source, they
+must pass a Sanity test.
 
 ### Default Range
 
@@ -72,7 +77,7 @@ A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. 
 
 ## Design Notes
 
-- Fear/Panic/Insanity are keywords assigned to specific fighters and spells — a vampire lord might cause Fear, but the thralls in the same retinue do not
+- Fear/Panic/Insanity are keywords on specific fighters and spells — a vampire lord might **project Fear**, but the thralls in the same retinue do not
 - The three tiers escalate in consequence (hesitation → retreat → loss of control). Each source applies Fear, Panic, or Insanity — one tier per source.
 - Pass-once-per-source means a brave fighter who holds their nerve is done worrying, while a fighter who fails is stuck testing each turn — creating tension without endless dice rolling against fighters you've already faced down
 - The Insanity table is weighted toward the middle: Freeze (4–5) is the most common result, Frenzy (1) and Berserk (6) are rare extremes

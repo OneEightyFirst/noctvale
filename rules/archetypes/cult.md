@@ -75,8 +75,8 @@ cannot be a shield, firearm, bomb, or two-handed weapon.
 **Bear:** Fighters gain **+1 Mt** and **−1 Sa**. Sa cannot be reduced below 1.
 
 **Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may
-inflict **Poisoned** instead of 1 Wound. A Poisoned fighter suffers **−1 Mt** for
-the rest of the battle.
+inflict **Poisoned** instead of 1 Wound. See [Conditions —
+Poisoned](../conditions.md#poisoned).
 
 #### Necromancy
 

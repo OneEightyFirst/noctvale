@@ -7,9 +7,11 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
-- **Domain feat lists:** All **seven Domains** at **five** entries — see
-  `rules/feats.md`. **Universal feats:** **four** locked, **one** open.
-  **Archetype** lists: Knights, Hunters, Cult, Folk at **five** each.
+- **Domain feat lists:** All **seven Domains** at **five** — see `rules/feats.md`.
+  **Nature:** **Sure Footed**, **Camouflage**; **Lightning Reflexes** removed
+  *(Mortal · Light only)*; **Animal Handling** → Universal. **Mortal** (**Null**),
+  **Arcane** (**Helping Hand**) complete. **Universal feats:** **five** entries
+  (complete). **Archetype** lists: Knights, Hunters, Cult, Folk at **five** each.
 - **Feat guardrail:** Feats should express retinue identity without flattening
   the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
   actions, reusable rerolls, and feats that are effectively spells without a
@@ -22,12 +24,46 @@ the final rule in the dated decision-log entry for that commit.
   injuries, and whether **Slain** or **Out of Action** triggers an in-battle
   death response.
 - **Open roster decisions:** Add Domain composition tables; decide Shadow Market
-  access for alchemy; write **Feat Advancement Table** and last **Universal** feat
-  slot. **Companion**
-  profiles and campaign recovery are locked — see `rules/companions.md`.
-- **Open magic decisions:** Finish spell difficulties, ranges, Mishaps, and
-  unresolved status/affliction names before treating `rules/magic.md` as
-  playtest-ready.
+  access for alchemy; write **Feat Advancement Table**. **Companion** profiles and
+  campaign recovery are locked — see `rules/companions.md`.
+- **Open magic decisions:** Finish spell difficulties, ranges, and Mishaps before
+  treating `rules/magic.md` as playtest-ready. **Afflictions**, **difficult terrain**,
+  **stat modifier cap** (**±3**), and **project Fear** language are locked — see
+  `rules/conditions.md`, `rules/special-rules.md`, `rules/sanity.md`.
+
+---
+
+## 2026-06-09 — Nature feats complete; afflictions, terrain, and fear language
+
+**Decision:** Finish **Nature** Domain feats and round out cross-cutting rules.
+**Animal Handling** moves to **Universal** feats (off **Nature**, **Mortal**,
+**Arcane** Domain lists). **Nature** — remove **Lightning Reflexes** *(now
+**Mortal · Light** only)*; add **Sure Footed** (full **M** on **Scramble**) and
+**Camouflage** (**Hidden** targets cannot be selected beyond **3"**). **Mortal**
+— **Null** (enemy **Casters** cannot **Cast** within **6"**). **Arcane** —
+**Helping Hand** (once per round, **Downed**/**Stunned** ally **within 12"**,
+move **6"** toward this fighter). Mark all feat lists complete; **Feat
+Advancement Table** still TBD.
+
+**Afflictions** in `rules/conditions.md`: **Poisoned** (**−1 Mt**, rest of
+battle), **Weakened**, **Enfeebled**, **Bleeding**. **Difficult terrain** —
+area terrain requiring **Scramble** at half **M**; no **Move**/**Charge**
+through it. **Stat modifier cap** — **±3** per stat from stacked feats,
+Traditions, spells, equipment, and afflictions.
+
+**Clarity pass:** **Project Fear** (not "gain Fear") for **Hellknights**,
+**Ironbound**, **Sepulchers**, **Shield of Faith**; `sanity.md` source wording.
+**Runecasters** Rune-stones reroll **one die**, not the full roll. **Dodge** —
+**2d6**, **10+** to negate **Ranged** attacks. Spell and gear references point
+at canonical affliction definitions.
+
+**Reasoning:** Nature needed two exclusive feats after **Animal Handling** went
+Universal and **Lightning Reflexes** left the list. **Camouflage** tightens the
+**Hidden** targeting window without rewriting **Hide**. Afflictions and difficult
+terrain unblock playtest and **Sure Footed**; the **±3** cap prevents
+runaway buff stacks. **Project Fear** fixes ambiguous Tradition text. Bounded
+**Helping Hand** and tougher **Dodge** address review spikes without changing
+core identity.
 
 ---
 

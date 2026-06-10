@@ -194,7 +194,7 @@ Poisons are **consumable** (one battle only).
 ### Companions
 
 Requires **Animal Handling** on the **Handler** (see [Feats — Animal
-Handling](feats.md#animal-handling-nature--mortal--arcane)). Each **Handler**
+Handling](feats.md#animal-handling)). Each **Handler**
 fields one **Companion**; companions do **not** use weapon slots.
 
 Rules and profiles: [Companions](companions.md).
@@ -435,7 +435,7 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 | Poison | Effect | Notes |
 |---|---|---|
 | Adder's Kiss | +1 Sk to the weapon's strike pool | Subtle, fast-acting |
-| Blight Extract | Unblocked hits inflict **Poisoned** (-1 Mt for the rest of the game) | Weakening toxin |
+| Blight Extract | Unblocked hits inflict **Poisoned** — see [Conditions — Poisoned](conditions.md#poisoned) | Weakening toxin |
 | Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
 | Widow's Tears | Unblocked hits inflict 2 wounds instead of 1 | Lethal, expensive |
 | Silversbane | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |

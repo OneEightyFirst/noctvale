@@ -126,6 +126,9 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | Faction | Yes | Named preset (Phoenix Guard, Silver Hunt, …) |
 | class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
 | keyword | No in prose | **Caster**, **Fear**, **Fearless** — bold the keyword name |
+| project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
+| difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **M** |
+| affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `conditions.md` |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
 | Relic(s) | Yes | Campaign treasure recovered in scenarios |
 | Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 Sa) or **Instrument** (+1" M); not campaign treasure |

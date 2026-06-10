@@ -106,6 +106,37 @@ Overwatch compensates for numerical disadvantage.
 
 ---
 
+## Difficult Terrain
+
+**Difficult terrain** is **area terrain** — ground that is hard to cross but not
+impassable. Before the battle, agree which terrain pieces or board areas count
+as difficult terrain. Examples: rubble piles, long grass, marsh, woods, rocky
+ground, steep slopes, and cluttered building interiors.
+
+- Fighters cannot **Move** or **Charge** through difficult terrain.
+- Use **Scramble** to cross difficult terrain at **half M** (see [Actions —
+  Scramble](actions.md#scramble)).
+- **Sure Footed** and other rules may modify **Scramble** through difficult
+  terrain.
+
+*Compare: Mordheim — half speed over difficult ground; Necromunda — each **1"**
+moved across difficult terrain costs **2"** of movement.*
+
+---
+
+## Stat Modifiers
+
+Bonuses and penalties to a fighter's stats from feats, Traditions, spells, and
+equipment **stack**.
+
+The total bonus or penalty to any single stat (**M**, **CC**, **RC**, **Mt**,
+**Sk**, **Wi**, or **Sa**) cannot exceed **+3** or **−3** at any time.
+
+Afflictions such as **Poisoned**, **Weakened**, and **Enfeebled** count toward
+this cap.
+
+---
+
 ## Gang Up
 
 If a friendly fighter is **also engaged** with the same enemy:

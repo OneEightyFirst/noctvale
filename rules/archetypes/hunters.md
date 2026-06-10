@@ -39,13 +39,14 @@ they carry gain **Arcane**.
 
 Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
 Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
-**casting roll**, they may discard the Rune-stones to reroll that roll. The
-second result stands. Remove the Rune-stones from the roster after the battle.
+**casting roll**, they may discard the Rune-stones to reroll **one die** from
+that roll. They must accept the second result. Remove the Rune-stones from the
+roster after the battle.
 
 #### Infernal
 
 **Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
-fighters wearing armor gain **Fear**.
+fighters wearing armor **project Fear**.
 
 **Binders:** This retinue may recruit Daemons as **Hand**. Daemon profiles and
 recruitment costs are an open roster decision tracked in `decision-log.md` Ideas.
@@ -64,8 +65,8 @@ cannot be a shield, firearm, bomb, or two-handed weapon.
 **Bear:** Fighters gain **+1 Mt** and **−1 Sa**. Sa cannot be reduced below 1.
 
 **Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may
-inflict **Poisoned** instead of 1 Wound. A Poisoned fighter suffers **−1 Mt** for
-the rest of the battle.
+inflict **Poisoned** instead of 1 Wound. See [Conditions —
+Poisoned](../conditions.md#poisoned).
 
 **Hedge-walkers:** During deployment, up to 2 friendly fighters may start
 **Hidden** if each is within **1"** of terrain and outside the enemy deployment

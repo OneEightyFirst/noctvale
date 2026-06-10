@@ -92,6 +92,35 @@ The Stunned fighter is immediately **Out of Action** — no defense roll is made
 
 ---
 
+## Afflictions
+
+Afflictions are battle-long debuffs unless a rule sets a shorter duration.
+
+### Poisoned
+
+The fighter suffers **−1 Mt** for the rest of the battle.
+
+### Weakened
+
+The fighter suffers **−1 Mt**, **−1 Sk**, and **−1" M** until the effect that
+applied **Weakened** ends. If no duration is given, **Weakened** lasts for the
+rest of the battle.
+
+### Enfeebled
+
+The fighter suffers **−1 Mt** and **−1 Sk** until the effect that applied
+**Enfeebled** ends. If no duration is given, **Enfeebled** lasts for the rest of
+the battle.
+
+### Bleeding
+
+When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
+
+At the **start of each activation**, roll **Wi check**. **Pass:** remove
+**Bleeding**. **Fail:** suffer **1 Wound**.
+
+---
+
 ## Design Notes
 
 - Downed creates a dramatic tension window — the fighter still defends at full strength

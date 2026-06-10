@@ -222,8 +222,9 @@ Mishap, they suffer **1 Wound** after resolving it.
 
 Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
 Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
-**casting roll**, they may discard the Rune-stones to reroll that roll. The
-second result stands. Remove the Rune-stones from the roster after the battle.
+**casting roll**, they may discard the Rune-stones to reroll **one die** from
+that roll. They must accept the second result. Remove the Rune-stones from the
+roster after the battle.
 
 #### Infernal
 
@@ -239,7 +240,7 @@ and recruitment costs are an open roster decision tracked in `decision-log.md`
 Ideas.
 
 **Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
-fighters wearing armor gain **Fear**.
+fighters wearing armor **project Fear**.
 
 **Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
@@ -266,8 +267,8 @@ cannot be a shield, firearm, bomb, or two-handed weapon.
 **Bear:** Fighters gain **+1 Mt** and **−1 Sa**. Sa cannot be reduced below 1.
 
 **Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may
-inflict **Poisoned** instead of 1 Wound. A Poisoned fighter suffers **−1 Mt** for
-the rest of the battle.
+inflict **Poisoned** instead of 1 Wound. See [Conditions —
+Poisoned](conditions.md#poisoned).
 
 **Hedge-walkers:** During deployment, up to 2 friendly fighters may start
 **Hidden** if each is within **1"** of terrain and outside the enemy deployment
@@ -290,8 +291,8 @@ Cult. Skeletons count toward the retinue's maximum number of fighters and cannot
 gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
 See `profiles.md`.
 
-**Sepulchers:** When a friendly fighter becomes **Downed** or **Stunned**, they
-gain **Fear** until they become Active or **Out of Action**.
+**Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
+fighter **projects Fear**.
 
 **Wightlords:** All fighters cost **+20 Crowns** and gain **Undead** and
 **Fearless**.
@@ -335,7 +336,7 @@ of a friendly fighter from this retinue.
 consumables without rolling on the Shadow Market table.
 
 **Ironbound:** Friendly fighters within **1"** of at least one other friendly
-fighter gain **Fear**.
+fighter **project Fear**.
 
 ---
 

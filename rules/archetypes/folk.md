@@ -44,8 +44,9 @@ it.
 
 Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
 Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
-**casting roll**, they may discard the Rune-stones to reroll that roll. The
-second result stands. Remove the Rune-stones from the roster after the battle.
+**casting roll**, they may discard the Rune-stones to reroll **one die** from
+that roll. They must accept the second result. Remove the Rune-stones from the
+roster after the battle.
 
 #### Infernal
 
@@ -80,8 +81,8 @@ After the battle, roll on the Casualty Table for the original fighter as normal.
 If the original fighter is **Slain** and the Zombie is not **Out of Action**, the
 Zombie joins your retinue. Otherwise, remove the Zombie from your roster.
 
-**Sepulchers:** When a friendly fighter becomes **Downed** or **Stunned**, they
-gain **Fear** until they become Active or **Out of Action**.
+**Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
+fighter **projects Fear**.
 
 #### Blood
 

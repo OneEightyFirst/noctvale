@@ -39,7 +39,7 @@ Mishap, they suffer **1 Wound** after resolving it.
 #### Infernal
 
 **Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
-fighters wearing armor gain **Fear**.
+fighters wearing armor **project Fear**.
 
 **Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
@@ -57,8 +57,8 @@ zone.
 
 #### Necromancy
 
-**Sepulchers:** When a friendly fighter becomes **Downed** or **Stunned**, they
-gain **Fear** until they become Active or **Out of Action**.
+**Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
+fighter **projects Fear**.
 
 **Wightlords:** All fighters cost **+20 Crowns** and gain **Undead** and
 **Fearless**.
@@ -89,7 +89,7 @@ weapon.
 of a friendly fighter from this retinue.
 
 **Ironbound:** Friendly fighters within **1"** of at least one other friendly
-fighter gain **Fear**.
+fighter **project Fear**.
 
 Spell lists: [Magic](../magic.md) · Domain overview: [Domains](../retinue.md#domains)
 

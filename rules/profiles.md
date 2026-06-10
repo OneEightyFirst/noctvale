@@ -26,7 +26,7 @@ Traditions, scenarios, and campaign rules.
 **Equipment:** Unarmed attack. Cannot be changed.
 
 **Unarmed attack:** Unblocked hits inflict **Poisoned** in addition to normal
-wounds. A Poisoned fighter suffers **−1 Mt** for the rest of the battle.
+wounds. See [Conditions — Poisoned](conditions.md#poisoned).
 
 **Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
 

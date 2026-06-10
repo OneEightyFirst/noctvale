@@ -52,9 +52,9 @@ pick.
 
 ## Feat Advancement Table
 
-The feat lists are incomplete. Until each eligible list has enough entries for
-campaign advancement, use the [Keyword Advancement
-Table](../campaign/post-game.md#keyword-advancement-table) instead.
+Feat lists are complete. Until the **Feat Advancement Table** is written, use the
+[Keyword Advancement Table](../campaign/post-game.md#keyword-advancement-table)
+for campaign advancement.
 
 ---
 
@@ -233,8 +233,6 @@ When this fighter makes a **casting roll** and **1 or more** other friendly
 Any fighter may take feats from this list regardless of **Archetype** or
 **Domain**.
 
-The Universal feat list has **five** entries. One is still open.
-
 #### Line Breaker
 
 When this fighter's **Melee** action immediately follows **Charge** during the
@@ -249,7 +247,7 @@ A **Two-Handed** weapon still uses **2 weapon slots**.
 
 #### Dodge
 
-When this fighter is the target of a **Ranged** attack, roll **1d6**. On **5+**,
+When this fighter is the target of a **Ranged** attack, roll **2d6**. On **10+**,
 that attack has no effect against this fighter.
 
 **Cast** actions are not **Ranged** attacks.
@@ -269,12 +267,20 @@ fighter as its target, this fighter may **Intercept**.
 If more than one friendly fighter with **Guard** could **Intercept**, their
 controlling player chooses one.
 
+#### Animal Handling
+
+This fighter may field **one** **Companion** purchased from [Gear —
+Companions](gear.md#companions). Record the **Companion** on this fighter's
+roster entry.
+
+Companion rules: [Companions](companions.md).
+
 ---
 
 ## Domain Feats
 
-Domain feat lists are in progress. Until a list has enough entries for campaign
-advancement, use the [Keyword Advancement
+Domain feat lists are complete. Until the **Feat Advancement Table** is written,
+use the [Keyword Advancement
 Table](../campaign/post-game.md#keyword-advancement-table) for that Domain.
 
 **Caster-only cap:** Each Domain feat list may include at most **one** feat
@@ -296,14 +302,6 @@ If both players have fighters with **Infiltrate**, alternate placing one
 fighter at a time, starting with the winner of a roll-off (**1d6** each; reroll
 ties).
 
-#### Animal Handling *(Nature · Mortal · Arcane)*
-
-This fighter may field **one** **Companion** purchased from [Gear —
-Companions](gear.md#companions). Record the **Companion** on this fighter's
-roster entry.
-
-Companion rules: [Companions](companions.md).
-
 #### Acrobat *(Mortal · Nature · Blood · Infernal)*
 
 When this fighter falls or lands from a **Jump** from a height of up to **12"**,
@@ -321,7 +319,7 @@ the target.
 This fighter may reroll a failed **Diving Charge** **Sk check**. They must accept
 the second result.
 
-#### Lightning Reflexes *(Mortal · Nature · Light)*
+#### Lightning Reflexes *(Mortal · Light)*
 
 When this fighter is targeted by a **Melee** action that immediately follows the
 attacker's **Charge** during the same activation, they may make **1 free Melee**
@@ -368,6 +366,18 @@ If this fighter performs **Hurl** during an activation, they cannot make a
 
 When a **Help** roll or **Recover** roll is made for this fighter, add **+1**
 to the roll.
+
+### Nature
+
+#### Sure Footed
+
+When this fighter uses **Scramble**, they move at full **M** instead of half
+**M**.
+
+#### Camouflage
+
+While **Hidden**, this fighter cannot be targeted by **Ranged** or **Cast**
+actions beyond **3"**.
 
 ### Light
 
@@ -472,6 +482,11 @@ Strike Pool.
 The dominant color is whichever is higher on the **firearm's** profile (**Mt** =
 red, **Sk** = blue). If tied, choose red or blue.
 
+#### Null
+
+Enemy **Casters** cannot perform the **Cast** action while **within 6"** of this
+fighter.
+
 ### Arcane
 
 #### Conduit
@@ -486,6 +501,11 @@ spell range and line of sight from this fighter's base instead of their own.
 
 If more than one friendly fighter with **Conduit** could be used, the
 **Caster's** controlling player chooses one.
+
+#### Helping Hand
+
+Once per round, this fighter may move a **Downed** or **Stunned** friendly
+fighter **within 12"** up to **6"** toward this fighter.
 
 #### Second Sight
 

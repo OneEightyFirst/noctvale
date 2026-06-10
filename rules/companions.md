@@ -7,7 +7,7 @@ Companions do **not** count toward retinue size or **activation count**. They
 do **not** use weapon slots.
 
 Purchase: [Gear — Companions](gear.md#companions). Profiles: below. Feat:
-[Feats — Animal Handling](feats.md#animal-handling-nature--mortal--arcane).
+[Feats — Animal Handling](feats.md#animal-handling).
 
 ---
 
@@ -169,8 +169,8 @@ of the scenario object.
 **M** *(Tamed)*
 
 **Bite** — **Melee** attack using profile **Mt** / **Sk**. Unblocked hits
-inflict **Poisoned** in addition to normal wounds. A **Poisoned** fighter
-suffers **−1 Mt** for the rest of the battle.
+inflict **Poisoned** in addition to normal wounds — see [Conditions —
+Poisoned](conditions.md#poisoned).
 
 **Hide** — May use **Hide** as its **Companion** action.
 
