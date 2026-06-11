@@ -32,47 +32,6 @@ Mordheim, Necromunda, Warcry, Kill Team, Space Hulk, classic Warhammer, and OSR 
 
 Actively in development. Not yet playtested. See `todo.md` for the phased playtest roadmap.
 
-## Publishing to InDesign
-
-Markdown is the source of truth for copy. Pandoc converts Markdown to linked
-ICML for Adobe InDesign. Do not edit placed ICML text in InDesign; edit the
-Markdown source, rebuild ICML, then update the link in InDesign.
-
-Pandoc is required. If `pandoc --version` fails, install Pandoc before building:
-
-```sh
-brew install pandoc
-```
-
-On Windows, use:
-
-```sh
-winget install --id JohnMacFarlane.Pandoc
-```
-
-On Linux, install Pandoc with your distribution package manager or from
-`https://pandoc.org/installing.html`.
-
-Build per-file ICML:
-
-```sh
-make icml
-```
-
-Build one merged ICML file from `content/order.txt`:
-
-```sh
-make merged
-```
-
-In InDesign, use File -> Place and choose the generated `.icml` file. On first
-import, map the Pandoc/imported styles to the template's paragraph and character
-styles. Keep local style notes in `.indesign-styles.md`.
-
-After content changes, rebuild the ICML, then use the InDesign Links panel to
-update the placed ICML link. Do not check out, detach, or edit placed text in
-InDesign.
-
 ## License
 
 All content in this repository is original work and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).

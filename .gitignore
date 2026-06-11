@@ -8,26 +8,6 @@ reference-balance-insights.md
 # Local Codex skills.
 .agents/skills/
 
-# Print / Pandoc / InDesign production artifacts.
-generated/
-print/
-print-assets/
-indesign/
-indesign-assets/
-.indesign-styles.md
-*.icml
-*.icma
-*.indd
-*.idlk
-*.indb
-*.indl
-*.indt
-*.idml
-*.inx
-*.pdf
-*.epub
-*.mobi
-*.azw3
 misc-files/*.indd
 misc-files/*.idlk
 misc-files/*.jpg

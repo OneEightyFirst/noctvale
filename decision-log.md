@@ -50,6 +50,19 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-11 — Remove print-production material
+
+**Decision:** Remove print-production and InDesign/Pandoc material from the
+repository. Delete the export helper files, remove the publishing section from
+`README.md`, remove print-production ignore rules from `.gitignore`, and remove
+the printable card-template TODO. The repository should remain focused on rules,
+setting, campaign, and design source text.
+
+**Reasoning:** Print layout and production workflow are not part of the active
+Noctvale rules repository. Keeping those topics out of the repo prevents the
+rules source from accumulating production-specific tools, assumptions, and
+documentation.
+
 ## 2026-06-11 — Round structure rulebook voice
 
 **Decision:** Rewrite the Core Rules round overview and turn structure from
@@ -124,8 +137,8 @@ combat, table rules, and Sanity. Retinue now contains roster building,
 archetypes, Domains, Traditions, feats, magic, and shared profiles. Equipment
 now contains weapons, gear, alchemy, and companions. Campaign now contains
 campaign flow, leveling, scenarios, post-game, Survival Rolls, and economy.
-Update `content/order.txt` to publish only those five files and remove the
-obsolete player-facing shards.
+Remove the obsolete player-facing shards so the active rulebook source stays in
+those five files.
 
 **Reasoning:** The previous modular structure was useful while systems were
 forming, but it made the rulebook harder to read and repeated references across

@@ -152,7 +152,6 @@ Write one complete scenario with deployment, terrain, and win conditions.
 Create fighter card template and retinue roster sheet.
 
 - [ ] Design fighter card layout (stats, weapons, spells, feats, wounds, conditions, Veteran Value)
-- [ ] Create printable card template with cut marks
 - [ ] Design retinue roster sheet (fighter list, equipment, Relics, currency)
 - [ ] Decide on templating / layout tool
 
@@ -209,12 +208,6 @@ Potential specialization within hunter presets (from `rules/retinue.md`):
 - Witch Hunters — no magic; guns and technology
 - Vampire Hunters — stakes, crossbows, Light magic
 - Werewolf Hunters — silver, metallurgy
-
-### Tools & Production
-
-- Printable cards with cut marks
-- Templating and layout automation
-- Markdown file source of truth for game design
 
 ### External Game Reference
 
