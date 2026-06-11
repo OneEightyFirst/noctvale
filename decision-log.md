@@ -50,6 +50,19 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-11 — Retinue build flow
+
+**Decision:** Update the Retinue chapter's opening build flow so players choose
+an **Archetype** and one **Tradition**, with the **Tradition** setting the
+**Domain**. Add **Choose Your Tradition** as its own early step, remove the
+implied verification step from the broad flow, and make the final roster step
+choose feats before buying and assigning equipment.
+
+**Reasoning:** The broad retinue chapter should teach the order players need at
+the table without repeating checklist material. **Tradition** is a required
+identity choice, and feats must come before equipment because weapon
+**Proficiency** determines what a fighter can carry.
+
 ## 2026-06-11 — Remove print-production material
 
 **Decision:** Remove print-production and InDesign/Pandoc material from the

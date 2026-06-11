@@ -1,6 +1,6 @@
 # Retinue
 
-Your **retinue** is the force you field in a battle: fighters, gear, feats, and spells. Build it by choosing an **Archetype**, a **Domain**, and one **Tradition**, then spend **Crowns** on fighters and equipment.
+Your **retinue** is the force you field in a battle: fighters, gear, feats, and spells. Build it by choosing an **Archetype** and one **Tradition**, recruiting fighters, choosing feats, and equipping them. Your **Tradition** sets your **Domain**.
 
 ## Building a Retinue
 
@@ -8,8 +8,8 @@ Your **retinue** is the force you field in skirmish battles and campaigns — a 
 
 Every retinue is built in two layers:
 
-1. **Identity** — Archetype, Domain, and Tradition. This sets how your retinue fights and what powers it can wield.
-2. **Roster** — spend **Crowns** to recruit fighters, buy gear, and apply poisons.
+1. **Identity** — Archetype and Tradition. This sets how your retinue fights and what powers it can wield.
+2. **Roster** — spend **Crowns** to recruit fighters, choose feats, buy gear, and apply poisons.
 
 ---
 
@@ -49,7 +49,13 @@ Work through your archetype chapter before returning here for shared steps.
 
 ---
 
-### Step 2 — Species and Recruitment Cost
+### Step 2 — Choose Your Tradition
+
+Your **Tradition** is the retinue-wide oath, craft, curse, or practice that gives your retinue its **Domain** and one special rule. Choose one Tradition allowed for your Archetype, record its Domain, and apply any roster changes or cost modifiers before recruiting fighters. Traditions are listed later in this chapter.
+
+---
+
+### Step 3 — Species and Recruitment Cost
 
 Each archetype chapter has a **Species** table (M through W, **Cost** column).
 Pick a species for each fighter, then add the species **Cost** to that fighter
@@ -60,25 +66,16 @@ Full species rules: [Core Rules](core-rules.md).
 
 ---
 
-### Step 3 — Equip Your Fighters
+### Step 4 — Choose Feats and Equip Your Fighters
 
-Equip each fighter only with weapons they are **proficient** in (assigned during roster creation in your archetype chapter). Buy gear from [Equipment](equipment.md) within your Archetype's armor, shield, and firearm tier limits.
+Choose each fighter's feats from the lists allowed by your **Archetype** and **Domain**. Choose weapon **Proficiency** feats before buying equipment. A fighter can equip only weapons they are proficient in.
+
+Buy gear from [Equipment](equipment.md) within your Archetype's armor, shield, and firearm tier limits.
 
 Each fighter has **3 weapon slots** (see [Equipment — Weapon slots](equipment.md#weapon-slots)). Plan loadouts so no fighter exceeds 3 slots total.
 
 - Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see [Equipment](equipment.md)).
 - Purchase **alchemy** and apply poisons during setup (one poison per weapon — see [Equipment](equipment.md)).
-
----
-
-### Step 4 — Verify Your Roster
-
-Before your first battle, confirm the checklist at the end of your archetype chapter, plus these shared items:
-
-- Total cost ≤ Crown budget
-- **Retinue Rating** = Roster Cost + sum of Veteran Value on each fighter *(campaign)*
-- Poisons: one per weapon, applied at setup
-- Tradition cost modifiers applied (Spellblades, Beastmen, Vampires, etc.)
 
 ---
 
@@ -92,7 +89,7 @@ After your first roster is built, you maintain and expand it between battles usi
 
 Every retinue is built in two layers:
 
-1. **Identity** — choose an **Archetype** and **Domain** (see [Retinue](retinue.md)). This sets weapon proficiency options, armor access, caster limits, and spell lists.
+1. **Identity** — choose an **Archetype** and one **Tradition**. Your Tradition sets your **Domain**.
 2. **Roster** — spend **Crowns** to recruit fighters, assign feats, equip them, and (for casters) assign spells.
 
 Retinue building uses **constrained points**: a **Crown budget** plus **composition limits** per Archetype. Each Archetype uses its own tier names; slots are capped so the roster cannot exceed the Archetype maximum.
@@ -107,7 +104,7 @@ Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same buil
 
 ### Building Steps
 
-1. Choose **Archetype**, **Domain**, and **Tradition** (see your [Archetype chapter](retinue.md#knights) — one Tradition per retinue, allowed for your Archetype on that Domain).
+1. Choose **Archetype** and **Tradition** (see your [Archetype chapter](retinue.md#knights) — one Tradition per retinue, allowed for your Archetype; your Tradition sets your **Domain**).
 2. Set your **Crown budget** (1000 for alpha skirmish).
 3. Recruit fighters within your Archetype's **fighter count** and **tier limits** (below).
 4. Assign each fighter a **species** and **tier profile**.
@@ -350,21 +347,21 @@ Before play, confirm:
 
 ## Identity
 
-Every retinue is built from two choices: an **Archetype** and a **Domain**.
+Every retinue is built from two choices: an **Archetype** and one **Tradition**.
 
 Your **Archetype** determines how your retinue fights — weapon proficiency
 options, armor cap, shields, gunpowder tier access, roster size, and caster
 limits.
 
-Your **Domain** determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific feats. Choose **Mortal** if your retinue rejects or lacks magic entirely.
+Your **Tradition** sets your **Domain**, which determines what supernatural powers your retinue wields — spell list, magic triangle, and domain-specific feats. Choose a **Mortal** Tradition if your retinue rejects or lacks magic entirely.
 
-**Archetype + Domain** is your retinue's mechanical identity on the table.
+**Archetype + Tradition** is your retinue's mechanical identity on the table.
 
 **Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets**
 and examples — established Archetype + Domain pairings with lore and suggested
 Traditions. They do not grant exclusive rules, feats, equipment, or exceptions.
-Use one for flavor or build any legal Archetype + Domain + Tradition
-combination yourself.
+Use one for flavor or build any legal Archetype + Tradition combination
+yourself.
 
 ---
 
@@ -1380,7 +1377,7 @@ Spell lists: [Magic](retinue.md) · Equipment: [Equipment](equipment.md)
 
 ## Traditions
 
-After you choose **Archetype** and **Domain**, choose **one Tradition** for the whole retinue. Traditions are plural labels (**Witches**, **Crusaders**) — shared identity for the entire retinue.
+After you choose **Archetype**, choose **one Tradition** for the whole retinue. Your Tradition sets your **Domain**. Traditions are plural labels (**Witches**, **Crusaders**) — shared identity for the entire retinue.
 
 Traditions grant one retinue-wide special rule chosen at roster creation.
 
