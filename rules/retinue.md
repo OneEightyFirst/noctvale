@@ -191,10 +191,10 @@ counts toward a fighter's spell allowance.
 |---|---|---|
 | **Leader** (Lord, Captain, Mayor) | Optional if Domain is not **Mortal** | **2** |
 | **Theurge** | Required | **2** |
-| **Adept** | Required | **1** |
+| **Adept** | Optional | **1** if **Caster** |
 | All other fighters | No **Caster** at creation | — |
 
-**Cult** is the only Archetype that may give **Caster** to a non-Leader at creation. Field up to **2 Adepts**; each **Adept** **must** take **Caster**. **Acolytes** do not start with **Caster** — they may **gain** it via [Keyword Advancement](../campaign/campaign.md#keyword-advancement-table).
+**Cult** is the only Archetype that may give **Caster** to a non-Leader at creation. Field up to **2 Adepts**; each **Adept** may take **Caster**. **Acolytes** do not start with **Caster** — they may **gain** it via [Keyword Advancement](../campaign/campaign.md#keyword-advancement-table).
 
 | Archetype | Max fighters with Caster |
 |---|---|
@@ -229,7 +229,7 @@ Player-facing recruit rules live in each **[Archetype chapter](retinue.md#knight
 | **Knights** | 1 Lord | Knight 0–4, Squire 0–5 | +1 to **2** different stats; optional **Caster** (2 spells) | +1 Mt or +1 Sk | +1 stat; Squire built-in **One-Handed** | — |
 | **Hunters** | 1 Captain | Stalker 0–4, Tracker 0–3, Hand 0–4 | +1 to **2** different stats; optional **Caster** (2 spells) | +1 Mt or +1 Sk | +1 stat; Tracker built-in **Archery** or **Firearms** | species baseline |
 | **Folk** | 1 Mayor | Guildsman 0–3, Militiaman 0–5, Townsfolk 0–6 | +1 to **2** different stats; optional **Caster** (2 spells) | +1 Mt or +1 Sk | +1 stat; Militiaman built-in **Two-Handed** | species baseline |
-| **Cult** | 1 Theurge | Adept 0–2, Acolyte 0–7 | **Caster** (required); +1 to **2** different stats; 2 spells | — | **Caster** (required); +1 stat; 1 spell | species baseline |
+| **Cult** | 1 Theurge | Adept 0–2, Acolyte 0–7 | **Caster** (required); +1 to **2** different stats; 2 spells | — | optional **Caster**; +1 stat; 1 spell if **Caster** | species baseline |
 
 ---
 
@@ -1252,8 +1252,8 @@ or more** other friendly **Cult** fighters with **Caster** are **within 6"**, ad
 Recruit **5–10** fighters: **1 Theurge**, **0–2 Adept**, **0–7 Acolyte**.
 
 **Cult** is the only Archetype that may give **Caster** to a fighter besides the
-retinue leader at creation. An **Acolyte** does not start with **Caster** — they
-may gain it in campaign via [Keyword
+retinue leader at creation. An **Adept** may take **Caster** at recruitment. An
+**Acolyte** does not start with **Caster** — they may gain it in campaign via [Keyword
 Advancement](../campaign/campaign.md#keyword-advancement-table).
 
 Apply Tradition cost modifiers when paying recruitment cost (e.g. **Vampires**
@@ -1278,10 +1278,11 @@ Knows **2** spells from your Domain list. May take the **Cast** action.
 
 ###### 0–2 Adept — 60 Crowns
 
-**Specialist**, **Caster**.
+**Specialist**. May take **Caster** at recruitment.
 
-At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa). Knows **1**
-spell from your Domain list. May take the **Cast** action.
+At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa). If this
+fighter has **Caster**, they know **1** spell from your Domain list and may take
+the **Cast** action.
 
 ###### 0–7 Acolyte — 40 Crowns
 
@@ -1343,8 +1344,8 @@ Before your first battle, confirm:
 - [ ] Fighter count within 5–10
 - [ ] Exactly 1 **Theurge**
 - [ ] **Adepts** 0–2, **Acolytes** 0–7
-- [ ] **Caster:** Theurge and each Adept have **Caster**; total ≤ 3
-- [ ] Theurge knows **2** Domain spells; each Adept knows **1**
+- [ ] **Caster:** Theurge has **Caster**; up to 2 Adepts may have **Caster**; total ≤ 3
+- [ ] Theurge knows **2** Domain spells; each Adept with **Caster** knows **1**
 - [ ] Total cost ≤ Crown budget
 - [ ] Each equipped weapon matches a fighter's **Proficiency**
 - [ ] No armor or shields on any fighter
@@ -1714,7 +1715,7 @@ fighter cannot equip a weapon unless they have the matching proficiency.
 | **Squire** | Knights | **One-Handed** |
 | **Tracker** | Hunters | **Archery** or **Firearms** *(choose one; **Firearms** requires **Mortal** Domain)* |
 | **Militiaman** | Folk | **Two-Handed** |
-| **Adept** | Cult | *(none — **Caster** is the specialty)* |
+| **Adept** | Cult | *(none)* |
 
 The built-in proficiency does not count against the Specialist's 1 chosen feat
 pick.

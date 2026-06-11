@@ -50,6 +50,17 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-11 — Optional Cult Adept casters
+
+**Decision:** Make **Caster** optional for **Cult Adepts** at recruitment. Cult
+may field **0–2 Adepts**, and each Adept may take **Caster** instead of being
+required to. A **Theurge** still has **Caster**, **Acolytes** still do not start
+with **Caster**, and Cult remains capped at **3** starting Casters.
+
+**Reasoning:** **Adept** is the Cult Specialist slot, not a mandatory caster
+state. Allowing non-caster Adepts gives Cult rosters a meaningful Specialist
+choice while preserving the existing upper limit on magical density.
+
 ## 2026-06-11 — Retinue build flow
 
 **Decision:** Update the Retinue chapter's opening build flow so players choose
