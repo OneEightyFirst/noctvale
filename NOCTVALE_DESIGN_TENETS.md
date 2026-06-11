@@ -132,7 +132,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Mechanically:** Mishaps on spell double-1s and random reward double-1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly in line of fire. Falling damage. Survival Roll Mishaps. Insanity table includes Berserk — fear that can snap back on the source. Open: Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
 
-**Protects:** Mechanical bite matching grimdark tone. Player decisions to court risk through scenario objectives, Looting, and risky casts. Lore in `noctvale.md`; consequences in the rules.
+**Protects:** Mechanical bite matching grimdark tone. Player decisions to court risk through scenario objectives, Looting, and risky casts. Lore in `intro.md`; consequences in the rules.
 
 **Apply it:** Mishaps belong in core rules with real teeth. Flavor-only text stays in setting docs. A Mishap should be memorable — sometimes worse than a failed cast.
 
@@ -193,8 +193,8 @@ See `decision-log.md` Ideas for unresolved design decisions.
 
 - **Death Trigger:** On Out of Action — morale, faction payoff, environmental response.
 - **Feat system:** Domain feat lists — serve Tenet 2 within Tenet 3's complexity budget.
-- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/sanity.md`).
+- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/core-rules.md#sanity`).
 
 ---
 
-*Last updated: 2026-05-29. Synthesized from `_overview.md`, `noctvale.md`, `rules/`, `campaign/`, `decision-log.md`, and `todo.md`.*
+*Last updated: 2026-05-29. Synthesized from `_overview.md`, `intro.md`, `rules/`, `campaign/`, `decision-log.md`, and `todo.md`.*

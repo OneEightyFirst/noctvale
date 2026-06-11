@@ -1,4 +1,6 @@
-# Gear
+# Equipment
+
+This chapter contains weapons, gear, alchemy, and companions.
 
 **Gear** is everything fighters carry into battle: **weapons** (by proficiency:
 One-Handed, Two-Handed, Archery, Thrown, Firearms) and **equipment** (armor,
@@ -15,14 +17,12 @@ Every Crown cost is a multiple of **5 Crowns**.
 
 Each fighter has **3 weapon slots**.
 
-
 | Item                        | Slots |
 | --------------------------- | ----- |
 | One-handed weapon or shield | 1     |
 | **Brace of Pistols** *(2 Pistols)* | 1     |
 | Two-handed weapon           | 2     |
 | Relic or Instrument         | 2     |
-
 
 Plan loadouts so no fighter exceeds 3 slots total.
 
@@ -41,7 +41,6 @@ Example: Refined Pistol (90) with Flintlock = **65 Crowns**.
 
 ### Crown costs — One-Handed melee
 
-
 | Weapon   | Cost |
 | -------- | ---- |
 | Dagger   | 10   |
@@ -50,11 +49,9 @@ Example: Refined Pistol (90) with Flintlock = **65 Crowns**.
 | Mace     | 20   |
 | Spear    | 25   |
 
-
 ---
 
 ### Crown costs — Two-Handed melee
-
 
 | Weapon      | Cost |
 | ----------- | ---- |
@@ -63,13 +60,11 @@ Example: Refined Pistol (90) with Flintlock = **65 Crowns**.
 | War Axe     | 45   |
 | War Hammer  | 45   |
 
-
 ---
 
 ### Crown costs — Archery
 
 Available to **every retinue**.
-
 
 | Weapon         | Cost |
 | -------------- | ---- |
@@ -78,24 +73,20 @@ Available to **every retinue**.
 | Crossbow       | 65   |
 | Heavy Crossbow | 90   |
 
-
 ---
 
 ### Crown costs — Thrown
 
 Available to **every retinue**.
 
-
 | Weapon         | Cost |
 | -------------- | ---- |
 | Sling          | 20   |
 | Throwing Stars | 10   |
 
-
 ---
 
 ### Crown costs — Firearms *(Mortal Domain only)*
-
 
 | Tier    | Weapon      | Cost | Archetype access       |
 | ------- | ----------- | ---- | ---------------------- |
@@ -104,22 +95,18 @@ Available to **every retinue**.
 | Refined | Pistol      | 90   | Hunters only           |
 | Refined | Long Rifle  | 125  | Hunters only           |
 
-
 | Item               | Cost | Notes                                      |
 | ------------------ | ---- | ------------------------------------------ |
 | Brace of Pistols   | 25   | **Mortal Domain only** — holds **2 Pistols** in **1 weapon slot** |
-
 
 ---
 
 ### Crown costs — bombs *(Mortal Domain only)*
 
-
 | Item       | Cost |
 | ---------- | ---- |
 | Bomb       | 40   |
 | Smoke Bomb | 25   |
-
 
 Bombs are **Single Shot** (one use per battle).
 
@@ -127,25 +114,21 @@ Bombs are **Single Shot** (one use per battle).
 
 ### Crown costs — armor
 
-
 | Armor        | Cost | Archetype cap          |
 | ------------ | ---- | ---------------------- |
 | Light Armor  | 50   | Folk, Hunters, Knights; **Cult** with **Magic Armor** |
 | Medium Armor | 115  | Hunters, Knights; **Cult** with **Magic Armor**       |
 | Heavy Armor  | 185  | Knights only; **Cult** with **Magic Armor**           |
 
-
 ---
 
 ### Crown costs — shields
-
 
 | Shield       | Cost |
 | ------------ | ---- |
 | Buckler      | 10   |
 | Shield       | 25   |
 | Tower Shield | 50   |
-
 
 ---
 
@@ -154,29 +137,24 @@ Bombs are **Single Shot** (one use per battle).
 **Relic** and **Instrument** here are roster gear with a **Sphere of Influence**
 — not a campaign **Relic** recovered in scenarios.
 
-
 | Item           | Slots | Cost | Effect                                                                      |
 | -------------- | ----- | ---- | --------------------------------------------------------------------------- |
 | **Relic**      | 2     | 75   | Friendly fighters within 6" gain +1 Sa                                      |
 | **Instrument** | 2     | 65   | Friendly fighters within 6" gain +1" M (requires 1 action/turn to activate) |
 
-
 ---
 
 ### Material upgrades
 
-
 | Material | Cost                       | Effect                                                             |
 | -------- | -------------------------- | ------------------------------------------------------------------ |
 | Silver   | +40 (added to weapon cost) | +1 to the roll to hit vs fighters with **Undead** or **Werebeast** |
-
 
 ---
 
 ### Alchemy *(consumable)*
 
 Alchemy is available to every retinue. Apply **one poison per weapon** during roster setup — poisons do not take a weapon slot. Poison effects: [Equipment](#equipment) below.
-
 
 | Poison         | Cost |
 | -------------- | ---- |
@@ -186,7 +164,6 @@ Alchemy is available to every retinue. Apply **one poison per weapon** during ro
 | Widow's Tears  | 75   |
 | Silversbane    | 65   |
 
-
 Poisons are **consumable** (one battle only).
 
 ---
@@ -194,11 +171,10 @@ Poisons are **consumable** (one battle only).
 ### Companions
 
 Requires **Animal Handling** on the **Handler** (see [Feats — Animal
-Handling](feats.md#animal-handling)). Each **Handler**
+Handling](retinue.md#animal-handling)). Each **Handler**
 fields one **Companion**; companions do **not** use weapon slots.
 
-Rules and profiles: [Companions](companions.md).
-
+Rules and profiles: [Companions](equipment.md#companions).
 
 | Companion | Cost |
 | --- | --- |
@@ -212,7 +188,6 @@ Rules and profiles: [Companions](companions.md).
 
 ### Weapon profiles — One-Handed melee
 
-
 | Weapon   | Hands | +Mt | +Sk | Type   | Notes                              |
 | -------- | ----- | --- | --- | ------ | ---------------------------------- |
 | Dagger   | 1H    | —   | +1  | Sword  | Fast, finesse                      |
@@ -221,11 +196,9 @@ Rules and profiles: [Companions](companions.md).
 | Mace     | 1H    | +2  | —   | Hammer | Anti-plate; crits vs Heavy Armor only |
 | Spear    | 1H    | +1  | +1  | Spear  | Balanced reach                     |
 
-
 ---
 
 ### Weapon profiles — Two-Handed melee
-
 
 | Weapon      | Hands | +Mt | +Sk | Type   | Notes                              |
 | ----------- | ----- | --- | --- | ------ | ---------------------------------- |
@@ -234,13 +207,11 @@ Rules and profiles: [Companions](companions.md).
 | War Axe     | 2H    | +3  | —   | Axe    | Heavy hitter                       |
 | War Hammer  | 2H    | +3  | —   | Hammer | Anti-plate; crits vs Heavy Armor only |
 
-
 ---
 
 ### Weapon profiles — Archery
 
 Minimum range **3"** unless noted. Archery weapons are available to **all retinues**.
-
 
 | Weapon         | Hands | Range  | Mt  | Sk  | Notes                                      |
 | -------------- | ----- | ------ | --- | --- | ------------------------------------------ |
@@ -249,19 +220,16 @@ Minimum range **3"** unless noted. Archery weapons are available to **all retinu
 | Crossbow       | 2H    | 3"–24" | +2  | —   | Mt-dominant, mechanical                    |
 | Heavy Crossbow | 2H    | 3"–30" | +3  | —   | Slow, powerful                             |
 
-
 ---
 
 ### Weapon profiles — Thrown
 
 Minimum range **3"** unless noted. Thrown weapons are available to **all retinues**.
 
-
 | Weapon         | Hands | Range  | Mt  | Sk  | Notes                                      |
 | -------------- | ----- | ------ | --- | --- | ------------------------------------------ |
 | Sling          | 1H    | 3"–12" | 2   | 1   | Flat Strike Pool; normal RC to hit         |
 | Throwing Stars | 1H    | 0"–8"  | —   | +1  | No min range, thrown; additive             |
-
 
 ---
 
@@ -287,7 +255,7 @@ Combat rules for melee, missile, and gunpowder weapons. Profiles and Crown costs
 Every weapon belongs to a **weapon proficiency** (what a fighter must be trained
 in to equip it) and a **weapon type** (Sword, Axe, Spear, or Hammer — used for
 critical hits in melee). Fighters gain proficiencies through the **Proficiency**
-feat at roster creation (see [Feats](feats.md)).
+feat at roster creation (see [Feats](retinue.md)).
 
 Your **Archetype** sets which proficiencies appear on that fighter's
 **Proficiency** menu. **Firearms** is on that menu for **Mortal** retinues only.
@@ -305,7 +273,7 @@ Your **Archetype** sets which proficiencies appear on that fighter's
 
 | Type | Critical hits |
 |---|---|
-| **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](combat.md#weapon-triangle)) |
+| **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](core-rules.md#weapon-triangle)) |
 | **Hammer** | **Outside the triangle** — natural 6s crit only vs targets wearing **Heavy Armor** |
 
 #### Firearms
@@ -347,7 +315,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no
 
 **Brace of Pistols** — equipment that takes **1 weapon slot** and holds **2
 Pistols**. Requires the **Firearms** proficiency. **Mortal Domain only**. Crown
-cost: [Roster building](#crown-costs--firearms-mortal-domain-only).
+cost: [Roster building](#firearms).
 
 - **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**.
   Resolve the **Primer Roll** and **Attack Sequence** normally.
@@ -355,7 +323,7 @@ cost: [Roster building](#crown-costs--firearms-mortal-domain-only).
   **Pistols** in the fighter's **Brace of Pistols** (or both equipped **Pistols**
   if carried without a **Brace**) — each with its own **Primer Roll** and
   **Attack Sequence**. The fighter cannot take another **Ranged** action during
-  that activation. See [Feats — Gunslinger](feats.md#gunslinger).
+  that activation. See [Feats — Gunslinger](retinue.md#gunslinger).
 
 ### Bombs
 
@@ -435,7 +403,7 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 | Poison | Effect | Notes |
 |---|---|---|
 | Adder's Kiss | +1 Sk to the weapon's strike pool | Subtle, fast-acting |
-| Blight Extract | Unblocked hits inflict **Poisoned** — see [Conditions — Poisoned](conditions.md#poisoned) | Weakening toxin |
+| Blight Extract | Unblocked hits inflict **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned) | Weakening toxin |
 | Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
 | Widow's Tears | Unblocked hits inflict 2 wounds instead of 1 | Lethal, expensive |
 | Silversbane | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |
@@ -448,7 +416,7 @@ the bearer or **Companion**. This area is the **Sphere of Influence**.
 - The effect applies to all valid targets (friendly or enemy, as noted) **within the stated range**, measured from the bearer's or **Companion**'s base.
 - The bearer **is affected** by their own **Sphere of Influence**.
 - **Spheres of Influence** **do not require line of sight** — they represent presence, sound, or proximity, not vision.
-- The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions skip **Downed** and **Stunned** — see [Companions](companions.md).)*
+- The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions skip **Downed** and **Stunned** — see [Companions](equipment.md#companions).)*
 - **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Relics**, a fighter within range of both still receives only **+1 Sa**.
 
 #### Relic and Instrument
@@ -465,3 +433,200 @@ recovered in scenarios.
 The **Instrument**'s **Sphere of Influence** is not passive — the bearer must
 spend **1 action per turn** playing the instrument. If they do not spend the
 action, the **Sphere of Influence** is inactive that turn.
+
+## Companions
+
+**Companions** are animals and familiars fielded by a **Handler** — the fighter
+who has **Animal Handling** and bought the **Companion** on their roster entry.
+
+Companions do **not** count toward retinue size or **activation count**. They
+do **not** use weapon slots.
+
+Purchase: [Equipment — Companions](equipment.md#companions). Profiles: below. Feat:
+[Feats — Animal Handling](retinue.md#animal-handling).
+
+---
+
+### Roster and deployment
+
+- A fighter must have **Animal Handling** to field a **Companion**.
+- Each **Handler** may field **one** **Companion**, recorded on that fighter's
+  roster entry.
+- Deploy the **Companion** within **1"** of its **Handler** during deployment.
+
+---
+
+### Stats — Tamed
+
+Companions with **Tamed** use their **Handler**'s **M**, **Wi**, and **Sa**
+instead of the profile values for those stats.
+
+All other stats use the profile. **Mt**, **Sk**, **CC**, and **RC** are never
+copied from the **Handler**.
+
+---
+
+### Wound states
+
+Companions do **not** use **Downed** or **Stunned**.
+
+> ### Apply Wounds (Companion)
+>
+> Each unblocked hit inflicts **1 Wound**.
+>
+> When a **Companion** reaches **0 Wounds**, it is **Out of Action** and is
+> removed from the battle. Any effect that would **Down** or **Stun** a fighter
+> removes the **Companion** from the battle instead.
+
+Companions are never removed permanently — see [Companion
+Recovery](../campaign/campaign.md#step-3-companion-recovery).
+
+---
+
+### Activation
+
+When a **Handler** activates:
+
+1. **Co-movement** — Whenever the **Handler** completes a **Move**, **Charge**,
+   **Scramble**, **Climb**, **Jump**, or **Retreat** action, the **Companion**
+   co-moves. After co-movement, the **Companion** must be within **tether** of
+   the **Handler**. Move the **Companion** up to its **M** if needed to satisfy
+   **tether**.
+2. **Companion action** — After the **Handler** finishes their activation, the
+   **Companion** performs **1 action** if it is not **Out of Action** and is
+   within **tether** of the **Handler**.
+
+The **Handler**'s **2 actions** are spent normally. The **Companion** action is
+additional and does not cost the **Handler** any actions.
+
+If the **Handler** skips their activation for **Overwatch**, the **Companion**
+does not co-move and does not take a **Companion** action.
+
+While the **Handler** is **Stunned** or **Out of Action**, their **Companion**
+does not activate.
+
+While the **Handler** is **Downed**, the **Companion** does not co-move and does
+not take a **Companion** action.
+
+---
+
+### Tether
+
+Each profile lists a **tether** distance. A **Companion** must stay within
+**tether** of its **Handler** to act. Measure base to base.
+
+---
+
+### Sphere of Influence
+
+Some **Companions** project a **Sphere of Influence** — the same term used for
+**Relic** and **Instrument** gear (see [Equipment — Sphere of
+Influence](equipment.md#sphere-of-influence)).
+
+While the **Companion** is **Active** and not **Out of Action**, its **Handler**
+gains the bubble effect if they are **within 6"** of the **Companion** (base to
+base):
+
+| Retinue **Domain** | Effect |
+|---|---|
+| **Nature** or **Mortal** | **+1 Sa** |
+| **Arcane** | **+1 Wi** |
+
+The **Handler** must have **Animal Handling** and field that **Companion**. The
+bubble affects the **Handler** only — not other friendly fighters. It does not
+require line of sight.
+
+---
+
+### Companion profiles
+
+#### Hound
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 3 | — | 3 | 3 | *(Tamed)* | *(Tamed)* | 1 | **3"** |
+
+**M** *(Tamed)*
+
+**Bite** — **Melee** attack using profile **Mt** / **Sk** (no weapon).
+
+**Keywords:** **Tamed**
+
+---
+
+#### Hawk
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 2 | 2 | 1 | 4 | *(Tamed)* | *(Tamed)* | 1 | **12"** |
+
+**M** *(Tamed)*
+
+**Fly** — Ignore vertical distance for **Move** and **Jump**; the **Companion**
+must still end on a legal surface.
+
+**Talons** — **Ranged** attack, range **6"**, **1 Mt / 2 Sk** Strike Pool.
+
+**Scout's Eye** — If this **Companion** has **line of sight** to an enemy
+fighter, its **Handler** counts as having **line of sight** to that enemy for
+**Ranged**, **Cast**, and **Aim**.
+
+**Sphere of Influence** — See [Sphere of Influence](#sphere-of-influence).
+
+**Keywords:** **Tamed**, **Fly**
+
+---
+
+#### Cat
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 2 | — | — | 4 | *(Tamed)* | *(Tamed)* | 1 | **6"** |
+
+**M** *(Tamed)*
+
+No attack.
+
+**Interact** — May spend its **Companion** action on **Interact** if within **1"**
+of the scenario object.
+
+**Sphere of Influence** — See [Sphere of Influence](#sphere-of-influence).
+
+**Keywords:** **Tamed**
+
+---
+
+#### Giant Rat
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 2 | — | 2 | 4 | *(Tamed)* | *(Tamed)* | 1 | **3"** |
+
+**M** *(Tamed)*
+
+**Bite** — **Melee** attack using profile **Mt** / **Sk**. Unblocked hits
+inflict **Poisoned** in addition to normal wounds — see [Conditions —
+Poisoned](core-rules.md#poisoned).
+
+**Hide** — May use **Hide** as its **Companion** action.
+
+**Keywords:** **Tamed**
+
+---
+
+#### Rat Swarm
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 3 | — | 2 | 5 | *(Tamed)* | *(Tamed)* | 1 | **3"** |
+
+**M** *(Tamed)*
+
+**Natural weapons** — **Melee** attack using profile **Mt** / **Sk**.
+
+Not the same as **Summon Swarm** — that spell places a temporary **Swarm**;
+this **Companion** is roster gear tied to a **Handler**.
+
+**Keywords:** **Tamed**
+
+---

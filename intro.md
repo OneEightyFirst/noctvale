@@ -1,15 +1,16 @@
-
-# Noctvale
+# Intro
 
 *A Grimdark Fantasy Skirmish Game in a Cursed Land*
 
-Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful Relics. Combat is lethal, retinues grow through campaign play, and Survival Rolls carry both rewards and danger.
-
 ---
 
-# Backstory
+## What Is Noctvale?
 
-## The Fall of the Realm
+Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful Relics. Combat is lethal, retinues grow through campaign play, and Survival Rolls carry both rewards and danger.
+
+## Backstory
+
+### The Fall of the Realm
 
 Long before the wars, the lands now called Noctvale were united beneath a single crown. The realm prospered under the rule of Emperor __________, a wise and ambitious ruler who forged alliances between distant kingdoms, built roads across wild lands, and expanded the borders of the empire farther than any ruler before him. Trade flourished, cities grew rich, and the people believed they were living in the dawn of a golden age.
 
@@ -31,7 +32,7 @@ Eventually, the emperor accepted her gift.
 
 When the transformation was complete, the empire had already begun to change.
 
-## The Shattering
+### The Shattering
 
 The emperor did not die. He ascended.
 
@@ -43,7 +44,7 @@ Rebellion erupted across the realm. Dukes declared independence. Cities raised m
 
 Thus began the conflict remembered as The War of __________, a brutal century-long struggle that would tear the empire apart.
 
-## The Hundred Years of War
+### The Hundred Years of War
 
 For a hundred years the land burned.
 
@@ -61,7 +62,7 @@ The Infernal Pact formed secret brotherhoods devoted to demonic powers. The Grav
 
 The war became more than rebellion. It became a struggle for the soul of the world.
 
-## The Fall of the Vampire King
+### The Fall of the Vampire King
 
 After a century of devastation, the emperor's reign finally ended.
 
@@ -73,7 +74,7 @@ The empire had already collapsed. Cities lay in ruins. Provinces had become isol
 
 Worse still, the emperor's queen had vanished before the capital fell.
 
-## The Age of Noctvale
+### The Age of Noctvale
 
 The empire no longer exists. The land is now known simply as Noctvale.
 
@@ -114,42 +115,8 @@ The empire is gone. But the war never truly ended.
 
 ---
 
-# Core Identity
 
-Noctvale is built around several core systems:
-
-- Lethal skirmish combat
-- Red and blue dice pool combat resolution
-- Weapon and magic critical triangles
-- Campaign Survival Rolls and the Relic economy
-- Small-retinue tactical play
-
-Combat outcomes are decisive, but the **Downed** system allows dramatic
-survivals before a fighter is taken **Out of Action**.
-
-For current rules procedures, use the modular rule files:
-
-| System | File |
-|---|---|
-| Stats and species profiles | `rules/core-rules.md` |
-| Actions, battle setup, and turn structure | `rules/actions.md` |
-| Combat sequence | `rules/combat.md` |
-| Wound states | `rules/conditions.md` |
-| Line of sight, Overwatch, and other table rules | `rules/special-rules.md` |
-| Retinue identity | `rules/retinue.md` |
-| Archetype chapters | `rules/archetypes/` (Knights, Hunters, Folk, Cult) |
-| Creating a retinue (player guide) | `rules/creating-a-retinue.md` |
-| Retinue building (reference) | `rules/retinue-building.md` |
-| Gear (weapons and equipment) | `rules/gear.md` |
-| Magic (casting and spells) | `rules/magic.md` |
-| Scenarios | `campaign/scenarios.md` |
-| Post-game sequence | `campaign/post-game.md` |
-| Survival Rolls | `campaign/survival-rolls.md` |
-| Relic economy | `campaign/economy.md` |
-
----
-
-# Factions
+## Factions
 
 Phoenix Guard  
 Radiant Crusade  
@@ -168,7 +135,7 @@ Village Watch are ordinary townsfolk defending their homes, not led by sheriffs.
 
 ---
 
-# Game Summary
+## Game Summary
 
 Noctvale is a grimdark campaign skirmish game where retinues battle for Relics
 scattered across a cursed land. Fighters grow stronger through campaign play,

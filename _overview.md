@@ -26,23 +26,23 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | System | File |
 |---|---|
 | Stats & Species Profiles | `rules/core-rules.md` |
-| Combat (Red/Blue Dice Pool, Crits, Defense) | `rules/combat.md` |
-| Conditions (Downed, Stunned, Out of Action) | `rules/conditions.md` |
-| Sanity (Fear, Panic, Insanity) | `rules/sanity.md` |
-| Actions & Engagement | `rules/actions.md` |
-| Special Rules (LoS, Cover, Overwatch, etc.) | `rules/special-rules.md` |
-| Magic System (casting, triangles, spell lists) | `rules/magic.md` |
-| Creature & Special Fighter Profiles | `rules/profiles.md` |
-| Companions | `rules/companions.md` |
-| Feats (Archetype & Domain) | `rules/feats.md` |
-| Gear (weapons and equipment) | `rules/gear.md` |
-| Survival Rolls | `campaign/survival-rolls.md` |
-| Post-Game Sequence | `campaign/post-game.md` |
-| Relic Economy | `campaign/economy.md` |
+| Combat (Red/Blue Dice Pool, Crits, Defense) | `rules/core-rules.md#combat` |
+| Conditions (Downed, Stunned, Out of Action) | `rules/core-rules.md#conditions` |
+| Sanity (Fear, Panic, Insanity) | `rules/core-rules.md#sanity` |
+| Actions & Engagement | `rules/core-rules.md#actions` |
+| Special Rules (LoS, Cover, Overwatch, etc.) | `rules/core-rules.md#table-rules` |
+| Magic System (casting, triangles, spell lists) | `rules/retinue.md#magic` |
+| Creature & Special Fighter Profiles | `rules/retinue.md#shared-profiles` |
+| Companions | `rules/equipment.md#companions` |
+| Feats (Archetype & Domain) | `rules/retinue.md#feats` |
+| Gear (weapons and equipment) | `rules/equipment.md` |
+| Survival Rolls | `campaign/campaign.md#survival-rolls` |
+| Post-Game Sequence | `campaign/campaign.md#post-game-sequence` |
+| Relic Economy | `campaign/campaign.md#economy` |
 | Retinue (Domains, Traditions) | `rules/retinue.md` |
-| Archetype chapters | `rules/archetypes/` |
-| Retinue Building | `rules/retinue-building.md` |
-| Scenarios | `campaign/scenarios.md` |
+| Archetype chapters | `rules/retinue.md#archetype-chapters` |
+| Retinue Building | `rules/retinue.md#building-a-retinue` |
+| Scenarios | `campaign/campaign.md#scenarios` |
 | Decision Log | `decision-log.md` (one entry per commit — **date + title**; update before every commit) |
 
 ---

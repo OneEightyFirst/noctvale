@@ -28,16 +28,16 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 - [x] Defense pool: base 1R + 1B, +dice from Mt/Sk comparison, +armor
 - [x] 2:1 crossover blocking
 - [x] Wound application → Downed → Stunned → OOA
-- [x] Full worked combat example in combat.md
+- [x] Full worked combat example in `rules/core-rules.md#combat`
 - [x] Define armor values for at least light/medium/heavy tiers
 - [x] Confirm ranged/magic crit rules (pairs of 6s? single 6s? sniper exception?)
-- [x] Decide if melee defenders get a free counter-attack (playtest note in combat.md) — **No.** Melee is one-directional.
+- [x] Decide if melee defenders get a free counter-attack (playtest note in `rules/core-rules.md#combat`) — **No.** Melee is one-directional.
 
 ---
 
 ## Phase 2b: Line of Sight, Cover & Targeting
 
-Rules in `rules/special-rules.md`; cross-refs in `actions.md` and `combat.md`.
+Rules in `rules/core-rules.md#table-rules`; cross-refs in the action and combat sections of `rules/core-rules.md`.
 
 - [x] Line of sight: visible-or-not from firing fighter's PoV; ignore past-base overhang
 - [x] Cover: any intervening terrain between shooter and target (terrain >1" from shooter) → +1 blue defense die
@@ -46,7 +46,7 @@ Rules in `rules/special-rules.md`; cross-refs in `actions.md` and `combat.md`.
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
 - [x] Clustered enemies: same-retinue fighters within 1" of declared target → Sk check or retarget
 - [x] Enemy fighters block line of sight normally
-- [ ] Smoke / other LoS-blocking effects — smoke in `gear.md`; confirm no gaps vs terrain rules
+- [ ] Smoke / other LoS-blocking effects — smoke in `rules/equipment.md`; confirm no gaps vs terrain rules
 - [ ] Dedicated rules for enemy fighters blocking shots (beyond LoS) if playtest shows gaps
 
 ---
@@ -59,7 +59,7 @@ Create a small playtest weapon list covering the weapon triangle + ranged + fire
 - [x] At least one Bow/Crossbow (ranged, Sk-based)
 - [x] At least one Firearm (crits vs all targets)
 - [x] Define +Mt / +Sk / range / any special traits per weapon
-- [x] Create weapon table in `rules/gear.md`
+- [x] Create weapon table in `rules/equipment.md`
 
 ---
 
@@ -103,12 +103,12 @@ Define feat lists for each archetype and each domain. Feats are the primary mech
 
 ## Phase 5a: Archetype rulebook chapters
 
-Restructure `rules/archetypes/` for rulebook readability (Mordheim warband style).
+Restructure `rules/retinue.md#archetype-chapters` for rulebook readability (Mordheim warband style).
 
 - [x] Split one file per Archetype (Knights, Hunters, Folk, Cult)
 - [ ] **Rethink "class"** — Leader / Elite / Specialist / Rank is internal jargon; find player-facing term (role? tier? fighter type?) or drop the generic label and use only archetype names (Lord, Theurge, etc.)
-- [x] Restructure recruit section: one heading per fighter type, species profile table (M through W + Cost), prose for slot limits — **all four archetype chapters** (`rules/archetypes/`)
-- [x] Propagate new leader/caster/spell rules to `retinue-building.md`, `feats.md`, `magic.md`, `creating-a-retinue.md`, `campaign/post-game.md`
+- [x] Restructure recruit section: one heading per fighter type, species profile table (M through W + Cost), prose for slot limits — **all four archetype chapters** (`rules/retinue.md#archetype-chapters`)
+- [x] Propagate new leader/caster/spell rules to `rules/retinue.md` and `campaign/campaign.md#post-game-sequence`
 - [ ] Reduce gratuitous tables — fighter count, archetype access, and similar as short prose where a table adds no scan value
 - [ ] Resolve creation stat-cap wording — "no stat above 5" / "except species baselines at 4" has no `decision-log.md` entry; confirm intent or remove
 
@@ -118,12 +118,12 @@ Restructure `rules/archetypes/` for rulebook readability (Mordheim warband style
 
 Build full playtest rosters for Silver Hunt and Nightpack.
 
-- [x] Define fighter types per retinue (Leader, Caster/Special, Champion, Troop — see `rules/retinue-building.md`)
+- [x] Define fighter types per retinue (Leader, Caster/Special, Champion, Troop — see `rules/retinue.md#building-a-retinue`)
 - [ ] Assign stat lines (based on species baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
 - [ ] Assign spells from Phase 4 list (if applicable)
 - [ ] Assign feats from Phase 5b lists
-- [x] Set retinue size / point budget — **1000 Crowns**, composition limits per Archetype (`rules/retinue-building.md`)
+- [x] Set retinue size / point budget — **1000 Crowns**, composition limits per Archetype (`rules/retinue.md#building-a-retinue`)
 - [ ] Calculate total retinue cost and verify balance parity
 
 ---
@@ -181,12 +181,12 @@ Things identified across the design docs that don't fit neatly into one phase.
 ### Open Design Decisions
 
 - [ ] **Spell table format:** Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards
-- [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`gear.md`, `combat.md`)
-- [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue-building.md`)
+- [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`rules/equipment.md`, `rules/core-rules.md#combat`)
+- [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue.md#building-a-retinue`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/post-game.md` — tune XP earn/spend rates and **Veteran Crown** values after playtest
-- [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/feats.md`, `rules/gear.md`, `rules/retinue.md`.
-- [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/survival-rolls.md`)
+- [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/campaign.md#post-game-sequence` — tune XP earn/spend rates and **Veteran Crown** values after playtest
+- [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/retinue.md#feats`, `rules/equipment.md`, `rules/retinue.md`.
+- [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/campaign.md#survival-rolls`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits

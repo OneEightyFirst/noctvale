@@ -1,0 +1,8 @@
+# Noctvale publishing order.
+# One Markdown source path per line. Blank lines and # comments are ignored.
+
+intro.md
+rules/core-rules.md
+rules/retinue.md
+rules/equipment.md
+campaign/campaign.md

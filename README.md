@@ -13,30 +13,15 @@ This repository contains the working design documents for Noctvale — rules, re
 ## Repo Structure
 
 ```
-noctvale.md              — Setting document and current rules index
+intro.md                 — Setting, premise, backstory, factions, and game summary
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
 rules/
-  core-rules.md          — Stat abbreviations and species profiles
-  combat.md              — Strike Pool system, criticals, weapon & magic triangles
-  conditions.md          — Downed, Stunned, Out of Action, Recover, Help, Mercy Kill
-  actions.md             — Actions, movement, engagement rules
-  special-rules.md       — Line of Sight, Cover, Falling, Overwatch, Gang Up
-  gear.md                — Weapons and equipment: costs, profiles, and combat rules
-  magic.md               — Casting, magic triangles, Domain spell lists, spell resolution
-  retinue.md             — Shared identity: Domains, Traditions, named faction index
-  archetypes/            — Archetype chapters (fluff + how to build each retinue)
-    knights.md
-    hunters.md
-    folk.md
-    cult.md
-  creating-a-retinue.md  — Player guide: budget, species, equip, verify
-  retinue-building.md    — Reference: Crown budgets, composition limits, design notes
+  core-rules.md          — What you need, setup, action sequence, actions, conditions, combat
+  retinue.md             — Retinue building, archetypes, Domains, Traditions, feats, magic
+  equipment.md           — Weapons, gear, alchemy, and companions
 campaign/
-  scenarios.md           — Battle scenarios
-  post-game.md           — Post-battle sequence, injuries, economy, advancement
-  survival-rolls.md      — Survival Rolls and battlefield location rewards
-  economy.md             — Relic economy and selling curve
+  campaign.md            — Campaign flow, leveling, scenarios, post-game, Survival Rolls, economy
 ```
 
 ## Design Influences
@@ -46,6 +31,47 @@ Mordheim, Necromunda, Warcry, Kill Team, Space Hulk, classic Warhammer, and OSR 
 ## Status
 
 Actively in development. Not yet playtested. See `todo.md` for the phased playtest roadmap.
+
+## Publishing to InDesign
+
+Markdown is the source of truth for copy. Pandoc converts Markdown to linked
+ICML for Adobe InDesign. Do not edit placed ICML text in InDesign; edit the
+Markdown source, rebuild ICML, then update the link in InDesign.
+
+Pandoc is required. If `pandoc --version` fails, install Pandoc before building:
+
+```sh
+brew install pandoc
+```
+
+On Windows, use:
+
+```sh
+winget install --id JohnMacFarlane.Pandoc
+```
+
+On Linux, install Pandoc with your distribution package manager or from
+`https://pandoc.org/installing.html`.
+
+Build per-file ICML:
+
+```sh
+make icml
+```
+
+Build one merged ICML file from `content/order.txt`:
+
+```sh
+make merged
+```
+
+In InDesign, use File -> Place and choose the generated `.icml` file. On first
+import, map the Pandoc/imported styles to the template's paragraph and character
+styles. Keep local style notes in `.indesign-styles.md`.
+
+After content changes, rebuild the ICML, then use the InDesign Links panel to
+update the placed ICML link. Do not check out, detach, or edit placed text in
+InDesign.
 
 ## License
 

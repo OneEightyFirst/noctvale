@@ -24,7 +24,7 @@ the final rule in the dated decision-log entry for that commit.
 
 - **Vampire abilities:** Per-fighter pick list for **Vampires** Tradition *(1
   ability each — names and rules TBD)*.
-- **Domain feat lists:** All **seven Domains** at **five** — see `rules/feats.md`.
+- **Domain feat lists:** All **seven Domains** at **five** — see `rules/retinue.md#feats`.
   **Nature:** **Sure Footed**, **Camouflage**; **Lightning Reflexes** removed
   *(Mortal · Light only)*; **Animal Handling** → Universal. **Mortal** (**Null**),
   **Arcane** (**Helping Hand**) complete. **Universal feats:** **five** entries
@@ -42,13 +42,97 @@ the final rule in the dated decision-log entry for that commit.
   death response.
 - **Open roster decisions:** Add Domain composition tables; decide Shadow Market
   access for alchemy; write **Feat Advancement Table**. **Companion** profiles and
-  campaign recovery are locked — see `rules/companions.md`.
+  campaign recovery are locked — see `rules/equipment.md#companions`.
 - **Open magic decisions:** Finish spell difficulties, ranges, and Mishaps before
-  treating `rules/magic.md` as playtest-ready. **Afflictions**, **difficult terrain**,
+  treating `rules/retinue.md#magic` as playtest-ready. **Afflictions**, **difficult terrain**,
   **stat modifier cap** (**±3**), and **project Fear** language are locked — see
-  `rules/conditions.md`, `rules/special-rules.md`, `rules/sanity.md`.
+  `rules/core-rules.md`.
 
 ---
+
+## 2026-06-11 — Round structure rulebook voice
+
+**Decision:** Rewrite the Core Rules round overview and turn structure from
+note-style shorthand into rulebook prose. The Start of Round section now states
+initiative and **Overwatch token** rules in full sentences, the activation
+section defines who can be chosen without contradicting **Stunned** recovery
+timing, and the End of Round section uses direct rules language instead of
+checklist fragments. Update the style guide to say “write rules, not notes.”
+
+**Reasoning:** Noctvale is moving from design notes into rulebook text. The
+rules need to read as instructions a player can follow without decoding
+designer shorthand. Keeping the broad round structure clear also prevents
+mechanical conflicts between activation count, **Overwatch tokens**, and
+fighters who recover from **Stunned** during a round.
+
+## 2026-06-11 — Stunned recovery activation timing
+
+**Decision:** A **Stunned** fighter cannot activate while **Stunned** and does
+not count toward **activation count**, but recovery during the round can bring
+them back into the activation flow. If a **Stunned** fighter becomes **Active**
+before their player has finished activating fighters, they may activate later
+that round with **1 action**. If they become **Downed**, they may activate later
+that round, but can only use that activation to **Recover**. Initiative and
+**Overwatch tokens** are not recalculated.
+
+**Reasoning:** Early recovery should be worth doing. If helping a **Stunned**
+fighter only improved their target state without giving any chance to act, the
+optimal play would be to leave them until late in the round. This rule rewards
+timely **Help** or healing while keeping start-of-round initiative and Overwatch
+math stable.
+
+## 2026-06-11 — Condensed stats rules
+
+**Decision:** Condense the opening Stats rules in Core Rules. Replace the
+separate Stat Bounds and Stat Rolls sections with one note explaining how stat
+checks work: roll **1d6 + stat**, succeed on **8+**, natural **1** fails, and
+natural **6** succeeds. State that campaign play cannot raise a stat above **6**,
+and that a fighter reduced to stat **1** can no longer perform actions requiring
+that stat. Move the red/blue dice explanation from Stats into Combat and shorten
+the reroll rule. Remove **Infiltrate** from standard battle setup so Core Rules
+stays at the wide-view level, and update the style guide to state that broad
+sections should not carry feat, gear, spell, or scenario exceptions.
+
+**Reasoning:** The opening rules should explain only the shared stat procedure.
+Attack rolls, casting, Sanity, Strike Pools, and other uses can be explained
+where players need them. Keeping small related rules in compact paragraphs makes
+the rulebook easier to read at the table and sets the style for future edits.
+Core Rules should teach the general battle flow first; deeper sections can zoom
+in on exceptions when players are choosing those rules.
+
+## 2026-06-11 — What you need to play setup list
+
+**Decision:** Update Core Rules setup guidance. The required materials list no
+longer says players need a legal roster before play. It now asks for miniatures
+or tokens on bases, a **3' × 3'** battlefield, at least **10 d6** split into two
+clearly separate colors (**5** and **5**), a measuring tool, counters, and
+template markers printable from the back of the book.
+
+**Reasoning:** The setup list should describe table materials, not roster
+legality. Ten dice is a practical baseline for Noctvale's common Strike Pools:
+it covers the 9-die baseline examples while keeping the entry barrier low, and
+larger pools can still be rolled in batches. Calling out template markers early
+prepares players for blast and area effects.
+
+## 2026-06-10 — Rulebook consolidation into five files
+
+**Decision:** Consolidate the player-facing rulebook into five source files:
+`intro.md`, `rules/core-rules.md`, `rules/retinue.md`, `rules/equipment.md`,
+and `campaign/campaign.md`. The intro holds setting and lore. Core Rules now
+contains what players need, battle setup, action sequence, actions, conditions,
+combat, table rules, and Sanity. Retinue now contains roster building,
+archetypes, Domains, Traditions, feats, magic, and shared profiles. Equipment
+now contains weapons, gear, alchemy, and companions. Campaign now contains
+campaign flow, leveling, scenarios, post-game, Survival Rolls, and economy.
+Update `content/order.txt` to publish only those five files and remove the
+obsolete player-facing shards.
+
+**Reasoning:** The previous modular structure was useful while systems were
+forming, but it made the rulebook harder to read and repeated references across
+too many files. A five-file structure follows the table-use path more cleanly:
+learn the game, build the retinue, equip it, then run campaigns. Keeping alchemy
+with gear and keeping archetypes, feats, and magic in the retinue chapter makes
+list-building choices easier to scan without jumping between fragments.
 
 ## 2026-06-10 — Codex workflow and repo skills
 

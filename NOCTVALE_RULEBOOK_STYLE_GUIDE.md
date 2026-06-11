@@ -12,14 +12,17 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 
 1. **Say what happens.** Lead with the effect, then exceptions.
 2. **One idea per sentence.** Split compound rules into bullets or numbered steps.
-3. **Name things once, then consistently.** Define a term on first use in a section; link to the canonical file after that.
-4. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
-5. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
-6. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
-7. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — master copy in `rules/_shared-snippets.md`.
-8. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
-9. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
-10. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](../campaign/economy.md)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](retinue.md#domains)**).
+3. **Write rules, not notes.** Avoid shorthand such as “ties: previous initiative.” Write the complete rule in a sentence.
+4. **Start wide, then zoom in.** Opening sections should give the broad rule. Save feat, gear, spell, and scenario exceptions for the section where players need that detail.
+5. **Keep related rules together.** Do not split every small rule into its own section; use compact paragraphs unless a sequence, table, or repeated reference needs headings.
+6. **Name things once, then consistently.** Define a term on first use in a section; link to the canonical file after that.
+7. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
+8. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
+9. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
+10. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — master copy in `rules/_shared-snippets.md`.
+11. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
+12. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
+13. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](campaign/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
 
 ---
 
@@ -32,7 +35,7 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 | Neutral rules voice | Jokes, asides, designer commentary in player text |
 | Short paragraphs and lists | Wall-of-text prose |
 
-**Lore voice** belongs in `noctvale.md` and faction preset blurbs. **Rules voice** is colder and precise: what you can do, what it costs, what happens next.
+**Lore voice** belongs in `intro.md` and faction preset blurbs. **Rules voice** is colder and precise: what you can do, what it costs, what happens next.
 
 ---
 
@@ -79,7 +82,7 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 |---|---|
 | **game** | A full session — one or more battles in a campaign, or a standalone skirmish |
 | **battle** | One table encounter from deployment to end condition |
-| **round** | Every eligible fighter activates once (see turn structure in `actions.md`) |
+| **round** | Every eligible fighter activates once (see turn structure in `rules/core-rules.md`) |
 | **activation** | One fighter's turn — **2 actions** |
 | **activation count** | Fighters who can activate this round — **Active** and **Downed** only; not **Stunned**, **Out of Action**, or **Escaped** |
 | **action** | One thing a fighter does during an activation (**Move**, **Melee**, etc.) |
@@ -128,7 +131,7 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | keyword | No in prose | **Caster**, **Fear**, **Fearless**, **Undead**, **Vampire** — bold the keyword name |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
 | difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **M** |
-| affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `conditions.md` |
+| affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/core-rules.md` |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
 | Relic(s) | Yes | Campaign treasure recovered in scenarios |
 | Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 Sa) or **Instrument** (+1" M); not campaign treasure |
@@ -175,7 +178,7 @@ Gunpowder access: **Basic**, **Refined**
 | Stats in sentences | Abbreviation or spelled out — pick one per paragraph | “d6 + Sk ≥ 8” |
 | Generic gear | Lowercase | sword, medium armor, musket |
 | Named gear | Title case | Widow's Tears, Silversbane |
-| File references | Backticks, lowercase path | `conditions.md` |
+| File references | Backticks, lowercase path | `rules/core-rules.md` |
 
 **TODO:** Fighter card layout not finalized — confirm whether action names appear in ALL CAPS on cards while rules use bold title case.
 
@@ -296,12 +299,12 @@ Reference actions in bold: “perform a **Ranged** action,” “use the **Recov
 
 Use reminders to point at canonical rules — not to sneak in new mechanics. Reminder text on cards/tables must **not contradict** the full rule elsewhere.
 
-**Format:** *(See `filename.md`.)* or *(See `special-rules.md` — Intervening Fighters.)*
+**Format:** *(See `filename.md`.)* or *(See `rules/core-rules.md` — Intervening Fighters.)*
 
 | When | Example |
 |---|---|
-| Full rule elsewhere | *(See conditions.md.)* |
-| Named subsection | *(See combat.md — Ranged Reaction.)* |
+| Full rule elsewhere | *(See rules/core-rules.md.)* |
+| Named subsection | *(See rules/core-rules.md — Ranged Reaction.)* |
 | First keyword on a page | **Single Shot** — one use per battle; cannot reload |
 | Card / table only | Icon or one-line reminder — **TODO:** reminder icon set not defined |
 
@@ -313,7 +316,7 @@ Use reminders to point at canonical rules — not to sneak in new mechanics. Rem
 
 ## Action and Procedure Formatting
 
-Each action in `actions.md` uses this block order:
+Each action in `rules/core-rules.md` uses this block order:
 
 1. **Cost** — `**Cost:** 1 action` (or **Skip the rest of this fighter's activation** for **Overwatch**)
 2. **Target / range** — who or what the action affects
@@ -329,7 +332,7 @@ Multi-step procedures use **Step 1**, **Step 2**, … Post-game and campaign ste
 ## Examples and Diagrams
 
 - **Worked examples** use named fighters: Human, Elf, Dwarf — match `core-rules.md` species.
-- Label steps **Step 1**, **Step 2** in sequences (see `combat.md`).
+- Label steps **Step 1**, **Step 2** in sequences (see `rules/core-rules.md`).
 - **Round at a Glance** uses blockquote `>` for quick-reference boxes.
 - Diagrams: ASCII for simple flows (`Sword > Axe > Spear > Sword`); TODO for official board-measurement diagrams.
 - One full combat example per major rules revision — don't scatter partial math across files.
@@ -338,14 +341,14 @@ Multi-step procedures use **Step 1**, **Step 2**, … Post-game and campaign ste
 
 ## Lore vs Rules Text
 
-| | Lore (`noctvale.md`, faction blurbs) | Rules (`rules/`, `campaign/`) |
+| | Lore (`intro.md`, faction blurbs) | Rules (`rules/`, `campaign/`) |
 |---|---|---|
 | Purpose | Setting, history, mood | Procedures and outcomes |
 | Names | Emperor, Valecoria, Crown Roads | Archetype, Domain, Retinue Rating |
 | Tone | Gothic, narrative | Plain, imperative |
 | Mechanics | None, or high-level summary only | Full detail |
 
-Faction preset lore may mention identity (“vampire aristocracy”) but **mechanical limits** live in `retinue.md` / `retinue-building.md`.
+Faction preset lore may mention identity (“vampire aristocracy”) but **mechanical limits** live in `rules/retinue.md`.
 
 ---
 
@@ -452,7 +455,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 | **damage** vs **wound** | Some spell blurbs still say “damage”; prefer **hit** / **Wound** |
 | **Spell table format** | Refine column layout, Effect/Mishap wording, card reminders |
 | **Armor/shield conversion** | Failed defense dice → successful defense dice |
-| Scatter die | Define scatter die notation in `rules/gear.md` (Bombs) |
+| Scatter die | Define scatter die notation in `rules/equipment.md` (Bombs) |
 | Opponent-controlled fighters | Standard phrase for “your opponent controls it for its activation” |
 
 ---
@@ -478,4 +481,4 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 ---
 
-*Last updated: 2026-06-07. Derived from `rules/`, `campaign/`, `noctvale.md`, and `NOCTVALE_DESIGN_TENETS.md`.*
+*Last updated: 2026-06-07. Derived from `rules/`, `campaign/`, `intro.md`, and `NOCTVALE_DESIGN_TENETS.md`.*
