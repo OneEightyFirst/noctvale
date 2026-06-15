@@ -68,7 +68,10 @@ Full species rules: [Core Rules](core-rules.md).
 
 ### Step 4 — Choose Feats and Equip Your Fighters
 
-Choose each fighter's feats from the lists allowed by your **Archetype** and **Domain**. Choose weapon **Proficiency** feats before buying equipment. A fighter can equip only weapons they are proficient in.
+Choose each fighter's feats from the lists allowed by your **Archetype** and
+**Domain**. Choose weapon **Proficiency** feats before buying equipment. A
+fighter can equip only weapons they are proficient in, except any fighter may
+equip a **Dagger**.
 
 Buy gear from [Equipment](equipment.md) within your Archetype's armor, shield, and firearm tier limits.
 
@@ -261,7 +264,9 @@ Species premium applies once per fighter, regardless of tier.
 
 Equipment access follows [Retinue](retinue.md):
 
-- Each fighter equips weapons matching their **Proficiency** feats (see [Feats](retinue.md)).
+- Each fighter equips weapons matching their **Proficiency** feats (see
+  [Feats](retinue.md)). Any fighter may equip a **Dagger** without a
+  **Proficiency** feat.
 - Archetype sets which options appear on each fighter's **Proficiency** feat, plus armor cap, shield access, and **firearm tier** access.
 - **Mortal** Domain adds **Firearms** to the **Proficiency** menu; all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
 - **Cult** cannot choose Mortal and cannot take **Firearms**.
@@ -314,10 +319,10 @@ All weapon and equipment **Crown costs**, **profiles**, and **combat rules** are
 
 | Fighter | Proficiencies | Equipment | Fighter | Gear | Total |
 | --- | --- | --- | ---: | ---: | ---: |
-| Captain | Firearms, One-Handed | Musket, Dagger | 125 | 110 | 235 |
+| Captain | Firearms | Musket, Dagger | 125 | 110 | 235 |
 | Stalker | Archery, One-Handed | Longbow, Hand Axe | 75 | 70 | 145 |
 | Stalker | Archery, Thrown | Crossbow, Silversbane *(on Crossbow)* | 75 | 130 | 205 |
-| Tracker | Firearms *(built-in)*, One-Handed | Pistol, Dagger, Smoke Bomb | 60 | 125 | 185 |
+| Tracker | Firearms *(built-in)* | Pistol, Dagger, Smoke Bomb | 60 | 125 | 185 |
 | Hand | Archery | Shortbow | 40 | 40 | 80 |
 | Hand | One-Handed | Hand Axe | 40 | 20 | 60 |
 | **Total** | | | | **415** | **475** | **890** |
@@ -337,7 +342,7 @@ Before play, confirm:
 - [ ] Fighters with **Caster** keyword: count within Archetype max; Mortal Domain has none; spell counts match fighter type (Leader/Theurge **2**, Adept **1**)
 - [ ] Total cost ≤ Crown budget
 - [ ] **Retinue Rating** = Roster Cost + sum of Veteran Value on each fighter (campaign)
-- [ ] Each equipped weapon matches a fighter's **Proficiency**
+- [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Archetype armor, shield, and firearm tier access
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] Recruitment stat bonuses recorded on roster sheet
@@ -359,9 +364,9 @@ Your **Tradition** sets your **Domain**, which determines what supernatural powe
 
 **Named factions** (Phoenix Guard, Silver Hunt, etc.) are optional **presets**
 and examples — established Archetype + Domain pairings with lore and suggested
-Traditions. They do not grant exclusive rules, feats, equipment, or exceptions.
-Use one for flavor or build any legal Archetype + Tradition combination
-yourself.
+Traditions. Use one for flavor or build any legal Archetype + Tradition
+combination yourself. Use only your chosen **Archetype**, **Tradition**,
+**Domain**, feats, and equipment for mechanical rules.
 
 ---
 
@@ -503,8 +508,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
 **Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
-choose a **different** proficiency. **One-Handed** and **Two-Handed** grant shield
-access; **Archery**, **Thrown**, and **Firearms** do not.
+choose a **different** proficiency. **One-Handed** grants shield access.
 
 **Hold the Line:** When this fighter uses **Brace**, choose another friendly
 fighter within **1"**. That fighter gains **+1 red defense die** until this
@@ -562,7 +566,8 @@ Sa). Built-in **One-Handed** proficiency.
 
 ##### Equip Your Fighters
 
-A fighter cannot equip a weapon unless they have the matching **Proficiency**.
+A fighter cannot equip a weapon unless they have the matching **Proficiency**,
+except any fighter may equip a **Dagger**.
 
 Each fighter has **3 weapon slots**. Buy gear from [Equipment](equipment.md) within
 Knights armor, shield, and firearm tier limits.
@@ -606,7 +611,7 @@ Before your first battle, confirm:
 - [ ] **1 Lord**, **0–4 Knight**, **0–5 Squire**
 - [ ] **Caster:** at most 1 on Lord; **Mortal** has none; Lord knows **2** Domain spells if **Caster**
 - [ ] Total cost ≤ Crown budget
-- [ ] Each equipped weapon matches a fighter's **Proficiency**
+- [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Knights armor, shield, and firearm tier access
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] Lord **+2** stats, Knight **+1 Mt/Sk**, Squire **+1** stat recorded on roster sheet
@@ -734,8 +739,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
 **Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
-choose a **different** proficiency. **One-Handed** and **Two-Handed** grant shield
-access; **Archery**, **Thrown**, and **Firearms** do not.
+choose a **different** proficiency. **One-Handed** grants shield access.
 
 **Marked Quarry:** At the start of the battle, choose 1 enemy fighter. When this
 fighter attacks the chosen fighter, add **1 red die** or **1 blue die** to this
@@ -795,7 +799,8 @@ Species baseline only.
 
 ##### Equip Your Fighters
 
-A fighter cannot equip a weapon unless they have the matching **Proficiency**.
+A fighter cannot equip a weapon unless they have the matching **Proficiency**,
+except any fighter may equip a **Dagger**.
 
 Each fighter has **3 weapon slots**. Buy gear from [Equipment](equipment.md) within
 Hunters armor, shield, and firearm tier limits.
@@ -848,10 +853,10 @@ with Tradition, gear, and roster choices.
 
 | Fighter | Proficiencies | Equipment | Fighter | Gear | Total |
 | --- | --- | --- | ---: | ---: | ---: |
-| Captain | Firearms, One-Handed | Musket, Dagger | 125 | 110 | 235 |
+| Captain | Firearms | Musket, Dagger | 125 | 110 | 235 |
 | Stalker | Archery, One-Handed | Longbow, Hand Axe | 75 | 70 | 145 |
 | Stalker | Archery, Thrown | Crossbow, Silversbane *(on Crossbow)* | 75 | 130 | 205 |
-| Tracker | Firearms *(built-in)*, One-Handed | Pistol, Dagger, Smoke Bomb | 60 | 125 | 185 |
+| Tracker | Firearms *(built-in)* | Pistol, Dagger, Smoke Bomb | 60 | 125 | 185 |
 | Hand | Archery | Shortbow | 40 | 40 | 80 |
 | Hand | One-Handed | Hand Axe | 40 | 20 | 60 |
 | **Total** | | | | **415** | **475** | **890** |
@@ -870,7 +875,7 @@ Before your first battle, confirm:
 - [ ] **1 Captain**, **0–4 Stalker**, **0–3 Tracker**, **0–4 Hand**
 - [ ] **Caster:** at most 1 on Captain; **Mortal** has none; Captain knows **2** Domain spells if **Caster**
 - [ ] Total cost ≤ Crown budget
-- [ ] Each equipped weapon matches a fighter's **Proficiency**
+- [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Hunters armor, shield, and firearm tier access
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] Captain **+2** stats, Stalker **+1 Mt/Sk**, Tracker **+1** stat recorded on roster sheet
@@ -990,9 +995,8 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 **Proficiency:** Choose **One-Handed**, **Archery**, **Thrown**, or **Firearms**
 *(Mortal Domain only)*. You may equip any weapon in that proficiency your retinue
 is allowed to buy. You may take this feat more than once. Each time, choose a
-**different** proficiency. **One-Handed** grants shield access; **Archery**,
-**Thrown**, and **Firearms** do not. Folk **Militiaman** has built-in
-**Two-Handed** proficiency — not on this menu.
+**different** proficiency. **One-Handed** grants shield access. Folk
+**Militiaman** has built-in **Two-Handed** proficiency.
 
 **Stubborn Lot:** When this fighter uses **Help**, a roll of **1** counts as **2**
 if another friendly fighter is within **1"** of this fighter or the assisted
@@ -1054,7 +1058,8 @@ Species baseline only.
 
 ##### Equip Your Fighters
 
-A fighter cannot equip a weapon unless they have the matching **Proficiency**.
+A fighter cannot equip a weapon unless they have the matching **Proficiency**,
+except any fighter may equip a **Dagger**.
 
 Each fighter has **3 weapon slots**. Buy gear from [Equipment](equipment.md) within Folk
 armor, shield, and firearm tier limits.
@@ -1096,7 +1101,7 @@ Before your first battle, confirm:
 - [ ] **1 Mayor**, **0–3 Guildsman**, **0–5 Militiaman**, **0–6 Townsfolk**
 - [ ] **Caster:** at most 1 on Mayor; **Mortal** has none; Mayor knows **2** Domain spells if **Caster**
 - [ ] Total cost ≤ Crown budget
-- [ ] Each equipped weapon matches a fighter's **Proficiency**
+- [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Folk armor, shield, and firearm tier access
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] Mayor **+2** stats, Guildsman **+1 Mt/Sk**, Militiaman **+1** stat recorded on roster sheet
@@ -1292,10 +1297,11 @@ Species baseline only.
 
 ##### Equip Your Fighters
 
-A fighter cannot equip a weapon unless they have the matching **Proficiency**.
+A fighter cannot equip a weapon unless they have the matching **Proficiency**,
+except any fighter may equip a **Dagger**.
 
-Each fighter has **3 weapon slots**. Buy gear from [Equipment](equipment.md). Cult
-fighters wear no armor and cannot carry shields unless a feat says otherwise.
+Each fighter has **3 weapon slots**. Buy gear from [Equipment](equipment.md). A
+Cult fighter with **Magic Armor** may equip armor.
 
 ---
 
@@ -1347,8 +1353,8 @@ Before your first battle, confirm:
 - [ ] **Caster:** Theurge has **Caster**; up to 2 Adepts may have **Caster**; total ≤ 3
 - [ ] Theurge knows **2** Domain spells; each Adept with **Caster** knows **1**
 - [ ] Total cost ≤ Crown budget
-- [ ] Each equipped weapon matches a fighter's **Proficiency**
-- [ ] No armor or shields on any fighter
+- [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
+- [ ] Armor appears only on fighters with **Magic Armor**
 - [ ] Each fighter ≤ 3 weapon slots
 - [ ] Theurge **+2** stats and Adept **+1** stat recorded on roster sheet
 - [ ] Tradition cost modifiers applied (**Courtiers** +100 Crowns at start)
@@ -1645,8 +1651,8 @@ fighter **project Fear**.
 
 Twelve established factions exist in Noctvale lore. Each is an example
 Archetype + Domain pairing with a suggested Tradition and draft lore
-below. Named factions do not grant exclusive rules, feats, equipment, or
-exceptions.
+below. Use only your chosen **Archetype**, **Tradition**, **Domain**, feats, and
+equipment for mechanical rules.
 
 | Faction | Archetype | Domain | Identity |
 |---|---|---|---|
@@ -1706,7 +1712,8 @@ Campaign advancement may grant additional feats later (see [Feat Advancement
 Table](#feat-advancement-table)).
 
 Each **Proficiency** pick must choose a **different** weapon proficiency. A
-fighter cannot equip a weapon unless they have the matching proficiency.
+fighter cannot equip a weapon unless they have the matching proficiency, except
+any fighter may equip a **Dagger**.
 
 #### Built-in proficiencies (Specialist)
 
@@ -1743,9 +1750,8 @@ that proficiency your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
-may equip a shield allowed by your Archetype. **Archery**, **Thrown**, and
-**Firearms** do not grant shield access.
+**Shield access:** If your proficiency is **One-Handed**, you may equip a
+shield allowed by your Archetype.
 
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
@@ -1784,9 +1790,8 @@ that proficiency your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
-may equip a shield allowed by your Archetype. **Archery**, **Thrown**, and
-**Firearms** do not grant shield access.
+**Shield access:** If your proficiency is **One-Handed**, you may equip a
+shield allowed by your Archetype.
 
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
@@ -1824,8 +1829,8 @@ your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Shield access:** **One-Handed** grants shield access if your Archetype allows
-shields. **Archery**, **Thrown**, and **Firearms** do not grant shield access.
+**Shield access:** If your proficiency is **One-Handed**, you may equip a
+shield allowed by your Archetype.
 
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
@@ -1863,8 +1868,6 @@ weapon in that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
-
-**Archery** does not grant shield access. Cult fighters cannot equip shields.
 
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 

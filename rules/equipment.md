@@ -2,10 +2,11 @@
 
 This chapter contains weapons, gear, alchemy, and companions.
 
-**Gear** is everything fighters carry into battle: **weapons** (by proficiency:
-One-Handed, Two-Handed, Archery, Thrown, Firearms) and **equipment** (armor,
-shields, alchemy, and **Sphere of Influence** gear). This chapter covers Crown costs, profiles, and
-combat rules for both.
+**Gear** is everything fighters carry into battle: **weapons** (the common
+**Dagger**, plus weapons by proficiency: **One-Handed**, **Two-Handed**,
+**Archery**, **Thrown**, **Firearms**) and **equipment** (armor, shields,
+alchemy, and **Sphere of Influence** gear). This chapter covers Crown costs,
+profiles, and combat rules for both.
 
 Every Crown cost is a multiple of **5 Crowns**.
 
@@ -48,6 +49,8 @@ Example: Refined Pistol (90) with Flintlock = **65 Crowns**.
 | Hand Axe | 20   |
 | Mace     | 20   |
 | Spear    | 25   |
+
+A fighter may equip a **Dagger** without a **Proficiency** feat.
 
 ---
 
@@ -252,22 +255,27 @@ Combat rules for melee, missile, and gunpowder weapons. Profiles and Crown costs
 
 ### Weapon proficiencies
 
-Every weapon belongs to a **weapon proficiency** (what a fighter must be trained
+Most weapons belong to a **weapon proficiency** (what a fighter must be trained
 in to equip it) and a **weapon type** (Sword, Axe, Spear, or Hammer — used for
 critical hits in melee). Fighters gain proficiencies through the **Proficiency**
 feat at roster creation (see [Feats](retinue.md)).
+
+**Dagger** is the exception. Any fighter may equip a **Dagger** without a
+**Proficiency** feat.
 
 Your **Archetype** sets which proficiencies appear on that fighter's
 **Proficiency** menu. **Firearms** is on that menu for **Mortal** retinues only.
 **Magic and gunpowder do not mix** on the same retinue.
 
-| Proficiency | Weapons | Shields |
-|---|---|---|
-| **One-Handed** | Dagger, Sword, Hand Axe, Mace, Spear | Yes, if Archetype allows |
-| **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer | Yes, if Archetype allows |
-| **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow | No |
-| **Thrown** | Sling, Throwing Stars | No |
-| **Firearms** | Musket, Blunderbuss, Pistol, Long Rifle, bombs | No |
+| Proficiency | Weapons |
+|---|---|
+| **One-Handed** | Sword, Hand Axe, Mace, Spear |
+| **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer |
+| **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
+| **Thrown** | Sling, Throwing Stars |
+| **Firearms** | Musket, Blunderbuss, Pistol, Long Rifle, bombs |
+
+A fighter with **One-Handed** may equip shields allowed by their **Archetype**.
 
 #### Melee — weapon types
 

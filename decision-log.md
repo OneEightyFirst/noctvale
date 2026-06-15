@@ -50,6 +50,22 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-15 — Additive equipment access
+
+**Decision:** Make roster equipment access explicitly additive. A rule grants
+only the options it names; the style guide now records that absence lists and
+negative access columns should be avoided unless overriding a broader printed
+permission. **Dagger** is now a common weapon any fighter may equip without a
+**Proficiency** feat. **One-Handed** is the proficiency that grants shield
+access; **Two-Handed** remains weapon access only.
+
+**Reasoning:** Noctvale should read like a table ruleset: if an option is not
+granted, it is not available. This keeps roster construction clearer, prevents
+tables from implying extra permissions through "No" columns, and preserves the
+identity of weapon choices. **Dagger** functions as a baseline sidearm rather
+than a feat-gated specialty, while shields stay tied to dedicated one-handed
+fighting instead of heavy weapons.
+
 ## 2026-06-11 — Optional Cult Adept casters
 
 **Decision:** Make **Caster** optional for **Cult Adepts** at recruitment. Cult
