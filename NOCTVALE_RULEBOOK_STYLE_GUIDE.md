@@ -4,6 +4,8 @@
 
 This guide keeps Noctvale rules **clear, consistent, and readable** as the game grows. Use it when writing or editing any player-facing rules text — core rules, campaign tables, weapon and spell entries, fighter cards, and scenario packets.
 
+**Rulebook chapters** (core rules rewrite, campaign prose): also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Canonical example: `rules/long-form/chapter-the-turn.md`.
+
 Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decision-log.md` (why a rule changed)
 
 ---
@@ -32,14 +34,46 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 
 ## Voice and Tone
 
-| Do | Don’t |
-|---|---|
-| Direct, grim, practical | Flowery lore voice in rules chapters |
-| Second person for procedures (“Roll 1d6”) | Passive fog (“a roll is made”) |
-| Neutral rules voice | Jokes, asides, designer commentary in player text |
-| Short paragraphs and lists | Wall-of-text prose |
+Noctvale uses two voices. Keep them separate on the page.
 
-**Lore voice** belongs in `intro.md` and faction preset blurbs. **Rules voice** is colder and precise: what you can do, what it costs, what happens next.
+### Rulebook voice (print chapters)
+
+Use this voice in `rules/` chapters written for the eventual print book — starting with the core-rules rewrite.
+
+| Do | Don't |
+|---|---|
+| Read like a **rulebook** you follow in order | Read like a **reference manual** you jump into at random |
+| **Start wide, then zoom in** within each chapter | Open with sub-headings and bullet exceptions |
+| **Grim, direct, practical** prose for procedures | Clinical API-style field lists (**Cost:** / **Target:** blocks everywhere) |
+| Second person for procedures (“Roll **1d6**”) | Passive fog (“a roll is made”) |
+| Short narrative **examples** at the end of a chapter | Scattered partial math across the file |
+| Mordheim-style **chapter flow** (The Turn, Shooting, Psychology) | Subsystem encyclopedia structure (Actions → Combat → Table Rules) |
+
+**Chapter fluff** opens each major chapter: one to three short paragraphs in *italics*, atmospheric but not purple. Fluff sets mood and frames why the rules matter; it does **not** introduce mechanics, stats, or exceptions.
+
+Separate fluff from rules with a horizontal rule (`---`). Everything after the rule is **rules text** — precise, numbered where needed, no lore mixed in.
+
+Within rules text, prefer **prose first, bullets for exceptions**:
+
+> When a fighter activates, they may perform **2 actions** chosen from the action list. Actions may be taken in any combination and in any order.
+>
+> Only fighters who can activate may be chosen:
+>
+> - **Stunned**, **Out of Action**, and **Escaped** fighters cannot be chosen.
+
+Use the full **Cost / Target / Procedure / Restrictions** block only where an action is complex enough to need it (e.g. **Hide**, **Ranged** with weapon forks). Default to prose lead + tight bullets.
+
+### Reference voice (lookup sections)
+
+Use colder, precise voice for tables, fighter cards, gear entries, spell lines, and campaign tables — anywhere players look up a fact mid-battle without reading a chapter.
+
+| Do | Don't |
+|---|---|
+| Lead with the effect | Atmospheric framing |
+| One idea per bullet | Narrative examples |
+| Tables carry the data | Prose repeating table values |
+
+**Setting lore** (history, factions, the fall of Valecoria) belongs in `intro.md` and faction preset blurbs. **Chapter fluff** is brief scene-setting at the top of a rules chapter only — never a substitute for intro lore and never embedded in procedure paragraphs.
 
 ---
 
@@ -320,7 +354,15 @@ Use reminders to point at canonical rules — not to sneak in new mechanics. Rem
 
 ## Action and Procedure Formatting
 
-Each action in `rules/core-rules.md` uses this block order:
+### Rulebook chapters (default)
+
+1. **Prose lead** — what the action does, what it costs, what to roll
+2. **Exception bullets** — prohibitions, timing, edge cases
+3. **Cross-ref** — *(See [Overwatch](core-rules.md#overwatch).)* when the full rule lives elsewhere
+
+### Complex actions (when prose is not enough)
+
+Use this block order:
 
 1. **Cost** — `**Cost:** 1 action` (or **Skip the rest of this fighter's activation** for **Overwatch**)
 2. **Target / range** — who or what the action affects
@@ -330,6 +372,8 @@ Each action in `rules/core-rules.md` uses this block order:
 Multi-step procedures use **Step 1**, **Step 2**, … Post-game and campaign steps use the same numbering.
 
 **At a glance** boxes (blockquote `>`) open any subsystem that runs every turn or every battle — turn structure, post-game, Survival Rolls. Five to eight lines; no new rules in the box.
+
+Each major chapter ends with **Example:** — one narrative walkthrough that names fighters and shows the rules in play. Add a worked math example only where the chapter teaches resolution (e.g. Hand-to-Hand).
 
 ---
 
@@ -345,12 +389,13 @@ Multi-step procedures use **Step 1**, **Step 2**, … Post-game and campaign ste
 
 ## Lore vs Rules Text
 
-| | Lore (`intro.md`, faction blurbs) | Rules (`rules/`, `campaign/`) |
-|---|---|---|
-| Purpose | Setting, history, mood | Procedures and outcomes |
-| Names | Emperor, Valecoria, Crown Roads | Archetype, Domain, Retinue Rating |
-| Tone | Gothic, narrative | Plain, imperative |
-| Mechanics | None, or high-level summary only | Full detail |
+| | Setting lore (`intro.md`, faction blurbs) | Chapter fluff (rules chapters) | Rules text (below the fluff) |
+|---|---|---|---|
+| Purpose | History, factions, world | Mood and framing for one chapter | Procedures and outcomes |
+| Length | As long as needed | 1–3 short paragraphs | As long as needed |
+| Format | Normal prose | *Italics*, then `---` divider | Prose + bullets + tables |
+| Mechanics | None | None | Full detail |
+| Tone | Gothic, narrative | Grim, immediate, scene-setting | Plain, imperative, precise |
 
 Faction preset lore may mention identity (“vampire aristocracy”) but **mechanical limits** live in `rules/retinue.md`.
 
@@ -420,7 +465,23 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 > **War Axe** — Heavy · Mt +2 · weapon triangle (Axe)
 
-### Ability — tactical action
+### Chapter fluff (core rules)
+
+> *Time in Noctvale is not kept by clocks. It is kept by breath, by the scrape of boot on stone, by the moment before a blade falls.*
+>
+> *That rhythm — act, react, endure — is the turn.*
+>
+> ---
+
+### Rulebook action (prose + bullets)
+
+> When a fighter activates, they may perform **2 actions** chosen from the action list. Actions may be taken in any combination and in any order.
+>
+> Only fighters who can activate may be chosen:
+>
+> - **Stunned**, **Out of Action**, and **Escaped** fighters cannot be chosen.
+
+### Ability — tactical action (reference / card)
 
 > **Brace** — The fighter gains **+1 red defense die** (rolled with Mt) until their next activation.
 
@@ -480,9 +541,12 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 - [ ] Cross-refs use markdown links with readable labels (not raw file paths in backticks)
 - [ ] One-off rules link to the canonical file (subsystem name as link text)
 - [ ] No lore or designer history in procedure text
+- [ ] Chapter fluff in *italics* only; separated from rules by `---`
+- [ ] Rules text uses prose first, bullets for exceptions (not reference-manual blocks by default)
 - [ ] One clear outcome per bullet
 - [ ] **At a glance** box if the subsystem runs every turn or every battle
+- [ ] Chapter ends with a narrative **Example:** where the subsystem is teachable in play
 
 ---
 
-*Last updated: 2026-06-07. Derived from `rules/`, `campaign/`, `intro.md`, and `NOCTVALE_DESIGN_TENETS.md`.*
+*Last updated: 2026-06-15. Rulebook voice and long-form chapter guidance added; derived from `rules/`, `campaign/`, `intro.md`, and `NOCTVALE_DESIGN_TENETS.md`.*

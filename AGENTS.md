@@ -5,6 +5,10 @@
 Before writing, revising, or proposing any player-facing rules text, read and follow
 `NOCTVALE_RULEBOOK_STYLE_GUIDE.md`.
 
+For **rulebook chapters** (core rules, campaign prose sections, scenario rulebook text),
+also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Gold-standard example:
+`rules/long-form/chapter-the-turn.md`.
+
 This applies to:
 
 - Core rules in `rules/`
@@ -20,7 +24,8 @@ Use the guide's glossary and formatting conventions exactly. In particular:
 - Use **retinue**, not warband.
 - Use **battle** for one table encounter and **game** for a full session.
 - Write **Out of Action** in full on first use in a section.
-- Keep lore separate from procedures.
+- **Chapter fluff** opens major rulebook sections in *italics*, separated from rules by `---`; setting lore stays in `intro.md`.
+- Write rulebook procedures **prose first, bullets for exceptions** — not reference-manual **Cost:** blocks by default.
 - Check `rules/_shared-snippets.md` before repeating a shared sub-routine.
 
 Before finalizing rules text, run through the Quick Checklist at the end of

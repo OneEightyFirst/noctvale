@@ -50,6 +50,26 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-15 — Long-form rulebook drafts
+
+**Decision:** Add `rules/long-form/` as the home for long-form rulebook chapter
+drafts, with chapter drafts for **The Turn**, **Retinues**, and **Campaigns**.
+The Campaigns chapter now carries the campaign loop, Survival Rolls, economy,
+advancement, and named scenarios, including **Loot the Dead**, **The Forest
+Creeps Ever Onward**, and **There's a Reason They Have a Horn**. Update the
+rulebook style guidance and repo skills to point chapter-writing work at
+long-form drafts and to distinguish rulebook voice from reference-table voice.
+Update the Phase 6 roadmap note to show the unicorn scenario has a long-form
+draft and still needs playtest tuning.
+
+**Reasoning:** Long-form chapter drafts let Noctvale test print-rulebook prose
+without disrupting the current live reference files. Keeping scenarios in the
+Campaigns chapter matches the table flow players use between battle setup,
+scenario rewards, Survival Rolls, and post-game advancement. Renaming the folder
+from draft to long-form makes the folder describe the writing mode rather than
+the approval state, and the unicorn scenario turns the existing roadmap concept
+into a concrete playtest packet while preserving tuning as the next step.
+
 ## 2026-06-15 — Additive equipment access
 
 **Decision:** Make roster equipment access explicitly additive. A rule grants

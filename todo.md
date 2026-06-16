@@ -132,18 +132,19 @@ Build full playtest rosters for Silver Hunt and Nightpack.
 
 Write one complete scenario with deployment, terrain, and win conditions.
 
-- [ ] Define board size and terrain assumptions
-- [ ] Write deployment zones
-- [ ] Write victory conditions (Relics, kill count, control, escape, etc.)
-- [ ] Define round limit or end-of-game trigger
-- [ ] Include any scenario-specific special rules
+- [x] Define board size and terrain assumptions
+- [x] Write deployment zones
+- [x] Write victory conditions (Relics, kill count, control, escape, etc.)
+- [x] Define round limit or end-of-game trigger
+- [x] Include any scenario-specific special rules
 - [x] Determine how Survival Rolls / Relics interact with first-playtest progression
 
 ### Scenario concept: There's a Reason They Have a Horn
 
-- [ ] Both retinues are trying to bring down and harvest the unicorn
-- [ ] The unicorn is a deadly creature, not just an objective marker
-- [ ] Battlefield: a clearing in the middle of a forest, with scattered buildings around the edge
+- [x] Both retinues are trying to bring down and harvest the unicorn
+- [x] The unicorn is a deadly creature, not just an objective marker
+- [x] Battlefield: a clearing in the middle of a forest, with scattered buildings around the edge
+- [ ] Playtest and tune the unicorn profile, Horn token flow, and rewards in `rules/long-form/chapter-campaigns.md`
 
 ---
 
