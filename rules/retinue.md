@@ -2329,11 +2329,11 @@ Each domain has a standard ranged attack spell plus **6 additional spells**.
 |---|---|---|---|---|---|---|
 | Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
 | Arcane Shield | 11+ | — | — | Self | Caster is immune to all spells. At the start of the caster's next activation, roll 1d6 — on 1–2 the shield disappears | *(TBD)* |
-| Fireball | *(TBD)* | *(TBD)* | *(TBD)* | 18" | Choose a point within 18". All fighters within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
-| Telekinesis | *(TBD)* | — | — | 12" | Move any fighter (friendly or enemy) up to 6" directly toward or directly away from the caster. No check required by the target | *(TBD)* |
-| Displacement | *(TBD)* | — | — | 12" | Target friendly fighter is instantly moved up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base | *(TBD)* |
-| Hoarfrost | *(TBD)* | — | — | 18" | Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. When a fighter ends any movement in the zone, roll a Sk check (d6 + Sk ≥ 8). **Pass:** slide d6" in the same direction it was moving. **Fail:** scatter die + slide d6". If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, suffer 1 Wound | **Mishap:** Blast centers on the caster |
-| Slow | *(TBD)* | — | — | *(TBD)* | Target enemy loses 1 action on their next activation (activates with 1 action instead of 2) | *(TBD)* |
+| Fireball | 13+ | *(TBD)* | *(TBD)* | 18" | Choose a point within 18". All fighters within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
+| Telekinesis | 12+ | — | — | 12" | Move any fighter (friendly or enemy) up to 6" directly toward or directly away from the caster. No check required by the target | *(TBD)* |
+| Displacement | 11+ | — | — | 12" | Target friendly fighter is instantly moved up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base | *(TBD)* |
+| Hoarfrost | 13+ | — | — | 18" | Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. When a fighter ends any movement in the zone, roll a Sk check (d6 + Sk ≥ 8). **Pass:** slide d6" in the same direction it was moving. **Fail:** scatter die + slide d6". If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, suffer 1 Wound | **Mishap:** Blast centers on the caster |
+| Slow | 12+ | — | — | *(TBD)* | Target enemy loses 1 action on their next activation (activates with 1 action instead of 2) | *(TBD)* |
 
 #### Infernal
 
@@ -2366,7 +2366,7 @@ the roster after the battle.
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | *(TBD — attack)* | | | | | | |
-| Summon Daemon | *(TBD)* | — | — | 3" | Sacrifice one or two friendly fighters carrying enough **Summoning Crystals**, then roll on the **Summon Result** table | *(TBD)* |
+| Summon Daemon | 11+ | — | — | 3" | Sacrifice one or two friendly fighters carrying enough **Summoning Crystals**, then roll on the **Summon Result** table | *(TBD)* |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
@@ -2411,12 +2411,12 @@ after the battle.
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | Thorn Volley | 12+ | 4 | 4 | 12" | Ranged attack; template / shotgun-like | *(TBD)* |
-| Shadowmeld | *(TBD)* | — | — | 12" | Target friendly fighter gains Hidden. Does not need to remain within 1" of terrain to stay Hidden. Hidden still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy | Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation |
-| Venom | *(TBD)* | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned) | *(TBD)* |
-| Feral Form | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
-| Entangle | *(TBD)* | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
-| Summon Swarm | *(TBD)* | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](retinue.md#shared-profiles) | The Swarm appears hostile — your opponent controls it for its single activation |
-| Dread Chorus | *(TBD)* | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test for **Fear** with the caster as the source | *(TBD)* |
+| Shadowmeld | 11+ | — | — | 12" | Target friendly fighter gains Hidden. Does not need to remain within 1" of terrain to stay Hidden. Hidden still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy | Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation |
+| Venom | 10+ | — | — | *(TBD)* | Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned) | *(TBD)* |
+| Feral Form | 11+ | — | — | *(TBD)* | Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation | *(TBD)* |
+| Entangle | 12+ | — | — | 12" | Target enemy has M reduced to 0. Cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation | *(TBD)* |
+| Summon Swarm | 10+ | — | — | 3" | Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](retinue.md#shared-profiles) | The Swarm appears hostile — your opponent controls it for its single activation |
+| Dread Chorus | 11+ | — | — | 8" from caster | All enemy fighters within 8" must pass Sa test for **Fear** with the caster as the source | *(TBD)* |
 
 #### Necromancy
 
@@ -2424,23 +2424,23 @@ after the battle.
 |---|---|---|---|---|---|---|
 | Deathbolt | 14+ | — | 6 | 18" | Ranged attack; all blue dice, ignores armor | *(TBD)* |
 | Summon Skeleton | 10+ | — | — | 3" | Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See [Profiles](retinue.md#shared-profiles) | The Skeleton appears hostile — your opponent controls it for its single activation |
-| Raise Dead | *(TBD)* | — | — | 3" | Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation | Your opponent places and controls the raised fighter instead |
-| Cursed Ground | *(TBD)* | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
-| Wither | *(TBD)* | — | — | *(TBD)* | Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened) | *(TBD)* |
-| Bone Blast | *(TBD)* | 1 | 4 | Blast from caster | Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
-| Bone Circle | *(TBD)* | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
+| Raise Dead | 12+ | — | — | 3" | Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation | Your opponent places and controls the raised fighter instead |
+| Cursed Ground | 12+ | 2 | 2 | 12" | Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check (d6 + Sk ≥ 8). Lasts until the start of the caster's next activation | Blast centers on the caster |
+| Wither | 11+ | — | — | *(TBD)* | Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened) | *(TBD)* |
+| Bone Blast | 11+ | 1 | 4 | Blast from caster | Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit | *(TBD)* |
+| Bone Circle | 12+ | 1 | 3 | 12" | Choose a point within 12". Place a 3" blast template. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it takes a 1 Mt / 3 Sk hit (defense applies normally). Affects friends and enemies. Lasts until the start of the caster's next activation | Zone centers on the caster |
 
 #### Blood
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
-| Leech | *(TBD)* | *(TBD)* | *(TBD)* | *(TBD)* | Ranged attack; if target takes ≥1 wound, caster heals 1 wound | Caster takes the damage |
-| Bleed | *(TBD)* | — | — | *(TBD)* | Target must pass Wi check (d6 + Wi ≥ 8). Fail: **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding) | Caster gains **Bleeding** instead |
-| Blood Frenzy | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation | *(TBD)* |
-| Predator's Grace | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
-| Enthrall | *(TBD)* | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
-| Feast of Excess | *(TBD)* | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned (keeps wounds but vulnerable) | *(TBD)* |
-| Nightfall | *(TBD)* | — | — | *(TBD)* | Target friendly fighter with **Vampire** is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation |
+| Leech | 12+ | *(TBD)* | *(TBD)* | *(TBD)* | Ranged attack; if target takes at least 1 Wound, caster heals 1 Wound | Caster takes the damage |
+| Bleed | 13+ | — | — | *(TBD)* | Target must pass Wi check (d6 + Wi ≥ 8). Fail: **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding) | Caster gains **Bleeding** instead |
+| Blood Frenzy | 11+ | — | — | *(TBD)* | Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation | *(TBD)* |
+| Predator's Grace | 10+ | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
+| Enthrall | 11+ | — | — | 8" | Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
+| Feast of Excess | 11+ | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes **Stunned** (keeps Wounds but vulnerable) | *(TBD)* |
+| Nightfall | 11+ | — | — | *(TBD)* | Target friendly fighter with **Vampire** is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers **−1 Mt** until start of next activation |
 
 #### Mortal
 

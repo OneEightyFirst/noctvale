@@ -43,15 +43,39 @@ the final rule in the dated decision-log entry for that commit.
 - **Open roster decisions:** Add Domain composition tables; decide Shadow Market
   access for alchemy; write **Feat Advancement Table**. **Companion** profiles and
   campaign recovery are locked — see `rules/equipment.md#companions`.
-- **Open magic decisions:** Finish spell difficulties, ranges, and Mishaps before
-  treating `rules/retinue.md#magic` as playtest-ready. **Afflictions**, **difficult terrain**,
-  **stat modifier cap** (**±3**), and **project Fear** language are locked — see
-  `rules/core-rules.md`.
+- **Open magic decisions:** Finish remaining spell ranges, damage profiles,
+  Mishaps, and effectless Infernal spell slots before treating
+  `rules/retinue.md#magic` as playtest-ready. First-pass difficulties are set
+  for spells with defined effects. **Afflictions**, **difficult terrain**,
+  **stat modifier cap** (**±3**), and **project Fear** language are locked —
+  see `rules/core-rules.md`.
 - **Infernal summon refinements:** Set **Summoning Crystal** Crown cost,
-  **Summon Daemon** difficulty and Mishap, campaign advancement for the
-  **Summoning Pool**, and final Imp, Hellion, and Mauler profiles.
+  **Summon Daemon** Mishap, campaign advancement for the **Summoning Pool**, and
+  final Imp, Hellion, and Mauler profiles.
 
 ---
+
+## 2026-06-17 — First-pass spell difficulties
+
+**Decision:** Set first-pass casting difficulties in `rules/retinue.md` for
+spells that already have defined effects. Existing anchors remain unchanged:
+10+ for easy support or temporary summons, 11+ for baseline attacks and common
+utility, 12+ for stronger control or area effects, and 14+ for the rare
+Deathbolt-style spike. Add 13+ as an intermediate tier for spells above the
+12+ anchors but below Deathbolt: **Fireball**, **Hoarfrost**, and **Bleed**.
+Leave effectless Infernal placeholder slots as TBD.
+
+Add `AGENTS.md` guidance that files directly under `rules/` are the canonical
+rules source, and that long-form drafts, playtest exports, and compiled copies
+are downstream surfaces refreshed from those files.
+
+**Reasoning:** The spell lists need enough numbers to playtest without treating
+unfinished ranges, Mishaps, or damage profiles as final. Calibrating against the
+existing difficulty ladder keeps Wi meaningful while avoiding a flat 11+ magic
+list. Costly summons and spells with target checks can sit lower than their raw
+effect might suggest because their other limits do part of the balancing work.
+Keeping one rules source of truth prevents draft and export surfaces from
+becoming competing rules bodies.
 
 ## 2026-06-17 — Draft Infernal summoning crystals
 

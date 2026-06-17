@@ -31,6 +31,17 @@ Use the guide's glossary and formatting conventions exactly. In particular:
 Before finalizing rules text, run through the Quick Checklist at the end of
 `NOCTVALE_RULEBOOK_STYLE_GUIDE.md`.
 
+## Rules Source of Truth
+
+The canonical rules source is the Markdown files directly under `rules/`
+(`rules/retinue.md`, `rules/core-rules.md`, `rules/equipment.md`, and shared
+snippets in `rules/_shared-snippets.md`). When changing rules, update those
+files first.
+
+Treat `rules/long-form/`, `rules/playtest/`, exports, and compiled drafts as
+downstream surfaces. Refresh them from the direct `rules/` sources instead of
+making them competing authorities.
+
 ## Design Decisions
 
 Use `NOCTVALE_DESIGN_TENETS.md` to evaluate whether a proposed mechanic belongs
