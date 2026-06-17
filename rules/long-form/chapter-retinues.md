@@ -152,9 +152,9 @@ Fighters with **Vampire** pay **2 XP** more than the normal cost to buy each pos
 
 Choose feats before buying weapons. A fighter can equip only weapons that match their **Proficiency** feats.
 
-Archetype sets which **Proficiency** options appear on each fighter's list, plus armor cap, shield access, and firearm tier access. **Mortal** adds **Firearms** to the **Proficiency** menu; all other Domains grant spells instead. **Cult** cannot choose **Mortal** and cannot take **Firearms**.
+Archetype sets which **Proficiency** options appear on each fighter's list, plus armor and shield tier caps, and firearm tier access. **Mortal** adds **Firearms** to the **Proficiency** menu; all other Domains grant spells instead. **Cult** cannot choose **Mortal** and cannot take **Firearms**.
 
-Each fighter has **3 weapon slots**. One-handed weapons and shields take 1 slot. Two-handed weapons take 2 slots. **Relic** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
+Each fighter has **3 weapon slots**. One-handed weapons take 1 slot. Two-handed weapons take 2 slots. Shields do not use weapon slots. **Relic** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
 
 **Flintlock** may be applied to any firearm when bought: **−25 Crowns**, **Single Shot**. Purchase alchemy during roster setup; apply no more than one poison to each weapon. Alchemy is available to all retinues.
 
@@ -238,7 +238,7 @@ Proficiency and feat picks: [Feats](retinue.md) · Weapon lists: [Equipment](equ
 
 Armored champions and sworn companies — the heirs of Valecoria's martial orders. When the empire fell, the knightly houses did not vanish. Some guard ruined roads and broken shrines. Some serve vampire courts for coin or conviction. Some hunt monsters under old banners. All of them fight as a disciplined fist: few in number, heavy in steel, dangerous in a charge.
 
-**On the table:** elite and armored. Field **5–10** fighters — **1 Lord**, **0–4 Knight**, **0–5 Squire**. Up to **Heavy Armor**, full shield access, and **1** caster at most. Knights excel at holding ground and breaking enemy lines.
+**On the table:** elite and armored. Field **5–10** fighters — **1 Lord**, **0–4 Knight**, **0–5 Squire**. Up to **Heavy Armor**, **Tower Shield**, and **1** caster at most. Knights excel at holding ground and breaking enemy lines.
 
 ---
 
@@ -274,8 +274,8 @@ Mishap, they suffer **1 Wound** after resolving it.
 
 ###### Infernal
 
-**Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
-fighters wearing armor **project Fear**.
+**Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
+Friendly fighters wearing armor **project Fear**.
 
 **Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
@@ -342,8 +342,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
 **Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
-choose a **different** proficiency. **One-Handed** and **Two-Handed** grant shield
-access; **Archery**, **Thrown**, and **Firearms** do not.
+choose a **different** proficiency.
 
 **Hold the Line:** When this fighter uses **Brace**, choose another friendly
 fighter within **1"**. That fighter gains **+1 red defense die** until this
@@ -500,11 +499,11 @@ roster after the battle.
 
 ###### Infernal
 
-**Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
-fighters wearing armor **project Fear**.
+**Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
+Friendly fighters wearing armor **project Fear**.
 
-**Binders:** This retinue may recruit Daemons as **Hand**. Daemon profiles and
-recruitment costs are an open roster decision tracked in `decision-log.md` Ideas.
+**Binders:** This retinue may buy **Summoning Crystals**. Daemons cannot be
+recruited normally; they enter battle through **Summon Daemon**.
 
 ###### Nature
 
@@ -573,8 +572,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
 **Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
-choose a **different** proficiency. **One-Handed** and **Two-Handed** grant shield
-access; **Archery**, **Thrown**, and **Firearms** do not.
+choose a **different** proficiency.
 
 **Marked Quarry:** At the start of the battle, choose 1 enemy fighter. When this
 fighter attacks the chosen fighter, add **1 red die** or **1 blue die** to this
@@ -829,9 +827,8 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 **Proficiency:** Choose **One-Handed**, **Archery**, **Thrown**, or **Firearms**
 *(Mortal Domain only)*. You may equip any weapon in that proficiency your retinue
 is allowed to buy. You may take this feat more than once. Each time, choose a
-**different** proficiency. **One-Handed** grants shield access; **Archery**,
-**Thrown**, and **Firearms** do not. Folk **Militiaman** has built-in
-**Two-Handed** proficiency — not on this menu.
+**different** proficiency. Folk **Militiaman** has built-in **Two-Handed**
+proficiency — not on this menu.
 
 **Stubborn Lot:** When this fighter uses **Help**, a roll of **1** counts as **2**
 if another friendly fighter is within **1"** of this fighter or the assisted
@@ -841,7 +838,7 @@ fighter.
 other friendly fighter, add **+1 blue defense die** when rolling defense against
 a **Melee** attack.
 
-**Raise the Watch:** Once per battle, when a friendly fighter **within 6"**
+**Rally to Aid:** Once per battle, when a friendly fighter **within 6"**
 becomes **Downed**, this fighter may move up to **6"** toward that fighter. This
 move cannot enter engagement range.
 
@@ -999,9 +996,8 @@ until the end of the battle.
 If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
 and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 
-**Binders:** This retinue may recruit Daemons as **Acolytes**. Daemon profiles
-and recruitment costs are an open roster decision tracked in `decision-log.md`
-Ideas.
+**Binders:** This retinue may buy **Summoning Crystals**. Daemons cannot be
+recruited normally; they enter battle through **Summon Daemon**.
 
 ###### Nature
 
@@ -1070,8 +1066,7 @@ or **casting roll**, choose another friendly fighter within **12"**. That
 fighter suffers **1 Wound**. Add **+1** to the roll. This wound can reduce the
 chosen fighter to 0 Wounds and cause them to become **Downed**.
 
-**Magic Armor:** This fighter may equip **Light Armor**, **Medium Armor**, or
-**Heavy Armor**.
+**Magic Armor:** This fighter may equip armor and shields up to Heavy tier.
 
 **Chant:** When **2 or more** other friendly **Cult** fighters have their bases
 **within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of
@@ -1369,12 +1364,11 @@ until the end of the battle.
 If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
 and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 
-**Binders:** This retinue may recruit Daemons as Rank fighters. Daemon profiles
-and recruitment costs are an open roster decision tracked in `decision-log.md`
-Ideas.
+**Binders:** This retinue may buy **Summoning Crystals**. Daemons cannot be
+recruited normally; they enter battle through **Summon Daemon**.
 
-**Hellknights:** Armor bought by this retinue costs **+10 Crowns**. Friendly
-fighters wearing armor **project Fear**.
+**Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
+Friendly fighters wearing armor **project Fear**.
 
 **Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
@@ -1582,10 +1576,6 @@ that proficiency your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
-may equip a shield allowed by your Archetype. **Archery**, **Thrown**, and
-**Firearms** do not grant shield access.
-
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
 ##### Hold the Line
@@ -1623,10 +1613,6 @@ that proficiency your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Shield access:** If your proficiency is **One-Handed** or **Two-Handed**, you
-may equip a shield allowed by your Archetype. **Archery**, **Thrown**, and
-**Firearms** do not grant shield access.
-
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
 ##### Marked Quarry
@@ -1663,9 +1649,6 @@ your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Shield access:** **One-Handed** grants shield access if your Archetype allows
-shields. **Archery**, **Thrown**, and **Firearms** do not grant shield access.
-
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
 ##### Stubborn Lot
@@ -1678,7 +1661,7 @@ friendly fighter is within **1"** of this fighter or the assisted fighter.
 While this fighter is **within 1"** of at least one other friendly fighter, add
 **+1 blue defense die** when rolling defense against a **Melee** attack.
 
-##### Raise the Watch
+##### Rally to Aid
 
 Once per battle, when a friendly fighter **within 6"** becomes **Downed**, this
 fighter may move up to **6"** toward that fighter. This move cannot enter
@@ -1703,8 +1686,6 @@ weapon in that proficiency your retinue is allowed to buy.
 You may take this feat more than once. Each time, choose a **different**
 proficiency.
 
-**Archery** does not grant shield access. Cult fighters cannot equip shields.
-
 Weapon lists: [Equipment — Weapon proficiencies](equipment.md#weapon-proficiencies).
 
 ##### Blood for the Rite
@@ -1718,7 +1699,7 @@ This wound can reduce the chosen fighter to 0 Wounds and cause them to become
 
 ##### Magic Armor
 
-This fighter may equip **Light Armor**, **Medium Armor**, or **Heavy Armor**.
+This fighter may equip armor and shields up to Heavy tier.
 
 ##### Chant
 
@@ -2189,16 +2170,68 @@ The hells hold infinite daemonic entities of different shapes and sizes. To help
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
 
-For alpha, daemons are recruited like any other retinue member. Pre-game summoning tables are a post-alpha feature (see `todo.md`).
+Daemons cannot be recruited normally. They enter battle through **Summon Daemon**
+and **Summoning Crystals**.
+
+##### Summoning Crystals
+
+**Summoning Crystals** are equipment assigned to fighters during roster setup. A
+fighter may carry up to **2 Summoning Crystals**. Each crystal adds **1** to the
+retinue's **Summoning Pool** for the battle, to a maximum of **10**.
+
+A **4-crystal** summon requires **2** crystal-bearing fighters.
+
+| Daemon | Crystal cost | Battle cap |
+|---|---:|---:|
+| **Imp** | 1 | 2 |
+| **Hellion** | 2 | 2 |
+| **Mauler** | 4 | 1 |
+
+Each crystal spent on **Summon Daemon** is consumed. Remove spent crystals from
+the roster after the battle.
 
 | Spell | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|
 | *(TBD — attack)* | | | | | | |
+| Summon Daemon | *(TBD)* | — | — | 3" | Sacrifice one or two friendly fighters carrying enough **Summoning Crystals**, then roll on the **Summon Result** table | *(TBD)* |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
 | *(TBD)* | | | | | | |
-| *(TBD)* | | | | | | |
+
+##### Summon Daemon
+
+After **Summon Daemon** is successfully cast, choose one or two **Active**
+friendly fighters within **3"** of the caster. The chosen fighters must be
+carrying enough **Summoning Crystals** to pay the crystal cost. Sacrifice those
+fighters, spend the crystals, and roll **2d6** on the **Summon Result** table.
+
+A sacrificed fighter is **Slain** and removed from the battle. Remove them from
+your retinue after the battle. They do not roll on the **Casualty Table** and do
+not gain Experience from this battle.
+
+Place the created fighter where one sacrificed fighter stood. If two fighters
+were sacrificed, choose either sacrificed fighter's position. If the created
+fighter's base cannot fit, place it as close as possible to that position.
+
+The summon result is separate from the **casting roll**. Double 1s and double 6s
+on the summon result use the table below.
+
+| Crystals spent | Intended Daemon | Double 1s | 2–11 | Double 6s |
+|---:|---|---|---|---|
+| 1 | **Imp** | Replace one sacrificed fighter with a **Zombie**. No Daemon is summoned. | Summon an **Imp**. | Summon a **Hellion**. |
+| 2 | **Hellion** | Summon an **Imp**. | Summon a **Hellion**. | Summon a **Mauler**. |
+| 4 | **Mauler** | Summon a **Hellion**. | Summon a **Mauler**. | Summon a **Mauler** with **+1 W** and either **+1 Mt** or **+1 Sk**. |
+
+A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler**
+in the same battle. If a summon result would exceed one of those caps, use the
+next lower result that does not exceed a cap. If no lower result is available,
+no fighter is summoned.
+
+A fighter created by **Summon Daemon** is friendly to the caster's retinue. It
+cannot activate this round if the sacrificed fighter whose position it replaced
+had already activated this round. Remove fighters created by **Summon Daemon**
+after the battle.
 
 #### Nature
 

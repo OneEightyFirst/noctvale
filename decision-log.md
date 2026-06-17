@@ -47,8 +47,46 @@ the final rule in the dated decision-log entry for that commit.
   treating `rules/retinue.md#magic` as playtest-ready. **Afflictions**, **difficult terrain**,
   **stat modifier cap** (**±3**), and **project Fear** language are locked — see
   `rules/core-rules.md`.
+- **Infernal summon refinements:** Set **Summoning Crystal** Crown cost,
+  **Summon Daemon** difficulty and Mishap, campaign advancement for the
+  **Summoning Pool**, and final Imp, Hellion, and Mauler profiles.
 
 ---
+
+## 2026-06-17 — Draft Infernal summoning crystals
+
+**Decision:** Replace normal Daemon recruitment with a draft **Summoning
+Crystal** system for **Binders**. **Summoning Crystals** are equipment assigned
+to fighters; each fighter may carry up to **2**, and each crystal contributes to
+the retinue's **Summoning Pool**. **Summon Daemon** now sacrifices one or two
+crystal-bearing fighters, spends **1**, **2**, or **4** crystals, and rolls
+**2d6** on a **Summon Result** table for **Imp**, **Hellion**, or **Mauler**
+outcomes. The battle cap is **2 Imps**, **2 Hellions**, and **1 Mauler**.
+Sacrificed fighters are **Slain**, and fighters created by the spell are removed
+after the battle. Add **Summoning Crystal** to equipment with a placeholder cost.
+
+**Reasoning:** Daemons should feel like Infernal bargains rather than ordinary
+recruits. Crystals make the power visible on the roster, the sacrifice makes the
+cost dramatic and campaign-relevant, and the capped table lets players know what
+Daemon fighters to bring while still preserving controlled randomness. Keeping
+costs, profiles, difficulty, and Mishap as TBD leaves the draft easy to tune
+after the table is visible in play.
+
+## 2026-06-17 — Sync app playtest fixes
+
+**Decision:** Sync the app playtest fix batch into the rules source. Rename the
+Folk feat **Raise the Watch** to **Rally to Aid** without changing its rule
+text. Treat **Buckler**, **Shield**, and **Tower Shield** as armor-tier gear:
+Light, Medium, and Heavy respectively. Shields no longer require **One-Handed**
+proficiency and do not use weapon slots. **Magic Armor** now grants Cult fighters
+armor and shields up to Heavy tier, and **Hellknights** pay their **+10 Crowns**
+surcharge on shields as well as armor.
+
+**Reasoning:** The builder and rulebook should enforce the same roster
+permissions. Moving shields out of weapon proficiency keeps **Proficiency**
+focused on weapon training while letting armor-tier identity handle defensive
+gear: Folk reach Buckler, Hunters reach Shield, Knights reach Tower Shield, and
+Cult must take **Magic Armor** to use any armor-tier protection.
 
 ## 2026-06-15 — Long-form rulebook drafts
 

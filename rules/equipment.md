@@ -115,23 +115,24 @@ Bombs are **Single Shot** (one use per battle).
 
 ---
 
-### Crown costs — armor
+### Crown costs — armor and shields
 
-| Armor        | Cost | Archetype cap          |
-| ------------ | ---- | ---------------------- |
-| Light Armor  | 50   | Folk, Hunters, Knights; **Cult** with **Magic Armor** |
-| Medium Armor | 115  | Hunters, Knights; **Cult** with **Magic Armor**       |
-| Heavy Armor  | 185  | Knights only; **Cult** with **Magic Armor**           |
+| Gear         | Tier   | Cost | Archetype cap                                      |
+| ------------ | ------ | ---- | -------------------------------------------------- |
+| Light Armor  | Light  | 50   | Folk, Hunters, Knights; **Cult** with **Magic Armor** |
+| Buckler      | Light  | 10   | Folk, Hunters, Knights; **Cult** with **Magic Armor** |
+| Medium Armor | Medium | 115  | Hunters, Knights; **Cult** with **Magic Armor**       |
+| Shield       | Medium | 25   | Hunters, Knights; **Cult** with **Magic Armor**       |
+| Heavy Armor  | Heavy  | 185  | Knights only; **Cult** with **Magic Armor**           |
+| Tower Shield | Heavy  | 50   | Knights only; **Cult** with **Magic Armor**           |
 
 ---
 
-### Crown costs — shields
+### Crown costs — Infernal summoning
 
-| Shield       | Cost |
-| ------------ | ---- |
-| Buckler      | 10   |
-| Shield       | 25   |
-| Tower Shield | 50   |
+| Item | Cost | Access | Notes |
+| ---- | ---- | ------ | ----- |
+| Summoning Crystal | *(TBD)* | **Binders** | Assigned to a fighter; max **2** per fighter; used by **Summon Daemon** |
 
 ---
 
@@ -275,7 +276,8 @@ Your **Archetype** sets which proficiencies appear on that fighter's
 | **Thrown** | Sling, Throwing Stars |
 | **Firearms** | Musket, Blunderbuss, Pistol, Long Rifle, bombs |
 
-A fighter with **One-Handed** may equip shields allowed by their **Archetype**.
+Shields are armor-tier gear. They do not require **One-Handed** proficiency and
+do not use weapon slots.
 
 #### Melee — weapon types
 
@@ -381,7 +383,8 @@ Heavy Armor's critical success is the only armor effect that can block incoming 
 
 ### Shields
 
-Shields **convert failed defense dice into successes** after rolling the defense pool, similar to armor. Shields take **1 weapon slot**.
+Shields **convert failed defense dice into successes** after rolling the defense
+pool, similar to armor. Shields do not use weapon slots.
 
 | Shield | Conversion | Notes |
 |---|---|---|
