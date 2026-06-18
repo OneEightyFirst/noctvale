@@ -58,6 +58,22 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-18 — Prominent playtest feedback button
+
+**Decision:** Move playtest feedback out of the account menu into a fixed circular
+FAB in the bottom-right corner (speech-bubble-with-alert icon, no label). Mount
+the button and modal through `document.body` so wiki header `backdrop-blur` does
+not trap `position: fixed`. Show the FAB in the retinue builder shell and rules
+wiki auth chrome for signed-in users. Trim feedback form chrome: remove GitHub
+repo callouts and reporter/page-URL footnotes; use the same `max-w-2xl` width for
+rules and app forms.
+
+**Reasoning:** Playtest feedback needs to be obvious during rules reading and
+builder use. The account menu buried the entry point and the wiki header broke
+fixed positioning for in-header mounts. Quieter form copy keeps focus on the
+playtester's actual report while submission still attaches email, page URL, and
+browser context in the background.
+
 ## 2026-06-18 — Fighter keyword system and static rules wiki
 
 **Decision:** Rework roster identity so **Archetype**, **Domain**, **Tradition**, and

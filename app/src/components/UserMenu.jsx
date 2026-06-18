@@ -1,8 +1,6 @@
-import React, { Suspense, lazy, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import UserAvatar from "./UserAvatar.jsx";
-
-const FeedbackForm = lazy(() => import("./FeedbackForm.jsx"));
 
 function cx(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -11,7 +9,6 @@ function cx(...classes) {
 export default function UserMenu({ user, className }) {
   const { signOut } = useAuth();
   const [open, setOpen] = useState(false);
-  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const rootRef = useRef(null);
 
   useEffect(() => {
@@ -41,11 +38,6 @@ export default function UserMenu({ user, className }) {
   async function handleSignOut() {
     setOpen(false);
     await signOut();
-  }
-
-  function handleOpenFeedback() {
-    setOpen(false);
-    setFeedbackOpen(true);
   }
 
   return (
@@ -85,14 +77,6 @@ export default function UserMenu({ user, className }) {
             <button
               type="button"
               role="menuitem"
-              onClick={handleOpenFeedback}
-              className="w-full rounded-md px-3 py-2 text-left text-sm text-cream-200 transition hover:bg-night-800 hover:text-cream-50"
-            >
-              Send feedback
-            </button>
-            <button
-              type="button"
-              role="menuitem"
               onClick={handleSignOut}
               className="w-full rounded-md px-3 py-2 text-left text-sm text-cream-200 transition hover:bg-night-800 hover:text-cream-50"
             >
@@ -101,12 +85,6 @@ export default function UserMenu({ user, className }) {
           </div>
         </div>
       </div>
-
-      {feedbackOpen ? (
-        <Suspense fallback={null}>
-          <FeedbackForm open={feedbackOpen} onClose={() => setFeedbackOpen(false)} />
-        </Suspense>
-      ) : null}
     </div>
   );
 }

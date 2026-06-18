@@ -1,4 +1,4 @@
-import React, { useEffect, useId, useState } from "react";
+import React, { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext.jsx";
@@ -99,8 +99,15 @@ export default function FeedbackForm({ open, onClose }) {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [successUrl, setSuccessUrl] = useState("");
+  const openedAtRef = useRef(0);
 
   const isRules = feedbackType === "rules";
+
+  useEffect(() => {
+    if (open) {
+      openedAtRef.current = Date.now();
+    }
+  }, [open]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -196,21 +203,28 @@ export default function FeedbackForm({ open, onClose }) {
     }
   }
 
+  function handleBackdropClick(event) {
+    if (event.target !== event.currentTarget) return;
+    if (Date.now() - openedAtRef.current < 250) return;
+    handleClose();
+  }
+
   if (!open) return null;
 
   return createPortal(
     <div
-      className="fixed inset-0 z-[60] overflow-y-auto bg-black/75 p-3 sm:p-6"
+      className="fixed inset-0 z-[110] overflow-y-auto bg-black/75 p-3 sm:p-6"
       role="dialog"
       aria-modal="true"
       aria-labelledby={`${formId}-title`}
-      onClick={handleClose}
+      onClick={handleBackdropClick}
     >
       <div className="flex min-h-full items-center justify-center">
         <div
           className={cx(
             "flex max-h-[min(88vh,calc(100vh-1.5rem))] w-full flex-col overflow-hidden rounded-lg border bg-night-950 shadow-2xl shadow-black",
-            isRules ? "max-w-xl border-accent-400/30" : "max-w-2xl border-night-700",
+            "max-w-2xl",
+            isRules ? "border-accent-400/30" : "border-night-700",
           )}
           onClick={(event) => event.stopPropagation()}
         >
@@ -228,11 +242,6 @@ export default function FeedbackForm({ open, onClose }) {
                 <h2 id={`${formId}-title`} className="text-lg font-semibold text-cream-100">
                   {isRules ? "Rules feedback" : "Report a bug"}
                 </h2>
-                <p className="mt-1 text-sm text-cream-400">
-                  Opens a GitHub issue in{" "}
-                  <span className="font-mono text-accent-300">OneEightyFirst/noctvale</span>
-                  {isRules ? " for the playtest team." : "."}
-                </p>
               </div>
               <button
                 type="button"
@@ -368,10 +377,6 @@ export default function FeedbackForm({ open, onClose }) {
                         className={cx(inputClassName, "resize-y")}
                       />
                     </div>
-
-                    <div className="rounded-lg border border-accent-400/20 bg-accent-400/5 px-3 py-2 text-xs text-cream-100">
-                      We’ll attach your email and this page automatically.
-                    </div>
                   </>
                 ) : (
                   <>
@@ -472,10 +477,6 @@ export default function FeedbackForm({ open, onClose }) {
                           </option>
                         ))}
                       </select>
-                    </div>
-
-                    <div className="rounded-lg border border-night-800 bg-night-900/40 px-3 py-2 text-xs text-cream-500">
-                      Reporter: {user?.email ?? "Unknown"} · Page URL and browser info are included automatically.
                     </div>
                   </>
                 )}

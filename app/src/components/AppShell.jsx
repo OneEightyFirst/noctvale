@@ -2,6 +2,7 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { SideNavProvider, useSideNav } from "../contexts/SideNavContext.jsx";
+import FeedbackButton from "./FeedbackButton.jsx";
 import NoctvaleLogo, { NoctvaleMark } from "./NoctvaleLogo.jsx";
 import UserMenu from "./UserMenu.jsx";
 
@@ -93,6 +94,8 @@ function AppLogoColumn({ showSidebar }) {
 }
 
 function AppShellLayout({ children, navItems, showSidebar }) {
+  const { user } = useAuth();
+
   return (
     <div className="flex min-h-screen flex-col bg-night-950 text-cream-100">
       <div className="flex min-h-0 flex-1">
@@ -102,6 +105,7 @@ function AppShellLayout({ children, navItems, showSidebar }) {
           <div className="flex min-h-0 flex-1 flex-col">{children}</div>
         </div>
       </div>
+      {user ? <FeedbackButton /> : null}
     </div>
   );
 }

@@ -29,7 +29,7 @@ function ViewFallback({ label }) {
 function VersionFooter() {
   return (
     <div
-      className="pointer-events-none fixed bottom-3 right-4 select-none text-xs text-cream-600"
+      className="pointer-events-none fixed bottom-3 right-24 select-none text-xs text-cream-600"
       aria-label={`Version ${__APP_VERSION__}, build ${__GIT_SHA__}`}
     >
       v{__APP_VERSION__} · {__GIT_SHA__}
