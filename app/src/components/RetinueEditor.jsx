@@ -1,5 +1,6 @@
 import React, { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowLeft, Pencil, Plus, X } from "lucide-react";
+import { useRegisterSidebar } from "../contexts/SideNavContext.jsx";
 import { useRetinue } from "../hooks/useRetinue.js";
 import { emptyRetinue } from "../lib/retinue.js";
 import {
@@ -601,7 +602,7 @@ function FieldSummary({ title, meta, empty = "Not selected" }) {
   );
 }
 
-function RetinueNameField({ value, onChange, placeholder = "Untitled retinue" }) {
+function RetinueNameField({ value, onChange, placeholder = "Untitled retinue", compact = false }) {
   return (
     <input
       type="text"
@@ -609,7 +610,11 @@ function RetinueNameField({ value, onChange, placeholder = "Untitled retinue" })
       onChange={onChange}
       placeholder={placeholder}
       aria-label="Retinue name"
-      className="min-w-[8rem] max-w-md bg-transparent text-xl font-semibold tracking-wide text-cream-100 outline-none placeholder:text-cream-500"
+      className={
+        compact
+          ? "w-full rounded border border-night-700 bg-night-950 px-3 py-2 text-base font-semibold text-cream-100 outline-none placeholder:text-cream-500 focus:border-accent-400"
+          : "min-w-[8rem] max-w-md bg-transparent text-xl font-semibold tracking-wide text-cream-100 outline-none placeholder:text-cream-500"
+      }
     />
   );
 }
@@ -781,14 +786,6 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     return { ...fighter, [key]: [...current, value] };
   }, []);
 
-  if (loading || !retinue) {
-    return (
-      <div className="flex flex-1 items-center justify-center px-4 py-16 text-cream-400">
-        Loading retinue…
-      </div>
-    );
-  }
-
   function selectArchetype(nextArchetypeId) {
     if (nextArchetypeId === archetypeId) return;
     patchRetinue({
@@ -844,50 +841,50 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     ? tradition.choice.options.find((option) => option.id === retinueChoices[tradition.choice.id])
     : null;
 
-  return (
-    <>
-      <div className="border-b border-night-800 bg-night-950/95">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-4">
-          <RetinueNameField
-            value={retinueName}
-            onChange={(event) => patchRetinue({ name: event.target.value })}
-          />
-          <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
-            <button
-              type="button"
-              aria-label="Back to retinue library"
-              onClick={onBackToLibrary}
-              className="grid h-9 w-9 shrink-0 place-items-center rounded border border-night-700 bg-night-900 text-cream-300 transition hover:border-cream-500 hover:text-cream-100"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            </button>
-            <button
-              type="button"
-              aria-label={editing ? "Done editing" : "Edit retinue"}
-              aria-pressed={editing}
-              onClick={onToggleEditing}
-              className={cx(
-                "grid h-9 w-9 shrink-0 place-items-center rounded border bg-night-900 transition",
-                editing
-                  ? "border-accent-400 text-accent-200 hover:border-accent-300"
-                  : "border-night-700 text-cream-300 hover:border-accent-400 hover:text-accent-200",
-              )}
-            >
-              {editing ? (
-                <X className="h-4 w-4" aria-hidden="true" />
-              ) : (
-                <Pencil className="h-4 w-4" aria-hidden="true" />
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
+  const sidebar = useMemo(() => {
+    if (loading || !retinue) return null;
 
-      <div className="mx-auto w-full min-w-0 max-w-7xl space-y-4 overflow-x-hidden px-4 py-4">
+    return (
+      <div className="space-y-3">
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            aria-label="Back to retinue library"
+            onClick={onBackToLibrary}
+            className="grid h-9 w-9 shrink-0 place-items-center rounded border border-night-700 bg-night-900 text-cream-300 transition hover:border-cream-500 hover:text-cream-100"
+          >
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            aria-label={editing ? "Done editing" : "Edit retinue"}
+            aria-pressed={editing}
+            onClick={onToggleEditing}
+            className={cx(
+              "grid h-9 w-9 shrink-0 place-items-center rounded border bg-night-900 transition",
+              editing
+                ? "border-accent-400 text-accent-200 hover:border-accent-300"
+                : "border-night-700 text-cream-300 hover:border-accent-400 hover:text-accent-200",
+            )}
+          >
+            {editing ? (
+              <X className="h-4 w-4" aria-hidden="true" />
+            ) : (
+              <Pencil className="h-4 w-4" aria-hidden="true" />
+            )}
+          </button>
+        </div>
+
+        <RetinueNameField
+          compact
+          value={retinueName}
+          onChange={(event) => patchRetinue({ name: event.target.value })}
+        />
+
         {readyForRoster ? (
           <div
             className={cx(
-              "text-right text-sm font-semibold",
+              "text-sm font-semibold",
               totalCost > budget ? "text-rose-300" : "text-cream-300",
             )}
           >
@@ -895,151 +892,141 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
           </div>
         ) : null}
 
-        <section className="min-w-0 overflow-hidden rounded-lg border border-night-800 bg-night-900/70 p-4">
+        <div className="rounded-lg border border-night-800 bg-night-900/70 p-3">
           {editing ? (
-            <>
-              <div className="grid grid-cols-12 gap-3">
-                <div className="col-span-6">
-                  <PickerField
-                    wrapper="field"
-                    title="Archetype"
-                    actionLabel="Select archetype"
-                    hasSelection={Boolean(archetype)}
-                    summary={
-                      <FieldSummary
-                        title={archetype?.name}
-                        meta={archetype?.identity}
-                        empty="Choose an archetype"
+            <div className="space-y-3">
+              <PickerField
+                wrapper="field"
+                title="Archetype"
+                actionLabel="Select archetype"
+                hasSelection={Boolean(archetype)}
+                summary={
+                  <FieldSummary
+                    title={archetype?.name}
+                    meta={archetype?.identity}
+                    empty="Choose an archetype"
+                  />
+                }
+                modalAriaLabel="Select archetype"
+                modalEyebrow="Archetype selection"
+                modalTitle={retinueName || "Retinue"}
+                modalHeaderSummary={archetype ? <Pill tone="amber">{archetype.name}</Pill> : null}
+              >
+                {(close) => (
+                  <div className="space-y-2">
+                    {Object.values(ARCHETYPES).map((option) => (
+                      <OptionCard
+                        key={option.id}
+                        title={option.name}
+                        meta={option.identity}
+                        rules={[option.tableRole, `Target size: ${option.count.target}. Maximum: ${option.count.max}.`]}
+                        selected={archetypeId === option.id}
+                        onClick={() => {
+                          selectArchetype(option.id);
+                          close();
+                        }}
                       />
-                    }
-                    modalAriaLabel="Select archetype"
-                    modalEyebrow="Archetype selection"
-                    modalTitle={retinueName || "Retinue"}
-                    modalHeaderSummary={archetype ? <Pill tone="amber">{archetype.name}</Pill> : null}
-                  >
-                    {(close) => (
-                      <div className="space-y-2">
-                        {Object.values(ARCHETYPES).map((option) => (
-                          <OptionCard
-                            key={option.id}
-                            title={option.name}
-                            meta={option.identity}
-                            rules={[option.tableRole, `Target size: ${option.count.target}. Maximum: ${option.count.max}.`]}
-                            selected={archetypeId === option.id}
-                            onClick={() => {
-                              selectArchetype(option.id);
-                              close();
-                            }}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </PickerField>
-                </div>
+                    ))}
+                  </div>
+                )}
+              </PickerField>
 
-                <div className="col-span-6">
-                  <PickerField
-                    wrapper="field"
-                    title="Tradition"
-                    actionLabel="Select tradition"
-                    hasSelection={Boolean(tradition)}
-                    summary={
-                      <FieldSummary
-                        title={tradition?.name}
-                        meta={tradition ? `${tradition.domain} Domain` : undefined}
-                        empty={archetype ? "Choose a tradition" : "Select archetype first"}
-                      />
-                    }
-                    modalAriaLabel="Select tradition"
-                    modalEyebrow="Tradition selection"
-                    modalTitle={retinueName || "Retinue"}
-                    modalHeaderSummary={
-                      tradition ? (
-                        <>
-                          <Pill tone="amber">{tradition.name}</Pill>
-                          <Pill tone={tradition.domain === "Mortal" ? "emerald" : "zinc"}>{tradition.domain}</Pill>
-                        </>
-                      ) : null
-                    }
-                  >
-                    {(close) => (
+              <PickerField
+                wrapper="field"
+                title="Tradition"
+                actionLabel="Select tradition"
+                hasSelection={Boolean(tradition)}
+                summary={
+                  <FieldSummary
+                    title={tradition?.name}
+                    meta={tradition ? `${tradition.domain} Domain` : undefined}
+                    empty={archetype ? "Choose a tradition" : "Select archetype first"}
+                  />
+                }
+                modalAriaLabel="Select tradition"
+                modalEyebrow="Tradition selection"
+                modalTitle={retinueName || "Retinue"}
+                modalHeaderSummary={
+                  tradition ? (
+                    <>
+                      <Pill tone="amber">{tradition.name}</Pill>
+                      <Pill tone={tradition.domain === "Mortal" ? "emerald" : "zinc"}>{tradition.domain}</Pill>
+                    </>
+                  ) : null
+                }
+              >
+                {(close) => (
+                  <>
+                    {!archetype ? (
+                      <div className="text-sm text-cream-400">Choose an archetype first.</div>
+                    ) : (
                       <>
-                        {!archetype ? (
-                          <div className="text-sm text-cream-400">Choose an archetype first.</div>
-                        ) : (
-                          <>
-                            <div className="mb-3 rounded border border-night-800 bg-night-900/70 p-2 text-xs text-cream-400">
-                              Tradition sets Domain and grants one retinue-wide special rule.
-                            </div>
-                            <div className="space-y-2">
-                              {availableTraditions.map((option) => (
-                                <OptionCard
-                                  key={option.id}
-                                  title={option.name}
-                                  meta={`${option.domain} Domain`}
-                                  rules={option.rules}
-                                  selected={traditionId === option.id}
-                                  onClick={() => {
-                                    selectTradition(option.id);
-                                    close();
-                                  }}
-                                />
-                              ))}
-                            </div>
-                          </>
-                        )}
-                      </>
-                    )}
-                  </PickerField>
-                </div>
-              </div>
-
-              {tradition?.choice ? (
-                <div className="mt-3 grid grid-cols-12 gap-3">
-                  <div className="col-span-4">
-                    <PickerField
-                      wrapper="field"
-                      title={tradition.choice.label}
-                      actionLabel={`Select ${tradition.choice.label.toLowerCase()}`}
-                      hasSelection={Boolean(selectedSpecialChoice)}
-                      summary={
-                        <FieldSummary
-                          title={selectedSpecialChoice?.name}
-                          empty="Choose an option"
-                        />
-                      }
-                      modalAriaLabel={tradition.choice.label}
-                      modalEyebrow={tradition.choice.label}
-                      modalTitle={retinueName || "Retinue"}
-                      modalHeaderSummary={selectedSpecialChoice ? <Pill tone="amber">{selectedSpecialChoice.name}</Pill> : null}
-                    >
-                      {(close) => (
+                        <div className="mb-3 rounded border border-night-800 bg-night-900/70 p-2 text-xs text-cream-400">
+                          Tradition sets Domain and grants one retinue-wide special rule.
+                        </div>
                         <div className="space-y-2">
-                          {tradition.choice.options.map((option) => (
+                          {availableTraditions.map((option) => (
                             <OptionCard
                               key={option.id}
                               title={option.name}
+                              meta={`${option.domain} Domain`}
                               rules={option.rules}
-                              selected={retinueChoices[tradition.choice.id] === option.id}
+                              selected={traditionId === option.id}
                               onClick={() => {
-                                selectSpecialChoice(tradition.choice.id, option.id);
+                                selectTradition(option.id);
                                 close();
                               }}
                             />
                           ))}
                         </div>
-                      )}
-                    </PickerField>
-                  </div>
-                </div>
+                      </>
+                    )}
+                  </>
+                )}
+              </PickerField>
+
+              {tradition?.choice ? (
+                <PickerField
+                  wrapper="field"
+                  title={tradition.choice.label}
+                  actionLabel={`Select ${tradition.choice.label.toLowerCase()}`}
+                  hasSelection={Boolean(selectedSpecialChoice)}
+                  summary={
+                    <FieldSummary title={selectedSpecialChoice?.name} empty="Choose an option" />
+                  }
+                  modalAriaLabel={tradition.choice.label}
+                  modalEyebrow={tradition.choice.label}
+                  modalTitle={retinueName || "Retinue"}
+                  modalHeaderSummary={
+                    selectedSpecialChoice ? <Pill tone="amber">{selectedSpecialChoice.name}</Pill> : null
+                  }
+                >
+                  {(close) => (
+                    <div className="space-y-2">
+                      {tradition.choice.options.map((option) => (
+                        <OptionCard
+                          key={option.id}
+                          title={option.name}
+                          rules={option.rules}
+                          selected={retinueChoices[tradition.choice.id] === option.id}
+                          onClick={() => {
+                            selectSpecialChoice(tradition.choice.id, option.id);
+                            close();
+                          }}
+                        />
+                      ))}
+                    </div>
+                  )}
+                </PickerField>
               ) : null}
-            </>
+            </div>
           ) : (
             <RetinueIdentitySummary
               archetype={archetype}
               tradition={tradition}
               traditionChoiceLabel={tradition?.choice?.label}
               selectedSpecialChoice={selectedSpecialChoice}
+              stacked
             />
           )}
 
@@ -1052,103 +1039,142 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
               <Warnings warnings={retinueWarnings} />
             </div>
           ) : null}
-        </section>
-
-        {readyForRoster ? (
-          <div className="grid min-w-0 grid-cols-12 gap-4">
-            {leaderFighter ? (
-              <FighterCard
-                key={leaderFighter.id}
-                editing={editing}
-                fighter={leaderFighter}
-                archetype={archetype}
-                tradition={tradition}
-                domain={domain}
-                retinueChoices={retinueChoices}
-                casterCount={casterCount}
-                updateFighter={updateFighter}
-                removeFighter={removeFighter}
-                toggleArrayValue={toggleArrayValue}
-                setEquipmentQuantity={setEquipmentQuantity}
-                canRemove={false}
-              />
-            ) : null}
-
-            {otherFighters.map((fighter) => (
-              <FighterCard
-                key={fighter.id}
-                editing={editing}
-                fighter={fighter}
-                archetype={archetype}
-                tradition={tradition}
-                domain={domain}
-                retinueChoices={retinueChoices}
-                casterCount={casterCount}
-                updateFighter={updateFighter}
-                removeFighter={removeFighter}
-                toggleArrayValue={toggleArrayValue}
-                setEquipmentQuantity={setEquipmentQuantity}
-              />
-            ))}
-
-            {editing ? (
-              <div className="col-span-12 flex min-h-48 xl:col-span-6">
-                <AddFighterButton onClick={() => setAddFighterOpen(true)} disabled={rosterFull} />
-              </div>
-            ) : null}
-
-            {editing && addFighterOpen ? (
-              <PickerModal
-                ariaLabel="Recruit fighters"
-                eyebrow="Recruit fighters"
-                title={retinueName || "Retinue"}
-                onClose={() => setAddFighterOpen(false)}
-                headerSummary={
-                  <>
-                    <Pill>{fighters.length}/{archetype.count.max} fighters</Pill>
-                    {domain !== "Mortal" ? <Pill tone="cyan">{casterCount}/{archetype.casterMax} casters</Pill> : null}
-                  </>
-                }
-              >
-                <div className={cx("mb-3 grid gap-2 text-xs", domain === "Mortal" ? "grid-cols-1" : "grid-cols-2")}>
-                  <div className="rounded border border-night-800 bg-night-900 p-2">
-                    <div className="text-cream-500">Fighters</div>
-                    <div className="text-sm font-semibold">{fighters.length} / {archetype.count.max}</div>
-                  </div>
-                  {domain !== "Mortal" ? (
-                    <div className="rounded border border-night-800 bg-night-900 p-2">
-                      <div className="text-cream-500">Casters</div>
-                      <div className="text-sm font-semibold">{casterCount} / {archetype.casterMax}</div>
-                    </div>
-                  ) : null}
-                </div>
-                <div className="space-y-2">
-                  {addableTypes.map(({ type, disabled, reason, currentCount }) => (
-                    <OptionCard
-                      key={type.id}
-                      title={`+ ${type.name}`}
-                      meta={`${type.role} - ${type.cost} Crowns - ${currentCount}/${type.cap}`}
-                      rules={getDisplayTypeRules(type, domain)}
-                      disabled={disabled}
-                      onClick={() => addFighter(type.id)}
-                    >
-                      {reason ? <div className="text-xs text-accent-200">{reason}</div> : null}
-                    </OptionCard>
-                  ))}
-                </div>
-              </PickerModal>
-            ) : null}
-          </div>
-        ) : null}
+        </div>
       </div>
-    </>
+    );
+  }, [
+    archetype,
+    archetypeId,
+    availableTraditions,
+    budget,
+    editing,
+    loading,
+    onBackToLibrary,
+    onToggleEditing,
+    patchRetinue,
+    readyForRoster,
+    retinue,
+    retinueChoices,
+    retinueName,
+    retinueWarnings,
+    selectedSpecialChoice,
+    totalCost,
+    tradition,
+    traditionId,
+  ]);
+
+  useRegisterSidebar(sidebar);
+
+  if (loading || !retinue) {
+    return (
+      <div className="flex flex-1 items-center justify-center px-4 py-16 text-cream-400">
+        Loading retinue…
+      </div>
+    );
+  }
+
+  return (
+    <div className="mx-auto w-full min-w-0 max-w-5xl flex-1 space-y-4 overflow-x-hidden px-4 py-4">
+      {!readyForRoster ? (
+        <section className="rounded-lg border border-dashed border-night-700 bg-night-900/40 p-6 text-center text-sm text-cream-400">
+          Choose an archetype and tradition in the sidebar to start building your roster.
+        </section>
+      ) : null}
+
+      {readyForRoster ? (
+        <div className="grid min-w-0 grid-cols-12 gap-4">
+          {leaderFighter ? (
+            <FighterCard
+              key={leaderFighter.id}
+              editing={editing}
+              fighter={leaderFighter}
+              archetype={archetype}
+              tradition={tradition}
+              domain={domain}
+              retinueChoices={retinueChoices}
+              casterCount={casterCount}
+              updateFighter={updateFighter}
+              removeFighter={removeFighter}
+              toggleArrayValue={toggleArrayValue}
+              setEquipmentQuantity={setEquipmentQuantity}
+              canRemove={false}
+            />
+          ) : null}
+
+          {otherFighters.map((fighter) => (
+            <FighterCard
+              key={fighter.id}
+              editing={editing}
+              fighter={fighter}
+              archetype={archetype}
+              tradition={tradition}
+              domain={domain}
+              retinueChoices={retinueChoices}
+              casterCount={casterCount}
+              updateFighter={updateFighter}
+              removeFighter={removeFighter}
+              toggleArrayValue={toggleArrayValue}
+              setEquipmentQuantity={setEquipmentQuantity}
+            />
+          ))}
+
+          {editing ? (
+            <div className="col-span-12 flex min-h-48 xl:col-span-6">
+              <AddFighterButton onClick={() => setAddFighterOpen(true)} disabled={rosterFull} />
+            </div>
+          ) : null}
+
+          {editing && addFighterOpen ? (
+            <PickerModal
+              ariaLabel="Recruit fighters"
+              eyebrow="Recruit fighters"
+              title={retinueName || "Retinue"}
+              onClose={() => setAddFighterOpen(false)}
+              headerSummary={
+                <>
+                  <Pill>{fighters.length}/{archetype.count.max} fighters</Pill>
+                  {domain !== "Mortal" ? <Pill tone="cyan">{casterCount}/{archetype.casterMax} casters</Pill> : null}
+                </>
+              }
+            >
+              <div className={cx("mb-3 grid gap-2 text-xs", domain === "Mortal" ? "grid-cols-1" : "grid-cols-2")}>
+                <div className="rounded border border-night-800 bg-night-900 p-2">
+                  <div className="text-cream-500">Fighters</div>
+                  <div className="text-sm font-semibold">{fighters.length} / {archetype.count.max}</div>
+                </div>
+                {domain !== "Mortal" ? (
+                  <div className="rounded border border-night-800 bg-night-900 p-2">
+                    <div className="text-cream-500">Casters</div>
+                    <div className="text-sm font-semibold">{casterCount} / {archetype.casterMax}</div>
+                  </div>
+                ) : null}
+              </div>
+              <div className="space-y-2">
+                {addableTypes.map(({ type, disabled, reason, currentCount }) => (
+                  <OptionCard
+                    key={type.id}
+                    title={`+ ${type.name}`}
+                    meta={`${type.role} - ${type.cost} Crowns - ${currentCount}/${type.cap}`}
+                    rules={getDisplayTypeRules(type, domain)}
+                    disabled={disabled}
+                    onClick={() => addFighter(type.id)}
+                  >
+                    {reason ? <div className="text-xs text-accent-200">{reason}</div> : null}
+                  </OptionCard>
+                ))}
+              </div>
+            </PickerModal>
+          ) : null}
+        </div>
+      ) : null}
+    </div>
   );
 }
 
-function RetinueIdentitySummary({ archetype, tradition, traditionChoiceLabel, selectedSpecialChoice }) {
+function RetinueIdentitySummary({ archetype, tradition, traditionChoiceLabel, selectedSpecialChoice, stacked = false }) {
   return (
-    <div className="grid grid-cols-12 gap-3">
-      <div className="col-span-6">
+    <div className={stacked ? "space-y-3" : "grid grid-cols-12 gap-3"}>
+      <div className={stacked ? undefined : "col-span-6"}>
         <SummaryRow label="Archetype">
           {archetype ? (
             <>
@@ -1160,7 +1186,7 @@ function RetinueIdentitySummary({ archetype, tradition, traditionChoiceLabel, se
           )}
         </SummaryRow>
       </div>
-      <div className="col-span-6">
+      <div className={stacked ? undefined : "col-span-6"}>
         <SummaryRow label="Tradition">
           {tradition ? (
             <>
@@ -1173,7 +1199,7 @@ function RetinueIdentitySummary({ archetype, tradition, traditionChoiceLabel, se
         </SummaryRow>
       </div>
       {traditionChoiceLabel && selectedSpecialChoice ? (
-        <div className="col-span-4">
+        <div className={stacked ? undefined : "col-span-4"}>
           <SummaryRow label={traditionChoiceLabel}>{selectedSpecialChoice.name}</SummaryRow>
         </div>
       ) : null}

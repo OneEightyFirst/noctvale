@@ -34,17 +34,16 @@ function ViewFallback({ label }) {
 function WelcomeHome({ onShowRules, onShowRetinues }) {
   return (
     <main className="mx-auto flex w-full max-w-4xl flex-1 items-center px-4 py-10">
-      <section className="w-full rounded-lg border border-night-800 bg-night-900/70 p-5 sm:p-7">
+      <section className="w-full rounded-lg border border-night-800 bg-night-900/70 p-5 text-center sm:p-7">
         <div className="text-xs font-semibold uppercase tracking-wider text-accent-300">Noctvale playtest</div>
-        <h2 id="welcome-title" className="mt-2 text-2xl font-semibold text-cream-50">
+        <h1 id="welcome-title" className="mt-2 text-2xl font-semibold text-cream-50">
           Welcome to Noctvale
-        </h2>
+        </h1>
         <div className="mt-4 space-y-3 text-sm leading-relaxed text-cream-100">
-          <p>Noctvale is still in development. Rules, balance, wording, and the retinue builder will have issues while the game is being tested.</p>
-          <p>Please send rules feedback and app problems through the feedback form in the account menu so they are tracked in the right place.</p>
+          <p>Noctvale is still in development. Rules, balance, wording, and the retinue builder will have issues while the game is being tested. Please send rules feedback and app problems through the feedback form in the account menu so they are tracked in the right place.</p>
           <p>Thanks for playing and helping shape the game.</p>
         </div>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
           <button
             type="button"
             onClick={onShowRules}
@@ -141,11 +140,10 @@ export default function App() {
     return <SplashScreen description="Loading…" />;
   }
 
+  const showSidebar = activeView === "rules" || Boolean(activeRetinueId);
+
   return (
-    <AppShell
-      title={activeRetinueId ? "Playtesting Retinue Builder" : activeView === "rules" ? "Noctvale Rules" : activeView === "home" ? "Noctvale Playtest" : "Playtesting Retinue Builder"}
-      navItems={navItems}
-    >
+    <AppShell navItems={navItems} showSidebar={showSidebar}>
       {activeRetinueId && user ? (
         <Suspense fallback={<ViewFallback label="Loading retinue editor…" />}>
           <RetinueEditor

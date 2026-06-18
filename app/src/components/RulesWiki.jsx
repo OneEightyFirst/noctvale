@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, ChevronRight, Library, Search, ScrollText } from "lucide-react";
-import { RULES_ARTICLE_BY_ID, RULES_ARTICLES, RULES_DOCUMENT_BY_PATH, RULES_NAV_TREE, slugify, stripMarkdown } from "../data/rulesWiki.js";
+import { useRegisterSidebar, useSideNav } from "../contexts/SideNavContext.jsx";
+import { RULES_ARTICLE_BY_ID, RULES_ARTICLES, RULES_NAV_TREE, resolveRuleLink, rulesHash, slugify, stripMarkdown } from "../data/rulesWiki.js";
 
 function cx(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -36,10 +37,12 @@ function uniqueSlug(base, used) {
   return count === 0 ? root : `${root}-${count + 1}`;
 }
 
-function rulesHash(articleId, anchor = "") {
-  const encodedArticleId = encodeURIComponent(articleId);
-  const encodedAnchor = anchor ? `/${encodeURIComponent(anchor)}` : "";
-  return `#rules/${encodedArticleId}${encodedAnchor}`;
+function rulesHistoryState(articleId, anchor = "") {
+  return { noctvaleView: "rules", articleId, anchor };
+}
+
+function articleIdOrDefault(articleId) {
+  return RULES_ARTICLE_BY_ID.has(articleId) ? articleId : RULES_ARTICLES[0]?.id;
 }
 
 function parseRulesHash(hash = window.location.hash) {
@@ -49,14 +52,6 @@ function parseRulesHash(hash = window.location.hash) {
     articleId: decodeURIComponent(match[1]),
     anchor: match[2] ? decodeURIComponent(match[2]) : "",
   };
-}
-
-function rulesHistoryState(articleId, anchor = "") {
-  return { noctvaleView: "rules", articleId, anchor };
-}
-
-function articleIdOrDefault(articleId) {
-  return RULES_ARTICLE_BY_ID.has(articleId) ? articleId : RULES_ARTICLES[0]?.id;
 }
 
 function parseTable(rows) {
@@ -79,27 +74,6 @@ function isTableDivider(line) {
   return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
 }
 
-function resolveRuleLink(href, currentArticleId) {
-  if (!href || href.startsWith("http://") || href.startsWith("https://") || href.startsWith("mailto:")) {
-    return { href, external: true };
-  }
-
-  const [rawPath, rawFragment = ""] = href.split("#");
-  const normalizedPath = rawPath.replace(/^\.\//, "").replace(/^\.\.\//, "");
-  const filename = normalizedPath.split("/").filter(Boolean).pop();
-  const targetArticleId = rawPath
-    ? RULES_DOCUMENT_BY_PATH.get(normalizedPath) ?? RULES_DOCUMENT_BY_PATH.get(filename) ?? currentArticleId
-    : currentArticleId;
-  const targetAnchor = rawFragment ? slugify(decodeURIComponent(rawFragment)) : "";
-
-  return {
-    href: rulesHash(targetArticleId, targetAnchor),
-    targetArticleId,
-    targetAnchor,
-    external: false,
-  };
-}
-
 function InlineMarkdown({ text, articleId, onNavigate }) {
   const parts = String(text).split(/(`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g).filter(Boolean);
 
@@ -113,11 +87,19 @@ function InlineMarkdown({ text, articleId, onNavigate }) {
     }
 
     if (part.startsWith("**") && part.endsWith("**")) {
-      return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
+      return (
+        <strong key={`${part}-${index}`}>
+          <InlineMarkdown text={part.slice(2, -2)} articleId={articleId} onNavigate={onNavigate} />
+        </strong>
+      );
     }
 
     if (part.startsWith("*") && part.endsWith("*")) {
-      return <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>;
+      return (
+        <em key={`${part}-${index}`}>
+          <InlineMarkdown text={part.slice(1, -1)} articleId={articleId} onNavigate={onNavigate} />
+        </em>
+      );
     }
 
     const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
@@ -454,6 +436,7 @@ function NavNode({ node, depth, activeId, activeAnchor, expanded, forceExpanded,
 }
 
 export default function RulesWiki() {
+  const { closeMobile } = useSideNav();
   const [query, setQuery] = useState("");
   const initialLocation = parseRulesHash();
   const initialArticleId = articleIdOrDefault(initialLocation?.articleId);
@@ -510,22 +493,26 @@ export default function RulesWiki() {
     setExpanded((current) => ({ ...current, [nodeId]: !current[nodeId] }));
   }, []);
 
-  const selectArticle = useCallback((articleId, anchor = "", options = {}) => {
-    const nextArticleId = articleIdOrDefault(articleId);
-    setActiveId(nextArticleId);
-    setActiveAnchor(anchor);
+  const selectArticle = useCallback(
+    (articleId, anchor = "", options = {}) => {
+      const nextArticleId = articleIdOrDefault(articleId);
+      setActiveId(nextArticleId);
+      setActiveAnchor(anchor);
+      closeMobile();
 
-    if (options.replace) {
-      window.history.replaceState(rulesHistoryState(nextArticleId, anchor), "", rulesHash(nextArticleId, anchor));
-      return;
-    }
+      if (options.replace) {
+        window.history.replaceState(rulesHistoryState(nextArticleId, anchor), "", rulesHash(nextArticleId, anchor));
+        return;
+      }
 
-    window.history.pushState(rulesHistoryState(nextArticleId, anchor), "", rulesHash(nextArticleId, anchor));
-  }, []);
+      window.history.pushState(rulesHistoryState(nextArticleId, anchor), "", rulesHash(nextArticleId, anchor));
+    },
+    [closeMobile],
+  );
 
-  return (
-    <main className="mx-auto grid w-full max-w-7xl flex-1 gap-4 px-4 pb-8 pt-4 lg:grid-cols-[20rem_1fr]">
-      <aside className="min-w-0 lg:sticky lg:top-[8.75rem] lg:max-h-[calc(100vh-9.75rem)] lg:self-start">
+  const sidebar = useMemo(
+    () => (
+      <>
         <div className="rounded-lg border border-night-800 bg-night-900/70 p-3">
           <div className="flex items-center gap-2 text-sm font-semibold text-cream-100">
             <Library className="h-4 w-4 text-accent-300" aria-hidden="true" />
@@ -545,7 +532,7 @@ export default function RulesWiki() {
 
         <div className="mt-3 overflow-hidden rounded-lg border border-night-800 bg-night-900/70">
           {visibleTree.length ? (
-            <div className="max-h-[28rem] overflow-y-auto p-2 lg:max-h-[calc(100vh-21rem)]">
+            <div className="max-h-[28rem] overflow-y-auto p-2 lg:max-h-[calc(100vh-12rem)]">
               {visibleTree.map((node) => (
                 <NavNode
                   key={node.id}
@@ -564,10 +551,26 @@ export default function RulesWiki() {
             <div className="p-4 text-sm text-cream-100">No rules match that search.</div>
           )}
         </div>
-      </aside>
+      </>
+    ),
+    [
+      activeAnchor,
+      activeArticle.id,
+      expanded,
+      forceExpanded,
+      query,
+      selectArticle,
+      toggleNode,
+      visibleTree,
+    ],
+  );
 
-      <article ref={articleTopRef} className="min-w-0 scroll-mt-40 rounded-lg border border-night-800 bg-night-950">
-        <div className="border-b border-night-800 p-4 sm:p-5">
+  useRegisterSidebar(sidebar);
+
+  return (
+    <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-8 pt-4">
+      <article ref={articleTopRef} className="min-w-0 scroll-mt-24 rounded-lg border border-night-800 bg-night-950">
+        <div className={cx("p-4 sm:p-5", activeArticle.id !== "intro" && "border-b border-night-800")}>
           <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-cream-500">
             <ScrollText className="h-4 w-4 text-accent-300" aria-hidden="true" />
             {activeArticle.category}

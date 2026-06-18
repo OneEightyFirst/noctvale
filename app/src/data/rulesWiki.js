@@ -92,8 +92,9 @@ function extractSummary(markdown) {
   return "Rules reference.";
 }
 
-function extractHeadings(markdown, title) {
+function extractHeadings(markdown) {
   const used = new Map();
+
   return markdown
     .split("\n")
     .map((line) => line.match(/^(#{1,6})\s+(.+?)\s*#*$/))
@@ -106,8 +107,7 @@ function extractHeadings(markdown, title) {
         label,
         anchor: uniqueSlug(slugify(label), used),
       };
-    })
-    .filter((heading, index) => !(index === 0 && heading.level === 1 && heading.label === title));
+    });
 }
 
 function stripArticleTitleBlock(markdown, title, summary) {
@@ -165,8 +165,8 @@ function buildHeadingTree(article) {
 export const RULES_ARTICLES = DOCUMENT_DEFS.map((doc) => {
   const title = extractTitle(doc.markdown, doc.label);
   const summary = extractSummary(doc.markdown);
-  const headings = extractHeadings(doc.markdown, title);
   const displayMarkdown = stripArticleTitleBlock(doc.markdown, title, summary);
+  const headings = extractHeadings(displayMarkdown);
 
   return {
     ...doc,
@@ -179,6 +179,45 @@ export const RULES_ARTICLES = DOCUMENT_DEFS.map((doc) => {
 });
 
 export const RULES_ARTICLE_BY_ID = new Map(RULES_ARTICLES.map((article) => [article.id, article]));
+
+export const RULES_ARTICLE_ANCHORS = new Map(
+  RULES_ARTICLES.map((article) => [article.id, new Set(article.headings.map((heading) => heading.anchor))]),
+);
+
+export function rulesHash(articleId, anchor = "") {
+  const encodedArticleId = encodeURIComponent(articleId);
+  const encodedAnchor = anchor ? `/${encodeURIComponent(anchor)}` : "";
+  return `#rules/${encodedArticleId}${encodedAnchor}`;
+}
+
+function normalizeRulesPath(rawPath = "") {
+  let normalizedPath = rawPath.replace(/^\.\//, "");
+  while (normalizedPath.startsWith("../")) {
+    normalizedPath = normalizedPath.slice(3);
+  }
+  return normalizedPath;
+}
+
+export function resolveRuleLink(href, currentArticleId) {
+  if (!href || href.startsWith("http://") || href.startsWith("https://") || href.startsWith("mailto:")) {
+    return { href, external: true };
+  }
+
+  const [rawPath, rawFragment = ""] = href.split("#");
+  const normalizedPath = normalizeRulesPath(rawPath);
+  const filename = normalizedPath.split("/").filter(Boolean).pop() ?? "";
+  const targetArticleId = rawPath
+    ? RULES_DOCUMENT_BY_PATH.get(normalizedPath) ?? RULES_DOCUMENT_BY_PATH.get(filename) ?? currentArticleId
+    : currentArticleId;
+  const targetAnchor = rawFragment ? slugify(decodeURIComponent(rawFragment)) : "";
+
+  return {
+    href: rulesHash(targetArticleId, targetAnchor),
+    targetArticleId,
+    targetAnchor,
+    external: false,
+  };
+}
 
 export const RULES_DOCUMENT_BY_PATH = new Map(
   RULES_ARTICLES.flatMap((article) => {

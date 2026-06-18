@@ -1,5 +1,11 @@
 # Noctvale Repository Instructions
 
+## Repo routing
+
+Before broad grep/search or reading large downstream files, read
+`.agents/skills/noctvale-traffic/SKILL.md`. For system→file lookup, see
+`_overview.md`.
+
 ## Writing Player-Facing Rules
 
 Before writing, revising, or proposing any player-facing rules text, read and follow

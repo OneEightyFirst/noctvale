@@ -58,6 +58,23 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-18 — Unify app shell and fix rules wiki navigation
+
+**Decision:** Give the playtest app a shared fixed left column with the Noctvale
+logo on every view; on rules and retinue editor pages, show section navigation in
+that column (rules index on the wiki, retinue name/archetype/tradition/budget on
+the editor). Collapse the column to a mobile drawer with hamburger and mark.
+Move retinue roster cards to the main column only. Align rules wiki sidebar
+heading anchors with rendered content, parse bold-wrapped markdown links
+correctly, and remove the intro article header divider above the body. Remove
+the horizontal rule above **What Is Noctvale?** in `intro.md`.
+
+**Reasoning:** Rules reading and retinue building should feel like one product.
+Fixed chrome and matching nav/content layout reduce context switching. Wiki link
+and anchor bugs came from SPA-specific slug and scroll logic drifting from
+rendered headings; aligning nav extraction with display markdown fixes in-page
+and cross-reference links without changing canonical rules sources.
+
 ## 2026-06-17 — Record app-visible TBD cleanup priorities
 
 **Decision:** Add a prioritized TODO checklist for the remaining `TBD` items

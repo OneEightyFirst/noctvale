@@ -1,26 +1,109 @@
 import React from "react";
+import { Menu, X } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext.jsx";
-import NoctvaleLogo from "./NoctvaleLogo.jsx";
+import { SideNavProvider, useSideNav } from "../contexts/SideNavContext.jsx";
+import NoctvaleLogo, { NoctvaleMark } from "./NoctvaleLogo.jsx";
 import UserMenu from "./UserMenu.jsx";
 
-export default function AppShell({ children, navItems = null, title = "Playtesting Retinue Builder" }) {
+function AppLogo({ className = "h-20 w-auto" }) {
+  return <NoctvaleLogo className={className} />;
+}
+
+function AppHeader({ navItems, showSidebar }) {
   const { user } = useAuth();
+  const { mobileOpen, toggleMobile } = useSideNav();
 
   return (
-    <div className="flex min-h-screen flex-col bg-night-950 text-cream-100">
-      <header className="sticky top-0 z-40 bg-night-950/95 backdrop-blur-sm">
-        <div className="relative flex w-full items-start justify-between gap-4 px-4 py-2">
-          <NoctvaleLogo className="relative z-10 h-[7rem] w-auto shrink-0" />
-          <div className="pointer-events-none absolute inset-x-0 top-1/2 flex -translate-y-1/2 flex-col items-center px-4 text-center">
-            <h1 className="text-xl font-semibold tracking-wide">{title}</h1>
-          </div>
-          <nav className="relative z-10 flex shrink-0 items-start gap-2" aria-label="App">
-            {navItems}
-            {user ? <UserMenu user={user} /> : null}
-          </nav>
+    <header className="sticky top-0 z-40 shrink-0 border-b border-night-800 bg-night-950/95 backdrop-blur">
+      <nav className="flex items-start gap-2 px-4 py-3" aria-label="App">
+        {showSidebar ? (
+          <>
+            <button
+              type="button"
+              className="grid h-9 w-9 shrink-0 place-items-center rounded border border-night-700 bg-night-900 text-cream-300 hover:border-cream-500 hover:text-cream-100 lg:hidden"
+              aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={mobileOpen}
+              onClick={toggleMobile}
+            >
+              {mobileOpen ? (
+                <X className="h-4 w-4" aria-hidden="true" />
+              ) : (
+                <Menu className="h-4 w-4" aria-hidden="true" />
+              )}
+            </button>
+            <NoctvaleMark className="h-9 w-9 shrink-0 lg:hidden" />
+          </>
+        ) : (
+          <AppLogo className="h-12 w-auto shrink-0 lg:hidden" />
+        )}
+
+        <div className="ml-auto flex items-start gap-2">
+          {navItems}
+          {user ? <UserMenu user={user} /> : null}
         </div>
-      </header>
-      <div className="flex flex-1 flex-col">{children}</div>
+      </nav>
+    </header>
+  );
+}
+
+function AppLogoColumn({ showSidebar }) {
+  const { sidebar, mobileOpen, closeMobile } = useSideNav();
+
+  return (
+    <>
+      {showSidebar && mobileOpen ? (
+        <button
+          type="button"
+          aria-label="Close navigation menu"
+          className="fixed inset-0 z-40 bg-night-950/70 lg:hidden"
+          onClick={closeMobile}
+        />
+      ) : null}
+
+      <div className="hidden w-80 shrink-0 lg:block" aria-hidden="true" />
+
+      <aside
+        className={[
+          "fixed inset-y-0 left-0 z-50 flex w-80 flex-col border-r border-night-800 bg-night-950",
+          showSidebar
+            ? [
+                "transition-transform duration-200",
+                mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
+              ].join(" ")
+            : "hidden lg:flex",
+        ].join(" ")}
+        aria-label={showSidebar ? "Section navigation" : undefined}
+      >
+        <div className="shrink-0 px-4 py-4">
+          <AppLogo />
+        </div>
+
+        {showSidebar ? <div className="min-h-0 flex-1 overflow-y-auto p-3 pb-4">{sidebar}</div> : null}
+      </aside>
+    </>
+  );
+}
+
+function AppShellLayout({ children, navItems, showSidebar }) {
+  return (
+    <div className="flex min-h-screen flex-col bg-night-950 text-cream-100">
+      <div className="flex min-h-0 flex-1">
+        <AppLogoColumn showSidebar={showSidebar} />
+        <div className="flex min-w-0 flex-1 flex-col">
+          <AppHeader navItems={navItems} showSidebar={showSidebar} />
+          <div className="flex min-h-0 flex-1 flex-col">{children}</div>
+        </div>
+      </div>
     </div>
+  );
+}
+
+export default function AppShell({ children, navItems = null, showSidebar = false }) {
+  return (
+    <SideNavProvider>
+      <AppShellLayout navItems={navItems} showSidebar={showSidebar}>
+        {children}
+      </AppShellLayout>
+    </SideNavProvider>
   );
 }
