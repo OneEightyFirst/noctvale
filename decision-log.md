@@ -58,6 +58,19 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-18 — Production cache busting for deploys
+
+**Decision:** Add Apache `Cache-Control` headers in `app/public/.htaccess`: HTML
+revalidates on each visit; hashed `/assets/*` bundles cache long-term; unhashed
+`/rules/*.js` and `/rules/*.css` revalidate. Version rules wiki static assets
+with `?v=<git-sha>` at build time. Inject a no-cache meta tag into the React app
+and rules HTML entry points.
+
+**Reasoning:** Playtesters were seeing stale builder and rules wiki UI after
+deploys because browsers cached `index.html`, `wiki-auth.js`, and `wiki.css`.
+Hashed Vite bundles were already safe; the fix targets HTML and unhashed rules
+assets so normal refresh picks up new deploys without manual cache clears.
+
 ## 2026-06-18 — Prominent playtest feedback button
 
 **Decision:** Move playtest feedback out of the account menu into a fixed circular

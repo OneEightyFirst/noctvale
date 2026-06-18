@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { spawnSync } from "node:child_process";
+import { spawnSync, execSync } from "node:child_process";
 import { marked } from "marked";
 import {
   buildDocumentPathMap,
@@ -16,6 +16,18 @@ import {
 const appDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appDir, "..");
 const outDir = path.join(appDir, "public", "rules");
+
+function getGitSha() {
+  try {
+    return execSync("git rev-parse --short HEAD", { encoding: "utf8", cwd: repoRoot }).trim();
+  } catch {
+    return "dev";
+  }
+}
+
+function assetUrl(pathname, assetVersion) {
+  return `${pathname}?v=${encodeURIComponent(assetVersion)}`;
+}
 
 function escapeHtml(value) {
   return value
@@ -81,19 +93,23 @@ function renderPlaytestCallout() {
         </section>`;
 }
 
-function renderPage(article, bodyHtml, navTree) {
+function renderPage(article, bodyHtml, navTree, assetVersion) {
   const headerBorder = article.id === "intro" ? "" : " wiki-article-header--bordered";
   const playtestCallout = article.id === "intro" ? renderPlaytestCallout() : "";
   const rulesHome = "/rules/intro.html";
+  const wikiCss = assetUrl("/rules/wiki.css", assetVersion);
+  const wikiAuthJs = assetUrl("/rules/wiki-auth.js", assetVersion);
+  const wikiJs = assetUrl("/rules/wiki.js", assetVersion);
 
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${escapeHtml(article.title)} — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/rules/wiki.css" />
+  <link rel="stylesheet" href="${wikiCss}" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -141,8 +157,8 @@ function renderPage(article, bodyHtml, navTree) {
       </article>
     </main>
   </div>
-  <script type="module" src="/rules/wiki-auth.js"></script>
-  <script src="/rules/wiki.js" defer></script>
+  <script type="module" src="${wikiAuthJs}"></script>
+  <script src="${wikiJs}" defer></script>
 </body>
 </html>`;
 }
@@ -188,11 +204,12 @@ mkdirSync(outDir, { recursive: true });
 const pathToHtml = buildDocumentPathMap();
 const articles = loadArticles(repoRoot);
 const navTree = buildNavTree(articles);
+const assetVersion = getGitSha();
 
 for (const article of articles) {
   const linkedMarkdown = rewriteMarkdownLinks(article.displayMarkdown, pathToHtml);
   const bodyHtml = markdownToHtml(linkedMarkdown);
-  const html = renderPage(article, bodyHtml, navTree);
+  const html = renderPage(article, bodyHtml, navTree, assetVersion);
   writeFileSync(path.join(outDir, article.html), html);
 }
 

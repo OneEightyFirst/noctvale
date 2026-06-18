@@ -22,6 +22,15 @@ export default defineConfig({
   plugins: [
     react(),
     {
+      name: "noctvale-html-cache-control",
+      transformIndexHtml(html) {
+        return html.replace(
+          "<head>",
+          '<head>\n    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />',
+        );
+      },
+    },
+    {
       name: "noctvale-rules-dev-routes",
       configureServer(server) {
         server.middlewares.use((req, _res, next) => {
