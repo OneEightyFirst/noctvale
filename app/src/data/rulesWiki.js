@@ -1,0 +1,171 @@
+import introMarkdown from "@noctvale-rules/intro.md?raw";
+import coreRulesMarkdown from "@noctvale-rules/rules/core-rules.md?raw";
+import retinueMarkdown from "@noctvale-rules/rules/retinue.md?raw";
+import equipmentMarkdown from "@noctvale-rules/rules/equipment.md?raw";
+import campaignMarkdown from "@noctvale-rules/campaign/campaign.md?raw";
+
+const DOCUMENT_DEFS = [
+  {
+    id: "intro",
+    label: "Introduction",
+    category: "Introduction",
+    path: "intro.md",
+    markdown: introMarkdown,
+  },
+  {
+    id: "core-rules",
+    label: "Core Rules",
+    category: "Core Rules",
+    path: "rules/core-rules.md",
+    markdown: coreRulesMarkdown,
+  },
+  {
+    id: "retinue",
+    label: "Retinues",
+    category: "Retinues",
+    path: "rules/retinue.md",
+    markdown: retinueMarkdown,
+  },
+  {
+    id: "equipment",
+    label: "Equipment",
+    category: "Equipment",
+    path: "rules/equipment.md",
+    markdown: equipmentMarkdown,
+  },
+  {
+    id: "campaign",
+    label: "Campaign",
+    category: "Campaign",
+    path: "campaign/campaign.md",
+    markdown: campaignMarkdown,
+  },
+];
+
+export function stripMarkdown(value = "") {
+  return value
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/_([^_]+)_/g, "$1")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/#+/g, "")
+    .trim();
+}
+
+export function slugify(value = "") {
+  return stripMarkdown(value)
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
+function uniqueSlug(base, used) {
+  const root = base || "section";
+  const count = used.get(root) ?? 0;
+  used.set(root, count + 1);
+  return count === 0 ? root : `${root}-${count + 1}`;
+}
+
+function extractTitle(markdown, fallback) {
+  const firstHeading = markdown.match(/^#\s+(.+)$/m);
+  return firstHeading ? stripMarkdown(firstHeading[1]) : fallback;
+}
+
+function extractSummary(markdown) {
+  const lines = markdown.split("\n");
+  let pastTitle = false;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    if (trimmed.startsWith("# ")) {
+      pastTitle = true;
+      continue;
+    }
+    if (!pastTitle) continue;
+    if (trimmed.startsWith("#") || trimmed.startsWith("|") || trimmed.startsWith("-") || trimmed.startsWith(">")) continue;
+    return stripMarkdown(trimmed);
+  }
+
+  return "Rules reference.";
+}
+
+function extractHeadings(markdown, title) {
+  const used = new Map();
+  return markdown
+    .split("\n")
+    .map((line) => line.match(/^(#{1,6})\s+(.+?)\s*#*$/))
+    .filter(Boolean)
+    .map((match) => {
+      const level = match[1].length;
+      const label = stripMarkdown(match[2]);
+      return {
+        level,
+        label,
+        anchor: uniqueSlug(slugify(label), used),
+      };
+    })
+    .filter((heading, index) => !(index === 0 && heading.level === 1 && heading.label === title));
+}
+
+function buildHeadingTree(article) {
+  const root = [];
+  const stack = [{ level: 0, children: root }];
+
+  for (const heading of article.headings) {
+    const node = {
+      id: `nav-${article.id}-${heading.anchor}`,
+      label: heading.label,
+      articleId: article.id,
+      anchor: heading.anchor,
+      children: [],
+    };
+
+    while (stack.length > 1 && heading.level <= stack[stack.length - 1].level) {
+      stack.pop();
+    }
+
+    stack[stack.length - 1].children.push(node);
+    stack.push({ level: heading.level, children: node.children });
+  }
+
+  return root;
+}
+
+export const RULES_ARTICLES = DOCUMENT_DEFS.map((doc) => {
+  const title = extractTitle(doc.markdown, doc.label);
+  const summary = extractSummary(doc.markdown);
+  const headings = extractHeadings(doc.markdown, title);
+
+  return {
+    ...doc,
+    title,
+    summary,
+    headings,
+    search: `${doc.label} ${doc.category} ${title} ${summary} ${stripMarkdown(doc.markdown)}`.toLowerCase(),
+  };
+});
+
+export const RULES_ARTICLE_BY_ID = new Map(RULES_ARTICLES.map((article) => [article.id, article]));
+
+export const RULES_DOCUMENT_BY_PATH = new Map(
+  RULES_ARTICLES.flatMap((article) => {
+    const parts = article.path.split("/");
+    const filename = parts[parts.length - 1];
+    return [
+      [article.path, article.id],
+      [filename, article.id],
+      [`../${article.path}`, article.id],
+      [`../${filename}`, article.id],
+    ];
+  }),
+);
+
+export const RULES_NAV_TREE = RULES_ARTICLES.map((article) => ({
+  id: `nav-${article.id}`,
+  label: article.label,
+  articleId: article.id,
+  children: buildHeadingTree(article),
+}));

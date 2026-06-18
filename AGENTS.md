@@ -42,6 +42,12 @@ Treat `rules/long-form/`, `rules/playtest/`, exports, and compiled drafts as
 downstream surfaces. Refresh them from the direct `rules/` sources instead of
 making them competing authorities.
 
+The playtesting retinue builder lives in `app/`. It imports rules markdown from
+this repo root (`intro.md`, `rules/`, `campaign/`). When changing builder game
+data or purchase enforcement, update `app/src/data/noctvale.js` and
+`app/src/components/RetinueEditor.jsx` and log the change in
+`app/rules-updates.md`.
+
 ## Design Decisions
 
 Use `NOCTVALE_DESIGN_TENETS.md` to evaluate whether a proposed mechanic belongs

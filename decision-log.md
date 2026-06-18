@@ -13,6 +13,9 @@ Decisions made during design, with reasoning. Newest entries at the top.
 - Write `**Decision:**` for what changed and `**Reasoning:**` for why it changed.
 - Remove or update Ideas entries when they become implemented rules.
 - Do not include commit hashes.
+- Log **game rules and setting** changes here. Log **builder data and enforcement**
+  in `app/rules-updates.md`. Log **builder UX** changes here when they are not
+  covered by a rules update.
 
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
@@ -55,6 +58,144 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-17 — Builder performance pass
+
+**Decision:** Optimize the playtesting retinue builder for load time and runtime
+efficiency. Lazy-load **RetinueEditor**, **RulesWiki**, and **FeedbackForm** with
+`React.lazy` / `Suspense` so the library and sign-in path does not ship the full
+editor or ~245 KB of rules markdown upfront. Memoize rules-wiki markdown parsing
+per article; stabilize fighter-card callbacks with `useCallback` and `memo`; hoist
+equipment grouping to module scope; trim Firestore list state to summary fields
+(`name`, `archetypeId`, `fighterCount`, `updatedAt`); lazy-load the Firebase
+Functions client for feedback submission; add Vite vendor chunks for React, Firebase,
+and Lucide.
+
+**Reasoning:** The monorepo builder is the primary playtest surface. Most sessions
+start at the retinue library, not the rules wiki or a specific roster. Code
+splitting and render memoization cut initial JS payload and avoid re-parsing large
+rules articles on every search keystroke or fighter edit, which matters on mobile
+and slower connections during playtests.
+
+## 2026-06-17 — Monorepo: retinue builder under app/
+
+**Decision:** Move the playtesting retinue builder from the separate `noctvale-app`
+repository into `app/` in this repo. Rules markdown at the repo root is canonical;
+the builder imports `intro.md`, `rules/`, and `campaign/` directly (no copies under
+`app/src/rules/`). Deploy still builds `app/dist/` and uploads to noctvalegame.com.
+Combine the app and rules decision logs into this file; keep `app/rules-updates.md`
+for builder data and enforcement changes.
+
+**Reasoning:** One repo removes markdown drift between the rulebook and the in-app
+rules wiki, lets a single commit update rules prose and builder enforcement, and
+keeps design history in one place while preserving a separate enforcement changelog
+for playtesters.
+
+## 2026-06-17 — Builder UX batch
+
+**Decision:** Close picker modals on backdrop click and Escape.
+
+**Reasoning:** Standard dialog dismissal; users should not need the X button only.
+
+**Decision:** Show equipped weapon rule lines on the fighter card at all times — a
+**Weapons** section under stats in view and edit mode, plus full profiles in the
+Equipment panel summary.
+
+**Reasoning:** Mt/Sk, range, and hands should be readable without opening the
+equipment modal.
+
+**Decision:** Skilled Craftsman UI: if weapons are already equipped, the feat modal
+lists owned weapons and Mt/Sk choices; if the feat is picked first, assign the
+upgrade from weapon rows in the equipment picker.
+
+**Reasoning:** Matches the rule requirement to record weapon and upgrade on the
+roster entry; supports either selection order.
+
+**Decision:** Add `app/rules-updates.md` for game-data and enforcement changes,
+separate from this decision log for UX-only work.
+
+**Reasoning:** Rules commits need their own changelog with a standing note that
+builder purchase limits do not cover exploration-phase gear.
+
+## 2026-06-16 — Retinue builder UX and roster UI
+
+**Decision:** Move all roster editing behind a single **Edit retinue** / **Done**
+toggle in the AppShell header (upper right). View mode is read-only; edit mode
+enables identity pickers, fighter editing, add/clear roster, and inline species
+changes.
+
+**Reasoning:** Per-card and per-section edit pencils scattered the workflow. One
+global edit mode matches “edit the whole retinue” intent.
+
+**Decision:** Show retinue-wide rules only in the top identity section: tradition
+rules (e.g. Zealots) and beast-mark choice when applicable. Remove them from
+every fighter card. Do not list generic domain summary text there.
+
+**Reasoning:** Tradition rules apply to the whole retinue once; repeating them on
+each fighter was noise.
+
+**Decision:** Remove the **Saved** label from the editor toolbar. Put **Library**
+in the AppShell nav immediately after **Edit retinue**.
+
+**Reasoning:** Save state is implicit; Library belongs with global navigation.
+
+**Decision:** Center **Playtesting Retinue Builder** and the rules-source line in
+the AppShell header. Move retinue name to the editor sub-header as a borderless
+input with placeholder **New Name** (empty default). Drop the name field from the
+identity grid.
+
+**Reasoning:** Title is app-level; name is per-retinue and should stay where the
+old title sat without looking like a form field until focused.
+
+**Decision:** Format currency as `c` suffix everywhere in the roster UI: budget
+`515c / 1000c`, fighter total cost right-aligned in the card header, species
+premiums as `+10c`.
+
+**Reasoning:** Shorter, consistent crown display across budget, fighters, and
+species.
+
+**Decision:** Species defaults to Human. Always show a species pill on the
+fighter card header (same slot for all species). Total fighter cost stays
+right-aligned on that row. In edit mode, the Species panel shows the full line
+(e.g. `Elf: Elves cost an additional +10c, but give 4Sk, 4Wi and 7" movement.`).
+Picker options use the same sentence format. Human: `Human: Humans are the
+baseline stats.`
+
+**Reasoning:** Header tag is scannable; sentences belong in the picker, not
+repeated stat fragments on the card.
+
+**Decision:** Flatten panel pickers (Species, feats, etc.): when selected, show
+summary content directly in the panel body — no nested “Select …” button wrapper
+or amber “Selected” card.
+
+**Reasoning:** Three nested boxes for one choice was unnecessary chrome.
+
+**Decision:** Hide Leader/Captain **type rules** in the recruit modal when Domain
+is Mortal (caster option irrelevant). Remove all fighter **type rules** (e.g.
+Stalker “At recruitment, add +1 Mt or +1 Sk”) from **Rules on This Fighter**.
+Keep feats, built-in proficiencies, and caster spells there.
+
+**Reasoning:** Type lines describe roster construction already handled by pickers
+and stat boosts; the rules panel should list in-play effects only.
+
+**Decision:** Leaders and Elites get **2 feats** at roster creation (`getFeatLimit`
+role check). Leader is auto-added when archetype and tradition are ready.
+
+**Reasoning:** Matches rules data; avoids manual leader recruitment step.
+
+## 2026-06-17 — Name the High King of Valecoria
+
+**Decision:** Name the pre-fall ruler **Aurelian Eiradan Valecor, First of His
+Name, High King of Valecoria, Binder of the Twelve Crowns, Warden of the Dawn
+Roads, Lord of the Threefold Concord, and Defender of the Living Realm**.
+Update `intro.md` to use **High King** and **Valecoria** consistently in the
+backstory where it previously used the placeholder emperor language.
+
+**Reasoning:** Aurelian's name and ceremonial titles establish the lost realm as
+an oath-bound, multi-people kingdom rather than a generic empire. The titles
+point to Valecoria's twelve former crowns, its sacred road-building project,
+and its human, elven, and dwarven concord while making **Defender of the Living
+Realm** tragic after the High King's fall into vampirism.
+
 ## 2026-06-17 — First-pass spell difficulties
 
 **Decision:** Set first-pass casting difficulties in `rules/retinue.md` for
@@ -62,8 +203,11 @@ spells that already have defined effects. Existing anchors remain unchanged:
 10+ for easy support or temporary summons, 11+ for baseline attacks and common
 utility, 12+ for stronger control or area effects, and 14+ for the rare
 Deathbolt-style spike. Add 13+ as an intermediate tier for spells above the
-12+ anchors but below Deathbolt: **Fireball**, **Hoarfrost**, and **Bleed**.
-Leave effectless Infernal placeholder slots as TBD.
+12+ anchors but below Deathbolt: **Fireball** and **Bleed**. **Fireball** uses
+5 Mt / 4 Sk, matching a baseline Human fighter wielding a Great Sword.
+**Hoarfrost** is 11+ because it controls movement rather than dealing direct
+spell hits. **Slow** uses line of sight instead of a fixed range. Leave
+effectless Infernal placeholder slots as TBD.
 
 Add `AGENTS.md` guidance that files directly under `rules/` are the canonical
 rules source, and that long-form drafts, playtest exports, and compiled copies
@@ -74,6 +218,8 @@ unfinished ranges, Mishaps, or damage profiles as final. Calibrating against the
 existing difficulty ladder keeps Wi meaningful while avoiding a flat 11+ magic
 list. Costly summons and spells with target checks can sit lower than their raw
 effect might suggest because their other limits do part of the balancing work.
+Control spells should not inherit the difficulty of direct area attacks when
+they do not also roll an immediate Strike Pool.
 Keeping one rules source of truth prevents draft and export surfaces from
 becoming competing rules bodies.
 

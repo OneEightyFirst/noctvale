@@ -16,13 +16,22 @@ This repository contains the working design documents for Noctvale — rules, re
 intro.md                 — Setting, premise, backstory, factions, and game summary
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
+decision-log.md          — Design and builder decisions (one entry per commit)
 rules/
   core-rules.md          — What you need, setup, action sequence, actions, conditions, combat
   retinue.md             — Retinue building, archetypes, Domains, Traditions, feats, magic
   equipment.md           — Weapons, gear, alchemy, and companions
 campaign/
   campaign.md            — Campaign flow, leveling, scenarios, post-game, Survival Rolls, economy
+app/                     — Playtesting retinue builder (React, Firebase, deploy scripts)
+  rules-updates.md       — Builder game-data and enforcement changelog
 ```
+
+## Retinue builder
+
+The playtesting app lives in `app/`. See [app/README.md](app/README.md) for local dev, Firebase, and deploy to noctvalegame.com.
+
+Rules markdown at the repo root is the canonical source. The in-app rules wiki imports those files directly.
 
 ## Design Influences
 

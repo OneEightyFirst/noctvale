@@ -2329,11 +2329,11 @@ Each domain has a standard ranged attack spell plus **6 additional spells**.
 |---|---|---|---|---|---|---|
 | Arcane Bolt | 11+ | — | 5 | 20" | Ranged attack; fast, high-finesse | *(TBD)* |
 | Arcane Shield | 11+ | — | — | Self | Caster is immune to all spells. At the start of the caster's next activation, roll 1d6 — on 1–2 the shield disappears | *(TBD)* |
-| Fireball | 13+ | *(TBD)* | *(TBD)* | 18" | Choose a point within 18". All fighters within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
+| Fireball | 13+ | 5 | 4 | 18" | Choose a point within 18". All fighters within large blast template are hit. Hits friends and enemies. On normal fail: fireball scatters (scatter die for direction, d6" for distance from target point). On pass: blast centers on chosen point | **Mishap:** Blast template centers on the caster |
 | Telekinesis | 12+ | — | — | 12" | Move any fighter (friendly or enemy) up to 6" directly toward or directly away from the caster. No check required by the target | *(TBD)* |
 | Displacement | 11+ | — | — | 12" | Target friendly fighter is instantly moved up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base | *(TBD)* |
-| Hoarfrost | 13+ | — | — | 18" | Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. When a fighter ends any movement in the zone, roll a Sk check (d6 + Sk ≥ 8). **Pass:** slide d6" in the same direction it was moving. **Fail:** scatter die + slide d6". If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, suffer 1 Wound | **Mishap:** Blast centers on the caster |
-| Slow | 12+ | — | — | *(TBD)* | Target enemy loses 1 action on their next activation (activates with 1 action instead of 2) | *(TBD)* |
+| Hoarfrost | 11+ | — | — | 18" | Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. When a fighter ends any movement in the zone, roll a Sk check (d6 + Sk ≥ 8). **Pass:** slide d6" in the same direction it was moving. **Fail:** scatter die + slide d6". If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, suffer 1 Wound | **Mishap:** Blast centers on the caster |
+| Slow | 12+ | — | — | line of sight | Target enemy loses 1 action on their next activation (activates with 1 action instead of 2) | *(TBD)* |
 
 #### Infernal
 

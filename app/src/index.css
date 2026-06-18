@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+
+    /* Core anchors */
+    --color-lightest: #f3e3d8;
+    --color-accent: #8b4192;
+    --color-darkest: #110808;
+
+    /* Night — dark surfaces (from --color-darkest) */
+    --color-night-950: #110808;
+    --color-night-900: #1a0c0c;
+    --color-night-800: #261212;
+    --color-night-700: #331a1a;
+    --color-night-600: #432222;
+    --color-night-500: #552a2a;
+
+    /* Cream — light text (from --color-lightest) */
+    --color-cream-50: #faf5f1;
+    --color-cream-100: #f3e3d8;
+    --color-cream-200: #e6cfc0;
+    --color-cream-300: #d4b5a2;
+    --color-cream-400: #b89580;
+    --color-cream-500: #967865;
+    --color-cream-600: #74604f;
+
+    /* Accent — purple (from --color-accent) */
+    --color-accent-950: #2a0e2e;
+    --color-accent-900: #3f1650;
+    --color-accent-800: #5c2270;
+    --color-accent-700: #723088;
+    --color-accent-600: #8b4192;
+    --color-accent-500: #a053ab;
+    --color-accent-400: #b86dc4;
+    --color-accent-300: #ce92d6;
+    --color-accent-200: #e2bce8;
+    --color-accent-100: #f2e0f5;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--color-night-950);
+    color: var(--color-cream-100);
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}

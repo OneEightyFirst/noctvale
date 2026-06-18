@@ -12,3 +12,17 @@ misc-files/*.indd
 misc-files/*.idlk
 misc-files/*.jpg
 misc-files/*.psd
+
+# Retinue builder (app/)
+app/node_modules/
+app/dist/
+app/.env
+app/.env.local
+app/.env.*.local
+app/.firebase/
+app/firebase-debug.log
+app/*.log
+app/.lftp-script
+app/.lftp-test
+app/.lftp-verify
+app/.netrc-test

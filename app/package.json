@@ -1,0 +1,33 @@
+{
+  "name": "noctvale-retinue-builder",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:rules": "firebase deploy --only firestore:rules",
+    "deploy:functions": "npm install --prefix functions && firebase deploy --only functions",
+    "deploy": "npm run build && node scripts/deploy.mjs",
+    "deploy:all": "npm run build && npm run deploy:rules && npm run deploy:functions && node scripts/deploy.mjs"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "firebase-tools": "^15.20.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "autoprefixer": "^10.4.20",
+    "firebase": "^12.15.0",
+    "lucide-react": "^1.20.0",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^8.0.16"
+  }
+}

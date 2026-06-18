@@ -12,43 +12,43 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 
 ### The Fall of the Realm
 
-Long before the wars, the lands now called Noctvale were united beneath a single crown. The realm prospered under the rule of Emperor __________, a wise and ambitious ruler who forged alliances between distant kingdoms, built roads across wild lands, and expanded the borders of the empire farther than any ruler before him. Trade flourished, cities grew rich, and the people believed they were living in the dawn of a golden age.
+Long before the wars, the lands now called Noctvale were united beneath a single crown. The realm prospered under the rule of Aurelian Eiradan Valecor, First of His Name, High King of Valecoria, a wise and ambitious ruler who forged alliances between distant kingdoms, built roads across wild lands, and expanded the borders of the realm farther than any ruler before him. Trade flourished, cities grew rich, and the people believed they were living in the dawn of a golden age.
 
-In those years the emperor was advised by scholars of what would later become the Arcane Conclave, protected by the holy warriors who would one day be known as the Phoenix Guard, and served by provincial governors who enforced the law throughout the realm. For a generation the people believed the empire would stand forever.
+In those years the High King was advised by scholars of what would later become the Arcane Conclave, protected by the holy warriors who would one day be known as the Phoenix Guard, and served by provincial governors who enforced the law throughout the realm. For a generation the people believed Valecoria would stand forever.
 
 But power attracts darkness.
 
-During the empire's greatest expansion, the emperor encountered a mysterious noblewoman who arrived at court from lands beyond the eastern mountains. She called herself Lady __________, claiming descent from an ancient royal lineage long thought lost.
+During Valecoria's greatest expansion, the High King encountered a mysterious noblewoman who arrived at court from lands beyond the eastern mountains. She called herself Lady __________, claiming descent from an ancient royal lineage long thought lost.
 
-She was beautiful, brilliant, and impossibly persuasive. Within a few short years she rose within the imperial court, becoming the emperor's closest advisor and eventually his consort.
+She was beautiful, brilliant, and impossibly persuasive. Within a few short years she rose within the high court, becoming the High King's closest advisor and eventually his consort.
 
 None realized then that she was something far older than any mortal queen.
 
-Lady __________ was a vampire, one of the ancient predators who had once ruled the night before the rise of human kingdoms. She had watched the empire grow from the shadows and saw in the emperor the perfect vessel through which she could reclaim dominion over the world.
+Lady __________ was a vampire, one of the ancient predators who had once ruled the night before the rise of human kingdoms. She had watched Valecoria grow from the shadows and saw in the High King the perfect vessel through which she could reclaim dominion over the world.
 
 Over time she whispered to him of power, immortality, and the frailty of mortal rule.
 
-Eventually, the emperor accepted her gift.
+Eventually, the High King accepted her gift.
 
 When the transformation was complete, the empire had already begun to change.
 
 ### The Shattering
 
-The emperor did not die. He ascended.
+The High King did not die. He ascended.
 
-The court soon realized the truth too late. Loyal nobles disappeared in the night. Entire noble houses were replaced by pale-faced courtiers who no longer walked in the daylight. Provinces fell under the rule of the emperor's new aristocracy.
+The court soon realized the truth too late. Loyal nobles disappeared in the night. Entire noble houses were replaced by pale-faced courtiers who no longer walked in the daylight. Provinces fell under the rule of the High King's new aristocracy.
 
-Word spread quickly across the empire. The emperor had become a vampire.
+Word spread quickly across Valecoria. The High King had become a vampire.
 
 Rebellion erupted across the realm. Dukes declared independence. Cities raised militias. Religious orders called for holy war. Witch hunters burned suspected collaborators. In the chaos, ancient creatures long driven into hiding began to emerge from forests, mountains, and forgotten places.
 
-Thus began the conflict remembered as The War of __________, a brutal century-long struggle that would tear the empire apart.
+Thus began the conflict remembered as The War of __________, a brutal century-long struggle that would tear the realm apart.
 
 ### The Hundred Years of War
 
 For a hundred years the land burned.
 
-The emperor's court transformed itself into a new aristocracy of immortal predators. Noble houses were turned into bloodlines of vampires loyal only to the throne.
+The High King's court transformed itself into a new aristocracy of immortal predators. Noble houses were turned into bloodlines of vampires loyal only to the throne.
 
 Against them rose countless factions born from desperation and war.
 
@@ -64,15 +64,15 @@ The war became more than rebellion. It became a struggle for the soul of the wor
 
 ### The Fall of the Vampire King
 
-After a century of devastation, the emperor's reign finally ended.
+After a century of devastation, the High King's reign finally ended.
 
-A coalition led by the Phoenix Guard breached the imperial capital in the final years of the war. There, beneath burning skies and collapsing towers, the vampire emperor was finally destroyed.
+A coalition led by the Phoenix Guard breached the royal capital in the final years of the war. There, beneath burning skies and collapsing towers, the vampire king was finally destroyed.
 
 But victory came far too late.
 
 The empire had already collapsed. Cities lay in ruins. Provinces had become isolated territories ruled by warlords, cults, or monsters.
 
-Worse still, the emperor's queen had vanished before the capital fell.
+Worse still, the High King's queen had vanished before the capital fell.
 
 ### The Age of Noctvale
 
@@ -100,11 +100,12 @@ The empire is gone. But the war never truly ended.
 
 ## Setting Notes
 
-- The pre-fall empire/kingdom was named **Valecoria** — now lost to history in Noctvale's current era.
+- The pre-fall realm was named **Valecoria** — now lost to history in Noctvale's current era.
 - The old realm was organized across **12 Grand Duchies**, each originally a full kingdom.
-- The High King / Emperor created a near-utopia through diplomacy, marriage, and defensive conquest.
+- The pre-fall ruler was **Aurelian Eiradan Valecor, First of His Name, High King of Valecoria, Binder of the Twelve Crowns, Warden of the Dawn Roads, Lord of the Threefold Concord, and Defender of the Living Realm**.
+- Aurelian created a near-utopia through diplomacy, marriage, and defensive conquest.
 - The realm deeply integrated elves and dwarves with humans.
-- The High King may have been half-elven or otherwise long-lived.
+- Aurelian was half-elven or otherwise touched by elven longevity.
 - Accepted magics in the realm: **Arcane, Nature, and Light**.
 - Illegal or forbidden magics: **Necromancy, Blood, and Infernal**.
 - The Phoenix Guard later split three ways after the fall: four rebelled, four hid, four joined the turned King.
