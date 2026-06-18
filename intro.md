@@ -18,31 +18,27 @@ In those years the High King was advised by scholars of what would later become 
 
 But power attracts darkness.
 
-During Valecoria's greatest expansion, the High King encountered a mysterious noblewoman who arrived at court from lands beyond the eastern mountains. She called herself Lady __________, claiming descent from an ancient royal lineage long thought lost.
+During Valecoria's greatest expansion, the High King encountered a mysterious noblewoman from an isolated elven settlement on the far marches of the realm. She called herself Lady Aelthir, claiming descent from an ancient royal lineage long thought lost.
 
 She was beautiful, brilliant, and impossibly persuasive. Within a few short years she rose within the high court, becoming the High King's closest advisor and eventually his consort.
 
 None realized then that she was something far older than any mortal queen.
 
-Lady __________ was a vampire, one of the ancient predators who had once ruled the night before the rise of human kingdoms. She had watched Valecoria grow from the shadows and saw in the High King the perfect vessel through which she could reclaim dominion over the world.
+Lady Aelthir was one of the cursed sanguine predators rumored to stalk the wilds beyond the valley. She had watched Valecoria grow from the shadows and saw in the High King the perfect vessel through which she could reclaim dominion over the realm.
 
-Over time she whispered to him of power, immortality, and the frailty of mortal rule.
-
-Eventually, the High King accepted her gift.
-
-When the transformation was complete, the empire had already begun to change.
+Over time she whispered to him of power, immortality, and the frailty of mortal rule. Eventually, the High King accepted her gift. When the transformation was complete, the empire had already begun to change.
 
 ### The Shattering
 
-The High King did not die. He ascended.
+The High King did not die.
 
-The court soon realized the truth too late. Loyal nobles disappeared in the night. Entire noble houses were replaced by pale-faced courtiers who no longer walked in the daylight. Provinces fell under the rule of the High King's new aristocracy.
+The court realized the truth too late. Loyal nobles disappeared in the night. Entire noble houses were replaced by pale-faced courtiers who no longer walked in the daylight. Provinces fell under the rule of the High King's new aristocracy.
 
-Word spread quickly across Valecoria. The High King had become a vampire.
+Word spread quickly across Valecoria. The High King was no more, something darker had taken his place.
 
 Rebellion erupted across the realm. Dukes declared independence. Cities raised militias. Religious orders called for holy war. Witch hunters burned suspected collaborators. In the chaos, ancient creatures long driven into hiding began to emerge from forests, mountains, and forgotten places.
 
-Thus began the conflict remembered as The War of __________, a brutal century-long struggle that would tear the realm apart.
+Thus began the conflict remembered as The War of the Shattered Crown, a brutal century-long struggle that would tear the realm apart.
 
 ### The Hundred Years of War
 
@@ -52,13 +48,13 @@ The High King's court transformed itself into a new aristocracy of immortal pred
 
 Against them rose countless factions born from desperation and war.
 
-The Radiant Crusade swore sacred vows to destroy the undead king and his court. The Inquisition declared all magic a corruption that had doomed the empire. The Silver Hunt tracked the monstrous beasts that spread through the wild lands. The Arcane Conclave sought knowledge of the supernatural forces now unleashed. And villages formed watches to protect their homes from all the horrors that roam the land.
+The Radiant Crusade swore sacred vows to destroy the undead king and his court. The Inquisition declared all magic a corruption that had doomed the kingdom. The Silver Hunt tracked the monstrous beasts that spread through the wild lands. The Arcane Conclave withdrew behind the walls of its tower-city, hoarding magic and forbidden learning while desperate refugees were left outside its gates. And villages, scattered across the lands, formed watches to protect their homes from all the horrors that roam the land.
 
 Meanwhile darker powers took root in the shadows.
 
 Witches were forced to band together in secret covens to protect themselves from those who believed that all magic — and all who were different — were evil and deserved to be purged.
 
-The Infernal Pact formed secret brotherhoods devoted to demonic powers. The Grave Wardens learned to command the restless dead rising from endless battlefields. And in the wilderness, savage packs of werebeasts became what is now called The Nightpack.
+The Infernal Pact formed secret brotherhoods devoted to demonic powers, performing dark rights under moonless skies. The Grave Wardens learned to command the restless dead rising from endless battlefields, turning the power of death to their own ends. In the cities, rumors spread of things slinking through drains and forgotten underways: knives in the dark, chittering voices behind brick, and a hidden force moving beneath the streets.
 
 The war became more than rebellion. It became a struggle for the soul of the world.
 
@@ -66,79 +62,26 @@ The war became more than rebellion. It became a struggle for the soul of the wor
 
 After a century of devastation, the High King's reign finally ended.
 
-A coalition led by the Phoenix Guard breached the royal capital in the final years of the war. There, beneath burning skies and collapsing towers, the vampire king was finally destroyed.
+A coalition led by the Phoenix Guard, decendants of his very own personal guard, breached the royal capital in the final years of the war. There, beneath burning skies and collapsing towers, the vampire king was finally destroyed.
 
 But victory came far too late.
 
-The empire had already collapsed. Cities lay in ruins. Provinces had become isolated territories ruled by warlords, cults, or monsters.
+The kingdom had already collapsed. Cities lay in ruins. Provinces had become isolated territories ruled by warlords, cults, or monsters.
 
 Worse still, the High King's queen had vanished before the capital fell.
 
 ### The Age of Noctvale
 
-The empire no longer exists. The land is now known simply as Noctvale.
+The kingdom no longer exists. The land is now known simply as The Noctvale.
 
-The ancient aristocracy of vampires survives as The Nobility, scattered across ruined estates and dark fortresses. They no longer attempt to rule the realm as kings. Instead they indulge in endless decadence.
-
-Bands of vampire nobles roam the countryside in lavish revelries and endless hunting parties, treating the shattered lands as their private playground. Villages are raided for sport. Travelers vanish along lonely roads. Entire regions live in fear of the next wandering courtly procession.
-
-To The Nobility, the world belongs to them.
+The ancient aristocracy of vampires survives as The Nobility, scattered across ruined estates and dark fortresses. They no longer attempt to rule the realm as kings. Instead they indulge in endless decadence. Bands of vampire nobles roam the countryside in lavish revelries and endless hunting parties, treating the shattered lands as their private playground. Villages are raided for sport. Travelers vanish along lonely roads. Entire regions live in fear of the next wandering courtly procession. To The Nobility, the world belongs to them.
 
 The rest of the realm is left to fend for itself.
 
-In the absence of the empire's authority, those who once enforced the law took power for themselves. The organization now known as The Iron Law rose to fill the vacuum, but power without restraint soon corrupted them, and they now rule through fear, chains, and the barrel of a gun.
+In the absence of the kingdom's authority, those who once enforced the law took power for themselves, but power without restraint soon corrupted them, and they now rule through fear and chains.
 
 Across Noctvale, the factions born during the long war still struggle for power, survival, and vengeance.
 
-Some fight to restore order. Some seek forbidden knowledge. Some serve darker masters.
-
-And some simply fight to survive another night.
-
-The empire is gone. But the war never truly ended.
+Some fight to restore order. Some seek forbidden knowledge. Some serve darker masters, and some simply fight to survive another night.
 
 ---
-
-## Setting Notes
-
-- The pre-fall realm was named **Valecoria** — now lost to history in Noctvale's current era.
-- The old realm was organized across **12 Grand Duchies**, each originally a full kingdom.
-- The pre-fall ruler was **Aurelian Eiradan Valecor, First of His Name, High King of Valecoria, Binder of the Twelve Crowns, Warden of the Dawn Roads, Lord of the Threefold Concord, and Defender of the Living Realm**.
-- Aurelian created a near-utopia through diplomacy, marriage, and defensive conquest.
-- The realm deeply integrated elves and dwarves with humans.
-- Aurelian was half-elven or otherwise touched by elven longevity.
-- Accepted magics in the realm: **Arcane, Nature, and Light**.
-- Illegal or forbidden magics: **Necromancy, Blood, and Infernal**.
-- The Phoenix Guard later split three ways after the fall: four rebelled, four hid, four joined the turned King.
-- **"Crown Roads"** — the realm's main road network.
-- The setting is a vast meteor-scarred valley roughly the size of Ireland, where small retinues fight across ruins, Crown Roads, and haunted wilds.
-- Lethal, narrative, campaign-driven skirmish combat.
-- Influences: Mordheim-style campaign skirmish play, grimdark fantasy, Gothic horror, Warcry, Kill Team, Necromunda, and classic Warhammer design principles.
-
----
-
-
-## Factions
-
-Phoenix Guard  
-Radiant Crusade  
-Inquisition  
-Silver Hunt  
-Arcane Conclave  
-Village Watch  
-Iron Law  
-Coven  
-Nightpack  
-Grave Wardens  
-Nobility  
-Infernal Pact
-
-Village Watch are ordinary townsfolk defending their homes, not led by sheriffs.
-
----
-
-## Game Summary
-
-Noctvale is a grimdark campaign skirmish game where retinues battle for Relics
-scattered across a cursed land. Fighters grow stronger through campaign play,
-Survival Rolls carry both treasure and danger, and every battle risks lasting
-consequences through the **Downed** system.

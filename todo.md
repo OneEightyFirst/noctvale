@@ -75,6 +75,22 @@ Write 2–3 spells per magic class relevant to Silver Hunt and Nightpack.
 
 ---
 
+## Phase 4a: App-Visible TBD Cleanup
+
+Resolve the remaining `TBD` items that players can see in the app and the rules
+files imported by the app rules wiki, in priority order.
+
+- [ ] Sync the app spell picker data in `app/src/data/noctvale.js` to canonical rules values where the rules now have difficulty, range, Mt, Sk, or Mishap values.
+- [ ] Finish the Infernal spell list, including the standard attack spell, empty spell slots, and **Summon Daemon** Mishap.
+- [ ] Set the **Summoning Crystal** Crown cost in `rules/equipment.md`.
+- [ ] Write the **Vampire** ability list for the **Vampires** Tradition.
+- [ ] Finish Blood spell profiles, especially missing ranges, **Leech** Mt/Sk, and unresolved Mishaps.
+- [ ] Resolve remaining Light, Arcane, Nature, and Necromancy spell Mishaps or ranges.
+- [ ] Name the Infernal-associated affliction in the affliction table.
+- [ ] Add Domain composition tables or replace the visible "to be added" markers with the intended roster guidance.
+
+---
+
 ## Phase 5b: Archetype & Domain Feats
 
 Define feat lists for each archetype and each domain. Feats are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and feats make those choices feel distinct on the table.

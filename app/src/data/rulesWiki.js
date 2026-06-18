@@ -110,6 +110,34 @@ function extractHeadings(markdown, title) {
     .filter((heading, index) => !(index === 0 && heading.level === 1 && heading.label === title));
 }
 
+function stripArticleTitleBlock(markdown, title, summary) {
+  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  let index = 0;
+
+  while (index < lines.length && !lines[index].trim()) index += 1;
+
+  const firstHeading = lines[index]?.match(/^#\s+(.+?)\s*#*$/);
+  if (firstHeading && stripMarkdown(firstHeading[1]) === title) {
+    index += 1;
+  }
+
+  while (index < lines.length && !lines[index].trim()) index += 1;
+
+  const subtitle = lines[index]?.trim();
+  const subtitleText = subtitle ? stripMarkdown(subtitle) : "";
+  if (subtitle && subtitleText && subtitleText === summary) {
+    index += 1;
+    while (index < lines.length && !lines[index].trim()) index += 1;
+    if (/^---+$/.test(lines[index]?.trim())) {
+      index += 1;
+    }
+  }
+
+  while (index < lines.length && !lines[index].trim()) index += 1;
+
+  return lines.slice(index).join("\n");
+}
+
 function buildHeadingTree(article) {
   const root = [];
   const stack = [{ level: 0, children: root }];
@@ -138,11 +166,13 @@ export const RULES_ARTICLES = DOCUMENT_DEFS.map((doc) => {
   const title = extractTitle(doc.markdown, doc.label);
   const summary = extractSummary(doc.markdown);
   const headings = extractHeadings(doc.markdown, title);
+  const displayMarkdown = stripArticleTitleBlock(doc.markdown, title, summary);
 
   return {
     ...doc,
     title,
     summary,
+    displayMarkdown,
     headings,
     search: `${doc.label} ${doc.category} ${title} ${summary} ${stripMarkdown(doc.markdown)}`.toLowerCase(),
   };

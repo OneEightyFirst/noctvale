@@ -1,5 +1,5 @@
 import React, { memo, useCallback, useEffect, useMemo, useState } from "react";
-import { Pencil, Plus, X } from "lucide-react";
+import { ArrowLeft, Pencil, Plus, X } from "lucide-react";
 import { useRetinue } from "../hooks/useRetinue.js";
 import { emptyRetinue } from "../lib/retinue.js";
 import {
@@ -678,7 +678,7 @@ function Warnings({ warnings }) {
   );
 }
 
-export default function RetinueEditor({ retinueId, editing, onToggleEditing }) {
+export default function RetinueEditor({ retinueId, editing, onToggleEditing, onBackToLibrary }) {
   const { retinue, loading, patchRetinue, setFighters } = useRetinue(retinueId);
   const [addFighterOpen, setAddFighterOpen] = useState(false);
 
@@ -853,6 +853,14 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing }) {
             onChange={(event) => patchRetinue({ name: event.target.value })}
           />
           <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
+            <button
+              type="button"
+              aria-label="Back to retinue library"
+              onClick={onBackToLibrary}
+              className="grid h-9 w-9 shrink-0 place-items-center rounded border border-night-700 bg-night-900 text-cream-300 transition hover:border-cream-500 hover:text-cream-100"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+            </button>
             <button
               type="button"
               aria-label={editing ? "Done editing" : "Edit retinue"}

@@ -36,6 +36,29 @@ function uniqueSlug(base, used) {
   return count === 0 ? root : `${root}-${count + 1}`;
 }
 
+function rulesHash(articleId, anchor = "") {
+  const encodedArticleId = encodeURIComponent(articleId);
+  const encodedAnchor = anchor ? `/${encodeURIComponent(anchor)}` : "";
+  return `#rules/${encodedArticleId}${encodedAnchor}`;
+}
+
+function parseRulesHash(hash = window.location.hash) {
+  const match = hash.match(/^#rules\/([^/]+)(?:\/(.+))?$/);
+  if (!match) return null;
+  return {
+    articleId: decodeURIComponent(match[1]),
+    anchor: match[2] ? decodeURIComponent(match[2]) : "",
+  };
+}
+
+function rulesHistoryState(articleId, anchor = "") {
+  return { noctvaleView: "rules", articleId, anchor };
+}
+
+function articleIdOrDefault(articleId) {
+  return RULES_ARTICLE_BY_ID.has(articleId) ? articleId : RULES_ARTICLES[0]?.id;
+}
+
 function parseTable(rows) {
   const cleanRows = rows.map((row) =>
     row
@@ -70,7 +93,7 @@ function resolveRuleLink(href, currentArticleId) {
   const targetAnchor = rawFragment ? slugify(decodeURIComponent(rawFragment)) : "";
 
   return {
-    href: targetAnchor ? `#${targetArticleId}-${targetAnchor}` : `#${targetArticleId}`,
+    href: rulesHash(targetArticleId, targetAnchor),
     targetArticleId,
     targetAnchor,
     external: false,
@@ -300,7 +323,7 @@ function MarkdownBlocks({ markdown, article, onNavigate, nested = false, usedSlu
           key={`${block.anchor}-${blockIndex}`}
           id={`${article.id}-${block.anchor}`}
           className={cx(
-            "group scroll-mt-28 break-words font-semibold text-cream-100",
+            "group scroll-mt-40 break-words font-semibold text-cream-100",
             level === 1 && "mt-8 text-3xl",
             level === 2 && "mt-8 border-t border-night-800 pt-6 text-2xl",
             level === 3 && "mt-6 text-xl",
@@ -308,7 +331,14 @@ function MarkdownBlocks({ markdown, article, onNavigate, nested = false, usedSlu
             level >= 5 && "mt-4 text-base",
           )}
         >
-          <a href={`#${article.id}-${block.anchor}`} className="underline-offset-4 hover:underline">
+          <a
+            href={rulesHash(article.id, block.anchor)}
+            onClick={(event) => {
+              event.preventDefault();
+              onNavigate(article.id, block.anchor);
+            }}
+            className="underline-offset-4 hover:underline"
+          >
             {block.label}
           </a>
         </HeadingTag>
@@ -425,8 +455,10 @@ function NavNode({ node, depth, activeId, activeAnchor, expanded, forceExpanded,
 
 export default function RulesWiki() {
   const [query, setQuery] = useState("");
-  const [activeId, setActiveId] = useState(RULES_ARTICLES[0]?.id);
-  const [activeAnchor, setActiveAnchor] = useState("");
+  const initialLocation = parseRulesHash();
+  const initialArticleId = articleIdOrDefault(initialLocation?.articleId);
+  const [activeId, setActiveId] = useState(initialArticleId);
+  const [activeAnchor, setActiveAnchor] = useState(initialLocation?.anchor ?? "");
   const [expanded, setExpanded] = useState({});
   const articleTopRef = useRef(null);
 
@@ -453,6 +485,23 @@ export default function RulesWiki() {
   const activeArticle = articleById.get(activeId) ?? filteredArticles[0] ?? RULES_ARTICLES[0];
 
   useEffect(() => {
+    const current = parseRulesHash();
+    const articleId = articleIdOrDefault(current?.articleId);
+    const anchor = current?.anchor ?? "";
+    window.history.replaceState(rulesHistoryState(articleId, anchor), "", rulesHash(articleId, anchor));
+
+    function handlePopState(event) {
+      const state = event.state?.noctvaleView === "rules" ? event.state : parseRulesHash();
+      if (!state) return;
+      setActiveId(articleIdOrDefault(state.articleId));
+      setActiveAnchor(state.anchor ?? "");
+    }
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  useEffect(() => {
     const target = activeAnchor ? document.getElementById(`${activeArticle.id}-${activeAnchor}`) : articleTopRef.current;
     target?.scrollIntoView({ block: "start" });
   }, [activeArticle.id, activeAnchor]);
@@ -461,9 +510,17 @@ export default function RulesWiki() {
     setExpanded((current) => ({ ...current, [nodeId]: !current[nodeId] }));
   }, []);
 
-  const selectArticle = useCallback((articleId, anchor = "") => {
-    setActiveId(articleId);
+  const selectArticle = useCallback((articleId, anchor = "", options = {}) => {
+    const nextArticleId = articleIdOrDefault(articleId);
+    setActiveId(nextArticleId);
     setActiveAnchor(anchor);
+
+    if (options.replace) {
+      window.history.replaceState(rulesHistoryState(nextArticleId, anchor), "", rulesHash(nextArticleId, anchor));
+      return;
+    }
+
+    window.history.pushState(rulesHistoryState(nextArticleId, anchor), "", rulesHash(nextArticleId, anchor));
   }, []);
 
   return (
@@ -509,14 +566,21 @@ export default function RulesWiki() {
         </div>
       </aside>
 
-      <article ref={articleTopRef} className="min-w-0 scroll-mt-28 rounded-lg border border-night-800 bg-night-950">
+      <article ref={articleTopRef} className="min-w-0 scroll-mt-40 rounded-lg border border-night-800 bg-night-950">
         <div className="border-b border-night-800 p-4 sm:p-5">
           <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-cream-500">
             <ScrollText className="h-4 w-4 text-accent-300" aria-hidden="true" />
             {activeArticle.category}
           </div>
           <h2 id={`${activeArticle.id}`} className="mt-2 break-words text-2xl font-semibold text-cream-100">
-            <a href={`#${activeArticle.id}`} className="underline-offset-4 hover:underline">
+            <a
+              href={rulesHash(activeArticle.id)}
+              onClick={(event) => {
+                event.preventDefault();
+                selectArticle(activeArticle.id);
+              }}
+              className="underline-offset-4 hover:underline"
+            >
               {activeArticle.title}
             </a>
           </h2>
@@ -524,7 +588,7 @@ export default function RulesWiki() {
         </div>
 
         <div className="p-4 sm:p-5">
-          <MarkdownBlocks markdown={activeArticle.markdown} article={activeArticle} onNavigate={selectArticle} />
+          <MarkdownBlocks markdown={activeArticle.displayMarkdown} article={activeArticle} onNavigate={selectArticle} />
         </div>
       </article>
     </main>

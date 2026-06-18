@@ -841,8 +841,9 @@ and steel.
 
 **Domain:** Nature · **Tradition:** Beastmen
 
-Werebeast packs and shapeshifter retinues. Savage companies that formed in the
-wilderness during the long war, running the borderlands as predator and prey.
+Tunnel-haunting packs and knife-bearing raiders rumored to move beneath the
+cities. During the long war, their chittering voices, sewer paths, and blades
+in the dark became a terror of every walled settlement.
 
 The **Inquisition** and **Silver Hunt** share Hunters + Mortal — differentiate
 with Tradition, gear, and roster choices.
@@ -1322,9 +1323,9 @@ were different — were evil and deserved to be purged.
 
 **Domain:** Arcane · **Tradition:** Ritualists
 
-Scholars and mages seeking supernatural knowledge. Originally advised the
-emperor before the fall. They seek knowledge of the supernatural forces now
-unleashed across Noctvale.
+Scholars and mages who hoard magic and forbidden learning inside their
+tower-city. Originally advisors to the High King, they closed their walls during
+the fall and left the desperate outside their gates.
 
 ##### Grave Wardens
 
@@ -1660,9 +1661,9 @@ equipment for mechanical rules.
 | Radiant Crusade | Hunters | Light | Holy warriors sworn to destroy undead |
 | Inquisition | Hunters | Mortal | Anti-magic zealots, guns and denial |
 | Silver Hunt | Hunters | Mortal | Monster hunters, alchemy and silver weapons |
-| Nightpack | Hunters | Nature | Werebeast packs, shapeshifter retinues |
+| Nightpack | Hunters | Nature | Sewer-shadow packs, knives in the dark |
 | Coven | Cult | Nature | Witches banding together for survival |
-| Arcane Conclave | Cult | Arcane | Scholars and mages seeking supernatural knowledge |
+| Arcane Conclave | Cult | Arcane | Tower-city scholars who hoard magic and forbidden learning |
 | Grave Wardens | Cult | Necromancy | Necromancers commanding the restless dead |
 | Infernal Pact | Cult | Infernal | Demonic cult brotherhoods |
 | Village Watch | Folk | Mortal | Ordinary townsfolk defending their homes |

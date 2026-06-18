@@ -58,6 +58,108 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-17 — Record app-visible TBD cleanup priorities
+
+**Decision:** Add a prioritized TODO checklist for the remaining `TBD` items
+visible in the app and the rules files imported by the app rules wiki. The list
+prioritizes app spell data sync, Infernal spells, **Summoning Crystal** cost,
+**Vampire** abilities, Blood spell gaps, remaining spell Mishaps and ranges, the
+Infernal affliction name, and Domain composition tables.
+
+**Reasoning:** Playtesters are now using the app as a live rules surface, so
+visible placeholders need a clear order of attack. Recording the audit in
+`todo.md` keeps the unresolved work discoverable without prematurely choosing
+mechanics that still need design decisions.
+
+## 2026-06-17 — Add playtest home page
+
+**Decision:** Add a playtest home page to the app root that tells playtesters
+Noctvale is still in development, asks them to send rules and app issues
+through the feedback form, thanks them for playing, and links onward to the
+rules or retinue builder. Reorder the top view toggle so **Rules** appears
+before **Retinues**.
+
+**Reasoning:** Playtesters should know up front that the current build is
+unfinished and that feedback belongs in the tracked feedback flow. Putting
+**Rules** first matches the current rules-first browsing use case.
+
+## 2026-06-17 — Preserve rules wiki Back navigation
+
+**Decision:** Add hash-backed browser history to the app rules wiki. Rule
+article and heading navigation now writes `#rules/article/section` entries,
+Back/Forward restores the prior article and section without reloading the app,
+and direct `#rules/...` URLs open the Rules view.
+
+**Reasoning:** Players should be able to follow a rule link, then use browser
+Back to return to the rule they were reading. Keeping navigation in browser
+history makes the rules wiki behave like documentation instead of a single
+stateful panel that loses context.
+
+## 2026-06-17 — Fix rules wiki title block and anchors
+
+**Decision:** Update the app rules wiki to render each article's title block as
+metadata instead of repeating it in the markdown body, and increase heading
+scroll offset so sidebar bookmark jumps land below the sticky app header.
+
+**Reasoning:** `intro.md` uses a title, subtitle, and divider that belong in the
+article header when displayed in the app. Re-rendering that block in the article
+body makes the introduction feel duplicated and visually heavy. Bookmark jumps
+must account for the tall sticky Noctvale header so section headings remain
+visible after navigation.
+
+## 2026-06-17 — Split internal background notes from intro
+
+**Decision:** Create `background-notes.md` as a non-player-facing home for
+setting notes, faction lists, and game-summary context that should inform lore
+work without appearing as polished player-facing prose.
+
+**Reasoning:** `intro.md` should stay focused on public-facing setting text.
+Internal facts such as Valecoria's structure, Aurelian's full ceremonial title,
+Aelthir's deeper origin clues, faction inventory, and external design
+influences are useful for development, but they read as notes rather than
+rulebook copy.
+
+## 2026-06-17 — Recast the Nightpack as a sewer-shadow threat
+
+**Decision:** Reframe the Nightpack in `intro.md`, `rules/retinue.md`, and the
+downstream retinue chapter as tunnel-haunting packs and knife-bearing raiders
+moving through city drains, forgotten underways, and shadows beneath walled
+settlements. Remove the old wilderness werebeast origin from their faction
+description.
+
+**Reasoning:** The Nightpack should feel like an unseen urban menace: rumors of
+things slinking below the streets, knives in the dark, and some hidden force
+moving through the sewers while Valecoria collapses above them. This gives the
+faction a sharper identity than generic savage shapeshifters.
+
+## 2026-06-17 — Define the Arcane Conclave's tower-city
+
+**Decision:** Reframe the Arcane Conclave in `intro.md`, `rules/retinue.md`,
+and the downstream retinue chapter as scholars and mages who withdrew behind
+the walls of their tower-city, hoarding magic and forbidden learning while
+refugees were left outside its gates.
+
+**Reasoning:** The Conclave should not read as neutral knowledge-seekers during
+the fall. Their identity is built around isolation, control of magical
+knowledge, and moral failure when Valecoria needed aid.
+
+## 2026-06-17 — Hide Aelthir's impossible origin
+
+**Decision:** Update `intro.md` so Lady Aelthir's written histories place her
+in an isolated elven settlement on Valecoria's far marches, not openly from
+beyond the mountains. Preserve the deeper truth only as a subtle setting note:
+older fragments imply her house remembered lands no living traveler could reach
+beyond the mountains. Soften the blood-curse reveal so Aelthir belongs to the
+cursed sanguine predators rumored to stalk the wilds beyond the valley, not to
+a fully explained bloodline civilization.
+
+**Reasoning:** Noctvale's mountains should remain a hard boundary in the known
+world. Aelthir can still carry an impossible origin, but the player-facing
+history should present the acceptable court record first and leave the stranger
+truth buried deeper in the lore. The blood-cursed should feel like feared rumors
+from the world beyond settled Valecoria before they become a named aristocracy
+in the fallen realm.
+
 ## 2026-06-17 — Builder performance pass
 
 **Decision:** Optimize the playtesting retinue builder for load time and runtime

@@ -154,7 +154,7 @@ async function createGitHubIssue(token, repo, title, body) {
   return response.json();
 }
 
-export const submitPlaytestFeedback = onCall({ secrets: [githubToken] }, async (request) => {
+export const submitPlaytestFeedback = onCall({ invoker: "public", secrets: [githubToken] }, async (request) => {
   if (!request.auth) {
     throw new HttpsError("unauthenticated", "Sign in to submit feedback.");
   }
