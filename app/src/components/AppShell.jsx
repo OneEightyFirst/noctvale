@@ -5,8 +5,14 @@ import { SideNavProvider, useSideNav } from "../contexts/SideNavContext.jsx";
 import NoctvaleLogo, { NoctvaleMark } from "./NoctvaleLogo.jsx";
 import UserMenu from "./UserMenu.jsx";
 
+const RULES_HOME = "/rules/intro.html";
+
 function AppLogo({ className = "h-20 w-auto" }) {
-  return <NoctvaleLogo className={className} />;
+  return (
+    <a href={RULES_HOME} className="block shrink-0">
+      <NoctvaleLogo className={className} />
+    </a>
+  );
 }
 
 function AppHeader({ navItems, showSidebar }) {
@@ -31,7 +37,9 @@ function AppHeader({ navItems, showSidebar }) {
                 <Menu className="h-4 w-4" aria-hidden="true" />
               )}
             </button>
-            <NoctvaleMark className="h-9 w-9 shrink-0 lg:hidden" />
+            <a href={RULES_HOME} className="shrink-0 lg:hidden">
+              <NoctvaleMark className="h-9 w-9" />
+            </a>
           </>
         ) : (
           <AppLogo className="h-12 w-auto shrink-0 lg:hidden" />
@@ -72,7 +80,7 @@ function AppLogoColumn({ showSidebar }) {
               ].join(" ")
             : "hidden lg:flex",
         ].join(" ")}
-        aria-label={showSidebar ? "Section navigation" : undefined}
+        aria-label={showSidebar ? "App navigation" : undefined}
       >
         <div className="shrink-0 px-4 py-4">
           <AppLogo />

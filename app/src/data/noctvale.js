@@ -27,7 +27,7 @@ export const SPECIES = [
 
 export const PROFICIENCIES = [
   { id: "one-handed", name: "One-Handed", weapons: "Sword, Hand Axe, Mace, Spear" },
-  { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Great Sword, War Axe, War Hammer" },
+  { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Great Sword, War Axe, War Hammer, Staff" },
   { id: "archery", name: "Archery", weapons: "Shortbow, Longbow, Crossbow, Heavy Crossbow" },
   { id: "thrown", name: "Thrown", weapons: "Sling, Throwing Stars" },
   { id: "firearms", name: "Firearms", weapons: "Musket, Blunderbuss, Pistol, Long Rifle, bombs" },
@@ -62,11 +62,67 @@ export const DOMAIN_SUMMARIES = {
     triangle: "-",
     rules: [
       "No spells.",
-      "Adds Firearms to the Proficiency menu.",
-      "Magic and gunpowder do not mix. Mortal retinues cannot take Caster.",
+      "Fighters with Mortal may take Firearms on the Proficiency menu.",
+      "Mortal and Caster are mutually exclusive on the same fighter.",
     ],
   },
 };
+
+export const ARCHETYPE_KEYWORDS = {
+  knights: "Knights",
+  hunters: "Hunters",
+  folk: "Folk",
+  cult: "Cult",
+};
+
+const VAMPIRE_CLASS_ROLES = new Set(["Leader", "Elite", "Specialist"]);
+
+export function fighterHasCaster(fighter, type, domain) {
+  if (!type?.caster) return false;
+  if (domain === "Mortal") return false;
+  if (type.caster.mode === "required") return true;
+  return Boolean(fighter.caster);
+}
+
+export function resolveFighterKeywords(fighter, archetype, tradition, domain, type) {
+  const keywords = [];
+
+  if (archetype?.id) keywords.push(ARCHETYPE_KEYWORDS[archetype.id]);
+  if (domain) keywords.push(domain);
+  if (tradition?.name) keywords.push(tradition.name);
+  if (type?.role) keywords.push(type.role);
+
+  if (fighterHasCaster(fighter, type, domain)) keywords.push("Caster");
+
+  if (tradition?.id === "vampires" && type?.role && VAMPIRE_CLASS_ROLES.has(type.role)) {
+    keywords.push("Vampire");
+  }
+  if (tradition?.id === "wightlords") {
+    keywords.push("Undead", "Fearless");
+  }
+
+  return keywords;
+}
+
+export function hasKeyword(keywords, name) {
+  return keywords.includes(name);
+}
+
+export function lacksKeyword(keywords, name) {
+  return !keywords.includes(name);
+}
+
+export function canTakeFirearmsProficiency(keywords) {
+  return hasKeyword(keywords, "Mortal");
+}
+
+export function canEquipFirearm(keywords, firearmTier, archetype) {
+  if (!hasKeyword(keywords, "Mortal")) return false;
+  if (hasKeyword(keywords, "Caster")) return false;
+  if (firearmTier === "refined") return archetype?.firearmAccess === "refined";
+  if (firearmTier === "basic") return archetype?.firearmAccess === "basic" || archetype?.firearmAccess === "refined";
+  return archetype?.firearmAccess !== "none";
+}
 
 export const TRADITIONS = [
   {
@@ -109,7 +165,7 @@ export const TRADITIONS = [
     domain: "Arcane",
     allowed: ["knights", "hunters"],
     rules: [
-      "Fighters in this retinue cost +5 Crowns.",
+      "Fighters with the Spellblades keyword cost +5 Crowns.",
       "Melee weapons they carry gain Arcane.",
       "Arcane: When this fighter attacks with this weapon, they may change 1 failed Strike Pool die into a normal hit. The hit keeps the die's color and cannot become a critical hit.",
     ],
@@ -171,7 +227,7 @@ export const TRADITIONS = [
     domain: "Infernal",
     allowed: ["knights", "hunters"],
     rules: [
-      "Armor bought by this retinue costs +10 Crowns.",
+      "Armor bought by fighters with the Hellknights keyword costs +10 Crowns.",
       "Friendly fighters wearing armor project Fear.",
     ],
   },
@@ -181,7 +237,7 @@ export const TRADITIONS = [
     domain: "Infernal",
     allowed: ["knights", "folk"],
     rules: [
-      "Non-Caster fighters in this retinue cost -10 Crowns.",
+      "Fighters with the Damned keyword who lack Caster cost -10 Crowns.",
       "When rolling on the Casualty Table for one of those fighters, subtract 1 from the roll.",
     ],
   },
@@ -237,7 +293,7 @@ export const TRADITIONS = [
     },
     rules: [
       "Choose one beast-mark for the retinue: Wolf, Rat, Bear, or Serpent.",
-      "All fighters cost +10 Crowns and gain the chosen rule.",
+      "All fighters with the Beastmen keyword cost +10 Crowns and gain the chosen rule.",
     ],
   },
   {
@@ -281,7 +337,7 @@ export const TRADITIONS = [
     name: "Wightlords",
     domain: "Necromancy",
     allowed: ["knights", "hunters"],
-    rules: ["All fighters cost +20 Crowns and gain Undead and Fearless."],
+    rules: ["All fighters with the Wightlords keyword cost +20 Crowns and gain Undead and Fearless."],
   },
   {
     id: "vampires",
@@ -289,7 +345,7 @@ export const TRADITIONS = [
     domain: "Blood",
     allowed: ["knights", "cult"],
     rules: [
-      "At roster creation, each Leader, Elite, and Specialist in this retinue gains the Vampire keyword and costs +20 Crowns. Rank fighters do not gain Vampire.",
+      "At roster creation, each fighter with Leader, Elite, or Specialist gains the Vampire keyword and costs +20 Crowns. Fighters with Rank do not gain Vampire.",
       "Each fighter with Vampire chooses 1 vampire ability. The list is still TBD in the source rules.",
       "When a fighter with Vampire takes an enemy fighter Out of Action with Melee or Mercy Kill, restore 1 Wound to that fighter.",
       "Fighters with Vampire pay 2 XP more than the normal cost to buy each post-game advancement.",
@@ -374,7 +430,7 @@ export const ARCHETYPES = {
     firearmAccess: "basic",
     proficiencies: ["one-handed", "two-handed", "archery", "thrown"],
     mortalProficiencies: ["firearms"],
-    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown", "Firearms (Mortal Domain only)"]),
+    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown", "Firearms (requires Mortal)"]),
     fighterTypes: [
       {
         id: "lord",
@@ -384,8 +440,8 @@ export const ARCHETYPES = {
         required: 1,
         cost: 125,
         boost: { count: 2, options: BOOSTABLE_STATS, label: "Add +1 to 2 different stats." },
-        caster: { mode: "optional", spells: 2, when: "If Domain is not Mortal." },
-        rules: ["Leader.", "May take Caster if your Domain is not Mortal. If Caster, knows 2 spells from your Domain list and may take the Cast action."],
+        caster: { mode: "optional", spells: 2, when: "If fighter lacks Mortal." },
+        rules: ["Leader.", "May take Caster if fighter lacks Mortal. If Caster, knows 2 spells from your Domain list and may take the Cast action."],
       },
       {
         id: "knight",
@@ -426,7 +482,7 @@ export const ARCHETYPES = {
     firearmAccess: "refined",
     proficiencies: ["one-handed", "two-handed", "archery", "thrown"],
     mortalProficiencies: ["firearms"],
-    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown", "Firearms (Mortal Domain only)"]),
+    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown", "Firearms (requires Mortal)"]),
     fighterTypes: [
       {
         id: "captain",
@@ -436,8 +492,8 @@ export const ARCHETYPES = {
         required: 1,
         cost: 125,
         boost: { count: 2, options: BOOSTABLE_STATS, label: "Add +1 to 2 different stats." },
-        caster: { mode: "optional", spells: 2, when: "If Domain is not Mortal." },
-        rules: ["Leader.", "May take Caster if your Domain is not Mortal. If Caster, knows 2 spells from your Domain list and may take the Cast action."],
+        caster: { mode: "optional", spells: 2, when: "If fighter lacks Mortal." },
+        rules: ["Leader.", "May take Caster if fighter lacks Mortal. If Caster, knows 2 spells from your Domain list and may take the Cast action."],
       },
       {
         id: "stalker",
@@ -455,8 +511,8 @@ export const ARCHETYPES = {
         cap: 3,
         cost: 60,
         boost: { count: 1, options: BOOSTABLE_STATS, label: "Add +1 to one stat." },
-        builtInChoice: { options: ["archery", "firearms"], restricted: { firearms: "Mortal Domain only" } },
-        rules: ["Specialist.", "Built-in Archery or Firearms proficiency. Firearms requires Mortal Domain. The built-in proficiency does not count against the Specialist's chosen feat pick."],
+        builtInChoice: { options: ["archery", "firearms"], restricted: { firearms: "Requires Mortal" } },
+        rules: ["Specialist.", "Built-in Archery or Firearms proficiency. Firearms requires Mortal. The built-in proficiency does not count against the Specialist's chosen feat pick."],
       },
       {
         id: "hand",
@@ -486,7 +542,7 @@ export const ARCHETYPES = {
     firearmAccess: "basic",
     proficiencies: ["one-handed", "archery", "thrown"],
     mortalProficiencies: ["firearms"],
-    proficiencyRules: proficiencyRule(["One-Handed", "Archery", "Thrown", "Firearms (Mortal Domain only)"]),
+    proficiencyRules: proficiencyRule(["One-Handed", "Archery", "Thrown", "Firearms (requires Mortal)"]),
     fighterTypes: [
       {
         id: "mayor",
@@ -496,8 +552,8 @@ export const ARCHETYPES = {
         required: 1,
         cost: 125,
         boost: { count: 2, options: BOOSTABLE_STATS, label: "Add +1 to 2 different stats." },
-        caster: { mode: "optional", spells: 2, when: "If Domain is not Mortal." },
-        rules: ["Leader.", "May take Caster if your Domain is not Mortal. If Caster, knows 2 spells from your Domain list and may take the Cast action."],
+        caster: { mode: "optional", spells: 2, when: "If fighter lacks Mortal." },
+        rules: ["Leader.", "May take Caster if fighter lacks Mortal. If Caster, knows 2 spells from your Domain list and may take the Cast action."],
       },
       {
         id: "guildsman",
@@ -539,7 +595,7 @@ export const ARCHETYPES = {
     name: "Cult",
     identity: "Magic-dominant brotherhoods, 5-10 fighters",
     tableRole:
-      "Magically dominant and fragile. Field 5-10 fighters: one Theurge, up to two Adepts, and the rest Acolytes. No armor. Up to 3 casters at creation. Cannot choose Mortal.",
+      "Magically dominant and fragile. Field 5-10 fighters: one Theurge, up to two Adepts, and the rest Acolytes. No armor. Up to 3 casters at creation. Fighters with Cult cannot have Mortal.",
     count: { min: 5, target: "5-8", max: 10 },
     casterMax: 3,
     armorCap: "None",
@@ -582,7 +638,7 @@ export const ARCHETYPES = {
       { id: "blood-for-the-rite", name: "Blood for the Rite", rules: [`Once per battle, before this fighter makes a stat roll or casting roll, choose another friendly fighter within 12". That fighter suffers 1 Wound. Add +1 to the roll.`, "This wound can reduce the chosen fighter to 0 Wounds and cause them to become Downed."] },
       { id: "magic-armor", name: "Magic Armor", rules: ["This fighter may equip Light Armor, Medium Armor, or Heavy Armor."] },
       { id: "chant", name: "Chant", rules: [`When 2 or more other friendly Cult fighters have their bases within 1" of this fighter, this fighter projects Fear as a Sphere of Influence with range 6".`, "When an enemy fighter activates while within this Sphere of Influence, they must pass a Sanity test for Fear with this fighter as the source."] },
-      { id: "convoke", name: "Convoke", casterOnly: true, rules: [`Caster only. When this fighter makes a casting roll and 1 or more other friendly Cult fighters with Caster are within 6", add +1 to the roll.`] },
+      { id: "convoke", name: "Convoke", casterOnly: true, rules: [`Fighter must have Caster. When this fighter makes a casting roll and 1 or more other friendly Cult fighters with Caster are within 6", add +1 to the roll.`] },
     ],
   },
 };
@@ -607,7 +663,7 @@ export const DOMAIN_FEATS = [
   { id: "absolute-faith", name: "Absolute Faith", domains: ["Light"], rules: ["This fighter may reroll failed Fear, Panic, and Insanity tests. They must accept the second result."] },
   { id: "unstoppable-faith", name: "Unstoppable Faith", domains: ["Light"], rules: [`When this fighter performs Charge, they may move up to M + 1" instead of M.`, "If this fighter ends a Charge within engagement range of an enemy and moved less than the full allowed distance in a straight line toward that enemy, push that enemy the remaining distance along the charge path.", "When this fighter's Melee action immediately follows that Charge, if the pushed enemy stopped because their base contacted terrain, add 2 red dice to this fighter's Strike Pool for that Melee attack."] },
   { id: "resilient", name: "Resilient", domains: ["Necromancy"], rules: ["When an enemy fighter makes a Melee attack against this fighter, that attack's Strike Pool loses 1 red die, minimum 0."] },
-  { id: "bind-the-dead", name: "Bind the Dead", domains: ["Necromancy"], casterOnly: true, rules: ["Caster only.", "When this fighter successfully casts Summon Skeleton, the Skeleton does not crumble at the end of its activation. It remains under your control for the rest of the battle. Remove it from the battle when it goes Out of Action.", "At the end of the battle, remove any Skeleton kept this way. It is not part of your retinue.", "Does not apply to roster Skeleton fighters recruited through Bone-priests or other rules."] },
+  { id: "bind-the-dead", name: "Bind the Dead", domains: ["Necromancy"], casterOnly: true, rules: ["Fighter must have Caster.", "When this fighter successfully casts Summon Skeleton, the Skeleton does not crumble at the end of its activation. It remains under your control for the rest of the battle. Remove it from the battle when it goes Out of Action.", "At the end of the battle, remove any Skeleton kept this way. It is not part of your retinue.", "Does not apply to roster Skeleton fighters recruited through Bone-priests or other rules."] },
   { id: "bone-ward", name: "Bone Ward", domains: ["Necromancy"], rules: ["Once per battle, when this fighter suffers 1 or more Wounds from an Attack Sequence, reduce the wounds suffered by 1, minimum 0."] },
   { id: "deaths-chill", name: "Death's Chill", domains: ["Necromancy"], rules: ["Enemy fighters cannot Retreat while within engagement range of this fighter."] },
   { id: "daemonic-wings", name: "Daemonic Wings", domains: ["Infernal"], rules: ["Once per battle, at the start of this fighter's activation, they may suffer 1 Wound to gain Fly until the end of that activation.", "Fly: Ignore vertical distance for Move, Charge, and Jump. This fighter keeps their normal M for those actions."] },
@@ -619,7 +675,7 @@ export const DOMAIN_FEATS = [
   { id: "conduit", name: "Conduit", domains: ["Arcane"], rules: ["When a friendly Caster makes a Cast action, that Caster may measure spell range and line of sight from this fighter's base instead of their own.", "This fighter must be Active and not Downed or Stunned. The Caster still makes the casting roll using their Wi and resolves Mishaps as normal. Once per round.", "If more than one friendly fighter with Conduit could be used, the Caster's controlling player chooses one."] },
   { id: "helping-hand", name: "Helping Hand", domains: ["Arcane"], rules: [`Once per round, this fighter may move a Downed or Stunned friendly fighter within 12" up to 6" toward this fighter.`] },
   { id: "second-sight", name: "Second Sight", domains: ["Arcane"], rules: ["During Survival Rolls, if this fighter is a surviving fighter, when your retinue rolls 2d6 for the Survival Roll, you may reroll 2d6 once and choose which result to use.", "Once per Survival Roll. If more than one friendly fighter has Second Sight, you may still reroll only once."] },
-  { id: "steady-weave", name: "Steady Weave", domains: ["Arcane"], casterOnly: true, rules: ["Caster only.", "When this fighter makes a casting roll that fails to meet the spell's casting difficulty, reroll 2d6 + Wi once. Must accept the second result.", "If the first roll was Mishap, resolve it as normal. Do not reroll."] },
+  { id: "steady-weave", name: "Steady Weave", domains: ["Arcane"], casterOnly: true, rules: ["Fighter must have Caster.", "When this fighter makes a casting roll that fails to meet the spell's casting difficulty, reroll the Casting Roll once. Must accept the second result.", "If the first roll was Mishap, resolve it as normal. Do not reroll."] },
 ];
 
 export const SPELLS = {
@@ -689,19 +745,20 @@ export const EQUIPMENT = [
   { id: "great-sword", name: "Great Sword", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 50, slots: 2, rules: ["Hands 2H. +Mt +2, +Sk +1. Sword. Heavy, powerful."] },
   { id: "war-axe", name: "War Axe", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +3. Axe. Heavy hitter."] },
   { id: "war-hammer", name: "War Hammer", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +3. Hammer. Anti-plate; crits vs Heavy Armor only."] },
+  { id: "staff", name: "Staff", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 20, slots: 2, rules: ["Hands 2H. +Mt +1, +Sk +1. Spear. Spell focus.", "Once per game when this fighter makes a casting roll that fails to meet the spell's casting difficulty, reroll the Casting Roll once. Must accept the second result.", "If the first roll was Mishap, resolve it as normal. Do not reroll."] },
   { id: "shortbow", name: "Shortbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 40, slots: 2, rules: [`Hands 2H. Range 3"-18". +Sk +2. Fast, Sk-dominant.`] },
   { id: "longbow", name: "Longbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 50, slots: 2, rules: [`Hands 2H. Range 3"-24". +Sk +2. Longer range, stronger.`] },
   { id: "crossbow", name: "Crossbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 65, slots: 2, rules: [`Hands 2H. Range 3"-24". +Mt +2. Mt-dominant, mechanical.`] },
   { id: "heavy-crossbow", name: "Heavy Crossbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 90, slots: 2, rules: [`Hands 2H. Range 3"-30". +Mt +3. Slow, powerful.`] },
   { id: "sling", name: "Sling", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 20, slots: 1, rules: [`Hands 1H. Range 3"-12". Flat Strike Pool 2 Mt / 1 Sk; normal RC to hit.`] },
   { id: "throwing-stars", name: "Throwing Stars", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 10, slots: 1, rules: [`Hands 1H. Range 0"-8". +Sk +1. No minimum range, thrown; additive.`] },
-  { id: "musket", name: "Musket", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "basic", cost: 100, slots: 2, rules: [`Mortal Domain only. Hands 2H. Range 3"-24". Primer 9+. Strike Pool 5 Mt / 3 Sk.`] },
-  { id: "blunderbuss", name: "Blunderbuss", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "basic", cost: 115, slots: 2, rules: [`Mortal Domain only. Hands 2H. Range 0"-10". Primer 8+. Strike Pool 6 Mt.`] },
-  { id: "pistol", name: "Pistol", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 90, slots: 1, rules: [`Mortal Domain only. Hunters only. Hands 1H. Range 0"-12". Primer 9+. Strike Pool 5 Mt / 2 Sk.`] },
-  { id: "long-rifle", name: "Long Rifle", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 125, slots: 2, rules: [`Mortal Domain only. Hunters only. Hands 2H. Range 3"-30". Primer 10+. Strike Pool 6 Mt / 2 Sk.`] },
-  { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 25, slots: 1, rules: ["Mortal Domain only. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
-  { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", firearmTier: "basic", cost: 40, slots: 1, rules: ["Mortal Domain only. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3 inch blast, Single Shot."] },
-  { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", firearmTier: "basic", cost: 25, slots: 1, rules: ["Mortal Domain only. Hands 1H. Distance d6 + Mt. Primer 8+. 6 inch blast, Single Shot, Smoke."] },
+  { id: "musket", name: "Musket", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "basic", cost: 100, slots: 2, rules: [`Requires Mortal; forbids Caster. Hands 2H. Range 3"-24". Primer 9+. Strike Pool 5 Mt / 3 Sk.`] },
+  { id: "blunderbuss", name: "Blunderbuss", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "basic", cost: 115, slots: 2, rules: [`Requires Mortal; forbids Caster. Hands 2H. Range 0"-10". Primer 8+. Strike Pool 6 Mt.`] },
+  { id: "pistol", name: "Pistol", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 90, slots: 1, rules: [`Requires Mortal and Hunters; forbids Caster. Hands 1H. Range 0"-12". Primer 9+. Strike Pool 5 Mt / 2 Sk.`] },
+  { id: "long-rifle", name: "Long Rifle", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 125, slots: 2, rules: [`Requires Mortal and Hunters; forbids Caster. Hands 2H. Range 3"-30". Primer 10+. Strike Pool 6 Mt / 2 Sk.`] },
+  { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 25, slots: 1, rules: ["Requires Mortal; forbids Caster. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
+  { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", firearmTier: "basic", cost: 40, slots: 1, rules: ["Requires Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3 inch blast, Single Shot."] },
+  { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", firearmTier: "basic", cost: 25, slots: 1, rules: ["Requires Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 8+. 6 inch blast, Single Shot, Smoke."] },
   { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 0, rules: ["Light tier. 1 failed blue defense die -> 1 normal success."] },
   { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 0, rules: ["Medium tier. 1 failed red defense die + 1 failed blue defense die -> normal successes."] },
   { id: "tower-shield", name: "Tower Shield", kind: "armor", group: "Armor", armorRank: 3, cost: 50, slots: 0, rules: ["Heavy tier. 2 failed red defense dice + 1 failed blue defense die -> normal successes."] },
@@ -710,7 +767,7 @@ export const EQUIPMENT = [
   { id: "heavy-armor", name: "Heavy Armor", kind: "armor", group: "Armor", armorRank: 3, cost: 185, slots: 0, rules: ["Knights only; Cult with Magic Armor. Converts 1 failed red defense die into 1 normal success or 2 failed red defense dice into 1 critical success."] },
   { id: "relic", name: "Relic", kind: "sphere", group: "Sphere of Influence", cost: 75, slots: 2, rules: [`Friendly fighters within 6" gain +1 Sa. Passive. Relic or Instrument.`] },
   { id: "instrument", name: "Instrument", kind: "sphere", group: "Sphere of Influence", cost: 65, slots: 2, rules: [`Friendly fighters within 6" gain +1" M. Requires 1 action per turn to activate. Relic or Instrument.`] },
-  { id: "rune-stones", name: "Rune-stones", kind: "special", group: "Runecasters", cost: 15, slots: 1, requiresTradition: "runecasters", rules: ["Runecasters only. Once per battle after a fighter carrying Rune-stones makes a stat roll, roll to hit, defense roll, or casting roll, discard the Rune-stones to reroll one die from that roll. Must accept the second result. Remove after battle."] },
+  { id: "rune-stones", name: "Rune-stones", kind: "special", group: "Runecasters", cost: 15, slots: 1, requiresTradition: "runecasters", rules: ["Fighters with the Runecasters keyword only. Once per battle after a fighter carrying Rune-stones makes a stat roll, roll to hit, defense roll, or casting roll, discard the Rune-stones to reroll one die from that roll. Must accept the second result. Remove after battle."] },
   { id: "silver", name: "Silver upgrade", kind: "upgrade", group: "Material upgrades", cost: 40, slots: 0, rules: ["Added to weapon cost. +1 to the roll to hit vs fighters with Undead or Werebeast. Record which weapon is upgraded."] },
   { id: "adders-kiss", name: "Adder's Kiss", kind: "alchemy", group: "Alchemy", cost: 25, slots: 0, rules: ["Poison. +1 Sk to the weapon's strike pool. One poison per weapon."] },
   { id: "blight-extract", name: "Blight Extract", kind: "alchemy", group: "Alchemy", cost: 40, slots: 0, rules: ["Poison. Unblocked hits inflict Poisoned. One poison per weapon."] },

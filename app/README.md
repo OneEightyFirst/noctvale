@@ -2,7 +2,7 @@
 
 A React and Tailwind retinue builder for Noctvale with Google sign-in and Firestore-backed saved retinues.
 
-Rules prose lives in the parent repo (`intro.md`, `rules/`, `campaign/`). The in-app rules wiki imports those files directly — no duplicate copies under `app/`.
+Rules prose lives in the parent repo (`intro.md`, `rules/`, `campaign/`). Static HTML rules pages are generated from those files at build time into `public/rules/` (see `npm run build:rules`).
 
 ## Run locally
 

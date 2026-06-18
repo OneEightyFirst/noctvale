@@ -44,7 +44,8 @@ not modify the **2d6** result.
 
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
-**Keyword eligibility:** Same rules as before — Archetype, class, Domain, and retinue Caster limits apply.
+**Keyword eligibility:** A fighter may only gain keywords their **Archetype**,
+**Class**, and **Domain** keywords allow. Retinue **Caster** caps still apply.
 
 ### Stat Advancement Table
 
@@ -64,7 +65,10 @@ Roll **2d6** after spending **5 XP** on Stat Advancement.
 
 Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
-**Eligibility:** A fighter may only gain keywords their **Archetype and class** allow (see [retinue-building](../rules/retinue.md)). If the result grants **Caster**, the retinue must still respect Domain and max Caster limits.
+**Eligibility:** A fighter may only gain keywords their **Archetype**, **Class**,
+and **Domain** keywords allow (see [Keywords](../rules/retinue.md#keywords)). If
+the result grants **Caster**, the retinue must still respect its max **Caster**
+count, and the fighter must lack **Mortal**.
 
 | 2d6 | Result |
 |---|---|
@@ -77,31 +81,21 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 11 | **Marked** — gain **Fearless** and +1 to CC or RC (max 6). |
 | 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
 
-**Gaining Caster mid-campaign:** Assign Domain spells per fighter type — **2** for a Leader who gains **Caster**, **1** for an **Adept** or **Acolyte**. Cult **Acolytes** may gain **Caster** here; other Archetypes only if under the retinue's max **Caster** count and **Mortal** Domain does not apply.
+**Gaining Caster mid-campaign:** Assign Domain spells by class — **2** for a
+fighter with **Leader** who gains **Caster**, **1** for a fighter with
+**Specialist** (**Adept**) or **Rank** (**Acolyte**). Fighters with **Rank** in
+**Cult** may gain **Caster** here; other Archetypes only if under the retinue's
+max **Caster** count and the fighter lacks **Mortal**.
 
 ---
 
-### Veteran Value & Retinue Rating
+### Retinue Rating
 
-There are **no levels**, but campaigns still need a single number for matchup fairness. Every lasting campaign change has a **Veteran Crown** value. Track **Veteran Value** on each fighter card; add or subtract when a permanent result applies (advancement, Scarred, Doom, etc.).
+**Retinue Rating** is the single number campaigns use for matchup fairness. It equals **Roster Cost** — the total Crowns spent on fighters and gear on the roster sheet.
 
-**Retinue Rating** = **Roster Cost** (fighters + gear on the roster sheet) **+** sum of every fighter's **Veteran Value**.
+**Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger.
 
-| Lasting change | Veteran Crowns |
-|---|---|
-| **Feat** gained | +15 |
-| **Fearless** keyword gained | +15 |
-| **Caster** keyword gained | +25 |
-| **+1** to any stat (advancement) | +25 |
-| **Peak** or **Ascendant** (stat + Fearless in one roll) | +40 *(25 + 15 — do not also add the parts separately)* |
-| **Marked** (Fearless + CC or RC) | +40 |
-| **−1** to any stat (Scarred, injury, Setback, Cursed) | −25 |
-
-**Not counted:** unspent XP, temporary conditions, flavor-only results (e.g. **Surface Scars** on the Doom Table), or gear bought/sold — gear is already in **Roster Cost**.
-
-**Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger. A fresh **1000 Crown** roster is **1000** rating; a veteran retinue might sit at **1150–1300** after several games.
-
-Record **Retinue Rating** on the roster sheet next to Roster Cost.
+Record **Retinue Rating** on the roster sheet next to Roster Cost. Update it whenever you add or remove fighters or gear.
 
 ## Scenarios
 

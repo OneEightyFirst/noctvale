@@ -1,33 +1,12 @@
 # Retinue
 
-Your **retinue** is the force you field in a battle: fighters, gear, feats, and spells. Build it by choosing an **Archetype** and one **Tradition**, recruiting fighters, choosing feats, and equipping them. Your **Tradition** sets your **Domain**.
-
-## Building a Retinue
-
-Your **retinue** is the force you field in skirmish battles and campaigns — a roster of fighters, their equipment, and (if your Domain allows) their spells. This guide walks you through building a legal roster from scratch.
-
-Every retinue is built in two layers:
-
-1. **Identity** — Archetype and Tradition. This sets how your retinue fights and what powers it can wield.
-2. **Roster** — spend **Crowns** to recruit fighters, choose feats, buy gear, and apply poisons.
-
----
-
-### Your Budget
-
-| Game type | Starting Crowns | Retinue Rating |
-|---|---|---|
-| Skirmish / new campaign | **1000** | **1000** (Veteran Value 0 on every fighter) |
-
-- Every Crown cost in this guide is a multiple of **5 Crowns**.
-- At a typical roster size (7–10 fighters), plan to spend roughly **450–550 Crowns** on fighters and **450–550 Crowns** on weapons, armor, and consumables.
-- **Named factions** (Phoenix Guard, Silver Hunt, Village Watch, etc.) are optional flavor presets — the same rules apply whether you use one or build your own combination.
+Your **retinue** is the force you field in a battle. You create your retinue by first selecting an Archetype; the Archetype determines the size and shape of your retinue. Next, you select your Tradition based on your chosen Archetype. The Tradition gives your retinue its core identity, from Witch Hunters to Ninja Rats to Vampire Nobility. The Tradition also defines your Domain, which gives you access to certain spells.
 
 ---
 
 ### Step 1 — Choose Your Archetype
 
-Your **Archetype** is the foundation of your retinue — roster size, fighter classes, equipment access, and how many casters you may field. Pick one, then open its chapter and build from there.
+Your **Archetype** is the foundation of your retinue — roster size, fighter classes, equipment access, and how many casters you may field.
 
 | Archetype | Identity | Chapter |
 |---|---|---|
@@ -36,111 +15,6 @@ Your **Archetype** is the foundation of your retinue — roster size, fighter cl
 | **Folk** | Numerous townsfolk and militia, 6–15 fighters | **[Folk](retinue.md#folk)** |
 | **Cult** | Magic-dominant brotherhoods, 5–10 fighters | **[Cult](retinue.md#cult)** |
 
-Each archetype chapter includes:
-
-- Fluff and table identity
-- Domain and Tradition options for that Archetype
-- Species table, fighter-type profiles, Crown costs, and feat lists
-- Caster rules and equipment limits
-- Example factions and (where available) example rosters
-- An archetype-specific roster checklist
-
-Work through your archetype chapter before returning here for shared steps.
-
----
-
-### Step 2 — Choose Your Tradition
-
-Your **Tradition** is the retinue-wide oath, craft, curse, or practice that gives your retinue its **Domain** and one special rule. Choose one Tradition allowed for your Archetype, record its Domain, and apply any roster changes or cost modifiers before recruiting fighters. Traditions are listed later in this chapter.
-
----
-
-### Step 3 — Species and Recruitment Cost
-
-Each archetype chapter has a **Species** table (M through W, **Cost** column).
-Pick a species for each fighter, then add the species **Cost** to that fighter
-type's recruitment cost (e.g. Elf Theurge: 125 + 10 = **135 Crowns**). Apply
-fighter-type stat bonuses from the same chapter on top of the species row.
-
-Full species rules: [Core Rules](core-rules.md).
-
----
-
-### Step 4 — Choose Feats and Equip Your Fighters
-
-Choose each fighter's feats from the lists allowed by your **Archetype** and
-**Domain**. Choose weapon **Proficiency** feats before buying equipment. A
-fighter can equip only weapons they are proficient in, except any fighter may
-equip a **Dagger**.
-
-Buy gear from [Equipment](equipment.md) within your Archetype's armor, shield, and firearm tier limits.
-
-Each fighter has **3 weapon slots** (see [Equipment — Weapon slots](equipment.md#weapon-slots)). Plan loadouts so no fighter exceeds 3 slots total.
-
-- Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see [Equipment](equipment.md)).
-- Purchase **alchemy** and apply poisons during setup (one poison per weapon — see [Equipment](equipment.md)).
-
----
-
-### Campaign Retinues
-
-After your first roster is built, you maintain and expand it between battles using earnings from sold Relics. The same building rules apply — see [Economy](../campaign/campaign.md#economy) and [Post-Game](../campaign/campaign.md#post-game-sequence).
-
----
-
-### Building Reference
-
-Every retinue is built in two layers:
-
-1. **Identity** — choose an **Archetype** and one **Tradition**. Your Tradition sets your **Domain**.
-2. **Roster** — spend **Crowns** to recruit fighters, assign feats, equip them, and (for casters) assign spells.
-
-Retinue building uses **constrained points**: a **Crown budget** plus **composition limits** per Archetype. Each Archetype uses its own tier names; slots are capped so the roster cannot exceed the Archetype maximum.
-
-For the alpha playtest, use a **1000 Crown** budget. Campaign retinues also start at **1000 Crowns** and **1000 Retinue Rating** (Veteran Value 0 on every fighter). Between games, spend earnings from sold Relics (see [Economy](../campaign/campaign.md#economy)). After campaign advances, update **Retinue Rating** (see [Veteran Value](../campaign/campaign.md#veteran-value-retinue-rating)).
-
-Every Crown cost in this file is a multiple of **5 Crowns**.
-
-Named factions (Silver Hunt, Nightpack, etc.) are optional presets — same building rules apply.
-
----
-
-### Building Steps
-
-1. Choose **Archetype** and **Tradition** (see your [Archetype chapter](retinue.md#knights) — one Tradition per retinue, allowed for your Archetype; your Tradition sets your **Domain**).
-2. Set your **Crown budget** (1000 for alpha skirmish).
-3. Recruit fighters within your Archetype's **fighter count** and **tier limits** (below).
-4. Assign each fighter a **species** and **tier profile**.
-5. Assign feats from your Archetype feat list (see your [Archetype chapter](retinue.md#knights)). Specialists also gain their built-in proficiency.
-6. Equip each fighter with weapons they are proficient in, within Archetype armor, shield, and firearm tier access and **weapon slot** limits. Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see [Equipment](equipment.md)). Purchase **alchemy** and apply poisons during setup (one poison per weapon — see [Equipment](equipment.md#equipment)).
-7. Assign spells — **Caster** fighters choose Domain spells per fighter type (see **Caster** below and your Archetype chapter).
-8. Verify the roster against the **checklist** at the end of this file.
-
----
-
-### Fighter Count
-
-| Archetype | Minimum | Target | Maximum |
-|---|---|---|---|
-| Knights | 5 | 5–8 | 10 |
-| Hunters | 5 | 6–10 | 12 |
-| Folk | 6 | 8–12 | 15 |
-| Cult | 5 | 5–8 | 10 |
-
-Every retinue must include exactly **1 Leader**. Fill remaining slots from your Archetype's tier caps below — the caps are tuned so the maximum fighters **including the Leader** match the table above.
-
-| Archetype | Leader | Follower slots | **Max** |
-|---|---|---|---|
-| Knights | 1 Lord | Knight 0–4, Squire 0–5 | **10** |
-| Hunters | 1 Captain | Stalker 0–4, Tracker 0–3, Hand 0–4 | **12** |
-| Folk | 1 Mayor | Guildsman 0–3, Militiaman 0–5, Townsfolk 0–6 | **15** |
-| Cult | 1 Theurge | Adept 0–2, Acolyte 0–7 | **10** |
-
-*Cult **Adept** is the Specialist class — see Keywords.*
-
-Knights have no Rank class — every fighter is **Elite** or **Specialist** tier.
-
----
 
 ### Archetype Classes
 
@@ -153,29 +27,54 @@ Each fighter has one **class** (Leader, Elite, Specialist, or Rank). Classes set
 | **Specialist** | Squire | Tracker | Militiaman | Adept |
 | **Rank** | — | Hand | Townsfolk | Acolyte |
 
-**Mayor:** the Folk Leader — head of a town or district rallying the community.
 
-**Theurge:** the Cult Leader — head of the rite; always has the **Caster** keyword.
+---
 
-**Domain** will adjust *how many* of each class you can field (composition tables — to be added). Class names stay the same for every Domain.
+### Step 2 — Choose Your Tradition
 
-Named factions may use different flavor titles in lore without changing class names or caps on the roster sheet.
+Your **Tradition** is the retinue-wide oath, craft, curse, or practice that gives your retinue its **Domain** and flavor. Choose one Tradition allowed for your Archetype, record the Tradition special rule, its Domain, and apply any roster changes or cost modifiers before recruiting fighters.
+
+---
+
+### Step 3 — Species and Recruitment Cost
+
+Noctvale is filled with many different species, the most prominant behing human, but closely followed by Elves and Dwarves. Long before the fall of the old Kingdom, the 3 disparate cultures merged into one.
+
+Pick a species for each fighter, then add the species **Cost** to that fighter class' recruitment cost (e.g. Elf Theurge: 125 + 10 = **135 Crowns**). Every retinue starts with 1000c to build from, your crowns reprisent not only the actual crown coins on hand, but also the food and resources that your retinue has as a whole. As you play through the campaign, the value of each fighter will change and grow, use the total value of each fighter in your retinue to calculate your retinue value. Compare these when fighting a battle to determine any bonus' or penalties for the difference in power.
+
+---
+
+### Step 4 — Choose Feats and Equip Your Fighters
+
+Choose each fighter's feats from the lists allowed by your **Archetype** and **Domain**. You may choose weapon **Proficiency** feats to unlock different weapon types.  A fighter can equip only weapons they are proficient in, except a **Dagger**, which any fighter may equip. Other feats add special abilities to your fighters. Leaders and Elites each get 2 feats at creation, Specialists and Rank get 1.
+
+Buy gear from [Equipment](equipment.md) within your Archetype's armor, shield, and firearm tier limits.
+
+Each fighter has **3 weapon slots** (see [Equipment — Weapon slots](equipment.md#weapon-slots)).
+
+---
+
+### Fighter Count
+
+Every retinue must include exactly **1 Leader**.
+
+| Archetype | Leader | Follower slots | **Max** |
+|---|---|---|---|
+| Knights | 1 Lord | Knight 0–4, Squire 0–5 | **10** |
+| Hunters | 1 Captain | Stalker 0–4, Tracker 0–3, Hand 0–4 | **12** |
+| Folk | 1 Mayor | Guildsman 0–3, Militiaman 0–5, Townsfolk 0–6 | **15** |
+| Cult | 1 Theurge | Adept 0–2, Acolyte 0–7 | **10** |
 
 ---
 
 ### Keywords
 
-**Traditions** (Witches, Crusaders, etc.) are retinue-wide identity chosen at
-step 1 — see [Retinue](retinue.md). This section covers **keywords** on individual
-fighters.
+Keywords are permanent tags on a fighter profile. Record them on the roster
+sheet. Other rules check whether a fighter **has** or **lacks** a keyword —
+equipment access, feat eligibility, tradition effects, and spell limits all use
+the same vocabulary. Keywords can come from multiple sources.
 
-Keywords are tags on a fighter profile. They stack with class.
 
-Keywords can come from:
-
-- **Roster creation** — Archetype and Domain define which classes *may* take which keywords
-- **Campaign advancement** — fighters can **gain** keywords between games through [Keyword Advancement](../campaign/campaign.md#keyword-advancement-table)
-- **Abilities, equipment, spells, and conditions** — e.g. Fear, Fearless, Undead *(see [Sanity](core-rules.md#sanity), [Magic](retinue.md))*
 
 #### Caster
 
@@ -188,18 +87,21 @@ counts toward a fighter's spell allowance.
 
 #### Caster — roster creation
 
-**Mortal Domain:** no fighter may take the **Caster** keyword. Magic and gunpowder do not mix.
+A fighter with **Mortal** may not take **Caster**.
 
-| Fighter type | Caster | Spells at recruitment |
+| Class | Caster | Spells at recruitment |
 |---|---|---|
-| **Leader** (Lord, Captain, Mayor) | Optional if Domain is not **Mortal** | **2** |
+| **Leader** (Lord, Captain, Mayor) | Optional if fighter lacks **Mortal** | **2** |
 | **Theurge** | Required | **2** |
 | **Adept** | Optional | **1** if **Caster** |
-| All other fighters | No **Caster** at creation | — |
+| All other classes | No **Caster** at creation | — |
 
-**Cult** is the only Archetype that may give **Caster** to a non-Leader at creation. Field up to **2 Adepts**; each **Adept** may take **Caster**. **Acolytes** do not start with **Caster** — they may **gain** it via [Keyword Advancement](../campaign/campaign.md#keyword-advancement-table).
+**Cult** is the only Archetype that may give **Caster** to a fighter without
+**Leader** at creation. Field up to **2 Adepts** with **Specialist**; each may
+take **Caster**. Fighters with **Rank** do not start with **Caster** — they may
+**gain** it via [Keyword Advancement](../campaign/campaign.md#keyword-advancement-table).
 
-| Archetype | Max fighters with Caster |
+| Archetype | Max fighters with **Caster** |
 |---|---|
 | Knights | 1 |
 | Hunters | 1 |
@@ -211,9 +113,9 @@ counts toward a fighter's spell allowance.
 Creature-type keyword. A fighter with **Vampire** counts as **Undead** for any
 rule that checks **Undead** (silver weapons, **Radiant Strike**, and similar).
 
-**Vampires** Tradition grants **Vampire** at roster creation to each **Leader**,
-**Elite**, and **Specialist** in the retinue. **Rank** fighters do not gain
-**Vampire** from that Tradition.
+**Vampires** Tradition grants **Vampire** at roster creation to each fighter
+with **Leader**, **Elite**, or **Specialist**. Fighters with **Rank** do not
+gain **Vampire** from that Tradition.
 
 Fighters with **Vampire** pay **2 XP** more than the normal cost to buy each
 post-game advancement (**Feat**, **Keyword**, or **Stat**). See [Post-Game —
@@ -269,8 +171,10 @@ Equipment access follows [Retinue](retinue.md):
   **Proficiency** feat.
 - Archetype sets which options appear on each fighter's **Proficiency** feat,
   plus armor and shield tier caps, and **firearm tier** access.
-- **Mortal** Domain adds **Firearms** to the **Proficiency** menu; all other Domains grant Domain spells instead. Magic and gunpowder do not mix on the same retinue.
-- **Cult** cannot choose Mortal and cannot take **Firearms**.
+- Fighters with **Mortal** may take **Firearms** on the **Proficiency** menu; all
+  other Domains grant Domain spells instead. **Mortal** and **Caster** are
+  mutually exclusive.
+- Fighters with **Cult** cannot have **Mortal** and cannot take **Firearms**.
 - Alchemy is available to all retinues.
 
 #### Weapon slots
@@ -337,13 +241,15 @@ All weapon and equipment **Crown costs**, **profiles**, and **combat rules** are
 
 Before play, confirm:
 
-- [ ] Archetype + Domain chosen; Cult is not Mortal
+- [ ] Archetype + Domain chosen; no fighter has both **Cult** and **Mortal**
 - [ ] Fighter count within Archetype min/max
 - [ ] Exactly 1 Leader (Lord, Captain, Mayor, or Theurge)
 - [ ] Each class within Archetype slot caps (see roster table)
-- [ ] Fighters with **Caster** keyword: count within Archetype max; Mortal Domain has none; spell counts match fighter type (Leader/Theurge **2**, Adept **1**)
+- [ ] Fighters with **Caster** keyword: count within Archetype max; no fighter
+  with **Mortal** has **Caster**; spell counts match class (**Leader**/**Theurge**
+  **2**, **Adept** **1**)
 - [ ] Total cost ≤ Crown budget
-- [ ] **Retinue Rating** = Roster Cost + sum of Veteran Value on each fighter (campaign)
+- [ ] **Retinue Rating** = Roster Cost (campaign)
 - [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Archetype armor, shield, and firearm tier access
 - [ ] Each fighter ≤ 3 weapon slots
@@ -384,15 +290,16 @@ roster checklist.
 | **Knights** | 5–10 fighters, Heavy armor, 1 caster | **[Knights](retinue.md#knights)** |
 | **Hunters** | 5–12 fighters, Medium armor, refined firearms, 1 caster | **[Hunters](retinue.md#hunters)** |
 | **Folk** | 6–15 fighters, Light armor, 1 caster | **[Folk](retinue.md#folk)** |
-| **Cult** | 5–10 fighters, no armor, 3 casters, no Mortal Domain | **[Cult](retinue.md#cult)** |
+| **Cult** | 5–10 fighters, no armor, 3 casters, no **Mortal** | **[Cult](retinue.md#cult)** |
 
-**Firearms** (firearms and bombs) require the **Firearms** proficiency on the
-**Proficiency** menu *(Mortal Domain only)*. Magic and gunpowder are mutually
-exclusive paths to power.
+**Firearms** (firearms and bombs) require the **Firearms** proficiency. A fighter
+must have **Mortal**, must lack **Caster**, and must have the **Firearms**
+proficiency to equip them.
 
 **Firearm tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long
-Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic
-only**. **Flintlock** is a keyword on any firearm (−25 Crowns, Single Shot).
+Rifle). Fighters with **Hunters** and **Mortal** get both tiers; fighters with
+**Knights** or **Folk** and **Mortal** get **Basic** only. **Flintlock** is a
+keyword on any firearm (−25 Crowns, Single Shot).
 
 **Alchemy** (potions, poisons) is available to all retinues regardless of archetype or domain.
 
@@ -429,7 +336,7 @@ cannot enter engagement range.
 
 ###### Arcane
 
-**Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
+**Spellblades:** Fighters with the **Spellblades** keyword cost **+5 Crowns**. Melee weapons
 they carry gain **Arcane**.
 
 > **Arcane** — When this fighter attacks with this weapon, they may change 1 failed
@@ -442,10 +349,10 @@ Mishap, they suffer **1 Wound** after resolving it.
 
 ###### Infernal
 
-**Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
+**Hellknights:** Armor and shields bought by fighters with the **Hellknights** keyword cost **+10 Crowns**.
 Friendly fighters wearing armor **project Fear**.
 
-**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+**Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
 roll.
 
@@ -464,14 +371,12 @@ zone.
 **Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
 fighter **projects Fear**.
 
-**Wightlords:** All fighters cost **+20 Crowns** and gain **Undead** and
+**Wightlords:** All fighters with the **Wightlords** keyword cost **+20 Crowns** and gain **Undead** and
 **Fearless**.
 
 ###### Blood
 
-**Vampires:** At roster creation, each **Leader**, **Elite**, and **Specialist**
-in this retinue gains the **Vampire** keyword and costs **+20 Crowns**. **Rank**
-fighters do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
+**Vampires:** At roster creation, each fighter with **Leader**, **Elite**, or **Specialist** gains the **Vampire** keyword and costs **+20 Crowns**. Fighters with **Rank** do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
 vampire ability *(list TBD — record on the roster sheet)*. When a fighter with
 **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy
 Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay
@@ -508,7 +413,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 ##### Knights Feats
 
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
-**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+**Firearms**. A fighter must have **Mortal**, must lack **Caster**, and must have the **Firearms** proficiency to equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
 choose a **different** proficiency.
 
@@ -552,7 +457,7 @@ Start from a species baseline, then apply the fighter-type bonuses below.
 ###### Lord — 125 Crowns
 
 **Leader**. At recruitment, add **+1** to **2** different stats (CC, RC, Mt,
-Sk, Wi, or Sa). If your Domain is not **Mortal**, may take **Caster** — knows
+Sk, Wi, or Sa). If fighter lacks **Mortal**, may take **Caster** — knows
 **2** spells from your Domain list. May take the **Cast** action.
 
 ###### 0–4 Knight — 75 Crowns
@@ -611,7 +516,7 @@ Before your first battle, confirm:
 - [ ] Tradition chosen and recorded (sets Domain)
 - [ ] Fighter count within 5–10
 - [ ] **1 Lord**, **0–4 Knight**, **0–5 Squire**
-- [ ] **Caster:** at most 1 on Lord; **Mortal** has none; Lord knows **2** Domain spells if **Caster**
+- [ ] **Caster:** at most 1 on Lord; no fighter with **Mortal** has **Caster**; Lord knows **2** Domain spells if **Caster**
 - [ ] Total cost ≤ Crown budget
 - [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Knights armor, shield, and firearm tier access
@@ -651,14 +556,14 @@ of sight of any friendly fighter. That enemy loses **Hidden**.
 
 ###### Arcane
 
-**Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
+**Spellblades:** Fighters with the **Spellblades** keyword cost **+5 Crowns**. Melee weapons
 they carry gain **Arcane**.
 
 > **Arcane** — When this fighter attacks with this weapon, they may change 1 failed
 > Strike Pool die into a normal hit. The hit keeps the die's color and cannot
 > become a critical hit.
 
-**Runecasters:** This retinue may buy Rune-stones for **15 Crowns**.
+**Runecasters:** Fighters with the **Runecasters** keyword may buy Rune-stones for **15 Crowns**.
 
 Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
 Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
@@ -668,7 +573,7 @@ roster after the battle.
 
 ###### Infernal
 
-**Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
+**Hellknights:** Armor and shields bought by fighters with the **Hellknights** keyword cost **+10 Crowns**.
 Friendly fighters wearing armor **project Fear**.
 
 **Binders:** This retinue may buy **Summoning Crystals**. Daemons cannot be
@@ -677,7 +582,7 @@ recruited normally; they enter battle through **Summon Daemon**.
 ###### Nature
 
 **Beastmen:** Choose one beast-mark for the retinue: **Wolf**, **Rat**, **Bear**,
-or **Serpent**. All fighters cost **+10 Crowns** and gain the chosen rule.
+or **Serpent**. All fighters with the **Beastmen** keyword cost **+10 Crowns** and gain the chosen rule.
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee
 weapon: **+2 Mt**, **+1 Sk**, Axe.
@@ -702,7 +607,7 @@ Skeletons count toward the retinue's maximum number of fighters and cannot gain
 XP, buy equipment, carry scenario rewards, or use post-battle advancement. See
 [Profiles](retinue.md#shared-profiles).
 
-**Wightlords:** All fighters cost **+20 Crowns** and gain **Undead** and
+**Wightlords:** All fighters with the **Wightlords** keyword cost **+20 Crowns** and gain **Undead** and
 **Fearless**.
 
 ###### Blood
@@ -739,7 +644,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 ##### Hunters Feats
 
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
-**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+**Firearms**. A fighter must have **Mortal**, must lack **Caster**, and must have the **Firearms** proficiency to equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
 choose a **different** proficiency.
 
@@ -780,7 +685,7 @@ Start from a species baseline, then apply the fighter-type bonuses below.
 ###### Captain — 125 Crowns
 
 **Leader**. At recruitment, add **+1** to **2** different stats (CC, RC, Mt,
-Sk, Wi, or Sa). If your Domain is not **Mortal**, may take **Caster** — knows
+Sk, Wi, or Sa). If fighter lacks **Mortal**, may take **Caster** — knows
 **2** spells from your Domain list. May take the **Cast** action.
 
 ###### 0–4 Stalker — 75 Crowns
@@ -791,7 +696,7 @@ At recruitment, add **+1 Mt** or **+1 Sk**.
 
 **Specialist**. At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or
 Sa). Built-in **Archery** or **Firearms** proficiency *(choose one; **Firearms**
-requires **Mortal** Domain)*.
+requires **Mortal**)*.
 
 ###### 0–4 Hand — 40 Crowns
 
@@ -876,7 +781,7 @@ Before your first battle, confirm:
 - [ ] Tradition chosen and recorded (sets Domain)
 - [ ] Fighter count within 5–12
 - [ ] **1 Captain**, **0–4 Stalker**, **0–3 Tracker**, **0–4 Hand**
-- [ ] **Caster:** at most 1 on Captain; **Mortal** has none; Captain knows **2** Domain spells if **Caster**
+- [ ] **Caster:** at most 1 on Captain; no fighter with **Mortal** has **Caster**; Captain knows **2** Domain spells if **Caster**
 - [ ] Total cost ≤ Crown budget
 - [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Hunters armor, shield, and firearm tier access
@@ -928,7 +833,7 @@ deployment zone. Friendly **Caster** fighters within **1"** of it add **+1** to
 casting rolls. If they roll a Mishap, they suffer **1 Wound** after resolving
 it.
 
-**Runecasters:** This retinue may buy Rune-stones for **15 Crowns**.
+**Runecasters:** Fighters with the **Runecasters** keyword may buy Rune-stones for **15 Crowns**.
 
 Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
 Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
@@ -945,7 +850,7 @@ until the end of the battle.
 If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
 and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 
-**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+**Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
 roll.
 
@@ -995,8 +900,8 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 
 ##### Folk Feats
 
-**Proficiency:** Choose **One-Handed**, **Archery**, **Thrown**, or **Firearms**
-*(Mortal Domain only)*. You may equip any weapon in that proficiency your retinue
+**Proficiency:** Choose **One-Handed**, **Archery**, **Thrown**, or **Firearms**.
+Fighters with **Mortal** may take **Firearms**. You may equip any weapon in that proficiency your retinue
 is allowed to buy. You may take this feat more than once. Each time, choose a
 **different** proficiency. Folk **Militiaman** has built-in **Two-Handed**
 proficiency.
@@ -1041,7 +946,7 @@ Start from a species baseline, then apply the fighter-type bonuses below.
 ###### Mayor — 125 Crowns
 
 **Leader**. At recruitment, add **+1** to **2** different stats (CC, RC, Mt,
-Sk, Wi, or Sa). If your Domain is not **Mortal**, may take **Caster** — knows
+Sk, Wi, or Sa). If fighter lacks **Mortal**, may take **Caster** — knows
 **2** spells from your Domain list. May take the **Cast** action.
 
 ###### 0–3 Guildsman — 75 Crowns
@@ -1102,7 +1007,7 @@ Before your first battle, confirm:
 - [ ] Tradition chosen and recorded (sets Domain)
 - [ ] Fighter count within 6–15
 - [ ] **1 Mayor**, **0–3 Guildsman**, **0–5 Militiaman**, **0–6 Townsfolk**
-- [ ] **Caster:** at most 1 on Mayor; **Mortal** has none; Mayor knows **2** Domain spells if **Caster**
+- [ ] **Caster:** at most 1 on Mayor; no fighter with **Mortal** has **Caster**; Mayor knows **2** Domain spells if **Caster**
 - [ ] Total cost ≤ Crown budget
 - [ ] Each equipped weapon matches a fighter's **Proficiency**, except **Dagger**
 - [ ] Each fighter within Folk armor, shield, and firearm tier access
@@ -1122,7 +1027,7 @@ fast when steel finds them.
 
 **On the table:** magically dominant and fragile. Field **5–10** fighters — one
 **Theurge**, up to two **Adepts**, and the rest **Acolytes**. No armor. Up to
-**3** casters at creation. Cannot choose the **Mortal** Domain. Magic and
+**3** casters at creation. Fighters with **Cult** cannot have **Mortal**. Magic and
 gunpowder do not mix.
 
 ---
@@ -1130,7 +1035,7 @@ gunpowder do not mix.
 #### Building a Cult Retinue
 
 Choose **one Tradition**, then recruit and equip your fighters. Start with **1000
-Crowns** for skirmish or a new campaign. Cult retinues cannot choose **Mortal**
+Crowns** for skirmish or a new campaign. Fighters with **Cult** cannot have **Mortal**
 — every Tradition sets a magic Domain.
 
 ##### Tradition
@@ -1177,7 +1082,7 @@ recruited normally; they enter battle through **Summon Daemon**.
 **Caster** makes a stat roll or **casting roll**, subtract **1** from that roll.
 
 **Beastmen:** Choose one beast-mark for the retinue: **Wolf**, **Rat**, **Bear**,
-or **Serpent**. All fighters cost **+10 Crowns** and gain the chosen rule.
+or **Serpent**. All fighters with the **Beastmen** keyword cost **+10 Crowns** and gain the chosen rule.
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee
 weapon: **+2 Mt**, **+1 Sk**, Axe.
@@ -1209,9 +1114,7 @@ XP, buy equipment, carry scenario rewards, or use post-battle advancement. See
 
 ###### Blood
 
-**Vampires:** At roster creation, each **Leader**, **Elite**, and **Specialist**
-in this retinue gains the **Vampire** keyword and costs **+20 Crowns**. **Rank**
-fighters do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
+**Vampires:** At roster creation, each fighter with **Leader**, **Elite**, or **Specialist** gains the **Vampire** keyword and costs **+20 Crowns**. Fighters with **Rank** do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
 vampire ability *(list TBD — record on the roster sheet)*. When a fighter with
 **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy
 Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay
@@ -1247,7 +1150,7 @@ Influence** with range **6"**. When an enemy fighter activates while within this
 fighter as the source. See **[Fear](core-rules.md#fear)** and **[Sphere of
 Influence](equipment.md#sphere-of-influence)**.
 
-**Convoke:** **Caster only.** When this fighter makes a **casting roll** and **1
+**Convoke:** Fighter must have **Caster**. When this fighter makes a **casting roll** and **1
 or more** other friendly **Cult** fighters with **Caster** are **within 6"**, add
 **+1** to the roll.
 
@@ -1347,7 +1250,7 @@ the war.
 
 Before your first battle, confirm:
 
-- [ ] Tradition chosen and recorded (sets Domain; not **Mortal**)
+- [ ] Tradition chosen and recorded (sets Domain; fighters lack **Mortal** if **Cult**)
 - [ ] Fighter count within 5–10
 - [ ] Exactly 1 **Theurge**
 - [ ] **Adepts** 0–2, **Acolytes** 0–7
@@ -1375,9 +1278,8 @@ Before your first battle, confirm:
 | Blood | Natural |
 | Mortal | — |
 
-Each Domain provides a spell list and Domain-specific feats. The **Mortal**
-Domain provides no spells but adds **Firearms** to the **Proficiency** menu and
-access to gunpowder weapons (see [Equipment](equipment.md)).
+Each Domain provides a spell list and Domain-specific feats. Fighters with **Mortal**
+gain access to gunpowder weapons instead of spells (see [Equipment](equipment.md)).
 
 Spell lists: [Magic](retinue.md) · Equipment: [Equipment](equipment.md)
 
@@ -1504,7 +1406,7 @@ of sight of any friendly fighter. That enemy loses **Hidden**.
 
 #### Arcane
 
-**Spellblades:** Fighters in this retinue cost **+5 Crowns**. Melee weapons
+**Spellblades:** Fighters with the **Spellblades** keyword cost **+5 Crowns**. Melee weapons
 they carry gain **Arcane**.
 
 > **Arcane** — When this fighter attacks with this weapon, they may change 1 failed
@@ -1520,7 +1422,7 @@ it.
 **+10 Crowns**. When a **Caster** who knows an additional spell this way rolls a
 Mishap, they suffer **1 Wound** after resolving it.
 
-**Runecasters:** This retinue may buy Rune-stones for **15 Crowns**.
+**Runecasters:** Fighters with the **Runecasters** keyword may buy Rune-stones for **15 Crowns**.
 
 Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying
 Rune-stones makes a stat roll, rolls to hit, rolls defense dice, or makes a
@@ -1540,10 +1442,10 @@ and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 **Binders:** This retinue may buy **Summoning Crystals**. Daemons cannot be
 recruited normally; they enter battle through **Summon Daemon**.
 
-**Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
+**Hellknights:** Armor and shields bought by fighters with the **Hellknights** keyword cost **+10 Crowns**.
 Friendly fighters wearing armor **project Fear**.
 
-**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+**Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
 roll.
 
@@ -1557,7 +1459,7 @@ deployment zones. Friendly fighters within **1"** of it add **+1** to
 **Recover** rolls.
 
 **Beastmen:** Choose one beast-mark for the retinue: **Wolf**, **Rat**, **Bear**,
-or **Serpent**. All fighters cost **+10 Crowns** and gain the chosen rule.
+or **Serpent**. All fighters with the **Beastmen** keyword cost **+10 Crowns** and gain the chosen rule.
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee
 weapon: **+2 Mt**, **+1 Sk**, Axe.
@@ -1595,14 +1497,12 @@ See [Shared Profiles](retinue.md#shared-profiles).
 **Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
 fighter **projects Fear**.
 
-**Wightlords:** All fighters cost **+20 Crowns** and gain **Undead** and
+**Wightlords:** All fighters with the **Wightlords** keyword cost **+20 Crowns** and gain **Undead** and
 **Fearless**.
 
 #### Blood
 
-**Vampires:** At roster creation, each **Leader**, **Elite**, and **Specialist**
-in this retinue gains the **Vampire** keyword and costs **+20 Crowns**. **Rank**
-fighters do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
+**Vampires:** At roster creation, each fighter with **Leader**, **Elite**, or **Specialist** gains the **Vampire** keyword and costs **+20 Crowns**. Fighters with **Rank** do not gain **Vampire**. Each fighter with **Vampire** chooses **1**
 vampire ability *(list TBD — record on the roster sheet)*. When a fighter with
 **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy
 Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay
@@ -1706,7 +1606,7 @@ apply the feat once.
 
 When you recruit each fighter, assign feats from your Archetype feat list. Each
 **[Archetype chapter](retinue.md#knights)** lists the feats available to that
-retinue. **Mortal** retinues add **Firearms** to the **Proficiency** menu.
+Fighters with **Mortal** add **Firearms** to the **Proficiency** menu.
 
 Campaign advancement may grant additional feats later (see [Feat Advancement
 Table](#feat-advancement-table)).
@@ -1720,7 +1620,7 @@ any fighter may equip a **Dagger**.
 | Specialist | Archetype | Built-in proficiency |
 |---|---|---|
 | **Squire** | Knights | **One-Handed** |
-| **Tracker** | Hunters | **Archery** or **Firearms** *(choose one; **Firearms** requires **Mortal** Domain)* |
+| **Tracker** | Hunters | **Archery** or **Firearms** *(choose one; **Firearms** requires **Mortal**)* |
 | **Militiaman** | Folk | **Two-Handed** |
 | **Adept** | Cult | *(none)* |
 
@@ -1744,7 +1644,7 @@ for campaign advancement.
 ##### Proficiency
 
 Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**,
-**Thrown**, or **Firearms** *(Mortal Domain only)*. You may equip any weapon in
+**Thrown**, or **Firearms**. Fighters with **Mortal** may take **Firearms**. You may equip any weapon in
 that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
@@ -1781,7 +1681,7 @@ Action** this battle, add **2 red dice** to this fighter's Strike Pool.
 ##### Proficiency
 
 Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**,
-**Thrown**, or **Firearms** *(Mortal Domain only)*. You may equip any weapon in
+**Thrown**, or **Firearms**. Fighters with **Mortal** may take **Firearms**. You may equip any weapon in
 that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
@@ -1817,7 +1717,7 @@ instead.
 ##### Proficiency
 
 Choose one weapon proficiency: **One-Handed**, **Archery**, **Thrown**, or
-**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+**Firearms**. A fighter must have **Mortal**, must lack **Caster**, and must have the **Firearms** proficiency to equip any weapon in that proficiency
 your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
@@ -1887,7 +1787,7 @@ must pass a Sanity test for **Fear** with this fighter as the source. See
 
 ##### Convoke
 
-**Caster only.**
+Fighter must have **Caster**.
 
 When this fighter makes a **casting roll** and **1 or more** other friendly
 **Cult** fighters with **Caster** are **within 6"**, add **+1** to the roll.
@@ -1950,7 +1850,7 @@ use the [Keyword Advancement
 Table](../campaign/campaign.md#keyword-advancement-table) for that Domain.
 
 **Caster-only cap:** Each Domain feat list may include at most **one** feat
-marked **Caster only**. **Cult** Domain lists may include more when written.
+that requires **Caster**. **Cult** Domain lists may include more when written.
 
 Some feats appear on more than one Domain list. Each shared feat is defined once
 below; the heading notes which Domains include it.
@@ -2079,7 +1979,7 @@ attack's Strike Pool loses **1 red die** (minimum **0**).
 
 ##### Bind the Dead
 
-**Caster only.**
+Fighter must have **Caster**.
 
 When this fighter successfully casts **Summon Skeleton**, the **Skeleton** does
 not crumble at the end of its activation. It remains under your control for the
@@ -2187,10 +2087,10 @@ only once.
 
 ##### Steady Weave
 
-**Caster only.**
+Fighter must have **Caster**.
 
 When this fighter makes a **casting roll** that fails to meet the spell's
-casting difficulty, reroll **2d6 + Wi** once. Must accept the second result.
+casting difficulty, reroll the **Casting Roll** once. Must accept the second result.
 
 If the first roll was **Mishap**, resolve it as normal — do not reroll.
 
@@ -2445,7 +2345,7 @@ after the battle.
 
 #### Mortal
 
-No spells. The **Mortal** Domain grants access to **gunpowder weapons** instead — see [Equipment](equipment.md).
+No spells. Fighters with **Mortal** gain access to **gunpowder weapons** instead — see [Equipment](equipment.md).
 
 ---
 

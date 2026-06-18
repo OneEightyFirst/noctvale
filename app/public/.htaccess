@@ -1,6 +1,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Static rules wiki — do not fall through to the React app.
+  RewriteRule ^rules/?$ /rules/intro.html [R=302,L]
+  RewriteRule ^rules/ - [L]
+
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

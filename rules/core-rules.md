@@ -902,8 +902,7 @@ When a Sanity test is required, roll **d6 + Sa ≥ 8**.
 ### Fear, Panic, and Insanity
 
 Fighters and effects that frighten others **project Fear**, **project Panic**,
-or **project Insanity** — they carry the matching keyword and are the **source**
-of that effect.
+or **project Insanity** — they are the **source** of that effect.
 
 When a fighter activates within range and line of sight of such a source, they
 must pass a Sanity test.
@@ -912,7 +911,9 @@ must pass a Sanity test.
 
 The default trigger range is **6" + line of sight**. Fighters and spells may specify a different range or restrict the trigger to **melee only** (charging or being charged).
 
-#### Keyword Format
+#### Projection notation
+
+Profile and spell lines use this shorthand for what a source projects:
 
 - `Fear` — Fear (6", LoS), the default
 - `Fear (melee)` — only when charging or charged

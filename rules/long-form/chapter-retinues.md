@@ -36,7 +36,7 @@ Use this sequence when creating a roster. Later sections give the full tables, s
 
 **Step 2 — Choose one Tradition.** Your Tradition is the retinue-wide oath, craft, curse, or practice that gives the retinue its **Domain** and one special rule. Choose only a Tradition allowed for your Archetype.
 
-**Step 3 — Set your budget.** A skirmish retinue or new campaign retinue starts with **1000 Crowns**. Campaign retinues also start with **1000 Retinue Rating**, with Veteran Value 0 on every fighter.
+**Step 3 — Set your budget.** A skirmish retinue or new campaign retinue starts with **1000 Crowns**. Record **Retinue Rating** as **Roster Cost** after building.
 
 **Step 4 — Recruit fighters.** Each retinue must include exactly **1 Leader** and must stay within its Archetype's fighter count and class caps. Choose a species for each fighter, then apply the fighter-type stat bonuses from the Archetype section.
 
@@ -50,7 +50,7 @@ Use this sequence when creating a roster. Later sections give the full tables, s
 
 Every Crown cost in this chapter is a multiple of **5 Crowns**. At a typical roster size, plan to spend roughly **450–550 Crowns** on fighters and **450–550 Crowns** on weapons, armor, shields, poisons, and other gear. Larger retinues spend more on bodies and have less gear per fighter.
 
-Between campaign battles, maintain and expand the retinue with earnings from sold Relics. Use the same building rules when adding fighters or equipment, then update **Retinue Rating**. See [Economy](../campaign/campaign.md#economy), [Post-Game](../campaign/campaign.md#post-game-sequence), and [Veteran Value](../campaign/campaign.md#veteran-value-retinue-rating).
+Between campaign battles, maintain and expand the retinue with earnings from sold Relics. Use the same building rules when adding fighters or equipment, then update **Retinue Rating**. See [Economy](../campaign/campaign.md#economy), [Post-Game](../campaign/campaign.md#post-game-sequence), and [Retinue Rating](../campaign/campaign.md#retinue-rating).
 
 ---
 
@@ -175,7 +175,7 @@ Before play, confirm:
 - [ ] **Mortal** has no **Caster** fighters.
 - [ ] Spell counts match fighter type: Leader or Theurge **2**, Adept **1**.
 - [ ] Total cost is no more than the Crown budget.
-- [ ] In campaign play, **Retinue Rating** equals Roster Cost plus Veteran Value on each fighter.
+- [ ] In campaign play, **Retinue Rating** equals Roster Cost.
 - [ ] Each equipped weapon matches a fighter's **Proficiency**.
 - [ ] Each fighter is within Archetype armor, shield, and firearm tier access.
 - [ ] Each fighter has no more than **3 weapon slots**.
@@ -216,11 +216,11 @@ roster checklist.
 | **Knights** | 5–10 fighters, Heavy armor, 1 caster | **[Knights](retinue.md#knights)** |
 | **Hunters** | 5–12 fighters, Medium armor, refined firearms, 1 caster | **[Hunters](retinue.md#hunters)** |
 | **Folk** | 6–15 fighters, Light armor, 1 caster | **[Folk](retinue.md#folk)** |
-| **Cult** | 5–10 fighters, no armor, 3 casters, no Mortal Domain | **[Cult](retinue.md#cult)** |
+| **Cult** | 5–10 fighters, no armor, 3 casters, no **Mortal** | **[Cult](retinue.md#cult)** |
 
-**Firearms** (firearms and bombs) require the **Firearms** proficiency on the
-**Proficiency** menu *(Mortal Domain only)*. Magic and gunpowder are mutually
-exclusive paths to power.
+**Firearms** (firearms and bombs) require the **Firearms** proficiency. A fighter
+must have **Mortal**, must lack **Caster**, and must have the **Firearms**
+proficiency to equip them.
 
 **Firearm tiers:** **Basic** (Musket, Blunderbuss) and **Refined** (Pistol, Long
 Rifle). Hunters + Mortal get both tiers; Knights and Folk + Mortal get **Basic
@@ -277,7 +277,7 @@ Mishap, they suffer **1 Wound** after resolving it.
 **Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
 Friendly fighters wearing armor **project Fear**.
 
-**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+**Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
 roll.
 
@@ -340,7 +340,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 ##### Knights Feats
 
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
-**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+**Firearms**. A fighter must have **Mortal**, must lack **Caster**, and must have the **Firearms** proficiency to equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
 choose a **different** proficiency.
 
@@ -570,7 +570,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 ##### Hunters Feats
 
 **Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, **Thrown**, or
-**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+**Firearms**. A fighter must have **Mortal**, must lack **Caster**, and must have the **Firearms** proficiency to equip any weapon in that proficiency
 your retinue is allowed to buy. You may take this feat more than once. Each time,
 choose a **different** proficiency.
 
@@ -775,7 +775,7 @@ until the end of the battle.
 If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
 and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 
-**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+**Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
 roll.
 
@@ -826,7 +826,7 @@ Spell lists: [Magic](retinue.md) · Domain overview: [Domains](retinue.md#domain
 ##### Folk Feats
 
 **Proficiency:** Choose **One-Handed**, **Archery**, **Thrown**, or **Firearms**
-*(Mortal Domain only)*. You may equip any weapon in that proficiency your retinue
+Fighters with **Mortal** may take **Firearms**. You may equip any weapon in that proficiency your retinue
 is allowed to buy. You may take this feat more than once. Each time, choose a
 **different** proficiency. Folk **Militiaman** has built-in **Two-Handed**
 proficiency — not on this menu.
@@ -1076,7 +1076,7 @@ Influence** with range **6"**. When an enemy fighter activates while within this
 fighter as the source. See **[Fear](core-rules.md#fear)** and **[Sphere of
 Influence](equipment.md#sphere-of-influence)**.
 
-**Convoke:** **Caster only.** When this fighter makes a **casting roll** and **1
+**Convoke:** Fighter must have **Caster**. When this fighter makes a **casting roll** and **1
 or more** other friendly **Cult** fighters with **Caster** are **within 6"**, add
 **+1** to the roll.
 
@@ -1371,7 +1371,7 @@ recruited normally; they enter battle through **Summon Daemon**.
 **Hellknights:** Armor and shields bought by this retinue cost **+10 Crowns**.
 Friendly fighters wearing armor **project Fear**.
 
-**Damned:** Non-**Caster** fighters in this retinue cost **−10 Crowns**. When
+**Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
 roll.
 
@@ -1571,7 +1571,7 @@ for campaign advancement.
 ##### Proficiency
 
 Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**,
-**Thrown**, or **Firearms** *(Mortal Domain only)*. You may equip any weapon in
+**Thrown**, or **Firearms**. Fighters with **Mortal** may take **Firearms**. You may equip any weapon in
 that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
@@ -1608,7 +1608,7 @@ Action** this battle, add **2 red dice** to this fighter's Strike Pool.
 ##### Proficiency
 
 Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**,
-**Thrown**, or **Firearms** *(Mortal Domain only)*. You may equip any weapon in
+**Thrown**, or **Firearms**. Fighters with **Mortal** may take **Firearms**. You may equip any weapon in
 that proficiency your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
@@ -1644,7 +1644,7 @@ instead.
 ##### Proficiency
 
 Choose one weapon proficiency: **One-Handed**, **Archery**, **Thrown**, or
-**Firearms** *(Mortal Domain only)*. You may equip any weapon in that proficiency
+**Firearms**. A fighter must have **Mortal**, must lack **Caster**, and must have the **Firearms** proficiency to equip any weapon in that proficiency
 your retinue is allowed to buy.
 
 You may take this feat more than once. Each time, choose a **different**
@@ -1714,7 +1714,7 @@ must pass a Sanity test for **Fear** with this fighter as the source. See
 
 ##### Convoke
 
-**Caster only.**
+Fighter must have **Caster**.
 
 When this fighter makes a **casting roll** and **1 or more** other friendly
 **Cult** fighters with **Caster** are **within 6"**, add **+1** to the roll.
@@ -1777,7 +1777,7 @@ use the [Keyword Advancement
 Table](../campaign/campaign.md#keyword-advancement-table) for that Domain.
 
 **Caster-only cap:** Each Domain feat list may include at most **one** feat
-marked **Caster only**. **Cult** Domain lists may include more when written.
+that requires **Caster**. **Cult** Domain lists may include more when written.
 
 Some feats appear on more than one Domain list. Each shared feat is defined once
 below; the heading notes which Domains include it.
@@ -1906,7 +1906,7 @@ attack's Strike Pool loses **1 red die** (minimum **0**).
 
 ##### Bind the Dead
 
-**Caster only.**
+Fighter must have **Caster**.
 
 When this fighter successfully casts **Summon Skeleton**, the **Skeleton** does
 not crumble at the end of its activation. It remains under your control for the
@@ -2014,10 +2014,10 @@ only once.
 
 ##### Steady Weave
 
-**Caster only.**
+Fighter must have **Caster**.
 
 When this fighter makes a **casting roll** that fails to meet the spell's
-casting difficulty, reroll **2d6 + Wi** once. Must accept the second result.
+casting difficulty, reroll the **Casting Roll** once. Must accept the second result.
 
 If the first roll was **Mishap**, resolve it as normal — do not reroll.
 

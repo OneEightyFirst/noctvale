@@ -62,6 +62,7 @@ A fighter may equip a **Dagger** without a **Proficiency** feat.
 | Great Sword | 50   |
 | War Axe     | 45   |
 | War Hammer  | 45   |
+| Staff       | 20   |
 
 ---
 
@@ -89,22 +90,22 @@ Available to **every retinue**.
 
 ---
 
-### Crown costs — Firearms *(Mortal Domain only)*
+### Crown costs — Firearms *(requires **Mortal**; forbids **Caster**)*
 
-| Tier    | Weapon      | Cost | Archetype access       |
+| Tier    | Weapon      | Cost | Keyword access         |
 | ------- | ----------- | ---- | ---------------------- |
-| Basic   | Musket      | 100  | Knights, Hunters, Folk |
-| Basic   | Blunderbuss | 115  | Knights, Hunters, Folk |
-| Refined | Pistol      | 90   | Hunters only           |
-| Refined | Long Rifle  | 125  | Hunters only           |
+| Basic   | Musket      | 100  | **Knights**, **Hunters**, **Folk** |
+| Basic   | Blunderbuss | 115  | **Knights**, **Hunters**, **Folk** |
+| Refined | Pistol      | 90   | **Hunters** only       |
+| Refined | Long Rifle  | 125  | **Hunters** only       |
 
 | Item               | Cost | Notes                                      |
 | ------------------ | ---- | ------------------------------------------ |
-| Brace of Pistols   | 25   | **Mortal Domain only** — holds **2 Pistols** in **1 weapon slot** |
+| Brace of Pistols   | 25   | Requires **Mortal** — holds **2 Pistols** in **1 weapon slot** |
 
 ---
 
-### Crown costs — bombs *(Mortal Domain only)*
+### Crown costs — bombs *(requires **Mortal**; forbids **Caster**)*
 
 | Item       | Cost |
 | ---------- | ---- |
@@ -210,6 +211,7 @@ Rules and profiles: [Companions](equipment.md#companions).
 | Great Sword | 2H    | +2  | +1  | Sword  | Heavy, powerful                    |
 | War Axe     | 2H    | +3  | —   | Axe    | Heavy hitter                       |
 | War Hammer  | 2H    | +3  | —   | Hammer | Anti-plate; crits vs Heavy Armor only |
+| Staff       | 2H    | +1  | +1  | Spear  | **Spell focus**; quarterstaff, mage's staff |
 
 ---
 
@@ -237,7 +239,7 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 ---
 
-### Weapon profiles — firearms *(Mortal Domain only)*
+### Weapon profiles — firearms *(requires **Mortal**; forbids **Caster**)*
 
 *Primer column assumes **Sk 3**. Combat rules: [Weapons](#weapons) below.*
 
@@ -265,13 +267,13 @@ feat at roster creation (see [Feats](retinue.md)).
 **Proficiency** feat.
 
 Your **Archetype** sets which proficiencies appear on that fighter's
-**Proficiency** menu. **Firearms** is on that menu for **Mortal** retinues only.
-**Magic and gunpowder do not mix** on the same retinue.
+**Proficiency** menu. Fighters with **Mortal** may take **Firearms** on that
+menu. **Mortal** and **Caster** are mutually exclusive on the same fighter.
 
 | Proficiency | Weapons |
 |---|---|
 | **One-Handed** | Sword, Hand Axe, Mace, Spear |
-| **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer |
+| **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer, Staff |
 | **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
 | **Thrown** | Sling, Throwing Stars |
 | **Firearms** | Musket, Blunderbuss, Pistol, Long Rifle, bombs |
@@ -286,24 +288,34 @@ do not use weapon slots.
 | **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](core-rules.md#weapon-triangle)) |
 | **Hammer** | **Outside the triangle** — natural 6s crit only vs targets wearing **Heavy Armor** |
 
+#### Staff — Spell focus
+
+A fighter wielding a **Staff** has **Spell focus**.
+
+Once per **game**, when this fighter makes a **casting roll** that fails to meet
+the spell's casting difficulty, reroll the **Casting Roll** once. Must accept the second
+result.
+
+If the first roll was **Mishap**, resolve it as normal — do not reroll.
+
 #### Firearms
 
 Firearms use a **primer roll** (**2d6 + Sk**). **Double 1s** = **Misfire**. **Double 6s** = **Overcharge**. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — profile values are the complete pool, independent of the shooter's base stats.
 
-| Tier | Weapons | Archetype access |
+| Tier | Weapons | Keyword access |
 |---|---|---|
-| **Basic** | Musket, Blunderbuss | Knights, Hunters, Folk |
-| **Refined** | Pistol, Long Rifle | Hunters only |
+| **Basic** | Musket, Blunderbuss | **Knights**, **Hunters**, **Folk** |
+| **Refined** | Pistol, Long Rifle | **Hunters** only |
 
 **Flintlock** is a **keyword**. Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per battle; cannot reload). See [Flintlock](#flintlock-firearms-only) under Roster building.
 
-Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Require the **Firearms** proficiency. **Mortal Domain only**.
+Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Require the **Firearms** proficiency. Fighter must have **Mortal** and must lack **Caster**.
 
 ### Firearms
 
 Firearms are fired with the **Ranged** action. Requires the **Firearms**
-proficiency and the **Mortal** Domain. See [Retinue](retinue.md) for which
-firearm **tiers** each Archetype may buy.
+proficiency. Fighter must have **Mortal**, must lack **Caster**, and must meet
+the firearm **tier** access for their **Archetype** keyword. See [Retinue](retinue.md).
 
 > ### Primer Roll (2d6 + Sk)
 >
@@ -324,12 +336,12 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no
 **Brace of Pistols** uses **2 weapon slots**.
 
 **Brace of Pistols** — equipment that takes **1 weapon slot** and holds **2
-Pistols**. Requires the **Firearms** proficiency. **Mortal Domain only**. Crown
+Pistols**. Requires the **Firearms** proficiency. Fighter must have **Mortal** and must lack **Caster**. Crown
 cost: [Roster building](#firearms).
 
 - **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**.
   Resolve the **Primer Roll** and **Attack Sequence** normally.
-- **Gunslinger** *(Mortal Domain feat)*: One **Ranged** action fires both
+- **Gunslinger** *(requires **Mortal**)*: One **Ranged** action fires both
   **Pistols** in the fighter's **Brace of Pistols** (or both equipped **Pistols**
   if carried without a **Brace**) — each with its own **Primer Roll** and
   **Attack Sequence**. The fighter cannot take another **Ranged** action during
@@ -337,7 +349,7 @@ cost: [Roster building](#firearms).
 
 ### Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per battle). **Mortal Domain only** (gunpowder).
+Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**.
 
 #### Throwing a bomb
 
@@ -398,7 +410,7 @@ Armor and shield conversions **stack**. A fighter in Medium Armor with a Shield 
 
 **Brace of Pistols** is holster equipment — not a weapon. It takes **1 weapon
 slot** and holds **2 Pistols**. The **Pistols** must still be purchased
-separately. Requires the **Firearms** proficiency. **Mortal Domain only**.
+separately. Requires the **Firearms** proficiency. Fighter must have **Mortal** and must lack **Caster**.
 
 Without a **Brace of Pistols**, each **Pistol** uses **1 weapon slot** on its
 own.

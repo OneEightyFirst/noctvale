@@ -58,6 +58,39 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-18 — Fighter keyword system and static rules wiki
+
+**Decision:** Rework roster identity so **Archetype**, **Domain**, **Tradition**, and
+**Class** grant permanent **identity keywords** on every fighter at roster
+creation. **Caster**, **Vampire**, **Undead**, and **Fearless** remain capability
+or creature keywords stacked on top. **Mortal** and **Caster** are mutually
+exclusive; firearms require **Mortal**, forbid **Caster**, and refined tier
+requires **Hunters**. Migrate firearms, feats, traditions, campaign advancement,
+and equipment rules to keyword checks instead of retinue-level Domain strings.
+Clarify that **Fear**, **Panic**, and **Insanity** are temporary Sanity states,
+not keywords — sources **project** those effects; **Fearless** stays a keyword.
+
+Replace the in-app React rules wiki with static HTML generated from canonical
+Markdown (`npm run build:rules` → `public/rules/`). Remove `RulesWiki.jsx` and
+`rulesWiki.js`; add `build-rules.mjs`, `rules-lib.mjs`, and `wiki-shell.js`.
+Legacy `#rules/...` hashes redirect to `/rules/*.html`. Fix rules wiki layout so
+the left nav stays fixed while main content scrolls (`h-screen` shell,
+`overflow-y-auto` main column).
+
+Update the retinue builder: `resolveFighterKeywords()` and keyword-based
+equipment/proficiency enforcement in `noctvale.js` and `RetinueEditor.jsx`;
+keyword pills on fighter cards. Capture keyword reference notes in
+`background-notes.md`. Refresh downstream `rules/playtest/`, long-form retinue
+chapter, and `app/rules-updates.md`.
+
+**Reasoning:** Keywords give one vocabulary for identity layers and mechanical
+gates — equipment, feats, and advancement can say “fighter has **Mortal**”
+instead of parallel retinue string checks. Separating temporary Sanity states
+from permanent roster tags keeps the keyword list honest on fighter cards. Static
+rules pages read from the same canonical Markdown as print sources, avoid SPA
+link/anchor drift, and deploy as ordinary HTML beside the builder. A fixed left
+nav matches the unified app shell and keeps long rules chapters navigable.
+
 ## 2026-06-18 — Unify app shell and fix rules wiki navigation
 
 **Decision:** Give the playtest app a shared fixed left column with the Noctvale

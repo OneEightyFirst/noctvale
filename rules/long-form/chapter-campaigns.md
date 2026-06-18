@@ -10,7 +10,7 @@
 
 A **campaign** is a linked series of battles. Each player keeps the same **retinue** between battles, records injuries and Experience, sells recovered **Relics**, and spends **Crowns** to replace losses or expand the roster.
 
-A new campaign retinue starts like any other new retinue: build from a budget of **1000 Crowns**, then record a starting **Retinue Rating** of **1000**. Every fighter begins with **0 Veteran Value**.
+A new campaign retinue starts like any other new retinue: build from a budget of **1000 Crowns**, then record **Retinue Rating** as your **Roster Cost**.
 
 > **Campaigns at a glance**
 >
@@ -625,29 +625,13 @@ Cult Acolytes may gain **Caster** through advancement. Other Archetypes may gain
 
 ---
 
-## Veteran Value and Retinue Rating
+## Retinue Rating
 
-There are no levels, but campaigns still need a single number for fair matchups. Every lasting campaign change has a **Veteran Crown** value. Track **Veteran Value** on each fighter card, and add or subtract it when a permanent result applies.
-
-**Retinue Rating** equals **Roster Cost** plus the sum of every fighter's **Veteran Value**.
-
-| Lasting change | Veteran Crowns |
-|---|---:|
-| **Feat** gained | +15 |
-| **Fearless** keyword gained | +15 |
-| **Caster** keyword gained | +25 |
-| **+1** to any stat from advancement | +25 |
-| **Peak** or **Ascendant** result | +40 |
-| **Marked** result | +40 |
-| **−1** to any stat from Scarred, injury, Setback, or Cursed | −25 |
-
-For **Peak**, **Ascendant**, and **Marked**, add the listed Veteran Crowns once. Do not also add the parts separately.
-
-Do not count unspent Experience, temporary conditions, flavor-only results such as **Surface Scars**, or gear bought and sold during the Economy step. Gear is already counted in **Roster Cost**.
+**Retinue Rating** is the single number campaigns use for fair matchups. It equals **Roster Cost** — the total Crowns spent on fighters and gear on the roster sheet.
 
 For campaign matchmaking, pit retinues within **±100 Crowns** of rating, or within **±10%** of the higher rating, whichever is larger.
 
-Record **Retinue Rating** on the roster sheet next to Roster Cost.
+Record **Retinue Rating** on the roster sheet next to Roster Cost. Update it whenever you add or remove fighters or gear.
 
 ---
 
@@ -657,7 +641,7 @@ Record **Retinue Rating** on the roster sheet next to Roster Cost.
 
 The scenario gives the Hunters **2 Relics**. Because they won in an Abandoned Village, they also make one Survival Roll on the Abandoned Village table. They roll **9**, finding a **Village Hoard**: **1 Relic** and **15 Crowns**.
 
-The Hand rolls on the **Casualty Table** and gets **3**, **Scarred**. The Hunter player returns the fighter to the roster, chooses RC **−1**, and records **−25 Veteran Crowns** on that fighter.
+The Hand rolls on the **Casualty Table** and gets **3**, **Scarred**. The Hunter player returns the fighter to the roster and chooses RC **−1**.
 
 During the Economy step, the Hunters sell all **3 Relics** for **40 Crowns**, then add the **15 Crowns** from the Survival Roll. They spend some of it on replacement gear and update Roster Cost.
 

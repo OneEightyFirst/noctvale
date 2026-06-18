@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --color-night-950: #110808;
+    --color-night-900: #1a0c0c;
+    --color-night-800: #261212;
+    --color-night-700: #331a1a;
+    --color-cream-50: #faf5f1;
+    --color-cream-100: #f3e3d8;
+    --color-cream-300: #d4b5a2;
+    --color-cream-400: #b89580;
+    --color-cream-500: #967865;
+    --color-cream-600: #74604f;
+    --color-accent-100: #f2e0f5;
+    --color-accent-200: #e2bce8;
+    --color-accent-300: #ce92d6;
+    --color-accent-400: #b86dc4;
+  }
+
+  body.wiki-body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--color-night-950);
+    color: var(--color-cream-100);
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .wiki-body {
+    @apply flex h-screen overflow-hidden bg-night-950 text-cream-100;
+  }
+
+  .wiki-backdrop {
+    @apply fixed inset-0 z-40 bg-night-950/70 lg:hidden;
+  }
+
+  .wiki-sidebar {
+    @apply fixed inset-y-0 left-0 z-50 flex h-full w-80 max-w-[calc(100vw-3rem)] -translate-x-full flex-col border-r border-night-800 bg-night-950 transition-transform duration-200 lg:relative lg:z-auto lg:max-w-none lg:shrink-0 lg:translate-x-0;
+  }
+
+  .wiki-sidebar.is-open {
+    @apply translate-x-0;
+  }
+
+  .wiki-logo-wrap {
+    @apply shrink-0 px-4 py-4;
+  }
+
+  .wiki-logo {
+    @apply h-20 w-auto;
+  }
+
+  .wiki-sidebar-scroll {
+    @apply min-h-0 flex-1 overflow-y-auto p-3 pb-4;
+  }
+
+  .wiki-sidebar-panel {
+    @apply space-y-3;
+  }
+
+  .wiki-sidebar-heading {
+    @apply flex items-center gap-2 px-1 text-sm font-semibold text-cream-100;
+  }
+
+  .wiki-search {
+    @apply flex min-h-10 items-center gap-2 rounded border border-night-700 bg-night-950 px-3 text-sm text-cream-300 focus-within:border-accent-400;
+  }
+
+  .wiki-search input {
+    @apply min-w-0 flex-1 border-0 bg-transparent py-2 text-cream-100 outline-none placeholder:text-cream-600;
+  }
+
+  .wiki-nav-tree {
+    @apply overflow-hidden rounded-lg border border-night-800 bg-night-900/70 p-2;
+  }
+
+  .wiki-nav-node {
+    @apply mt-1 first:mt-0;
+  }
+
+  .wiki-nav-row {
+    @apply flex min-h-9 items-center gap-1 rounded border border-transparent hover:border-night-700 hover:bg-night-950;
+  }
+
+  .wiki-nav-row:has(.wiki-nav-link.is-active) {
+    @apply border-accent-400 bg-accent-500/10;
+  }
+
+  .wiki-nav-spacer {
+    @apply h-7 w-7 shrink-0;
+  }
+
+  .wiki-nav-toggle {
+    @apply grid h-7 w-7 shrink-0 place-items-center rounded text-cream-100 hover:bg-night-800;
+  }
+
+  .wiki-nav-chevron {
+    @apply h-4 w-4 transition-transform duration-150;
+  }
+
+  .wiki-nav-toggle[aria-expanded="true"] .wiki-nav-chevron {
+    @apply rotate-90;
+  }
+
+  .wiki-nav-link {
+    @apply min-w-0 flex-1 py-2 pr-2 text-left text-sm text-cream-100;
+  }
+
+  .wiki-nav-children.is-collapsed {
+    @apply hidden;
+  }
+
+  .wiki-main {
+    @apply flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto;
+  }
+
+  .wiki-header {
+    @apply sticky top-0 z-40 flex shrink-0 items-start gap-2 border-b border-night-800 bg-night-950/95 px-4 py-3 backdrop-blur;
+  }
+
+  .wiki-menu-btn {
+    @apply grid h-9 w-9 shrink-0 place-items-center rounded border border-night-700 bg-night-900 text-cream-300 hover:border-cream-500 hover:text-cream-100 lg:hidden;
+  }
+
+  .wiki-mark-link {
+    @apply shrink-0 lg:hidden;
+  }
+
+  .wiki-mark {
+    @apply h-9 w-9;
+  }
+
+  .wiki-header-actions {
+    @apply ml-auto flex items-start gap-2;
+  }
+
+  .wiki-top-nav {
+    @apply shrink-0;
+  }
+
+  .wiki-user-menu-slot {
+    @apply shrink-0;
+  }
+
+  .wiki-user-menu-slot:empty {
+    @apply hidden;
+  }
+
+  .wiki-view-toggle {
+    @apply inline-flex rounded border border-night-700 bg-night-900 p-1;
+  }
+
+  .wiki-view-link {
+    @apply inline-flex h-8 items-center gap-1 rounded px-2.5 text-sm text-cream-300 hover:text-cream-100;
+  }
+
+  .wiki-view-link.is-active {
+    @apply bg-accent-500/20 text-accent-100;
+  }
+
+  .wiki-content-wrap {
+    @apply mx-auto w-full max-w-5xl flex-1 px-4 pb-8 pt-4;
+  }
+
+  .wiki-playtest-callout {
+    @apply mb-4 rounded-lg border border-cream-300 bg-cream-100 p-5 text-center shadow-lg sm:p-7;
+  }
+
+  .wiki-playtest-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-wider text-accent-700;
+  }
+
+  .wiki-playtest-title {
+    @apply mt-2 text-2xl font-bold text-night-950 sm:text-3xl;
+  }
+
+  .wiki-playtest-copy {
+    @apply mx-auto mt-4 max-w-2xl space-y-3 text-sm leading-relaxed text-night-900;
+  }
+
+  .wiki-playtest-actions {
+    @apply mt-6 flex flex-wrap justify-center gap-3;
+  }
+
+  .wiki-playtest-btn {
+    @apply inline-flex h-10 items-center rounded border border-night-800 bg-night-950 px-4 text-sm font-semibold text-cream-100 hover:border-night-700 hover:bg-night-900;
+  }
+
+  .wiki-article {
+    @apply scroll-mt-24 rounded-lg border border-night-800 bg-night-950;
+  }
+
+  .wiki-article-header {
+    @apply p-4 sm:p-5;
+  }
+
+  .wiki-article-header--bordered {
+    @apply border-b border-night-800;
+  }
+
+  .wiki-article-eyebrow {
+    @apply flex items-center gap-2 text-xs uppercase tracking-wider text-cream-500;
+  }
+
+  .wiki-article-title {
+    @apply mt-2 break-words text-2xl font-semibold text-cream-100;
+  }
+
+  .wiki-article-summary {
+    @apply mt-2 max-w-3xl text-sm leading-relaxed text-cream-100;
+  }
+
+  .wiki-content {
+    @apply p-4 text-sm leading-relaxed text-cream-100 sm:p-5;
+  }
+
+  .wiki-content > :first-child {
+    @apply mt-0;
+  }
+
+  .wiki-content h2 {
+    @apply mt-8 scroll-mt-24 border-t border-night-800 pt-6 text-2xl font-semibold text-cream-100;
+  }
+
+  .wiki-content h3 {
+    @apply mt-6 scroll-mt-24 text-xl font-semibold text-cream-100;
+  }
+
+  .wiki-content h4 {
+    @apply mt-5 scroll-mt-24 text-lg font-semibold text-cream-100;
+  }
+
+  .wiki-content h5,
+  .wiki-content h6 {
+    @apply mt-4 scroll-mt-24 text-base font-semibold text-cream-100;
+  }
+
+  .wiki-content p {
+    @apply my-3;
+  }
+
+  .wiki-content a {
+    @apply text-accent-200 underline underline-offset-4 hover:text-accent-100;
+  }
+
+  .wiki-content strong {
+    @apply font-semibold text-cream-50;
+  }
+
+  .wiki-content ul {
+    @apply my-3 list-disc space-y-1 pl-5;
+  }
+
+  .wiki-content ol {
+    @apply my-3 list-decimal space-y-1 pl-5;
+  }
+
+  .wiki-content hr {
+    @apply my-6 border-night-800;
+  }
+
+  .wiki-content blockquote {
+    @apply my-4 border-l-2 border-accent-400 bg-night-900/60 py-2 pl-4 pr-3;
+  }
+
+  .wiki-content pre {
+    @apply my-4 overflow-x-auto rounded-lg border border-night-800 bg-night-900 p-3 text-sm;
+  }
+
+  .wiki-content code {
+    @apply rounded border border-night-700 bg-night-900 px-1 py-0.5 text-[0.9em];
+  }
+
+  .wiki-content pre code {
+    @apply border-0 bg-transparent p-0;
+  }
+
+  .wiki-content table {
+    @apply my-4 min-w-full border-collapse text-left text-sm;
+  }
+
+  .wiki-content thead {
+    @apply bg-night-900 text-cream-100;
+  }
+
+  .wiki-content th {
+    @apply whitespace-nowrap border-b border-night-800 px-3 py-2 font-semibold;
+  }
+
+  .wiki-content td {
+    @apply border-b border-night-800 px-3 py-2 align-top;
+  }
+
+  .wiki-content tbody tr {
+    @apply bg-night-950;
+  }
+}

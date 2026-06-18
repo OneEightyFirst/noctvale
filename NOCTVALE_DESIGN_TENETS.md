@@ -80,9 +80,9 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *The campaign is the game.*
 
-**Explanation:** A single skirmish matters because it feeds a loop: injuries → Survival Rolls → economy → advancement. Relics tie scenario objectives, battlefield survival, and the Crown economy into one loop. Veterans grow through XP spend (banked between battles) and Veteran Crowns for matchup fairness.
+**Explanation:** A single skirmish matters because it feeds a loop: injuries → Survival Rolls → economy → advancement. Relics tie scenario objectives, battlefield survival, and the Crown economy into one loop. Veterans grow through XP spend banked between battles.
 
-**Mechanically:** Post-game sequence is table-driven (Casualty Table, Doom Table, Survival Rolls, advancement tables). Random reward rolls use **2d6**: natural double 1 = Mishap, natural double 6 = Bonus. Scenario rewards are static and strongest; Survival Rolls are middle-value; Looting is weakest. Relics sell on a supply and demand curve. Retinue Rating = Roster Cost + Veteran Value.
+**Mechanically:** Post-game sequence is table-driven (Casualty Table, Doom Table, Survival Rolls, advancement tables). Random reward rolls use **2d6**: natural double 1 = Mishap, natural double 6 = Bonus. Scenario rewards are static and strongest; Survival Rolls are middle-value; Looting is weakest. Relics sell on a supply and demand curve. Retinue Rating = Roster Cost.
 
 **Protects:** Consequence carryover. Economic pressure alongside power growth. Player choice to spend XP or sell Relics.
 
@@ -169,7 +169,7 @@ When evaluating a new mechanic, ask:
 ### Campaign & economy
 - [ ] Does it connect to Relics, XP spend, or post-game tables?
 - [ ] Does it create a real choice (sell now vs. hoard, Loot instead of fighting, spend XP on stat vs. feat)?
-- [ ] Does it update Veteran Value / Retinue Rating fairly?
+- [ ] Does it update Retinue Rating fairly?
 
 ### Balance & underdog play
 - [ ] Does it help the player who is already winning run away with the game?

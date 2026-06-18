@@ -7,16 +7,11 @@ import SplashScreen from "./components/SplashScreen.jsx";
 import RetinueLibrary from "./components/RetinueLibrary.jsx";
 
 const RetinueEditor = lazy(() => import("./components/RetinueEditor.jsx"));
-const RulesWiki = lazy(() => import("./components/RulesWiki.jsx"));
 
-function viewFromLocation() {
-  return window.location.hash.startsWith("#rules/") ? "rules" : "home";
-}
+const RULES_URL = "/rules/intro.html";
 
 function viewFromHistoryState(state) {
-  return state?.noctvaleView === "retinues" || state?.noctvaleView === "rules" || state?.noctvaleView === "home"
-    ? state.noctvaleView
-    : viewFromLocation();
+  return state?.noctvaleView === "retinues" ? "retinues" : "retinues";
 }
 
 function appRootUrl() {
@@ -28,39 +23,6 @@ function ViewFallback({ label }) {
     <div className="flex flex-1 items-center justify-center px-4 py-16 text-cream-400">
       {label}
     </div>
-  );
-}
-
-function WelcomeHome({ onShowRules, onShowRetinues }) {
-  return (
-    <main className="mx-auto flex w-full max-w-4xl flex-1 items-center px-4 py-10">
-      <section className="w-full rounded-lg border border-night-800 bg-night-900/70 p-5 text-center sm:p-7">
-        <div className="text-xs font-semibold uppercase tracking-wider text-accent-300">Noctvale playtest</div>
-        <h1 id="welcome-title" className="mt-2 text-2xl font-semibold text-cream-50">
-          Welcome to Noctvale
-        </h1>
-        <div className="mt-4 space-y-3 text-sm leading-relaxed text-cream-100">
-          <p>Noctvale is still in development. Rules, balance, wording, and the retinue builder will have issues while the game is being tested. Please send rules feedback and app problems through the feedback form in the account menu so they are tracked in the right place.</p>
-          <p>Thanks for playing and helping shape the game.</p>
-        </div>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <button
-            type="button"
-            onClick={onShowRules}
-            className="inline-flex h-10 items-center rounded border border-accent-400 bg-accent-500/20 px-4 text-sm font-semibold text-accent-100 hover:bg-accent-500/30"
-          >
-            Read the rules
-          </button>
-          <button
-            type="button"
-            onClick={onShowRetinues}
-            className="inline-flex h-10 items-center rounded border border-night-700 bg-night-950 px-4 text-sm font-semibold text-cream-100 hover:border-cream-500"
-          >
-            Build a retinue
-          </button>
-        </div>
-      </section>
-    </main>
   );
 }
 
@@ -79,11 +41,18 @@ export default function App() {
   const { user, loading } = useAuth();
   const [activeRetinueId, setActiveRetinueId] = useState(null);
   const [retinueEditing, setRetinueEditing] = useState(false);
-  const [activeView, setActiveView] = useState(() => viewFromLocation());
+  const [activeView, setActiveView] = useState("retinues");
 
   useEffect(() => {
-    setRetinueEditing(false);
-  }, [activeRetinueId]);
+    const hash = window.location.hash;
+    const legacyRules = hash.match(/^#rules\/([^/?#]+)/);
+    if (legacyRules) {
+      const page = legacyRules[1] === "intro" ? "intro.html" : `${legacyRules[1]}.html`;
+      const anchorMatch = hash.match(/^#rules\/[^/]+\/(.+)$/);
+      const anchor = anchorMatch ? `#${decodeURIComponent(anchorMatch[1])}` : "";
+      window.location.replace(`/rules/${page}${anchor}`);
+    }
+  }, []);
 
   useEffect(() => {
     function handlePopState(event) {
@@ -94,40 +63,33 @@ export default function App() {
     return () => window.removeEventListener("popstate", handlePopState);
   }, [activeRetinueId]);
 
-  function openRetinue(retinueId) {
+  function openRetinue(retinueId, { editing = false } = {}) {
     setActiveView("retinues");
     setActiveRetinueId(retinueId);
+    setRetinueEditing(editing);
   }
 
   function showRetinueLibrary() {
     window.history.pushState({ noctvaleView: "retinues" }, "", appRootUrl());
     setActiveView("retinues");
     setActiveRetinueId(null);
-  }
-
-  function showRules() {
-    window.history.pushState({ noctvaleView: "rules", articleId: "intro", anchor: "" }, "", "#rules/intro");
-    setActiveView("rules");
-    setActiveRetinueId(null);
+    setRetinueEditing(false);
   }
 
   const navItems = (
     <div className="inline-flex rounded border border-night-700 bg-night-900 p-1">
-      <button
-        type="button"
-        onClick={showRules}
-        className={`inline-flex h-8 items-center gap-1 rounded px-2.5 text-sm ${
-          activeView === "rules" ? "bg-accent-500/20 text-accent-100" : "text-cream-300 hover:text-cream-100"
-        }`}
+      <a
+        href={RULES_URL}
+        className="inline-flex h-8 items-center gap-1 rounded px-2.5 text-sm text-cream-300 hover:text-cream-100"
       >
         <ScrollText className="h-4 w-4" aria-hidden="true" />
         Rules
-      </button>
+      </a>
       <button
         type="button"
         onClick={showRetinueLibrary}
         className={`inline-flex h-8 items-center gap-1 rounded px-2.5 text-sm ${
-          activeView === "retinues" ? "bg-accent-500/20 text-accent-100" : "text-cream-300 hover:text-cream-100"
+          activeView === "retinues" || activeRetinueId ? "bg-accent-500/20 text-accent-100" : "text-cream-300 hover:text-cream-100"
         }`}
       >
         <Users className="h-4 w-4" aria-hidden="true" />
@@ -140,7 +102,7 @@ export default function App() {
     return <SplashScreen description="Loading…" />;
   }
 
-  const showSidebar = activeView === "rules" || Boolean(activeRetinueId);
+  const showSidebar = Boolean(user);
 
   return (
     <AppShell navItems={navItems} showSidebar={showSidebar}>
@@ -153,18 +115,6 @@ export default function App() {
             onBackToLibrary={showRetinueLibrary}
           />
         </Suspense>
-      ) : activeView === "rules" ? (
-        <>
-          <Suspense fallback={<ViewFallback label="Loading rules…" />}>
-            <RulesWiki />
-          </Suspense>
-          <VersionFooter />
-        </>
-      ) : activeView === "home" ? (
-        <>
-          <WelcomeHome onShowRules={showRules} onShowRetinues={showRetinueLibrary} />
-          <VersionFooter />
-        </>
       ) : !user ? (
         <SignInScreen embedded showLogo={false} />
       ) : (

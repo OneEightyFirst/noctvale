@@ -13,9 +13,14 @@ import {
   ARCHETYPES,
   ARMOR_RANK,
   BOOSTABLE_STATS,
+  canEquipFirearm,
+  canTakeFirearmsProficiency,
   DOMAIN_FEATS,
   EQUIPMENT,
+  fighterHasCaster,
+  hasKeyword,
   PROFICIENCIES,
+  resolveFighterKeywords,
   SPECIES,
   SPELLS,
   STAT_KEYS,
@@ -73,7 +78,7 @@ function getFighterType(archetype, fighter) {
 
 function getDisplayTypeRules(type, domain) {
   if (!type?.rules?.length) return [];
-  if (domain === "Mortal" && type.caster?.when?.includes("Domain is not Mortal")) {
+  if (domain === "Mortal" && type.caster?.when?.includes("lacks Mortal")) {
     return [];
   }
   return type.rules;
@@ -125,10 +130,11 @@ function getProficiencyName(id) {
 }
 
 function isCaster(fighter, type, domain) {
-  if (!type?.caster) return false;
-  if (type.caster.mode === "required") return true;
-  if (domain === "Mortal") return false;
-  return Boolean(fighter.caster);
+  return fighterHasCaster(fighter, type, domain);
+}
+
+function getFighterKeywords(fighter, archetype, tradition, domain, type) {
+  return resolveFighterKeywords(fighter, archetype, tradition, domain, type);
 }
 
 function getSpellLimit(fighter, type, domain) {
@@ -136,12 +142,12 @@ function getSpellLimit(fighter, type, domain) {
   return type.caster?.spells ?? 0;
 }
 
-function getBuiltInProficiencies(fighter, type, domain) {
+function getBuiltInProficiencies(fighter, type, domain, keywords) {
   const builtIns = [...(type?.builtInProficiencies ?? [])];
   if (type?.builtInChoice) {
     const selected = fighter.builtInChoice;
     if (selected && selected !== "firearms") builtIns.push(selected);
-    if (selected === "firearms" && domain === "Mortal") builtIns.push(selected);
+    if (selected === "firearms" && canTakeFirearmsProficiency(keywords ?? [])) builtIns.push(selected);
   }
   return builtIns;
 }
@@ -169,10 +175,11 @@ function getProficiencyFeats(archetype, domain) {
   });
 }
 
-function getSelectedProficiencies(fighter, type, domain) {
+function getSelectedProficiencies(fighter, type, domain, archetype, tradition) {
+  const keywords = getFighterKeywords(fighter, archetype, tradition, domain, type);
   const fromFeats = (fighter.feats ?? []).filter(isProficiencyId);
   const legacy = fighter.proficiencies ?? [];
-  return [...new Set([...getBuiltInProficiencies(fighter, type, domain), ...fromFeats, ...legacy])];
+  return [...new Set([...getBuiltInProficiencies(fighter, type, domain, keywords), ...fromFeats, ...legacy])];
 }
 
 function getFighterStats(fighter, type, tradition, retinueChoices) {
@@ -250,16 +257,12 @@ function getArmorCap(archetype, fighter) {
   return ARMOR_RANK[archetype.armorCap] ?? 0;
 }
 
-function canUseFirearmTier(archetype, tier) {
-  if (archetype?.firearmAccess === "refined") return true;
-  if (archetype?.firearmAccess === "basic") return tier === "basic";
-  return false;
-}
 
 function getEquipmentBlockReason(item, archetype, fighter, type, tradition, domain) {
   if (!item || !archetype || !type || !tradition) return "Complete identity first.";
 
-  const selectedProficiencies = getSelectedProficiencies(fighter, type, domain);
+  const keywords = getFighterKeywords(fighter, archetype, tradition, domain, type);
+  const selectedProficiencies = getSelectedProficiencies(fighter, type, domain, archetype, tradition);
 
   if (item.requiresTradition && item.requiresTradition !== tradition.id) return "Requires a matching Tradition.";
   if (item.requiresFeat && !hasFeat(fighter, item.requiresFeat)) return "Requires a matching feat.";
@@ -268,9 +271,10 @@ function getEquipmentBlockReason(item, archetype, fighter, type, tradition, doma
     if (item.alwaysAllowed) return "";
     if (!selectedProficiencies.includes(item.proficiency)) return `Requires ${getProficiencyName(item.proficiency)} proficiency.`;
     if (item.proficiency === "firearms") {
-      if (domain !== "Mortal") return "Requires Mortal Domain.";
-      if (!canUseFirearmTier(archetype, item.firearmTier)) {
-        return item.firearmTier === "refined" ? "Refined firearms are Hunters only." : "Firearm tier not allowed.";
+      if (!hasKeyword(keywords, "Mortal")) return "Requires Mortal keyword.";
+      if (hasKeyword(keywords, "Caster")) return "Fighters with Caster cannot equip firearms.";
+      if (!canEquipFirearm(keywords, item.firearmTier, archetype)) {
+        return item.firearmTier === "refined" ? "Refined firearms require Hunters." : "Firearm tier not allowed.";
       }
     }
     return "";
@@ -334,6 +338,20 @@ function createFighter(archetype, typeId, domain, existingCount) {
     skilledCraftsman: null,
     notes: "",
   };
+}
+
+function ensureLeaderFighter(archetype, domain, tradition, retinueChoices, fighters) {
+  const roster = fighters ?? [];
+  if (!archetype || !tradition || !domain) return roster;
+  if (tradition.choice && !retinueChoices[tradition.choice.id]) return roster;
+
+  const leaderType = archetype.fighterTypes.find((type) => type.role === "Leader");
+  if (!leaderType) return roster;
+
+  const hasLeader = roster.some((fighter) => getFighterType(archetype, fighter)?.role === "Leader");
+  if (hasLeader) return roster;
+
+  return [...roster, createFighter(archetype, leaderType.id, domain, 0)];
 }
 
 function RuleList({ rules, compact = false }) {
@@ -737,16 +755,13 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
   }, [archetype, fighters]);
 
   useEffect(() => {
-    if (!readyForRoster || !archetype || !domain) return;
-    const leaderType = archetype.fighterTypes.find((type) => type.role === "Leader");
-    if (!leaderType) return;
+    if (loading || !readyForRoster || !archetype || !tradition || !domain) return;
 
     setFighters((current) => {
-      const hasLeader = current.some((fighter) => getFighterType(archetype, fighter)?.role === "Leader");
-      if (hasLeader) return current;
-      return [...current, createFighter(archetype, leaderType.id, domain, 0)];
+      const next = ensureLeaderFighter(archetype, domain, tradition, retinueChoices, current);
+      return next === current ? current : next;
     });
-  }, [readyForRoster, archetype, domain, setFighters]);
+  }, [loading, readyForRoster, archetype, tradition, domain, retinueChoices, setFighters]);
 
   const retinueWarnings = useMemo(() => {
     const warnings = [];
@@ -756,7 +771,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     if (fighters.length > archetype.count.max) warnings.push(`Retinue exceeds ${archetype.count.max} fighters.`);
     if (leaderCount !== 1) warnings.push("Retinue must include exactly 1 Leader.");
     if (casterCount > archetype.casterMax) warnings.push(`Too many Casters. ${archetype.name} max is ${archetype.casterMax}.`);
-    if (domain === "Mortal" && casterCount > 0) warnings.push("Mortal retinues cannot take Caster.");
+    if (domain === "Mortal" && casterCount > 0) warnings.push("Fighters with Mortal cannot take Caster.");
     if (totalCost > budget) warnings.push(`Roster is ${totalCost - budget} Crowns over budget.`);
     for (const type of archetype.fighterTypes) {
       if ((fighterCounts[type.id] ?? 0) > type.cap) warnings.push(`${type.name} exceeds cap ${type.cap}.`);
@@ -798,16 +813,20 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
 
   function selectTradition(nextTraditionId) {
     if (nextTraditionId === traditionId) return;
+    const nextTradition = getTradition(nextTraditionId);
+    const nextDomain = nextTradition?.domain ?? "";
     patchRetinue({
       traditionId: nextTraditionId,
       retinueChoices: {},
-      fighters: [],
+      fighters: ensureLeaderFighter(archetype, nextDomain, nextTradition, {}, []),
     });
   }
 
   function selectSpecialChoice(choiceId, optionId) {
+    const nextChoices = { ...retinueChoices, [choiceId]: optionId };
     patchRetinue({
-      retinueChoices: { ...retinueChoices, [choiceId]: optionId },
+      retinueChoices: nextChoices,
+      fighters: ensureLeaderFighter(archetype, domain, tradition, nextChoices, fighters),
     });
   }
 
@@ -1302,6 +1321,10 @@ const FighterCard = memo(function FighterCard({
 }) {
   const type = getFighterType(archetype, fighter);
   const species = getSpecies(fighter.speciesId);
+  const keywords = useMemo(
+    () => getFighterKeywords(fighter, archetype, tradition, domain, type),
+    [fighter, archetype, tradition, domain, type],
+  );
   const caster = isCaster(fighter, type, domain);
   const spellLimit = getSpellLimit(fighter, type, domain);
   const stats = getFighterStats(fighter, type, tradition, retinueChoices);
@@ -1319,8 +1342,9 @@ const FighterCard = memo(function FighterCard({
     [proficiencyFeats, archetype.feats, domainFeats, fighter.feats],
   );
   const fighterWarnings = getFighterWarnings(fighter, type, archetype, tradition, domain, spellLimit, slots, caster);
-  const showCasterOptions = domain !== "Mortal" && Boolean(type.caster);
-  const canToggleCaster = type.caster?.mode === "optional" && domain !== "Mortal";
+  const hasMortal = hasKeyword(keywords, "Mortal");
+  const showCasterOptions = !hasMortal && Boolean(type.caster);
+  const canToggleCaster = type.caster?.mode === "optional" && !hasMortal;
   const casterToggleDisabled = canToggleCaster && !caster && casterCount >= archetype.casterMax;
 
   function setBoost(stat) {
@@ -1387,8 +1411,11 @@ const FighterCard = memo(function FighterCard({
           <div className="mt-1 flex items-start justify-between gap-2 text-xs">
             <div className="flex min-w-0 flex-wrap gap-2">
               <Pill>{type.name}</Pill>
-              <Pill>{type.role}</Pill>
-              {caster ? <Pill tone="cyan">Caster</Pill> : null}
+              {keywords.map((keyword) => (
+                <Pill key={keyword} tone={keyword === "Caster" ? "cyan" : keyword === "Mortal" ? "emerald" : "zinc"}>
+                  {keyword}
+                </Pill>
+              ))}
               <Pill>{species.name}</Pill>
               <Pill tone={slots > 3 ? "rose" : "zinc"}>{slots}/3 slots</Pill>
             </div>
@@ -1527,12 +1554,12 @@ const FighterCard = memo(function FighterCard({
             {(close) => (
               <div className="grid gap-2 sm:grid-cols-2">
                 {type.builtInChoice.options.map((proficiencyId) => {
-                  const locked = proficiencyId === "firearms" && domain !== "Mortal";
+                  const locked = proficiencyId === "firearms" && !canTakeFirearmsProficiency(keywords);
                   return (
                     <OptionCard
                       key={proficiencyId}
                       title={getProficiencyName(proficiencyId)}
-                      meta={locked ? "Requires Mortal Domain." : "Does not count against chosen feats."}
+                      meta={locked ? "Requires Mortal keyword." : "Does not count against chosen feats."}
                       rules={[`Weapons: ${getById(PROFICIENCIES, proficiencyId)?.weapons ?? ""}.`]}
                       selected={fighter.builtInChoice === proficiencyId}
                       disabled={locked}
@@ -1647,8 +1674,10 @@ const FighterCard = memo(function FighterCard({
           domainFeats={domainFeats}
           featLimit={featLimit}
           fighter={fighter}
+          keywords={keywords}
           proficiencyFeats={proficiencyFeats}
           selectedFeatRules={selectedFeatRules}
+          tradition={tradition}
           type={type}
           onToggle={toggleFeat}
           onSkilledCraftsmanUpgrade={updateSkilledCraftsman}
@@ -1940,7 +1969,7 @@ function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, e
   );
 }
 
-function FeatField({ archetype, caster, domain, domainFeats, featLimit, fighter, proficiencyFeats, selectedFeatRules, type, onToggle, onSkilledCraftsmanUpgrade }) {
+function FeatField({ archetype, caster, domain, domainFeats, featLimit, fighter, keywords, proficiencyFeats, selectedFeatRules, tradition, type, onToggle, onSkilledCraftsmanUpgrade }) {
   const selectedNames = selectedFeatRules.map((feat) => feat.name);
 
   return (
@@ -1996,7 +2025,9 @@ function FeatField({ archetype, caster, domain, domainFeats, featLimit, fighter,
           domainFeats={domainFeats}
           featLimit={featLimit}
           fighter={fighter}
+          keywords={keywords}
           proficiencyFeats={proficiencyFeats}
+          tradition={tradition}
           type={type}
           onToggle={onToggle}
           onSkilledCraftsmanUpgrade={onSkilledCraftsmanUpgrade}
@@ -2028,7 +2059,7 @@ function SkilledCraftsmanWeaponPicker({ fighter, onUpgrade }) {
   );
 }
 
-function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, fighter, proficiencyFeats, type, onToggle, onSkilledCraftsmanUpgrade }) {
+function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, fighter, keywords, proficiencyFeats, tradition, type, onToggle, onSkilledCraftsmanUpgrade }) {
   const groups = [
     { title: "Proficiency Feats", feats: proficiencyFeats, introRules: archetype.proficiencyRules },
     { title: `${archetype.name} Feats`, feats: archetype.feats },
@@ -2037,7 +2068,7 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
   ].filter((group) => group.feats.length);
 
   const selectedCount = fighter.feats.length;
-  const builtInProficiencies = getBuiltInProficiencies(fighter, type, domain);
+  const builtInProficiencies = getBuiltInProficiencies(fighter, type, domain, keywords);
 
   return (
     <div className="space-y-4">
@@ -2046,7 +2077,7 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
           {group.feats.map((feat) => {
             const selected = fighter.feats.some((id) => normalizeFeatId(id) === feat.id);
             const builtIn = feat.isProficiency && builtInProficiencies.includes(feat.id);
-            const firearmsLocked = feat.isProficiency && feat.id === "firearms" && domain !== "Mortal";
+            const firearmsLocked = feat.isProficiency && feat.id === "firearms" && !canTakeFirearmsProficiency(keywords);
             const casterLocked = feat.casterOnly && !caster;
             const limitLocked = !selected && selectedCount >= featLimit;
             const locked = builtIn || firearmsLocked || casterLocked || limitLocked;
@@ -2066,8 +2097,8 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
                   <div className="flex flex-wrap gap-1">
                     {selected ? <Pill tone="amber">Selected</Pill> : null}
                     {builtIn ? <Pill tone="cyan">Built-in</Pill> : null}
-                    {feat.casterOnly ? <Pill tone={casterLocked ? "rose" : "cyan"}>Caster only</Pill> : null}
-                    {firearmsLocked ? <Pill tone="rose">Mortal Domain only</Pill> : null}
+                    {feat.casterOnly ? <Pill tone={casterLocked ? "rose" : "cyan"}>Requires Caster</Pill> : null}
+                    {firearmsLocked ? <Pill tone="rose">Requires Mortal</Pill> : null}
                     {limitLocked ? <Pill tone="rose">Limit reached</Pill> : null}
                   </div>
                 </div>
@@ -2106,7 +2137,7 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
   }
   for (const feat of [...getProficiencyFeats(archetype, domain), ...archetype.feats, ...UNIVERSAL_FEATS, ...getSelectableDomainFeats(domain)]) {
     if (fighter.feats.some((id) => normalizeFeatId(id) === feat.id) && feat.casterOnly && !caster) {
-      warnings.push(`${feat.name} is Caster only.`);
+      warnings.push(`${feat.name} requires Caster.`);
     }
   }
   for (const [itemId, quantity] of Object.entries(fighter.equipment ?? {})) {

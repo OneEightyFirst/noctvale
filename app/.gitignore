@@ -14,3 +14,4 @@ skills/
 .netrc-test
 .firebase/
 firebase-debug.log
+public/rules/

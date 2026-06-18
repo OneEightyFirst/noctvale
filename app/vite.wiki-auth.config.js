@@ -19,43 +19,22 @@ function getGitSha() {
 const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf8"));
 
 export default defineConfig({
-  plugins: [
-    react(),
-    {
-      name: "noctvale-rules-dev-routes",
-      configureServer(server) {
-        server.middlewares.use((req, _res, next) => {
-          if (req.url === "/rules" || req.url === "/rules/") {
-            req.url = "/rules/intro.html";
-          }
-          next();
-        });
-      },
-    },
-  ],
-  base: "/",
+  plugins: [react()],
   build: {
+    outDir: "public/rules",
+    emptyOutDir: false,
+    cssCodeSplit: false,
     rollupOptions: {
+      input: path.resolve(appDir, "src/wiki-auth.jsx"),
       output: {
-        manualChunks(id) {
-          if (id.includes("node_modules/@firebase") || id.includes("node_modules/firebase")) return "firebase";
-          if (id.includes("node_modules/react-dom") || id.includes("node_modules/react/")) return "react";
-          if (id.includes("node_modules/lucide-react")) return "lucide";
-        },
+        entryFileNames: "wiki-auth.js",
+        format: "es",
+        inlineDynamicImports: true,
       },
-    },
-  },
-  resolve: {
-    alias: {
-      "@noctvale-rules": repoRoot,
-    },
-  },
-  server: {
-    fs: {
-      allow: [repoRoot],
     },
   },
   define: {
+    "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV ?? "production"),
     __APP_VERSION__: JSON.stringify(pkg.version),
     __GIT_SHA__: JSON.stringify(getGitSha()),
   },

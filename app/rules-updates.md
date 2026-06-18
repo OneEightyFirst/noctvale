@@ -6,6 +6,38 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-18 18:52 EDT — Fighter keyword system
+
+**Change:**
+
+- Archetype, Domain, Tradition, and Class now grant **identity keywords** on every
+  fighter at roster creation.
+- **Mortal** and **Caster** are mutually exclusive; firearms require **Mortal**,
+  forbid **Caster**, and refined tier requires **Hunters**.
+- Builder resolves keywords via `resolveFighterKeywords()` and enforces equipment
+  and proficiency legality from keyword predicates.
+- Fighter cards display keyword pills (Archetype, Domain, Tradition, Class,
+  Caster, Vampire, etc.).
+
+**Source:** `rules/retinue.md` Keywords section, `rules/equipment.md`, `campaign/campaign.md`.
+
+**Impact:** Firearm and Caster warnings use keyword checks. Tradition cost modifiers
+unchanged. Rune-stones still require Runecasters Tradition.
+
+## 2026-06-18 — Staff (Two-Handed melee)
+
+**Change:**
+
+- Added **Staff** to Two-Handed melee: 20 Crowns, +Mt +1, +Sk +1, Spear type, 2
+  slots.
+- **Spell focus:** once per game, on a failed casting roll (not Mishap), reroll
+  the Casting Roll once and accept the second result.
+
+**Source:** `rules/equipment.md` — new caster-friendly pole weapon.
+
+**Impact:** Any fighter with **Two-Handed** proficiency may buy Staff in the builder.
+Spell focus is roster text only — not enforced in-app.
+
 ## Builder scope (standing note)
 
 This app models **retinue creation / purchase legality** only. Archetypes that

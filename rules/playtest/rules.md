@@ -44,8 +44,8 @@ one; the second result stands.
 
 ## Retinue Building
 
-Start a skirmish or new campaign retinue with **1000 Crowns**, **Retinue Rating
-1000**, and **0 Veteran Value** on every fighter.
+Start a skirmish or new campaign retinue with **1000 Crowns**. Record
+**Retinue Rating** as **Roster Cost** after building.
 
 Every Crown cost is a multiple of **5 Crowns**.
 
@@ -81,14 +81,14 @@ cost below.
 
 | Archetype | Fighter | Class | Count | Cost | Recruitment rule |
 |---|---|---|---|---:|---|
-| Knights | Lord | Leader | 1 | 125 | +1 to 2 different stats from CC, RC, Mt, Sk, Wi, Sa; optional **Caster** in non-Mortal Domain; 2 spells if **Caster** |
+| Knights | Lord | Leader | 1 | 125 | +1 to 2 different stats from CC, RC, Mt, Sk, Wi, Sa; optional **Caster** if fighter lacks **Mortal**; 2 spells if **Caster** |
 | Knights | Knight | Elite | 0-4 | 75 | +1 Mt or +1 Sk |
 | Knights | Squire | Specialist | 0-5 | 60 | +1 to one stat from CC, RC, Mt, Sk, Wi, Sa; built-in **One-Handed** |
-| Hunters | Captain | Leader | 1 | 125 | +1 to 2 different stats from CC, RC, Mt, Sk, Wi, Sa; optional **Caster** in non-Mortal Domain; 2 spells if **Caster** |
+| Hunters | Captain | Leader | 1 | 125 | +1 to 2 different stats from CC, RC, Mt, Sk, Wi, Sa; optional **Caster** if fighter lacks **Mortal**; 2 spells if **Caster** |
 | Hunters | Stalker | Elite | 0-4 | 75 | +1 Mt or +1 Sk |
 | Hunters | Tracker | Specialist | 0-3 | 60 | +1 to one stat from CC, RC, Mt, Sk, Wi, Sa; built-in **Archery** or **Firearms** if Mortal |
 | Hunters | Hand | Rank | 0-4 | 40 | Species baseline |
-| Folk | Mayor | Leader | 1 | 125 | +1 to 2 different stats from CC, RC, Mt, Sk, Wi, Sa; optional **Caster** in non-Mortal Domain; 2 spells if **Caster** |
+| Folk | Mayor | Leader | 1 | 125 | +1 to 2 different stats from CC, RC, Mt, Sk, Wi, Sa; optional **Caster** if fighter lacks **Mortal**; 2 spells if **Caster** |
 | Folk | Guildsman | Elite | 0-3 | 75 | +1 Mt or +1 Sk |
 | Folk | Militiaman | Specialist | 0-5 | 60 | +1 to one stat from CC, RC, Mt, Sk, Wi, Sa; built-in **Two-Handed** |
 | Folk | Townsfolk | Rank | 0-6 | 40 | Species baseline |
@@ -297,7 +297,7 @@ Keyword Advancement Table when a Feat roll is called for.
 | Cult | **Blood for the Rite** | Once per battle, before this fighter makes a stat roll or casting roll, choose another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll. This wound can make the chosen fighter **Downed**. |
 | Cult | **Magic Armor** | This fighter may equip **Light Armor**, **Medium Armor**, or **Heavy Armor**. |
 | Cult | **Chant** | When 2 or more other friendly **Cult** fighters are within **1"** of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with range **6"**. |
-| Cult | **Convoke** | **Caster only.** When this fighter makes a casting roll and at least 1 other friendly **Cult Caster** is within **6"**, add **+1** to the roll. |
+| Cult | **Convoke** | Fighter must have **Caster**. When this fighter makes a casting roll and at least 1 other friendly **Cult Caster** is within **6"**, add **+1** to the roll. |
 
 ### Universal Feats
 
@@ -311,7 +311,7 @@ Keyword Advancement Table when a Feat roll is called for.
 
 ### Domain Feats
 
-Each Domain feat list may include at most one feat marked **Caster only**. Cult
+Each Domain feat list may include at most one feat that requires **Caster**. Cult
 Domain lists may include more when written.
 
 | Domains | Feat | Rule |
@@ -327,7 +327,7 @@ Domain lists may include more when written.
 | Light | **Absolute Faith** | May reroll failed **Fear**, **Panic**, and **Insanity** tests. Must accept the second result. |
 | Light | **Unstoppable Faith** | When this fighter **Charges**, they may move **M + 1"**. If they end within engagement range and moved less than the full allowed distance in a straight line toward the enemy, push that enemy the remaining distance along the charge path. If the following **Melee** attack targets an enemy stopped by terrain, add **2 red dice**. If stopped by an Active fighter, move that fighter out of the way along the same path; that fighter's controller chooses the move. |
 | Necromancy | **Resilient** | Enemy **Melee** attacks against this fighter lose **1 red die** from the Strike Pool, minimum **0**. |
-| Necromancy | **Bind the Dead** | **Caster only.** When this fighter successfully casts **Summon Skeleton**, the Skeleton remains under your control for the rest of the battle instead of crumbling at end of activation. Remove it at battle end. Does not affect roster Skeletons. |
+| Necromancy | **Bind the Dead** | Fighter must have **Caster**. When this fighter successfully casts **Summon Skeleton**, the Skeleton remains under your control for the rest of the battle instead of crumbling at end of activation. Remove it at battle end. Does not affect roster Skeletons. |
 | Necromancy | **Bone Ward** | Once per battle, when this fighter suffers Wounds from an Attack Sequence, reduce wounds suffered by **1**, minimum **0**. |
 | Necromancy | **Death's Chill** | Enemy fighters cannot **Retreat** while within engagement range of this fighter. |
 | Infernal | **Daemonic Wings** | Once per battle, at the start of activation, suffer **1 Wound** to gain **Fly** until end of activation. **Fly:** ignore vertical distance for **Move**, **Charge**, and **Jump**; use normal **M**. |
@@ -339,7 +339,7 @@ Domain lists may include more when written.
 | Arcane | **Conduit** | Once per round, when a friendly **Caster** uses **Cast**, that Caster may measure range and line of sight from this fighter's base. This fighter must be Active. The Caster still rolls using their Wi and resolves Mishaps. If multiple Conduits apply, the Caster's controller chooses one. |
 | Arcane | **Helping Hand** | Once per round, move a **Downed** or **Stunned** friendly fighter within **12"** up to **6"** toward this fighter. |
 | Arcane | **Second Sight** | During Survival Rolls, if this fighter survives, you may reroll the retinue's **2d6** Survival Roll once and choose which result to use. Apply the Reward Roll Rule to the chosen result only. Once per Survival Roll, even if multiple fighters have Second Sight. |
-| Arcane | **Steady Weave** | **Caster only.** When this fighter's casting roll fails to meet difficulty, reroll **2d6 + Wi** once and accept the second result. Do not reroll Mishaps. |
+| Arcane | **Steady Weave** | Fighter must have **Caster**. When this fighter's casting roll fails to meet difficulty, reroll the **Casting Roll** once and accept the second result. Do not reroll Mishaps. |
 
 ## Equipment
 
@@ -1344,25 +1344,11 @@ type: Leader **2**, Adept or Acolyte **1**. Cult Acolytes may gain **Caster**
 through advancement. Other Archetypes may gain **Caster** only if the retinue is
 under its Caster cap and its Domain is not **Mortal**.
 
-### Veteran Value and Retinue Rating
+### Retinue Rating
 
-**Retinue Rating** = **Roster Cost** + the sum of every fighter's **Veteran
-Value**.
-
-| Lasting change | Veteran Crowns |
-|---|---:|
-| Feat gained | +15 |
-| **Fearless** gained | +15 |
-| **Caster** gained | +25 |
-| +1 to any stat from advancement | +25 |
-| **Peak** or **Ascendant** | +40 |
-| **Marked** | +40 |
-| -1 to any stat from Scarred, injury, Setback, or Cursed | -25 |
-
-For **Peak**, **Ascendant**, and **Marked**, add the listed Veteran Crowns once.
-Do not add their parts separately. Do not count unspent Experience, temporary
-conditions, flavor-only results, or gear bought and sold during Economy. Gear is
-already counted in Roster Cost.
+**Retinue Rating** equals **Roster Cost** — the total Crowns spent on fighters
+and gear on the roster sheet. Update it whenever you add or remove fighters or
+gear.
 
 For campaign matchmaking, pit retinues within **100 Crowns** of rating, or
 within **10%** of the higher rating, whichever is larger.

@@ -168,7 +168,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 
 Create fighter card template and retinue roster sheet.
 
-- [ ] Design fighter card layout (stats, weapons, spells, feats, wounds, conditions, Veteran Value)
+- [ ] Design fighter card layout (stats, weapons, spells, feats, wounds, conditions)
 - [ ] Design retinue roster sheet (fighter list, equipment, Relics, currency)
 - [ ] Decide on templating / layout tool
 
@@ -200,7 +200,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`rules/equipment.md`, `rules/core-rules.md#combat`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue.md#building-a-retinue`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/campaign.md#post-game-sequence` — tune XP earn/spend rates and **Veteran Crown** values after playtest
+- [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/campaign.md#post-game-sequence` — tune XP earn/spend rates after playtest
 - [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/retinue.md#feats`, `rules/equipment.md`, `rules/retinue.md`.
 - [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/campaign.md#survival-rolls`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
@@ -267,6 +267,6 @@ Games relevant to Noctvale design decisions:
 | Starting skills | Pregen archetypes have fixed packages; **Survivor** type lets you pick starting skills (custom build within keyword rules) |
 | Between games | Injury table, supply loot → Scavenge Points, recruit, refuge jobs/upgrades, **The Talk** (convert mismatched keyword to Leader's) |
 
-**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**. Caster keyword via Keyword table when eligible. **Retinue Rating** = Roster Cost + Veteran Value (Crowns) for matchup balance.
+**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**. Caster keyword via Keyword table when eligible. **Retinue Rating** = Roster Cost for matchup balance.
 
 **Caveat:** Reviews note random stat bumps can outperform narrow feats — tune carefully if we use random tables.

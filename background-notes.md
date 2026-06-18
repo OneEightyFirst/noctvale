@@ -41,6 +41,52 @@ Infernal Pact
 
 Village Watch are ordinary townsfolk defending their homes, not led by sheriffs.
 
+- Every Crown cost in this guide is a multiple of **5 Crowns**.
+- **Named factions** (Phoenix Guard, Silver Hunt, Village Watch, etc.) are optional flavor presets — the same rules apply whether you use one or build your own combination.
+- Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see `rules/equipment.md`).
+- Purchase **alchemy** and apply poisons during setup (one poison per weapon — see `rules/equipment.md`).
+
+---
+
+## Keywords
+
+Keywords are permanent tags on a fighter profile. Temporary battle states —
+**Fear**, **Panic**, and **Insanity** when a Sanity test fails — are not keywords.
+
+### Capability and creature keywords
+
+These stack on top of identity keywords:
+
+| Keyword | Source |
+|---|---|
+| **Caster** | Roster creation (optional or required per class) or Keyword Advancement (`campaign/campaign.md`) |
+| **Vampire** | **Vampires** Tradition — **Leader**, **Elite**, and **Specialist** only |
+| **Undead**, **Fearless** | **Wightlords** Tradition, advancement, abilities |
+
+### Keyword conflicts
+
+- **Mortal** and **Caster** are **mutually exclusive** on the same fighter. Magic
+  and gunpowder do not mix.
+- No fighter may have both **Cult** and **Mortal** — **Cult** has no **Mortal**
+  Traditions.
+
+### Referencing keywords in rules
+
+When a rule names a keyword in bold, check that fighter's keyword list:
+
+- **Firearms** — fighter must have **Mortal**, must lack **Caster**, and must
+  have the **Firearms** proficiency. **Refined** firearms also require **Hunters**.
+- **Domain feats** — fighter must have that **Domain** keyword.
+- **Caster-only** feats and spells — fighter must have **Caster**.
+- Tradition passives — apply to friendly fighters with that **Tradition** keyword
+  unless the rule names a narrower keyword (e.g. **Caster**, **Rank**).
+
+---
+
+## Campaign Retinues
+
+After your first roster is built, you maintain and expand it between battles using earnings from sold Relics. The same building rules apply — see `campaign/campaign.md` (Economy, Post-Game sequence).
+
 ---
 
 ## Game Summary

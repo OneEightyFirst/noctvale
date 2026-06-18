@@ -165,8 +165,8 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | Universal feat | Yes | Any fighter — cross-Domain list (**Line Breaker**, **Blacksmith's Arms**, …) |
 | Tradition | Yes | Witches, Crusaders, etc. — one per retinue |
 | Faction | Yes | Named preset (Phoenix Guard, Silver Hunt, …) |
-| class | No | Leader, Elite, Specialist, Rank — mechanical roster slot |
-| keyword | No in prose | **Caster**, **Fear**, **Fearless**, **Undead**, **Vampire** — bold the keyword name |
+| keyword | No in prose | Identity: **Knights**, **Hunters**, **Folk**, **Cult**, **Light**, **Mortal**, **Leader**, **Elite**, **Specialist**, **Rank**, **Crusaders**, etc. Capability: **Caster**, **Fearless**, **Undead**, **Vampire** — bold the keyword name. Keywords are permanent roster tags, not temporary Sanity states. |
+| class | No in prose | Use **Leader**, **Elite**, **Specialist**, **Rank** as keywords on fighter profiles |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
 | difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **M** |
 | affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/core-rules.md` |
@@ -321,11 +321,11 @@ or **+1 red die** when the rule modifies the **d6 + CC/RC** roll.
 - Effect cell: one or two sentences, semicolons between clauses.
 - Target: **enemy fighter**, **friendly fighter**, **point within 12"**.
 
-### Keyword abilities
+### Ability notation
 
-> **Flintlock** — −25 Crowns, **Single Shot**.
+> **Flintlock** — −25 Crowns, **Single Shot**. *(keyword)*
 
-> **Fear (12")** — Sanity test when activating within 12" and line of sight.
+> **Fear (12")** — Sanity test when activating within 12" and line of sight. *(projection notation — not a keyword)*
 
 ### Named action in ability text
 
