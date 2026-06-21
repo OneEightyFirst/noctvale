@@ -160,7 +160,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 - [x] Both retinues are trying to bring down and harvest the unicorn
 - [x] The unicorn is a deadly creature, not just an objective marker
 - [x] Battlefield: a clearing in the middle of a forest, with scattered buildings around the edge
-- [ ] Playtest and tune the unicorn profile, Horn token flow, and rewards in `rules/long-form/chapter-campaigns.md`
+- [ ] Playtest and tune the unicorn profile, Horn token flow, and rewards in `campaign/campaign.md` (There's a Reason They Have a Horn)
 
 ---
 

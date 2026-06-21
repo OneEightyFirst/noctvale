@@ -114,6 +114,14 @@ fixed positioning for in-header mounts. Quieter form copy keeps focus on the
 playtester's actual report while submission still attaches email, page URL, and
 browser context in the background.
 
+## 2026-06-21 — Keyword-first rules consolidation (completed)
+
+**Decision:** Completed a keyword-first refactor of canonical rules. **Archetype**, **Domain**, **Tradition**, and **Class** are identity keywords on every fighter; **Caster** and similar capability keywords stack on top. Choosing **Tradition** grants every fighter that **Tradition** keyword and the matching **Domain** keyword — Domain is not a separate roster pick.
+
+Rewrote `rules/retinue.md` building front matter (8-step sequence, Archetype summary table, Keywords hub), removed duplicated Tradition blocks from archetype chapters, reordered **Traditions** before **Domains**, and fixed feat count at recruitment (**1** Archetype feat per fighter). Merged Horn scenario, post-game clarifications, and **Counting the Cost** example into `campaign/campaign.md`. Added turn-flow example and activation-count ordering to `rules/core-rules.md`. Deleted fragmented `rules/long-form/` and `rules/playtest/rules.md`. Updated AGENTS, style guide, skills, and todo to point at canonical sources only. **Fluff placeholders** remain until late-stage writing; builder copy deferred to a later pass.
+
+**Reasoning:** One canonical source matches the builder's `resolveFighterKeywords()` model and removes drift from parallel downstream copies. Keyword-first prose explains why Domain spells and domain feats work — fighters have the keywords that unlock them — without treating Domain as an independent build axis.
+
 ## 2026-06-18 — Fighter keyword system and static rules wiki
 
 **Decision:** Rework roster identity so **Archetype**, **Domain**, **Tradition**, and

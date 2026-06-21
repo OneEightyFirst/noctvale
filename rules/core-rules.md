@@ -100,11 +100,7 @@ have been deployed.
 ### Round at a Glance
 
 > **1. Start of Round**
-> Determine initiative. In the first round, use the initiative set during battle
-> set-up. In later rounds, the player with the lower **activation count** has
-> initiative. If both players have the same activation count, the player who
-> had initiative last round keeps it. The player with the lower activation
-> count gains **Overwatch tokens** equal to the difference.
+> Count each player's **activation count**. Determine initiative. In the first round, use the initiative set during battle set-up. In later rounds, the player with the lower **activation count** has initiative. If both players have the same activation count, the player who had initiative last round keeps it. The player with the lower activation count gains **Overwatch tokens** equal to the difference.
 >
 > **2. Alternating Activations**
 > Starting with the player who has initiative, players alternate activating one
@@ -165,6 +161,20 @@ who ran out may spend any unspent **Overwatch tokens** as reactions during these
 activations.
 
 Begin a new round at Step 1.
+
+---
+
+### Example: A Round
+
+Two retinues clash in ruined tollhouse walls. The Phoenix Guard player has four fighters still standing (**Active** or **Downed**); the Grave Wardens player has six — activation counts **4** and **6**.
+
+**Start of round.** The Guard has fewer activations, so they have initiative and receive **2 Overwatch tokens**.
+
+The Guard activates a crossbow **Hand** first. He **Aims**, then **Ranged** at an enemy **Adept**. The **Adept** survives and **Moves** behind cover — a **Ranged Reaction** after the shot resolves (see [Overwatch](core-rules.md#overwatch)).
+
+The Wardens activate their **Captain**, who **Charges** a Guard spearman and **Melee**s. The spearman takes a Wound but remains **Active**. On the Guard's next activation, the spearman **Retreats** and fails the test. The **Captain**'s free **Melee** leaves the spearman **Downed**.
+
+Activations continue until every eligible fighter has activated or **skipped their activation**. Then round two begins — activation counts, initiative, and Overwatch tokens are set fresh.
 
 ---
 

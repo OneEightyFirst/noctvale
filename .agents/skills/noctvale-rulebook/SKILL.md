@@ -17,7 +17,7 @@ Read in order:
 3. `NOCTVALE_DESIGN_TENETS.md` — when adding or changing mechanics
 4. Live source for the section you are rewriting (usually `rules/core-rules.md`)
 5. `rules/_shared-snippets.md` — shared sub-routines (Attack Sequence, Apply Wounds, etc.)
-6. **Gold standard:** `rules/long-form/chapter-the-turn.md`
+6. **Gold standard:** `rules/core-rules.md` Action Sequence (Round at a Glance, turn example)
 
 Do not change mechanics while rewriting voice unless the user explicitly asks.
 
@@ -127,7 +127,7 @@ Use Mordheim-style flow when restructuring `rules/core-rules.md`:
 | Psychology | Sanity, Fear, Panic, Insanity |
 | Special Situations | Falling, difficult terrain, modifiers, ending battle, Overwatch detail |
 
-Draft new chapters under `rules/long-form/chapter-[slug].md` until the user approves merge into live files.
+Draft rulebook prose directly in canonical `rules/*.md` and `campaign/campaign.md`. Use `*[Placeholder]*` for fluff until late-stage writing.
 
 ## Rewrite Workflow
 

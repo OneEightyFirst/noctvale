@@ -13,7 +13,9 @@ Before writing, revising, or proposing any player-facing rules text, read and fo
 
 For **rulebook chapters** (core rules, campaign prose sections, scenario rulebook text),
 also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Gold-standard example:
-`rules/long-form/chapter-the-turn.md`.
+`rules/core-rules.md` Action Sequence (Round at a Glance and turn example).
+
+**Fluff placeholders** (`*[Placeholder]*`, scenario lore, archetype chapter openers) are intentional until late-stage writing — do not treat missing fluff as a rules gap during mechanics work.
 
 This applies to:
 
@@ -39,14 +41,9 @@ Before finalizing rules text, run through the Quick Checklist at the end of
 
 ## Rules Source of Truth
 
-The canonical rules source is the Markdown files directly under `rules/`
-(`rules/retinue.md`, `rules/core-rules.md`, `rules/equipment.md`, and shared
-snippets in `rules/_shared-snippets.md`). When changing rules, update those
-files first.
+The canonical rules source is the Markdown files in `rules/`, `campaign/campaign.md`, and `intro.md` (see `app/scripts/rules-lib.mjs` for the wiki build list). When changing rules, update those files first.
 
-Treat `rules/long-form/`, `rules/playtest/`, exports, and compiled drafts as
-downstream surfaces. Refresh them from the direct `rules/` sources instead of
-making them competing authorities.
+Do not maintain parallel copies in `rules/playtest/` or `rules/long-form/` — those paths were removed. Generated wiki HTML in `app/public/rules/` is built from canonical sources via `npm run build:rules`.
 
 The playtesting retinue builder lives in `app/`. Static rules pages are
 generated from this repo root (`intro.md`, `rules/`, `campaign/`) into

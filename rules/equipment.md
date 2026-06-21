@@ -417,7 +417,7 @@ own.
 
 ### Alchemy
 
-Alchemy is **equipment** — any retinue can purchase potions and poisons regardless of Archetype or Domain. Alchemical items are **consumable** (one battle only, purchased before the battle).
+Alchemy is **equipment** — any fighter can purchase potions and poisons regardless of keywords. Alchemical items are **consumable** (one battle only, purchased before the battle).
 
 #### Poisons
 
@@ -550,7 +550,7 @@ While the **Companion** is **Active** and not **Out of Action**, its **Handler**
 gains the bubble effect if they are **within 6"** of the **Companion** (base to
 base):
 
-| Retinue **Domain** | Effect |
+| Handler's **Domain** keyword | Effect |
 |---|---|
 | **Nature** or **Mortal** | **+1 Sa** |
 | **Arcane** | **+1 Wi** |

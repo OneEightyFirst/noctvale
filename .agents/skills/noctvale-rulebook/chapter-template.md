@@ -60,4 +60,4 @@ Delete instructional comments before publishing.
 
 ## Gold Standard
 
-Completed example: `rules/long-form/chapter-the-turn.md`
+Completed example: `rules/core-rules.md` Action Sequence

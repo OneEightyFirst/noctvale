@@ -4,6 +4,8 @@
 
 A campaign is a linked series of battles. Each player keeps the same retinue between battles, tracks injuries and XP, sells recovered **Relics**, and spends **Crowns** to replace losses or expand the roster.
 
+Start a new campaign retinue with **1000 Crowns** using the [retinue building rules](../rules/retinue.md). Record **Retinue Rating** as **Roster Cost** on the roster sheet.
+
 After each battle, resolve the **Post-Game Sequence** in order. Scenario rewards come first, then casualties, companion recovery, Doom results, Survival Rolls, economy, and advancement.
 
 ## Leveling and Advancement
@@ -27,6 +29,8 @@ Add XP to each fighter's bank when the condition applies:
 
 Track **Experience** on the fighter card as a running total. Unspent XP carries forward.
 
+A fighter removed as **Slain** gains no Experience from that battle.
+
 ### Spending XP — Advancement Rolls
 
 Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cost **before** rolling; deduct XP immediately. You may spend multiple times on the same fighter in one post-game if they can afford it.
@@ -44,8 +48,7 @@ not modify the **2d6** result.
 
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
-**Keyword eligibility:** A fighter may only gain keywords their **Archetype**,
-**Class**, and **Domain** keywords allow. Retinue **Caster** caps still apply.
+**Keyword eligibility:** A fighter may only gain keywords their identity keywords allow — **Archetype**, **Class**, and **Domain** (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
 
 ### Stat Advancement Table
 
@@ -65,10 +68,7 @@ Roll **2d6** after spending **5 XP** on Stat Advancement.
 
 Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
-**Eligibility:** A fighter may only gain keywords their **Archetype**, **Class**,
-and **Domain** keywords allow (see [Keywords](../rules/retinue.md#keywords)). If
-the result grants **Caster**, the retinue must still respect its max **Caster**
-count, and the fighter must lack **Mortal**.
+**Eligibility:** A fighter may only gain keywords their **Archetype**, **Class**, and **Domain** keywords allow (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
 
 | 2d6 | Result |
 |---|---|
@@ -77,15 +77,11 @@ count, and the fighter must lack **Mortal**.
 | 5–6 | **Steady** — +1 Sa permanently (max 6); no new keyword. |
 | 7 | **Hardened** — gain **Fearless** keyword. |
 | 8 | **Oathbound** — gain **Fearless** keyword **or** +1 Wi (max 6), your choice. |
-| 9–10 | **Gifted** — if eligible, gain **Caster** keyword and assign Domain spells (Leader-type **2**, Adept-type or **Acolyte** **1**). If not eligible, +1 Wi instead. |
+| 9–10 | **Gifted** — if eligible, gain **Caster** keyword and assign spells matching the fighter's **Domain** keyword (**Leader** **2**, **Adept** or **Acolyte** **1**). If not eligible, +1 Wi instead. |
 | 11 | **Marked** — gain **Fearless** and +1 to CC or RC (max 6). |
 | 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
 
-**Gaining Caster mid-campaign:** Assign Domain spells by class — **2** for a
-fighter with **Leader** who gains **Caster**, **1** for a fighter with
-**Specialist** (**Adept**) or **Rank** (**Acolyte**). Fighters with **Rank** in
-**Cult** may gain **Caster** here; other Archetypes only if under the retinue's
-max **Caster** count and the fighter lacks **Mortal**.
+**Gaining Caster mid-campaign:** Assign spells matching the fighter's **Domain** keyword by class — **2** for a fighter with **Leader** who gains **Caster**, **1** for a fighter with **Specialist** (**Adept**) or **Rank** (**Acolyte**). Fighters with **Rank** in a retinue with **Cult** may gain **Caster** here; other **Archetype** keywords only if under the max **Caster** count and the fighter lacks **Mortal**.
 
 ---
 
@@ -329,6 +325,91 @@ Each retinue keeps the Relics it recovered.
 
 The winning retinue recovers **2 additional Relics**.
 
+---
+
+### There's a Reason They Have a Horn
+
+*[Fluff placeholder]*
+
+#### Battlefield Location
+
+This scenario is fought in a **Hidden Grove**.
+
+#### Terrain
+
+Set up a **3' × 3'** board with normal-density terrain. Leave a central clearing roughly **10"** across.
+
+Place several buildings around the edge of the clearing. Before deployment, players agree which terrain pieces are **buildings**.
+
+#### Deployment
+
+The player whose retinue has fewer activations has initiative. If both players have the same number of activations, each player rolls **2d6**. The player with the highest result has initiative. Reroll ties.
+
+The player with initiative chooses a board edge as their deployment edge. The opposing player uses the opposite edge. Each player's deployment zone extends **6"** inward from their deployment edge.
+
+Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
+
+Starting with the player with initiative, players alternate setting up one deployment group at a time within their deployment zones until both retinues have been deployed.
+
+Place the unicorn at the center of the clearing after both retinues have been deployed.
+
+#### Looting
+
+Use [Looting Buildings](#looting-buildings).
+
+#### The Unicorn
+
+The unicorn is controlled by the scenario rules below. For targeting, engagement, and attacks, the unicorn and every fighter in both retinues count as enemies.
+
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 8" | 4 | — | 5 | 3 | 4 | 5 | 6 |
+
+**Horn and Hooves** — The unicorn's **Melee** attacks use **+2 Mt / +0 Sk**. When the unicorn's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool for that **Melee** attack.
+
+**Fear (8")** — The unicorn projects **Fear (8")**.
+
+When the unicorn reaches **0 Wounds**, it is taken **Out of Action**. Place the Horn token in base contact with the unicorn before removing it from the board.
+
+#### Unicorn Activation
+
+At the end of each round, before checking whether the battle ends, the unicorn activates if it is not **Out of Action**. It performs **2 actions**, resolving each action one at a time.
+
+If at least one fighter is within engagement range, the unicorn makes a **Melee** action against the closest engaged fighter. If no fighter is within engagement range, the unicorn **Charges** the nearest fighter it can reach. If it cannot reach a fighter with **Charge**, it **Moves** up to **8"** toward the nearest fighter by the shortest route.
+
+If several fighters are equally close, randomly determine which fighter the unicorn acts against or moves toward.
+
+#### Harvesting the Horn
+
+A fighter within **1"** of the Horn token may use **Interact** to pick it up.
+
+A fighter carrying the Horn token may leave the board through any edge when making a **Move** action if they have enough movement to reach it. Remove the fighter from the board. They have **Escaped** with the Horn token and cannot return during this battle.
+
+If a fighter carrying the Horn token is taken **Out of Action**, place the Horn token in base contact with that fighter before removing them from the board.
+
+#### Ending the Battle
+
+The battle ends immediately when a fighter **Escapes** with the Horn token. That fighter's retinue wins.
+
+If no fighter **Escapes** with the Horn token, the battle ends at the end of round 6.
+
+At the end of round 6:
+
+- If one retinue has a fighter carrying the Horn token, that retinue wins.
+- If the Horn token is on the board, the retinue whose fighter took the unicorn **Out of Action** wins.
+- If the unicorn is not **Out of Action**, it escapes into the trees and the battle is a draw.
+
+#### Rewards
+
+Each retinue keeps any Relics it recovered through Looting Buildings.
+
+The winning retinue also:
+
+- Recovers **2 Relics**.
+- Gains **30 Crowns**.
+
+If a fighter **Escaped** with the Horn token, that fighter gains **+1 Experience**.
+
 ## Post-Game Sequence
 
 After each battle, resolve the steps below **in order**. Each step uses tables
@@ -356,7 +437,7 @@ Quest post-quest events.
 
 Resolve the scenario's victory rewards and any Relics recovered on the table.
 
-Scenario rewards are static. Do not roll for scenario rewards.
+Scenario rewards are static. Do not roll for scenario rewards unless the scenario tells you to make a **random reward roll** (see [Reward Roll Rule](#reward-roll-rule)).
 
 Set recovered Relics aside until Step 6.
 
@@ -433,19 +514,21 @@ aside until Step 6.
 
 ### Step 6: Economy
 
-1. Total Relics recovered this battle from scenario rewards, Looting, and
-   Survival Rolls.
-2. Sell Relics for Crowns ([#economy](#selling-relics)).
-3. Recruit fighters and buy gear.
+1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
+2. Sell **any Relics you choose to sell** for Crowns ([#economy](#selling-relics)).
+3. Recruit fighters and buy gear. Update **Roster Cost** and **Retinue Rating** on the roster sheet.
+
+---
+
+### Step 7: Experience & Advancement
+
+Award **Experience** after the Economy step. Spend XP on **Advancement** rolls if you choose (see [Leveling and Advancement](#leveling-and-advancement)).
 
 ---
 
 ## Survival Rolls
 
-Part of the [post-game sequence](#post-game-sequence) (Step 4). After scenario
-rewards, retinues make Survival Rolls to see what they salvage after the battle.
-
----
+Part of the [Post-Game Sequence](#post-game-sequence) (Step 5). After scenario rewards, retinues make Survival Rolls to see what they salvage after the battle.
 
 ### Reward Roll Rule
 
@@ -646,5 +729,19 @@ more at once yields diminishing returns per Relic.
 | 2 Relics | 30 |
 | 3–5 Relics | (15 × Relics) − 5 |
 | 6–8 Relics | (15 × Relics) − 10 |
+
+---
+
+### Example: Counting the Cost
+
+A **Hunters** retinue wins a battle in an **Abandoned Village**. Two fighters **Escaped** with recovered Relics, one **Hand** ended the battle **Out of Action**, and the **Captain** took an enemy **Leader** **Out of Action** during the final round.
+
+The scenario gives the retinue **2 Relics**. Because they won in an **Abandoned Village**, they also make one Survival Roll on the Abandoned Village table. They roll **9** — **Village Hoard**: **1 Relic** and **15 Crowns**.
+
+The **Hand** rolls on the **Casualty Table** and gets **3**, **Scarred**. The player returns the fighter to the roster and chooses RC **−1**.
+
+During the Economy step, the retinue sells all **3 Relics** for **40 Crowns**, then adds the **15 Crowns** from the Survival Roll. They spend some of it on replacement gear and update **Roster Cost** and **Retinue Rating**.
+
+Finally, the player awards Experience. The **Captain** gains **+2 Experience** for taking the enemy **Leader** **Out of Action**. Each fighter gains **+1 Experience** for each recovered Relic (**+3** total from Relics), except any fighter removed as **Slain**. Fighters with enough Experience may buy an advancement roll, or save it for a later battle.
 
 ---

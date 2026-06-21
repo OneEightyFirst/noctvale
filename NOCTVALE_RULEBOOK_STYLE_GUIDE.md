@@ -4,7 +4,9 @@
 
 This guide keeps Noctvale rules **clear, consistent, and readable** as the game grows. Use it when writing or editing any player-facing rules text — core rules, campaign tables, weapon and spell entries, fighter cards, and scenario packets.
 
-**Rulebook chapters** (core rules rewrite, campaign prose): also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Canonical example: `rules/long-form/chapter-the-turn.md`.
+**Rulebook chapters** (core rules rewrite, campaign prose): also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Canonical example: `rules/core-rules.md` Action Sequence.
+
+**Fluff placeholders** in rules files are intentional until late-stage writing.
 
 Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decision-log.md` (why a rule changed)
 
