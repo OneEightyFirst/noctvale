@@ -48,7 +48,7 @@ not modify the **2d6** result.
 
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
-**Keyword eligibility:** A fighter may only gain keywords their identity keywords allow — **Archetype**, **Class**, and **Domain** (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
+**Keyword eligibility:** A fighter may only gain keywords their identity keywords allow — **Archetype**, **Role**, and **Domain** (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
 
 ### Stat Advancement Table
 
@@ -68,7 +68,7 @@ Roll **2d6** after spending **5 XP** on Stat Advancement.
 
 Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
-**Eligibility:** A fighter may only gain keywords their **Archetype**, **Class**, and **Domain** keywords allow (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
+**Eligibility:** A fighter may only gain keywords their **Archetype**, **Role**, and **Domain** keywords allow (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
 
 | 2d6 | Result |
 |---|---|
@@ -77,17 +77,17 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 | 5–6 | **Steady** — +1 Sa permanently (max 6); no new keyword. |
 | 7 | **Hardened** — gain **Fearless** keyword. |
 | 8 | **Oathbound** — gain **Fearless** keyword **or** +1 Wi (max 6), your choice. |
-| 9–10 | **Gifted** — if eligible, gain **Caster** keyword and assign spells matching the fighter's **Domain** keyword (**Leader** **2**, **Adept** or **Acolyte** **1**). If not eligible, +1 Wi instead. |
+| 9–10 | **Gifted** — if eligible, gain **Caster** keyword and assign spells matching the fighter's **Domain** keyword (**Leader**: **2** spells; **Adept** or **Acolyte**: **1** spell). If not eligible, +1 Wi instead. |
 | 11 | **Marked** — gain **Fearless** and +1 to CC or RC (max 6). |
 | 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
 
-**Gaining Caster mid-campaign:** Assign spells matching the fighter's **Domain** keyword by class — **2** for a fighter with **Leader** who gains **Caster**, **1** for a fighter with **Specialist** (**Adept**) or **Rank** (**Acolyte**). Fighters with **Rank** in a retinue with **Cult** may gain **Caster** here; other **Archetype** keywords only if under the max **Caster** count and the fighter lacks **Mortal**.
+**Gaining Caster mid-campaign:** Assign spells matching the fighter's **Domain** keyword by role — **2** for a fighter with **Leader** who gains **Caster**, **1** for a fighter with **Specialist** (**Adept**) or **Rank** (**Acolyte**). Fighters with **Rank** in a retinue with **Cult** may gain **Caster** here; other **Archetype** keywords only if under the max **Caster** count and the fighter lacks **Mortal**.
 
 ---
 
 ### Retinue Rating
 
-**Retinue Rating** is the single number campaigns use for matchup fairness. It equals **Roster Cost** — the total value of every fighter on the roster sheet: recruitment cost (role, species premium, and any **Tradition** modifier), equipment, and advancements gained through the campaign.
+**Retinue Rating** is the single number campaigns use for matchup fairness. It equals **Roster Cost** — the total value of every fighter on the roster sheet: recruitment cost (role, ancestry premium, and any **Tradition** modifier), equipment, and advancements gained through the campaign.
 
 **Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger.
 
@@ -268,8 +268,7 @@ retinue.
 
 #### The Advancing Forest
 
-The left and right possible forest edges are judged from the player with
-initiative's deployment edge, looking toward the opposing deployment edge.
+The left and right possible forest edges are judged from the deployment edge of the player who has initiative, looking toward the opposing deployment edge.
 
 At the end of round 1, roll **1d6**:
 
@@ -389,9 +388,9 @@ If a fighter carrying the Horn token is taken **Out of Action**, place the Horn 
 
 #### Ending the Battle
 
-The battle ends immediately when a fighter **Escapes** with the Horn token. That fighter's retinue wins.
+The battle ends immediately when a fighter escapes with the Horn token. That fighter's retinue wins.
 
-If no fighter **Escapes** with the Horn token, the battle ends at the end of round 6.
+If no fighter escapes with the Horn token, the battle ends at the end of round 6.
 
 At the end of round 6:
 
@@ -515,7 +514,7 @@ aside until Step 6.
 ### Step 6: Economy
 
 1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
-2. Sell **any Relics you choose to sell** for Crowns ([#economy](#selling-relics)).
+2. Sell **any Relics you choose to sell** for Crowns ([Selling Relics](#selling-relics)).
 3. Recruit fighters and buy gear. Update **Roster Cost** and **Retinue Rating** on the roster sheet.
 
 ---

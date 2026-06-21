@@ -58,6 +58,22 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-21 — Domain feat layout and canonical rules copyedit
+
+**Decision:** Reorganize **Domain Feats** in `rules/retinue.md` so every feat
+appears under its **Domain** heading with full duplicated text — no shared
+multi-domain block at the top. Restore the **Spell selection** role summary
+(**Leader**/**Theurge** **2**, **Adept** **1**). Run a spelling, grammar, and
+terminology pass across `rules/core-rules.md`, `rules/retinue.md`,
+`rules/equipment.md`, and `campaign/campaign.md`: **eligible**, **Role** not
+**Class**, **ancestry premium** not *species*, consistent stat-check phrasing,
+**Panic**/**Fear** activation wording, and link fixes.
+
+**Reasoning:** Players look up feats by Domain during roster building; a separate
+shared list with domain tags was easy to misread. A single editorial pass keeps
+canonical rules aligned with the style guide before the next rules build and
+playtest push.
+
 ## 2026-06-21 — Spell Casting stat and Hit columns
 
 **Decision:** Add **Casting stat** and **Hit** columns to every domain spell table in

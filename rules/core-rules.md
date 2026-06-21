@@ -172,7 +172,7 @@ Two retinues clash in ruined tollhouse walls. The Phoenix Guard player has four 
 
 The Guard activates a crossbow **Hand** first. He **Aims**, then **Ranged** at an enemy **Adept**. The **Adept** survives and **Moves** behind cover — a **Ranged Reaction** after the shot resolves (see [Overwatch](core-rules.md#overwatch)).
 
-The Wardens activate their **Captain**, who **Charges** a Guard spearman and **Melee**s. The spearman takes a Wound but remains **Active**. On the Guard's next activation, the spearman **Retreats** and fails the test. The **Captain**'s free **Melee** leaves the spearman **Downed**.
+The Wardens activate their **Captain**, who **Charges** a Guard spearman and uses **Melee**. The spearman takes a Wound but remains **Active**. On the Guard's next activation, the spearman **Retreats** and fails the test. The **Captain's** free **Melee** leaves the spearman **Downed**.
 
 Activations continue until every eligible fighter has activated or **skipped their activation**. Then round two begins — activation counts, initiative, and Overwatch tokens are set fresh.
 
@@ -361,7 +361,7 @@ Open doors, operate scenario objects, or pick up items.
 
 Search a building for valuables.
 
-*(See `../campaign/campaign.md#scenarios`.)*
+*(See [Scenarios](../campaign/campaign.md#scenarios).)*
 
 #### Recover
 
@@ -375,7 +375,7 @@ Attempt to stand up from **Downed**.
 
 **Cost:** 1 action
 
-Assist a **Downed** or **Stunned** ally **within 1"**.
+Assist a **Downed** or **Stunned** friendly fighter **within 1"**.
 
 *(See [Conditions](core-rules.md#conditions).)*
 
@@ -482,7 +482,7 @@ A fighter is removed from the battle. Resolve post-game consequences in the
 
 ### Help Action
 
-A friendly fighter **within 1"** may spend an action to assist a Downed or Stunned ally.
+A friendly fighter **within 1"** may spend an action to assist a **Downed** or **Stunned** friendly fighter.
 
 Roll **1d6:**
 
@@ -527,7 +527,7 @@ the battle.
 
 When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
 
-At the **start of each activation**, roll **Wi check**. **Pass:** remove
+At the **start of each activation**, roll one **Wi check** (d6 + Wi ≥ 8). **Pass:** remove
 **Bleeding**. **Fail:** suffer **1 Wound**.
 
 ---
@@ -662,12 +662,12 @@ apply [Friendly in the Line of Fire](core-rules.md#friendly-in-the-line-of-fire)
 
 ### Ranged Reaction
 
-When a fighter is targeted by a **Ranged** action, the target may perform a **single free action** after the attack sequence is fully resolved. This reaction does not cost the target any of their normal actions.
+When a fighter is targeted by a **Ranged** action, the target may perform a **single free action** after the **Attack Sequence** is fully resolved. This reaction does not cost the target any of their normal actions.
 
 - The reaction triggers whenever the target is **selected as a target**, regardless of whether the attack hits or misses.
 - The target may choose **any single action** from the action list (Move, Charge, Melee, Ranged, Brace, Retreat, etc.).
 - If the target is **Downed or Out of Action** after the attack resolves, they may not react.
-- **A fighter may not perform a Ranged Reaction during their own player's turn.** The active player's fighters cannot react to return fire. This means the sequence is always: shoot → react → done.
+- **A fighter may not perform a Ranged Reaction while their controlling player is activating fighters.** The active player's fighters cannot react to return fire. This means the sequence is always: shoot → react → done.
 - **Cast actions do not trigger Ranged Reactions.** Only Ranged weapon attacks trigger this rule.
 - If a fighter is targeted by **multiple Ranged attacks** in the same activation (e.g., the attacker shoots twice), the target gets **one reaction per attack**.
 - **A Ranged Reaction cannot trigger another Ranged Reaction.** Reactions only trigger from actions, not from other reactions. This prevents chains.
@@ -771,7 +771,7 @@ If you **can see** the target from the firing fighter's viewpoint, you have **li
 
 If **any intervening terrain** lies between the firing fighter and the target — and that terrain is **more than 1" from the firing fighter** — the target has **cover**.
 
-**Cover grants +1 blue defense die** (rolled with Sk) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard attack sequence.
+**Cover grants +1 blue defense die** (rolled with Sk) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard **Attack Sequence**.
 
 ---
 
@@ -799,13 +799,13 @@ This rule does not apply to **Ranged** weapon attacks (bows, crossbows, throwing
 
 #### Clustered enemies
 
-When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass a **Sk check** (d6 + Sk ≥ 8) to hit the intended target.
+When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass one **Sk check** (d6 + Sk ≥ 8) to hit the intended target.
 
 - **Pass:** Resolve the attack against the declared target.
 - **Fail, one other fighter within 1":** That fighter becomes the new target instead.
 - **Fail, two or more other fighters within 1":** Randomly select the new target from **all enemy fighters within 1"** of the declared target (including the declared target).
 
-Make the Sk check when the target is declared, before rolling the attack.
+Make the **Sk check** when the target is declared, before rolling the attack.
 
 ---
 
@@ -823,7 +823,7 @@ Most ranged weapons have a **minimum range of 3"**. Pistols have **no minimum ra
 
 ### Falling
 
-Roll a **Sk check** (d6 + Sk ≥ 8) when a fighter falls.
+Roll one **Sk check** (d6 + Sk ≥ 8) when a fighter falls.
 
 For every **2"** fallen, roll one die.
 
@@ -938,7 +938,7 @@ The fighter is **immune to that specific source** for the rest of the game. They
 
 The effect applies immediately (see below). At the **start of the fighter's next activation**, before spending any actions, they test again:
 
-- **Pass:** Act normally this turn.
+- **Pass:** Act normally this activation.
 - **Fail:** The effect applies again.
 
 This repeats each activation until the fighter passes or the source is removed.
@@ -947,13 +947,13 @@ This repeats each activation until the fighter passes or the source is removed.
 
 ### Fear
 
-Cannot move **closer to the source** of fear for the rest of your turn. The fighter may still act otherwise — shoot, fight if already engaged, cast spells, retreat, etc.
+Cannot move **closer to the source** of fear for the rest of this activation. The fighter may still act otherwise — shoot, fight if already engaged, cast spells, retreat, etc.
 
 ---
 
 ### Panic
 
-Cannot move **closer to the source** of fear. In addition, the fighter must spend **at least 1 action** moving their full movement **directly away** from the source.
+Cannot move **closer to the source** of panic. In addition, the fighter must spend **at least 1 action** moving their full movement **directly away** from the source.
 
 ---
 
@@ -961,10 +961,10 @@ Cannot move **closer to the source** of fear. In addition, the fighter must spen
 
 Roll on the **Insanity Table (1d6)**:
 
-- 1 — **Frenzy:** Attack the closest fighter (chosen by your opponent). It cannot be the source of the Insanity.
+- 1 — **Frenzy:** Attack the closest fighter (chosen by your opponent). They cannot be the source of the Insanity.
 - 2–3 — **Flee:** Spend both actions moving toward the nearest board edge.
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
-- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but subtract 1 from the roll to hit. If their primary weapon is ranged, they spend both actions firing at the source and subtract 1 from the roll to hit.
+- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but subtract **1** from the roll to hit. If their primary weapon is ranged, they spend both actions firing at the source and subtract **1** from the roll to hit.
 
 ---
 

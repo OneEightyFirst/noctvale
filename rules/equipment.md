@@ -144,7 +144,7 @@ Bombs are **Single Shot** (one use per battle).
 | Item           | Slots | Cost | Effect                                                                      |
 | -------------- | ----- | ---- | --------------------------------------------------------------------------- |
 | **Relic**      | 2     | 75   | Friendly fighters within 6" gain +1 Sa                                      |
-| **Instrument** | 2     | 65   | Friendly fighters within 6" gain +1" M (requires 1 action/turn to activate) |
+| **Instrument** | 2     | 65   | Friendly fighters within 6" gain +1" M (requires **1 action per turn** to activate) |
 
 ---
 
@@ -353,7 +353,7 @@ Bombs are thrown explosives with a flat Strike Pool that hits all fighters (frie
 Use the **Ranged** action.
 
 1. **Declare a target** (pick a direction/point you're aiming at).
-2. **Roll the primer roll** (see [Bomb table](#bomb-table)):
+2. **Roll the Primer Roll** (see [Bomb table](#bomb-table)):
    - **Double 1s:** Bomb explodes in the thrower's hand. Center the blast template on the thrower.
    - **Fail (below difficulty, not double 1s):** Bomb is still thrown but scatters. Roll **d6 + Mt**. Move the detonation point that many **"** from the declared target, using a **scatter die** for direction.
    - **Pass:** Bomb is on target. Roll **d6 + Mt** for maximum distance — place the blast marker anywhere along the line to the declared target up to that many **"**.
@@ -366,7 +366,7 @@ Use the **Ranged** action.
 | Bomb | 1H | d6 + Mt | 9+ | 3 | 2 | 3" blast, Single Shot |
 | Smoke Bomb | 1H | d6 + Mt | 8+ | — | — | 6" blast, Single Shot, Smoke |
 
-**Smoke:** Creates a 6" cloud that blocks line of sight for all fighters. The cloud remains until the end of the round. A fighter may choose to deliberately fail the **primer roll** to detonate the smoke bomb at their feet, creating instant cover centered on themselves.
+**Smoke:** Creates a 6" cloud that blocks line of sight for all fighters. The cloud remains until the end of the round. A fighter may choose to deliberately fail the **Primer Roll** to detonate the smoke bomb at their feet, creating instant cover centered on themselves.
 
 ---
 
@@ -422,7 +422,7 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 
 | Poison | Effect | Notes |
 |---|---|---|
-| Adder's Kiss | +1 Sk to the weapon's strike pool | Subtle, fast-acting |
+| Adder's Kiss | +1 Sk to the weapon's **Strike Pool** | Subtle, fast-acting |
 | Blight Extract | Unblocked hits inflict **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned) | Weakening toxin |
 | Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
 | Widow's Tears | Unblocked hits inflict 2 Wounds instead of 1 | Lethal, expensive |
@@ -495,7 +495,7 @@ Companions do **not** use **Downed** or **Stunned**.
 > Each unblocked hit inflicts **1 Wound**.
 >
 > When a **Companion** reaches **0 Wounds**, it is **Out of Action** and is
-> removed from the battle. Any effect that would **Down** or **Stun** a fighter
+> removed from the battle. Any effect that would make a fighter **Downed** or **Stunned**
 > removes the **Companion** from the battle instead.
 
 Companions are never removed permanently — see [Companion
