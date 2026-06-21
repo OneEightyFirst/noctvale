@@ -58,6 +58,69 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-21 — Spell Casting stat and Hit columns
+
+**Decision:** Add **Casting stat** and **Hit** columns to every domain spell table in
+`rules/retinue.md`. **Casting stat** is **Wi** for Light, Arcane, and Nature;
+**Sa** for Infernal, Necromancy, and Blood. **Hit** is **RC** for most damage
+spells, **CC** for engagement-range damage (blasts centered on the caster), and
+**—** when the spell does not deal damage through the **Attack Sequence**.
+Update the **Casting Roll** boxout to roll **2d6 + the spell's Casting stat**.
+Sync `castingStat` and `hit` on every builder spell entry.
+
+**Reasoning:** Casting and damage resolution should live in the spell profile,
+not in player memory. Splitting **Wi** and **Sa** by domain keeps mystic and
+natural magic distinct at the table. **CC** for caster-centered blasts matches
+engagement-range gunpowder without making every template spell a melee attack.
+
+## 2026-06-21 — Firearms domain feat and flat gunpowder list
+
+**Decision:** Remove **Basic** and **Refined** firearm tiers and Hunters-only
+refined access. Gunpowder is one purchase and equip list for any retinue where
+every fighter has **Mortal**. Move **Firearms** off the **Proficiency** menu
+and onto **Domain Feats** *(Mortal)*. Individual fighters need the **Firearms**
+domain feat to equip firearms and bombs; **Tracker** built-in choice grants
+**Archery** proficiency or **Firearms** domain feat. Remove archetype
+`firearmAccess` / `firearmTier` from builder enforcement.
+
+**Reasoning:** Tiered gunpowder duplicated the domain keyword without adding
+identity — **Mortal** already gates retinue purchase. A domain feat keeps
+gunpowder exclusive to fighters who invest in it while letting any Mortal
+retinue buy the full list once the retinue qualifies.
+
+## 2026-06-21 — Retinue slim-down and background reference split
+
+**Decision:** Continue the campaign-first pass on `rules/retinue.md`: trim duplicate
+summary tables and checklist prose; keep per-**Archetype** chapters as the
+player-facing template; move the domain keyword table, feat design notes, and
+named faction preset table to `background-notes.md`; move weapon-slot and
+proficiency intro to `rules/equipment.md`; consolidate **Magic** under one hub
+with domain spell lists inline. **Retinue Rating** in `campaign/campaign.md`
+now includes campaign advancements, not just recruitment and gear. Rename roster
+**Species** to **Ancestry** in rules and builder; use **role** instead of
+**class** for Leader / Elite / Specialist / Rank in style guidance.
+
+**Reasoning:** Players build from Archetype chapters during campaign play; global
+summary tables drifted from those chapters and duplicated enforcement the builder
+already applies. Internal reference tables belong in background notes so the
+rulebook stays procedure-first. Rating should reflect roster power after
+advancements so matchmaking stays honest.
+
+## 2026-06-21 — Ancestry terminology and roster identity
+
+**Decision:** Rename the recruitment baseline layer from **Species** to
+**Ancestry** in the rulebook and builder. Keep the concrete Human, Elf, and
+Dwarf ancestry profiles and their current costs instead of replacing them with
+abstract Build labels such as lithe, average, and stocky.
+
+**Reasoning:** Ancestry keeps the fantasy signal players recognize at
+recruitment while avoiding the colder, more generic feel of purely abstract body
+types. Noctvale's main roster identity should remain **Archetype**,
+**Tradition**, **Domain**, equipment, feats, and campaign scars; ancestry stays
+a compact baseline profile and premium. Fully abstract Builds may improve
+miniature freedom, but they risk giving agency at the wrong layer and making the
+game feel more like a toolkit than a setting.
+
 ## 2026-06-21 — App-visible rules text cleanup
 
 **Decision:** Update current-facing repository docs to describe static generated
@@ -121,6 +184,77 @@ browser context in the background.
 Rewrote `rules/retinue.md` building front matter (8-step sequence, Archetype summary table, Keywords hub), removed duplicated Tradition blocks from archetype chapters, reordered **Traditions** before **Domains**, and fixed feat count at recruitment (**1** Archetype feat per fighter). Merged Horn scenario, post-game clarifications, and **Counting the Cost** example into `campaign/campaign.md`. Added turn-flow example and activation-count ordering to `rules/core-rules.md`. Deleted fragmented `rules/long-form/` and `rules/playtest/rules.md`. Updated AGENTS, style guide, skills, and todo to point at canonical sources only. **Fluff placeholders** remain until late-stage writing; builder copy deferred to a later pass.
 
 **Reasoning:** One canonical source matches the builder's `resolveFighterKeywords()` model and removes drift from parallel downstream copies. Keyword-first prose explains why Domain spells and domain feats work — fighters have the keywords that unlock them — without treating Domain as an independent build axis.
+
+## 2026-06-21 — Retire `rules/_shared-snippets.md`
+
+**Decision:** Remove `rules/_shared-snippets.md`. Shared sub-routine boxouts (**Attack Sequence**, **Apply Wounds**, **Casting Roll**, **Primer Roll**) are maintained **inline in canonical rules** and repeated verbatim where needed. When editing a sub-routine, update every copy — grep for `> ### Attack Sequence`, `> ### Apply Wounds`, `> ### Casting Roll`, and `> ### Primer Roll`.
+
+**Canonical homes:**
+
+| Sub-routine | Primary source | Also repeated in |
+|---|---|---|
+| **Attack Sequence** | `rules/core-rules.md` Combat | `rules/retinue.md` Magic |
+| **Apply Wounds** | `rules/core-rules.md` Combat | `rules/retinue.md` Magic |
+| **Casting Roll** | `rules/retinue.md` Magic | — |
+| **Primer Roll** | `rules/equipment.md` Firearms | — |
+
+**Reference copy (keep in sync with player-facing rules):**
+
+### Apply Wounds
+
+> ### Apply Wounds
+>
+> Each unblocked hit inflicts **1 Wound**.
+>
+> - When a fighter reaches **0 Wounds**, they become **Downed**.
+> - An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
+> - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
+>
+> **Downed** fighters defend with their full pool. **Stunned** fighters defend with **red dice only** (no blue).
+
+### Attack Sequence
+
+> ### Attack Sequence
+>
+> **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+>
+> **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
+>
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
+>
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See [Equipment](equipment.md).)*
+>
+> **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
+
+### Casting Roll
+
+> ### Casting Roll (2d6 + Casting stat)
+>
+> Roll **2d6 + the spell's Casting stat** (**Wi** or **Sa** — see spell profile) against the spell's **casting difficulty**.
+>
+> | Result | Effect |
+> |---|---|
+> | **Double 1s** | **Mishap** — the spell fails and the spell's backlash occurs |
+> | **Below difficulty** | The spell fizzles. The action is spent |
+> | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence** |
+> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
+
+### Primer Roll
+
+> ### Primer Roll (2d6 + Sk)
+>
+> Roll **2d6 + Sk** against the weapon's **primer difficulty** (see weapon profile).
+>
+> Profile values assume a **Human** shooter (**Sk 3**). At other **Sk**, use **primer difficulty − 3 + Sk**.
+>
+> | Result | Effect |
+> |---|---|
+> | **Double 1s** | **Misfire** — see weapon notes |
+> | **Below difficulty** | The gun fails to fire. The action is spent |
+> | **Meets or exceeds difficulty** | The gun fires. Resolve the **Attack Sequence** |
+> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
+
+**Reasoning:** The separate snippets file was never wired into the wiki build and duplicated content already living in canonical rules. Folding the reference into the decision log keeps one maintenance checklist without a fifth rules file.
 
 ## 2026-06-18 — Fighter keyword system and static rules wiki
 

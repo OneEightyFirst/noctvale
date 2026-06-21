@@ -4,19 +4,23 @@ This chapter contains weapons, gear, alchemy, and companions.
 
 **Gear** is everything fighters carry into battle: **weapons** (the common
 **Dagger**, plus weapons by proficiency: **One-Handed**, **Two-Handed**,
-**Archery**, **Thrown**, **Firearms**) and **equipment** (armor, shields,
-alchemy, and **Sphere of Influence** gear). This chapter covers Crown costs,
-profiles, and combat rules for both.
+**Archery**, **Thrown**) and gunpowder weapons through the **Firearms** domain
+feat, plus **equipment** (armor, shields, alchemy, and **Sphere of Influence**
+gear). This chapter covers Crown costs, profiles, and combat rules for both.
 
 Every Crown cost is a multiple of **5 Crowns**.
+
+Choose feats before buying weapons. A fighter equips only weapons that match their **Proficiency** feats.
+
+- Each fighter equips weapons matching their **Proficiency** feats (see [Feats](retinue.md#feats)). Any fighter may equip a **Dagger** without a **Proficiency** feat.
+
+Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields do not use weapon slots. **Relic** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
 
 ---
 
 ## Roster building
 
 ### Weapon slots
-
-Each fighter has **3 weapon slots**.
 
 | Item                        | Slots |
 | --------------------------- | ----- |
@@ -29,26 +33,15 @@ Plan loadouts so no fighter exceeds 3 slots total.
 
 ---
 
-### Flintlock *(firearms only)*
-
-When buying any firearm, you may apply the **Flintlock** keyword:
-
-- **−25 Crowns** (applied after base firearm cost)
-- **Single Shot** — may fire once per battle; cannot reload
-
-Example: Refined Pistol (90) with Flintlock = **65 Crowns**.
-
----
-
 ### Crown costs — One-Handed melee
 
 | Weapon   | Cost |
 | -------- | ---- |
-| Dagger   | 10   |
-| Sword    | 25   |
-| Hand Axe | 20   |
-| Mace     | 20   |
-| Spear    | 25   |
+| <span id="dagger"></span>Dagger   | 10   |
+| <span id="sword"></span>Sword    | 25   |
+| <span id="hand-axe"></span>Hand Axe | 20   |
+| <span id="mace"></span>Mace     | 20   |
+| <span id="spear"></span>Spear    | 25   |
 
 A fighter may equip a **Dagger** without a **Proficiency** feat.
 
@@ -58,11 +51,11 @@ A fighter may equip a **Dagger** without a **Proficiency** feat.
 
 | Weapon      | Cost |
 | ----------- | ---- |
-| Halberd     | 45   |
-| Great Sword | 50   |
-| War Axe     | 45   |
-| War Hammer  | 45   |
-| Staff       | 20   |
+| <span id="halberd"></span>Halberd     | 45   |
+| <span id="great-sword"></span>Great Sword | 50   |
+| <span id="war-axe"></span>War Axe     | 45   |
+| <span id="war-hammer"></span>War Hammer  | 45   |
+| <span id="staff"></span>Staff       | 20   |
 
 ---
 
@@ -72,10 +65,10 @@ Available to **every retinue**.
 
 | Weapon         | Cost |
 | -------------- | ---- |
-| Shortbow       | 40   |
-| Longbow        | 50   |
-| Crossbow       | 65   |
-| Heavy Crossbow | 90   |
+| <span id="shortbow"></span>Shortbow       | 40   |
+| <span id="longbow"></span>Longbow        | 50   |
+| <span id="crossbow"></span>Crossbow       | 65   |
+| <span id="heavy-crossbow"></span>Heavy Crossbow | 90   |
 
 ---
 
@@ -85,23 +78,29 @@ Available to **every retinue**.
 
 | Weapon         | Cost |
 | -------------- | ---- |
-| Sling          | 20   |
-| Throwing Stars | 10   |
+| <span id="sling"></span>Sling          | 20   |
+| <span id="throwing-stars"></span>Throwing Stars | 10   |
 
 ---
 
 ### Crown costs — Firearms *(requires **Mortal**; forbids **Caster**)*
 
-| Tier    | Weapon      | Cost | Keyword access         |
-| ------- | ----------- | ---- | ---------------------- |
-| Basic   | Musket      | 100  | **Knights**, **Hunters**, **Folk** |
-| Basic   | Blunderbuss | 115  | **Knights**, **Hunters**, **Folk** |
-| Refined | Pistol      | 90   | **Hunters** only       |
-| Refined | Long Rifle  | 125  | **Hunters** only       |
+| Weapon      | Cost |
+| ----------- | ---- |
+| <span id="musket"></span>Musket      | 100  |
+| <span id="blunderbuss"></span>Blunderbuss | 115  |
+| <span id="pistol"></span>Pistol      | 90   |
+| <span id="long-rifle"></span>Long Rifle  | 125  |
 
 | Item               | Cost | Notes                                      |
 | ------------------ | ---- | ------------------------------------------ |
 | Brace of Pistols   | 25   | Requires **Mortal** — holds **2 Pistols** in **1 weapon slot** |
+
+<span id="flintlock"></span>
+
+- **Flintlock** may be applied to any firearm when bought: **−25 Crowns**, **Single Shot** (one fire per battle; cannot reload).
+
+Example: Pistol (90) with Flintlock = **65 Crowns**.
 
 ---
 
@@ -267,8 +266,7 @@ feat at roster creation (see [Feats](retinue.md)).
 **Proficiency** feat.
 
 Your **Archetype** sets which proficiencies appear on that fighter's
-**Proficiency** menu. Fighters with **Mortal** may take **Firearms** on that
-menu. **Mortal** and **Caster** are mutually exclusive on the same fighter.
+**Proficiency** menu.
 
 | Proficiency | Weapons |
 |---|---|
@@ -276,6 +274,11 @@ menu. **Mortal** and **Caster** are mutually exclusive on the same fighter.
 | **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer, Staff |
 | **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
 | **Thrown** | Sling, Throwing Stars |
+
+Gunpowder weapons are not a proficiency. They require the **Firearms** domain feat *(Mortal)* — see [Feats — Firearms](retinue.md#firearms). When every fighter in the retinue has **Mortal**, your retinue may purchase firearms and bombs from the lists below.
+
+| Gunpowder | Weapons |
+|---|---|
 | **Firearms** | Musket, Blunderbuss, Pistol, Long Rifle, bombs |
 
 Shields are armor-tier gear. They do not require **One-Handed** proficiency and
@@ -300,22 +303,16 @@ If the first roll was **Mishap**, resolve it as normal — do not reroll.
 
 #### Firearms
 
+When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms. A fighter equips a firearm only if they have the **Firearms** domain feat.
+
 Firearms use a **primer roll** (**2d6 + Sk**). **Double 1s** = **Misfire**. **Double 6s** = **Overcharge**. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — profile values are the complete pool, independent of the shooter's base stats.
 
-| Tier | Weapons | Keyword access |
-|---|---|---|
-| **Basic** | Musket, Blunderbuss | **Knights**, **Hunters**, **Folk** |
-| **Refined** | Pistol, Long Rifle | **Hunters** only |
-
-**Flintlock** is a **keyword**. Apply when buying any firearm: **−25 Crowns**, **Single Shot** (one fire per battle; cannot reload). See [Flintlock](#flintlock-firearms-only) under Roster building.
-
-Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Require the **Firearms** proficiency. Fighter must have **Mortal** and must lack **Caster**.
+Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Require the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
 
 ### Firearms
 
-Firearms are fired with the **Ranged** action. Requires the **Firearms**
-proficiency. Fighter must have **Mortal**, must lack **Caster**, and must meet
-the firearm **tier** access for their **Archetype** keyword. See [Retinue](retinue.md).
+Firearms are fired with the **Ranged** action. Requires the **Firearms** domain
+feat. When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms.
 
 > ### Primer Roll (2d6 + Sk)
 >
@@ -336,7 +333,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no
 **Brace of Pistols** uses **2 weapon slots**.
 
 **Brace of Pistols** — equipment that takes **1 weapon slot** and holds **2
-Pistols**. Requires the **Firearms** proficiency. Fighter must have **Mortal** and must lack **Caster**. Crown
+Pistols**. Requires the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**. Crown
 cost: [Roster building](#firearms).
 
 - **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**.
@@ -410,7 +407,7 @@ Armor and shield conversions **stack**. A fighter in Medium Armor with a Shield 
 
 **Brace of Pistols** is holster equipment — not a weapon. It takes **1 weapon
 slot** and holds **2 Pistols**. The **Pistols** must still be purchased
-separately. Requires the **Firearms** proficiency. Fighter must have **Mortal** and must lack **Caster**.
+separately. Requires the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
 
 Without a **Brace of Pistols**, each **Pistol** uses **1 weapon slot** on its
 own.

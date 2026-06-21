@@ -87,11 +87,11 @@ Roll **2d6** after spending **2 XP** on Keyword Advancement.
 
 ### Retinue Rating
 
-**Retinue Rating** is the single number campaigns use for matchup fairness. It equals **Roster Cost** — the total Crowns spent on fighters and gear on the roster sheet.
+**Retinue Rating** is the single number campaigns use for matchup fairness. It equals **Roster Cost** — the total value of every fighter on the roster sheet: recruitment cost (role, species premium, and any **Tradition** modifier), equipment, and advancements gained through the campaign.
 
 **Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger.
 
-Record **Retinue Rating** on the roster sheet next to Roster Cost. Update it whenever you add or remove fighters or gear.
+Record **Retinue Rating** on the roster sheet next to Roster Cost. Update it whenever you add or remove fighters, change equipment, or record an advancement.
 
 ## Scenarios
 

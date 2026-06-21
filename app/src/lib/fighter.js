@@ -15,6 +15,8 @@ function getEquipment(itemId) {
 export function normalizeFighter(fighter) {
   if (!fighter) return fighter;
 
+  const { speciesId, ...rest } = fighter;
+  const ancestryId = fighter.ancestryId ?? speciesId ?? "human";
   const feats = (fighter.feats ?? []).map(normalizeFeatId);
   let skilledCraftsman = fighter.skilledCraftsman ?? null;
 
@@ -26,7 +28,8 @@ export function normalizeFighter(fighter) {
   }
 
   return {
-    ...fighter,
+    ...rest,
+    ancestryId,
     feats: [...new Set(feats)],
     skilledCraftsman,
   };

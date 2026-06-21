@@ -42,27 +42,73 @@ or polished rulebook prose.
 
 ---
 
-## Factions
+## Named Faction Presets
 
-Phoenix Guard
-Radiant Crusade
-Inquisition
-Silver Hunt
-Arcane Conclave
-Village Watch
-Iron Law
-Coven
-Nightpack
-Grave Wardens
-Nobility
-Infernal Pact
+Twelve established factions exist in Noctvale lore. Each is an example **Archetype** + **Domain** pairing with a suggested **Tradition** and draft lore in `rules/retinue.md` under each Archetype's **Example Factions**. Presets do not grant exclusive rules — each fighter must still meet keyword requirements for feats, spells, and gear.
 
-Village Watch are ordinary townsfolk defending their homes, not led by sheriffs.
+| Faction | Archetype | Domain | Identity |
+|---|---|---|---|
+| Phoenix Guard | Knights | Light | Elite knights, former High King's personal guard |
+| Nobility | Knights | Blood | Vampire aristocracy, decadent noble houses |
+| Radiant Crusade | Hunters | Light | Holy warriors sworn to destroy undead |
+| Inquisition | Hunters | Mortal | Anti-magic zealots, guns and denial |
+| Silver Hunt | Hunters | Mortal | Monster hunters, alchemy and silver weapons |
+| Nightpack | Hunters | Nature | Sewer-shadow packs, knives in the dark |
+| Coven | Cult | Nature | Witches banding together for survival |
+| Arcane Conclave | Cult | Arcane | Tower-city scholars who hoard magic and forbidden learning |
+| Grave Wardens | Cult | Necromancy | Necromancers commanding the restless dead |
+| Infernal Pact | Cult | Infernal | Demonic cult brotherhoods |
+| Village Watch | Folk | Mortal | Ordinary townsfolk defending their homes |
+| Iron Law | Folk | Mortal | Corrupted remnants of imperial law |
 
-- Every Crown cost in this guide is a multiple of **5 Crowns**.
-- **Named factions** (Phoenix Guard, Silver Hunt, Village Watch, etc.) are optional flavor presets — the same rules apply whether you use one or build your own combination.
-- Apply **Flintlock** to any firearm if desired (−25 Crowns, Single Shot — see `rules/equipment.md`).
-- Purchase **alchemy** and apply poisons during setup (one poison per weapon — see `rules/equipment.md`).
+Two presets can share the same Archetype + Domain but suggest different Traditions, equipment, and playstyle. **Inquisition** and **Silver Hunt** are both Hunters + Mortal — Inquisition leans Zealots, anti-magic denial, and guns; Silver Hunt leans Alchemists, poisons, and silver weapons.
+
+Default Tradition pairings for each preset: `rules/retinue.md` (**Traditions — Named preset defaults**).
+
+---
+
+## Feat design notes
+
+Feats express a fighter's identity beyond stats, weapons, and spells.
+
+Feats should bend existing rules instead of replacing them. A feat may improve or modify an action, defense roll, Wound state, post-game roll, or campaign choice. A feat should not grant broad permanent to-hit bonuses, extra full actions, reusable rerolls, spell-like effects without a **casting roll**, or require another named feat.
+
+Player-facing feat lists and eligibility: `rules/retinue.md` (**Feats**).
+
+---
+
+## Domains
+
+Each **Domain** keyword unlocks a spell list and domain feats. **Mortal** replaces spells with gunpowder access.
+
+| Domain keyword | Triangle | Unlocks |
+|---|---|---|
+| **Light** | Mystic | Light spell list |
+| **Arcane** | Mystic | Arcane spell list |
+| **Infernal** | Mystic | Infernal spell list |
+| **Nature** | Natural | Nature spell list |
+| **Necromancy** | Natural | Necromancy spell list; Necromancy domain feats |
+| **Blood** | Natural | Blood spell list; Blood domain feats |
+| **Mortal** | — | No spells; gunpowder when every fighter has **Mortal** |
+
+Spell lists: `rules/retinue.md` (**Magic — Domain Spell Lists**) · Domain feats: `rules/retinue.md` (**Domain Feats**)
+
+---
+
+## Roster Identity Notes
+
+- Use **Ancestry** for the recruitment baseline layer. Current ancestries are
+  **Human**, **Elf**, and **Dwarf**.
+- Do not replace ancestries with abstract **Build** labels such as lithe,
+  average, or stocky unless playtest feedback shows the concrete ancestry layer
+  is blocking miniature use. Pure Build labels give players flexibility, but
+  risk making the roster feel like a generic stat toolkit.
+- Ancestry should remain a compact profile and premium. The main identity load
+  belongs to **Archetype**, **Tradition**, **Domain**, gear, feats, and campaign
+  consequences.
+- If a later rule needs unusual lineage or creature identity, prefer keywords
+  such as **Vampire**, **Undead**, or a Tradition-specific rule rather than
+  expanding ancestry into a large subsystem.
 
 ---
 
@@ -92,12 +138,25 @@ These stack on top of identity keywords:
 
 When a rule names a keyword in bold, check that fighter's keyword list:
 
-- **Firearms** — fighter must have **Mortal**, must lack **Caster**, and must
-  have the **Firearms** proficiency. **Refined** firearms also require **Hunters**.
+- **Firearms** — when every fighter in the retinue has **Mortal**, the retinue may purchase firearms; a fighter equips them only with the **Firearms** domain feat.
 - **Domain feats** — fighter must have that **Domain** keyword.
 - **Caster-only** feats and spells — fighter must have **Caster**.
 - Tradition passives — apply to friendly fighters with that **Tradition** keyword
   unless the rule names a narrower keyword (e.g. **Caster**, **Rank**).
+
+---
+
+## Retinue building at a glance
+
+Quick reference for authors — player-facing steps live in `rules/retinue.md` (**Building a Retinue**).
+
+- Choose **one Archetype**: **Knights**, **Hunters**, **Folk**, or **Cult**.
+- Choose **one Tradition** allowed for that Archetype; every fighter gains that **Tradition** keyword and the matching **Domain** keyword.
+- Build from a **1000 Crown** budget for a new retinue.
+- Recruit within your Archetype's fighter count and role caps.
+- Every retinue must include exactly **1 Leader**.
+- Choose feats your fighters' keywords allow; equip only weapons they are proficient in.
+- Fighters with **Mortal** gain gunpowder access instead of spells. Fighters with **Cult** cannot have **Mortal**.
 
 ---
 

@@ -34,7 +34,7 @@ Use the guide's glossary and formatting conventions exactly. In particular:
 - Write **Out of Action** in full on first use in a section.
 - **Chapter fluff** opens major rulebook sections in *italics*, separated from rules by `---`; setting lore stays in `intro.md`.
 - Write rulebook procedures **prose first, bullets for exceptions** — not reference-manual **Cost:** blocks by default.
-- Check `rules/_shared-snippets.md` before repeating a shared sub-routine.
+- When editing shared sub-routines (**Attack Sequence**, **Apply Wounds**, **Casting Roll**, **Primer Roll**), grep the repo for each boxout heading and keep all copies identical. Primary sources: `rules/core-rules.md` Combat, `rules/retinue.md` Magic, `rules/equipment.md` Firearms. Reference table in `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
 
 Before finalizing rules text, run through the Quick Checklist at the end of
 `NOCTVALE_RULEBOOK_STYLE_GUIDE.md`.

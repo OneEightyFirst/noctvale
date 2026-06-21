@@ -43,7 +43,7 @@ one; the second result stands.
 
 ---
 
-### Baseline Species Profiles
+### Baseline Ancestry Profiles
 
 #### Human Fighter
 | M | CC | RC | Mt | Sk | Wi | Sa | W |

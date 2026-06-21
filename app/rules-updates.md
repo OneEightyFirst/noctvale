@@ -6,6 +6,43 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-21 18:34 EDT — Spell Casting stat and Hit columns
+
+**Change:**
+
+- Added `castingStat` (`Wi` or `Sa`) and `hit` (`RC`, `CC`, or `-`) to every entry in `SPELLS`.
+- Spell picker modal shows Cast and Hit alongside Mt, Sk, and Mishap.
+
+**Source:** `rules/retinue.md` domain spell tables — Magic section.
+
+**Impact:** Display-only in the builder; no roster validation changes.
+
+## 2026-06-21 18:11 EDT — Firearms domain feat
+
+**Change:**
+
+- Removed **Firearms** from the **Proficiency** feat menu on all Archetypes.
+- Added **Firearms** as a **Mortal** domain feat in `DOMAIN_FEATS`.
+- Tracker built-in choice now grants built-in **Archery** proficiency or built-in **Firearms** domain feat.
+- Firearm and bomb equipment checks use `fighterHasFirearms()` (selected feat or Tracker built-in) instead of proficiency. All firearms share one purchase list — no Basic/Refined archetype tiers.
+
+**Source:** `rules/retinue.md` Domain Feats — Firearms, `rules/equipment.md` weapon proficiencies.
+
+**Impact:** Mortal fighters must spend a domain feat pick (or Tracker built-in) to equip gunpowder weapons. Existing rosters with `firearms` stored as a proficiency feat id still equip firearms if the feat id remains on the fighter.
+
+## 2026-06-21 15:43 EDT — Ancestry terminology
+
+**Change:**
+
+- Renamed builder-facing **Species** selection to **Ancestry**.
+- Renamed builder data export from `SPECIES` to `ANCESTRIES`.
+- Saved fighters with legacy `speciesId` migrate to `ancestryId` on load.
+
+**Source:** `rules/retinue.md` and `rules/core-rules.md` Ancestry terminology.
+
+**Impact:** No roster costs, stat profiles, purchase limits, or legality rules
+changed. Existing saved rosters keep loading through the migration.
+
 ## 2026-06-18 18:52 EDT — Fighter keyword system
 
 **Change:**

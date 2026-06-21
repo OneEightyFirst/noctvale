@@ -1,27 +1,27 @@
 export const STAT_KEYS = ["M", "CC", "RC", "Mt", "Sk", "Wi", "Sa", "W"];
 export const BOOSTABLE_STATS = ["CC", "RC", "Mt", "Sk", "Wi", "Sa"];
 
-export const SPECIES = [
+export const ANCESTRIES = [
   {
     id: "human",
     name: "Human",
     cost: 0,
     stats: { M: 6, CC: 3, RC: 3, Mt: 3, Sk: 3, Wi: 3, Sa: 4, W: 3 },
-    description: "Humans are the baseline stats.",
+    description: "Human ancestry is the baseline profile.",
   },
   {
     id: "elf",
     name: "Elf",
     cost: 10,
     stats: { M: 7, CC: 3, RC: 3, Mt: 3, Sk: 4, Wi: 4, Sa: 3, W: 3 },
-    description: 'Elves cost an additional +10c, but give 4Sk, 4Wi and 7" movement.',
+    description: 'Elf ancestry costs an additional +10c, but gives 4Sk, 4Wi and 7" movement.',
   },
   {
     id: "dwarf",
     name: "Dwarf",
     cost: 10,
     stats: { M: 5, CC: 3, RC: 3, Mt: 4, Sk: 3, Wi: 3, Sa: 3, W: 3 },
-    description: 'Dwarves cost an additional +10c, but give 4Mt and 5" movement.',
+    description: 'Dwarf ancestry costs an additional +10c, but gives 4Mt and 5" movement.',
   },
 ];
 
@@ -30,7 +30,6 @@ export const PROFICIENCIES = [
   { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Great Sword, War Axe, War Hammer, Staff" },
   { id: "archery", name: "Archery", weapons: "Shortbow, Longbow, Crossbow, Heavy Crossbow" },
   { id: "thrown", name: "Thrown", weapons: "Sling, Throwing Stars" },
-  { id: "firearms", name: "Firearms", weapons: "Musket, Blunderbuss, Pistol, Long Rifle, bombs" },
 ];
 
 export const DOMAIN_SUMMARIES = {
@@ -62,7 +61,7 @@ export const DOMAIN_SUMMARIES = {
     triangle: "-",
     rules: [
       "No spells.",
-      "Fighters with Mortal may take Firearms on the Proficiency menu.",
+      "Fighters with Mortal may take the Firearms domain feat.",
       "Mortal and Caster are mutually exclusive on the same fighter.",
     ],
   },
@@ -112,16 +111,24 @@ export function lacksKeyword(keywords, name) {
   return !keywords.includes(name);
 }
 
-export function canTakeFirearmsProficiency(keywords) {
-  return hasKeyword(keywords, "Mortal");
+export function canTakeFirearmsFeat(keywords) {
+  return hasKeyword(keywords, "Mortal") && !hasKeyword(keywords, "Caster");
 }
 
-export function canEquipFirearm(keywords, firearmTier, archetype) {
-  if (!hasKeyword(keywords, "Mortal")) return false;
-  if (hasKeyword(keywords, "Caster")) return false;
-  if (firearmTier === "refined") return archetype?.firearmAccess === "refined";
-  if (firearmTier === "basic") return archetype?.firearmAccess === "basic" || archetype?.firearmAccess === "refined";
-  return archetype?.firearmAccess !== "none";
+export function fighterHasFirearms(fighter, type, keywords) {
+  if ((fighter.feats ?? []).some((id) => id === "firearms" || id.replace(/_/g, "-") === "firearms")) return true;
+  if (fighter.builtInChoice === "firearms" && type?.builtInChoice?.options?.includes("firearms")) {
+    return canTakeFirearmsFeat(keywords);
+  }
+  return false;
+}
+
+export function canTakeFirearmsProficiency(keywords) {
+  return canTakeFirearmsFeat(keywords);
+}
+
+export function canEquipFirearm(keywords) {
+  return canTakeFirearmsFeat(keywords);
 }
 
 export const TRADITIONS = [
@@ -321,7 +328,7 @@ export const TRADITIONS = [
     domain: "Necromancy",
     allowed: ["cult", "hunters"],
     rules: [
-      "This retinue may recruit Skeletons as Rank fighters up to its normal Rank class cap: up to 4 Skeletons for Hunters or up to 7 Skeletons for Cult.",
+      "This retinue may recruit Skeletons as Rank fighters up to its normal Rank role cap: up to 4 Skeletons for Hunters or up to 7 Skeletons for Cult.",
       "Skeletons count toward the retinue's maximum number of fighters and cannot gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.",
     ],
   },
@@ -427,10 +434,8 @@ export const ARCHETYPES = {
     count: { min: 5, target: "5-8", max: 10 },
     casterMax: 1,
     armorCap: "Heavy Armor",
-    firearmAccess: "basic",
     proficiencies: ["one-handed", "two-handed", "archery", "thrown"],
-    mortalProficiencies: ["firearms"],
-    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown", "Firearms (requires Mortal)"]),
+    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown"]),
     fighterTypes: [
       {
         id: "lord",
@@ -475,14 +480,12 @@ export const ARCHETYPES = {
     name: "Hunters",
     identity: "Versatile skirmishers and slayers, 5-12 fighters",
     tableRole:
-      "Versatile skirmishers. Field 5-12 fighters: 1 Captain, 0-4 Stalker, 0-3 Tracker, 0-4 Hand. Medium Armor, refined firearm access on Mortal, and 1 caster at most.",
+      "Versatile skirmishers. Field 5-12 fighters: 1 Captain, 0-4 Stalker, 0-3 Tracker, 0-4 Hand. Medium Armor and 1 caster at most.",
     count: { min: 5, target: "6-10", max: 12 },
     casterMax: 1,
     armorCap: "Medium Armor",
-    firearmAccess: "refined",
     proficiencies: ["one-handed", "two-handed", "archery", "thrown"],
-    mortalProficiencies: ["firearms"],
-    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown", "Firearms (requires Mortal)"]),
+    proficiencyRules: proficiencyRule(["One-Handed", "Two-Handed", "Archery", "Thrown"]),
     fighterTypes: [
       {
         id: "captain",
@@ -511,8 +514,8 @@ export const ARCHETYPES = {
         cap: 3,
         cost: 60,
         boost: { count: 1, options: BOOSTABLE_STATS, label: "Add +1 to one stat." },
-        builtInChoice: { options: ["archery", "firearms"], restricted: { firearms: "Requires Mortal" } },
-        rules: ["Specialist.", "Built-in Archery or Firearms proficiency. Firearms requires Mortal. The built-in proficiency does not count against the Specialist's chosen feat pick."],
+        builtInChoice: { options: ["archery", "firearms"], restricted: { firearms: "Requires Mortal; forbids Caster" } },
+        rules: ["Specialist.", "Built-in Archery proficiency or Firearms domain feat. Firearms requires Mortal and forbids Caster. The built-in choice does not count against the Specialist's chosen feat pick."],
       },
       {
         id: "hand",
@@ -520,7 +523,7 @@ export const ARCHETYPES = {
         role: "Rank",
         cap: 4,
         cost: 40,
-        rules: ["Species baseline only."],
+        rules: ["Ancestry baseline only."],
       },
     ],
     feats: [
@@ -539,10 +542,8 @@ export const ARCHETYPES = {
     count: { min: 6, target: "8-12", max: 15 },
     casterMax: 1,
     armorCap: "Light Armor",
-    firearmAccess: "basic",
     proficiencies: ["one-handed", "archery", "thrown"],
-    mortalProficiencies: ["firearms"],
-    proficiencyRules: proficiencyRule(["One-Handed", "Archery", "Thrown", "Firearms (requires Mortal)"]),
+    proficiencyRules: proficiencyRule(["One-Handed", "Archery", "Thrown"]),
     fighterTypes: [
       {
         id: "mayor",
@@ -580,7 +581,7 @@ export const ARCHETYPES = {
         role: "Rank",
         cap: 6,
         cost: 40,
-        rules: ["Species baseline only."],
+        rules: ["Ancestry baseline only."],
       },
     ],
     feats: [
@@ -599,9 +600,7 @@ export const ARCHETYPES = {
     count: { min: 5, target: "5-8", max: 10 },
     casterMax: 3,
     armorCap: "None",
-    firearmAccess: "none",
     proficiencies: ["one-handed", "archery"],
-    mortalProficiencies: [],
     proficiencyRules: proficiencyRule(["One-Handed", "Archery"]),
     fighterTypes: [
       {
@@ -631,7 +630,7 @@ export const ARCHETYPES = {
         role: "Rank",
         cap: 7,
         cost: 40,
-        rules: ["Species baseline only.", "Does not start with Caster. May gain it in campaign via Keyword Advancement."],
+        rules: ["Ancestry baseline only.", "Does not start with Caster. May gain it in campaign via Keyword Advancement."],
       },
     ],
     feats: [
@@ -669,6 +668,11 @@ export const DOMAIN_FEATS = [
   { id: "daemonic-wings", name: "Daemonic Wings", domains: ["Infernal"], rules: ["Once per battle, at the start of this fighter's activation, they may suffer 1 Wound to gain Fly until the end of that activation.", "Fly: Ignore vertical distance for Move, Charge, and Jump. This fighter keeps their normal M for those actions."] },
   { id: "devils-pact", name: "Devil's Pact", domains: ["Infernal"], rules: ["During this fighter's activation, they may spend both actions to regain 1 Wound, cannot exceed starting W.", "After the battle, if this fighter used Devil's Pact one or more times, roll 2d6 and subtract 1 for each time they used Devil's Pact this battle. Resolve the result on the Doom Table.", "If this fighter was not Out of Action when the battle ended and the modified roll is 2 or 12, roll 2d6 again, apply the same modifier, and resolve on the Doom Table. They must accept the second result."] },
   { id: "thrill-of-agony", name: "Thrill of Agony", domains: ["Blood"], rules: ["When this fighter suffers 1 or more Wounds from an Attack Sequence, add 1 red die to their next Melee attack this activation."] },
+  { id: "firearms", name: "Firearms", domains: ["Mortal"], rules: [
+    "Fighter must have Mortal and must lack Caster.",
+    "When every fighter in the retinue has Mortal, your retinue may purchase firearms from Equipment.",
+    "You may equip muskets, blunderbusses, pistols, long rifles, and bombs your retinue is allowed to buy.",
+  ] },
   { id: "gunslinger", name: "Gunslinger", domains: ["Mortal"], rules: ["If this fighter is equipped with 2 Pistols, in a Brace of Pistols or across 2 weapon slots, they may fire both as one Ranged action.", "Resolve each Pistol in order with its own Primer Roll and Attack Sequence. If they do, they cannot take another Ranged action during this activation."] },
   { id: "deadeye", name: "Deadeye", domains: ["Mortal"], rules: ["When this fighter uses Aim, their next Ranged attack with a firearm this activation adds 1 die of that firearm's dominant color to the Strike Pool.", "The dominant color is whichever is higher on the firearm's profile: Mt = red, Sk = blue. If tied, choose red or blue."] },
   { id: "null", name: "Null", domains: ["Mortal"], rules: [`Enemy Casters cannot perform the Cast action while within 6" of this fighter.`] },
@@ -680,57 +684,57 @@ export const DOMAIN_FEATS = [
 
 export const SPELLS = {
   Light: [
-    { id: "radiant-strike", name: "Radiant Strike", difficulty: "11+", mt: "4", sk: "3", range: `12"`, effect: "Ranged attack; +1 Mt vs Undead and Daemons", mishap: "Caster takes the damage" },
-    { id: "holy-light", name: "Holy Light", difficulty: "11+", mt: "-", sk: "-", range: `12" from caster`, effect: `All fighters within 12" lose cover and Hidden condition`, mishap: "TBD" },
-    { id: "heal", name: "Heal", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "Deal 1 Wound to target instead" },
-    { id: "purge-the-faithless", name: "Purge the Faithless", difficulty: "11+", mt: "5", sk: "2", range: `3" blast from caster`, effect: "Hits all fighters in radius", mishap: "Caster takes the damage" },
-    { id: "shield-of-faith", name: "Shield of Faith", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: "Target gains +2 red defense dice and projects Fear. Lasts until the start of the caster's next activation", mishap: "TBD" },
-    { id: "horrors-relived", name: "Horrors Relived", difficulty: "12+", mt: "Target's Sa", sk: "-", range: `12"`, effect: "Ranged attack; Strike Pool Mt equals the target's Sa stat", mishap: "Caster takes the damage using target's Sa as Mt" },
-    { id: "unwavering-resolve", name: "Unwavering Resolve", difficulty: "10+", mt: "-", sk: "-", range: `8" from caster`, effect: `All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation`, mishap: "TBD" },
+    { id: "radiant-strike", name: "Radiant Strike", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "4", sk: "3", range: `12"`, effect: "Ranged attack; +1 Mt vs Undead and Daemons", mishap: "Caster takes the damage" },
+    { id: "holy-light", name: "Holy Light", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12" from caster`, effect: `All fighters within 12" lose cover and Hidden condition`, mishap: "TBD" },
+    { id: "heal", name: "Heal", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "Deal 1 Wound to target instead" },
+    { id: "purge-the-faithless", name: "Purge the Faithless", castingStat: "Wi", hit: "CC", difficulty: "11+", mt: "5", sk: "2", range: `3" blast from caster`, effect: "Hits all fighters in radius", mishap: "Caster takes the damage" },
+    { id: "shield-of-faith", name: "Shield of Faith", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: "Target gains +2 red defense dice and projects Fear. Lasts until the start of the caster's next activation", mishap: "TBD" },
+    { id: "horrors-relived", name: "Horrors Relived", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "Target's Sa", sk: "-", range: `12"`, effect: "Ranged attack; Strike Pool Mt equals the target's Sa stat", mishap: "Caster takes the damage using target's Sa as Mt" },
+    { id: "unwavering-resolve", name: "Unwavering Resolve", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `8" from caster`, effect: `All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation`, mishap: "TBD" },
   ],
   Arcane: [
-    { id: "arcane-bolt", name: "Arcane Bolt", difficulty: "11+", mt: "-", sk: "5", range: `20"`, effect: "Ranged attack; fast, high-finesse", mishap: "TBD" },
-    { id: "arcane-shield", name: "Arcane Shield", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "Caster is immune to all spells. At the start of the caster's next activation, roll 1d6; on 1-2 the shield disappears", mishap: "TBD" },
-    { id: "fireball", name: "Fireball", difficulty: "TBD", mt: "TBD", sk: "TBD", range: `18"`, effect: `Choose a point within 18". All fighters within large blast template are hit. On normal fail, fireball scatters. On pass, blast centers on chosen point`, mishap: "Blast template centers on the caster" },
-    { id: "telekinesis", name: "Telekinesis", difficulty: "TBD", mt: "-", sk: "-", range: `12"`, effect: `Move any fighter up to 6" directly toward or away from the caster. No check required by the target`, mishap: "TBD" },
-    { id: "displacement", name: "Displacement", difficulty: "TBD", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter instantly moves up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base`, mishap: "TBD" },
-    { id: "hoarfrost", name: "Hoarfrost", difficulty: "TBD", mt: "-", sk: "-", range: `18"`, effect: `Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. Movement ending in the zone triggers a Sk check and slide`, mishap: "Blast centers on the caster" },
-    { id: "slow", name: "Slow", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: "Target enemy loses 1 action on their next activation", mishap: "TBD" },
+    { id: "arcane-bolt", name: "Arcane Bolt", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "-", sk: "5", range: `20"`, effect: "Ranged attack; fast, high-finesse", mishap: "TBD" },
+    { id: "arcane-shield", name: "Arcane Shield", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "Caster is immune to all spells. At the start of the caster's next activation, roll 1d6; on 1-2 the shield disappears", mishap: "TBD" },
+    { id: "fireball", name: "Fireball", castingStat: "Wi", hit: "RC", difficulty: "13+", mt: "5", sk: "4", range: `18"`, effect: `Choose a point within 18". All fighters within large blast template are hit. On normal fail, fireball scatters. On pass, blast centers on chosen point`, mishap: "Blast template centers on the caster" },
+    { id: "telekinesis", name: "Telekinesis", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: `Move any fighter up to 6" directly toward or away from the caster. No check required by the target`, mishap: "TBD" },
+    { id: "displacement", name: "Displacement", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter instantly moves up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base`, mishap: "TBD" },
+    { id: "hoarfrost", name: "Hoarfrost", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `18"`, effect: `Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. Movement ending in the zone triggers a Sk check and slide`, mishap: "Blast centers on the caster" },
+    { id: "slow", name: "Slow", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: "line of sight", effect: "Target enemy loses 1 action on their next activation", mishap: "TBD" },
   ],
   Infernal: [
-    { id: "infernal-attack-tbd", name: "TBD attack", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
-    { id: "infernal-tbd-2", name: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
-    { id: "infernal-tbd-3", name: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
-    { id: "infernal-tbd-4", name: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
-    { id: "infernal-tbd-5", name: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
-    { id: "infernal-tbd-6", name: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
+    { id: "infernal-attack-tbd", name: "TBD attack", castingStat: "Sa", hit: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
+    { id: "summon-daemon", name: "Summon Daemon", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `3"`, effect: "Sacrifice one or two friendly fighters carrying enough Summoning Crystals, then roll on the Summon Result table", mishap: "TBD" },
+    { id: "infernal-tbd-3", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
+    { id: "infernal-tbd-4", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
+    { id: "infernal-tbd-5", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
+    { id: "infernal-tbd-6", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
   ],
   Nature: [
-    { id: "thorn-volley", name: "Thorn Volley", difficulty: "12+", mt: "4", sk: "4", range: `12"`, effect: "Ranged attack; template / shotgun-like", mishap: "TBD" },
-    { id: "shadowmeld", name: "Shadowmeld", difficulty: "TBD", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation" },
-    { id: "venom", name: "Venom", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: "Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned", mishap: "TBD" },
-    { id: "feral-form", name: "Feral Form", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation`, mishap: "TBD" },
-    { id: "entangle", name: "Entangle", difficulty: "TBD", mt: "-", sk: "-", range: `12"`, effect: "Target enemy has M reduced to 0 and cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation", mishap: "TBD" },
-    { id: "summon-swarm", name: "Summon Swarm", difficulty: "TBD", mt: "-", sk: "-", range: `3"`, effect: `Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation`, mishap: "The Swarm appears hostile; your opponent controls it for its single activation" },
-    { id: "dread-chorus", name: "Dread Chorus", difficulty: "TBD", mt: "-", sk: "-", range: `8" from caster`, effect: `All enemy fighters within 8" must pass Sa test for Fear with the caster as the source`, mishap: "TBD" },
+    { id: "thorn-volley", name: "Thorn Volley", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "4", sk: "4", range: `12"`, effect: "Ranged attack; template / shotgun-like", mishap: "TBD" },
+    { id: "shadowmeld", name: "Shadowmeld", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation" },
+    { id: "venom", name: "Venom", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: "TBD", effect: "Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned", mishap: "TBD" },
+    { id: "feral-form", name: "Feral Form", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation`, mishap: "TBD" },
+    { id: "entangle", name: "Entangle", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy has M reduced to 0 and cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation", mishap: "TBD" },
+    { id: "summon-swarm", name: "Summon Swarm", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `3"`, effect: `Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation`, mishap: "The Swarm appears hostile; your opponent controls it for its single activation" },
+    { id: "dread-chorus", name: "Dread Chorus", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `8" from caster`, effect: `All enemy fighters within 8" must pass Sa test for Fear with the caster as the source`, mishap: "TBD" },
   ],
   Necromancy: [
-    { id: "deathbolt", name: "Deathbolt", difficulty: "14+", mt: "-", sk: "6", range: `18"`, effect: "Ranged attack; all blue dice, ignores armor", mishap: "TBD" },
-    { id: "summon-skeleton", name: "Summon Skeleton", difficulty: "10+", mt: "-", sk: "-", range: `3"`, effect: `Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation`, mishap: "The Skeleton appears hostile; your opponent controls it for its single activation" },
-    { id: "raise-dead", name: "Raise Dead", difficulty: "TBD", mt: "-", sk: "-", range: `3"`, effect: `Target a friendly fighter that went Out of Action this battle. Place them within 3" of the caster with 1 Wound, Undead, and Fearless. They activate immediately with 2 actions, then go Out of Action at the end of their activation`, mishap: "Your opponent places and controls the raised fighter instead" },
-    { id: "cursed-ground", name: "Cursed Ground", difficulty: "TBD", mt: "2", sk: "2", range: `12"`, effect: `Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check. Lasts until the start of the caster's next activation`, mishap: "Blast centers on the caster" },
-    { id: "wither", name: "Wither", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: "Target enemy suffers Weakened until the start of the caster's next activation", mishap: "TBD" },
-    { id: "bone-blast", name: "Bone Blast", difficulty: "TBD", mt: "1", sk: "4", range: "Blast from caster", effect: "Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit", mishap: "TBD" },
-    { id: "bone-circle", name: "Bone Circle", difficulty: "TBD", mt: "1", sk: "3", range: `12"`, effect: `Choose a point within 12". Place a 3" blast template. Any fighter that starts in, ends in, or moves through it takes a 1 Mt / 3 Sk hit. Affects friends and enemies. Lasts until the start of the caster's next activation`, mishap: "Zone centers on the caster" },
+    { id: "deathbolt", name: "Deathbolt", castingStat: "Sa", hit: "RC", difficulty: "14+", mt: "-", sk: "6", range: `18"`, effect: "Ranged attack; all blue dice, ignores armor", mishap: "TBD" },
+    { id: "summon-skeleton", name: "Summon Skeleton", castingStat: "Sa", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `3"`, effect: `Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation`, mishap: "The Skeleton appears hostile; your opponent controls it for its single activation" },
+    { id: "raise-dead", name: "Raise Dead", castingStat: "Sa", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `3"`, effect: `Target a friendly fighter that went Out of Action this battle. Place them within 3" of the caster with 1 Wound, Undead, and Fearless. They activate immediately with 2 actions, then go Out of Action at the end of their activation`, mishap: "Your opponent places and controls the raised fighter instead" },
+    { id: "cursed-ground", name: "Cursed Ground", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "2", sk: "2", range: `12"`, effect: `Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check. Lasts until the start of the caster's next activation`, mishap: "Blast centers on the caster" },
+    { id: "wither", name: "Wither", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "TBD", effect: "Target enemy suffers Weakened until the start of the caster's next activation", mishap: "TBD" },
+    { id: "bone-blast", name: "Bone Blast", castingStat: "Sa", hit: "CC", difficulty: "11+", mt: "1", sk: "4", range: "Blast from caster", effect: "Blast template centered on the caster. All fighters under the template except the caster take a 1 Mt / 4 Sk hit", mishap: "TBD" },
+    { id: "bone-circle", name: "Bone Circle", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "1", sk: "3", range: `12"`, effect: `Choose a point within 12". Place a 3" blast template. Any fighter that starts in, ends in, or moves through it takes a 1 Mt / 3 Sk hit. Affects friends and enemies. Lasts until the start of the caster's next activation`, mishap: "Zone centers on the caster" },
   ],
   Blood: [
-    { id: "leech", name: "Leech", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Ranged attack; if target takes at least 1 Wound, caster heals 1 Wound", mishap: "Caster takes the damage" },
-    { id: "bleed", name: "Bleed", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: "Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding", mishap: "Caster gains Bleeding instead" },
-    { id: "blood-frenzy", name: "Blood Frenzy", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: "Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation", mishap: "TBD" },
-    { id: "predators-grace", name: "Predator's Grace", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation`, mishap: "TBD" },
-    { id: "enthrall", name: "Enthrall", difficulty: "TBD", mt: "-", sk: "-", range: `8"`, effect: "Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster", mishap: "Friendly fighter, opponent's choice, takes the move instead" },
-    { id: "feast-of-excess", name: "Feast of Excess", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned`, mishap: "TBD" },
-    { id: "nightfall", name: "Nightfall", difficulty: "TBD", mt: "-", sk: "-", range: "TBD", effect: "Target friendly fighter with Vampire is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation", mishap: "Bright light; enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation" },
+    { id: "leech", name: "Leech", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "TBD", sk: "TBD", range: "TBD", effect: "Ranged attack; if target takes at least 1 Wound, caster heals 1 Wound", mishap: "Caster takes the damage" },
+    { id: "bleed", name: "Bleed", castingStat: "Sa", hit: "-", difficulty: "13+", mt: "-", sk: "-", range: "TBD", effect: "Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding", mishap: "Caster gains Bleeding instead" },
+    { id: "blood-frenzy", name: "Blood Frenzy", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "TBD", effect: "Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation", mishap: "TBD" },
+    { id: "predators-grace", name: "Predator's Grace", castingStat: "Sa", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation`, mishap: "TBD" },
+    { id: "enthrall", name: "Enthrall", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `8"`, effect: "Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster", mishap: "Friendly fighter, opponent's choice, takes the move instead" },
+    { id: "feast-of-excess", name: "Feast of Excess", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned`, mishap: "TBD" },
+    { id: "nightfall", name: "Nightfall", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "TBD", effect: "Target friendly fighter with Vampire is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation", mishap: "Bright light; enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation" },
   ],
   Mortal: [],
 };
@@ -752,13 +756,13 @@ export const EQUIPMENT = [
   { id: "heavy-crossbow", name: "Heavy Crossbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 90, slots: 2, rules: [`Hands 2H. Range 3"-30". +Mt +3. Slow, powerful.`] },
   { id: "sling", name: "Sling", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 20, slots: 1, rules: [`Hands 1H. Range 3"-12". Flat Strike Pool 2 Mt / 1 Sk; normal RC to hit.`] },
   { id: "throwing-stars", name: "Throwing Stars", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 10, slots: 1, rules: [`Hands 1H. Range 0"-8". +Sk +1. No minimum range, thrown; additive.`] },
-  { id: "musket", name: "Musket", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "basic", cost: 100, slots: 2, rules: [`Requires Mortal; forbids Caster. Hands 2H. Range 3"-24". Primer 9+. Strike Pool 5 Mt / 3 Sk.`] },
-  { id: "blunderbuss", name: "Blunderbuss", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "basic", cost: 115, slots: 2, rules: [`Requires Mortal; forbids Caster. Hands 2H. Range 0"-10". Primer 8+. Strike Pool 6 Mt.`] },
-  { id: "pistol", name: "Pistol", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 90, slots: 1, rules: [`Requires Mortal and Hunters; forbids Caster. Hands 1H. Range 0"-12". Primer 9+. Strike Pool 5 Mt / 2 Sk.`] },
-  { id: "long-rifle", name: "Long Rifle", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 125, slots: 2, rules: [`Requires Mortal and Hunters; forbids Caster. Hands 2H. Range 3"-30". Primer 10+. Strike Pool 6 Mt / 2 Sk.`] },
-  { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", firearmTier: "refined", cost: 25, slots: 1, rules: ["Requires Mortal; forbids Caster. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
-  { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", firearmTier: "basic", cost: 40, slots: 1, rules: [`Requires Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3" blast, Single Shot.`] },
-  { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", firearmTier: "basic", cost: 25, slots: 1, rules: [`Requires Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 8+. 6" blast, Single Shot, Smoke.`] },
+  { id: "musket", name: "Musket", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 100, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 3"-24". Primer 9+. Strike Pool 5 Mt / 3 Sk.`] },
+  { id: "blunderbuss", name: "Blunderbuss", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 115, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 0"-10". Primer 8+. Strike Pool 6 Mt.`] },
+  { id: "pistol", name: "Pistol", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 90, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Range 0"-12". Primer 9+. Strike Pool 5 Mt / 2 Sk.`] },
+  { id: "long-rifle", name: "Long Rifle", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 125, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 3"-30". Primer 10+. Strike Pool 6 Mt / 2 Sk.`] },
+  { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 25, slots: 1, rules: ["Requires Firearms domain feat; Mortal; forbids Caster. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
+  { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 40, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3" blast, Single Shot.`] },
+  { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 25, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 8+. 6" blast, Single Shot, Smoke.`] },
   { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 0, rules: ["Light tier. 1 failed blue defense die -> 1 normal success."] },
   { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 0, rules: ["Medium tier. 1 failed red defense die + 1 failed blue defense die -> normal successes."] },
   { id: "tower-shield", name: "Tower Shield", kind: "armor", group: "Armor", armorRank: 3, cost: 50, slots: 0, rules: ["Heavy tier. 2 failed red defense dice + 1 failed blue defense die -> normal successes."] },

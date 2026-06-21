@@ -50,7 +50,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** A Noctvale list should be readable at a glance. Archetype sets how you fight (weapon proficiency options, armor, casters, gunpowder). Domain sets supernatural tools — or Mortal, for gunpowder. Tradition differentiates presets that share the same skeleton. Named factions (Phoenix Guard, Silver Hunt, etc.) are optional lore presets on top of Archetype + Domain + Tradition.
 
-**Mechanically:** 1000 Crown budget + composition slot caps. **Proficiency** at creation makes each fighter a weapon specialist; **Firearms** is on the Mortal Domain feat list. Magic and gunpowder are separate paths. Cult fields three casters and no armor; Knights field Heavy armor and one caster. Equipment, weapon type, and species baselines spread power across the roster.
+**Mechanically:** 1000 Crown budget + composition slot caps. **Proficiency** at creation makes each fighter a weapon specialist; **Firearms** is on the Mortal Domain feat list. Magic and gunpowder are separate paths. Cult fields three casters and no armor; Knights field Heavy armor and one caster. Equipment, weapon type, and ancestry baselines spread power across the roster.
 
 **Protects:** Distinct retinue silhouettes. Gunpowder vs. magic as a real list-building fork. Faction flavor through feats and gear on shared Archetype + Domain bones.
 

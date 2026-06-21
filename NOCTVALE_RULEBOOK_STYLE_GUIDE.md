@@ -27,7 +27,7 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 8. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
 9. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
 10. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
-11. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — master copy in `rules/_shared-snippets.md`.
+11. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — edit the canonical copy in `rules/core-rules.md`, `rules/retinue.md`, or `rules/equipment.md`, then grep and sync duplicates. See `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
 12. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
 13. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
 14. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](campaign/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
@@ -168,7 +168,8 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | Tradition | Yes | Witches, Crusaders, etc. — one per retinue |
 | Faction | Yes | Named preset (Phoenix Guard, Silver Hunt, …) |
 | keyword | No in prose | Identity: **Knights**, **Hunters**, **Folk**, **Cult**, **Light**, **Mortal**, **Leader**, **Elite**, **Specialist**, **Rank**, **Crusaders**, etc. Capability: **Caster**, **Fearless**, **Undead**, **Vampire** — bold the keyword name. Keywords are permanent roster tags, not temporary Sanity states. |
-| class | No in prose | Use **Leader**, **Elite**, **Specialist**, **Rank** as keywords on fighter profiles |
+| role | Lowercase when generic | Umbrella for **Leader**, **Elite**, **Specialist**, **Rank** keywords. Do not use *class* (conflicts with magic classes) or *fighter-type*. |
+| class | No in roster prose | Use **role** or name the keyword (**Leader**, **Elite**, etc.) directly |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
 | difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **M** |
 | affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/core-rules.md` |
@@ -202,7 +203,7 @@ Write **Out of Action** in full the first time in a section. **OOA** is acceptab
 **Light Armor**, **Medium Armor**, **Heavy Armor** · **Buckler**, **Shield**, **Tower Shield**
 
 Melee access: **Basic**, **Long**, **Heavy**, **Exotic**  
-Gunpowder access: **Basic**, **Refined**
+Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when every fighter has **Mortal**
 
 ---
 
@@ -259,7 +260,7 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 
 ## Stat and Profile Formatting
 
-### Species / fighter profile table
+### Ancestry / fighter profile table
 
 ```markdown
 | M | CC | RC | Mt | Sk | Wi | Sa | W |
@@ -304,7 +305,7 @@ or **+1 red die** when the rule modifies the **d6 + CC/RC** roll.
 `| Weapon | Hands | Range | Primer | +Mt | +Sk | Notes |`
 
 - **Range:** `3"–18"` for missiles; **Engagement** for melee.
-- **Primer:** **2d6 + Sk** vs profile value; **—** for weapons without a primer roll. Profile values assume **Sk 3**; adjust per the **Primer Roll** box in `_shared-snippets.md`.
+- **Primer:** **2d6 + Sk** vs profile value; **—** for weapons without a primer roll. Profile values assume **Sk 3**; adjust per the **Primer Roll** box in `rules/equipment.md`.
 - **Notes:** traits comma-separated — **Single Shot**, **Smoke**, **Flintlock** keyword callouts.
 
 ### Weapon trait line (short)
@@ -381,7 +382,7 @@ Each major chapter ends with **Example:** — one narrative walkthrough that nam
 
 ## Examples and Diagrams
 
-- **Worked examples** use named fighters: Human, Elf, Dwarf — match `core-rules.md` species.
+- **Worked examples** use named fighters: Human, Elf, Dwarf — match `core-rules.md` ancestry.
 - Label steps **Step 1**, **Step 2** in sequences (see `rules/core-rules.md`).
 - **Round at a Glance** uses blockquote `>` for quick-reference boxes.
 - Diagrams: ASCII for simple flows (`Sword > Axe > Spear > Sword`); TODO for official board-measurement diagrams.
@@ -539,7 +540,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 - [ ] **fighter** not **model** / **unit**
 - [ ] **retinue** not **warband**
 - [ ] **skip activation** not **forgo** / **forgone**
-- [ ] Shared sub-routines **repeated verbatim** where relevant (master: `rules/_shared-snippets.md`)
+- [ ] Shared sub-routines **repeated verbatim** where relevant (grep all copies after editing `core-rules.md`, `retinue.md`, or `equipment.md`)
 - [ ] Cross-refs use markdown links with readable labels (not raw file paths in backticks)
 - [ ] One-off rules link to the canonical file (subsystem name as link text)
 - [ ] No lore or designer history in procedure text
