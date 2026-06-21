@@ -22,6 +22,24 @@ or polished rulebook prose.
 - Lethal, narrative, campaign-driven skirmish combat.
 - Influences: Mordheim-style campaign skirmish play, grimdark fantasy, Gothic horror, Warcry, Kill Team, Necromunda, and classic Warhammer design principles.
 
+## Pantheon Notes
+
+- Noctvale's gods are gender-neutral and gender-fluid. They are neither man nor
+  woman, and also both; different cultures, sects, and artists may portray the
+  same deity with different bodies, voices, titles, or relationships.
+- **Fadhran** is the Mortal/luck god and the deity behind the underdog
+  equalizer concept **Fadhran's Hand**. The name is built from original
+  Gaelic/Latin-blended roots rather than borrowed mythological names.
+- Dwarvish internal reference name for Fadhran: **Sudkovar**, the Fate-Smith.
+  This is a cultural name rooted in Slavic-influenced fate/smith language. Keep
+  it out of rules text unless dwarven worship becomes relevant in lore.
+- **Vifelia** is the Blood-domain deity, but their core is life, celebration,
+  plenty, hospitality, charity, love, feasting, and the warmth of being alive.
+  Good worshipers throw feasts, shelter travelers, bless births and marriages,
+  and give away more than they keep. Their darkness is excess: celebration
+  becomes indulgence, indulgence becomes hunger, and the far end of that path is
+  blood cults and vampires. Vifelia is the sibling of **Navromir**.
+
 ---
 
 ## Factions

@@ -38,15 +38,25 @@ Your **Tradition** is the retinue-wide oath, craft, curse, or practice that give
 
 ### Step 3 — Species and Recruitment Cost
 
-Noctvale is filled with many different species, the most prominant behing human, but closely followed by Elves and Dwarves. Long before the fall of the old Kingdom, the 3 disparate cultures merged into one.
+Noctvale is filled with many different species, the most prominent being human, but closely followed by Elves and Dwarves. Long before the fall of the old Kingdom, the 3 disparate cultures merged into one.
 
-Pick a species for each fighter, then add the species **Cost** to that fighter class' recruitment cost (e.g. Elf Theurge: 125 + 10 = **135 Crowns**). Every retinue starts with 1000c to build from, your crowns reprisent not only the actual crown coins on hand, but also the food and resources that your retinue has as a whole. As you play through the campaign, the value of each fighter will change and grow, use the total value of each fighter in your retinue to calculate your retinue value. Compare these when fighting a battle to determine any bonus' or penalties for the difference in power.
+Pick a species for each fighter, then add the species **Cost** to that fighter class's recruitment cost (e.g. Elf Theurge: 125 + 10 = **135 Crowns**). Every retinue starts with 1000 Crowns to build from. Your Crowns represent not only the actual crown coins on hand, but also the food and resources that your retinue has as a whole. As you play through the campaign, the value of each fighter will change and grow. Use the total value of each fighter in your retinue to calculate your **Retinue Rating**.
+
+> **Fadhran's Hand**
+>
+> *Fadhran, the god of luck, does not care for a sure thing. When two retinues are at odds, and the balance of power is tipped too far in favor of one, Fadhran puts a finger on the scale so the battle begins closer to even, and luck has more room to play.*
+>
+> Before deployment, compare each retinue's **Retinue Rating**. If one retinue has a lower **Retinue Rating**, that player gains 1 fate die for each full **200 Crowns** of difference, to a maximum of 3 fate dice.
+>
+> Each fate die begins the battle unset. When any player rolls a die, the underdog player may spend 1 fate die before that roll is resolved. Change that die to a **natural 1** or a **natural 6**.
+>
+> A fate die may be used on either player's roll. Each fate die can be used once.
 
 ---
 
 ### Step 4 — Choose Feats and Equip Your Fighters
 
-Choose each fighter's feats from the lists allowed by your **Archetype** and **Domain**. You may choose weapon **Proficiency** feats to unlock different weapon types.  A fighter can equip only weapons they are proficient in, except a **Dagger**, which any fighter may equip. Other feats add special abilities to your fighters. Leaders and Elites each get 2 feats at creation, Specialists and Rank get 1.
+Choose each fighter's feats from the lists allowed by your **Archetype** and **Domain**. You may choose weapon **Proficiency** feats to unlock different weapon types. A fighter can equip only weapons they are proficient in, except a **Dagger**, which any fighter may equip. Other feats add special abilities to your fighters. Leaders and Elites each get 2 feats at creation, Specialists and Rank get 1.
 
 Buy gear from [Equipment](equipment.md) within your Archetype's armor, shield, and firearm tier limits.
 
@@ -1138,7 +1148,7 @@ than once. Each time, choose a **different** proficiency.
 
 **Blood for the Rite:** Once per battle, before this fighter makes a stat roll
 or **casting roll**, choose another friendly fighter within **12"**. That
-fighter suffers **1 Wound**. Add **+1** to the roll. This wound can reduce the
+fighter suffers **1 Wound**. Add **+1** to the roll. This Wound can reduce the
 chosen fighter to 0 Wounds and cause them to become **Downed**.
 
 **Magic Armor:** This fighter may equip armor and shields up to Heavy tier.
@@ -1581,7 +1591,7 @@ guns; Silver Hunt leans Alchemists, poisons, and silver weapons.
 Feats express a fighter's identity beyond stats, weapons, and spells.
 
 Feats should bend existing rules instead of replacing them. A feat may improve
-or modify an action, defense roll, wound state, post-game roll, or campaign
+or modify an action, defense roll, Wound state, post-game roll, or campaign
 choice. A feat should not grant broad permanent to-hit bonuses, extra full
 actions, reusable rerolls, spell-like effects without a **casting roll**, or
 require another named feat.
@@ -1768,7 +1778,7 @@ Once per battle, before this fighter makes a stat roll or **casting roll**,
 choose another friendly fighter within **12"**. That fighter suffers **1 Wound**.
 Add **+1** to the roll.
 
-This wound can reduce the chosen fighter to 0 Wounds and cause them to become
+This Wound can reduce the chosen fighter to 0 Wounds and cause them to become
 **Downed**.
 
 ##### Magic Armor
@@ -1871,7 +1881,7 @@ ties).
 ##### Acrobat *(Mortal · Nature · Blood · Infernal)*
 
 When this fighter falls or lands from a **Jump** from a height of up to **12"**,
-roll one **Sk check**. On a pass, they take no wounds from the fall. On a fail,
+roll one **Sk check**. On a pass, they take no Wounds from the fall. On a fail,
 resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above
@@ -1889,10 +1899,10 @@ the second result.
 
 When this fighter is targeted by a **Melee** action that immediately follows the
 attacker's **Charge** during the same activation, they may make **1 free Melee**
-attack against that attacker before either attack applies wounds.
+attack against that attacker before either attack applies Wounds.
 
 Resolve both attacks through the full **Attack Sequence** (Steps 1–4). Then apply
-wounds, **Downed**, **Stunned**, and **Out of Action** results from both attacks
+Wounds, **Downed**, **Stunned**, and **Out of Action** results from both attacks
 together.
 
 ##### Warded *(Light · Arcane)*
@@ -1994,7 +2004,7 @@ or other rules.
 ##### Bone Ward
 
 Once per battle, when this fighter suffers **1 or more Wounds** from an **Attack
-Sequence**, reduce the wounds suffered by **1** (minimum **0**).
+Sequence**, reduce the Wounds suffered by **1** (minimum **0**).
 
 ##### Death's Chill
 
@@ -2218,7 +2228,7 @@ Each domain has a standard ranged attack spell plus **6 additional spells**.
 |---|---|---|---|---|---|---|
 | Radiant Strike | 11+ | 4 | 3 | 12" | Ranged attack; +1 Mt vs Undead and Daemons | Caster takes the damage |
 | Holy Light | 11+ | — | — | 12" from caster | All fighters within 12" lose cover and Hidden condition | *(TBD)* |
-| Heal | 10+ | — | — | 1" | Restore 1 wound + improve wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 wound to target instead |
+| Heal | 10+ | — | — | 1" | Restore 1 Wound + improve Wound state by one step (Stunned→Downed, Downed→Active) | Deal 1 Wound to target instead |
 | Purge the Faithless | 11+ | 5 | 2 | 3" blast from caster | Hits all fighters in radius | Caster takes the damage |
 | Shield of Faith | 11+ | — | — | 12" | Target gains +2 red defense dice and **projects Fear**. Lasts until the start of the caster's next activation | *(TBD)* |
 | Horrors Relived | 12+ | Target's Sa | — | 12" | Ranged attack; Strike Pool Mt equals the target's Sa stat | Caster takes the damage (using target's Sa as Mt) |
@@ -2406,7 +2416,7 @@ Traditions, scenarios, and campaign rules.
 **Equipment:** Unarmed attack. Cannot be changed.
 
 **Unarmed attack:** Unblocked hits inflict **Poisoned** in addition to normal
-wounds. See [Conditions — Poisoned](core-rules.md#poisoned).
+Wounds. See [Conditions — Poisoned](core-rules.md#poisoned).
 
 **Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
 

@@ -401,7 +401,7 @@ the board. That retinue wins.
 
 ### Wound States
 
-Fighters move through three wound states before being removed from play.
+Fighters move through three Wound states before being removed from play.
 
 ```
 Active → Downed → Stunned → Out of Action
@@ -642,7 +642,7 @@ Critical hits **cannot be blocked** by normal defense successes. Only a **critic
 >
 > **Downed** fighters defend with their full pool. **Stunned** fighters defend with **red dice only** (no blue).
 
-*(See [Conditions](core-rules.md#conditions) for full wound state rules.)*
+*(See [Conditions](core-rules.md#conditions) for full Wound state rules.)*
 
 After Step 5, if the attack **missed** the declared enemy target and a
 **friendly fighter** was in the line of fire (firearms and damage spells only),
@@ -739,7 +739,7 @@ Defense results: 2 red successes, 0 blue successes.
 
 The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 
-**Step 5:** 3 unblocked wounds. The Dwarf takes 3 Wounds (4 → 1 remaining).
+**Step 5:** 3 unblocked hits. The Dwarf takes 3 Wounds (4 → 1 remaining).
 
 ---
 
@@ -781,7 +781,7 @@ declared enemy target — a straight line from the center of the attacker's base
 to the center of the target's base crosses the friendly's base — and the attack
 **misses**, roll **1d6**. On a **1**, that friendly is hit.
 
-**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no wounds** from that action. It does not include a **Mishap** or **Misfire** (**double 1s** on the **casting roll** or **primer roll**), or a failed roll (the spell fizzles or the firearm fails to fire).
+**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no Wounds** from that action. It does not include a **Mishap** or **Misfire** (**double 1s** on the **casting roll** or **primer roll**), or a failed roll (the spell fizzles or the firearm fails to fire).
 
 On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
 

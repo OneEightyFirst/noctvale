@@ -58,6 +58,33 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-21 — App-visible rules text cleanup
+
+**Decision:** Update current-facing repository docs to describe static generated
+rules pages instead of the removed React rules wiki. Clean app-visible rules
+text by changing Staff's **Spell focus** timing to once per **battle**,
+normalizing inch notation to `"`, using `≥` for visible stat checks, and
+capitalizing **Wound** / **Wounds** where rules text names the damage result or
+stat.
+
+**Reasoning:** The app, generated rules pages, and canonical Markdown should use
+the same terminology players see in the rulebook. These changes remove stale
+implementation language and keep builder-visible reference text aligned with
+the style guide without changing roster construction or spell balance.
+
+## 2026-06-21 — Fadhran's Hand underdog rule
+
+**Decision:** Add **Fadhran's Hand** to retinue creation as a blockquote callout
+under **Retinue Rating**. Before deployment, the lower-value retinue gains 1
+fate die per full **200 Crowns** of Retinue Rating difference, to a maximum of 3
+fate dice. Each fate die may be spent once before a roll is resolved to change
+one die rolled by either player to a **natural 1** or **natural 6**.
+
+**Reasoning:** The rule turns Retinue Rating differences into a small, memorable
+underdog lever without changing roster costs or adding a permanent bonus. Tying
+the mechanic to Fadhran makes the compensation feel like Noctvale's world
+intervening rather than a generic balance patch.
+
 ## 2026-06-18 — Production cache busting for deploys
 
 **Decision:** Add Apache `Cache-Control` headers in `app/public/.htaccess`: HTML

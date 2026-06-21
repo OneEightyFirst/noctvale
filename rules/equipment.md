@@ -292,7 +292,7 @@ do not use weapon slots.
 
 A fighter wielding a **Staff** has **Spell focus**.
 
-Once per **game**, when this fighter makes a **casting roll** that fails to meet
+Once per **battle**, when this fighter makes a **casting roll** that fails to meet
 the spell's casting difficulty, reroll the **Casting Roll** once. Must accept the second
 result.
 
@@ -428,7 +428,7 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 | Adder's Kiss | +1 Sk to the weapon's strike pool | Subtle, fast-acting |
 | Blight Extract | Unblocked hits inflict **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned) | Weakening toxin |
 | Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
-| Widow's Tears | Unblocked hits inflict 2 wounds instead of 1 | Lethal, expensive |
+| Widow's Tears | Unblocked hits inflict 2 Wounds instead of 1 | Lethal, expensive |
 | Silversbane | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |
 
 ### Sphere of Influence
@@ -628,7 +628,7 @@ of the scenario object.
 **M** *(Tamed)*
 
 **Bite** — **Melee** attack using profile **Mt** / **Sk**. Unblocked hits
-inflict **Poisoned** in addition to normal wounds — see [Conditions —
+inflict **Poisoned** in addition to normal Wounds — see [Conditions —
 Poisoned](core-rules.md#poisoned).
 
 **Hide** — May use **Hide** as its **Companion** action.

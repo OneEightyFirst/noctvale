@@ -78,7 +78,7 @@ Write 2–3 spells per magic class relevant to Silver Hunt and Nightpack.
 ## Phase 4a: App-Visible TBD Cleanup
 
 Resolve the remaining `TBD` items that players can see in the app and the rules
-files imported by the app rules wiki, in priority order.
+files used to generate the static rules pages, in priority order.
 
 - [ ] Sync the app spell picker data in `app/src/data/noctvale.js` to canonical rules values where the rules now have difficulty, range, Mt, Sk, or Mishap values.
 - [ ] Finish the Infernal spell list, including the standard attack spell, empty spell slots, and **Summon Daemon** Mishap.

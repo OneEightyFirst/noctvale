@@ -48,9 +48,10 @@ Treat `rules/long-form/`, `rules/playtest/`, exports, and compiled drafts as
 downstream surfaces. Refresh them from the direct `rules/` sources instead of
 making them competing authorities.
 
-The playtesting retinue builder lives in `app/`. It imports rules markdown from
-this repo root (`intro.md`, `rules/`, `campaign/`). When changing builder game
-data or purchase enforcement, update `app/src/data/noctvale.js` and
+The playtesting retinue builder lives in `app/`. Static rules pages are
+generated from this repo root (`intro.md`, `rules/`, `campaign/`) into
+`app/public/rules/` by `npm run build:rules`. When changing builder game data or
+purchase enforcement, update `app/src/data/noctvale.js` and
 `app/src/components/RetinueEditor.jsx` and log the change in
 `app/rules-updates.md`.
 

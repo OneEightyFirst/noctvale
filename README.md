@@ -23,7 +23,7 @@ rules/
   equipment.md           — Weapons, gear, alchemy, and companions
 campaign/
   campaign.md            — Campaign flow, leveling, scenarios, post-game, Survival Rolls, economy
-app/                     — Playtesting retinue builder (React, Firebase, deploy scripts)
+app/                     — Playtesting retinue builder and static rules pages (React, Firebase, deploy scripts)
   rules-updates.md       — Builder game-data and enforcement changelog
 ```
 
@@ -31,7 +31,7 @@ app/                     — Playtesting retinue builder (React, Firebase, deplo
 
 The playtesting app lives in `app/`. See [app/README.md](app/README.md) for local dev, Firebase, and deploy to noctvalegame.com.
 
-Rules markdown at the repo root is the canonical source. The in-app rules wiki imports those files directly.
+Rules markdown at the repo root is the canonical source. Static rules pages are generated from those files during the app build (`npm run build:rules`) and written to `app/public/rules/`.
 
 ## Design Influences
 

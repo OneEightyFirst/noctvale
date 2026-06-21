@@ -30,7 +30,7 @@ unchanged. Rune-stones still require Runecasters Tradition.
 
 - Added **Staff** to Two-Handed melee: 20 Crowns, +Mt +1, +Sk +1, Spear type, 2
   slots.
-- **Spell focus:** once per game, on a failed casting roll (not Mishap), reroll
+- **Spell focus:** once per battle, on a failed casting roll (not Mishap), reroll
   the Casting Roll once and accept the second result.
 
 **Source:** `rules/equipment.md` — new caster-friendly pole weapon.
