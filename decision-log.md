@@ -53,10 +53,28 @@ the final rule in the dated decision-log entry for that commit.
   **stat modifier cap** (**±3**), and **project Fear** language are locked —
   see `rules/core-rules.md`.
 - **Infernal summon refinements:** Set **Summoning Crystal** Crown cost,
-  **Summon Daemon** Mishap, campaign advancement for the **Summoning Pool**, and
-  final Imp, Hellion, and Mauler profiles.
+  campaign advancement for the **Summoning Pool**, and final Imp, Hellion, and
+  Mauler profiles.
 
 ---
+
+## 2026-06-22 — Spell block format and Infernal updates
+
+**Decision:** Reformat all Domain spell lists in `rules/retinue.md` from tables
+into named spell blocks. Each block uses a combined **Casting:** line
+(stat + difficulty), **Range:**, and **Attack:** only when the spell resolves
+through the **Attack Sequence**. Spells with no Mishap omit the Mishap line
+entirely. Update the style guide to make spell blocks the standard rulebook
+format. Keep the active spell-profile changes in the same pass: standard attack
+spells without Mishaps, **Leech** without a Mishap, **Summon Daemon** with its
+failed-summon Mishap, and **The Void** as a defined Infernal spell.
+
+**Reasoning:** The spell tables had become too wide and dense for actual
+rulebook use, especially once casting stat, hit stat, effect text, and Mishap
+text all lived in the same row. Spell blocks keep lookup data at the top while
+letting effects read as complete player-facing rules. Omitting absent Mishaps is
+clearer than printing a null value, and the Infernal updates reduce the number
+of visible placeholders before playtesting.
 
 ## 2026-06-21 — Blood spell profile cleanup
 

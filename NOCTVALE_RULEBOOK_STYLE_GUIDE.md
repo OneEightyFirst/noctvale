@@ -312,17 +312,27 @@ or **+1 red die** when the rule modifies the **d6 + CC/RC** roll.
 
 > **Musket** · 2H · 3"–24" · primer **9+** · 5 Mt / 3 Sk · crits vs all targets
 
-### Spell line (short)
+### Spell line (card / compact)
 
-> **Arcane Bolt** · 11+ · 5 Sk · 20" · ranged attack · Mishap: *(TBD)*
+> **Arcane Bolt** · Wi 11+ · 20" · RC, 5 Sk
 
-### Spell table columns (standard)
+### Spell block (standard)
 
-`| Spell | CV | Mt | Sk | Range | Effect | Mishap |`
+Use spell blocks in `rules/retinue.md` instead of spell tables.
 
-- **CV** = casting difficulty (11+, 10+, etc.).
-- Effect cell: one or two sentences, semicolons between clauses.
-- Target: **enemy fighter**, **friendly fighter**, **point within 12"**.
+```markdown
+##### Radiant Strike
+
+**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.
+
+Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk instead.
+```
+
+- **Casting** combines casting stat and difficulty: **Wi 11+**, **Sa 12+**.
+- Include **Attack** only when the spell resolves through the **Attack Sequence**.
+- Omit **Mishap** entirely when the spell has no Mishap.
+- Write the effect as normal rules prose, not table shorthand.
+- Use **Mishap:** only when the spell has a defined backlash or a still-open *(TBD)* backlash.
 
 ### Ability notation
 
@@ -521,7 +531,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 | **OOA** on cards | Abbreviation vs full **Out of Action** |
 | **feat** / **Domain feat** entries | Extend this guide when feat format is locked |
 | **damage** vs **wound** | Some spell blurbs still say “damage”; prefer **hit** / **Wound** |
-| **Spell table format** | Refine column layout, Effect/Mishap wording, card reminders |
+| Spell card reminders | Confirm whether cards use compact spell lines or the full block text |
 | **Armor/shield conversion** | Failed defense dice → successful defense dice |
 | Scatter die | Define scatter die notation in `rules/equipment.md` (Bombs) |
 | Opponent-controlled fighters | Standard phrase for “your opponent controls it for its activation” |

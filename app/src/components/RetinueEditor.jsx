@@ -1657,7 +1657,7 @@ const FighterCard = memo(function FighterCard({
                         <span>Hit {spell.hit}</span>
                         <span>Mt {spell.mt}</span>
                         <span>Sk {spell.sk}</span>
-                        <span>Mishap {spell.mishap}</span>
+                        {spell.mishap ? <span>Mishap {spell.mishap}</span> : null}
                       </div>
                       <div className="mt-1 text-cream-100">{spell.effect}</div>
                     </button>

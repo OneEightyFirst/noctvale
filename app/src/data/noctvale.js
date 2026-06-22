@@ -684,7 +684,7 @@ export const DOMAIN_FEATS = [
 
 export const SPELLS = {
   Light: [
-    { id: "radiant-strike", name: "Radiant Strike", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "4", sk: "3", range: `12"`, effect: "Ranged attack; +1 Mt vs Undead and Daemons", mishap: "Caster takes the damage" },
+    { id: "radiant-strike", name: "Radiant Strike", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "4", sk: "3", range: `12"`, effect: "Ranged attack; +1 Mt vs Undead and Daemons", mishap: "" },
     { id: "holy-light", name: "Holy Light", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12" from caster`, effect: `All fighters within 12" lose cover and Hidden condition`, mishap: "TBD" },
     { id: "heal", name: "Heal", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "Deal 1 Wound to target instead" },
     { id: "purge-the-faithless", name: "Purge the Faithless", castingStat: "Wi", hit: "CC", difficulty: "11+", mt: "5", sk: "2", range: `3" blast from caster`, effect: "Hits all fighters in radius", mishap: "Caster takes the damage" },
@@ -693,7 +693,7 @@ export const SPELLS = {
     { id: "unwavering-resolve", name: "Unwavering Resolve", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `8" from caster`, effect: `All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation`, mishap: "TBD" },
   ],
   Arcane: [
-    { id: "arcane-bolt", name: "Arcane Bolt", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "-", sk: "5", range: `20"`, effect: "Ranged attack; fast, high-finesse", mishap: "TBD" },
+    { id: "arcane-bolt", name: "Arcane Bolt", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "-", sk: "5", range: `20"`, effect: "Ranged attack; fast, high-finesse", mishap: "" },
     { id: "arcane-shield", name: "Arcane Shield", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "Caster is immune to all spells. At the start of the caster's next activation, roll 1d6; on 1-2 the shield disappears", mishap: "TBD" },
     { id: "fireball", name: "Fireball", castingStat: "Wi", hit: "RC", difficulty: "13+", mt: "5", sk: "4", range: `18"`, effect: `Choose a point within 18". All fighters within large blast template are hit. On normal fail, fireball scatters. On pass, blast centers on chosen point`, mishap: "Blast template centers on the caster" },
     { id: "telekinesis", name: "Telekinesis", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: `Move any fighter up to 6" directly toward or away from the caster. No check required by the target`, mishap: "TBD" },
@@ -702,15 +702,15 @@ export const SPELLS = {
     { id: "slow", name: "Slow", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: "line of sight", effect: "Target enemy loses 1 action on their next activation", mishap: "TBD" },
   ],
   Infernal: [
-    { id: "infernal-attack-tbd", name: "TBD attack", castingStat: "Sa", hit: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
-    { id: "summon-daemon", name: "Summon Daemon", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `3"`, effect: "Sacrifice one or two friendly fighters carrying enough Summoning Crystals, then roll on the Summon Result table", mishap: "TBD" },
-    { id: "infernal-tbd-3", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
+    { id: "infernal-attack-tbd", name: "TBD attack", castingStat: "Sa", hit: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "" },
+    { id: "summon-daemon", name: "Summon Daemon", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `3"`, effect: "Sacrifice one or two friendly fighters carrying enough Summoning Crystals, then roll on the Summon Result table", mishap: "The caster goes Out of Action. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned" },
+    { id: "the-void", name: "The Void", castingStat: "Sa", hit: "-", difficulty: "14+", mt: "-", sk: "-", range: `12"`, effect: `Choose a point within 12" at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations. While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one Mt check (d6 + Mt ≥ 8) or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes Out of Action`, mishap: "The marker is placed centered on the caster instead" },
     { id: "infernal-tbd-4", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
     { id: "infernal-tbd-5", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
     { id: "infernal-tbd-6", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
   ],
   Nature: [
-    { id: "thorn-volley", name: "Thorn Volley", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "4", sk: "4", range: `12"`, effect: "Ranged attack; template / shotgun-like", mishap: "TBD" },
+    { id: "thorn-volley", name: "Thorn Volley", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "4", sk: "4", range: `12"`, effect: "Ranged attack; template / shotgun-like", mishap: "" },
     { id: "shadowmeld", name: "Shadowmeld", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation" },
     { id: "venom", name: "Venom", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: "TBD", effect: "Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned", mishap: "TBD" },
     { id: "feral-form", name: "Feral Form", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "TBD", effect: `Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation`, mishap: "TBD" },
@@ -719,7 +719,7 @@ export const SPELLS = {
     { id: "dread-chorus", name: "Dread Chorus", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `8" from caster`, effect: `All enemy fighters within 8" must pass Sa test for Fear with the caster as the source`, mishap: "TBD" },
   ],
   Necromancy: [
-    { id: "deathbolt", name: "Deathbolt", castingStat: "Sa", hit: "RC", difficulty: "14+", mt: "-", sk: "6", range: `18"`, effect: "Ranged attack; all blue dice, ignores armor", mishap: "TBD" },
+    { id: "deathbolt", name: "Deathbolt", castingStat: "Sa", hit: "RC", difficulty: "14+", mt: "-", sk: "6", range: `18"`, effect: "Ranged attack; all blue dice, ignores armor", mishap: "" },
     { id: "summon-skeleton", name: "Summon Skeleton", castingStat: "Sa", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `3"`, effect: `Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation`, mishap: "The Skeleton appears hostile; your opponent controls it for its single activation" },
     { id: "raise-dead", name: "Raise Dead", castingStat: "Sa", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `3"`, effect: `Target a friendly fighter that went Out of Action this battle. Place them within 3" of the caster with 1 Wound, Undead, and Fearless. They activate immediately with 2 actions, then go Out of Action at the end of their activation`, mishap: "Your opponent places and controls the raised fighter instead" },
     { id: "cursed-ground", name: "Cursed Ground", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "2", sk: "2", range: `12"`, effect: `Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take a 2 Mt / 2 Sk hit unless they pass a Sk check. Lasts until the start of the caster's next activation`, mishap: "Blast centers on the caster" },
@@ -728,7 +728,7 @@ export const SPELLS = {
     { id: "bone-circle", name: "Bone Circle", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "1", sk: "3", range: `12"`, effect: `Choose a point within 12". Place a 3" blast template. Any fighter that starts in, ends in, or moves through it takes a 1 Mt / 3 Sk hit. Affects friends and enemies. Lasts until the start of the caster's next activation`, mishap: "Zone centers on the caster" },
   ],
   Blood: [
-    { id: "leech", name: "Leech", castingStat: "Sa", hit: "CC", difficulty: "12+", mt: "TBD", sk: "TBD", range: "Touch", effect: "Touch attack; if target takes at least 1 Wound, caster heals 1 Wound", mishap: "Caster takes the damage" },
+    { id: "leech", name: "Leech", castingStat: "Sa", hit: "CC", difficulty: "12+", mt: "TBD", sk: "TBD", range: "Touch", effect: "Touch attack; if target takes at least 1 Wound, caster heals 1 Wound", mishap: "" },
     { id: "bleed", name: "Bleed", castingStat: "Sa", hit: "-", difficulty: "13+", mt: "-", sk: "-", range: `12"`, effect: "Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding", mishap: "Caster gains Bleeding instead" },
     { id: "blood-frenzy", name: "Blood Frenzy", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `6"`, effect: "Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation", mishap: `Target suffers -1 Mt, -1 CC, and -1" M until the start of the caster's next activation` },
     { id: "predators-grace", name: "Predator's Grace", castingStat: "Sa", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `6"`, effect: `Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation`, mishap: "Target becomes Downed" },

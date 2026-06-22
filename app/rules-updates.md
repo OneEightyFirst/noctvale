@@ -6,6 +6,36 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-22 10:03 EDT — Summon Daemon Mishap
+
+**Change:**
+
+- Set the **Summon Daemon** Mishap in the builder spell picker.
+
+**Source:** `rules/retinue.md` Infernal spell block.
+
+**Impact:** Display-only in the builder spell picker; no roster validation changes.
+
+## 2026-06-22 09:34 EDT — The Void Infernal spell
+
+**Change:**
+
+- Added **The Void** to the Infernal spell list in the builder spell picker.
+
+**Source:** `rules/retinue.md` Infernal spell block.
+
+**Impact:** Display-only in the builder spell picker; no roster validation changes.
+
+## 2026-06-22 09:23 EDT — Spells without Mishaps
+
+**Change:**
+
+- Omit Mishap text for spells that have no Mishap in the source rules.
+
+**Source:** `rules/retinue.md` domain spell blocks — Magic section.
+
+**Impact:** Display-only in the builder spell picker; no roster validation changes.
+
 ## 2026-06-21 23:44 EDT — Blood spell profile cleanup
 
 **Change:**
