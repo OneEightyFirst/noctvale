@@ -1421,13 +1421,13 @@ after the battle.
 
 | Spell | Casting stat | Hit | Difficulty | Mt | Sk | Range | Effect | Mishap |
 |---|---|---|---|---|---|---|---|---|
-| Leech | Sa | RC | 12+ | *(TBD)* | *(TBD)* | *(TBD)* | Ranged attack; if target takes at least 1 Wound, caster heals 1 Wound | Caster takes the damage |
-| Bleed | Sa | — | 13+ | — | — | *(TBD)* | Target must pass one **Wi check** (d6 + Wi ≥ 8). Fail: **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding) | Caster gains **Bleeding** instead |
-| Blood Frenzy | Sa | — | 11+ | — | — | *(TBD)* | Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation | *(TBD)* |
-| Predator's Grace | Sa | — | 10+ | — | — | *(TBD)* | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | *(TBD)* |
+| Leech | Sa | CC | 12+ | *(TBD)* | *(TBD)* | Touch | Touch attack; if target takes at least 1 Wound, caster heals 1 Wound | Caster takes the damage |
+| Bleed | Sa | — | 13+ | — | — | 12" | Target must pass one **Wi check** (d6 + Wi ≥ 8). Fail: **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding) | Caster gains **Bleeding** instead |
+| Blood Frenzy | Sa | — | 11+ | — | — | 6" | Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation | Target suffers **−1 Mt**, **−1 CC**, and **−1" M** until the start of the caster's next activation |
+| Predator's Grace | Sa | — | 10+ | — | — | 6" | Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation | Target becomes **Downed** |
 | Enthrall | Sa | — | 11+ | — | — | 8" | Target enemy must pass one **Wi check** (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster | Friendly fighter (opponent's choice) takes the move instead |
-| Feast of Excess | Sa | — | 11+ | — | — | *(TBD)* | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes **Stunned** (keeps Wounds but vulnerable) | *(TBD)* |
-| Nightfall | Sa | — | 11+ | — | — | *(TBD)* | Target friendly fighter with **Vampire** is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. Target adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers **−1 Mt** until start of next activation |
+| Feast of Excess | Sa | — | 11+ | — | — | 12" | Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes **Stunned** (keeps Wounds but vulnerable) | Target becomes **Stunned** |
+| Nightfall | Sa | — | 11+ | — | — | Self | The caster is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. The caster adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation | Bright light — enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers **−1 Mt** until start of next activation |
 
 #### Mortal
 

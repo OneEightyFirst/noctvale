@@ -6,6 +6,17 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-21 23:44 EDT — Blood spell profile cleanup
+
+**Change:**
+
+- Synced Blood spell ranges and Mishaps from the canonical rules table.
+- Changed **Leech** to a Touch attack and **Nightfall** to a Self spell on the caster.
+
+**Source:** `rules/retinue.md` Blood spell table.
+
+**Impact:** Display-only in the builder spell picker; no roster validation changes.
+
 ## 2026-06-21 18:34 EDT — Spell Casting stat and Hit columns
 
 **Change:**

@@ -46,8 +46,8 @@ the final rule in the dated decision-log entry for that commit.
 - **Open roster decisions:** Add Domain composition tables; decide Shadow Market
   access for alchemy; write **Feat Advancement Table**. **Companion** profiles and
   campaign recovery are locked — see `rules/equipment.md#companions`.
-- **Open magic decisions:** Finish remaining spell ranges, damage profiles,
-  Mishaps, and effectless Infernal spell slots before treating
+- **Open magic decisions:** Finish remaining non-Blood spell ranges, spell
+  damage profiles, Mishaps, and effectless Infernal spell slots before treating
   `rules/retinue.md#magic` as playtest-ready. First-pass difficulties are set
   for spells with defined effects. **Afflictions**, **difficult terrain**,
   **stat modifier cap** (**±3**), and **project Fear** language are locked —
@@ -57,6 +57,19 @@ the final rule in the dated decision-log entry for that commit.
   final Imp, Hellion, and Mauler profiles.
 
 ---
+
+## 2026-06-21 — Blood spell profile cleanup
+
+**Decision:** Lock Blood spell ranges and Mishaps for **Bleed**, **Blood Frenzy**,
+**Predator's Grace**, **Feast of Excess**, and **Nightfall**. **Leech** becomes
+a Touch attack using **CC** instead of a ranged attack using **RC**. **Nightfall**
+now targets the caster with **Self** range instead of targeting a friendly
+fighter.
+
+**Reasoning:** Blood magic should read as intimate, predatory, and self-risking
+at the table. Short ranges and self-focused shadow play push the Domain toward
+close engagement, while Mishaps now mirror the spell's appetite: blood buffs
+collapse into injury, exhaustion, or exposure instead of remaining generic TBDs.
 
 ## 2026-06-21 — Domain feat layout and canonical rules copyedit
 
