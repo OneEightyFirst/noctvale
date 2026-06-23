@@ -1325,7 +1325,7 @@ Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk 
 ##### Holy Light
 **Casting:** Wi 11+. **Range:** 12" from caster.\
 All fighters within 12" lose cover and **Hidden**.\
-**Mishap:** *(TBD)*
+**Mishap:** The caster becomes **Blinded**.
 
 ##### Heal
 **Casting:** Wi 10+. **Range:** 1".\
@@ -1339,8 +1339,7 @@ All fighters within the blast are hit.\
 
 ##### Shield of Faith
 **Casting:** Wi 11+. **Range:** 12".\
-Target friendly fighter gains +2 red defense dice and **projects Fear** until the start of the caster's next activation.\
-**Mishap:** *(TBD)*
+Target friendly fighter gains +2 red defense dice and **projects Fear** until the start of the caster's next activation.
 
 ##### Horrors Relived
 **Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.\
@@ -1350,7 +1349,7 @@ Make a ranged spell attack. Use the target's Sa stat as the attack's Mt.\
 ##### Unwavering Resolve
 **Casting:** Wi 10+. **Range:** 8" from caster.\
 All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.\
-**Mishap:** *(TBD)*
+**Mishap:** The caster suffers **Panic** until the end of their next activation.
 
 #### Arcane
 
@@ -1360,8 +1359,7 @@ Make a ranged spell attack.
 
 ##### Arcane Shield
 **Casting:** Wi 11+. **Range:** Self.
-The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.\
-**Mishap:** *(TBD)*
+The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
 
 ##### Fireball
 **Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.\
@@ -1371,12 +1369,12 @@ Choose a point within 18". All fighters within a large blast template are hit. T
 ##### Telekinesis
 **Casting:** Wi 12+. **Range:** 12".\
 Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.\
-**Mishap:** *(TBD)*
+**Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
 
 ##### Displacement
 **Casting:** Wi 11+. **Range:** 12".\
 Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.\
-**Mishap:** *(TBD)*
+**Mishap:** Roll a scatter die. Move the target 6" in the indicated direction. This movement ignores terrain, engagement, and intervening fighters. If the target cannot end at the full distance, place it as far as possible along that line without ending inside terrain or another fighter's base.
 
 ##### Hoarfrost
 **Casting:** Wi 11+. **Range:** 18".\
@@ -1388,7 +1386,7 @@ When a fighter ends any movement in the zone, make one **Sk check**. On a pass, 
 ##### Slow
 **Casting:** Wi 12+. **Range:** line of sight.\
 Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.\
-**Mishap:** *(TBD)*
+**Mishap:** The caster loses 1 action on their next activation. They activate with 1 action instead of 2.
 
 #### Infernal
 
@@ -1471,19 +1469,19 @@ Target friendly fighter gains **Hidden**. The target does not need to remain wit
 **Mishap:** Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation.
 
 ##### Venom
-**Casting:** Wi 10+. **Range:** *(TBD)*.\
+**Casting:** Wi 10+. **Range:** 12".\
 Target enemy must pass one **Mt check**. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).\
-**Mishap:** *(TBD)*
+**Mishap:** The caster becomes **Poisoned**.
 
 ##### Feral Form
-**Casting:** Wi 11+. **Range:** *(TBD)*.\
+**Casting:** Wi 11+. **Range:** 6".\
 Target friendly fighter gains +2 Mt and +1" M until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.\
-**Mishap:** *(TBD)*
+**Mishap:** The caster suffers **−1 Sa** until the end of their next activation.
 
 ##### Entangle
 **Casting:** Wi 12+. **Range:** 12".\
 Target enemy has M reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.\
-**Mishap:** *(TBD)*
+**Mishap:** The caster has M reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
 
 ##### Summon Swarm
 **Casting:** Wi 10+. **Range:** 3".\
@@ -1492,8 +1490,7 @@ Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 ac
 
 ##### Dread Chorus
 **Casting:** Wi 11+. **Range:** 8" from caster.\
-All enemy fighters within 8" must pass a Sanity test for **Fear** with the caster as the source.\
-**Mishap:** *(TBD)*
+All enemy fighters within 8" must pass a Sanity test for **Fear** with the caster as the source.
 
 #### Necromancy
 
@@ -1517,9 +1514,9 @@ Choose a point within 12". Place a large blast template until the start of the c
 **Mishap:** The blast centers on the caster.
 
 ##### Wither
-**Casting:** Sa 11+. **Range:** *(TBD)*.\
+**Casting:** Sa 11+. **Range:** 12".\
 Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened).\
-**Mishap:** *(TBD)*
+**Mishap:** The caster suffers **Weakened** until the start of their next activation.
 
 ##### Bone Blast
 **Casting:** Sa 11+. **Range:** blast from caster. **Attack:** CC, 1 Mt / 4 Sk.\
@@ -1534,7 +1531,7 @@ Choose a point within 12". Place a 3" blast template until the start of the cast
 #### Blood
 
 ##### Leech
-**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, *(TBD)*.\
+**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, 3 Mt / 3 Sk.\
 Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
 
 ##### Bleed
@@ -1571,18 +1568,8 @@ The caster is engulfed in shadow until the start of the caster's next activation
 
 ### Afflictions
 
-**Poisoned**, **Weakened**, **Enfeebled**, and **Bleeding** are defined in
-[Conditions](core-rules.md#afflictions). Domain association:
-
-| Affliction | Associated Domain |
-|---|---|
-| **Enfeebled** | Blood |
-| **Weakened** | Necromancy |
-| **Poisoned** | Nature *(and gear, traditions)* |
-| *(TBD)* | Infernal |
-
-Arcane, Light, and Nature spells could potentially **remove** these afflictions,
-creating a cleanse / debuff dynamic between magic categories.
+**Poisoned**, **Weakened**, **Enfeebled**, **Bleeding**, and **Blinded** are defined in
+[Conditions](core-rules.md#afflictions).
 
 Stat bonuses and penalties from stacked effects cannot exceed **+3** or **−3** per
 stat — see [Special Rules — Stat Modifiers](core-rules.md#stat-modifiers).

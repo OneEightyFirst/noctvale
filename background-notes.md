@@ -93,6 +93,22 @@ Each **Domain** keyword unlocks a spell list and domain feats. **Mortal** replac
 
 Spell lists: `rules/retinue.md` (**Magic — Domain Spell Lists**) · Domain feats: `rules/retinue.md` (**Domain Feats**)
 
+### Magic affliction associations
+
+These associations are internal design notes, not player-facing rules. Player-facing
+condition text lives in `rules/core-rules.md` (**Afflictions**).
+
+| Affliction | Associated Domain |
+|---|---|
+| **Blinded** | Light |
+| **Poisoned** | Nature *(and gear, traditions)* |
+| **Weakened** | Necromancy |
+| **Enfeebled** | Blood |
+| *(TBD)* | Infernal |
+
+Arcane, Light, and Nature spells could potentially remove these afflictions,
+creating a cleanse / debuff dynamic between magic categories.
+
 ---
 
 ## Roster Identity Notes

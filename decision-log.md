@@ -58,6 +58,29 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-23 — Spell Mishaps and Blinded
+
+**Decision:** Add **Blinded** as a condition: a **Blinded** fighter cannot make
+**Melee** or **Ranged** attacks, and if no duration is given the condition lasts
+until the end of that fighter's next activation. Set **Holy Light**'s Mishap to
+make the caster **Blinded**. Move the magic-affliction Domain association table
+out of player-facing rules and into `background-notes.md`. Remove the placeholder
+Mishap from **Shield of Faith**; it has no Mishap. Set **Unwavering Resolve**'s
+Mishap to make the caster suffer **Panic** until the end of their next
+activation. Remove the placeholder Mishap from **Arcane Shield**; it has no
+Mishap. Set **Telekinesis**'s Mishap so the opponent chooses whether the target
+moves toward or away from the caster. Set **Displacement**'s Mishap to scatter
+the target 6" in a random direction. Set **Slow**, **Venom**, **Feral Form**,
+**Entangle**, and **Wither** Mishaps; remove the placeholder Mishap from **Dread
+Chorus**. Set first-pass ranges for **Venom**, **Feral Form**, and **Wither**.
+Set **Leech** to a 3 Mt / 3 Sk touch attack.
+
+**Reasoning:** **Holy Light** is a reveal spell, so its backlash should punish
+the caster's sight and offensive reach rather than deal Wounds. The condition
+creates a reusable, clear penalty for future sight-based effects while keeping
+the Mishap fast to resolve at the table. The Domain association table is design
+context, not a rule players need while resolving spells.
+
 ## 2026-06-23 — Named stat checks and friendly fire targeting
 
 **Decision:** Define stat checks once in `rules/core-rules.md`, then use named

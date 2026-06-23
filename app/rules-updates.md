@@ -6,6 +6,28 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-23 12:11 EDT — Spell Mishap cleanup
+
+**Change:**
+
+- Set the **Holy Light** Mishap in the builder spell picker.
+- Removed the placeholder Mishap from **Shield of Faith**.
+- Set the **Unwavering Resolve** Mishap in the builder spell picker.
+- Removed the placeholder Mishap from **Arcane Shield**.
+- Set the **Telekinesis** Mishap in the builder spell picker.
+- Set the **Displacement** Mishap in the builder spell picker.
+- Set the **Slow** Mishap in the builder spell picker.
+- Synced **Venom** range and Mishap.
+- Synced **Feral Form** range and Mishap.
+- Set the **Entangle** Mishap in the builder spell picker.
+- Removed the placeholder Mishap from **Dread Chorus**.
+- Synced **Wither** range and Mishap.
+- Set **Leech** to a 3 Mt / 3 Sk touch attack.
+
+**Source:** `rules/retinue.md` spell blocks.
+
+**Impact:** Display-only in the builder spell picker; no roster validation changes.
+
 ## 2026-06-22 22:39 EDT — Ancestry profile descriptors
 
 **Change:**

@@ -533,6 +533,11 @@ When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
 At the **start of each activation**, make one **Wi check**. **Pass:** remove
 **Bleeding**. **Fail:** suffer **1 Wound**.
 
+#### Blinded
+
+The fighter cannot make **Melee** or **Ranged** attacks. If no duration is
+given, **Blinded** lasts until the end of the fighter's next activation.
+
 ---
 
 ## Combat
