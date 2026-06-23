@@ -58,6 +58,17 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-22 — Ancestry paragraph placement
+
+**Decision:** Keep the broad ancestry-profile introduction before the first
+ancestry table only. Later Archetype sections repeat the ancestry profile table
+with only the short setup instruction.
+
+**Reasoning:** The introduction explains the setting premise and miniature
+freedom once, then the repeated Archetype tables stay focused on roster
+building. This preserves the flexible ancestry framing without making each
+Archetype section feel padded or repetitive.
+
 ## 2026-06-22 — Overwatch tokens expire
 
 **Decision:** Clarify that all unspent **Overwatch tokens** are removed at the

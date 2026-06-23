@@ -79,6 +79,9 @@ Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
 other short, quick folk. Your retinue is yours to build; choose the profile
 that represents the fighter you put on the table.
 
+Start from an ancestry profile, then apply the recruitment bonuses listed for
+that fighter below.
+
 | Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
 |---|---|---|---|---|---|---|---|---|---|---|
 | **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
@@ -173,16 +176,6 @@ fighter, add **+1** to the **Help** roll.
 ##### Recruit Fighters
 
 ###### Ancestry
-
-Noctvale is full of fighters of every shape, size, and ancestry. Before the
-Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
-and towns gathered the diversity of many peoples living peaceably together.
-Use the profiles below to represent fighters from different backgrounds and
-ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
-**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
-Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
-other short, quick folk. Your retinue is yours to build; choose the profile
-that represents the fighter you put on the table.
 
 Start from an ancestry profile, then apply the recruitment bonuses listed for
 that fighter below.
@@ -297,16 +290,6 @@ battles. Record the chosen weapon and upgrade on this fighter's roster entry.
 
 ###### Ancestry
 
-Noctvale is full of fighters of every shape, size, and ancestry. Before the
-Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
-and towns gathered the diversity of many peoples living peaceably together.
-Use the profiles below to represent fighters from different backgrounds and
-ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
-**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
-Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
-other short, quick folk. Your retinue is yours to build; choose the profile
-that represents the fighter you put on the table.
-
 Start from an ancestry profile, then apply the recruitment bonuses listed for
 that fighter below.
 
@@ -407,16 +390,6 @@ chosen fighter to 0 Wounds and cause them to become **Downed**.
 ##### Recruit Fighters
 
 ###### Ancestry
-
-Noctvale is full of fighters of every shape, size, and ancestry. Before the
-Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
-and towns gathered the diversity of many peoples living peaceably together.
-Use the profiles below to represent fighters from different backgrounds and
-ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
-**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
-Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
-other short, quick folk. Your retinue is yours to build; choose the profile
-that represents the fighter you put on the table.
 
 Start from an ancestry profile, then apply the recruitment bonuses listed for
 that fighter below.
