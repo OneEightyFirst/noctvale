@@ -3,25 +3,32 @@ export const BOOSTABLE_STATS = ["CC", "RC", "Mt", "Sk", "Wi", "Sa"];
 
 export const ANCESTRIES = [
   {
-    id: "human",
-    name: "Human",
+    id: "steady",
+    name: "Steady",
     cost: 0,
     stats: { M: 6, CC: 3, RC: 3, Mt: 3, Sk: 3, Wi: 3, Sa: 4, W: 3 },
-    description: "Human ancestry is the baseline profile.",
+    description: "Steady profiles fit Humans, Half-Elves, and other grounded folk.",
   },
   {
-    id: "elf",
-    name: "Elf",
+    id: "keen",
+    name: "Keen",
     cost: 10,
     stats: { M: 7, CC: 3, RC: 3, Mt: 3, Sk: 4, Wi: 4, Sa: 3, W: 3 },
-    description: 'Elf ancestry costs an additional +10c, but gives 4Sk, 4Wi and 7" movement.',
+    description: 'Keen profiles cost an additional +10c and fit Elves or other sharp, graceful lineages.',
   },
   {
-    id: "dwarf",
-    name: "Dwarf",
+    id: "stout",
+    name: "Stout",
     cost: 10,
     stats: { M: 5, CC: 3, RC: 3, Mt: 4, Sk: 3, Wi: 3, Sa: 3, W: 3 },
-    description: 'Dwarf ancestry costs an additional +10c, but gives 4Mt and 5" movement.',
+    description: 'Stout profiles cost an additional +10c and fit Dwarves, Orcs, or other powerful frames.',
+  },
+  {
+    id: "stunty",
+    name: "Stunty",
+    cost: -10,
+    stats: { M: 6, CC: 3, RC: 3, Mt: 2, Sk: 4, Wi: 3, Sa: 3, W: 2 },
+    description: "Stunty profiles reduce cost by -10c and fit Halflings, Goblins, Gnomes, or other short, quick folk.",
   },
 ];
 

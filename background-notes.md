@@ -97,15 +97,16 @@ Spell lists: `rules/retinue.md` (**Magic — Domain Spell Lists**) · Domain fea
 
 ## Roster Identity Notes
 
-- Use **Ancestry** for the recruitment baseline layer. Current ancestries are
-  **Human**, **Elf**, and **Dwarf**.
-- Do not replace ancestries with abstract **Build** labels such as lithe,
-  average, or stocky unless playtest feedback shows the concrete ancestry layer
-  is blocking miniature use. Pure Build labels give players flexibility, but
-  risk making the roster feel like a generic stat toolkit.
-- Ancestry should remain a compact profile and premium. The main identity load
-  belongs to **Archetype**, **Tradition**, **Domain**, gear, feats, and campaign
-  consequences.
+- Use **Ancestry profile** for the recruitment baseline layer. Current profiles
+  are **Steady**, **Keen**, **Stout**, and **Stunty**.
+- Each profile names a body-and-temperament pattern rather than a single people:
+  **Steady** can represent Humans, Half-Elves, or similar grounded folk;
+  **Keen** can represent Elves or other sharp, graceful lineages; **Stout** can
+  represent Dwarves, Orcs, or other powerful frames; **Stunty** can represent
+  Halflings, Goblins, Gnomes, or other short, quick folk.
+- Ancestry profiles should remain compact profiles and premiums. The main
+  identity load belongs to **Archetype**, **Tradition**, **Domain**, gear, feats,
+  and campaign consequences.
 - If a later rule needs unusual lineage or creature identity, prefer keywords
   such as **Vampire**, **Undead**, or a Tradition-specific rule rather than
   expanding ancestry into a large subsystem.

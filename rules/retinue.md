@@ -69,13 +69,22 @@ fighter's Strike Pool.
 
 ###### Ancestry
 
-Start from an ancestry baseline, then apply the recruitment bonuses listed for that fighter below.
+Noctvale is full of fighters of every shape, size, and ancestry. Before the
+Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
+and towns gathered the diversity of many peoples living peaceably together.
+Use the profiles below to represent fighters from different backgrounds and
+ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
+**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
+Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
+other short, quick folk. Your retinue is yours to build; choose the profile
+that represents the fighter you put on the table.
 
-| Ancestry | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| Human | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| Elf | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| Dwarf | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+| Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
+| **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+| **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
 
 ###### Lord — 125 Crowns (1)
 *[Fluff about Lords]*
@@ -165,13 +174,25 @@ fighter, add **+1** to the **Help** roll.
 
 ###### Ancestry
 
-Start from an ancestry baseline, then apply the recruitment bonuses listed for that fighter below.
+Noctvale is full of fighters of every shape, size, and ancestry. Before the
+Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
+and towns gathered the diversity of many peoples living peaceably together.
+Use the profiles below to represent fighters from different backgrounds and
+ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
+**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
+Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
+other short, quick folk. Your retinue is yours to build; choose the profile
+that represents the fighter you put on the table.
 
-| Ancestry | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| Human | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| Elf | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| Dwarf | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+Start from an ancestry profile, then apply the recruitment bonuses listed for
+that fighter below.
+
+| Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
+| **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+| **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
 
 ###### Captain — 125 Crowns (1)
 *[Fluff about Captains]*
@@ -276,13 +297,25 @@ battles. Record the chosen weapon and upgrade on this fighter's roster entry.
 
 ###### Ancestry
 
-Start from an ancestry baseline, then apply the recruitment bonuses listed for that fighter below.
+Noctvale is full of fighters of every shape, size, and ancestry. Before the
+Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
+and towns gathered the diversity of many peoples living peaceably together.
+Use the profiles below to represent fighters from different backgrounds and
+ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
+**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
+Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
+other short, quick folk. Your retinue is yours to build; choose the profile
+that represents the fighter you put on the table.
 
-| Ancestry | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| Human | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| Elf | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| Dwarf | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+Start from an ancestry profile, then apply the recruitment bonuses listed for
+that fighter below.
+
+| Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
+| **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+| **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
 
 ###### Mayor — 125 Crowns (1)
 *[Fluff about Mayors]*
@@ -375,13 +408,25 @@ chosen fighter to 0 Wounds and cause them to become **Downed**.
 
 ###### Ancestry
 
-Start from an ancestry baseline, then apply the recruitment bonuses listed for that fighter below.
+Noctvale is full of fighters of every shape, size, and ancestry. Before the
+Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
+and towns gathered the diversity of many peoples living peaceably together.
+Use the profiles below to represent fighters from different backgrounds and
+ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
+**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
+Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
+other short, quick folk. Your retinue is yours to build; choose the profile
+that represents the fighter you put on the table.
 
-| Ancestry | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| Human | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| Elf | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| Dwarf | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+Start from an ancestry profile, then apply the recruitment bonuses listed for
+that fighter below.
+
+| Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
+| **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
+| **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
 
 ###### Theurge — 125 Crowns (1)
 *[Fluff about Theurges]*
@@ -1301,135 +1346,96 @@ Each domain has a standard ranged attack spell plus **6 additional spells**. **C
 #### Light
 
 ##### Radiant Strike
-
-**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.
-
+**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.\
 Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk instead.
 
 ##### Holy Light
-
-**Casting:** Wi 11+. **Range:** 12" from caster.
-
-All fighters within 12" lose cover and **Hidden**.
-
+**Casting:** Wi 11+. **Range:** 12" from caster.\
+All fighters within 12" lose cover and **Hidden**.\
 **Mishap:** *(TBD)*
 
 ##### Heal
-
-**Casting:** Wi 10+. **Range:** 1".
-
-Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
-
+**Casting:** Wi 10+. **Range:** 1".\
+Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.\
 **Mishap:** The target suffers 1 Wound instead.
 
 ##### Purge the Faithless
-
-**Casting:** Wi 11+. **Range:** 3" blast from caster. **Attack:** CC, 5 Mt / 2 Sk.
-
-All fighters within the blast are hit.
-
+**Casting:** Wi 11+. **Range:** 3" blast from caster. **Attack:** CC, 5 Mt / 2 Sk.\
+All fighters within the blast are hit.\
 **Mishap:** Resolve the attack against the caster.
 
 ##### Shield of Faith
-
-**Casting:** Wi 11+. **Range:** 12".
-
-Target friendly fighter gains +2 red defense dice and **projects Fear** until the start of the caster's next activation.
-
+**Casting:** Wi 11+. **Range:** 12".\
+Target friendly fighter gains +2 red defense dice and **projects Fear** until the start of the caster's next activation.\
 **Mishap:** *(TBD)*
 
 ##### Horrors Relived
-
-**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.
-
-Make a ranged spell attack. Use the target's Sa stat as the attack's Mt.
-
+**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.\
+Make a ranged spell attack. Use the target's Sa stat as the attack's Mt.\
 **Mishap:** Resolve the attack against the caster, using the target's Sa as Mt.
 
 ##### Unwavering Resolve
-
-**Casting:** Wi 10+. **Range:** 8" from caster.
-
-All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.
-
+**Casting:** Wi 10+. **Range:** 8" from caster.\
+All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.\
 **Mishap:** *(TBD)*
 
 #### Arcane
 
 ##### Arcane Bolt
-
-**Casting:** Wi 11+. **Range:** 20". **Attack:** RC, 5 Sk.
-
+**Casting:** Wi 11+. **Range:** 20". **Attack:** RC, 5 Sk.\
 Make a ranged spell attack.
 
 ##### Arcane Shield
-
 **Casting:** Wi 11+. **Range:** Self.
-
-The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
-
+The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.\
 **Mishap:** *(TBD)*
 
 ##### Fireball
-
-**Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.
-
-Choose a point within 18". All fighters within a large blast template are hit. The blast hits friendly and enemy fighters. On a normal failure, the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.
-
+**Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.\
+Choose a point within 18". All fighters within a large blast template are hit. The blast hits friendly and enemy fighters. On a normal failure, the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.\
 **Mishap:** The blast template centers on the caster.
 
 ##### Telekinesis
-
-**Casting:** Wi 12+. **Range:** 12".
-
-Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.
-
+**Casting:** Wi 12+. **Range:** 12".\
+Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.\
 **Mishap:** *(TBD)*
 
 ##### Displacement
-
-**Casting:** Wi 11+. **Range:** 12".
-
-Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.
-
+**Casting:** Wi 11+. **Range:** 12".\
+Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.\
 **Mishap:** *(TBD)*
 
 ##### Hoarfrost
+**Casting:** Wi 11+. **Range:** 18".\
+Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.\
 
-**Casting:** Wi 11+. **Range:** 18".
-
-Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.
-
-When a fighter ends any movement in the zone, roll one **Sk check** (d6 + Sk ≥ 8). On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.
-
+When a fighter ends any movement in the zone, roll one **Sk check** (d6 + Sk ≥ 8). On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.\
 **Mishap:** The blast template centers on the caster.
 
 ##### Slow
-
-**Casting:** Wi 12+. **Range:** line of sight.
-
-Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.
-
+**Casting:** Wi 12+. **Range:** line of sight.\
+Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.\
 **Mishap:** *(TBD)*
 
 #### Infernal
 
-The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
+##### *(TBD — attack)*
+**Casting:** Sa *(TBD)*. **Range:** *(TBD)*. **Attack:** *(TBD)*.\
+This spell is not yet playtest-ready.
 
+##### Summon Daemon
+**Casting:** Sa 11+. **Range:** 3".\
+Sacrifice one or two friendly fighters carrying enough **Summoning Crystals**, then roll on the **Summon Result** table.\
+
+The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:\
 - **Imps** — Usually small, fairly weak, with wings
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
-
-Daemons cannot be recruited normally. They enter battle through **Summon Daemon**
-and **Summoning Crystals**.
-
+Daemons cannot be recruited normally. They enter battle through **Summon Daemon** and **Summoning Crystals**.\
 ##### Summoning Crystals
+**Summoning Crystals** are equipment assigned to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal adds **1** to the retinue's **Summoning Pool** for the battle, to a maximum of **10**.\
 
-**Summoning Crystals** are equipment assigned to fighters during roster setup. A
-fighter may carry up to **2 Summoning Crystals**. Each crystal adds **1** to the
-retinue's **Summoning Pool** for the battle, to a maximum of **10**.
-
-A **4-crystal** summon requires **2** crystal-bearing fighters.
+A **4-crystal** summon requires **2** crystal-bearing fighters.\
 
 | Daemon | Crystal cost | Battle cap |
 |---|---:|---:|
@@ -1437,68 +1443,16 @@ A **4-crystal** summon requires **2** crystal-bearing fighters.
 | **Hellion** | 2 | 2 |
 | **Mauler** | 4 | 1 |
 
-Each crystal spent on **Summon Daemon** is consumed. Remove spent crystals from
-the roster after the battle.
-
-##### *(TBD — attack)*
-
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*. **Attack:** *(TBD)*.
-
-This spell is not yet playtest-ready.
+Each crystal spent on **Summon Daemon** is consumed. Remove spent crystals from the roster after the battle.\
 
 ##### Summon Daemon
+After **Summon Daemon** is successfully cast, choose one or two **Active** friendly fighters within **3"** of the caster. The chosen fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Sacrifice those fighters, spend the crystals, and roll **2d6** on the **Summon Result** table.\
 
-**Casting:** Sa 11+. **Range:** 3".
+A sacrificed fighter is **Slain** and removed from the battle. Remove them from your retinue after the battle. They do not roll on the **Casualty Table** and do not gain Experience from this battle.\
 
-Sacrifice one or two friendly fighters carrying enough **Summoning Crystals**, then roll on the **Summon Result** table.
+Place the created fighter where one sacrificed fighter stood. If two fighters were sacrificed, choose either sacrificed fighter's position. If the created fighter's base cannot fit, place it as close as possible to that position.\
 
-**Mishap:** The caster goes **Out of Action**. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
-
-##### The Void
-
-**Casting:** Sa 14+. **Range:** 12".
-
-Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.
-
-While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** (d6 + Mt ≥ 8) or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.
-
-**Mishap:** The marker is placed centered on the caster instead.
-
-##### *(TBD)*
-
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.
-
-This spell is not yet playtest-ready.
-
-##### *(TBD)*
-
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.
-
-This spell is not yet playtest-ready.
-
-##### *(TBD)*
-
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.
-
-This spell is not yet playtest-ready.
-
-##### Summon Daemon
-
-After **Summon Daemon** is successfully cast, choose one or two **Active**
-friendly fighters within **3"** of the caster. The chosen fighters must be
-carrying enough **Summoning Crystals** to pay the crystal cost. Sacrifice those
-fighters, spend the crystals, and roll **2d6** on the **Summon Result** table.
-
-A sacrificed fighter is **Slain** and removed from the battle. Remove them from
-your retinue after the battle. They do not roll on the **Casualty Table** and do
-not gain Experience from this battle.
-
-Place the created fighter where one sacrificed fighter stood. If two fighters
-were sacrificed, choose either sacrificed fighter's position. If the created
-fighter's base cannot fit, place it as close as possible to that position.
-
-The summon result is separate from the **casting roll**. Double 1s and double 6s
-on the summon result use the table below.
+The summon result is separate from the **casting roll**. Double 1s and double 6s on the summon result use the table below.\
 
 | Crystals spent | Intended Daemon | Double 1s | 2–11 | Double 6s |
 |---:|---|---|---|---|
@@ -1506,187 +1460,139 @@ on the summon result use the table below.
 | 2 | **Hellion** | Summon an **Imp**. | Summon a **Hellion**. | Summon a **Mauler**. |
 | 4 | **Mauler** | Summon a **Hellion**. | Summon a **Mauler**. | Summon a **Mauler** with **+1 W** and either **+1 Mt** or **+1 Sk**. |
 
-A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler**
-in the same battle. If a summon result would exceed one of those caps, use the
-next lower result that does not exceed a cap. If no lower result is available,
-no fighter is summoned.
+A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler** in the same battle. If a summon result would exceed one of those caps, use the next lower result that does not exceed a cap. If no lower result is available, no fighter is summoned.\
 
-A fighter created by **Summon Daemon** is friendly to the caster's retinue. It
-cannot activate this round if the sacrificed fighter whose position it replaced
-had already activated this round. Remove fighters created by **Summon Daemon**
-after the battle.
+A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round. Remove fighters created by **Summon Daemon** after the battle.\
+**Mishap:** The caster goes **Out of Action**. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
+
+##### The Void
+**Casting:** Sa 14+. **Range:** 12".\
+Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.\
+
+While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** (d6 + Mt ≥ 8) or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.\
+**Mishap:** The marker is placed centered on the caster instead.\
+
+##### *(TBD)*
+**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.\
+This spell is not yet playtest-ready.
+
+##### *(TBD)*
+**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.\
+This spell is not yet playtest-ready.
+
+##### *(TBD)*
+**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.\
+This spell is not yet playtest-ready.
+
+
 
 #### Nature
 
 ##### Thorn Volley
-
-**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, 4 Mt / 4 Sk.
-
+**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, 4 Mt / 4 Sk.\
 Make a ranged spell attack using a template / shotgun-like pattern.
 
 ##### Shadowmeld
-
-**Casting:** Wi 11+. **Range:** 12".
-
-Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.
-
+**Casting:** Wi 11+. **Range:** 12".\
+Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.\
 **Mishap:** Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation.
 
 ##### Venom
-
-**Casting:** Wi 10+. **Range:** *(TBD)*.
-
-Target enemy must pass one **Mt check** (d6 + Mt ≥ 8). On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).
-
+**Casting:** Wi 10+. **Range:** *(TBD)*.\
+Target enemy must pass one **Mt check** (d6 + Mt ≥ 8). On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).\
 **Mishap:** *(TBD)*
 
 ##### Feral Form
-
-**Casting:** Wi 11+. **Range:** *(TBD)*.
-
-Target friendly fighter gains +2 Mt and +1" M until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.
-
+**Casting:** Wi 11+. **Range:** *(TBD)*.\
+Target friendly fighter gains +2 Mt and +1" M until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.\
 **Mishap:** *(TBD)*
 
 ##### Entangle
-
-**Casting:** Wi 12+. **Range:** 12".
-
-Target enemy has M reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
-
+**Casting:** Wi 12+. **Range:** 12".\
+Target enemy has M reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.\
 **Mishap:** *(TBD)*
 
 ##### Summon Swarm
-
-**Casting:** Wi 10+. **Range:** 3".
-
-Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](retinue.md#shared-profiles).
-
+**Casting:** Wi 10+. **Range:** 3".\
+Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](retinue.md#shared-profiles).\
 **Mishap:** The Swarm appears hostile. Your opponent controls it for its single activation.
 
 ##### Dread Chorus
-
-**Casting:** Wi 11+. **Range:** 8" from caster.
-
-All enemy fighters within 8" must pass a Sanity test for **Fear** with the caster as the source.
-
+**Casting:** Wi 11+. **Range:** 8" from caster.\
+All enemy fighters within 8" must pass a Sanity test for **Fear** with the caster as the source.\
 **Mishap:** *(TBD)*
 
 #### Necromancy
 
 ##### Deathbolt
-
-**Casting:** Sa 14+. **Range:** 18". **Attack:** RC, 6 Sk.
-
+**Casting:** Sa 14+. **Range:** 18". **Attack:** RC, 6 Sk.\
 Make a ranged spell attack. This attack uses only Sk and ignores armor.
 
 ##### Summon Skeleton
-
-**Casting:** Sa 10+. **Range:** 3".
-
-Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See [Profiles](retinue.md#shared-profiles).
-
+**Casting:** Sa 10+. **Range:** 3".\
+Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See [Profiles](retinue.md#shared-profiles).\
 **Mishap:** The Skeleton appears hostile. Your opponent controls it for its single activation.
 
 ##### Raise Dead
-
-**Casting:** Sa 12+. **Range:** 3".
-
-Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation.
-
+**Casting:** Sa 12+. **Range:** 3".\
+Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation.\
 **Mishap:** Your opponent places and controls the raised fighter instead.
 
 ##### Cursed Ground
-
-**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 2 Mt / 2 Sk.
-
-Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check** (d6 + Sk ≥ 8).
-
+**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 2 Mt / 2 Sk.\
+Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check** (d6 + Sk ≥ 8).\
 **Mishap:** The blast centers on the caster.
 
 ##### Wither
-
-**Casting:** Sa 11+. **Range:** *(TBD)*.
-
-Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened).
-
+**Casting:** Sa 11+. **Range:** *(TBD)*.\
+Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened).\
 **Mishap:** *(TBD)*
 
 ##### Bone Blast
-
-**Casting:** Sa 11+. **Range:** blast from caster. **Attack:** CC, 1 Mt / 4 Sk.
-
+**Casting:** Sa 11+. **Range:** blast from caster. **Attack:** CC, 1 Mt / 4 Sk.\
 Center the blast template on the caster. All fighters under the template except the caster are hit.
-
 **Mishap:** *(TBD)*
 
 ##### Bone Circle
-
-**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 1 Mt / 3 Sk.
-
-Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters.
-
+**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 1 Mt / 3 Sk.\
+Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters.\
 **Mishap:** The zone centers on the caster.
 
 #### Blood
 
 ##### Leech
-
-**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, *(TBD)*.
-
+**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, *(TBD)*.\
 Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
 
 ##### Bleed
-
-**Casting:** Sa 13+. **Range:** 12".
-
-Target enemy must pass one **Wi check** (d6 + Wi ≥ 8). On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).
-
+**Casting:** Sa 13+. **Range:** 12".\
+Target enemy must pass one **Wi check** (d6 + Wi ≥ 8). On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).\
 **Mishap:** The caster becomes **Bleeding** instead.
 
 ##### Blood Frenzy
-
-**Casting:** Sa 11+. **Range:** 6".
-
-Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit until the start of the caster's next activation.
-
+**Casting:** Sa 11+. **Range:** 6".\
+Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit until the start of the caster's next activation.\
 **Mishap:** The target suffers **−1 Mt**, **−1 CC**, and **−1" M** until the start of the caster's next activation.
 
 ##### Predator's Grace
-
-**Casting:** Sa 10+. **Range:** 6".
-
-Target friendly fighter gains +1" M and +1 Sk until the start of the caster's next activation.
-
+**Casting:** Sa 10+. **Range:** 6".\
+Target friendly fighter gains +1" M and +1 Sk until the start of the caster's next activation.\
 **Mishap:** The target becomes **Downed**.
 
 ##### Enthrall
-
-**Casting:** Sa 11+. **Range:** 8".
-
-Target enemy must pass one **Wi check** (d6 + Wi ≥ 8) or immediately take one **Move** action in a direction chosen by the caster.
-
+**Casting:** Sa 11+. **Range:** 8".\
+Target enemy must pass one **Wi check** (d6 + Wi ≥ 8) or immediately take one **Move** action in a direction chosen by the caster.\
 **Mishap:** A friendly fighter chosen by your opponent takes the move instead.
 
 ##### Feast of Excess
-
-**Casting:** Sa 11+. **Range:** 12".
-
-Target friendly fighter gains +1 Mt, +1 Sk, and +1" M. When the effect ends, the target becomes **Stunned**. They keep their Wounds.
-
+**Casting:** Sa 11+. **Range:** 12".\
+Target friendly fighter gains +1 Mt, +1 Sk, and +1" M. When the effect ends, the target becomes **Stunned**. They keep their Wounds.\
 **Mishap:** The target becomes **Stunned**.
 
 ##### Nightfall
-
-**Casting:** Sa 11+. **Range:** Self.
-
-The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster adds +1 to the roll to hit with CC.
-
+**Casting:** Sa 11+. **Range:** Self.\
+The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster adds +1 to the roll to hit with CC.\
 **Mishap:** Bright light exposes the caster. Enemies add +1 to the roll to hit the caster with ranged weapons, and the caster suffers **−1 Mt** until the start of their next activation.
-
-#### Mortal
-
-No spells. When every fighter in the retinue has **Mortal**, your retinue may purchase **gunpowder weapons** instead — see [Equipment — Firearms](equipment.md#firearms).
 
 ---
 

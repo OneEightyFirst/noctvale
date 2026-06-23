@@ -324,7 +324,7 @@ function createFighter(archetype, typeId, domain, existingCount) {
     id: makeId(),
     typeId,
     name: `${type.name} ${existingCount + 1}`,
-    ancestryId: "human",
+    ancestryId: "steady",
     statBoosts: [],
     caster: type?.caster?.mode === "required",
     builtInChoice,

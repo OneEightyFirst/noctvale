@@ -45,20 +45,14 @@ one; the second result stands.
 
 ### Baseline Ancestry Profiles
 
-#### Human Fighter
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 |
+Use the profile that best represents the fighter you put on the table.
 
-#### Elf Fighter
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 |
-
-#### Dwarf Fighter
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 |
+| Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 |
+| **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 |
+| **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 |
+| **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 |
 
 ---
 
@@ -573,13 +567,14 @@ A fighter attacking **unarmed** uses only their base Mt and Sk.
 |---|---|---|---|---|
 | Sword | Melee | Engagement | +1 | +1 |
 
-A Human (Mt 3, Sk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
+A **Keen** fighter (Mt 3, Sk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
 
 | Fighter | Base Mt | Base Sk | Weapon | Red | Blue | Total |
 |---|---|---|---|---|---|---|
-| Human (Mt 3, Sk 4) | 3 | 4 | Sword (+1 Mt, +1 Sk) | 4 | 5 | 9 |
-| Elf (Mt 3, Sk 4) | 3 | 4 | Shortbow (+2 Sk) | 3 | 6 | 9 |
-| Dwarf (Mt 4, Sk 3) | 4 | 3 | War Axe (+2 Mt) | 6 | 3 | 9 |
+| **Steady** (Mt 3, Sk 3) | 3 | 3 | Sword (+1 Mt, +1 Sk) | 4 | 4 | 8 |
+| **Keen** (Mt 3, Sk 4) | 3 | 4 | Shortbow (+2 Sk) | 3 | 6 | 9 |
+| **Stout** (Mt 4, Sk 3) | 4 | 3 | War Axe (+2 Mt) | 6 | 3 | 9 |
+| **Stunty** (Mt 2, Sk 4) | 2 | 4 | Throwing Stars (+1 Sk) | 2 | 5 | 7 |
 
 #### Step 2: Roll to Hit
 
@@ -710,10 +705,10 @@ Weapons](equipment.md#weapons).)*
 
 ### Combat Example
 
-**Attacker:** Human Fighter (CC 3, Mt 3, Sk 4) wielding a Sword (+1 Mt, +1 Sk)
-**Defender:** Dwarf Fighter (CC 3, Mt 4, Sk 3) wielding a Battle Axe (+2 Mt), wearing Medium Armor
+**Attacker:** **Keen** fighter (CC 3, Mt 3, Sk 4) wielding a Sword (+1 Mt, +1 Sk)
+**Defender:** **Stout** fighter (CC 3, Mt 4, Sk 3) wielding a Battle Axe (+2 Mt), wearing Medium Armor
 
-**Step 1:** Human Strike Pool = (Mt 3 + Sword 1) red + (Sk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
+**Step 1:** **Keen** Strike Pool = (Mt 3 + Sword 1) red + (Sk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
 
 **Step 2:** Roll each die, adding CC 3. Need ≥ 8 (so 5+ on the die).
 - Red die 1: rolls 5 → 5 + 3 = 8 → **red hit**
@@ -730,10 +725,10 @@ Result: 1 red hit, 3 blue hits (4 hits total)
 
 **Step 3:** Sword vs Axe → Sword has advantage. The natural 6 on Blue die 1 is a **critical blue hit** (unblockable).
 
-**Step 4:** Dwarf defense pool:
+**Step 4:** **Stout** defense pool:
 - Base: 1 red + 1 blue
-- Mt comparison: Dwarf Mt 4 vs Human Mt 3 → Dwarf Mt is 1 higher → +1 red defense die
-- Sk comparison: Dwarf Sk 3 vs Human Sk 4 → Human Sk is higher → no bonus
+- Mt comparison: **Stout** Mt 4 vs **Keen** Mt 3 → **Stout** Mt is 1 higher → +1 red defense die
+- Sk comparison: **Stout** Sk 3 vs **Keen** Sk 4 → **Keen** Sk is higher → no bonus
 - Total defense: 2 red dice + 1 blue die
 
 Roll defense:
@@ -741,7 +736,7 @@ Roll defense:
 - Red die 2: d6 + Mt 4 → rolls 3 → 7 → fail
 - Blue die 1: d6 + Sk 3 → rolls 4 → 7 → fail
 
-**Armor Conversion:** The Dwarf wears Medium Armor — convert 1 failed red defense die into 1 normal success. Red die 2 failed, so it becomes a **normal red success**. Blue die 1 failed but Medium Armor only converts failed red defense dice.
+**Armor Conversion:** The **Stout** fighter wears Medium Armor — convert 1 failed red defense die into 1 normal success. Red die 2 failed, so it becomes a **normal red success**. Blue die 1 failed but Medium Armor only converts failed red defense dice.
 
 Defense results: 2 red successes, 0 blue successes.
 - Red success 1 blocks the red hit (1:1 same color)
@@ -749,7 +744,7 @@ Defense results: 2 red successes, 0 blue successes.
 
 The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 
-**Step 5:** 3 unblocked hits. The Dwarf takes 3 Wounds (4 → 1 remaining).
+**Step 5:** 3 unblocked hits. The **Stout** fighter takes 3 Wounds (3 → 0) and becomes **Downed**.
 
 ---
 

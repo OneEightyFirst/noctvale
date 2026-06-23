@@ -6,6 +6,21 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-22 22:39 EDT — Ancestry profile descriptors
+
+**Change:**
+
+- Replaced builder ancestry options with **Steady**, **Keen**, **Stout**, and
+  **Stunty** profile descriptors.
+- Set new fighters to default to the **Steady** profile.
+- Added the **Stunty** profile at **M 6"**, **Mt 2**, **Sk 4**, **W 2**, and
+  **-10 Crowns**.
+
+**Source:** `rules/retinue.md` ancestry profile tables.
+
+**Impact:** Roster-building data and fighter cost calculation changed. The new
+profile IDs are the core source of truth; old ancestry IDs are not translated.
+
 ## 2026-06-22 10:03 EDT — Summon Daemon Mishap
 
 **Change:**

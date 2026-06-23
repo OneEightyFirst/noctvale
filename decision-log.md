@@ -58,6 +58,24 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-22 — Ancestry profile descriptors
+
+**Decision:** Replace the concrete Human, Elf, and Dwarf ancestry table rows
+with four reusable ancestry profiles: **Steady**, **Keen**, **Stout**, and
+**Stunty**. **Steady** represents Humans, Half-Elves, and other grounded folk.
+**Keen** represents Elves and other sharp, graceful lineages. **Stout**
+represents Dwarves, Orcs, and other powerful frames. **Stunty** represents
+Halflings, Goblins, Gnomes, and other short, quick folk. The first-pass
+**Stunty** profile is **M 6"**, **Mt 2**, **Sk 4**, **W 2**, and **-10
+Crowns**.
+
+**Reasoning:** The profile descriptors keep Noctvale open to diverse miniatures
+and mixed ancestry concepts without turning ancestry into a large subsystem.
+Players can still put recognizable peoples on the table, but the rules now ask
+which compact body profile best represents the fighter instead of binding a stat
+line to one ancestry name. This preserves roster clarity while widening
+modeling freedom.
+
 ## 2026-06-22 — Spell block format and Infernal updates
 
 **Decision:** Reformat all Domain spell lists in `rules/retinue.md` from tables
