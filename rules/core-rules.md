@@ -154,6 +154,8 @@ player **activates their remaining fighters normally**, one at a time. The playe
 who ran out may spend any unspent **Overwatch tokens** as reactions during these
 activations.
 
+At the end of the round, remove all unspent **Overwatch tokens**.
+
 Begin a new round at Step 1.
 
 ---
@@ -844,6 +846,8 @@ Overwatch compensates for numerical disadvantage.
 **Skip activation:** A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
 
 **Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
+
+**End of round:** Remove all unspent **Overwatch tokens**.
 
 #### Valid Reaction Actions
 - **Move**

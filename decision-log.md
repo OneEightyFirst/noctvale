@@ -58,6 +58,16 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-22 — Overwatch tokens expire
+
+**Decision:** Clarify that all unspent **Overwatch tokens** are removed at the
+end of each round.
+
+**Reasoning:** **Overwatch tokens** are a current-round underdog tool, not a
+banked initiative currency. Expiring unspent tokens keeps initiative tied to
+activation count, prevents hoarding, and keeps the end-of-round procedure easy
+to resolve at the table.
+
 ## 2026-06-22 — Ancestry profile descriptors
 
 **Decision:** Replace the concrete Human, Elf, and Dwarf ancestry table rows
