@@ -170,7 +170,7 @@ Before finishing any rulebook chapter:
 - [ ] **Example:** section at chapter end
 - [ ] All mechanics from source preserved — nothing dropped, nothing invented
 - [ ] Terms match style guide glossary
-- [ ] Distances use **"**; dice use **1d6** / **d6 + stat ≥ 8**
+- [ ] Distances use **"**; dice use **1d6** / named stat checks
 - [ ] Cross-refs are markdown links with readable labels
 - [ ] Shared snippets match `_shared-snippets.md` verbatim
 - [ ] No designer history, no “we changed this because”, no peer-game compare notes in player text

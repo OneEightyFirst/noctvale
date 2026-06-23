@@ -31,12 +31,19 @@ Noctvale uses these stats:
 | Sa | Sanity |
 | W | Wounds |
 
-> **Note:** Higher values are better for all stats. When making a stat check,
-> roll **1d6** and add that stat. The check succeeds if the total is **8 or
-> higher**. A natural **1** always fails, and a natural **6** always succeeds.
-> In campaign play, no stat can be raised above **6**. If a stat is reduced to
-> **1**, the fighter can no longer perform actions that require that stat; they
-> are maimed, broken, or insane.
+Higher values are better for all stats.
+
+### Stat Checks
+
+When a rule asks you to make a stat check, it names the stat being tested. A
+Might check uses **Mt**, a Skill check uses **Sk**, and so on. Roll **1d6**, add
+the fighter's corresponding stat, then apply any modifiers. The check succeeds
+if the total is **8 or higher**. A natural **1** always fails, and a natural
+**6** always succeeds.
+
+In campaign play, no stat can be raised above **6**. If a stat is reduced to
+**1**, the fighter can no longer perform actions that require that stat; they
+are maimed, broken, or insane.
 
 **Rerolls:** A die can only be rerolled once. If more than one rule allows a reroll, choose
 one; the second result stands.
@@ -227,7 +234,7 @@ Terrain](core-rules.md#difficult-terrain)).
 
 **Cost:** 1 action
 
-Move across open space up to this fighter's **M**. Roll **d6 + Sk ≥ 8**.
+Move across open space up to this fighter's **M**. Make one **Sk check**.
 
 - Cannot end **within engagement range**
 
@@ -235,7 +242,7 @@ Move across open space up to this fighter's **M**. Roll **d6 + Sk ≥ 8**.
 
 **Cost:** 1 action
 
-Attempt to leave engagement range. Roll **d6 + Sk ≥ 8**.
+Attempt to leave engagement range. Make one **Sk check**.
 
 - **Fail:** The opponent may make a **free Melee attack** using the full **Attack Sequence** — but only if they are not currently engaged with another enemy. This does not cost the opponent any actions.
 
@@ -523,7 +530,7 @@ the battle.
 
 When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
 
-At the **start of each activation**, roll one **Wi check** (d6 + Wi ≥ 8). **Pass:** remove
+At the **start of each activation**, make one **Wi check**. **Pass:** remove
 **Bleeding**. **Fail:** suffer **1 Wound**.
 
 ---
@@ -538,18 +545,18 @@ represent **Sk**. Weapons add red dice with **+Mt** and blue dice with **+Sk**.
 ### Attack Sequence
 
 Before Step 1, declare a valid enemy target. **Clustered enemies** and
-**friendly fighters in the line of fire** may change or affect targeting — see
+**friendly fighters in close combat or in the line of fire** may change or affect targeting — see
 [Intervening Fighters](core-rules.md#intervening-fighters).
 
 > ### Attack Sequence
 >
 > **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
 >
-> **Step 2 — Roll to hit:** **d6 + CC ≥ 8** (melee) or **d6 + RC ≥ 8** (ranged). **Natural 1** misses. **Natural 6** hits.
+> **Step 2 — Roll to hit:** Melee dice use **CC checks**. Ranged dice use **RC checks**.
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Roll **d6 + Mt ≥ 8** (red) or **d6 + Sk ≥ 8** (blue). Armor and shields **convert** failed defense dice into successes. *(See [Equipment](equipment.md#equipment).)*
+> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Red dice use **Mt checks**. Blue dice use **Sk checks**. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](equipment.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -580,9 +587,10 @@ A **Keen** fighter (Mt 3, Sk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red +
 
 #### Step 2: Roll to Hit
 
-Roll each die in the Strike Pool. For melee attacks, roll **d6 + CC ≥ 8**. For ranged attacks, roll **d6 + RC ≥ 8**.
+Roll each die in the Strike Pool. Melee attacks use **CC checks**. Ranged
+attacks use **RC checks**.
 
-Each die that meets the threshold is a **hit**. Hits retain their color (red hit or blue hit).
+Each passed check is a **hit**. Hits retain their color (red hit or blue hit).
 
 - A natural **1** always misses.
 - A natural **6** always hits.
@@ -614,8 +622,8 @@ Then compare **Mt** and **Sk** between attacker and defender:
 
 If the attacker's Mt or Sk exceeds the defender's, there is no penalty — the defender simply doesn't gain bonus dice for that color.
 
-For **red defense dice**, roll **d6 + Mt ≥ 8** (toughness absorbs the blow).
-For **blue defense dice**, roll **d6 + Sk ≥ 8** (reflexes deflect the blow).
+For **red defense dice**, make **Mt checks** (toughness absorbs the blow).
+For **blue defense dice**, make **Sk checks** (reflexes deflect the blow).
 
 ##### Armor & Shield Conversion
 
@@ -653,7 +661,7 @@ Critical hits **cannot be blocked** by normal defense successes. Only a **critic
 
 After Step 5, if the attack **missed** the declared enemy target and a
 **friendly fighter** was in the line of fire (firearms and damage spells only),
-apply [Friendly in the Line of Fire](core-rules.md#friendly-in-the-line-of-fire).
+apply the line-of-fire miss rule in [Friendly Fire](core-rules.md#friendly-fire).
 
 ---
 
@@ -712,16 +720,16 @@ Weapons](equipment.md#weapons).)*
 
 **Step 1:** **Keen** Strike Pool = (Mt 3 + Sword 1) red + (Sk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
 
-**Step 2:** Roll each die, adding CC 3. Need ≥ 8 (so 5+ on the die).
-- Red die 1: rolls 5 → 5 + 3 = 8 → **red hit**
-- Red die 2: rolls 2 → 2 + 3 = 5 → miss
+**Step 2:** Roll each die as a **CC check**.
+- Red die 1: rolls 5 → pass → **red hit**
+- Red die 2: rolls 2 → fail
 - Red die 3: rolls 1 → auto-miss
-- Red die 4: rolls 4 → 4 + 3 = 7 → miss
+- Red die 4: rolls 4 → fail
 - Blue die 1: rolls 6 → auto-hit → **blue hit**
-- Blue die 2: rolls 5 → 5 + 3 = 8 → **blue hit**
-- Blue die 3: rolls 4 → 4 + 3 = 7 → miss
-- Blue die 4: rolls 3 → 3 + 3 = 6 → miss
-- Blue die 5: rolls 5 → 5 + 3 = 8 → **blue hit**
+- Blue die 2: rolls 5 → pass → **blue hit**
+- Blue die 3: rolls 4 → fail
+- Blue die 4: rolls 3 → fail
+- Blue die 5: rolls 5 → pass → **blue hit**
 
 Result: 1 red hit, 3 blue hits (4 hits total)
 
@@ -734,9 +742,9 @@ Result: 1 red hit, 3 blue hits (4 hits total)
 - Total defense: 2 red dice + 1 blue die
 
 Roll defense:
-- Red die 1: d6 + Mt 4 → rolls 4 → 8 → **success**
-- Red die 2: d6 + Mt 4 → rolls 3 → 7 → fail
-- Blue die 1: d6 + Sk 3 → rolls 4 → 7 → fail
+- Red die 1: **Mt check** rolls 4 → **success**
+- Red die 2: **Mt check** rolls 3 → fail
+- Blue die 1: **Sk check** rolls 4 → fail
 
 **Armor Conversion:** The **Stout** fighter wears Medium Armor — convert 1 failed red defense die into 1 normal success. Red die 2 failed, so it becomes a **normal red success**. Blue die 1 failed but Medium Armor only converts failed red defense dice.
 
@@ -780,7 +788,20 @@ Friendly fighters (same **retinue**) do not block line of sight.
 
 Fighters may **move through** friendly fighters during **Move**, **Charge**, **Scramble**, **Climb**, and **Jump** actions. They cannot end their movement on another fighter's base.
 
-#### Friendly in the line of fire
+#### Friendly fire
+
+When declaring a target for a **Ranged** attack, if the declared enemy target is
+within engagement range of one or more friendly fighters other than the attacker,
+make one **RC check**. On a failure, the shot hits a friendly fighter instead.
+
+- If one friendly fighter is within engagement range of the declared target, that
+  fighter becomes the new target.
+- If two or more friendly fighters are within engagement range of the declared
+  target, the attacker chooses one of those friendly fighters to become the new
+  target.
+
+On a success, resolve the attack against the declared target. On a failure,
+resolve the attack normally against the new target.
 
 When making a **Ranged** attack with a **firearm** or a **Cast** action with a
 damage spell, if a **friendly fighter** lies **between** the attacker and the
@@ -792,11 +813,12 @@ to the center of the target's base crosses the friendly's base — and the attac
 
 On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
 
-This rule does not apply to **Ranged** weapon attacks (bows, crossbows, throwing weapons, etc.).
+The line-of-fire miss rule does not apply to **Ranged** weapon attacks without a
+primer roll (bows, crossbows, throwing weapons, etc.).
 
 #### Clustered enemies
 
-When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass one **Sk check** (d6 + Sk ≥ 8) to hit the intended target.
+When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass one **Sk check** to hit the intended target.
 
 - **Pass:** Resolve the attack against the declared target.
 - **Fail, one other fighter within 1":** That fighter becomes the new target instead.
@@ -820,7 +842,7 @@ Most ranged weapons have a **minimum range of 3"**. Pistols have **no minimum ra
 
 ### Falling
 
-Roll one **Sk check** (d6 + Sk ≥ 8) when a fighter falls.
+Make one **Sk check** when a fighter falls.
 
 For every **2"** fallen, roll one die.
 
@@ -901,10 +923,7 @@ If a friendly fighter is **also engaged** with the same enemy:
 
 ### Sanity Test
 
-When a Sanity test is required, roll **d6 + Sa ≥ 8**.
-
-- A natural **1** always fails.
-- A natural **6** always succeeds.
+When a Sanity test is required, make one **Sa check**.
 
 ---
 

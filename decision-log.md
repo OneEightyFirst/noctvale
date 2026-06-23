@@ -58,6 +58,22 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-23 — Named stat checks and friendly fire targeting
+
+**Decision:** Define stat checks once in `rules/core-rules.md`, then use named
+checks such as **Sk check**, **Mt check**, **Wi check**, **Sa check**, **CC
+check**, and **RC check** throughout player-facing rules and rulebook guidance.
+Add a **Friendly fire** targeting rule for **Ranged** attacks against enemies
+within engagement range of friendly fighters, while preserving the firearm and
+damage-spell line-of-fire miss rule.
+
+**Reasoning:** Named checks keep repeated rules text shorter without changing
+the underlying math: roll **1d6**, add the named stat, succeed on **8+**, with
+natural **1** and **6** handling already defined in the core rule. Separating
+close-combat friendly fire from the line-of-fire miss rule makes ranged risk
+easier to find and gives Noctvale clearer table procedure when fighters crowd
+the same melee.
+
 ## 2026-06-22 — Ancestry paragraph placement
 
 **Decision:** Keep the broad ancestry-profile introduction before the first

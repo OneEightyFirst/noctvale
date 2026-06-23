@@ -902,7 +902,7 @@ Resolve both attacks through the full **Attack Sequence** (Steps 1–4). Then ap
 ##### Warded
 
 When this fighter is the target of a hostile spell that succeeded on its
-**casting roll**, they may roll one **Wi check** (d6 + Wi ≥ 8). On a pass, the
+**casting roll**, they may make one **Wi check**. On a pass, the
 spell has no effect against this fighter.
 
 ##### Absolute Faith
@@ -930,7 +930,7 @@ When this fighter's **Melee** action immediately follows that **Charge** during 
 ##### Warded
 
 When this fighter is the target of a hostile spell that succeeded on its
-**casting roll**, they may roll one **Wi check** (d6 + Wi ≥ 8). On a pass, the
+**casting roll**, they may make one **Wi check**. On a pass, the
 spell has no effect against this fighter.
 
 ##### Conduit
@@ -1008,7 +1008,7 @@ enemy fighter, they may perform **Hurl**.
 > Choose one enemy fighter **within engagement range** of this fighter, or one
 > **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
 >
-> The chosen fighter makes a **Sk check** (d6 + Sk ≥ 8).
+> The chosen fighter makes a **Sk check**.
 >
 > - **Pass:** No effect.
 > - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
@@ -1078,7 +1078,7 @@ enemy fighter, they may perform **Hurl**.
 > Choose one enemy fighter **within engagement range** of this fighter, or one
 > **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
 >
-> The chosen fighter makes a **Sk check** (d6 + Sk ≥ 8).
+> The chosen fighter makes a **Sk check**.
 >
 > - **Pass:** No effect.
 > - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
@@ -1171,7 +1171,7 @@ enemy fighter, they may perform **Hurl**.
 > Choose one enemy fighter **within engagement range** of this fighter, or one
 > **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
 >
-> The chosen fighter makes a **Sk check** (d6 + Sk ≥ 8).
+> The chosen fighter makes a **Sk check**.
 >
 > - **Pass:** No effect.
 > - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
@@ -1382,7 +1382,7 @@ Target friendly fighter is instantly moved up to 6" in any direction. This movem
 **Casting:** Wi 11+. **Range:** 18".\
 Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.\
 
-When a fighter ends any movement in the zone, roll one **Sk check** (d6 + Sk ≥ 8). On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.\
+When a fighter ends any movement in the zone, make one **Sk check**. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.\
 **Mishap:** The blast template centers on the caster.
 
 ##### Slow
@@ -1442,7 +1442,7 @@ A fighter created by **Summon Daemon** is friendly to the caster's retinue. It c
 **Casting:** Sa 14+. **Range:** 12".\
 Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.\
 
-While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** (d6 + Mt ≥ 8) or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.\
+While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.\
 **Mishap:** The marker is placed centered on the caster instead.\
 
 ##### *(TBD)*
@@ -1472,7 +1472,7 @@ Target friendly fighter gains **Hidden**. The target does not need to remain wit
 
 ##### Venom
 **Casting:** Wi 10+. **Range:** *(TBD)*.\
-Target enemy must pass one **Mt check** (d6 + Mt ≥ 8). On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).\
+Target enemy must pass one **Mt check**. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).\
 **Mishap:** *(TBD)*
 
 ##### Feral Form
@@ -1513,7 +1513,7 @@ Target a friendly fighter that went **Out of Action** this battle. Place them wi
 
 ##### Cursed Ground
 **Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 2 Mt / 2 Sk.\
-Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check** (d6 + Sk ≥ 8).\
+Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check**.\
 **Mishap:** The blast centers on the caster.
 
 ##### Wither
@@ -1539,7 +1539,7 @@ Make a touch spell attack. If the target suffers at least 1 Wound, the caster he
 
 ##### Bleed
 **Casting:** Sa 13+. **Range:** 12".\
-Target enemy must pass one **Wi check** (d6 + Wi ≥ 8). On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).\
+Target enemy must pass one **Wi check**. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).\
 **Mishap:** The caster becomes **Bleeding** instead.
 
 ##### Blood Frenzy
@@ -1554,7 +1554,7 @@ Target friendly fighter gains +1" M and +1 Sk until the start of the caster's ne
 
 ##### Enthrall
 **Casting:** Sa 11+. **Range:** 8".\
-Target enemy must pass one **Wi check** (d6 + Wi ≥ 8) or immediately take one **Move** action in a direction chosen by the caster.\
+Target enemy must pass one **Wi check** or immediately take one **Move** action in a direction chosen by the caster.\
 **Mishap:** A friendly fighter chosen by your opponent takes the move instead.
 
 ##### Feast of Excess

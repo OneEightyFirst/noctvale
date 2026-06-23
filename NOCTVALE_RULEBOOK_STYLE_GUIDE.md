@@ -87,7 +87,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 > The fighter gains **+1 red defense die** until their next activation.
 
 **Tests**
-> Roll **d6 + Sk ≥ 8**. On a failure, …
+> Make one **Sk check**. On a failure, …
 
 **Targeting**
 > Choose an enemy fighter **within engagement range**.
@@ -153,7 +153,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | Mt | Might | red dice |
 | Sk | Skill | blue dice |
 | Wi | Will | casting (2d6 + Wi) |
-| Sa | Sanity | fear tests (d6 + Sa) |
+| Sa | Sanity | fear tests (Sa checks) |
 | W | Wounds | hit points |
 
 Spell out the name once per major section for new readers; use abbreviations everywhere else.
@@ -216,7 +216,7 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Keywords | Bold | **Caster**, **Single Shot**, **Flintlock** |
 | Archetype / Domain / Tradition | Bold when naming the choice | **Hunters** + **Nature** |
 | Stats in tables | Abbreviation caps as listed | Mt, Sk, Wi |
-| Stats in sentences | Abbreviation or spelled out — pick one per paragraph | “d6 + Sk ≥ 8” |
+| Stats in sentences | Abbreviation or spelled out — pick one per paragraph | “Sk check” |
 | Generic gear | Lowercase | sword, medium armor, musket |
 | Named gear | Title case | Widow's Tears, Silversbane |
 | File references | Backticks, lowercase path | `rules/core-rules.md` |
@@ -233,7 +233,7 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 |---|---|
 | One six-sided die | **1d6** or **d6** — prefer **1d6** when count matters (“Roll **1d6**”) |
 | Multiple dice | **2d6**, **3d6** — lowercase **d**, no space |
-| Stat check | **d6 + Sk ≥ 8** |
+| Stat check | **Sk check** |
 | Casting | **casting roll** — **2d6 + Wi** vs difficulty |
 | Gunpowder / firearms | **primer roll** — **2d6 + Sk** vs **primer difficulty** (weapon profile); **RC** governs the **Attack Sequence** to-hit roll |
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
@@ -241,7 +241,7 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Table roll | **Roll 1d6:** then table |
 | Dice colors | **red die**, **blue die** — lowercase color |
 
-**Don't:** D6, 2D6, “on a 4+” for stat checks (Noctvale uses **≥ 8** on d6+stat, or **6+** / **11+** on 2d6 rolls). Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
+**Don't:** D6, 2D6, or “on a 4+” for stat checks. After the core rule defines stat checks, use the named check: **Sk check**, **Mt check**, **Sa check**, and so on. Use **6+** / **11+** on 2d6 rolls. Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
 
 ### Measurements
 
@@ -294,7 +294,7 @@ stat, name the dice directly: **add 2 red dice to the Strike Pool**, **add 1
 blue die to the Strike Pool**, or **gain +1 red defense die**.
 
 For attack accuracy, use **add +1 to the roll to hit**. Do not write **+1 Mt**
-or **+1 red die** when the rule modifies the **d6 + CC/RC** roll.
+or **+1 red die** when the rule modifies a **CC check** or **RC check**.
 
 ---
 
@@ -428,7 +428,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 > When a fighter would want to leave engagement, they may attempt to retreat by making a Skill test, and if they fail the enemy might get to attack them.
 
 **Do**
-> **Retreat** — Attempt to leave engagement range. Roll **d6 + Sk ≥ 8**. On failure, an engaged enemy may make a **free Melee attack** if they are not engaged with another enemy.
+> **Retreat** — Attempt to leave engagement range. Make one **Sk check**. On failure, an engaged enemy may make a **free Melee attack** if they are not engaged with another enemy.
 
 ---
 
@@ -543,7 +543,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 - [ ] Terms match this glossary
 - [ ] Actions and conditions **bold** on first use in the section
 - [ ] Distances use **"** notation
-- [ ] Dice use **1d6** / **2d6** / **d6 + stat ≥ 8**; **casting roll** / **primer roll** (not **gate**)
+- [ ] Dice use **1d6** / **2d6** / named stat checks; **casting roll** / **primer roll** (not **gate**)
 - [ ] Table data not duplicated in surrounding prose
 - [ ] No superseded rules or rename callouts in player text
 - [ ] US spelling
