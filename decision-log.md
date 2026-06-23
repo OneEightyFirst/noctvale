@@ -58,6 +58,18 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-23 — GitHub Pages app deployment
+
+**Decision:** Add a GitHub Actions workflow that builds the React/Vite app from
+`app/` on pushes to `main` and publishes `app/dist` to the `gh-pages` branch.
+Include `noctvalegame.com` as the Pages custom domain and a `.nojekyll` marker
+in the built public assets.
+
+**Reasoning:** Automatic GitHub Pages deployment keeps the playtest app on a
+minimal free static-hosting path and removes the manual FTP-only publish step
+for normal app updates. Keeping the domain marker in `app/public/` ensures the
+custom domain survives branch deployments.
+
 ## 2026-06-23 — Spell Mishaps and Blinded
 
 **Decision:** Add **Blinded** as a condition: a **Blinded** fighter cannot make
