@@ -16,6 +16,16 @@ To play Noctvale, each player needs:
 
 Use the scenario rules if a battle gives different setup, terrain, deployment, objective, or reward instructions.
 
+---
+
+## Getting Started
+
+A Noctvale battle follows a simple rhythm: set the battlefield, determine initiative, alternate fighter activations, resolve actions, and track wounds and conditions until the battle ends.
+
+Scenario rules may change the setup, terrain, deployment, objectives, rewards, or end conditions for a battle. When a scenario gives a specific instruction, use the scenario rule.
+
+---
+
 ## Stats
 
 Noctvale uses these stats:
@@ -48,8 +58,6 @@ are maimed, broken, or insane.
 **Rerolls:** A die can only be rerolled once. If more than one rule allows a reroll, choose
 one; the second result stands.
 
----
-
 ### Baseline Ancestry Profiles
 
 Use the profile that best represents the fighter you put on the table.
@@ -60,6 +68,17 @@ Use the profile that best represents the fighter you put on the table.
 | **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 |
 | **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 |
 | **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 |
+
+### Stat Modifiers
+
+Bonuses and penalties to a fighter's stats from feats, Traditions, spells, and
+equipment **stack**.
+
+The total bonus or penalty to any single stat (**M**, **CC**, **RC**, **Mt**,
+**Sk**, **Wi**, or **Sa**) cannot exceed **+3** or **−3** at any time.
+
+Afflictions such as **Poisoned**, **Weakened**, and **Enfeebled** count toward
+this cap.
 
 ---
 
@@ -94,9 +113,26 @@ Starting with the player with initiative, players alternate setting up one
 deployment group at a time within their deployment zones until both retinues
 have been deployed.
 
+### Terrain
+
+Before deployment, both players should agree what each major terrain piece represents, whether it grants cover, and whether any area counts as difficult terrain.
+
+### Difficult Terrain
+
+**Difficult terrain** is **area terrain** — ground that is hard to cross but not
+impassable. Before the battle, agree which terrain pieces or board areas count
+as difficult terrain. Examples: rubble piles, long grass, marsh, woods, rocky
+ground, steep slopes, and cluttered building interiors.
+
+- Fighters cannot **Move** or **Charge** through difficult terrain.
+- Use **Scramble** to cross difficult terrain at **half M** (see [Actions —
+  Scramble](core-rules.md#scramble)).
+- **Sure Footed** and other rules may modify **Scramble** through difficult
+  terrain.
+
 ---
 
-## Action Sequence
+## Activation
 
 ### Round at a Glance
 
@@ -111,8 +147,6 @@ have been deployed.
 > **3. End of Round**
 > The round ends when every fighter who can activate has activated or has
 > skipped their activation. Then a new round begins.
-
----
 
 ### Turn Structure
 
@@ -165,8 +199,6 @@ At the end of the round, remove all unspent **Overwatch tokens**.
 
 Begin a new round at Step 1.
 
----
-
 ### Example: A Round
 
 Two retinues clash in ruined tollhouse walls. The Phoenix Guard player has four fighters still standing (**Active** or **Downed**); the Grave Wardens player has six — activation counts **4** and **6**.
@@ -179,15 +211,42 @@ The Wardens activate their **Captain**, who **Charges** a Guard spearman and use
 
 Activations continue until every eligible fighter has activated or **skipped their activation**. Then round two begins — activation counts, initiative, and Overwatch tokens are set fresh.
 
+### Ending the Battle
+
+The battle ends immediately when only one retinue has fighters remaining on
+the board. That retinue wins.
+
+#### Escape
+
+When making a **Move** action, a fighter may leave the board through any edge
+if they have enough movement to reach it. Remove the fighter from the board.
+They have **Escaped** and cannot return during this battle.
+
+An **Escaped** fighter is not **Out of Action** and does not roll on the
+Casualty Table after the battle.
+
+### Overwatch
+
+Overwatch compensates for numerical disadvantage.
+
+**Trigger:** At the start of the round, the player with the lower **activation count** receives a number of **Overwatch tokens equal to the difference**. *(See [Activation Count](core-rules.md#activation-count).)*
+
+**Skip activation:** A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
+
+**Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
+
+**End of round:** Remove all unspent **Overwatch tokens**.
+
+#### Valid Reaction Actions
+- **Move**
+- **Ranged**
+- **Charge**
+- **Melee**
+- **Retreat**
+
 ---
 
 ## Actions
-
-### Activation
-
-Each fighter has **2 actions** per activation.
-
----
 
 ### Movement Actions
 
@@ -200,7 +259,7 @@ Move up to this fighter's **M**.
 - May move through friendly fighters
 - Cannot end on another fighter's base
 
-*(See [Table Rules](core-rules.md#table-rules) — Intervening Fighters.)*
+*(See [Intervening Fighters](core-rules.md#intervening-fighters).)*
 
 #### Charge
 
@@ -211,7 +270,7 @@ Move up to this fighter's **M**. Must end **within engagement range** of an enem
 - May move through friendly fighters during the charge
 - Cannot end on another fighter's base
 
-*(See [Table Rules](core-rules.md#table-rules) — Intervening Fighters.)*
+*(See [Intervening Fighters](core-rules.md#intervening-fighters).)*
 
 #### Climb
 
@@ -225,8 +284,7 @@ Move vertically at **half M**.
 
 **Cost:** 1 action
 
-Move at **half M** through **difficult terrain** (see [Special Rules — Difficult
-Terrain](core-rules.md#difficult-terrain)).
+Move at **half M** through **difficult terrain** (see [Difficult Terrain](core-rules.md#difficult-terrain)).
 
 - Cannot end **within engagement range**
 
@@ -246,7 +304,17 @@ Attempt to leave engagement range. Make one **Sk check**.
 
 - **Fail:** The opponent may make a **free Melee attack** using the full **Attack Sequence** — but only if they are not currently engaged with another enemy. This does not cost the opponent any actions.
 
----
+#### Falling
+
+Resolve **Falling** after another rule or failed movement causes a fighter to
+fall. Do not make an additional check to avoid the fall.
+
+For every full **2"** in height the fighter falls, add **2 red dice** to a
+fall Strike Pool.
+
+The fall attacks at **CC 4+**. Roll each die in the fall Strike Pool; each
+result of **4+** is a hit. The fallen fighter rolls defense as normal against
+any hits.
 
 ### Combat Actions
 
@@ -274,7 +342,7 @@ that use this action.
 attack using the **Attack Sequence**. **Pistols:** see [Gear —
 Pistols](equipment.md#pistols) and [Feats — Gunslinger](retinue.md#gunslinger).
 
-*(See [Equipment](equipment.md) and [Special Rules](core-rules.md#table-rules).)*
+*(See [Equipment](equipment.md) and [Terrain](core-rules.md#terrain).)*
 
 #### Cast
 
@@ -312,7 +380,25 @@ The **Stunned** fighter is immediately **Out of Action**.
 
 *(See [Conditions](core-rules.md#conditions).)*
 
----
+### Engagement Rules
+
+- Engagement range is **1"**
+- There is **no facing system**
+- Fighters are treated as aware in **all directions**
+
+### Multiple Engagement
+
+When a fighter is attacking multiple enemies:
+
+- If the enemies are standing, the attacker splits their **Strike Pool** among
+  those enemies however they choose before rolling to hit
+- If one enemy is standing and another is Downed or Stunned, the **standing enemy must be prioritized**
+
+### Gang Up
+
+If a friendly fighter is **also engaged** with the same enemy:
+
+**+1 die to the Strike Pool (attacker's choice of red or blue)**
 
 ### Tactical Actions
 
@@ -337,18 +423,6 @@ While **Hidden**:
 - Cannot be targeted by **Ranged** or **Cast** actions beyond **6"**
 - Lose **Hidden** when performing any **Combat action** (**Melee**, **Ranged**, **Cast**, **Aim**, or **Mercy Kill**), **Charge**, **Climb**, **Jump**, or moving **within 6"** of an enemy
 - May still **Move**, **Scramble**, **Brace**, **Interact**, **Loot**, **Recover**, or **Help** without losing **Hidden** — as long as they remain **within 1"** of terrain
-
-#### Overwatch
-
-**Cost:** Skip the rest of this fighter's activation
-
-Give this fighter an **Overwatch token**.
-
-The token allows the fighter to perform a **single action as a reaction** when an enemy fighter completes an action.
-
-*(See [Table Rules](core-rules.md#table-rules).)*
-
----
 
 ### Interaction Actions
 
@@ -402,168 +476,92 @@ Roll **1d6:**
 
 ---
 
-### Engagement Rules
-
-- Engagement range is **1"**
-- There is **no facing system**
-- Fighters are treated as aware in **all directions**
-
----
-
-### Escape
-
-When making a **Move** action, a fighter may leave the board through any edge
-if they have enough movement to reach it. Remove the fighter from the board.
-They have **Escaped** and cannot return during this battle.
-
-An **Escaped** fighter is not **Out of Action** and does not roll on the
-Casualty Table after the battle.
-
----
-
-### Ending the Battle
-
-The battle ends immediately when only one retinue has fighters remaining on
-the board. That retinue wins.
-
----
-
-## Conditions
-
-### Wound States
-
-Fighters move through three Wound states before being removed from play.
-
-```
-Active → Downed → Stunned → Out of Action
-```
-
----
-
-### Downed
-
-A fighter reaches **Downed** when they hit 0 Wounds.
-
-**While Downed, a fighter:**
-- Cannot attack
-- Cannot perform normal actions
-- May attempt the **Recover** action
-- Retains their **full defense pool** (base 1 red + 1 blue, Mt/Sk comparisons, armor)
-
-Any **unblocked hit** on a Downed fighter pushes them to **Stunned**.
-
----
-
-### Recover Action
-
-A **Downed** fighter may spend an action to attempt recovery.
-
-Roll **1d6:**
-
-| Roll | Result |
-|---|---|
-| 1 | Become **Stunned** |
-| 2–3 | Remain **Downed** |
-| 4–5 | Stand up with **1 Wound** |
-| 6 | Stand up with **1 Wound** + perform one additional action |
-
----
-
-### Stunned
-
-A fighter becomes **Stunned** from a Recover roll of 1, or from taking an unblocked hit while Downed.
-
-**While Stunned, a fighter:**
-- Cannot move
-- Cannot act
-- Cannot attempt Recover
-- Cannot be chosen for activation while **Stunned**
-- Does not count toward **activation count**
-- Defends with **red dice only** (Mt-based defense, no blue dice)
-
-Any **unblocked hit** on a Stunned fighter pushes them to **Out of Action**.
-
-A **Mercy Kill** (within 1") bypasses defense entirely — the Stunned fighter is immediately Out of Action.
-
-If a **Stunned** fighter becomes **Active** during the round before their player
-has finished activating fighters, they may activate later this round with **1
-action**. If they become **Downed**, they may activate later this round, but can
-only use that activation to **Recover**. Do not recalculate initiative or
-**Overwatch tokens**.
-
----
-
-### Out of Action
-
-A fighter is removed from the battle. Resolve post-game consequences in the
-[Casualty Table](../campaign/campaign.md#step-2-casualty-table) and
-[Doom Table](../campaign/campaign.md#step-4-doom-table).
-
----
-
-### Help Action
-
-A friendly fighter **within 1"** may spend an action to assist a **Downed** or **Stunned** friendly fighter.
-
-Roll **1d6:**
-
-| Roll | Result |
-|---|---|
-| 1 | Fighter goes **Out of Action** |
-| 2–3 | No effect |
-| 4–5 | Fighter becomes **Downed** (if Stunned) |
-| 6 | Fighter stands with **1 Wound** |
-
----
-
-### Mercy Kill
-
-A fighter **within 1"** of a **Stunned** enemy may perform a Mercy Kill as a Combat action.
-
-The Stunned fighter is immediately **Out of Action** — no defense roll is made.
-
----
-
-### Afflictions
-
-Afflictions are battle-long debuffs unless a rule sets a shorter duration.
-
-#### Poisoned
-
-The fighter suffers **−1 Mt** for the rest of the battle.
-
-#### Weakened
-
-The fighter suffers **−1 Mt**, **−1 Sk**, and **−1" M** until the effect that
-applied **Weakened** ends. If no duration is given, **Weakened** lasts for the
-rest of the battle.
-
-#### Enfeebled
-
-The fighter suffers **−1 Mt** and **−1 Sk** until the effect that applied
-**Enfeebled** ends. If no duration is given, **Enfeebled** lasts for the rest of
-the battle.
-
-#### Bleeding
-
-When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
-
-At the **start of each activation**, make one **Wi check**. **Pass:** remove
-**Bleeding**. **Fail:** suffer **1 Wound**.
-
-#### Blinded
-
-The fighter cannot make **Melee** or **Ranged** attacks. If no duration is
-given, **Blinded** lasts until the end of the fighter's next activation.
-
----
-
 ## Combat
 
-### Red and Blue Dice
+### Might & Skill Dice
 
 Combat dice use two colors. **Red dice** represent **Mt**. **Blue dice**
 represent **Sk**. Weapons add red dice with **+Mt** and blue dice with **+Sk**.
+
+#### Strike Pool
+
+The Strike Pool is the group of red and blue dice an attacker rolls during the Attack Sequence. A fighter's **Mt** adds red dice, their **Sk** adds blue dice, and their weapon may add more red or blue dice.
+
+### Targeting, Line of Sight, and Cover
+
+#### Line of Sight and Cover
+
+**Ranged** attacks and **Cast** actions that select an enemy target require **line of sight** unless a rule says otherwise. *(See [Actions](core-rules.md#actions).)*
+
+Judge from the **firing fighter's point of view** (stoop to the firing fighter's height if needed). Use the target's body on and above its base. **Ignore** any part extending past the edge of the base (weapons, banners, cloaks, etc.).
+
+##### Line of sight
+
+If you **can see** the target from the firing fighter's viewpoint, you have **line of sight**. If you cannot see the target, you do not — the target is not a valid choice for **Ranged** or **Cast**.
+
+**Friendly fighters do not block line of sight.** Enemy fighters block line of sight normally (you must be able to see the target past them).
+
+##### Cover
+
+If **any intervening terrain** lies between the firing fighter and the target — and that terrain is **more than 1" from the firing fighter** — the target has **cover**.
+
+**Cover grants +1 blue defense die** (rolled with Sk) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard **Attack Sequence**.
+
+#### Intervening Fighters
+
+##### Friendly fighters
+
+Friendly fighters (same **retinue**) do not block line of sight.
+
+Fighters may **move through** friendly fighters during **Move**, **Charge**, **Scramble**, **Climb**, and **Jump** actions. They cannot end their movement on another fighter's base.
+
+##### Friendly fire
+
+When declaring a target for a **Ranged** attack, if the declared enemy target is
+within engagement range of one or more friendly fighters other than the attacker,
+make one **RC check**. On a failure, the shot hits a friendly fighter instead.
+
+- If one friendly fighter is within engagement range of the declared target, that
+  fighter becomes the new target.
+- If two or more friendly fighters are within engagement range of the declared
+  target, the attacker chooses one of those friendly fighters to become the new
+  target.
+
+On a success, resolve the attack against the declared target. On a failure,
+resolve the attack normally against the new target.
+
+When making a **Ranged** attack with a **firearm** or a **Cast** action with a
+damage spell, if a **friendly fighter** lies **between** the attacker and the
+declared enemy target — a straight line from the center of the attacker's base
+to the center of the target's base crosses the friendly's base — and the attack
+**misses**, roll **1d6**. On a **1**, that friendly is hit.
+
+**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no Wounds** from that action. It does not include a **Mishap** or **Misfire** (**double 1s** on the **casting roll** or **primer roll**), or a failed roll (the spell fizzles or the firearm fails to fire).
+
+On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
+
+The line-of-fire miss rule does not apply to **Ranged** weapon attacks without a
+primer roll (bows, crossbows, throwing weapons, etc.).
+
+##### Clustered enemies
+
+When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass one **Sk check** to hit the intended target.
+
+- **Pass:** Resolve the attack against the declared target.
+- **Fail, one other fighter within 1":** That fighter becomes the new target instead.
+- **Fail, two or more other fighters within 1":** Randomly select the new target from **all enemy fighters within 1"** of the declared target (including the declared target).
+
+Make the **Sk check** when the target is declared, before rolling the attack.
+
+#### Range
+
+Ranged weapons and spells have a **minimum range** and a **maximum range**.
+
+- A target **closer than the minimum range** cannot be targeted.
+- A target **beyond the maximum range** cannot be targeted.
+- There are no modifiers for distance — if the target is in range, the attack is at full effectiveness.
+
+Unless otherwise noted, ranged weapons have a **minimum range of 3"**.
 
 ### Attack Sequence
 
@@ -686,7 +684,43 @@ After Step 5, if the attack **missed** the declared enemy target and a
 **friendly fighter** was in the line of fire (firearms and damage spells only),
 apply the line-of-fire miss rule in [Friendly Fire](core-rules.md#friendly-fire).
 
----
+### The Crit Triangle
+
+Critical hits come from printed advantage rules. A natural **6** becomes a critical hit only when one of those rules applies.
+
+#### Weapon Triangle
+
+```
+Sword > Axe > Spear > Sword
+```
+
+Having advantage over the opposing weapon type grants critical hits on natural 6s. Only **Sword**, **Axe**, and **Spear** participate in the triangle.
+
+#### Magic Triangle
+
+Two separate triangles govern magic vs. magic interactions.
+
+##### Mystic Triangle
+```
+Light > Infernal > Arcane > Light
+```
+
+##### Natural Triangle
+```
+Nature > Necromancy > Blood > Nature
+```
+
+#### Firearms
+
+Firearms are fired with the **Ranged** action. They use the **primer roll** and
+gain criticals against **all targets**, regardless of weapon type. *(See [Equipment —
+Weapons](equipment.md#weapons).)*
+
+#### Outside the Triangles
+
+**Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in **Heavy Armor**). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange.
+
+The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation.
 
 ### Ranged Reaction
 
@@ -699,42 +733,6 @@ When a fighter is targeted by a **Ranged** action, the target may perform a **si
 - **Cast actions do not trigger Ranged Reactions.** Only Ranged weapon attacks trigger this rule.
 - If a fighter is targeted by **multiple Ranged attacks** in the same activation (e.g., the attacker shoots twice), the target gets **one reaction per attack**.
 - **A Ranged Reaction cannot trigger another Ranged Reaction.** Reactions only trigger from actions, not from other reactions. This prevents chains.
-
----
-
-### Weapon Triangle
-
-```
-Sword > Axe > Spear > Sword
-```
-
-Having advantage over the opposing weapon type grants critical hits on natural 6s. Only **Sword**, **Axe**, and **Spear** participate in the triangle.
-
-**Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in **Heavy Armor**). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange.
-
----
-
-### Magic Triangles
-
-Two separate triangles govern magic vs. magic interactions.
-
-#### Mystic Triangle
-```
-Light > Infernal > Arcane > Light
-```
-
-#### Natural Triangle
-```
-Nature > Necromancy > Blood > Nature
-```
-
-#### Firearms
-
-Firearms are fired with the **Ranged** action. They use the **primer roll** and
-gain criticals against **all targets**, regardless of weapon type. *(See [Gear —
-Weapons](equipment.md#weapons).)*
-
----
 
 ### Combat Example
 
@@ -781,175 +779,127 @@ The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
 
 ---
 
-## Table Rules
+## Conditions
 
-### Line of Sight and Cover
+### Wound States
 
-**Ranged** attacks and **Cast** actions that select an enemy target require **line of sight** unless a rule says otherwise. *(See core-rules.md#actions.)*
+Fighters move through three Wound states before being removed from play.
 
-Judge from the **firing fighter's point of view** (stoop to the firing fighter's height if needed). Use the target's body on and above its base. **Ignore** any part extending past the edge of the base (weapons, banners, cloaks, etc.).
+```
+Active → Downed → Stunned → Out of Action
+```
 
-#### Line of sight
+#### Active
 
-If you **can see** the target from the firing fighter's viewpoint, you have **line of sight**. If you cannot see the target, you do not — the target is not a valid choice for **Ranged** or **Cast**.
+An **Active** fighter is upright and able to act. **Active** fighters count toward their player's **activation count**.
 
-**Friendly fighters do not block line of sight.** Enemy fighters block line of sight normally (you must be able to see the target past them).
+#### Downed
 
-#### Cover
+A fighter reaches **Downed** when they hit 0 Wounds.
 
-If **any intervening terrain** lies between the firing fighter and the target — and that terrain is **more than 1" from the firing fighter** — the target has **cover**.
+**While Downed, a fighter:**
+- Cannot attack
+- Cannot perform normal actions
+- May attempt the **Recover** action
+- Retains their **full defense pool** (base 1 red + 1 blue, Mt/Sk comparisons, armor)
 
-**Cover grants +1 blue defense die** (rolled with Sk) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard **Attack Sequence**.
+Any **unblocked hit** on a Downed fighter pushes them to **Stunned**.
 
----
+#### Stunned
 
-### Intervening Fighters
+A fighter becomes **Stunned** from a Recover roll of 1, or from taking an unblocked hit while Downed.
 
-#### Friendly fighters
+**While Stunned, a fighter:**
+- Cannot move
+- Cannot act
+- Cannot attempt Recover
+- Cannot be chosen for activation while **Stunned**
+- Does not count toward **activation count**
+- Defends with **red dice only** (Mt-based defense, no blue dice)
 
-Friendly fighters (same **retinue**) do not block line of sight.
+Any **unblocked hit** on a Stunned fighter pushes them to **Out of Action**.
 
-Fighters may **move through** friendly fighters during **Move**, **Charge**, **Scramble**, **Climb**, and **Jump** actions. They cannot end their movement on another fighter's base.
+A **Mercy Kill** (within 1") bypasses defense entirely — the Stunned fighter is immediately Out of Action.
 
-#### Friendly fire
+If a **Stunned** fighter becomes **Active** during the round before their player
+has finished activating fighters, they may activate later this round with **1
+action**. If they become **Downed**, they may activate later this round, but can
+only use that activation to **Recover**. Do not recalculate initiative or
+**Overwatch tokens**.
 
-When declaring a target for a **Ranged** attack, if the declared enemy target is
-within engagement range of one or more friendly fighters other than the attacker,
-make one **RC check**. On a failure, the shot hits a friendly fighter instead.
+#### Out of Action
 
-- If one friendly fighter is within engagement range of the declared target, that
-  fighter becomes the new target.
-- If two or more friendly fighters are within engagement range of the declared
-  target, the attacker chooses one of those friendly fighters to become the new
-  target.
+A fighter is removed from the battle. Resolve post-game consequences in the
+[Casualty Table](../campaign/campaign.md#step-2-casualty-table) and
+[Doom Table](../campaign/campaign.md#step-4-doom-table).
 
-On a success, resolve the attack against the declared target. On a failure,
-resolve the attack normally against the new target.
+### Wound State Actions
 
-When making a **Ranged** attack with a **firearm** or a **Cast** action with a
-damage spell, if a **friendly fighter** lies **between** the attacker and the
-declared enemy target — a straight line from the center of the attacker's base
-to the center of the target's base crosses the friendly's base — and the attack
-**misses**, roll **1d6**. On a **1**, that friendly is hit.
+#### Recover Action
 
-**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no Wounds** from that action. It does not include a **Mishap** or **Misfire** (**double 1s** on the **casting roll** or **primer roll**), or a failed roll (the spell fizzles or the firearm fails to fire).
+A **Downed** fighter may spend an action to attempt recovery.
 
-On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
+Roll **1d6:**
 
-The line-of-fire miss rule does not apply to **Ranged** weapon attacks without a
-primer roll (bows, crossbows, throwing weapons, etc.).
+| Roll | Result |
+|---|---|
+| 1 | Become **Stunned** |
+| 2–3 | Remain **Downed** |
+| 4–5 | Stand up with **1 Wound** |
+| 6 | Stand up with **1 Wound** + perform one additional action |
 
-#### Clustered enemies
+#### Help Action
 
-When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass one **Sk check** to hit the intended target.
+A friendly fighter **within 1"** may spend an action to assist a **Downed** or **Stunned** friendly fighter.
 
-- **Pass:** Resolve the attack against the declared target.
-- **Fail, one other fighter within 1":** That fighter becomes the new target instead.
-- **Fail, two or more other fighters within 1":** Randomly select the new target from **all enemy fighters within 1"** of the declared target (including the declared target).
+Roll **1d6:**
 
-Make the **Sk check** when the target is declared, before rolling the attack.
+| Roll | Result |
+|---|---|
+| 1 | Fighter goes **Out of Action** |
+| 2–3 | No effect |
+| 4–5 | Fighter becomes **Downed** (if Stunned) |
+| 6 | Fighter stands with **1 Wound** |
 
----
+#### Mercy Kill
 
-### Range
+A fighter **within 1"** of a **Stunned** enemy may perform a Mercy Kill as a Combat action.
 
-Ranged weapons and spells have a **minimum range** and a **maximum range**.
+The Stunned fighter is immediately **Out of Action** — no defense roll is made.
 
-- A target **closer than the minimum range** cannot be targeted.
-- A target **beyond the maximum range** cannot be targeted.
-- There are no modifiers for distance — if the target is in range, the attack is at full effectiveness.
+### Afflictions
 
-Unless otherwise noted, ranged weapons have a **minimum range of 3"**.
+Afflictions are battle-long debuffs unless a rule sets a shorter duration.
 
----
+#### Poisoned
 
-### Falling
+The fighter suffers **−1 Mt** for the rest of the battle.
 
-Resolve **Falling** after another rule or failed movement causes a fighter to
-fall. Do not make an additional check to avoid the fall.
+#### Weakened
 
-For every full **2"** in height the fighter falls, add **2 red dice** to a
-fall Strike Pool.
+The fighter suffers **−1 Mt**, **−1 Sk**, and **−1" M** until the effect that
+applied **Weakened** ends. If no duration is given, **Weakened** lasts for the
+rest of the battle.
 
-The fall attacks at **CC 4+**. Roll each die in the fall Strike Pool; each
-result of **4+** is a hit. The fallen fighter rolls defense as normal against
-any hits.
+#### Enfeebled
 
----
+The fighter suffers **−1 Mt** and **−1 Sk** until the effect that applied
+**Enfeebled** ends. If no duration is given, **Enfeebled** lasts for the rest of
+the battle.
 
-### Multiple Engagement
+#### Bleeding
 
-When a fighter is attacking multiple enemies:
+When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
 
-- If the enemies are standing, the attacker splits their **Strike Pool** among
-  those enemies however they choose before rolling to hit
-- If one enemy is standing and another is Downed or Stunned, the **standing enemy must be prioritized**
+At the **start of each activation**, make one **Wi check**. **Pass:** remove
+**Bleeding**. **Fail:** suffer **1 Wound**.
 
----
+#### Blinded
 
-### Overwatch
+The fighter cannot make **Melee** or **Ranged** attacks. If no duration is
+given, **Blinded** lasts until the end of the fighter's next activation.
 
-Overwatch compensates for numerical disadvantage.
-
-**Trigger:** At the start of the round, the player with the lower **activation count** receives a number of **Overwatch tokens equal to the difference**. *(See [Actions — Activation Count](core-rules.md#activation-count).)*
-
-**Skip activation:** A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
-
-**Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
-
-**End of round:** Remove all unspent **Overwatch tokens**.
-
-#### Valid Reaction Actions
-- **Move**
-- **Ranged**
-- **Charge**
-- **Melee**
-- **Retreat**
-
----
-
-### Difficult Terrain
-
-**Difficult terrain** is **area terrain** — ground that is hard to cross but not
-impassable. Before the battle, agree which terrain pieces or board areas count
-as difficult terrain. Examples: rubble piles, long grass, marsh, woods, rocky
-ground, steep slopes, and cluttered building interiors.
-
-- Fighters cannot **Move** or **Charge** through difficult terrain.
-- Use **Scramble** to cross difficult terrain at **half M** (see [Actions —
-  Scramble](core-rules.md#scramble)).
-- **Sure Footed** and other rules may modify **Scramble** through difficult
-  terrain.
-
-*Compare: Mordheim — half speed over difficult ground; Necromunda — each **1"**
-moved across difficult terrain costs **2"** of movement.*
-
----
-
-### Stat Modifiers
-
-Bonuses and penalties to a fighter's stats from feats, Traditions, spells, and
-equipment **stack**.
-
-The total bonus or penalty to any single stat (**M**, **CC**, **RC**, **Mt**,
-**Sk**, **Wi**, or **Sa**) cannot exceed **+3** or **−3** at any time.
-
-Afflictions such as **Poisoned**, **Weakened**, and **Enfeebled** count toward
-this cap.
-
----
-
-### Gang Up
-
-If a friendly fighter is **also engaged** with the same enemy:
-
-**+1 die to the Strike Pool (attacker's choice of red or blue)**
-
----
-
-## Sanity
-
-### Fear, Panic, and Insanity
+#### Fear, Panic, and Insanity
 
 Fighters and effects that frighten others **project Fear**, **project Panic**,
 or **project Insanity** — they are the **source** of that effect.
@@ -960,19 +910,15 @@ must pass a Sanity test.
 A rule that projects **Fear**, **Panic**, or **Insanity** must state its range or
 trigger.
 
-### Fear
+#### Fear
 
 Measure the distance between the active fighter and the source of the fear. That fighter may not move closer than that distance or end its activation closer than that distance. The fighter may still act otherwise — shoot, fight if already engaged, cast spells, retreat, etc.
 
----
-
-### Panic
+#### Panic
 
 In addition to the effects of **Fear**, the fighter must spend at least **1 action** moving their full movement directly away from the source.
 
----
-
-### Insanity
+#### Insanity
 
 Roll on the **Insanity Table (1d6)**:
 
@@ -981,9 +927,7 @@ Roll on the **Insanity Table (1d6)**:
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
 - 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but subtract **1** from the roll to hit. If their primary weapon is ranged, they spend both actions firing at the source and subtract **1** from the roll to hit.
 
----
-
-### Fearless
+#### Fearless
 
 A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. They never test and are never affected.
 

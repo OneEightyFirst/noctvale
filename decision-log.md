@@ -58,6 +58,24 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-23 — Core Rules Outline Reorganization
+
+**Decision:** Reorganize the opening rulebook structure around a literary
+outline: **Intro**, **Core Rules**, and later **Retinues**. Within **Core
+Rules**, move existing material into the new reader flow: **What You Need to
+Play**, **Getting Started**, **Stats**, **Battle Setup**, **Activation**,
+**Actions**, **Combat**, and **Conditions**. Keep only battlefield terrain setup
+and **Difficult Terrain** under **Battle Setup**; keep targeting, line of sight,
+cover, friendly fire, clustered enemies, and range under **Combat**. Rename
+`intro.md`'s backstory heading to **The Backstory** and update internal routing
+references for the moved anchors.
+
+**Reasoning:** The rulebook needs a clearer top-level reading order before the
+rules pages are split into smaller generated pages. Organizing the current text
+around the intended outline makes the future navigation model easier to build
+without changing the underlying mechanics, and keeping targeting rules in
+**Combat** preserves their point-of-use context for attacks.
+
 ## 2026-06-23 — Explicit Sanity Projection Ranges
 
 **Decision:** Remove the default **Fear**, **Panic**, and **Insanity** trigger

@@ -6,7 +6,7 @@
 
 Noctvale is a grimdark tabletop skirmish miniatures game where small retinues clash across cursed lands in search of powerful Relics. Combat is lethal, retinues grow through campaign play, and Survival Rolls carry both rewards and danger.
 
-## Backstory
+## The Backstory
 
 ### The Fall of the Realm
 

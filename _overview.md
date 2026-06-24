@@ -28,9 +28,10 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | Stats & Species Profiles | `rules/core-rules.md` |
 | Combat (Red/Blue Dice Pool, Crits, Defense) | `rules/core-rules.md#combat` |
 | Conditions (Downed, Stunned, Out of Action) | `rules/core-rules.md#conditions` |
-| Sanity (Fear, Panic, Insanity) | `rules/core-rules.md#sanity` |
+| Sanity (Fear, Panic, Insanity) | `rules/core-rules.md#fear-panic-and-insanity` |
 | Actions & Engagement | `rules/core-rules.md#actions` |
-| Special Rules (LoS, Cover, Overwatch, etc.) | `rules/core-rules.md#table-rules` |
+| Terrain and Difficult Terrain | `rules/core-rules.md#terrain` |
+| Targeting, LoS, Cover, Friendly Fire | `rules/core-rules.md#targeting-line-of-sight-and-cover` |
 | Magic System (casting, triangles, spell lists) | `rules/retinue.md#magic` |
 | Creature & Special Fighter Profiles | `rules/retinue.md#shared-profiles` |
 | Companions | `rules/equipment.md#companions` |

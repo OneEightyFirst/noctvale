@@ -37,7 +37,7 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 
 ## Phase 2b: Line of Sight, Cover & Targeting
 
-Rules in `rules/core-rules.md#table-rules`; cross-refs in the action and combat sections of `rules/core-rules.md`.
+Rules in `rules/core-rules.md#terrain`; cross-refs in the action and combat sections of `rules/core-rules.md`.
 
 - [x] Line of sight: visible-or-not from firing fighter's PoV; ignore past-base overhang
 - [x] Cover: any intervening terrain between shooter and target (terrain >1" from shooter) → +1 blue defense die

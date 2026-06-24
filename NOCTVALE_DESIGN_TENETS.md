@@ -193,7 +193,7 @@ See `decision-log.md` Ideas for unresolved design decisions.
 
 - **Death Trigger:** On Out of Action — morale, faction payoff, environmental response.
 - **Feat system:** Domain feat lists — serve Tenet 2 within Tenet 3's complexity budget.
-- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/core-rules.md#sanity`).
+- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/core-rules.md#fear-panic-and-insanity`).
 
 ---
 
