@@ -9,6 +9,158 @@ export const DOCUMENT_DEFS = [
   { id: "campaign", label: "Campaign", category: "Campaign", path: "campaign/campaign.md", html: "campaign.html" },
 ];
 
+const RULES_OUTLINE = [
+  {
+    label: "Noctvale",
+    articleId: "intro",
+    children: [
+      {
+        label: "Intro",
+        articleId: "intro",
+        children: [
+          { label: "What Is Noctvale?", articleId: "intro", anchor: "what-is-noctvale" },
+          { label: "The Backstory", articleId: "intro", anchor: "the-backstory" },
+        ],
+      },
+      {
+        label: "Core Rules",
+        articleId: "core-rules",
+        children: [
+          { label: "What You Need to Play", articleId: "core-rules", anchor: "what-you-need-to-play" },
+          { label: "Getting Started", articleId: "core-rules", anchor: "getting-started" },
+          {
+            label: "Stats",
+            articleId: "core-rules",
+            anchor: "stats",
+            children: [
+              { label: "Stat Modifiers", articleId: "core-rules", anchor: "stat-modifiers" },
+            ],
+          },
+          {
+            label: "Battle Setup",
+            articleId: "core-rules",
+            anchor: "battle-setup",
+            children: [
+              { label: "Terrain", articleId: "core-rules", anchor: "terrain" },
+              { label: "Difficult Terrain", articleId: "core-rules", anchor: "difficult-terrain" },
+            ],
+          },
+          {
+            label: "Activation",
+            articleId: "core-rules",
+            anchor: "activation",
+            children: [
+              { label: "Round at a Glance", articleId: "core-rules", anchor: "round-at-a-glance" },
+              { label: "Turn Structure", articleId: "core-rules", anchor: "turn-structure" },
+              { label: "Example Round", articleId: "core-rules", anchor: "example-a-round" },
+              {
+                label: "Ending the Battle",
+                articleId: "core-rules",
+                anchor: "ending-the-battle",
+                children: [
+                  { label: "Escape", articleId: "core-rules", anchor: "escape" },
+                ],
+              },
+              { label: "Overwatch", articleId: "core-rules", anchor: "overwatch" },
+            ],
+          },
+          {
+            label: "Actions",
+            articleId: "core-rules",
+            anchor: "actions",
+            children: [
+              {
+                label: "Movement Actions",
+                articleId: "core-rules",
+                anchor: "movement-actions",
+                children: [
+                  { label: "Falling", articleId: "core-rules", anchor: "falling" },
+                ],
+              },
+              {
+                label: "Combat Actions",
+                articleId: "core-rules",
+                anchor: "combat-actions",
+                children: [
+                  { label: "Engagement Rules", articleId: "core-rules", anchor: "engagement-rules" },
+                  { label: "Multiple Engagement", articleId: "core-rules", anchor: "multiple-engagement" },
+                  { label: "Gang Up", articleId: "core-rules", anchor: "gang-up" },
+                ],
+              },
+              { label: "Tactical Actions", articleId: "core-rules", anchor: "tactical-actions" },
+              { label: "Interaction Actions", articleId: "core-rules", anchor: "interaction-actions" },
+            ],
+          },
+          {
+            label: "Combat",
+            articleId: "core-rules",
+            anchor: "combat",
+            children: [
+              {
+                label: "Might & Skill Dice",
+                articleId: "core-rules",
+                anchor: "might-skill-dice",
+                children: [
+                  { label: "Strike Pool", articleId: "core-rules", anchor: "strike-pool" },
+                ],
+              },
+              { label: "Attack Sequence", articleId: "core-rules", anchor: "attack-sequence" },
+              {
+                label: "The Crit Triangle",
+                articleId: "core-rules",
+                anchor: "the-crit-triangle",
+                children: [
+                  { label: "The Weapon Triangle", articleId: "core-rules", anchor: "weapon-triangle" },
+                  { label: "The Magic Triangle", articleId: "core-rules", anchor: "magic-triangle" },
+                  { label: "Firearms", articleId: "core-rules", anchor: "firearms" },
+                  { label: "Outside the Triangles", articleId: "core-rules", anchor: "outside-the-triangles" },
+                ],
+              },
+              { label: "Ranged Reaction", articleId: "core-rules", anchor: "ranged-reaction" },
+              { label: "Example Combat", articleId: "core-rules", anchor: "combat-example" },
+            ],
+          },
+          {
+            label: "Conditions",
+            articleId: "core-rules",
+            anchor: "conditions",
+            children: [
+              {
+                label: "Wound States",
+                articleId: "core-rules",
+                anchor: "wound-states",
+                children: [
+                  { label: "Active", articleId: "core-rules", anchor: "active" },
+                  { label: "Downed", articleId: "core-rules", anchor: "downed" },
+                  { label: "Stunned", articleId: "core-rules", anchor: "stunned" },
+                  { label: "Out of Action", articleId: "core-rules", anchor: "out-of-action" },
+                ],
+              },
+              {
+                label: "Afflictions",
+                articleId: "core-rules",
+                anchor: "afflictions",
+                children: [
+                  { label: "Poisoned", articleId: "core-rules", anchor: "poisoned" },
+                  { label: "Weakened", articleId: "core-rules", anchor: "weakened" },
+                  { label: "Enfeebled", articleId: "core-rules", anchor: "enfeebled" },
+                  { label: "Bleeding", articleId: "core-rules", anchor: "bleeding" },
+                  { label: "Blinded", articleId: "core-rules", anchor: "blinded" },
+                  { label: "Fear", articleId: "core-rules", anchor: "fear" },
+                  { label: "Panic", articleId: "core-rules", anchor: "panic" },
+                  { label: "Insanity", articleId: "core-rules", anchor: "insanity" },
+                  { label: "Fearless", articleId: "core-rules", anchor: "fearless" },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      { label: "Retinues", articleId: "retinue" },
+    ],
+  },
+];
+
 export function stripMarkdown(value = "") {
   return value
     .replace(/`([^`]+)`/g, "$1")
@@ -192,11 +344,28 @@ export function loadArticles(repoRoot) {
 }
 
 export function buildNavTree(articles) {
-  return articles.map((article) => ({
-    id: `nav-${article.id}`,
-    label: article.label,
-    articleId: article.id,
-    html: article.html,
-    children: article.navChildren,
-  }));
+  const articlesById = new Map(articles.map((article) => [article.id, article]));
+
+  function buildOutlineNode(node, path = []) {
+    const article = articlesById.get(node.articleId);
+    if (!article) {
+      throw new Error(`Rules outline references unknown article: ${node.articleId}`);
+    }
+
+    if (node.anchor && !article.headings.some((heading) => heading.anchor === node.anchor)) {
+      throw new Error(`Rules outline references missing anchor: ${node.articleId}#${node.anchor}`);
+    }
+
+    const idParts = [...path, slugify(node.label)];
+    return {
+      id: `nav-${idParts.join("-")}`,
+      label: node.label,
+      articleId: node.articleId,
+      html: article.html,
+      anchor: node.anchor,
+      children: node.children?.map((child) => buildOutlineNode(child, idParts)) ?? [],
+    };
+  }
+
+  return RULES_OUTLINE.map((node) => buildOutlineNode(node));
 }

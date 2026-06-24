@@ -58,6 +58,20 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-23 — Outline-Driven Rules Navigation
+
+**Decision:** Change the generated rules sidebar from automatic heading
+mirroring to an explicit nested rules outline. The outline currently exposes
+**Intro**, **Core Rules**, and **Retinues**, with **Core Rules** nested according
+to the approved reader flow. Keep literary-outline letters and numerals out of
+the visible nav labels while preserving their hierarchy. Validate article IDs
+and anchors during the rules build so missing links fail fast.
+
+**Reasoning:** The rules pages need navigation that reflects the intended
+rulebook structure, not every Markdown heading in source order. An explicit
+outline gives the page split/refactor a stable source for future clean URLs,
+while anchor validation keeps the nav synchronized with the live Markdown.
+
 ## 2026-06-23 — Core Rules Outline Reorganization
 
 **Decision:** Reorganize the opening rulebook structure around a literary
