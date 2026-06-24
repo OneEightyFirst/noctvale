@@ -370,7 +370,16 @@ Search a building for valuables.
 
 **Cost:** 1 action
 
-Attempt to stand up from **Downed**.
+A **Downed** fighter may spend an action to attempt recovery.
+
+Roll **1d6:**
+
+| Roll | Result |
+|---|---|
+| 1 | Become **Stunned** |
+| 2–3 | Remain **Downed** |
+| 4–5 | Stand up with **1 Wound** |
+| 6 | Stand up with **1 Wound** + perform one additional action |
 
 *(See [Conditions](core-rules.md#conditions).)*
 
@@ -379,6 +388,15 @@ Attempt to stand up from **Downed**.
 **Cost:** 1 action
 
 Assist a **Downed** or **Stunned** friendly fighter **within 1"**.
+
+Roll **1d6:**
+
+| Roll | Result |
+|---|---|
+| 1 | Fighter goes **Out of Action** |
+| 2–3 | No effect |
+| 4–5 | Fighter becomes **Downed** (if Stunned) |
+| 6 | Fighter stands with **1 Wound** |
 
 *(See [Conditions](core-rules.md#conditions).)*
 
@@ -438,7 +456,7 @@ Any **unblocked hit** on a Downed fighter pushes them to **Stunned**.
 
 ### Recover Action
 
-A Downed fighter may spend an action to attempt recovery.
+A **Downed** fighter may spend an action to attempt recovery.
 
 Roll **1d6:**
 
@@ -841,17 +859,21 @@ Ranged weapons and spells have a **minimum range** and a **maximum range**.
 - A target **beyond the maximum range** cannot be targeted.
 - There are no modifiers for distance — if the target is in range, the attack is at full effectiveness.
 
-Most ranged weapons have a **minimum range of 3"**. Pistols have **no minimum range**.
+Unless otherwise noted, ranged weapons have a **minimum range of 3"**.
 
 ---
 
 ### Falling
 
-Make one **Sk check** when a fighter falls.
+Resolve **Falling** after another rule or failed movement causes a fighter to
+fall. Do not make an additional check to avoid the fall.
 
-For every **2"** fallen, roll one die.
+For every full **2"** in height the fighter falls, add **2 red dice** to a
+fall Strike Pool.
 
-Each result of **4+** causes **1 Wound**.
+The fall attacks at **CC 4+**. Roll each die in the fall Strike Pool; each
+result of **4+** is a hit. The fallen fighter rolls defense as normal against
+any hits.
 
 ---
 
@@ -859,7 +881,8 @@ Each result of **4+** causes **1 Wound**.
 
 When a fighter is attacking multiple enemies:
 
-- Attacks may be **split** among standing enemies
+- If the enemies are standing, the attacker splits their **Strike Pool** among
+  those enemies however they choose before rolling to hit
 - If one enemy is standing and another is Downed or Stunned, the **standing enemy must be prioritized**
 
 ---
@@ -926,12 +949,6 @@ If a friendly fighter is **also engaged** with the same enemy:
 
 ## Sanity
 
-### Sanity Test
-
-When a Sanity test is required, make one **Sa check**.
-
----
-
 ### Fear, Panic, and Insanity
 
 Fighters and effects that frighten others **project Fear**, **project Panic**,
@@ -940,43 +957,18 @@ or **project Insanity** — they are the **source** of that effect.
 When a fighter activates within range and line of sight of such a source, they
 must pass a Sanity test.
 
-#### Default Range
-
-The default trigger range is **6" + line of sight**. Fighters and spells may specify a different range or restrict the trigger to **melee only** (charging or being charged).
-
-#### Projection notation
-
-Profile and spell lines use this shorthand for what a source projects:
-
-- `Fear` — Fear (6", LoS), the default
-- `Fear (melee)` — only when charging or charged
-- `Fear (12")` — extended range
-- Same format for `Panic` and `Insanity`
-
-#### Pass
-
-The fighter is **immune to that specific source** for the rest of the game. They do not test against it again.
-
-#### Fail
-
-The effect applies immediately (see below). At the **start of the fighter's next activation**, before spending any actions, they test again:
-
-- **Pass:** Act normally this activation.
-- **Fail:** The effect applies again.
-
-This repeats each activation until the fighter passes or the source is removed.
-
----
+A rule that projects **Fear**, **Panic**, or **Insanity** must state its range or
+trigger.
 
 ### Fear
 
-Cannot move **closer to the source** of fear for the rest of this activation. The fighter may still act otherwise — shoot, fight if already engaged, cast spells, retreat, etc.
+Measure the distance between the active fighter and the source of the fear. That fighter may not move closer than that distance or end its activation closer than that distance. The fighter may still act otherwise — shoot, fight if already engaged, cast spells, retreat, etc.
 
 ---
 
 ### Panic
 
-Cannot move **closer to the source** of panic. In addition, the fighter must spend **at least 1 action** moving their full movement **directly away** from the source.
+In addition to the effects of **Fear**, the fighter must spend at least **1 action** moving their full movement directly away from the source.
 
 ---
 

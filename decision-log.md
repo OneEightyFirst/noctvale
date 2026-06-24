@@ -58,6 +58,40 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-23 — Explicit Sanity Projection Ranges
+
+**Decision:** Remove the default **Fear**, **Panic**, and **Insanity** trigger
+range. Rules that project a Sanity effect must print their own range or trigger.
+Move projection-notation guidance to `background-notes.md`. Remove the rule that
+a passed Sanity test grants immunity to that source for the rest of the game,
+and remove the repeated fail-loop procedure. Rewrite **Fear** as a distance lock:
+measure from the active fighter to the source, and the fighter cannot move or
+end closer than that measured distance. Rewrite **Panic** to include all effects
+of **Fear** plus a required full movement directly away from the source. Update
+**Hellknights**, **Sepulchers**, **Ironbound**, and **Shield of Faith** to project
+**Fear (6")** explicitly.
+
+**Reasoning:** Sanity effects should not inherit hidden range from a core
+default. Printing the range on each source keeps retinue abilities and spells
+self-contained and makes future exceptions easier to read at the table. Keeping
+notation guidance internal leaves the player-facing Sanity section focused on
+what to do when a test is failed, and removing source immunity keeps ongoing
+Sanity pressure tied to the effect text itself instead of a separate repeat-test
+subsystem.
+
+## 2026-06-23 — Falling Strike Pool
+
+**Decision:** Replace the **Falling** avoidance check and flat Wound roll with a
+height-based fall Strike Pool. For every full **2"** fallen, the fall adds **2
+red dice**; those dice attack at **CC 4+**, and the fallen fighter defends as
+normal. Update **Acrobat** so a passed check skips **Falling** entirely.
+
+**Reasoning:** **Falling** is a consequence after another failed movement or
+rule, not a second chance to avoid that consequence. Resolving the fall through
+the existing Strike Pool and defense framework keeps the rule fast, lets armor
+and defense matter naturally, and scales danger with height without adding a
+separate mini-system.
+
 ## 2026-06-23 — GitHub Pages app deployment
 
 **Decision:** Add a GitHub Actions workflow that builds the React/Vite app from

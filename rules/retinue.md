@@ -520,7 +520,7 @@ and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
 recruited normally; they enter battle through **Summon Daemon**.
 
 **Hellknights:** Armor and shields bought by fighters with the **Hellknights** keyword cost **+10 Crowns**.
-Friendly fighters wearing armor **project Fear**.
+Friendly fighters wearing armor **project Fear (6")**.
 
 **Damned:** Fighters with the **Damned** keyword who lack **Caster** cost **−10 Crowns**. When
 rolling on the Casualty Table for one of those fighters, subtract **1** from the
@@ -572,7 +572,7 @@ gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
 See [Shared Profiles](retinue.md#shared-profiles).
 
 **Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
-fighter **projects Fear**.
+fighter **projects Fear (6")**.
 
 **Wightlords:** All fighters with the **Wightlords** keyword cost **+20 Crowns** and gain **Undead** and
 **Fearless**.
@@ -620,7 +620,7 @@ of a friendly fighter from this retinue.
 consumables without rolling on the **Shadow Market** table.
 
 **Ironbound:** Friendly fighters within **1"** of at least one other friendly
-fighter **project Fear**.
+fighter **project Fear (6")**.
 
 ---
 
@@ -987,7 +987,7 @@ ties).
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, they take no Wounds from the fall. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
@@ -1057,7 +1057,7 @@ ties).
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, they take no Wounds from the fall. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
@@ -1150,7 +1150,7 @@ ties).
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, they take no Wounds from the fall. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
@@ -1220,7 +1220,7 @@ Enemy **Casters** cannot perform the **Cast** action while **within 6"** of this
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, they take no Wounds from the fall. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
@@ -1339,7 +1339,7 @@ All fighters within the blast are hit.\
 
 ##### Shield of Faith
 **Casting:** Wi 11+. **Range:** 12".\
-Target friendly fighter gains +2 red defense dice and **projects Fear** until the start of the caster's next activation.
+Target friendly fighter gains +2 red defense dice and **projects Fear (6")** until the start of the caster's next activation.
 
 ##### Horrors Relived
 **Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.\

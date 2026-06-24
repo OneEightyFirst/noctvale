@@ -242,7 +242,7 @@ export const TRADITIONS = [
     allowed: ["knights", "hunters"],
     rules: [
       "Armor bought by fighters with the Hellknights keyword costs +10 Crowns.",
-      "Friendly fighters wearing armor project Fear.",
+      `Friendly fighters wearing armor project Fear (6").`,
     ],
   },
   {
@@ -344,7 +344,7 @@ export const TRADITIONS = [
     name: "Sepulchers",
     domain: "Necromancy",
     allowed: ["knights", "folk"],
-    rules: ["While a friendly fighter is Downed or Stunned, that fighter projects Fear."],
+    rules: [`While a friendly fighter is Downed or Stunned, that fighter projects Fear (6").`],
   },
   {
     id: "wightlords",
@@ -420,7 +420,7 @@ export const TRADITIONS = [
     name: "Ironbound",
     domain: "Mortal",
     allowed: ["knights"],
-    rules: [`Friendly fighters within 1" of at least one other friendly fighter project Fear.`],
+    rules: [`Friendly fighters within 1" of at least one other friendly fighter project Fear (6").`],
   },
 ];
 
@@ -659,7 +659,7 @@ export const UNIVERSAL_FEATS = [
 
 export const DOMAIN_FEATS = [
   { id: "infiltrate", name: "Infiltrate", domains: ["Nature", "Blood", "Infernal"], rules: ["If this fighter would be set up during deployment, they may be held in reserve off the board instead.", `Immediately before the start of the first round, their controlling player may set them up anywhere on the battlefield where no enemy fighter has line of sight to them and they are not within 12" of any enemy fighter.`, "If both players have fighters with Infiltrate, alternate placing one fighter at a time, starting with the winner of a roll-off."] },
-  { id: "acrobat", name: "Acrobat", domains: ["Mortal", "Nature", "Blood", "Infernal"], rules: [`When this fighter falls or lands from a Jump from a height of up to 12", roll one Sk check. On a pass, they take no Wounds from the fall. On a fail, resolve Falling as normal.`, `This fighter may perform a Diving Charge from a height of up to 6" above the target.`, "Diving Charge: Treat as Charge, but before moving roll one Sk check. Pass: resolve the Charge normally. Fail: the Charge fails and Falling resolves from the full height.", "This fighter may reroll a failed Diving Charge Sk check and must accept the second result."] },
+  { id: "acrobat", name: "Acrobat", domains: ["Mortal", "Nature", "Blood", "Infernal"], rules: [`When this fighter falls or lands from a Jump from a height of up to 12", roll one Sk check. On a pass, do not resolve Falling. On a fail, resolve Falling as normal.`, `This fighter may perform a Diving Charge from a height of up to 6" above the target.`, "Diving Charge: Treat as Charge, but before moving roll one Sk check. Pass: resolve the Charge normally. Fail: the Charge fails and Falling resolves from the full height.", "This fighter may reroll a failed Diving Charge Sk check and must accept the second result."] },
   { id: "lightning-reflexes", name: "Lightning Reflexes", domains: ["Mortal", "Light"], rules: ["When this fighter is targeted by a Melee action that immediately follows the attacker's Charge during the same activation, they may make 1 free Melee attack against that attacker before either attack applies Wounds.", "Resolve both attacks through the full Attack Sequence. Then apply Wounds, Downed, Stunned, and Out of Action results from both attacks together."] },
   { id: "warded", name: "Warded", domains: ["Light", "Arcane"], rules: ["When this fighter is the target of a hostile spell that succeeded on its casting roll, they may roll one Wi check (d6 + Wi ≥ 8). On a pass, the spell has no effect against this fighter."] },
   { id: "heave", name: "Heave", domains: ["Nature", "Blood", "Infernal"], rules: ["While this fighter is Active and within engagement range of at least one enemy fighter, they may perform Hurl.", `Hurl costs 1 action. Choose one enemy fighter within engagement range, or one Downed or Stunned enemy fighter within 1". The target makes a Sk check (d6 + Sk ≥ 8).`, `On fail, move the target d3" in a direction you choose. Active and Downed targets become Stunned after moving. Stunned targets remain Stunned.`, "If the move stops because their base contacts terrain or an Active fighter's base, they suffer 1 hit at 2 Mt / 1 Sk. If another fighter's base is involved, that fighter also suffers the same hit and becomes Stunned.", "If this fighter performs Hurl during an activation, they cannot make a Melee attack during that activation."] },
@@ -695,7 +695,7 @@ export const SPELLS = {
     { id: "holy-light", name: "Holy Light", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12" from caster`, effect: `All fighters within 12" lose cover and Hidden condition`, mishap: "The caster becomes Blinded" },
     { id: "heal", name: "Heal", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "Deal 1 Wound to target instead" },
     { id: "purge-the-faithless", name: "Purge the Faithless", castingStat: "Wi", hit: "CC", difficulty: "11+", mt: "5", sk: "2", range: `3" blast from caster`, effect: "Hits all fighters in radius", mishap: "Caster takes the damage" },
-    { id: "shield-of-faith", name: "Shield of Faith", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: "Target gains +2 red defense dice and projects Fear. Lasts until the start of the caster's next activation", mishap: "" },
+    { id: "shield-of-faith", name: "Shield of Faith", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target gains +2 red defense dice and projects Fear (6"). Lasts until the start of the caster's next activation`, mishap: "" },
     { id: "horrors-relived", name: "Horrors Relived", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "Target's Sa", sk: "-", range: `12"`, effect: "Ranged attack; Strike Pool Mt equals the target's Sa stat", mishap: "Caster takes the damage using target's Sa as Mt" },
     { id: "unwavering-resolve", name: "Unwavering Resolve", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `8" from caster`, effect: `All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation`, mishap: "The caster suffers Panic until the end of their next activation" },
   ],

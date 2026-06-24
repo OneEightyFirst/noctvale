@@ -134,6 +134,15 @@ creating a cleanse / debuff dynamic between magic categories.
 Keywords are permanent tags on a fighter profile. Temporary battle states —
 **Fear**, **Panic**, and **Insanity** when a Sanity test fails — are not keywords.
 
+### Sanity projection notation
+
+Profile and spell lines use shorthand for what a source projects:
+
+- `Fear (6")` — within **6"** and line of sight
+- `Fear (melee)` — only when charging or charged
+- `Fear (12")` — extended range
+- Same format for `Panic` and `Insanity`
+
 ### Capability and creature keywords
 
 These stack on top of identity keywords:

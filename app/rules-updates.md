@@ -6,6 +6,31 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-23 21:59 EDT — Explicit Sanity projection ranges
+
+**Change:**
+
+- Synced **Hellknights**, **Sepulchers**, **Ironbound**, and **Shield of Faith**
+  builder text so they project **Fear (6")** explicitly.
+
+**Source:** `rules/core-rules.md` Sanity and `rules/retinue.md` Traditions.
+
+**Impact:** Display-only in the builder Tradition text; no roster validation
+changes.
+
+## 2026-06-23 21:38 EDT — Falling and Acrobat
+
+**Change:**
+
+- Synced **Acrobat** builder reminder text with the new **Falling** rule.
+- A passed **Acrobat** check now says not to resolve **Falling**, instead of
+  referring to Wounds from the fall.
+
+**Source:** `rules/core-rules.md` Falling and `rules/retinue.md` Acrobat.
+
+**Impact:** Display-only in the builder feat picker; no roster validation
+changes.
+
 ## 2026-06-23 12:11 EDT — Spell Mishap cleanup
 
 **Change:**
