@@ -10,7 +10,7 @@ From this directory (`app/`):
 
 ```sh
 npm install
-cp .env.example .env.local   # fill in Firebase + FTP values
+cp .env.example .env.local   # fill in Firebase values
 npm run dev
 ```
 
@@ -58,22 +58,18 @@ Optional: add `bug` and `playtest` labels so issues are tagged automatically.
 
 ## Deploy to noctvalegame.com
 
-```sh
-npm run deploy
-```
+The site deploys through GitHub Actions on every push to `main`. The workflow in
+`../.github/workflows/deploy.yml` installs dependencies in `app/`, runs
+`npm run build`, and publishes `dist/` to the `gh-pages` branch for GitHub
+Pages.
 
-Builds `dist/` and uploads via **Duck CLI** (Keychain auth — same as Cyberduck).
+Set the Firebase `VITE_FIREBASE_*` values as GitHub Actions repository
+variables or secrets so the production build has the same client config as local
+development.
 
-**Hosting setup (one time):**
-
-1. `brew install duck`
-2. Set `FTP_HOST`, `FTP_USER`, `FTP_REMOTE_DIR` in `.env.local`
-
-**Full deploy (site + Firestore rules):**
-
-```sh
-npm run deploy:all
-```
+Firestore rules and Cloud Functions are still deployed separately with
+`npm run deploy:rules` and `npm run deploy:functions` when those Firebase
+resources change.
 
 **Never commit `.env.local`.**
 

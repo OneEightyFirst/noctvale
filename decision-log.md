@@ -66,8 +66,8 @@ Include `noctvalegame.com` as the Pages custom domain and a `.nojekyll` marker
 in the built public assets.
 
 **Reasoning:** Automatic GitHub Pages deployment keeps the playtest app on a
-minimal free static-hosting path and removes the manual FTP-only publish step
-for normal app updates. Keeping the domain marker in `app/public/` ensures the
+minimal free static-hosting path and removes the manual host-upload step for
+normal app updates. Keeping the domain marker in `app/public/` ensures the
 custom domain survives branch deployments.
 
 ## 2026-06-23 — Spell Mishaps and Blinded

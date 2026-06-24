@@ -8,10 +8,6 @@ skills/
 .env
 .env.local
 .env.*.local
-.lftp-script
-.lftp-test
-.lftp-verify
-.netrc-test
 .firebase/
 firebase-debug.log
 public/rules/

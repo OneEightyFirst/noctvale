@@ -12,12 +12,9 @@
     "build": "npm run build:rules && vite build",
     "preview": "vite preview",
     "deploy:rules": "firebase deploy --only firestore:rules",
-    "deploy:functions": "npm install --prefix functions && firebase deploy --only functions",
-    "deploy": "npm run build && node scripts/deploy.mjs",
-    "deploy:all": "npm run build && npm run deploy:rules && npm run deploy:functions && node scripts/deploy.mjs"
+    "deploy:functions": "npm install --prefix functions && firebase deploy --only functions"
   },
   "devDependencies": {
-    "dotenv": "^16.4.7",
     "firebase-tools": "^15.20.0",
     "marked": "^13.0.3"
   },

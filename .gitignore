@@ -22,7 +22,3 @@ app/.env.*.local
 app/.firebase/
 app/firebase-debug.log
 app/*.log
-app/.lftp-script
-app/.lftp-test
-app/.lftp-verify
-app/.netrc-test
