@@ -58,6 +58,24 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-24 — Retinue Structure and Inline Profiles
+
+**Decision:** Restructure `rules/retinue.md` for clearer rulebook navigation:
+move **Keywords** into **Building a Retinue**, rename **Domain × Archetype** to
+**Domains**, inline **Zombie**, **Skeleton**, and **Swarm** profiles at the
+rules that summon them, and retire the **Shared Profiles** appendix. Move the
+**Feat Advancement Table** placeholder to `campaign/campaign.md` and cross-link
+from retinue. Align the **Cast** action and **Casting Roll** boxout in
+`rules/core-rules.md` with retinue magic text; drop the **Overcharge** row from
+the Casting Roll table. Expand the wiki **Retinues** outline in
+`app/scripts/rules-lib.mjs` to match the new chapter structure.
+
+**Reasoning:** Players should find keywords and summoned profiles where those
+rules are used, not in a distant appendix. Campaign advancement tables belong
+with campaign procedures. Matching Cast and Casting Roll text across core rules
+and retinue keeps the shared sub-routine identical at the table, and a detailed
+Retinues nav outline makes the generated wiki usable as a rulebook index.
+
 ## 2026-06-24 — Clean Rules Page URLs
 
 **Decision:** Move the generated static rules pages to clean directory-style

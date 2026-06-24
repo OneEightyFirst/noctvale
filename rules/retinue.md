@@ -18,6 +18,17 @@ Your **retinue** is the force you field in a battle. Build it in two layers: cho
 
 **Step 6 — Assign spells.** For fighters with the **Caster** keyword, choose spells from the list matching their **Domain** keyword, up to the spell allowance for that fighter's role. See [Magic](#magic).
 
+### Keywords
+
+Keywords are permanent tags on each fighter profile — record them on the roster sheet. When a rule names a keyword, it checks whether that fighter carries it; **Archetype**, **Domain**, and **Tradition** are shared by the whole retinue. Roster-creation grants are in the table; feats and advancement add others (**Caster**, **Vampire**, **Undead**, and the rest).
+
+| Source | Keyword granted |
+|---|---|
+| Archetype choice | **Knights**, **Hunters**, **Folk**, or **Cult** |
+| Tradition choice | **Tradition** name (e.g. **Alchemists**, **Crusaders**) |
+| Tradition choice | Matching **Domain** keyword (e.g. **Mortal**, **Light**, **Nature**) |
+| Role | **Leader**, **Elite**, **Specialist**, or **Rank** |
+
 ---
 
 ## Archetypes
@@ -452,7 +463,7 @@ After you choose **Archetype**, choose **one Tradition** for the whole retinue. 
 Each Tradition grants one retinue-wide special rule. Tradition effects apply to fighters with that **Tradition** keyword unless the rule says otherwise.
 
 
-### Domain × Archetype (at a glance)
+### Domains
 
 | Domain | Knights | Hunters | Folk | Cult |
 | --- | --- | --- | --- | --- |
@@ -559,7 +570,18 @@ zone.
 **Bell-keepers:** Once per battle, when a friendly fighter is taken **Out of
 Action**, replace that fighter with a Zombie until the end of the battle. Place
 the Zombie where the fighter was. The Zombie joins your retinue for the rest of
-the battle. See [Shared Profiles](retinue.md#shared-profiles).
+the battle.
+
+| Zombie | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 4" | 2 | — | 3 | 1 | 1 | 1 | 1 |
+
+**Equipment:** Unarmed attack. Cannot be changed.
+
+**Unarmed attack:** Unblocked hits inflict **Poisoned** in addition to normal
+Wounds. See [Conditions — Poisoned](core-rules.md#poisoned).
+
+**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
 
 After the battle, roll on the Casualty Table for the original fighter as normal.
 If the original fighter is **Slain** and the Zombie is not **Out of Action**, the
@@ -569,7 +591,14 @@ Zombie joins your retinue. Otherwise, remove the Zombie from your roster.
 normal Rank role cap: up to 4 Skeletons for Hunters or up to 7 Skeletons for
 Cult. Skeletons count toward the retinue's maximum number of fighters and cannot
 gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
-See [Shared Profiles](retinue.md#shared-profiles).
+
+| Skeleton | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
+
+**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
+
+**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
 
 **Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
 fighter **projects Fear (6")**.
@@ -624,22 +653,6 @@ fighter **project Fear (6")**.
 
 ---
 
-## Terminology
-
-### Keywords
-
-Keywords are permanent tags on each fighter profile — record them on the roster sheet. When a rule names a keyword, it checks whether that fighter carries it; **Archetype**, **Domain**, and **Tradition** are shared by the whole retinue. Roster-creation grants are in the table; feats and advancement add others (**Caster**, **Vampire**, **Undead**, and the rest).
-
-| Source | Keyword granted |
-|---|---|
-| Archetype choice | **Knights**, **Hunters**, **Folk**, or **Cult** |
-| Tradition choice | **Tradition** name (e.g. **Alchemists**, **Crusaders**) |
-| Tradition choice | Matching **Domain** keyword (e.g. **Mortal**, **Light**, **Nature**) |
-| Role | **Leader**, **Elite**, **Specialist**, or **Rank** |
-
----
-
-
 ## Feats
 
 A fighter may take a feat only if they have every keyword that feat requires — typically their **Archetype** keyword, their **Domain** keyword, or both. Feat list headings note required keywords.
@@ -655,7 +668,7 @@ If two copies of the same named feat would affect one fighter at the same time, 
 When you recruit each fighter, assign feats from the lists their keywords allow. Each Archetype section in [Archetypes](#archetypes) lists available **Archetype** feats.
 
 Campaign advancement may grant additional feats later (see [Feat Advancement
-Table](#feat-advancement-table)).
+Table](../campaign/campaign.md#feat-advancement-table)).
 
 Each **Proficiency** pick must choose a **different** weapon proficiency. A
 fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
@@ -671,14 +684,6 @@ fighter cannot equip a weapon unless they have the matching proficiency, except 
 
 The built-in proficiency does not count against the Specialist's 1 chosen feat
 pick.
-
----
-
-### Feat Advancement Table
-
-[Placeholder advancement table]
-
----
 
 ### Archetype Feats
 
@@ -1245,6 +1250,8 @@ Each **Domain** keyword unlocks a spell list and domain feats. **Mortal** replac
 
 ## Magic
 
+### Casting
+
 Only fighters with the **Caster** keyword know spells.
 Casting a spell is a single **Cast** action. Roll the **Casting Roll** (below).
 
@@ -1260,7 +1267,6 @@ Casting a spell is a single **Cast** action. Roll the **Casting Roll** (below).
 > | **Double 1s** | **Mishap** — the spell fails and the spell's backlash occurs |
 > | **Below difficulty** | The spell fizzles. The action is spent |
 > | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence** |
-> | **Double 6s** | **Overcharge** — all Strike Pool dice auto-succeed as hits; still roll for **natural 6** criticals |
 
 #### Damage Spells
 
@@ -1485,7 +1491,16 @@ Target enemy has M reduced to 0 until the start of the caster's next activation.
 
 ##### Summon Swarm
 **Casting:** Wi 10+. **Range:** 3".\
-Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation. See [Profiles](retinue.md#shared-profiles).\
+Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation.
+
+| Swarm | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 6" | 3 | — | 2 | 6 | 1 | 1 | 1 |
+
+**Equipment:** Natural weapons (already included in Mt/Sk). Cannot be changed.
+
+**Keywords:** **Fearless**. Immune to Sanity tests.
+
 **Mishap:** The Swarm appears hostile. Your opponent controls it for its single activation.
 
 ##### Dread Chorus
@@ -1500,7 +1515,16 @@ Make a ranged spell attack. This attack uses only Sk and ignores armor.
 
 ##### Summon Skeleton
 **Casting:** Sa 10+. **Range:** 3".\
-Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation. See [Profiles](retinue.md#shared-profiles).\
+Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation.
+
+| Skeleton | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
+
+**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
+
+**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
+
 **Mishap:** The Skeleton appears hostile. Your opponent controls it for its single activation.
 
 ##### Raise Dead
@@ -1584,61 +1608,3 @@ Magic is grouped into two broad moral categories:
 - **Forbidden ("bad") magic:** Infernal, Blood, Necromancy
 
 ---
-
-## Shared Profiles
-
-This file collects creature and special fighter profiles referenced by spells,
-Traditions, scenarios, and campaign rules.
-
----
-
-### Undead
-
-#### Skeleton
-
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
-
-**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
-
-**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
-
-#### Zombie
-
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 4" | 2 | — | 3 | 1 | 1 | 1 | 1 |
-
-**Equipment:** Unarmed attack. Cannot be changed.
-
-**Unarmed attack:** Unblocked hits inflict **Poisoned** in addition to normal
-Wounds. See [Conditions — Poisoned](core-rules.md#poisoned).
-
-**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
-
----
-
-### Animals
-
-Companion profiles and rules: [Companions](equipment.md#companions).
-
----
-
-### Daemons
-
-Daemon profiles are an open roster decision tracked in `decision-log.md` Ideas.
-
----
-
-### Swarms
-
-#### Swarm
-
-| M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|
-| 6" | 3 | — | 2 | 6 | 1 | 1 | 1 |
-
-**Equipment:** Natural weapons (already included in Mt/Sk). Cannot be changed.
-
-**Keywords:** **Fearless**. Immune to Sanity tests.

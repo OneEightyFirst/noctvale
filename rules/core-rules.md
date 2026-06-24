@@ -348,14 +348,21 @@ Pistols](equipment.md#pistols) and [Feats — Gunslinger](retinue.md#gunslinger)
 
 **Cost:** 1 action
 
-Cast a spell.
+Only fighters with the **Caster** keyword know spells.
+Casting a spell is a single **Cast** action. Roll the **Casting Roll** (below).
 
-- Spells may be cast **while in melee**
-- Enemy targets must be in range and within **line of sight** unless the spell says otherwise
-- **Cast** actions do not trigger **Ranged Reactions**
+- Spells can be cast **while in melee**
+- Cast actions **do not trigger Ranged Reactions**
 
-Roll the **Casting Roll** (below). If the spell goes off, resolve the attack
-using the **Attack Sequence**.
+> ### Casting Roll (2d6 + Casting stat)
+>
+> Roll **2d6 + the spell's Casting stat** against the spell's casting difficulty.
+>
+> | Result | Effect |
+> |---|---|
+> | **Double 1s** | **Mishap** — the spell fails and the spell's backlash occurs |
+> | **Below difficulty** | The spell fizzles. The action is spent |
+> | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence** |
 
 *(See [Magic](retinue.md).)*
 

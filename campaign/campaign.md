@@ -37,7 +37,7 @@ Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cos
 
 | Advancement | XP cost | Roll |
 |---|---|---|
-| **Feat** | **2** | 2d6 on [Feat Advancement Table](../rules/retinue.md#feat-advancement-table) *(use Keyword until eligible feat lists are complete)* |
+| **Feat** | **2** | 2d6 on [Feat Advancement Table](#feat-advancement-table) *(use Keyword until eligible feat lists are complete)* |
 | **Keyword** | **2** | 2d6 on Keyword Advancement Table |
 | **Stat** | **5** | 2d6 on Stat Advancement Table |
 
@@ -49,6 +49,10 @@ not modify the **2d6** result.
 **Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
 
 **Keyword eligibility:** A fighter may only gain keywords their identity keywords allow — **Archetype**, **Role**, and **Domain** (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
+
+### Feat Advancement Table
+
+[Placeholder advancement table]
 
 ### Stat Advancement Table
 

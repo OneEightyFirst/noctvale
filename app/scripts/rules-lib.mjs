@@ -187,7 +187,92 @@ const RULES_OUTLINE = [
       },
     ],
   },
-  { label: "Retinues", articleId: "retinue" },
+  {
+    label: "Retinues",
+    articleId: "retinue",
+    children: [
+      {
+        label: "Building a Retinue",
+        articleId: "retinue",
+        anchor: "building-a-retinue",
+        children: [
+          { label: "Keywords", articleId: "retinue", anchor: "keywords" },
+        ],
+      },
+      {
+        label: "Archetypes",
+        articleId: "retinue",
+        anchor: "archetypes",
+        children: [
+          { label: "Knights", articleId: "retinue", anchor: "knights" },
+          { label: "Hunters", articleId: "retinue", anchor: "hunters" },
+          { label: "Folk", articleId: "retinue", anchor: "folk" },
+          { label: "Cult", articleId: "retinue", anchor: "cult" },
+        ],
+      },
+      {
+        label: "Traditions",
+        articleId: "retinue",
+        anchor: "traditions",
+        children: [
+          { label: "Domains", articleId: "retinue", anchor: "domains" },
+          { label: "Light", articleId: "retinue", anchor: "light" },
+          { label: "Arcane", articleId: "retinue", anchor: "arcane" },
+          { label: "Infernal", articleId: "retinue", anchor: "infernal" },
+          { label: "Nature", articleId: "retinue", anchor: "nature" },
+          { label: "Necromancy", articleId: "retinue", anchor: "necromancy" },
+          { label: "Blood", articleId: "retinue", anchor: "blood" },
+        ],
+      },
+      {
+        label: "Feats",
+        articleId: "retinue",
+        anchor: "feats",
+        children: [
+          { label: "Universal Feats", articleId: "retinue", anchor: "universal-feats" },
+          {
+            label: "Archetype Feats",
+            articleId: "retinue",
+            anchor: "archetype-feats",
+            children: [
+              { label: "Knight", articleId: "retinue", anchor: "knights-2" },
+              { label: "Hunter", articleId: "retinue", anchor: "hunters-2" },
+              { label: "Folk", articleId: "retinue", anchor: "folk-2" },
+              { label: "Cult", articleId: "retinue", anchor: "cult-2" },
+            ],
+          },
+          {
+            label: "Domain Feats",
+            articleId: "retinue",
+            anchor: "domain-feats",
+            children: [
+              { label: "Light", articleId: "retinue", anchor: "light-2" },
+              { label: "Arcane", articleId: "retinue", anchor: "arcane-2" },
+              { label: "Infernal", articleId: "retinue", anchor: "infernal-2" },
+              { label: "Nature", articleId: "retinue", anchor: "nature-2" },
+              { label: "Necromancy", articleId: "retinue", anchor: "necromancy-2" },
+              { label: "Blood", articleId: "retinue", anchor: "blood-2" },
+            ],
+          },
+        ],
+      },
+      {
+        label: "Magic",
+        articleId: "retinue",
+        anchor: "magic",
+        children: [
+          { label: "Casting", articleId: "retinue", anchor: "casting" },
+          { label: "Damage Spells", articleId: "retinue", anchor: "damage-spells" },
+          { label: "Light", articleId: "retinue", anchor: "light-3" },
+          { label: "Arcane", articleId: "retinue", anchor: "arcane-3" },
+          { label: "Infernal", articleId: "retinue", anchor: "infernal-3" },
+          { label: "Nature", articleId: "retinue", anchor: "nature-3" },
+          { label: "Necromancy", articleId: "retinue", anchor: "necromancy-3" },
+          { label: "Blood", articleId: "retinue", anchor: "blood-3" },
+        ],
+      },
+    ],
+  },
 ];
 
 export function stripMarkdown(value = "") {
