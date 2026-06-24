@@ -58,6 +58,25 @@ the final rule in the dated decision-log entry for that commit.
 
 ---
 
+## 2026-06-24 — Clean Rules Page URLs
+
+**Decision:** Move the generated static rules pages to clean directory-style
+URLs: `/rules/`, `/rules/core-rules/`, `/rules/retinue/`, `/rules/equipment/`,
+and `/rules/campaign/`. Keep legacy flat `.html` entry points as redirects or
+compatibility pages. Flatten the generated sidebar so **Intro**, **Core Rules**,
+and **Retinues** appear at the top level instead of under a redundant
+**Noctvale** wrapper. Update app chrome, generated Markdown links, active-nav
+matching, host rewrite rules, and Vite dev routing so the clean URLs resolve to
+the static rules pages instead of falling through to the retinue builder.
+
+**Reasoning:** The rules wiki should read like a stable rulebook section, not a
+collection of implementation filenames. Directory-style URLs make anchors such
+as `/rules/#what-is-noctvale` and `/rules/core-rules/#combat` easier to share,
+while compatibility redirects keep old links usable. Removing the redundant
+top-level nav wrapper reduces one unnecessary click in the rules index, and
+aligning development and hosted routing prevents clean rules links from opening
+the builder by mistake.
+
 ## 2026-06-23 — Outline-Driven Rules Navigation
 
 **Decision:** Change the generated rules sidebar from automatic heading

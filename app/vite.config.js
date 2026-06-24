@@ -34,8 +34,14 @@ export default defineConfig({
       name: "noctvale-rules-dev-routes",
       configureServer(server) {
         server.middlewares.use((req, _res, next) => {
-          if (req.url === "/rules" || req.url === "/rules/") {
-            req.url = "/rules/intro.html";
+          const url = new URL(req.url ?? "", "http://localhost");
+          if (url.pathname === "/rules" || url.pathname === "/rules/") {
+            req.url = `/rules/index.html${url.search}`;
+          }
+
+          const rulesPage = url.pathname.match(/^\/rules\/(core-rules|retinue|equipment|campaign)\/$/);
+          if (rulesPage) {
+            req.url = `/rules/${rulesPage[1]}/index.html${url.search}`;
           }
           next();
         });

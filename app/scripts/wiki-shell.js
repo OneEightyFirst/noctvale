@@ -6,7 +6,18 @@
   const navTree = document.getElementById("wiki-nav-tree");
 
   function currentPage() {
-    return window.location.pathname.split("/").pop() || "intro.html";
+    const rulesPath = window.location.pathname.split("/rules/")[1] ?? "";
+    const trimmedPath = rulesPath.replace(/^\/+|\/+$/g, "");
+    if (!trimmedPath || trimmedPath === "index.html") return "index.html";
+    if (trimmedPath.endsWith("/index.html")) return trimmedPath;
+    if (trimmedPath.endsWith(".html")) return trimmedPath;
+    return `${trimmedPath}/index.html`;
+  }
+
+  function currentHrefs(page) {
+    const explicitHref = `/rules/${page}`;
+    const prettyHref = page === "index.html" ? "/rules/" : `/rules/${page.replace(/index\.html$/, "")}`;
+    return [...new Set([prettyHref, explicitHref])];
   }
 
   function setExpanded(toggle, expanded) {
@@ -37,9 +48,10 @@
       link.classList.remove("is-active");
     });
 
+    const hrefs = currentHrefs(page);
     let active =
-      (hash && navTree?.querySelector(`a[href="${page}#${hash}"]`)) ||
-      navTree?.querySelector(`a[href="${page}"]`) ||
+      (hash && hrefs.map((href) => navTree?.querySelector(`a[href="${href}#${hash}"]`)).find(Boolean)) ||
+      hrefs.map((href) => navTree?.querySelector(`a[href="${href}"]`)).find(Boolean) ||
       navTree?.querySelector(`a[href$="/${page}"]`);
 
     if (active) {

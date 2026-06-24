@@ -29,6 +29,11 @@ function assetUrl(pathname, assetVersion) {
   return `${pathname}?v=${encodeURIComponent(assetVersion)}`;
 }
 
+function rulesUrl(html, anchor = "") {
+  const pathname = html === "index.html" ? "/rules/" : `/rules/${html.replace(/index\.html$/, "")}`;
+  return `${pathname}${anchor ? `#${anchor}` : ""}`;
+}
+
 function escapeHtml(value) {
   return value
     .replace(/&/g, "&amp;")
@@ -40,7 +45,7 @@ function escapeHtml(value) {
 function renderNavNodes(nodes, currentHtml, depth = 0) {
   return nodes
     .map((node) => {
-      const href = node.anchor ? `${node.html}#${node.anchor}` : node.html;
+      const href = rulesUrl(node.html, node.anchor);
       const hasChildren = Boolean(node.children?.length);
       const childrenId = `${node.id}-children`;
       const indent = 0.5 + depth * 0.85;
@@ -96,7 +101,7 @@ function renderPlaytestCallout() {
 function renderPage(article, bodyHtml, navTree, assetVersion) {
   const headerBorder = article.id === "intro" ? "" : " wiki-article-header--bordered";
   const playtestCallout = article.id === "intro" ? renderPlaytestCallout() : "";
-  const rulesHome = "/rules/intro.html";
+  const rulesHome = rulesUrl("index.html");
   const wikiCss = assetUrl("/rules/wiki.css", assetVersion);
   const wikiAuthJs = assetUrl("/rules/wiki-auth.js", assetVersion);
   const wikiJs = assetUrl("/rules/wiki.js", assetVersion);
@@ -130,7 +135,7 @@ function renderPage(article, bodyHtml, navTree, assetVersion) {
       <div class="wiki-header-actions">
         <nav class="wiki-top-nav" aria-label="App">
           <div class="wiki-view-toggle">
-            <a href="/rules/intro.html" class="wiki-view-link is-active" aria-current="page">
+            <a href="${rulesHome}" class="wiki-view-link is-active" aria-current="page">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
               Rules
             </a>
@@ -174,6 +179,11 @@ function markdownToHtml(markdown) {
   });
 }
 
+function renderRedirect(targetHtml) {
+  const targetUrl = rulesUrl(targetHtml);
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><title>Noctvale Rules</title></head><body><p><a href="${targetUrl}">Noctvale Rules</a></p></body></html>`;
+}
+
 function buildWikiCss() {
   const result = spawnSync(
     "npx",
@@ -210,13 +220,15 @@ for (const article of articles) {
   const linkedMarkdown = rewriteMarkdownLinks(article.displayMarkdown, pathToHtml);
   const bodyHtml = markdownToHtml(linkedMarkdown);
   const html = renderPage(article, bodyHtml, navTree, assetVersion);
-  writeFileSync(path.join(outDir, article.html), html);
-}
+  const articlePath = path.join(outDir, article.html);
+  mkdirSync(path.dirname(articlePath), { recursive: true });
+  writeFileSync(articlePath, html);
 
-writeFileSync(
-  path.join(outDir, "index.html"),
-  `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta http-equiv="refresh" content="0; url=intro.html" /><title>Noctvale Rules</title></head><body><p><a href="intro.html">Noctvale Rules</a></p></body></html>`,
-);
+  if (article.legacyHtml) {
+    const legacyHtml = article.html === "index.html" ? html : renderRedirect(article.html);
+    writeFileSync(path.join(outDir, article.legacyHtml), legacyHtml);
+  }
+}
 
 writeFileSync(
   path.join(outDir, "wiki.js"),

@@ -8,7 +8,7 @@ import RetinueLibrary from "./components/RetinueLibrary.jsx";
 
 const RetinueEditor = lazy(() => import("./components/RetinueEditor.jsx"));
 
-const RULES_URL = "/rules/intro.html";
+const RULES_URL = "/rules/";
 
 function viewFromHistoryState(state) {
   return state?.noctvaleView === "retinues" ? "retinues" : "retinues";
@@ -47,7 +47,7 @@ export default function App() {
     const hash = window.location.hash;
     const legacyRules = hash.match(/^#rules\/([^/?#]+)/);
     if (legacyRules) {
-      const page = legacyRules[1] === "intro" ? "intro.html" : `${legacyRules[1]}.html`;
+      const page = legacyRules[1] === "intro" ? "" : `${legacyRules[1]}/`;
       const anchorMatch = hash.match(/^#rules\/[^/]+\/(.+)$/);
       const anchor = anchorMatch ? `#${decodeURIComponent(anchorMatch[1])}` : "";
       window.location.replace(`/rules/${page}${anchor}`);

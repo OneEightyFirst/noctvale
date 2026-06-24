@@ -3,7 +3,7 @@
   RewriteBase /
 
   # Static rules wiki — do not fall through to the React app.
-  RewriteRule ^rules/?$ /rules/intro.html [R=302,L]
+  RewriteRule ^rules/?$ - [L]
   RewriteRule ^rules/ - [L]
 
   RewriteRule ^index\.html$ - [L]
