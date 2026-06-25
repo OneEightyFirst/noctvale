@@ -2,9 +2,11 @@
 
 ## How to Run a Campaign
 
-A campaign is a linked series of battles. Each player keeps the same retinue between battles, tracks injuries and XP, sells recovered **Relics**, and spends **Crowns** to replace losses or expand the roster.
+A campaign is a linked series of **10 battles**, then ends. Each player keeps the
+same retinue between battles, tracks injuries and XP, sells recovered **Relics**,
+and spends **Crowns** to replace losses or expand the roster.
 
-Start a new campaign retinue with **1000 Crowns** using the [retinue building rules](../rules/retinue.md). Record **Retinue Rating** as **Roster Cost** on the roster sheet.
+Start a new campaign retinue with **1000 Crowns** using the [retinue building rules](retinue.md). Record **Roster Cost** on the roster sheet.
 
 After each battle, resolve the **Post-Game Sequence** in order. Scenario rewards come first, then casualties, companion recovery, Doom results, Survival Rolls, economy, and advancement.
 
@@ -14,22 +16,58 @@ XP is a **bank per fighter** — earned from specific deeds, **spent** to buy ad
 
 ### Earning XP
 
-Add XP to each fighter's bank when the condition applies:
+Track **Experience** on the fighter card as a running total. Unspent XP carries
+forward.
+
+Award XP during [Step 7: Experience & Advancement](#step-7-experience--advancement)
+in three passes — **battle**, **scenario**, then **post-game** — so casualty and
+Doom awards stay separate from in-battle deeds.
+
+A fighter removed as **Slain** still receives **battle** and **scenario**
+Experience from that battle — for example, a fighter who puts an enemy **Out of
+Action** and is later **Slain** on the **Casualty Table** keeps the **Out of
+Action** XP. **Slain** fighters do not receive the **Did not go Out of Action**
+award, **Hardy**, **Miraculous**, or other **post-game** Experience.
+
+#### Battle Experience
+
+Award to individual fighters for deeds during the battle:
 
 | Source | XP |
 |---|---|
-| Fought in the battle (Active at battle end) | +1 |
-| Went **Out of Action** but survived the Casualty Table | +1 |
+| Did not go **Out of Action** | +1 |
+| Put an enemy fighter **Out of Action** by a direct action you resolved | +1 *(once per enemy fighter)* |
+| Put the enemy **Leader** **Out of Action** by a direct action you resolved | +2 |
+
+**Did not go Out of Action:** The fighter never went **Out of Action** during
+the battle.
+
+**Direct action:** The fighter who resolves the attack, shot, or ability that
+causes the **Out of Action** earns the XP. Do not award **Out of Action** XP for
+indirect effects — for example, when a spell or terrain effect such as **The
+Void** removes an enemy without your fighter resolving the final action.
+
+**Leader:** The **+2** award is for taking the enemy **Leader** **Out of Action**;
+do not also add **+1** for the same **Out of Action**.
+
+#### Scenario Experience
+
+Each scenario states which fighters earn XP and how much. Scenario awards are
+**per fighter** — never retinue-wide unless the scenario names a specific
+fighter (for example, the fighter who escaped with the Horn token).
+
+#### Post-Game Experience
+
+Award after the **Casualty Table** and **Doom Table**, separate from battle and
+scenario awards:
+
+| Source | XP |
+|---|---|
 | **Hardy** (Casualty Table d6) | +1 |
 | **Miraculous** (Doom Table 2d6) | +2 |
-| Retinue achieved a scenario objective | +1 *(once per fighter)* |
-| Each Relic the retinue recovered this battle | +1 *(every fighter)* |
-| Took an enemy **Leader** **Out of Action** | +2 *(to the fighter who resolved the action)* |
-| Scenario bonus *(when listed)* | As written |
 
-Track **Experience** on the fighter card as a running total. Unspent XP carries forward.
-
-A fighter removed as **Slain** gains no Experience from that battle.
+Some **Survival Roll** or scenario results also grant **+1 Experience** to one
+named or chosen surviving fighter. Apply those in this pass.
 
 ### Spending XP — Advancement Rolls
 
@@ -37,18 +75,13 @@ Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cos
 
 | Advancement | XP cost | Roll |
 |---|---|---|
-| **Feat** | **2** | 2d6 on [Feat Advancement Table](#feat-advancement-table) *(use Keyword until eligible feat lists are complete)* |
-| **Keyword** | **2** | 2d6 on Keyword Advancement Table |
-| **Stat** | **5** | 2d6 on Stat Advancement Table |
+| **Feat** | **3** | 2d6 on [Feat Advancement Table](#feat-advancement-table) |
+| **Stat** | **8** | 2d6 on Stat Advancement Table |
 
 Fighters with the **Vampire** keyword must pay **2 XP** more than the normal
-advancement cost before they may buy that advancement — **Feat** **4**,
-**Keyword** **4**, **Stat** **7**. This adds to the **XP** price only; it does
-not modify the **2d6** result.
-
-**Stats cost more than feats.** Raw stat growth is a major investment; feats and keywords are the usual progression spend.
-
-**Keyword eligibility:** A fighter may only gain keywords their identity keywords allow — **Archetype**, **Role**, and **Domain** (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
+advancement cost before they may buy that advancement — **Feat** **5**,
+**Stat** **10**. This adds to the **XP** price only; it does not modify the
+**2d6** result.
 
 ### Feat Advancement Table
 
@@ -56,46 +89,25 @@ not modify the **2d6** result.
 
 ### Stat Advancement Table
 
-Roll **2d6** after spending **5 XP** on Stat Advancement.
+Roll **2d6** after spending **8 XP** on Stat Advancement. Each result raises one
+stat by **+1**. Stats cannot exceed **6**.
+
+When a result names a pair of stats, choose one of that pair that is not already
+**6**. On **12**, choose any stat that is not already **6**.
+
+If both stats in the pair are already **6**, apply the next lowest row on this
+table instead. Repeat until you gain **+1** to a stat below **6**, or until no
+lower row applies.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Setback** — −1 to a random stat (roll d8: 1=M, 2=CC, 3=RC, 4=Mt, 5=Sk, 6=Wi, 7=Sa, 8=W). Minimum 1. |
-| 3–4 | **Minor** — +1 to M, CC, or RC (your choice). Max 6. |
-| 5–9 | **Veteran** — +1 to Mt, Sk, Wi, or Sa (your choice). Max 6. |
-| 10–11 | **Elite** — +1 to any stat (your choice). Max 6. |
-| 12 | **Peak** — +1 to any stat **and** gain **Fearless** keyword if you do not already have it. Max 6. |
+| 2–4 | +1 to **CC** or **RC**. |
+| 5–7 | +1 to **Mt** or **Sk**. |
+| 8–10 | +1 to **Wi** or **Sa**. |
+| 11 | +1 to **M** or **W**. |
+| 12 | +1 to any stat. |
 
 ---
-
-### Keyword Advancement Table
-
-Roll **2d6** after spending **2 XP** on Keyword Advancement.
-
-**Eligibility:** A fighter may only gain keywords their **Archetype**, **Role**, and **Domain** keywords allow (see [Keywords](../rules/retinue.md#keywords)). If the result grants **Caster**, the retinue must still respect its max **Caster** count, and the fighter must lack **Mortal**.
-
-| 2d6 | Result |
-|---|---|
-| 2 | **Cursed** — Sa −1 (minimum 1). No keyword. |
-| 3–4 | **No change** — take a free **Feat** roll instead if an eligible feat list is available, or accept nothing. |
-| 5–6 | **Steady** — +1 Sa permanently (max 6); no new keyword. |
-| 7 | **Hardened** — gain **Fearless** keyword. |
-| 8 | **Oathbound** — gain **Fearless** keyword **or** +1 Wi (max 6), your choice. |
-| 9–10 | **Gifted** — if eligible, gain **Caster** keyword and assign spells matching the fighter's **Domain** keyword (**Leader**: **2** spells; **Adept** or **Acolyte**: **1** spell). If not eligible, +1 Wi instead. |
-| 11 | **Marked** — gain **Fearless** and +1 to CC or RC (max 6). |
-| 12 | **Ascendant** — if eligible, gain **Caster** keyword; otherwise +1 to any stat and **Fearless**. |
-
-**Gaining Caster mid-campaign:** Assign spells matching the fighter's **Domain** keyword by role — **2** for a fighter with **Leader** who gains **Caster**, **1** for a fighter with **Specialist** (**Adept**) or **Rank** (**Acolyte**). Fighters with **Rank** in a retinue with **Cult** may gain **Caster** here; other **Archetype** keywords only if under the max **Caster** count and the fighter lacks **Mortal**.
-
----
-
-### Retinue Rating
-
-**Retinue Rating** is the single number campaigns use for matchup fairness. It equals **Roster Cost** — the total value of every fighter on the roster sheet: recruitment cost (role, ancestry premium, and any **Tradition** modifier), equipment, and advancements gained through the campaign.
-
-**Matchmaking:** pit retinues within **±100 Crowns** of rating, or **±10%** of the higher rating — whichever is larger.
-
-Record **Retinue Rating** on the roster sheet next to Roster Cost. Update it whenever you add or remove fighters, change equipment, or record an advancement.
 
 ## Scenarios
 
@@ -104,6 +116,9 @@ Record **Retinue Rating** on the roster sheet next to Roster Cost. Update it whe
 Use these rules in every scenario unless the scenario states otherwise.
 
 Random reward rolls use the [Reward Roll Rule](#reward-roll-rule).
+
+Each scenario's **Rewards** section lists **Experience** awards, if any. Awards
+are always **per fighter** — see [Scenario Experience](#scenario-experience).
 
 #### Battle Setup
 
@@ -431,7 +446,7 @@ Quest post-quest events.
 3. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#step-3-companion-recovery))
 4. **Doom** — any fighter directed to this table rolls **2d6**
 5. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](#survival-rolls))
-6. **Economy** — sell Relics, recruit, equip ([Economy](#economy), [retinue building](../rules/retinue.md))
+6. **Economy** — sell Relics, recruit, equip ([Economy](#economy), [retinue building](retinue.md))
 7. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 
 ---
@@ -459,7 +474,7 @@ Recovery](#step-3-companion-recovery).
 
 | d6 | Result |
 |---|---|
-| 1 | **Slain** — remove the fighter from your retinue. Skip Doom and Experience for this fighter. |
+| 1 | **Slain** — remove the fighter from your retinue. Skip Doom and post-game Experience for this fighter. |
 | 2 | **Grievous** — roll on the **Doom Table** (2d6). |
 | 3 | **Scarred** — return next battle; permanently **−1** to one stat of your choice (minimum 1). |
 | 4 | **Convalescent** — survives but **misses the next battle**. |
@@ -519,13 +534,19 @@ aside until Step 6.
 
 1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
 2. Sell **any Relics you choose to sell** for Crowns ([Selling Relics](#selling-relics)).
-3. Recruit fighters and buy gear. Update **Roster Cost** and **Retinue Rating** on the roster sheet.
+3. Recruit fighters and buy gear. Update **Roster Cost** on the roster sheet.
 
 ---
 
 ### Step 7: Experience & Advancement
 
-Award **Experience** after the Economy step. Spend XP on **Advancement** rolls if you choose (see [Leveling and Advancement](#leveling-and-advancement)).
+After the Economy step, award **Experience** in three passes (see [Earning XP](#earning-xp)):
+
+1. **Battle** — did not go **Out of Action**, direct **Out of Action**, enemy **Leader** **Out of Action**
+2. **Scenario** — as written in the scenario *(including for fighters later removed as **Slain**)*
+3. **Post-game** — **Hardy**, **Miraculous**, and any Survival Roll or scenario result that grants Experience to a named fighter *(not **Slain**)*
+
+Spend XP on **Advancement** rolls if you choose (see [Leveling and Advancement](#leveling-and-advancement)).
 
 ---
 
@@ -702,7 +723,7 @@ Retinues search ruins, battlefields, shrines, and settlements to recover them.
 
 Recovered Relics are campaign treasures, not the roster **Relic** (**Sphere of
 Influence** gear) in [Equipment — Sphere of
-Influence](../rules/equipment.md#sphere-of-influence).
+Influence](equipment.md#sphere-of-influence).
 
 ---
 
@@ -743,8 +764,13 @@ The scenario gives the retinue **2 Relics**. Because they won in an **Abandoned 
 
 The **Hand** rolls on the **Casualty Table** and gets **3**, **Scarred**. The player returns the fighter to the roster and chooses RC **−1**.
 
-During the Economy step, the retinue sells all **3 Relics** for **40 Crowns**, then adds the **15 Crowns** from the Survival Roll. They spend some of it on replacement gear and update **Roster Cost** and **Retinue Rating**.
+During the Economy step, the retinue sells all **3 Relics** for **40 Crowns**, then adds the **15 Crowns** from the Survival Roll. They spend some of it on replacement gear and update **Roster Cost**.
 
-Finally, the player awards Experience. The **Captain** gains **+2 Experience** for taking the enemy **Leader** **Out of Action**. Each fighter gains **+1 Experience** for each recovered Relic (**+3** total from Relics), except any fighter removed as **Slain**. Fighters with enough Experience may buy an advancement roll, or save it for a later battle.
+Finally, the player awards Experience. In the **battle** pass, each fighter who
+did not go **Out of Action** gains **+1**. The **Captain** gains **+2** for
+putting the enemy **Leader** **Out of Action** by a direct action. The **Hand**
+went **Out of Action** and does not gain **+1** for staying active. The scenario
+did not list additional Experience this battle. Fighters with enough Experience
+may buy an advancement roll, or save it for a later battle.
 
 ---

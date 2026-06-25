@@ -62,7 +62,8 @@
 
   function collapseAllNav() {
     navTree?.querySelectorAll(".wiki-nav-toggle").forEach((toggle) => {
-      setExpanded(toggle, false);
+      const defaultExpanded = toggle.closest(".wiki-nav-node")?.classList.contains("is-default-expanded");
+      setExpanded(toggle, Boolean(defaultExpanded));
     });
   }
 

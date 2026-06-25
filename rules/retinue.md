@@ -612,9 +612,9 @@ fighter **projects Fear (6")**.
 vampire ability *(list TBD — record on the roster sheet)*. When a fighter with
 **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy
 Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay
-**2 XP** more than the normal cost to buy each post-game advancement (see
-[Post-Game — Spending
-XP](../campaign/campaign.md#spending-xp-advancement-rolls)).
+**2 XP** more than the normal cost to buy each post-game advancement — **Feat**
+**5**, **Stat** **10** (see [Spending XP — Advancement
+Rolls](campaign.md#spending-xp-advancement-rolls)).
 
 **Dynasts:** At roster creation, choose up to 3 melee weapons in this retinue to
 be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
@@ -668,7 +668,7 @@ If two copies of the same named feat would affect one fighter at the same time, 
 When you recruit each fighter, assign feats from the lists their keywords allow. Each Archetype section in [Archetypes](#archetypes) lists available **Archetype** feats.
 
 Campaign advancement may grant additional feats later (see [Feat Advancement
-Table](../campaign/campaign.md#feat-advancement-table)).
+Table](campaign.md#feat-advancement-table)).
 
 Each **Proficiency** pick must choose a **different** weapon proficiency. A
 fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
@@ -959,7 +959,7 @@ fighter **within 12"** up to **6"** toward this fighter.
 
 During **Survival Rolls**, if this fighter is a surviving fighter, when your
 retinue rolls **2d6** for the **Survival Roll**, you may reroll **2d6** once
-and choose which result to use. Apply the [Reward Roll Rule](../campaign/campaign.md#reward-roll-rule) to the chosen result only.
+and choose which result to use. Apply the [Reward Roll Rule](campaign.md#reward-roll-rule) to the chosen result only.
 
 Once per **Survival Roll**.
 

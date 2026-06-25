@@ -20,7 +20,7 @@ also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Gold-standard example:
 This applies to:
 
 - Core rules in `rules/`
-- Campaign rules in `campaign/`
+- Campaign rules in `rules/campaign.md`
 - Scenario packets and scenario drafts
 - Weapon, spell, feat, and equipment entries
 - Fighter cards and reminder text
@@ -32,7 +32,7 @@ Use the guide's glossary and formatting conventions exactly. In particular:
 - Use **retinue**, not warband.
 - Use **battle** for one table encounter and **game** for a full session.
 - Write **Out of Action** in full on first use in a section.
-- **Chapter fluff** opens major rulebook sections in *italics*, separated from rules by `---`; setting lore stays in `intro.md`.
+- **Chapter fluff** opens major rulebook sections in *italics*, separated from rules by `---`; setting lore stays in `rules/intro.md`.
 - Write rulebook procedures **prose first, bullets for exceptions** — not reference-manual **Cost:** blocks by default.
 - When editing shared sub-routines (**Attack Sequence**, **Apply Wounds**, **Casting Roll**, **Primer Roll**), grep the repo for each boxout heading and keep all copies identical. Primary sources: `rules/core-rules.md` Combat, `rules/retinue.md` Magic, `rules/equipment.md` Firearms. Reference table in `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
 
@@ -41,12 +41,12 @@ Before finalizing rules text, run through the Quick Checklist at the end of
 
 ## Rules Source of Truth
 
-The canonical rules source is the Markdown files in `rules/`, `campaign/campaign.md`, and `intro.md` (see `app/scripts/rules-lib.mjs` for the wiki build list). When changing rules, update those files first.
+The canonical rules source is the Markdown files in `rules/` (see `app/scripts/rules-lib.mjs` for the wiki build list). When changing rules, update those files first.
 
 Do not maintain parallel copies in `rules/playtest/` or `rules/long-form/` — those paths were removed. Generated wiki HTML in `app/public/rules/` is built from canonical sources via `npm run build:rules`.
 
 The playtesting retinue builder lives in `app/`. Static rules pages are
-generated from this repo root (`intro.md`, `rules/`, `campaign/`) into
+generated from `rules/` into
 `app/public/rules/` by `npm run build:rules`. When changing builder game data or
 purchase enforcement, update `app/src/data/noctvale.js` and
 `app/src/components/RetinueEditor.jsx` and log the change in

@@ -25,6 +25,8 @@ date.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
+- **Mid-campaign Caster:** Retired **Keyword Advancement Table**; Humans and
+  similar fighters need a **Feat** advancement path to gain **Caster** mid-campaign.
 - **Vampire abilities:** Per-fighter pick list for **Vampires** Tradition *(1
   ability each — names and rules TBD)*.
 - **Domain feat lists:** All **seven Domains** at **five** — see `rules/retinue.md#feats`.
@@ -55,6 +57,37 @@ the final rule in the dated decision-log entry for that commit.
 - **Infernal summon refinements:** Set **Summoning Crystal** Crown cost,
   campaign advancement for the **Summoning Pool**, and final Imp, Hellion, and
   Mauler profiles.
+
+---
+
+## 2026-06-24 — Consolidate rules sources under rules/
+
+**Decision:** Move `intro.md` to `rules/intro.md` and `campaign/campaign.md` to
+`rules/campaign.md`. Update wiki build paths, internal links, repo docs, and
+sidebar outlines (Equipment and Campaign). Remove the duplicate weapon-slot table
+from `rules/equipment.md` — rename **Roster building** to **Crown costs**; slot
+limits stay in retinue building. Sync Human **Caster** and **Vampire** advancement
+notes in builder data.
+
+**Reasoning:** One canonical `rules/` tree simplifies publishing, agent routing,
+and link maintenance. Equipment profiles belong with Crown costs; roster slot
+rules stay in retinue building.
+
+---
+
+## 2026-06-24 — Ten-battle campaign XP and advancement scale
+
+**Decision:** Campaigns run **10 battles**. Advancement is **Feat** (**3 XP**) and
+**Stat** (**8 XP**) only — remove **Keyword Advancement**. XP earns split into
+**battle** (+1 survived, +1 direct enemy **Out of Action**, +2 enemy **Leader**
+**Out of Action**), **scenario** (per-fighter awards as written — no retinue-wide
+XP), and **post-game** (**Hardy**, **Miraculous**, and named Survival Roll
+bonuses). Direct-action rule excludes indirect removals (e.g. **The Void**).
+**Vampire** surcharge unchanged at **+2 XP** (**Feat** **5**, **Stat** **10**).
+
+**Reasoning:** Ten battles needs a tighter earn/spend curve than Last Days–style
+2/5 costs with retinue-wide Relic XP. Feats should land after one strong game;
+stats stay scarce. Keywords remain roster identity, not a spend track.
 
 ---
 

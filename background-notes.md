@@ -149,7 +149,7 @@ These stack on top of identity keywords:
 
 | Keyword | Source |
 |---|---|
-| **Caster** | Roster creation (optional or required per class) or Keyword Advancement (`campaign/campaign.md`) |
+| **Caster** | Roster creation (optional or required per class); mid-campaign gain TBD |
 | **Vampire** | **Vampires** Tradition — **Leader**, **Elite**, and **Specialist** only |
 | **Undead**, **Fearless** | **Wightlords** Tradition, advancement, abilities |
 
@@ -188,7 +188,7 @@ Quick reference for authors — player-facing steps live in `rules/retinue.md` (
 
 ## Campaign Retinues
 
-After your first roster is built, you maintain and expand it between battles using earnings from sold Relics. The same building rules apply — see `campaign/campaign.md` (Economy, Post-Game sequence).
+After your first roster is built, you maintain and expand it between battles using earnings from sold Relics. The same building rules apply — see `rules/campaign.md` (Economy, Post-Game sequence).
 
 ---
 

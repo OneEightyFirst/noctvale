@@ -362,7 +362,7 @@ export const TRADITIONS = [
       "At roster creation, each fighter with Leader, Elite, or Specialist gains the Vampire keyword and costs +20 Crowns. Fighters with Rank do not gain Vampire.",
       "Each fighter with Vampire chooses 1 vampire ability. The list is still TBD in the source rules.",
       "When a fighter with Vampire takes an enemy fighter Out of Action with Melee or Mercy Kill, restore 1 Wound to that fighter.",
-      "Fighters with Vampire pay 2 XP more than the normal cost to buy each post-game advancement.",
+      "Fighters with Vampire pay 2 XP more than the normal cost to buy each post-game advancement (Feat 5, Stat 10).",
     ],
   },
   {
@@ -637,7 +637,7 @@ export const ARCHETYPES = {
         role: "Rank",
         cap: 7,
         cost: 40,
-        rules: ["Ancestry baseline only.", "Does not start with Caster. May gain it in campaign via Keyword Advancement."],
+        rules: ["Ancestry baseline only.", "Does not start with Caster. Mid-campaign Caster gain TBD (feat advancement)."],
       },
     ],
     feats: [

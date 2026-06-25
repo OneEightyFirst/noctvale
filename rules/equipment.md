@@ -18,20 +18,7 @@ Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed 
 
 ---
 
-## Roster building
-
-### Weapon slots
-
-| Item                        | Slots |
-| --------------------------- | ----- |
-| One-handed weapon or shield | 1     |
-| **Brace of Pistols** *(2 Pistols)* | 1     |
-| Two-handed weapon           | 2     |
-| Relic or Instrument         | 2     |
-
-Plan loadouts so no fighter exceeds 3 slots total.
-
----
+## Crown costs
 
 ### Crown costs — One-Handed melee
 
@@ -253,7 +240,7 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 ## Weapons
 
-Combat rules for melee, missile, and gunpowder weapons. Profiles and Crown costs: [Roster building](#roster-building) above.
+Combat rules for melee, missile, and gunpowder weapons. Profiles and Crown costs: [Crown costs](#crown-costs) above.
 
 ### Weapon proficiencies
 
@@ -334,7 +321,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no
 
 **Brace of Pistols** — equipment that takes **1 weapon slot** and holds **2
 Pistols**. Requires the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**. Crown
-cost: [Roster building](#firearms).
+cost: [Crown costs — Firearms](#crown-costs-firearms-requires-mortal-forbids-caster).
 
 - **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**.
   Resolve the **Primer Roll** and **Attack Sequence** normally.
@@ -372,7 +359,7 @@ Use the **Ranged** action.
 
 ## Equipment
 
-Combat rules for armor, shields, alchemy, and **Sphere of Influence** gear. Crown costs: [Roster building](#roster-building) above.
+Combat rules for armor, shields, alchemy, and **Sphere of Influence** gear. Crown costs: [Crown costs](#crown-costs) above.
 
 ### Armor
 
@@ -499,7 +486,7 @@ Companions do **not** use **Downed** or **Stunned**.
 > removes the **Companion** from the battle instead.
 
 Companions are never removed permanently — see [Companion
-Recovery](../campaign/campaign.md#step-3-companion-recovery).
+Recovery](campaign.md#step-3-companion-recovery).
 
 ---
 

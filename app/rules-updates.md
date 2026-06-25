@@ -159,7 +159,7 @@ changed. Existing saved rosters keep loading through the migration.
 - Fighter cards display keyword pills (Archetype, Domain, Tradition, Class,
   Caster, Vampire, etc.).
 
-**Source:** `rules/retinue.md` Keywords section, `rules/equipment.md`, `campaign/campaign.md`.
+**Source:** `rules/retinue.md` Keywords section, `rules/equipment.md`, `rules/campaign.md`.
 
 **Impact:** Firearm and Caster warnings use keyword checks. Tradition cost modifiers
 unchanged. Rune-stones still require Runecasters Tradition.

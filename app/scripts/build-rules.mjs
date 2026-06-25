@@ -42,7 +42,7 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
-function renderNavNodes(nodes, currentHtml, depth = 0) {
+function renderNavNodes(nodes, currentHtml, depth = 0, { defaultExpanded = false } = {}) {
   return nodes
     .map((node) => {
       const href = rulesUrl(node.html, node.anchor);
@@ -50,20 +50,21 @@ function renderNavNodes(nodes, currentHtml, depth = 0) {
       const childrenId = `${node.id}-children`;
       const indent = 0.5 + depth * 0.85;
       const children = hasChildren ? renderNavNodes(node.children, currentHtml, depth + 1) : "";
+      const startExpanded = defaultExpanded;
 
       const toggle = hasChildren
-        ? `<button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="${childrenId}" aria-label="Expand ${escapeHtml(node.label)}">
+        ? `<button type="button" class="wiki-nav-toggle" aria-expanded="${startExpanded ? "true" : "false"}" aria-controls="${childrenId}" aria-label="${startExpanded ? "Collapse" : "Expand"} ${escapeHtml(node.label)}">
             <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>`
         : `<span class="wiki-nav-spacer" aria-hidden="true"></span>`;
 
       return `
-        <div class="wiki-nav-node" data-nav-id="${node.id}">
+        <div class="wiki-nav-node${startExpanded ? " is-default-expanded" : ""}" data-nav-id="${node.id}">
           <div class="wiki-nav-row" style="padding-left:${indent}rem">
             ${toggle}
             <a href="${href}" class="wiki-nav-link">${escapeHtml(node.label)}</a>
           </div>
-          ${hasChildren ? `<div class="wiki-nav-children is-collapsed" id="${childrenId}">${children}</div>` : ""}
+          ${hasChildren ? `<div class="wiki-nav-children${startExpanded ? "" : " is-collapsed"}" id="${childrenId}">${children}</div>` : ""}
         </div>`;
     })
     .join("");
@@ -78,7 +79,7 @@ function renderSidebar(navTree, currentHtml) {
         <input type="search" id="wiki-search" placeholder="Search rules" autocomplete="off" />
       </label>
       <div class="wiki-nav-tree" id="wiki-nav-tree">
-        ${navTree.map((section) => renderNavNodes([section], currentHtml)).join("")}
+        ${navTree.map((section) => renderNavNodes([section], currentHtml, 0, { defaultExpanded: true })).join("")}
       </div>
     </div>`;
 }

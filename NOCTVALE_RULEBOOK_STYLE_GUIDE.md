@@ -30,7 +30,7 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 11. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — edit the canonical copy in `rules/core-rules.md`, `rules/retinue.md`, or `rules/equipment.md`, then grep and sync duplicates. See `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
 12. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
 13. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
-14. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](campaign/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
+14. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](rules/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
 
 ---
 
@@ -75,7 +75,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | One idea per bullet | Narrative examples |
 | Tables carry the data | Prose repeating table values |
 
-**Setting lore** (history, factions, the fall of Valecoria) belongs in `intro.md` and faction preset blurbs. **Chapter fluff** is brief scene-setting at the top of a rules chapter only — never a substitute for intro lore and never embedded in procedure paragraphs.
+**Setting lore** (history, factions, the fall of Valecoria) belongs in `rules/intro.md` and faction preset blurbs. **Chapter fluff** is brief scene-setting at the top of a rules chapter only — never a substitute for intro lore and never embedded in procedure paragraphs.
 
 ---
 
@@ -402,7 +402,7 @@ Each major chapter ends with **Example:** — one narrative walkthrough that nam
 
 ## Lore vs Rules Text
 
-| | Setting lore (`intro.md`, faction blurbs) | Chapter fluff (rules chapters) | Rules text (below the fluff) |
+| | Setting lore (`rules/intro.md`, faction blurbs) | Chapter fluff (rules chapters) | Rules text (below the fluff) |
 |---|---|---|---|
 | Purpose | History, factions, world | Mood and framing for one chapter | Procedures and outcomes |
 | Length | As long as needed | 1–3 short paragraphs | As long as needed |

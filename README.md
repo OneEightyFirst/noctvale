@@ -13,16 +13,15 @@ This repository contains the working design documents for Noctvale — rules, re
 ## Repo Structure
 
 ```
-intro.md                 — Setting, premise, backstory, factions, and game summary
-_overview.md             — Project overview, design method, and design principles
-todo.md                  — Playtest roadmap, open decisions, and phase checklist
-decision-log.md          — Design and builder decisions (one entry per commit)
 rules/
+  intro.md               — Setting, premise, backstory, factions, and game summary
   core-rules.md          — What you need, setup, action sequence, actions, conditions, combat
   retinue.md             — Retinue building, archetypes, Domains, Traditions, feats, magic
   equipment.md           — Weapons, gear, alchemy, and companions
-campaign/
   campaign.md            — Campaign flow, leveling, scenarios, post-game, Survival Rolls, economy
+_overview.md             — Project overview, design method, and design principles
+todo.md                  — Playtest roadmap, open decisions, and phase checklist
+decision-log.md          — Design and builder decisions (one entry per commit)
 app/                     — Playtesting retinue builder and static rules pages (React, Firebase, deploy scripts)
   rules-updates.md       — Builder game-data and enforcement changelog
 ```
@@ -31,7 +30,7 @@ app/                     — Playtesting retinue builder and static rules pages 
 
 The playtesting app lives in `app/`. See [app/README.md](app/README.md) for local dev, Firebase, and deploy to noctvalegame.com.
 
-Rules markdown at the repo root is the canonical source. Static rules pages are generated from those files during the app build (`npm run build:rules`) and written to `app/public/rules/`.
+Rules markdown in `rules/` is the canonical source. Static rules pages are generated from those files during the app build (`npm run build:rules`) and written to `app/public/rules/`.
 
 ## Design Influences
 

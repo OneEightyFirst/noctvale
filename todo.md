@@ -124,7 +124,7 @@ Restructure `rules/retinue.md#archetype-chapters` for rulebook readability (Mord
 - [x] Split one file per Archetype (Knights, Hunters, Folk, Cult)
 - [ ] **Rethink "class"** — Leader / Elite / Specialist / Rank is internal jargon; find player-facing term (role? tier? fighter type?) or drop the generic label and use only archetype names (Lord, Theurge, etc.)
 - [x] Restructure recruit section: one heading per fighter type, species profile table (M through W + Cost), prose for slot limits — **all four archetype chapters** (`rules/retinue.md#archetype-chapters`)
-- [x] Propagate new leader/caster/spell rules to `rules/retinue.md` and `campaign/campaign.md#post-game-sequence`
+- [x] Propagate new leader/caster/spell rules to `rules/retinue.md` and `rules/campaign.md#post-game-sequence`
 - [ ] Reduce gratuitous tables — fighter count, archetype access, and similar as short prose where a table adds no scan value
 - [ ] Resolve creation stat-cap wording — "no stat above 5" / "except species baselines at 4" has no `decision-log.md` entry; confirm intent or remove
 
@@ -160,7 +160,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 - [x] Both retinues are trying to bring down and harvest the unicorn
 - [x] The unicorn is a deadly creature, not just an objective marker
 - [x] Battlefield: a clearing in the middle of a forest, with scattered buildings around the edge
-- [ ] Playtest and tune the unicorn profile, Horn token flow, and rewards in `campaign/campaign.md` (There's a Reason They Have a Horn)
+- [ ] Playtest and tune the unicorn profile, Horn token flow, and rewards in `rules/campaign.md` (There's a Reason They Have a Horn)
 
 ---
 
@@ -200,9 +200,9 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`rules/equipment.md`, `rules/core-rules.md#combat`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue.md#building-a-retinue`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [ ] **Campaign injury / advancement system:** Alpha tables in `campaign/campaign.md#post-game-sequence` — tune XP earn/spend rates after playtest
+- [ ] **Campaign injury / advancement system:** Alpha tables in `rules/campaign.md#post-game-sequence` — tune XP earn/spend rates after playtest
 - [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/retinue.md#feats`, `rules/equipment.md`, `rules/retinue.md`.
-- [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`campaign/campaign.md#survival-rolls`)
+- [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`rules/campaign.md#survival-rolls`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits

@@ -445,7 +445,7 @@ Open doors, operate scenario objects, or pick up items.
 
 Search a building for valuables.
 
-*(See [Scenarios](../campaign/campaign.md#scenarios).)*
+*(See [Scenarios](campaign.md#scenarios).)*
 
 #### Recover
 
@@ -837,8 +837,8 @@ only use that activation to **Recover**. Do not recalculate initiative or
 #### Out of Action
 
 A fighter is removed from the battle. Resolve post-game consequences in the
-[Casualty Table](../campaign/campaign.md#step-2-casualty-table) and
-[Doom Table](../campaign/campaign.md#step-4-doom-table).
+[Casualty Table](campaign.md#step-2-casualty-table) and
+[Doom Table](campaign.md#step-4-doom-table).
 
 ### Wound State Actions
 
