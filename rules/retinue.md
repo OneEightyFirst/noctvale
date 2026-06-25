@@ -20,7 +20,7 @@ Your **retinue** is the force you field in a battle. Build it in two layers: cho
 
 ### Keywords
 
-Keywords are permanent tags on each fighter profile — record them on the roster sheet. When a rule names a keyword, it checks whether that fighter carries it; **Archetype**, **Domain**, and **Tradition** are shared by the whole retinue. Roster-creation grants are in the table; feats and advancement add others (**Caster**, **Vampire**, **Undead**, and the rest).
+Keywords are permanent tags on each fighter profile — record them on the roster sheet. When a rule names a keyword, it checks whether that fighter carries it; **Archetype**, **Domain**, and **Tradition** are shared by the whole retinue. Roster-creation grants are in the table; feats and advancement add others (**Caster**, **Vampire**, **Undead**, and the rest). Some keywords carry a **value** in parentheses — record the full keyword, value included.
 
 | Source | Keyword granted |
 |---|---|
@@ -28,6 +28,25 @@ Keywords are permanent tags on each fighter profile — record them on the roste
 | Tradition choice | **Tradition** name (e.g. **Alchemists**, **Crusaders**) |
 | Tradition choice | Matching **Domain** keyword (e.g. **Mortal**, **Light**, **Nature**) |
 | Role | **Leader**, **Elite**, **Specialist**, or **Rank** |
+
+#### Summon
+
+**Summon (*value*)** marks a fighter created during the battle. The parenthetical is how long the fighter remains in the battle:
+
+- A **number** — the number of **rounds** the fighter stays, counting the round it was created. When those rounds have finished, remove the fighter from the battle.
+- **-** (hyphen) — the fighter stays until the battle ends.
+
+Fighters with **Summon** are not permanent roster members.
+
+**Summon (-)** fighters that survive until the battle ends remain with the retinue until the **Post-Game Sequence** is finished. During that **Post-Game Sequence** of the game they were summoned in, the retinue may attempt to bind each surviving **Summon (-)** fighter so it joins the roster permanently. If binding fails or is not attempted, remove the fighter from the retinue.
+
+Fighters with **Summon (*number*)** cannot be bound. Remove them when their rounds expire.
+
+Binding procedure and roster limits: *(TBD)*.
+
+#### Large
+
+Fighters with the **Large** keyword cannot perform the **Hide** action.
 
 ---
 
@@ -228,6 +247,8 @@ This fighter starts with built-in **Archery** proficiency or the **Firearms** do
 ###### Hand — 40 Crowns (0–4)
 *[Fluff about Hands]*
 
+**Rank**
+
 **Feats**: May select 1 feat from the Universal feat list, the Hunters archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
 ---
@@ -341,6 +362,8 @@ This fighter starts with built-in **Two-Handed** proficiency.
 ###### Townsfolk — 40 Crowns (0–6)
 *[Fluff about Townsfolk]*
 
+**Rank**
+
 **Feats**: May select 1 feat from the Universal feat list, the Folk archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
 ---
@@ -392,7 +415,7 @@ chosen fighter to 0 Wounds and cause them to become **Downed**.
 
 **Magic Armor:** This fighter may equip armor and shields up to Heavy tier.
 
-**Chant:** When **2 or more** other friendly **Cult** fighters have their bases **within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with range **6"**. When an enemy fighter activates while within this **Sphere of Influence**, they must pass a Sanity test for **Fear** with this fighter as the source. See **[Fear](core-rules.md#fear)** and **[Sphere of Influence](equipment.md#sphere-of-influence)**.
+**Chant:** When **2 or more** other friendly **Cult** fighters have their bases **within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with range **6"** — the chanted rite carries on the air, not through line of sight. When an enemy fighter activates while within this **Sphere of Influence**, they must pass a **Sa check** for **Fear** with this fighter as the source. See **[Fear](core-rules.md#fear)** and **[Sphere of Influence](equipment.md#sphere-of-influence)**.
 
 **Convoke:** Fighter must have **Caster**. When this fighter makes a **casting roll** and **1 or more** other friendly **Cult** fighters with the **Caster** keyword are **within 6"**, add **+1** to the roll for each other friendly fighter with the **Caster** keyword.
 
@@ -432,6 +455,8 @@ that fighter below.
 
 ###### Acolyte — 40 Crowns (0–7)
 *[Fluff about Acolytes]*
+
+**Rank**
 
 **Feats**: May select 1 feat from the Universal feat list, the Cult archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -581,7 +606,7 @@ the battle.
 **Unarmed attack:** Unblocked hits inflict **Poisoned** in addition to normal
 Wounds. See [Conditions — Poisoned](core-rules.md#poisoned).
 
-**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
+**Keywords:** **Undead**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
 After the battle, roll on the Casualty Table for the original fighter as normal.
 If the original fighter is **Slain** and the Zombie is not **Out of Action**, the
@@ -598,7 +623,7 @@ gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
 
 **Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
 
-**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
+**Keywords:** **Undead**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
 **Sepulchers:** While a friendly fighter is **Downed** or **Stunned**, that
 fighter **projects Fear (6")**.
@@ -619,7 +644,8 @@ Rolls](campaign.md#spending-xp-advancement-rolls)).
 **Dynasts:** At roster creation, choose up to 3 melee weapons in this retinue to
 be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
 
-When a fighter attacks with an heirloom weapon, add **+1** to the roll to hit.
+When a fighter attacks with an heirloom weapon, add **+1 CC** to that **Melee**
+attack.
 
 If a fighter carrying an heirloom weapon is **Slain**, the weapon passes to the
 friendly fighter in the retinue with the highest Mt. If there is a tie, choose
@@ -639,8 +665,8 @@ retinue starts each battle with 1 fewer Wound than their W value, to a minimum o
 
 #### Mortal
 
-**Zealots:** When a friendly fighter attacks an enemy **Caster**, add **+1** to
-the roll to hit.
+**Zealots:** When a friendly fighter attacks an enemy **Caster**, add **+1**
+**CC** or **+1 RC** to that attack — whichever **Hit** stat the attack uses.
 
 **Constables:** Enemy fighters cannot **Retreat** while within engagement range
 of a friendly fighter from this retinue.
@@ -823,10 +849,10 @@ This fighter may equip armor and shields up to Heavy tier.
 
 When **2 or more** other friendly **Cult** fighters have their bases **within 1"**
 of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with
-range **6"**.
+range **6"** — the chanted rite carries on the air, not through line of sight.
 
 When an enemy fighter activates while within this **Sphere of Influence**, they
-must pass a Sanity test for **Fear** with this fighter as the source. See
+must pass a **Sa check** for **Fear** with this fighter as the source. See
 **[Fear](core-rules.md#fear)** and **[Sphere of Influence](equipment.md#sphere-of-influence)**.
 
 ##### Convoke
@@ -1272,7 +1298,7 @@ Casting a spell is a single **Cast** action. Roll the **Casting Roll** (below).
 
 If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Sk values — a fixed pool regardless of who casts it. A spell with 5 Mt / 2 Sk always produces 5 red dice and 2 blue dice.
 
-Once the spell goes off, resolve the attack using the **Attack Sequence**. Use the spell's **Hit** stat for the roll to hit: **RC** for most damage spells, **CC** for engagement-range damage (including blasts centered on the caster).
+Once the spell goes off, resolve the attack using the **Attack Sequence**. Use the spell's **Hit** stat for the roll to hit: **RC** for most damage spells, **CC** for engagement-range damage (including blasts centered on the caster). Apply **Hit** stat modifiers (**+1 RC**, **−1 CC**, etc.) to that stat.
 
 ---
 
@@ -1316,11 +1342,11 @@ Fighters with **Caster** choose spells from the list matching their **Domain** k
 - **Leader** with **Caster** (Lord, Captain, Mayor) or **Theurge:** **2** spells
 - **Adept** with **Caster:** **1** spell
 
-Each **Domain** keyword's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley, Deathbolt, etc.) counts as one of those choices.
+Each **Domain** keyword's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley, Hellfire, Deathbolt, etc.) counts as one of those choices.
 
 Spells marked *(TBD)* are not yet playtest-ready.
 
-Each domain has a standard ranged attack spell plus **6 additional spells**. **Casting stat** is **Wi** for Light, Arcane, and Nature; **Sa** for Infernal, Necromancy, and Blood. **Hit** is the stat used for the roll to hit on damage spells (**RC** or **CC**); **—** if the spell does not deal damage through the **Attack Sequence**.
+Each domain has a standard ranged attack spell plus **6 additional spells**. **Casting stat** is **Wi** for Light, Arcane, and Nature; **Sa** for Infernal, Necromancy, and Blood. **Hit** is the stat used for the roll to hit on damage spells (**RC** or **CC**); **—** if the spell does not deal damage through the **Attack Sequence**. Apply **Hit** stat modifiers to the stat named by the spell.
 
 #### Light
 
@@ -1335,8 +1361,7 @@ All fighters within 12" lose cover and **Hidden**.\
 
 ##### Heal
 **Casting:** Wi 10+. **Range:** 1".\
-Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.\
-**Mishap:** The target suffers 1 Wound instead.
+Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
 
 ##### Purge the Faithless
 **Casting:** Wi 11+. **Range:** 3" blast from caster. **Attack:** CC, 5 Mt / 2 Sk.\
@@ -1369,7 +1394,7 @@ The caster is immune to all spells. At the start of the caster's next activation
 
 ##### Fireball
 **Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.\
-Choose a point within 18". All fighters within a large blast template are hit. The blast hits friendly and enemy fighters. On a normal failure, the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.\
+Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.\
 **Mishap:** The blast template centers on the caster.
 
 ##### Telekinesis
@@ -1396,19 +1421,18 @@ Target enemy loses 1 action on their next activation. They activate with 1 actio
 
 #### Infernal
 
-##### *(TBD — attack)*
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*. **Attack:** *(TBD)*.\
-This spell is not yet playtest-ready.
+##### Hellfire
+**Casting:** Sa 10+. **Range:** 3"–18". **Attack:** RC, 3 Mt / 4 Sk.\
+Make a ranged spell attack.
 
 ##### Summon Daemon
 **Casting:** Sa 11+. **Range:** 3".\
-Sacrifice one or two friendly fighters carrying enough **Summoning Crystals**, then roll on the **Summon Result** table.\
-
 The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:\
 - **Imps** — Usually small, fairly weak, with wings
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
 Daemons cannot be recruited normally. They enter battle through **Summon Daemon** and **Summoning Crystals**.\
+
 ##### Summoning Crystals
 **Summoning Crystals** are equipment assigned to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal adds **1** to the retinue's **Summoning Pool** for the battle, to a maximum of **10**.\
 
@@ -1422,10 +1446,11 @@ A **4-crystal** summon requires **2** crystal-bearing fighters.\
 
 Each crystal spent on **Summon Daemon** is consumed. Remove spent crystals from the roster after the battle.\
 
-##### Summon Daemon
-After **Summon Daemon** is successfully cast, choose one or two **Active** friendly fighters within **3"** of the caster. The chosen fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Sacrifice those fighters, spend the crystals, and roll **2d6** on the **Summon Result** table.\
+After **Summon Daemon** is successfully cast, choose one or two **Active** friendly fighters within **3"** of the caster. The chosen fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Those fighters are taken **Out of Action** and removed from the battle. Spend the crystals, and roll **2d6** on the **Summon Result** table.\
 
-A sacrificed fighter is **Slain** and removed from the battle. Remove them from your retinue after the battle. They do not roll on the **Casualty Table** and do not gain Experience from this battle.\
+After the battle, each sacrificed fighter rolls on the **Casualty Table** as normal — they ended the battle **Out of Action**.\
+
+**Binding the Daemon:** When a **Daemon** with **Summon (-)** is bound successfully, the fighters sacrificed to **Summon Daemon** are **Slain** and removed from the retinue (skip the **Casualty Table**). See [Summon](#summon).\
 
 Place the created fighter where one sacrificed fighter stood. If two fighters were sacrificed, choose either sacrificed fighter's position. If the created fighter's base cannot fit, place it as close as possible to that position.\
 
@@ -1439,8 +1464,52 @@ The summon result is separate from the **casting roll**. Double 1s and double 6s
 
 A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler** in the same battle. If a summon result would exceed one of those caps, use the next lower result that does not exceed a cap. If no lower result is available, no fighter is summoned.\
 
-A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round. Remove fighters created by **Summon Daemon** after the battle.\
+A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round.\
 **Mishap:** The caster goes **Out of Action**. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
+
+##### Daemon profiles
+
+Fighters created by **Summon Daemon** use the profiles below unless the summon result modifies them.
+
+All **Daemon** fighters cannot gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
+
+#### Imp
+
+| Imp | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 6" | 2 | 3 | 2 | 2 | 2 | 5 | 1 |
+
+**Fly** — Ignore vertical distance for **Move**, **Charge**, and **Jump**. This fighter keeps their normal **M** for those actions.
+
+**Claws** — **Melee** attack, **+1 Mt / +1 Sk** (built-in). Cannot equip other weapons.
+
+**Spells:** **Hellfire**
+
+**Keywords:** **Infernal**, **Daemon**, **Imp**, **Caster**, **Fly**, **Summon (-)**
+
+#### Hellion
+
+| Hellion | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 8" | 4 | — | 3 | 3 | 2 | 3 | 2 |
+
+**Bite** — **Melee** attack, **+2 Mt / +1 Sk** (built-in). Cannot equip other weapons.
+
+**Savage Charge** — When this fighter's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool.
+
+**Keywords:** **Infernal**, **Daemon**, **Hellion**, **Summon (-)**
+
+#### Mauler
+
+| Mauler | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 5" | 3 | — | 4 | 3 | 2 | 3 | 4 |
+
+**Thick Skin** — Uses [Heavy Armor](equipment.md#armor) conversion. Cannot equip armor.
+
+**Mighty Fists** — **Melee** attack, **Hammer**, **+2 Mt / +0 Sk** (built-in). Cannot equip other weapons.
+
+**Keywords:** **Infernal**, **Daemon**, **Mauler**, **Large**, **Summon (-)**
 
 ##### The Void
 **Casting:** Sa 14+. **Range:** 12".\
@@ -1467,12 +1536,12 @@ This spell is not yet playtest-ready.
 
 ##### Thorn Volley
 **Casting:** Wi 12+. **Range:** 12". **Attack:** RC, 4 Mt / 4 Sk.\
-Make a ranged spell attack using a template / shotgun-like pattern.
+Make a ranged spell attack using a **standard flame template**.
 
 ##### Shadowmeld
 **Casting:** Wi 11+. **Range:** 12".\
 Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.\
-**Mishap:** Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation.
+**Mishap:** Enemies add **+1 RC** or **+1 CC** — whichever **Hit** stat the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
 
 ##### Venom
 **Casting:** Wi 10+. **Range:** 12".\
@@ -1499,13 +1568,13 @@ Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 ac
 
 **Equipment:** Natural weapons (already included in Mt/Sk). Cannot be changed.
 
-**Keywords:** **Fearless**. Immune to Sanity tests.
+**Keywords:** **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
 **Mishap:** The Swarm appears hostile. Your opponent controls it for its single activation.
 
 ##### Dread Chorus
 **Casting:** Wi 11+. **Range:** 8" from caster.\
-All enemy fighters within 8" must pass a Sanity test for **Fear** with the caster as the source.
+All enemy fighters within 8" must pass a **Sa check** for **Fear** with the caster as the source.
 
 #### Necromancy
 
@@ -1523,7 +1592,7 @@ Place a Skeleton within 3" of the caster. The Skeleton activates immediately wit
 
 **Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
 
-**Keywords:** **Undead**. **Fearless**. Immune to Sanity tests.
+**Keywords:** **Undead**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
 **Mishap:** The Skeleton appears hostile. Your opponent controls it for its single activation.
 
@@ -1565,7 +1634,7 @@ Target enemy must pass one **Wi check**. On a failure, the target becomes **Blee
 
 ##### Blood Frenzy
 **Casting:** Sa 11+. **Range:** 6".\
-Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit until the start of the caster's next activation.\
+Target friendly fighter gains **+3 Mt** and suffers **−1 CC** and **−1 RC** until the start of the caster's next activation.\
 **Mishap:** The target suffers **−1 Mt**, **−1 CC**, and **−1" M** until the start of the caster's next activation.
 
 ##### Predator's Grace
@@ -1585,8 +1654,8 @@ Target friendly fighter gains +1 Mt, +1 Sk, and +1" M. When the effect ends, the
 
 ##### Nightfall
 **Casting:** Sa 11+. **Range:** Self.\
-The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster adds +1 to the roll to hit with CC.\
-**Mishap:** Bright light exposes the caster. Enemies add +1 to the roll to hit the caster with ranged weapons, and the caster suffers **−1 Mt** until the start of their next activation.
+The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster gains **+1 CC** on **Melee** attacks.\
+**Mishap:** Bright light exposes the caster. Enemies gain **+1 RC** when making **Ranged** attacks against the caster, and the caster suffers **−1 Mt** until the start of their next activation.
 
 ---
 

@@ -98,7 +98,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Being outnumbered should hurt — without freezing you out of the round. Negative feedback loops prevent activation snowballs. The player behind on the table gets initiative tools and reaction options so comeback swings stay plausible.
 
-**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; skip activation to bank more. Ranged Reactions give targets agency when shot at. Open: Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
+**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; spend a token to skip a fighter's activation and assign it for reactions. Ranged Reactions give targets agency when shot at. Open: Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
 
 **Protects:** Meaningful decisions when losing. Fixed underdog compensation over random activation order.
 

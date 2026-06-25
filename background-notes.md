@@ -198,3 +198,57 @@ Noctvale is a grimdark campaign skirmish game where retinues battle for Relics
 scattered across a cursed land. Fighters grow stronger through campaign play,
 Survival Rolls carry both treasure and danger, and every battle risks lasting
 consequences through the **Downed** system.
+
+
+### Hunter Subtype Design
+
+Potential specialization within hunter presets (from `rules/retinue.md`):
+
+- Witch Hunters — no magic; guns and technology
+- Vampire Hunters — stakes, crossbows, Light magic
+- Werewolf Hunters — silver, metallurgy
+
+### External Game Reference
+
+Games relevant to Noctvale design decisions:
+
+| Game | Relevance |
+|---|---|
+| Mordheim | Campaign skirmish, injuries, exploration, warband progression, gothic city tone |
+| Necromunda | Campaign gang progression, post-battle economy, injury, equipment depth |
+| Warcry | Compact alternating activation, fast melee resolution, simple profiles |
+| Kill Team | Alternating activations, melee attack/parry decisions, action economy |
+| Warhammer 40k 2nd Ed. | Emergent play, war-as-simulation, wild vehicle/weapon outcomes |
+| Age of Sigmar | Modern stat and rend vocabulary, Spearhead-style simplification and underdog mechanisms |
+| Space Hulk | Overwatch tension, jamming, simple inputs with crunchy outputs |
+| Bolt Action | Dice bag activation comparison point |
+| Star Wars Legion | Alternating activation example |
+| Kings of War | Mass battle where units remain intact until removed |
+| WH Underworlds / Combat Patrol / Spearhead | Fixed-list or constrained-list comparison points |
+| OSR RPGs | Old-school feel, danger, emergent stories, streamlined modern presentation |
+| [Last Days: Zombie Apocalypse](#last-days-zombie-apocalypse) | Keyword = group cohesion; Leader sets composition; skill types gate level-ups; campaign loop (XP → stat or skill); Scavenge Points + Refuge |
+
+#### Last Days: Zombie Apocalypse
+
+*Ash Barker, Osprey Games (2018). Original homebrew ~2009 — **not** a port of Frostgrave, Necromunda, or Chain Reaction.*
+
+**Rules engine:** Own system. d6 + stat vs target (7+ to hit shooting); opposed d6 melee; action points per model; five-phase turn (Menace → Action → Shooting → CQC → End). Familiar skirmish ingredients, but the campaign + group-building layer is bespoke.
+
+**Design influences** (per author/reviews): Mordheim/Necromunda-style campaign progression; refuge upgrades; post-game table loops reminiscent of Warhammer Quest; AP phase structure compared to Wreck Age / Relicblade.
+
+**Leveling system (worth stealing ideas from):**
+
+| Step | Last Days |
+|---|---|
+| Levels | 0–10 per character |
+| Earn XP | Survive encounter, kill zombies/opponents, scenario goals |
+| On advancement | Spend XP: **2** (feat/keyword) or **5** (stat); roll table |
+| Stat raise | Roll on random stat table after spending **banked XP** |
+| Skill gain | Pick one of the fighter's **Skill Types** (5 groups × 6 skills = 30 skills) → roll on that table |
+| Skill Types | Eligibility lists on each character archetype — not powers themselves |
+| Starting skills | Pregen archetypes have fixed packages; **Survivor** type lets you pick starting skills (custom build within keyword rules) |
+| Between games | Injury table, supply loot → Scavenge Points, recruit, refuge jobs/upgrades, **The Talk** (convert mismatched keyword to Leader's) |
+
+**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**. Caster keyword via Keyword table when eligible. **Retinue Rating** = Roster Cost for matchup balance.
+
+**Caveat:** Reviews note random stat bumps can outperform narrow feats — tune carefully if we use random tables.

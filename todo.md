@@ -46,7 +46,7 @@ Rules in `rules/core-rules.md#terrain`; cross-refs in the action and combat sect
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
 - [x] Clustered enemies: same-retinue fighters within 1" of declared target → Sk check or retarget
 - [x] Enemy fighters block line of sight normally
-- [ ] Smoke / other LoS-blocking effects — smoke in `rules/equipment.md`; confirm no gaps vs terrain rules
+- [ ] **Smoke / LoS cross-ref** — Smoke rules live in `rules/equipment.md`; confirm no gaps vs `rules/core-rules.md#terrain`.
 - [ ] Dedicated rules for enemy fighters blocking shots (beyond LoS) if playtest shows gaps
 
 ---
@@ -63,31 +63,23 @@ Create a small playtest weapon list covering the weapon triangle + ranged + fire
 
 ---
 
-## Phase 4: Playtest Spell List
+## Phase 4: Spell & Magic TBD Cleanup
 
-Write 2–3 spells per magic class relevant to Silver Hunt and Nightpack.
-
-- [ ] Determine which magic classes Silver Hunt and Nightpack use
-- [ ] Write 2–3 spells per relevant class (casting value, effect, Mishap)
-- [ ] Include at least one ranged damage spell per class (Arcane Bolt equivalent)
-- [ ] Finalize casting mechanic details (2d6 vs target number, Mishap on double 1s — confirm)
-- [ ] Decide on status effects / afflictions (Enfeebled, Weakened, TBD Infernal)
-
----
-
-## Phase 4a: App-Visible TBD Cleanup
+Finish remaining spell gaps in `rules/retinue.md#magic` and sync builder data.
+Silver Hunt is **Mortal** (no spells); Nightpack is **Nature** (full domain list).
+Casting (**2d6 + Casting stat**, Mishap on double 1s) and core afflictions are
+locked in `rules/core-rules.md`.
 
 Resolve the remaining `TBD` items that players can see in the app and the rules
 files used to generate the static rules pages, in priority order.
 
 - [ ] Sync the app spell picker data in `app/src/data/noctvale.js` to canonical rules values where the rules now have difficulty, range, Mt, Sk, or Mishap values.
-- [ ] Finish the Infernal spell list, including the standard attack spell, empty spell slots, and **Summon Daemon** Mishap.
+- [ ] Finish the Infernal spell list — **Hellfire** is the standard attack spell; three spell slots and **Summon Daemon** binding limits still TBD.
 - [ ] Set the **Summoning Crystal** Crown cost in `rules/equipment.md`.
 - [ ] Write the **Vampire** ability list for the **Vampires** Tradition.
-- [ ] Finish Blood spell profiles, especially missing ranges, **Leech** Mt/Sk, and unresolved Mishaps.
-- [ ] Resolve remaining Light, Arcane, Nature, and Necromancy spell Mishaps or ranges.
-- [ ] Name the Infernal-associated affliction in the affliction table.
-- [ ] Add Domain composition tables or replace the visible "to be added" markers with the intended roster guidance.
+- [ ] Set **Bone Blast** Mishap (last Blood spell gap).
+- [ ] Name the Infernal magic affliction in `background-notes.md` *(design context only — not player-facing)*.
+- [x] Domain × Archetype × Tradition table (`rules/retinue.md#domains`).
 
 ---
 
@@ -96,23 +88,13 @@ files used to generate the static rules pages, in priority order.
 Define feat lists for each archetype and each domain. Feats are the primary mechanical differentiation layer — archetypes define how a retinue fights, domains define what supernatural tools they bring, and feats make those choices feel distinct on the table.
 
 - [x] Write **Tradition** special rules (one retinue-wide rule per Tradition)
-- [ ] Decide feat structure (passive abilities, activated abilities, or both)
-- [ ] Decide how feats are acquired (built into fighter type, purchased with XP, chosen at retinue creation, etc.)
-- [ ] Decide feat count per list (e.g., 6 per archetype, 6 per domain)
-- [ ] Write Archetype feat lists:
-  - [ ] Knights
-  - [ ] Hunters
-  - [ ] Folk
-  - [ ] Cult
-- [ ] Write Domain feat lists:
-  - [ ] Light
-  - [ ] Arcane
-  - [ ] Infernal
-  - [ ] Nature
-  - [ ] Necromancy
-  - [ ] Blood
-  - [ ] Mortal
+- [x] Decide feat structure (passive abilities, activated abilities, or both)
+- [x] Decide how feats are acquired (creation picks + **Proficiency**; campaign **Feat** spend at **3 XP**)
+- [x] Decide feat count per list (**5** per archetype and domain — see `rules/retinue.md#feats`)
+- [x] Write Archetype feat lists (Knights, Hunters, Folk, Cult)
+- [x] Write Domain feat lists (Light, Arcane, Infernal, Nature, Necromancy, Blood, Mortal)
 - [x] Named factions are lore/example presets only; they do not grant exclusive feats, equipment, or rules
+- [ ] **Feat guardrail pass** — Audit lists against design guardrails: no broad permanent +1 to-hit, extra full actions, reusable rerolls, or spell-feats without a **casting roll**; no feat may require another named feat (see decision-log Ideas history).
 - [ ] Confirm feats don't duplicate or conflict with spells, equipment, or special rules
 
 ---
@@ -121,12 +103,11 @@ Define feat lists for each archetype and each domain. Feats are the primary mech
 
 Restructure `rules/retinue.md#archetype-chapters` for rulebook readability (Mordheim warband style).
 
-- [x] Split one file per Archetype (Knights, Hunters, Folk, Cult)
-- [ ] **Rethink "class"** — Leader / Elite / Specialist / Rank is internal jargon; find player-facing term (role? tier? fighter type?) or drop the generic label and use only archetype names (Lord, Theurge, etc.)
+- [x] Archetype chapters in `rules/retinue.md` (Knights, Hunters, Folk, Cult)
+- [x] **Role** terminology — **Leader** / **Elite** / **Specialist** / **Rank** (not *class*; see decision log 2026-06-21)
 - [x] Restructure recruit section: one heading per fighter type, species profile table (M through W + Cost), prose for slot limits — **all four archetype chapters** (`rules/retinue.md#archetype-chapters`)
 - [x] Propagate new leader/caster/spell rules to `rules/retinue.md` and `rules/campaign.md#post-game-sequence`
 - [ ] Reduce gratuitous tables — fighter count, archetype access, and similar as short prose where a table adds no scan value
-- [ ] Resolve creation stat-cap wording — "no stat above 5" / "except species baselines at 4" has no `decision-log.md` entry; confirm intent or remove
 
 ---
 
@@ -134,10 +115,10 @@ Restructure `rules/retinue.md#archetype-chapters` for rulebook readability (Mord
 
 Build full playtest rosters for Silver Hunt and Nightpack.
 
-- [x] Define fighter types per retinue (Leader, Caster/Special, Champion, Troop — see `rules/retinue.md#building-a-retinue`)
+- [x] Define fighter roles per archetype (**Leader**, **Elite**, **Specialist**, **Rank** — see `rules/retinue.md#building-a-retinue`)
 - [ ] Assign stat lines (based on species baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
-- [ ] Assign spells from Phase 4 list (if applicable)
+- [ ] Assign Domain spells where applicable (Nightpack: **Nature**; Silver Hunt: **Mortal**, no caster)
 - [ ] Assign feats from Phase 5b lists
 - [x] Set retinue size / point budget — **1000 Crowns**, composition limits per Archetype (`rules/retinue.md#building-a-retinue`)
 - [ ] Calculate total retinue cost and verify balance parity
@@ -190,6 +171,29 @@ Solo dry run and rules-gap notes.
 
 Things identified across the design docs that don't fit neatly into one phase.
 
+### Rules audit follow-ups (2026-06-24)
+
+From fresh-eyes rules read-through and designer responses.
+
+- [ ] **Firearm / damage-spell line-of-fire friendly fire** — Rethink whether the current miss → 1d6 → hit intervening friendly rule works in this system; may need a second check. Prior design context: `decision-log.md` (2026-06-23 — Named stat checks and friendly fire targeting).
+- [ ] **Combat edge-case examples** — Add more worked examples like `rules/core-rules.md#combat-example` (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
+- [ ] **Feat placement** — Decide whether archetype feats live in archetype chapters or only in `#feats`, not both.
+- [ ] **Capture and ransom** — Post-battle capture effect; ransom cost; heirloom recovery (`Dynasts` mentions capture today with no procedure).
+- [ ] **Werebeast vs Beastmen keyword** — Silver / Silversbane target **Werebeast** today; consider **Beastmen** or a gender-neutral beast keyword.
+- [ ] **Shadow Market table** — Non-**Alchemists** retinues need a black-market procedure for alchemical weapons and consumables.
+- [x] **Daemon profiles** — Imp, Hellion, and Mauler done (`rules/retinue.md`); **Summon Daemon** binding limits still TBD.
+- [ ] **Daemon binding procedure** — Flesh out post-game binding attempt, success/failure, and roster limits (currently TBD in **Summon Daemon**).
+- [ ] **Summoning Pool campaign advancement** — Post-game progression for crystal pool / permanent daemon binding.
+- [ ] **Terrain rules** — Buildings (“inside”), scenario terrain standards *(difficult terrain agreement is in `rules/core-rules.md#difficult-terrain`)*.
+- [ ] **Feat Advancement Table** — Replace placeholder in `rules/campaign.md`.
+
+### Campaign layer (from decision-log Ideas)
+
+- [ ] **Mid-campaign Caster** — **Feat** advancement path to gain **Caster** mid-campaign (retired **Keyword Advancement**).
+- [ ] **Campaign upkeep** — Decide whether retinue upkeep exists.
+- [ ] **Convalescent fighters** — How injured fighters interact with minimum retinue size.
+- [ ] **Downtime injury healing** — Whether campaign downtime can heal injuries.
+
 ### Terminology
 
 - [x] **Retinue** is the player's list-for-a-fight; **Faction** remains Archetype + Domain (see decision log 2026-05-28)
@@ -200,7 +204,8 @@ Things identified across the design docs that don't fit neatly into one phase.
 - [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`rules/equipment.md`, `rules/core-rules.md#combat`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue.md#building-a-retinue`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [ ] **Campaign injury / advancement system:** Alpha tables in `rules/campaign.md#post-game-sequence` — tune XP earn/spend rates after playtest
+- [x] **Campaign XP scale** — 10-battle campaign; **Feat** **3 XP**, **Stat** **8 XP**; battle/scenario/post-game earns defined (`rules/campaign.md`; decision log 2026-06-24).
+- [ ] **Tune campaign XP** earn/spend rates after first playtest.
 - [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/retinue.md#feats`, `rules/equipment.md`, `rules/retinue.md`.
 - [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`rules/campaign.md#survival-rolls`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
@@ -213,60 +218,6 @@ Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps
 
 - [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer fighters to field)
 - [ ] Decide if variants are mechanically distinct stat lines or cosmetic with minor trait swaps
-- [ ] Confirm all daemons share a "Daemon" keyword (for Radiant Strike +1 Mt vs Daemons)
-- [ ] Decide if Imp wings have a mechanical fly rule or are visual only
+- [x] Confirm all daemons share a **Daemon** keyword (for Radiant Strike +1 Mt vs Daemons)
+- [x] Decide if Imp wings have a mechanical fly rule or are visual only — **Fly** keyword and rule on Imp profile
 - [ ] Decide how many summon rolls a retinue gets (caster count? fixed? points budget?)
-- [ ] Design the 6 in-game Infernal spells (summoning is pre-game, so all slots are open)
-
-### Hunter Subtype Design
-
-Potential specialization within hunter presets (from `rules/retinue.md`):
-
-- Witch Hunters — no magic; guns and technology
-- Vampire Hunters — stakes, crossbows, Light magic
-- Werewolf Hunters — silver, metallurgy
-
-### External Game Reference
-
-Games relevant to Noctvale design decisions:
-
-| Game | Relevance |
-|---|---|
-| Mordheim | Campaign skirmish, injuries, exploration, warband progression, gothic city tone |
-| Necromunda | Campaign gang progression, post-battle economy, injury, equipment depth |
-| Warcry | Compact alternating activation, fast melee resolution, simple profiles |
-| Kill Team | Alternating activations, melee attack/parry decisions, action economy |
-| Warhammer 40k 2nd Ed. | Emergent play, war-as-simulation, wild vehicle/weapon outcomes |
-| Age of Sigmar | Modern stat and rend vocabulary, Spearhead-style simplification and underdog mechanisms |
-| Space Hulk | Overwatch tension, jamming, simple inputs with crunchy outputs |
-| Bolt Action | Dice bag activation comparison point |
-| Star Wars Legion | Alternating activation example |
-| Kings of War | Mass battle where units remain intact until removed |
-| WH Underworlds / Combat Patrol / Spearhead | Fixed-list or constrained-list comparison points |
-| OSR RPGs | Old-school feel, danger, emergent stories, streamlined modern presentation |
-| [Last Days: Zombie Apocalypse](#last-days-zombie-apocalypse) | Keyword = group cohesion; Leader sets composition; skill types gate level-ups; campaign loop (XP → stat or skill); Scavenge Points + Refuge |
-
-#### Last Days: Zombie Apocalypse
-
-*Ash Barker, Osprey Games (2018). Original homebrew ~2009 — **not** a port of Frostgrave, Necromunda, or Chain Reaction.*
-
-**Rules engine:** Own system. d6 + stat vs target (7+ to hit shooting); opposed d6 melee; action points per model; five-phase turn (Menace → Action → Shooting → CQC → End). Familiar skirmish ingredients, but the campaign + group-building layer is bespoke.
-
-**Design influences** (per author/reviews): Mordheim/Necromunda-style campaign progression; refuge upgrades; post-game table loops reminiscent of Warhammer Quest; AP phase structure compared to Wreck Age / Relicblade.
-
-**Leveling system (worth stealing ideas from):**
-
-| Step | Last Days |
-|---|---|
-| Levels | 0–10 per character |
-| Earn XP | Survive encounter, kill zombies/opponents, scenario goals |
-| On advancement | Spend XP: **2** (feat/keyword) or **5** (stat); roll table |
-| Stat raise | Roll on random stat table after spending **banked XP** |
-| Skill gain | Pick one of the fighter's **Skill Types** (5 groups × 6 skills = 30 skills) → roll on that table |
-| Skill Types | Eligibility lists on each character archetype — not powers themselves |
-| Starting skills | Pregen archetypes have fixed packages; **Survivor** type lets you pick starting skills (custom build within keyword rules) |
-| Between games | Injury table, supply loot → Scavenge Points, recruit, refuge jobs/upgrades, **The Talk** (convert mismatched keyword to Leader's) |
-
-**Noctvale hooks:** Spend XP bank (no levels) — Feat/Keyword **2 XP**, Stat **5 XP**. Caster keyword via Keyword table when eligible. **Retinue Rating** = Roster Cost for matchup balance.
-
-**Caveat:** Reviews note random stat bumps can outperform narrow feats — tune carefully if we use random tables.

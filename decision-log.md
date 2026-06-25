@@ -25,42 +25,33 @@ date.
 Concepts under discussion. Remove an entry when it is implemented and capture
 the final rule in the dated decision-log entry for that commit.
 
-- **Mid-campaign Caster:** Retired **Keyword Advancement Table**; Humans and
-  similar fighters need a **Feat** advancement path to gain **Caster** mid-campaign.
-- **Vampire abilities:** Per-fighter pick list for **Vampires** Tradition *(1
-  ability each — names and rules TBD)*.
-- **Domain feat lists:** All **seven Domains** at **five** — see `rules/retinue.md#feats`.
-  **Nature:** **Sure Footed**, **Camouflage**; **Lightning Reflexes** removed
-  *(Mortal · Light only)*; **Animal Handling** → Universal. **Mortal** (**Null**),
-  **Arcane** (**Helping Hand**) complete. **Universal feats:** **five** entries
-  (complete). **Archetype** lists: Knights, Hunters, Cult, Folk at **five** each.
-- **Feat guardrail:** Feats should express retinue identity without flattening
-  the core system. Avoid broad permanent **+1** to-hit bonuses, extra full
-  actions, reusable rerolls, and feats that are effectively spells without a
-  **casting roll**. Prefer feats that bend existing levers: **Brace**, **Help**,
-  **Recover**, **Aim**, **Overwatch**, **Mishap**, Survival Rolls, armor/shield
-  defense conversion, weapon or magic triangle advantage, and wound states. **No
-  feat may require another named feat.**
-- **Open campaign decisions:** Decide whether upkeep exists, how convalescent
-  fighters interact with minimum retinue size, whether downtime can heal
-  injuries, and whether **Slain** or **Out of Action** triggers an in-battle
-  death response.
-- **Open roster decisions:** Add Domain composition tables; decide Shadow Market
-  access for alchemy; write **Feat Advancement Table**. **Companion** profiles and
-  campaign recovery are locked — see `rules/equipment.md#companions`.
-- **Open magic decisions:** Finish remaining non-Blood spell ranges, spell
-  damage profiles, Mishaps, and effectless Infernal spell slots before treating
-  `rules/retinue.md#magic` as playtest-ready. First-pass difficulties are set
-  for spells with defined effects. **Afflictions**, **difficult terrain**,
-  **stat modifier cap** (**±3**), and **project Fear** language are locked —
-  see `rules/core-rules.md`.
-- **Infernal summon refinements:** Set **Summoning Crystal** Crown cost,
-  campaign advancement for the **Summoning Pool**, and final Imp, Hellion, and
-  Mauler profiles.
+**Actionable work lives in `todo.md`.** This section holds provisional design
+only — not duplicate checklists.
+
+*(No open ideas — see `todo.md` Phase 4, Additional Items, and Open Design Decisions.)*
 
 ---
 
-## 2026-06-24 — Consolidate rules sources under rules/
+## 2026-06-25 — Daemon profiles, Summon keyword, and hit-stat rules pass
+
+**Decision:** Write **Imp**, **Hellion**, and **Mauler** daemon profiles for
+**Summon Daemon**; add valued **Summon (-)** and **Large** keywords; set
+**Hellfire** as the Infernal domain attack spell. Pass **+CC** / **+RC** hit
+modifiers through rules and builder text (replacing generic “roll to hit”
+wording). Clarify **Overwatch** token spend on skip activation, initiative
+**activation count**, template markers, and **Primary weapon**. Rename roster
+**Sphere of Influence** gear **Relic** → **Icon** to distinguish scenario
+**Relics**. Move open **Ideas** checklist into `todo.md`. Sync builder spell,
+Tradition, and equipment data.
+
+**Reasoning:** Daemons need playable summon profiles before binding procedure
+work. **Summon (*value*)** separates short-lived conjures from bindable
+**Summon (-)** fighters. **Large** blocks **Hide** for bulky daemons without
+one-off exceptions. Explicit **Hit** stat modifiers keep CC/RC checks consistent
+across feats, gear, spells, and psychology. Icon naming avoids collision with
+campaign salvage **Relics**.
+
+---
 
 **Decision:** Move `intro.md` to `rules/intro.md` and `campaign/campaign.md` to
 `rules/campaign.md`. Update wiki build paths, internal links, repo docs, and

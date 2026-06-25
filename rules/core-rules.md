@@ -11,8 +11,9 @@ To play Noctvale, each player needs:
   work.
 - A measuring tool marked in **"**.
 - Counters for **Hidden**, **Downed**, **Stunned**, **Out of Action**, and **Overwatch**.
-- Template markers. You can print the template markers provided at the back of
-  this book.
+- Template markers: a **standard flame template**, a **3" blast template**, a
+  **5" blast template**, and a **scatter die**. You can print the template
+  markers provided at the back of this book.
 
 Use the scenario rules if a battle gives different setup, terrain, deployment, objective, or reward instructions.
 
@@ -91,9 +92,11 @@ otherwise.
 
 #### 1. Determine Initiative
 
-The player with fewer activations in their retinue has initiative. If both
-players have the same number of activations, each player rolls **2d6**. The
-player with the highest result has initiative. Reroll ties.
+Count each player's **activation count** — at deployment, every fighter in the
+retinue is **Active**, so this is the number of fighters in the retinue. The
+player with the lower **activation count** has initiative. If both players have
+the same **activation count**, each player rolls **2d6**. The player with the
+highest result has initiative. Reroll ties.
 
 #### 2. Choose Deployment Edges
 
@@ -207,7 +210,7 @@ Two retinues clash in ruined tollhouse walls. The Phoenix Guard player has four 
 
 The Guard activates a crossbow **Hand** first. He **Aims**, then **Ranged** at an enemy **Adept**. The **Adept** survives and **Moves** behind cover — a **Ranged Reaction** after the shot resolves (see [Overwatch](core-rules.md#overwatch)).
 
-The Wardens activate their **Captain**, who **Charges** a Guard spearman and uses **Melee**. The spearman takes a Wound but remains **Active**. On the Guard's next activation, the spearman **Retreats** and fails the test. The **Captain's** free **Melee** leaves the spearman **Downed**.
+The Wardens activate their **Captain**, who **Charges** a Guard spearman and uses **Melee**. The spearman takes a Wound but remains **Active**. On the Guard's next activation, the spearman **Retreats** and fails the check. The **Captain's** free **Melee** leaves the spearman **Downed**.
 
 Activations continue until every eligible fighter has activated or **skipped their activation**. Then round two begins — activation counts, initiative, and Overwatch tokens are set fresh.
 
@@ -229,9 +232,15 @@ Casualty Table after the battle.
 
 Overwatch compensates for numerical disadvantage.
 
-**Trigger:** At the start of the round, the player with the lower **activation count** receives a number of **Overwatch tokens equal to the difference**. *(See [Activation Count](core-rules.md#activation-count).)*
+**Start-of-round tokens:** At the start of the round, the player with the lower
+**activation count** receives **Overwatch tokens equal to the difference**
+between the two activation counts. The player with more fighters on the board
+does not receive tokens from this step. *(See [Activation Count](core-rules.md#activation-count).)*
 
-**Skip activation:** A player may also choose to **skip a fighter's activation** and give that fighter an **Overwatch token**.
+**Skip activation:** Only a player who holds one or more **Overwatch tokens**
+may **skip a fighter's activation**. Spend **1 Overwatch token** and assign it
+to that fighter. The fighter does not activate this round; the assigned token
+allows that fighter to perform a **single action as a reaction** (see below).
 
 **Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
 
@@ -580,7 +589,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and
 >
 > **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
 >
-> **Step 2 — Roll to hit:** Melee dice use **CC checks**. Ranged dice use **RC checks**.
+> **Step 2 — Roll to hit:** Melee dice use **CC checks**. Ranged dice use **RC checks**. Apply **Hit** stat modifiers (**+1 CC**, **−1 RC**, etc.) to the stat used for that attack.
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
@@ -622,6 +631,17 @@ Each passed check is a **hit**. Hits retain their color (red hit or blue hit).
 
 - A natural **1** always misses.
 - A natural **6** always hits.
+
+Some rules modify the **Hit** stat used for that attack — **+1 CC**, **−1 RC**,
+and similar. Apply these to **CC** for **Melee** attacks and **RC** for
+**Ranged** attacks (including **Cast** actions that use the **Attack Sequence**).
+Positive modifiers make checks easier; negative modifiers make checks harder.
+
+#### Primary weapon
+
+A fighter's **primary weapon** is the weapon they last attacked with this
+battle. If they have not attacked yet, their controlling player chooses which
+equipped weapon counts as their primary weapon when a rule requires it.
 
 #### Step 3: Determine Criticals
 
@@ -842,37 +862,7 @@ A fighter is removed from the battle. Resolve post-game consequences in the
 
 ### Wound State Actions
 
-#### Recover Action
-
-A **Downed** fighter may spend an action to attempt recovery.
-
-Roll **1d6:**
-
-| Roll | Result |
-|---|---|
-| 1 | Become **Stunned** |
-| 2–3 | Remain **Downed** |
-| 4–5 | Stand up with **1 Wound** |
-| 6 | Stand up with **1 Wound** + perform one additional action |
-
-#### Help Action
-
-A friendly fighter **within 1"** may spend an action to assist a **Downed** or **Stunned** friendly fighter.
-
-Roll **1d6:**
-
-| Roll | Result |
-|---|---|
-| 1 | Fighter goes **Out of Action** |
-| 2–3 | No effect |
-| 4–5 | Fighter becomes **Downed** (if Stunned) |
-| 6 | Fighter stands with **1 Wound** |
-
-#### Mercy Kill
-
-A fighter **within 1"** of a **Stunned** enemy may perform a Mercy Kill as a Combat action.
-
-The Stunned fighter is immediately **Out of Action** — no defense roll is made.
+**Recover**, **Help**, and **Mercy Kill** are defined under [Actions](core-rules.md#actions).
 
 ### Afflictions
 
@@ -912,7 +902,7 @@ Fighters and effects that frighten others **project Fear**, **project Panic**,
 or **project Insanity** — they are the **source** of that effect.
 
 When a fighter activates within range and line of sight of such a source, they
-must pass a Sanity test.
+must pass a **Sa check**.
 
 A rule that projects **Fear**, **Panic**, or **Insanity** must state its range or
 trigger.
@@ -932,10 +922,10 @@ Roll on the **Insanity Table (1d6)**:
 - 1 — **Frenzy:** Attack the closest fighter (chosen by your opponent). They cannot be the source of the Insanity.
 - 2–3 — **Flee:** Spend both actions moving toward the nearest board edge.
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
-- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but subtract **1** from the roll to hit. If their primary weapon is ranged, they spend both actions firing at the source and subtract **1** from the roll to hit.
+- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but suffer **−1 CC** on that **Melee** attack. If their primary weapon is ranged, they spend both actions firing at the source and suffer **−1 RC** on those attacks.
 
 #### Fearless
 
-A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. They never test and are never affected.
+A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. They never make **Sa checks** for these effects and are never affected.
 
 ---

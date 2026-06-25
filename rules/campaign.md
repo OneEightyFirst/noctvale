@@ -158,7 +158,7 @@ Roll **2d6**:
 | 3–4 | **Empty Room** — no reward. |
 | 5–6 | **Loose Goods** — gain **5 Crowns**. |
 | 7–8 | **Useful Find** — gain **10 Crowns**. |
-| 9–10 | **Basic Weapon** — after the battle, the retinue gains 1 legal Basic weapon. |
+| 9–10 | **One-Handed Weapon** — after the battle, the retinue gains 1 legal **One-Handed** melee weapon. |
 | 11 | **Relic** — set aside 1 recovered Relic until the Economy step. |
 | 12 | **Bonus: Hidden Cache** — set aside 1 recovered Relic and gain **10 Crowns**. |
 
@@ -721,7 +721,7 @@ Relics are the **primary campaign resource**.
 They represent powerful ancient objects scattered across the cursed land.
 Retinues search ruins, battlefields, shrines, and settlements to recover them.
 
-Recovered Relics are campaign treasures, not the roster **Relic** (**Sphere of
+Recovered Relics are campaign treasures, not the roster **Icon** (**Sphere of
 Influence** gear) in [Equipment — Sphere of
 Influence](equipment.md#sphere-of-influence).
 

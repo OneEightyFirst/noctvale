@@ -50,7 +50,7 @@ export const DOMAIN_SUMMARIES = {
   },
   Infernal: {
     triangle: "Mystic",
-    rules: ["Provides Infernal magic identity. Several alpha spell entries are still TBD."],
+    rules: ["Provides Infernal magic identity. Hellfire is the domain attack spell; several other Infernal entries are still TBD."],
   },
   Nature: {
     triangle: "Natural",
@@ -372,7 +372,7 @@ export const TRADITIONS = [
     allowed: ["knights", "hunters"],
     rules: [
       "At roster creation, choose up to 3 melee weapons in this retinue to be heirloom weapons. No fighter may carry more than 1 heirloom weapon.",
-      "When a fighter attacks with an heirloom weapon, add +1 to the roll to hit.",
+      "When a fighter attacks with an heirloom weapon, add +1 CC to that Melee attack.",
       "If a fighter carrying an heirloom weapon is Slain, the weapon passes to the friendly fighter in the retinue with the highest Mt. If there is a tie, choose one tied fighter.",
       "If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps the heirloom weapon but cannot use it. If the original retinue ransoms the captured fighter, add +10 Crowns to the ransom cost to recover the heirloom weapon.",
     ],
@@ -399,7 +399,7 @@ export const TRADITIONS = [
     name: "Zealots",
     domain: "Mortal",
     allowed: ["hunters"],
-    rules: ["When a friendly fighter attacks an enemy Caster, add +1 to the roll to hit."],
+    rules: ["When a friendly fighter attacks an enemy Caster, add +1 CC or +1 RC — whichever Hit stat the attack uses."],
   },
   {
     id: "constables",
@@ -643,7 +643,7 @@ export const ARCHETYPES = {
     feats: [
       { id: "blood-for-the-rite", name: "Blood for the Rite", rules: [`Once per battle, before this fighter makes a stat roll or casting roll, choose another friendly fighter within 12". That fighter suffers 1 Wound. Add +1 to the roll.`, "This Wound can reduce the chosen fighter to 0 Wounds and cause them to become Downed."] },
       { id: "magic-armor", name: "Magic Armor", rules: ["This fighter may equip Light Armor, Medium Armor, or Heavy Armor."] },
-      { id: "chant", name: "Chant", rules: [`When 2 or more other friendly Cult fighters have their bases within 1" of this fighter, this fighter projects Fear as a Sphere of Influence with range 6".`, "When an enemy fighter activates while within this Sphere of Influence, they must pass a Sanity test for Fear with this fighter as the source."] },
+      { id: "chant", name: "Chant", rules: [`When 2 or more other friendly Cult fighters have their bases within 1" of this fighter, this fighter projects Fear as a Sphere of Influence with range 6" — the chanted rite carries on the air, not through line of sight.`, "When an enemy fighter activates while within this Sphere of Influence, they must pass a Sa check for Fear with this fighter as the source."] },
       { id: "convoke", name: "Convoke", casterOnly: true, rules: [`Fighter must have Caster. When this fighter makes a casting roll and 1 or more other friendly Cult fighters with Caster are within 6", add +1 to the roll.`] },
     ],
   },
@@ -693,7 +693,7 @@ export const SPELLS = {
   Light: [
     { id: "radiant-strike", name: "Radiant Strike", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "4", sk: "3", range: `12"`, effect: "Ranged attack; +1 Mt vs Undead and Daemons", mishap: "" },
     { id: "holy-light", name: "Holy Light", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12" from caster`, effect: `All fighters within 12" lose cover and Hidden condition`, mishap: "The caster becomes Blinded" },
-    { id: "heal", name: "Heal", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "Deal 1 Wound to target instead" },
+    { id: "heal", name: "Heal", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "" },
     { id: "purge-the-faithless", name: "Purge the Faithless", castingStat: "Wi", hit: "CC", difficulty: "11+", mt: "5", sk: "2", range: `3" blast from caster`, effect: "Hits all fighters in radius", mishap: "Caster takes the damage" },
     { id: "shield-of-faith", name: "Shield of Faith", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target gains +2 red defense dice and projects Fear (6"). Lasts until the start of the caster's next activation`, mishap: "" },
     { id: "horrors-relived", name: "Horrors Relived", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "Target's Sa", sk: "-", range: `12"`, effect: "Ranged attack; Strike Pool Mt equals the target's Sa stat", mishap: "Caster takes the damage using target's Sa as Mt" },
@@ -709,7 +709,7 @@ export const SPELLS = {
     { id: "slow", name: "Slow", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: "line of sight", effect: "Target enemy loses 1 action on their next activation", mishap: "The caster loses 1 action on their next activation" },
   ],
   Infernal: [
-    { id: "infernal-attack-tbd", name: "TBD attack", castingStat: "Sa", hit: "TBD", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "" },
+    { id: "hellfire", name: "Hellfire", castingStat: "Sa", hit: "RC", difficulty: "10+", mt: "3", sk: "4", range: `3"–18"`, effect: "Ranged spell attack (3 Mt / 4 Sk). No Mishap.", mishap: "" },
     { id: "summon-daemon", name: "Summon Daemon", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `3"`, effect: "Sacrifice one or two friendly fighters carrying enough Summoning Crystals, then roll on the Summon Result table", mishap: "The caster goes Out of Action. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned" },
     { id: "the-void", name: "The Void", castingStat: "Sa", hit: "-", difficulty: "14+", mt: "-", sk: "-", range: `12"`, effect: `Choose a point within 12" at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations. While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one Mt check (d6 + Mt ≥ 8) or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes Out of Action`, mishap: "The marker is placed centered on the caster instead" },
     { id: "infernal-tbd-4", name: "TBD", castingStat: "Sa", hit: "-", difficulty: "TBD", mt: "TBD", sk: "TBD", range: "TBD", effect: "Infernal spell entry is still TBD in the source rules", mishap: "TBD" },
@@ -718,7 +718,7 @@ export const SPELLS = {
   ],
   Nature: [
     { id: "thorn-volley", name: "Thorn Volley", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "4", sk: "4", range: `12"`, effect: "Ranged attack; template / shotgun-like", mishap: "" },
-    { id: "shadowmeld", name: "Shadowmeld", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 to the roll to hit the target with ranged weapons and spells until the start of the caster's next activation" },
+    { id: "shadowmeld", name: "Shadowmeld", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 RC or +1 CC — whichever Hit stat the attack uses — when attacking the target until the start of the caster's next activation" },
     { id: "venom", name: "Venom", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: Poisoned", mishap: "The caster becomes Poisoned" },
     { id: "feral-form", name: "Feral Form", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `6"`, effect: `Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation`, mishap: `The caster suffers -1 Sa until the end of their next activation` },
     { id: "entangle", name: "Entangle", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy has M reduced to 0 and cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation", mishap: "The caster has M reduced to 0 until the start of their next activation and cannot Move, Charge, Climb, Scramble, Jump, or Retreat" },
@@ -737,11 +737,11 @@ export const SPELLS = {
   Blood: [
     { id: "leech", name: "Leech", castingStat: "Sa", hit: "CC", difficulty: "12+", mt: "3", sk: "3", range: "Touch", effect: "Touch attack; if target takes at least 1 Wound, caster heals 1 Wound", mishap: "" },
     { id: "bleed", name: "Bleed", castingStat: "Sa", hit: "-", difficulty: "13+", mt: "-", sk: "-", range: `12"`, effect: "Target must pass Wi check (d6 + Wi ≥ 8). Fail: Bleeding", mishap: "Caster gains Bleeding instead" },
-    { id: "blood-frenzy", name: "Blood Frenzy", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `6"`, effect: "Target friendly fighter gains +3 Mt and subtracts 1 from the roll to hit. Lasts until the start of the caster's next activation", mishap: `Target suffers -1 Mt, -1 CC, and -1" M until the start of the caster's next activation` },
+    { id: "blood-frenzy", name: "Blood Frenzy", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `6"`, effect: "Target friendly fighter gains +3 Mt and suffers -1 CC and -1 RC until the start of the caster's next activation", mishap: `Target suffers -1 Mt, -1 CC, and -1" M until the start of the caster's next activation` },
     { id: "predators-grace", name: "Predator's Grace", castingStat: "Sa", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `6"`, effect: `Target friendly fighter gains +1" M and +1 Sk. Lasts until the start of the caster's next activation`, mishap: "Target becomes Downed" },
     { id: "enthrall", name: "Enthrall", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `8"`, effect: "Target enemy must pass Wi check (d6 + Wi ≥ 8) or immediately take one Move action in a direction chosen by the caster", mishap: "Friendly fighter, opponent's choice, takes the move instead" },
     { id: "feast-of-excess", name: "Feast of Excess", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains +1 Mt, +1 Sk, +1" M. When effect ends, target becomes Stunned`, mishap: "Target becomes Stunned" },
-    { id: "nightfall", name: "Nightfall", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "The caster is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. The caster adds +1 to the roll to hit with CC. Lasts until the start of the caster's next activation", mishap: "Bright light; enemies add +1 to the roll to hit the caster with ranged weapons, caster suffers -1 Mt until start of next activation" },
+    { id: "nightfall", name: "Nightfall", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "The caster is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. The caster gains +1 CC on Melee attacks until the start of the caster's next activation", mishap: "Bright light; enemies gain +1 RC when making Ranged attacks against the caster, caster suffers -1 Mt until start of next activation" },
   ],
   Mortal: [],
 };
@@ -776,10 +776,10 @@ export const EQUIPMENT = [
   { id: "light-armor", name: "Light Armor", kind: "armor", group: "Armor", armorRank: 1, cost: 50, slots: 0, rules: ["Folk, Hunters, Knights; Cult with Magic Armor. Converts 2 failed red or blue defense dice into 1 normal success."] },
   { id: "medium-armor", name: "Medium Armor", kind: "armor", group: "Armor", armorRank: 2, cost: 115, slots: 0, rules: ["Hunters, Knights; Cult with Magic Armor. Converts 1 failed red defense die into 1 normal success."] },
   { id: "heavy-armor", name: "Heavy Armor", kind: "armor", group: "Armor", armorRank: 3, cost: 185, slots: 0, rules: ["Knights only; Cult with Magic Armor. Converts 1 failed red defense die into 1 normal success or 2 failed red defense dice into 1 critical success."] },
-  { id: "relic", name: "Relic", kind: "sphere", group: "Sphere of Influence", cost: 75, slots: 2, rules: [`Friendly fighters within 6" gain +1 Sa. Passive. Relic or Instrument.`] },
+  { id: "icon", name: "Icon", kind: "sphere", group: "Sphere of Influence", cost: 75, slots: 2, rules: [`Friendly fighters within 6" gain +1 Sa. Passive. Icon or Instrument.`] },
   { id: "instrument", name: "Instrument", kind: "sphere", group: "Sphere of Influence", cost: 65, slots: 2, rules: [`Friendly fighters within 6" gain +1" M. Requires 1 action per turn to activate. Relic or Instrument.`] },
   { id: "rune-stones", name: "Rune-stones", kind: "special", group: "Runecasters", cost: 15, slots: 1, requiresTradition: "runecasters", rules: ["Fighters with the Runecasters keyword only. Once per battle after a fighter carrying Rune-stones makes a stat roll, roll to hit, defense roll, or casting roll, discard the Rune-stones to reroll one die from that roll. Must accept the second result. Remove after battle."] },
-  { id: "silver", name: "Silver upgrade", kind: "upgrade", group: "Material upgrades", cost: 40, slots: 0, rules: ["Added to weapon cost. +1 to the roll to hit vs fighters with Undead or Werebeast. Record which weapon is upgraded."] },
+  { id: "silver", name: "Silver upgrade", kind: "upgrade", group: "Material upgrades", cost: 40, slots: 0, rules: ["Added to weapon cost. +1 CC or +1 RC vs fighters with Undead or Werebeast — whichever Hit stat the weapon uses. Record which weapon is upgraded."] },
   { id: "adders-kiss", name: "Adder's Kiss", kind: "alchemy", group: "Alchemy", cost: 25, slots: 0, rules: ["Poison. +1 Sk to the weapon's strike pool. One poison per weapon."] },
   { id: "blight-extract", name: "Blight Extract", kind: "alchemy", group: "Alchemy", cost: 40, slots: 0, rules: ["Poison. Unblocked hits inflict Poisoned. One poison per weapon."] },
   { id: "vitriol", name: "Vitriol", kind: "alchemy", group: "Alchemy", cost: 50, slots: 0, rules: ["Poison. Unblocked hits ignore 1 armor conversion. One poison per weapon."] },

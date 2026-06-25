@@ -283,7 +283,7 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 | Stat penalty | **−1 Mt** (unicode minus) |
 | Die bonus | **+1 red defense die** |
 | Strike Pool dice | **add 2 red dice to the Strike Pool** |
-| To-hit modifier | **add +1 to the roll to hit** |
+| To-hit modifier | **+1 CC**, **−1 RC**, or **+1 RC** — whichever **Hit** stat the attack uses |
 | Crown cost | **−25 Crowns** |
 
 Use **+** / **−** with a space before the number in prose.
@@ -293,8 +293,7 @@ weapon table's **+Mt / +Sk** modifier. When a rule adds dice without changing a
 stat, name the dice directly: **add 2 red dice to the Strike Pool**, **add 1
 blue die to the Strike Pool**, or **gain +1 red defense die**.
 
-For attack accuracy, use **add +1 to the roll to hit**. Do not write **+1 Mt**
-or **+1 red die** when the rule modifies a **CC check** or **RC check**.
+For attack accuracy, modify the **Hit** stat for that attack: **+1 CC** or **+1 RC** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write **+1 CC** and **+1 RC**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write **+1 Mt** or **+1 red die** when the rule modifies a **CC check** or **RC check**.
 
 ---
 
@@ -338,7 +337,7 @@ Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk 
 
 > **Flintlock** — −25 Crowns, **Single Shot**. *(keyword)*
 
-> **Fear (12")** — Sanity test when activating within 12" and line of sight. *(projection notation — not a keyword)*
+> **Fear (12")** — **Sa check** when activating within 12" and line of sight. *(projection notation — not a keyword)*
 
 ### Named action in ability text
 
@@ -377,7 +376,7 @@ Use reminders to point at canonical rules — not to sneak in new mechanics. Rem
 
 Use this block order:
 
-1. **Cost** — `**Cost:** 1 action` (or **Skip the rest of this fighter's activation** for **Overwatch**)
+1. **Cost** — `**Cost:** 1 action` (or spend **1 Overwatch token** to **skip activation** and assign it to that fighter)
 2. **Target / range** — who or what the action affects
 3. **Procedure** — what to roll or resolve; cross-ref shared sub-routines where needed
 4. **Restrictions** — bullet list of limits and exceptions

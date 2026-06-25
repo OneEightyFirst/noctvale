@@ -14,7 +14,7 @@ Choose feats before buying weapons. A fighter equips only weapons that match the
 
 - Each fighter equips weapons matching their **Proficiency** feats (see [Feats](retinue.md#feats)). Any fighter may equip a **Dagger** without a **Proficiency** feat.
 
-Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields do not use weapon slots. **Relic** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
+Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields do not use weapon slots. **Icon** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
 
 ---
 
@@ -123,14 +123,14 @@ Bombs are **Single Shot** (one use per battle).
 
 ---
 
-### Crown costs — Sphere of Influence *(Relic or Instrument)*
+### Crown costs — Sphere of Influence *(Icon or Instrument)*
 
-**Relic** and **Instrument** here are roster gear with a **Sphere of Influence**
+**Icon** and **Instrument** here are roster gear with a **Sphere of Influence**
 — not a campaign **Relic** recovered in scenarios.
 
 | Item           | Slots | Cost | Effect                                                                      |
 | -------------- | ----- | ---- | --------------------------------------------------------------------------- |
-| **Relic**      | 2     | 75   | Friendly fighters within 6" gain +1 Sa                                      |
+| **Icon**       | 2     | 75   | Friendly fighters within 6" gain +1 Sa                                      |
 | **Instrument** | 2     | 65   | Friendly fighters within 6" gain +1" M (requires **1 action per turn** to activate) |
 
 ---
@@ -139,7 +139,7 @@ Bombs are **Single Shot** (one use per battle).
 
 | Material | Cost                       | Effect                                                             |
 | -------- | -------------------------- | ------------------------------------------------------------------ |
-| Silver   | +40 (added to weapon cost) | +1 to the roll to hit vs fighters with **Undead** or **Werebeast** |
+| Silver   | +40 (added to weapon cost) | **+1 CC** or **+1 RC** vs fighters with **Undead** or **Werebeast** — whichever **Hit** stat the weapon uses |
 
 ---
 
@@ -220,7 +220,7 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 | Weapon         | Hands | Range  | Mt  | Sk  | Notes                                      |
 | -------------- | ----- | ------ | --- | --- | ------------------------------------------ |
-| Sling          | 1H    | 3"–12" | 2   | 1   | Flat Strike Pool; normal RC to hit         |
+| Sling          | 1H    | 3"–12" | +1  | +1  | Additive Strike Pool                         |
 | Throwing Stars | 1H    | 0"–8"  | —   | +1  | No min range, thrown; additive             |
 
 ---
@@ -424,17 +424,17 @@ the bearer or **Companion**. This area is the **Sphere of Influence**.
 - The bearer **is affected** by their own **Sphere of Influence**.
 - **Spheres of Influence** **do not require line of sight** — they represent presence, sound, or proximity, not vision.
 - The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions skip **Downed** and **Stunned** — see [Companions](equipment.md#companions).)*
-- **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Relics**, a fighter within range of both still receives only **+1 Sa**.
+- **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Icons**, a fighter within range of both still receives only **+1 Sa**.
 
-#### Relic and Instrument
+#### Icon and Instrument
 
-**Relic** and **Instrument** are **permanent** (not consumed between games). Each
+**Icon** and **Instrument** are **permanent** (not consumed between games). Each
 item takes weapon slots as noted. They are roster gear — not a campaign **Relic**
 recovered in scenarios.
 
 | Item | Slots | Effect (friendly) | Range | Notes |
 |---|---|---|---|---|
-| Relic | 2 | +1 Sa | 6" | Passive |
+| Icon | 2 | +1 Sa | 6" | Passive |
 | Instrument | 2 | +1" M | 6" | Requires 1 action to activate each turn |
 
 The **Instrument**'s **Sphere of Influence** is not passive — the bearer must
@@ -506,7 +506,8 @@ When a **Handler** activates:
 The **Handler**'s **2 actions** are spent normally. The **Companion** action is
 additional and does not cost the **Handler** any actions.
 
-If the **Handler** skips their activation for **Overwatch**, the **Companion**
+If the **Handler** skips their activation for **Overwatch**, spend **1
+Overwatch token** and assign it to the **Handler** as normal. The **Companion**
 does not co-move and does not take a **Companion** action.
 
 While the **Handler** is **Stunned** or **Out of Action**, their **Companion**
@@ -527,7 +528,7 @@ Each profile lists a **tether** distance. A **Companion** must stay within
 ### Sphere of Influence
 
 Some **Companions** project a **Sphere of Influence** — the same term used for
-**Relic** and **Instrument** gear (see [Equipment — Sphere of
+**Icon** and **Instrument** gear (see [Equipment — Sphere of
 Influence](equipment.md#sphere-of-influence)).
 
 While the **Companion** is **Active** and not **Out of Action**, its **Handler**

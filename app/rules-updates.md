@@ -6,6 +6,22 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-25 14:18 EDT — Hellfire, hit-stat sync, Icon rename
+
+**Change:**
+
+- Replaced Infernal **TBD attack** with **Hellfire** (Sa 10+, RC, 3 Mt / 4 Sk,
+  3"–18", no Mishap).
+- Synced **Zealots**, **Dynasts**, **Chant**, **Shadowmeld**, **Blood Frenzy**,
+  **Nightfall**, and **Silver** builder text to **+CC** / **+RC** hit modifiers.
+- Removed **Heal** Mishap from builder data to match rules.
+- Renamed roster **Relic** sphere gear to **Icon** (`relic` → `icon` id).
+
+**Source:** `rules/retinue.md` (daemon profiles, Hellfire, keywords), `rules/core-rules.md`, `rules/equipment.md`.
+
+**Impact:** Display-only spell, Tradition, feat, and equipment reminder text;
+no roster validation changes.
+
 ## 2026-06-23 21:59 EDT — Explicit Sanity projection ranges
 
 **Change:**
