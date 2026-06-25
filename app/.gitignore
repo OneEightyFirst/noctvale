@@ -10,4 +10,15 @@ skills/
 .env.*.local
 .firebase/
 firebase-debug.log
+public/index.html
+public/core-rules/
+public/retinue/
+public/equipment/
+public/campaign/
+public/intro.html
+public/core-rules.html
+public/retinue.html
+public/equipment.html
+public/campaign.html
+public/wiki/
 public/rules/

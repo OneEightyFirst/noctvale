@@ -18,6 +18,8 @@ function getGitSha() {
 
 const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf8"));
 
+const RULES_PAGE_DIRS = ["core-rules", "retinue", "equipment", "campaign"];
+
 export default defineConfig({
   plugins: [
     react(),
@@ -33,16 +35,44 @@ export default defineConfig({
     {
       name: "noctvale-rules-dev-routes",
       configureServer(server) {
-        server.middlewares.use((req, _res, next) => {
+        server.middlewares.use((req, res, next) => {
           const url = new URL(req.url ?? "", "http://localhost");
-          if (url.pathname === "/rules" || url.pathname === "/rules/") {
-            req.url = `/rules/index.html${url.search}`;
+
+          if (url.pathname === "/retinue-builder") {
+            req.url = `/retinue-builder/${url.search}`;
+            return next();
           }
 
-          const rulesPage = url.pathname.match(/^\/rules\/(core-rules|retinue|equipment|campaign)\/$/);
-          if (rulesPage) {
-            req.url = `/rules/${rulesPage[1]}/index.html${url.search}`;
+          if (url.pathname === "/retinue-builder/" || url.pathname === "/retinue-builder/index.html") {
+            req.url = `/retinue-builder/index.html${url.search}`;
+            return next();
           }
+
+          if (url.pathname.startsWith("/retinue-builder/")) {
+            return next();
+          }
+
+          if (url.pathname.startsWith("/rules/")) {
+            const rest = url.pathname.replace(/^\/rules\/?/, "");
+            res.statusCode = 302;
+            res.setHeader("Location", `/${rest}${url.search}`);
+            res.end();
+            return;
+          }
+
+          if (url.pathname === "/" || url.pathname === "") {
+            req.url = `/index.html${url.search}`;
+            return next();
+          }
+
+          const rulesPage = RULES_PAGE_DIRS.find(
+            (slug) => url.pathname === `/${slug}` || url.pathname === `/${slug}/`,
+          );
+          if (rulesPage) {
+            req.url = `/${rulesPage}/index.html${url.search}`;
+            return next();
+          }
+
           next();
         });
       },
@@ -51,6 +81,7 @@ export default defineConfig({
   base: "/",
   build: {
     rollupOptions: {
+      input: path.resolve(appDir, "retinue-builder/index.html"),
       output: {
         manualChunks(id) {
           if (id.includes("node_modules/@firebase") || id.includes("node_modules/firebase")) return "firebase";

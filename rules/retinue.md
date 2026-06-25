@@ -31,22 +31,23 @@ Keywords are permanent tags on each fighter profile — record them on the roste
 
 #### Summon
 
-**Summon (*value*)** marks a fighter created during the battle. The parenthetical is how long the fighter remains in the battle:
-
-- A **number** — the number of **rounds** the fighter stays, counting the round it was created. When those rounds have finished, remove the fighter from the battle.
-- **-** (hyphen) — the fighter stays until the battle ends.
-
-Fighters with **Summon** are not permanent roster members.
-
-**Summon (-)** fighters that survive until the battle ends remain with the retinue until the **Post-Game Sequence** is finished. During that **Post-Game Sequence** of the game they were summoned in, the retinue may attempt to bind each surviving **Summon (-)** fighter so it joins the roster permanently. If binding fails or is not attempted, remove the fighter from the retinue.
-
-Fighters with **Summon (*number*)** cannot be bound. Remove them when their rounds expire.
-
-Binding procedure and roster limits: *(TBD)*.
+Fighters created during a battle through summoning magic carry **Summon (*value*)**. See [Summoning — Summon (*value*)](#summon-value).
 
 #### Large
 
 Fighters with the **Large** keyword cannot perform the **Hide** action.
+
+#### Swarm
+
+**Swarm** fighters are masses of small bodies — easy to strike, hard to disperse. Its **Sk** equals its current **W**.
+
+**Unarmed attack** — **Melee** using **0 Mt** / **Sk** from this fighter's current **Sk**.
+
+Enemies add **+1** to the **Hit** stat they use (**RC** or **CC**) when making **Melee** or **Ranged** attacks against this fighter.
+
+This fighter never becomes **Downed** or **Stunned**. When it reaches **0 Wounds**, it goes **Out of Action** instead.
+
+When this fighter loses **Wounds**, reduce **W**; its **Sk** equals its new **W**.
 
 ---
 
@@ -592,10 +593,7 @@ zone.
 
 #### Necromancy
 
-**Bell-keepers:** Once per battle, when a friendly fighter is taken **Out of
-Action**, replace that fighter with a Zombie until the end of the battle. Place
-the Zombie where the fighter was. The Zombie joins your retinue for the rest of
-the battle.
+**Bell-keepers:** Once per battle, when this retinue **removes** a **friendly** **body token** — see [Body tokens](#body-tokens) — place a **Zombie** where the token was. The **Zombie** joins your retinue for the rest of the battle. This is not summoning — the **Zombie** does not have the **Summon** keyword.
 
 | Zombie | M | CC | RC | Mt | Sk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|---|
@@ -1152,9 +1150,7 @@ attack's Strike Pool loses **1 red die** (minimum **0**).
 
 Fighter must have the **Caster** keyword.
 
-When this fighter successfully casts **Summon Skeleton**, the **Skeleton** does not crumble at the end of its activation. It remains under your control for the rest of the battle. Remove it from the battle when it goes **Out of Action**.
-
-At the end of the battle, remove any **Skeleton** kept this way — it is not part of your retinue. Does not apply to roster **Skeleton** fighters recruited through **Bone-priests** or other rules.
+When this fighter successfully casts **Summon Skeleton**, the **Skeleton** gains **Summon (-)** instead of **Summon (1d6)**. Does not apply to roster **Skeleton** fighters recruited through **Bone-priests** or other rules.
 
 ##### Bone Ward
 
@@ -1351,41 +1347,41 @@ Each domain has a standard ranged attack spell plus **6 additional spells**. **C
 #### Light
 
 ##### Radiant Strike
-**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.\
+**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.
 Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk instead.
 
 ##### Holy Light
-**Casting:** Wi 11+. **Range:** 12" from caster.\
-All fighters within 12" lose cover and **Hidden**.\
+**Casting:** Wi 11+. **Range:** 12" from caster.
+All fighters within 12" lose cover and **Hidden**.
 **Mishap:** The caster becomes **Blinded**.
 
 ##### Heal
-**Casting:** Wi 10+. **Range:** 1".\
+**Casting:** Wi 10+. **Range:** 1".
 Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
 
 ##### Purge the Faithless
-**Casting:** Wi 11+. **Range:** 3" blast from caster. **Attack:** CC, 5 Mt / 2 Sk.\
-All fighters within the blast are hit.\
+**Casting:** Wi 11+. **Range:** 3" blast from caster. **Attack:** CC, 5 Mt / 2 Sk.
+All fighters within the blast are hit.
 **Mishap:** Resolve the attack against the caster.
 
 ##### Shield of Faith
-**Casting:** Wi 11+. **Range:** 12".\
-Target friendly fighter gains +2 red defense dice and **projects Fear (6")** until the start of the caster's next activation.
+**Casting:** Wi 10+. **Range:** 12".
+Target friendly fighter gains **+2 red defense dice** until the start of the caster's next activation.
 
 ##### Horrors Relived
-**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.\
-Make a ranged spell attack. Use the target's Sa stat as the attack's Mt.\
+**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.
+Make a ranged spell attack. Use the target's Sa stat as the attack's Mt.
 **Mishap:** Resolve the attack against the caster, using the target's Sa as Mt.
 
 ##### Unwavering Resolve
-**Casting:** Wi 10+. **Range:** 8" from caster.\
-All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.\
+**Casting:** Wi 10+. **Range:** 8" from caster.
+All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.
 **Mishap:** The caster suffers **Panic** until the end of their next activation.
 
 #### Arcane
 
 ##### Arcane Bolt
-**Casting:** Wi 11+. **Range:** 20". **Attack:** RC, 5 Sk.\
+**Casting:** Wi 11+. **Range:** 20". **Attack:** RC, 5 Sk.
 Make a ranged spell attack.
 
 ##### Arcane Shield
@@ -1393,50 +1389,45 @@ Make a ranged spell attack.
 The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
 
 ##### Fireball
-**Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.\
-Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.\
+**Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.
+Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.
 **Mishap:** The blast template centers on the caster.
 
 ##### Telekinesis
-**Casting:** Wi 12+. **Range:** 12".\
-Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.\
+**Casting:** Wi 12+. **Range:** 12".
+Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.
 **Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
 
 ##### Displacement
-**Casting:** Wi 11+. **Range:** 12".\
-Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.\
+**Casting:** Wi 11+. **Range:** 12".
+Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.
 **Mishap:** Roll a scatter die. Move the target 6" in the indicated direction. This movement ignores terrain, engagement, and intervening fighters. If the target cannot end at the full distance, place it as far as possible along that line without ending inside terrain or another fighter's base.
 
 ##### Hoarfrost
-**Casting:** Wi 11+. **Range:** 18".\
-Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.\
+**Casting:** Wi 11+. **Range:** 18".
+Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.
 
-When a fighter ends any movement in the zone, make one **Sk check**. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.\
+When a fighter ends any movement in the zone, make one **Sk check**. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.
 **Mishap:** The blast template centers on the caster.
 
 ##### Slow
-**Casting:** Wi 12+. **Range:** line of sight.\
-Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.\
+**Casting:** Wi 12+. **Range:** line of sight.
+Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.
 **Mishap:** The caster loses 1 action on their next activation. They activate with 1 action instead of 2.
 
 #### Infernal
 
 ##### Hellfire
-**Casting:** Sa 10+. **Range:** 3"–18". **Attack:** RC, 3 Mt / 4 Sk.\
+**Casting:** Sa 10+. **Range:** 3"–18". **Attack:** RC, 3 Mt / 4 Sk.
 Make a ranged spell attack.
 
 ##### Summon Daemon
-**Casting:** Sa 11+. **Range:** 3".\
-The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:\
+**Casting:** Sa 11+. **Range:** 3".
+The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
 - **Imps** — Usually small, fairly weak, with wings
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
-Daemons cannot be recruited normally. They enter battle through **Summon Daemon** and **Summoning Crystals**.\
-
-##### Summoning Crystals
-**Summoning Crystals** are equipment assigned to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal adds **1** to the retinue's **Summoning Pool** for the battle, to a maximum of **10**.\
-
-A **4-crystal** summon requires **2** crystal-bearing fighters.\
+Daemons cannot be recruited normally. They enter battle through **Summon Daemon** and **Summoning Crystals** — see [Summoning](#summoning).
 
 | Daemon | Crystal cost | Battle cap |
 |---|---:|---:|
@@ -1444,147 +1435,194 @@ A **4-crystal** summon requires **2** crystal-bearing fighters.\
 | **Hellion** | 2 | 2 |
 | **Mauler** | 4 | 1 |
 
-Each crystal spent on **Summon Daemon** is consumed. Remove spent crystals from the roster after the battle.\
+A **4-crystal** summon requires **2** crystal-bearing fighters.
 
-After **Summon Daemon** is successfully cast, choose one or two **Active** friendly fighters within **3"** of the caster. The chosen fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Those fighters are taken **Out of Action** and removed from the battle. Spend the crystals, and roll **2d6** on the **Summon Result** table.\
+After **Summon Daemon** is successfully cast, choose one or two **Active** friendly fighters within **3"** of the caster. The chosen fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Those fighters are taken **Out of Action** and removed from the battle. Spend the crystals, and roll **2d6** on the **Summon Result** table.
 
-After the battle, each sacrificed fighter rolls on the **Casualty Table** as normal — they ended the battle **Out of Action**.\
+Place the created fighter where one sacrificed fighter stood. If two fighters were sacrificed, choose either sacrificed fighter's position. If the created fighter's base cannot fit, place it as close as possible to that position.
 
-**Binding the Daemon:** When a **Daemon** with **Summon (-)** is bound successfully, the fighters sacrificed to **Summon Daemon** are **Slain** and removed from the retinue (skip the **Casualty Table**). See [Summon](#summon).\
-
-Place the created fighter where one sacrificed fighter stood. If two fighters were sacrificed, choose either sacrificed fighter's position. If the created fighter's base cannot fit, place it as close as possible to that position.\
-
-The summon result is separate from the **casting roll**. Double 1s and double 6s on the summon result use the table below.\
+The summon result is separate from the **casting roll**. Double 1s and double 6s on the summon result use the table below.
 
 | Crystals spent | Intended Daemon | Double 1s | 2–11 | Double 6s |
 |---:|---|---|---|---|
-| 1 | **Imp** | Replace one sacrificed fighter with a **Zombie**. No Daemon is summoned. | Summon an **Imp**. | Summon a **Hellion**. |
+| 1 | **Imp** | Summon a **Zombie** (**Summon (-)**; cannot be bound). No **Daemon** is summoned. | Summon an **Imp**. | Summon a **Hellion**. |
 | 2 | **Hellion** | Summon an **Imp**. | Summon a **Hellion**. | Summon a **Mauler**. |
 | 4 | **Mauler** | Summon a **Hellion**. | Summon a **Mauler**. | Summon a **Mauler** with **+1 W** and either **+1 Mt** or **+1 Sk**. |
 
-A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler** in the same battle. If a summon result would exceed one of those caps, use the next lower result that does not exceed a cap. If no lower result is available, no fighter is summoned.\
+A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler** in the same battle. If a summon result would exceed one of those caps, use the next lower result that does not exceed a cap. If no lower result is available, no fighter is summoned.
 
-A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round.\
+A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round.
 **Mishap:** The caster goes **Out of Action**. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
+
+**Binding the Daemon:** After the battle, each sacrificed fighter rolls on the **Casualty Table** as normal — they ended the battle **Out of Action**. If a **Daemon** (not a **Zombie** from a failed summon result) survived the battle, the controlling player may attempt to **bind** it before resolving those **Casualty Table** rolls for the sacrificed fighters. The caster makes one **Sa check**. On **success**, the sacrificed fighters are **Slain** and removed from the retinue (skip the **Casualty Table**), and the **Daemon** joins the retinue permanently. On **failure** (not a natural **1**), resolve the **Casualty Table** for each sacrificed fighter as normal and remove the **Daemon** from the retinue. On a natural **1**, resolve the **Casualty Table** for each sacrificed fighter as normal, the **Daemon** joins the retinue permanently, and the caster is **Slain** and removed from the retinue (skip the **Casualty Table**). Remove any **Zombie** created by a failed summon result from the retinue after the battle. See [Summoning — Binding](#binding).
 
 ##### Daemon profiles
 
 Fighters created by **Summon Daemon** use the profiles below unless the summon result modifies them.
 
-All **Daemon** fighters cannot gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
-
 #### Imp
 
-| Imp | M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|---|
-| Profile | 6" | 2 | 3 | 2 | 2 | 2 | 5 | 1 |
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 6" | 2 | 3 | 2 | 2 | 2 | 5 | 1 |
 
-**Fly** — Ignore vertical distance for **Move**, **Charge**, and **Jump**. This fighter keeps their normal **M** for those actions.
-
-**Claws** — **Melee** attack, **+1 Mt / +1 Sk** (built-in). Cannot equip other weapons.
+| Weapon | Hands | +Mt | +Sk | Type | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Claws | — | +1 | +1 | — | Built-in **Melee** |
 
 **Spells:** **Hellfire**
 
 **Keywords:** **Infernal**, **Daemon**, **Imp**, **Caster**, **Fly**, **Summon (-)**
 
+**Daemon** — Cannot equip weapons, armor, or equipment. Cannot gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
+
+**Fly** — Ignore vertical distance for **Move** and **Jump**; this fighter must still end on a legal surface.
+
+**Summon (-)** — See [Summoning](#summoning) and **Summon Daemon**.
+
 #### Hellion
 
-| Hellion | M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|---|
-| Profile | 8" | 4 | — | 3 | 3 | 2 | 3 | 2 |
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 8" | 4 | — | 3 | 3 | 2 | 3 | 2 |
 
-**Bite** — **Melee** attack, **+2 Mt / +1 Sk** (built-in). Cannot equip other weapons.
-
-**Savage Charge** — When this fighter's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool.
+| Weapon | Hands | +Mt | +Sk | Type | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Bite | — | +2 | +1 | — | Built-in **Melee** |
 
 **Keywords:** **Infernal**, **Daemon**, **Hellion**, **Summon (-)**
 
+**Daemon** — Cannot equip weapons, armor, or equipment. Cannot gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
+
+**Summon (-)** — See [Summoning](#summoning) and **Summon Daemon**.
+
+**Savage Charge** — When this fighter's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool.
+
 #### Mauler
 
-| Mauler | M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|---|
-| Profile | 5" | 3 | — | 4 | 3 | 2 | 3 | 4 |
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 5" | 3 | — | 4 | 3 | 2 | 3 | 4 |
 
-**Thick Skin** — Uses [Heavy Armor](equipment.md#armor) conversion. Cannot equip armor.
-
-**Mighty Fists** — **Melee** attack, **Hammer**, **+2 Mt / +0 Sk** (built-in). Cannot equip other weapons.
+| Weapon | Hands | +Mt | +Sk | Type | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Mighty Fists | — | +2 | — | Hammer | Built-in **Melee** |
 
 **Keywords:** **Infernal**, **Daemon**, **Mauler**, **Large**, **Summon (-)**
 
+**Daemon** — Cannot equip weapons, armor, or equipment. Cannot gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
+
+**Large** — Cannot perform the **Hide** action.
+
+**Summon (-)** — See [Summoning](#summoning) and **Summon Daemon**.
+
+**Thick Skin** — Uses [Heavy Armor](equipment.md#armor) conversion.
+
+#### Zombie
+
+Created only when **Summon Daemon** rolls double **1**s on the **Summon Result** table ( **1-crystal** summon).
+
+| M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|
+| 4" | 2 | — | 3 | 1 | 1 | 1 | 1 |
+
+**Equipment:** Unarmed attack. Cannot be changed.
+
+**Keywords:** **Undead**, **Summon (-)**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
+
+**Summon (-)** — Stays until the battle ends. Cannot be bound. Remove from the retinue after the battle.
+
 ##### The Void
-**Casting:** Sa 14+. **Range:** 12".\
-Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.\
+**Casting:** Sa 14+. **Range:** 12".
+Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.
 
-While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.\
-**Mishap:** The marker is placed centered on the caster instead.\
+While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.
+**Mishap:** The marker is placed centered on the caster instead.
 
-##### *(TBD)*
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.\
-This spell is not yet playtest-ready.
+##### Possession
+**Casting:** Sa 13+. **Range:** Engagement range.
+Target enemy must pass one **Wi check**. On a failure, they become **Possessed**.
 
-##### *(TBD)*
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.\
-This spell is not yet playtest-ready.
+While **Possessed**, the player who cast **Possession** controls that fighter's activations — not the fighter's owner. Each activation, the **Possessed** fighter has **1 action** instead of **2**.
 
-##### *(TBD)*
-**Casting:** Sa *(TBD)*. **Range:** *(TBD)*.\
-This spell is not yet playtest-ready.
+At the end of each of that fighter's activations while **Possessed**, they make one **Wi check**. On a pass, **Possessed** ends immediately.
+
+**Mishap:** The caster becomes **Possessed** instead. Your opponent controls the caster's activations until **Possessed** ends.
+
+##### Hellmouth
+**Casting:** Sa 11+. **Range:** 12".
+Choose a point within **12"**. Place a **5" blast template** centered on that point. The template cannot overlap any fighter's base. The template counts as **impassable terrain** for the rest of the battle.
+**Mishap:** The **Hellmouth** opens centered on the caster instead.
+
+##### Searing Gaze
+**Casting:** Sa 12+. **Range:** 18". **Attack:** RC, 4 Mt / 4 Sk.
+Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you choose. Every fighter the line touches that is in **line of sight** of the caster is hit.
+**Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](core-rules.md#blinded).
+
+##### Nightmare Visage
+**Casting:** Sa 11+. **Range:** 12".
+Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes one **Sa check**. On a failure, the spell ends.
 
 
 
 #### Nature
 
 ##### Thorn Volley
-**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, 4 Mt / 4 Sk.\
+**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, 4 Mt / 4 Sk.
 Make a ranged spell attack using a **standard flame template**.
 
 ##### Shadowmeld
-**Casting:** Wi 11+. **Range:** 12".\
-Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.\
+**Casting:** Wi 11+. **Range:** 12".
+Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.
 **Mishap:** Enemies add **+1 RC** or **+1 CC** — whichever **Hit** stat the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
 
 ##### Venom
-**Casting:** Wi 10+. **Range:** 12".\
-Target enemy must pass one **Mt check**. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).\
+**Casting:** Wi 10+. **Range:** 12".
+Target enemy must pass one **Mt check**. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).
 **Mishap:** The caster becomes **Poisoned**.
 
 ##### Feral Form
-**Casting:** Wi 11+. **Range:** 6".\
-Target friendly fighter gains +2 Mt and +1" M until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.\
+**Casting:** Wi 11+. **Range:** 6".
+Target friendly fighter gains +2 Mt and +1" M until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.
 **Mishap:** The caster suffers **−1 Sa** until the end of their next activation.
 
 ##### Entangle
-**Casting:** Wi 12+. **Range:** 12".\
-Target enemy has M reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.\
+**Casting:** Wi 12+. **Range:** 12".
+Target enemy has M reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
 **Mishap:** The caster has M reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
 
-##### Summon Swarm
-**Casting:** Wi 10+. **Range:** 3".\
-Place a Swarm within 3" of the caster. The Swarm activates immediately with 2 actions, then disappears at the end of its activation.
+##### Stinging Swarm
+**Casting:** Wi 10+. **Range:** 3".
+Place a **Stinging Swarm** within **3"** of the caster — hornets, wasps, and biting insects drawn from the wild. Roll **1d3**. The **Stinging Swarm** remains for that many **activations**, counting this one. It activates immediately with **2 actions**. Remove it from the battle when those activations have finished.
 
-| Swarm | M | CC | RC | Mt | Sk | Wi | Sa | W |
+| Stinging Swarm | M | CC | RC | Mt | Sk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|---|
-| Profile | 6" | 3 | — | 2 | 6 | 1 | 1 | 1 |
+| Profile | 7" | 3 | — | 0 | 5 | 1 | 1 | 5 |
 
-**Equipment:** Natural weapons (already included in Mt/Sk). Cannot be changed.
+**Equipment:** Unarmed attack (see **Swarm**). Cannot be changed.
 
-**Keywords:** **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
+**Keywords:** **Swarm**, **Fly**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
-**Mishap:** The Swarm appears hostile. Your opponent controls it for its single activation.
+**Fly** — Ignore vertical distance for **Move** and **Jump**; this fighter must still end on a legal surface.
+
+**Mishap:** The **Stinging Swarm** appears hostile. Your opponent controls it for its activation, then remove it from the battle.
 
 ##### Dread Chorus
-**Casting:** Wi 11+. **Range:** 8" from caster.\
+**Casting:** Wi 11+. **Range:** 8" from caster.
 All enemy fighters within 8" must pass a **Sa check** for **Fear** with the caster as the source.
 
 #### Necromancy
 
 ##### Deathbolt
-**Casting:** Sa 14+. **Range:** 18". **Attack:** RC, 6 Sk.\
+**Casting:** Sa 14+. **Range:** 18". **Attack:** RC, 6 Sk.
 Make a ranged spell attack. This attack uses only Sk and ignores armor.
 
 ##### Summon Skeleton
-**Casting:** Sa 10+. **Range:** 3".\
-Place a Skeleton within 3" of the caster. The Skeleton activates immediately with 2 actions, then crumbles to dust at the end of its activation.
+**Casting:** Sa 10+. **Range:** 3".
+
+The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
+
+**Remove** one **body token** within **3"** of the caster — see [Body tokens](#body-tokens). Spend **1 Summoning Crystal** from the caster. Place a **Skeleton** where the token was. The **Skeleton** has **Summon (1d6)** — roll **1d6** when it is created; it stays that many **rounds**, counting the round it was summoned. The **Skeleton** activates immediately with **2 actions**.
 
 | Skeleton | M | CC | RC | Mt | Sk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|---|
@@ -1592,70 +1630,130 @@ Place a Skeleton within 3" of the caster. The Skeleton activates immediately wit
 
 **Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
 
-**Keywords:** **Undead**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
+**Keywords:** **Undead**, **Summon (1d6)**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
-**Mishap:** The Skeleton appears hostile. Your opponent controls it for its single activation.
+**Binding the Skeleton:** If the **Skeleton** is still on the table when the battle ends, the fighter whose **body token** was removed rolls on the **Casualty Table** as normal. If that roll **removes them from the roster**, the **Skeleton** binds and joins the retinue permanently. If they remain on the roster, remove the **Skeleton** from the retinue. A friendly fighter's controlling player rolls; an enemy fighter's controlling player rolls.
+
+**Mishap:** The **Skeleton** appears hostile. Your opponent controls it for its activation, then remove it from the battle.
 
 ##### Raise Dead
-**Casting:** Sa 12+. **Range:** 3".\
-Target a friendly fighter that went **Out of Action** this battle. Place them within 3" of the caster with 1 Wound, **Undead**, and **Fearless**. They activate immediately with 2 actions, then go **Out of Action** at the end of their activation.\
+**Casting:** Sa 13+. **Range:** 3".
+**Remove** one **friendly** **body token** within **3"** of the caster — see [Body tokens](#body-tokens). Place that fighter within **3"** of the caster with **1 Wound**, **Undead**, and **Fearless**. Roll **1d3**. The fighter remains in the battle for that many **activations**, counting this one. They activate immediately with **2 actions**. When those activations have finished, they go **Out of Action** and are removed from the battle.
 **Mishap:** Your opponent places and controls the raised fighter instead.
 
 ##### Cursed Ground
-**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 2 Mt / 2 Sk.\
-Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check**.\
+**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 2 Mt / 2 Sk.
+Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check**.
 **Mishap:** The blast centers on the caster.
 
 ##### Wither
-**Casting:** Sa 11+. **Range:** 12".\
-Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened).\
+**Casting:** Sa 11+. **Range:** 12".
+Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened).
 **Mishap:** The caster suffers **Weakened** until the start of their next activation.
 
 ##### Bone Blast
-**Casting:** Sa 11+. **Range:** blast from caster. **Attack:** CC, 1 Mt / 4 Sk.\
+**Casting:** Sa 11+. **Range:** blast from caster. **Attack:** CC, 1 Mt / 4 Sk.
 Center the blast template on the caster. All fighters under the template except the caster are hit.
-**Mishap:** *(TBD)*
+**Mishap:** Resolve the attack against the caster.
 
 ##### Bone Circle
-**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 1 Mt / 3 Sk.\
-Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters.\
+**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 1 Mt / 3 Sk.
+Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters.
 **Mishap:** The zone centers on the caster.
 
 #### Blood
 
 ##### Leech
-**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, 3 Mt / 3 Sk.\
+**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, 3 Mt / 3 Sk.
 Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
 
 ##### Bleed
-**Casting:** Sa 13+. **Range:** 12".\
-Target enemy must pass one **Wi check**. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).\
+**Casting:** Sa 13+. **Range:** 12".
+Target enemy must pass one **Wi check**. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).
 **Mishap:** The caster becomes **Bleeding** instead.
 
 ##### Blood Frenzy
-**Casting:** Sa 11+. **Range:** 6".\
-Target friendly fighter gains **+3 Mt** and suffers **−1 CC** and **−1 RC** until the start of the caster's next activation.\
+**Casting:** Sa 11+. **Range:** 6".
+Target friendly fighter gains **+3 Mt** and suffers **−1 CC** and **−1 RC** until the start of the caster's next activation.
 **Mishap:** The target suffers **−1 Mt**, **−1 CC**, and **−1" M** until the start of the caster's next activation.
 
-##### Predator's Grace
-**Casting:** Sa 10+. **Range:** 6".\
-Target friendly fighter gains +1" M and +1 Sk until the start of the caster's next activation.\
-**Mishap:** The target becomes **Downed**.
+##### Summon Bats
+**Casting:** Sa 11+. **Range:** 3".
+
+The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
+
+Place **Bats** within **3"** of the caster. The caster suffers **1 Wound**. Spend **1 Summoning Crystal** from the caster. The **Bats** have **Summon (1d3)** — roll **1d3** when they are created; they stay that many **rounds**, counting the round they were summoned. The **Bats** activate immediately with **2 actions**.
+
+| Bats | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| Profile | 7" | 3 | — | 0 | 6 | 1 | 1 | 6 |
+
+**Equipment:** Unarmed attack (see **Swarm**). Cannot be changed.
+
+**Keywords:** **Swarm**, **Fly**, **Summon (1d3)**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
+
+**Fly** — Ignore vertical distance for **Move** and **Jump**; this fighter must still end on a legal surface.
+
+Cannot be bound.
+
+**Mishap:** The **Bats** appear hostile. Your opponent controls them for their activation, then remove them from the battle.
 
 ##### Enthrall
-**Casting:** Sa 11+. **Range:** 8".\
-Target enemy must pass one **Wi check** or immediately take one **Move** action in a direction chosen by the caster.\
+**Casting:** Sa 11+. **Range:** 8".
+Target enemy must pass one **Wi check** or immediately take one **Move** action in a direction chosen by the caster.
 **Mishap:** A friendly fighter chosen by your opponent takes the move instead.
 
 ##### Feast of Excess
-**Casting:** Sa 11+. **Range:** 12".\
-Target friendly fighter gains +1 Mt, +1 Sk, and +1" M. When the effect ends, the target becomes **Stunned**. They keep their Wounds.\
+**Casting:** Sa 11+. **Range:** 12".
+Target friendly fighter gains +1 Mt, +1 Sk, and +1" M. When the effect ends, the target becomes **Stunned**. They keep their Wounds.
 **Mishap:** The target becomes **Stunned**.
 
 ##### Nightfall
-**Casting:** Sa 11+. **Range:** Self.\
-The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster gains **+1 CC** on **Melee** attacks.\
+**Casting:** Sa 11+. **Range:** Self.
+The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster gains **+1 CC** on **Melee** attacks.
 **Mishap:** Bright light exposes the caster. Enemies gain **+1 RC** when making **Ranged** attacks against the caster, and the caster suffers **−1 Mt** until the start of their next activation.
+
+---
+
+### Summoning
+
+Some spells call fighters onto the table during a battle. Those fighters carry the **Summon** keyword. **Summoning Crystals** fuel the rite. Each summoning spell explains who spends crystals, what is sacrificed, and whether a surviving fighter may be **bound** to the retinue after the battle.
+
+#### Body tokens
+
+When any fighter goes **Out of Action**, place a **body token** where that fighter stood — unless that fighter was created by **Summon Skeleton**. A **body token** marks that fighter's body. Remove unused tokens at the end of the battle.
+
+When a **friendly** **body token** is placed, the controlling player may **remove** it immediately to use **Bell-keepers** — see [Tradition Special Rules — Necromancy](#tradition-special-rules) — if that ability has not been used this battle. Otherwise leave the token on the table.
+
+Spells and traditions that use corpses **remove** a **body token** rather than targeting fighters who went **Out of Action**.
+
+#### Summoning Crystals
+
+**Summoning Crystals** are equipment from [Equipment — Summoning Crystals](equipment.md#crown-costs--summoning). Assign them to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal spent during a summoning spell is consumed. Remove spent crystals from the roster after the battle.
+
+Summoning spells name the crystal cost and which fighter or fighters spend them.
+
+#### Summon (*value*)
+
+**Summon (*value*)** marks a fighter created during the battle. Record the full keyword, value included.
+
+- A **fixed number** — the fighter stays that many **rounds**, counting the round it was created. When those rounds have finished, remove the fighter from the battle.
+- A **dice expression** (such as **1d6**) — roll when the fighter is created. The result is how many **rounds** it stays, counting the round it was created. When those rounds have finished, remove the fighter from the battle.
+- **-** (hyphen) — the fighter stays until the battle ends.
+
+Fighters with **Summon** are not permanent roster members unless a summoning spell binds them after the battle.
+
+Fighters with **Summon (*number*)** or **Summon (*dice*)** cannot be bound unless a summoning spell says otherwise.
+
+**Summon (-)** fighters that survive until the battle ends remain with the retinue until the **Post-Game Sequence** is finished. During that sequence, a summoning spell may allow the retinue to **bind** them so they join the roster permanently. If binding fails or is not attempted, remove the fighter from the retinue.
+
+Roster limits for bound fighters: *(TBD)*.
+
+#### Binding
+
+**Binding** is the post-battle attempt to keep a summoned fighter permanently. Each summoning spell that allows binding names who rolls, any difficulty, and what happens to everyone involved on success, failure, and a natural **1** on the roll.
+
+Resolve binding during the **Post-Game Sequence**, before or in place of other casualty resolution tied to that summon, as the spell describes.
 
 ---
 

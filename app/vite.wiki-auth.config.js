@@ -21,7 +21,7 @@ const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), 
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "public/rules",
+    outDir: "public/wiki",
     emptyOutDir: false,
     cssCodeSplit: false,
     rollupOptions: {

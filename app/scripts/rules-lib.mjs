@@ -537,7 +537,7 @@ export function buildDocumentPathMap() {
 }
 
 function rulesUrl(html, fragment = "") {
-  const pathname = html === "index.html" ? "/rules/" : `/rules/${html.replace(/index\.html$/, "")}`;
+  const pathname = html === "index.html" ? "/" : `/${html.replace(/index\.html$/, "")}`;
   return `${pathname}${fragment}`;
 }
 

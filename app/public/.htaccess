@@ -2,14 +2,15 @@
   RewriteEngine On
   RewriteBase /
 
-  # Static rules wiki — do not fall through to the React app.
-  RewriteRule ^rules/?$ - [L]
-  RewriteRule ^rules/ - [L]
+  # Legacy rules wiki paths.
+  RewriteRule ^rules/?$ / [R=301,L]
+  RewriteRule ^rules/(.+)$ /$1 [R=301,L]
 
-  RewriteRule ^index\.html$ - [L]
+  # Retinue builder SPA fallback.
+  RewriteRule ^retinue-builder/?$ /retinue-builder/index.html [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+  RewriteRule ^retinue-builder/.+ /retinue-builder/index.html [L]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -24,7 +25,7 @@
   </LocationMatch>
 
   # Rules wiki static bundles — unhashed filenames, revalidate each visit.
-  <LocationMatch "^/rules/.*\.(js|css)$">
+  <LocationMatch "^/wiki/.*\.(js|css)$">
     Header set Cache-Control "no-cache, must-revalidate"
   </LocationMatch>
 </IfModule>

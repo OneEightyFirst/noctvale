@@ -115,11 +115,11 @@ Bombs are **Single Shot** (one use per battle).
 
 ---
 
-### Crown costs — Infernal summoning
+### Crown costs — Summoning
 
 | Item | Cost | Access | Notes |
 | ---- | ---- | ------ | ----- |
-| Summoning Crystal | *(TBD)* | **Binders** | Assigned to a fighter; max **2** per fighter; used by **Summon Daemon** |
+| Summoning Crystal | *(TBD)* | **Binders**; any **Caster** who knows a summoning spell | Assigned to a fighter; max **2** per fighter; see [Summoning](retinue.md#summoning) |
 
 ---
 
@@ -626,15 +626,15 @@ Poisoned](core-rules.md#poisoned).
 
 | CC | RC | Mt | Sk | Wi | Sa | W | Tether |
 |---|---|---|---|---|---|---|---|
-| 3 | — | 2 | 5 | *(Tamed)* | *(Tamed)* | 1 | **3"** |
+| 3 | — | 0 | 6 | *(Tamed)* | *(Tamed)* | 6 | **3"** |
 
 **M** *(Tamed)*
 
-**Natural weapons** — **Melee** attack using profile **Mt** / **Sk**.
+**Unarmed attack** — see **Swarm** in [Retinue — Swarm](retinue.md#swarm).
 
-Not the same as **Summon Swarm** — that spell places a temporary **Swarm**;
+Not the same as **Stinging Swarm** — that spell places a temporary **Stinging Swarm**;
 this **Companion** is roster gear tied to a **Handler**.
 
-**Keywords:** **Tamed**
+**Keywords:** **Swarm**, **Tamed**
 
 ---

@@ -6,7 +6,8 @@ import FeedbackButton from "./FeedbackButton.jsx";
 import NoctvaleLogo, { NoctvaleMark } from "./NoctvaleLogo.jsx";
 import UserMenu from "./UserMenu.jsx";
 
-const RULES_HOME = "/rules/";
+const RULES_HOME = "/";
+const BUILDER_HOME = "/retinue-builder/";
 
 function AppLogo({ className = "h-20 w-auto" }) {
   return (

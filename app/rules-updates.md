@@ -6,6 +6,20 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-25 19:29 EDT — Summoning spells, Infernal list, Shield of Faith
+
+**Change:**
+
+- Synced **Shield of Faith** to **Wi 10+**; removed erroneous **Fear (6")** projection.
+- Added Infernal spells **Possession**, **Hellmouth**, **Searing Gaze**, and **Nightmare Visage**; removed Infernal TBD placeholders.
+- Synced **Summon Daemon**, **Summon Skeleton**, **Raise Dead**, **Summon Bats**, **Stinging Swarm**, **Bone Blast**, and summoning-related Tradition text.
+- Renamed **Summon Swarm** → **Stinging Swarm**; replaced **Predator's Grace** with **Summon Bats**.
+- Updated Infernal Tradition blurb (no remaining TBD spells).
+
+**Source:** `rules/retinue.md`, `rules/equipment.md`.
+
+**Impact:** Display-only spell and Tradition text; no roster validation changes.
+
 ## 2026-06-25 14:18 EDT — Hellfire, hit-stat sync, Icon rename
 
 **Change:**

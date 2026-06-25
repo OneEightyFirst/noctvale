@@ -6,18 +6,20 @@
   const navTree = document.getElementById("wiki-nav-tree");
 
   function currentPage() {
-    const rulesPath = window.location.pathname.split("/rules/")[1] ?? "";
-    const trimmedPath = rulesPath.replace(/^\/+|\/+$/g, "");
-    if (!trimmedPath || trimmedPath === "index.html") return "index.html";
-    if (trimmedPath.endsWith("/index.html")) return trimmedPath;
-    if (trimmedPath.endsWith(".html")) return trimmedPath;
-    return `${trimmedPath}/index.html`;
+    let rulesPath = window.location.pathname.replace(/^\/+|\/+$/g, "");
+    if (rulesPath.startsWith("rules/")) {
+      rulesPath = rulesPath.slice("rules/".length);
+    }
+    if (!rulesPath || rulesPath === "index.html") return "index.html";
+    if (rulesPath.endsWith("/index.html")) return rulesPath;
+    if (rulesPath.endsWith(".html")) return rulesPath;
+    return `${rulesPath}/index.html`;
   }
 
   function currentHrefs(page) {
-    const explicitHref = `/rules/${page}`;
-    const prettyHref = page === "index.html" ? "/rules/" : `/rules/${page.replace(/index\.html$/, "")}`;
-    return [...new Set([prettyHref, explicitHref])];
+    const explicitHref = page === "index.html" ? "/" : `/${page.replace(/index\.html$/, "")}`;
+    const legacyHref = page === "index.html" ? "/rules/" : `/rules/${page.replace(/index\.html$/, "")}`;
+    return [...new Set([explicitHref, legacyHref, `/rules/${page}`])];
   }
 
   function setExpanded(toggle, expanded) {

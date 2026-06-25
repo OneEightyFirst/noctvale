@@ -8,14 +8,15 @@ import RetinueLibrary from "./components/RetinueLibrary.jsx";
 
 const RetinueEditor = lazy(() => import("./components/RetinueEditor.jsx"));
 
-const RULES_URL = "/rules/";
+const RULES_URL = "/";
+const BUILDER_URL = "/retinue-builder/";
 
 function viewFromHistoryState(state) {
   return state?.noctvaleView === "retinues" ? "retinues" : "retinues";
 }
 
 function appRootUrl() {
-  return `${window.location.pathname}${window.location.search}`;
+  return BUILDER_URL;
 }
 
 function ViewFallback({ label }) {
@@ -50,7 +51,7 @@ export default function App() {
       const page = legacyRules[1] === "intro" ? "" : `${legacyRules[1]}/`;
       const anchorMatch = hash.match(/^#rules\/[^/]+\/(.+)$/);
       const anchor = anchorMatch ? `#${decodeURIComponent(anchorMatch[1])}` : "";
-      window.location.replace(`/rules/${page}${anchor}`);
+      window.location.replace(`/${page}${anchor}`);
     }
   }, []);
 

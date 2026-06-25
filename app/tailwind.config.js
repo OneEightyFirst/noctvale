@@ -1,5 +1,5 @@
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,css}", "./scripts/wiki-shell.js"],
+  content: ["./retinue-builder/index.html", "./src/**/*.{js,jsx,css}", "./scripts/wiki-shell.js"],
   theme: {
     extend: {
       fontFamily: {

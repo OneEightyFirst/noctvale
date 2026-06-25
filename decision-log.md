@@ -32,6 +32,14 @@ only — not duplicate checklists.
 
 ---
 
+## 2026-06-25 — Summoning rules, Infernal spells, and rules site routing
+
+**Decision:** Add shared **Summoning** rules (**Summoning Crystals**, **Summon (*value*)**, **Binding**, **body tokens**). Write **Summon Daemon**, **Summon Skeleton**, **Raise Dead**, **Summon Bats**, **Stinging Swarm**, and related tradition procedures. Add **Swarm** keyword and **Rat Swarm** companion profile. Complete Infernal spell list: **Possession**, **Hellmouth**, **Searing Gaze**, and **Nightmare Visage** (friendly fighter within **12"** projects **Fear (6")**; end-of-round caster **Sa check** sustains). Fix **Shield of Faith** to **Wi 10+** and remove erroneous **Fear (6")**. Rename **Summon Swarm** → **Stinging Swarm**; replace **Predator's Grace** with **Summon Bats**. Republish rules wiki at site root with assets under `/wiki/`; move retinue builder to `/retinue-builder/`; gitignore generated HTML. Sync builder spell and Tradition data.
+
+**Reasoning:** Summoning needs one shared procedure before more bind profiles land. Body tokens unify necromancy corpse economy. Infernal domain gains playable fear, terrain, and control spells. Shield of Faith is a defense buff, not a fear source. Root-level rules URLs simplify sharing; separating builder from wiki avoids route collision.
+
+---
+
 ## 2026-06-25 — Daemon profiles, Summon keyword, and hit-stat rules pass
 
 **Decision:** Write **Imp**, **Hellion**, and **Mauler** daemon profiles for

@@ -15,7 +15,6 @@ import {
 
 const appDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appDir, "..");
-const outDir = path.join(appDir, "public", "rules");
 
 function getGitSha() {
   try {
@@ -30,7 +29,7 @@ function assetUrl(pathname, assetVersion) {
 }
 
 function rulesUrl(html, anchor = "") {
-  const pathname = html === "index.html" ? "/rules/" : `/rules/${html.replace(/index\.html$/, "")}`;
+  const pathname = html === "index.html" ? "/" : `/${html.replace(/index\.html$/, "")}`;
   return `${pathname}${anchor ? `#${anchor}` : ""}`;
 }
 
@@ -94,7 +93,7 @@ function renderPlaytestCallout() {
             <p>Thanks for playing and helping shape the game.</p>
           </div>
           <div class="wiki-playtest-actions">
-            <a href="/" class="wiki-playtest-btn">Build a retinue</a>
+            <a href="/retinue-builder/" class="wiki-playtest-btn">Build a retinue</a>
           </div>
         </section>`;
 }
@@ -103,9 +102,9 @@ function renderPage(article, bodyHtml, navTree, assetVersion) {
   const headerBorder = article.id === "intro" ? "" : " wiki-article-header--bordered";
   const playtestCallout = article.id === "intro" ? renderPlaytestCallout() : "";
   const rulesHome = rulesUrl("index.html");
-  const wikiCss = assetUrl("/rules/wiki.css", assetVersion);
-  const wikiAuthJs = assetUrl("/rules/wiki-auth.js", assetVersion);
-  const wikiJs = assetUrl("/rules/wiki.js", assetVersion);
+  const wikiCss = assetUrl("/wiki/wiki.css", assetVersion);
+  const wikiAuthJs = assetUrl("/wiki/wiki-auth.js", assetVersion);
+  const wikiJs = assetUrl("/wiki/wiki.js", assetVersion);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -140,7 +139,7 @@ function renderPage(article, bodyHtml, navTree, assetVersion) {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
               Rules
             </a>
-            <a href="/" class="wiki-view-link">
+            <a href="/retinue-builder/" class="wiki-view-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
               Retinues
             </a>
@@ -180,7 +179,7 @@ function markdownToHtml(markdown) {
   });
 }
 
-function renderRedirect(targetHtml) {
+function renderLegacyRedirect(targetHtml) {
   const targetUrl = rulesUrl(targetHtml);
   return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><title>Noctvale Rules</title></head><body><p><a href="${targetUrl}">Noctvale Rules</a></p></body></html>`;
 }
@@ -188,7 +187,7 @@ function renderRedirect(targetHtml) {
 function buildWikiCss() {
   const result = spawnSync(
     "npx",
-    ["tailwindcss", "-i", "./src/wiki.css", "-o", "./public/rules/wiki.css", "--minify"],
+    ["tailwindcss", "-i", "./src/wiki.css", "-o", "./public/wiki/wiki.css", "--minify"],
     { cwd: appDir, stdio: "inherit", shell: process.platform === "win32" },
   );
 
@@ -209,34 +208,52 @@ function buildWikiAuth() {
   }
 }
 
-rmSync(outDir, { recursive: true, force: true });
-mkdirSync(outDir, { recursive: true });
+const publicDir = path.join(appDir, "public");
+const wikiDir = path.join(publicDir, "wiki");
+const legacyRulesDir = path.join(publicDir, "rules");
 
 const pathToHtml = buildDocumentPathMap();
 const articles = loadArticles(repoRoot);
 const navTree = buildNavTree(articles);
 const assetVersion = getGitSha();
 
+rmSync(wikiDir, { recursive: true, force: true });
+rmSync(legacyRulesDir, { recursive: true, force: true });
+mkdirSync(wikiDir, { recursive: true });
+mkdirSync(legacyRulesDir, { recursive: true });
+
+for (const article of articles) {
+  const articlePath = path.join(publicDir, article.html);
+  rmSync(articlePath, { force: true });
+  if (article.legacyHtml) {
+    rmSync(path.join(publicDir, article.legacyHtml), { force: true });
+  }
+}
+
 for (const article of articles) {
   const linkedMarkdown = rewriteMarkdownLinks(article.displayMarkdown, pathToHtml);
   const bodyHtml = markdownToHtml(linkedMarkdown);
   const html = renderPage(article, bodyHtml, navTree, assetVersion);
-  const articlePath = path.join(outDir, article.html);
+  const articlePath = path.join(publicDir, article.html);
   mkdirSync(path.dirname(articlePath), { recursive: true });
   writeFileSync(articlePath, html);
 
+  const legacyArticlePath = path.join(legacyRulesDir, article.html);
+  mkdirSync(path.dirname(legacyArticlePath), { recursive: true });
+  writeFileSync(legacyArticlePath, renderLegacyRedirect(article.html));
+
   if (article.legacyHtml) {
-    const legacyHtml = article.html === "index.html" ? html : renderRedirect(article.html);
-    writeFileSync(path.join(outDir, article.legacyHtml), legacyHtml);
+    writeFileSync(path.join(publicDir, article.legacyHtml), renderLegacyRedirect(article.html));
+    writeFileSync(path.join(legacyRulesDir, article.legacyHtml), renderLegacyRedirect(article.html));
   }
 }
 
 writeFileSync(
-  path.join(outDir, "wiki.js"),
+  path.join(wikiDir, "wiki.js"),
   readFileSync(path.join(appDir, "scripts", "wiki-shell.js"), "utf8"),
 );
 
 buildWikiCss();
 buildWikiAuth();
 
-console.log(`Built ${articles.length} rules pages → public/rules/`);
+console.log(`Built ${articles.length} rules pages → public/`);

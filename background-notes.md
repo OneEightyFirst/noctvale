@@ -109,6 +109,18 @@ condition text lives in `rules/core-rules.md` (**Afflictions**).
 Arcane, Light, and Nature spells could potentially remove these afflictions,
 creating a cleanse / debuff dynamic between magic categories.
 
+### Swarm wound budgets *(design)*
+
+**Swarm** profiles use fixed **W** on the stat line; **Sk** equals **W**. When
+authoring new swarms, treat **3**–**6** as the normal wound band — small vermin
+at the low end, dense or aerial masses at the high end. Current profiles:
+
+| Swarm | W |
+|---|---:|
+| **Stinging Swarm** (Nature) | 5 |
+| **Rat Swarm** (Companion) | 6 |
+| **Bats** (Blood — **Summon Bats**) | 6 |
+
 ---
 
 ## Roster Identity Notes
