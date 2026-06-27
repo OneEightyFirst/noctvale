@@ -10,20 +10,14 @@ To play Noctvale, each player needs:
   call these **red dice** and **blue dice**, but any two clearly separate colors
   work.
 - A measuring tool marked in **"**.
-- Counters for **Hidden**, **Downed**, **Stunned**, **Out of Action**, and **Overwatch**.
+- Counters or markers for **Hidden**, **Downed**, **Stunned**, **Poisoned**,
+  **Weakened**, **Enfeebled**, **Bleeding**, **Blinded**, **Fear**, **Panic**,
+  **Insanity**, body markers, and **Overwatch tokens**.
 - Template markers: a **standard flame template**, a **3" blast template**, a
   **5" blast template**, and a **scatter die**. You can print the template
   markers provided at the back of this book.
 
 Use the scenario rules if a battle gives different setup, terrain, deployment, objective, or reward instructions.
-
----
-
-## Getting Started
-
-A Noctvale battle follows a simple rhythm: set the battlefield, determine initiative, alternate fighter activations, resolve actions, and track wounds and conditions until the battle ends.
-
-Scenario rules may change the setup, terrain, deployment, objectives, rewards, or end conditions for a battle. When a scenario gives a specific instruction, use the scenario rule.
 
 ---
 
@@ -54,21 +48,29 @@ and a natural **6** always succeeds.
 
 In campaign play, no stat can be raised above **6**. If a stat is reduced to
 **1**, the fighter can no longer perform actions that require that stat; they
-are maimed, broken, or insane.
+are maimed, broken, or hollowed.
 
 **Rerolls:** A die can only be rerolled once. If more than one rule allows a reroll, choose
 one; the second result stands.
 
 ### Baseline Ancestry Profiles
 
-Use the profile that best represents the fighter you put on the table.
+Noctvale is full of fighters of every shape, size, and ancestry. Before the
+Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities
+and towns gathered the diversity of many peoples living peaceably together.
+Use these profiles to represent fighters from different backgrounds and
+ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk;
+**Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves,
+Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or
+other short, quick folk. Your retinue is yours to build; choose the profile
+that represents the fighter you put on the table.
 
-| Ancestry profile | Example ancestries | M | CC | RC | Mt | Sk | Wi | Sa | W |
-|---|---|---|---|---|---|---|---|---|---|
-| **Steady** | Humans, Half-Elves | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 |
-| **Keen** | Elves | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 |
-| **Stout** | Dwarves, Orcs | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 |
-| **Stunty** | Halflings, Goblins, Gnomes | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 |
+| Ancestry profile | M | CC | RC | Mt | Sk | Wi | Sa | W |
+|---|---|---|---|---|---|---|---|---|
+| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 |
+| **Keen** | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 |
+| **Stout** | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 |
+| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 |
 
 ### Stat Modifiers
 
@@ -80,6 +82,13 @@ The total bonus or penalty to any single stat (**Movement**, **Close Combat**, *
 
 Afflictions such as **Poisoned**, **Weakened**, and **Enfeebled** count toward
 this cap.
+
+### Strike Pool
+
+Combat dice use two colors. **Red dice** represent **Might**. **Blue dice**
+represent **Skill**. The Strike Pool is the group of red and blue dice an
+attacker rolls during the Attack Sequence. A fighter's **Might** adds red dice,
+their **Skill** adds blue dice, and their weapon may add more red or blue dice.
 
 ---
 
@@ -493,15 +502,6 @@ Roll **1d6:**
 ---
 
 ## Combat
-
-### Might & Skill Dice
-
-Combat dice use two colors. **Red dice** represent **Might**. **Blue dice**
-represent **Skill**. Weapons add red dice with +**Might** and blue dice with +**Skill**.
-
-#### Strike Pool
-
-The Strike Pool is the group of red and blue dice an attacker rolls during the Attack Sequence. A fighter's **Might** adds red dice, their **Skill** adds blue dice, and their weapon may add more red or blue dice.
 
 ### Targeting, Line of Sight, and Cover
 

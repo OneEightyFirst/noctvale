@@ -32,6 +32,26 @@ only — not duplicate checklists.
 
 ---
 
+## 2026-06-27 — Core rules reading pass cleanup
+
+**Decision:** Remove the redundant **Getting Started** section from Core Rules.
+Update **What You Need to Play** so **Out of Action** no longer requires a
+counter and players are prompted for condition markers, body markers, and
+**Overwatch tokens**. Move the broad Strike Pool explanation above **Battle
+Setup**. Move the ancestry framing paragraph to the first baseline ancestry
+table and remove example-ancestry columns from the repeated tables. Replace the
+reduced-stat descriptor "insane" with "hollowed" so it does not collide with
+the **Insanity** condition. Update the rules-site outline to remove the deleted
+anchor and place **Strike Pool** under **Stats**.
+
+**Reasoning:** The opening rules should teach only the components and concepts
+players need before setup. **Out of Action** fighters leave the board, while
+state-changing conditions and tokens need visible markers. Ancestry examples
+read better as framing prose than repeated table data, and the Strike Pool
+primer belongs with stats before the first battle procedure.
+
+---
+
 ## 2026-06-27 — Spell out stats in prose
 
 **Decision:** Update the style guide and canonical rules so stat abbreviations are reserved for tables. In prose, write full bold stat names such as **Skill**, **Might**, **Ranged Combat**, and **Will**. Stat checks use the article form “a **Skill** check” rather than “one **Skill** check.”

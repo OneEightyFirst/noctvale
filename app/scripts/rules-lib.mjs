@@ -58,13 +58,13 @@ const RULES_OUTLINE = [
     articleId: "core-rules",
     children: [
       { label: "What You Need to Play", articleId: "core-rules", anchor: "what-you-need-to-play" },
-      { label: "Getting Started", articleId: "core-rules", anchor: "getting-started" },
       {
         label: "Stats",
         articleId: "core-rules",
         anchor: "stats",
         children: [
           { label: "Stat Modifiers", articleId: "core-rules", anchor: "stat-modifiers" },
+          { label: "Strike Pool", articleId: "core-rules", anchor: "strike-pool" },
         ],
       },
       {
@@ -127,14 +127,6 @@ const RULES_OUTLINE = [
         articleId: "core-rules",
         anchor: "combat",
         children: [
-          {
-            label: "Might & Skill Dice",
-            articleId: "core-rules",
-            anchor: "might-skill-dice",
-            children: [
-              { label: "Strike Pool", articleId: "core-rules", anchor: "strike-pool" },
-            ],
-          },
           { label: "Attack Sequence", articleId: "core-rules", anchor: "attack-sequence" },
           {
             label: "The Crit Triangle",
