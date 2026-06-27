@@ -47,10 +47,10 @@ Higher values are better for all stats.
 ### Stat Checks
 
 When a rule asks you to make a stat check, it names the stat being tested. A
-Might check uses **Mt**, a Skill check uses **Sk**, and so on. Roll **1d6**, add
-the fighter's corresponding stat, then apply any modifiers. The check succeeds
-if the total is **8 or higher**. A natural **1** always fails, and a natural
-**6** always succeeds.
+**Might** check uses **Might**, a **Skill** check uses **Skill**, and so on. Roll
+**1d6**, add the fighter's corresponding stat, then apply any modifiers. The
+check succeeds if the total is **8 or higher**. A natural **1** always fails,
+and a natural **6** always succeeds.
 
 In campaign play, no stat can be raised above **6**. If a stat is reduced to
 **1**, the fighter can no longer perform actions that require that stat; they
@@ -75,8 +75,8 @@ Use the profile that best represents the fighter you put on the table.
 Bonuses and penalties to a fighter's stats from feats, Traditions, spells, and
 equipment **stack**.
 
-The total bonus or penalty to any single stat (**M**, **CC**, **RC**, **Mt**,
-**Sk**, **Wi**, or **Sa**) cannot exceed **+3** or **−3** at any time.
+The total bonus or penalty to any single stat (**Movement**, **Close Combat**, **Ranged Combat**, **Might**,
+**Skill**, **Will**, or **Sanity**) cannot exceed **+3** or **−3** at any time.
 
 Afflictions such as **Poisoned**, **Weakened**, and **Enfeebled** count toward
 this cap.
@@ -128,7 +128,7 @@ as difficult terrain. Examples: rubble piles, long grass, marsh, woods, rocky
 ground, steep slopes, and cluttered building interiors.
 
 - Fighters cannot **Move** or **Charge** through difficult terrain.
-- Use **Scramble** to cross difficult terrain at **half M** (see [Actions —
+- Use **Scramble** to cross difficult terrain at half **Movement** (see [Actions —
   Scramble](core-rules.md#scramble)).
 - **Sure Footed** and other rules may modify **Scramble** through difficult
   terrain.
@@ -263,7 +263,7 @@ allows that fighter to perform a **single action as a reaction** (see below).
 
 **Cost:** 1 action
 
-Move up to this fighter's **M**.
+Move up to this fighter's **Movement**.
 
 - May move through friendly fighters
 - Cannot end on another fighter's base
@@ -274,7 +274,7 @@ Move up to this fighter's **M**.
 
 **Cost:** 1 action
 
-Move up to this fighter's **M**. Must end **within engagement range** of an enemy.
+Move up to this fighter's **Movement**. Must end **within engagement range** of an enemy.
 
 - May move through friendly fighters during the charge
 - Cannot end on another fighter's base
@@ -285,7 +285,7 @@ Move up to this fighter's **M**. Must end **within engagement range** of an enem
 
 **Cost:** 1 action
 
-Move vertically at **half M**.
+Move vertically at half **Movement**.
 
 - Cannot end **within engagement range**
 
@@ -293,7 +293,7 @@ Move vertically at **half M**.
 
 **Cost:** 1 action
 
-Move at **half M** through **difficult terrain** (see [Difficult Terrain](core-rules.md#difficult-terrain)).
+Move at half **Movement** through **difficult terrain** (see [Difficult Terrain](core-rules.md#difficult-terrain)).
 
 - Cannot end **within engagement range**
 
@@ -301,7 +301,7 @@ Move at **half M** through **difficult terrain** (see [Difficult Terrain](core-r
 
 **Cost:** 1 action
 
-Move across open space up to this fighter's **M**. Make one **Sk check**.
+Move across open space up to this fighter's **Movement**. Make a **Skill** check.
 
 - Cannot end **within engagement range**
 
@@ -309,7 +309,7 @@ Move across open space up to this fighter's **M**. Make one **Sk check**.
 
 **Cost:** 1 action
 
-Attempt to leave engagement range. Make one **Sk check**.
+Attempt to leave engagement range. Make a **Skill** check.
 
 - **Fail:** The opponent may make a **free Melee attack** using the full **Attack Sequence** — but only if they are not currently engaged with another enemy. This does not cost the opponent any actions.
 
@@ -321,7 +321,7 @@ fall. Do not make an additional check to avoid the fall.
 For every full **2"** in height the fighter falls, add **2 red dice** to a
 fall Strike Pool.
 
-The fall attacks at **CC 4+**. Roll each die in the fall Strike Pool; each
+The fall attacks at **Close Combat** 4+. Roll each die in the fall Strike Pool; each
 result of **4+** is a hit. The fallen fighter rolls defense as normal against
 any hits.
 
@@ -384,7 +384,7 @@ Prepare a careful shot for this fighter's next **Ranged** action this activation
 - Gain **+1 die of the weapon's dominant color**
 - **Natural 6** results are critical hits on that **Ranged** action
 
-The dominant color is whichever stat the weapon adds more of (**+Mt** = red, **+Sk** = blue). If tied, choose red or blue.
+The dominant color is whichever stat the weapon adds more of (+**Might** = red, +**Skill** = blue). If tied, choose red or blue.
 
 #### Mercy Kill
 
@@ -424,7 +424,7 @@ If a friendly fighter is **also engaged** with the same enemy:
 
 Hunker down and absorb incoming attacks.
 
-Gain **+1 red defense die** (rolled with Mt) until this fighter's next activation.
+Gain **+1 red defense die** (rolled with **Might**) until this fighter's next activation.
 
 #### Hide
 
@@ -496,12 +496,12 @@ Roll **1d6:**
 
 ### Might & Skill Dice
 
-Combat dice use two colors. **Red dice** represent **Mt**. **Blue dice**
-represent **Sk**. Weapons add red dice with **+Mt** and blue dice with **+Sk**.
+Combat dice use two colors. **Red dice** represent **Might**. **Blue dice**
+represent **Skill**. Weapons add red dice with +**Might** and blue dice with +**Skill**.
 
 #### Strike Pool
 
-The Strike Pool is the group of red and blue dice an attacker rolls during the Attack Sequence. A fighter's **Mt** adds red dice, their **Sk** adds blue dice, and their weapon may add more red or blue dice.
+The Strike Pool is the group of red and blue dice an attacker rolls during the Attack Sequence. A fighter's **Might** adds red dice, their **Skill** adds blue dice, and their weapon may add more red or blue dice.
 
 ### Targeting, Line of Sight, and Cover
 
@@ -521,7 +521,7 @@ If you **can see** the target from the firing fighter's viewpoint, you have **li
 
 If **any intervening terrain** lies between the firing fighter and the target — and that terrain is **more than 1" from the firing fighter** — the target has **cover**.
 
-**Cover grants +1 blue defense die** (rolled with Sk) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard **Attack Sequence**.
+**Cover grants +1 blue defense die** (rolled with **Skill**) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard **Attack Sequence**.
 
 #### Intervening Fighters
 
@@ -535,7 +535,7 @@ Fighters may **move through** friendly fighters during **Move**, **Charge**, **S
 
 When declaring a target for a **Ranged** attack, if the declared enemy target is
 within engagement range of one or more friendly fighters other than the attacker,
-make one **RC check**. On a failure, the shot hits a friendly fighter instead.
+make a **Ranged Combat** check. On a failure, the shot hits a friendly fighter instead.
 
 - If one friendly fighter is within engagement range of the declared target, that
   fighter becomes the new target.
@@ -561,13 +561,13 @@ primer roll (bows, crossbows, throwing weapons, etc.).
 
 ##### Clustered enemies
 
-When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass one **Sk check** to hit the intended target.
+When declaring a target for a **Ranged** attack or **Cast** action, if **one or more other enemy fighters** from the **same retinue** are within **1"** of the declared target, the attacker must pass a **Skill** check to hit the intended target.
 
 - **Pass:** Resolve the attack against the declared target.
 - **Fail, one other fighter within 1":** That fighter becomes the new target instead.
 - **Fail, two or more other fighters within 1":** Randomly select the new target from **all enemy fighters within 1"** of the declared target (including the declared target).
 
-Make the **Sk check** when the target is declared, before rolling the attack.
+Make the **Skill** check when the target is declared, before rolling the attack.
 
 #### Range
 
@@ -587,25 +587,25 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and
 
 > ### Attack Sequence
 >
-> **Step 1 — Build the Strike Pool:** Fighter **Mt + Sk** + weapon **+Mt / +Sk**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+> **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
 >
-> **Step 2 — Roll to hit:** Melee dice use **CC checks**. Ranged dice use **RC checks**. Apply **Hit** stat modifiers (**+1 CC**, **−1 RC**, etc.) to the stat used for that attack.
+> **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** stat modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the stat used for that attack.
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Base **1 red + 1 blue** + bonus dice from **Mt/Sk** comparison. Red dice use **Mt checks**. Blue dice use **Sk checks**. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](equipment.md#equipment).)*
+> **Step 4 — Roll defense:** Defender **Might** + **Skill**. Red dice use **Might** checks. Blue dice use **Skill** checks. Add bonus defense dice from cover, **Brace**, spells, feats, or scenario rules. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](equipment.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
 #### Step 1: Build the Strike Pool
 
-The Strike Pool is the fighter's **Mt + Sk**, modified by their weapon.
+The Strike Pool is the fighter's **Might** + **Skill**, modified by their weapon.
 
-- The fighter's **Mt** = red dice
-- The fighter's **Sk** = blue dice
-- The weapon adds **+Mt** (red dice) and/or **+Sk** (blue dice)
+- The fighter's **Might** = red dice
+- The fighter's **Skill** = blue dice
+- The weapon adds +**Might** (red dice) and/or +**Skill** (blue dice)
 
-A fighter attacking **unarmed** uses only their base Mt and Sk.
+A fighter attacking **unarmed** uses only their base **Might** and **Skill**.
 
 #### Example
 
@@ -613,7 +613,7 @@ A fighter attacking **unarmed** uses only their base Mt and Sk.
 |---|---|---|---|---|
 | Sword | Melee | Engagement | +1 | +1 |
 
-A **Keen** fighter (Mt 3, Sk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
+A **Keen** fighter (**Might** 3, **Skill** 4) with a Sword: **(3+1) red + (4+1) blue = 4 red + 5 blue = 9 dice**
 
 | Fighter | Base Mt | Base Sk | Weapon | Red | Blue | Total |
 |---|---|---|---|---|---|---|
@@ -624,16 +624,16 @@ A **Keen** fighter (Mt 3, Sk 4) with a Sword: **(3+1) red + (4+1) blue = 4 red +
 
 #### Step 2: Roll to Hit
 
-Roll each die in the Strike Pool. Melee attacks use **CC checks**. Ranged
-attacks use **RC checks**.
+Roll each die in the Strike Pool. Melee attacks use **Close Combat** checks. Ranged
+attacks use **Ranged Combat** checks.
 
 Each passed check is a **hit**. Hits retain their color (red hit or blue hit).
 
 - A natural **1** always misses.
 - A natural **6** always hits.
 
-Some rules modify the **Hit** stat used for that attack — **+1 CC**, **−1 RC**,
-and similar. Apply these to **CC** for **Melee** attacks and **RC** for
+Some rules modify the **Hit** stat used for that attack — +1 **Close Combat**, −1 **Ranged Combat**,
+and similar. Apply these to **Close Combat** for **Melee** attacks and **Ranged Combat** for
 **Ranged** attacks (including **Cast** actions that use the **Attack Sequence**).
 Positive modifiers make checks easier; negative modifiers make checks harder.
 
@@ -659,19 +659,15 @@ If none of the above apply, 6s are normal hits.
 
 #### Step 4: Defender Rolls Defense Dice
 
-The defender generates a defense pool:
+The defender generates a defense pool from their own **Might** and **Skill**:
 
-**Base defense: 1 red die + 1 blue die**
+- The defender's **Might** = red defense dice
+- The defender's **Skill** = blue defense dice
 
-Then compare **Mt** and **Sk** between attacker and defender:
+Then add any bonus defense dice from cover, **Brace**, spells, feats, or scenario rules.
 
-- For each point the defender's **Mt exceeds** the attacker's Mt → **+1 red defense die**
-- For each point the defender's **Sk exceeds** the attacker's Sk → **+1 blue defense die**
-
-If the attacker's Mt or Sk exceeds the defender's, there is no penalty — the defender simply doesn't gain bonus dice for that color.
-
-For **red defense dice**, make **Mt checks** (toughness absorbs the blow).
-For **blue defense dice**, make **Sk checks** (reflexes deflect the blow).
+For **red defense dice**, make **Might** checks (toughness absorbs the blow).
+For **blue defense dice**, make **Skill** checks (reflexes deflect the blow).
 
 ##### Armor & Shield Conversion
 
@@ -763,12 +759,12 @@ When a fighter is targeted by a **Ranged** action, the target may perform a **si
 
 ### Combat Example
 
-**Attacker:** **Keen** fighter (CC 3, Mt 3, Sk 4) wielding a Sword (+1 Mt, +1 Sk)
-**Defender:** **Stout** fighter (CC 3, Mt 4, Sk 3) wielding a Battle Axe (+2 Mt), wearing Medium Armor
+**Attacker:** **Keen** fighter (**Close Combat** 3, **Might** 3, **Skill** 4) wielding a Sword (+1 **Might**, +1 **Skill**)
+**Defender:** **Stout** fighter (**Close Combat** 3, **Might** 4, **Skill** 3) wielding a Battle Axe (+2 **Might**), wearing Medium Armor
 
-**Step 1:** **Keen** Strike Pool = (Mt 3 + Sword 1) red + (Sk 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
+**Step 1:** **Keen** Strike Pool = (**Might** 3 + Sword 1) red + (**Skill** 4 + Sword 1) blue = **4 red + 5 blue = 9 dice**
 
-**Step 2:** Roll each die as a **CC check**.
+**Step 2:** Roll each die as a **Close Combat** check.
 - Red die 1: rolls 5 → pass → **red hit**
 - Red die 2: rolls 2 → fail
 - Red die 3: rolls 1 → auto-miss
@@ -784,25 +780,29 @@ Result: 1 red hit, 3 blue hits (4 hits total)
 **Step 3:** Sword vs Axe → Sword has advantage. The natural 6 on Blue die 1 is a **critical blue hit** (unblockable).
 
 **Step 4:** **Stout** defense pool:
-- Base: 1 red + 1 blue
-- Mt comparison: **Stout** Mt 4 vs **Keen** Mt 3 → **Stout** Mt is 1 higher → +1 red defense die
-- Sk comparison: **Stout** Sk 3 vs **Keen** Sk 4 → **Keen** Sk is higher → no bonus
-- Total defense: 2 red dice + 1 blue die
+- **Stout** **Might** 4 → 4 red defense dice
+- **Stout** **Skill** 3 → 3 blue defense dice
+- Total defense: 4 red dice + 3 blue dice
 
 Roll defense:
-- Red die 1: **Mt check** rolls 4 → **success**
-- Red die 2: **Mt check** rolls 3 → fail
-- Blue die 1: **Sk check** rolls 4 → fail
+- Red die 1: **Might** check rolls 4 → **success**
+- Red die 2: **Might** check rolls 3 → fail
+- Red die 3: **Might** check rolls 5 → **success**
+- Red die 4: **Might** check rolls 2 → fail
+- Blue die 1: **Skill** check rolls 5 → **success**
+- Blue die 2: **Skill** check rolls 2 → fail
+- Blue die 3: **Skill** check rolls 4 → fail
 
-**Armor Conversion:** The **Stout** fighter wears Medium Armor — convert 1 failed red defense die into 1 normal success. Red die 2 failed, so it becomes a **normal red success**. Blue die 1 failed but Medium Armor only converts failed red defense dice.
+**Armor Conversion:** The **Stout** fighter wears Medium Armor — convert 1 failed red defense die into 1 normal success. Red die 2 failed, so it becomes a **normal red success**. Red die 4 and the failed blue dice remain failed dice.
 
-Defense results: 2 red successes, 0 blue successes.
+Defense results: 3 red successes, 1 blue success.
 - Red success 1 blocks the red hit (1:1 same color)
-- Red success 2: no more red hits to block. Could block a blue hit at 2:1, but only 1 red success remains — not enough.
+- Blue success 1 blocks one normal blue hit (1:1 same color)
+- Red successes 2 and 3 block one normal blue hit at 2:1
 
-The critical blue hit cannot be blocked. 2 normal blue hits are unblocked.
+The critical blue hit cannot be blocked.
 
-**Step 5:** 3 unblocked hits. The **Stout** fighter takes 3 Wounds (3 → 0) and becomes **Downed**.
+**Step 5:** 1 unblocked hit. The **Stout** fighter takes 1 Wound (3 → 2).
 
 ---
 
@@ -828,7 +828,7 @@ A fighter reaches **Downed** when they hit 0 Wounds.
 - Cannot attack
 - Cannot perform normal actions
 - May attempt the **Recover** action
-- Retains their **full defense pool** (base 1 red + 1 blue, Mt/Sk comparisons, armor)
+- Retains their **full defense pool** (red dice equal to **Might** and blue dice equal to **Skill**), including eligible bonus dice and armor or shield conversions
 
 Any **unblocked hit** on a Downed fighter pushes them to **Stunned**.
 
@@ -842,7 +842,7 @@ A fighter becomes **Stunned** from a Recover roll of 1, or from taking an unbloc
 - Cannot attempt Recover
 - Cannot be chosen for activation while **Stunned**
 - Does not count toward **activation count**
-- Defends with **red dice only** (Mt-based defense, no blue dice)
+- Defends with **red dice only** (**Might**-based defense, no blue dice)
 
 Any **unblocked hit** on a Stunned fighter pushes them to **Out of Action**.
 
@@ -870,17 +870,17 @@ Afflictions are battle-long debuffs unless a rule sets a shorter duration.
 
 #### Poisoned
 
-The fighter suffers **−1 Mt** for the rest of the battle.
+The fighter suffers −1 **Might** for the rest of the battle.
 
 #### Weakened
 
-The fighter suffers **−1 Mt**, **−1 Sk**, and **−1" M** until the effect that
+The fighter suffers −1 **Might**, −1 **Skill**, and −1" **Movement** until the effect that
 applied **Weakened** ends. If no duration is given, **Weakened** lasts for the
 rest of the battle.
 
 #### Enfeebled
 
-The fighter suffers **−1 Mt** and **−1 Sk** until the effect that applied
+The fighter suffers −1 **Might** and −1 **Skill** until the effect that applied
 **Enfeebled** ends. If no duration is given, **Enfeebled** lasts for the rest of
 the battle.
 
@@ -888,7 +888,7 @@ the battle.
 
 When **Bleeding** is applied, the fighter suffers **1 Wound** immediately.
 
-At the **start of each activation**, make one **Wi check**. **Pass:** remove
+At the **start of each activation**, make a **Will** check. **Pass:** remove
 **Bleeding**. **Fail:** suffer **1 Wound**.
 
 #### Blinded
@@ -902,7 +902,7 @@ Fighters and effects that frighten others **project Fear**, **project Panic**,
 or **project Insanity** — they are the **source** of that effect.
 
 When a fighter activates within range and line of sight of such a source, they
-must pass a **Sa check**.
+must pass a **Sanity** check.
 
 A rule that projects **Fear**, **Panic**, or **Insanity** must state its range or
 trigger.
@@ -922,10 +922,10 @@ Roll on the **Insanity Table (1d6)**:
 - 1 — **Frenzy:** Attack the closest fighter (chosen by your opponent). They cannot be the source of the Insanity.
 - 2–3 — **Flee:** Spend both actions moving toward the nearest board edge.
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
-- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but suffer **−1 CC** on that **Melee** attack. If their primary weapon is ranged, they spend both actions firing at the source and suffer **−1 RC** on those attacks.
+- 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 red dice** and **1 blue die** to the Strike Pool, but suffer −1 **Close Combat** on that **Melee** attack. If their primary weapon is ranged, they spend both actions firing at the source and suffer −1 **Ranged Combat** on those attacks.
 
 #### Fearless
 
-A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. They never make **Sa checks** for these effects and are never affected.
+A fighter with the **Fearless** keyword is immune to Fear, Panic, and Insanity. They never make **Sanity** checks for these effects and are never affected.
 
 ---

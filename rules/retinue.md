@@ -39,15 +39,15 @@ Fighters with the **Large** keyword cannot perform the **Hide** action.
 
 #### Swarm
 
-**Swarm** fighters are masses of small bodies — easy to strike, hard to disperse. Its **Sk** equals its current **W**.
+**Swarm** fighters are masses of small bodies — easy to strike, hard to disperse. Its **Skill** equals its current **Wounds**.
 
-**Unarmed attack** — **Melee** using **0 Mt** / **Sk** from this fighter's current **Sk**.
+**Unarmed attack** — **Melee** using 0 **Might** / **Skill** from this fighter's current **Skill**.
 
-Enemies add **+1** to the **Hit** stat they use (**RC** or **CC**) when making **Melee** or **Ranged** attacks against this fighter.
+Enemies add **+1** to the **Hit** stat they use (**Ranged Combat** or **Close Combat**) when making **Melee** or **Ranged** attacks against this fighter.
 
 This fighter never becomes **Downed** or **Stunned**. When it reaches **0 Wounds**, it goes **Out of Action** instead.
 
-When this fighter loses **Wounds**, reduce **W**; its **Sk** equals its new **W**.
+When this fighter loses **Wounds**, reduce **Wounds**; its **Skill** equals its new **Wounds**.
 
 ---
 
@@ -123,7 +123,7 @@ that fighter below.
 ###### Lord — 125 Crowns (1)
 *[Fluff about Lords]*
 
-**Leader**: At recruitment, add **+1** to **2** different stats (CC, RC, Mt, Sk, Wi, or Sa).
+**Leader**: At recruitment, add **+1** to **2** different stats (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 2 feats from the Universal feat list, the Knights archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -132,7 +132,7 @@ that fighter below.
 ###### Knight — 75 Crowns (0–4)
 *[Fluff about Knights]*
 
-**Elite**: At recruitment, add **+1 Mt** or **+1 Sk**.
+**Elite**: At recruitment, add +1 **Might** or +1 **Skill**.
 
 **Feats**: May select 2 feats from the Universal feat list, the Knights archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -141,7 +141,7 @@ that fighter below.
 ###### Squire — 60 Crowns (0–5)
 *[Fluff about Squires]*
 
-**Specialist**: At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa).
+**Specialist**: At recruitment, add **+1** to one stat (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 1 feat from the Universal feat list, the Knights archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -221,7 +221,7 @@ that fighter below.
 ###### Captain — 125 Crowns (1)
 *[Fluff about Captains]*
 
-**Leader**: At recruitment, add **+1** to **2** different stats (CC, RC, Mt, Sk, Wi, or Sa).
+**Leader**: At recruitment, add **+1** to **2** different stats (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 2 feats from the Universal feat list, the Hunters archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -230,7 +230,7 @@ that fighter below.
 ###### Stalker — 75 Crowns (0–4)
 *[Fluff about Stalkers]*
 
-**Elite**: At recruitment, add **+1 Mt** or **+1 Sk**.
+**Elite**: At recruitment, add +1 **Might** or +1 **Skill**.
 
 **Feats**: May select 2 feats from the Universal feat list, the Hunters archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -239,7 +239,7 @@ that fighter below.
 ###### Tracker — 60 Crowns (0–3)
 *[Fluff about Trackers]*
 
-**Specialist**: At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa).
+**Specialist**: At recruitment, add **+1** to one stat (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 1 feat from the Universal feat list, the Hunters archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -313,7 +313,7 @@ becomes **Downed**, this fighter may move up to **6"** toward that fighter. This
 move cannot enter engagement range.
 
 **Skilled Craftsman:** This fighter may upgrade **one** weapon they own. Apply
-**+1 Mt** or **+1 Sk** to that weapon *(choose when you select it)*. Only **one**
++1 **Might** or +1 **Skill** to that weapon *(choose when you select it)*. Only **one**
 weapon may have this upgrade at a time. Change which weapon is upgraded between
 battles. Record the chosen weapon and upgrade on this fighter's roster entry.
 
@@ -336,7 +336,7 @@ that fighter below.
 ###### Mayor — 125 Crowns (1)
 *[Fluff about Mayors]*
 
-**Leader**: At recruitment, add **+1** to **2** different stats (CC, RC, Mt, Sk, Wi, or Sa).
+**Leader**: At recruitment, add **+1** to **2** different stats (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 2 feats from the Universal feat list, the Folk archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -345,7 +345,7 @@ that fighter below.
 ###### Guildsman — 75 Crowns (0–3)
 *[Fluff about Guildsmen]*
 
-**Elite**: At recruitment, add **+1 Mt** or **+1 Sk**.
+**Elite**: At recruitment, add +1 **Might** or +1 **Skill**.
 
 **Feats**: May select 2 feats from the Universal feat list, the Folk archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -354,7 +354,7 @@ that fighter below.
 ###### Militiaman — 60 Crowns (0–5)
 *[Fluff about Militiamen]*
 
-**Specialist**: At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa).
+**Specialist**: At recruitment, add **+1** to one stat (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 1 feat from the Universal feat list, the Folk archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -416,7 +416,7 @@ chosen fighter to 0 Wounds and cause them to become **Downed**.
 
 **Magic Armor:** This fighter may equip armor and shields up to Heavy tier.
 
-**Chant:** When **2 or more** other friendly **Cult** fighters have their bases **within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with range **6"** — the chanted rite carries on the air, not through line of sight. When an enemy fighter activates while within this **Sphere of Influence**, they must pass a **Sa check** for **Fear** with this fighter as the source. See **[Fear](core-rules.md#fear)** and **[Sphere of Influence](equipment.md#sphere-of-influence)**.
+**Chant:** When **2 or more** other friendly **Cult** fighters have their bases **within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with range **6"** — the chanted rite carries on the air, not through line of sight. When an enemy fighter activates while within this **Sphere of Influence**, they must pass a **Sanity** check for **Fear** with this fighter as the source. See **[Fear](core-rules.md#fear)** and **[Sphere of Influence](equipment.md#sphere-of-influence)**.
 
 **Convoke:** Fighter must have **Caster**. When this fighter makes a **casting roll** and **1 or more** other friendly **Cult** fighters with the **Caster** keyword are **within 6"**, add **+1** to the roll for each other friendly fighter with the **Caster** keyword.
 
@@ -439,7 +439,7 @@ that fighter below.
 ###### Theurge — 125 Crowns (1)
 *[Fluff about Theurges]*
 
-**Leader**: At recruitment, add **+1** to **2** different stats (CC, RC, Mt, Sk, Wi, or Sa).
+**Leader**: At recruitment, add **+1** to **2** different stats (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 2 feats from the Universal feat list, the Cult archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -448,7 +448,7 @@ that fighter below.
 ###### Adept — 60 Crowns (0–2)
 *[Fluff about Adepts]*
 
-**Specialist**: At recruitment, add **+1** to one stat (CC, RC, Mt, Sk, Wi, or Sa).
+**Specialist**: At recruitment, add **+1** to one stat (**Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**).
 
 **Feats**: May select 1 feat from the Universal feat list, the Cult archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
@@ -506,14 +506,14 @@ Each Tradition grants one retinue-wide special rule. Tradition effects apply to 
 #### Light
 
 **Crusaders:** Friendly fighters within **1"** of at least one other friendly
-fighter add **+1 Sa** to **Fear**, **Panic**, and **Insanity** tests.
+fighter add +1 **Sanity** to **Fear**, **Panic**, and **Insanity** tests.
 
 **Paladins:** Once per round, when a friendly fighter becomes **Downed**, one
 friendly fighter within **6"** may move up to **3"** toward them. This move
 cannot enter engagement range.
 
 **Penitents:** While a friendly fighter has fewer than their starting Wounds,
-they gain **+1" M**.
+they gain +1" **Movement**.
 
 **Luminaries:** At the start of each round, choose one enemy fighter within line
 of sight of any friendly fighter. That enemy loses **Hidden**.
@@ -547,11 +547,11 @@ roster after the battle.
 #### Infernal
 
 **Diabolists:** Once per battle, at the start of a friendly fighter's
-activation, that fighter may suffer **1 Wound** to gain **+1 Mt** and **+1 Sa**
+activation, that fighter may suffer **1 Wound** to gain +1 **Might** and +1 **Sanity**
 until the end of the battle.
 
-If that fighter becomes **Downed**, they lose this bonus and suffer **−1 Mt**
-and **−1 Sa** until the end of the battle. Sa cannot be reduced below 1.
+If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might**
+and −1 **Sanity** until the end of the battle. **Sanity** cannot be reduced below 1.
 
 **Binders:** This retinue may buy **Summoning Crystals**. Daemons cannot be
 recruited normally; they enter battle through **Summon Daemon**.
@@ -576,12 +576,12 @@ deployment zones. Friendly fighters within **1"** of it add **+1** to
 or **Serpent**. All fighters with the **Beastmen** keyword cost **+10 Crowns** and gain the chosen rule.
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee
-weapon: **+2 Mt**, **+1 Sk**, Axe.
+weapon: +2 **Might**, +1 **Skill**, Axe.
 
 **Rat:** Fighters may carry 1 additional one-handed weapon. This extra weapon
 cannot be a shield, firearm, bomb, or two-handed weapon.
 
-**Bear:** Fighters gain **+1 Mt** and **−1 Sa**. Sa cannot be reduced below 1.
+**Bear:** Fighters gain +1 **Might** and −1 **Sanity**. **Sanity** cannot be reduced below 1.
 
 **Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may
 inflict **Poisoned** instead of 1 Wound. See [Conditions —
@@ -619,7 +619,7 @@ gain XP, buy equipment, carry scenario rewards, or use post-battle advancement.
 |---|---|---|---|---|---|---|---|---|
 | Profile | 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
 
-**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
+**Equipment:** Sword and Shield (already included in **Might**/**Skill**). Cannot be changed.
 
 **Keywords:** **Undead**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
@@ -642,11 +642,11 @@ Rolls](campaign.md#spending-xp-advancement-rolls)).
 **Dynasts:** At roster creation, choose up to 3 melee weapons in this retinue to
 be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
 
-When a fighter attacks with an heirloom weapon, add **+1 CC** to that **Melee**
+When a fighter attacks with an heirloom weapon, add +1 **Close Combat** to that **Melee**
 attack.
 
 If a fighter carrying an heirloom weapon is **Slain**, the weapon passes to the
-friendly fighter in the retinue with the highest Mt. If there is a tie, choose
+friendly fighter in the retinue with the highest **Might**. If there is a tie, choose
 one tied fighter.
 
 If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps
@@ -655,16 +655,16 @@ captured fighter, add **+10 Crowns** to the ransom cost to recover the heirloom
 weapon.
 
 **Revelers:** At the start of a friendly fighter's activation, they may suffer
-**1 Wound** to gain **+2" M** until the end of that activation.
+**1 Wound** to gain +2" **Movement** until the end of that activation.
 
 **Courtiers:** This retinue starts with **+100 Crowns**. Each fighter in this
-retinue starts each battle with 1 fewer Wound than their W value, to a minimum of
+retinue starts each battle with 1 fewer Wound than their **Wounds** value, to a minimum of
 1 Wound.
 
 #### Mortal
 
 **Zealots:** When a friendly fighter attacks an enemy **Caster**, add **+1**
-**CC** or **+1 RC** to that attack — whichever **Hit** stat the attack uses.
+**Close Combat** or +1 **Ranged Combat** to that attack — whichever **Hit** stat the attack uses.
 
 **Constables:** Enemy fighters cannot **Retreat** while within engagement range
 of a friendly fighter from this retinue.
@@ -811,7 +811,7 @@ engagement range.
 
 ##### Skilled Craftsman
 
-This fighter may upgrade **one** weapon they own. Apply **+1 Mt** or **+1 Sk** to
+This fighter may upgrade **one** weapon they own. Apply +1 **Might** or +1 **Skill** to
 that weapon *(choose when you select it)*.
 
 Only **one** weapon may have this upgrade at a time. This fighter may change
@@ -850,7 +850,7 @@ of this fighter, this fighter projects **Fear** as a **Sphere of Influence** wit
 range **6"** — the chanted rite carries on the air, not through line of sight.
 
 When an enemy fighter activates while within this **Sphere of Influence**, they
-must pass a **Sa check** for **Fear** with this fighter as the source. See
+must pass a **Sanity** check for **Fear** with this fighter as the source. See
 **[Fear](core-rules.md#fear)** and **[Sphere of Influence](equipment.md#sphere-of-influence)**.
 
 ##### Convoke
@@ -931,7 +931,7 @@ Resolve both attacks through the full **Attack Sequence** (Steps 1–4). Then ap
 ##### Warded
 
 When this fighter is the target of a hostile spell that succeeded on its
-**casting roll**, they may make one **Wi check**. On a pass, the
+**casting roll**, they may make a **Will** check. On a pass, the
 spell has no effect against this fighter.
 
 ##### Absolute Faith
@@ -941,7 +941,7 @@ must accept the second result.
 
 ##### Unstoppable Faith
 
-When this fighter performs **Charge**, they may move up to **M + 1"** instead of **M**.
+When this fighter performs **Charge**, they may move up to their **Movement** + 1" instead of their **Movement**.
 
 If this fighter ends a **Charge** **within engagement range** of an enemy and
 moved less than the full allowed distance in a straight line toward that enemy, **push** that enemy the remaining distance along the charge path.
@@ -959,7 +959,7 @@ When this fighter's **Melee** action immediately follows that **Charge** during 
 ##### Warded
 
 When this fighter is the target of a hostile spell that succeeded on its
-**casting roll**, they may make one **Wi check**. On a pass, the
+**casting roll**, they may make a **Will** check. On a pass, the
 spell has no effect against this fighter.
 
 ##### Conduit
@@ -967,7 +967,7 @@ spell has no effect against this fighter.
 When a friendly **Caster** makes a **Cast** action, that **Caster** may measure spell range and line of sight from this fighter's base instead of their own.
 
 - This fighter must be **Active** and not **Downed** or **Stunned**.
-- The **Caster** still makes the **casting roll** using their **Wi** and
+- The **Caster** still makes the **casting roll** using their **Will** and
   resolves **Mishaps** as normal.
 - Once per round.
 
@@ -1016,16 +1016,16 @@ ties).
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
-> **Diving Charge** — Treat as **Charge**, but before moving roll one **Sk check**.
+> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
 >
 > - **Pass:** Resolve the **Charge** normally.
 > - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
 
-This fighter may reroll a failed **Diving Charge** **Sk check**. They must accept the second result.
+This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
 
 ##### Heave
 
@@ -1037,7 +1037,7 @@ enemy fighter, they may perform **Hurl**.
 > Choose one enemy fighter **within engagement range** of this fighter, or one
 > **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
 >
-> The chosen fighter makes a **Sk check**.
+> The chosen fighter makes a **Skill** check.
 >
 > - **Pass:** No effect.
 > - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
@@ -1045,7 +1045,7 @@ enemy fighter, they may perform **Hurl**.
 >   - If the target was **Downed**, they become **Stunned** after moving.
 >   - A **Stunned** target remains **Stunned**.
 >   - If the target's move stops because their base contacts **terrain** or an
->     **Active** fighter's base, they suffer **1 hit** at **2 Mt / 1 Sk**.
+>     **Active** fighter's base, they suffer **1 hit** at 2 **Might** / 1 **Skill**.
 >   - If the collision involves another fighter's base, that fighter also
 >     suffers the same hit and becomes **Stunned**.
 >
@@ -1058,12 +1058,12 @@ If this fighter performs **Hurl** during an activation, they cannot make a
 
 Once per battle, at the start of this fighter's activation, they may suffer **1 Wound** to gain **Fly** until the end of that activation.
 
-**Fly** — Ignore vertical distance for **Move**, **Charge**, and **Jump**. This fighter keeps their normal **M** for those actions.
+**Fly** — Ignore vertical distance for **Move**, **Charge**, and **Jump**. This fighter keeps their normal **Movement** for those actions.
 
 ##### Devil's Pact
 
 During this fighter's activation, they may spend both actions to regain **1
-Wound** (cannot exceed their starting **W**).
+Wound** (cannot exceed their starting **Wounds**).
 
 After the battle, if this fighter used **Devil's Pact** one or more times, roll **2d6** and subtract **1** for each time they used **Devil's Pact** this battle. Resolve the result on the **Doom Table**.
 
@@ -1086,16 +1086,16 @@ ties).
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
-> **Diving Charge** — Treat as **Charge**, but before moving roll one **Sk check**.
+> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
 >
 > - **Pass:** Resolve the **Charge** normally.
 > - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
 
-This fighter may reroll a failed **Diving Charge** **Sk check**. They must accept the second result.
+This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
 
 ##### Heave
 
@@ -1107,7 +1107,7 @@ enemy fighter, they may perform **Hurl**.
 > Choose one enemy fighter **within engagement range** of this fighter, or one
 > **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
 >
-> The chosen fighter makes a **Sk check**.
+> The chosen fighter makes a **Skill** check.
 >
 > - **Pass:** No effect.
 > - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
@@ -1115,7 +1115,7 @@ enemy fighter, they may perform **Hurl**.
 >   - If the target was **Downed**, they become **Stunned** after moving.
 >   - A **Stunned** target remains **Stunned**.
 >   - If the target's move stops because their base contacts **terrain** or an
->     **Active** fighter's base, they suffer **1 hit** at **2 Mt / 1 Sk**.
+>     **Active** fighter's base, they suffer **1 hit** at 2 **Might** / 1 **Skill**.
 >   - If the collision involves another fighter's base, that fighter also
 >     suffers the same hit and becomes **Stunned**.
 >
@@ -1126,8 +1126,8 @@ If this fighter performs **Hurl** during an activation, they cannot make a
 
 ##### Sure Footed
 
-When this fighter uses **Scramble**, they move at full **M** instead of half
-**M**.
+When this fighter uses **Scramble**, they move at full **Movement** instead of half
+**Movement**.
 
 ##### Camouflage
 
@@ -1177,16 +1177,16 @@ ties).
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
-> **Diving Charge** — Treat as **Charge**, but before moving roll one **Sk check**.
+> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
 >
 > - **Pass:** Resolve the **Charge** normally.
 > - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
 
-This fighter may reroll a failed **Diving Charge** **Sk check**. They must accept the second result.
+This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
 
 ##### Heave
 
@@ -1198,7 +1198,7 @@ enemy fighter, they may perform **Hurl**.
 > Choose one enemy fighter **within engagement range** of this fighter, or one
 > **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
 >
-> The chosen fighter makes a **Sk check**.
+> The chosen fighter makes a **Skill** check.
 >
 > - **Pass:** No effect.
 > - **Fail:** Move the chosen fighter **d3"** in a direction you choose.
@@ -1206,7 +1206,7 @@ enemy fighter, they may perform **Hurl**.
 >   - If the target was **Downed**, they become **Stunned** after moving.
 >   - A **Stunned** target remains **Stunned**.
 >   - If the target's move stops because their base contacts **terrain** or an
->     **Active** fighter's base, they suffer **1 hit** at **2 Mt / 1 Sk**.
+>     **Active** fighter's base, they suffer **1 hit** at 2 **Might** / 1 **Skill**.
 >   - If the collision involves another fighter's base, that fighter also
 >     suffers the same hit and becomes **Stunned**.
 >
@@ -1239,7 +1239,7 @@ and **Attack Sequence**. If they do, they cannot take another **Ranged** action 
 
 When this fighter uses **Aim**, their next **Ranged** attack with a **firearm** this activation adds **1 die** of that **firearm's** dominant color to the Strike Pool.
 
-The dominant color is whichever is higher on the **firearm's** profile (**Mt** = red, **Sk** = blue). If tied, choose red or blue.
+The dominant color is whichever is higher on the **firearm's** profile (**Might** = red, **Skill** = blue). If tied, choose red or blue.
 
 ##### Null
 
@@ -1247,16 +1247,16 @@ Enemy **Casters** cannot perform the **Cast** action while **within 6"** of this
 
 ##### Acrobat
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll one **Sk check**. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
 
 This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
 
-> **Diving Charge** — Treat as **Charge**, but before moving roll one **Sk check**.
+> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
 >
 > - **Pass:** Resolve the **Charge** normally.
 > - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
 
-This fighter may reroll a failed **Diving Charge** **Sk check**. They must accept the second result.
+This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
 
 ##### Lightning Reflexes
 
@@ -1292,9 +1292,9 @@ Casting a spell is a single **Cast** action. Roll the **Casting Roll** (below).
 
 #### Damage Spells
 
-If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own Mt and Sk values — a fixed pool regardless of who casts it. A spell with 5 Mt / 2 Sk always produces 5 red dice and 2 blue dice.
+If the spell deals damage, it generates a **flat Strike Pool** defined by the spell itself. The spell specifies its own **Might** and **Skill** values — a fixed pool regardless of who casts it. A spell with 5 **Might** / 2 **Skill** always produces 5 red dice and 2 blue dice.
 
-Once the spell goes off, resolve the attack using the **Attack Sequence**. Use the spell's **Hit** stat for the roll to hit: **RC** for most damage spells, **CC** for engagement-range damage (including blasts centered on the caster). Apply **Hit** stat modifiers (**+1 RC**, **−1 CC**, etc.) to that stat.
+Once the spell goes off, resolve the attack using the **Attack Sequence**. Use the spell's **Hit** stat for the roll to hit: **Ranged Combat** for most damage spells, **Close Combat** for engagement-range damage (including blasts centered on the caster). Apply **Hit** stat modifiers (+1 **Ranged Combat**, −1 **Close Combat**, etc.) to that stat.
 
 ---
 
@@ -1342,87 +1342,87 @@ Each **Domain** keyword's standard attack spell (Radiant Strike, Arcane Bolt, Th
 
 Spells marked *(TBD)* are not yet playtest-ready.
 
-Each domain has a standard ranged attack spell plus **6 additional spells**. **Casting stat** is **Wi** for Light, Arcane, and Nature; **Sa** for Infernal, Necromancy, and Blood. **Hit** is the stat used for the roll to hit on damage spells (**RC** or **CC**); **—** if the spell does not deal damage through the **Attack Sequence**. Apply **Hit** stat modifiers to the stat named by the spell.
+Each domain has a standard ranged attack spell plus **6 additional spells**. **Casting stat** is **Will** for Light, Arcane, and Nature; **Sanity** for Infernal, Necromancy, and Blood. **Hit** is the stat used for the roll to hit on damage spells (**Ranged Combat** or **Close Combat**); **—** if the spell does not deal damage through the **Attack Sequence**. Apply **Hit** stat modifiers to the stat named by the spell.
 
 #### Light
 
 ##### Radiant Strike
-**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.
-Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk instead.
+**Casting:** **Will** 11+. **Range:** 12". **Attack:** **Ranged Combat**, 4 **Might** / 3 **Skill**.
+Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 **Might** / 3 **Skill** instead.
 
 ##### Holy Light
-**Casting:** Wi 11+. **Range:** 12" from caster.
+**Casting:** **Will** 11+. **Range:** 12" from caster.
 All fighters within 12" lose cover and **Hidden**.
 **Mishap:** The caster becomes **Blinded**.
 
 ##### Heal
-**Casting:** Wi 10+. **Range:** 1".
+**Casting:** **Will** 10+. **Range:** 1".
 Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
 
 ##### Purge the Faithless
-**Casting:** Wi 11+. **Range:** 3" blast from caster. **Attack:** CC, 5 Mt / 2 Sk.
+**Casting:** **Will** 11+. **Range:** 3" blast from caster. **Attack:** **Close Combat**, 5 **Might** / 2 **Skill**.
 All fighters within the blast are hit.
 **Mishap:** Resolve the attack against the caster.
 
 ##### Shield of Faith
-**Casting:** Wi 10+. **Range:** 12".
+**Casting:** **Will** 10+. **Range:** 12".
 Target friendly fighter gains **+2 red defense dice** until the start of the caster's next activation.
 
 ##### Horrors Relived
-**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, target's Sa as Mt.
-Make a ranged spell attack. Use the target's Sa stat as the attack's Mt.
-**Mishap:** Resolve the attack against the caster, using the target's Sa as Mt.
+**Casting:** **Will** 12+. **Range:** 12". **Attack:** **Ranged Combat**, target's **Sanity** as **Might**.
+Make a ranged spell attack. Use the target's **Sanity** stat as the attack's **Might**.
+**Mishap:** Resolve the attack against the caster, using the target's **Sanity** as **Might**.
 
 ##### Unwavering Resolve
-**Casting:** Wi 10+. **Range:** 8" from caster.
+**Casting:** **Will** 10+. **Range:** 8" from caster.
 All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.
 **Mishap:** The caster suffers **Panic** until the end of their next activation.
 
 #### Arcane
 
 ##### Arcane Bolt
-**Casting:** Wi 11+. **Range:** 20". **Attack:** RC, 5 Sk.
+**Casting:** **Will** 11+. **Range:** 20". **Attack:** **Ranged Combat**, 5 **Skill**.
 Make a ranged spell attack.
 
 ##### Arcane Shield
-**Casting:** Wi 11+. **Range:** Self.
+**Casting:** **Will** 11+. **Range:** Self.
 The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
 
 ##### Fireball
-**Casting:** Wi 13+. **Range:** 18". **Attack:** RC, 5 Mt / 4 Sk.
+**Casting:** **Will** 13+. **Range:** 18". **Attack:** **Ranged Combat**, 5 **Might** / 4 **Skill**.
 Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point.
 **Mishap:** The blast template centers on the caster.
 
 ##### Telekinesis
-**Casting:** Wi 12+. **Range:** 12".
+**Casting:** **Will** 12+. **Range:** 12".
 Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.
 **Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
 
 ##### Displacement
-**Casting:** Wi 11+. **Range:** 12".
+**Casting:** **Will** 11+. **Range:** 12".
 Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.
 **Mishap:** Roll a scatter die. Move the target 6" in the indicated direction. This movement ignores terrain, engagement, and intervening fighters. If the target cannot end at the full distance, place it as far as possible along that line without ending inside terrain or another fighter's base.
 
 ##### Hoarfrost
-**Casting:** Wi 11+. **Range:** 18".
+**Casting:** **Will** 11+. **Range:** 18".
 Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.
 
-When a fighter ends any movement in the zone, make one **Sk check**. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.
+When a fighter ends any movement in the zone, make a **Skill** check. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.
 **Mishap:** The blast template centers on the caster.
 
 ##### Slow
-**Casting:** Wi 12+. **Range:** line of sight.
+**Casting:** **Will** 12+. **Range:** line of sight.
 Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.
 **Mishap:** The caster loses 1 action on their next activation. They activate with 1 action instead of 2.
 
 #### Infernal
 
 ##### Hellfire
-**Casting:** Sa 10+. **Range:** 3"–18". **Attack:** RC, 3 Mt / 4 Sk.
+**Casting:** **Sanity** 10+. **Range:** 3"–18". **Attack:** **Ranged Combat**, 3 **Might** / 4 **Skill**.
 Make a ranged spell attack.
 
 ##### Summon Daemon
-**Casting:** Sa 11+. **Range:** 3".
+**Casting:** **Sanity** 11+. **Range:** 3".
 The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
 - **Imps** — Usually small, fairly weak, with wings
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
@@ -1454,7 +1454,7 @@ A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler** i
 A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round.
 **Mishap:** The caster goes **Out of Action**. No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
 
-**Binding the Daemon:** After the battle, each sacrificed fighter rolls on the **Casualty Table** as normal — they ended the battle **Out of Action**. If a **Daemon** (not a **Zombie** from a failed summon result) survived the battle, the controlling player may attempt to **bind** it before resolving those **Casualty Table** rolls for the sacrificed fighters. The caster makes one **Sa check**. On **success**, the sacrificed fighters are **Slain** and removed from the retinue (skip the **Casualty Table**), and the **Daemon** joins the retinue permanently. On **failure** (not a natural **1**), resolve the **Casualty Table** for each sacrificed fighter as normal and remove the **Daemon** from the retinue. On a natural **1**, resolve the **Casualty Table** for each sacrificed fighter as normal, the **Daemon** joins the retinue permanently, and the caster is **Slain** and removed from the retinue (skip the **Casualty Table**). Remove any **Zombie** created by a failed summon result from the retinue after the battle. See [Summoning — Binding](#binding).
+**Binding the Daemon:** After the battle, each sacrificed fighter rolls on the **Casualty Table** as normal — they ended the battle **Out of Action**. If a **Daemon** (not a **Zombie** from a failed summon result) survived the battle, the controlling player may attempt to **bind** it before resolving those **Casualty Table** rolls for the sacrificed fighters. The caster makes a **Sanity** check. On **success**, the sacrificed fighters are **Slain** and removed from the retinue (skip the **Casualty Table**), and the **Daemon** joins the retinue permanently. On **failure** (not a natural **1**), resolve the **Casualty Table** for each sacrificed fighter as normal and remove the **Daemon** from the retinue. On a natural **1**, resolve the **Casualty Table** for each sacrificed fighter as normal, the **Daemon** joins the retinue permanently, and the caster is **Slain** and removed from the retinue (skip the **Casualty Table**). Remove any **Zombie** created by a failed summon result from the retinue after the battle. See [Summoning — Binding](#binding).
 
 ##### Daemon profiles
 
@@ -1533,66 +1533,66 @@ Created only when **Summon Daemon** rolls double **1**s on the **Summon Result**
 **Summon (-)** — Stays until the battle ends. Cannot be bound. Remove from the retinue after the battle.
 
 ##### The Void
-**Casting:** Sa 14+. **Range:** 12".
+**Casting:** **Sanity** 14+. **Range:** 12".
 Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.
 
-While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass one **Mt check** or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.
+While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass a **Might** check or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.
 **Mishap:** The marker is placed centered on the caster instead.
 
 ##### Possession
-**Casting:** Sa 13+. **Range:** Engagement range.
-Target enemy must pass one **Wi check**. On a failure, they become **Possessed**.
+**Casting:** **Sanity** 13+. **Range:** Engagement range.
+Target enemy must pass a **Will** check. On a failure, they become **Possessed**.
 
 While **Possessed**, the player who cast **Possession** controls that fighter's activations — not the fighter's owner. Each activation, the **Possessed** fighter has **1 action** instead of **2**.
 
-At the end of each of that fighter's activations while **Possessed**, they make one **Wi check**. On a pass, **Possessed** ends immediately.
+At the end of each of that fighter's activations while **Possessed**, they make a **Will** check. On a pass, **Possessed** ends immediately.
 
 **Mishap:** The caster becomes **Possessed** instead. Your opponent controls the caster's activations until **Possessed** ends.
 
 ##### Hellmouth
-**Casting:** Sa 11+. **Range:** 12".
+**Casting:** **Sanity** 11+. **Range:** 12".
 Choose a point within **12"**. Place a **5" blast template** centered on that point. The template cannot overlap any fighter's base. The template counts as **impassable terrain** for the rest of the battle.
 **Mishap:** The **Hellmouth** opens centered on the caster instead.
 
 ##### Searing Gaze
-**Casting:** Sa 12+. **Range:** 18". **Attack:** RC, 4 Mt / 4 Sk.
+**Casting:** **Sanity** 12+. **Range:** 18". **Attack:** **Ranged Combat**, 4 **Might** / 4 **Skill**.
 Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you choose. Every fighter the line touches that is in **line of sight** of the caster is hit.
 **Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](core-rules.md#blinded).
 
 ##### Nightmare Visage
-**Casting:** Sa 11+. **Range:** 12".
-Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes one **Sa check**. On a failure, the spell ends.
+**Casting:** **Sanity** 11+. **Range:** 12".
+Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends.
 
 
 
 #### Nature
 
 ##### Thorn Volley
-**Casting:** Wi 12+. **Range:** 12". **Attack:** RC, 4 Mt / 4 Sk.
+**Casting:** **Will** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 4 **Might** / 4 **Skill**.
 Make a ranged spell attack using a **standard flame template**.
 
 ##### Shadowmeld
-**Casting:** Wi 11+. **Range:** 12".
+**Casting:** **Will** 11+. **Range:** 12".
 Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.
-**Mishap:** Enemies add **+1 RC** or **+1 CC** — whichever **Hit** stat the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
+**Mishap:** Enemies add +1 **Ranged Combat** or +1 **Close Combat** — whichever **Hit** stat the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
 
 ##### Venom
-**Casting:** Wi 10+. **Range:** 12".
-Target enemy must pass one **Mt check**. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).
+**Casting:** **Will** 10+. **Range:** 12".
+Target enemy must pass a **Might** check. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](core-rules.md#poisoned).
 **Mishap:** The caster becomes **Poisoned**.
 
 ##### Feral Form
-**Casting:** Wi 11+. **Range:** 6".
-Target friendly fighter gains +2 Mt and +1" M until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.
-**Mishap:** The caster suffers **−1 Sa** until the end of their next activation.
+**Casting:** **Will** 11+. **Range:** 6".
+Target friendly fighter gains +2 **Might** and +1" **Movement** until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.
+**Mishap:** The caster suffers −1 **Sanity** until the end of their next activation.
 
 ##### Entangle
-**Casting:** Wi 12+. **Range:** 12".
-Target enemy has M reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
-**Mishap:** The caster has M reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
+**Casting:** **Will** 12+. **Range:** 12".
+Target enemy has **Movement** reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
+**Mishap:** The caster has **Movement** reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
 
 ##### Stinging Swarm
-**Casting:** Wi 10+. **Range:** 3".
+**Casting:** **Will** 10+. **Range:** 3".
 Place a **Stinging Swarm** within **3"** of the caster — hornets, wasps, and biting insects drawn from the wild. Roll **1d3**. The **Stinging Swarm** remains for that many **activations**, counting this one. It activates immediately with **2 actions**. Remove it from the battle when those activations have finished.
 
 | Stinging Swarm | M | CC | RC | Mt | Sk | Wi | Sa | W |
@@ -1608,17 +1608,17 @@ Place a **Stinging Swarm** within **3"** of the caster — hornets, wasps, and b
 **Mishap:** The **Stinging Swarm** appears hostile. Your opponent controls it for its activation, then remove it from the battle.
 
 ##### Dread Chorus
-**Casting:** Wi 11+. **Range:** 8" from caster.
-All enemy fighters within 8" must pass a **Sa check** for **Fear** with the caster as the source.
+**Casting:** **Will** 11+. **Range:** 8" from caster.
+All enemy fighters within 8" must pass a **Sanity** check for **Fear** with the caster as the source.
 
 #### Necromancy
 
 ##### Deathbolt
-**Casting:** Sa 14+. **Range:** 18". **Attack:** RC, 6 Sk.
-Make a ranged spell attack. This attack uses only Sk and ignores armor.
+**Casting:** **Sanity** 14+. **Range:** 18". **Attack:** **Ranged Combat**, 6 **Skill**.
+Make a ranged spell attack. This attack uses only **Skill** and ignores armor.
 
 ##### Summon Skeleton
-**Casting:** Sa 10+. **Range:** 3".
+**Casting:** **Sanity** 10+. **Range:** 3".
 
 The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 
@@ -1628,7 +1628,7 @@ The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 |---|---|---|---|---|---|---|---|---|
 | Profile | 5" | 3 | 3 | 4 | 5 | 1 | 1 | 1 |
 
-**Equipment:** Sword and Shield (already included in Mt/Sk). Cannot be changed.
+**Equipment:** Sword and Shield (already included in **Might**/**Skill**). Cannot be changed.
 
 **Keywords:** **Undead**, **Summon (1d6)**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 
@@ -1637,48 +1637,48 @@ The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 **Mishap:** The **Skeleton** appears hostile. Your opponent controls it for its activation, then remove it from the battle.
 
 ##### Raise Dead
-**Casting:** Sa 13+. **Range:** 3".
+**Casting:** **Sanity** 13+. **Range:** 3".
 **Remove** one **friendly** **body token** within **3"** of the caster — see [Body tokens](#body-tokens). Place that fighter within **3"** of the caster with **1 Wound**, **Undead**, and **Fearless**. Roll **1d3**. The fighter remains in the battle for that many **activations**, counting this one. They activate immediately with **2 actions**. When those activations have finished, they go **Out of Action** and are removed from the battle.
 **Mishap:** Your opponent places and controls the raised fighter instead.
 
 ##### Cursed Ground
-**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 2 Mt / 2 Sk.
-Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer **−1" M** and take the spell's hit unless they pass one **Sk check**.
+**Casting:** **Sanity** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 2 **Might** / 2 **Skill**.
+Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer −1" **Movement** and take the spell's hit unless they pass a **Skill** check.
 **Mishap:** The blast centers on the caster.
 
 ##### Wither
-**Casting:** Sa 11+. **Range:** 12".
+**Casting:** **Sanity** 11+. **Range:** 12".
 Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](core-rules.md#weakened).
 **Mishap:** The caster suffers **Weakened** until the start of their next activation.
 
 ##### Bone Blast
-**Casting:** Sa 11+. **Range:** blast from caster. **Attack:** CC, 1 Mt / 4 Sk.
+**Casting:** **Sanity** 11+. **Range:** blast from caster. **Attack:** **Close Combat**, 1 **Might** / 4 **Skill**.
 Center the blast template on the caster. All fighters under the template except the caster are hit.
 **Mishap:** Resolve the attack against the caster.
 
 ##### Bone Circle
-**Casting:** Sa 12+. **Range:** 12". **Attack:** RC, 1 Mt / 3 Sk.
+**Casting:** **Sanity** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 1 **Might** / 3 **Skill**.
 Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters.
 **Mishap:** The zone centers on the caster.
 
 #### Blood
 
 ##### Leech
-**Casting:** Sa 12+. **Range:** Touch. **Attack:** CC, 3 Mt / 3 Sk.
+**Casting:** **Sanity** 12+. **Range:** Touch. **Attack:** **Close Combat**, 3 **Might** / 3 **Skill**.
 Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
 
 ##### Bleed
-**Casting:** Sa 13+. **Range:** 12".
-Target enemy must pass one **Wi check**. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).
+**Casting:** **Sanity** 13+. **Range:** 12".
+Target enemy must pass a **Will** check. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](core-rules.md#bleeding).
 **Mishap:** The caster becomes **Bleeding** instead.
 
 ##### Blood Frenzy
-**Casting:** Sa 11+. **Range:** 6".
-Target friendly fighter gains **+3 Mt** and suffers **−1 CC** and **−1 RC** until the start of the caster's next activation.
-**Mishap:** The target suffers **−1 Mt**, **−1 CC**, and **−1" M** until the start of the caster's next activation.
+**Casting:** **Sanity** 11+. **Range:** 6".
+Target friendly fighter gains +3 **Might** and suffers −1 **Close Combat** and −1 **Ranged Combat** until the start of the caster's next activation.
+**Mishap:** The target suffers −1 **Might**, −1 **Close Combat**, and −1" **Movement** until the start of the caster's next activation.
 
 ##### Summon Bats
-**Casting:** Sa 11+. **Range:** 3".
+**Casting:** **Sanity** 11+. **Range:** 3".
 
 The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 
@@ -1699,19 +1699,19 @@ Cannot be bound.
 **Mishap:** The **Bats** appear hostile. Your opponent controls them for their activation, then remove them from the battle.
 
 ##### Enthrall
-**Casting:** Sa 11+. **Range:** 8".
-Target enemy must pass one **Wi check** or immediately take one **Move** action in a direction chosen by the caster.
+**Casting:** **Sanity** 11+. **Range:** 8".
+Target enemy must pass a **Will** check or immediately take one **Move** action in a direction chosen by the caster.
 **Mishap:** A friendly fighter chosen by your opponent takes the move instead.
 
 ##### Feast of Excess
-**Casting:** Sa 11+. **Range:** 12".
-Target friendly fighter gains +1 Mt, +1 Sk, and +1" M. When the effect ends, the target becomes **Stunned**. They keep their Wounds.
+**Casting:** **Sanity** 11+. **Range:** 12".
+Target friendly fighter gains +1 **Might**, +1 **Skill**, and +1" **Movement**. When the effect ends, the target becomes **Stunned**. They keep their Wounds.
 **Mishap:** The target becomes **Stunned**.
 
 ##### Nightfall
-**Casting:** Sa 11+. **Range:** Self.
-The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster gains **+1 CC** on **Melee** attacks.
-**Mishap:** Bright light exposes the caster. Enemies gain **+1 RC** when making **Ranged** attacks against the caster, and the caster suffers **−1 Mt** until the start of their next activation.
+**Casting:** **Sanity** 11+. **Range:** Self.
+The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster gains +1 **Close Combat** on **Melee** attacks.
+**Mishap:** Bright light exposes the caster. Enemies gain +1 **Ranged Combat** when making **Ranged** attacks against the caster, and the caster suffers −1 **Might** until the start of their next activation.
 
 ---
 

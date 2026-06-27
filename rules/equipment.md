@@ -227,7 +227,7 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 ### Weapon profiles — firearms *(requires **Mortal**; forbids **Caster**)*
 
-*Primer column assumes **Sk 3**. Combat rules: [Weapons](#weapons) below.*
+*Primer column assumes **Skill** 3. Combat rules: [Weapons](#weapons) below.*
 
 | Weapon      | Hands | Range  | Primer | Mt  | Sk  |
 | ----------- | ----- | ------ | ------ | --- | --- |
@@ -292,7 +292,7 @@ If the first roll was **Mishap**, resolve it as normal — do not reroll.
 
 When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms. A fighter equips a firearm only if they have the **Firearms** domain feat.
 
-Firearms use a **primer roll** (**2d6 + Sk**). **Double 1s** = **Misfire**. **Double 6s** = **Overcharge**. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — profile values are the complete pool, independent of the shooter's base stats.
+Firearms use a **primer roll** (**2d6** + **Skill**). **Double 1s** = **Misfire**. **Double 6s** = **Overcharge**. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — profile values are the complete pool, independent of the shooter's base stats.
 
 Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Require the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
 
@@ -301,11 +301,11 @@ Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use p
 Firearms are fired with the **Ranged** action. Requires the **Firearms** domain
 feat. When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms.
 
-> ### Primer Roll (2d6 + Sk)
+> ### Primer Roll (2d6 + **Skill**)
 >
-> Roll **2d6 + Sk** against the weapon's **primer difficulty** (see weapon profile).
+> Roll **2d6** + **Skill** against the weapon's **primer difficulty** (see weapon profile).
 >
-> Profile values assume a **Human** shooter (**Sk 3**). At other **Sk**, use **primer difficulty − 3 + Sk**.
+> Profile values assume a **Human** shooter (**Skill** 3). At other **Skill**, use primer difficulty − 3 + **Skill**.
 >
 > | Result | Effect |
 > |---|---|
@@ -342,8 +342,8 @@ Use the **Ranged** action.
 1. **Declare a target** (pick a direction/point you're aiming at).
 2. **Roll the Primer Roll** (see [Bomb table](#bomb-table)):
    - **Double 1s:** Bomb explodes in the thrower's hand. Center the blast template on the thrower.
-   - **Fail (below difficulty, not double 1s):** Bomb is still thrown but scatters. Roll **d6 + Mt**. Move the detonation point that many **"** from the declared target, using a **scatter die** for direction.
-   - **Pass:** Bomb is on target. Roll **d6 + Mt** for maximum distance — place the blast marker anywhere along the line to the declared target up to that many **"**.
+   - **Fail (below difficulty, not double 1s):** Bomb is still thrown but scatters. Roll **d6** + **Might**. Move the detonation point that many **"** from the declared target, using a **scatter die** for direction.
+   - **Pass:** Bomb is on target. Roll **d6** + **Might** for maximum distance — place the blast marker anywhere along the line to the declared target up to that many **"**.
 3. All fighters (friend and foe) under the blast template suffer the Strike Pool.
 
 #### Bomb table
@@ -424,7 +424,7 @@ the bearer or **Companion**. This area is the **Sphere of Influence**.
 - The bearer **is affected** by their own **Sphere of Influence**.
 - **Spheres of Influence** **do not require line of sight** — they represent presence, sound, or proximity, not vision.
 - The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions skip **Downed** and **Stunned** — see [Companions](equipment.md#companions).)*
-- **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Icons**, a fighter within range of both still receives only **+1 Sa**.
+- **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Icons**, a fighter within range of both still receives only +1 **Sanity**.
 
 #### Icon and Instrument
 
@@ -465,10 +465,10 @@ Purchase: [Equipment — Companions](equipment.md#companions). Profiles: below. 
 
 ### Stats — Tamed
 
-Companions with **Tamed** use their **Handler**'s **M**, **Wi**, and **Sa**
+Companions with **Tamed** use their **Handler**'s **Movement**, **Will**, and **Sanity**
 instead of the profile values for those stats.
 
-All other stats use the profile. **Mt**, **Sk**, **CC**, and **RC** are never
+All other stats use the profile. **Might**, **Skill**, **Close Combat**, and **Ranged Combat** are never
 copied from the **Handler**.
 
 ---
@@ -497,7 +497,7 @@ When a **Handler** activates:
 1. **Co-movement** — Whenever the **Handler** completes a **Move**, **Charge**,
    **Scramble**, **Climb**, **Jump**, or **Retreat** action, the **Companion**
    co-moves. After co-movement, the **Companion** must be within **tether** of
-   the **Handler**. Move the **Companion** up to its **M** if needed to satisfy
+   the **Handler**. Move the **Companion** up to its **Movement** if needed to satisfy
    **tether**.
 2. **Companion action** — After the **Handler** finishes their activation, the
    **Companion** performs **1 action** if it is not **Out of Action** and is
@@ -554,9 +554,9 @@ require line of sight.
 |---|---|---|---|---|---|---|---|
 | 3 | — | 3 | 3 | *(Tamed)* | *(Tamed)* | 1 | **3"** |
 
-**M** *(Tamed)*
+**Movement** *(Tamed)*
 
-**Bite** — **Melee** attack using profile **Mt** / **Sk** (no weapon).
+**Bite** — **Melee** attack using profile **Might** / **Skill** (no weapon).
 
 **Keywords:** **Tamed**
 
@@ -568,12 +568,12 @@ require line of sight.
 |---|---|---|---|---|---|---|---|
 | 2 | 2 | 1 | 4 | *(Tamed)* | *(Tamed)* | 1 | **12"** |
 
-**M** *(Tamed)*
+**Movement** *(Tamed)*
 
 **Fly** — Ignore vertical distance for **Move** and **Jump**; the **Companion**
 must still end on a legal surface.
 
-**Talons** — **Ranged** attack, range **6"**, **1 Mt / 2 Sk** Strike Pool.
+**Talons** — **Ranged** attack, range **6"**, 1 **Might** / 2 **Skill** Strike Pool.
 
 **Scout's Eye** — If this **Companion** has **line of sight** to an enemy
 fighter, its **Handler** counts as having **line of sight** to that enemy for
@@ -591,7 +591,7 @@ fighter, its **Handler** counts as having **line of sight** to that enemy for
 |---|---|---|---|---|---|---|---|
 | 2 | — | — | 4 | *(Tamed)* | *(Tamed)* | 1 | **6"** |
 
-**M** *(Tamed)*
+**Movement** *(Tamed)*
 
 No attack.
 
@@ -610,9 +610,9 @@ of the scenario object.
 |---|---|---|---|---|---|---|---|
 | 2 | — | 2 | 4 | *(Tamed)* | *(Tamed)* | 1 | **3"** |
 
-**M** *(Tamed)*
+**Movement** *(Tamed)*
 
-**Bite** — **Melee** attack using profile **Mt** / **Sk**. Unblocked hits
+**Bite** — **Melee** attack using profile **Might** / **Skill**. Unblocked hits
 inflict **Poisoned** in addition to normal Wounds — see [Conditions —
 Poisoned](core-rules.md#poisoned).
 
@@ -628,7 +628,7 @@ Poisoned](core-rules.md#poisoned).
 |---|---|---|---|---|---|---|---|
 | 3 | — | 0 | 6 | *(Tamed)* | *(Tamed)* | 6 | **3"** |
 
-**M** *(Tamed)*
+**Movement** *(Tamed)*
 
 **Unarmed attack** — see **Swarm** in [Retinue — Swarm](retinue.md#swarm).
 

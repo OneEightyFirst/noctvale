@@ -32,6 +32,22 @@ only — not duplicate checklists.
 
 ---
 
+## 2026-06-27 — Spell out stats in prose
+
+**Decision:** Update the style guide and canonical rules so stat abbreviations are reserved for tables. In prose, write full bold stat names such as **Skill**, **Might**, **Ranged Combat**, and **Will**. Stat checks use the article form “a **Skill** check” rather than “one **Skill** check.”
+
+**Reasoning:** Full stat names make rules text easier to read in sentences while preserving compact table profiles. The article change keeps checks from reading like a counted resource and makes repeated stat-check language smoother.
+
+---
+
+## 2026-06-27 — Full-stat defense pools
+
+**Decision:** Rework Step 4 of the **Attack Sequence** so the defender rolls red defense dice equal to their **Mt** and blue defense dice equal to their **Sk**, then adds bonus defense dice from cover, **Brace**, spells, feats, or scenario rules. Remove the attacker-vs-defender **Mt/Sk** comparison from defense pool construction. Armor and shields still convert failed defense dice into successes after the defense roll.
+
+**Reasoning:** Equal-stat defenders were often rolling only **1 red + 1 blue** against common 5- to 8-die Strike Pools, which made defense feel too thin and pushed ordinary attacks toward one-roll removals. Full-stat defense keeps attacks dangerous because weapons still add Strike Pool dice and critical hits still matter, but it gives every fighter a meaningful defensive pool tied to their own body and reflexes.
+
+---
+
 ## 2026-06-25 — Summoning rules, Infernal spells, and rules site routing
 
 **Decision:** Add shared **Summoning** rules (**Summoning Crystals**, **Summon (*value*)**, **Binding**, **body tokens**). Write **Summon Daemon**, **Summon Skeleton**, **Raise Dead**, **Summon Bats**, **Stinging Swarm**, and related tradition procedures. Add **Swarm** keyword and **Rat Swarm** companion profile. Complete Infernal spell list: **Possession**, **Hellmouth**, **Searing Gaze**, and **Nightmare Visage** (friendly fighter within **12"** projects **Fear (6")**; end-of-round caster **Sa check** sustains). Fix **Shield of Faith** to **Wi 10+** and remove erroneous **Fear (6")**. Rename **Summon Swarm** → **Stinging Swarm**; replace **Predator's Grace** with **Summon Bats**. Republish rules wiki at site root with assets under `/wiki/`; move retinue builder to `/retinue-builder/`; gitignore generated HTML. Sync builder spell and Tradition data.

@@ -87,7 +87,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 > The fighter gains **+1 red defense die** until their next activation.
 
 **Tests**
-> Make one **Sk check**. On a failure, …
+> Make a **Skill** check. On a failure, …
 
 **Targeting**
 > Choose an enemy fighter **within engagement range**.
@@ -105,7 +105,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 
 | Avoid | Use instead |
 |---|---|
-| damage (generic) | **hit**, **wound**, **Mt / Sk** (spells), **unblocked hit** |
+| damage (generic) | **hit**, **wound**, **Might / Skill** (spells), **unblocked hit** |
 | kill / death (mid-battle) | **Out of Action**, **Mercy Kill**, **Slain** (post-game) |
 | unit | **fighter** |
 | warband | **retinue** (except when naming another game's term, e.g. Mordheim) |
@@ -143,20 +143,22 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 
 ## Terminology Glossary
 
-### Stats (abbreviations — always this form)
+### Stats
 
 | Abbr | Name | Used for |
 |---|---|---|
-| M | Movement | **"** per Move action |
+| M | Movement | **"** per **Move** action |
 | CC | Close Combat | melee to-hit |
 | RC | Ranged Combat | ranged to-hit |
 | Mt | Might | red dice |
 | Sk | Skill | blue dice |
-| Wi | Will | casting (2d6 + Wi) |
-| Sa | Sanity | fear tests (Sa checks) |
+| Wi | Will | casting (**2d6 + Will**) |
+| Sa | Sanity | fear tests (**Sanity** checks) |
 | W | Wounds | hit points |
 
-Spell out the name once per major section for new readers; use abbreviations everywhere else.
+Use abbreviations in tables only. In prose, write the full stat name in bold:
+**Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**,
+**Will**, **Sanity**, and **Wounds**.
 
 ### List-building terms
 
@@ -171,11 +173,11 @@ Spell out the name once per major section for new readers; use abbreviations eve
 | role | Lowercase when generic | Umbrella for **Leader**, **Elite**, **Specialist**, **Rank** keywords. Do not use *class* (conflicts with magic classes) or *fighter-type*. |
 | class | No in roster prose | Use **role** or name the keyword (**Leader**, **Elite**, etc.) directly |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
-| difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **M** |
+| difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **Movement** |
 | affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/core-rules.md` |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
 | Relic(s) | Yes | Campaign treasure recovered in scenarios |
-| Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 Sa) or **Instrument** (+1" M); not campaign treasure |
+| Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 **Sanity**) or **Instrument** (+1" **Movement**); not campaign treasure |
 | Sphere of Influence | Yes | Area effect from **Relic**, **Instrument**, or qualifying **Companion** |
 
 ### Combat terms
@@ -216,7 +218,7 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Keywords | Bold | **Caster**, **Single Shot**, **Flintlock** |
 | Archetype / Domain / Tradition | Bold when naming the choice | **Hunters** + **Nature** |
 | Stats in tables | Abbreviation caps as listed | Mt, Sk, Wi |
-| Stats in sentences | Abbreviation or spelled out — pick one per paragraph | “Sk check” |
+| Stats in sentences | Full bold stat name | **Skill** check |
 | Generic gear | Lowercase | sword, medium armor, musket |
 | Named gear | Title case | Widow's Tears, Silversbane |
 | File references | Backticks, lowercase path | `rules/core-rules.md` |
@@ -233,15 +235,15 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 |---|---|
 | One six-sided die | **1d6** or **d6** — prefer **1d6** when count matters (“Roll **1d6**”) |
 | Multiple dice | **2d6**, **3d6** — lowercase **d**, no space |
-| Stat check | **Sk check** |
-| Casting | **casting roll** — **2d6 + Wi** vs difficulty |
-| Gunpowder / firearms | **primer roll** — **2d6 + Sk** vs **primer difficulty** (weapon profile); **RC** governs the **Attack Sequence** to-hit roll |
+| Stat check | **Skill** check |
+| Casting | **casting roll** — **2d6 + Will** vs difficulty |
+| Gunpowder / firearms | **primer roll** — **2d6 + Skill** vs **primer difficulty** (weapon profile); **Ranged Combat** governs the **Attack Sequence** to-hit roll |
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
 | Natural results | **natural 1**, **natural 6** |
 | Table roll | **Roll 1d6:** then table |
 | Dice colors | **red die**, **blue die** — lowercase color |
 
-**Don't:** D6, 2D6, or “on a 4+” for stat checks. After the core rule defines stat checks, use the named check: **Sk check**, **Mt check**, **Sa check**, and so on. Use **6+** / **11+** on 2d6 rolls. Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
+**Don't:** D6, 2D6, or “on a 4+” for stat checks. After the core rule defines stat checks, use the named check: **Skill** check, **Might** check, **Sanity** check, and so on. Use **6+** / **11+** on 2d6 rolls. Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
 
 ### Measurements
 
@@ -251,8 +253,8 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Within distance | **within 1"** · **within 12"** |
 | Engagement | **engagement range** (defined as **1"**) or **within 1"** |
 | Blast / aura | **3" blast**, **6" cloud**, **8" from caster** |
-| Movement stat | **6"** in profile tables (M column) |
-| Rolled distance | Roll **d6 + Mt**. Move that many **"**. |
+| Movement stat | **6"** in profile tables (**M** column) |
+| Rolled distance | Roll **d6 + Might**. Move that many **"**. |
 
 Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell out the unit in rules text.
 
@@ -273,27 +275,27 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 
 ### Inline profile reference
 
-> Human (Mt 3, Sk 4) with a Sword: **4 red + 5 blue = 9 dice**
+> Human (**Might** 3, **Skill** 4) with a Sword: **4 red + 5 blue = 9 dice**
 
 ### Modifier notation
 
 | Meaning | Format |
 |---|---|
-| Stat bonus | **+1 Mt**, **+2 Sk** |
-| Stat penalty | **−1 Mt** (unicode minus) |
+| Stat bonus | +1 **Might**, +2 **Skill** |
+| Stat penalty | −1 **Might** (unicode minus) |
 | Die bonus | **+1 red defense die** |
 | Strike Pool dice | **add 2 red dice to the Strike Pool** |
-| To-hit modifier | **+1 CC**, **−1 RC**, or **+1 RC** — whichever **Hit** stat the attack uses |
+| To-hit modifier | +1 **Close Combat**, −1 **Ranged Combat**, or +1 **Ranged Combat** — whichever **Hit** stat the attack uses |
 | Crown cost | **−25 Crowns** |
 
 Use **+** / **−** with a space before the number in prose.
 
-Use **+1 Mt** or **+1 Sk** only when a rule changes the fighter's stat or a
-weapon table's **+Mt / +Sk** modifier. When a rule adds dice without changing a
+Use +1 **Might** or +1 **Skill** only when a rule changes the fighter's stat or a
+weapon table's +**Might** / +**Skill** modifier. When a rule adds dice without changing a
 stat, name the dice directly: **add 2 red dice to the Strike Pool**, **add 1
 blue die to the Strike Pool**, or **gain +1 red defense die**.
 
-For attack accuracy, modify the **Hit** stat for that attack: **+1 CC** or **+1 RC** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write **+1 CC** and **+1 RC**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write **+1 Mt** or **+1 red die** when the rule modifies a **CC check** or **RC check**.
+For attack accuracy, modify the **Hit** stat for that attack: +1 **Close Combat** or +1 **Ranged Combat** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write +1 **Close Combat** and +1 **Ranged Combat**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write +1 **Might** or **+1 red die** when the rule modifies a **Close Combat** check or **Ranged Combat** check.
 
 ---
 
@@ -304,16 +306,16 @@ For attack accuracy, modify the **Hit** stat for that attack: **+1 CC** or **+1 
 `| Weapon | Hands | Range | Primer | +Mt | +Sk | Notes |`
 
 - **Range:** `3"–18"` for missiles; **Engagement** for melee.
-- **Primer:** **2d6 + Sk** vs profile value; **—** for weapons without a primer roll. Profile values assume **Sk 3**; adjust per the **Primer Roll** box in `rules/equipment.md`.
+- **Primer:** **2d6 + Skill** vs profile value; **—** for weapons without a primer roll. Profile values assume **Skill** 3; adjust per the **Primer Roll** box in `rules/equipment.md`.
 - **Notes:** traits comma-separated — **Single Shot**, **Smoke**, **Flintlock** keyword callouts.
 
 ### Weapon trait line (short)
 
-> **Musket** · 2H · 3"–24" · primer **9+** · 5 Mt / 3 Sk · crits vs all targets
+> **Musket** · 2H · 3"–24" · primer **9+** · 5 **Might** / 3 **Skill** · crits vs all targets
 
 ### Spell line (card / compact)
 
-> **Arcane Bolt** · Wi 11+ · 20" · RC, 5 Sk
+> **Arcane Bolt** · **Will** 11+ · 20" · **Ranged Combat**, 5 **Skill**
 
 ### Spell block (standard)
 
@@ -322,12 +324,12 @@ Use spell blocks in `rules/retinue.md` instead of spell tables.
 ```markdown
 ##### Radiant Strike
 
-**Casting:** Wi 11+. **Range:** 12". **Attack:** RC, 4 Mt / 3 Sk.
+**Casting:** **Will** 11+. **Range:** 12". **Attack:** **Ranged Combat**, 4 **Might** / 3 **Skill**.
 
-Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk instead.
+Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 **Might** / 3 **Skill** instead.
 ```
 
-- **Casting** combines casting stat and difficulty: **Wi 11+**, **Sa 12+**.
+- **Casting** combines casting stat and difficulty: **Will** 11+, **Sanity** 12+.
 - Include **Attack** only when the spell resolves through the **Attack Sequence**.
 - Omit **Mishap** entirely when the spell has no Mishap.
 - Write the effect as normal rules prose, not table shorthand.
@@ -337,7 +339,7 @@ Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 Mt / 3 Sk 
 
 > **Flintlock** — −25 Crowns, **Single Shot**. *(keyword)*
 
-> **Fear (12")** — **Sa check** when activating within 12" and line of sight. *(projection notation — not a keyword)*
+> **Fear (12")** — **Sanity** check when activating within 12" and line of sight. *(projection notation — not a keyword)*
 
 ### Named action in ability text
 
@@ -427,7 +429,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 > When a fighter would want to leave engagement, they may attempt to retreat by making a Skill test, and if they fail the enemy might get to attack them.
 
 **Do**
-> **Retreat** — Attempt to leave engagement range. Make one **Sk check**. On failure, an engaged enemy may make a **free Melee attack** if they are not engaged with another enemy.
+> **Retreat** — Attempt to leave engagement range. Make a **Skill** check. On failure, an engaged enemy may make a **free Melee attack** if they are not engaged with another enemy.
 
 ---
 
@@ -475,7 +477,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 ### Weapon trait (card / table)
 
-> **War Axe** — Heavy · Mt +2 · weapon triangle (Axe)
+> **War Axe** — Heavy · **Might** +2 · weapon triangle (Axe)
 
 ### Chapter fluff (core rules)
 
@@ -495,11 +497,11 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 ### Ability — tactical action (reference / card)
 
-> **Brace** — The fighter gains **+1 red defense die** (rolled with Mt) until their next activation.
+> **Brace** — The fighter gains **+1 red defense die** (rolled with **Might**) until their next activation.
 
 ### Ability — spell
 
-> **Heal** — **Cast**, CV 10+, range **1"**. Restore **1 Wound** and improve wound state by one step (Stunned→Downed, Downed→Active). **Mishap:** Deal **1 Wound** to the target.
+> **Heal** — **Cast**, **Will** 10+, range **1"**. Restore **1 Wound** and improve wound state by one step (Stunned→Downed, Downed→Active). **Mishap:** Deal **1 Wound** to the target.
 
 ### Reminder — condition
 

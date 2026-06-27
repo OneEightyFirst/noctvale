@@ -383,7 +383,7 @@ The unicorn is controlled by the scenario rules below. For targeting, engagement
 |---|---|---|---|---|---|---|---|
 | 8" | 4 | — | 5 | 3 | 4 | 5 | 6 |
 
-**Horn and Hooves** — The unicorn's **Melee** attacks use **+2 Mt / +0 Sk**. When the unicorn's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool for that **Melee** attack.
+**Horn and Hooves** — The unicorn's **Melee** attacks use +2 **Might** / +0 **Skill**. When the unicorn's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool for that **Melee** attack.
 
 **Fear (8")** — The unicorn projects **Fear (8")**.
 
@@ -762,7 +762,7 @@ A **Hunters** retinue wins a battle in an **Abandoned Village**. Two fighters **
 
 The scenario gives the retinue **2 Relics**. Because they won in an **Abandoned Village**, they also make one Survival Roll on the Abandoned Village table. They roll **9** — **Village Hoard**: **1 Relic** and **15 Crowns**.
 
-The **Hand** rolls on the **Casualty Table** and gets **3**, **Scarred**. The player returns the fighter to the roster and chooses RC **−1**.
+The **Hand** rolls on the **Casualty Table** and gets **3**, **Scarred**. The player returns the fighter to the roster and chooses **Ranged Combat** **−1**.
 
 During the Economy step, the retinue sells all **3 Relics** for **40 Crowns**, then adds the **15 Crowns** from the Survival Roll. They spend some of it on replacement gear and update **Roster Cost**.
 
