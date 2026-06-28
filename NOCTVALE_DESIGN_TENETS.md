@@ -10,7 +10,7 @@ Use this document when writing rules, evaluating playtest feedback, or deciding 
 
 ## Elevator Pitch (~100 words)
 
-Noctvale is a grimdark fantasy skirmish wargame set in a vast meteor-scarred valley roughly the size of Ireland, where small **retinues** hunt **Relics** across ruins, Crown Roads, and haunted wilds. Combat is fast and lethal: red-and-blue dice pools, weapon and magic triangles, and a **Downed** state that keeps fights dramatic while leaving room for recovery and mercy kills. Between battles, table-driven Survival Rolls, injuries, and the Relic economy grow, scar, and bankrupt your retinue. **Archetype**, **Domain**, and **Tradition** define how you fight — gunpowder or magic, plate or cult glass cannons — so every list reads on the table. Classic Mordheim/Necromunda campaign feel, cleaner modern skirmish rules.
+Noctvale is a grimdark fantasy skirmish wargame set in a vast meteor-scarred valley roughly the size of Ireland, where small **retinues** hunt **Relics** across ruins, Crown Roads, and haunted wilds. Combat is fast and lethal: Might-and-Skill dice pools, weapon and magic triangles, and a **Downed** state that keeps fights dramatic while leaving room for recovery and mercy kills. Between battles, table-driven Survival Rolls, injuries, and the Relic economy grow, scar, and bankrupt your retinue. **Archetype**, **Domain**, and **Tradition** define how you fight — gunpowder or magic, plate or cult glass cannons — so every list reads on the table. Classic Mordheim/Necromunda campaign feel, cleaner modern skirmish rules.
 
 ---
 
@@ -66,7 +66,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Players make meaningful choices before dice hit the table. Resolution is fast to explain and rich in outcome. Natural English over jargon. One roll forks into several consequences.
 
-**Mechanically:** Strike Pool = Mt + Sk + weapon (one roll phase). To-hit: d6 + CC/RC ≥ 8. Defense: red blocks red, blue blocks blue, 2:1 crossover. Casting: **casting roll** / **primer roll** with Mishap/Overcharge forks. Binary line of sight; cover is +1 blue die. Post-game: table roll → apply result → move on.
+**Mechanically:** Strike Pool = Mt + Sk + weapon (one roll phase). To-hit: d6 + CC/RC ≥ 8. Defense: Might blocks Might, Skill blocks Skill, 2:1 crossover. Casting: **casting roll** / **primer roll** with Mishap/Misfire forks. Binary line of sight; cover is +1 Skill defense die. Post-game: table roll → apply result → move on.
 
 **Protects:** Single-phase melee (attacker strikes, defender defends). Counterplay on your own activation. Table speed without sacrificing texture.
 
@@ -114,13 +114,13 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Equipment choices change how a fight plays. Weapon triangles, magic triangles, armor conversion, and counter-picks (hammers vs. Heavy Armor, silver vs. **Undead** and **Werebeast**) reward preparation and target selection. Positioning and engagement rules make melee dangerous without a facing subsystem.
 
-**Mechanically:** Sword > Axe > Spear > Sword (attacker only). Mystic and Natural magic triangles. Firearms crit vs. all; conventional ranged needs Aim for crits. Heavy Armor converts failed red defense dice and can create a critical defense success; hammers crit vs. Heavy Armor only. Gang Up, Brace, Hide, Charge/Retreat, friendly-fire on missed gun/magic shots. Melee is one-directional — charge first, earn triangle crits.
+**Mechanically:** Sword > Axe > Spear > Sword (attacker only). Mystic and Natural magic triangles. Firearms crit vs. all; conventional ranged needs Aim for crits. Heavy Armor converts failed Might defense dice and can create a critical defense success; hammers crit vs. Heavy Armor only. Gang Up, Brace, Hide, Charge/Retreat, friendly-fire on missed gun/magic shots. Melee is one-directional — charge first, earn triangle crits.
 
 **Protects:** Matchup literacy. Counter-picks with explicit rules (Hammer, Silver vs **Undead** / **Werebeast**). Positioning as a resource.
 
 **Apply it:** New melee weapons slot into a weapon proficiency (One-Handed or Two-Handed), declare triangle type or an explicit exception (like Hammer), and add Mt or Sk.
 
-**vs. peers:** More equipment texture than **Warcry**; less gear churn than **Necromunda**. Weapon triangles echo classic **Warhammer** fantasy. Red/blue geometry caps defensive depth below **Infinity**-level complexity.
+**vs. peers:** More equipment texture than **Warcry**; less gear churn than **Necromunda**. Weapon triangles echo classic **Warhammer** fantasy. Might/Skill geometry caps defensive depth below **Infinity**-level complexity.
 
 ---
 

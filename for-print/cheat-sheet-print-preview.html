@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noctvale Quick Reference — Print Preview</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 8pt;
+      line-height: 1.25;
+      color: #240f0f;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      page-break-after: always;
+      column-count: 2;
+      column-gap: 0.2in;
+      min-height: 10in;
+      position: relative;
+      padding-bottom: 0.35in;
+    }
+    .page:last-child { page-break-after: auto; }
+    h1 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14pt;
+      column-span: all;
+      margin: 0 0 0.15in;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      margin: 0.12in 0 0.06in;
+      break-after: avoid;
+    }
+    h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      margin: 0.1in 0 0.04in;
+      break-after: avoid;
+    }
+    p, ul { margin: 0 0 0.06in; }
+    ul { padding-left: 1.1em; }
+    li { margin-bottom: 0.03in; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin: 0 0 0.08in;
+      break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #240f0f;
+      padding: 2px 4px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { font-weight: bold; background: #f3e3d8; }
+    .box {
+      background: #f3e3d8;
+      border: 1px solid #240f0f;
+      padding: 6px 8px;
+      margin: 0 0 0.08in;
+      break-inside: avoid;
+    }
+    .box h3 { margin-top: 0; font-size: 9pt; }
+    .box p, .box ul { font-size: 7.5pt; }
+    pre {
+      font-size: 7.5pt;
+      margin: 0.04in 0;
+      white-space: pre-wrap;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 7pt;
+      text-align: center;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .triangles {
+      width: 100%;
+      margin: 0.06in 0;
+      break-inside: avoid;
+    }
+    strong { font-weight: bold; }
+    @media screen {
+      body { background: #ccc; padding: 0.5in; }
+      .page {
+        background: #fff;
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0 auto 0.5in;
+        padding: 0.5in;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="page">
+  <h1>Noctvale Quick Reference</h1>
+
+  <div class="box">
+    <h3>Round at a Glance</h3>
+    <p><strong>Start of round:</strong> Count each player's <strong>Active</strong> and <strong>Downed</strong> fighters — that is their <strong>activation count</strong>. Do not count <strong>Stunned</strong>, <strong>Out of Action</strong>, or <strong>Escaped</strong> fighters. The player with the lower <strong>activation count</strong> has initiative and gains <strong>Overwatch tokens</strong> equal to the difference between the two counts. Do not recalculate activation count, initiative, or tokens during the round.</p>
+    <p><strong>Activations:</strong> Starting with the player who has initiative, players alternate activating <strong>one fighter</strong> at a time. Each fighter performs <strong>2 actions</strong> in any order.</p>
+    <p><strong>End of round:</strong> The round ends when every fighter who can activate has activated or <strong>skipped their activation</strong>. Remove unspent <strong>Overwatch tokens</strong>. Begin a new round.</p>
+  </div>
+
+  <h2>Overwatch</h2>
+  <ul>
+    <li><strong>Start of round:</strong> Lower <strong>activation count</strong> player receives tokens equal to the difference between the two counts.</li>
+    <li><strong>Skip activation:</strong> Spend <strong>1 token</strong> to skip a fighter's activation this round. That fighter may later perform <strong>1 action as a reaction</strong> when an enemy completes an action.</li>
+    <li><strong>Valid reactions:</strong> <strong>Move</strong>, <strong>Ranged</strong>, <strong>Charge</strong>, <strong>Melee</strong>, <strong>Retreat</strong>.</li>
+    <li><strong>End of round:</strong> Remove unspent tokens.</li>
+  </ul>
+
+  <h2>Morale</h2>
+  <ul>
+    <li><strong>Lost:</strong> <strong>Out of Action</strong>, <strong>Escaped</strong>, or <strong>Stunned</strong>. <strong>Active</strong> and <strong>Downed</strong> are not <strong>lost</strong>.</li>
+    <li><strong>Routing:</strong> More than <strong>half</strong> of the retinue's starting fighters are <strong>lost</strong> (e.g. <strong>5</strong> deployed → routing at <strong>3</strong> lost).</li>
+    <li><strong>Test:</strong> At the <strong>start of each activation</strong> while routing, before actions — <strong>Will</strong> check. <strong>Summon</strong> auto-pass if any friendly within <strong>6"</strong> and line of sight. Modifiers: <strong>+1</strong> per friendly within <strong>6"</strong>; <strong>+2</strong> for <strong>Leader</strong> within <strong>6"</strong>; <strong>+1</strong> if <strong>Fearless</strong>; <strong>+1</strong> if Tradition grants rout bonus.</li>
+    <li><strong>Fail:</strong> Spend <strong>both actions</strong> fleeing toward nearest <strong>battlefield edge</strong>.</li>
+  </ul>
+
+  <h2>Engagement</h2>
+  <ul>
+    <li>Engagement range is <strong>1"</strong>. No facing.</li>
+    <li><strong>Gang Up:</strong> Friendly also engaged with same enemy → <strong>+1 die</strong> to Strike Pool.</li>
+    <li><strong>Multiple enemies:</strong> Split Strike Pool among standing enemies; prioritize standing over <strong>Downed</strong>/<strong>Stunned</strong>.</li>
+  </ul>
+
+  <h2>Actions</h2>
+  <table>
+    <tr><th>Action</th><th>Effect</th></tr>
+    <tr><td><strong>Move</strong></td><td>Move up to <strong>Movement</strong>; pass through friendlies</td></tr>
+    <tr><td><strong>Crawl</strong></td><td><strong>Downed</strong> only — half <strong>Movement</strong></td></tr>
+    <tr><td><strong>Charge</strong></td><td>Move; end in engagement with enemy</td></tr>
+    <tr><td><strong>Climb</strong></td><td>Vertical at half <strong>Movement</strong></td></tr>
+    <tr><td><strong>Scramble</strong></td><td>Half <strong>Movement</strong> through difficult terrain</td></tr>
+    <tr><td><strong>Jump</strong></td><td>Open space up to <strong>Movement</strong>; <strong>Skill</strong> check</td></tr>
+    <tr><td><strong>Retreat</strong></td><td>Leave engagement — <strong>Skill</strong> check; fail → free enemy <strong>Melee</strong></td></tr>
+    <tr><td><strong>Melee</strong></td><td>Attack in engagement; <strong>Attack Sequence</strong></td></tr>
+    <tr><td><strong>Ranged</strong></td><td>Bow/crossbow → <strong>Attack Sequence</strong>; firearm → <strong>Primer Roll</strong></td></tr>
+    <tr><td><strong>Cast</strong></td><td><strong>Caster</strong> only — <strong>Casting Roll</strong></td></tr>
+    <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged</strong> +1 dominant die; nat <strong>6</strong> = crit</td></tr>
+    <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong></td></tr>
+    <tr><td><strong>Brace</strong></td><td><strong>+1 Might defense die</strong> until next activation</td></tr>
+    <tr><td><strong>Hide</strong></td><td><strong>Hidden</strong> within <strong>1"</strong> of terrain</td></tr>
+    <tr><td><strong>Recover</strong></td><td><strong>Downed</strong> — roll <strong>1d6</strong> (see back)</td></tr>
+    <tr><td><strong>Help</strong></td><td><strong>Downed</strong>/<strong>Stunned</strong> friendly within <strong>1"</strong> — <strong>1d6</strong></td></tr>
+    <tr><td><strong>Interact</strong></td><td>Doors, scenario objects, items</td></tr>
+  </table>
+
+  <div class="footer">Turn &amp; Actions</div>
+</section>
+
+<section class="page">
+  <h1>Noctvale Quick Reference</h1>
+
+  <div class="box">
+    <h3>Attack Sequence</h3>
+    <p><strong>Step 1 — Build the Strike Pool:</strong> Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>. Firearms and damage spells use a <strong>flat Strike Pool</strong> instead.</p>
+    <p><strong>Step 2 — Roll to hit:</strong> Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> stat modifiers.</p>
+    <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle, <strong>Hammer</strong> vs <strong>Heavy Armor</strong>, magic triangle, <strong>Aim</strong>, or firearms. Crits blocked only by <strong>Heavy Armor</strong> critical success.</p>
+    <p><strong>Step 4 — Roll defense:</strong> Defender <strong>Might</strong> + <strong>Skill</strong> + bonuses. Armor and shields <strong>convert</strong> failed dice.</p>
+    <p><strong>Step 5 — Apply Wounds</strong> (below).</p>
+  </div>
+
+  <div class="box">
+    <h3>Apply Wounds</h3>
+    <p>Each unblocked hit inflicts <strong>1 Wound</strong>.</p>
+    <ul>
+      <li><strong>0 Wounds</strong> → <strong>Downed</strong></li>
+      <li>Unblocked hit on <strong>Downed</strong> → <strong>Stunned</strong></li>
+      <li>Unblocked hit on <strong>Stunned</strong> → <strong>Out of Action</strong></li>
+    </ul>
+    <p><strong>Downed</strong> — full defense pool. <strong>Stunned</strong> — <strong>Might dice only</strong>.</p>
+  </div>
+
+  <h2>Defense</h2>
+  <ul>
+    <li><strong>Might</strong> blocks <strong>Might hits</strong>; <strong>Skill</strong> blocks <strong>Skill hits</strong>.</li>
+    <li><strong>2 Might</strong> may block <strong>1 Skill hit</strong>; <strong>2 Skill</strong> may block <strong>1 Might hit</strong>.</li>
+    <li><strong>Cover:</strong> <strong>+1 Skill defense die</strong>.</li>
+  </ul>
+
+  <h2>Armor Conversion</h2>
+  <table>
+    <tr><th>Gear</th><th>Conversion</th></tr>
+    <tr><td>Light</td><td>2 failed Mt or Sk → 1 success</td></tr>
+    <tr><td>Medium</td><td>1 failed Mt → 1 success</td></tr>
+    <tr><td>Heavy</td><td>1 failed Mt → 1 success OR 2 failed Mt → 1 crit success</td></tr>
+    <tr><td>Buckler</td><td>1 failed Sk</td></tr>
+    <tr><td>Shield</td><td>1 failed Mt + 1 failed Sk</td></tr>
+    <tr><td>Tower Shield</td><td>2 failed Mt + 1 failed Sk</td></tr>
+  </table>
+
+  <h2>Critical Hits</h2>
+  <p>Natural <strong>6</strong> = crit with weapon triangle, <strong>Hammer</strong> vs Heavy Armor, magic triangle, firearm, or <strong>Aim</strong>. <strong>Hammer</strong> cancels weapon triangle.</p>
+  <img class="triangles" src="cheat-sheet-triangles.svg" alt="Weapon, Mystic, and Natural critical hit triangles">
+
+  <h2>Ranged</h2>
+  <ul>
+    <li>LoS required; friendlies do not block; enemies do.</li>
+    <li><strong>Cover:</strong> terrain &gt; <strong>1"</strong> from attacker → <strong>+1 Sk defense die</strong>.</li>
+    <li><strong>Clustered enemies</strong> within <strong>1"</strong> → <strong>Skill</strong> check.</li>
+    <li><strong>Friendly fire</strong> when target engaged with friendlies → <strong>Ranged Combat</strong> check.</li>
+    <li><strong>Line of fire</strong> (firearms/spells): miss → <strong>1d6</strong>, on <strong>1</strong> hit intervening friendly.</li>
+    <li><strong>Ranged Reaction:</strong> 1 free action after being targeted by <strong>Ranged</strong> (not <strong>Cast</strong>).</li>
+  </ul>
+
+  <h2>Casting Roll (2d6 + Casting stat)</h2>
+  <table>
+    <tr><th>Result</th><th>Effect</th></tr>
+    <tr><td><strong>Double 1s</strong></td><td><strong>Mishap</strong></td></tr>
+    <tr><td>Below difficulty</td><td>Fizzles; action spent</td></tr>
+    <tr><td>Meets or exceeds</td><td><strong>Attack Sequence</strong></td></tr>
+  </table>
+
+  <h2>Primer Roll (2d6 + Skill)</h2>
+  <table>
+    <tr><th>Result</th><th>Effect</th></tr>
+    <tr><td><strong>Double 1s</strong></td><td><strong>Misfire</strong></td></tr>
+    <tr><td>Below difficulty</td><td>Fails to fire</td></tr>
+    <tr><td>Meets or exceeds</td><td><strong>Attack Sequence</strong></td></tr>
+  </table>
+
+  <h2>Wound States</h2>
+  <pre>Active → Downed → Stunned → Out of Action</pre>
+  <table>
+    <tr><th>Recover (1d6)</th><th>Help (1d6)</th></tr>
+    <tr><td>1: Stunned · 2–3: Downed · 4–5: 1 Wound · 6: 1 Wound + action</td><td>1: OOA · 2–3: — · 4–5: Downed · 6: 1 Wound</td></tr>
+  </table>
+
+  <h2>Afflictions</h2>
+  <table>
+    <tr><th>Affliction</th><th>Effect</th></tr>
+    <tr><td><strong>Poisoned</strong></td><td>−1 <strong>Might</strong></td></tr>
+    <tr><td><strong>Weakened</strong></td><td>−1 Mt, −1 Sk, −1" Move</td></tr>
+    <tr><td><strong>Enfeebled</strong></td><td>−1 Mt, −1 Sk</td></tr>
+    <tr><td><strong>Bleeding</strong></td><td>1 Wound; Will each activation</td></tr>
+    <tr><td><strong>Blinded</strong></td><td>No Melee/Ranged</td></tr>
+    <tr><td><strong>Fear / Panic</strong></td><td>Cannot close; Panic flees</td></tr>
+    <tr><td><strong>Insanity</strong></td><td>Roll 1d6 table</td></tr>
+  </table>
+
+  <h2>Keywords</h2>
+  <table>
+    <tr><th>Keyword</th><th>Effect</th></tr>
+    <tr><td><strong>Caster</strong></td><td>Spells; <strong>Cast</strong> action</td></tr>
+    <tr><td><strong>Large</strong></td><td>Cannot <strong>Hide</strong></td></tr>
+    <tr><td><strong>Swarm</strong></td><td>Sk = Wounds; +1 Hit vs; no Downed/Stunned</td></tr>
+    <tr><td><strong>Summon</strong></td><td>Duration per value</td></tr>
+    <tr><td><strong>Hidden</strong></td><td>Not targeted Ranged/Cast &gt; 6"</td></tr>
+    <tr><td><strong>Fly</strong></td><td>Ignore vertical for Move/Jump</td></tr>
+    <tr><td><strong>Fearless</strong></td><td>Immune Fear/Panic/Insanity; +1 rout</td></tr>
+    <tr><td><strong>Undead</strong></td><td>Silver, Radiant Strike, etc.</td></tr>
+  </table>
+
+  <div class="footer">Combat &amp; Conditions</div>
+</section>
+
+</body>
+</html>

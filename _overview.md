@@ -13,7 +13,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 ## Core Design Pillars
 
 - **Lethal combat** — fights are decisive and dangerous
-- **Red/Blue dice pool resolution** — fast, tactile dice economy with distinct fighter archetypes
+- **Might/Skill dice pool resolution** — fast, tactile dice economy with distinct fighter archetypes
 - **Weapon & magic triangles** — rock-paper-scissors advantage layers
 - **Downed system** — dramatic last-chance survivals before lasting consequences
 - **Campaign progression** — retinues grow, earn, and suffer across sessions
@@ -26,7 +26,7 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 | System | File |
 |---|---|
 | Stats & Species Profiles | `rules/core-rules.md` |
-| Combat (Red/Blue Dice Pool, Crits, Defense) | `rules/core-rules.md#combat` |
+| Combat (Might/Skill Dice Pool, Crits, Defense) | `rules/core-rules.md#combat` |
 | Conditions (Downed, Stunned, Out of Action) | `rules/core-rules.md#conditions` |
 | Sanity (Fear, Panic, Insanity) | `rules/core-rules.md#fear-panic-and-insanity` |
 | Actions & Engagement | `rules/core-rules.md#actions` |

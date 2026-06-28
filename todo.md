@@ -40,7 +40,7 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 Rules in `rules/core-rules.md#terrain`; cross-refs in the action and combat sections of `rules/core-rules.md`.
 
 - [x] Line of sight: visible-or-not from firing fighter's PoV; ignore past-base overhang
-- [x] Cover: any intervening terrain between shooter and target (terrain >1" from shooter) → +1 blue defense die
+- [x] Cover: any intervening terrain between shooter and target (terrain >1" from shooter) → +1 Skill defense die
 - [x] Ranged and Cast require line of sight to enemy targets
 - [x] Friendly fighters: do not block LoS; may move through friendlies (not end on their bases)
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
@@ -209,6 +209,7 @@ From fresh-eyes rules read-through and designer responses.
 - [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/retinue.md#feats`, `rules/equipment.md`, `rules/retinue.md`.
 - [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`rules/campaign.md#survival-rolls`)
 - [ ] **Territory / campaign layer:** Duchies/holdings, feeding costs by retinue size, territory exchange minigame
+- [x] **Morale system** — Retinues rout when more than half (round down) are **lost**; rout tests at activation start; **Crawl** for **Downed** routers (`rules/core-rules.md#morale`).
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
 

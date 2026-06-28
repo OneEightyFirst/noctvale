@@ -2,9 +2,7 @@
 
 ## How to Run a Campaign
 
-A campaign is a linked series of **10 battles**, then ends. Each player keeps the
-same retinue between battles, tracks injuries and XP, sells recovered **Relics**,
-and spends **Crowns** to replace losses or expand the roster.
+A campaign is a linked series of **10 battles**, then ends. Each player keeps the same retinue between battles, tracks injuries and XP, sells recovered **Relics**, and spends **Crowns** to replace losses or expand the roster.
 
 Start a new campaign retinue with **1000 Crowns** using the [retinue building rules](retinue.md). Record **Roster Cost** on the roster sheet.
 
@@ -16,18 +14,11 @@ XP is a **bank per fighter** — earned from specific deeds, **spent** to buy ad
 
 ### Earning XP
 
-Track **Experience** on the fighter card as a running total. Unspent XP carries
-forward.
+Track **Experience** on the fighter card as a running total. Unspent XP carries forward.
 
-Award XP during [Step 7: Experience & Advancement](#step-7-experience--advancement)
-in three passes — **battle**, **scenario**, then **post-game** — so casualty and
-Doom awards stay separate from in-battle deeds.
+Award XP during [Step 7: Experience & Advancement](#step-7-experience--advancement) in three passes — **battle**, **scenario**, then **post-game** — so casualty and Doom awards stay separate from in-battle deeds.
 
-A fighter removed as **Slain** still receives **battle** and **scenario**
-Experience from that battle — for example, a fighter who puts an enemy **Out of
-Action** and is later **Slain** on the **Casualty Table** keeps the **Out of
-Action** XP. **Slain** fighters do not receive the **Did not go Out of Action**
-award, **Hardy**, **Miraculous**, or other **post-game** Experience.
+A fighter removed as **Slain** still receives **battle** and **scenario** Experience from that battle — for example, a fighter who puts an enemy **Out of Action** and is later **Slain** on the **Casualty Table** keeps the **Out of Action** XP. **Slain** fighters do not receive the **Did not go Out of Action** award, **Hardy**, **Miraculous**, or other **post-game** Experience.
 
 #### Battle Experience
 
@@ -39,35 +30,26 @@ Award to individual fighters for deeds during the battle:
 | Put an enemy fighter **Out of Action** by a direct action you resolved | +1 *(once per enemy fighter)* |
 | Put the enemy **Leader** **Out of Action** by a direct action you resolved | +2 |
 
-**Did not go Out of Action:** The fighter never went **Out of Action** during
-the battle.
+**Did not go Out of Action:** The fighter never went **Out of Action** during the battle.
 
-**Direct action:** The fighter who resolves the attack, shot, or ability that
-causes the **Out of Action** earns the XP. Do not award **Out of Action** XP for
-indirect effects — for example, when a spell or terrain effect such as **The
-Void** removes an enemy without your fighter resolving the final action.
+**Direct action:** The fighter who resolves the attack, shot, or ability that causes the **Out of Action** earns the XP. Do not award **Out of Action** XP for indirect effects — for example, when a spell or terrain effect such as **The Void** removes an enemy without your fighter resolving the final action.
 
-**Leader:** The **+2** award is for taking the enemy **Leader** **Out of Action**;
-do not also add **+1** for the same **Out of Action**.
+**Leader:** The **+2** award is for taking the enemy **Leader** **Out of Action**; do not also add **+1** for the same **Out of Action**.
 
 #### Scenario Experience
 
-Each scenario states which fighters earn XP and how much. Scenario awards are
-**per fighter** — never retinue-wide unless the scenario names a specific
-fighter (for example, the fighter who escaped with the Horn token).
+Each scenario states which fighters earn XP and how much. Scenario awards are **per fighter** — never retinue-wide unless the scenario names a specific fighter (for example, the fighter who escaped with the Horn token).
 
 #### Post-Game Experience
 
-Award after the **Casualty Table** and **Doom Table**, separate from battle and
-scenario awards:
+Award after the **Casualty Table** and **Doom Table**, separate from battle and scenario awards:
 
 | Source | XP |
 |---|---|
 | **Hardy** (Casualty Table d6) | +1 |
 | **Miraculous** (Doom Table 2d6) | +2 |
 
-Some **Survival Roll** or scenario results also grant **+1 Experience** to one
-named or chosen surviving fighter. Apply those in this pass.
+Some **Survival Roll** or scenario results also grant **+1 Experience** to one named or chosen surviving fighter. Apply those in this pass.
 
 ### Spending XP — Advancement Rolls
 
@@ -78,10 +60,7 @@ Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cos
 | **Feat** | **3** | 2d6 on [Feat Advancement Table](#feat-advancement-table) |
 | **Stat** | **8** | 2d6 on Stat Advancement Table |
 
-Fighters with the **Vampire** keyword must pay **2 XP** more than the normal
-advancement cost before they may buy that advancement — **Feat** **5**,
-**Stat** **10**. This adds to the **XP** price only; it does not modify the
-**2d6** result.
+Fighters with the **Vampire** keyword must pay **2 XP** more than the normal advancement cost before they may buy that advancement — **Feat** **5**, **Stat** **10**. This adds to the **XP** price only; it does not modify the **2d6** result.
 
 ### Feat Advancement Table
 
@@ -89,15 +68,11 @@ advancement cost before they may buy that advancement — **Feat** **5**,
 
 ### Stat Advancement Table
 
-Roll **2d6** after spending **8 XP** on Stat Advancement. Each result raises one
-stat by **+1**. Stats cannot exceed **6**.
+Roll **2d6** after spending **8 XP** on Stat Advancement. Each result raises one stat by **+1**. Stats cannot exceed **6**.
 
-When a result names a pair of stats, choose one of that pair that is not already
-**6**. On **12**, choose any stat that is not already **6**.
+When a result names a pair of stats, choose one of that pair that is not already **6**. On **12**, choose any stat that is not already **6**.
 
-If both stats in the pair are already **6**, apply the next lowest row on this
-table instead. Repeat until you gain **+1** to a stat below **6**, or until no
-lower row applies.
+If both stats in the pair are already **6**, apply the next lowest row on this table instead. Repeat until you gain **+1** to a stat below **6**, or until no lower row applies.
 
 | 2d6 | Result |
 |---|---|
@@ -117,13 +92,11 @@ Use these rules in every scenario unless the scenario states otherwise.
 
 Random reward rolls use the [Reward Roll Rule](#reward-roll-rule).
 
-Each scenario's **Rewards** section lists **Experience** awards, if any. Awards
-are always **per fighter** — see [Scenario Experience](#scenario-experience).
+Each scenario's **Rewards** section lists **Experience** awards, if any. Awards are always **per fighter** — see [Scenario Experience](#scenario-experience).
 
 #### Battle Setup
 
-Choose or roll a scenario first. The scenario then tells players how to
-determine the battlefield location.
+Choose or roll a scenario first. The scenario then tells players how to determine the battlefield location.
 
 A scenario may:
 
@@ -131,30 +104,23 @@ A scenario may:
 - Tell players to roll on the [Battlefield Location Table](#battlefield-location-table).
 - Provide its own smaller battlefield location table.
 
-The battlefield location determines which Survival table the winning retinue
-uses after the battle.
+The battlefield location determines which Survival table the winning retinue uses after the battle.
 
 #### Looting Buildings
 
 Before deployment, players agree which terrain pieces are **buildings**.
 
-A fighter inside a building may use a **Loot** action to search that building.
-Each building can be looted once per battle. After resolving the loot roll,
-mark that building as searched.
+A fighter inside a building may use a **Loot** action to search that building. Each building can be looted once per battle. After resolving the loot roll, mark that building as searched.
 
-Loot found this way is added to the retinue's post-battle rewards. It cannot
-be equipped or spent during the battle.
+Loot found this way is added to the retinue's post-battle rewards. It cannot be equipped or spent during the battle.
 
-**Many Hands:** If 2 or more friendly fighters are inside the same building
-when a fighter loots it, add **+1** to the loot roll. A modified result cannot
-exceed **11**. Check natural double 1 and natural double 6 before applying this
-modifier.
+**Many Hands:** If 2 or more friendly fighters are inside the same building when a fighter loots it, add **+1** to the loot roll. A modified result cannot exceed **11**. Check natural double 1 and natural double 6 before applying this modifier.
 
 Roll **2d6**:
 
 | 2d6 | Find |
 |---|---|
-| 2 | **Mishap: Trap** — resolve 2 red hits and 2 blue hits against the fighter. The fighter rolls defense as normal. |
+| 2 | **Mishap: Trap** — resolve 2 Might hits and 2 Skill hits against the fighter. The fighter rolls defense as normal. |
 | 3–4 | **Empty Room** — no reward. |
 | 5–6 | **Loose Goods** — gain **5 Crowns**. |
 | 7–8 | **Useful Find** — gain **10 Crowns**. |
@@ -174,61 +140,46 @@ Roll on the [Battlefield Location Table](#battlefield-location-table).
 
 #### Terrain
 
-Set up a **3' × 3'** board with **high-density terrain**.
+Set up a **3' × 3'** battlefield with **high-density terrain**.
 
 #### Deployment
 
-The player with fewer activations in their retinue has initiative. If both
-players have the same number of activations, each player rolls **2d6**. The
-player with the highest result has initiative. Reroll ties.
+The player with fewer activations in their retinue has initiative. If both players have the same number of activations, each player rolls **2d6**. The player with the highest result has initiative. Reroll ties.
 
-The player with initiative chooses a board edge as their deployment edge. The
-opposing player uses the opposite edge. Each player's deployment zone extends
-**6"** inward from their deployment edge.
+The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
 
-Each player divides their retinue into **3 deployment groups** as evenly as
-possible. If the fighters cannot be divided evenly, that player chooses which
-groups contain the additional fighters.
+Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
 
-Starting with the player with initiative, players alternate setting up one
-deployment group at a time within their deployment zones until both retinues
-have been deployed.
+Starting with the player with initiative, players alternate setting up one deployment group at a time within their deployment zones until both retinues have been deployed.
 
 #### Rifling Their Pockets
 
-When a fighter takes an enemy fighter **Out of Action** with a **Melee** action
-or **Mercy Kill**, roll **2d6** for the defeated fighter:
+When a fighter takes an enemy fighter **Out of Action** with a **Melee** action or **Mercy Kill**, roll **2d6** for the defeated fighter:
 
 | 2d6 | Crowns Found |
 |---|---:|
-| 2 | **Mishap: Hidden Blade** — the searching fighter suffers 1 red hit and 1 blue hit. The fighter rolls defense as normal. |
+| 2 | **Mishap: Hidden Blade** — the searching fighter suffers 1 Might hit and 1 Skill hit. The fighter rolls defense as normal. |
 | 3–5 | 0 Crowns |
 | 6–8 | 5 Crowns |
 | 9–10 | 10 Crowns |
 | 11 | 15 Crowns |
 | 12 | **Bonus: Heavy Purse** — 20 Crowns |
 
-Add the Crowns found and any Crowns already carried by the defeated fighter to
-the victorious fighter's purse.
+Add the Crowns found and any Crowns already carried by the defeated fighter to the victorious fighter's purse.
 
 A fighter may carry a maximum of **50 Crowns**. Any excess Crowns are lost.
 
-Fighters taken **Out of Action** by ranged attacks, spells, or other effects
-cannot be searched. Do not roll for Crowns or collect their purse.
+Fighters taken **Out of Action** by ranged attacks, spells, or other effects cannot be searched. Do not roll for Crowns or collect their purse.
 
 #### Escape
 
-When making a **Move** action, a fighter may leave the board through any edge
-if they have enough movement to reach it. Remove the fighter from the board.
-They have **Escaped** and cannot return during this battle.
+When making a **Move** action, a fighter may leave the battlefield through any **battlefield edge** if they have enough movement to reach it. Remove the fighter from the battlefield. They have **Escaped** and cannot return during this battle.
 
-An **Escaped** fighter is not **Out of Action** and does not roll on the
-Casualty Table after the battle.
+An **Escaped** fighter is not **Out of Action** and does not roll on the Casualty Table after the battle.
 
 #### Ending the Battle
 
-The battle ends immediately when only one retinue has fighters remaining on
-the board. That retinue wins.
+The battle ends immediately when only one retinue has fighters remaining on the battlefield. That retinue wins.
 
 #### Rewards
 
@@ -236,7 +187,7 @@ Each retinue keeps the Crowns carried by its **Escaped** fighters.
 
 The winning retinue also:
 
-- Keeps the Crowns carried by its fighters remaining on the board.
+- Keeps the Crowns carried by its fighters remaining on the battlefield.
 - Recovers **2 Relics**.
 
 ---
@@ -251,39 +202,27 @@ This scenario is fought in a **Hidden Grove**.
 
 #### Terrain
 
-Set up a **3' × 3'** board with normal-density terrain. Include several
-buildings of varying sizes.
+Set up a **3' × 3'** battlefield with normal-density terrain. Include several buildings of varying sizes.
 
-Place several movable tree pieces along both side edges that are not used as
-deployment edges. These trees mark the possible forest edges.
+Place several movable tree pieces along both side edges that are not used as deployment edges. These trees mark the possible forest edges.
 
 #### Deployment
 
-The player with fewer activations in their retinue has initiative. If both
-players have the same number of activations, each player rolls **2d6**. The
-player with the highest result has initiative. Reroll ties.
+The player with fewer activations in their retinue has initiative. If both players have the same number of activations, each player rolls **2d6**. The player with the highest result has initiative. Reroll ties.
 
-The player with initiative chooses a board edge as their deployment edge. The
-opposing player uses the opposite edge. Each player's deployment zone extends
-**6"** inward from their deployment edge.
+The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
 
-The two board edges not chosen as deployment edges are the possible forest
-edges.
+The two battlefield edges not chosen as deployment edges are the possible forest edges.
 
-Each player divides their retinue into **3 deployment groups** as evenly as
-possible. If the fighters cannot be divided evenly, that player chooses which
-groups contain the additional fighters.
+Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
 
-Starting with the player with initiative, players alternate setting up one
-deployment group at a time within their deployment zones until both retinues
-have been deployed.
+Starting with the player with initiative, players alternate setting up one deployment group at a time within their deployment zones until both retinues have been deployed.
 
 #### Looting
 
 Use **Looting Buildings**.
 
-Relics found through Looting Buildings are recovered by the finding fighter's
-retinue.
+Relics found through Looting Buildings are recovered by the finding fighter's retinue.
 
 #### The Advancing Forest
 
@@ -298,8 +237,7 @@ At the end of round 1, roll **1d6**:
 
 The forest advances from that edge for the rest of the battle.
 
-At the end of each round, the forest covers **6"** farther inward from the
-advancing forest edge. Measure from that edge each time:
+At the end of each round, the forest covers **6"** farther inward from the advancing forest edge. Measure from that edge each time:
 
 | End of Round | Forest Covers |
 |---|---:|
@@ -316,28 +254,21 @@ Any fighter inside the covered area is taken **Out of Action**.
 
 #### Escape
 
-When making a **Move** action, a fighter may leave the board through any edge
-except the advancing forest edge if they have enough movement to reach it.
-Remove the fighter from the board. They have **Escaped** and cannot return
-during this battle.
+When making a **Move** action, a fighter may leave the battlefield through any **battlefield edge** except the advancing forest edge if they have enough movement to reach it. Remove the fighter from the battlefield. They have **Escaped** and cannot return during this battle.
 
-An **Escaped** fighter is not **Out of Action** and does not roll on the
-Casualty Table after the battle.
+An **Escaped** fighter is not **Out of Action** and does not roll on the Casualty Table after the battle.
 
 #### Ending the Battle
 
-The battle ends immediately when all fighters have **Escaped** or been taken
-**Out of Action**.
+The battle ends immediately when all fighters have **Escaped** or been taken **Out of Action**.
 
-If any fighters remain on the board at the end of round 6, they are taken
-**Out of Action**.
+If any fighters remain on the battlefield at the end of round 6, they are taken **Out of Action**.
 
 #### Rewards
 
 The retinue that recovered the most Relics through Looting Buildings wins.
 
-If both retinues recovered the same number of Relics, the retinue with more
-fighters who **Escaped** wins. If there is still a tie, the battle is a draw.
+If both retinues recovered the same number of Relics, the retinue with more fighters who **Escaped** wins. If there is still a tie, the battle is a draw.
 
 Each retinue keeps the Relics it recovered.
 
@@ -355,7 +286,7 @@ This scenario is fought in a **Hidden Grove**.
 
 #### Terrain
 
-Set up a **3' × 3'** board with normal-density terrain. Leave a central clearing roughly **10"** across.
+Set up a **3' × 3'** battlefield with normal-density terrain. Leave a central clearing roughly **10"** across.
 
 Place several buildings around the edge of the clearing. Before deployment, players agree which terrain pieces are **buildings**.
 
@@ -363,7 +294,7 @@ Place several buildings around the edge of the clearing. Before deployment, play
 
 The player whose retinue has fewer activations has initiative. If both players have the same number of activations, each player rolls **2d6**. The player with the highest result has initiative. Reroll ties.
 
-The player with initiative chooses a board edge as their deployment edge. The opposing player uses the opposite edge. Each player's deployment zone extends **6"** inward from their deployment edge.
+The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
 
 Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
 
@@ -383,11 +314,11 @@ The unicorn is controlled by the scenario rules below. For targeting, engagement
 |---|---|---|---|---|---|---|---|
 | 8" | 4 | — | 5 | 3 | 4 | 5 | 6 |
 
-**Horn and Hooves** — The unicorn's **Melee** attacks use +2 **Might** / +0 **Skill**. When the unicorn's **Melee** action immediately follows **Charge** during the same activation, add **1 red die** to the Strike Pool for that **Melee** attack.
+**Horn and Hooves** — The unicorn's **Melee** attacks use +2 **Might** / +0 **Skill**. When the unicorn's **Melee** action immediately follows **Charge** during the same activation, add **1 Might die** to the Strike Pool for that **Melee** attack.
 
 **Fear (8")** — The unicorn projects **Fear (8")**.
 
-When the unicorn reaches **0 Wounds**, it is taken **Out of Action**. Place the Horn token in base contact with the unicorn before removing it from the board.
+When the unicorn reaches **0 Wounds**, it is taken **Out of Action**. Place the Horn token in base contact with the unicorn before removing it from the battlefield.
 
 #### Unicorn Activation
 
@@ -401,9 +332,9 @@ If several fighters are equally close, randomly determine which fighter the unic
 
 A fighter within **1"** of the Horn token may use **Interact** to pick it up.
 
-A fighter carrying the Horn token may leave the board through any edge when making a **Move** action if they have enough movement to reach it. Remove the fighter from the board. They have **Escaped** with the Horn token and cannot return during this battle.
+A fighter carrying the Horn token may leave the battlefield through any **battlefield edge** when making a **Move** action if they have enough movement to reach it. Remove the fighter from the battlefield. They have **Escaped** with the Horn token and cannot return during this battle.
 
-If a fighter carrying the Horn token is taken **Out of Action**, place the Horn token in base contact with that fighter before removing them from the board.
+If a fighter carrying the Horn token is taken **Out of Action**, place the Horn token in base contact with that fighter before removing them from the battlefield.
 
 #### Ending the Battle
 
@@ -414,7 +345,7 @@ If no fighter escapes with the Horn token, the battle ends at the end of round 6
 At the end of round 6:
 
 - If one retinue has a fighter carrying the Horn token, that retinue wins.
-- If the Horn token is on the board, the retinue whose fighter took the unicorn **Out of Action** wins.
+- If the Horn token is on the battlefield, the retinue whose fighter took the unicorn **Out of Action** wins.
 - If the unicorn is not **Out of Action**, it escapes into the trees and the battle is a draw.
 
 #### Rewards
@@ -430,18 +361,15 @@ If a fighter **Escaped** with the Horn token, that fighter gains **+1 Experience
 
 ## Post-Game Sequence
 
-After each battle, resolve the steps below **in order**. Each step uses tables
-or scenario rewards — apply the result, then move on.
+After each battle, resolve the steps below **in order**. Each step uses tables or scenario rewards — apply the result, then move on.
 
-This is the campaign loop: **injuries → Survival Rolls → economy → advancement**.
-Influences: Mordheim casualty rolls, Necromunda lasting injuries, and Warhammer
-Quest post-quest events.
+This is the campaign loop: **injuries → Survival Rolls → economy → advancement**. Influences: Mordheim casualty rolls, Necromunda lasting injuries, and Warhammer Quest post-quest events.
 
 ---
 
 ### Sequence at a Glance
 
-1. **Scenario Results** — victory rewards and Relics recovered on the table
+1. **Scenario Results** — victory rewards and Relics recovered on the battlefield
 2. **Casualties** — every fighter who ended the battle **Out of Action** rolls on the **Casualty Table**
 3. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#step-3-companion-recovery))
 4. **Doom** — any fighter directed to this table rolls **2d6**
@@ -453,7 +381,7 @@ Quest post-quest events.
 
 ### Step 1: Scenario Results
 
-Resolve the scenario's victory rewards and any Relics recovered on the table.
+Resolve the scenario's victory rewards and any Relics recovered on the battlefield.
 
 Scenario rewards are static. Do not roll for scenario rewards unless the scenario tells you to make a **random reward roll** (see [Reward Roll Rule](#reward-roll-rule)).
 
@@ -463,14 +391,11 @@ Set recovered Relics aside until Step 6.
 
 ### Step 2: Casualty Table
 
-Each fighter who was **Out of Action** when the battle ended rolls **1d6** on
-this table.
+Each fighter who was **Out of Action** when the battle ended rolls **1d6** on this table.
 
-Fighters who were **Downed or Stunned** but not Out of Action skip this table —
-they are battered but return next battle with no roll.
+Fighters who were **Downed or Stunned** but not Out of Action skip this table — they are battered but return next battle with no roll.
 
-**Companions** are not fighters — they never roll on this table. See [Companion
-Recovery](#step-3-companion-recovery).
+**Companions** are not fighters — they never roll on this table. See [Companion Recovery](#step-3-companion-recovery).
 
 | d6 | Result |
 |---|---|
@@ -485,23 +410,20 @@ Recovery](#step-3-companion-recovery).
 
 ### Step 3: Companion Recovery
 
-Each **Companion** that was **Out of Action** when the battle ended rolls
-**1d6**:
+Each **Companion** that was **Out of Action** when the battle ended rolls **1d6**:
 
 | d6 | Result |
 |---|---|
 | 1–4 | **Recovering** — the **Companion** misses the **next battle**. |
 | 5–6 | **Fine** — return as normal. |
 
-**Companions** are never removed from the roster and never roll on the
-**Casualty Table** or **Doom Table**.
+**Companions** are never removed from the roster and never roll on the **Casualty Table** or **Doom Table**.
 
 ---
 
 ### Step 4: Doom Table
 
-Roll **2d6** when directed from the **Casualty Table** (Grievous), or from a
-Survival Roll Mishap if noted.
+Roll **2d6** when directed from the **Casualty Table** (Grievous), or from a Survival Roll Mishap if noted.
 
 Permanent injuries reduce stats. Stats cannot drop below **1**. Campaign advancement may later raise stats again (max **6**).
 
@@ -525,8 +447,7 @@ Permanent injuries reduce stats. Stats cannot drop below **1**. Campaign advance
 
 Run [Survival Rolls](#survival-rolls).
 
-Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics
-aside until Step 6.
+Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics aside until Step 6.
 
 ---
 
@@ -560,19 +481,13 @@ Any random reward roll uses **2d6**.
 
 - On natural double 1, resolve the roll's **Mishap** result.
 - On natural double 6, resolve the roll's **Bonus** result.
-- Modifiers change the total only. Check natural doubles before applying
-  modifiers. If the natural roll was not double 1 or double 6, modifiers cannot
-  create result **2** or result **12**.
+- Modifiers change the total only. Check natural doubles before applying modifiers. If the natural roll was not double 1 or double 6, modifiers cannot create result **2** or result **12**.
 
 ---
 
 ### Sequence at a Glance
 
-> **1. Check Scenario Result** — Win, loss, or draw
-> **2. Check Battlefield Location** — The scenario defines the location method
-> **3. Choose Survival Table** — Winner uses location; loser uses Generic
-> **4. Roll 2d6** — Natural double 1 = Mishap; natural double 6 = Bonus
-> **5. Apply Reward** — Set aside Relics until the Economy step
+> **1. Check Scenario Result** — Win, loss, or draw **2. Check Battlefield Location** — The scenario defines the location method **3. Choose Survival Table** — Winner uses location; loser uses Generic **4. Roll 2d6** — Natural double 1 = Mishap; natural double 6 = Bonus **5. Apply Reward** — Set aside Relics until the Economy step
 
 ---
 
@@ -584,19 +499,15 @@ After scenario rewards, each retinue makes **1 Survival Roll**.
 - The **loser** rolls on the Generic Survival table.
 - In a **draw**, both retinues roll on the Generic Survival table.
 
-Location tables have a higher ceiling and more dangerous failures. The Generic
-table is steadier and helps a losing retinue return home with something useful.
+Location tables have a higher ceiling and more dangerous failures. The Generic table is steadier and helps a losing retinue return home with something useful.
 
-If a result tells you to choose a surviving fighter and your retinue has no
-surviving fighters, ignore that part of the result.
+If a result tells you to choose a surviving fighter and your retinue has no surviving fighters, ignore that part of the result.
 
 ---
 
 ### Battlefield Location Table
 
-Each scenario defines its battlefield location. A scenario may name a fixed
-location, tell players to roll on the table below, or provide its own smaller
-location table.
+Each scenario defines its battlefield location. A scenario may name a fixed location, tell players to roll on the table below, or provide its own smaller location table.
 
 | Roll | Location |
 |---|---|
@@ -657,7 +568,7 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Cellar Trap** — choose 1 surviving fighter; resolve 2 red hits and 2 blue hits against that fighter. The fighter rolls defense as normal. |
+| 2 | **Mishap: Cellar Trap** — choose 1 surviving fighter; resolve 2 Might hits and 2 Skill hits against that fighter. The fighter rolls defense as normal. |
 | 3–4 | **Spoiled Stores** — gain **10 Crowns**. |
 | 5–6 | **Household Goods** — gain **15 Crowns**. |
 | 7–8 | **Buried Box** — recover **1 Relic**. |
@@ -709,8 +620,7 @@ Use the battlefield location's table when the retinue won the scenario.
 
 Retinues recover **Relics** during scenarios, Looting, and Survival Rolls.
 
-Sell Relics for **Crowns** during the Economy step. Spend Crowns to recruit
-fighters, buy gear, and maintain the retinue.
+Sell Relics for **Crowns** during the Economy step. Spend Crowns to recruit fighters, buy gear, and maintain the retinue.
 
 ---
 
@@ -718,19 +628,15 @@ fighters, buy gear, and maintain the retinue.
 
 Relics are the **primary campaign resource**.
 
-They represent powerful ancient objects scattered across the cursed land.
-Retinues search ruins, battlefields, shrines, and settlements to recover them.
+They represent powerful ancient objects scattered across the cursed land. Retinues search ruins, battlefields, shrines, and settlements to recover them.
 
-Recovered Relics are campaign treasures, not the roster **Icon** (**Sphere of
-Influence** gear) in [Equipment — Sphere of
-Influence](equipment.md#sphere-of-influence).
+Recovered Relics are campaign treasures, not the roster **Icon** (**Sphere of Influence** gear) in [Equipment — Sphere of Influence](equipment.md#sphere-of-influence).
 
 ---
 
 ### Selling Relics
 
-Relics are sold for **Crowns** using a **supply and demand curve** — selling
-more at once yields diminishing returns per Relic.
+Relics are sold for **Crowns** using a **supply and demand curve** — selling more at once yields diminishing returns per Relic.
 
 | Relics Sold | Total Value |
 |---|---|
@@ -766,11 +672,6 @@ The **Hand** rolls on the **Casualty Table** and gets **3**, **Scarred**. The pl
 
 During the Economy step, the retinue sells all **3 Relics** for **40 Crowns**, then adds the **15 Crowns** from the Survival Roll. They spend some of it on replacement gear and update **Roster Cost**.
 
-Finally, the player awards Experience. In the **battle** pass, each fighter who
-did not go **Out of Action** gains **+1**. The **Captain** gains **+2** for
-putting the enemy **Leader** **Out of Action** by a direct action. The **Hand**
-went **Out of Action** and does not gain **+1** for staying active. The scenario
-did not list additional Experience this battle. Fighters with enough Experience
-may buy an advancement roll, or save it for a later battle.
+Finally, the player awards Experience. In the **battle** pass, each fighter who did not go **Out of Action** gains **+1**. The **Captain** gains **+2** for putting the enemy **Leader** **Out of Action** by a direct action. The **Hand** went **Out of Action** and does not gain **+1** for staying active. The scenario did not list additional Experience this battle. Fighters with enough Experience may buy an advancement roll, or save it for a later battle.
 
 ---

@@ -28,7 +28,42 @@ the final rule in the dated decision-log entry for that commit.
 **Actionable work lives in `todo.md`.** This section holds provisional design
 only — not duplicate checklists.
 
-*(No open ideas — see `todo.md` Phase 4, Additional Items, and Open Design Decisions.)*
+**Variable Presence ranges.** Explore replacing fixed target and charge reach with a fighter-facing **Presence** value measured in inches. Each ancestry would set a baseline **Presence** by size and silhouette: larger fighters project farther, smaller fighters project less, and effects such as **Hide** could reduce a fighter's **Presence**, potentially to **0"**. Weapons would have shorter printed ranges than they do now. A ranged attack would be able to target a fighter within the weapon's printed range plus the target's **Presence**. A **Charge** would be able to reach a target within the charging fighter's **Movement** + the charging fighter's **Presence** + the target's **Presence**.
+
+Open questions:
+
+- Is **Presence** printed on ancestry profiles, derived from base size, or granted by keywords such as **Large**?
+- Does **Presence** replace or modify engagement range, or does it only affect targeting and **Charge** reach?
+- How much should current weapon ranges shrink if target **Presence** extends practical reach?
+- Which effects besides **Hide** can raise or lower **Presence**, and should any fighter be prevented from reducing it to **0"**?
+
+**The Mask of Many Faces.** Explore an Infernal spell or Domain feat that lets a fighter replace an enemy fighter's position with their own. If written as a spell, the swap would happen when the spell is cast. If written as a feat, the fighter could use it during their activation, possibly once per battle or under another timing limit. The acting player would pick up their fighter and place them where an enemy fighter within a set range stood. The displaced enemy fighter would not go **Out of Action**; instead, they would be removed from the battlefield and placed by their controlling player within that player's deployment zone at the start of the next round, then activate normally when eligible.
+
+Open questions:
+
+- Is this an Infernal spell, an Infernal Domain feat, or a Cult/Diabolist-style identity rule?
+- What is the range, and does the acting fighter need line of sight?
+- Can it target **Leaders**, **Large** fighters, **Summon** fighters, or fighters within engagement range?
+- Does the displaced fighter return at the start of the next round before initiative, after initiative, or before their first activation?
+- Should the effect be once per battle, require a **Sanity** or **Will** check, or carry a Mishap/backlash if it fails?
+
+**Sweeping attack (two-handed weapons).** Explore a **Sweep** or similar action for two-handed weapons that lets a fighter attack multiple enemies in one activation. One possible cost model: add **+1 Might** die per additional target beyond the first. The attack would still resolve through the normal **Attack Sequence**, but each target would be hit separately or as part of one declared sweep.
+
+Open questions:
+
+- Is this a weapon keyword, a two-handed weapon trait, or a general **Strike** option available only when wielding a two-handed weapon?
+- How many targets can be included, and must they be within engagement range of the attacker, of each other, or of the weapon's arc?
+- Does each target get its own attack roll, or does one roll apply to all targets with separate wound resolution?
+- Is the **+1 Might** die per extra target the right cost, or should sweep trade **Skill**, impose disadvantage, or limit targets by **Might** or weapon type?
+- Does sweep interact with **Overwatch**, **Riposte**, or other reactions per target or once for the whole action?
+
+---
+
+## 2026-06-28 — Print cheat sheet, rules reflow, and Might/Skill dice vocabulary
+
+**Decision:** Add `for-print/` with the two-sided quick-reference source (`quick-reference.md`), triangle SVG, InDesign handoff notes, and HTML print preview. Reflow canonical rules in `rules/` (prose paragraphs, **battlefield** wording, **Might dice** / **Skill dice** instead of red/blue). Add `scripts/reflow-rules.py` for future reflows. Sync builder feat strings and `app/rules-updates.md`. Remove **Overcharge** from the **Primer Roll** in `rules/equipment.md` to match the Casting Roll. Fix merged **Apply Wounds** bullets in `rules/core-rules.md`. Update style guide, design tenets, overview, and todo (morale complete). Restore **Ideas** entries in the decision log.
+
+**Reasoning:** Players need a compact mid-battle handout separate from fighter cards; print assets belong in `for-print/`. Stat-named dice and battlefield terms read clearer in prose and match how players choose physical dice colors. Reflow keeps Markdown safe for wiki and print pipelines. Dropping **Overcharge** from firearms aligns primer and casting rolls.
 
 ---
 

@@ -34,6 +34,21 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 
 ---
 
+## Markdown source formatting
+
+Rules live in `rules/*.md`. Keep the source easy to read and safe for every output pipeline (wiki, print, InDesign).
+
+- **One line per prose paragraph.** Do not hard-wrap at column width or save editor soft wraps as line breaks.
+- **Blank lines separate paragraphs.** A single newline inside a paragraph becomes an unintended break in some renderers.
+- **Join wrapped list items and blockquote lines** before committing — a continued list item uses two-space indent; a continued blockquote line uses another `>`.
+- **Leave structure alone:** headings, tables, fenced code, horizontal rules, and intentional blockquote separators (`>` on its own line) stay as written.
+- **Name dice by stat, not color.** Write **Might dice** and **Skill dice** (or **Might die** / **Skill die**). Players choose which physical dice color represents each stat before the first battle.
+- **Use battlefield, not board or table.** The play area is the **battlefield**; its perimeter is the **battlefield edge**. Reserve **table** for reference charts only (**Casualty Table**, **roll on the table below**).
+
+To reflow existing files: `python3 scripts/reflow-rules.py`
+
+---
+
 ## Voice and Tone
 
 Noctvale uses two voices. Keep them separate on the page.
@@ -84,7 +99,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 ### Sentence patterns
 
 **Actions**
-> The fighter gains **+1 red defense die** until their next activation.
+> The fighter gains **+1 Might defense die** until their next activation.
 
 **Tests**
 > Make a **Skill** check. On a failure, …
@@ -115,22 +130,25 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | in order to | **to** |
 | gate (casting / gunpowder) | **casting roll**, **primer roll** |
 | forgo / forgone (activation) | **skip activation**, **skipped their activation** |
+| board / table (play area) | **battlefield**, **battlefield edge** |
 
 ### Defined game terms (use exactly)
 
 | Term | Meaning |
 |---|---|
 | **game** | A full session — one or more battles in a campaign, or a standalone skirmish |
-| **battle** | One table encounter from deployment to end condition |
+| **battle** | One encounter on the battlefield from deployment to end condition |
+| **battlefield** | The **3' × 3'** play area — terrain, positioning, movement, combat, and all in-play interactions |
+| **battlefield edge** | Any edge of the battlefield; used for deployment, **Escape**, and edge-based scenario rules |
 | **round** | Every eligible fighter activates once (see turn structure in `rules/core-rules.md`) |
 | **activation** | One fighter's turn — **2 actions** |
 | **activation count** | Fighters who can activate this round — **Active** and **Downed** only; not **Stunned**, **Out of Action**, or **Escaped** |
 | **action** | One thing a fighter does during an activation (**Move**, **Melee**, etc.) |
 | **reaction** | A free single action outside the fighter's activation (**Ranged Reaction**, Overwatch) |
 | **player** | Person controlling a retinue |
-| **opposing player** | The other player at the table |
+| **opposing player** | The other player in the battle |
 | **retinue** | One player's roster for a battle |
-| **fighter** | One figure on the table with a profile and base |
+| **fighter** | One figure on the battlefield with a profile and base |
 | **friendly fighter** | A fighter on your retinue |
 | **enemy** / **enemy fighter** | A fighter on an opposing retinue |
 | **ally** | Acceptable in short reminder text; prefer **friendly fighter** in full rules |
@@ -150,8 +168,8 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | M | Movement | **"** per **Move** action |
 | CC | Close Combat | melee to-hit |
 | RC | Ranged Combat | ranged to-hit |
-| Mt | Might | red dice |
-| Sk | Skill | blue dice |
+| Mt | Might | Might dice |
+| Sk | Skill | Skill dice |
 | Wi | Will | casting (**2d6 + Will**) |
 | Sa | Sanity | fear tests (**Sanity** checks) |
 | W | Wounds | hit points |
@@ -185,8 +203,9 @@ Use abbreviations in tables only. In prose, write the full stat name in bold:
 | Term | Format |
 |---|---|
 | Strike Pool | Capitalize |
-| red die / blue die | Lowercase color |
-| red hit / blue hit | Lowercase color |
+| battlefield edge | Lowercase in prose; bold when defining setup |
+| Might die / Skill die | Lowercase **Might** / **Skill** in the die name |
+| Might hit / Skill hit | Lowercase **Might** / **Skill** in the hit name |
 | critical hit | Lowercase; **critical** as adjective OK |
 | natural 1 / natural 6 | Lowercase |
 | weapon triangle advantage | Lowercase phrase |
@@ -241,7 +260,7 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
 | Natural results | **natural 1**, **natural 6** |
 | Table roll | **Roll 1d6:** then table |
-| Dice colors | **red die**, **blue die** — lowercase color |
+| Dice types | **Might die**, **Skill die**, **Might dice**, **Skill dice** — name the stat, not a fixed color |
 
 **Don't:** D6, 2D6, or “on a 4+” for stat checks. After the core rule defines stat checks, use the named check: **Skill** check, **Might** check, **Sanity** check, and so on. Use **6+** / **11+** on 2d6 rolls. Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
 
@@ -275,7 +294,7 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 
 ### Inline profile reference
 
-> Human (**Might** 3, **Skill** 4) with a Sword: **4 red + 5 blue = 9 dice**
+> Human (**Might** 3, **Skill** 4) with a Sword: **4 Might + 5 Skill = 9 dice**
 
 ### Modifier notation
 
@@ -283,8 +302,8 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 |---|---|
 | Stat bonus | +1 **Might**, +2 **Skill** |
 | Stat penalty | −1 **Might** (unicode minus) |
-| Die bonus | **+1 red defense die** |
-| Strike Pool dice | **add 2 red dice to the Strike Pool** |
+| Die bonus | **+1 Might defense die** |
+| Strike Pool dice | **add 2 Might dice to the Strike Pool** |
 | To-hit modifier | +1 **Close Combat**, −1 **Ranged Combat**, or +1 **Ranged Combat** — whichever **Hit** stat the attack uses |
 | Crown cost | **−25 Crowns** |
 
@@ -292,10 +311,10 @@ Use **+** / **−** with a space before the number in prose.
 
 Use +1 **Might** or +1 **Skill** only when a rule changes the fighter's stat or a
 weapon table's +**Might** / +**Skill** modifier. When a rule adds dice without changing a
-stat, name the dice directly: **add 2 red dice to the Strike Pool**, **add 1
-blue die to the Strike Pool**, or **gain +1 red defense die**.
+stat, name the dice directly: **add 2 Might dice to the Strike Pool**, **add 1
+Skill die to the Strike Pool**, or **gain +1 Might defense die**.
 
-For attack accuracy, modify the **Hit** stat for that attack: +1 **Close Combat** or +1 **Ranged Combat** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write +1 **Close Combat** and +1 **Ranged Combat**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write +1 **Might** or **+1 red die** when the rule modifies a **Close Combat** check or **Ranged Combat** check.
+For attack accuracy, modify the **Hit** stat for that attack: +1 **Close Combat** or +1 **Ranged Combat** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write +1 **Close Combat** and +1 **Ranged Combat**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write +1 **Might** or **+1 Might die** when the rule modifies a **Close Combat** check or **Ranged Combat** check.
 
 ---
 
@@ -396,7 +415,7 @@ Each major chapter ends with **Example:** — one narrative walkthrough that nam
 - **Worked examples** use named fighters: Human, Elf, Dwarf — match `core-rules.md` ancestry.
 - Label steps **Step 1**, **Step 2** in sequences (see `rules/core-rules.md`).
 - **Round at a Glance** uses blockquote `>` for quick-reference boxes.
-- Diagrams: ASCII for simple flows (`Sword > Axe > Spear > Sword`); TODO for official board-measurement diagrams.
+- Diagrams: ASCII for simple flows (`Sword > Axe > Spear > Sword`); TODO for official battlefield-measurement diagrams.
 - One full combat example per major rules revision — don't scatter partial math across files.
 
 ---
@@ -449,7 +468,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 > The fighter gets +1 to their defense for each situation that applies.
 
 **Do**
-> The fighter gains **+1 red defense die** until their next activation.
+> The fighter gains **+1 Might defense die** until their next activation.
 
 ---
 
@@ -497,7 +516,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 ### Ability — tactical action (reference / card)
 
-> **Brace** — The fighter gains **+1 red defense die** (rolled with **Might**) until their next activation.
+> **Brace** — The fighter gains **+1 Might defense die** (rolled with **Might**) until their next activation.
 
 ### Ability — spell
 
@@ -505,7 +524,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 
 ### Reminder — condition
 
-> **Stunned** — Cannot move or act. Defends with **red dice only**. Any unblocked hit → **Out of Action**.
+> **Stunned** — Cannot move or act. Defends with **Might dice only**. Any unblocked hit → **Out of Action**.
 
 ### Campaign table intro
 

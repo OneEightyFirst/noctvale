@@ -6,6 +6,21 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-27 — Battlefield terminology (builder strings)
+
+**Change:** Synced **Infiltrate** reserve text to **off the battlefield** (was **off the board**).
+
+**Impact:** Wording only; no enforcement change.
+
+## 2026-06-27 10:23 EDT — Might dice / Skill dice terminology
+
+**Change:**
+
+- Replaced **red dice** / **blue dice** (and red/blue hits, defense dice, etc.) with **Might dice** / **Skill dice** across rules text and builder feat, spell, and armor strings.
+- Core Rules now instruct players to choose which physical dice color represents Might vs Skill before the first battle.
+
+**Impact:** Builder card text and enforcement strings match the updated rulebook vocabulary. No purchase or roster logic changed.
+
 ## 2026-06-25 19:29 EDT — Summoning spells, Infernal list, Shield of Faith
 
 **Change:**
