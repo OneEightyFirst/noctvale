@@ -123,16 +123,15 @@
   <h2>Overwatch</h2>
   <ul>
     <li><strong>Start of round:</strong> Lower <strong>activation count</strong> player receives tokens equal to the difference between the two counts.</li>
-    <li><strong>Skip activation:</strong> Spend <strong>1 token</strong> to skip a fighter's activation this round. That fighter may later perform <strong>1 action as a reaction</strong> when an enemy completes an action.</li>
-    <li><strong>Valid reactions:</strong> <strong>Move</strong>, <strong>Ranged</strong>, <strong>Charge</strong>, <strong>Melee</strong>, <strong>Retreat</strong>.</li>
+    <li><strong>Skip activation:</strong> On your turn in the activation order, spend <strong>1 token</strong> to <strong>skip a fighter's activation</strong> instead of activating them. The skip counts as that fighter's activation for the round. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy completes an action.</li>
     <li><strong>End of round:</strong> Remove unspent tokens.</li>
   </ul>
 
   <h2>Morale</h2>
   <ul>
-    <li><strong>Lost:</strong> <strong>Out of Action</strong>, <strong>Escaped</strong>, or <strong>Stunned</strong>. <strong>Active</strong> and <strong>Downed</strong> are not <strong>lost</strong>.</li>
+    <li><strong>Lost:</strong> <strong>Out of Action</strong> or <strong>Stunned</strong>. <strong>Active</strong> and <strong>Downed</strong> are not <strong>lost</strong>.</li>
     <li><strong>Routing:</strong> More than <strong>half</strong> of the retinue's starting fighters are <strong>lost</strong> (e.g. <strong>5</strong> deployed → routing at <strong>3</strong> lost).</li>
-    <li><strong>Test:</strong> At the <strong>start of each activation</strong> while routing, before actions — <strong>Will</strong> check. <strong>Summon</strong> auto-pass if any friendly within <strong>6"</strong> and line of sight. Modifiers: <strong>+1</strong> per friendly within <strong>6"</strong>; <strong>+2</strong> for <strong>Leader</strong> within <strong>6"</strong>; <strong>+1</strong> if <strong>Fearless</strong>; <strong>+1</strong> if Tradition grants rout bonus.</li>
+    <li><strong>Test:</strong> At the <strong>start of each activation</strong> while routing, before actions — <strong>Will</strong> check. <strong>Summon</strong> auto-pass if any friendly within <strong>6"</strong> and line of sight. Modifiers: <strong>+1</strong> per friendly within <strong>6"</strong>; <strong>+2</strong> for <strong>Leader</strong> within <strong>6"</strong>; <strong>+1</strong> if <strong>Fearless</strong>.</li>
     <li><strong>Fail:</strong> Spend <strong>both actions</strong> fleeing toward nearest <strong>battlefield edge</strong>.</li>
   </ul>
 
@@ -147,17 +146,17 @@
   <table>
     <tr><th>Action</th><th>Effect</th></tr>
     <tr><td><strong>Move</strong></td><td>Move up to <strong>Movement</strong>; pass through friendlies</td></tr>
-    <tr><td><strong>Crawl</strong></td><td><strong>Downed</strong> only — half <strong>Movement</strong></td></tr>
-    <tr><td><strong>Charge</strong></td><td>Move; end in engagement with enemy</td></tr>
-    <tr><td><strong>Climb</strong></td><td>Vertical at half <strong>Movement</strong></td></tr>
+    <tr><td><strong>Crawl</strong></td><td><strong>Downed</strong> only — horizontal, half <strong>Movement</strong></td></tr>
+    <tr><td><strong>Charge</strong></td><td>Horizontal — up to <strong>Movement</strong>; end in engagement; cross terrain <strong>1"</strong> or lower freely</td></tr>
+    <tr><td><strong>Climb</strong></td><td>Up to half <strong>Movement</strong> per action; may chain 2 <strong>Climb</strong> actions (no mid-climb placement)</td></tr>
     <tr><td><strong>Scramble</strong></td><td>Half <strong>Movement</strong> through difficult terrain</td></tr>
     <tr><td><strong>Jump</strong></td><td>Open space up to <strong>Movement</strong>; <strong>Skill</strong> check</td></tr>
     <tr><td><strong>Retreat</strong></td><td>Leave engagement — <strong>Skill</strong> check; fail → free enemy <strong>Melee</strong></td></tr>
     <tr><td><strong>Melee</strong></td><td>Attack in engagement; <strong>Attack Sequence</strong></td></tr>
     <tr><td><strong>Ranged</strong></td><td>Bow/crossbow → <strong>Attack Sequence</strong>; firearm → <strong>Primer Roll</strong></td></tr>
     <tr><td><strong>Cast</strong></td><td><strong>Caster</strong> only — <strong>Casting Roll</strong></td></tr>
-    <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged</strong> +1 dominant die; nat <strong>6</strong> = crit</td></tr>
-    <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong></td></tr>
+    <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged</strong> +1 dominant die; nat <strong>6</strong> = crit (<strong>5+</strong> if weapon already crit on <strong>6</strong>)</td></tr>
+    <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong>; blocked if any <strong>Active</strong> or <strong>Downed</strong> enemy is in engagement range</td></tr>
     <tr><td><strong>Brace</strong></td><td><strong>+1 Might defense die</strong> until next activation</td></tr>
     <tr><td><strong>Hide</strong></td><td><strong>Hidden</strong> within <strong>1"</strong> of terrain</td></tr>
     <tr><td><strong>Recover</strong></td><td><strong>Downed</strong> — roll <strong>1d6</strong> (see back)</td></tr>

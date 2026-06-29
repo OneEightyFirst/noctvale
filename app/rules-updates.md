@@ -6,6 +6,14 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-28 21:49 EDT — Climbing Rope
+
+**Change:** Added **Climbing Rope** adventuring gear (**35 Crowns**, permanent, no weapon slots). A fighter carrying it uses full **Movement** on **Climb** instead of half **Movement**.
+
+**Impact:** New purchasable gear in **Adventuring gear**; one per fighter in the builder.
+
+**Source:** `rules/equipment.md`, `rules/core-rules.md` Climb.
+
 ## 2026-06-27 — Battlefield terminology (builder strings)
 
 **Change:** Synced **Infiltrate** reserve text to **off the battlefield** (was **off the board**).

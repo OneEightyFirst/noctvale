@@ -786,6 +786,7 @@ export const EQUIPMENT = [
   { id: "vitriol", name: "Vitriol", kind: "alchemy", group: "Alchemy", cost: 50, slots: 0, rules: ["Poison. Unblocked hits ignore 1 armor conversion. One poison per weapon."] },
   { id: "widows-tears", name: "Widow's Tears", kind: "alchemy", group: "Alchemy", cost: 75, slots: 0, rules: ["Poison. Unblocked hits inflict 2 Wounds instead of 1. One poison per weapon."] },
   { id: "silversbane", name: "Silversbane", kind: "alchemy", group: "Alchemy", cost: 65, slots: 0, rules: [`Poison. Unblocked hits inflict -1" M on fighters with Undead or Werebeast. One poison per weapon.`] },
+  { id: "climbing-rope", name: "Climbing Rope", kind: "gear", group: "Adventuring gear", cost: 35, slots: 0, rules: ["Permanent. Climb uses full Movement instead of half Movement."] },
   { id: "hound", name: "Hound", kind: "companion", group: "Companions", cost: 40, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 3, Mt 3, Sk 3, W 1, Tether 3".`] },
   { id: "hawk", name: "Hawk", kind: "companion", group: "Companions", cost: 50, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 2, RC 2, Mt 1, Sk 4, W 1, Tether 12".`] },
   { id: "cat", name: "Cat", kind: "companion", group: "Companions", cost: 35, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 2, Sk 4, W 1, Tether 6".`] },

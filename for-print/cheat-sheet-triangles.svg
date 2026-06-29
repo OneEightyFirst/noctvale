@@ -58,7 +58,7 @@
     <text class="title" x="0" y="0">Outside the triangles</text>
     <text class="callout" x="0" y="20"><tspan font-weight="bold">Hammer</tspan>  natural 6 vs targets in Heavy Armor; cancels weapon triangle if either fighter wields Hammer</text>
     <text class="callout" x="0" y="38"><tspan font-weight="bold">Firearms</tspan>  critical hits vs all targets (Primer Roll first)</text>
-    <text class="callout" x="0" y="56"><tspan font-weight="bold">Aim</tspan>  natural 6 critical hits on the next Ranged action this activation</text>
+    <text class="callout" x="0" y="56"><tspan font-weight="bold">Aim</tspan>  nat 6 crit on next Ranged action (5+ if weapon already crit on 6)</text>
     <text class="callout" x="0" y="82">Natural 6 = critical hit only when a printed advantage applies. Only Heavy Armor critical defense blocks critical hits.</text>
   </g>
 </svg>

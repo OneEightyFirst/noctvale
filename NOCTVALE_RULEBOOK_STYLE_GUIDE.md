@@ -22,15 +22,16 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 3. **One idea per sentence.** Split compound rules into bullets or numbered steps.
 4. **Write rules, not notes.** Avoid shorthand such as “ties: previous initiative.” Write the complete rule in a sentence.
 5. **Start wide, then zoom in.** Opening sections should give the broad rule. Save feat, gear, spell, and scenario exceptions for the section where players need that detail.
-6. **Keep related rules together.** Do not split every small rule into its own section; use compact paragraphs unless a sequence, table, or repeated reference needs headings.
-7. **Name things once, then consistently.** Define a term on first use in a section; link to the canonical file after that.
-8. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
-9. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
-10. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
-11. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — edit the canonical copy in `rules/core-rules.md`, `rules/retinue.md`, or `rules/equipment.md`, then grep and sync duplicates. See `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
-12. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
-13. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
-14. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](rules/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
+6. **Core rules state the default.** Procedures in **core-rules.md** define the baseline — not every override. Do not embed inline exceptions such as “or if you carry **Climbing Rope**, use full **Movement** instead.” Gear, feats, spells, keywords, and traditions state their own exceptions on their entries; players discover them where those items are defined.
+7. **Keep related rules together.** Do not split every small rule into its own section; use compact paragraphs unless a sequence, table, or repeated reference needs headings.
+8. **Name things once, then consistently.** Define a term on first use in a section; link to the canonical file after that.
+9. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
+10. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
+11. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
+12. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — edit the canonical copy in `rules/core-rules.md`, `rules/retinue.md`, or `rules/equipment.md`, then grep and sync duplicates. See `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
+13. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
+14. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
+15. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](rules/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
 
 ---
 
@@ -570,6 +571,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 - [ ] **fighter** not **model** / **unit**
 - [ ] **retinue** not **warband**
 - [ ] **skip activation** not **forgo** / **forgone**
+- [ ] Core-rules procedures state the default only — gear, feat, spell, and keyword overrides live on their own entries, not inline in core rules
 - [ ] Shared sub-routines **repeated verbatim** where relevant (grep all copies after editing `core-rules.md`, `retinue.md`, or `equipment.md`)
 - [ ] Cross-refs use markdown links with readable labels (not raw file paths in backticks)
 - [ ] One-off rules link to the canonical file (subsystem name as link text)

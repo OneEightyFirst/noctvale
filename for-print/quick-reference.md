@@ -8,7 +8,7 @@ Table reference for mid-battle rules. Stats, spells, traditions, feats, and full
 
 > ### Round at a Glance
 >
-> **Start of round:** Count each player's **Active** and **Downed** fighters — that is their **activation count**. Do not count **Stunned**, **Out of Action**, or **Escaped** fighters. The player with the lower **activation count** has initiative and gains **Overwatch tokens** equal to the difference between the two counts. Do not recalculate activation count, initiative, or tokens during the round.
+> **Start of round:** Count each player's **Active** and **Downed** fighters — that is their **activation count**. Do not count **Stunned**, **Out of Action**, or **Escaped** fighters. The player with the lower **activation count** has initiative and gains **Overwatch tokens** equal to the shortfall. Do not recalculate activation count, initiative, or tokens during the round.
 >
 > **Activations:** Starting with the player who has initiative, players alternate activating **one fighter** at a time. Each fighter performs **2 actions** in any order.
 >
@@ -16,18 +16,18 @@ Table reference for mid-battle rules. Stats, spells, traditions, feats, and full
 
 ### Overwatch
 
-- **Start of round:** Lower **activation count** player receives tokens equal to the difference between the two counts.
-- **Skip activation:** Spend **1 token** to skip a fighter's activation this round. That fighter may later perform **1 action as a reaction** when an enemy completes an action.
-- **Valid reactions:** **Move**, **Ranged**, **Charge**, **Melee**, **Retreat**.
+- **Start of round:** Lower **activation count** player receives tokens equal to the shortfall.
+- **Skip activation:** On your turn in the activation order, spend **1 token** to **skip a fighter's activation** instead of activating them. The skip counts as that fighter's activation for the round. That fighter may later perform any **1 action** as a reaction when an enemy completes an action.
+- **Reaction timing:** Spend tokens whenever an enemy completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not stop a player from spending unspent tokens during the other player's remaining activations.
 - **End of round:** Remove unspent tokens.
 
 ### Morale
 
-- **Lost:** **Out of Action**, **Escaped**, or **Stunned**. **Active** and **Downed** are not **lost**.
+- **Lost:** **Out of Action** or **Stunned**. **Active** and **Downed** are not **lost**.
 - **Routing:** More than **half** of the retinue's starting fighters are **lost** (e.g. **5** deployed → routing at **3** lost).
 - **Test:** At the **start of each activation** while routing, before actions — **Will** check.
   - **Summon:** Auto-pass if any friendly fighter is within **6"** and line of sight.
-  - **+1** per other friendly within **6"** and line of sight; **+2** for a friendly **Leader** within **6"** (instead of **+1** for that fighter); **+1** if **Fearless**; **+1** if the retinue **Tradition** grants a rout bonus.
+  - **+1** per other friendly within **6"** and line of sight; **+2** for a friendly **Leader** within **6"** (instead of **+1** for that fighter); **+1** if **Fearless**.
 - **Fail:** Spend **both actions** fleeing toward the nearest **battlefield edge** (**Move**, **Retreat**, **Scramble**, **Jump**, or **Climb**; **Crawl** if **Downed**). **Pass** on a later activation → **rallied**, activate normally.
 
 ### Engagement
@@ -40,18 +40,18 @@ Table reference for mid-battle rules. Stats, spells, traditions, feats, and full
 
 | Action | Effect |
 |---|---|
-| **Move** | Move up to **Movement**; may pass through friendlies; cannot end on another base |
-| **Crawl** | **Downed** only — half **Movement** |
-| **Charge** | Move up to **Movement**; must end within engagement range of an enemy |
-| **Climb** | Move vertically at half **Movement**; cannot end in engagement |
+| **Move** | Horizontal only — up to **Movement**; cross terrain **1"** or lower freely; may pass through friendlies; cannot end on another base |
+| **Crawl** | **Downed** only — horizontal, half **Movement**; may pass through friendlies; cannot end on another base |
+| **Charge** | Horizontal only — up to **Movement**; must end in engagement; cross terrain **1"** or lower freely; may pass through friendlies during charge; cannot end on another base |
+| **Climb** | Up to half **Movement** per action; may exceed **1"** elevation; may chain 2 **Climb** actions in one activation (no mid-climb placement); cannot end in engagement |
 | **Scramble** | Half **Movement** through **difficult terrain**; cannot end in engagement |
 | **Jump** | Move across open space up to **Movement**; **Skill** check; cannot end in engagement |
 | **Retreat** | Leave engagement — **Skill** check; on fail, opponent may make a free **Melee** attack if not engaged elsewhere |
 | **Melee** | Attack an enemy within engagement range; resolve **Attack Sequence** |
 | **Ranged** | Attack with a ranged weapon in range and line of sight; bow/crossbow → **Attack Sequence**; firearm → **Primer Roll** then **Attack Sequence** |
 | **Cast** | **Caster** only — **Casting Roll**; spells may be cast in melee; no **Ranged Reaction** |
-| **Aim** | Next **Ranged** action this activation gains **+1** dominant die type; natural **6**s are critical hits |
-| **Mercy Kill** | **Stunned** enemy within **1"** → immediately **Out of Action** |
+| **Aim** | Next **Ranged** action this activation gains **+1** dominant die type; natural **6**s are critical hits (**5+** if the weapon already crit on **6**) |
+| **Mercy Kill** | **Stunned** enemy within **1"** → immediately **Out of Action**; blocked if any **Active** or **Downed** enemy is **within engagement range** |
 | **Brace** | **+1 Might defense die** until this fighter's next activation |
 | **Hide** | Become **Hidden** within **1"** of terrain — see **Keywords** |
 | **Recover** | **Downed** only — roll **1d6** (see **Recover / Help**) |
@@ -205,7 +205,7 @@ Active → Downed → Stunned → Out of Action
 | **Large** | Cannot **Hide** |
 | **Swarm** | **Skill** = current **Wounds**; enemies **+1 Hit** stat vs this fighter; never **Downed**/**Stunned** — **0 Wounds** → **Out of Action** |
 | **Summon (*value*)** | Summoned fighter; duration in rounds or activations per **value** |
-| **Hidden** | Cannot be targeted by **Ranged**/**Cast** beyond **6"**; lost on combat actions, **Charge**, **Climb**, **Jump**, or moving within **6"** of an enemy |
+| **Hidden** | Cannot be targeted by **Ranged**/**Cast** beyond **6"**; lost on **Melee**, **Ranged**, **Cast**, **Mercy Kill**, **Charge**, **Climb**, **Jump**, or moving within **6"** of an enemy; **Aim** does not break **Hidden** |
 | **Fly** | Ignore vertical distance for **Move** and **Jump**; must end on a legal surface |
 | **Fearless** | Immune to **Fear**, **Panic**, **Insanity**; **+1** to rout **Will** checks |
 | **Undead** | Profile keyword — affects silver weapons, **Radiant Strike**, and similar rules |

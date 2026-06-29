@@ -37,7 +37,7 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 
 ## Phase 2b: Line of Sight, Cover & Targeting
 
-Rules in `rules/core-rules.md#terrain`; cross-refs in the action and combat sections of `rules/core-rules.md`.
+Rules in `rules/core-rules.md#standard-battle-set-up`; cross-refs in the action and combat sections of `rules/core-rules.md`.
 
 - [x] Line of sight: visible-or-not from firing fighter's PoV; ignore past-base overhang
 - [x] Cover: any intervening terrain between shooter and target (terrain >1" from shooter) → +1 Skill defense die
@@ -46,7 +46,7 @@ Rules in `rules/core-rules.md#terrain`; cross-refs in the action and combat sect
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
 - [x] Clustered enemies: same-retinue fighters within 1" of declared target → Sk check or retarget
 - [x] Enemy fighters block line of sight normally
-- [ ] **Smoke / LoS cross-ref** — Smoke rules live in `rules/equipment.md`; confirm no gaps vs `rules/core-rules.md#terrain`.
+- [ ] **Smoke / LoS cross-ref** — Smoke rules live in `rules/equipment.md`; confirm no gaps vs `rules/core-rules.md#standard-battle-set-up`.
 - [ ] Dedicated rules for enemy fighters blocking shots (beyond LoS) if playtest shows gaps
 
 ---
@@ -176,7 +176,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 From fresh-eyes rules read-through and designer responses.
 
 - [ ] **Firearm / damage-spell line-of-fire friendly fire** — Rethink whether the current miss → 1d6 → hit intervening friendly rule works in this system; may need a second check. Prior design context: `decision-log.md` (2026-06-23 — Named stat checks and friendly fire targeting).
-- [ ] **Combat edge-case examples** — Add more worked examples like `rules/core-rules.md#combat-example` (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
+- [ ] **Combat edge-case examples** — Add more worked examples like `rules/core-rules.md#example-combat` (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
 - [ ] **Feat placement** — Decide whether archetype feats live in archetype chapters or only in `#feats`, not both.
 - [ ] **Capture and ransom** — Post-battle capture effect; ransom cost; heirloom recovery (`Dynasts` mentions capture today with no procedure).
 - [ ] **Werebeast vs Beastmen keyword** — Silver / Silversbane target **Werebeast** today; consider **Beastmen** or a gender-neutral beast keyword.

@@ -72,7 +72,7 @@ const RULES_OUTLINE = [
         articleId: "core-rules",
         anchor: "battle-setup",
         children: [
-          { label: "Terrain", articleId: "core-rules", anchor: "terrain" },
+          { label: "Standard Battle Set-Up", articleId: "core-rules", anchor: "standard-battle-set-up" },
           { label: "Difficult Terrain", articleId: "core-rules", anchor: "difficult-terrain" },
         ],
       },
@@ -81,7 +81,6 @@ const RULES_OUTLINE = [
         articleId: "core-rules",
         anchor: "activation",
         children: [
-          { label: "Round at a Glance", articleId: "core-rules", anchor: "round-at-a-glance" },
           { label: "Turn Structure", articleId: "core-rules", anchor: "turn-structure" },
           { label: "Example Round", articleId: "core-rules", anchor: "example-a-round" },
           {
@@ -100,6 +99,7 @@ const RULES_OUTLINE = [
         articleId: "core-rules",
         anchor: "actions",
         children: [
+          { label: "Measuring Distances", articleId: "core-rules", anchor: "measuring-distances" },
           {
             label: "Movement Actions",
             articleId: "core-rules",
@@ -113,7 +113,7 @@ const RULES_OUTLINE = [
             articleId: "core-rules",
             anchor: "combat-actions",
             children: [
-              { label: "Engagement Rules", articleId: "core-rules", anchor: "engagement-rules" },
+              { label: "Engagement", articleId: "core-rules", anchor: "engagement" },
               { label: "Multiple Engagement", articleId: "core-rules", anchor: "multiple-engagement" },
               { label: "Gang Up", articleId: "core-rules", anchor: "gang-up" },
             ],
@@ -140,7 +140,7 @@ const RULES_OUTLINE = [
             ],
           },
           { label: "Ranged Reaction", articleId: "core-rules", anchor: "ranged-reaction" },
-          { label: "Example Combat", articleId: "core-rules", anchor: "combat-example" },
+          { label: "Example Combat", articleId: "core-rules", anchor: "example-combat" },
         ],
       },
       {
@@ -436,20 +436,27 @@ function extractSummary(markdown) {
 
 function extractHeadings(markdown) {
   const used = new Map();
+  const headings = [];
 
-  return markdown
-    .split("\n")
-    .map((line) => line.match(/^(#{1,6})\s+(.+?)\s*#*$/))
-    .filter(Boolean)
-    .map((match) => {
-      const level = match[1].length;
-      const label = stripMarkdown(match[2]);
-      return {
-        level,
-        label,
-        anchor: uniqueSlug(slugify(label), used),
-      };
+  for (const line of markdown.split("\n")) {
+    const blockquoteMatch = line.match(/^>\s+(#{1,6})\s+(.+?)\s*#*$/);
+    const normalMatch = !blockquoteMatch && line.match(/^(#{1,6})\s+(.+?)\s*#*$/);
+    const match = blockquoteMatch || normalMatch;
+    if (!match) continue;
+
+    const level = match[1].length;
+    const label = stripMarkdown(match[2]);
+    const baseSlug = slugify(label);
+    if (blockquoteMatch && used.has(baseSlug)) continue;
+
+    headings.push({
+      level,
+      label,
+      anchor: uniqueSlug(baseSlug, used),
     });
+  }
+
+  return headings;
 }
 
 function stripArticleTitleBlock(markdown, title, summary) {

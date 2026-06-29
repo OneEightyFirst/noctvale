@@ -154,6 +154,16 @@ Poisons are **consumable** (one battle only).
 
 ---
 
+### Crown costs — adventuring gear
+
+Available to every retinue. Adventuring gear does not use weapon slots.
+
+| Item | Cost | Notes |
+| ---- | ---- | ----- |
+| <span id="climbing-rope"></span>Climbing Rope | 35 | Permanent; **Climb** uses full **Movement** |
+
+---
+
 ### Companions
 
 Requires **Animal Handling** on the **Handler** (see [Feats — Animal Handling](retinue.md#animal-handling)). Each **Handler** fields one **Companion**; companions do **not** use weapon slots.
@@ -385,6 +395,14 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 | Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
 | Widow's Tears | Unblocked hits inflict 2 Wounds instead of 1 | Lethal, expensive |
 | Silversbane | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |
+
+### Adventuring gear
+
+Permanent gear any fighter may carry. Adventuring gear does not use weapon slots.
+
+#### Climbing Rope
+
+A fighter carrying **Climbing Rope** moves up to full **Movement** when making a **Climb** action instead of half **Movement**.
 
 ### Sphere of Influence
 

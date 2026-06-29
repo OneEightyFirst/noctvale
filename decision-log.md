@@ -59,6 +59,27 @@ Open questions:
 
 ---
 
+## 2026-06-28 — Core rules movement, actions, and finisher pass
+
+**Decision:** Refine **Core Rules** for table play clarity. Add **Measuring Distances** and Warcry-style horizontal movement (cross terrain **≤1"** freely except on **Crawl**; **Climb** at half **M**, chain two **Climbs** per activation). Move **Engagement**, **Falling**, and **Overwatch** into blockquote callouts. Number **Standard Battle Set-Up** (terrain → objectives → initiative → deployment) and restore **Difficult Terrain** as its own subsection. Tighten **Overwatch** (shortfall tokens, skip counts as activation, any single action as reaction). Morale uses **Will** checks; **Escaped** fighters are not **lost**; remove core **Tradition** rout bonus (defer to Tradition entries). **Aim** grants nat **6** crits on the next **Ranged** action (**5+** if the weapon already crit on **6**). **Mercy Kill** blocked when any **Active** or **Downed** enemy is in engagement range. **Aim** no longer breaks **Hidden**. Add **Climbing Rope** adventuring gear in `rules/equipment.md` and the builder. Update wiki nav (`Measuring Distances`, **Engagement**, anchor fixes, blockquote heading extraction). Sync print quick-reference and cheat sheets. Style guide: core rules state baseline only — gear/feat exceptions live on their entries.
+
+**Reasoning:** Movement and engagement rules should read like a modern skirmish game without burying exceptions in core prose. Callouts keep reference density high without duplicate headings. **Mercy Kill** needs a melee-contest gate so finishers happen when the line is clear. **Aim** stacking with firearm or triangle crits should reward careful shots without double-counting nat **6**. Nav anchor validation must pass `build:rules` before GitHub Pages deploy.
+
+---
+
+## 2026-06-28 — Reduced-stat descriptor: gone mad
+
+**Decision:** Replace the reduced-stat trio "maimed, broken, or hollowed" in
+`rules/core-rules.md` with a split phrase: "They are maimed or broken — or they
+have gone mad."
+
+**Reasoning:** "Hollowed" did not read clearly as permanent **Sanity** loss.
+"Gone mad" states the mental case in plain language without naming the
+**Insanity** condition. The em dash separates the verb phrase from the parallel
+adjectives *maimed* and *broken*.
+
+---
+
 ## 2026-06-28 — Print cheat sheet, rules reflow, and Might/Skill dice vocabulary
 
 **Decision:** Add `for-print/` with the two-sided quick-reference source (`quick-reference.md`), triangle SVG, InDesign handoff notes, and HTML print preview. Reflow canonical rules in `rules/` (prose paragraphs, **battlefield** wording, **Might dice** / **Skill dice** instead of red/blue). Add `scripts/reflow-rules.py` for future reflows. Sync builder feat strings and `app/rules-updates.md`. Remove **Overcharge** from the **Primer Roll** in `rules/equipment.md` to match the Casting Roll. Fix merged **Apply Wounds** bullets in `rules/core-rules.md`. Update style guide, design tenets, overview, and todo (morale complete). Restore **Ideas** entries in the decision log.

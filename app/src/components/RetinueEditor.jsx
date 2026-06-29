@@ -1938,7 +1938,7 @@ function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, e
                 const quantity = fighter.equipment?.[item.id] ?? 0;
                 const reason = getEquipmentBlockReason(item, archetype, fighter, type, tradition, domain);
                 const unitCost = getGearUnitCost(item, tradition);
-                const capped = ["armor", "sphere", "special", "companion"].includes(item.kind) && quantity >= 1;
+                const capped = ["armor", "sphere", "special", "companion", "gear"].includes(item.kind) && quantity >= 1;
                 return (
                   <div
                     key={item.id}

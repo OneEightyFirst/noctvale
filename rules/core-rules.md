@@ -38,7 +38,7 @@ Higher values are better for all stats.
 
 When a rule asks you to make a stat check, it names the stat being tested. A **Might** check uses **Might**, a **Skill** check uses **Skill**, and so on. Roll **1d6**, add the fighter's corresponding stat, then apply any modifiers. The check succeeds if the total is **8 or higher**. A natural **1** always fails, and a natural **6** always succeeds.
 
-In campaign play, no stat can be raised above **6**. If a stat is reduced to **1**, the fighter can no longer perform actions that require that stat; they are maimed, broken, or hollowed.
+In campaign play, no stat can be raised above **6**. If a stat is reduced to **1**, the fighter can no longer perform actions that require that stat. They are maimed or broken — or they have gone mad.
 
 **Rerolls:** A die can only be rerolled once. If more than one rule allows a reroll, choose one; the second result stands.
 
@@ -57,7 +57,7 @@ Noctvale is full of fighters of every shape, size, and ancestry. Before the Fall
 
 ### Stat Modifiers
 
-Bonuses and penalties to a fighter's stats from feats, Traditions, spells, and equipment **stack**.
+Bonuses and penalties to a fighter's stats from feats, Traditions, spells, and equipment stack unless a rule says otherwise.
 
 The total bonus or penalty to any single stat (**Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**) cannot exceed **+3** or **−3** at any time.
 
@@ -79,9 +79,35 @@ Use two distinct dice colors so you can tell the stats apart. Before the first b
 
 Use this procedure unless the scenario states otherwise.
 
-Battles are fought on a **3' × 3'** battlefield. Scatter terrain across the battlefield to set the scene — ruins, walls, woods, and wreckage that break sight lines and give fighters somewhere to duck out of the crossfire.
+Battles are fought on a **3' × 3'** battlefield.
+
+#### 1. Place Terrain
+
+Scatter terrain across the battlefield to set the scene — ruins, walls, woods, and wreckage that break sight lines and give fighters somewhere to duck out of the crossfire.
 
 Pack the battlefield densely. Noctvale rewards cover, **Hide**, and short-range firefights; a sparse battlefield leaves every fighter exposed and the fight flat. Before you deploy, agree which pieces count as **difficult terrain**, which are **impassable**, and how each major piece affects cover and line of sight.
+
+If the scenario uses **Looting Buildings**, mark each building's footprint before deployment so everyone knows which area counts as inside when fighters **Loot**.
+
+#### 2. Place Objectives
+
+If the scenario calls for objectives, markers, or other setup pieces, place them now according to that scenario's instructions.
+
+#### 3. Determine Initiative
+
+At the start of the game, **initiative** goes to the player with the lower **activation count**. At deployment, every fighter is **Active**, so this is the number of fighters in the retinue. If both players have the same **activation count**, each player rolls **2d6**; the higher result has **initiative**. Reroll ties.
+
+#### 4. Choose Deployment Edges
+
+The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
+
+#### 5. Form Deployment Groups
+
+Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
+
+#### 6. Deploy Retinues
+
+Starting with the player with initiative, players alternate setting up one deployment group at a time within their deployment zones until both retinues have been deployed.
 
 ### Difficult Terrain
 
@@ -89,24 +115,6 @@ Pack the battlefield densely. Noctvale rewards cover, **Hide**, and short-range 
 
 - Fighters cannot **Move** or **Charge** through difficult terrain.
 - Use **Scramble** to move across **difficult terrain** at half **Movement** (see [Actions — Scramble](core-rules.md#scramble)). A fighter may end their movement on **difficult terrain**, but they must be placed standing on their own. If that is not possible, move back along the path of movement until the fighter can be placed stably.
-
-If the scenario uses **Looting Buildings**, mark each building's footprint before deployment so everyone knows which area counts as inside when fighters **Loot**.
-
-#### 1. Determine Initiative
-
-At the start of the game, **initiative** goes to the player with the lower **activation count**. At deployment, every fighter is **Active**, so this is the number of fighters in the retinue. If both players have the same **activation count**, each player rolls **2d6**; the higher result has **initiative**. Reroll ties.
-
-#### 2. Choose Deployment Edges
-
-The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
-
-#### 3. Form Deployment Groups
-
-Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
-
-#### 4. Deploy Retinues
-
-Starting with the player with initiative, players alternate setting up one deployment group at a time within their deployment zones until both retinues have been deployed.
 
 ---
 
@@ -126,7 +134,7 @@ Use activation count to determine initiative and **Overwatch tokens**. Do not re
 
 Determine initiative. During the first round, use the initiative determined during battle set-up. During each later round, the player with the lower **activation count** has initiative and activates first. If both players have the same activation count, the player who did not have initiative last round now has it.
 
-After initiative is determined, the player with the lower **activation count** gains **Overwatch tokens** equal to the difference between the two **activation counts**. For example, if one player counts **5** and the other **3**, the player with **3** has initiative and gains **2 Overwatch tokens**.
+After initiative is determined, that player gains **Overwatch tokens** equal to the shortfall. For example, if one player counts **5** and the other **3**, the player with **3** has initiative and gains **2 Overwatch tokens**.
 
 #### 2. Alternating Activations
 
@@ -144,7 +152,7 @@ If a **Stunned** fighter becomes **Active** during the round before their player
 
 The round ends when every fighter who can activate has activated or has **skipped their activation**.
 
-If one player has no fighters left to activate before the other, the remaining player **activates their remaining fighters normally**, one at a time. A player may spend **Overwatch tokens** as reactions whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not stop a player from spending unspent tokens during the other player's remaining activations.
+If one player has no fighters left to activate before the other, the remaining player **activates their remaining fighters normally**, one at a time.
 
 At the end of the round, remove all unspent **Overwatch tokens**.
 
@@ -164,13 +172,13 @@ An **Escaped** fighter is not **Out of Action** and does not roll on the Casualt
 
 When a retinue's losses mount, fighters may break and flee.
 
-Count fighters deployed at the start of the battle as the **starting count**. A fighter is **lost** if they are **Out of Action**, **Escaped**, or **Stunned**. **Active** and **Downed** fighters are not **lost**.
+Count fighters deployed at the start of the battle as the **starting count**. A fighter is **lost** if they are **Out of Action** or **Stunned**. **Active** and **Downed** fighters are not **lost**.
 
 A fighter removed from the battle to fuel a summon is not **lost** if a replacement fighter is placed on the battlefield as part of that summon. If no replacement is placed, they count as **lost**. *(See summoning rules in [Traditions](retinue.md#traditions) and [Summoning](retinue.md#summoning).)*
 
-A retinue is **routing** when **more than half** of its starting fighters are **lost** — not when half are lost. For example, a retinue that deployed **5** fighters is **routing** when **3** are **lost**, not **2**; a retinue that deployed **4** is **routing** when **3** are **lost**, not **2**. Check whenever a fighter becomes **lost**; a retinue that becomes **routing** mid-round does not make fighters who have already activated this round test until their next activation.
+A retinue is **routing** when **more than half** of its starting fighters are **lost** — not when half are lost. For example, a retinue that deployed **5** fighters is **routing** when **3** are **lost**, not **2**; a retinue that deployed **4** is **routing** when **3** are **lost**, not **2**. Check whenever a fighter becomes **lost**; a retinue that starts to rout mid-round does not make fighters who have already activated this round test until their next activation.
 
-While a retinue is **routing**, each fighter tests morale at the **start of their activation**, before taking actions:
+While a retinue is **routing**, each fighter makes a **Will** check at the **start of their activation**, before taking actions:
 
 - **Stunned** fighters do not test — they cannot act. If a **Stunned** fighter becomes **Active** or **Downed** before their player has finished activating fighters, they test at the start of their next full activation.
 - Fighters with the **Summon** keyword auto-pass if **any** friendly fighter is within **6"** and line of sight. Otherwise, test normally.
@@ -178,7 +186,6 @@ While a retinue is **routing**, each fighter tests morale at the **start of thei
   - **+1** for each other friendly fighter within **6"** and line of sight
   - **+2** for a friendly **Leader** within **6"** and line of sight *(instead of **+1** for that fighter)*
   - **+1** if the fighter has **Fearless**
-  - **+1** if the fighter's retinue **Tradition** grants a bonus to rout tests *(see [Traditions](retinue.md#traditions))*
 
 **Pass:** The fighter activates normally.
 
@@ -186,32 +193,47 @@ While a retinue is **routing**, each fighter tests morale at the **start of thei
 
 If the fighter does not **Escape** this activation, they make another **Will** check at the start of their next activation. **Pass:** they are **rallied** and activate normally. **Fail:** they must flee again this activation, using the same actions as above.
 
-**Fearless** fighters who fail a rout test are not panicking — they are leaving to find out what happened to the rest of the retinue. The rules are the same; only the fiction differs.
+A fighter with **Fearless** may still flee the battlefield — not because they are afraid or in a panic, but merely to find out what happened to the rest of the retinue, or due to boredom.
 
 ### Overwatch
 
 Overwatch compensates for numerical disadvantage.
 
-**Start-of-round tokens:** At the start of the round, the player with the lower **activation count** receives **Overwatch tokens equal to the difference** between the two activation counts. *(See [Activation Count](core-rules.md#activation-count).)*
-
-**Skip activation:** A player who holds one or more **Overwatch tokens** may **skip a fighter's activation**. Spend **1 Overwatch token** and assign it to that fighter. The fighter does not activate this round; the assigned token allows that fighter to perform a **single action as a reaction**. Valid reaction Actions are: Move, Ranged, Charge, Melee and Retreat.
-
-**Using a token:** The token allows that fighter to perform a **single action as a reaction** to an enemy fighter completing an action.
-
-**End of round:** Remove all unspent **Overwatch tokens**.
+> ### Overwatch
+>
+> **Start-of-round tokens:** At the start of the round, the player with the lower **activation count** receives **Overwatch tokens** equal to the shortfall. *(See [Activation Count](core-rules.md#activation-count).)*
+>
+> **Skip activation:** On your turn in the activation order, you may **skip a fighter's activation** instead of activating them. Spend **1 Overwatch token** and assign it to that fighter. The skip counts as that fighter's activation for the round — they do not take **2 actions** now, but the assigned token allows that fighter to perform any **1 action** as a reaction when an enemy fighter completes an action.
+>
+> **Reaction timing:** A player may spend **Overwatch tokens** as reactions whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not stop a player from spending unspent tokens during the other player's remaining activations.
+>
+> **End of round:** Remove all unspent **Overwatch tokens**.
 
 ---
 
 ## Actions
 
+### Measuring Distances
+
+Distances are measured in inches (**"**), between the closest points of the bases you are measuring to and from. Something is **within** a distance if the measurement is equal to or less than that distance. A fighter is **wholly within** a distance only if every part of their base is within range.
+
+Unless a rule says otherwise, measure both horizontal and vertical distance together.
+
+You may measure distances whenever you wish.
+
+When a fighter moves, they may pivot freely so long as the total distance they travel does not exceed that action's allowance — and no part of the fighter ends further from their starting position than that allowance permits.
+
 ### Movement Actions
+
+During **Move**, **Charge**, **Crawl**, **Scramble**, and **Retreat**, a fighter moves horizontally. These actions do not allow vertical movement. The fighter may cross terrain **1"** tall or lower freely, except during **Crawl**. To change elevation by more than **1"**, use **Climb**.
 
 #### Move
 
 **Cost:** 1 action
 
-Move up to this fighter's **Movement**.
+Move up to this fighter's **Movement**. Movement is horizontal — no vertical movement.
 
+- May cross terrain **1"** tall or lower freely
 - May move through friendly fighters
 - Cannot end on another fighter's base
 
@@ -221,7 +243,7 @@ Move up to this fighter's **Movement**.
 
 **Cost:** 1 action
 
-**Downed** fighters only. Move at half **Movement**.
+**Downed** fighters only. Move at half **Movement**. Movement is horizontal — no vertical movement.
 
 - May move through friendly fighters
 - Cannot end on another fighter's base
@@ -230,8 +252,9 @@ Move up to this fighter's **Movement**.
 
 **Cost:** 1 action
 
-Move up to this fighter's **Movement**. Must end **within engagement range** of an enemy.
+Move up to this fighter's **Movement**. Must end **within engagement range** of an enemy. Movement is horizontal — no vertical movement.
 
+- May cross terrain **1"** tall or lower freely
 - May move through friendly fighters during the charge
 - Cannot end on another fighter's base
 
@@ -241,9 +264,11 @@ Move up to this fighter's **Movement**. Must end **within engagement range** of 
 
 **Cost:** 1 action
 
-Move vertically at half **Movement**.
+Move up to half **Movement**. **Climb** may change elevation by more than **1"**; other movement actions may not.
 
 - Cannot end **within engagement range**
+
+A fighter may spend **both actions** in the same activation on **Climb**, one after the other, to scale taller terrain. When chaining two **Climb** actions, the fighter does not need a legal standing position between them — place them at the end of the second **Climb** only.
 
 #### Scramble
 
@@ -257,7 +282,7 @@ Move at half **Movement** through **difficult terrain** (see [Difficult Terrain]
 
 **Cost:** 1 action
 
-Move across open space up to this fighter's **Movement**. Make a **Skill** check.
+Move horizontally across open space up to this fighter's **Movement**. Make a **Skill** check.
 
 - Cannot end **within engagement range**
 
@@ -269,15 +294,21 @@ Attempt to leave engagement range. Make a **Skill** check.
 
 - **Fail:** The opponent may make a **free Melee attack** using the full **Attack Sequence** — but only if they are not currently engaged with another enemy. This does not cost the opponent any actions.
 
-#### Falling
-
-Resolve **Falling** after another rule or failed movement causes a fighter to fall. Do not make an additional check to avoid the fall.
-
-For every full **2"** in height the fighter falls, add **2 Might dice** to a fall Strike Pool.
-
-The fall attacks at **Close Combat** 4+. Roll each die in the fall Strike Pool; each result of **4+** is a hit. The fallen fighter rolls defense as normal against any hits.
+> ### Falling
+>
+> Resolve **Falling** after another rule or failed movement causes a fighter to fall. Do not make an additional check to avoid the fall.
+>
+> For every full **2"** in height the fighter falls, add **2 Might dice** to a fall Strike Pool.
+>
+> The fall attacks at **Close Combat** 4+. Roll each die in the fall Strike Pool; each result of **4+** is a hit. The fallen fighter rolls defense as normal against any hits.
 
 ### Combat Actions
+
+> ### Engagement
+>
+> **Engagement range** is **1"**.
+>
+> There is **no facing system**. Fighters are treated as aware in **all directions**.
 
 #### Melee
 
@@ -298,9 +329,7 @@ Attack with a **ranged weapon** — bows, crossbows, firearms, and other weapons
 
 **Bow or crossbow:** Resolve the attack using the **Attack Sequence** (below).
 
-**Firearm:** Roll the **Primer Roll** (below). If the gun fires, resolve the attack using the **Attack Sequence**. **Pistols:** see [Gear — Pistols](equipment.md#pistols) and [Feats — Gunslinger](retinue.md#gunslinger).
-
-*(See [Equipment](equipment.md) and [Terrain](core-rules.md#terrain).)*
+**Firearm:** Roll the **Primer Roll** (below). If the gun fires, resolve the attack using the **Attack Sequence**.
 
 #### Cast
 
@@ -332,7 +361,7 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 Prepare a careful shot for this fighter's next **Ranged** action this activation.
 
 - Gain **+1 die of the weapon's dominant die type**
-- **Natural 6** results are critical hits on that **Ranged** action
+- **Natural 6** results are critical hits on that **Ranged** action. If that **Ranged** weapon already had a critical hit on **6**, increase it to **5+**
 
 The dominant die type is whichever stat the weapon adds more of (**Might** or **Skill**). If tied, choose **Might dice** or **Skill dice**.
 
@@ -342,15 +371,11 @@ The dominant die type is whichever stat the weapon adds more of (**Might** or **
 
 Execute a **Stunned** enemy **within 1"**.
 
+- May not be performed if any **Active** or **Downed** enemy fighter is **within engagement range** of this fighter
+
 The **Stunned** fighter is immediately **Out of Action**.
 
 *(See [Conditions](core-rules.md#conditions).)*
-
-### Engagement Rules
-
-- Engagement range is **1"**
-- There is **no facing system**
-- Fighters are treated as aware in **all directions**
 
 ### Multiple Engagement
 
@@ -386,8 +411,8 @@ Become **Hidden**.
 While **Hidden**:
 
 - Cannot be targeted by **Ranged** or **Cast** actions beyond **6"**
-- Lose **Hidden** when performing any **Combat action** (**Melee**, **Ranged**, **Cast**, **Aim**, or **Mercy Kill**), **Charge**, **Climb**, **Jump**, or moving **within 6"** of an enemy
-- May still **Move**, **Scramble**, **Brace**, **Interact**, **Loot**, **Recover**, or **Help** without losing **Hidden** — as long as they remain **within 1"** of terrain
+- Lose **Hidden** when performing any **Combat action** (**Melee**, **Ranged**, **Cast**, or **Mercy Kill**), **Charge**, **Climb**, **Jump**, or moving **within 6"** of an enemy
+- May still **Move**, **Scramble**, **Brace**, **Aim**, **Interact**, **Loot**, **Recover**, or **Help** without losing **Hidden** — as long as they remain **within 1"** of terrain
 
 ### Interaction Actions
 
@@ -669,7 +694,7 @@ Firearms are fired with the **Ranged** action. They use the **primer roll** and 
 
 **Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in **Heavy Armor**). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange.
 
-The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation.
+The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation. If that **Ranged** weapon already had a critical hit on **6**, **Aim** increases it to **5+**.
 
 ### Ranged Reaction
 
