@@ -4,7 +4,7 @@
 
 This guide keeps Noctvale rules **clear, consistent, and readable** as the game grows. Use it when writing or editing any player-facing rules text — core rules, campaign tables, weapon and spell entries, fighter cards, and scenario packets.
 
-**Rulebook chapters** (core rules rewrite, campaign prose): also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Canonical example: `rules/core-rules.md` Action Sequence.
+**Rulebook chapters** (core rules rewrite, campaign prose): also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Canonical examples: `rules/combat.md` Attack Sequence and `rules/the-turn.md` Turn Structure.
 
 **Fluff placeholders** in rules files are intentional until late-stage writing.
 
@@ -28,10 +28,10 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 9. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
 10. **Use numbers.** “Within 1"” beats “very close.” “Roll 1d6” beats “roll a die.”
 11. **Front-load conditions.** “If the target is Stunned, …” not “The target, should they happen to be Stunned, …”
-12. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — edit the canonical copy in `rules/core-rules.md`, `rules/retinue.md`, or `rules/equipment.md`, then grep and sync duplicates. See `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
+12. **Cross-reference or repeat deliberately.** One-off rules live in one file — cross-ref elsewhere. **Shared sub-routines** (Attack Sequence, Apply Wounds, Casting Roll, Primer Roll) are **repeated verbatim** wherever they apply — edit the canonical copy in `rules/combat.md`, `rules/magic.md`, or `rules/weapons.md`, then grep and sync duplicates. See `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
 13. **Write for someone who wasn’t in the room.** State what the game *is*. Superseded rules, renames, and design history belong in `decision-log.md` — not in player-facing text.
-14. **Tables carry the data.** If a stat, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
-15. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](rules/campaign.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/retinue.md#domains)**).
+14. **Tables carry the data.** If an attribute, cost, difficulty, or profile value is in a table, do not repeat it in the surrounding prose. Use prose for procedure, timing, exceptions, and cross-refs.
+15. **Link cross-references.** Point to other rules with markdown links and a readable label — **[Economy](rules/economy.md#economy)**, not a raw path in backticks. Use relative paths so links work on GitHub. Prefer the subsystem or section name as link text (**Weapons**, **Domains**, **Post-Game**). Section anchors are fine when the target is long (**[Domains](rules/traditions.md#domains)**).
 
 ---
 
@@ -43,7 +43,7 @@ Rules live in `rules/*.md`. Keep the source easy to read and safe for every outp
 - **Blank lines separate paragraphs.** A single newline inside a paragraph becomes an unintended break in some renderers.
 - **Join wrapped list items and blockquote lines** before committing — a continued list item uses two-space indent; a continued blockquote line uses another `>`.
 - **Leave structure alone:** headings, tables, fenced code, horizontal rules, and intentional blockquote separators (`>` on its own line) stay as written.
-- **Name dice by stat, not color.** Write **Might dice** and **Skill dice** (or **Might die** / **Skill die**). Players choose which physical dice color represents each stat before the first battle.
+- **Name dice by attribute, not color.** Write **Might dice** and **Skill dice** (or **Might die** / **Skill die**). Players choose which physical dice color represents each attribute before the first battle.
 - **Use battlefield, not board or table.** The play area is the **battlefield**; its perimeter is the **battlefield edge**. Reserve **table** for reference charts only (**Casualty Table**, **roll on the table below**).
 
 To reflow existing files: `python3 scripts/reflow-rules.py`
@@ -67,7 +67,7 @@ Use this voice in `rules/` chapters written for the eventual print book — star
 | Short narrative **examples** at the end of a chapter | Scattered partial math across the file |
 | Mordheim-style **chapter flow** (The Turn, Shooting, Psychology) | Subsystem encyclopedia structure (Actions → Combat → Table Rules) |
 
-**Chapter fluff** opens each major chapter: one to three short paragraphs in *italics*, atmospheric but not purple. Fluff sets mood and frames why the rules matter; it does **not** introduce mechanics, stats, or exceptions.
+**Chapter fluff** opens each major chapter: one to three short paragraphs in *italics*, atmospheric but not purple. Fluff sets mood and frames why the rules matter; it does **not** introduce mechanics, attributes, or exceptions.
 
 Separate fluff from rules with a horizontal rule (`---`). Everything after the rule is **rules text** — precise, numbered where needed, no lore mixed in.
 
@@ -141,7 +141,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | **battle** | One encounter on the battlefield from deployment to end condition |
 | **battlefield** | The **3' × 3'** play area — terrain, positioning, movement, combat, and all in-play interactions |
 | **battlefield edge** | Any edge of the battlefield; used for deployment, **Escape**, and edge-based scenario rules |
-| **round** | Every eligible fighter activates once (see turn structure in `rules/core-rules.md`) |
+| **round** | Every eligible fighter activates once (see turn structure in `rules/the-turn.md`) |
 | **activation** | One fighter's turn — **2 actions** |
 | **activation count** | Fighters who can activate this round — **Active** and **Downed** only; not **Stunned**, **Out of Action**, or **Escaped** |
 | **action** | One thing a fighter does during an activation (**Move**, **Melee**, etc.) |
@@ -162,7 +162,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 
 ## Terminology Glossary
 
-### Stats
+### Attributes
 
 | Abbr | Name | Used for |
 |---|---|---|
@@ -175,7 +175,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | Sa | Sanity | fear tests (**Sanity** checks) |
 | W | Wounds | hit points |
 
-Use abbreviations in tables only. In prose, write the full stat name in bold:
+Use abbreviations in tables only. In prose, write the full attribute name in bold:
 **Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**,
 **Will**, **Sanity**, and **Wounds**.
 
@@ -193,7 +193,7 @@ Use abbreviations in tables only. In prose, write the full stat name in bold:
 | class | No in roster prose | Use **role** or name the keyword (**Leader**, **Elite**, etc.) directly |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
 | difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **Movement** |
-| affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/core-rules.md` |
+| affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/conditions.md` |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
 | Relic(s) | Yes | Campaign treasure recovered in scenarios |
 | Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 **Sanity**) or **Instrument** (+1" **Movement**); not campaign treasure |
@@ -237,11 +237,11 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Condition names | Bold, title case | **Stunned**, **Hidden** |
 | Keywords | Bold | **Caster**, **Single Shot**, **Flintlock** |
 | Archetype / Domain / Tradition | Bold when naming the choice | **Hunters** + **Nature** |
-| Stats in tables | Abbreviation caps as listed | Mt, Sk, Wi |
-| Stats in sentences | Full bold stat name | **Skill** check |
+| Attributes in tables | Abbreviation caps as listed | Mt, Sk, Wi |
+| Attributes in sentences | Full bold attribute name | **Skill** check |
 | Generic gear | Lowercase | sword, medium armor, musket |
 | Named gear | Title case | Widow's Tears, Silversbane |
-| File references | Backticks, lowercase path | `rules/core-rules.md` |
+| File references | Backticks, lowercase path | `rules/combat.md` |
 
 **TODO:** Fighter card layout not finalized — confirm whether action names appear in ALL CAPS on cards while rules use bold title case.
 
@@ -255,15 +255,15 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 |---|---|
 | One six-sided die | **1d6** or **d6** — prefer **1d6** when count matters (“Roll **1d6**”) |
 | Multiple dice | **2d6**, **3d6** — lowercase **d**, no space |
-| Stat check | **Skill** check |
+| Attribute check | **Skill** check |
 | Casting | **casting roll** — **2d6 + Will** vs difficulty |
 | Gunpowder / firearms | **primer roll** — **2d6 + Skill** vs **primer difficulty** (weapon profile); **Ranged Combat** governs the **Attack Sequence** to-hit roll |
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
 | Natural results | **natural 1**, **natural 6** |
 | Table roll | **Roll 1d6:** then table |
-| Dice types | **Might die**, **Skill die**, **Might dice**, **Skill dice** — name the stat, not a fixed color |
+| Dice types | **Might die**, **Skill die**, **Might dice**, **Skill dice** — name the attribute, not a fixed color |
 
-**Don't:** D6, 2D6, or “on a 4+” for stat checks. After the core rule defines stat checks, use the named check: **Skill** check, **Might** check, **Sanity** check, and so on. Use **6+** / **11+** on 2d6 rolls. Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
+**Don't:** D6, 2D6, or “on a 4+” for attribute checks. After the core rule defines attribute checks, use the named check: **Skill** check, **Might** check, **Sanity** check, and so on. Use **6+** / **11+** on 2d6 rolls. Don't use **gate** for casting or gunpowder — use **casting roll** and **primer roll**.
 
 ### Measurements
 
@@ -273,14 +273,14 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | Within distance | **within 1"** · **within 12"** |
 | Engagement | **engagement range** (defined as **1"**) or **within 1"** |
 | Blast / aura | **3" blast**, **6" cloud**, **8" from caster** |
-| Movement stat | **6"** in profile tables (**M** column) |
+| Movement attribute | **6"** in profile tables (**M** column) |
 | Rolled distance | Roll **d6 + Might**. Move that many **"**. |
 
 Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell out the unit in rules text.
 
 ---
 
-## Stat and Profile Formatting
+## Attribute and Profile Formatting
 
 ### Ancestry / fighter profile table
 
@@ -290,8 +290,8 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 |
 ```
 
-- Movement includes inch mark in table; other stats are plain integers.
-- Higher is better for all stats (state once per chapter).
+- Movement includes inch mark in table; other attributes are plain integers.
+- Higher is better for all attributes (state once per chapter).
 
 ### Inline profile reference
 
@@ -301,21 +301,21 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 
 | Meaning | Format |
 |---|---|
-| Stat bonus | +1 **Might**, +2 **Skill** |
-| Stat penalty | −1 **Might** (unicode minus) |
+| Attribute bonus | +1 **Might**, +2 **Skill** |
+| Attribute penalty | −1 **Might** (unicode minus) |
 | Die bonus | **+1 Might defense die** |
 | Strike Pool dice | **add 2 Might dice to the Strike Pool** |
-| To-hit modifier | +1 **Close Combat**, −1 **Ranged Combat**, or +1 **Ranged Combat** — whichever **Hit** stat the attack uses |
+| To-hit modifier | +1 **Close Combat**, −1 **Ranged Combat**, or +1 **Ranged Combat** — whichever **Hit** attribute the attack uses |
 | Crown cost | **−25 Crowns** |
 
 Use **+** / **−** with a space before the number in prose.
 
-Use +1 **Might** or +1 **Skill** only when a rule changes the fighter's stat or a
+Use +1 **Might** or +1 **Skill** only when a rule changes the fighter's attribute or a
 weapon table's +**Might** / +**Skill** modifier. When a rule adds dice without changing a
-stat, name the dice directly: **add 2 Might dice to the Strike Pool**, **add 1
+attribute, name the dice directly: **add 2 Might dice to the Strike Pool**, **add 1
 Skill die to the Strike Pool**, or **gain +1 Might defense die**.
 
-For attack accuracy, modify the **Hit** stat for that attack: +1 **Close Combat** or +1 **Ranged Combat** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write +1 **Close Combat** and +1 **Ranged Combat**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write +1 **Might** or **+1 Might die** when the rule modifies a **Close Combat** check or **Ranged Combat** check.
+For attack accuracy, modify the **Hit** attribute for that attack: +1 **Close Combat** or +1 **Ranged Combat** for **Melee** and **Ranged** attacks respectively. When a rule applies to both, write +1 **Close Combat** and +1 **Ranged Combat**. Positive modifiers make checks easier; negative modifiers make checks harder. Do not write +1 **Might** or **+1 Might die** when the rule modifies a **Close Combat** check or **Ranged Combat** check.
 
 ---
 
@@ -326,7 +326,7 @@ For attack accuracy, modify the **Hit** stat for that attack: +1 **Close Combat*
 `| Weapon | Hands | Range | Primer | +Mt | +Sk | Notes |`
 
 - **Range:** `3"–18"` for missiles; **Engagement** for melee.
-- **Primer:** **2d6 + Skill** vs profile value; **—** for weapons without a primer roll. Profile values assume **Skill** 3; adjust per the **Primer Roll** box in `rules/equipment.md`.
+- **Primer:** **2d6 + Skill** vs profile value; **—** for weapons without a primer roll. Profile values assume **Skill** 3; adjust per the **Primer Roll** box in `rules/weapons.md`.
 - **Notes:** traits comma-separated — **Single Shot**, **Smoke**, **Flintlock** keyword callouts.
 
 ### Weapon trait line (short)
@@ -339,7 +339,7 @@ For attack accuracy, modify the **Hit** stat for that attack: +1 **Close Combat*
 
 ### Spell block (standard)
 
-Use spell blocks in `rules/retinue.md` instead of spell tables.
+Use spell blocks in `rules/magic.md` instead of spell tables.
 
 ```markdown
 ##### Radiant Strike
@@ -349,7 +349,7 @@ Use spell blocks in `rules/retinue.md` instead of spell tables.
 Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 **Might** / 3 **Skill** instead.
 ```
 
-- **Casting** combines casting stat and difficulty: **Will** 11+, **Sanity** 12+.
+- **Casting** combines casting attribute and difficulty: **Will** 11+, **Sanity** 12+.
 - Include **Attack** only when the spell resolves through the **Attack Sequence**.
 - Omit **Mishap** entirely when the spell has no Mishap.
 - Write the effect as normal rules prose, not table shorthand.
@@ -371,12 +371,12 @@ Reference actions in bold: “perform a **Ranged** action,” “use the **Recov
 
 Use reminders to point at canonical rules — not to sneak in new mechanics. Reminder text on cards/tables must **not contradict** the full rule elsewhere.
 
-**Format:** *(See `filename.md`.)* or *(See `rules/core-rules.md` — Intervening Fighters.)*
+**Format:** *(See `filename.md`.)* or *(See `rules/combat.md` — Intervening Fighters.)*
 
 | When | Example |
 |---|---|
-| Full rule elsewhere | *(See rules/core-rules.md.)* |
-| Named subsection | *(See rules/core-rules.md — Ranged Reaction.)* |
+| Full rule elsewhere | *(See rules/combat.md.)* |
+| Named subsection | *(See rules/combat.md — Ranged Reaction.)* |
 | First keyword on a page | **Single Shot** — one use per battle; cannot reload |
 | Card / table only | Icon or one-line reminder — **TODO:** reminder icon set not defined |
 
@@ -392,7 +392,7 @@ Use reminders to point at canonical rules — not to sneak in new mechanics. Rem
 
 1. **Prose lead** — what the action does, what it costs, what to roll
 2. **Exception bullets** — prohibitions, timing, edge cases
-3. **Cross-ref** — *(See [Overwatch](core-rules.md#overwatch).)* when the full rule lives elsewhere
+3. **Cross-ref** — *(See [Overwatch](rules/the-turn.md#overwatch).)* when the full rule lives elsewhere
 
 ### Complex actions (when prose is not enough)
 
@@ -413,8 +413,8 @@ Each major chapter ends with **Example:** — one narrative walkthrough that nam
 
 ## Examples and Diagrams
 
-- **Worked examples** use named fighters: Human, Elf, Dwarf — match `core-rules.md` ancestry.
-- Label steps **Step 1**, **Step 2** in sequences (see `rules/core-rules.md`).
+- **Worked examples** use named fighters: Human, Elf, Dwarf — match `rules/attributes.md` ancestry.
+- Label steps **Step 1**, **Step 2** in sequences (see `rules/combat.md`).
 - **Round at a Glance** uses blockquote `>` for quick-reference boxes.
 - Diagrams: ASCII for simple flows (`Sword > Axe > Spear > Sword`); TODO for official battlefield-measurement diagrams.
 - One full combat example per major rules revision — don't scatter partial math across files.
@@ -431,7 +431,7 @@ Each major chapter ends with **Example:** — one narrative walkthrough that nam
 | Mechanics | None | None | Full detail |
 | Tone | Gothic, narrative | Grim, immediate, scene-setting | Plain, imperative, precise |
 
-Faction preset lore may mention identity (“vampire aristocracy”) but **mechanical limits** live in `rules/retinue.md`.
+Faction preset lore may mention identity (“vampire aristocracy”) but **mechanical limits** live in `rules/archetypes.md` and `rules/traditions.md`.
 
 ---
 
@@ -547,14 +547,14 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 | Topic | Status |
 |---|---|
 | Design TODOs | Track unresolved rules decisions in `decision-log.md` Ideas |
-| Fighter card typography | Action names, stat order, reminder box layout |
+| Fighter card typography | Action names, attribute order, reminder box layout |
 | Condition icons | Downed / Stunned / Hidden on cards |
 | **OOA** on cards | Abbreviation vs full **Out of Action** |
 | **feat** / **Domain feat** entries | Extend this guide when feat format is locked |
 | **damage** vs **wound** | Some spell blurbs still say “damage”; prefer **hit** / **Wound** |
 | Spell card reminders | Confirm whether cards use compact spell lines or the full block text |
 | **Armor/shield conversion** | Failed defense dice → successful defense dice |
-| Scatter die | Define scatter die notation in `rules/equipment.md` (Bombs) |
+| Scatter die | Define scatter die notation in `rules/weapons.md` (Bombs) |
 | Opponent-controlled fighters | Standard phrase for “your opponent controls it for its activation” |
 
 ---
@@ -564,15 +564,15 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 - [ ] Terms match this glossary
 - [ ] Actions and conditions **bold** on first use in the section
 - [ ] Distances use **"** notation
-- [ ] Dice use **1d6** / **2d6** / named stat checks; **casting roll** / **primer roll** (not **gate**)
+- [ ] Dice use **1d6** / **2d6** / named attribute checks; **casting roll** / **primer roll** (not **gate**)
 - [ ] Table data not duplicated in surrounding prose
 - [ ] No superseded rules or rename callouts in player text
 - [ ] US spelling
 - [ ] **fighter** not **model** / **unit**
 - [ ] **retinue** not **warband**
 - [ ] **skip activation** not **forgo** / **forgone**
-- [ ] Core-rules procedures state the default only — gear, feat, spell, and keyword overrides live on their own entries, not inline in core rules
-- [ ] Shared sub-routines **repeated verbatim** where relevant (grep all copies after editing `core-rules.md`, `retinue.md`, or `equipment.md`)
+- [ ] Core procedures state the default only — gear, feat, spell, and keyword overrides live on their own entries, not inline in core rules
+- [ ] Shared sub-routines **repeated verbatim** where relevant (grep all copies after editing `combat.md`, `magic.md`, or `weapons.md`)
 - [ ] Cross-refs use markdown links with readable labels (not raw file paths in backticks)
 - [ ] One-off rules link to the canonical file (subsystem name as link text)
 - [ ] No lore or designer history in procedure text

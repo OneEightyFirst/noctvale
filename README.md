@@ -15,10 +15,12 @@ This repository contains the working design documents for Noctvale — rules, re
 ```
 rules/
   intro.md               — Setting, premise, backstory, factions, and game summary
-  core-rules.md          — What you need, setup, action sequence, actions, conditions, combat
-  retinue.md             — Retinue building, archetypes, Domains, Traditions, feats, magic
-  equipment.md           — Weapons, gear, alchemy, and companions
-  campaign.md            — Campaign flow, leveling, scenarios, post-game, Survival Rolls, economy
+  what-you-need-to-play.md, attributes.md, battle-setup.md, the-turn.md
+  actions.md, combat.md, conditions.md
+  retinue-building.md, archetypes.md, traditions.md, feats.md, domains.md, magic.md
+  crown-costs.md, weapons.md, gear.md, companions.md
+  how-to-run-a-campaign.md, advancement.md, scenarios.md, post-game-sequence.md, survival-rolls.md, economy.md
+  chapter-movement-log.md — Ledger for the split from combined files into chapter files
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
 decision-log.md          — Design and builder decisions (one entry per commit)

@@ -168,7 +168,7 @@ When evaluating a new mechanic, ask:
 
 ### Campaign & economy
 - [ ] Does it connect to Relics, XP spend, or post-game tables?
-- [ ] Does it create a real choice (sell now vs. hoard, Loot instead of fighting, spend XP on stat vs. feat)?
+- [ ] Does it create a real choice (sell now vs. hoard, Loot instead of fighting, spend XP on attribute vs. feat)?
 - [ ] Does it update Retinue Rating fairly?
 
 ### Balance & underdog play
@@ -193,7 +193,7 @@ See `decision-log.md` Ideas for unresolved design decisions.
 
 - **Death Trigger:** On Out of Action — morale, faction payoff, environmental response.
 - **Feat system:** Domain feat lists — serve Tenet 2 within Tenet 3's complexity budget.
-- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/core-rules.md#fear-panic-and-insanity`).
+- **Sanity (Sa):** Fear/Panic/Insanity exist; broader Sa uses remain open (`rules/conditions.md#fear-panic-and-insanity`).
 
 ---
 

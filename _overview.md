@@ -25,25 +25,25 @@ Noctvale is a grimdark tabletop skirmish miniatures game where small retinues cl
 
 | System | File |
 |---|---|
-| Stats & Species Profiles | `rules/core-rules.md` |
-| Combat (Might/Skill Dice Pool, Crits, Defense) | `rules/core-rules.md#combat` |
-| Conditions (Downed, Stunned, Out of Action) | `rules/core-rules.md#conditions` |
-| Sanity (Fear, Panic, Insanity) | `rules/core-rules.md#fear-panic-and-insanity` |
-| Actions & Engagement | `rules/core-rules.md#actions` |
-| Battle setup and Difficult Terrain | `rules/core-rules.md#standard-battle-set-up` |
-| Targeting, LoS, Cover, Friendly Fire | `rules/core-rules.md#targeting-line-of-sight-and-cover` |
-| Magic System (casting, triangles, spell lists) | `rules/retinue.md#magic` |
-| Creature & Special Fighter Profiles | `rules/retinue.md#shared-profiles` |
-| Companions | `rules/equipment.md#companions` |
-| Feats (Archetype & Domain) | `rules/retinue.md#feats` |
-| Gear (weapons and equipment) | `rules/equipment.md` |
-| Survival Rolls | `rules/campaign.md#survival-rolls` |
-| Post-Game Sequence | `rules/campaign.md#post-game-sequence` |
-| Relic Economy | `rules/campaign.md#economy` |
-| Retinue (Domains, Traditions) | `rules/retinue.md` |
-| Archetype chapters | `rules/retinue.md#archetype-chapters` |
-| Retinue Building | `rules/retinue.md#building-a-retinue` |
-| Scenarios | `rules/campaign.md#scenarios` |
+| Attributes & Ancestry Profiles | `rules/attributes.md` |
+| Combat (Might/Skill Dice Pool, Crits, Defense) | `rules/combat.md` |
+| Conditions (Downed, Stunned, Out of Action) | `rules/conditions.md` |
+| Sanity (Fear, Panic, Insanity) | `rules/conditions.md#fear-panic-and-insanity` |
+| Actions & Engagement | `rules/actions.md` |
+| Battle setup and Difficult Terrain | `rules/battle-setup.md` |
+| Targeting, LoS, Cover, Friendly Fire | `rules/combat.md#targeting-line-of-sight-and-cover` |
+| Magic System (casting, triangles, spell lists) | `rules/magic.md` |
+| Creature & Special Fighter Profiles | `rules/magic.md` |
+| Companions | `rules/companions.md` |
+| Feats (Archetype & Domain) | `rules/feats.md` |
+| Gear (weapons and equipment) | `rules/crown-costs.md`, `rules/weapons.md`, `rules/gear.md` |
+| Survival Rolls | `rules/survival-rolls.md` |
+| Post-Game Sequence | `rules/post-game-sequence.md` |
+| Relic Economy | `rules/economy.md` |
+| Retinue (Domains, Traditions) | `rules/retinue-building.md`, `rules/traditions.md`, `rules/domains.md` |
+| Archetype chapters | `rules/archetypes.md` |
+| Retinue Building | `rules/retinue-building.md` |
+| Scenarios | `rules/scenarios.md` |
 | Decision Log | `decision-log.md` (one entry per commit — **date + title**; update before every commit) |
 
 ---

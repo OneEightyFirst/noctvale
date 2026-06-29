@@ -1,6 +1,6 @@
 # Noctvale Quick Reference
 
-Table reference for mid-battle rules. Stats, spells, traditions, feats, and full gear lists live on fighter cards and in the rulebook.
+Table reference for mid-battle rules. Attributes, spells, traditions, feats, and full gear lists live on fighter cards and in the rulebook.
 
 <!-- PRINT: FRONT — footer: Turn & Actions -->
 
@@ -66,11 +66,11 @@ Table reference for mid-battle rules. Stats, spells, traditions, feats, and full
 >
 > **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
 >
-> **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** stat modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the stat used for that attack.
+> **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
 >
-> **Step 4 — Roll defense:** Defender **Might** + **Skill**. Might dice use **Might** checks. Skill dice use **Skill** checks. Add bonus defense dice from cover, **Brace**, spells, feats, or scenario rules. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](../rules/equipment.md#equipment).)*
+> **Step 4 — Roll defense:** Defender **Might** + **Skill**. Might dice use **Might** checks. Skill dice use **Skill** checks. Add bonus defense dice from cover, **Brace**, spells, feats, or scenario rules. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](../rules/gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -131,9 +131,9 @@ If none apply, **6**s are normal hits.
 
 When targeted by a **Ranged** action, the target may perform **1 free action** after the **Attack Sequence** resolves — even on a miss. **Cast** actions do not trigger this. Cannot react while your player is activating fighters. One reaction per **Ranged** attack; reactions cannot chain.
 
-### Casting Roll (2d6 + Casting stat)
+### Casting Roll (2d6 + Casting Attribute)
 
-Roll **2d6 + the spell's Casting stat** against the spell's casting difficulty.
+Roll **2d6 + the spell's Casting attribute** against the spell's casting difficulty.
 
 | Result | Effect |
 |---|---|
@@ -203,7 +203,7 @@ Active → Downed → Stunned → Out of Action
 |---|---|
 | **Caster** | Knows spells; may perform **Cast** |
 | **Large** | Cannot **Hide** |
-| **Swarm** | **Skill** = current **Wounds**; enemies **+1 Hit** stat vs this fighter; never **Downed**/**Stunned** — **0 Wounds** → **Out of Action** |
+| **Swarm** | **Skill** = current **Wounds**; enemies **+1 Hit** attribute vs this fighter; never **Downed**/**Stunned** — **0 Wounds** → **Out of Action** |
 | **Summon (*value*)** | Summoned fighter; duration in rounds or activations per **value** |
 | **Hidden** | Cannot be targeted by **Ranged**/**Cast** beyond **6"**; lost on **Melee**, **Ranged**, **Cast**, **Mercy Kill**, **Charge**, **Climb**, **Jump**, or moving within **6"** of an enemy; **Aim** does not break **Hidden** |
 | **Fly** | Ignore vertical distance for **Move** and **Jump**; must end on a legal surface |

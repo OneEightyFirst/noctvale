@@ -18,7 +18,31 @@ function getGitSha() {
 
 const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf8"));
 
-const RULES_PAGE_DIRS = ["core-rules", "retinue", "equipment", "campaign"];
+const RULES_PAGE_DIRS = [
+  "actions",
+  "advancement",
+  "archetypes",
+  "attributes",
+  "battle-setup",
+  "campaign",
+  "combat",
+  "companions",
+  "conditions",
+  "core-rules",
+  "domains",
+  "economy",
+  "equipment",
+  "feats",
+  "gear",
+  "magic",
+  "post-game",
+  "retinue",
+  "scenarios",
+  "survival-rolls",
+  "the-turn",
+  "traditions",
+  "weapons",
+];
 
 export default defineConfig({
   plugins: [

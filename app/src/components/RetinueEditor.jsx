@@ -1471,7 +1471,7 @@ const FighterCard = memo(function FighterCard({
           <PickerField
             wrapper="panel"
             panelTitle={type.boost.label}
-            actionLabel="Select stat boosts"
+            actionLabel="Select attribute boosts"
             hasSelection={fighter.statBoosts.length > 0}
             statusPill={
               <Pill tone={fighter.statBoosts.length === type.boost.count ? "amber" : "zinc"}>
@@ -1491,8 +1491,8 @@ const FighterCard = memo(function FighterCard({
                 <EmptySummary />
               )
             }
-            modalAriaLabel="Select stat boosts"
-            modalEyebrow="Stat boosts"
+            modalAriaLabel="Select attribute boosts"
+            modalEyebrow="Attribute boosts"
             modalTitle={fighter.name}
             modalHeaderSummary={
               <Pill tone={fighter.statBoosts.length === type.boost.count ? "amber" : "zinc"}>
@@ -2131,7 +2131,7 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
   const warnings = [];
   if (!type) return warnings;
   if (type.boost && fighter.statBoosts.length !== type.boost.count) {
-    warnings.push(`${type.name} needs ${type.boost.count} stat boost${type.boost.count === 1 ? "" : "s"}.`);
+    warnings.push(`${type.name} needs ${type.boost.count} attribute boost${type.boost.count === 1 ? "" : "s"}.`);
   }
   if (type.builtInChoice && !fighter.builtInChoice) warnings.push(`${type.name} needs a built-in training choice.`);
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);

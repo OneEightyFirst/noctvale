@@ -59,6 +59,24 @@ Open questions:
 
 ---
 
+## 2026-06-29 — Poisoned slow damage
+
+**Decision:** Change **Poisoned** from a flat **−1 Might** affliction into an ongoing condition. At the start of each activation, a **Poisoned** fighter makes a **Might** check. On a pass, remove **Poisoned**. On a failure, the fighter suffers **1 Wound** and remains **Poisoned**. Remove **Poisoned** from the attribute modifier cap example because it no longer modifies an attribute.
+
+**Reasoning:** Poison should feel like a slow toxin rather than another stat penalty. The new rule creates a clear token-driven table state, gives tough fighters a way to shake it off, and routes harm through **Wounds** so it supports Noctvale's lethal-but-recoverable injury flow.
+
+## 2026-06-29 — Split rules into chapter files
+
+**Decision:** Split the combined player-facing rules sources into one chapter per Markdown file. Move **Core Rules** sections into `rules/what-you-need-to-play.md`, `rules/attributes.md`, `rules/battle-setup.md`, `rules/the-turn.md`, `rules/actions.md`, `rules/combat.md`, and `rules/conditions.md`; move retinue material into `rules/retinue-building.md`, `rules/archetypes.md`, `rules/traditions.md`, `rules/feats.md`, `rules/domains.md`, and `rules/magic.md`; move equipment material into `rules/crown-costs.md`, `rules/weapons.md`, `rules/gear.md`, and `rules/companions.md`; move campaign material into `rules/how-to-run-a-campaign.md`, `rules/advancement.md`, `rules/scenarios.md`, `rules/post-game-sequence.md`, `rules/survival-rolls.md`, and `rules/economy.md`. Add `rules/chapter-movement-log.md` to record the source-to-destination movement and update the rules-site build list, navigation, current routing docs, and local Vite dev routes for every generated chapter URL.
+
+**Reasoning:** The public rules should read as ordered rulebook chapters, not a handful of dense reference pages. Making each chapter a file keeps the source tree aligned with the site structure before any prose rewrite begins, and the movement ledger gives a checkable record that this pass moved existing rules instead of dropping or redesigning them.
+
+## 2026-06-29 — Attributes terminology and presentation
+
+**Decision:** Rename the core fighter values from **Stats** to **Attributes** in current player-facing rules, style guidance, wiki navigation, print reference text, and builder-facing labels. Rewrite the opening **Core Rules** attributes section in prose: define **Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, **Sanity**, and **Wounds** individually, keep **Attribute Checks** as the shared **1d6 + attribute**, **8+** procedure, and retain the baseline ancestry profile table.
+
+**Reasoning:** **Attributes** keeps the category short without the flatness of **Stats** or the length of **Characteristics**. A prose-led opening teaches what the profile values mean before players meet the table, while preserving the existing math, ancestry profiles, campaign caps, modifier cap, and Strike Pool rules.
+
 ## 2026-06-28 — Core rules movement, actions, and finisher pass
 
 **Decision:** Refine **Core Rules** for table play clarity. Add **Measuring Distances** and Warcry-style horizontal movement (cross terrain **≤1"** freely except on **Crawl**; **Climb** at half **M**, chain two **Climbs** per activation). Move **Engagement**, **Falling**, and **Overwatch** into blockquote callouts. Number **Standard Battle Set-Up** (terrain → objectives → initiative → deployment) and restore **Difficult Terrain** as its own subsection. Tighten **Overwatch** (shortfall tokens, skip counts as activation, any single action as reaction). Morale uses **Will** checks; **Escaped** fighters are not **lost**; remove core **Tradition** rout bonus (defer to Tradition entries). **Aim** grants nat **6** crits on the next **Ranged** action (**5+** if the weapon already crit on **6**). **Mercy Kill** blocked when any **Active** or **Downed** enemy is in engagement range. **Aim** no longer breaks **Hidden**. Add **Climbing Rope** adventuring gear in `rules/equipment.md` and the builder. Update wiki nav (`Measuring Distances`, **Engagement**, anchor fixes, blockquote heading extraction). Sync print quick-reference and cheat sheets. Style guide: core rules state baseline only — gear/feat exceptions live on their entries.

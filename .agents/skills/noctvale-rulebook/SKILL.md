@@ -15,9 +15,9 @@ Read in order:
 1. `AGENTS.md` — collaboration workflow (proposal-first unless directed)
 2. `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — glossary, dice format, Quick Checklist
 3. `NOCTVALE_DESIGN_TENETS.md` — when adding or changing mechanics
-4. Live source for the section you are rewriting (usually `rules/core-rules.md`)
+4. Live source for the section you are rewriting (usually one of the `rules/*.md` chapter files)
 5. `rules/_shared-snippets.md` — shared sub-routines (Attack Sequence, Apply Wounds, etc.)
-6. **Gold standard:** `rules/core-rules.md` Action Sequence (Round at a Glance, turn example)
+6. **Gold standards:** `rules/the-turn.md` Turn Structure and `rules/combat.md` Attack Sequence
 
 Do not change mechanics while rewriting voice unless the user explicitly asks.
 
@@ -111,12 +111,12 @@ Every major chapter follows this structure. Do not skip steps.
 
 ## Chapter Map (core rules rewrite)
 
-Use Mordheim-style flow when restructuring `rules/core-rules.md`:
+Use Mordheim-style flow when restructuring core rules chapter files:
 
 | Chapter | Covers |
 |---|---|
 | What You Need | Components, board, dice |
-| Fighters & Stats | Profiles, stat checks, species baselines |
+| Fighters & Attributes | Profiles, attribute checks, species baselines |
 | Setting Up a Battle | Deployment, initiative, groups |
 | The Turn | Rounds, activations, Overwatch tokens — see gold standard chapter |
 | Movement | Move, Charge, Climb, Scramble, Jump, Retreat, Escape |
@@ -127,7 +127,7 @@ Use Mordheim-style flow when restructuring `rules/core-rules.md`:
 | Psychology | Sanity, Fear, Panic, Insanity |
 | Special Situations | Falling, difficult terrain, modifiers, ending battle, Overwatch detail |
 
-Draft rulebook prose directly in canonical `rules/*.md` and `campaign/campaign.md`. Use `*[Placeholder]*` for fluff until late-stage writing.
+Draft rulebook prose directly in canonical `rules/*.md` chapter files. Use `*[Placeholder]*` for fluff until late-stage writing.
 
 ## Rewrite Workflow
 
@@ -170,7 +170,7 @@ Before finishing any rulebook chapter:
 - [ ] **Example:** section at chapter end
 - [ ] All mechanics from source preserved — nothing dropped, nothing invented
 - [ ] Terms match style guide glossary
-- [ ] Distances use **"**; dice use **1d6** / named stat checks
+- [ ] Distances use **"**; dice use **1d6** / named attribute checks
 - [ ] Cross-refs are markdown links with readable labels
 - [ ] Shared snippets match `_shared-snippets.md` verbatim
 - [ ] No designer history, no “we changed this because”, no peer-game compare notes in player text

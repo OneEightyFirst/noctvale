@@ -13,7 +13,7 @@ For **core rules chapters**, **campaign rulebook prose**, and **scenario ruleboo
 read and follow `.agents/skills/noctvale-rulebook/SKILL.md` first.
 
 That skill locks the approved print rulebook style (chapter fluff, prose-first rules,
-narrative examples). Gold standard: `rules/long-form/chapter-the-turn.md`.
+narrative examples). Gold standards: `rules/the-turn.md` and `rules/combat.md`.
 
 For **gear tables, spell lines, fighter cards, and campaign tables**, use **reference voice**
 in `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — no chapter fluff.
@@ -26,7 +26,7 @@ in `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — no chapter fluff.
 3. For rulebook chapters, also read `noctvale-rulebook` skill (above).
 4. For new or changed mechanics, read `NOCTVALE_DESIGN_TENETS.md` and evaluate
    the proposal against the ranked tenets.
-5. Read the relevant live files in `rules/`, `campaign/`, or scenario packets.
+5. Read the relevant live chapter files in `rules/` or scenario packets.
    Live rules outrank older decision-log history.
 6. Check `rules/_shared-snippets.md` before repeating an Attack Sequence, Apply
    Wounds, Casting Roll, Primer Roll, or other shared sub-routine.
@@ -49,5 +49,4 @@ in `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — no chapter fluff.
   snippet already exists.
 - Leave intentionally unfinished `TBD` spell or roster work unresolved unless the
   user explicitly asks to finish it.
-- Draft new rulebook chapters in `rules/long-form/chapter-[slug].md` until approved
-  for merge into live files.
+- Draft new rulebook prose in the relevant live chapter file once approved; use separate drafts only when the user explicitly asks for a draft surface.

@@ -60,4 +60,4 @@ Delete instructional comments before publishing.
 
 ## Gold Standard
 
-Completed example: `rules/core-rules.md` Action Sequence
+Completed examples: `rules/the-turn.md` Turn Structure and `rules/combat.md` Attack Sequence

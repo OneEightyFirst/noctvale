@@ -69,7 +69,7 @@ Default Tradition pairings for each preset: `rules/retinue.md` (**Traditions —
 
 ## Feat design notes
 
-Feats express a fighter's identity beyond stats, weapons, and spells.
+Feats express a fighter's identity beyond attributes, weapons, and spells.
 
 Feats should bend existing rules instead of replacing them. A feat may improve or modify an action, defense roll, Wound state, post-game roll, or campaign choice. A feat should not grant broad permanent to-hit bonuses, extra full actions, reusable rerolls, spell-like effects without a **casting roll**, or require another named feat.
 
@@ -111,7 +111,7 @@ creating a cleanse / debuff dynamic between magic categories.
 
 ### Swarm wound budgets *(design)*
 
-**Swarm** profiles use fixed **W** on the stat line; **Sk** equals **W**. When
+**Swarm** profiles use fixed **W** on the attribute profile; **Sk** equals **W**. When
 authoring new swarms, treat **3**–**6** as the normal wound band — small vermin
 at the low end, dense or aerial masses at the high end. Current profiles:
 

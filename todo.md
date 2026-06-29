@@ -67,7 +67,7 @@ Create a small playtest weapon list covering the weapon triangle + ranged + fire
 
 Finish remaining spell gaps in `rules/retinue.md#magic` and sync builder data.
 Silver Hunt is **Mortal** (no spells); Nightpack is **Nature** (full domain list).
-Casting (**2d6 + Casting stat**, Mishap on double 1s) and core afflictions are
+Casting (**2d6 + Casting attribute**, Mishap on double 1s) and core afflictions are
 locked in `rules/core-rules.md`.
 
 Resolve the remaining `TBD` items that players can see in the app and the rules
@@ -116,7 +116,7 @@ Restructure `rules/retinue.md#archetype-chapters` for rulebook readability (Mord
 Build full playtest rosters for Silver Hunt and Nightpack.
 
 - [x] Define fighter roles per archetype (**Leader**, **Elite**, **Specialist**, **Rank** — see `rules/retinue.md#building-a-retinue`)
-- [ ] Assign stat lines (based on species baselines + faction adjustments)
+- [ ] Assign attribute profiles (based on ancestry baselines + faction adjustments)
 - [ ] Assign weapons and equipment from Phase 3 list
 - [ ] Assign Domain spells where applicable (Nightpack: **Nature**; Silver Hunt: **Mortal**, no caster)
 - [ ] Assign feats from Phase 5b lists
@@ -149,7 +149,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 
 Create fighter card template and retinue roster sheet.
 
-- [ ] Design fighter card layout (stats, weapons, spells, feats, wounds, conditions)
+- [ ] Design fighter card layout (attributes, weapons, spells, feats, wounds, conditions)
 - [ ] Design retinue roster sheet (fighter list, equipment, Relics, currency)
 - [ ] Decide on templating / layout tool
 
@@ -175,7 +175,7 @@ Things identified across the design docs that don't fit neatly into one phase.
 
 From fresh-eyes rules read-through and designer responses.
 
-- [ ] **Firearm / damage-spell line-of-fire friendly fire** — Rethink whether the current miss → 1d6 → hit intervening friendly rule works in this system; may need a second check. Prior design context: `decision-log.md` (2026-06-23 — Named stat checks and friendly fire targeting).
+- [ ] **Firearm / damage-spell line-of-fire friendly fire** — Rethink whether the current miss → 1d6 → hit intervening friendly rule works in this system; may need a second check. Prior design context: `decision-log.md` (2026-06-23 — Named attribute checks and friendly fire targeting).
 - [ ] **Combat edge-case examples** — Add more worked examples like `rules/core-rules.md#example-combat` (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
 - [ ] **Feat placement** — Decide whether archetype feats live in archetype chapters or only in `#feats`, not both.
 - [ ] **Capture and ransom** — Post-battle capture effect; ransom cost; heirloom recovery (`Dynasts` mentions capture today with no procedure).
@@ -204,7 +204,7 @@ From fresh-eyes rules read-through and designer responses.
 - [x] **Armor/shield defense terminology:** Use **convert** for failed defense dice → success conversion (`rules/equipment.md`, `rules/core-rules.md#combat`)
 - [x] **Retinue building system:** Constrained points — 1000 Crown budget + Archetype composition limits (`rules/retinue.md#building-a-retinue`)
 - [x] **Species costing:** Elf and Dwarf +10 Crowns over Human baseline
-- [x] **Campaign XP scale** — 10-battle campaign; **Feat** **3 XP**, **Stat** **8 XP**; battle/scenario/post-game earns defined (`rules/campaign.md`; decision log 2026-06-24).
+- [x] **Campaign XP scale** — 10-battle campaign; **Feat** **3 XP**, **Attribute** **8 XP**; battle/scenario/post-game earns defined (`rules/campaign.md`; decision log 2026-06-24).
 - [ ] **Tune campaign XP** earn/spend rates after first playtest.
 - [x] **Weapon access through feats:** **Proficiency** (first feat on each Archetype list; **Firearms** on Mortal Domain list). One-Handed, Two-Handed, Archery (bows + crossbows), Thrown. Feat picks at creation: Leader/Elite 2, Specialist 1 + built-in, Rank 1. See `rules/retinue.md#feats`, `rules/equipment.md`, `rules/retinue.md`.
 - [x] **Survival Roll location tables:** Generic, Ruins, Chapel, Abandoned Village, Hidden Grove, Ancient Road, Graveyard added (`rules/campaign.md#survival-rolls`)
@@ -218,7 +218,7 @@ From fresh-eyes rules read-through and designer responses.
 Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other retinue member — summoning tables are a post-alpha feature.**
 
 - [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer fighters to field)
-- [ ] Decide if variants are mechanically distinct stat lines or cosmetic with minor trait swaps
+- [ ] Decide if variants are mechanically distinct attribute profiles or cosmetic with minor trait swaps
 - [x] Confirm all daemons share a **Daemon** keyword (for Radiant Strike +1 Mt vs Daemons)
 - [x] Decide if Imp wings have a mechanical fly rule or are visual only — **Fly** keyword and rule on Imp profile
 - [ ] Decide how many summon rolls a retinue gets (caster count? fixed? points budget?)

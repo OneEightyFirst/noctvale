@@ -13,14 +13,14 @@ Before writing, revising, or proposing any player-facing rules text, read and fo
 
 For **rulebook chapters** (core rules, campaign prose sections, scenario rulebook text),
 also follow `.agents/skills/noctvale-rulebook/SKILL.md`. Gold-standard example:
-`rules/core-rules.md` Action Sequence (Round at a Glance and turn example).
+`rules/combat.md` Attack Sequence and `rules/the-turn.md` Turn Structure.
 
 **Fluff placeholders** (`*[Placeholder]*`, scenario lore, archetype chapter openers) are intentional until late-stage writing — do not treat missing fluff as a rules gap during mechanics work.
 
 This applies to:
 
 - Core rules in `rules/`
-- Campaign rules in `rules/campaign.md`
+- Campaign rules in `rules/how-to-run-a-campaign.md`, `rules/advancement.md`, `rules/scenarios.md`, `rules/post-game-sequence.md`, `rules/survival-rolls.md`, and `rules/economy.md`
 - Scenario packets and scenario drafts
 - Weapon, spell, feat, and equipment entries
 - Fighter cards and reminder text
@@ -34,7 +34,7 @@ Use the guide's glossary and formatting conventions exactly. In particular:
 - Write **Out of Action** in full on first use in a section.
 - **Chapter fluff** opens major rulebook sections in *italics*, separated from rules by `---`; setting lore stays in `rules/intro.md`.
 - Write rulebook procedures **prose first, bullets for exceptions** — not reference-manual **Cost:** blocks by default.
-- When editing shared sub-routines (**Attack Sequence**, **Apply Wounds**, **Casting Roll**, **Primer Roll**), grep the repo for each boxout heading and keep all copies identical. Primary sources: `rules/core-rules.md` Combat, `rules/retinue.md` Magic, `rules/equipment.md` Firearms. Reference table in `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
+- When editing shared sub-routines (**Attack Sequence**, **Apply Wounds**, **Casting Roll**, **Primer Roll**), grep the repo for each boxout heading and keep all copies identical. Primary sources: `rules/combat.md`, `rules/magic.md`, and `rules/weapons.md`. Reference table in `decision-log.md` (2026-06-21 — Retire `_shared-snippets.md`).
 
 Before finalizing rules text, run through the Quick Checklist at the end of
 `NOCTVALE_RULEBOOK_STYLE_GUIDE.md`.
