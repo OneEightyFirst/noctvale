@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npm run build:rules && vite",
     "build:rules": "node scripts/build-rules.mjs",
-    "build": "npm run build:rules && vite build",
+    "build": "node scripts/check-firebase-env.mjs && npm run build:rules && vite build",
     "preview": "vite preview",
     "deploy:rules": "firebase deploy --only firestore:rules",
     "deploy:functions": "npm install --prefix functions && firebase deploy --only functions"
