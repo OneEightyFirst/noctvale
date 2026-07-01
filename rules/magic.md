@@ -67,7 +67,7 @@ Fighters with **Caster** choose spells from the list matching their **Domain** k
 
 Each **Domain** keyword's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley, Hellfire, Deathbolt, etc.) counts as one of those choices.
 
-Spells marked *(TBD)* are not yet playtest-ready.
+Rules marked *(TBD)* are not yet playtest-ready.
 
 Each domain has a standard ranged attack spell plus **6 additional spells**. **Casting attribute** is **Will** for Light, Arcane, and Nature; **Sanity** for Infernal, Necromancy, and Blood. **Hit** is the attribute used for the roll to hit on damage spells (**Ranged Combat** or **Close Combat**); **—** if the spell does not deal damage through the **Attack Sequence**. Apply **Hit** attribute modifiers to the attribute named by the spell.
 
@@ -92,7 +92,7 @@ Each domain has a standard ranged attack spell plus **6 additional spells**. **C
 **Casting:** **Will** 12+. **Range:** 12". **Attack:** **Ranged Combat**, target's **Sanity** as **Might**. Make a ranged spell attack. Use the target's **Sanity** attribute as the attack's **Might**. **Mishap:** Resolve the attack against the caster, using the target's **Sanity** as **Might**.
 
 #### Unwavering Resolve
-**Casting:** **Will** 10+. **Range:** 8" from caster. All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation. **Mishap:** The caster suffers **Panic** until the end of their next activation.
+**Casting:** **Will** 10+. **Range:** 8" from caster. All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation. **Mishap:** The caster becomes **Broken**.
 
 ### Arcane
 
@@ -267,7 +267,7 @@ At the end of each of that fighter's activations while **Possessed**, they make 
 **Casting:** **Will** 11+. **Range:** 12". Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy. **Mishap:** Enemies add +1 **Ranged Combat** or +1 **Close Combat** — whichever **Hit** attribute the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
 
 #### Venom
-**Casting:** **Will** 10+. **Range:** 12". Target enemy must pass a **Might** check. On a failure, the target becomes **Poisoned** — see [Conditions — Poisoned](conditions.md#poisoned). **Mishap:** The caster becomes **Poisoned**.
+**Casting:** **Will** 10+. **Range:** 12". Target enemy must pass a **Might** check. On a failure, the target gains **1 Affliction token** — see [Conditions — Afflictions](conditions.md#afflictions). **Mishap:** The caster gains **1 Affliction token**.
 
 #### Feral Form
 **Casting:** **Will** 11+. **Range:** 6". Target friendly fighter gains +2 **Might** and +1" **Movement** until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells. **Mishap:** The caster suffers −1 **Sanity** until the end of their next activation.
@@ -324,7 +324,7 @@ The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 **Casting:** **Sanity** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 2 **Might** / 2 **Skill**. Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer −1" **Movement** and take the spell's hit unless they pass a **Skill** check. **Mishap:** The blast centers on the caster.
 
 #### Wither
-**Casting:** **Sanity** 11+. **Range:** 12". Target enemy suffers **Weakened** until the start of the caster's next activation — see [Conditions — Weakened](conditions.md#weakened). **Mishap:** The caster suffers **Weakened** until the start of their next activation.
+**Casting:** **Sanity** 11+. **Range:** 12". Target enemy suffers **Withered** until the start of the caster's next activation — see [Conditions — Afflictions](conditions.md#afflictions). **Mishap:** The caster suffers **Withered** until the start of their next activation.
 
 #### Bone Blast
 **Casting:** **Sanity** 11+. **Range:** blast from caster. **Attack:** **Close Combat**, 1 **Might** / 4 **Skill**. Center the blast template on the caster. All fighters under the template except the caster are hit. **Mishap:** Resolve the attack against the caster.
@@ -419,7 +419,7 @@ Resolve binding during the **Post-Game Sequence**, before or in place of other c
 
 ## Afflictions
 
-**Poisoned**, **Weakened**, **Enfeebled**, **Bleeding**, and **Blinded** are defined in [Conditions](conditions.md#afflictions).
+**Afflictions**, **Bleeding**, **Blinded**, and **Broken** are defined in [Conditions](conditions.md#conditions).
 
 Attribute bonuses and penalties from stacked effects cannot exceed **+3** or **−3** per attribute — see [Special Rules — Attribute Modifiers](attributes.md#attribute-modifiers).
 

@@ -69,7 +69,7 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 **Bear:** Fighters gain +1 **Might** and −1 **Sanity**. **Sanity** cannot be reduced below 1.
 
-**Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may inflict **Poisoned** instead of 1 Wound. See [Conditions — Poisoned](conditions.md#poisoned).
+**Serpent:** When a fighter attacks with a melee weapon, 1 unblocked hit may add **1 Affliction token** instead of 1 Wound. See [Conditions — Afflictions](conditions.md#afflictions).
 
 **Hedge-walkers:** During deployment, up to 2 friendly fighters may start **Hidden** if each is within **1"** of terrain and outside the enemy deployment zone.
 
@@ -83,7 +83,7 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 **Equipment:** Unarmed attack. Cannot be changed.
 
-**Unarmed attack:** Unblocked hits inflict **Poisoned** in addition to normal Wounds. See [Conditions — Poisoned](conditions.md#poisoned).
+**Unarmed attack:** Unblocked hits add **1 Affliction token** in addition to normal Wounds. See [Conditions — Afflictions](conditions.md#afflictions).
 
 **Keywords:** **Undead**. **Fearless**. Immune to **Fear**, **Panic**, and **Insanity**.
 

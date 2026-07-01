@@ -41,6 +41,8 @@ const EQUIPMENT_GROUPS = (() => {
   return groups;
 })();
 
+const SHIELD_ITEM_IDS = new Set(["buckler", "shield", "tower-shield"]);
+
 function cx(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -239,9 +241,52 @@ function getSelectedEquipment(fighter) {
     .sort((a, b) => EQUIPMENT.indexOf(a.item) - EQUIPMENT.indexOf(b.item));
 }
 
-function getGearSlotsPillTone(slots) {
-  if (slots > 3) return "rose";
-  if (slots === 3) return "amber";
+function getOneHandedMeleeWeaponCount(fighter) {
+  return getSelectedEquipment(fighter).reduce((total, { item, quantity }) => {
+    if (item.kind === "weapon" && item.group === "One-Handed melee") return total + quantity;
+    return total;
+  }, 0);
+}
+
+function isRatExtraWeapon(item) {
+  if (item?.kind !== "weapon") return false;
+  if (item.group === "Firearms" || item.group === "Bombs") return false;
+  return item.slots === 1 && (item.group === "One-Handed melee" || item.group === "Thrown");
+}
+
+function getRatExtraWeaponCount(fighter) {
+  return getSelectedEquipment(fighter).reduce((total, { item, quantity }) => {
+    if (isRatExtraWeapon(item)) return total + quantity;
+    return total;
+  }, 0);
+}
+
+function fighterHasShield(fighter) {
+  return Object.entries(fighter.equipment ?? {}).some(([itemId, quantity]) => quantity > 0 && SHIELD_ITEM_IDS.has(itemId));
+}
+
+function isRatBeastman(tradition, selectedSpecialChoice) {
+  return tradition?.id === "beastmen" && selectedSpecialChoice?.id === "rat";
+}
+
+function getWeaponSlotLimit(fighter, tradition, selectedSpecialChoice) {
+  if (isRatBeastman(tradition, selectedSpecialChoice) && getRatExtraWeaponCount(fighter) > 0) return 4;
+  return 3;
+}
+
+function getDualWieldingRules(fighter) {
+  if (getOneHandedMeleeWeaponCount(fighter) < 2) return [];
+  return [
+    "Dual wielding: choose a primary and secondary one-handed melee weapon.",
+    "Add both weapons' +Mt and +Sk to the Strike Pool, to a maximum of 15 dice.",
+    "Use only the primary weapon's type and special rules. The secondary weapon adds dice only.",
+    "A fighter cannot use a shield while dual-wielding.",
+  ];
+}
+
+function getGearSlotsPillTone(slots, slotLimit = 3) {
+  if (slots > slotLimit) return "rose";
+  if (slots === slotLimit) return "amber";
   return "zinc";
 }
 
@@ -1105,6 +1150,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
               fighter={leaderFighter}
               archetype={archetype}
               tradition={tradition}
+              selectedSpecialChoice={selectedSpecialChoice}
               domain={domain}
               retinueChoices={retinueChoices}
               casterCount={casterCount}
@@ -1123,6 +1169,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
               fighter={fighter}
               archetype={archetype}
               tradition={tradition}
+              selectedSpecialChoice={selectedSpecialChoice}
               domain={domain}
               retinueChoices={retinueChoices}
               casterCount={casterCount}
@@ -1306,6 +1353,7 @@ const FighterCard = memo(function FighterCard({
   editing,
   archetype,
   tradition,
+  selectedSpecialChoice,
   domain,
   retinueChoices,
   casterCount,
@@ -1330,6 +1378,7 @@ const FighterCard = memo(function FighterCard({
   const featLimit = getFeatLimit(fighter, type);
   const cost = getFighterCost(fighter, type, tradition, domain);
   const slots = getGearSlots(fighter);
+  const slotLimit = getWeaponSlotLimit(fighter, tradition, selectedSpecialChoice);
   const selectedFeatRules = useMemo(
     () =>
       [...proficiencyFeats, ...archetype.feats, ...UNIVERSAL_FEATS, ...domainFeats].filter((feat) =>
@@ -1337,7 +1386,7 @@ const FighterCard = memo(function FighterCard({
       ),
     [proficiencyFeats, archetype.feats, domainFeats, fighter.feats],
   );
-  const fighterWarnings = getFighterWarnings(fighter, type, archetype, tradition, domain, spellLimit, slots, caster);
+  const fighterWarnings = getFighterWarnings(fighter, type, archetype, tradition, selectedSpecialChoice, domain, spellLimit, slots, slotLimit, caster);
   const hasMortal = hasKeyword(keywords, "Mortal");
   const showCasterOptions = !hasMortal && Boolean(type.caster);
   const canToggleCaster = type.caster?.mode === "optional" && !hasMortal;
@@ -1413,7 +1462,7 @@ const FighterCard = memo(function FighterCard({
                 </Pill>
               ))}
               <Pill>{ancestry.name}</Pill>
-              <Pill tone={slots > 3 ? "rose" : "zinc"}>{slots}/3 slots</Pill>
+              <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>
             </div>
             <Pill tone={cost > 0 ? "amber" : "zinc"} className="shrink-0">
               {formatCrownsAmount(cost)}
@@ -1691,9 +1740,11 @@ const FighterCard = memo(function FighterCard({
           archetype={archetype}
           type={type}
           tradition={tradition}
+          selectedSpecialChoice={selectedSpecialChoice}
           domain={domain}
           equipmentGroups={EQUIPMENT_GROUPS}
           slots={slots}
+          slotLimit={slotLimit}
           onUpdateQuantity={updateEquipment}
           onSkilledCraftsmanUpgrade={updateSkilledCraftsman}
         />
@@ -1810,6 +1861,7 @@ function WeaponProfileList({ fighter, weaponsOnly = false }) {
   const selectedEquipment = getSelectedEquipment(fighter);
   const weapons = selectedEquipment.filter(({ item }) => item.kind === "weapon");
   const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon");
+  const dualWieldingRules = getDualWieldingRules(fighter);
 
   if (weaponsOnly) {
     if (!weapons.length) return null;
@@ -1826,6 +1878,7 @@ function WeaponProfileList({ fighter, weaponsOnly = false }) {
             </div>
           </div>
         ))}
+        {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       </div>
     );
   }
@@ -1847,6 +1900,7 @@ function WeaponProfileList({ fighter, weaponsOnly = false }) {
           </div>
         </div>
       ))}
+      {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       {otherGear.length ? (
         <div className="flex flex-wrap gap-2">
           {otherGear.map(({ item, quantity }) => (
@@ -1874,7 +1928,7 @@ function RuleBlock({ title, rules }) {
   );
 }
 
-function EquipmentField({ fighter, archetype, type, tradition, domain, equipmentGroups, slots, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+function EquipmentField({ fighter, archetype, type, tradition, selectedSpecialChoice, domain, equipmentGroups, slots, slotLimit, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
   const selectedEquipment = getSelectedEquipment(fighter);
 
   return (
@@ -1883,14 +1937,14 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
       panelTitle="Equipment"
       actionLabel="Select equipment"
       hasSelection={selectedEquipment.length > 0}
-      statusPill={<Pill tone={getGearSlotsPillTone(slots)}>{slots}/3 slots</Pill>}
+      statusPill={<Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>}
       summary={<EquipmentSummary fighter={fighter} />}
       modalAriaLabel="Select equipment"
       modalEyebrow="Equipment selection"
       modalTitle={fighter.name}
       modalHeaderSummary={
         <>
-          <Pill tone={getGearSlotsPillTone(slots)}>{slots}/3 slots</Pill>
+          <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>
           {selectedEquipment.length ? (
             selectedEquipment.map(({ item, quantity }) => (
               <div key={item.id} className="rounded border border-night-800 bg-night-900 px-2 py-1 text-xs text-cream-100">
@@ -1909,6 +1963,7 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
           archetype={archetype}
           type={type}
           tradition={tradition}
+          selectedSpecialChoice={selectedSpecialChoice}
           domain={domain}
           equipmentGroups={EQUIPMENT_GROUPS}
           onUpdateQuantity={onUpdateQuantity}
@@ -1919,11 +1974,12 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
   );
 }
 
-function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, equipmentGroups, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+function EquipmentPickerContent({ fighter, archetype, type, tradition, selectedSpecialChoice, domain, equipmentGroups, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+  const ratExtraWeapon = isRatBeastman(tradition, selectedSpecialChoice);
   return (
     <>
       <div className="mb-2 rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
-        Each fighter has 3 weapon slots. Any fighter may equip a Dagger. Other weapons require matching proficiency.
+        Each fighter has 3 weapon slots. Any fighter may equip a Dagger. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Beastmen may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
       </div>
       <div className="space-y-3">
         {Object.entries(equipmentGroups).map(([group, items]) => {
@@ -2127,7 +2183,7 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
   );
 }
 
-function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLimit, slots, caster) {
+function getFighterWarnings(fighter, type, archetype, tradition, selectedSpecialChoice, domain, spellLimit, slots, slotLimit, caster) {
   const warnings = [];
   if (!type) return warnings;
   if (type.boost && fighter.statBoosts.length !== type.boost.count) {
@@ -2137,7 +2193,13 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);
   if (!caster && fighter.spells.length) warnings.push("Non-Caster has spells selected.");
   if (fighter.feats.length > getFeatLimit(fighter, type)) warnings.push(`Too many feats selected. Limit is ${getFeatLimit(fighter, type)}.`);
-  if (slots > 3) warnings.push(`Weapon slots exceed 3 by ${slots - 3}.`);
+  if (slots > slotLimit) warnings.push(`Weapon slots exceed ${slotLimit} by ${slots - slotLimit}.`);
+  if (isRatBeastman(tradition, selectedSpecialChoice) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {
+    warnings.push("Rat's extra weapon must be a one-handed weapon.");
+  }
+  if (getOneHandedMeleeWeaponCount(fighter) >= 2 && fighterHasShield(fighter)) {
+    warnings.push("Shield carried: cannot use it while dual-wielding.");
+  }
   if (hasSkilledCraftsmanFeat(fighter)) {
     const weapons = getFighterWeapons(fighter);
     if (weapons.length && !fighter.skilledCraftsman) {

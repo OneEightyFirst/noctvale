@@ -59,6 +59,24 @@ Open questions:
 
 ---
 
+## 2026-06-30 — Strike Pool cap and dual wielding
+
+**Decision:** Set a hard **15 dice** maximum for every Strike Pool after weapon bonuses and other dice bonuses are applied. Add dual wielding for fighters using two one-handed melee weapons: choose a primary and secondary weapon, add both weapons' +**Might** and +**Skill** values to the Strike Pool up to the **15 dice** cap, and use only the primary weapon's type and special rules for critical hits and other attack effects. A fighter cannot use a shield while dual-wielding.
+
+**Reasoning:** Maxed fighters can already reach very large pools, and a clear cap prevents additive weapon rules from making the attack step physically unwieldy. Dual wielding should feel like more offense without creating a second attack sequence, crit-fishing reroll engine, or shield-plus-off-hand default. Letting the secondary weapon add dice keeps the rule visible in the existing weapon profiles while preserving the primary weapon as the source of matchup identity.
+
+## 2026-06-30 — Affliction tokens and Broken
+
+**Decision:** Consolidate lasting fighter markers into a core token set: **Active**, **Downed**, **Stunned**, **Overwatch**, **Broken**, **Blinded**, **Hidden**, **Affliction**, **Bleeding**, and body tokens. Redefine **Affliction** as a stacking token condition: 1 token is **Weakened** (−1 **Might**), 2 tokens are **Enfeebled** (−1 **Might**, −1 **Skill**), and 3 tokens are **Withered** (−1 **Might**, −1 **Skill**, −1" **Movement**). Replace old **Poisoned** condition applications with Affliction tokens, make **Wither** apply **Withered**, and make rout failures and duration-based morale backlash use **Broken** as the single persistent morale state.
+
+**Reasoning:** Sticky table states should map to physical tokens, while immediate fear and insanity effects should resolve without adding marker overhead. A three-token Affliction stack gives poison and necromancy one shared degradation language with clear escalation. **Broken** absorbs persistent morale failure so **Fear**, **Panic**, and **Insanity** can remain effects instead of separate lasting token states.
+
+## 2026-06-29 — Retire Enfeebled
+
+**Decision:** Remove **Enfeebled** as a defined affliction, marker, style-guide term, print-reference row, and magic affliction reference. Keep **Weakened** as the active **−1 Might**, **−1 Skill**, and **−1" Movement** affliction, and clarify that only attribute-changing afflictions count toward the attribute modifier cap. Update print quick-reference text for **Poisoned** so it matches the current slow-damage rule. Remove stale support-text references to **Relic or Instrument** and **Overcharge** where no current rule uses those terms.
+
+**Reasoning:** **Enfeebled** had a condition definition but no current rule applied it, making it dead vocabulary for players to track. Removing it keeps the condition list tied to actual table states and avoids splitting attention between two nearly identical Might/Skill penalties. Cleaning stale support terms keeps the style and builder reminders aligned with the current **Icon** and weapon-outcome rules.
+
 ## 2026-06-29 — Poisoned slow damage
 
 **Decision:** Change **Poisoned** from a flat **−1 Might** affliction into an ongoing condition. At the start of each activation, a **Poisoned** fighter makes a **Might** check. On a pass, remove **Poisoned**. On a failure, the fighter suffers **1 Wound** and remains **Poisoned**. Remove **Poisoned** from the attribute modifier cap example because it no longer modifies an attribute.

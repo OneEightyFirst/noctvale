@@ -54,23 +54,19 @@ A fighter is removed from the battle. Resolve post-game consequences in the [Cas
 
 ## Afflictions
 
-Afflictions remain until their own rule removes them, the effect that applied them ends, or another rule removes them.
+Afflictions are conditions that sap a fighter's attributes. They are tracked with **Affliction tokens**.
 
-### Poisoned
+A fighter can have up to **3 Affliction tokens**. If an effect would add more, keep only **3**. Unless a rule gives a duration, Affliction tokens remain for the rest of the battle.
 
-While a fighter is **Poisoned**, make a **Might** check at the start of each activation.
+| Affliction tokens | Name | Effect |
+|---|---|---|
+| 1 | **Weakened** | −1 **Might** |
+| 2 | **Enfeebled** | −1 **Might**, −1 **Skill** |
+| 3 | **Withered** | −1 **Might**, −1 **Skill**, and −1" **Movement** |
 
-**Pass:** remove **Poisoned**.
+If a rule applies **Weakened**, **Enfeebled**, or **Withered**, add enough Affliction tokens to reach that tier.
 
-**Fail:** The fighter suffers **1 Wound** and remains **Poisoned**.
-
-### Weakened
-
-The fighter suffers −1 **Might**, −1 **Skill**, and −1" **Movement** until the effect that applied **Weakened** ends. If no duration is given, **Weakened** lasts for the rest of the battle.
-
-### Enfeebled
-
-The fighter suffers −1 **Might** and −1 **Skill** until the effect that applied **Enfeebled** ends. If no duration is given, **Enfeebled** lasts for the rest of the battle.
+If an effect applies Affliction tokens for a set duration, remove only the tokens from that effect when the duration ends.
 
 ### Bleeding
 
@@ -81,6 +77,16 @@ At the **start of each activation**, make a **Will** check. **Pass:** remove **B
 ### Blinded
 
 The fighter cannot make **Melee** or **Ranged** attacks. If no duration is given, **Blinded** lasts until the end of the fighter's next activation.
+
+### Broken
+
+A **Broken** fighter has lost the will to stand their ground.
+
+At the start of a **Broken** fighter's activation, make a **Will** check.
+
+**Pass:** remove **Broken**. The fighter activates normally.
+
+**Fail:** The fighter must spend **both actions** this activation moving toward the nearest **battlefield edge** to **Escape**. They may use **Move**, **Retreat**, **Scramble**, **Jump**, or **Climb** only. **Downed** fighters use **Crawl** instead of **Move**. If two or more edges are equally close, the player chooses. Move as directly as possible.
 
 ### Fear, Panic, and Insanity
 

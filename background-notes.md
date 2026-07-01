@@ -44,7 +44,7 @@ or polished rulebook prose.
 
 ## Named Faction Presets
 
-Twelve established factions exist in Noctvale lore. Each is an example **Archetype** + **Domain** pairing with a suggested **Tradition** and draft lore in `rules/retinue.md` under each Archetype's **Example Factions**. Presets do not grant exclusive rules — each fighter must still meet keyword requirements for feats, spells, and gear.
+Twelve established factions exist in Noctvale lore. Each is an example **Archetype** + **Domain** pairing with a suggested **Tradition** and draft lore in `rules/archetypes.md` under each Archetype's **Example Factions**. Presets do not grant exclusive rules — each fighter must still meet keyword requirements for feats, spells, and gear.
 
 | Faction | Archetype | Domain | Identity |
 |---|---|---|---|
@@ -63,7 +63,7 @@ Twelve established factions exist in Noctvale lore. Each is an example **Archety
 
 Two presets can share the same Archetype + Domain but suggest different Traditions, equipment, and playstyle. **Inquisition** and **Silver Hunt** are both Hunters + Mortal — Inquisition leans Zealots, anti-magic denial, and guns; Silver Hunt leans Alchemists, poisons, and silver weapons.
 
-Default Tradition pairings for each preset: `rules/retinue.md` (**Traditions — Named preset defaults**).
+Default Tradition pairings for each preset: `rules/traditions.md` (**Traditions — Named preset defaults**).
 
 ---
 
@@ -73,7 +73,7 @@ Feats express a fighter's identity beyond attributes, weapons, and spells.
 
 Feats should bend existing rules instead of replacing them. A feat may improve or modify an action, defense roll, Wound state, post-game roll, or campaign choice. A feat should not grant broad permanent to-hit bonuses, extra full actions, reusable rerolls, spell-like effects without a **casting roll**, or require another named feat.
 
-Player-facing feat lists and eligibility: `rules/retinue.md` (**Feats**).
+Player-facing feat lists and eligibility: `rules/feats.md` (**Feats**).
 
 ---
 
@@ -91,22 +91,22 @@ Each **Domain** keyword unlocks a spell list and domain feats. **Mortal** replac
 | **Blood** | Natural | Blood spell list; Blood domain feats |
 | **Mortal** | — | No spells; gunpowder when every fighter has **Mortal** |
 
-Spell lists: `rules/retinue.md` (**Magic — Domain Spell Lists**) · Domain feats: `rules/retinue.md` (**Domain Feats**)
+Spell lists: `rules/magic.md` (**Magic — Domain Spell Lists**) · Domain feats: `rules/feats.md` (**Domain Feats**)
 
-### Magic affliction associations
+### Magic condition associations
 
 These associations are internal design notes, not player-facing rules. Player-facing
-condition text lives in `rules/core-rules.md` (**Afflictions**).
+condition text lives in `rules/conditions.md` (**Afflictions**).
 
-| Affliction | Associated Domain |
+| Condition | Associated Domain |
 |---|---|
 | **Blinded** | Light |
-| **Poisoned** | Nature *(and gear, traditions)* |
-| **Weakened** | Necromancy |
-| **Enfeebled** | Blood |
+| **Bleeding** | Blood |
+| **Affliction tokens** | Nature poisons, alchemy, and poisonous bites |
+| **Withered** | Necromancy |
 | *(TBD)* | Infernal |
 
-Arcane, Light, and Nature spells could potentially remove these afflictions,
+Arcane, Light, and Nature spells could potentially remove these conditions,
 creating a cleanse / debuff dynamic between magic categories.
 
 ### Swarm wound budgets *(design)*
@@ -186,7 +186,7 @@ When a rule names a keyword in bold, check that fighter's keyword list:
 
 ## Retinue building at a glance
 
-Quick reference for authors — player-facing steps live in `rules/retinue.md` (**Building a Retinue**).
+Quick reference for authors — player-facing steps live in `rules/retinue-building.md` (**Building a Retinue**).
 
 - Choose **one Archetype**: **Knights**, **Hunters**, **Folk**, or **Cult**.
 - Choose **one Tradition** allowed for that Archetype; every fighter gains that **Tradition** keyword and the matching **Domain** keyword.
@@ -200,7 +200,7 @@ Quick reference for authors — player-facing steps live in `rules/retinue.md` (
 
 ## Campaign Retinues
 
-After your first roster is built, you maintain and expand it between battles using earnings from sold Relics. The same building rules apply — see `rules/campaign.md` (Economy, Post-Game sequence).
+After your first roster is built, you maintain and expand it between battles using earnings from sold Relics. The same building rules apply — see `rules/economy.md` and `rules/post-game-sequence.md`.
 
 ---
 
@@ -214,7 +214,7 @@ consequences through the **Downed** system.
 
 ### Hunter Subtype Design
 
-Potential specialization within hunter presets (from `rules/retinue.md`):
+Potential specialization within hunter presets (from `rules/archetypes.md`):
 
 - Witch Hunters — no magic; guns and technology
 - Vampire Hunters — stakes, crossbows, Light magic

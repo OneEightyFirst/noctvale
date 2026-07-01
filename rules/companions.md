@@ -138,7 +138,7 @@ No attack.
 
 **Movement** *(Tamed)*
 
-**Bite** — **Melee** attack using profile **Might** / **Skill**. Unblocked hits inflict **Poisoned** in addition to normal Wounds — see [Conditions — Poisoned](conditions.md#poisoned).
+**Bite** — **Melee** attack using profile **Might** / **Skill**. Unblocked hits add **1 Affliction token** in addition to normal Wounds — see [Conditions — Afflictions](conditions.md#afflictions).
 
 **Hide** — May use **Hide** as its **Companion** action.
 

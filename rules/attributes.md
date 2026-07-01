@@ -63,13 +63,15 @@ Bonuses and penalties to a fighter's attributes from feats, Traditions, spells, 
 
 The total bonus or penalty to any single attribute (**Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**) cannot exceed **+3** or **−3** at any time.
 
-Afflictions such as **Weakened** and **Enfeebled** count toward this cap.
+The penalties from **Affliction tokens** count toward this cap.
 
 ## Strike Pool
 
 The **Strike Pool** is the dice you roll to hit during the **Attack Sequence**. It combines **Might dice** and **Skill dice**.
 
 **Might dice** equal the attacker's **Might**, plus **Might** from their weapon, plus any other bonuses that add Might dice. **Skill dice** work the same way: the attacker's **Skill**, plus **Skill** from their weapon, plus any other bonuses that add Skill dice. Roll the full Strike Pool when you resolve Step 2 of the **Attack Sequence**.
+
+A Strike Pool cannot contain more than **15 dice** after all weapon bonuses and other dice bonuses are applied. If a rule would raise the Strike Pool above **15 dice**, the player rolling the Strike Pool chooses which **Might dice** or **Skill dice** to remove until **15 dice** remain.
 
 Use two distinct dice colors so you can tell the attributes apart. Before the first battle, agree which color represents **Might dice** and which represents **Skill dice**. Red for **Might** and blue for **Skill** is a common choice.
 

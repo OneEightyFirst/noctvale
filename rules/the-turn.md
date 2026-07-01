@@ -58,7 +58,7 @@ A fighter removed from the battle to fuel a summon is not **lost** if a replacem
 
 A retinue is **routing** when **more than half** of its starting fighters are **lost** — not when half are lost. For example, a retinue that deployed **5** fighters is **routing** when **3** are **lost**, not **2**; a retinue that deployed **4** is **routing** when **3** are **lost**, not **2**. Check whenever a fighter becomes **lost**; a retinue that starts to rout mid-round does not make fighters who have already activated this round test until their next activation.
 
-While a retinue is **routing**, each fighter makes a **Will** check at the **start of their activation**, before taking actions:
+While a retinue is **routing**, each fighter who is not **Broken** makes a **Will** check at the **start of their activation**, before taking actions:
 
 - **Stunned** fighters do not test — they cannot act. If a **Stunned** fighter becomes **Active** or **Downed** before their player has finished activating fighters, they test at the start of their next full activation.
 - Fighters with the **Summon** keyword auto-pass if **any** friendly fighter is within **6"** and line of sight. Otherwise, test normally.
@@ -69,9 +69,7 @@ While a retinue is **routing**, each fighter makes a **Will** check at the **sta
 
 **Pass:** The fighter activates normally.
 
-**Fail:** The fighter must spend **both actions** this activation moving toward the nearest **battlefield edge** to **Escape**. They may use **Move**, **Retreat**, **Scramble**, **Jump**, or **Climb** only. **Downed** fighters use **Crawl** instead of **Move**. If two or more edges are equally close, the player chooses. Move as directly as possible.
-
-If the fighter does not **Escape** this activation, they make another **Will** check at the start of their next activation. **Pass:** they are **rallied** and activate normally. **Fail:** they must flee again this activation, using the same actions as above.
+**Fail:** The fighter becomes **Broken** and resolves the **Broken** condition for this activation. If they do not **Escape**, they remain **Broken**.
 
 A fighter with **Fearless** may still flee the battlefield — not because they are afraid or in a panic, but merely to find out what happened to the rest of the retinue, or due to boredom.
 

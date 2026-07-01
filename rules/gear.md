@@ -47,7 +47,7 @@ Poisons are applied to a single weapon during retinue setup. **One poison per we
 | Poison | Effect | Notes |
 |---|---|---|
 | Adder's Kiss | +1 Sk to the weapon's **Strike Pool** | Subtle, fast-acting |
-| Blight Extract | Unblocked hits inflict **Poisoned** — see [Conditions — Poisoned](conditions.md#poisoned) | Weakening toxin |
+| Blight Extract | Unblocked hits add **1 Affliction token** — see [Conditions — Afflictions](conditions.md#afflictions) | Weakening toxin |
 | Vitriol | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
 | Widow's Tears | Unblocked hits inflict 2 Wounds instead of 1 | Lethal, expensive |
 | Silversbane | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |

@@ -64,7 +64,7 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 
 > ### Attack Sequence
 >
-> **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+> **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**, to a maximum of **15 dice**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
@@ -86,6 +86,7 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 
 ### Defense
 
+- **Dual wielding:** Two one-handed melee weapons add both weapon profiles to the Strike Pool, max **15 dice**. Use only the primary weapon's type and special rules. No shield.
 - **Might defense** blocks **Might hits**; **Skill defense** blocks **Skill hits**.
 - **2 Might** successes may block **1 Skill hit**; **2 Skill** successes may block **1 Might hit**.
 - **Cover:** **+1 Skill defense die** vs **Ranged** attacks and damage spells using the **Attack Sequence**.
@@ -184,15 +185,16 @@ Active → Downed → Stunned → Out of Action
 | 4–5 | **Downed** (if **Stunned**) |
 | 6 | Stand with **1 Wound** |
 
-## Afflictions
+## Conditions
 
-| Affliction | Effect |
+| Condition | Effect |
 |---|---|
-| **Poisoned** | −1 **Might** for the battle |
-| **Weakened** | −1 **Might**, −1 **Skill**, −1" **Movement** until effect ends |
-| **Enfeebled** | −1 **Might**, −1 **Skill** until effect ends |
+| **Affliction 1: Weakened** | −1 **Might** |
+| **Affliction 2: Enfeebled** | −1 **Might**, −1 **Skill** |
+| **Affliction 3: Withered** | −1 **Might**, −1 **Skill**, −1" **Movement** |
 | **Bleeding** | **1 Wound** when applied; each activation start — **Will** check to remove or suffer **1 Wound** |
 | **Blinded** | Cannot **Melee** or **Ranged**; until end of next activation unless noted |
+| **Broken** | Start of activation: **Will** check to remove or flee toward nearest battlefield edge |
 | **Fear** | Cannot move closer to source than current distance |
 | **Panic** | **Fear**, plus spend ≥**1 action** moving full **Movement** away from source |
 | **Insanity** | **Sanity** check failed — roll **1d6** on Insanity table (Frenzy / Flee / Freeze / Berserk) |

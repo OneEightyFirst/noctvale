@@ -25,6 +25,14 @@ Gunpowder weapons are not a proficiency. They require the **Firearms** domain fe
 
 Shields are armor-tier gear. They do not require **One-Handed** proficiency and do not use weapon slots.
 
+### Dual wielding
+
+A fighter wielding two one-handed melee weapons may attack with both weapons as part of one **Melee** action. Before building the Strike Pool, choose one weapon as the primary weapon and one as the secondary weapon.
+
+Add both weapons' +**Might** and +**Skill** values to the Strike Pool, to a maximum of **15 dice**. Use only the primary weapon's type and special rules for critical hits and other attack effects. The secondary weapon adds dice only.
+
+A fighter cannot use a shield while dual-wielding.
+
 ### Melee — weapon types
 
 | Type | Critical hits |

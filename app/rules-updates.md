@@ -6,6 +6,30 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-06-30 19:59 EDT — Strike Pool cap and dual wielding
+
+**Change:** Synced the builder equipment UI to the new dual-wielding rule and **15 dice** Strike Pool cap. Fighters carrying at least two one-handed melee weapons now show a **Dual wielding** reminder in their weapon summary: choose a primary and secondary weapon, add both weapon profiles up to **15 dice**, use only the primary weapon's type and special rules, and do not use a shield while dual-wielding. Also synced **Rat** Beastmen slot validation so their extra one-handed weapon allowance can cover one-handed melee or thrown weapons, but not firearms, bombs, shields, or two-handed weapons.
+
+**Impact:** Display and validation reminders. The builder still allows a fighter to carry shields and multiple one-handed melee weapons, but warns that the shield cannot be used while dual-wielding because the rule restricts use, not ownership. **Rat** Beastmen no longer receive a false over-slot warning when their fourth slot is a legal one-handed weapon.
+
+**Source:** `rules/attributes.md`, `rules/combat.md`, `rules/weapons.md`, `rules/traditions.md`.
+
+## 2026-06-30 13:42 EDT — Affliction tokens and Broken
+
+**Change:** Synced builder spell, Tradition, and poison text to the new condition model. **Venom**, **Blight Extract**, **Serpent**, and poisonous bites now add **Affliction tokens** instead of applying **Poisoned**. **Wither** now applies **Withered**. **Unwavering Resolve** Mishap now makes the caster **Broken** instead of applying duration-based **Panic**.
+
+**Impact:** Display text only; no roster validation or purchase logic changed.
+
+**Source:** `rules/conditions.md`, `rules/magic.md`, `rules/gear.md`, `rules/traditions.md`, `rules/companions.md`.
+
+## 2026-06-29 18:35 EDT — Dead condition and terminology cleanup
+
+**Change:** Removed **Enfeebled** from live condition references and generated rules output. Synced builder **Instrument** reminder text from outdated **Relic or Instrument** wording to **Icon or Instrument**.
+
+**Impact:** Display text only; no roster validation or purchase logic changed.
+
+**Source:** `rules/conditions.md`, `rules/what-you-need-to-play.md`, `rules/magic.md`, `rules/attributes.md`, `rules/gear.md`.
+
 ## 2026-06-28 21:49 EDT — Climbing Rope
 
 **Change:** Added **Climbing Rope** adventuring gear (**35 Crowns**, permanent, no weapon slots). A fighter carrying it uses full **Movement** on **Climb** instead of half **Movement**.

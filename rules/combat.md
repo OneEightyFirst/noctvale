@@ -71,7 +71,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 
 > ### Attack Sequence
 >
-> **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+> **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**, to a maximum of **15 dice**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
@@ -88,6 +88,8 @@ The Strike Pool is the fighter's **Might** + **Skill**, modified by their weapon
 - The fighter's **Might** = Might dice
 - The fighter's **Skill** = Skill dice
 - The weapon adds +**Might** (Might dice) and/or +**Skill** (Skill dice)
+
+After all weapon bonuses and other dice bonuses are applied, a Strike Pool cannot contain more than **15 dice**. If the pool would exceed **15 dice**, the attacking player chooses which **Might dice** or **Skill dice** to remove until **15 dice** remain.
 
 A fighter attacking **unarmed** uses only their base **Might** and **Skill**.
 

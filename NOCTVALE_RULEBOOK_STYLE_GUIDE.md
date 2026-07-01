@@ -22,7 +22,7 @@ Companion docs: `NOCTVALE_DESIGN_TENETS.md` (whether a rule belongs) · `decisio
 3. **One idea per sentence.** Split compound rules into bullets or numbered steps.
 4. **Write rules, not notes.** Avoid shorthand such as “ties: previous initiative.” Write the complete rule in a sentence.
 5. **Start wide, then zoom in.** Opening sections should give the broad rule. Save feat, gear, spell, and scenario exceptions for the section where players need that detail.
-6. **Core rules state the default.** Procedures in **core-rules.md** define the baseline — not every override. Do not embed inline exceptions such as “or if you carry **Climbing Rope**, use full **Movement** instead.” Gear, feats, spells, keywords, and traditions state their own exceptions on their entries; players discover them where those items are defined.
+6. **Core rules state the default.** Procedures in the core rules chapters define the baseline — not every override. Do not embed inline exceptions such as “or if you carry **Climbing Rope**, use full **Movement** instead.” Gear, feats, spells, keywords, and traditions state their own exceptions on their entries; players discover them where those items are defined.
 7. **Keep related rules together.** Do not split every small rule into its own section; use compact paragraphs unless a sequence, table, or repeated reference needs headings.
 8. **Name things once, then consistently.** Define a term on first use in a section; link to the canonical file after that.
 9. **Prefer plain verbs:** move, attack, roll, gain, lose, become, resolve.
@@ -193,11 +193,11 @@ Use abbreviations in tables only. In prose, write the full attribute name in bol
 | class | No in roster prose | Use **role** or name the keyword (**Leader**, **Elite**, etc.) directly |
 | project Fear / Panic / Insanity | Yes | A fighter or effect that causes others to test — not "gain Fear" on friendly fighters |
 | difficult terrain | Lowercase in prose | **area terrain** that requires **Scramble** at half **Movement** |
-| affliction | Capitalize name | **Poisoned**, **Weakened**, **Enfeebled**, **Bleeding** — see `rules/conditions.md` |
+| affliction | Capitalize name | **Weakened**, **Enfeebled**, and **Withered** — see `rules/conditions.md` |
 | Crowns | Yes | Currency — always plural: **20 Crowns** |
 | Relic(s) | Yes | Campaign treasure recovered in scenarios |
-| Relic or Instrument | Yes | Roster **Sphere of Influence** gear — **Relic** (+1 **Sanity**) or **Instrument** (+1" **Movement**); not campaign treasure |
-| Sphere of Influence | Yes | Area effect from **Relic**, **Instrument**, or qualifying **Companion** |
+| Icon or Instrument | Yes | Roster **Sphere of Influence** gear — **Icon** (+1 **Sanity**) or **Instrument** (+1" **Movement**); not campaign treasure |
+| Sphere of Influence | Yes | Area effect from **Icon**, **Instrument**, or qualifying **Companion** |
 
 ### Combat terms
 
@@ -211,7 +211,7 @@ Use abbreviations in tables only. In prose, write the full attribute name in bol
 | natural 1 / natural 6 | Lowercase |
 | weapon triangle advantage | Lowercase phrase |
 | charge follow-up | **Melee** immediately following **Charge** during the same activation — no other actions between them |
-| Mishap / Misfire / Overcharge | Capitalize — spell outcomes |
+| Mishap / Misfire | Capitalize — spell and weapon outcomes |
 | Ranged Reaction | Capitalize — named rule |
 
 ### Wound states (conditions)

@@ -29,7 +29,7 @@ Brand assets: [`../misc-files/noctvale-logo_onlight.svg`](../misc-files/noctvale
 | Column | Content (top to bottom) |
 |---|---|
 | Left | Attack Sequence box → Apply Wounds box → Defense bullets → Armor conversion table |
-| Right | Critical Hits + place `cheat-sheet-triangles.svg` (~6.5" wide) → Ranged Targeting → Ranged Reaction → Casting Roll table → Primer Roll table → Wound States → Recover/Help tables → Afflictions table → Keywords table |
+| Right | Critical Hits + place `cheat-sheet-triangles.svg` (~6.5" wide) → Ranged Targeting → Ranged Reaction → Casting Roll table → Primer Roll table → Wound States → Recover/Help tables → Conditions table → Keywords table |
 
 **Footer:** `Combat & Conditions` + small mark.
 
