@@ -65,8 +65,7 @@ Pages.
 
 Set the Firebase `VITE_FIREBASE_*` values as GitHub Actions repository
 variables or secrets so the production build has the same client config as local
-development. `npm run build` checks these values before building, so a deploy
-will fail early instead of publishing a builder that crashes at startup.
+development.
 
 Firestore rules and Cloud Functions are still deployed separately with
 `npm run deploy:rules` and `npm run deploy:functions` when those Firebase
