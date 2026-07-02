@@ -19,7 +19,7 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 
 ### Damage Spells
 
-If the spell deals damage, it generates a Strike Pool from the spell's **Attack** line. A damage spell's **Might** value is fixed. Its +**Skill** value adds to the caster's **Skill**. A spell with 4 **Might** / +3 **Skill** produces 4 **Might dice** and the caster's **Skill** + 3 **Skill dice**.
+Only spells with the **Attack** keyword build a Strike Pool. If the spell has the **Attack** keyword, it generates a Strike Pool from the spell's **Attack** line. A spell attack's **Might** value is fixed. Its +**Skill** value adds to the caster's **Skill**. A spell with 4 **Might** / +3 **Skill** produces 4 **Might dice** and the caster's **Skill** + 3 **Skill dice**.
 
 Once the spell goes off, resolve the attack using the **Attack Sequence**. Use the spell's **Hit** attribute for the roll to hit: **Ranged Combat** for most damage spells, **Close Combat** for engagement-range damage (including blasts centered on the caster). Apply **Hit** attribute modifiers (+1 **Ranged Combat**, −1 **Close Combat**, etc.) to that attribute.
 
@@ -65,16 +65,16 @@ Fighters with **Caster** choose spells from the list matching their **Domain** k
 - **Leader** with **Caster** (Lord, Captain, Mayor) or **Theurge:** **2** spells
 - **Adept** with **Caster:** **1** spell
 
-Each **Domain** keyword's standard attack spell (Radiant Strike, Arcane Bolt, Thorn Volley, Hellfire, Deathbolt, etc.) counts as one of those choices.
+Each **Domain** keyword's standard spell (Radiant Strike, Arcane Bolt, Thorn Volley, Hellfire, Deathbolt, etc.) counts as one of those choices.
 
 Rules marked *(TBD)* are not yet playtest-ready.
 
-Each domain has a standard ranged attack spell plus **6 additional spells**. **Casting attribute** is **Will** for Light, Arcane, and Nature; **Sanity** for Infernal, Necromancy, and Blood. **Hit** is the attribute used for the roll to hit on damage spells (**Ranged Combat** or **Close Combat**); **—** if the spell does not deal damage through the **Attack Sequence**. Apply **Hit** attribute modifiers to the attribute named by the spell.
+Each domain has a standard spell plus **6 additional spells**. **Casting attribute** is **Will** for Light, Arcane, and Nature; **Sanity** for Infernal, Necromancy, and Blood. **Hit** is the attribute used for the roll to hit on **Attack** spells (**Ranged Combat** or **Close Combat**); **—** if the spell does not build a Strike Pool. Apply **Hit** attribute modifiers to the attribute named by the spell.
 
 ### Light
 
 #### Radiant Strike
-**Casting:** **Will** 11+. **Range:** 12". **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**. Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
+**Casting:** **Will** 11+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**. Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
 
 #### Holy Light
 **Casting:** **Will** 11+. **Range:** 12" from caster. All fighters within 12" lose cover and **Hidden**. **Mishap:** The caster becomes **Blinded**.
@@ -83,7 +83,7 @@ Each domain has a standard ranged attack spell plus **6 additional spells**. **C
 **Casting:** **Will** 10+. **Range:** 1". Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
 
 #### Purge the Faithless
-**Casting:** **Will** 11+. **Range:** 3" blast from caster. **Attack:** **Close Combat**, 3 **Might** / +1 **Skill**. All fighters within the blast are hit. **Mishap:** Resolve the attack against the caster.
+**Casting:** **Will** 11+. **Range:** 3" blast from caster. **Keywords:** **Attack**. **Attack:** **Close Combat**, 3 **Might** / +1 **Skill**. All fighters within the blast are hit. **Mishap:** Resolve the attack against the caster.
 
 #### Shield of Faith
 **Casting:** **Will** 10+. **Range:** 12". Target friendly fighter gains **+2 Might defense dice** until the start of the caster's next activation.
@@ -97,13 +97,13 @@ Each domain has a standard ranged attack spell plus **6 additional spells**. **C
 ### Arcane
 
 #### Arcane Bolt
-**Casting:** **Will** 11+. **Range:** 20". **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Make a ranged spell attack.
+**Casting:** **Will** 11+. **Range:** 20". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Make a ranged spell attack.
 
 #### Arcane Shield
 **Casting:** **Will** 11+. **Range:** Self. The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
 
 #### Fireball
-**Casting:** **Will** 13+. **Range:** 18". **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point. **Mishap:** The blast template centers on the caster.
+**Casting:** **Will** 13+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point. **Mishap:** The blast template centers on the caster.
 
 #### Telekinesis
 **Casting:** **Will** 12+. **Range:** 12". Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check. **Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
@@ -122,7 +122,7 @@ When a fighter ends any movement in the zone, make a **Skill** check. On a pass,
 ### Infernal
 
 #### Hellfire
-**Casting:** **Sanity** 10+. **Range:** 3"–18". **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Make a ranged spell attack.
+**Casting:** **Sanity** 10+. **Range:** 3"–18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Make a ranged spell attack.
 
 #### Summon Daemon
 **Casting:** **Sanity** 11+. **Range:** 3". The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
@@ -251,7 +251,7 @@ At the end of each of that fighter's activations while **Possessed**, they make 
 **Casting:** **Sanity** 11+. **Range:** 12". Choose a point within **12"**. Place a **5" blast template** centered on that point. The template cannot overlap any fighter's base. The template counts as **impassable terrain** for the rest of the battle. **Mishap:** The **Hellmouth** opens centered on the caster instead.
 
 #### Searing Gaze
-**Casting:** **Sanity** 12+. **Range:** 18". **Attack:** **Ranged Combat**, 3 **Might** / +3 **Skill**. Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you choose. Every fighter the line touches that is in **line of sight** of the caster is hit. **Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](conditions.md#blinded).
+**Casting:** **Sanity** 12+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +3 **Skill**. Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you choose. Every fighter the line touches that is in **line of sight** of the caster is hit. **Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](conditions.md#blinded).
 
 #### Nightmare Visage
 **Casting:** **Sanity** 11+. **Range:** 12". Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends.
@@ -261,7 +261,7 @@ At the end of each of that fighter's activations while **Possessed**, they make 
 ### Nature
 
 #### Thorn Volley
-**Casting:** **Will** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 3 **Might** / +2 **Skill**. Make a ranged spell attack using a **standard flame template**.
+**Casting:** **Will** 12+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +2 **Skill**. Make a ranged spell attack using a **standard flame template**.
 
 #### Shadowmeld
 **Casting:** **Will** 11+. **Range:** 12". Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy. **Mishap:** Enemies add +1 **Ranged Combat** or +1 **Close Combat** — whichever **Hit** attribute the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
@@ -321,21 +321,21 @@ The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 **Casting:** **Sanity** 13+. **Range:** 3". **Remove** one **friendly** **body token** within **3"** of the caster — see [Body tokens](#body-tokens). Place that fighter within **3"** of the caster with **1 Wound**, **Undead**, and **Fearless**. Roll **1d3**. The fighter remains in the battle for that many **activations**, counting this one. They activate immediately with **2 actions**. When those activations have finished, they go **Out of Action** and are removed from the battle. **Mishap:** Your opponent places and controls the raised fighter instead.
 
 #### Cursed Ground
-**Casting:** **Sanity** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 2 **Might** / +2 **Skill**. Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer −1" **Movement** and take the spell's hit unless they pass a **Skill** check. **Mishap:** The blast centers on the caster.
+**Casting:** **Sanity** 12+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 2 **Might** / +2 **Skill**. Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer −1" **Movement** and take the spell's hit unless they pass a **Skill** check. **Mishap:** The blast centers on the caster.
 
 #### Wither
 **Casting:** **Sanity** 11+. **Range:** 12". Target enemy suffers **Withered** until the start of the caster's next activation — see [Conditions — Afflictions](conditions.md#afflictions). **Mishap:** The caster suffers **Withered** until the start of their next activation.
 
 #### Bone Blast
-**Casting:** **Sanity** 11+. **Range:** blast from caster. **Attack:** **Close Combat**, 4 **Might** / +3 **Skill**. Center the blast template on the caster. All fighters under the template except the caster are hit. **Mishap:** Resolve the attack against the caster.
+**Casting:** **Sanity** 11+. **Range:** blast from caster. **Keywords:** **Attack**. **Attack:** **Close Combat**, 4 **Might** / +3 **Skill**. Center the blast template on the caster. All fighters under the template except the caster are hit. **Mishap:** Resolve the attack against the caster.
 
 #### Bone Circle
-**Casting:** **Sanity** 12+. **Range:** 12". **Attack:** **Ranged Combat**, 3 **Might** / +4 **Skill**. Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters. **Mishap:** The zone centers on the caster.
+**Casting:** **Sanity** 12+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +4 **Skill**. Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters. **Mishap:** The zone centers on the caster.
 
 ### Blood
 
 #### Leech
-**Casting:** **Sanity** 12+. **Range:** Touch. **Attack:** **Close Combat**, 5 **Might** / +3 **Skill**. Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
+**Casting:** **Sanity** 12+. **Range:** Touch. **Keywords:** **Attack**. **Attack:** **Close Combat**, 5 **Might** / +3 **Skill**. Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
 
 #### Bleed
 **Casting:** **Sanity** 13+. **Range:** 12". Target enemy must pass a **Will** check. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](conditions.md#bleeding). **Mishap:** The caster becomes **Bleeding** instead.

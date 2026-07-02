@@ -62,8 +62,8 @@ function renderNavNodes(nodes, currentHtml, depth = 0, { defaultExpanded = false
           <div class="wiki-nav-row" style="padding-left:${indent}rem">
             ${toggle}
             <a href="${href}" class="wiki-nav-link">${escapeHtml(node.label)}</a>
-          </div>
-          ${hasChildren ? `<div class="wiki-nav-children${startExpanded ? "" : " is-collapsed"}" id="${childrenId}">${children}</div>` : ""}
+          </div>${hasChildren ? `
+          <div class="wiki-nav-children${startExpanded ? "" : " is-collapsed"}" id="${childrenId}">${children}</div>` : ""}
         </div>`;
     })
     .join("");

@@ -10,7 +10,7 @@ Choose feats before buying weapons. A fighter equips only weapons that match the
 
 - Each fighter equips weapons matching their **Proficiency** feats (see [Feats](feats.md#feats)). Any fighter may equip a **Dagger** without a **Proficiency** feat.
 
-Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields do not use weapon slots. **Icon** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
+Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields do not use weapon slots. **Wands** take 1 slot. **Icon** and **Instrument** gear with a **Sphere of Influence** take 2 slots each.
 
 ---
 
@@ -115,6 +115,16 @@ Bombs are **Single Shot** (one use per battle).
 | Item | Cost | Access | Notes |
 | ---- | ---- | ------ | ----- |
 | Summoning Crystal | *(TBD)* | **Binders**; any **Caster** who knows a summoning spell | Assigned to a fighter; max **2** per fighter; see [Summoning](magic.md#summoning) |
+
+---
+
+## Crown costs — Spellcasting gear
+
+| Item | Slots | Cost | Access | Effect |
+| ---- | ----- | ---- | ------ | ------ |
+| <span id="wand"></span>Wand | 1 | 35 | **Caster** | +1 to hit when resolving an **Attack** spell |
+
+Multiple **Wands** or duplicate **Wand** effects do not stack.
 
 ---
 

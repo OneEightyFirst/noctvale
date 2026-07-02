@@ -44,9 +44,9 @@ A fighter cannot use a shield while dual-wielding.
 
 A fighter wielding a **Staff** has **Spell focus**.
 
-Once per **battle**, when this fighter makes a **casting roll** that fails to meet the spell's casting difficulty, reroll the **Casting Roll** once. Must accept the second result.
+When a fighter purchases a **Staff**, choose **Will** or **Sanity** for that staff.
 
-If the first roll was **Mishap**, resolve it as normal — do not reroll.
+When that fighter resolves a casting attack while wielding that **Staff**, use the chosen attribute instead of **Skill** to determine the spell's scaling **Skill dice**. The spell's printed +**Skill** value still applies.
 
 ### Firearms
 

@@ -309,6 +309,7 @@ function getEquipmentBlockReason(item, archetype, fighter, type, tradition, doma
 
   if (item.requiresTradition && item.requiresTradition !== tradition.id) return "Requires a matching Tradition.";
   if (item.requiresFeat && !hasFeat(fighter, item.requiresFeat)) return "Requires a matching feat.";
+  if (item.requiresKeyword && !hasKeyword(keywords, item.requiresKeyword)) return `Requires ${item.requiresKeyword}.`;
 
   if (item.kind === "weapon") {
     if (item.alwaysAllowed) return "";
@@ -1706,6 +1707,7 @@ const FighterCard = memo(function FighterCard({
                         <span>Hit {spell.hit}</span>
                         <span>Mt {spell.mt}</span>
                         <span>Sk {spell.sk}</span>
+                        {spell.keywords?.length ? <span>Keywords {spell.keywords.join(", ")}</span> : null}
                         {spell.mishap ? <span>Mishap {spell.mishap}</span> : null}
                       </div>
                       <div className="mt-1 text-cream-100">{spell.effect}</div>
@@ -1779,7 +1781,7 @@ const FighterCard = memo(function FighterCard({
                   `Knows ${spellLimit} spell${spellLimit === 1 ? "" : "s"} from the ${domain} list.`,
                   ...fighter.spells.map((spellId) => {
                     const spell = domainSpells.find((entry) => entry.id === spellId);
-                    return spell ? `${spell.name}: ${spell.effect}` : spellId;
+                    return spell ? `${spell.name}${spell.keywords?.length ? ` (${spell.keywords.join(", ")})` : ""}: ${spell.effect}` : spellId;
                   }),
                 ]}
               />

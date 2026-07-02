@@ -171,6 +171,18 @@ Solo dry run and rules-gap notes.
 
 Things identified across the design docs that don't fit neatly into one phase.
 
+### Pearson technical-writing follow-ups (2026-07-01)
+
+From the Sam Pearson technical rules-writing transcript and the Noctvale scorecard in `reference-sam-pearson-technical-writing.md`.
+
+- [ ] **Standard wording document** — Create a clearer standard wording document for recurring Noctvale phrasing. The style guide does some of this now, but a dedicated wording document should collect canonical examples for common rule shapes.
+- [ ] **Precision timing / aura pass** — Review range-plus-duration effects for aura-vs-tag ambiguity. Consider simplifying **Sphere of Influence** terminology to **aura** if that makes the timing and table language cleaner.
+- [ ] **Choice-language standardization** — Choose one primary choice verb across the rules. Current preference: lean toward **pick**. Decide where, if anywhere, **choose**, **select**, or **target** remain technically distinct.
+- [ ] **Natural English / jargon balance pass** — Lean Noctvale closer to natural English while keeping consistent phrasing for recurring rules. Identify places where compact table shorthand or technical labels make the rules harder to read.
+- [ ] **Agency consistency pass** — Decide when rules should give agency to the **player**, **retinue**, or **fighter**. The goal is not universal agency, but a clear rule for when each subject is used.
+- [ ] **Dense-rule structure criteria** — Dig into magic, summoning, feats, and scenario procedures to determine when a rule should become bullets, subheads, examples, or diagrams. Define the threshold: ambiguity, multiple effects, conditional branches, hidden edge-case context, or spatial procedure.
+- [ ] **Presentation readiness already planned** — Keep this linked to existing roadmap work rather than duplicating it: fighter cards and roster sheet in Phase 7, solo dry run and rules-gap notes in Phase 8, visible TBD cleanup in Phase 4, and combat examples under Rules audit follow-ups.
+
 ### Rules audit follow-ups (2026-06-24)
 
 From fresh-eyes rules read-through and designer responses.

@@ -6,6 +6,30 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-02 13:42 EDT — Wand spellcasting gear
+
+**Change:** Added **Wand** to builder equipment as **Caster** spellcasting gear. It costs **35 Crowns**, takes 1 weapon slot, and grants +1 to hit when resolving an **Attack** spell. Multiple **Wands** or duplicate **Wand** effects do not stack.
+
+**Impact:** New purchasable equipment plus validation: only fighters with the **Caster** keyword may buy **Wands**.
+
+**Source:** `rules/crown-costs.md`, `rules/magic.md`.
+
+## 2026-07-02 13:37 EDT — Attack spell keyword
+
+**Change:** Added an **Attack** keyword to builder spell data for spells that build a Strike Pool, and displayed spell keywords in the spell picker and fighter card summary. Non-Strike-Pool spells such as **Deathbolt** and **Horrors Relived** remain untagged.
+
+**Impact:** Display text only; spell selection limits, costs, casting rolls, Strike Pools, and validation did not change.
+
+**Source:** `rules/magic.md`.
+
+## 2026-07-02 13:31 EDT — Staff Spell focus
+
+**Change:** Synced the builder Staff reminder text to the new **Spell focus** rule. When a fighter purchases a **Staff**, choose **Will** or **Sanity** for that staff. While wielding it, the fighter uses the chosen attribute instead of **Skill** to determine scaling **Skill dice** for casting attacks; the spell's printed +**Skill** value still applies.
+
+**Impact:** Display text only; Staff cost, slots, two-handed profile, and purchase validation did not change.
+
+**Source:** `rules/weapons.md`.
+
 ## 2026-07-01 22:08 EDT — Ranged and spell Strike Pools
 
 **Change:** Synced builder weapon and spell reminder text to the locked ranged damage model. **Shortbow** and **Longbow** now scale from **Might** with fixed **Skill dice**. **Crossbow**, **Heavy Crossbow**, **Pistol**, **Musket**, **Long Rifle**, and **Blunderbuss** now use fixed **Might dice** plus the fighter's **Skill** and printed +**Skill** value. Damage spells now use fixed **Might dice** plus the caster's **Skill** and printed +**Skill** value. **Deathbolt** now forces a **Will** check or sends the target **Out of Action**.

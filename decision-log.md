@@ -59,6 +59,24 @@ Open questions:
 
 ---
 
+## 2026-07-02 — Wand Spellcasting Gear
+
+**Decision:** Add **Wand** as **Caster** spellcasting gear. A **Wand** costs **35 Crowns**, takes 1 weapon slot, and grants +1 to hit when resolving an **Attack** spell. Multiple **Wands** or duplicate **Wand** effects do not stack.
+
+**Reasoning:** The new **Attack** spell keyword gives caster gear a clean target. **Wand** should improve the accuracy of actual Strike Pool spells without affecting save-or-effect spells such as **Deathbolt**, and costing a weapon slot makes the choice compete with Staff, weapons, and other carried tools instead of becoming a free caster default.
+
+## 2026-07-02 — Attack Spell Keyword
+
+**Decision:** Add **Attack** as an explicit spell keyword. Only spells that build a Strike Pool have the **Attack** keyword, and every **Attack** spell prints **Keywords:** **Attack** before its **Attack** profile. Spells that cause harm without a Strike Pool, such as **Deathbolt** or **Horrors Relived**, are not **Attack** spells. Update spell-selection language so a Domain has a standard spell, not necessarily a standard attack spell.
+
+**Reasoning:** Effects that harm fighters are not all the same rules object. Marking Strike Pool spells with **Attack** gives Staff, wand, magic-triangle, and future attack-specific rules a clean hook without adding a separate damage taxonomy or making save-or-effect spells inherit attack modifiers by accident.
+
+## 2026-07-02 — Staff Spell Focus Attribute Choice
+
+**Decision:** Replace the Staff's once-per-battle failed **Casting Roll** reroll with a new **Spell focus** rule. When a fighter purchases a **Staff**, choose **Will** or **Sanity** for that staff. When the fighter resolves a casting attack while wielding it, use the chosen attribute instead of **Skill** to determine the spell's scaling **Skill dice**; the spell's printed +**Skill** value still applies. Keep the Staff at **20 Crowns**.
+
+**Reasoning:** Staff should support a caster's supernatural discipline rather than serve as a generic reroll token. Letting the staff key damage-spell scaling to **Will** or **Sanity** makes the weapon read as a caster tool, keeps spell attacks in the existing mixed Strike Pool system, and avoids adding a new casting subsystem or stacking extra rerolls onto high-risk spells.
+
 ## 2026-07-01 — Ranged and Spell Strike Pool Redesign
 
 **Decision:** Replace the discarded high-dice firearm pass with a unified ranged damage model. Bows now scale from the attacker's **Might** with fixed **Skill dice**: **Shortbow** +1 **Might** / 4 **Skill**, **Longbow** +1 **Might** / 5 **Skill**. Crossbows and firearms now use fixed **Might dice** plus the attacker's **Skill**: **Crossbow** 4 **Might** / +2 **Skill**, **Heavy Crossbow** 5 **Might** / +2 **Skill**, **Pistol** 4 **Might** / +2 **Skill**, **Musket** 5 **Might** / +2 **Skill**, **Long Rifle** 5 **Might** / +3 **Skill** with critical hits on 5+, and **Blunderbuss** 3 **Might** / +2 **Skill** using a standard flame template. Damage spells now use fixed **Might dice** plus the caster's **Skill** and printed +**Skill** value. **Deathbolt** becomes **Sanity** 14+, range 18", target **Will** check or **Out of Action**.

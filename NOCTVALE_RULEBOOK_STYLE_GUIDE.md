@@ -344,13 +344,14 @@ Use spell blocks in `rules/magic.md` instead of spell tables.
 ```markdown
 ##### Radiant Strike
 
-**Casting:** **Will** 11+. **Range:** 12". **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**.
+**Casting:** **Will** 11+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**.
 
 Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
 ```
 
 - **Casting** combines casting attribute and difficulty: **Will** 11+, **Sanity** 12+.
-- Include **Attack** only when the spell resolves through the **Attack Sequence**.
+- Include **Keywords:** **Attack** only when the spell builds a Strike Pool.
+- Include an **Attack:** line only when the spell resolves through the **Attack Sequence**.
 - In an **Attack** line, a plain **Might** or **Skill** value is fixed; a +**Skill** value adds to the caster's **Skill**.
 - Omit **Mishap** entirely when the spell has no Mishap.
 - Write the effect as normal rules prose, not table shorthand.
