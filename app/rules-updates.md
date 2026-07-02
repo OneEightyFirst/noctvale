@@ -6,6 +6,14 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-01 22:08 EDT — Ranged and spell Strike Pools
+
+**Change:** Synced builder weapon and spell reminder text to the locked ranged damage model. **Shortbow** and **Longbow** now scale from **Might** with fixed **Skill dice**. **Crossbow**, **Heavy Crossbow**, **Pistol**, **Musket**, **Long Rifle**, and **Blunderbuss** now use fixed **Might dice** plus the fighter's **Skill** and printed +**Skill** value. Damage spells now use fixed **Might dice** plus the caster's **Skill** and printed +**Skill** value. **Deathbolt** now forces a **Will** check or sends the target **Out of Action**.
+
+**Impact:** Display text only; no purchase gating, slot use, costs, primer difficulties, or validation rules changed.
+
+**Source:** `rules/crown-costs.md`, `rules/weapons.md`, `rules/magic.md`.
+
 ## 2026-06-30 19:59 EDT — Strike Pool cap and dual wielding
 
 **Change:** Synced the builder equipment UI to the new dual-wielding rule and **15 dice** Strike Pool cap. Fighters carrying at least two one-handed melee weapons now show a **Dual wielding** reminder in their weapon summary: choose a primary and secondary weapon, add both weapon profiles up to **15 dice**, use only the primary weapon's type and special rules, and do not use a shield while dual-wielding. Also synced **Rat** Beastmen slot validation so their extra one-handed weapon allowance can cover one-handed melee or thrown weapons, but not firearms, bombs, shields, or two-handed weapons.

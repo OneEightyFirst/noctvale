@@ -69,7 +69,7 @@ The penalties from **Affliction tokens** count toward this cap.
 
 The **Strike Pool** is the dice you roll to hit during the **Attack Sequence**. It combines **Might dice** and **Skill dice**.
 
-**Might dice** equal the attacker's **Might**, plus **Might** from their weapon, plus any other bonuses that add Might dice. **Skill dice** work the same way: the attacker's **Skill**, plus **Skill** from their weapon, plus any other bonuses that add Skill dice. Roll the full Strike Pool when you resolve Step 2 of the **Attack Sequence**.
+Attack profiles list the **Might dice** and **Skill dice** they use. A number with a `+` adds to the attacker's matching attribute. A number without a `+` is fixed. For example, +1 **Might** / 4 **Skill** means the attacker's **Might** + 1 **Might die**, and exactly 4 **Skill dice**.
 
 A Strike Pool cannot contain more than **15 dice** after all weapon bonuses and other dice bonuses are applied. If a rule would raise the Strike Pool above **15 dice**, the player rolling the Strike Pool chooses which **Might dice** or **Skill dice** to remove until **15 dice** remain.
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Combat — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2ea3004" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=2fa1792" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -3485,19 +3485,20 @@
 <p>Before Step 1, declare a valid enemy target. <strong>Clustered enemies</strong> and <strong>friendly fighters in close combat or in the line of fire</strong> may change or affect targeting — see <a href="/combat/#intervening-fighters">Intervening Fighters</a>.</p>
 <blockquote>
 <h3 id="attack-sequence-2">Attack Sequence</h3>
-<p><strong>Step 1 — Build the Strike Pool:</strong> Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>, to a maximum of <strong>15 dice</strong>. Firearms and damage spells use a <strong>flat Strike Pool</strong> instead (see weapon or spell profile).</p>
+<p><strong>Step 1 — Build the Strike Pool:</strong> Read the attack&#39;s weapon or spell profile. A number with a <code>+</code> adds to the attacker&#39;s matching attribute; a number without a <code>+</code> is fixed. The Strike Pool cannot exceed <strong>15 dice</strong>.</p>
 <p><strong>Step 2 — Roll to hit:</strong> Melee dice use <strong>Close Combat</strong> checks. Ranged dice use <strong>Ranged Combat</strong> checks. Apply <strong>Hit</strong> attribute modifiers (+1 <strong>Close Combat</strong>, −1 <strong>Ranged Combat</strong>, etc.) to the attribute used for that attack.</p>
 <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle (attacker only), <strong>Hammer</strong> vs <strong>Heavy Armor</strong>, magic triangle, <strong>Aim</strong>, or firearms (crits vs all). Critical hits cannot be blocked except by a <strong>Heavy Armor</strong> critical success.</p>
 <p><strong>Step 4 — Roll defense:</strong> Defender <strong>Might</strong> + <strong>Skill</strong>. Might dice use <strong>Might</strong> checks. Skill dice use <strong>Skill</strong> checks. Add bonus defense dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules. Armor and shields <strong>convert</strong> failed defense dice into successes. <em>(See <a href="/gear/#equipment">Equipment</a>.)</em></p>
 <p><strong>Step 5 — Apply Wounds:</strong> See <strong>Apply Wounds</strong> (below).</p>
 </blockquote>
 <h3 id="step-1-build-the-strike-pool">Step 1: Build the Strike Pool</h3>
-<p>The Strike Pool is the fighter&#39;s <strong>Might</strong> + <strong>Skill</strong>, modified by their weapon.</p>
+<p>The Strike Pool is the mix of <strong>Might dice</strong> and <strong>Skill dice</strong> the attacker rolls to hit. Weapon and spell profiles list the dice the attack uses.</p>
 <ul>
-<li>The fighter&#39;s <strong>Might</strong> = Might dice</li>
-<li>The fighter&#39;s <strong>Skill</strong> = Skill dice</li>
-<li>The weapon adds +<strong>Might</strong> (Might dice) and/or +<strong>Skill</strong> (Skill dice)</li>
+<li>A number with a <code>+</code> adds to the attacker&#39;s matching attribute. A profile with +1 <strong>Might</strong> uses the attacker&#39;s <strong>Might</strong> + 1 <strong>Might die</strong>.</li>
+<li>A number without a <code>+</code> is fixed. A profile with 4 <strong>Skill</strong> uses exactly 4 <strong>Skill dice</strong>, no matter the attacker&#39;s <strong>Skill</strong>.</li>
+<li>A dash adds no dice.</li>
 </ul>
+<p>Some ranged weapons and damage spells mix these values. A Shortbow uses the archer&#39;s <strong>Might</strong> plus fixed <strong>Skill dice</strong>. A Crossbow, firearm, or damage spell uses fixed <strong>Might dice</strong> plus the attacker&#39;s <strong>Skill</strong> and any printed +<strong>Skill</strong> value.</p>
 <p>After all weapon bonuses and other dice bonuses are applied, a Strike Pool cannot contain more than <strong>15 dice</strong>. If the pool would exceed <strong>15 dice</strong>, the attacking player chooses which <strong>Might dice</strong> or <strong>Skill dice</strong> to remove until <strong>15 dice</strong> remain.</p>
 <p>A fighter attacking <strong>unarmed</strong> uses only their base <strong>Might</strong> and <strong>Skill</strong>.</p>
 <h3 id="example">Example</h3>
@@ -3545,10 +3546,10 @@
 <td><strong>Keen</strong> (Mt 3, Sk 4)</td>
 <td>3</td>
 <td>4</td>
-<td>Shortbow (+2 Sk)</td>
-<td>3</td>
-<td>6</td>
-<td>9</td>
+<td>Shortbow (+1 Mt, 4 Sk)</td>
+<td>4</td>
+<td>4</td>
+<td>8</td>
 </tr>
 <tr>
 <td><strong>Stout</strong> (Mt 4, Sk 3)</td>
@@ -3642,7 +3643,7 @@
 <pre><code>Nature &gt; Necromancy &gt; Blood &gt; Nature
 </code></pre>
 <h3 id="firearms">Firearms</h3>
-<p>Firearms are fired with the <strong>Ranged</strong> action. They use the <strong>primer roll</strong> and gain criticals against <strong>all targets</strong>, regardless of weapon type. <em>(See <a href="/weapons/#weapons">Equipment — Weapons</a>.)</em></p>
+<p>Firearms are fired with the <strong>Ranged</strong> action. They use the <strong>primer roll</strong> and gain criticals against <strong>all targets</strong>, regardless of weapon type. A <strong>Long Rifle</strong> scores critical hits on natural 5+ instead of only natural 6s. <em>(See <a href="/weapons/#weapons">Equipment — Weapons</a>.)</em></p>
 <h3 id="outside-the-triangles">Outside the Triangles</h3>
 <p><strong>Hammer</strong> is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in <strong>Heavy Armor</strong>). If either fighter wields a Hammer, <strong>weapon triangle advantage does not apply</strong> to that melee exchange.</p>
 <p>The <strong>Aim</strong> action can also make natural <strong>6</strong> results critical hits on that fighter&#39;s next <strong>Ranged</strong> action during the same activation. If that <strong>Ranged</strong> weapon already had a critical hit on <strong>6</strong>, <strong>Aim</strong> increases it to <strong>5+</strong>.</p>
@@ -3711,7 +3712,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2ea3004"></script>
-  <script src="/wiki/wiki.js?v=2ea3004" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=2fa1792"></script>
+  <script src="/wiki/wiki.js?v=2fa1792" defer></script>
 </body>
 </html>

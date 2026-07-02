@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magic — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2ea3004" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=2fa1792" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -3471,7 +3471,7 @@
 </tbody></table>
 </blockquote>
 <h3 id="damage-spells">Damage Spells</h3>
-<p>If the spell deals damage, it generates a <strong>flat Strike Pool</strong> defined by the spell itself. The spell specifies its own <strong>Might</strong> and <strong>Skill</strong> values — a fixed pool regardless of who casts it. A spell with 5 <strong>Might</strong> / 2 <strong>Skill</strong> always produces 5 Might dice and 2 Skill dice.</p>
+<p>If the spell deals damage, it generates a Strike Pool from the spell&#39;s <strong>Attack</strong> line. A damage spell&#39;s <strong>Might</strong> value is fixed. Its +<strong>Skill</strong> value adds to the caster&#39;s <strong>Skill</strong>. A spell with 4 <strong>Might</strong> / +3 <strong>Skill</strong> produces 4 <strong>Might dice</strong> and the caster&#39;s <strong>Skill</strong> + 3 <strong>Skill dice</strong>.</p>
 <p>Once the spell goes off, resolve the attack using the <strong>Attack Sequence</strong>. Use the spell&#39;s <strong>Hit</strong> attribute for the roll to hit: <strong>Ranged Combat</strong> for most damage spells, <strong>Close Combat</strong> for engagement-range damage (including blasts centered on the caster). Apply <strong>Hit</strong> attribute modifiers (+1 <strong>Ranged Combat</strong>, −1 <strong>Close Combat</strong>, etc.) to that attribute.</p>
 <hr>
 <h2 id="magic-classes">Magic Classes</h2>
@@ -3529,26 +3529,26 @@
 <p>Each domain has a standard ranged attack spell plus <strong>6 additional spells</strong>. <strong>Casting attribute</strong> is <strong>Will</strong> for Light, Arcane, and Nature; <strong>Sanity</strong> for Infernal, Necromancy, and Blood. <strong>Hit</strong> is the attribute used for the roll to hit on damage spells (<strong>Ranged Combat</strong> or <strong>Close Combat</strong>); <strong>—</strong> if the spell does not deal damage through the <strong>Attack Sequence</strong>. Apply <strong>Hit</strong> attribute modifiers to the attribute named by the spell.</p>
 <h3 id="light">Light</h3>
 <h4 id="radiant-strike">Radiant Strike</h4>
-<p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 4 <strong>Might</strong> / 3 <strong>Skill</strong>. Make a ranged spell attack. Against <strong>Undead</strong> and <strong>Daemons</strong>, use 5 <strong>Might</strong> / 3 <strong>Skill</strong> instead.</p>
+<p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 5 <strong>Might</strong> / +2 <strong>Skill</strong>. Make a ranged spell attack. Against <strong>Undead</strong> and <strong>Daemons</strong>, use 6 <strong>Might</strong> / +2 <strong>Skill</strong> instead.</p>
 <h4 id="holy-light">Holy Light</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 12&quot; from caster. All fighters within 12&quot; lose cover and <strong>Hidden</strong>. <strong>Mishap:</strong> The caster becomes <strong>Blinded</strong>.</p>
 <h4 id="heal">Heal</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 10+. <strong>Range:</strong> 1&quot;. Restore 1 Wound and improve the target&#39;s wound state by one step: <strong>Stunned</strong> to <strong>Downed</strong>, or <strong>Downed</strong> to <strong>Active</strong>.</p>
 <h4 id="purge-the-faithless">Purge the Faithless</h4>
-<p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 3&quot; blast from caster. <strong>Attack:</strong> <strong>Close Combat</strong>, 5 <strong>Might</strong> / 2 <strong>Skill</strong>. All fighters within the blast are hit. <strong>Mishap:</strong> Resolve the attack against the caster.</p>
+<p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 3&quot; blast from caster. <strong>Attack:</strong> <strong>Close Combat</strong>, 3 <strong>Might</strong> / +1 <strong>Skill</strong>. All fighters within the blast are hit. <strong>Mishap:</strong> Resolve the attack against the caster.</p>
 <h4 id="shield-of-faith">Shield of Faith</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 10+. <strong>Range:</strong> 12&quot;. Target friendly fighter gains <strong>+2 Might defense dice</strong> until the start of the caster&#39;s next activation.</p>
 <h4 id="horrors-relived">Horrors Relived</h4>
-<p><strong>Casting:</strong> <strong>Will</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, target&#39;s <strong>Sanity</strong> as <strong>Might</strong>. Make a ranged spell attack. Use the target&#39;s <strong>Sanity</strong> attribute as the attack&#39;s <strong>Might</strong>. <strong>Mishap:</strong> Resolve the attack against the caster, using the target&#39;s <strong>Sanity</strong> as <strong>Might</strong>.</p>
+<p><strong>Casting:</strong> <strong>Will</strong> 12+. <strong>Range:</strong> 12&quot;. Target enemy makes a <strong>Sanity</strong> check. On a failure, that fighter suffers 4 automatic hits. On a pass, that fighter suffers 1 automatic hit. <strong>Mishap:</strong> Resolve the failed effect against the caster.</p>
 <h4 id="unwavering-resolve">Unwavering Resolve</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 10+. <strong>Range:</strong> 8&quot; from caster. All friendly fighters within 8&quot; become immune to Fear, Panic, and Insanity until the start of the caster&#39;s next activation. <strong>Mishap:</strong> The caster becomes <strong>Broken</strong>.</p>
 <h3 id="arcane">Arcane</h3>
 <h4 id="arcane-bolt">Arcane Bolt</h4>
-<p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 20&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 5 <strong>Skill</strong>. Make a ranged spell attack.</p>
+<p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 20&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 4 <strong>Might</strong> / +3 <strong>Skill</strong>. Make a ranged spell attack.</p>
 <h4 id="arcane-shield">Arcane Shield</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> Self. The caster is immune to all spells. At the start of the caster&#39;s next activation, roll 1d6. On 1-2, the shield disappears.</p>
 <h4 id="fireball">Fireball</h4>
-<p><strong>Casting:</strong> <strong>Will</strong> 13+. <strong>Range:</strong> 18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 5 <strong>Might</strong> / 4 <strong>Skill</strong>. Choose a point within 18&quot;. All fighters within a <strong>5&quot; blast template</strong> are hit. The blast hits friendly and enemy fighters. If the <strong>casting roll</strong> fails below difficulty (not <strong>Mishap</strong>), the fireball scatters: roll a scatter die for direction and d6&quot; for distance from the target point. On a success, the blast centers on the chosen point. <strong>Mishap:</strong> The blast template centers on the caster.</p>
+<p><strong>Casting:</strong> <strong>Will</strong> 13+. <strong>Range:</strong> 18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 4 <strong>Might</strong> / +3 <strong>Skill</strong>. Choose a point within 18&quot;. All fighters within a <strong>5&quot; blast template</strong> are hit. The blast hits friendly and enemy fighters. If the <strong>casting roll</strong> fails below difficulty (not <strong>Mishap</strong>), the fireball scatters: roll a scatter die for direction and d6&quot; for distance from the target point. On a success, the blast centers on the chosen point. <strong>Mishap:</strong> The blast template centers on the caster.</p>
 <h4 id="telekinesis">Telekinesis</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 12+. <strong>Range:</strong> 12&quot;. Move any fighter, friendly or enemy, up to 6&quot; directly toward or directly away from the caster. The target does not make a check. <strong>Mishap:</strong> Your opponent chooses whether the target moves directly toward or directly away from the caster.</p>
 <h4 id="displacement">Displacement</h4>
@@ -3560,7 +3560,7 @@
 <p><strong>Casting:</strong> <strong>Will</strong> 12+. <strong>Range:</strong> line of sight. Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2. <strong>Mishap:</strong> The caster loses 1 action on their next activation. They activate with 1 action instead of 2.</p>
 <h3 id="infernal">Infernal</h3>
 <h4 id="hellfire">Hellfire</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 10+. <strong>Range:</strong> 3&quot;–18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 3 <strong>Might</strong> / 4 <strong>Skill</strong>. Make a ranged spell attack.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 10+. <strong>Range:</strong> 3&quot;–18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 4 <strong>Might</strong> / +3 <strong>Skill</strong>. Make a ranged spell attack.</p>
 <h4 id="summon-daemon">Summon Daemon</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 11+. <strong>Range:</strong> 3&quot;. The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:</p>
 <ul>
@@ -3823,12 +3823,12 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
 <h4 id="hellmouth">Hellmouth</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 11+. <strong>Range:</strong> 12&quot;. Choose a point within <strong>12&quot;</strong>. Place a <strong>5&quot; blast template</strong> centered on that point. The template cannot overlap any fighter&#39;s base. The template counts as <strong>impassable terrain</strong> for the rest of the battle. <strong>Mishap:</strong> The <strong>Hellmouth</strong> opens centered on the caster instead.</p>
 <h4 id="searing-gaze">Searing Gaze</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> 18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 4 <strong>Might</strong> / 4 <strong>Skill</strong>. Draw a straight line <strong>1 mm</strong> thick from the caster to a point up to <strong>18&quot;</strong> away in a direction you choose. Every fighter the line touches that is in <strong>line of sight</strong> of the caster is hit. <strong>Mishap:</strong> Resolve the attack against the caster. The caster becomes <strong>Blinded</strong> until the end of their next activation — see <a href="/conditions/#blinded">Conditions — Blinded</a>.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> 18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 3 <strong>Might</strong> / +3 <strong>Skill</strong>. Draw a straight line <strong>1 mm</strong> thick from the caster to a point up to <strong>18&quot;</strong> away in a direction you choose. Every fighter the line touches that is in <strong>line of sight</strong> of the caster is hit. <strong>Mishap:</strong> Resolve the attack against the caster. The caster becomes <strong>Blinded</strong> until the end of their next activation — see <a href="/conditions/#blinded">Conditions — Blinded</a>.</p>
 <h4 id="nightmare-visage">Nightmare Visage</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 11+. <strong>Range:</strong> 12&quot;. Target friendly fighter within <strong>12&quot;</strong>. That fighter <strong>projects Fear (6&quot;)</strong> while the spell remains in effect. At the end of each <strong>round</strong>, the caster makes a <strong>Sanity</strong> check. On a failure, the spell ends.</p>
 <h3 id="nature">Nature</h3>
 <h4 id="thorn-volley">Thorn Volley</h4>
-<p><strong>Casting:</strong> <strong>Will</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 4 <strong>Might</strong> / 4 <strong>Skill</strong>. Make a ranged spell attack using a <strong>standard flame template</strong>.</p>
+<p><strong>Casting:</strong> <strong>Will</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 3 <strong>Might</strong> / +2 <strong>Skill</strong>. Make a ranged spell attack using a <strong>standard flame template</strong>.</p>
 <h4 id="shadowmeld">Shadowmeld</h4>
 <p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 12&quot;. Target friendly fighter gains <strong>Hidden</strong>. The target does not need to remain within 1&quot; of terrain to stay <strong>Hidden</strong>. <strong>Hidden</strong> is still lost from combat actions, <strong>Charge</strong>, <strong>Climb</strong>, <strong>Jump</strong>, or moving within 6&quot; of an enemy. <strong>Mishap:</strong> Enemies add +1 <strong>Ranged Combat</strong> or +1 <strong>Close Combat</strong> — whichever <strong>Hit</strong> attribute the attack uses — when attacking the target with <strong>Ranged</strong> attacks or spells until the start of the caster&#39;s next activation.</p>
 <h4 id="venom">Venom</h4>
@@ -3873,7 +3873,7 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
 <p><strong>Casting:</strong> <strong>Will</strong> 11+. <strong>Range:</strong> 8&quot; from caster. All enemy fighters within 8&quot; must pass a <strong>Sanity</strong> check for <strong>Fear</strong> with the caster as the source.</p>
 <h3 id="necromancy">Necromancy</h3>
 <h4 id="deathbolt">Deathbolt</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 14+. <strong>Range:</strong> 18&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 6 <strong>Skill</strong>. Make a ranged spell attack. This attack uses only <strong>Skill</strong> and ignores armor.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 14+. <strong>Range:</strong> 18&quot;. Target enemy makes a <strong>Will</strong> check. On a failure, that fighter goes <strong>Out of Action</strong>. On a pass, there is no effect.</p>
 <h4 id="summon-skeleton">Summon Skeleton</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 10+. <strong>Range:</strong> 3&quot;.</p>
 <p>The caster must carry <strong>1 Summoning Crystal</strong> — see <a href="#summoning">Summoning</a>.</p>
@@ -3911,16 +3911,16 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
 <h4 id="raise-dead">Raise Dead</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 13+. <strong>Range:</strong> 3&quot;. <strong>Remove</strong> one <strong>friendly</strong> <strong>body token</strong> within <strong>3&quot;</strong> of the caster — see <a href="#body-tokens">Body tokens</a>. Place that fighter within <strong>3&quot;</strong> of the caster with <strong>1 Wound</strong>, <strong>Undead</strong>, and <strong>Fearless</strong>. Roll <strong>1d3</strong>. The fighter remains in the battle for that many <strong>activations</strong>, counting this one. They activate immediately with <strong>2 actions</strong>. When those activations have finished, they go <strong>Out of Action</strong> and are removed from the battle. <strong>Mishap:</strong> Your opponent places and controls the raised fighter instead.</p>
 <h4 id="cursed-ground">Cursed Ground</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 2 <strong>Might</strong> / 2 <strong>Skill</strong>. Choose a point within 12&quot;. Place a large blast template until the start of the caster&#39;s next activation. All fighters in the zone suffer −1&quot; <strong>Movement</strong> and take the spell&#39;s hit unless they pass a <strong>Skill</strong> check. <strong>Mishap:</strong> The blast centers on the caster.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 2 <strong>Might</strong> / +2 <strong>Skill</strong>. Choose a point within 12&quot;. Place a large blast template until the start of the caster&#39;s next activation. All fighters in the zone suffer −1&quot; <strong>Movement</strong> and take the spell&#39;s hit unless they pass a <strong>Skill</strong> check. <strong>Mishap:</strong> The blast centers on the caster.</p>
 <h4 id="wither">Wither</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 11+. <strong>Range:</strong> 12&quot;. Target enemy suffers <strong>Withered</strong> until the start of the caster&#39;s next activation — see <a href="/conditions/#afflictions">Conditions — Afflictions</a>. <strong>Mishap:</strong> The caster suffers <strong>Withered</strong> until the start of their next activation.</p>
 <h4 id="bone-blast">Bone Blast</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 11+. <strong>Range:</strong> blast from caster. <strong>Attack:</strong> <strong>Close Combat</strong>, 1 <strong>Might</strong> / 4 <strong>Skill</strong>. Center the blast template on the caster. All fighters under the template except the caster are hit. <strong>Mishap:</strong> Resolve the attack against the caster.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 11+. <strong>Range:</strong> blast from caster. <strong>Attack:</strong> <strong>Close Combat</strong>, 4 <strong>Might</strong> / +3 <strong>Skill</strong>. Center the blast template on the caster. All fighters under the template except the caster are hit. <strong>Mishap:</strong> Resolve the attack against the caster.</p>
 <h4 id="bone-circle">Bone Circle</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 1 <strong>Might</strong> / 3 <strong>Skill</strong>. Choose a point within 12&quot;. Place a 3&quot; blast template until the start of the caster&#39;s next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters. <strong>Mishap:</strong> The zone centers on the caster.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> 12&quot;. <strong>Attack:</strong> <strong>Ranged Combat</strong>, 3 <strong>Might</strong> / +4 <strong>Skill</strong>. Choose a point within 12&quot;. Place a 3&quot; blast template until the start of the caster&#39;s next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters. <strong>Mishap:</strong> The zone centers on the caster.</p>
 <h3 id="blood">Blood</h3>
 <h4 id="leech">Leech</h4>
-<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> Touch. <strong>Attack:</strong> <strong>Close Combat</strong>, 3 <strong>Might</strong> / 3 <strong>Skill</strong>. Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.</p>
+<p><strong>Casting:</strong> <strong>Sanity</strong> 12+. <strong>Range:</strong> Touch. <strong>Attack:</strong> <strong>Close Combat</strong>, 5 <strong>Might</strong> / +3 <strong>Skill</strong>. Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.</p>
 <h4 id="bleed">Bleed</h4>
 <p><strong>Casting:</strong> <strong>Sanity</strong> 13+. <strong>Range:</strong> 12&quot;. Target enemy must pass a <strong>Will</strong> check. On a failure, the target becomes <strong>Bleeding</strong> — see <a href="/conditions/#bleeding">Conditions — Bleeding</a>. <strong>Mishap:</strong> The caster becomes <strong>Bleeding</strong> instead.</p>
 <h4 id="blood-frenzy">Blood Frenzy</h4>
@@ -4007,7 +4007,7 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2ea3004"></script>
-  <script src="/wiki/wiki.js?v=2ea3004" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=2fa1792"></script>
+  <script src="/wiki/wiki.js?v=2fa1792" defer></script>
 </body>
 </html>

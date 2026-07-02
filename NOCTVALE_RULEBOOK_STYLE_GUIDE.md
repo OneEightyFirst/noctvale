@@ -310,8 +310,7 @@ Always use the **"** mark for inches. Do not write `inch`, `inches`, or spell ou
 
 Use **+** / **−** with a space before the number in prose.
 
-Use +1 **Might** or +1 **Skill** only when a rule changes the fighter's attribute or a
-weapon table's +**Might** / +**Skill** modifier. When a rule adds dice without changing a
+Use +1 **Might** or +1 **Skill** only when a rule changes the fighter's attribute, or when a weapon or spell profile uses an additive +**Might** / +**Skill** value. When a rule adds dice without changing a
 attribute, name the dice directly: **add 2 Might dice to the Strike Pool**, **add 1
 Skill die to the Strike Pool**, or **gain +1 Might defense die**.
 
@@ -323,19 +322,20 @@ For attack accuracy, modify the **Hit** attribute for that attack: +1 **Close Co
 
 ### Weapon table columns (standard)
 
-`| Weapon | Hands | Range | Primer | +Mt | +Sk | Notes |`
+`| Weapon | Hands | Range | Primer | Mt | Sk | Notes |`
 
 - **Range:** `3"–18"` for missiles; **Engagement** for melee.
 - **Primer:** **2d6 + Skill** vs profile value; **—** for weapons without a primer roll. Profile values assume **Skill** 3; adjust per the **Primer Roll** box in `rules/weapons.md`.
+- **Mt / Sk:** A number with `+` adds to the fighter's matching attribute. A number without `+` is fixed.
 - **Notes:** traits comma-separated — **Single Shot**, **Smoke**, **Flintlock** keyword callouts.
 
 ### Weapon trait line (short)
 
-> **Musket** · 2H · 3"–24" · primer **9+** · 5 **Might** / 3 **Skill** · crits vs all targets
+> **Musket** · 2H · 3"–24" · primer **9+** · 5 **Might** / +2 **Skill** · crits vs all targets
 
 ### Spell line (card / compact)
 
-> **Arcane Bolt** · **Will** 11+ · 20" · **Ranged Combat**, 5 **Skill**
+> **Arcane Bolt** · **Will** 11+ · 20" · **Ranged Combat**, 4 **Might** / +3 **Skill**
 
 ### Spell block (standard)
 
@@ -344,13 +344,14 @@ Use spell blocks in `rules/magic.md` instead of spell tables.
 ```markdown
 ##### Radiant Strike
 
-**Casting:** **Will** 11+. **Range:** 12". **Attack:** **Ranged Combat**, 4 **Might** / 3 **Skill**.
+**Casting:** **Will** 11+. **Range:** 12". **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**.
 
-Make a ranged spell attack. Against **Undead** and **Daemons**, use 5 **Might** / 3 **Skill** instead.
+Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
 ```
 
 - **Casting** combines casting attribute and difficulty: **Will** 11+, **Sanity** 12+.
 - Include **Attack** only when the spell resolves through the **Attack Sequence**.
+- In an **Attack** line, a plain **Might** or **Skill** value is fixed; a +**Skill** value adds to the caster's **Skill**.
 - Omit **Mishap** entirely when the spell has no Mishap.
 - Write the effect as normal rules prose, not table shorthand.
 - Use **Mishap:** only when the spell has a defined backlash or a still-open *(TBD)* backlash.

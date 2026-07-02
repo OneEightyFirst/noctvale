@@ -52,7 +52,11 @@ If the first roll was **Mishap**, resolve it as normal — do not reroll.
 
 When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms. A fighter equips a firearm only if they have the **Firearms** domain feat.
 
-Firearms use a **primer roll** (**2d6** + **Skill**). **Double 1s** = **Misfire**. Firearms gain **critical hits against all targets** (outside the weapon triangle). Firearms generate a **flat Strike Pool** — profile values are the complete pool, independent of the shooter's base attributes.
+Firearms use a **primer roll** (**2d6** + **Skill**). **Double 1s** = **Misfire**. Firearms gain **critical hits against all targets** (outside the weapon triangle).
+
+Firearm profiles use fixed **Might dice** and the shooter's **Skill**. Add the profile's +**Skill** value to the shooter's **Skill** to build the **Skill dice** side of the Strike Pool.
+
+A **Long Rifle** scores critical hits on natural 5+ instead of only natural 6s.
 
 Bombs are thrown explosives (see [Bombs](#bombs)). **Single Shot** — one use per battle. Require the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
 
@@ -83,7 +87,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no **Brac
 
 ## Bombs
 
-Bombs are thrown explosives with a flat Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**.
+Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (friend and foe) within the blast radius of the detonation point. All bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**.
 
 ### Throwing a bomb
 

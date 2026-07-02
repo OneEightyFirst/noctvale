@@ -205,14 +205,14 @@ Rules and profiles: [Companions](companions.md#companions).
 
 ## Weapon profiles — Archery
 
-Minimum range **3"** unless noted. Archery weapons are available to **all retinues**.
+Minimum range **3"** unless noted. Archery weapons are available to **all retinues**. A number with a `+` adds to the attacker's matching attribute. A number without a `+` is fixed. Bows use the archer's **Might** with fixed **Skill dice**. Crossbows use fixed **Might dice** with the shooter's **Skill**.
 
 | Weapon         | Hands | Range  | Mt  | Sk  | Notes                                      |
 | -------------- | ----- | ------ | --- | --- | ------------------------------------------ |
-| Shortbow       | 2H    | 3"–18" | —   | +2  | Fast, Sk-dominant                          |
-| Longbow        | 2H    | 3"–24" | —   | +2  | Longer range, stronger                     |
-| Crossbow       | 2H    | 3"–24" | +2  | —   | Mt-dominant, mechanical                    |
-| Heavy Crossbow | 2H    | 3"–30" | +3  | —   | Slow, powerful                             |
+| Shortbow       | 2H    | 3"–18" | +1  | 4   | Draw strength plus fixed accuracy          |
+| Longbow        | 2H    | 3"–24" | +1  | 5   | Longer range, stronger accuracy            |
+| Crossbow       | 2H    | 3"–24" | 4   | +2  | Mechanical force, trained aim              |
+| Heavy Crossbow | 2H    | 3"–30" | 5   | +2  | Slow, powerful                             |
 
 ---
 
@@ -229,13 +229,13 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 ## Weapon profiles — firearms *(requires **Mortal**; forbids **Caster**)*
 
-*Primer column assumes **Skill** 3. Combat rules: [Weapons](#weapons) below.*
+*Primer column assumes **Skill** 3. Combat rules: [Weapons](#weapons) below. Firearms use fixed **Might dice** with the shooter's **Skill** plus the printed +**Skill** value.*
 
-| Weapon      | Hands | Range  | Primer | Mt  | Sk  |
-| ----------- | ----- | ------ | ------ | --- | --- |
-| Blunderbuss | 2H    | 0"–10" | 8+     | 6   | —   |
-| Musket      | 2H    | 3"–24" | 9+     | 5   | 3   |
-| Pistol      | 1H    | 0"–12" | 9+     | 5   | 2   |
-| Long Rifle  | 2H    | 3"–30" | 10+    | 6   | 2   |
+| Weapon      | Hands | Range  | Primer | Mt  | Sk  | Notes                     |
+| ----------- | ----- | ------ | ------ | --- | --- | ------------------------- |
+| Blunderbuss | 2H    | 0"–10" | 8+     | 3   | +2  | Standard flame template   |
+| Musket      | 2H    | 3"–24" | 9+     | 5   | +2  | Firearm critical hits     |
+| Pistol      | 1H    | 0"–12" | 9+     | 4   | +2  | Short range               |
+| Long Rifle  | 2H    | 3"–30" | 10+    | 5   | +3  | Critical hits on 5+       |
 
 ---

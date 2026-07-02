@@ -71,7 +71,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 
 > ### Attack Sequence
 >
-> **Step 1 — Build the Strike Pool:** Fighter **Might** + **Skill** + weapon +**Might** / +**Skill**, to a maximum of **15 dice**. Firearms and damage spells use a **flat Strike Pool** instead (see weapon or spell profile).
+> **Step 1 — Build the Strike Pool:** Read the attack's weapon or spell profile. A number with a `+` adds to the attacker's matching attribute; a number without a `+` is fixed. The Strike Pool cannot exceed **15 dice**.
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
@@ -83,11 +83,13 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 
 ### Step 1: Build the Strike Pool
 
-The Strike Pool is the fighter's **Might** + **Skill**, modified by their weapon.
+The Strike Pool is the mix of **Might dice** and **Skill dice** the attacker rolls to hit. Weapon and spell profiles list the dice the attack uses.
 
-- The fighter's **Might** = Might dice
-- The fighter's **Skill** = Skill dice
-- The weapon adds +**Might** (Might dice) and/or +**Skill** (Skill dice)
+- A number with a `+` adds to the attacker's matching attribute. A profile with +1 **Might** uses the attacker's **Might** + 1 **Might die**.
+- A number without a `+` is fixed. A profile with 4 **Skill** uses exactly 4 **Skill dice**, no matter the attacker's **Skill**.
+- A dash adds no dice.
+
+Some ranged weapons and damage spells mix these values. A Shortbow uses the archer's **Might** plus fixed **Skill dice**. A Crossbow, firearm, or damage spell uses fixed **Might dice** plus the attacker's **Skill** and any printed +**Skill** value.
 
 After all weapon bonuses and other dice bonuses are applied, a Strike Pool cannot contain more than **15 dice**. If the pool would exceed **15 dice**, the attacking player chooses which **Might dice** or **Skill dice** to remove until **15 dice** remain.
 
@@ -107,7 +109,7 @@ A **Keen** fighter (**Might** 3, **Skill** 4) with a Sword: **(3+1) Might + (4+1
 | Fighter                 | Base Mt | Base Sk | Weapon                 | Might | Skill | Total |
 | ----------------------- | ------- | ------- | ---------------------- | ----- | ----- | ----- |
 | **Steady** (Mt 3, Sk 3) | 3       | 3       | Sword (+1 Mt, +1 Sk)   | 4     | 4     | 8     |
-| **Keen** (Mt 3, Sk 4)   | 3       | 4       | Shortbow (+2 Sk)       | 3     | 6     | 9     |
+| **Keen** (Mt 3, Sk 4)   | 3       | 4       | Shortbow (+1 Mt, 4 Sk) | 4     | 4     | 8     |
 | **Stout** (Mt 4, Sk 3)  | 4       | 3       | War Axe (+2 Mt)        | 6     | 3     | 9     |
 | **Stunty** (Mt 2, Sk 4) | 2       | 4       | Throwing Stars (+1 Sk) | 2     | 5     | 7     |
 
@@ -218,7 +220,7 @@ Nature > Necromancy > Blood > Nature
 
 ### Firearms
 
-Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. *(See [Equipment — Weapons](weapons.md#weapons).)*
+Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** scores critical hits on natural 5+ instead of only natural 6s. *(See [Equipment — Weapons](weapons.md#weapons).)*
 
 ### Outside the Triangles
 

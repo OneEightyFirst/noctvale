@@ -59,6 +59,12 @@ Open questions:
 
 ---
 
+## 2026-07-01 — Ranged and Spell Strike Pool Redesign
+
+**Decision:** Replace the discarded high-dice firearm pass with a unified ranged damage model. Bows now scale from the attacker's **Might** with fixed **Skill dice**: **Shortbow** +1 **Might** / 4 **Skill**, **Longbow** +1 **Might** / 5 **Skill**. Crossbows and firearms now use fixed **Might dice** plus the attacker's **Skill**: **Crossbow** 4 **Might** / +2 **Skill**, **Heavy Crossbow** 5 **Might** / +2 **Skill**, **Pistol** 4 **Might** / +2 **Skill**, **Musket** 5 **Might** / +2 **Skill**, **Long Rifle** 5 **Might** / +3 **Skill** with critical hits on 5+, and **Blunderbuss** 3 **Might** / +2 **Skill** using a standard flame template. Damage spells now use fixed **Might dice** plus the caster's **Skill** and printed +**Skill** value. **Deathbolt** becomes **Sanity** 14+, range 18", target **Will** check or **Out of Action**.
+
+**Reasoning:** The previous firearm increase made long-range guns too lethal by adding raw dice. The new model keeps ranged attacks in the same campaign-scaling language while making each family read differently: bows reward strength, crossbows and firearms reward handling, firearms stand apart through critical hits, and spells justify casting rolls and Mishap risk by starting strong and scaling with caster **Skill**. Template attacks stay lower because they can hit multiple fighters or control space.
+
 ## 2026-06-30 — Strike Pool cap and dual wielding
 
 **Decision:** Set a hard **15 dice** maximum for every Strike Pool after weapon bonuses and other dice bonuses are applied. Add dual wielding for fighters using two one-handed melee weapons: choose a primary and secondary weapon, add both weapons' +**Might** and +**Skill** values to the Strike Pool up to the **15 dice** cap, and use only the primary weapon's type and special rules for critical hits and other attack effects. A fighter cannot use a shield while dual-wielding.
