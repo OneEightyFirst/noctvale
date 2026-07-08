@@ -59,6 +59,12 @@ Open questions:
 
 ---
 
+## 2026-07-08 — Retinue share, print roster, and play-mode card layout
+
+**Decision:** Add a sidebar **Share** menu with **Copy** (plain-text roster to clipboard) and **Print** (print-friendly layout via a hidden iframe, no pop-up). Play-mode and export views now hide build-only feats (weapon proficiencies and **Firearms**), omit recruitment boost labels because stats already reflect boosts, and show weapons in a compact table (`Name | Slots | Mt | Sk`) with special rules on the line below. Print uses a two-column flowing card layout, bordered stat grids, and the same weapon table format.
+
+**Reasoning:** Players need a table-ready roster they can paste or print without retyping gear and feat text. Build-only proficiency picks and firearms access are roster-construction metadata, not rules needed during play. Tabular weapons and condensed print cards keep large retinues readable on paper.
+
 ## 2026-07-07 — Retinue builder edit-mode roster UX
 
 **Decision:** Improve retinue edit mode in the builder: replace the exit-edit **X** with a save icon; add per-card collapse in edit mode (header-only view with name, keywords, slots, and cost); confirm before removing a fighter; match left-nav chevron behavior (right when collapsed, down when expanded); and add drag-to-reorder for non-leader fighter cards via a grip handle, persisting order in the existing `fighters` array. The Leader card stays pinned and is not draggable.

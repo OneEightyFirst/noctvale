@@ -16,9 +16,12 @@ import {
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { ArrowLeft, ChevronRight, GripVertical, Pencil, Plus, Save, X } from "lucide-react";
+import ShareMenu from "./ShareMenu.jsx";
+import WeaponTable from "./WeaponTable.jsx";
 import { useRegisterSidebar } from "../contexts/SideNavContext.jsx";
 import { useRetinue } from "../hooks/useRetinue.js";
 import { emptyRetinue } from "../lib/retinue.js";
+import { getPlayModeFeats } from "../lib/retinue-sheet.js";
 import {
   formatWeaponRules,
   getFighterWeapons,
@@ -756,11 +759,11 @@ function AddFighterButton({ onClick, disabled }) {
 
 function StatGrid({ stats }) {
   return (
-    <div className="grid grid-cols-8 gap-1">
+    <div className="grid w-full grid-cols-8 border border-night-800">
       {STAT_KEYS.map((key) => (
-        <div key={key} className="min-w-0 rounded border border-night-800 bg-night-950/80 p-1.5 text-center">
-          <div className="text-[10px] uppercase text-cream-500">{key}</div>
-          <div className="truncate text-xs font-semibold text-cream-100">{formatStat(key, stats[key])}</div>
+        <div key={key} className="min-w-0 border-r border-night-800 text-center last:border-r-0">
+          <div className="border-b border-night-800 px-0.5 py-0.5 text-[10px] uppercase text-cream-500">{key}</div>
+          <div className="truncate px-0.5 py-1 text-xs font-semibold text-cream-100">{formatStat(key, stats[key])}</div>
         </div>
       ))}
     </div>
@@ -1024,6 +1027,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
               <Pencil className="h-4 w-4" aria-hidden="true" />
             )}
           </button>
+          <ShareMenu retinue={data} disabled={!archetype || !tradition} />
         </div>
 
         <RetinueNameField
@@ -1198,6 +1202,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     archetypeId,
     availableTraditions,
     budget,
+    data,
     editing,
     loading,
     onBackToLibrary,
@@ -1414,36 +1419,24 @@ function FighterCardSummary({
       {getFighterWeapons(fighter).length > 0 ? (
         <div>
           <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-cream-500">Weapons</div>
-          <WeaponProfileList fighter={fighter} weaponsOnly />
+          <WeaponTable
+            weapons={getSelectedEquipment(fighter).filter(({ item }) => item.kind === "weapon")}
+            skilledCraftsman={fighter.skilledCraftsman}
+            compact
+          />
         </div>
       ) : null}
 
       <div className="space-y-2">
-        {type.boost && fighter.statBoosts.length > 0 ? (
-          <SummaryRow label={type.boost.label}>
-            <span className="inline-flex flex-wrap gap-1.5">
-              {fighter.statBoosts.map((stat) => (
-                <span key={stat} className="rounded border border-night-800 bg-night-950 px-2 py-0.5 text-xs">
-                  {stat}
-                </span>
-              ))}
-            </span>
-          </SummaryRow>
-        ) : null}
-
-        {type.builtInChoice && fighter.builtInChoice ? (
-          <SummaryRow label="Built-in training">{getProficiencyName(fighter.builtInChoice)}</SummaryRow>
-        ) : null}
-
         {caster ? (
           <SummaryRow label="Caster">
             {spellNames.length ? spellNames.join(", ") : "Caster"}
           </SummaryRow>
         ) : null}
 
-        {selectedFeatRules.length > 0 ? (
-          <SummaryRow label="Feats">{selectedFeatRules.map((feat) => feat.name).join(", ")}</SummaryRow>
-        ) : null}
+        {getPlayModeFeats(selectedFeatRules).map((feat) => (
+          <RuleBlock key={feat.id} title={feat.name} rules={feat.rules} />
+        ))}
 
         {selectedEquipment.some(({ item }) => item.kind !== "weapon") ? (
           <SummaryRow label="Equipment">
@@ -2076,17 +2069,7 @@ function WeaponProfileList({ fighter, weaponsOnly = false }) {
     if (!weapons.length) return null;
     return (
       <div className="space-y-2">
-        {weapons.map(({ item, quantity }) => (
-          <div key={item.id} className="min-w-0 rounded border border-night-800 bg-night-950 p-2">
-            <div className="text-xs font-semibold text-cream-100">
-              {item.name}
-              {quantity > 1 ? ` ×${quantity}` : ""}
-            </div>
-            <div className="mt-1">
-              <RuleList rules={formatWeaponRules(item, fighter.skilledCraftsman)} compact />
-            </div>
-          </div>
-        ))}
+        <WeaponTable weapons={weapons} skilledCraftsman={fighter.skilledCraftsman} compact />
         {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       </div>
     );
@@ -2098,17 +2081,7 @@ function WeaponProfileList({ fighter, weaponsOnly = false }) {
 
   return (
     <div className="space-y-2">
-      {weapons.map(({ item, quantity }) => (
-        <div key={item.id} className="min-w-0 rounded border border-night-800 bg-night-950 p-2">
-          <div className="text-xs font-semibold text-cream-100">
-            {item.name}
-            {quantity > 1 ? ` ×${quantity}` : ""}
-          </div>
-          <div className="mt-1">
-            <RuleList rules={formatWeaponRules(item, fighter.skilledCraftsman)} compact />
-          </div>
-        </div>
-      ))}
+      {weapons.length ? <WeaponTable weapons={weapons} skilledCraftsman={fighter.skilledCraftsman} compact /> : null}
       {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       {otherGear.length ? (
         <div className="flex flex-wrap gap-2">
