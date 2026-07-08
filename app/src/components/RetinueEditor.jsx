@@ -1,5 +1,21 @@
 import React, { memo, useCallback, useEffect, useMemo, useState } from "react";
-import { ArrowLeft, Pencil, Plus, X } from "lucide-react";
+import {
+  DndContext,
+  KeyboardSensor,
+  PointerSensor,
+  closestCenter,
+  useSensor,
+  useSensors,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  arrayMove,
+  rectSortingStrategy,
+  sortableKeyboardCoordinates,
+  useSortable,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
+import { ArrowLeft, ChevronRight, GripVertical, Pencil, Plus, Save, X } from "lucide-react";
 import { useRegisterSidebar } from "../contexts/SideNavContext.jsx";
 import { useRetinue } from "../hooks/useRetinue.js";
 import { emptyRetinue } from "../lib/retinue.js";
@@ -481,6 +497,51 @@ function SelectionSummary({ title, meta, rules }) {
   );
 }
 
+function ConfirmModal({ ariaLabel, title, message, confirmLabel, onConfirm, onClose }) {
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.key === "Escape") onClose();
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-3 sm:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-label={ariaLabel}
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-md rounded-lg border border-night-700 bg-night-950 p-4 shadow-2xl shadow-black"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <h3 className="text-lg font-semibold text-cream-100">{title}</h3>
+        <p className="mt-2 text-sm leading-relaxed text-cream-300">{message}</p>
+        <div className="mt-4 flex justify-end gap-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded border border-night-700 bg-night-900 px-3 py-1.5 text-sm text-cream-300 hover:border-cream-500 hover:text-cream-100"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            onClick={onConfirm}
+            className="rounded border border-rose-500/40 bg-rose-500/10 px-3 py-1.5 text-sm text-rose-200 hover:border-rose-400 hover:bg-rose-500/20"
+          >
+            {confirmLabel}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function PickerModal({ ariaLabel, eyebrow, title, onClose, headerSummary, children }) {
   useEffect(() => {
     function handleKeyDown(event) {
@@ -835,6 +896,35 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     setFighters((current) => current.filter((fighter) => fighter.id !== fighterId));
   }, [setFighters]);
 
+  const reorderFighters = useCallback(
+    (activeId, overId) => {
+      setFighters((current) => {
+        const leader = current.find((fighter) => getFighterType(archetype, fighter)?.role === "Leader");
+        const others = current.filter((fighter) => getFighterType(archetype, fighter)?.role !== "Leader");
+        const oldIndex = others.findIndex((fighter) => fighter.id === activeId);
+        const newIndex = others.findIndex((fighter) => fighter.id === overId);
+        if (oldIndex < 0 || newIndex < 0 || oldIndex === newIndex) return current;
+        const nextOthers = arrayMove(others, oldIndex, newIndex);
+        return leader ? [leader, ...nextOthers] : nextOthers;
+      });
+    },
+    [archetype, setFighters],
+  );
+
+  const handleDragEnd = useCallback(
+    (event) => {
+      const { active, over } = event;
+      if (!over || active.id === over.id) return;
+      reorderFighters(active.id, over.id);
+    },
+    [reorderFighters],
+  );
+
+  const dragSensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+  );
+
   const toggleArrayValue = useCallback((fighter, key, value, max) => {
     const current = fighter[key] ?? [];
     const exists = current.includes(value);
@@ -918,7 +1008,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
           </button>
           <button
             type="button"
-            aria-label={editing ? "Done editing" : "Edit retinue"}
+            aria-label={editing ? "Save retinue" : "Edit retinue"}
             aria-pressed={editing}
             onClick={onToggleEditing}
             className={cx(
@@ -929,7 +1019,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
             )}
           >
             {editing ? (
-              <X className="h-4 w-4" aria-hidden="true" />
+              <Save className="h-4 w-4" aria-hidden="true" />
             ) : (
               <Pencil className="h-4 w-4" aria-hidden="true" />
             )}
@@ -1163,23 +1253,47 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
             />
           ) : null}
 
-          {otherFighters.map((fighter) => (
-            <FighterCard
-              key={fighter.id}
-              editing={editing}
-              fighter={fighter}
-              archetype={archetype}
-              tradition={tradition}
-              selectedSpecialChoice={selectedSpecialChoice}
-              domain={domain}
-              retinueChoices={retinueChoices}
-              casterCount={casterCount}
-              updateFighter={updateFighter}
-              removeFighter={removeFighter}
-              toggleArrayValue={toggleArrayValue}
-              setEquipmentQuantity={setEquipmentQuantity}
-            />
-          ))}
+          {editing ? (
+            <DndContext sensors={dragSensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+              <SortableContext items={otherFighters.map((fighter) => fighter.id)} strategy={rectSortingStrategy}>
+                {otherFighters.map((fighter) => (
+                  <SortableFighterCard
+                    key={fighter.id}
+                    fighter={fighter}
+                    editing={editing}
+                    archetype={archetype}
+                    tradition={tradition}
+                    selectedSpecialChoice={selectedSpecialChoice}
+                    domain={domain}
+                    retinueChoices={retinueChoices}
+                    casterCount={casterCount}
+                    updateFighter={updateFighter}
+                    removeFighter={removeFighter}
+                    toggleArrayValue={toggleArrayValue}
+                    setEquipmentQuantity={setEquipmentQuantity}
+                  />
+                ))}
+              </SortableContext>
+            </DndContext>
+          ) : (
+            otherFighters.map((fighter) => (
+              <FighterCard
+                key={fighter.id}
+                editing={editing}
+                fighter={fighter}
+                archetype={archetype}
+                tradition={tradition}
+                selectedSpecialChoice={selectedSpecialChoice}
+                domain={domain}
+                retinueChoices={retinueChoices}
+                casterCount={casterCount}
+                updateFighter={updateFighter}
+                removeFighter={removeFighter}
+                toggleArrayValue={toggleArrayValue}
+                setEquipmentQuantity={setEquipmentQuantity}
+              />
+            ))
+          )}
 
           {editing ? (
             <div className="col-span-12 flex min-h-48 xl:col-span-6">
@@ -1349,6 +1463,35 @@ function FighterCardSummary({
   );
 }
 
+const SortableFighterCard = memo(function SortableFighterCard(props) {
+  const { fighter } = props;
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    setActivatorNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: fighter.id });
+
+  const sortableStyle = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+  };
+
+  return (
+    <FighterCard
+      {...props}
+      sortableRef={setNodeRef}
+      sortableStyle={sortableStyle}
+      dragHandleRef={setActivatorNodeRef}
+      dragHandleProps={{ attributes, listeners }}
+      isDragging={isDragging}
+    />
+  );
+});
+
 const FighterCard = memo(function FighterCard({
   fighter,
   editing,
@@ -1363,6 +1506,11 @@ const FighterCard = memo(function FighterCard({
   toggleArrayValue,
   setEquipmentQuantity,
   canRemove = true,
+  sortableRef = null,
+  sortableStyle = null,
+  dragHandleRef = null,
+  dragHandleProps = null,
+  isDragging = false,
 }) {
   const type = getFighterType(archetype, fighter);
   const ancestry = getAncestry(fighter.ancestryId);
@@ -1388,6 +1536,8 @@ const FighterCard = memo(function FighterCard({
     [proficiencyFeats, archetype.feats, domainFeats, fighter.feats],
   );
   const fighterWarnings = getFighterWarnings(fighter, type, archetype, tradition, selectedSpecialChoice, domain, spellLimit, slots, slotLimit, caster);
+  const [collapsed, setCollapsed] = useState(false);
+  const [removeConfirmOpen, setRemoveConfirmOpen] = useState(false);
   const hasMortal = hasKeyword(keywords, "Mortal");
   const showCasterOptions = !hasMortal && Boolean(type.caster);
   const canToggleCaster = type.caster?.mode === "optional" && !hasMortal;
@@ -1430,20 +1580,51 @@ const FighterCard = memo(function FighterCard({
     updateFighter(fighter.id, (current) => setEquipmentQuantity(current, item.id, nextQuantity));
   }
 
+  useEffect(() => {
+    if (!editing) {
+      setCollapsed(false);
+      setRemoveConfirmOpen(false);
+    }
+  }, [editing]);
+
   return (
-    <article className="relative col-span-12 flex w-full min-w-0 flex-col overflow-hidden rounded-lg border border-night-800 bg-night-900/80 p-3 shadow-xl shadow-black/20 xl:col-span-6">
-      {editing && canRemove ? (
-        <button
-          type="button"
-          aria-label={`Remove ${fighter.name}`}
-          onClick={() => removeFighter(fighter.id)}
-          className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded border border-rose-500/40 bg-night-950 text-rose-300 hover:border-rose-400 hover:text-rose-200"
-        >
-          <X className="h-4 w-4" aria-hidden="true" />
-        </button>
-      ) : null}
-      <div className="flex shrink-0 items-start justify-between gap-2">
-        <div className={cx("min-w-0 flex-1", editing && canRemove && "pr-8")}>
+    <article
+      ref={sortableRef}
+      style={sortableStyle}
+      className={cx(
+        "relative col-span-12 flex w-full min-w-0 flex-col overflow-hidden rounded-lg border border-night-800 bg-night-900/80 p-3 shadow-xl shadow-black/20 xl:col-span-6",
+        editing && collapsed && "self-start",
+        isDragging && "z-10 opacity-60",
+      )}
+    >
+      <div className="flex shrink-0 items-start gap-2">
+        {dragHandleProps ? (
+          <button
+            type="button"
+            ref={dragHandleRef}
+            aria-label={`Reorder ${fighter.name}`}
+            className="mt-0.5 grid h-8 w-8 shrink-0 touch-none place-items-center rounded border border-night-700 bg-night-950 text-cream-500 hover:border-cream-500 hover:text-cream-100 active:cursor-grabbing cursor-grab"
+            {...dragHandleProps.attributes}
+            {...dragHandleProps.listeners}
+          >
+            <GripVertical className="h-4 w-4" aria-hidden="true" />
+          </button>
+        ) : null}
+        {editing ? (
+          <button
+            type="button"
+            aria-label={collapsed ? `Expand ${fighter.name}` : `Collapse ${fighter.name}`}
+            aria-expanded={!collapsed}
+            onClick={() => setCollapsed((current) => !current)}
+            className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded border border-night-700 bg-night-950 text-cream-300 hover:border-cream-500 hover:text-cream-100"
+          >
+            <ChevronRight
+              className={cx("h-4 w-4 transition-transform duration-150", !collapsed && "rotate-90")}
+              aria-hidden="true"
+            />
+          </button>
+        ) : null}
+        <div className="min-w-0 flex-1">
           {editing ? (
             <input
               value={fighter.name}
@@ -1470,8 +1651,33 @@ const FighterCard = memo(function FighterCard({
             </Pill>
           </div>
         </div>
+        {editing && canRemove ? (
+          <button
+            type="button"
+            aria-label={`Remove ${fighter.name}`}
+            onClick={() => setRemoveConfirmOpen(true)}
+            className="grid h-8 w-8 shrink-0 place-items-center rounded border border-rose-500/40 bg-night-950 text-rose-300 hover:border-rose-400 hover:text-rose-200"
+          >
+            <X className="h-4 w-4" aria-hidden="true" />
+          </button>
+        ) : null}
       </div>
 
+      {removeConfirmOpen ? (
+        <ConfirmModal
+          ariaLabel={`Confirm remove ${fighter.name}`}
+          title="Remove fighter?"
+          message={`Are you sure you want to remove ${fighter.name} from this retinue?`}
+          confirmLabel="Remove"
+          onClose={() => setRemoveConfirmOpen(false)}
+          onConfirm={() => {
+            removeFighter(fighter.id);
+            setRemoveConfirmOpen(false);
+          }}
+        />
+      ) : null}
+
+      {editing && collapsed ? null : (
       <div className="mt-3 min-w-0 overflow-x-hidden overflow-y-auto">
         <Warnings warnings={fighterWarnings} />
 
@@ -1803,6 +2009,7 @@ const FighterCard = memo(function FighterCard({
           </div>
         )}
       </div>
+      )}
     </article>
   );
 });

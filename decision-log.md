@@ -59,6 +59,12 @@ Open questions:
 
 ---
 
+## 2026-07-07 — Retinue builder edit-mode roster UX
+
+**Decision:** Improve retinue edit mode in the builder: replace the exit-edit **X** with a save icon; add per-card collapse in edit mode (header-only view with name, keywords, slots, and cost); confirm before removing a fighter; match left-nav chevron behavior (right when collapsed, down when expanded); and add drag-to-reorder for non-leader fighter cards via a grip handle, persisting order in the existing `fighters` array. The Leader card stays pinned and is not draggable.
+
+**Reasoning:** Larger retinues are hard to scan and edit when every card stays fully expanded. Collapse, safer delete, and reorder let players organize their roster without changing rules or purchase logic. Drag reorder uses `@dnd-kit` on the existing Firestore-backed fighter list, so order saves automatically with the rest of the retinue.
+
 ## 2026-07-02 — Wand Spellcasting Gear
 
 **Decision:** Add **Wand** as **Caster** spellcasting gear. A **Wand** costs **35 Crowns**, takes 1 weapon slot, and grants +1 to hit when resolving an **Attack** spell. Multiple **Wands** or duplicate **Wand** effects do not stack.
