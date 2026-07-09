@@ -16,16 +16,16 @@ Campaign advancement may grant additional feats later (see [Feat Advancement Tab
 
 Each **Proficiency** pick must choose a **different** weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
 
-### Built-in proficiencies (Specialist)
+### Built-in proficiencies and feats (Specialist)
 
-| Specialist | Archetype | Built-in proficiency |
+| Specialist | Archetype | Built-in |
 |---|---|---|
-| **Squire** | Knights | **One-Handed** |
-| **Tracker** | Hunters | Built-in **Archery** proficiency or **Firearms** domain feat *(choose one; **Firearms** requires **Mortal**)* |
-| **Militiaman** | Folk | **Two-Handed** |
+| **Squire** | Knights | **One-Handed** proficiency |
+| **Tracker** | Hunters | **Marked Quarry** feat |
+| **Militiaman** | Folk | **Two-Handed** proficiency |
 | **Adept** | Cult | *(none)* |
 
-The built-in proficiency does not count against the Specialist's 1 chosen feat pick.
+The built-in proficiency or feat does not count against the Specialist's 1 chosen feat pick.
 
 ## Archetype Feats
 
@@ -425,7 +425,7 @@ When this fighter suffers **1 or more Wounds** from an **Attack Sequence**, add 
 
 #### Firearms
 
-May not have the **Caster** keyword. Your retinue may purchase firearms from [Equipment](crown-costs.md). You may equip muskets, blunderbusses, pistols, long rifles, and bombs.
+May not have the **Caster** keyword. Your retinue may purchase firearms from [Weapons — Firearms](weapons.md#firearms). You may equip muskets, blunderbusses, pistols, long rifles, and bombs.
 
 #### Gunslinger
 

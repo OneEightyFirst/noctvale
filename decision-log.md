@@ -59,6 +59,14 @@ Open questions:
 
 ---
 
+## 2026-07-09 — Consolidate Equipment into Weapons and Armor and Shields
+
+**Decision:** Removed the separate Crown Costs page. Merged all weapon cost tables and weapon profiles into a single `rules/weapons.md` file, organised by proficiency category (One-Handed, Two-Handed, Archery, Thrown, Firearms, Alchemy). Each category now has one combined table showing cost and profile columns together. Weapon proficiencies moved to an intro paragraph at the top of the page. Firearm-only rules (Primer Roll, Pistols, Long Rifle, Bombs) are a subsection under Firearms. Alchemy costs and poison effects are merged into one table. Renamed `rules/gear.md` to "Armor and Shields"; merged armor and shield cost columns into their mechanics tables. Updated nav in `rules-lib.mjs` so Equipment → Weapons / Armor and Shields / Companions. Updated cross-references in `archetypes.md`, `feats.md`, `magic.md`, and `retinue-building.md`.
+
+**Reasoning:** Having Crown Costs as a separate page forced readers to jump back and forth between a cost list and a profiles page for every weapon. A single table per category is faster to reference during retinue building and play.
+
+---
+
 ## 2026-07-08 — Retinue share, print roster, and play-mode card layout
 
 **Decision:** Add a sidebar **Share** menu with **Copy** (plain-text roster to clipboard) and **Print** (print-friendly layout via a hidden iframe, no pop-up). Play-mode and export views now hide build-only feats (weapon proficiencies and **Firearms**), omit recruitment boost labels because stats already reflect boosts, and show weapons in a compact table (`Name | Slots | Mt | Sk`) with special rules on the line below. Print uses a two-column flowing card layout, bordered stat grids, and the same weapon table format.

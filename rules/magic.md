@@ -389,7 +389,7 @@ Spells and traditions that use corpses **remove** a **body token** rather than t
 
 ### Summoning Crystals
 
-**Summoning Crystals** are equipment from [Equipment — Summoning Crystals](crown-costs.md#crown-costs-summoning). Assign them to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal spent during a summoning spell is consumed. Remove spent crystals from the roster after the battle.
+**Summoning Crystals** are equipment from [Armor and Shields — Summoning gear](gear.md#summoning-gear). Assign them to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal spent during a summoning spell is consumed. Remove spent crystals from the roster after the battle.
 
 Summoning spells name the crystal cost and which fighter or fighters spend them.
 

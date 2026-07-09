@@ -6,7 +6,7 @@
 
 *Armored champions and sworn companies — the heirs of Valecoria's martial orders. When the Kingdom fell, the knightly houses did not vanish. Some guard ruined roads and broken shrines. Some serve vampire courts for coin or conviction. Some hunt monsters under old banners. All of them fight as a disciplined fist: few in number, heavy in steel, dangerous in a charge.*
 
-**Max retinue:** up to **10** fighters. **Armor and shields:** Light, Medium, and Heavy armor; Buckler, Shield or **Tower Shield** ([Equipment](crown-costs.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+**Max retinue:** up to **10** fighters. **Armor and shields:** Light, Medium, and Heavy armor; Buckler, Shield or **Tower Shield** ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
 
 ---
 
@@ -95,7 +95,7 @@ Named factions are optional presets — example **Archetype** + **Domain** pairi
 
 *Sworn companies, frontier scouts, and monster-slayers — fighters who live by tracking, ambush, and the long shot. The Hundred Years of War bred countless hunter bands: holy warriors hunting the undead, alchemists brewing silversbane, zealots purging magic, and savage packs running the wilds. Hunters travel light compared to knights but hit harder at range and field more bodies.*
 
-**Max retinue:** up to **12** fighters. **Armor and shields:** Light and Medium armor ([Equipment](crown-costs.md)).
+**Max retinue:** up to **12** fighters. **Armor and shields:** Light and Medium armor ([Armor and Shields](gear.md)).
 
 Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
 
@@ -159,7 +159,7 @@ Start from an ancestry profile, then apply the recruitment bonuses listed for th
 
 **Feats**: May select 1 feat from the Universal feat list, the Hunters archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
-This fighter starts with built-in **Archery** proficiency or the **Firearms** domain feat *(choose one; **Firearms** requires **Mortal**)*.
+This fighter starts with built-in **Marked Quarry**. The built-in feat does not count against this fighter's chosen feat pick.
 
 ##### Hand — 40 Crowns (0–4)
 *[Fluff about Hands]*
@@ -200,7 +200,7 @@ The **Inquisition** and **Silver Hunt** share Hunters + **Mortal** — different
 
 *Townsfolk, guild militia, and village watches — ordinary people who picked up tools and torches when the empire stopped protecting them. Folk retinues are not professional soldiers. They are neighbors, craftsmen, and constables who learned to fight because no one else would come. In numbers they hold streets, barricade bridges, and drag horrors into the light.*
 
-**Max retinue:** up to **15** fighters. **Armor and shields:** Light armor only ([Equipment](crown-costs.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+**Max retinue:** up to **15** fighters. **Armor and shields:** Light armor only ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
 
 ---
 
