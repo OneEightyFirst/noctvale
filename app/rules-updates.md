@@ -6,6 +6,35 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-09 — Defense overhaul: Df attribute, armor pool bonuses, shield tie-breaking
+
+**Change:** Replaced the armor-conversion defense model with a unified Defense (Df) attribute system.
+
+- Added **Df** to `STAT_KEYS` and `BOOSTABLE_STATS`. All four ancestry profiles now carry a `Df` stat (Steady 3, Keen 3, Stout 4, Stunty 3).
+- Armor now **adds dice to the defense pool before rolling** rather than converting failures after rolling. Light Armor: +1 Skill die. Medium Armor: +1 Might die. Heavy Armor: +2 Might dice, −1 Skill die.
+- Shields now provide **tie-breaking** rather than conversions. Buckler: defender wins Skill ties. Shield: defender wins all ties. Tower Shield: defender wins all ties and adds +1 Might die.
+- All six armor/shield `rules` strings updated in `noctvale.js`.
+
+**Impact:** Stat display, stat boost picker, and any export or print logic that reads `STAT_KEYS` or a fighter's `stats` object will now include `Df`. Fighter stat tables need a Df column. Builder enforcement for armor caps is unchanged.
+
+**Source:** `rules/combat.md`, `rules/gear.md`, `rules/attributes.md`.
+
+## 2026-07-08 15:47 EDT — Tracker built-in Marked Quarry
+
+**Change:** Replaced the Tracker's built-in **Archery** / **Firearms** training choice with built-in **Marked Quarry**. Trackers now arrive with that feat automatically; it does not count against their single chosen feat pick. The feat picker shows **Marked Quarry** as built-in and locked for Trackers.
+
+**Impact:** Builder data, feat display/export, and validation. Trackers no longer default to Archery proficiency or a Firearms built-in choice. Legacy Trackers with a saved `builtInChoice` still honor Firearms only for equipment checks until edited.
+
+**Source:** `rules/archetypes.md`, `rules/feats.md`.
+
+## 2026-07-08 15:17 EDT — Beastmen beast-mark per fighter
+
+**Change:** Moved **Beastmen** beast-mark selection from a retinue-wide sidebar choice to a per-fighter choice at recruitment. Each fighter now stores its own `beastMark` (**Wolf**, **Rat**, **Bear**, or **Serpent**). Bear stat modifiers, Rat extra weapon slots, Wolf **Fighting Claws**, and validation warnings now resolve from the fighter's mark. Saved retinues with a legacy retinue-wide `beastMark` migrate that value onto fighters missing a mark.
+
+**Impact:** Builder UI, fighter data model, export/print sheets, and purchase validation. Roster building starts as soon as archetype and tradition are chosen; beast-mark is required on each fighter card.
+
+**Source:** `rules/traditions.md`.
+
 ## 2026-07-02 13:42 EDT — Wand spellcasting gear
 
 **Change:** Added **Wand** to builder equipment as **Caster** spellcasting gear. It costs **35 Crowns**, takes 1 weapon slot, and grants +1 to hit when resolving an **Attack** spell. Multiple **Wands** or duplicate **Wand** effects do not stack.

@@ -4,7 +4,7 @@ Most weapons belong to a **weapon proficiency** — the training a fighter needs
 
 | Proficiency | Weapons |
 |---|---|
-| **One-Handed** | Sword, Hand Axe, Mace, Spear |
+| **One-Handed** | Sword, Rapier, Hand Axe, Mace, Spear |
 | **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer, Staff |
 | **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
 | **Thrown** | Sling, Throwing Stars |
@@ -17,17 +17,38 @@ Choose feats before buying weapons. Every Crown cost is a multiple of **5 Crowns
 
 ---
 
+## Keywords
+
+**Cleave:** When this weapon's attack reduces a fighter to **0 Wounds**, make one free **Melee** attack against a different fighter within engagement range.
+
+**Crushing:** This weapon scores critical hits on natural **6s** against any fighter wearing armor (Light, Medium, or Heavy). These weapons are outside the weapon triangle.
+
+**Heavy:** This weapon cannot be used to make a **Ranged** attack if the fighter **Moved** or **Charged** this activation.
+
+**Parry:** When this fighter defends against a **Melee** attack, reroll one failed **Skill** die in the defense pool.
+
+**Piercing:** When defending against this weapon's attacks, armor dice bonuses do not apply and shield tie benefits do not apply — build the defense pool as if the target has no armor or shield.
+
+**Reach:** This weapon can engage enemies up to **2"** away.
+
+**Thrown(Mt) / Thrown(Sk):** This weapon may be used to make a **Ranged** attack. Maximum range equals the fighter's **Might** in inches for **Thrown(Mt)**, or the fighter's **Skill** in inches for **Thrown(Sk)**. No minimum range. Use the weapon's normal Strike Pool.
+
+**Volley:** This weapon may target a fighter without **line of sight**. If it does, the target gains **+2 Skill defense dice** against that attack.
+
+---
+
 ## One-Handed
 
 Any fighter may equip a **Dagger** without a proficiency feat.
 
 | Weapon | Cost | Hands | +Mt | +Sk | Type | Notes |
 | -------- | ---- | ----- | --- | --- | ------ | ---------------------------------- |
-| <span id="dagger"></span>Dagger | 10 | 1H | — | +1 | Sword | Fast, finesse |
-| <span id="sword"></span>Sword | 25 | 1H | +1 | +1 | Sword | Balanced baseline |
-| <span id="hand-axe"></span>Hand Axe | 20 | 1H | +2 | — | Axe | Baseline axe |
-| <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Anti-plate; crits vs Heavy Armor only |
-| <span id="spear"></span>Spear | 25 | 1H | +1 | +1 | Spear | Balanced reach |
+| <span id="dagger"></span>Dagger | 10 | 1H | — | +1 | Sword | Thrown(Sk) |
+| <span id="sword"></span>Sword | 25 | 1H | +1 | +1 | Sword | Parry |
+| <span id="rapier"></span>Rapier | 40 | 1H | — | +3 | Sword | Parry |
+| <span id="hand-axe"></span>Hand Axe | 20 | 1H | +2 | — | Axe | Thrown(Mt) |
+| <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Crushing |
+| <span id="spear"></span>Spear | 25 | 1H | +1 | +1 | Spear | Thrown(Mt), Reach |
 
 ### Dual wielding
 
@@ -42,7 +63,7 @@ A fighter cannot use a shield while dual-wielding.
 | Type | Critical hits |
 |---|---|
 | **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](combat.md#weapon-triangle)) |
-| **Hammer** | **Outside the triangle** — natural 6s crit only vs targets wearing **Heavy Armor** |
+| **Hammer** | **Outside the triangle** — **Crushing** |
 
 ---
 
@@ -50,11 +71,11 @@ A fighter cannot use a shield while dual-wielding.
 
 | Weapon | Cost | Hands | +Mt | +Sk | Type | Notes |
 | ----------- | ---- | ----- | --- | --- | ------ | ---------------------------------- |
-| <span id="halberd"></span>Halberd | 45 | 2H | +2 | +1 | Spear | Reach, versatile |
-| <span id="great-sword"></span>Great Sword | 50 | 2H | +2 | +1 | Sword | Heavy, powerful |
-| <span id="war-axe"></span>War Axe | 45 | 2H | +3 | — | Axe | Heavy hitter |
-| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Anti-plate; crits vs Heavy Armor only |
-| <span id="staff"></span>Staff | 20 | 2H | +1 | +1 | Spear | Spell focus; quarterstaff, mage's staff |
+| <span id="halberd"></span>Halberd | 45 | 2H | +2 | +1 | Spear | Reach |
+| <span id="great-sword"></span>Great Sword | 50 | 2H | +2 | +1 | Sword | Cleave |
+| <span id="war-axe"></span>War Axe | 45 | 2H | +3 | — | Axe | — |
+| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Crushing |
+| <span id="staff"></span>Staff | 20 | 2H | +1 | +1 | Spear | Spell focus |
 
 ### Staff — Spell focus
 
@@ -72,10 +93,10 @@ Minimum range **3"** unless noted. Archery weapons are available to **all retinu
 
 | Weapon | Cost | Hands | Range | Mt | Sk | Notes |
 | -------------- | ---- | ----- | ------ | --- | --- | ------------------------------------------ |
-| <span id="shortbow"></span>Shortbow | 40 | 2H | 3"–18" | +1 | 4 | Draw strength plus fixed accuracy |
-| <span id="longbow"></span>Longbow | 50 | 2H | 3"–24" | +1 | 5 | Longer range, stronger accuracy |
-| <span id="crossbow"></span>Crossbow | 65 | 2H | 3"–24" | 4 | +2 | Mechanical force, trained aim |
-| <span id="heavy-crossbow"></span>Heavy Crossbow | 90 | 2H | 3"–30" | 5 | +2 | Slow, powerful |
+| <span id="shortbow"></span>Shortbow | 40 | 2H | 3"–18" | +1 | 4 | — |
+| <span id="longbow"></span>Longbow | 50 | 2H | 3"–24" | +1 | 5 | Volley |
+| <span id="crossbow"></span>Crossbow | 65 | 2H | 3"–24" | 4 | +2 | — |
+| <span id="heavy-crossbow"></span>Heavy Crossbow | 90 | 2H | 3"–30" | 5 | +2 | Heavy |
 
 ---
 
@@ -85,8 +106,8 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 | Weapon | Cost | Hands | Range | Mt | Sk | Notes |
 | -------------- | ---- | ----- | ------ | --- | --- | ------------------------------------------ |
-| <span id="sling"></span>Sling | 20 | 1H | 3"–12" | +1 | +1 | Additive Strike Pool |
-| <span id="throwing-stars"></span>Throwing Stars | 10 | 1H | 0"–8" | — | +1 | No min range, thrown; additive |
+| <span id="sling"></span>Sling | 20 | 1H | 3"–12" | +1 | +1 | — |
+| <span id="throwing-stars"></span>Throwing Stars | 10 | 1H | 0"–8" | — | +1 | No minimum range |
 
 ---
 
@@ -96,10 +117,10 @@ When every fighter in the retinue has the **Mortal** keyword, your retinue may p
 
 | Weapon | Cost | Hands | Range | Primer | Mt | Sk | Notes |
 | ----------- | ---- | ----- | ------ | ------ | --- | --- | ------------------------- |
-| <span id="musket"></span>Musket | 100 | 2H | 3"–24" | 9+ | 5 | +2 | Firearm critical hits |
-| <span id="blunderbuss"></span>Blunderbuss | 115 | 2H | 0"–10" | 8+ | 3 | +2 | Standard flame template |
-| <span id="pistol"></span>Pistol | 90 | 1H | 0"–12" | 9+ | 4 | +2 | Short range |
-| <span id="long-rifle"></span>Long Rifle | 125 | 2H | 3"–30" | 10+ | 5 | +3 | Critical hits on 5+ |
+| <span id="musket"></span>Musket | 100 | 2H | 3"–24" | 9+ | 5 | +2 | — |
+| <span id="blunderbuss"></span>Blunderbuss | 115 | 2H | 0"–10" | 8+ | 3 | +2 | Flame template |
+| <span id="pistol"></span>Pistol | 90 | 1H | 0"–12" | 9+ | 4 | +2 | — |
+| <span id="long-rifle"></span>Long Rifle | 125 | 2H | 3"–30" | 10+ | 5 | +3 | Piercing, Heavy |
 
 | Item | Cost | Notes |
 | ------------------ | ---- | ------------------------------------------ |
@@ -136,7 +157,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no **Brac
 
 #### Long Rifle
 
-A **Long Rifle** scores critical hits on natural 5+ instead of only natural 6s.
+A **Long Rifle** has **Piercing** and **Heavy** — armor and shield conversions do not apply against its attacks, and it cannot be fired if the fighter Moved or Charged this activation.
 
 ### Bombs *(requires **Mortal**; forbids **Caster**)*
 
@@ -168,7 +189,7 @@ Alchemy is available to every retinue. Alchemical items are **consumable** (one 
 | -------------- | ---- | ------ | ----- |
 | Adder's Kiss | 25 | +1 Sk to the weapon's **Strike Pool** | Subtle, fast-acting |
 | Blight Extract | 40 | Unblocked hits add **1 Affliction token** — see [Conditions — Afflictions](conditions.md#afflictions) | Weakening toxin |
-| Vitriol | 50 | Unblocked hits ignore 1 armor conversion | Acid, eats through plate |
+| Vitriol | 50 | When defending against this weapon's attacks, reduce the target's armor dice bonus by 1 die | Acid, eats through plate |
 | Widow's Tears | 75 | Unblocked hits inflict 2 Wounds instead of 1 | Lethal, expensive |
 | Silversbane | 65 | Unblocked hits inflict **−1" M** on fighters with **Undead** or **Werebeast** | Restricts movement |
 

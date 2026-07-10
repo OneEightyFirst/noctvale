@@ -75,9 +75,9 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
-> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Crushing** (Hammer vs armored), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
 >
-> **Step 4 — Roll defense:** Defender **Might** + **Skill**. Might dice use **Might** checks. Skill dice use **Skill** checks. Add bonus defense dice from cover, **Brace**, spells, feats, or scenario rules. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](gear.md#equipment).)*
+> **Step 4 — Roll defense:** Build the defense pool: defender **Might** + **Skill**, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, **Brace**, spells, feats, or scenario rules. Roll all dice as **Df** checks. Attacker wins ties by color; a shield shifts ties to the defender. *(See [Equipment](gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -134,45 +134,54 @@ A fighter's **primary weapon** is the weapon they last attacked with this battle
 Any natural **6** is a **critical hit** if any of the following apply:
 
 - The attacker has **weapon triangle advantage** (see Weapon Triangle) — Sword, Axe, or Spear only
-- The attacker wields a **Hammer** and the target is wearing **Heavy Armor**
+- The attacker wields a weapon with **Crushing** and the target is wearing armor
 - The attacker has **magic advantage** (see Magic Triangles)
 - The attacker is using a **firearm** (crits against all targets)
 - The attacker used the **Aim** action before a Ranged attack
 
-Critical hits **cannot be blocked** by normal defense successes — only by a **critical defense success** from Heavy Armor. Critical hits retain their color for tracking purposes.
+Critical hits **cannot be blocked.** Critical hits retain their color for tracking purposes.
 
 If none of the above apply, 6s are normal hits.
 
 ### Step 4: Defender Rolls Defense Dice
 
-The defender generates a defense pool from their own **Might** and **Skill**:
+The defender builds a defense pool from their own **Might** and **Skill**:
 
 - The defender's **Might** = Might defense dice
 - The defender's **Skill** = Skill defense dice
 
-Then add any bonus defense dice from cover, **Brace**, spells, feats, or scenario rules.
+**Armor adds dice to this pool before rolling:**
 
-For **Might defense dice**, make **Might** checks (toughness absorbs the blow). For **Skill defense dice**, make **Skill** checks (reflexes deflect the blow).
+- **Light Armor** adds **+1 Skill die**
+- **Medium Armor** adds **+1 Might die**
+- **Heavy Armor** adds **+2 Might dice** and removes **1 Skill die**
 
-#### Armor & Shield Conversion
+After applying armor, add any bonus dice from cover, **Brace**, spells, feats, or scenario rules.
 
-After rolling defense dice, **armor and shields convert failed defense dice into successes**:
+Roll all defense dice as **Defense** (**Df**) checks — the same threshold applies to every die in the pool, regardless of color.
 
-- **Armor** converts failed defense dice: Light (2 Might or Skill → 1 normal success), Medium (1 Might → 1 normal success), Heavy (1 Might → 1 normal success OR 2 Might → 1 critical success)
-- **Shields** convert failed Might and/or Skill defense dice: Buckler (1 Skill), Shield (1 Might + 1 Skill), Tower Shield (2 Might + 1 Skill)
+#### Blocking Hits
 
-Armor and shield conversions **stack**. The defender chooses which failed defense dice to convert. Converted dice follow all normal blocking rules. *(See [Equipment](gear.md#equipment) for full tables.)*
-
-Heavy Armor's critical success is the only way to block incoming critical hits with equipment.
-
-Each successful defense die **blocks one hit** of the matching color:
+Each successful defense die blocks one hit of the matching color:
 
 - **Might defense blocks Might hits**
 - **Skill defense blocks Skill hits**
 - **Two successful Might defense dice may block one Skill hit** (brute force can overcome finesse, but at 2:1 cost)
 - **Two successful Skill defense dice may block one Might hit** (finesse can overcome brute force, but at 2:1 cost)
 
-Critical hits **cannot be blocked** by normal defense successes. Only a **critical defense success** from Heavy Armor can block a critical hit.
+#### Ties
+
+Compare your blocks to the attacker's hits by color. If blocks equal hits in a category — a **tie** — the attacker wins that tie and one hit of that color still gets through.
+
+A **shield** shifts ties in the defender's favor:
+
+- **Buckler** — the defender wins **Skill ties** (equal Skill blocks = all Skill hits blocked)
+- **Shield** — the defender wins **all ties**
+- **Tower Shield** — the defender wins **all ties** and adds **+1 Might die** to the defense pool
+
+Armor and shield effects **stack**. *(See [Equipment](gear.md#equipment) for full tables.)*
+
+Critical hits **cannot be blocked.**
 
 ### Step 5: Apply Wounds
 
@@ -220,13 +229,13 @@ Nature > Necromancy > Blood > Nature
 
 ### Firearms
 
-Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** scores critical hits on natural 5+ instead of only natural 6s. *(See [Equipment — Weapons](weapons.md#weapons).)*
+Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing** — armor and shield conversions do not apply when defending against its attacks. *(See [Equipment — Weapons](weapons.md#keywords).)*
 
 ### Outside the Triangles
 
-**Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in **Heavy Armor**). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange.
+**Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use **Crushing** instead (natural 6s crit vs any armored target). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange. *(See [Weapons — Keywords](weapons.md#keywords).)*
 
-The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation. If that **Ranged** weapon already had a critical hit on **6**, **Aim** increases it to **5+**.
+The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation. If that **Ranged** weapon already scores critical hits on **6**, **Aim** increases it to **5+**.
 
 ## Ranged Reaction
 
@@ -256,11 +265,13 @@ Activations continue until every eligible fighter has activated or **skipped the
 
 ## Example: Combat
 
-**Attacker:** **Keen** fighter (**Close Combat** 3, **Might** 3, **Skill** 4) wielding a Sword (+1 **Might**, +1 **Skill**) **Defender:** **Stout** fighter (**Close Combat** 3, **Might** 4, **Skill** 3) wielding a Battle Axe (+2 **Might**), wearing Medium Armor
+**Attacker:** **Keen** fighter (**Close Combat** 3, **Might** 3, **Skill** 4) wielding a Sword (+1 **Might**, +1 **Skill**)
+
+**Defender:** **Stout** fighter (**Close Combat** 3, **Might** 4, **Skill** 3, **Defense** 4) wielding a Battle Axe (+2 **Might**), wearing Medium Armor
 
 **Step 1:** **Keen** Strike Pool = (**Might** 3 + Sword 1) Might + (**Skill** 4 + Sword 1) Skill = **4 Might + 5 Skill = 9 dice**
 
-**Step 2:** Roll each die as a **Close Combat** check.
+**Step 2:** Roll each die as a **Close Combat** check (CC 3, need 5+).
 
 - Might die 1: rolls 5 → pass → **Might hit**
 - Might die 2: rolls 2 → fail
@@ -272,36 +283,36 @@ Activations continue until every eligible fighter has activated or **skipped the
 - Skill die 4: rolls 3 → fail
 - Skill die 5: rolls 5 → pass → **Skill hit**
 
-Result: 1 Might hit, 3 Skill hits (4 hits total)
+Result: **1 Might hit, 3 Skill hits**
 
-**Step 3:** Sword vs Axe → Sword has advantage. The natural 6 on Skill die 1 is a **critical Skill hit** (unblockable).
+**Step 3:** Sword vs Axe → Sword has advantage. The natural 6 on Skill die 1 is a **critical Skill hit** — it cannot be blocked.
 
-**Step 4:** **Stout** defense pool:
+**Step 4:** Build **Stout's** defense pool.
 
-- **Stout** **Might** 4 → 4 Might defense dice
-- **Stout** **Skill** 3 → 3 Skill defense dice
-- Total defense: 4 Might dice + 3 Skill dice
+Base pool: **Might** 4 → 4 Might dice; **Skill** 3 → 3 Skill dice.
 
-Roll defense:
+Medium Armor adds **+1 Might die**: pool becomes **5 Might + 3 Skill = 8 dice**.
 
-- Might die 1: **Might** check rolls 4 → **success**
-- Might die 2: **Might** check rolls 3 → fail
-- Might die 3: **Might** check rolls 5 → **success**
-- Might die 4: **Might** check rolls 2 → fail
-- Skill die 1: **Skill** check rolls 5 → **success**
-- Skill die 2: **Skill** check rolls 2 → fail
-- Skill die 3: **Skill** check rolls 4 → fail
+Roll all 8 as **Df** checks (**Df** 4, need 4+):
 
-**Armor Conversion:** The **Stout** fighter wears Medium Armor — convert 1 failed Might defense die into 1 normal success. Might die 2 failed, so it becomes a **normal Might success**. Might die 4 and the failed Skill dice remain failed dice.
+- Might die 1: rolls 5 → **success**
+- Might die 2: rolls 2 → fail
+- Might die 3: rolls 4 → **success**
+- Might die 4: rolls 3 → fail
+- Might die 5: rolls 6 → auto-success → **success**
+- Skill die 1: rolls 4 → **success**
+- Skill die 2: rolls 5 → **success**
+- Skill die 3: rolls 2 → fail
 
-Defense results: 3 Might successes, 1 Skill success.
+Defense results: **3 Might successes, 2 Skill successes**
 
-- Might success 1 blocks the Might hit (1:1 same type)
-- Skill success 1 blocks one normal Skill hit (1:1 same type)
-- Might successes 2 and 3 block one normal Skill hit at 2:1
+**Blocking:** Compare by color.
 
-The critical Skill hit cannot be blocked.
+- **Might:** 3 successes vs 1 hit → Might hit blocked. 2 Might successes remaining.
+- **Skill:** 2 successes vs 2 normal Skill hits → **tie**. The **Stout** fighter has no shield, so the attacker wins the tie — 1 Skill hit still gets through. The 2 Skill successes block 1 of the 2 normal Skill hits.
+- The 2 leftover Might successes cross-block the remaining normal Skill hit at 2:1.
+- The critical Skill hit **cannot be blocked**.
 
-**Step 5:** 1 unblocked hit. The **Stout** fighter takes 1 Wound (3 → 2).
+**Step 5:** 1 unblocked hit (the crit). The **Stout** fighter takes 1 Wound (3 → 2).
 
 ---

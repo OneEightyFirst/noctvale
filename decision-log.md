@@ -91,6 +91,19 @@ Open questions:
 
 **Reasoning:** Effects that harm fighters are not all the same rules object. Marking Strike Pool spells with **Attack** gives Staff, wand, magic-triangle, and future attack-specific rules a clean hook without adding a separate damage taxonomy or making save-or-effect spells inherit attack modifiers by accident.
 
+## 2026-07-09 — Defense overhaul: Df attribute, armor pool bonuses, shield tie-breaking
+
+**Decision:** Replace the armor-conversion defense model with a simpler, unified system built around a new **Defense (Df)** attribute.
+
+- All defense dice — whether Might dice or Skill dice — now check against a single **Df** value. This removes the two-threshold problem (Might dice using Might checks, Skill dice using Skill checks) that created variable roll targets within a single defense roll.
+- Armor **adds dice to the pool before rolling** rather than converting failures after rolling. Light Armor: +1 Skill die. Medium Armor: +1 Might die. Heavy Armor: +2 Might dice, −1 Skill die (net +1, Might-heavy).
+- **Attacker wins ties** by color category (equal blocks and hits = 1 hit gets through). Shields shift this: Buckler lets the defender win Skill ties; Shield lets the defender win all ties; Tower Shield wins all ties and adds +1 Might die to the pool.
+- Critical hits are now **always unblockable** — Heavy Armor's critical defense success is removed.
+- **Df** is added as a boostable attribute (range 2–6, cap ±3). Baseline ancestry profiles: Steady Df 3, Keen Df 3, Stout Df 4, Stunty Df 3.
+- **Piercing** redefined: armor dice bonuses and shield tie benefits do not apply. **Parry** updated to "reroll one failed Skill die in the defense pool." **Vitriol** redefined: reduce the target's armor dice bonus by 1 die.
+
+**Reasoning:** The original system required players to track two different check thresholds (one for Might dice, one for Skill dice) within a single defense roll, adding mental load at the table. A single Df check collapses that into one number. Moving armor from a post-roll safety net to a pre-roll pool bonus keeps armor meaningful while eliminating the conversion bookkeeping. The attacker-wins-ties default gives combat a slight aggressive lean, and shields provide a clean, graduated counter to that lean rather than duplicating the armor conversion language.
+
 ## 2026-07-02 — Staff Spell Focus Attribute Choice
 
 **Decision:** Replace the Staff's once-per-battle failed **Casting Roll** reroll with a new **Spell focus** rule. When a fighter purchases a **Staff**, choose **Will** or **Sanity** for that staff. When the fighter resolves a casting attack while wielding it, use the chosen attribute instead of **Skill** to determine the spell's scaling **Skill dice**; the spell's printed +**Skill** value still applies. Keep the Staff at **20 Crowns**.

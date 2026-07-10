@@ -1,33 +1,33 @@
-export const STAT_KEYS = ["M", "CC", "RC", "Mt", "Sk", "Wi", "Sa", "W"];
-export const BOOSTABLE_STATS = ["CC", "RC", "Mt", "Sk", "Wi", "Sa"];
+export const STAT_KEYS = ["M", "CC", "RC", "Mt", "Sk", "Df", "Wi", "Sa", "W"];
+export const BOOSTABLE_STATS = ["CC", "RC", "Mt", "Sk", "Df", "Wi", "Sa"];
 
 export const ANCESTRIES = [
   {
     id: "steady",
     name: "Steady",
     cost: 0,
-    stats: { M: 6, CC: 3, RC: 3, Mt: 3, Sk: 3, Wi: 3, Sa: 4, W: 3 },
+    stats: { M: 6, CC: 3, RC: 3, Mt: 3, Sk: 3, Df: 3, Wi: 3, Sa: 4, W: 3 },
     description: "Steady profiles fit Humans, Half-Elves, and other grounded folk.",
   },
   {
     id: "keen",
     name: "Keen",
     cost: 10,
-    stats: { M: 7, CC: 3, RC: 3, Mt: 3, Sk: 4, Wi: 4, Sa: 3, W: 3 },
+    stats: { M: 7, CC: 3, RC: 3, Mt: 3, Sk: 4, Df: 3, Wi: 4, Sa: 3, W: 3 },
     description: 'Keen profiles cost an additional +10c and fit Elves or other sharp, graceful lineages.',
   },
   {
     id: "stout",
     name: "Stout",
     cost: 10,
-    stats: { M: 5, CC: 3, RC: 3, Mt: 4, Sk: 3, Wi: 3, Sa: 3, W: 3 },
+    stats: { M: 5, CC: 3, RC: 3, Mt: 4, Sk: 3, Df: 4, Wi: 3, Sa: 3, W: 3 },
     description: 'Stout profiles cost an additional +10c and fit Dwarves, Orcs, or other powerful frames.',
   },
   {
     id: "stunty",
     name: "Stunty",
     cost: -10,
-    stats: { M: 6, CC: 3, RC: 3, Mt: 2, Sk: 4, Wi: 3, Sa: 3, W: 2 },
+    stats: { M: 6, CC: 3, RC: 3, Mt: 2, Sk: 4, Df: 3, Wi: 3, Sa: 3, W: 2 },
     description: "Stunty profiles reduce cost by -10c and fit Halflings, Goblins, Gnomes, or other short, quick folk.",
   },
 ];
@@ -137,6 +137,32 @@ export function canTakeFirearmsProficiency(keywords) {
 export function canEquipFirearm(keywords) {
   return canTakeFirearmsFeat(keywords);
 }
+
+export function getBuiltInFeatId(type) {
+  return type?.builtInFeat ?? null;
+}
+
+export function getBeastMarkOption(tradition, beastMarkId) {
+  if (tradition?.id !== "beastmen" || !beastMarkId) return null;
+  return tradition.fighterChoice?.options.find((option) => option.id === beastMarkId) ?? null;
+}
+
+/** Wolf mark rules live on the Fighting Claws weapon row; other marks return full rule text. */
+export function getBeastMarkDisplayRules(beastMarkOption) {
+  if (!beastMarkOption) return null;
+  if (beastMarkOption.id === "wolf") {
+    return { id: beastMarkOption.id, name: beastMarkOption.name, rules: [] };
+  }
+  return { id: beastMarkOption.id, name: beastMarkOption.name, rules: beastMarkOption.rules ?? [] };
+}
+
+export const FIGHTING_CLAWS_WEAPON = {
+  name: "Fighting Claws",
+  slots: 0,
+  mt: "+2",
+  sk: "+1",
+  specialRules: [{ name: "Axe", text: "" }],
+};
 
 export const TRADITIONS = [
   {
@@ -279,35 +305,35 @@ export const TRADITIONS = [
     name: "Beastmen",
     domain: "Nature",
     allowed: ["hunters", "cult"],
-    choice: {
+    fighterChoice: {
       id: "beastMark",
-      label: "Choose one beast-mark for the retinue",
+      label: "Choose one beast-mark",
       options: [
         {
           id: "wolf",
           name: "Wolf",
-          rules: ["Fighters gain Fighting Claws.", "Fighting Claws are a 0-slot melee weapon: +2 Mt, +1 Sk, Axe."],
+          rules: ["Gain Fighting Claws.", "Fighting Claws are a 0-slot melee weapon: +2 Mt, +1 Sk, Axe."],
         },
         {
           id: "rat",
           name: "Rat",
-          rules: ["Fighters may carry 1 additional one-handed weapon.", "This extra weapon cannot be a shield, firearm, bomb, or two-handed weapon."],
+          rules: ["May carry 1 additional one-handed weapon.", "This extra weapon cannot be a shield, firearm, bomb, or two-handed weapon."],
         },
         {
           id: "bear",
           name: "Bear",
-          rules: ["Fighters gain +1 Mt and -1 Sa.", "Sa cannot be reduced below 1."],
+          rules: ["Gain +1 Mt and -1 Sa.", "Sa cannot be reduced below 1."],
         },
         {
           id: "serpent",
           name: "Serpent",
-          rules: ["When a fighter attacks with a melee weapon, 1 unblocked hit may add 1 Affliction token instead of 1 Wound."],
+          rules: ["When this fighter attacks with a melee weapon, 1 unblocked hit may add 1 Affliction token instead of 1 Wound."],
         },
       ],
     },
     rules: [
-      "Choose one beast-mark for the retinue: Wolf, Rat, Bear, or Serpent.",
-      "All fighters with the Beastmen keyword cost +10 Crowns and gain the chosen rule.",
+      "When recruiting a fighter with the Beastmen keyword, choose one beast-mark for that fighter: Wolf, Rat, Bear, or Serpent.",
+      "Each such fighter costs +10 Crowns and gains its chosen mark's rule.",
     ],
   },
   {
@@ -521,8 +547,8 @@ export const ARCHETYPES = {
         cap: 3,
         cost: 60,
         boost: { count: 1, options: BOOSTABLE_STATS, label: "Add +1 to one attribute." },
-        builtInChoice: { options: ["archery", "firearms"], restricted: { firearms: "Requires Mortal; forbids Caster" } },
-        rules: ["Specialist.", "Built-in Archery proficiency or Firearms domain feat. Firearms requires Mortal and forbids Caster. The built-in choice does not count against the Specialist's chosen feat pick."],
+        builtInFeat: "marked-quarry",
+        rules: ["Specialist.", "Built-in Marked Quarry feat. The built-in feat does not count against the Specialist's chosen feat pick."],
       },
       {
         id: "hand",
@@ -771,12 +797,12 @@ export const EQUIPMENT = [
   { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 25, slots: 1, rules: ["Requires Firearms domain feat; Mortal; forbids Caster. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
   { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 40, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3" blast, Single Shot.`] },
   { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 25, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 8+. 6" blast, Single Shot, Smoke.`] },
-  { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 0, rules: ["Light tier. 1 failed Skill defense die -> 1 normal success."] },
-  { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 0, rules: ["Medium tier. 1 failed Might defense die + 1 failed Skill defense die -> normal successes."] },
-  { id: "tower-shield", name: "Tower Shield", kind: "armor", group: "Armor", armorRank: 3, cost: 50, slots: 0, rules: ["Heavy tier. 2 failed Might defense dice + 1 failed Skill defense die -> normal successes."] },
-  { id: "light-armor", name: "Light Armor", kind: "armor", group: "Armor", armorRank: 1, cost: 50, slots: 0, rules: ["Folk, Hunters, Knights; Cult with Magic Armor. Converts 2 failed Might or Skill defense dice into 1 normal success."] },
-  { id: "medium-armor", name: "Medium Armor", kind: "armor", group: "Armor", armorRank: 2, cost: 115, slots: 0, rules: ["Hunters, Knights; Cult with Magic Armor. Converts 1 failed Might defense die into 1 normal success."] },
-  { id: "heavy-armor", name: "Heavy Armor", kind: "armor", group: "Armor", armorRank: 3, cost: 185, slots: 0, rules: ["Knights only; Cult with Magic Armor. Converts 1 failed Might defense die into 1 normal success or 2 failed Might defense dice into 1 critical success."] },
+  { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 0, rules: ["Light tier. Defender wins Skill ties — equal Skill blocks and Skill hits counts as blocked."] },
+  { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 0, rules: ["Medium tier. Defender wins all ties — equal blocks and hits counts as all blocked."] },
+  { id: "tower-shield", name: "Tower Shield", kind: "armor", group: "Armor", armorRank: 3, cost: 50, slots: 0, rules: ["Heavy tier. Defender wins all ties. Adds +1 Might die to the defense pool."] },
+  { id: "light-armor", name: "Light Armor", kind: "armor", group: "Armor", armorRank: 1, cost: 50, slots: 0, rules: ["Folk, Hunters, Knights; Cult with Magic Armor. Adds +1 Skill die to the defense pool before rolling."] },
+  { id: "medium-armor", name: "Medium Armor", kind: "armor", group: "Armor", armorRank: 2, cost: 115, slots: 0, rules: ["Hunters, Knights; Cult with Magic Armor. Adds +1 Might die to the defense pool before rolling."] },
+  { id: "heavy-armor", name: "Heavy Armor", kind: "armor", group: "Armor", armorRank: 3, cost: 185, slots: 0, rules: ["Knights only; Cult with Magic Armor. Adds +2 Might dice and removes 1 Skill die from the defense pool before rolling."] },
   { id: "icon", name: "Icon", kind: "sphere", group: "Sphere of Influence", cost: 75, slots: 2, rules: [`Friendly fighters within 6" gain +1 Sa. Passive. Icon or Instrument.`] },
   { id: "instrument", name: "Instrument", kind: "sphere", group: "Sphere of Influence", cost: 65, slots: 2, rules: [`Friendly fighters within 6" gain +1" M. Requires 1 action per turn to activate. Icon or Instrument.`] },
   { id: "wand", name: "Wand", kind: "special", group: "Spellcasting gear", cost: 35, slots: 1, requiresKeyword: "Caster", rules: ["Fighter must have Caster.", "Gain +1 to hit when resolving an Attack spell.", "Multiple Wands or duplicate Wand effects do not stack."] },
@@ -788,11 +814,11 @@ export const EQUIPMENT = [
   { id: "widows-tears", name: "Widow's Tears", kind: "alchemy", group: "Alchemy", cost: 75, slots: 0, rules: ["Poison. Unblocked hits inflict 2 Wounds instead of 1. One poison per weapon."] },
   { id: "silversbane", name: "Silversbane", kind: "alchemy", group: "Alchemy", cost: 65, slots: 0, rules: [`Poison. Unblocked hits inflict -1" M on fighters with Undead or Werebeast. One poison per weapon.`] },
   { id: "climbing-rope", name: "Climbing Rope", kind: "gear", group: "Adventuring gear", cost: 35, slots: 0, rules: ["Permanent. Climb uses full Movement instead of half Movement."] },
-  { id: "hound", name: "Hound", kind: "companion", group: "Companions", cost: 40, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 3, Mt 3, Sk 3, W 1, Tether 3".`] },
-  { id: "hawk", name: "Hawk", kind: "companion", group: "Companions", cost: 50, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 2, RC 2, Mt 1, Sk 4, W 1, Tether 12".`] },
-  { id: "cat", name: "Cat", kind: "companion", group: "Companions", cost: 35, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 2, Sk 4, W 1, Tether 6".`] },
-  { id: "giant-rat", name: "Giant Rat", kind: "companion", group: "Companions", cost: 30, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 2, Mt 2, Sk 4, W 1, Tether 3".`] },
-  { id: "rat-swarm", name: "Rat Swarm", kind: "companion", group: "Companions", cost: 45, slots: 0, requiresFeat: "animal-handling", rules: [`Requires Animal Handling. CC 3, W 6, Sk 6, Swarm keyword, Tether 3".`] },
+  { id: "hound", name: "Hound", kind: "companion", group: "Companions", cost: 40, slots: 0, requiresFeat: "animal-handling", companionProfile: { stats: { CC: 3, Mt: 3, Sk: 3, W: 1 }, tether: 3, keywords: ["Tamed"] }, rules: [`Requires Animal Handling. CC 3, Mt 3, Sk 3, W 1, Tether 3".`] },
+  { id: "hawk", name: "Hawk", kind: "companion", group: "Companions", cost: 50, slots: 0, requiresFeat: "animal-handling", companionProfile: { stats: { CC: 2, RC: 2, Mt: 1, Sk: 4, W: 1 }, tether: 12, keywords: ["Tamed", "Fly"] }, rules: [`Requires Animal Handling. CC 2, RC 2, Mt 1, Sk 4, W 1, Tether 12".`] },
+  { id: "cat", name: "Cat", kind: "companion", group: "Companions", cost: 35, slots: 0, requiresFeat: "animal-handling", companionProfile: { stats: { CC: 2, Sk: 4, W: 1 }, tether: 6, keywords: ["Tamed"] }, rules: [`Requires Animal Handling. CC 2, Sk 4, W 1, Tether 6".`] },
+  { id: "giant-rat", name: "Giant Rat", kind: "companion", group: "Companions", cost: 30, slots: 0, requiresFeat: "animal-handling", companionProfile: { stats: { CC: 2, Mt: 2, Sk: 4, W: 1 }, tether: 3, keywords: ["Tamed"] }, rules: [`Requires Animal Handling. CC 2, Mt 2, Sk 4, W 1, Tether 3".`] },
+  { id: "rat-swarm", name: "Rat Swarm", kind: "companion", group: "Companions", cost: 45, slots: 0, requiresFeat: "animal-handling", companionProfile: { stats: { CC: 3, Mt: 0, Sk: 6, W: 6 }, tether: 3, keywords: ["Swarm", "Tamed"] }, rules: [`Requires Animal Handling. CC 3, W 6, Sk 6, Swarm keyword, Tether 3".`] },
 ];
 
 export const ARMOR_RANK = {

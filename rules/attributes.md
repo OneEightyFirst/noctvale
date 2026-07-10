@@ -2,7 +2,7 @@
 
 Every fighter in Noctvale has different strengths. Some are quick across broken ground, some are deadly with a blade, some keep their nerve when the dead start walking. This variety is recorded as the fighter's **attributes**.
 
-A fighter's profile lists eight attributes: **Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, **Sanity**, and **Wounds**. Higher values are better for every attribute.
+A fighter's profile lists nine attributes: **Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Defense**, **Will**, **Sanity**, and **Wounds**. Higher values are better for every attribute.
 
 ## Movement (M)
 
@@ -23,6 +23,10 @@ A fighter's profile lists eight attributes: **Movement**, **Close Combat**, **Ra
 ## Skill (Sk)
 
 **Skill** measures precision, reflexes, and trained technique. It supplies **Skill dice** to the **Strike Pool** and is used for rules that test finesse, agility, or control.
+
+## Defense (Df)
+
+**Defense** is the single check attribute used for all dice in the defense pool. When rolling defense in Step 4 of the Attack Sequence, every die — whether a Might die or a Skill die — uses a **Df** check. Dice keep their color for blocking purposes; **Df** determines how many of them succeed.
 
 ## Will (Wi)
 
@@ -49,19 +53,19 @@ In campaign play, no attribute can be raised above **6**. If an attribute is red
 Noctvale is full of fighters of every shape, size, and ancestry. Before the Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities and towns gathered the diversity of many peoples living peaceably together. Use these profiles to represent fighters from different backgrounds and ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk; **Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves, Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or other short, quick folk. Your retinue is yours to build; choose the profile that represents the fighter you put on the battlefield.
 
 
-| Ancestry profile | M   | CC  | RC  | Mt  | Sk  | Wi  | Sa  | W   |
-| ---------------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Steady**       | 6"  | 3   | 3   | 3   | 3   | 3   | 4   | 3   |
-| **Keen**         | 7"  | 3   | 3   | 3   | 4   | 4   | 3   | 3   |
-| **Stout**        | 5"  | 3   | 3   | 4   | 3   | 3   | 3   | 3   |
-| **Stunty**       | 6"  | 3   | 3   | 2   | 4   | 3   | 3   | 2   |
+| Ancestry profile | M   | CC  | RC  | Mt  | Sk  | Df  | Wi  | Sa  | W   |
+| ---------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Steady**       | 6"  | 3   | 3   | 3   | 3   | 3   | 3   | 4   | 3   |
+| **Keen**         | 7"  | 3   | 3   | 3   | 4   | 3   | 4   | 3   | 3   |
+| **Stout**        | 5"  | 3   | 3   | 4   | 3   | 4   | 3   | 3   | 3   |
+| **Stunty**       | 6"  | 3   | 3   | 2   | 4   | 3   | 3   | 3   | 2   |
 
 
 ## Attribute Modifiers
 
 Bonuses and penalties to a fighter's attributes from feats, Traditions, spells, and equipment stack unless a rule says otherwise.
 
-The total bonus or penalty to any single attribute (**Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**) cannot exceed **+3** or **−3** at any time.
+The total bonus or penalty to any single attribute (**Movement**, **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Defense**, **Will**, or **Sanity**) cannot exceed **+3** or **−3** at any time.
 
 The penalties from **Affliction tokens** count toward this cap.
 

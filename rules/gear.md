@@ -2,33 +2,31 @@
 
 ## Armor
 
-Armor **converts failed defense dice into successes** after rolling the defense pool. Armor does not add dice or modify attributes. Archetype caps apply — see your archetype entry.
+Armor **adds dice to the defense pool before rolling**. Apply the armor's bonus when building your pool in Step 4, then roll all dice as **Df** checks as normal. Archetype caps apply — see your archetype entry.
 
-| Armor | Tier | Cost | Archetype cap | Conversion | Notes |
+| Armor | Tier | Cost | Archetype cap | Pool modifier | Notes |
 |---|---|---|---|---|---|
-| Light Armor | Light | 50 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | 2 failed Might or Skill defense dice → 1 normal success | Leather, padded |
-| Medium Armor | Medium | 115 | Hunters, Knights; **Cult** with **Magic Armor** | 1 failed Might defense die → 1 normal success | Chainmail, brigandine |
-| Heavy Armor | Heavy | 185 | Knights only; **Cult** with **Magic Armor** | 1 failed Might defense die → 1 normal success **OR** 2 failed Might defense dice → 1 critical success | Plate, full harness |
+| Light Armor | Light | 50 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | +1 Skill die | Leather, padded |
+| Medium Armor | Medium | 115 | Hunters, Knights; **Cult** with **Magic Armor** | +1 Might die | Chainmail, brigandine |
+| Heavy Armor | Heavy | 185 | Knights only; **Cult** with **Magic Armor** | +2 Might dice, −1 Skill die | Plate, full harness |
 
-A converted die is a successful defense die. Use it to block hits as normal.
-
-For **Light Armor**, if you spend 1 failed Might defense die and 1 failed Skill defense die, choose whether the converted success is Might or Skill.
-
-Heavy Armor's critical success is the only armor effect that can block incoming critical hits. The defender chooses which option to use after seeing the attacker's hits.
+Heavy Armor is a net +1 die but shifts the pool Might-heavy at the cost of Skill dice.
 
 ---
 
 ## Shields
 
-Shields **convert failed defense dice into successes** after rolling the defense pool. Shields do not use weapon slots.
+Shields **shift the tie rule in the defender's favor**. Shields do not use weapon slots.
 
-| Shield | Tier | Cost | Archetype cap | Conversion | Notes |
+By default, when blocks equal hits in a category the attacker wins the tie and one hit of that color gets through. A shield changes this:
+
+| Shield | Tier | Cost | Archetype cap | Tie benefit | Notes |
 |---|---|---|---|---|---|
-| Buckler | Light | 10 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | 1 failed Skill defense die → 1 normal success | Light, parrying |
-| Shield | Medium | 25 | Hunters, Knights; **Cult** with **Magic Armor** | 1 failed Might defense die + 1 failed Skill defense die → normal successes | Standard defense |
-| Tower Shield | Heavy | 50 | Knights only; **Cult** with **Magic Armor** | 2 failed Might defense dice + 1 failed Skill defense die → normal successes | Heavy, full cover |
+| Buckler | Light | 10 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | Defender wins Skill ties | Light, parrying |
+| Shield | Medium | 25 | Hunters, Knights; **Cult** with **Magic Armor** | Defender wins all ties | Standard defense |
+| Tower Shield | Heavy | 50 | Knights only; **Cult** with **Magic Armor** | Defender wins all ties; +1 Might die to defense pool | Heavy, full cover |
 
-Armor and shield conversions **stack**. A fighter in Medium Armor with a Shield converts 2 failed Might defense dice and 1 failed Skill defense die total.
+Armor and shield effects **stack**. A fighter in Medium Armor with a Tower Shield rolls with +1 Might die from armor and +1 Might die from the Tower Shield, and wins all ties.
 
 ---
 
