@@ -46,6 +46,7 @@ Rules in `rules/core-rules.md#standard-battle-set-up`; cross-refs in the action 
 - [x] Friendly in the line of fire: firearms and damage spells only; on miss, 1d6 → 1 hits intervening friendly
 - [x] Clustered enemies: same-retinue fighters within 1" of declared target → Sk check or retarget
 - [x] Enemy fighters block line of sight normally
+- [ ] **Cover tiers at terrain contact** — Decide whether base contact with terrain grants cover or better cover, and define when the terrain must be between attacker and target.
 - [ ] **Smoke / LoS cross-ref** — Smoke rules live in `rules/equipment.md`; confirm no gaps vs `rules/core-rules.md#standard-battle-set-up`.
 - [ ] Dedicated rules for enemy fighters blocking shots (beyond LoS) if playtest shows gaps
 
@@ -135,6 +136,7 @@ Write one complete scenario with deployment, terrain, and win conditions.
 - [x] Define round limit or end-of-game trigger
 - [x] Include any scenario-specific special rules
 - [x] Determine how Survival Rolls / Relics interact with first-playtest progression
+- [ ] **Battlefield effects table** — Dig into scenario battlefield effects as an optional **d66** table, including hostile monsters, zombies, animals, and other neutral or environmental complications. Cross-check creature-profile needs against `rules/profiles.md`.
 
 ### Scenario concept: There's a Reason They Have a Horn
 
@@ -170,6 +172,23 @@ Solo dry run and rules-gap notes.
 ## Additional Items
 
 Things identified across the design docs that don't fit neatly into one phase.
+
+### Post-playtest discussion with Seth (2026-07-09)
+
+From the first live playtest debrief. Overall signal: the game was fun, less sloppy
+than expected, and felt like a real playable prototype; the follow-ups below are the
+main systems to test or revise before broadening playtest.
+
+- [ ] **High-impact action economy** — Review whether firearms, damage spells, and similar high-impact actions should cost both actions, require **Priming** as a separate action, or be limited to once per activation. Confirm how **Overwatch** interacts with primed attacks.
+- [ ] **Weapon triangle and tie handling** — Test whether the weapon triangle should break tied attack results, what happens when the triangle does not apply, whether the attacker wins ordinary ties, and whether shields should make the defender win ties.
+- [ ] **Opposed-roll combat feel** — Explore whether "my dice against your dice" makes attacks feel more interactive without forcing a full armor and attribute rewrite.
+- [ ] **Armor and shield identity** — Revisit armor without adding large raw dice pools or flat +1 modifiers. Test penalty-based armor hooks such as reduced **Movement** or **Skill**, and keep shields mechanically distinct from body armor.
+- [ ] **Wound-state pacing** — Recheck whether the current **Downed** to **Stunned** progression slows lethality too much. Explore **Stunned** as a parallel condition rather than an extra injury step while preserving "miraculous return" moments for **Downed** fighters.
+- [ ] **Strike Pool progression math** — Stress-test 5+ baselines, advancement, the 15-dice cap, and to-hit modifiers so leveled fighters do not collapse into 3+ / 2+ hit rates or pure natural-6 fishing.
+- [ ] **Minis-agnostic list-building read** — Preserve the positive signal that Archetype + Domain + Tradition made it easy to map existing miniatures onto Noctvale concepts, such as armored spellcasters or ratfolk-style fighters.
+- [ ] **Beastmark flexibility** — Review Beastmark names and mechanics so rat, snake, wolf, bear, and similar marks support beastfolk analogues without making the Tradition feel limited to literal animals.
+- [ ] **Companion action clarity** — Confirm where companion action counts and dog-like companion rules are explained in the rules and builder.
+- [ ] **Builder quick-reference/search visibility** — Check whether players can find quick reference text and search functions while building a retinue, especially during first-playtest onboarding.
 
 ### Pearson technical-writing follow-ups (2026-07-01)
 

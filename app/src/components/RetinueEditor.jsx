@@ -24,6 +24,9 @@ import { emptyRetinue } from "../lib/retinue.js";
 import { getPlayModeFeats } from "../lib/retinue-sheet.js";
 import {
   formatWeaponRules,
+  getFighterCompanion,
+  buildCompanionStats,
+  buildFighterWeaponRows,
   getFighterWeapons,
   hasSkilledCraftsmanFeat,
   normalizeFeatId,
@@ -39,6 +42,9 @@ import {
   EQUIPMENT,
   fighterHasCaster,
   fighterHasFirearms,
+  getBeastMarkOption,
+  getBeastMarkDisplayRules,
+  getBuiltInFeatId,
   hasKeyword,
   PROFICIENCIES,
   resolveFighterKeywords,
@@ -106,24 +112,17 @@ function getDisplayTypeRules(type, domain) {
   return type.rules;
 }
 
-function getRetinueWideRuleBlocks({ tradition, selectedSpecialChoice }) {
+function getRetinueWideRuleBlocks({ tradition }) {
   const blocks = [];
 
   if (tradition?.rules?.length) {
     blocks.push({ key: "tradition", title: `${tradition.name} Tradition`, rules: tradition.rules });
   }
-  if (selectedSpecialChoice?.rules?.length) {
-    blocks.push({
-      key: "choice",
-      title: tradition?.choice ? `${selectedSpecialChoice.name} Beast-mark` : selectedSpecialChoice.name,
-      rules: selectedSpecialChoice.rules,
-    });
-  }
   return blocks;
 }
 
-function RetinueWideRules({ tradition, selectedSpecialChoice }) {
-  const blocks = getRetinueWideRuleBlocks({ tradition, selectedSpecialChoice });
+function RetinueWideRules({ tradition }) {
+  const blocks = getRetinueWideRuleBlocks({ tradition });
   if (!blocks.length) return null;
 
   return (
@@ -201,13 +200,13 @@ function getSelectedProficiencies(fighter, type, domain, archetype, tradition) {
   return [...new Set([...getBuiltInProficiencies(fighter, type), ...fromFeats, ...legacy])];
 }
 
-function getFighterStats(fighter, type, tradition, retinueChoices) {
+function getFighterStats(fighter, type, tradition) {
   const ancestry = getAncestry(fighter.ancestryId);
   const stats = { ...ancestry.stats };
   for (const stat of fighter.statBoosts ?? []) {
     stats[stat] += 1;
   }
-  if (tradition?.id === "beastmen" && retinueChoices.beastMark === "bear") {
+  if (tradition?.id === "beastmen" && fighter.beastMark === "bear") {
     stats.Mt += 1;
     stats.Sa = Math.max(1, stats.Sa - 1);
   }
@@ -284,12 +283,12 @@ function fighterHasShield(fighter) {
   return Object.entries(fighter.equipment ?? {}).some(([itemId, quantity]) => quantity > 0 && SHIELD_ITEM_IDS.has(itemId));
 }
 
-function isRatBeastman(tradition, selectedSpecialChoice) {
-  return tradition?.id === "beastmen" && selectedSpecialChoice?.id === "rat";
+function isRatBeastman(tradition, beastMarkId) {
+  return tradition?.id === "beastmen" && beastMarkId === "rat";
 }
 
-function getWeaponSlotLimit(fighter, tradition, selectedSpecialChoice) {
-  if (isRatBeastman(tradition, selectedSpecialChoice) && getRatExtraWeaponCount(fighter) > 0) return 4;
+function getWeaponSlotLimit(fighter, tradition) {
+  if (isRatBeastman(tradition, fighter.beastMark) && getRatExtraWeaponCount(fighter) > 0) return 4;
   return 3;
 }
 
@@ -356,6 +355,21 @@ function getSelectableDomainFeats(domain) {
   return DOMAIN_FEATS.filter((feat) => feat.domains.includes(domain));
 }
 
+function getFighterFeatCatalog(archetype, domain) {
+  return [...getProficiencyFeats(archetype), ...archetype.feats, ...UNIVERSAL_FEATS, ...getSelectableDomainFeats(domain)];
+}
+
+function getSelectedFeatRules(fighter, type, archetype, domain) {
+  const catalog = getFighterFeatCatalog(archetype, domain);
+  const selected = catalog.filter((feat) => fighter.feats.some((id) => normalizeFeatId(id) === feat.id));
+  const builtInFeatId = getBuiltInFeatId(type);
+  if (builtInFeatId && !selected.some((feat) => feat.id === builtInFeatId)) {
+    const builtIn = catalog.find((feat) => feat.id === builtInFeatId);
+    if (builtIn) selected.unshift(builtIn);
+  }
+  return selected;
+}
+
 function getFeatLimit(fighter, type) {
   if (fighter.featLimit != null) return fighter.featLimit;
   if (type?.featLimit != null) return type.featLimit;
@@ -393,6 +407,7 @@ function createFighter(archetype, typeId, domain, existingCount) {
     statBoosts: [],
     caster: type?.caster?.mode === "required",
     builtInChoice,
+    beastMark: "",
     feats: [],
     spells: [],
     equipment: {},
@@ -401,10 +416,9 @@ function createFighter(archetype, typeId, domain, existingCount) {
   };
 }
 
-function ensureLeaderFighter(archetype, domain, tradition, retinueChoices, fighters) {
+function ensureLeaderFighter(archetype, domain, tradition, fighters) {
   const roster = fighters ?? [];
   if (!archetype || !tradition || !domain) return roster;
-  if (tradition.choice && !retinueChoices[tradition.choice.id]) return roster;
 
   const leaderType = archetype.fighterTypes.find((type) => type.role === "Leader");
   if (!leaderType) return roster;
@@ -770,6 +784,57 @@ function StatGrid({ stats }) {
   );
 }
 
+function CompanionStats({ fighter, handlerStats }) {
+  const companion = getFighterCompanion(fighter);
+  if (!companion?.item?.companionProfile) return null;
+
+  const companionStats = buildCompanionStats(companion.item, handlerStats);
+  const { tether, keywords } = companion.item.companionProfile;
+
+  return (
+    <div>
+      <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-cream-500">
+        Companion — {companion.item.name}
+      </div>
+      <StatGrid stats={companionStats} />
+      <p className="mt-1 text-xs text-cream-400">
+        Tether {tether}"
+        {keywords?.length ? ` · ${keywords.join(", ")}` : ""}
+        {" · M, Wi, Sa use Handler"}
+      </p>
+    </div>
+  );
+}
+
+function FeatRulesWithCompanion({ feats, fighter, handlerStats, editMode = false }) {
+  if (editMode) {
+    if (!feats.length && !getFighterCompanion(fighter)) return null;
+    return (
+      <div className="space-y-2">
+        {feats.map((feat) => (
+          <React.Fragment key={feat.id}>
+            <RuleBlock title={feat.name} rules={feat.rules} />
+            {feat.id === "animal-handling" ? <CompanionStats fighter={fighter} handlerStats={handlerStats} /> : null}
+          </React.Fragment>
+        ))}
+      </div>
+    );
+  }
+
+  const playFeats = getPlayModeFeats(feats);
+  const companion = getFighterCompanion(fighter);
+  if (!playFeats.length && !companion) return null;
+
+  return (
+    <div className="space-y-2">
+      {playFeats.map((feat) => (
+        <RuleBlock key={feat.id} title={feat.name} rules={feat.rules} />
+      ))}
+      {companion ? <CompanionStats fighter={fighter} handlerStats={handlerStats} /> : null}
+    </div>
+  );
+}
+
 function QuantityControl({ value, label, disabled, onDecrease, onIncrease }) {
   return (
     <div className="flex items-center gap-1">
@@ -820,14 +885,13 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
   const retinueName = data.name;
   const archetypeId = data.archetypeId;
   const traditionId = data.traditionId;
-  const retinueChoices = data.retinueChoices;
   const fighters = data.fighters;
 
   const archetype = archetypeId ? ARCHETYPES[archetypeId] : null;
   const tradition = traditionId ? getTradition(traditionId) : null;
   const domain = tradition?.domain ?? "";
   const budget = getStartingBudget(tradition);
-  const readyForRoster = Boolean(archetype && tradition && (!tradition.choice || retinueChoices[tradition.choice.id]));
+  const readyForRoster = Boolean(archetype && tradition);
 
   const availableTraditions = useMemo(() => {
     if (!archetypeId) return [];
@@ -864,10 +928,10 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     if (loading || !readyForRoster || !archetype || !tradition || !domain) return;
 
     setFighters((current) => {
-      const next = ensureLeaderFighter(archetype, domain, tradition, retinueChoices, current);
+      const next = ensureLeaderFighter(archetype, domain, tradition, current);
       return next === current ? current : next;
     });
-  }, [loading, readyForRoster, archetype, tradition, domain, retinueChoices, setFighters]);
+  }, [loading, readyForRoster, archetype, tradition, domain, setFighters]);
 
   const retinueWarnings = useMemo(() => {
     const warnings = [];
@@ -953,15 +1017,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     patchRetinue({
       traditionId: nextTraditionId,
       retinueChoices: {},
-      fighters: ensureLeaderFighter(archetype, nextDomain, nextTradition, {}, []),
-    });
-  }
-
-  function selectSpecialChoice(choiceId, optionId) {
-    const nextChoices = { ...retinueChoices, [choiceId]: optionId };
-    patchRetinue({
-      retinueChoices: nextChoices,
-      fighters: ensureLeaderFighter(archetype, domain, tradition, nextChoices, fighters),
+      fighters: ensureLeaderFighter(archetype, nextDomain, nextTradition, []),
     });
   }
 
@@ -990,10 +1046,6 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     : [];
 
   const rosterFull = Boolean(archetype && fighters.length >= archetype.count.max);
-
-  const selectedSpecialChoice = tradition?.choice
-    ? tradition.choice.options.find((option) => option.id === retinueChoices[tradition.choice.id])
-    : null;
 
   const sidebar = useMemo(() => {
     if (loading || !retinue) return null;
@@ -1139,55 +1191,12 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
                   </>
                 )}
               </PickerField>
-
-              {tradition?.choice ? (
-                <PickerField
-                  wrapper="field"
-                  title={tradition.choice.label}
-                  actionLabel={`Select ${tradition.choice.label.toLowerCase()}`}
-                  hasSelection={Boolean(selectedSpecialChoice)}
-                  summary={
-                    <FieldSummary title={selectedSpecialChoice?.name} empty="Choose an option" />
-                  }
-                  modalAriaLabel={tradition.choice.label}
-                  modalEyebrow={tradition.choice.label}
-                  modalTitle={retinueName || "Retinue"}
-                  modalHeaderSummary={
-                    selectedSpecialChoice ? <Pill tone="amber">{selectedSpecialChoice.name}</Pill> : null
-                  }
-                >
-                  {(close) => (
-                    <div className="space-y-2">
-                      {tradition.choice.options.map((option) => (
-                        <OptionCard
-                          key={option.id}
-                          title={option.name}
-                          rules={option.rules}
-                          selected={retinueChoices[tradition.choice.id] === option.id}
-                          onClick={() => {
-                            selectSpecialChoice(tradition.choice.id, option.id);
-                            close();
-                          }}
-                        />
-                      ))}
-                    </div>
-                  )}
-                </PickerField>
-              ) : null}
             </div>
           ) : (
-            <RetinueIdentitySummary
-              archetype={archetype}
-              tradition={tradition}
-              traditionChoiceLabel={tradition?.choice?.label}
-              selectedSpecialChoice={selectedSpecialChoice}
-              stacked
-            />
+            <RetinueIdentitySummary archetype={archetype} tradition={tradition} stacked />
           )}
 
-          {tradition ? (
-            <RetinueWideRules tradition={tradition} selectedSpecialChoice={selectedSpecialChoice} />
-          ) : null}
+          {tradition ? <RetinueWideRules tradition={tradition} /> : null}
 
           {retinueWarnings.length ? (
             <div className="mt-4">
@@ -1210,10 +1219,8 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     patchRetinue,
     readyForRoster,
     retinue,
-    retinueChoices,
     retinueName,
     retinueWarnings,
-    selectedSpecialChoice,
     totalCost,
     tradition,
     traditionId,
@@ -1246,9 +1253,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
               fighter={leaderFighter}
               archetype={archetype}
               tradition={tradition}
-              selectedSpecialChoice={selectedSpecialChoice}
               domain={domain}
-              retinueChoices={retinueChoices}
               casterCount={casterCount}
               updateFighter={updateFighter}
               removeFighter={removeFighter}
@@ -1268,9 +1273,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
                     editing={editing}
                     archetype={archetype}
                     tradition={tradition}
-                    selectedSpecialChoice={selectedSpecialChoice}
                     domain={domain}
-                    retinueChoices={retinueChoices}
                     casterCount={casterCount}
                     updateFighter={updateFighter}
                     removeFighter={removeFighter}
@@ -1288,9 +1291,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
                 fighter={fighter}
                 archetype={archetype}
                 tradition={tradition}
-                selectedSpecialChoice={selectedSpecialChoice}
                 domain={domain}
-                retinueChoices={retinueChoices}
                 casterCount={casterCount}
                 updateFighter={updateFighter}
                 removeFighter={removeFighter}
@@ -1353,7 +1354,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
   );
 }
 
-function RetinueIdentitySummary({ archetype, tradition, traditionChoiceLabel, selectedSpecialChoice, stacked = false }) {
+function RetinueIdentitySummary({ archetype, tradition, stacked = false }) {
   return (
     <div className={stacked ? "space-y-3" : "grid grid-cols-12 gap-3"}>
       <div className={stacked ? undefined : "col-span-6"}>
@@ -1380,11 +1381,6 @@ function RetinueIdentitySummary({ archetype, tradition, traditionChoiceLabel, se
           )}
         </SummaryRow>
       </div>
-      {traditionChoiceLabel && selectedSpecialChoice ? (
-        <div className={stacked ? undefined : "col-span-4"}>
-          <SummaryRow label={traditionChoiceLabel}>{selectedSpecialChoice.name}</SummaryRow>
-        </div>
-      ) : null}
     </div>
   );
 }
@@ -1401,13 +1397,15 @@ function SummaryRow({ label, children }) {
 
 function FighterCardSummary({
   fighter,
-  type,
+  tradition,
+  beastMarkDisplay,
   caster,
   stats,
   domainSpells,
   selectedFeatRules,
 }) {
   const selectedEquipment = getSelectedEquipment(fighter);
+  const weaponRows = buildFighterWeaponRows(fighter, tradition, fighter.skilledCraftsman);
   const spellNames = caster
     ? fighter.spells.map((spellId) => domainSpells.find((entry) => entry.id === spellId)?.name ?? spellId)
     : [];
@@ -1416,33 +1414,31 @@ function FighterCardSummary({
     <div className="space-y-3">
       <StatGrid stats={stats} />
 
-      {getFighterWeapons(fighter).length > 0 ? (
+      {weaponRows.length ? (
         <div>
           <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-cream-500">Weapons</div>
-          <WeaponTable
-            weapons={getSelectedEquipment(fighter).filter(({ item }) => item.kind === "weapon")}
-            skilledCraftsman={fighter.skilledCraftsman}
-            compact
-          />
+          <WeaponTable rows={weaponRows} compact />
         </div>
       ) : null}
 
       <div className="space-y-2">
+        {beastMarkDisplay?.rules?.length ? (
+          <RuleBlock title={`${beastMarkDisplay.name} Beast-mark`} rules={beastMarkDisplay.rules} />
+        ) : null}
+
         {caster ? (
           <SummaryRow label="Caster">
             {spellNames.length ? spellNames.join(", ") : "Caster"}
           </SummaryRow>
         ) : null}
 
-        {getPlayModeFeats(selectedFeatRules).map((feat) => (
-          <RuleBlock key={feat.id} title={feat.name} rules={feat.rules} />
-        ))}
+        <FeatRulesWithCompanion feats={selectedFeatRules} fighter={fighter} handlerStats={stats} />
 
-        {selectedEquipment.some(({ item }) => item.kind !== "weapon") ? (
+        {selectedEquipment.some(({ item }) => item.kind !== "weapon" && item.kind !== "companion") ? (
           <SummaryRow label="Equipment">
             <div className="flex flex-wrap gap-2">
               {selectedEquipment
-                .filter(({ item }) => item.kind !== "weapon")
+                .filter(({ item }) => item.kind !== "weapon" && item.kind !== "companion")
                 .map(({ item, quantity }) => (
                   <span key={item.id} className="rounded border border-night-800 bg-night-950 px-2 py-0.5 text-xs">
                     {item.name} ×{quantity}
@@ -1490,9 +1486,7 @@ const FighterCard = memo(function FighterCard({
   editing,
   archetype,
   tradition,
-  selectedSpecialChoice,
   domain,
-  retinueChoices,
   casterCount,
   updateFighter,
   removeFighter,
@@ -1507,28 +1501,28 @@ const FighterCard = memo(function FighterCard({
 }) {
   const type = getFighterType(archetype, fighter);
   const ancestry = getAncestry(fighter.ancestryId);
+  const beastMarkOption = getBeastMarkOption(tradition, fighter.beastMark);
+  const beastMarkDisplay = getBeastMarkDisplayRules(beastMarkOption);
+  const showBeastMarkPicker = tradition?.id === "beastmen";
   const keywords = useMemo(
     () => getFighterKeywords(fighter, archetype, tradition, domain, type),
     [fighter, archetype, tradition, domain, type],
   );
   const caster = isCaster(fighter, type, domain);
   const spellLimit = getSpellLimit(fighter, type, domain);
-  const stats = getFighterStats(fighter, type, tradition, retinueChoices);
+  const stats = getFighterStats(fighter, type, tradition);
   const domainSpells = SPELLS[domain] ?? [];
   const domainFeats = getSelectableDomainFeats(domain);
   const proficiencyFeats = getProficiencyFeats(archetype);
   const featLimit = getFeatLimit(fighter, type);
   const cost = getFighterCost(fighter, type, tradition, domain);
   const slots = getGearSlots(fighter);
-  const slotLimit = getWeaponSlotLimit(fighter, tradition, selectedSpecialChoice);
+  const slotLimit = getWeaponSlotLimit(fighter, tradition);
   const selectedFeatRules = useMemo(
-    () =>
-      [...proficiencyFeats, ...archetype.feats, ...UNIVERSAL_FEATS, ...domainFeats].filter((feat) =>
-        fighter.feats.some((id) => normalizeFeatId(id) === feat.id),
-      ),
-    [proficiencyFeats, archetype.feats, domainFeats, fighter.feats],
+    () => getSelectedFeatRules(fighter, type, archetype, domain),
+    [fighter, type, archetype, domain, fighter.feats],
   );
-  const fighterWarnings = getFighterWarnings(fighter, type, archetype, tradition, selectedSpecialChoice, domain, spellLimit, slots, slotLimit, caster);
+  const fighterWarnings = getFighterWarnings(fighter, type, archetype, tradition, domain, spellLimit, slots, slotLimit, caster);
   const [collapsed, setCollapsed] = useState(false);
   const [removeConfirmOpen, setRemoveConfirmOpen] = useState(false);
   const hasMortal = hasKeyword(keywords, "Mortal");
@@ -1637,6 +1631,7 @@ const FighterCard = memo(function FighterCard({
                 </Pill>
               ))}
               <Pill>{ancestry.name}</Pill>
+              {beastMarkOption ? <Pill tone="amber">{beastMarkOption.name} Beast-mark</Pill> : null}
               <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>
             </div>
             <Pill tone={cost > 0 ? "amber" : "zinc"} className="shrink-0">
@@ -1680,10 +1675,10 @@ const FighterCard = memo(function FighterCard({
               <StatGrid stats={stats} />
             </div>
 
-            {getFighterWeapons(fighter).length > 0 ? (
+            {buildFighterWeaponRows(fighter, tradition, fighter.skilledCraftsman).length > 0 ? (
               <div className="mt-3">
                 <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-cream-500">Weapons</div>
-                <WeaponProfileList fighter={fighter} weaponsOnly />
+                <WeaponProfileList fighter={fighter} tradition={tradition} weaponsOnly />
               </div>
             ) : null}
 
@@ -1825,6 +1820,43 @@ const FighterCard = memo(function FighterCard({
           </PickerField>
         ) : null}
 
+        {showBeastMarkPicker ? (
+          <PickerField
+            wrapper="panel"
+            panelTitle="Beast-mark"
+            actionLabel="Select beast-mark"
+            hasSelection={Boolean(fighter.beastMark)}
+            summary={
+              beastMarkOption ? (
+                <SelectionSummary title={`${beastMarkOption.name} Beast-mark`} rules={beastMarkOption.rules} />
+              ) : (
+                <EmptySummary />
+              )
+            }
+            modalAriaLabel="Select beast-mark"
+            modalEyebrow="Beast-mark"
+            modalTitle={fighter.name}
+            modalHeaderSummary={beastMarkOption ? <Pill tone="amber">{beastMarkOption.name}</Pill> : null}
+          >
+            {(close) => (
+              <div className="space-y-2">
+                {tradition.fighterChoice.options.map((option) => (
+                  <OptionCard
+                    key={option.id}
+                    title={option.name}
+                    rules={option.rules}
+                    selected={fighter.beastMark === option.id}
+                    onClick={() => {
+                      updateFighter(fighter.id, { beastMark: option.id });
+                      close();
+                    }}
+                  />
+                ))}
+              </div>
+            )}
+          </PickerField>
+        ) : null}
+
         {showCasterOptions ? (
           <Panel title="Caster">
             <div className="rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
@@ -1930,6 +1962,7 @@ const FighterCard = memo(function FighterCard({
           keywords={keywords}
           proficiencyFeats={proficiencyFeats}
           selectedFeatRules={selectedFeatRules}
+          stats={stats}
           tradition={tradition}
           type={type}
           onToggle={toggleFeat}
@@ -1941,7 +1974,6 @@ const FighterCard = memo(function FighterCard({
           archetype={archetype}
           type={type}
           tradition={tradition}
-          selectedSpecialChoice={selectedSpecialChoice}
           domain={domain}
           equipmentGroups={EQUIPMENT_GROUPS}
           slots={slots}
@@ -1949,51 +1981,14 @@ const FighterCard = memo(function FighterCard({
           onUpdateQuantity={updateEquipment}
           onSkilledCraftsmanUpgrade={updateSkilledCraftsman}
         />
-
-        <Panel title="Rules on This Fighter">
-          <div className="space-y-3">
-            {getBuiltInProficiencies(fighter, type)
-              .filter((id) => !fighter.feats.includes(id))
-              .map((id) => {
-                const proficiency = getById(PROFICIENCIES, id);
-                return (
-                  <RuleBlock
-                    key={id}
-                    title={`${proficiency.name} (built-in)`}
-                    rules={[`You may equip any weapon in this proficiency your retinue is allowed to buy: ${proficiency.weapons}.`]}
-                  />
-                );
-              })}
-            {fighter.builtInChoice === "firearms" && canTakeFirearmsFeat(keywords) && !fighter.feats.includes("firearms") ? (
-              <RuleBlock
-                title="Firearms (built-in)"
-                rules={DOMAIN_FEATS.find((feat) => feat.id === "firearms")?.rules ?? []}
-              />
-            ) : null}
-            {selectedFeatRules.map((feat) => (
-              <RuleBlock key={feat.id} title={feat.name} rules={feat.rules} />
-            ))}
-            {caster ? (
-              <RuleBlock
-                title="Caster"
-                rules={[
-                  `Knows ${spellLimit} spell${spellLimit === 1 ? "" : "s"} from the ${domain} list.`,
-                  ...fighter.spells.map((spellId) => {
-                    const spell = domainSpells.find((entry) => entry.id === spellId);
-                    return spell ? `${spell.name}${spell.keywords?.length ? ` (${spell.keywords.join(", ")})` : ""}: ${spell.effect}` : spellId;
-                  }),
-                ]}
-              />
-            ) : null}
-          </div>
-        </Panel>
             </div>
           </>
         ) : (
           <div className="mt-3">
             <FighterCardSummary
               fighter={fighter}
-              type={type}
+              tradition={tradition}
+              beastMarkDisplay={beastMarkDisplay}
               caster={caster}
               stats={stats}
               domainSpells={domainSpells}
@@ -2059,34 +2054,34 @@ function SkilledCraftsmanControls({ fighter, item, onUpgrade }) {
   );
 }
 
-function WeaponProfileList({ fighter, weaponsOnly = false }) {
+function WeaponProfileList({ fighter, tradition = null, weaponsOnly = false }) {
   const selectedEquipment = getSelectedEquipment(fighter);
-  const weapons = selectedEquipment.filter(({ item }) => item.kind === "weapon");
-  const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon");
+  const weaponRows = buildFighterWeaponRows(fighter, tradition, fighter.skilledCraftsman);
+  const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon" && item.kind !== "companion");
   const dualWieldingRules = getDualWieldingRules(fighter);
 
   if (weaponsOnly) {
-    if (!weapons.length) return null;
+    if (!weaponRows.length) return null;
     return (
       <div className="space-y-2">
-        <WeaponTable weapons={weapons} skilledCraftsman={fighter.skilledCraftsman} compact />
+        <WeaponTable rows={weaponRows} />
         {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       </div>
     );
   }
 
-  if (!weapons.length && !otherGear.length) {
-    return <div className="text-xs text-cream-500">No equipment selected</div>;
+  if (!weaponRows.length && !otherGear.length) {
+    return <div className="text-sm text-cream-500">No equipment selected</div>;
   }
 
   return (
     <div className="space-y-2">
-      {weapons.length ? <WeaponTable weapons={weapons} skilledCraftsman={fighter.skilledCraftsman} compact /> : null}
+      {weaponRows.length ? <WeaponTable rows={weaponRows} /> : null}
       {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       {otherGear.length ? (
         <div className="flex flex-wrap gap-2">
           {otherGear.map(({ item, quantity }) => (
-            <div key={item.id} className="rounded border border-night-800 bg-night-900 px-2 py-1 text-xs text-cream-100">
+            <div key={item.id} className="rounded border border-night-800 bg-night-900 px-2 py-1 text-sm text-cream-100">
               {item.name} ×{quantity}
             </div>
           ))}
@@ -2096,8 +2091,8 @@ function WeaponProfileList({ fighter, weaponsOnly = false }) {
   );
 }
 
-function EquipmentSummary({ fighter }) {
-  return <WeaponProfileList fighter={fighter} />;
+function EquipmentSummary({ fighter, tradition }) {
+  return <WeaponProfileList fighter={fighter} tradition={tradition} />;
 }
 
 function RuleBlock({ title, rules }) {
@@ -2110,7 +2105,7 @@ function RuleBlock({ title, rules }) {
   );
 }
 
-function EquipmentField({ fighter, archetype, type, tradition, selectedSpecialChoice, domain, equipmentGroups, slots, slotLimit, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+function EquipmentField({ fighter, archetype, type, tradition, domain, equipmentGroups, slots, slotLimit, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
   const selectedEquipment = getSelectedEquipment(fighter);
 
   return (
@@ -2120,7 +2115,7 @@ function EquipmentField({ fighter, archetype, type, tradition, selectedSpecialCh
       actionLabel="Select equipment"
       hasSelection={selectedEquipment.length > 0}
       statusPill={<Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>}
-      summary={<EquipmentSummary fighter={fighter} />}
+      summary={<EquipmentSummary fighter={fighter} tradition={tradition} />}
       modalAriaLabel="Select equipment"
       modalEyebrow="Equipment selection"
       modalTitle={fighter.name}
@@ -2145,9 +2140,8 @@ function EquipmentField({ fighter, archetype, type, tradition, selectedSpecialCh
           archetype={archetype}
           type={type}
           tradition={tradition}
-          selectedSpecialChoice={selectedSpecialChoice}
           domain={domain}
-          equipmentGroups={EQUIPMENT_GROUPS}
+          equipmentGroups={equipmentGroups}
           onUpdateQuantity={onUpdateQuantity}
           onSkilledCraftsmanUpgrade={onSkilledCraftsmanUpgrade}
         />
@@ -2156,8 +2150,8 @@ function EquipmentField({ fighter, archetype, type, tradition, selectedSpecialCh
   );
 }
 
-function EquipmentPickerContent({ fighter, archetype, type, tradition, selectedSpecialChoice, domain, equipmentGroups, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
-  const ratExtraWeapon = isRatBeastman(tradition, selectedSpecialChoice);
+function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, equipmentGroups, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+  const ratExtraWeapon = isRatBeastman(tradition, fighter.beastMark);
   return (
     <>
       <div className="mb-2 rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
@@ -2216,7 +2210,7 @@ function EquipmentPickerContent({ fighter, archetype, type, tradition, selectedS
   );
 }
 
-function FeatField({ archetype, caster, domain, domainFeats, featLimit, fighter, keywords, proficiencyFeats, selectedFeatRules, tradition, type, onToggle, onSkilledCraftsmanUpgrade }) {
+function FeatField({ archetype, caster, domain, domainFeats, featLimit, fighter, keywords, proficiencyFeats, selectedFeatRules, stats, tradition, type, onToggle, onSkilledCraftsmanUpgrade }) {
   const selectedNames = selectedFeatRules.map((feat) => feat.name);
 
   return (
@@ -2224,29 +2218,15 @@ function FeatField({ archetype, caster, domain, domainFeats, featLimit, fighter,
       wrapper="panel"
       panelTitle="Feats"
       actionLabel="Select feats"
-      hasSelection={fighter.feats.length > 0}
+      hasSelection={selectedFeatRules.length > 0}
       statusPill={
         <Pill tone={fighter.feats.length === featLimit ? "amber" : "zinc"}>
           {fighter.feats.length}/{featLimit}
         </Pill>
       }
       summary={
-        <div className="grid gap-1 text-xs text-cream-400">
-          {Array.from({ length: featLimit }).map((_, index) => (
-            <div key={index} className="flex items-center justify-between rounded border border-night-800 bg-night-900 px-2 py-1">
-              <span>Feat {index + 1}</span>
-              <span className={selectedNames[index] ? "text-cream-100" : "text-cream-500"}>{selectedNames[index] ?? "Empty"}</span>
-            </div>
-          ))}
-        </div>
-      }
-      footer={
         selectedFeatRules.length ? (
-          <div className="mt-2 space-y-2">
-            {selectedFeatRules.map((feat) => (
-              <RuleBlock key={feat.id} title={feat.name} rules={feat.rules} />
-            ))}
-          </div>
+          <FeatRulesWithCompanion feats={selectedFeatRules} fighter={fighter} handlerStats={stats} editMode />
         ) : null
       }
       modalAriaLabel="Select feats"
@@ -2316,7 +2296,7 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
 
   const selectedCount = fighter.feats.length;
   const builtInProficiencies = getBuiltInProficiencies(fighter, type);
-
+  const builtInFeatId = getBuiltInFeatId(type);
   const builtInFirearms = type?.builtInChoice?.options?.includes("firearms") && fighter.builtInChoice === "firearms";
 
   return (
@@ -2326,11 +2306,12 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
           {group.feats.map((feat) => {
             const selected = fighter.feats.some((id) => normalizeFeatId(id) === feat.id);
             const builtIn = feat.isProficiency && builtInProficiencies.includes(feat.id);
+            const builtInFeat = feat.id === builtInFeatId;
             const firearmsLocked = feat.id === "firearms" && !canTakeFirearmsFeat(keywords);
             const firearmsBuiltIn = feat.id === "firearms" && builtInFirearms;
             const casterLocked = feat.casterOnly && !caster;
             const limitLocked = !selected && selectedCount >= featLimit;
-            const locked = builtIn || firearmsBuiltIn || firearmsLocked || casterLocked || limitLocked;
+            const locked = builtIn || builtInFeat || firearmsBuiltIn || firearmsLocked || casterLocked || limitLocked;
             return (
               <button
                 key={feat.id}
@@ -2339,14 +2320,14 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
                 onClick={() => onToggle(feat)}
                 className={cx(
                   "rounded-lg border p-3 text-left text-xs disabled:cursor-not-allowed disabled:opacity-45",
-                  selected || builtIn ? "border-accent-400 bg-accent-500/10" : "border-night-800 bg-night-900 hover:border-cream-600",
+                  selected || builtIn || builtInFeat ? "border-accent-400 bg-accent-500/10" : "border-night-800 bg-night-900 hover:border-cream-600",
                 )}
               >
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="text-sm font-semibold text-cream-100">{feat.name}</div>
                   <div className="flex flex-wrap gap-1">
                     {selected ? <Pill tone="amber">Selected</Pill> : null}
-                    {builtIn || firearmsBuiltIn ? <Pill tone="cyan">Built-in</Pill> : null}
+                    {builtIn || builtInFeat || firearmsBuiltIn ? <Pill tone="cyan">Built-in</Pill> : null}
                     {feat.casterOnly ? <Pill tone={casterLocked ? "rose" : "cyan"}>Requires Caster</Pill> : null}
                     {firearmsLocked ? <Pill tone="rose">Requires Mortal; forbids Caster</Pill> : null}
                     {limitLocked ? <Pill tone="rose">Limit reached</Pill> : null}
@@ -2365,18 +2346,19 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
   );
 }
 
-function getFighterWarnings(fighter, type, archetype, tradition, selectedSpecialChoice, domain, spellLimit, slots, slotLimit, caster) {
+function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLimit, slots, slotLimit, caster) {
   const warnings = [];
   if (!type) return warnings;
   if (type.boost && fighter.statBoosts.length !== type.boost.count) {
     warnings.push(`${type.name} needs ${type.boost.count} attribute boost${type.boost.count === 1 ? "" : "s"}.`);
   }
   if (type.builtInChoice && !fighter.builtInChoice) warnings.push(`${type.name} needs a built-in training choice.`);
+  if (tradition?.id === "beastmen" && !fighter.beastMark) warnings.push(`${type.name} needs a beast-mark.`);
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);
   if (!caster && fighter.spells.length) warnings.push("Non-Caster has spells selected.");
   if (fighter.feats.length > getFeatLimit(fighter, type)) warnings.push(`Too many feats selected. Limit is ${getFeatLimit(fighter, type)}.`);
   if (slots > slotLimit) warnings.push(`Weapon slots exceed ${slotLimit} by ${slots - slotLimit}.`);
-  if (isRatBeastman(tradition, selectedSpecialChoice) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {
+  if (isRatBeastman(tradition, fighter.beastMark) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {
     warnings.push("Rat's extra weapon must be a one-handed weapon.");
   }
   if (getOneHandedMeleeWeaponCount(fighter) >= 2 && fighterHasShield(fighter)) {

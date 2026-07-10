@@ -61,7 +61,7 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 **Grove-keepers:** After terrain is set, choose one terrain piece outside both deployment zones. Friendly fighters within **1"** of it add **+1** to **Recover** rolls.
 
-**Beastmen:** Choose one beast-mark for the retinue: **Wolf**, **Rat**, **Bear**, or **Serpent**. All fighters with the **Beastmen** keyword cost **+10 Crowns** and gain the chosen rule.
+**Beastmen:** When you recruit a fighter with the **Beastmen** keyword, choose one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its chosen mark's rule.
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee weapon: +2 **Might**, +1 **Skill**, Axe.
 

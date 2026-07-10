@@ -2,8 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { db } from "../firebase.js";
 import { useAuth } from "../contexts/AuthContext.jsx";
-import { emptyRetinue } from "../lib/retinue.js";
-import { normalizeFighter } from "../lib/fighter.js";
+import { emptyRetinue, normalizeRetinue } from "../lib/retinue.js";
 
 const SAVE_DELAY_MS = 1000;
 
@@ -25,13 +24,7 @@ export function useRetinue(retinueId) {
     getDoc(doc(db, "users", user.uid, "retinues", retinueId))
       .then((snapshot) => {
         if (snapshot.exists()) {
-          const data = snapshot.data();
-          setRetinue({
-            ...emptyRetinue(),
-            ...data,
-            retinueChoices: data.retinueChoices ?? {},
-            fighters: (data.fighters ?? []).map(normalizeFighter),
-          });
+          setRetinue(normalizeRetinue(snapshot.data()));
         } else {
           setRetinue(emptyRetinue());
         }

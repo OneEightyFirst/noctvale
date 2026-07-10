@@ -1,3 +1,6 @@
+import { TRADITIONS } from "../data/noctvale.js";
+import { normalizeFighter } from "./fighter.js";
+
 export function emptyRetinue() {
   return {
     name: "Untitled retinue",
@@ -6,6 +9,30 @@ export function emptyRetinue() {
     retinueChoices: {},
     fighters: [],
   };
+}
+
+function getTradition(traditionId) {
+  return TRADITIONS.find((tradition) => tradition.id === traditionId);
+}
+
+export function normalizeRetinue(data) {
+  const retinue = {
+    ...emptyRetinue(),
+    ...data,
+    retinueChoices: data?.retinueChoices ?? {},
+    fighters: (data?.fighters ?? []).map(normalizeFighter),
+  };
+
+  const legacyBeastMark = retinue.retinueChoices.beastMark;
+  const tradition = getTradition(retinue.traditionId);
+  if (!legacyBeastMark || tradition?.id !== "beastmen") return retinue;
+
+  const fighters = retinue.fighters.map((fighter) =>
+    fighter.beastMark ? fighter : { ...fighter, beastMark: legacyBeastMark },
+  );
+  const { beastMark: _removed, ...retinueChoices } = retinue.retinueChoices;
+
+  return { ...retinue, fighters, retinueChoices };
 }
 
 export function formatRetinueSummary(retinue, archetypes) {

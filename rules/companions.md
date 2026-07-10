@@ -55,6 +55,12 @@ While the **Handler** is **Downed**, the **Companion** does not co-move and does
 
 ---
 
+## Consolidate
+
+When the **Handler** is targeted by a **Charge** and the **Attack Sequence** resolves, the **Companion** (if Active and not **Out of Action**) may immediately move up to its **tether** distance toward the attacking fighter. This move does not use the **Companion** action.
+
+---
+
 ## Tether
 
 Each profile lists a **tether** distance. A **Companion** must stay within **tether** of its **Handler** to act. Measure base to base.

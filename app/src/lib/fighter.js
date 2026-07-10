@@ -1,4 +1,4 @@
-import { EQUIPMENT } from "../data/noctvale.js";
+import { EQUIPMENT, FIGHTING_CLAWS_WEAPON } from "../data/noctvale.js";
 
 const FEAT_ID_ALIASES = {
   "raise-the-watch": "rally-to-aid",
@@ -59,6 +59,20 @@ export function getFighterWeapons(fighter) {
     .filter(([, quantity]) => quantity > 0)
     .map(([itemId, quantity]) => ({ item: getEquipment(itemId), quantity, itemId }))
     .filter((entry) => entry.item?.kind === "weapon");
+}
+
+export function buildFighterWeaponRows(fighter, tradition = null, skilledCraftsman = null) {
+  const rows = getFighterWeapons(fighter).map(({ item, quantity, itemId }) => ({
+    id: itemId,
+    quantity,
+    ...parseWeaponProfile(item, skilledCraftsman),
+  }));
+
+  if (fighter.beastMark === "wolf" && (!tradition || tradition.id === "beastmen")) {
+    rows.unshift({ id: "fighting-claws", quantity: 1, ...FIGHTING_CLAWS_WEAPON });
+  }
+
+  return rows;
 }
 
 function stripBuildPrefix(rule) {
@@ -209,6 +223,32 @@ export function formatWeaponRules(item, skilledCraftsman) {
 
 export function hasSkilledCraftsmanFeat(fighter) {
   return (fighter.feats ?? []).some((featId) => normalizeFeatId(featId) === "skilled-craftsman");
+}
+
+export function getFighterCompanion(fighter) {
+  for (const [itemId, quantity] of Object.entries(fighter.equipment ?? {})) {
+    if (quantity <= 0) continue;
+    const item = getEquipment(itemId);
+    if (item?.kind === "companion") return { item, quantity };
+  }
+  return null;
+}
+
+export function buildCompanionStats(companionItem, handlerStats) {
+  const profile = companionItem?.companionProfile;
+  if (!profile) return null;
+
+  const companionStats = profile.stats ?? {};
+  return {
+    M: handlerStats.M,
+    CC: companionStats.CC ?? "—",
+    RC: companionStats.RC ?? "—",
+    Mt: companionStats.Mt ?? "—",
+    Sk: companionStats.Sk ?? "—",
+    Wi: handlerStats.Wi,
+    Sa: handlerStats.Sa,
+    W: companionStats.W ?? "—",
+  };
 }
 
 export function formatWeaponSpecialRuleText(rule) {

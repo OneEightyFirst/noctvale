@@ -18,6 +18,13 @@ function formatFighterPlainText(fighter) {
     STAT_KEYS.map((key) => `${key} ${formatStat(key, fighter.stats[key])}`).join(" · "),
   ];
 
+  if (fighter.beastMark) {
+    lines.splice(2, 0, `${fighter.beastMark.name} Beast-mark`);
+    if (fighter.beastMark.rules?.length) {
+      lines.push(...indentLines(fighter.beastMark.rules));
+    }
+  }
+
   if (fighter.weapons.length) {
     lines.push("Weapons:");
     lines.push("  Name | Slots | Mt | Sk");
@@ -44,6 +51,16 @@ function formatFighterPlainText(fighter) {
   for (const feat of fighter.ruleFeats) {
     lines.push(feat.name);
     lines.push(...indentLines(feat.rules ?? []));
+  }
+
+  if (fighter.companion) {
+    lines.push(`Companion — ${fighter.companion.name}`);
+    lines.push(
+      STAT_KEYS.map((key) => `${key} ${formatStat(key, fighter.companion.stats[key])}`).join(" · "),
+    );
+    lines.push(
+      `Tether ${fighter.companion.tether}"${fighter.companion.keywords.length ? ` · ${fighter.companion.keywords.join(", ")}` : ""} · M, Wi, Sa use Handler`,
+    );
   }
 
   if (fighter.caster) {
@@ -173,7 +190,13 @@ function renderWeaponTableHtml(weapons) {
 }
 
 function renderFighterHtml(fighter) {
-  const meta = [fighter.typeName, ...fighter.keywords, fighter.ancestry, `${fighter.cost}c`]
+  const meta = [
+    fighter.typeName,
+    ...fighter.keywords,
+    fighter.ancestry,
+    fighter.beastMark ? `${fighter.beastMark.name} Beast-mark` : null,
+    `${fighter.cost}c`,
+  ]
     .filter(Boolean)
     .map(escapeHtml)
     .join(" · ");
@@ -184,6 +207,10 @@ function renderFighterHtml(fighter) {
     `<p class="meta">${meta}</p>`,
     renderStatGridHtml(fighter.stats),
   ];
+
+  if (fighter.beastMark?.rules?.length) {
+    sections.push(`<div class="block"><strong>${escapeHtml(fighter.beastMark.name)} Beast-mark</strong>${renderRulesList(fighter.beastMark.rules)}</div>`);
+  }
 
   if (fighter.weapons.length) {
     sections.push("<h3>Weapons</h3>");
@@ -196,6 +223,14 @@ function renderFighterHtml(fighter) {
 
   for (const feat of fighter.ruleFeats) {
     sections.push(`<div class="block"><strong>${escapeHtml(feat.name)}</strong>${renderRulesList(feat.rules)}</div>`);
+  }
+
+  if (fighter.companion) {
+    sections.push(`<h3>Companion — ${escapeHtml(fighter.companion.name)}</h3>`);
+    sections.push(renderStatGridHtml(fighter.companion.stats));
+    sections.push(
+      `<p class="detail">Tether ${fighter.companion.tether}"${fighter.companion.keywords.length ? ` · ${escapeHtml(fighter.companion.keywords.join(", "))}` : ""} · M, Wi, Sa use Handler</p>`,
+    );
   }
 
   if (fighter.caster) {

@@ -8,10 +8,12 @@ import {
   STAT_KEYS,
   TRADITIONS,
   UNIVERSAL_FEATS,
-  fighterHasCaster,
+  getBeastMarkOption,
+  getBeastMarkDisplayRules,
+  getBuiltInFeatId,
   resolveFighterKeywords,
 } from "../data/noctvale.js";
-import { normalizeFeatId, parseWeaponProfile } from "./fighter.js";
+import { getFighterCompanion, normalizeFeatId, parseWeaponProfile, buildCompanionStats, buildFighterWeaponRows } from "./fighter.js";
 
 const STARTING_CROWNS = 1000;
 
@@ -102,13 +104,13 @@ function getSelectedEquipment(fighter) {
     .sort((a, b) => EQUIPMENT.indexOf(a.item) - EQUIPMENT.indexOf(b.item));
 }
 
-function getFighterStats(fighter, type, tradition, retinueChoices) {
+function getFighterStats(fighter, type, tradition) {
   const ancestry = getAncestry(fighter.ancestryId);
   const stats = { ...ancestry.stats };
   for (const stat of fighter.statBoosts ?? []) {
     stats[stat] += 1;
   }
-  if (tradition?.id === "beastmen" && retinueChoices.beastMark === "bear") {
+  if (tradition?.id === "beastmen" && fighter.beastMark === "bear") {
     stats.Mt += 1;
     stats.Sa = Math.max(1, stats.Sa - 1);
   }
@@ -146,12 +148,19 @@ function getFighterCost(fighter, type, tradition, domain) {
   return fighterCost + gearCost;
 }
 
-function getSelectedFeatRules(fighter, archetype, domain) {
+function getSelectedFeatRules(fighter, type, archetype, domain) {
   const domainFeats = getSelectableDomainFeats(domain);
   const proficiencyFeats = getProficiencyFeats(archetype);
-  return [...proficiencyFeats, ...archetype.feats, ...UNIVERSAL_FEATS, ...domainFeats].filter((feat) =>
+  const catalog = [...proficiencyFeats, ...archetype.feats, ...UNIVERSAL_FEATS, ...domainFeats];
+  const selected = catalog.filter((feat) =>
     (fighter.feats ?? []).some((id) => normalizeFeatId(id) === feat.id),
   );
+  const builtInFeatId = getBuiltInFeatId(type);
+  if (builtInFeatId && !selected.some((feat) => feat.id === builtInFeatId)) {
+    const builtIn = catalog.find((feat) => feat.id === builtInFeatId);
+    if (builtIn) selected.unshift(builtIn);
+  }
+  return selected;
 }
 
 export function formatStat(key, value) {
@@ -170,8 +179,12 @@ export function isBuildOnlyFeat(feat) {
   return false;
 }
 
+export function isEditOnlyFeat(feat) {
+  return feat?.id === "animal-handling";
+}
+
 export function getPlayModeFeats(feats) {
-  return feats.filter((feat) => !isBuildOnlyFeat(feat));
+  return feats.filter((feat) => !isBuildOnlyFeat(feat) && !isEditOnlyFeat(feat));
 }
 
 /** @deprecated Use isBuildOnlyFeat */
@@ -179,18 +192,20 @@ export function isProficiencyOnlyFeat(feat) {
   return Boolean(feat.isProficiency);
 }
 
-function buildFighterSheet(fighter, archetype, tradition, domain, retinueChoices) {
+function buildFighterSheet(fighter, archetype, tradition, domain) {
   const type = getFighterType(archetype, fighter);
   const ancestry = getAncestry(fighter.ancestryId);
   const keywords = getFighterKeywords(fighter, archetype, tradition, domain, type);
   const caster = isCaster(fighter, type, domain);
-  const stats = getFighterStats(fighter, type, tradition, retinueChoices);
+  const stats = getFighterStats(fighter, type, tradition);
+  const beastMarkOption = getBeastMarkOption(tradition, fighter.beastMark);
   const domainSpells = SPELLS[domain] ?? [];
-  const selectedFeatRules = getSelectedFeatRules(fighter, archetype, domain);
+  const selectedFeatRules = getSelectedFeatRules(fighter, type, archetype, domain);
   const selectedEquipment = getSelectedEquipment(fighter);
-  const weapons = selectedEquipment.filter(({ item }) => item.kind === "weapon");
-  const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon");
+  const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon" && item.kind !== "companion");
+  const companionEntry = getFighterCompanion(fighter);
   const dualWieldingRules = getDualWieldingRules(fighter);
+  const weaponProfiles = buildFighterWeaponRows(fighter, tradition, fighter.skilledCraftsman);
 
   const spells = caster
     ? (fighter.spells ?? []).map((spellId) => {
@@ -214,13 +229,19 @@ function buildFighterSheet(fighter, archetype, tradition, domain, retinueChoices
     ancestryDescription: ancestry.description,
     cost: getFighterCost(fighter, type, tradition, domain),
     stats,
+    companion: companionEntry?.item?.companionProfile
+      ? {
+          name: companionEntry.item.name,
+          stats: buildCompanionStats(companionEntry.item, stats),
+          tether: companionEntry.item.companionProfile.tether,
+          keywords: companionEntry.item.companionProfile.keywords ?? [],
+        }
+      : null,
     caster,
     spells,
     ruleFeats: getPlayModeFeats(selectedFeatRules),
-    weapons: weapons.map(({ item, quantity }) => ({
-      quantity,
-      ...parseWeaponProfile(item, fighter.skilledCraftsman),
-    })),
+    beastMark: beastMarkOption ? getBeastMarkDisplayRules(beastMarkOption) : null,
+    weapons: weaponProfiles,
     dualWieldingRules,
     equipment: otherGear.map(({ item, quantity }) => ({
       name: item.name,
@@ -230,18 +251,9 @@ function buildFighterSheet(fighter, archetype, tradition, domain, retinueChoices
   };
 }
 
-function getRetinueWideRules(tradition, selectedSpecialChoice) {
-  const blocks = [];
-  if (tradition?.rules?.length) {
-    blocks.push({ title: `${tradition.name} Tradition`, rules: tradition.rules });
-  }
-  if (selectedSpecialChoice?.rules?.length) {
-    blocks.push({
-      title: tradition?.choice ? `${selectedSpecialChoice.name} Beast-mark` : selectedSpecialChoice.name,
-      rules: selectedSpecialChoice.rules,
-    });
-  }
-  return blocks;
+function getRetinueWideRules(tradition) {
+  if (!tradition?.rules?.length) return [];
+  return [{ title: `${tradition.name} Tradition`, rules: tradition.rules }];
 }
 
 function sortFighters(archetype, fighters) {
@@ -254,11 +266,7 @@ export function buildRetinueSheet(data) {
   const archetype = data.archetypeId ? ARCHETYPES[data.archetypeId] : null;
   const tradition = data.traditionId ? getTradition(data.traditionId) : null;
   const domain = tradition?.domain ?? "";
-  const retinueChoices = data.retinueChoices ?? {};
   const fighters = data.fighters ?? [];
-  const selectedSpecialChoice = tradition?.choice
-    ? tradition.choice.options.find((option) => option.id === retinueChoices[tradition.choice.id])
-    : null;
   const budget = getStartingBudget(tradition);
   const totalCost = archetype
     ? fighters.reduce(
@@ -281,15 +289,10 @@ export function buildRetinueSheet(data) {
           domain: tradition.domain,
         }
       : null,
-    specialChoice: selectedSpecialChoice
-      ? {
-          label: tradition?.choice?.label ?? "",
-          name: selectedSpecialChoice.name,
-        }
-      : null,
+    specialChoice: null,
     budget,
     totalCost,
-    retinueRules: getRetinueWideRules(tradition, selectedSpecialChoice),
-    fighters: archetype && tradition ? sortFighters(archetype, fighters).map((fighter) => buildFighterSheet(fighter, archetype, tradition, domain, retinueChoices)) : [],
+    retinueRules: getRetinueWideRules(tradition),
+    fighters: archetype && tradition ? sortFighters(archetype, fighters).map((fighter) => buildFighterSheet(fighter, archetype, tradition, domain)) : [],
   };
 }

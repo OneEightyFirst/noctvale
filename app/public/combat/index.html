@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Combat — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=676c50b" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -2239,6 +2239,12 @@
             <a href="/weapons/" class="wiki-nav-link">Weapons</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-equipment-weapons-children">
+        <div class="wiki-nav-node" data-nav-id="nav-weapons-keywords">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/weapons/#keywords" class="wiki-nav-link">Keywords</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-weapons-one-handed">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-weapons-one-handed-children" aria-label="Expand One-Handed">
@@ -2435,6 +2441,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/companions/#activation" class="wiki-nav-link">Activation</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-companions-consolidate">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/companions/#consolidate" class="wiki-nav-link">Consolidate</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-companions-tether">
@@ -3022,7 +3034,7 @@
 <h3 id="attack-sequence-2">Attack Sequence</h3>
 <p><strong>Step 1 — Build the Strike Pool:</strong> Read the attack&#39;s weapon or spell profile. A number with a <code>+</code> adds to the attacker&#39;s matching attribute; a number without a <code>+</code> is fixed. The Strike Pool cannot exceed <strong>15 dice</strong>.</p>
 <p><strong>Step 2 — Roll to hit:</strong> Melee dice use <strong>Close Combat</strong> checks. Ranged dice use <strong>Ranged Combat</strong> checks. Apply <strong>Hit</strong> attribute modifiers (+1 <strong>Close Combat</strong>, −1 <strong>Ranged Combat</strong>, etc.) to the attribute used for that attack.</p>
-<p><strong>Step 3 — Determine criticals:</strong> Weapon triangle (attacker only), <strong>Hammer</strong> vs <strong>Heavy Armor</strong>, magic triangle, <strong>Aim</strong>, or firearms (crits vs all). Critical hits cannot be blocked except by a <strong>Heavy Armor</strong> critical success.</p>
+<p><strong>Step 3 — Determine criticals:</strong> Weapon triangle (attacker only), <strong>Crushing</strong> (Hammer vs armored), magic triangle, <strong>Aim</strong>, or firearms (crits vs all). Critical hits cannot be blocked except by a <strong>Heavy Armor</strong> critical success.</p>
 <p><strong>Step 4 — Roll defense:</strong> Defender <strong>Might</strong> + <strong>Skill</strong>. Might dice use <strong>Might</strong> checks. Skill dice use <strong>Skill</strong> checks. Add bonus defense dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules. Armor and shields <strong>convert</strong> failed defense dice into successes. <em>(See <a href="/gear/#equipment">Equipment</a>.)</em></p>
 <p><strong>Step 5 — Apply Wounds:</strong> See <strong>Apply Wounds</strong> (below).</p>
 </blockquote>
@@ -3119,7 +3131,7 @@
 <p>Any natural <strong>6</strong> is a <strong>critical hit</strong> if any of the following apply:</p>
 <ul>
 <li>The attacker has <strong>weapon triangle advantage</strong> (see Weapon Triangle) — Sword, Axe, or Spear only</li>
-<li>The attacker wields a <strong>Hammer</strong> and the target is wearing <strong>Heavy Armor</strong></li>
+<li>The attacker wields a weapon with <strong>Crushing</strong> and the target is wearing armor</li>
 <li>The attacker has <strong>magic advantage</strong> (see Magic Triangles)</li>
 <li>The attacker is using a <strong>firearm</strong> (crits against all targets)</li>
 <li>The attacker used the <strong>Aim</strong> action before a Ranged attack</li>
@@ -3180,7 +3192,7 @@
 <h3 id="firearms">Firearms</h3>
 <p>Firearms are fired with the <strong>Ranged</strong> action. They use the <strong>primer roll</strong> and gain criticals against <strong>all targets</strong>, regardless of weapon type. A <strong>Long Rifle</strong> scores critical hits on natural 5+ instead of only natural 6s. <em>(See <a href="/weapons/#weapons">Equipment — Weapons</a>.)</em></p>
 <h3 id="outside-the-triangles">Outside the Triangles</h3>
-<p><strong>Hammer</strong> is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use the Hammer crit rule instead (natural 6s vs targets in <strong>Heavy Armor</strong>). If either fighter wields a Hammer, <strong>weapon triangle advantage does not apply</strong> to that melee exchange.</p>
+<p><strong>Hammer</strong> is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use <strong>Crushing</strong> instead (natural 6s crit vs any armored target). If either fighter wields a Hammer, <strong>weapon triangle advantage does not apply</strong> to that melee exchange. <em>(See <a href="/weapons/#keywords">Weapons — Keywords</a>.)</em></p>
 <p>The <strong>Aim</strong> action can also make natural <strong>6</strong> results critical hits on that fighter&#39;s next <strong>Ranged</strong> action during the same activation. If that <strong>Ranged</strong> weapon already had a critical hit on <strong>6</strong>, <strong>Aim</strong> increases it to <strong>5+</strong>.</p>
 <h2 id="ranged-reaction">Ranged Reaction</h2>
 <p>When a fighter is targeted by a <strong>Ranged</strong> action, the target may perform a <strong>single free action</strong> after the <strong>Attack Sequence</strong> is fully resolved. This reaction does not cost the target any of their normal actions.</p>
@@ -3247,7 +3259,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=676c50b"></script>
-  <script src="/wiki/wiki.js?v=676c50b" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
+  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
 </body>
 </html>
