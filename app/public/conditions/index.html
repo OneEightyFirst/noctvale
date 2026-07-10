@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conditions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -2984,17 +3002,15 @@
         <header class="wiki-article-header wiki-article-header--bordered">
           <div class="wiki-article-eyebrow">Core Rules</div>
           <h1 class="wiki-article-title" id="conditions">Conditions</h1>
-          <p class="wiki-article-summary">Fighters move through three Wound states before being removed from play.</p>
+          <p class="wiki-article-summary">Fighters who are overcome in battle become Downed or Stunned before being removed from play. A fighter reduced to exactly 0 Wounds becomes Downed. A fighter reduced below 0 Wounds is overkilled and becomes Stunned instead; do not track negative Wounds.</p>
         </header>
         <div class="wiki-content">
           <h2 id="wound-states">Wound States</h2>
-<p>Fighters move through three Wound states before being removed from play.</p>
-<pre><code>Active → Downed → Stunned → Out of Action
-</code></pre>
+<p>Fighters who are overcome in battle become <strong>Downed</strong> or <strong>Stunned</strong> before being removed from play. A fighter reduced to exactly <strong>0 Wounds</strong> becomes <strong>Downed</strong>. A fighter reduced below <strong>0 Wounds</strong> is overkilled and becomes <strong>Stunned</strong> instead; do not track negative Wounds.</p>
 <h3 id="active">Active</h3>
 <p>An <strong>Active</strong> fighter is upright and able to act. <strong>Active</strong> fighters count toward their player&#39;s <strong>activation count</strong>.</p>
 <h3 id="downed">Downed</h3>
-<p>A fighter reaches <strong>Downed</strong> when they hit 0 Wounds.</p>
+<p>A fighter becomes <strong>Downed</strong> when they are reduced to exactly <strong>0 Wounds</strong>.</p>
 <p><strong>While Downed, a fighter:</strong></p>
 <ul>
 <li>Cannot attack</li>
@@ -3002,9 +3018,9 @@
 <li>May use <strong>Crawl</strong> or attempt the <strong>Recover</strong> action</li>
 <li>Retains their <strong>full defense pool</strong> (Might dice equal to <strong>Might</strong> and Skill dice equal to <strong>Skill</strong>), including eligible bonus dice and armor or shield conversions</li>
 </ul>
-<p>Any <strong>unblocked hit</strong> on a Downed fighter pushes them to <strong>Stunned</strong>.</p>
+<p>Any <strong>unblocked hit</strong> on a <strong>Downed</strong> fighter pushes them to <strong>Stunned</strong>.</p>
 <h3 id="stunned">Stunned</h3>
-<p>A fighter becomes <strong>Stunned</strong> from a Recover roll of 1, or from taking an unblocked hit while Downed.</p>
+<p>A fighter becomes <strong>Stunned</strong> when they are reduced below <strong>0 Wounds</strong>, from a <strong>Recover</strong> roll of <strong>1</strong>, from taking an unblocked hit while <strong>Downed</strong>, or from a rule that makes them <strong>Stunned</strong> directly.</p>
 <p><strong>While Stunned, a fighter:</strong></p>
 <ul>
 <li>Cannot move</li>
@@ -3014,8 +3030,8 @@
 <li>Does not count toward <strong>activation count</strong></li>
 <li>Defends with <strong>Might dice only</strong> (<strong>Might</strong>-based defense, no Skill dice)</li>
 </ul>
-<p>Any <strong>unblocked hit</strong> on a Stunned fighter pushes them to <strong>Out of Action</strong>.</p>
-<p>A <strong>Mercy Kill</strong> (within 1&quot;) bypasses defense entirely — the Stunned fighter is immediately Out of Action.</p>
+<p>Any <strong>unblocked hit</strong> on a <strong>Stunned</strong> fighter pushes them to <strong>Out of Action</strong>.</p>
+<p>A <strong>Mercy Kill</strong> against a <strong>Stunned</strong> fighter bypasses defense entirely — the <strong>Stunned</strong> fighter is immediately <strong>Out of Action</strong>.</p>
 <p>If a <strong>Stunned</strong> fighter becomes <strong>Active</strong> during the round before their player has finished activating fighters, they may activate later this round with <strong>1 action</strong>. If they become <strong>Downed</strong>, they may activate later this round, but can only use that activation to <strong>Recover</strong>. Do not recalculate initiative or <strong>Overwatch tokens</strong>.</p>
 <h3 id="out-of-action">Out of Action</h3>
 <p>A fighter is removed from the battle. Resolve post-game consequences in the <a href="/post-game/#step-2-casualty-table">Casualty Table</a> and <a href="/post-game/#step-4-doom-table">Doom Table</a>.</p>
@@ -3085,7 +3101,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

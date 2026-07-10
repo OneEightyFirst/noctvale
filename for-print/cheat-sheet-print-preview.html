@@ -117,13 +117,14 @@
     <h3>Round at a Glance</h3>
     <p><strong>Start of round:</strong> Count each player's <strong>Active</strong> and <strong>Downed</strong> fighters — that is their <strong>activation count</strong>. Do not count <strong>Stunned</strong>, <strong>Out of Action</strong>, or <strong>Escaped</strong> fighters. The player with the lower <strong>activation count</strong> has initiative and gains <strong>Overwatch tokens</strong> equal to the difference between the two counts. Do not recalculate activation count, initiative, or tokens during the round.</p>
     <p><strong>Activations:</strong> Starting with the player who has initiative, players alternate activating <strong>one fighter</strong> at a time. Each fighter performs <strong>2 actions</strong> in any order.</p>
-    <p><strong>End of round:</strong> The round ends when every fighter who can activate has activated or <strong>skipped their activation</strong>. Remove unspent <strong>Overwatch tokens</strong>. Begin a new round.</p>
+    <p><strong>End of round:</strong> The round ends when every fighter who can activate has activated. Remove unspent <strong>Overwatch tokens</strong>. Begin a new round.</p>
   </div>
 
   <h2>Overwatch</h2>
   <ul>
     <li><strong>Start of round:</strong> Lower <strong>activation count</strong> player receives tokens equal to the difference between the two counts.</li>
-    <li><strong>Skip activation:</strong> On your turn in the activation order, spend <strong>1 token</strong> to <strong>skip a fighter's activation</strong> instead of activating them. The skip counts as that fighter's activation for the round. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy completes an action.</li>
+    <li><strong>Overwatch action:</strong> During a fighter's activation, spend <strong>1 action</strong> and <strong>1 Overwatch token</strong> to go on <strong>Overwatch</strong>. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy completes an action. Their remaining action may be used before or after declaring Overwatch.</li>
+    <li><strong>Reaction timing:</strong> A fighter on <strong>Overwatch</strong> may react whenever an enemy completes an action during the round — even after you have run out of fighters to activate.</li>
     <li><strong>End of round:</strong> Remove unspent tokens.</li>
   </ul>
 
@@ -156,7 +157,8 @@
     <tr><td><strong>Ranged</strong></td><td>Bow/crossbow → <strong>Attack Sequence</strong>; firearm → <strong>Primer Roll</strong></td></tr>
     <tr><td><strong>Cast</strong></td><td><strong>Caster</strong> only — <strong>Casting Roll</strong></td></tr>
     <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged</strong> +1 dominant die; nat <strong>6</strong> = crit (<strong>5+</strong> if weapon already crit on <strong>6</strong>)</td></tr>
-    <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong>; blocked if any <strong>Active</strong> or <strong>Downed</strong> enemy is in engagement range</td></tr>
+    <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong>; <strong>Downed</strong> enemy within <strong>1"</strong> → <strong>Melee</strong>, unblocked hit sends them <strong>Out of Action</strong>; blocked if any other <strong>Active</strong> or <strong>Downed</strong> enemy is in engagement range</td></tr>
+    <tr><td><strong>Overwatch</strong></td><td>Spend <strong>1 Overwatch token</strong> — react with <strong>1 action</strong> when an enemy completes an action; remaining action may be used before or after</td></tr>
     <tr><td><strong>Brace</strong></td><td><strong>+1 Might defense die</strong> until next activation</td></tr>
     <tr><td><strong>Hide</strong></td><td><strong>Hidden</strong> within <strong>1"</strong> of terrain</td></tr>
     <tr><td><strong>Recover</strong></td><td><strong>Downed</strong> — roll <strong>1d6</strong> (see back)</td></tr>
@@ -174,8 +176,8 @@
     <h3>Attack Sequence</h3>
     <p><strong>Step 1 — Build the Strike Pool:</strong> Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>, to a maximum of <strong>15 dice</strong>. Firearms and damage spells use a <strong>flat Strike Pool</strong> instead.</p>
     <p><strong>Step 2 — Roll to hit:</strong> Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> attribute modifiers.</p>
-    <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle, <strong>Hammer</strong> vs <strong>Heavy Armor</strong>, magic triangle, <strong>Aim</strong>, or firearms. Crits blocked only by <strong>Heavy Armor</strong> critical success.</p>
-    <p><strong>Step 4 — Roll defense:</strong> Defender <strong>Might</strong> + <strong>Skill</strong> + bonuses. Armor and shields <strong>convert</strong> failed dice.</p>
+    <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle, <strong>Crushing</strong> (Hammer vs armored), magic triangle, <strong>Aim</strong>, or firearms. Critical hits cannot be blocked.</p>
+    <p><strong>Step 4 — Roll defense:</strong> Build the pool: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor before rolling (Light +1 Sk, Medium +1 Mt, Heavy +2 Mt −1 Sk), plus bonuses. Roll all as <strong>Df</strong> checks. Attacker wins ties by color; a shield shifts ties to the defender.</p>
     <p><strong>Step 5 — Apply Wounds</strong> (below).</p>
   </div>
 
@@ -198,19 +200,20 @@
     <li><strong>Cover:</strong> <strong>+1 Skill defense die</strong>.</li>
   </ul>
 
-  <h2>Armor Conversion</h2>
+  <h2>Armor &amp; Shields</h2>
+  <p style="font-size:7.5pt;margin:0 0 0.04in">Armor adds dice to the pool <strong>before rolling</strong>. Shields change who wins ties. Effects stack. <strong>Ties:</strong> when blocks = hits in a color category, attacker wins — 1 hit gets through.</p>
   <table>
-    <tr><th>Gear</th><th>Conversion</th></tr>
-    <tr><td>Light</td><td>2 failed Mt or Sk → 1 success</td></tr>
-    <tr><td>Medium</td><td>1 failed Mt → 1 success</td></tr>
-    <tr><td>Heavy</td><td>1 failed Mt → 1 success OR 2 failed Mt → 1 crit success</td></tr>
-    <tr><td>Buckler</td><td>1 failed Sk</td></tr>
-    <tr><td>Shield</td><td>1 failed Mt + 1 failed Sk</td></tr>
-    <tr><td>Tower Shield</td><td>2 failed Mt + 1 failed Sk</td></tr>
+    <tr><th>Gear</th><th>Effect</th></tr>
+    <tr><td>Light Armor</td><td>+1 Skill die</td></tr>
+    <tr><td>Medium Armor</td><td>+1 Might die</td></tr>
+    <tr><td>Heavy Armor</td><td>+2 Might dice, −1 Skill die</td></tr>
+    <tr><td>Buckler</td><td>Defender wins <strong>Skill</strong> ties</td></tr>
+    <tr><td>Shield</td><td>Defender wins <strong>all</strong> ties</td></tr>
+    <tr><td>Tower Shield</td><td>Defender wins <strong>all</strong> ties; +1 Might die</td></tr>
   </table>
 
   <h2>Critical Hits</h2>
-  <p>Natural <strong>6</strong> = crit with weapon triangle, <strong>Hammer</strong> vs Heavy Armor, magic triangle, firearm, or <strong>Aim</strong>. <strong>Hammer</strong> cancels weapon triangle.</p>
+  <p>Natural <strong>6</strong> = crit with weapon triangle, <strong>Crushing</strong> (Hammer vs armored), magic triangle, firearm, or <strong>Aim</strong>. Crits cannot be blocked. <strong>Hammer</strong> cancels weapon triangle.</p>
   <img class="triangles" src="cheat-sheet-triangles.svg" alt="Weapon, Mystic, and Natural critical hit triangles">
 
   <h2>Ranged</h2>
@@ -240,7 +243,7 @@
   </table>
 
   <h2>Wound States</h2>
-  <pre>Active → Downed → Stunned → Out of Action</pre>
+  <p>Exact takedowns become <strong>Downed</strong>. Overkill and <strong>Impact</strong> weapons become <strong>Stunned</strong>.</p>
   <table>
     <tr><th>Recover (1d6)</th><th>Help (1d6)</th></tr>
     <tr><td>1: Stunned · 2–3: Downed · 4–5: 1 Wound · 6: 1 Wound + action</td><td>1: OOA · 2–3: — · 4–5: Downed · 6: 1 Wound</td></tr>

@@ -12,13 +12,13 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 >
 > **Activations:** Starting with the player who has initiative, players alternate activating **one fighter** at a time. Each fighter performs **2 actions** in any order.
 >
-> **End of round:** The round ends when every fighter who can activate has activated or **skipped their activation**. Remove unspent **Overwatch tokens**. Begin a new round.
+> **End of round:** The round ends when every fighter who can activate has activated. Remove unspent **Overwatch tokens**. Begin a new round.
 
 ### Overwatch
 
 - **Start of round:** Lower **activation count** player receives tokens equal to the shortfall.
-- **Skip activation:** On your turn in the activation order, spend **1 token** to **skip a fighter's activation** instead of activating them. The skip counts as that fighter's activation for the round. That fighter may later perform any **1 action** as a reaction when an enemy completes an action.
-- **Reaction timing:** Spend tokens whenever an enemy completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not stop a player from spending unspent tokens during the other player's remaining activations.
+- **Overwatch action:** During a fighter's activation, spend **1 action** and **1 Overwatch token** to go on **Overwatch**. That fighter may later perform any **1 action** as a reaction when an enemy completes an action. Their remaining action may be used before or after declaring Overwatch.
+- **Reaction timing:** A fighter on **Overwatch** may react whenever an enemy completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not prevent Overwatch reactions from triggering.
 - **End of round:** Remove unspent tokens.
 
 ### Morale
@@ -51,7 +51,8 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 | **Ranged** | Attack with a ranged weapon in range and line of sight; bow/crossbow → **Attack Sequence**; firearm → **Primer Roll** then **Attack Sequence** |
 | **Cast** | **Caster** only — **Casting Roll**; spells may be cast in melee; no **Ranged Reaction** |
 | **Aim** | Next **Ranged** action this activation gains **+1** dominant die type; natural **6**s are critical hits (**5+** if the weapon already crit on **6**) |
-| **Mercy Kill** | **Stunned** enemy within **1"** → immediately **Out of Action**; blocked if any **Active** or **Downed** enemy is **within engagement range** |
+| **Mercy Kill** | **Stunned** enemy within **1"** → immediately **Out of Action**; **Downed** enemy within **1"** → **Melee** attack, unblocked hit sends them **Out of Action**; blocked if any other **Active** or **Downed** enemy is **within engagement range** |
+| **Overwatch** | Spend **1 Overwatch token** — react with **1 action** when an enemy completes an action; remaining action may be used before or after |
 | **Brace** | **+1 Might defense die** until this fighter's next activation |
 | **Hide** | Become **Hidden** within **1"** of terrain — see **Keywords** |
 | **Recover** | **Downed** only — roll **1d6** (see **Recover / Help**) |
@@ -68,17 +69,18 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
-> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Hammer** vs **Heavy Armor**, magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked except by a **Heavy Armor** critical success.
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Crushing** (Hammer vs armored), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
 >
-> **Step 4 — Roll defense:** Defender **Might** + **Skill**. Might dice use **Might** checks. Skill dice use **Skill** checks. Add bonus defense dice from cover, **Brace**, spells, feats, or scenario rules. Armor and shields **convert** failed defense dice into successes. *(See [Equipment](../rules/gear.md#equipment).)*
+> **Step 4 — Roll defense:** Build the pool: defender **Might** + **Skill**, modified by armor before rolling (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus bonus dice from cover, **Brace**, spells, feats, or scenario rules. Roll all dice as **Df** checks. Attacker wins ties by color; a shield shifts ties to the defender.
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
 > ### Apply Wounds
 >
-> Each unblocked hit inflicts **1 Wound**.
+> Resolve all unblocked hits from one attack together. Each unblocked hit inflicts **1 Wound**.
 >
-> - When a fighter reaches **0 Wounds**, they become **Downed**.
+> - If an **Active** fighter is reduced to exactly **0 Wounds**, they become **Downed**.
+> - If an **Active** fighter would be reduced below **0 Wounds**, set them to **0 Wounds** and they become **Stunned**.
 > - An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
 > - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
 >
@@ -90,20 +92,22 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 - **Might defense** blocks **Might hits**; **Skill defense** blocks **Skill hits**.
 - **2 Might** successes may block **1 Skill hit**; **2 Skill** successes may block **1 Might hit**.
 - **Cover:** **+1 Skill defense die** vs **Ranged** attacks and damage spells using the **Attack Sequence**.
-- **Critical hits** cannot be blocked except by a **Heavy Armor** critical defense success.
+- **Critical hits** cannot be blocked.
 
-### Armor and Shield Conversion
+### Armor and Shields
 
-Convert failed defense dice after rolling. Conversions stack; defender chooses which dice to convert.
+Armor adds dice to the pool **before rolling**. Shields change who wins ties. Effects stack.
 
-| Gear | Conversion |
+| Gear | Effect |
 |---|---|
-| Light armor | 2 failed Might or Skill → 1 normal success |
-| Medium armor | 1 failed Might → 1 normal success |
-| Heavy armor | 1 failed Might → 1 normal success **or** 2 failed Might → 1 **critical** success |
-| Buckler | 1 failed Skill |
-| Shield | 1 failed Might + 1 failed Skill |
-| Tower Shield | 2 failed Might + 1 failed Skill |
+| Light Armor | +1 Skill die |
+| Medium Armor | +1 Might die |
+| Heavy Armor | +2 Might dice, −1 Skill die |
+| Buckler | Defender wins **Skill** ties |
+| Shield | Defender wins **all** ties |
+| Tower Shield | Defender wins **all** ties; +1 Might die |
+
+**Ties:** When blocks equal hits in a color category, the attacker wins — one hit of that color gets through.
 
 ### Critical Hits
 
@@ -154,9 +158,7 @@ Roll **2d6 + Skill** against the firearm's **primer difficulty**.
 
 ## Wound States
 
-```
-Active → Downed → Stunned → Out of Action
-```
+Exact takedowns become **Downed**. Overkill and **Impact** weapons become **Stunned**.
 
 | State | Summary |
 |---|---|

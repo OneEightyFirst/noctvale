@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weapons — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -3016,8 +3034,15 @@
 <p>Choose feats before buying weapons. Every Crown cost is a multiple of <strong>5 Crowns</strong>.</p>
 <hr>
 <h2 id="keywords">Keywords</h2>
+<p><strong>Cleave:</strong> When this weapon&#39;s attack reduces a fighter to <strong>0 Wounds</strong>, make one free <strong>Melee</strong> attack against a different fighter within engagement range.</p>
 <p><strong>Crushing:</strong> This weapon scores critical hits on natural <strong>6s</strong> against any fighter wearing armor (Light, Medium, or Heavy). These weapons are outside the weapon triangle.</p>
-<p><strong>Thrown(Mt) / Thrown(Sk):</strong> This weapon may be used to make a <strong>Ranged</strong> attack. Maximum range equals the fighter&#39;s <strong>Might</strong> in inches for <strong>Thrown(Mt)</strong>, or the fighter&#39;s <strong>Skill</strong> in inches for <strong>Thrown(Sk)</strong>. No minimum range. Use the weapon&#39;s normal Strike Pool. After the attack resolves, the weapon is removed from the fighter&#39;s equipment for the rest of the battle.</p>
+<p><strong>Heavy:</strong> This weapon cannot be used to make a <strong>Ranged</strong> attack if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation.</p>
+<p><strong>Impact:</strong> When this weapon&#39;s attack would make an <strong>Active</strong> fighter <strong>Downed</strong>, that fighter becomes <strong>Stunned</strong> instead.</p>
+<p><strong>Parry:</strong> When this fighter defends against a <strong>Melee</strong> attack, reroll one failed <strong>Skill</strong> die in the defense pool.</p>
+<p><strong>Piercing:</strong> When defending against this weapon&#39;s attacks, armor dice bonuses do not apply and shield tie benefits do not apply — build the defense pool as if the target has no armor or shield.</p>
+<p><strong>Reach:</strong> This weapon can engage enemies up to <strong>2&quot;</strong> away.</p>
+<p><strong>Thrown(Mt) / Thrown(Sk):</strong> This weapon may be used to make a <strong>Ranged</strong> attack. Maximum range equals the fighter&#39;s <strong>Might</strong> in inches for <strong>Thrown(Mt)</strong>, or the fighter&#39;s <strong>Skill</strong> in inches for <strong>Thrown(Sk)</strong>. No minimum range. Use the weapon&#39;s normal Strike Pool.</p>
+<p><strong>Volley:</strong> This weapon may target a fighter without <strong>line of sight</strong>. If it does, the target gains <strong>+2 Skill defense dice</strong> against that attack.</p>
 <hr>
 <h2 id="one-handed">One-Handed</h2>
 <p>Any fighter may equip a <strong>Dagger</strong> without a proficiency feat.</p>
@@ -3049,7 +3074,7 @@
 <td>+1</td>
 <td>+1</td>
 <td>Sword</td>
-<td>—</td>
+<td>Parry</td>
 </tr>
 <tr>
 <td><span id="rapier"></span>Rapier</td>
@@ -3058,7 +3083,7 @@
 <td>—</td>
 <td>+3</td>
 <td>Sword</td>
-<td>—</td>
+<td>Parry</td>
 </tr>
 <tr>
 <td><span id="hand-axe"></span>Hand Axe</td>
@@ -3076,7 +3101,7 @@
 <td>+2</td>
 <td>—</td>
 <td>Hammer</td>
-<td>Crushing</td>
+<td>Crushing, Impact</td>
 </tr>
 <tr>
 <td><span id="spear"></span>Spear</td>
@@ -3085,7 +3110,7 @@
 <td>+1</td>
 <td>+1</td>
 <td>Spear</td>
-<td>Thrown(Mt)</td>
+<td>Thrown(Mt), Reach</td>
 </tr>
 </tbody></table>
 <h3 id="dual-wielding">Dual wielding</h3>
@@ -3130,7 +3155,7 @@
 <td>+2</td>
 <td>+1</td>
 <td>Spear</td>
-<td>—</td>
+<td>Reach</td>
 </tr>
 <tr>
 <td><span id="great-sword"></span>Great Sword</td>
@@ -3139,7 +3164,7 @@
 <td>+2</td>
 <td>+1</td>
 <td>Sword</td>
-<td>—</td>
+<td>Cleave</td>
 </tr>
 <tr>
 <td><span id="war-axe"></span>War Axe</td>
@@ -3157,7 +3182,7 @@
 <td>+3</td>
 <td>—</td>
 <td>Hammer</td>
-<td>Crushing</td>
+<td>Crushing, Impact</td>
 </tr>
 <tr>
 <td><span id="staff"></span>Staff</td>
@@ -3204,7 +3229,7 @@
 <td>3&quot;–24&quot;</td>
 <td>+1</td>
 <td>5</td>
-<td>—</td>
+<td>Volley</td>
 </tr>
 <tr>
 <td><span id="crossbow"></span>Crossbow</td>
@@ -3222,7 +3247,7 @@
 <td>3&quot;–30&quot;</td>
 <td>5</td>
 <td>+2</td>
-<td>—</td>
+<td>Heavy</td>
 </tr>
 </tbody></table>
 <hr>
@@ -3247,7 +3272,7 @@
 <td>3&quot;–12&quot;</td>
 <td>+1</td>
 <td>+1</td>
-<td>—</td>
+<td>Impact</td>
 </tr>
 <tr>
 <td><span id="throwing-stars"></span>Throwing Stars</td>
@@ -3313,7 +3338,7 @@
 <td>10+</td>
 <td>5</td>
 <td>+3</td>
-<td>Crits on <strong>5+</strong></td>
+<td>Piercing, Heavy, Impact</td>
 </tr>
 </tbody></table>
 <table>
@@ -3367,7 +3392,7 @@
 <li><strong>Gunslinger</strong> <em>(requires <strong>Mortal</strong>)</em>: One <strong>Ranged</strong> action fires both <strong>Pistols</strong> in the fighter&#39;s <strong>Brace of Pistols</strong> (or both equipped <strong>Pistols</strong> if carried without a <strong>Brace</strong>) — each with its own <strong>Primer Roll</strong> and <strong>Attack Sequence</strong>. The fighter cannot take another <strong>Ranged</strong> action during that activation. See <a href="/feats/#gunslinger">Feats — Gunslinger</a>.</li>
 </ul>
 <h4 id="long-rifle">Long Rifle</h4>
-<p>A <strong>Long Rifle</strong> scores critical hits on natural 5+ instead of only natural 6s.</p>
+<p>A <strong>Long Rifle</strong> has <strong>Piercing</strong>, <strong>Heavy</strong>, and <strong>Impact</strong> — armor dice bonuses and shield tie benefits do not apply against its attacks, it cannot be fired if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation, and it makes exact takedowns become <strong>Stunned</strong> instead of <strong>Downed</strong>.</p>
 <h3 id="bombs-requires-mortal-forbids-caster">Bombs <em>(requires <strong>Mortal</strong>; forbids <strong>Caster</strong>)</em></h3>
 <p>Bombs are <strong>Single Shot</strong> (one use per battle). Fighter must have <strong>Mortal</strong> and must lack <strong>Caster</strong>. Require the <strong>Firearms</strong> domain feat.</p>
 <table>
@@ -3391,7 +3416,7 @@
 <td>9+</td>
 <td>3</td>
 <td>2</td>
-<td>3&quot; blast, Single Shot</td>
+<td>3&quot; blast, Single Shot, Impact</td>
 </tr>
 <tr>
 <td>Smoke Bomb</td>
@@ -3443,7 +3468,7 @@
 <tr>
 <td>Vitriol</td>
 <td>50</td>
-<td>Unblocked hits ignore 1 armor conversion</td>
+<td>When defending against this weapon&#39;s attacks, reduce the target&#39;s armor dice bonus by 1 die</td>
 <td>Acid, eats through plate</td>
 </tr>
 <tr>
@@ -3480,7 +3505,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

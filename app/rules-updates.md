@@ -6,6 +6,14 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-10 18:10 EDT — Impact weapon reminders
+
+**Change:** Synced builder weapon reminder text for the new **Impact** keyword. **Mace**, **War Hammer**, **Sling**, **Long Rifle**, and **Bomb** now list **Impact**. **Long Rifle** no longer says "Critical hits on 5+". **Blood for the Rite** now says exactly **0 Wounds** when describing when the sacrificed fighter becomes **Downed**.
+
+**Impact:** Display text only; weapon costs, slots, purchase gates, primer difficulties, and validation did not change.
+
+**Source:** `rules/conditions.md`, `rules/combat.md`, `rules/actions.md`, `rules/weapons.md`.
+
 ## 2026-07-09 — Defense overhaul: Df attribute, armor pool bonuses, shield tie-breaking
 
 **Change:** Replaced the armor-conversion defense model with a unified Defense (Df) attribute system.

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Actions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -3103,11 +3121,12 @@
 <p><em>(See <a href="/magic/">Magic</a>.)</em></p>
 <h3 id="mercy-kill">Mercy Kill</h3>
 <p><strong>Cost:</strong> 1 action</p>
-<p>Execute a <strong>Stunned</strong> enemy <strong>within 1&quot;</strong>.</p>
+<p>Finish a <strong>Downed</strong> or <strong>Stunned</strong> enemy <strong>within 1&quot;</strong>.</p>
 <ul>
-<li>May not be performed if any <strong>Active</strong> or <strong>Downed</strong> enemy fighter is <strong>within engagement range</strong> of this fighter</li>
+<li>May not be performed if any other <strong>Active</strong> or <strong>Downed</strong> enemy fighter is <strong>within engagement range</strong> of this fighter</li>
 </ul>
-<p>The <strong>Stunned</strong> fighter is immediately <strong>Out of Action</strong>.</p>
+<p>If the target is <strong>Stunned</strong>, they are immediately <strong>Out of Action</strong>.</p>
+<p>If the target is <strong>Downed</strong>, resolve a <strong>Melee</strong> attack against them. If the attack inflicts one or more unblocked hits, the target goes <strong>Out of Action</strong> instead of applying Wounds.</p>
 <p><em>(See <a href="/conditions/#conditions">Conditions</a>.)</em></p>
 <blockquote>
 <p><strong>Multiple Engagement</strong></p>
@@ -3120,6 +3139,10 @@
 <p>If a friendly fighter is <strong>also engaged</strong> with the same enemy, add <strong>+1 die to the Strike Pool</strong> (attacker&#39;s choice of <strong>Might</strong> or <strong>Skill</strong>).</p>
 </blockquote>
 <h2 id="tactical-actions">Tactical Actions</h2>
+<h3 id="overwatch">Overwatch</h3>
+<p><strong>Cost:</strong> 1 action + 1 Overwatch token</p>
+<p>Place this fighter on <strong>Overwatch</strong>. That fighter may perform any <strong>1 action</strong> as a reaction when an enemy fighter completes an action later in the round. The fighter&#39;s remaining action may be used before or after declaring Overwatch.</p>
+<p><em>(See <a href="/the-turn/#overwatch">Overwatch</a>.)</em></p>
 <h3 id="brace">Brace</h3>
 <p><strong>Cost:</strong> 1 action</p>
 <p>Hunker down and absorb incoming attacks.</p>
@@ -3216,7 +3239,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

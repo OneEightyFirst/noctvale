@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Turn — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -3002,7 +3020,7 @@
 <p>Only fighters who can activate may be chosen. <strong>Stunned</strong>, <strong>Out of Action</strong>, and <strong>Escaped</strong> fighters cannot be chosen.</p>
 <p>If a <strong>Stunned</strong> fighter becomes <strong>Active</strong> during the round before their player has finished activating fighters, they may activate later this round with <strong>1 action</strong>. If they become <strong>Downed</strong> instead, they may activate later this round, but only to <strong>Recover</strong>. Do not recalculate initiative or <strong>Overwatch tokens</strong>.</p>
 <h3 id="3-end-of-round">3. End of Round</h3>
-<p>The round ends when every fighter who can activate has activated or has <strong>skipped their activation</strong>.</p>
+<p>The round ends when every fighter who can activate has activated.</p>
 <p>If one player has no fighters left to activate before the other, the remaining player <strong>activates their remaining fighters normally</strong>, one at a time.</p>
 <p>At the end of the round, remove all unspent <strong>Overwatch tokens</strong>.</p>
 <p>Begin a new round at Step 1.</p>
@@ -3035,8 +3053,8 @@
 <blockquote>
 <h3 id="overwatch-2">Overwatch</h3>
 <p><strong>Start-of-round tokens:</strong> At the start of the round, the player with the lower <strong>activation count</strong> receives <strong>Overwatch tokens</strong> equal to the shortfall. <em>(See <a href="/the-turn/#activation-count">Activation Count</a>.)</em></p>
-<p><strong>Skip activation:</strong> On your turn in the activation order, you may <strong>skip a fighter&#39;s activation</strong> instead of activating them. Spend <strong>1 Overwatch token</strong> and assign it to that fighter. The skip counts as that fighter&#39;s activation for the round — they do not take <strong>2 actions</strong> now, but the assigned token allows that fighter to perform any <strong>1 action</strong> as a reaction when an enemy fighter completes an action.</p>
-<p><strong>Reaction timing:</strong> A player may spend <strong>Overwatch tokens</strong> as reactions whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not stop a player from spending unspent tokens during the other player&#39;s remaining activations.</p>
+<p><strong>Overwatch action:</strong> During a fighter&#39;s activation, that fighter may spend <strong>1 action</strong> and <strong>1 Overwatch token</strong> to go on <strong>Overwatch</strong>. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy fighter completes an action. The fighter&#39;s remaining action may be used before or after declaring Overwatch.</p>
+<p><strong>Reaction timing:</strong> A fighter on <strong>Overwatch</strong> may react whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not prevent Overwatch reactions from triggering.</p>
 <p><strong>End of round:</strong> Remove all unspent <strong>Overwatch tokens</strong>.</p>
 </blockquote>
 <hr>
@@ -3045,7 +3063,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

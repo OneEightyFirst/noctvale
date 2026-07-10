@@ -311,7 +311,7 @@ Choose **one Tradition** allowed for this Archetype — see [Traditions](#tradit
 
 **Proficiency:** Choose **One-Handed** or **Archery**. You may equip any weapon in that proficiency your retinue is allowed to buy. You may take this feat more than once. Each time, choose a **different** proficiency.
 
-**Blood for the Rite:** Once per battle, before this fighter makes an attribute check or **casting roll**, choose another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll. This Wound can reduce the chosen fighter to 0 Wounds and cause them to become **Downed**.
+**Blood for the Rite:** Once per battle, before this fighter makes an attribute check or **casting roll**, choose another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll. This Wound can reduce the chosen fighter to exactly **0 Wounds** and cause them to become **Downed**.
 
 **Magic Armor:** This fighter may equip armor and shields up to Heavy tier.
 

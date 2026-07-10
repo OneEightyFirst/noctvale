@@ -126,7 +126,7 @@ Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficienci
 
 Once per battle, before this fighter makes an attribute check or **casting roll**, choose another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll.
 
-This Wound can reduce the chosen fighter to 0 Wounds and cause them to become **Downed**.
+This Wound can reduce the chosen fighter to exactly **0 Wounds** and cause them to become **Downed**.
 
 #### Magic Armor
 

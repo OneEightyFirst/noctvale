@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Armor and Shields — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -2984,11 +3002,11 @@
         <header class="wiki-article-header wiki-article-header--bordered">
           <div class="wiki-article-eyebrow">Equipment</div>
           <h1 class="wiki-article-title" id="gear">Armor and Shields</h1>
-          <p class="wiki-article-summary">Armor converts failed defense dice into successes after rolling the defense pool. Armor does not add dice or modify attributes. Archetype caps apply — see your archetype entry.</p>
+          <p class="wiki-article-summary">Armor adds dice to the defense pool before rolling. Apply the armor's bonus when building your pool in Step 4, then roll all dice as Df checks as normal. Archetype caps apply — see your archetype entry.</p>
         </header>
         <div class="wiki-content">
           <h2 id="armor">Armor</h2>
-<p>Armor <strong>converts failed defense dice into successes</strong> after rolling the defense pool. Armor does not add dice or modify attributes. Archetype caps apply — see your archetype entry.</p>
+<p>Armor <strong>adds dice to the defense pool before rolling</strong>. Apply the armor&#39;s bonus when building your pool in Step 4, then roll all dice as <strong>Df</strong> checks as normal. Archetype caps apply — see your archetype entry.</p>
 <table>
 <thead>
 <tr>
@@ -2996,7 +3014,7 @@
 <th>Tier</th>
 <th>Cost</th>
 <th>Archetype cap</th>
-<th>Conversion</th>
+<th>Pool modifier</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -3005,7 +3023,7 @@
 <td>Light</td>
 <td>50</td>
 <td>Folk, Hunters, Knights; <strong>Cult</strong> with <strong>Magic Armor</strong></td>
-<td>2 failed Might or Skill defense dice → 1 normal success</td>
+<td>+1 Skill die</td>
 <td>Leather, padded</td>
 </tr>
 <tr>
@@ -3013,7 +3031,7 @@
 <td>Medium</td>
 <td>115</td>
 <td>Hunters, Knights; <strong>Cult</strong> with <strong>Magic Armor</strong></td>
-<td>1 failed Might defense die → 1 normal success</td>
+<td>+1 Might die</td>
 <td>Chainmail, brigandine</td>
 </tr>
 <tr>
@@ -3021,16 +3039,15 @@
 <td>Heavy</td>
 <td>185</td>
 <td>Knights only; <strong>Cult</strong> with <strong>Magic Armor</strong></td>
-<td>1 failed Might defense die → 1 normal success <strong>OR</strong> 2 failed Might defense dice → 1 critical success</td>
+<td>+2 Might dice, −1 Skill die</td>
 <td>Plate, full harness</td>
 </tr>
 </tbody></table>
-<p>A converted die is a successful defense die. Use it to block hits as normal.</p>
-<p>For <strong>Light Armor</strong>, if you spend 1 failed Might defense die and 1 failed Skill defense die, choose whether the converted success is Might or Skill.</p>
-<p>Heavy Armor&#39;s critical success is the only armor effect that can block incoming critical hits. The defender chooses which option to use after seeing the attacker&#39;s hits.</p>
+<p>Heavy Armor is a net +1 die but shifts the pool Might-heavy at the cost of Skill dice.</p>
 <hr>
 <h2 id="shields">Shields</h2>
-<p>Shields <strong>convert failed defense dice into successes</strong> after rolling the defense pool. Shields do not use weapon slots.</p>
+<p>Shields <strong>shift the tie rule in the defender&#39;s favor</strong>. Shields do not use weapon slots.</p>
+<p>By default, when blocks equal hits in a category the attacker wins the tie and one hit of that color gets through. A shield changes this:</p>
 <table>
 <thead>
 <tr>
@@ -3038,7 +3055,7 @@
 <th>Tier</th>
 <th>Cost</th>
 <th>Archetype cap</th>
-<th>Conversion</th>
+<th>Tie benefit</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -3047,7 +3064,7 @@
 <td>Light</td>
 <td>10</td>
 <td>Folk, Hunters, Knights; <strong>Cult</strong> with <strong>Magic Armor</strong></td>
-<td>1 failed Skill defense die → 1 normal success</td>
+<td>Defender wins Skill ties</td>
 <td>Light, parrying</td>
 </tr>
 <tr>
@@ -3055,7 +3072,7 @@
 <td>Medium</td>
 <td>25</td>
 <td>Hunters, Knights; <strong>Cult</strong> with <strong>Magic Armor</strong></td>
-<td>1 failed Might defense die + 1 failed Skill defense die → normal successes</td>
+<td>Defender wins all ties</td>
 <td>Standard defense</td>
 </tr>
 <tr>
@@ -3063,11 +3080,11 @@
 <td>Heavy</td>
 <td>50</td>
 <td>Knights only; <strong>Cult</strong> with <strong>Magic Armor</strong></td>
-<td>2 failed Might defense dice + 1 failed Skill defense die → normal successes</td>
+<td>Defender wins all ties; +1 Might die to defense pool</td>
 <td>Heavy, full cover</td>
 </tr>
 </tbody></table>
-<p>Armor and shield conversions <strong>stack</strong>. A fighter in Medium Armor with a Shield converts 2 failed Might defense dice and 1 failed Skill defense die total.</p>
+<p>Armor and shield effects <strong>stack</strong>. A fighter in Medium Armor with a Tower Shield rolls with +1 Might die from armor and +1 Might die from the Tower Shield, and wins all ties.</p>
 <hr>
 <h2 id="spellcasting-gear">Spellcasting gear</h2>
 <table>
@@ -3171,7 +3188,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

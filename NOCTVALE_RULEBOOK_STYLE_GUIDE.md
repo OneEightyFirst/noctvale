@@ -461,7 +461,7 @@ Faction preset lore may mention identity (“vampire aristocracy”) but **mecha
 > Units that have been reduced to zero wounds are removed unless the downed rules apply.
 
 **Do**
-> When a fighter reaches **0 Wounds**, they become **Downed**.
+> When a fighter is reduced to exactly **0 Wounds**, they become **Downed**.
 
 ---
 

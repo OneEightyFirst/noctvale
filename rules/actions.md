@@ -145,11 +145,13 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 
 **Cost:** 1 action
 
-Execute a **Stunned** enemy **within 1"**.
+Finish a **Downed** or **Stunned** enemy **within 1"**.
 
-- May not be performed if any **Active** or **Downed** enemy fighter is **within engagement range** of this fighter
+- May not be performed if any other **Active** or **Downed** enemy fighter is **within engagement range** of this fighter
 
-The **Stunned** fighter is immediately **Out of Action**.
+If the target is **Stunned**, they are immediately **Out of Action**.
+
+If the target is **Downed**, resolve a **Melee** attack against them. If the attack inflicts one or more unblocked hits, the target goes **Out of Action** instead of applying Wounds.
 
 *(See [Conditions](conditions.md#conditions).)*
 
@@ -165,6 +167,14 @@ The **Stunned** fighter is immediately **Out of Action**.
 > If a friendly fighter is **also engaged** with the same enemy, add **+1 die to the Strike Pool** (attacker's choice of **Might** or **Skill**).
 
 ## Tactical Actions
+
+### Overwatch
+
+**Cost:** 1 action + 1 Overwatch token
+
+Place this fighter on **Overwatch**. That fighter may perform any **1 action** as a reaction when an enemy fighter completes an action later in the round. The fighter's remaining action may be used before or after declaring Overwatch.
+
+*(See [Overwatch](the-turn.md#overwatch).)*
 
 ### Brace
 

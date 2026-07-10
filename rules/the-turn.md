@@ -30,7 +30,7 @@ If a **Stunned** fighter becomes **Active** during the round before their player
 
 ### 3. End of Round
 
-The round ends when every fighter who can activate has activated or has **skipped their activation**.
+The round ends when every fighter who can activate has activated.
 
 If one player has no fighters left to activate before the other, the remaining player **activates their remaining fighters normally**, one at a time.
 
@@ -81,9 +81,9 @@ Overwatch compensates for numerical disadvantage.
 >
 > **Start-of-round tokens:** At the start of the round, the player with the lower **activation count** receives **Overwatch tokens** equal to the shortfall. *(See [Activation Count](the-turn.md#activation-count).)*
 >
-> **Skip activation:** On your turn in the activation order, you may **skip a fighter's activation** instead of activating them. Spend **1 Overwatch token** and assign it to that fighter. The skip counts as that fighter's activation for the round — they do not take **2 actions** now, but the assigned token allows that fighter to perform any **1 action** as a reaction when an enemy fighter completes an action.
+> **Overwatch action:** During a fighter's activation, that fighter may spend **1 action** and **1 Overwatch token** to go on **Overwatch**. That fighter may later perform any **1 action** as a reaction when an enemy fighter completes an action. The fighter's remaining action may be used before or after declaring Overwatch.
 >
-> **Reaction timing:** A player may spend **Overwatch tokens** as reactions whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not stop a player from spending unspent tokens during the other player's remaining activations.
+> **Reaction timing:** A fighter on **Overwatch** may react whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not prevent Overwatch reactions from triggering.
 >
 > **End of round:** Remove all unspent **Overwatch tokens**.
 

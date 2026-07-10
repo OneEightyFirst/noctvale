@@ -59,6 +59,12 @@ Open questions:
 
 ---
 
+## 2026-07-10 — Overkill and Impact Weapons
+
+**Decision:** Split **Downed** and **Stunned** into parallel wound outcomes. An **Active** fighter reduced to exactly **0 Wounds** becomes **Downed**. An **Active** fighter reduced below **0 Wounds** is overkilled and becomes **Stunned** instead, without tracking negative Wounds. **Downed** fighters can still attempt **Recover**; **Stunned** fighters cannot. **Mercy Kill** now works against both states: against **Stunned** it is automatic, while against **Downed** it requires a **Melee** attack that inflicts at least one unblocked hit. Added the **Impact** weapon keyword: when an **Impact** weapon would make an **Active** fighter **Downed**, that fighter becomes **Stunned** instead. **Mace**, **War Hammer**, **Sling**, **Bomb**, and **Long Rifle** gain **Impact**; **Long Rifle** loses the old 5+ critical reminder in builder text.
+
+**Reasoning:** The wound-state split keeps **Downed** as the self-recovery drama window while letting strong hits, blast shock, and precision stopping power create a harsher helpless state without adding negative Wound tracking. **Impact** gives blunt and shock weapons a readable identity and makes the **Long Rifle** distinct through takedown severity rather than a broader critical-hit upgrade.
+
 ## 2026-07-09 — Consolidate Equipment into Weapons and Armor and Shields
 
 **Decision:** Removed the separate Crown Costs page. Merged all weapon cost tables and weapon profiles into a single `rules/weapons.md` file, organised by proficiency category (One-Handed, Two-Handed, Archery, Thrown, Firearms, Alchemy). Each category now has one combined table showing cost and profile columns together. Weapon proficiencies moved to an intro paragraph at the top of the page. Firearm-only rules (Primer Roll, Pistols, Long Rifle, Bombs) are a subsection under Firearms. Alchemy costs and poison effects are merged into one table. Renamed `rules/gear.md` to "Armor and Shields"; merged armor and shield cost columns into their mechanics tables. Updated nav in `rules-lib.mjs` so Equipment → Weapons / Armor and Shields / Companions. Updated cross-references in `archetypes.md`, `feats.md`, `magic.md`, and `retinue-building.md`.

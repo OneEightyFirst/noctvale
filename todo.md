@@ -244,6 +244,12 @@ From fresh-eyes rules read-through and designer responses.
 - [ ] **Death trigger mechanic:** Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination
 - [x] **Weapon triangle in melee:** Confirmed — the triangle applies only when a fighter is the **attacker**. The defender's weapon type doesn't matter until their own activation, when they become the attacker and gain their own weapon triangle crits
 
+### App & Wiki improvements
+
+- [ ] **Rules page prev/next navigation** — At the bottom of each static rules page, add links to the previous and next page in the wiki reading order (similar to how Necroraw does it). Helps players read the rules linearly without hunting for the next chapter.
+
+---
+
 ### Infernal Summoning (post-alpha)
 
 Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other retinue member — summoning tables are a post-alpha feature.**

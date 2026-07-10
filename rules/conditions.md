@@ -2,11 +2,7 @@
 
 ## Wound States
 
-Fighters move through three Wound states before being removed from play.
-
-```
-Active → Downed → Stunned → Out of Action
-```
+Fighters who are overcome in battle become **Downed** or **Stunned** before being removed from play. A fighter reduced to exactly **0 Wounds** becomes **Downed**. A fighter reduced below **0 Wounds** is overkilled and becomes **Stunned** instead; do not track negative Wounds.
 
 ### Active
 
@@ -14,7 +10,7 @@ An **Active** fighter is upright and able to act. **Active** fighters count towa
 
 ### Downed
 
-A fighter reaches **Downed** when they hit 0 Wounds.
+A fighter becomes **Downed** when they are reduced to exactly **0 Wounds**.
 
 **While Downed, a fighter:**
 
@@ -23,11 +19,11 @@ A fighter reaches **Downed** when they hit 0 Wounds.
 - May use **Crawl** or attempt the **Recover** action
 - Retains their **full defense pool** (Might dice equal to **Might** and Skill dice equal to **Skill**), including eligible bonus dice and armor or shield conversions
 
-Any **unblocked hit** on a Downed fighter pushes them to **Stunned**.
+Any **unblocked hit** on a **Downed** fighter pushes them to **Stunned**.
 
 ### Stunned
 
-A fighter becomes **Stunned** from a Recover roll of 1, or from taking an unblocked hit while Downed.
+A fighter becomes **Stunned** when they are reduced below **0 Wounds**, from a **Recover** roll of **1**, from taking an unblocked hit while **Downed**, or from a rule that makes them **Stunned** directly.
 
 **While Stunned, a fighter:**
 
@@ -38,9 +34,9 @@ A fighter becomes **Stunned** from a Recover roll of 1, or from taking an unbloc
 - Does not count toward **activation count**
 - Defends with **Might dice only** (**Might**-based defense, no Skill dice)
 
-Any **unblocked hit** on a Stunned fighter pushes them to **Out of Action**.
+Any **unblocked hit** on a **Stunned** fighter pushes them to **Out of Action**.
 
-A **Mercy Kill** (within 1") bypasses defense entirely — the Stunned fighter is immediately Out of Action.
+A **Mercy Kill** against a **Stunned** fighter bypasses defense entirely — the **Stunned** fighter is immediately **Out of Action**.
 
 If a **Stunned** fighter becomes **Active** during the round before their player has finished activating fighters, they may activate later this round with **1 action**. If they become **Downed**, they may activate later this round, but can only use that activation to **Recover**. Do not recalculate initiative or **Overwatch tokens**.
 

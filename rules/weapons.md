@@ -25,6 +25,8 @@ Choose feats before buying weapons. Every Crown cost is a multiple of **5 Crowns
 
 **Heavy:** This weapon cannot be used to make a **Ranged** attack if the fighter **Moved** or **Charged** this activation.
 
+**Impact:** When this weapon's attack would make an **Active** fighter **Downed**, that fighter becomes **Stunned** instead.
+
 **Parry:** When this fighter defends against a **Melee** attack, reroll one failed **Skill** die in the defense pool.
 
 **Piercing:** When defending against this weapon's attacks, armor dice bonuses do not apply and shield tie benefits do not apply — build the defense pool as if the target has no armor or shield.
@@ -47,7 +49,7 @@ Any fighter may equip a **Dagger** without a proficiency feat.
 | <span id="sword"></span>Sword | 25 | 1H | +1 | +1 | Sword | Parry |
 | <span id="rapier"></span>Rapier | 40 | 1H | — | +3 | Sword | Parry |
 | <span id="hand-axe"></span>Hand Axe | 20 | 1H | +2 | — | Axe | Thrown(Mt) |
-| <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Crushing |
+| <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Crushing, Impact |
 | <span id="spear"></span>Spear | 25 | 1H | +1 | +1 | Spear | Thrown(Mt), Reach |
 
 ### Dual wielding
@@ -74,7 +76,7 @@ A fighter cannot use a shield while dual-wielding.
 | <span id="halberd"></span>Halberd | 45 | 2H | +2 | +1 | Spear | Reach |
 | <span id="great-sword"></span>Great Sword | 50 | 2H | +2 | +1 | Sword | Cleave |
 | <span id="war-axe"></span>War Axe | 45 | 2H | +3 | — | Axe | — |
-| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Crushing |
+| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Crushing, Impact |
 | <span id="staff"></span>Staff | 20 | 2H | +1 | +1 | Spear | Spell focus |
 
 ### Staff — Spell focus
@@ -106,7 +108,7 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 | Weapon | Cost | Hands | Range | Mt | Sk | Notes |
 | -------------- | ---- | ----- | ------ | --- | --- | ------------------------------------------ |
-| <span id="sling"></span>Sling | 20 | 1H | 3"–12" | +1 | +1 | — |
+| <span id="sling"></span>Sling | 20 | 1H | 3"–12" | +1 | +1 | Impact |
 | <span id="throwing-stars"></span>Throwing Stars | 10 | 1H | 0"–8" | — | +1 | No minimum range |
 
 ---
@@ -120,7 +122,7 @@ When every fighter in the retinue has the **Mortal** keyword, your retinue may p
 | <span id="musket"></span>Musket | 100 | 2H | 3"–24" | 9+ | 5 | +2 | — |
 | <span id="blunderbuss"></span>Blunderbuss | 115 | 2H | 0"–10" | 8+ | 3 | +2 | Flame template |
 | <span id="pistol"></span>Pistol | 90 | 1H | 0"–12" | 9+ | 4 | +2 | — |
-| <span id="long-rifle"></span>Long Rifle | 125 | 2H | 3"–30" | 10+ | 5 | +3 | Piercing, Heavy |
+| <span id="long-rifle"></span>Long Rifle | 125 | 2H | 3"–30" | 10+ | 5 | +3 | Piercing, Heavy, Impact |
 
 | Item | Cost | Notes |
 | ------------------ | ---- | ------------------------------------------ |
@@ -157,7 +159,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no **Brac
 
 #### Long Rifle
 
-A **Long Rifle** has **Piercing** and **Heavy** — armor and shield conversions do not apply against its attacks, and it cannot be fired if the fighter Moved or Charged this activation.
+A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield tie benefits do not apply against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**.
 
 ### Bombs *(requires **Mortal**; forbids **Caster**)*
 
@@ -165,7 +167,7 @@ Bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and
 
 | Weapon | Cost | Hands | Distance | Primer | Mt | Sk | Notes |
 |---|---|---|---|---|---|---|---|
-| Bomb | 40 | 1H | d6 + Mt | 9+ | 3 | 2 | 3" blast, Single Shot |
+| Bomb | 40 | 1H | d6 + Mt | 9+ | 3 | 2 | 3" blast, Single Shot, Impact |
 | Smoke Bomb | 25 | 1H | d6 + Mt | 8+ | — | — | 6" blast, Single Shot, Smoke |
 
 Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (friend and foe) within the blast radius. Use the **Ranged** action.

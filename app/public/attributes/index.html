@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Attributes — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -2987,7 +3005,7 @@
           <p class="wiki-article-summary">Every fighter in Noctvale has different strengths. Some are quick across broken ground, some are deadly with a blade, some keep their nerve when the dead start walking. This variety is recorded as the fighter's attributes.</p>
         </header>
         <div class="wiki-content">
-          <p>A fighter&#39;s profile lists eight attributes: <strong>Movement</strong>, <strong>Close Combat</strong>, <strong>Ranged Combat</strong>, <strong>Might</strong>, <strong>Skill</strong>, <strong>Will</strong>, <strong>Sanity</strong>, and <strong>Wounds</strong>. Higher values are better for every attribute.</p>
+          <p>A fighter&#39;s profile lists nine attributes: <strong>Movement</strong>, <strong>Close Combat</strong>, <strong>Ranged Combat</strong>, <strong>Might</strong>, <strong>Skill</strong>, <strong>Defense</strong>, <strong>Will</strong>, <strong>Sanity</strong>, and <strong>Wounds</strong>. Higher values are better for every attribute.</p>
 <h2 id="movement-m">Movement (M)</h2>
 <p><strong>Movement</strong> is the distance a fighter can travel with a <strong>Move</strong> action. It is written in inches, such as <strong>6&quot;</strong>.</p>
 <h2 id="close-combat-cc">Close Combat (CC)</h2>
@@ -2998,12 +3016,14 @@
 <p><strong>Might</strong> measures strength, toughness, and raw physical force. It supplies <strong>Might dice</strong> to the <strong>Strike Pool</strong> and is used for rules that test brute power or endurance.</p>
 <h2 id="skill-sk">Skill (Sk)</h2>
 <p><strong>Skill</strong> measures precision, reflexes, and trained technique. It supplies <strong>Skill dice</strong> to the <strong>Strike Pool</strong> and is used for rules that test finesse, agility, or control.</p>
+<h2 id="defense-df">Defense (Df)</h2>
+<p><strong>Defense</strong> is the single check attribute used for all dice in the defense pool. When rolling defense in Step 4 of the Attack Sequence, every die — whether a Might die or a Skill die — uses a <strong>Df</strong> check. Dice keep their color for blocking purposes; <strong>Df</strong> determines how many of them succeed.</p>
 <h2 id="will-wi">Will (Wi)</h2>
 <p><strong>Will</strong> measures resolve, discipline, and the ability to channel ordered supernatural power. Light, Arcane, and Nature spells use <strong>Will</strong> for their <strong>casting roll</strong>.</p>
 <h2 id="sanity-sa">Sanity (Sa)</h2>
 <p><strong>Sanity</strong> measures nerve, self-command, and resistance to horror. Infernal, Necromancy, and Blood spells use <strong>Sanity</strong> for their <strong>casting roll</strong>, and many fear effects call for a <strong>Sanity</strong> check.</p>
 <h2 id="wounds-w">Wounds (W)</h2>
-<p><strong>Wounds</strong> measure how much punishment a fighter can take before they collapse. When a fighter reaches <strong>0 Wounds</strong>, they become <strong>Downed</strong>.</p>
+<p><strong>Wounds</strong> measure how much punishment a fighter can take before they collapse. When a fighter is reduced to exactly <strong>0 Wounds</strong>, they become <strong>Downed</strong>. When a fighter would be reduced below <strong>0 Wounds</strong>, they become <strong>Stunned</strong> instead.</p>
 <h2 id="attribute-checks">Attribute Checks</h2>
 <p>When a rule asks you to make an attribute check, it names the attribute being tested. A <strong>Might</strong> check uses <strong>Might</strong>, a <strong>Skill</strong> check uses <strong>Skill</strong>, and so on. Roll <strong>1d6</strong>, add the fighter&#39;s corresponding attribute, then apply any modifiers. The check succeeds if the total is <strong>8 or higher</strong>. A natural <strong>1</strong> always fails, and a natural <strong>6</strong> always succeeds.</p>
 <p>In campaign play, no attribute can be raised above <strong>6</strong>. If an attribute is reduced to <strong>1</strong>, the fighter can no longer perform actions that require that attribute. They are maimed or broken — or they have gone mad.</p>
@@ -3019,6 +3039,7 @@
 <th>RC</th>
 <th>Mt</th>
 <th>Sk</th>
+<th>Df</th>
 <th>Wi</th>
 <th>Sa</th>
 <th>W</th>
@@ -3027,6 +3048,7 @@
 <tbody><tr>
 <td><strong>Steady</strong></td>
 <td>6&quot;</td>
+<td>3</td>
 <td>3</td>
 <td>3</td>
 <td>3</td>
@@ -3042,6 +3064,7 @@
 <td>3</td>
 <td>3</td>
 <td>4</td>
+<td>3</td>
 <td>4</td>
 <td>3</td>
 <td>3</td>
@@ -3053,6 +3076,7 @@
 <td>3</td>
 <td>4</td>
 <td>3</td>
+<td>4</td>
 <td>3</td>
 <td>3</td>
 <td>3</td>
@@ -3066,12 +3090,13 @@
 <td>4</td>
 <td>3</td>
 <td>3</td>
+<td>3</td>
 <td>2</td>
 </tr>
 </tbody></table>
 <h2 id="attribute-modifiers">Attribute Modifiers</h2>
 <p>Bonuses and penalties to a fighter&#39;s attributes from feats, Traditions, spells, and equipment stack unless a rule says otherwise.</p>
-<p>The total bonus or penalty to any single attribute (<strong>Movement</strong>, <strong>Close Combat</strong>, <strong>Ranged Combat</strong>, <strong>Might</strong>, <strong>Skill</strong>, <strong>Will</strong>, or <strong>Sanity</strong>) cannot exceed <strong>+3</strong> or <strong>−3</strong> at any time.</p>
+<p>The total bonus or penalty to any single attribute (<strong>Movement</strong>, <strong>Close Combat</strong>, <strong>Ranged Combat</strong>, <strong>Might</strong>, <strong>Skill</strong>, <strong>Defense</strong>, <strong>Will</strong>, or <strong>Sanity</strong>) cannot exceed <strong>+3</strong> or <strong>−3</strong> at any time.</p>
 <p>The penalties from <strong>Affliction tokens</strong> count toward this cap.</p>
 <h2 id="strike-pool">Strike Pool</h2>
 <p>The <strong>Strike Pool</strong> is the dice you roll to hit during the <strong>Attack Sequence</strong>. It combines <strong>Might dice</strong> and <strong>Skill dice</strong>.</p>
@@ -3084,7 +3109,7 @@
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

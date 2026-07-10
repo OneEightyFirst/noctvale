@@ -32,13 +32,13 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Phrase:** *Dangerous fights, living consequences.*
 
-**Explanation:** Combat should feel dangerous every activation. Fighters routinely leave battles wounded, Downed, or Out of Action. The Downed → Stunned → Out of Action pipeline creates tension windows where allies recover, enemies mercy-kill, and outcomes feel earned.
+**Explanation:** Combat should feel dangerous every activation. Fighters routinely leave battles wounded, **Downed**, **Stunned**, or **Out of Action**. **Downed** and **Stunned** create tension windows where allies recover, enemies mercy-kill, and outcomes feel earned.
 
-**Mechanically:** Wounds are few (baseline W 3). Unblocked hits apply wounds; at 0 Wounds a fighter becomes Downed. Recovery, Help, and the post-game Casualty Table carry real risk (rolls of 1 can kill or cripple). Most fighters survive most battles; death and lasting injury are possible, memorable, and table-driven.
+**Mechanically:** Wounds are few (baseline W 3). Unblocked hits apply Wounds; exact takedowns make a fighter **Downed**, while overkill and **Impact** weapons make a fighter **Stunned**. Recovery, Help, and the post-game Casualty Table carry real risk (rolls of 1 can kill or cripple). Most fighters survive most battles; death and lasting injury are possible, memorable, and table-driven.
 
-**Protects:** Dramatic wound states on the table. Table-driven casualties after the battle. Finishers via Stunned → Mercy Kill.
+**Protects:** Dramatic wound states on the table. Table-driven casualties after the battle. Finishers via **Mercy Kill**.
 
-**Apply it:** Route lethal pressure through the Downed pipeline. Use Mercy Kill for reliable close-range finishes. Reserve instant removal for post-game Survival rolls and scenario-specific rules.
+**Apply it:** Route lethal pressure through **Downed** and **Stunned** windows. Use **Mercy Kill** for close-range finishes. Reserve instant removal for post-game Survival rolls and scenario-specific rules.
 
 **vs. peers:** **Kill Team** and **Necromunda** resolve lasting injuries primarily after the battle; Noctvale adds a defined on-table survival window before post-battle tables. Kin to **Mordheim** casualty tension, with Downed as the hinge.
 
@@ -150,7 +150,7 @@ When evaluating a new mechanic, ask:
 - [ ] Does this belong in core rules, campaign tables, or a single scenario?
 
 ### Combat & lethality
-- [ ] Does damage flow through Wounds → Downed → Stunned → Out of Action?
+- [ ] Does damage flow through Wounds into **Downed**, **Stunned**, and **Out of Action** without bypassing the on-table survival window?
 - [ ] Can a fighter defend at full strength while Downed?
 - [ ] Does melee stay one-directional (attacker rolls, defender defends)?
 - [ ] Does ranged fire create meaningful risk (Reactions, cover, friendly fire where appropriate)?

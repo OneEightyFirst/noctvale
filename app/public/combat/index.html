@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Combat — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=2eb3ec5" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=9af8226" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -128,6 +128,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/attributes/#skill-sk" class="wiki-nav-link">Skill (Sk)</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-attributes-defense-df">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/attributes/#defense-df" class="wiki-nav-link">Defense (Df)</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-attributes-will-wi">
@@ -426,6 +432,12 @@
             <a href="/actions/#tactical-actions" class="wiki-nav-link">Tactical Actions</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-actions-tactical-actions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-actions-overwatch">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/actions/#overwatch" class="wiki-nav-link">Overwatch</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-actions-brace">
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -596,10 +608,16 @@
             <a href="/combat/#step-4-defender-rolls-defense-dice" class="wiki-nav-link">Step 4: Defender Rolls Defense Dice</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-combat-step-4-defender-rolls-defense-dice-children">
-        <div class="wiki-nav-node" data-nav-id="nav-combat-armor-shield-conversion">
+        <div class="wiki-nav-node" data-nav-id="nav-combat-blocking-hits">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/combat/#armor-shield-conversion" class="wiki-nav-link">Armor &amp; Shield Conversion</a>
+            <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
         </div></div>
         </div>
@@ -3034,8 +3052,8 @@
 <h3 id="attack-sequence-2">Attack Sequence</h3>
 <p><strong>Step 1 — Build the Strike Pool:</strong> Read the attack&#39;s weapon or spell profile. A number with a <code>+</code> adds to the attacker&#39;s matching attribute; a number without a <code>+</code> is fixed. The Strike Pool cannot exceed <strong>15 dice</strong>.</p>
 <p><strong>Step 2 — Roll to hit:</strong> Melee dice use <strong>Close Combat</strong> checks. Ranged dice use <strong>Ranged Combat</strong> checks. Apply <strong>Hit</strong> attribute modifiers (+1 <strong>Close Combat</strong>, −1 <strong>Ranged Combat</strong>, etc.) to the attribute used for that attack.</p>
-<p><strong>Step 3 — Determine criticals:</strong> Weapon triangle (attacker only), <strong>Crushing</strong> (Hammer vs armored), magic triangle, <strong>Aim</strong>, or firearms (crits vs all). Critical hits cannot be blocked except by a <strong>Heavy Armor</strong> critical success.</p>
-<p><strong>Step 4 — Roll defense:</strong> Defender <strong>Might</strong> + <strong>Skill</strong>. Might dice use <strong>Might</strong> checks. Skill dice use <strong>Skill</strong> checks. Add bonus defense dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules. Armor and shields <strong>convert</strong> failed defense dice into successes. <em>(See <a href="/gear/#equipment">Equipment</a>.)</em></p>
+<p><strong>Step 3 — Determine criticals:</strong> Weapon triangle (attacker only), <strong>Crushing</strong> (Hammer vs armored), magic triangle, <strong>Aim</strong>, or firearms (crits vs all). Critical hits cannot be blocked.</p>
+<p><strong>Step 4 — Roll defense:</strong> Build the defense pool: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules. Roll all dice as <strong>Df</strong> checks. Attacker wins ties by color; a shield shifts ties to the defender. <em>(See <a href="/gear/#equipment">Equipment</a>.)</em></p>
 <p><strong>Step 5 — Apply Wounds:</strong> See <strong>Apply Wounds</strong> (below).</p>
 </blockquote>
 <h3 id="step-1-build-the-strike-pool">Step 1: Build the Strike Pool</h3>
@@ -3136,38 +3154,47 @@
 <li>The attacker is using a <strong>firearm</strong> (crits against all targets)</li>
 <li>The attacker used the <strong>Aim</strong> action before a Ranged attack</li>
 </ul>
-<p>Critical hits <strong>cannot be blocked</strong> by normal defense successes — only by a <strong>critical defense success</strong> from Heavy Armor. Critical hits retain their color for tracking purposes.</p>
+<p>Critical hits <strong>cannot be blocked.</strong> Critical hits retain their color for tracking purposes.</p>
 <p>If none of the above apply, 6s are normal hits.</p>
 <h3 id="step-4-defender-rolls-defense-dice">Step 4: Defender Rolls Defense Dice</h3>
-<p>The defender generates a defense pool from their own <strong>Might</strong> and <strong>Skill</strong>:</p>
+<p>The defender builds a defense pool from their own <strong>Might</strong> and <strong>Skill</strong>:</p>
 <ul>
 <li>The defender&#39;s <strong>Might</strong> = Might defense dice</li>
 <li>The defender&#39;s <strong>Skill</strong> = Skill defense dice</li>
 </ul>
-<p>Then add any bonus defense dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules.</p>
-<p>For <strong>Might defense dice</strong>, make <strong>Might</strong> checks (toughness absorbs the blow). For <strong>Skill defense dice</strong>, make <strong>Skill</strong> checks (reflexes deflect the blow).</p>
-<h4 id="armor-amp-shield-conversion">Armor &amp; Shield Conversion</h4>
-<p>After rolling defense dice, <strong>armor and shields convert failed defense dice into successes</strong>:</p>
+<p><strong>Armor adds dice to this pool before rolling:</strong></p>
 <ul>
-<li><strong>Armor</strong> converts failed defense dice: Light (2 Might or Skill → 1 normal success), Medium (1 Might → 1 normal success), Heavy (1 Might → 1 normal success OR 2 Might → 1 critical success)</li>
-<li><strong>Shields</strong> convert failed Might and/or Skill defense dice: Buckler (1 Skill), Shield (1 Might + 1 Skill), Tower Shield (2 Might + 1 Skill)</li>
+<li><strong>Light Armor</strong> adds <strong>+1 Skill die</strong></li>
+<li><strong>Medium Armor</strong> adds <strong>+1 Might die</strong></li>
+<li><strong>Heavy Armor</strong> adds <strong>+2 Might dice</strong> and removes <strong>1 Skill die</strong></li>
 </ul>
-<p>Armor and shield conversions <strong>stack</strong>. The defender chooses which failed defense dice to convert. Converted dice follow all normal blocking rules. <em>(See <a href="/gear/#equipment">Equipment</a> for full tables.)</em></p>
-<p>Heavy Armor&#39;s critical success is the only way to block incoming critical hits with equipment.</p>
-<p>Each successful defense die <strong>blocks one hit</strong> of the matching color:</p>
+<p>After applying armor, add any bonus dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules.</p>
+<p>Roll all defense dice as <strong>Defense</strong> (<strong>Df</strong>) checks — the same threshold applies to every die in the pool, regardless of color.</p>
+<h4 id="blocking-hits">Blocking Hits</h4>
+<p>Each successful defense die blocks one hit of the matching color:</p>
 <ul>
 <li><strong>Might defense blocks Might hits</strong></li>
 <li><strong>Skill defense blocks Skill hits</strong></li>
 <li><strong>Two successful Might defense dice may block one Skill hit</strong> (brute force can overcome finesse, but at 2:1 cost)</li>
 <li><strong>Two successful Skill defense dice may block one Might hit</strong> (finesse can overcome brute force, but at 2:1 cost)</li>
 </ul>
-<p>Critical hits <strong>cannot be blocked</strong> by normal defense successes. Only a <strong>critical defense success</strong> from Heavy Armor can block a critical hit.</p>
+<h4 id="ties">Ties</h4>
+<p>Compare your blocks to the attacker&#39;s hits by color. If blocks equal hits in a category — a <strong>tie</strong> — the attacker wins that tie and one hit of that color still gets through.</p>
+<p>A <strong>shield</strong> shifts ties in the defender&#39;s favor:</p>
+<ul>
+<li><strong>Buckler</strong> — the defender wins <strong>Skill ties</strong> (equal Skill blocks = all Skill hits blocked)</li>
+<li><strong>Shield</strong> — the defender wins <strong>all ties</strong></li>
+<li><strong>Tower Shield</strong> — the defender wins <strong>all ties</strong> and adds <strong>+1 Might die</strong> to the defense pool</li>
+</ul>
+<p>Armor and shield effects <strong>stack</strong>. <em>(See <a href="/gear/#equipment">Equipment</a> for full tables.)</em></p>
+<p>Critical hits <strong>cannot be blocked.</strong></p>
 <h3 id="step-5-apply-wounds">Step 5: Apply Wounds</h3>
 <blockquote>
 <h3 id="apply-wounds">Apply Wounds</h3>
-<p>Each unblocked hit inflicts <strong>1 Wound</strong>.</p>
+<p>Resolve all unblocked hits from one attack together. Each unblocked hit inflicts <strong>1 Wound</strong>.</p>
 <ul>
-<li>When a fighter reaches <strong>0 Wounds</strong>, they become <strong>Downed</strong>.</li>
+<li>If an <strong>Active</strong> fighter is reduced to exactly <strong>0 Wounds</strong>, they become <strong>Downed</strong>.</li>
+<li>If an <strong>Active</strong> fighter would be reduced below <strong>0 Wounds</strong>, set them to <strong>0 Wounds</strong> and they become <strong>Stunned</strong>.</li>
 <li>An unblocked hit on a <strong>Downed</strong> fighter pushes them to <strong>Stunned</strong>.</li>
 <li>An unblocked hit on a <strong>Stunned</strong> fighter pushes them to <strong>Out of Action</strong>.</li>
 </ul>
@@ -3190,10 +3217,10 @@
 <pre><code>Nature &gt; Necromancy &gt; Blood &gt; Nature
 </code></pre>
 <h3 id="firearms">Firearms</h3>
-<p>Firearms are fired with the <strong>Ranged</strong> action. They use the <strong>primer roll</strong> and gain criticals against <strong>all targets</strong>, regardless of weapon type. A <strong>Long Rifle</strong> scores critical hits on natural 5+ instead of only natural 6s. <em>(See <a href="/weapons/#weapons">Equipment — Weapons</a>.)</em></p>
+<p>Firearms are fired with the <strong>Ranged</strong> action. They use the <strong>primer roll</strong> and gain criticals against <strong>all targets</strong>, regardless of weapon type. A <strong>Long Rifle</strong> has <strong>Piercing</strong>, <strong>Heavy</strong>, and <strong>Impact</strong> — armor dice bonuses and shield tie benefits do not apply when defending against its attacks, it cannot be fired if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation, and it makes exact takedowns become <strong>Stunned</strong> instead of <strong>Downed</strong>. <em>(See <a href="/weapons/#keywords">Weapons — Keywords</a>.)</em></p>
 <h3 id="outside-the-triangles">Outside the Triangles</h3>
 <p><strong>Hammer</strong> is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use <strong>Crushing</strong> instead (natural 6s crit vs any armored target). If either fighter wields a Hammer, <strong>weapon triangle advantage does not apply</strong> to that melee exchange. <em>(See <a href="/weapons/#keywords">Weapons — Keywords</a>.)</em></p>
-<p>The <strong>Aim</strong> action can also make natural <strong>6</strong> results critical hits on that fighter&#39;s next <strong>Ranged</strong> action during the same activation. If that <strong>Ranged</strong> weapon already had a critical hit on <strong>6</strong>, <strong>Aim</strong> increases it to <strong>5+</strong>.</p>
+<p>The <strong>Aim</strong> action can also make natural <strong>6</strong> results critical hits on that fighter&#39;s next <strong>Ranged</strong> action during the same activation. If that <strong>Ranged</strong> weapon already scores critical hits on <strong>6</strong>, <strong>Aim</strong> increases it to <strong>5+</strong>.</p>
 <h2 id="ranged-reaction">Ranged Reaction</h2>
 <p>When a fighter is targeted by a <strong>Ranged</strong> action, the target may perform a <strong>single free action</strong> after the <strong>Attack Sequence</strong> is fully resolved. This reaction does not cost the target any of their normal actions.</p>
 <ul>
@@ -3212,9 +3239,10 @@
 <p>The Grave Wardens activate an <strong>Acolyte</strong>, who <strong>Charges</strong> a Phoenix Guard spearman and uses a <strong>Melee action</strong>. The spearman takes a Wound but remains <strong>Active</strong>. On the Phoenix Guard player&#39;s next activation, the spearman <strong>Retreats</strong> and fails the check. The <strong>Acolyte&#39;s</strong> free <strong>Melee</strong> leaves the spearman <strong>Downed</strong>.</p>
 <p>Activations continue until every eligible fighter has activated or <strong>skipped their activation</strong>. Then round two begins - activation counts, initiative, and Overwatch tokens are reset.</p>
 <h2 id="example-combat">Example: Combat</h2>
-<p><strong>Attacker:</strong> <strong>Keen</strong> fighter (<strong>Close Combat</strong> 3, <strong>Might</strong> 3, <strong>Skill</strong> 4) wielding a Sword (+1 <strong>Might</strong>, +1 <strong>Skill</strong>) <strong>Defender:</strong> <strong>Stout</strong> fighter (<strong>Close Combat</strong> 3, <strong>Might</strong> 4, <strong>Skill</strong> 3) wielding a Battle Axe (+2 <strong>Might</strong>), wearing Medium Armor</p>
+<p><strong>Attacker:</strong> <strong>Keen</strong> fighter (<strong>Close Combat</strong> 3, <strong>Might</strong> 3, <strong>Skill</strong> 4) wielding a Sword (+1 <strong>Might</strong>, +1 <strong>Skill</strong>)</p>
+<p><strong>Defender:</strong> <strong>Stout</strong> fighter (<strong>Close Combat</strong> 3, <strong>Might</strong> 4, <strong>Skill</strong> 3, <strong>Defense</strong> 4) wielding a Battle Axe (+2 <strong>Might</strong>), wearing Medium Armor</p>
 <p><strong>Step 1:</strong> <strong>Keen</strong> Strike Pool = (<strong>Might</strong> 3 + Sword 1) Might + (<strong>Skill</strong> 4 + Sword 1) Skill = <strong>4 Might + 5 Skill = 9 dice</strong></p>
-<p><strong>Step 2:</strong> Roll each die as a <strong>Close Combat</strong> check.</p>
+<p><strong>Step 2:</strong> Roll each die as a <strong>Close Combat</strong> check (CC 3, need 5+).</p>
 <ul>
 <li>Might die 1: rolls 5 → pass → <strong>Might hit</strong></li>
 <li>Might die 2: rolls 2 → fail</li>
@@ -3226,40 +3254,38 @@
 <li>Skill die 4: rolls 3 → fail</li>
 <li>Skill die 5: rolls 5 → pass → <strong>Skill hit</strong></li>
 </ul>
-<p>Result: 1 Might hit, 3 Skill hits (4 hits total)</p>
-<p><strong>Step 3:</strong> Sword vs Axe → Sword has advantage. The natural 6 on Skill die 1 is a <strong>critical Skill hit</strong> (unblockable).</p>
-<p><strong>Step 4:</strong> <strong>Stout</strong> defense pool:</p>
+<p>Result: <strong>1 Might hit, 3 Skill hits</strong></p>
+<p><strong>Step 3:</strong> Sword vs Axe → Sword has advantage. The natural 6 on Skill die 1 is a <strong>critical Skill hit</strong> — it cannot be blocked.</p>
+<p><strong>Step 4:</strong> Build <strong>Stout&#39;s</strong> defense pool.</p>
+<p>Base pool: <strong>Might</strong> 4 → 4 Might dice; <strong>Skill</strong> 3 → 3 Skill dice.</p>
+<p>Medium Armor adds <strong>+1 Might die</strong>: pool becomes <strong>5 Might + 3 Skill = 8 dice</strong>.</p>
+<p>Roll all 8 as <strong>Df</strong> checks (<strong>Df</strong> 4, need 4+):</p>
 <ul>
-<li><strong>Stout</strong> <strong>Might</strong> 4 → 4 Might defense dice</li>
-<li><strong>Stout</strong> <strong>Skill</strong> 3 → 3 Skill defense dice</li>
-<li>Total defense: 4 Might dice + 3 Skill dice</li>
+<li>Might die 1: rolls 5 → <strong>success</strong></li>
+<li>Might die 2: rolls 2 → fail</li>
+<li>Might die 3: rolls 4 → <strong>success</strong></li>
+<li>Might die 4: rolls 3 → fail</li>
+<li>Might die 5: rolls 6 → auto-success → <strong>success</strong></li>
+<li>Skill die 1: rolls 4 → <strong>success</strong></li>
+<li>Skill die 2: rolls 5 → <strong>success</strong></li>
+<li>Skill die 3: rolls 2 → fail</li>
 </ul>
-<p>Roll defense:</p>
+<p>Defense results: <strong>3 Might successes, 2 Skill successes</strong></p>
+<p><strong>Blocking:</strong> Compare by color.</p>
 <ul>
-<li>Might die 1: <strong>Might</strong> check rolls 4 → <strong>success</strong></li>
-<li>Might die 2: <strong>Might</strong> check rolls 3 → fail</li>
-<li>Might die 3: <strong>Might</strong> check rolls 5 → <strong>success</strong></li>
-<li>Might die 4: <strong>Might</strong> check rolls 2 → fail</li>
-<li>Skill die 1: <strong>Skill</strong> check rolls 5 → <strong>success</strong></li>
-<li>Skill die 2: <strong>Skill</strong> check rolls 2 → fail</li>
-<li>Skill die 3: <strong>Skill</strong> check rolls 4 → fail</li>
+<li><strong>Might:</strong> 3 successes vs 1 hit → Might hit blocked. 2 Might successes remaining.</li>
+<li><strong>Skill:</strong> 2 successes vs 2 normal Skill hits → <strong>tie</strong>. The <strong>Stout</strong> fighter has no shield, so the attacker wins the tie — 1 Skill hit still gets through. The 2 Skill successes block 1 of the 2 normal Skill hits.</li>
+<li>The 2 leftover Might successes cross-block the remaining normal Skill hit at 2:1.</li>
+<li>The critical Skill hit <strong>cannot be blocked</strong>.</li>
 </ul>
-<p><strong>Armor Conversion:</strong> The <strong>Stout</strong> fighter wears Medium Armor — convert 1 failed Might defense die into 1 normal success. Might die 2 failed, so it becomes a <strong>normal Might success</strong>. Might die 4 and the failed Skill dice remain failed dice.</p>
-<p>Defense results: 3 Might successes, 1 Skill success.</p>
-<ul>
-<li>Might success 1 blocks the Might hit (1:1 same type)</li>
-<li>Skill success 1 blocks one normal Skill hit (1:1 same type)</li>
-<li>Might successes 2 and 3 block one normal Skill hit at 2:1</li>
-</ul>
-<p>The critical Skill hit cannot be blocked.</p>
-<p><strong>Step 5:</strong> 1 unblocked hit. The <strong>Stout</strong> fighter takes 1 Wound (3 → 2).</p>
+<p><strong>Step 5:</strong> 1 unblocked hit (the crit). The <strong>Stout</strong> fighter takes 1 Wound (3 → 2).</p>
 <hr>
 
         </div>
       </article>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=2eb3ec5"></script>
-  <script src="/wiki/wiki.js?v=2eb3ec5" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=9af8226"></script>
+  <script src="/wiki/wiki.js?v=9af8226" defer></script>
 </body>
 </html>

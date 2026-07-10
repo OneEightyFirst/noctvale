@@ -38,7 +38,7 @@ A fighter's profile lists nine attributes: **Movement**, **Close Combat**, **Ran
 
 ## Wounds (W)
 
-**Wounds** measure how much punishment a fighter can take before they collapse. When a fighter reaches **0 Wounds**, they become **Downed**.
+**Wounds** measure how much punishment a fighter can take before they collapse. When a fighter is reduced to exactly **0 Wounds**, they become **Downed**. When a fighter would be reduced below **0 Wounds**, they become **Stunned** instead.
 
 ## Attribute Checks
 

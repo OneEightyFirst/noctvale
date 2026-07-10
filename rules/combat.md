@@ -187,9 +187,10 @@ Critical hits **cannot be blocked.**
 
 > ### Apply Wounds
 >
-> Each unblocked hit inflicts **1 Wound**.
+> Resolve all unblocked hits from one attack together. Each unblocked hit inflicts **1 Wound**.
 >
-> - When a fighter reaches **0 Wounds**, they become **Downed**.
+> - If an **Active** fighter is reduced to exactly **0 Wounds**, they become **Downed**.
+> - If an **Active** fighter would be reduced below **0 Wounds**, set them to **0 Wounds** and they become **Stunned**.
 > - An unblocked hit on a **Downed** fighter pushes them to **Stunned**.
 > - An unblocked hit on a **Stunned** fighter pushes them to **Out of Action**.
 >
@@ -229,7 +230,7 @@ Nature > Necromancy > Blood > Nature
 
 ### Firearms
 
-Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing** — armor and shield conversions do not apply when defending against its attacks. *(See [Equipment — Weapons](weapons.md#keywords).)*
+Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield tie benefits do not apply when defending against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**. *(See [Weapons — Keywords](weapons.md#keywords).)*
 
 ### Outside the Triangles
 
