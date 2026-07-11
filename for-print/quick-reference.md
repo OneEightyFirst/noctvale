@@ -28,7 +28,7 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 - **Test:** At the **start of each activation** while routing, before actions — **Will** check.
   - **Summon:** Auto-pass if any friendly fighter is within **6"** and line of sight.
   - **+1** per other friendly within **6"** and line of sight; **+2** for a friendly **Leader** within **6"** (instead of **+1** for that fighter); **+1** if **Fearless**.
-- **Fail:** Spend **both actions** fleeing toward the nearest **battlefield edge** (**Move**, **Retreat**, **Scramble**, **Jump**, or **Climb**; **Crawl** if **Downed**). **Pass** on a later activation → **rallied**, activate normally.
+- **Fail:** The fighter becomes **Broken**. While **Broken**, at the start of each activation make a **Will** check. **Pass:** remove **Broken**; activate normally. **Fail:** spend both actions fleeing toward the nearest **battlefield edge** (**Move**, **Retreat**, **Scramble**, **Jump**, or **Climb**; **Crawl** if **Downed**).
 
 ### Engagement
 
@@ -50,7 +50,7 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 | **Melee** | Attack an enemy within engagement range; resolve **Attack Sequence** |
 | **Ranged** | Attack with a ranged weapon in range and line of sight; bow/crossbow → **Attack Sequence**; firearm → **Primer Roll** then **Attack Sequence** |
 | **Cast** | **Caster** only — **Casting Roll**; spells may be cast in melee; no **Ranged Reaction** |
-| **Aim** | Next **Ranged** action this activation gains **+1** dominant die type; natural **6**s are critical hits (**5+** if the weapon already crit on **6**) |
+| **Aim** | Next **Ranged** action this activation gains **+1** dominant die type (whichever the weapon adds more of — **Might** or **Skill**; if tied, choose); natural **6**s are critical hits (**5+** if the weapon already crits on **6**) |
 | **Mercy Kill** | **Stunned** enemy within **1"** → immediately **Out of Action**; **Downed** enemy within **1"** → **Melee** attack, unblocked hit sends them **Out of Action**; blocked if any other **Active** or **Downed** enemy is **within engagement range** |
 | **Overwatch** | Spend **1 Overwatch token** — react with **1 action** when an enemy completes an action; remaining action may be used before or after |
 | **Brace** | **+1 Might defense die** until this fighter's next activation |
@@ -118,20 +118,20 @@ Natural **6** is a **critical hit** when:
 - Attacker uses a **firearm**
 - Attacker used **Aim** before a **Ranged** attack
 
-If none apply, **6**s are normal hits.
+If none apply, **6**s are normal hits. **Hammer** is outside the triangle — if either fighter wields a Hammer, weapon triangle advantage does not apply to that exchange.
 
 ### Ranged Targeting
 
 - **Line of sight** required for **Ranged** and targeted **Cast** actions. Friendlies do not block LoS; enemies do.
 - **Cover:** Intervening terrain **more than 1"** from the attacker → **+1 Skill defense die**.
-- **Clustered enemies:** Other enemies from the same retinue within **1"** of the target → **Skill** check to hit the intended target.
+- **Clustered enemies:** Other enemies from the same retinue within **1"** of the target → **Skill** check. Pass: hit intended target. Fail (one other): that fighter becomes the target. Fail (two or more): randomly select from all enemies within **1"** of the declared target.
 - **Friendly fire (engaged):** Declared target in engagement with friendlies → **Ranged Combat** check or hit a friendly instead.
-- **Line of fire (firearms / damage spells):** Friendly between attacker and target; on a **miss**, roll **1d6** — on **1**, hit the intervening friendly (**1 hit**).
+- **Line of fire (firearms / damage spells only):** Friendly between attacker and target; on a **miss**, roll **1d6** — on **1**, hit the intervening friendly (**1 hit**). Does not apply to bows, crossbows, or throwing weapons.
 - **Range:** Min and max only — no distance modifiers. Default minimum range **3"** unless noted.
 
 ### Ranged Reaction
 
-When targeted by a **Ranged** action, the target may perform **1 free action** after the **Attack Sequence** resolves — even on a miss. **Cast** actions do not trigger this. Cannot react while your player is activating fighters. One reaction per **Ranged** attack; reactions cannot chain.
+When targeted by a **Ranged** action, the target may perform **1 free action** after the **Attack Sequence** resolves — even on a miss. **Cast** actions do not trigger this. Cannot react while your player is activating fighters. If the target is **Downed or Out of Action** after the attack, they may not react. One reaction per **Ranged** attack; reactions cannot chain.
 
 ### Casting Roll (2d6 + Casting Attribute)
 
@@ -145,7 +145,7 @@ Roll **2d6 + the spell's Casting attribute** against the spell's casting difficu
 
 ### Primer Roll (2d6 + Skill)
 
-Roll **2d6 + Skill** against the firearm's **primer difficulty**.
+Roll **2d6 + Skill** against the firearm's **primer difficulty**. Profile values assume **Skill** 3 — for other Skill values use: primer difficulty − 3 + **Skill**.
 
 | Result | Effect |
 |---|---|
@@ -190,10 +190,10 @@ Exact takedowns become **Downed**. Overkill and **Impact** weapons become **Stun
 |---|---|
 | **Affliction 1: Weakened** | −1 **Might** |
 | **Affliction 2: Enfeebled** | −1 **Might**, −1 **Skill** |
-| **Affliction 3: Withered** | −1 **Might**, −1 **Skill**, −1" **Movement** |
+| **Affliction 3: Withered** | −1 **Might**, −1 **Skill**, −1" **Movement** (maximum **3 tokens** total) |
 | **Bleeding** | **1 Wound** when applied; each activation start — **Will** check to remove or suffer **1 Wound** |
 | **Blinded** | Cannot **Melee** or **Ranged**; until end of next activation unless noted |
-| **Broken** | Start of activation: **Will** check to remove or flee toward nearest battlefield edge |
+| **Broken** | Start of activation: **Will** check. Pass → remove **Broken**, activate normally. Fail → spend both actions fleeing toward nearest **battlefield edge** using **Move**, **Retreat**, **Scramble**, **Jump**, or **Climb** (**Crawl** if **Downed**). If they reach the edge they **Escape**. |
 | **Fear** | Cannot move closer to source than current distance |
 | **Panic** | **Fear**, plus spend ≥**1 action** moving full **Movement** away from source |
 | **Insanity** | **Sanity** check failed — roll **1d6** on Insanity table (Frenzy / Flee / Freeze / Berserk) |
@@ -210,3 +210,16 @@ Exact takedowns become **Downed**. Overkill and **Impact** weapons become **Stun
 | **Fly** | Ignore vertical distance for **Move** and **Jump**; must end on a legal surface |
 | **Fearless** | Immune to **Fear**, **Panic**, **Insanity**; **+1** to rout **Will** checks |
 | **Undead** | Profile keyword — affects silver weapons, **Radiant Strike**, and similar rules |
+
+## Weapon Keywords
+
+| Keyword | Effect |
+|---|---|
+| **Cleave** | On reducing a fighter to **0 Wounds**, make one free **Melee** attack against a different fighter within engagement range |
+| **Heavy** | Cannot make a **Ranged** attack if the fighter **Moved** or **Charged** this activation |
+| **Impact** | When this weapon would make an **Active** fighter **Downed**, that fighter becomes **Stunned** instead |
+| **Parry** | When defending against a **Melee** attack, reroll one failed **Skill** die in the defense pool |
+| **Piercing** | Ignore the target's armor dice bonus and shield tie benefit when building the defense pool |
+| **Reach** | Can engage enemies up to **2"** away |
+| **Thrown(Mt) / Thrown(Sk)** | May make a **Ranged** attack; max range = fighter's **Might** or **Skill** in **"**; no minimum range; use the weapon's normal Strike Pool |
+| **Volley** | May target a fighter without **line of sight**; target gains **+2 Skill defense dice** against that attack |
