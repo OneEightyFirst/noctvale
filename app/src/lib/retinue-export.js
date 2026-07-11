@@ -332,7 +332,7 @@ export function buildRetinuePrintHtml(data) {
     }
     .stat-grid {
       display: grid;
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(9, 1fr);
       width: 100%;
       margin: 0.25rem 0 0.35rem;
       border: 1px solid #333;

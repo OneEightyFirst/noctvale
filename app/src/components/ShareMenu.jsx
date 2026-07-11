@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Check, Copy, Printer, Share2 } from "lucide-react";
+import { AlertCircle, Check, Copy, Printer, Share2 } from "lucide-react";
 import { copyRetinueToClipboard, printRetinue } from "../lib/retinue-export.js";
 
 function cx(...classes) {
@@ -9,6 +9,7 @@ function cx(...classes) {
 export default function ShareMenu({ retinue, disabled = false, className }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState(false);
   const rootRef = useRef(null);
 
   useEffect(() => {
@@ -41,6 +42,12 @@ export default function ShareMenu({ retinue, disabled = false, className }) {
     return () => window.clearTimeout(timer);
   }, [copied]);
 
+  useEffect(() => {
+    if (!copyError) return undefined;
+    const timer = window.setTimeout(() => setCopyError(false), 3000);
+    return () => window.clearTimeout(timer);
+  }, [copyError]);
+
   async function handleCopy() {
     try {
       await copyRetinueToClipboard(retinue);
@@ -48,6 +55,7 @@ export default function ShareMenu({ retinue, disabled = false, className }) {
       setOpen(false);
     } catch (error) {
       console.error(error);
+      setCopyError(true);
     }
   }
 
@@ -63,7 +71,7 @@ export default function ShareMenu({ retinue, disabled = false, className }) {
           type="button"
           aria-expanded={open}
           aria-haspopup="menu"
-          aria-label={copied ? "Copied retinue list" : "Share retinue"}
+          aria-label={copied ? "Copied retinue list" : copyError ? "Copy failed" : "Share retinue"}
           disabled={disabled}
           onClick={() => setOpen((current) => !current)}
           className={cx(
@@ -72,9 +80,16 @@ export default function ShareMenu({ retinue, disabled = false, className }) {
               ? "cursor-not-allowed border-night-800 text-cream-600 opacity-60"
               : "border-night-700 text-cream-300 hover:border-accent-400 hover:text-accent-200",
             copied && "border-emerald-500/40 text-emerald-200",
+            copyError && "border-red-500/40 text-red-400",
           )}
         >
-          {copied ? <Check className="h-4 w-4" aria-hidden="true" /> : <Share2 className="h-4 w-4" aria-hidden="true" />}
+          {copied ? (
+            <Check className="h-4 w-4" aria-hidden="true" />
+          ) : copyError ? (
+            <AlertCircle className="h-4 w-4" aria-hidden="true" />
+          ) : (
+            <Share2 className="h-4 w-4" aria-hidden="true" />
+          )}
         </button>
 
         <div
@@ -93,10 +108,13 @@ export default function ShareMenu({ retinue, disabled = false, className }) {
               type="button"
               role="menuitem"
               onClick={handleCopy}
-              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-cream-200 transition hover:bg-night-800 hover:text-cream-50"
+              className={cx(
+                "flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm transition hover:bg-night-800",
+                copyError ? "text-red-400 hover:text-red-300" : "text-cream-200 hover:text-cream-50",
+              )}
             >
               <Copy className="h-4 w-4 shrink-0" aria-hidden="true" />
-              Copy
+              {copyError ? "Copy failed" : "Copy"}
             </button>
             <button
               type="button"
