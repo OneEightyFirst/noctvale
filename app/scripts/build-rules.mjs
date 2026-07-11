@@ -194,6 +194,36 @@ function renderPage(article, bodyHtml, navTree, assetVersion, prev, next) {
 </html>`;
 }
 
+function wrapFeatCards(html) {
+  // Strip <hr> tags — section headings provide separation in the card layout
+  const cleaned = html.replace(/<hr>\n?/g, "");
+
+  // Split at every heading boundary (h2, h3, h4) using a lookahead
+  const parts = cleaned.split(/(?=<h[234][\s>])/);
+  const result = [];
+  let inCardGroup = false;
+
+  for (const part of parts) {
+    if (/^<h4[\s>]/.test(part)) {
+      if (!inCardGroup) {
+        result.push('<div class="feat-cards">');
+        inCardGroup = true;
+      }
+      result.push(`<div class="feat-card">${part}</div>`);
+    } else {
+      if (inCardGroup) {
+        result.push("</div>"); // close feat-cards grid
+        inCardGroup = false;
+      }
+      result.push(part);
+    }
+  }
+
+  if (inCardGroup) result.push("</div>");
+
+  return result.join("");
+}
+
 function markdownToHtml(markdown) {
   const html = marked.parse(markdown, { gfm: true, breaks: false });
   const slugUsed = new Map();
@@ -261,7 +291,8 @@ for (let i = 0; i < articles.length; i++) {
   const prev = i > 0 ? articles[i - 1] : null;
   const next = i < articles.length - 1 ? articles[i + 1] : null;
   const linkedMarkdown = rewriteMarkdownLinks(article.displayMarkdown, pathToHtml);
-  const bodyHtml = markdownToHtml(linkedMarkdown);
+  const rawBodyHtml = markdownToHtml(linkedMarkdown);
+  const bodyHtml = article.id === "feats" ? wrapFeatCards(rawBodyHtml) : rawBodyHtml;
   const html = renderPage(article, bodyHtml, navTree, assetVersion, prev, next);
   const articlePath = path.join(publicDir, article.html);
   mkdirSync(path.dirname(articlePath), { recursive: true });

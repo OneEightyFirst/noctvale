@@ -300,6 +300,35 @@
     @apply bg-night-950;
   }
 
+  .feat-cards {
+    @apply my-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .feat-card {
+    @apply flex flex-col gap-2 rounded-lg border border-night-800 bg-night-900/60 p-4;
+  }
+
+  .feat-card h4 {
+    @apply mt-0 scroll-mt-24 border-b border-night-700 pb-2 text-sm font-semibold text-cream-50;
+  }
+
+  .feat-card p {
+    @apply my-0 text-sm leading-relaxed;
+  }
+
+  .feat-card p + p {
+    @apply mt-2;
+  }
+
+  .feat-card ul,
+  .feat-card ol {
+    @apply my-1;
+  }
+
+  .feat-card blockquote {
+    @apply my-2;
+  }
+
   .wiki-page-nav {
     @apply mt-4 grid grid-cols-2 gap-3;
   }
