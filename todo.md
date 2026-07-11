@@ -241,7 +241,7 @@ From fresh-eyes rules read-through and designer responses.
 
 ### App & Wiki improvements
 
-- [ ] **Rules page prev/next navigation** — At the bottom of each static rules page, add links to the previous and next page in the wiki reading order (similar to how Necroraw does it). Helps players read the rules linearly without hunting for the next chapter.
+- [x] **Rules page prev/next navigation** — At the bottom of each static rules page, add links to the previous and next page in the wiki reading order (similar to how Necroraw does it). Helps players read the rules linearly without hunting for the next chapter.
 
 ---
 

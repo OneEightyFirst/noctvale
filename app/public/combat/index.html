@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Combat — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=40e2ee8" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=00283cf" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -619,6 +619,12 @@
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-shields">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#shields" class="wiki-nav-link">Shields</a>
+          </div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-step-5-apply-wounds">
@@ -802,6 +808,21 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/conditions/#fearless" class="wiki-nav-link">Fearless</a>
+          </div>
+        </div></div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-conditions-permanent-conditions">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-conditions-permanent-conditions-children" aria-label="Expand Permanent Conditions">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/conditions/#permanent-conditions" class="wiki-nav-link">Permanent Conditions</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-conditions-permanent-conditions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-conditions-damned">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/conditions/#damned" class="wiki-nav-link">Damned</a>
           </div>
         </div></div>
         </div></div>
@@ -2715,9 +2736,18 @@
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-post-game-sequence-step-6-economy">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-post-game-sequence-step-6-economy-children" aria-label="Expand Step 6: Economy">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
             <a href="/post-game/#step-6-economy" class="wiki-nav-link">Step 6: Economy</a>
           </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-post-game-sequence-step-6-economy-children">
+        <div class="wiki-nav-node" data-nav-id="nav-post-game-sequence-barber-surgeon">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/post-game/#barber-surgeon" class="wiki-nav-link">Barber Surgeon</a>
+          </div>
+        </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-post-game-sequence-step-7-experience-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
@@ -2744,6 +2774,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/survival-rolls/#sequence-at-a-glance" class="wiki-nav-link">Sequence at a Glance</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-survival-rolls-scavenging">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/survival-rolls/#scavenging" class="wiki-nav-link">Scavenging</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-survival-rolls-survival-tables">
@@ -2932,7 +2968,7 @@
 <p><strong>Step 1 — Build the Strike Pool:</strong> Read the attack&#39;s weapon or spell profile. A number with a <code>+</code> adds to the attacker&#39;s matching attribute; a number without a <code>+</code> is fixed. The Strike Pool cannot exceed <strong>15 dice</strong>.</p>
 <p><strong>Step 2 — Roll to hit:</strong> Melee dice use <strong>Close Combat</strong> checks. Ranged dice use <strong>Ranged Combat</strong> checks. Apply <strong>Hit</strong> attribute modifiers (+1 <strong>Close Combat</strong>, −1 <strong>Ranged Combat</strong>, etc.) to the attribute used for that attack.</p>
 <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle (attacker only), magic triangle, <strong>Aim</strong>, or firearms (crits vs all). Critical hits cannot be blocked.</p>
-<p><strong>Step 4 — Roll defense:</strong> Build the defense pool: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules. Roll all dice as <strong>Df</strong> checks. Attacker wins ties by color; a shield shifts ties to the defender. <em>(See <a href="/gear/#equipment">Equipment</a>.)</em></p>
+<p><strong>Step 4 — Roll defense:</strong> Build the defense pool: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, <strong>Brace</strong>, spells, feats, or scenario rules. Shields modify the <strong>Df</strong> threshold on specific dice. Roll all dice as <strong>Df</strong> checks. Attacker wins ties. <em>(See <a href="/gear/#equipment">Equipment</a>.)</em></p>
 <p><strong>Step 5 — Apply Wounds:</strong> See <strong>Apply Wounds</strong> (below).</p>
 </blockquote>
 <h3 id="step-1-build-the-strike-pool">Step 1: Build the Strike Pool</h3>
@@ -3058,11 +3094,12 @@
 </ul>
 <h4 id="ties">Ties</h4>
 <p>Compare your blocks to the attacker&#39;s hits by color. If blocks equal hits in a category — a <strong>tie</strong> — the attacker wins that tie and one hit of that color still gets through.</p>
-<p>A <strong>shield</strong> shifts ties in the defender&#39;s favor:</p>
+<h4 id="shields">Shields</h4>
+<p>Shields modify the <strong>Defense</strong> (<strong>Df</strong>) threshold on specific dice in the defender&#39;s pool — raising it makes those dice easier to succeed, lowering it makes them harder:</p>
 <ul>
-<li><strong>Buckler</strong> — the defender wins <strong>Skill ties</strong> (equal Skill blocks = all Skill hits blocked)</li>
-<li><strong>Shield</strong> — the defender wins <strong>all ties</strong></li>
-<li><strong>Tower Shield</strong> — the defender wins <strong>all ties</strong> and adds <strong>+1 Might die</strong> to the defense pool</li>
+<li><strong>Buckler</strong> — <strong>+1 Df</strong> on <strong>1 Skill die</strong></li>
+<li><strong>Shield</strong> — <strong>+1 Df</strong> on <strong>1 Might die</strong></li>
+<li><strong>Tower Shield</strong> — <strong>+1 Df</strong> on <strong>2 Might dice</strong>; <strong>−1 Df</strong> on <strong>1 Skill die</strong></li>
 </ul>
 <p>Armor and shield effects <strong>stack</strong>. <em>(See <a href="/gear/#equipment">Equipment</a> for full tables.)</em></p>
 <p>Critical hits <strong>cannot be blocked.</strong></p>
@@ -3158,9 +3195,20 @@
 
         </div>
       </article>
+      
+      <nav class="wiki-page-nav" aria-label="Page navigation">
+        <a href="/actions/" class="wiki-page-nav-btn wiki-page-nav-btn--prev">
+        <span class="wiki-page-nav-label">Previous</span>
+        <span class="wiki-page-nav-title">« Actions</span>
+      </a>
+        <a href="/conditions/" class="wiki-page-nav-btn wiki-page-nav-btn--next">
+        <span class="wiki-page-nav-label">Next</span>
+        <span class="wiki-page-nav-title">Conditions »</span>
+      </a>
+      </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=40e2ee8"></script>
-  <script src="/wiki/wiki.js?v=40e2ee8" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=00283cf"></script>
+  <script src="/wiki/wiki.js?v=00283cf" defer></script>
 </body>
 </html>

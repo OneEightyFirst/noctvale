@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conditions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=40e2ee8" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=00283cf" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -619,6 +619,12 @@
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#ties" class="wiki-nav-link">Ties</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-shields">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#shields" class="wiki-nav-link">Shields</a>
+          </div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-step-5-apply-wounds">
@@ -802,6 +808,21 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/conditions/#fearless" class="wiki-nav-link">Fearless</a>
+          </div>
+        </div></div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-conditions-permanent-conditions">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-conditions-permanent-conditions-children" aria-label="Expand Permanent Conditions">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/conditions/#permanent-conditions" class="wiki-nav-link">Permanent Conditions</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-conditions-permanent-conditions-children">
+        <div class="wiki-nav-node" data-nav-id="nav-conditions-damned">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/conditions/#damned" class="wiki-nav-link">Damned</a>
           </div>
         </div></div>
         </div></div>
@@ -2715,9 +2736,18 @@
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-post-game-sequence-step-6-economy">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-post-game-sequence-step-6-economy-children" aria-label="Expand Step 6: Economy">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
             <a href="/post-game/#step-6-economy" class="wiki-nav-link">Step 6: Economy</a>
           </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-post-game-sequence-step-6-economy-children">
+        <div class="wiki-nav-node" data-nav-id="nav-post-game-sequence-barber-surgeon">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/post-game/#barber-surgeon" class="wiki-nav-link">Barber Surgeon</a>
+          </div>
+        </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-post-game-sequence-step-7-experience-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
@@ -2744,6 +2774,12 @@
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/survival-rolls/#sequence-at-a-glance" class="wiki-nav-link">Sequence at a Glance</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-survival-rolls-scavenging">
+          <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/survival-rolls/#scavenging" class="wiki-nav-link">Scavenging</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-survival-rolls-survival-tables">
@@ -2976,12 +3012,30 @@
 <p>A fighter with the <strong>Fearless</strong> keyword is immune to <strong>Fear</strong>, <strong>Panic</strong>, and <strong>Insanity</strong>. They never make <strong>Sanity</strong> checks for these effects and are never affected.</p>
 <p><strong>Fearless</strong> fighters add <strong>+1</strong> to <strong>Will</strong> checks for rout tests.</p>
 <hr>
+<h2 id="permanent-conditions">Permanent Conditions</h2>
+<p>Permanent conditions are gained during the campaign and carried into every subsequent battle. They cannot be removed unless a rule explicitly states otherwise.</p>
+<h3 id="damned">Damned</h3>
+<p>A fighter branded by the hells carries <strong>Damned</strong> permanently.</p>
+<p>At the start of each battle, before deployment, roll 1d6. If the result is equal to or less than the number of <strong>Damned</strong> conditions on that fighter, a daemon bursts forth: the fighter is <strong>Slain</strong> and permanently removed from the retinue. Roll <strong>2d6</strong> on the <strong>Summon Result</strong> table using the <strong>1-crystal</strong> row. Place the daemon where the fighter stood; if its base cannot fit, place it as close as possible. The daemon is friendly to the retinue.</p>
+<p>After the battle, a remaining friendly <strong>Caster</strong> with <strong>Infernal</strong> may attempt to bind the daemon — see <a href="/magic/#binding">Summoning — Binding</a>. On a natural 1 during the binding roll, that fighter is <strong>Slain</strong> in place of the normal caster result. If no eligible <strong>Caster</strong> with <strong>Infernal</strong> remains, the daemon returns to the hells.</p>
+<p><strong>Damned</strong> cannot be removed. A fighter may carry multiple <strong>Damned</strong> conditions; each widens the trigger range by 1.</p>
 
         </div>
       </article>
+      
+      <nav class="wiki-page-nav" aria-label="Page navigation">
+        <a href="/combat/" class="wiki-page-nav-btn wiki-page-nav-btn--prev">
+        <span class="wiki-page-nav-label">Previous</span>
+        <span class="wiki-page-nav-title">« Combat</span>
+      </a>
+        <a href="/retinue/" class="wiki-page-nav-btn wiki-page-nav-btn--next">
+        <span class="wiki-page-nav-label">Next</span>
+        <span class="wiki-page-nav-title">Retinue Building »</span>
+      </a>
+      </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=40e2ee8"></script>
-  <script src="/wiki/wiki.js?v=40e2ee8" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=00283cf"></script>
+  <script src="/wiki/wiki.js?v=00283cf" defer></script>
 </body>
 </html>

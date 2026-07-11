@@ -299,4 +299,28 @@
   .wiki-content tbody tr {
     @apply bg-night-950;
   }
+
+  .wiki-page-nav {
+    @apply mt-4 grid grid-cols-2 gap-3;
+  }
+
+  .wiki-page-nav-spacer {
+    @apply block;
+  }
+
+  .wiki-page-nav-btn {
+    @apply flex flex-col gap-1 rounded-lg border border-night-800 bg-night-950 px-4 py-3 text-sm transition-colors hover:border-night-700 hover:bg-night-900;
+  }
+
+  .wiki-page-nav-btn--next {
+    @apply col-start-2 text-right;
+  }
+
+  .wiki-page-nav-label {
+    @apply text-xs uppercase tracking-wider text-cream-500;
+  }
+
+  .wiki-page-nav-title {
+    @apply font-semibold text-accent-200;
+  }
 }

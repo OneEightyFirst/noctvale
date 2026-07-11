@@ -98,9 +98,34 @@ function renderPlaytestCallout() {
         </section>`;
 }
 
-function renderPage(article, bodyHtml, navTree, assetVersion) {
+function renderPageNav(prev, next) {
+  if (!prev && !next) return "";
+
+  const prevBtn = prev
+    ? `<a href="${rulesUrl(prev.html)}" class="wiki-page-nav-btn wiki-page-nav-btn--prev">
+        <span class="wiki-page-nav-label">Previous</span>
+        <span class="wiki-page-nav-title">« ${escapeHtml(prev.title)}</span>
+      </a>`
+    : `<span class="wiki-page-nav-spacer"></span>`;
+
+  const nextBtn = next
+    ? `<a href="${rulesUrl(next.html)}" class="wiki-page-nav-btn wiki-page-nav-btn--next">
+        <span class="wiki-page-nav-label">Next</span>
+        <span class="wiki-page-nav-title">${escapeHtml(next.title)} »</span>
+      </a>`
+    : `<span class="wiki-page-nav-spacer"></span>`;
+
+  return `
+      <nav class="wiki-page-nav" aria-label="Page navigation">
+        ${prevBtn}
+        ${nextBtn}
+      </nav>`;
+}
+
+function renderPage(article, bodyHtml, navTree, assetVersion, prev, next) {
   const headerBorder = article.id === "intro" ? "" : " wiki-article-header--bordered";
   const playtestCallout = article.id === "intro" ? renderPlaytestCallout() : "";
+  const pageNav = renderPageNav(prev, next);
   const rulesHome = rulesUrl("index.html");
   const wikiCss = assetUrl("/wiki/wiki.css", assetVersion);
   const wikiAuthJs = assetUrl("/wiki/wiki-auth.js", assetVersion);
@@ -160,6 +185,7 @@ function renderPage(article, bodyHtml, navTree, assetVersion) {
           ${bodyHtml}
         </div>
       </article>
+      ${pageNav}
     </main>
   </div>
   <script type="module" src="${wikiAuthJs}"></script>
@@ -230,10 +256,13 @@ for (const article of articles) {
   }
 }
 
-for (const article of articles) {
+for (let i = 0; i < articles.length; i++) {
+  const article = articles[i];
+  const prev = i > 0 ? articles[i - 1] : null;
+  const next = i < articles.length - 1 ? articles[i + 1] : null;
   const linkedMarkdown = rewriteMarkdownLinks(article.displayMarkdown, pathToHtml);
   const bodyHtml = markdownToHtml(linkedMarkdown);
-  const html = renderPage(article, bodyHtml, navTree, assetVersion);
+  const html = renderPage(article, bodyHtml, navTree, assetVersion, prev, next);
   const articlePath = path.join(publicDir, article.html);
   mkdirSync(path.dirname(articlePath), { recursive: true });
   writeFileSync(articlePath, html);

@@ -20,6 +20,14 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-11 — Wiki prev/next page navigation
+
+**Decision:** Added previous/next page navigation to the bottom of every static rules page. Each page shows links to the adjacent pages in `DOCUMENT_DEFS` order, with "Previous" on the left and "Next" on the right. Edge pages (Introduction, Economy) show only the one applicable link.
+
+**Reasoning:** Players reading the rules linearly had no clear path from one chapter to the next without returning to the sidebar. The nav bar matches the existing dark wiki aesthetic and follows the reading-order sequence already defined in `rules-lib.mjs`.
+
+----
+
 ## 2026-07-11 — Quick-decision batch: affliction, costs, keywords, campaign healing
 
 **Decision:** Resolved several open single-decision items in one pass.
