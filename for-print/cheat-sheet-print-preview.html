@@ -90,9 +90,23 @@
       text-transform: uppercase;
     }
     .triangles {
-      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.08in;
       margin: 0.06in 0;
       break-inside: avoid;
+    }
+    .triangles .triangle-melee {
+      width: 125px;
+    }
+    .triangles .triangle-magic {
+      display: flex;
+      gap: 0.1in;
+      justify-content: center;
+    }
+    .triangles .triangle-magic img {
+      width: 125px;
     }
     strong { font-weight: bold; }
     @media screen {
@@ -149,7 +163,7 @@
     <tr><td><strong>Move</strong></td><td>Move up to <strong>Movement</strong>; pass through friendlies</td></tr>
     <tr><td><strong>Crawl</strong></td><td><strong>Downed</strong> only — horizontal, half <strong>Movement</strong></td></tr>
     <tr><td><strong>Charge</strong></td><td>Horizontal — up to <strong>Movement</strong>; end in engagement; cross terrain <strong>1"</strong> or lower freely</td></tr>
-    <tr><td><strong>Climb</strong></td><td>Up to half <strong>Movement</strong> per action; may chain 2 <strong>Climb</strong> actions (no mid-climb placement)</td></tr>
+    <tr><td><strong>Climb</strong></td><td>Up to half <strong>Movement</strong> per action; may chain 2 <strong>Climb</strong> actions</td></tr>
     <tr><td><strong>Scramble</strong></td><td>Half <strong>Movement</strong> through difficult terrain</td></tr>
     <tr><td><strong>Jump</strong></td><td>Open space up to <strong>Movement</strong>; <strong>Skill</strong> check</td></tr>
     <tr><td><strong>Retreat</strong></td><td>Leave engagement — <strong>Skill</strong> check; fail → free enemy <strong>Melee</strong></td></tr>
@@ -176,7 +190,7 @@
     <h3>Attack Sequence</h3>
     <p><strong>Step 1 — Build the Strike Pool:</strong> Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>, to a maximum of <strong>15 dice</strong>. Firearms and damage spells use a <strong>flat Strike Pool</strong> instead.</p>
     <p><strong>Step 2 — Roll to hit:</strong> Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> attribute modifiers.</p>
-    <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle, <strong>Crushing</strong> (Hammer vs armored), magic triangle, <strong>Aim</strong>, or firearms. Critical hits cannot be blocked.</p>
+    <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle, magic triangle, <strong>Aim</strong>, or firearms. Critical hits cannot be blocked.</p>
     <p><strong>Step 4 — Roll defense:</strong> Build the pool: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor before rolling (Light +1 Sk, Medium +1 Mt, Heavy +2 Mt −1 Sk), plus bonuses. Roll all as <strong>Df</strong> checks. Attacker wins ties by color; a shield shifts ties to the defender.</p>
     <p><strong>Step 5 — Apply Wounds</strong> (below).</p>
   </div>
@@ -213,8 +227,14 @@
   </table>
 
   <h2>Critical Hits</h2>
-  <p>Natural <strong>6</strong> = crit with weapon triangle, <strong>Crushing</strong> (Hammer vs armored), magic triangle, firearm, or <strong>Aim</strong>. Crits cannot be blocked. <strong>Hammer</strong> cancels weapon triangle.</p>
-  <img class="triangles" src="cheat-sheet-triangles.svg" alt="Weapon, Mystic, and Natural critical hit triangles">
+  <p>A natural <strong>6</strong> in the Strike Pool is a critical hit only when the attacker has triangle advantage over the defender — weapon triangle in melee, magic triangle on spell attacks. Firearms crit against all targets. <strong>Aim</strong> adds crit on 6 to non-firearm ranged weapons, or improves an existing crit threshold to <strong>5+</strong>. Crits cannot be blocked. All other 6s are normal hits.</p>
+  <div class="triangles">
+    <img class="triangle-melee" src="../app/public/images/melee-triangle.svg" alt="Melee weapon triangle">
+    <div class="triangle-magic">
+      <img src="../app/public/images/mystical-triangle.svg" alt="Mystic magic triangle">
+      <img src="../app/public/images/natural-triangle.svg" alt="Natural magic triangle">
+    </div>
+  </div>
 
   <h2>Ranged</h2>
   <ul>
@@ -245,8 +265,11 @@
   <h2>Wound States</h2>
   <p>Exact takedowns become <strong>Downed</strong>. Overkill and <strong>Impact</strong> weapons become <strong>Stunned</strong>.</p>
   <table>
-    <tr><th>Recover (1d6)</th><th>Help (1d6)</th></tr>
-    <tr><td>1: Stunned · 2–3: Downed · 4–5: 1 Wound · 6: 1 Wound + action</td><td>1: OOA · 2–3: — · 4–5: Downed · 6: 1 Wound</td></tr>
+    <tr><th>Roll</th><th>Recover (1d6)</th><th>Help (1d6)</th></tr>
+    <tr><td>1</td><td><strong>Stunned</strong></td><td>Target <strong>Out of Action</strong></td></tr>
+    <tr><td>2–3</td><td>Stay <strong>Downed</strong></td><td>No effect</td></tr>
+    <tr><td>4–5</td><td>Stand with <strong>1 Wound</strong></td><td>Target becomes <strong>Downed</strong></td></tr>
+    <tr><td>6</td><td>Stand with <strong>1 Wound</strong> + 1 action</td><td>Target stands with <strong>1 Wound</strong></td></tr>
   </table>
 
   <h2>Conditions</h2>

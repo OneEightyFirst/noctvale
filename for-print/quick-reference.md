@@ -69,7 +69,7 @@ Table reference for mid-battle rules. Attributes, spells, traditions, feats, and
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
-> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Crushing** (Hammer vs armored), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
 >
 > **Step 4 — Roll defense:** Build the pool: defender **Might** + **Skill**, modified by armor before rolling (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus bonus dice from cover, **Brace**, spells, feats, or scenario rules. Roll all dice as **Df** checks. Attacker wins ties by color; a shield shifts ties to the defender.
 >
@@ -114,14 +114,11 @@ Armor adds dice to the pool **before rolling**. Shields change who wins ties. Ef
 Natural **6** is a **critical hit** when:
 
 - Attacker has **weapon triangle** advantage (**Sword**, **Axe**, **Spear** only)
-- Attacker wields **Hammer** vs target in **Heavy Armor**
 - Attacker has **magic triangle** advantage
 - Attacker uses a **firearm**
 - Attacker used **Aim** before a **Ranged** attack
 
 If none apply, **6**s are normal hits.
-
-**Hammer:** No weapon triangle. If either fighter wields a **Hammer**, weapon triangle advantage does not apply.
 
 ### Ranged Targeting
 

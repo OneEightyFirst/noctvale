@@ -74,7 +74,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 >
 > **Step 2 — Roll to hit:** Melee dice use **Close Combat** checks. Ranged dice use **Ranged Combat** checks. Apply **Hit** attribute modifiers (+1 **Close Combat**, −1 **Ranged Combat**, etc.) to the attribute used for that attack.
 >
-> **Step 3 — Determine criticals:** Weapon triangle (attacker only), **Crushing** (Hammer vs armored), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
+> **Step 3 — Determine criticals:** Weapon triangle (attacker only), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
 >
 > **Step 4 — Roll defense:** Build the defense pool: defender **Might** + **Skill**, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, **Brace**, spells, feats, or scenario rules. Roll all dice as **Df** checks. Attacker wins ties by color; a shield shifts ties to the defender. *(See [Equipment](gear.md#equipment).)*
 >
@@ -133,7 +133,6 @@ A fighter's **primary weapon** is the weapon they last attacked with this battle
 Any natural **6** is a **critical hit** if any of the following apply:
 
 - The attacker has **weapon triangle advantage** (see Weapon Triangle) — Sword, Axe, or Spear only
-- The attacker wields a weapon with **Crushing** and the target is wearing armor
 - The attacker has **magic advantage** (see Magic Triangles)
 - The attacker is using a **firearm** (crits against all targets)
 - The attacker used the **Aim** action before a Ranged attack
@@ -205,9 +204,7 @@ Critical hits come from printed advantage rules. A natural **6** becomes a criti
 
 ### Weapon Triangle
 
-```
-Sword > Axe > Spear > Sword
-```
+![Melee weapon triangle: Sword beats Axe, Axe beats Spear, Spear beats Sword](/images/melee-triangle.svg)
 
 Having advantage over the opposing weapon type grants critical hits on natural 6s. Only **Sword**, **Axe**, and **Spear** participate in the triangle.
 
@@ -217,15 +214,11 @@ Two separate triangles govern magic vs. magic interactions.
 
 #### Mystic Triangle
 
-```
-Light > Infernal > Arcane > Light
-```
+![Mystic triangle: Light beats Infernal, Infernal beats Arcane, Arcane beats Light](/images/mystical-triangle.svg)
 
 #### Natural Triangle
 
-```
-Nature > Necromancy > Blood > Nature
-```
+![Natural triangle: Nature beats Necromancy, Necromancy beats Blood, Blood beats Nature](/images/natural-triangle.svg)
 
 ### Firearms
 
@@ -233,7 +226,7 @@ Firearms are fired with the **Ranged** action. They use the **primer roll** and 
 
 ### Outside the Triangles
 
-**Hammer** is outside the triangle. Hammer wielders do not gain or grant triangle criticals — they use **Crushing** instead (natural 6s crit vs any armored target). If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange. *(See [Weapons — Keywords](weapons.md#keywords).)*
+**Hammer** is outside the triangle. If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange — neither fighter scores triangle crits. *(See [Weapons — Keywords](weapons.md#keywords).)*
 
 The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation. If that **Ranged** weapon already scores critical hits on **6**, **Aim** increases it to **5+**.
 

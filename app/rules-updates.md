@@ -6,6 +6,22 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-10 20:34 EDT — Remove Crushing keyword; fix stat grid column count
+
+**Change:** Removed **Crushing** from **Mace** and **War Hammer** in builder data. Both weapons now list only **Impact**. **Crushing** no longer appears in any weapon reminder text.
+
+**Impact:** Display text only; weapon costs, slots, and validation did not change.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`.
+
+---
+
+**Change:** Stat grid in the retinue builder changed from `grid-cols-8` to `grid-cols-9` so all nine attributes (M, CC, RC, Mt, Sk, Df, Wi, Sa, W) display on one row.
+
+**Impact:** Layout fix only; no data or rules changes.
+
+**Source:** `app/src/components/RetinueEditor.jsx`.
+
 ## 2026-07-10 18:10 EDT — Impact weapon reminders
 
 **Change:** Synced builder weapon reminder text for the new **Impact** keyword. **Mace**, **War Hammer**, **Sling**, **Long Rifle**, and **Bomb** now list **Impact**. **Long Rifle** no longer says "Critical hits on 5+". **Blood for the Rite** now says exactly **0 Wounds** when describing when the sacrificed fighter becomes **Downed**.

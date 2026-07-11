@@ -19,7 +19,6 @@ Choose feats before buying weapons.
 
 **Cleave:** When this weapon's attack reduces a fighter to **0 Wounds**, make one free **Melee** attack against a different fighter within engagement range.
 
-**Crushing:** This weapon scores critical hits on natural **6s** against any fighter wearing armor (Light, Medium, or Heavy). These weapons are outside the weapon triangle.
 
 **Heavy:** This weapon cannot be used to make a **Ranged** attack if the fighter **Moved** or **Charged** this activation.
 
@@ -47,7 +46,7 @@ Any fighter may equip a **Dagger** without a proficiency feat.
 | <span id="sword"></span>Sword | 25 | 1H | +1 | +1 | Sword | Parry |
 | <span id="rapier"></span>Rapier | 40 | 1H | — | +3 | Sword | Parry |
 | <span id="hand-axe"></span>Hand Axe | 20 | 1H | +2 | — | Axe | Thrown(Mt) |
-| <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Crushing, Impact |
+| <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Impact |
 | <span id="spear"></span>Spear | 25 | 1H | +1 | +1 | Spear | Thrown(Mt), Reach |
 
 ### Dual wielding
@@ -63,7 +62,7 @@ A fighter cannot use a shield while dual-wielding.
 | Type | Critical hits |
 |---|---|
 | **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](combat.md#weapon-triangle)) |
-| **Hammer** | **Outside the triangle** — **Crushing** |
+| **Hammer** | Outside the triangle — no triangle crits |
 
 ---
 
@@ -74,7 +73,7 @@ A fighter cannot use a shield while dual-wielding.
 | <span id="halberd"></span>Halberd | 45 | 2H | +2 | +1 | Spear | Reach |
 | <span id="great-sword"></span>Great Sword | 50 | 2H | +2 | +1 | Sword | Cleave |
 | <span id="war-axe"></span>War Axe | 45 | 2H | +3 | — | Axe | — |
-| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Crushing, Impact |
+| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Impact |
 | <span id="staff"></span>Staff | 20 | 2H | +1 | +1 | Spear | Spell focus |
 
 ### Staff — Spell focus

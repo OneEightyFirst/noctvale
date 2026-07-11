@@ -773,7 +773,7 @@ function AddFighterButton({ onClick, disabled }) {
 
 function StatGrid({ stats }) {
   return (
-    <div className="grid w-full grid-cols-8 border border-night-800">
+    <div className="grid w-full grid-cols-9 border border-night-800">
       {STAT_KEYS.map((key) => (
         <div key={key} className="min-w-0 border-r border-night-800 text-center last:border-r-0">
           <div className="border-b border-night-800 px-0.5 py-0.5 text-[10px] uppercase text-cream-500">{key}</div>

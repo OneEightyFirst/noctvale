@@ -59,6 +59,12 @@ Open questions:
 
 ---
 
+## 2026-07-10 — Remove Crushing; Hammer Outside the Triangle Only
+
+**Decision:** Removed the **Crushing** keyword entirely. **Mace** and **War Hammer** retain **Impact** as their only keyword; **Crushing** is gone from the keyword list, weapon tables, crit list, and Step 3 box. The **Outside the Triangles** section in `rules/combat.md` now states that when either fighter wields a Hammer, weapon triangle advantage does not apply — neither fighter scores triangle crits. Hammer has no separate crit source. Updated `quick-reference.md`, `cheat-sheet-print-preview.html`, and `noctvale.js` to match.
+
+**Reasoning:** Crushing added a parallel crit mechanic specific to one weapon type. Replacing it with **Impact** (Downed → Stunned on exact takedown) gives Hammer weapons a clear, distinct identity through wound-state severity rather than a separate critical hit exception. This simplifies the crit rules: crits come only from triangle advantage, firearms, and Aim.
+
 ## 2026-07-10 — Remove Defensive Writing and Fix Shield Slot
 
 **Decision:** Removed "show don't tell" violations across `rules/weapons.md`, `rules/combat.md`, `rules/actions.md`, `rules/conditions.md`, `rules/archetypes.md`, `rules/the-turn.md`, and `rules/gear.md`. Cuts include: unprompted negative statements ("Gunpowder weapons are not a proficiency," "There is no facing system"), internal design notes ("Every Crown cost is a multiple of 5 Crowns," "armor-tier gear"), redundant restatements of positive rules, and designer-explanation tails ("This prevents chains," "This means the sequence is always…"). Also corrected a factual error: shields now correctly occupy **1 weapon slot** (was incorrectly stated as not using a slot in both `weapons.md` and `gear.md`). Section headings in `weapons.md` (Firearms, Bombs, Alchemy) had parenthetical requirement notes removed. Wiki nav depth reduced to h4 and above — individual fighter entry headings (h5) no longer appear in the sidebar.
