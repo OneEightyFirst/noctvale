@@ -10,7 +10,7 @@ Eligible lists:
 
 If two copies of the same named feat would affect one fighter at the same time, apply the feat once.
 
-When you recruit each fighter, assign feats from the lists their keywords allow. Each Archetype section in [Archetypes](#archetypes) lists available **Archetype** feats.
+When you recruit each fighter, assign feats from the lists their keywords allow.
 
 Campaign advancement may grant additional feats later (see [Feat Advancement Table](advancement.md#feat-advancement-table)).
 
@@ -130,7 +130,7 @@ This Wound can reduce the chosen fighter to exactly **0 Wounds** and cause them 
 
 #### Magic Armor
 
-This fighter may equip armor and shields up to Heavy tier.
+This fighter may equip armor up to Heavy tier.
 
 #### Chant
 

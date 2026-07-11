@@ -20,9 +20,9 @@ Shields modify the **Defense** (**Df**) threshold on specific dice in the defend
 
 | Shield | Tier | Cost | Archetype cap | Defense bonus |
 |---|---|---|---|---|
-| Buckler | Light | 10 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | +1 Df on **1 Skill die** |
-| Shield | Medium | 25 | Hunters, Knights; **Cult** with **Magic Armor** | +1 Df on **1 Might die** |
-| Tower Shield | Heavy | 50 | Knights only; **Cult** with **Magic Armor** | +1 Df on **2 Might dice**; −1 Df on **1 Skill die** |
+| Buckler | Light | 10 | All archetypes | +1 Df on **1 Skill die** |
+| Shield | Medium | 25 | All archetypes | +1 Df on **1 Might die** |
+| Tower Shield | Heavy | 50 | Knights, Folk | +1 Df on **2 Might dice**; −1 Df on **1 Skill die** |
 
 Armor and shield effects **stack**.
 

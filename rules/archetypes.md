@@ -6,7 +6,7 @@
 
 *Armored champions and sworn companies — the heirs of Valecoria's martial orders. When the Kingdom fell, the knightly houses did not vanish. Some guard ruined roads and broken shrines. Some serve vampire courts for coin or conviction. Some hunt monsters under old banners. All of them fight as a disciplined fist: few in number, heavy in steel, dangerous in a charge.*
 
-**Max retinue:** up to **10** fighters. **Armor and shields:** Light, Medium, and Heavy armor; Buckler, Shield or **Tower Shield** ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+**Max retinue:** up to **10** fighters. **Armor and shields:** Light, Medium, and Heavy armor; Buckler, Shield, and Tower Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
 
 ---
 
@@ -16,17 +16,9 @@
 
 Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
-#### Knights Feats
+#### Feats
 
-**Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy. You may take this feat more than once. Each time, choose a **different** proficiency.
-
-**Hold the Line:** When this fighter uses **Brace**, choose another friendly fighter within **1"**. That fighter gains **+1 Might defense die** until this fighter's next activation.
-
-**To Me, Brothers!:** Once per battle, when this fighter uses **Brace**, choose up to 2 friendly fighters within **12"**. Each chosen fighter may move up to **6"** toward this fighter. A fighter cannot use this movement to enter engagement range.
-
-**Iron Discipline:** This fighter cannot become **Downed**. When this fighter would become **Downed**, they remain Active with 0 Wounds instead. While this fighter has 0 Wounds, any unblocked hit pushes them to **Stunned** as if they were Downed.
-
-**Vow of Pursuit:** When this fighter attacks an enemy fighter that took a friendly fighter **Out of Action** this battle, add **2 Might dice** to this fighter's Strike Pool.
+See [Feats — Knights](feats.md#knights) for the full **Knights** archetype feat list.
 
 ---
 
@@ -95,7 +87,7 @@ Named factions are optional presets — example **Archetype** + **Domain** pairi
 
 *Sworn companies, frontier scouts, and monster-slayers — fighters who live by tracking, ambush, and the long shot. The Hundred Years of War bred countless hunter bands: holy warriors hunting the undead, alchemists brewing silversbane, zealots purging magic, and savage packs running the wilds. Hunters travel light compared to knights but hit harder at range and field more bodies.*
 
-**Max retinue:** up to **12** fighters. **Armor and shields:** Light and Medium armor ([Armor and Shields](gear.md)).
+**Max retinue:** up to **12** fighters. **Armor and shields:** Light and Medium armor; Buckler and Shield ([Armor and Shields](gear.md)).
 
 Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
 
@@ -107,17 +99,9 @@ Any fighter in this retinue may equip a **Dagger** regardless of their selected 
 
 Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
-#### Hunters Feats
+#### Feats
 
-**Proficiency:** Choose **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy. You may take this feat more than once. Each time, choose a **different** proficiency.
-
-**Marked Quarry:** At the start of the battle, choose 1 enemy fighter. When this fighter attacks the chosen fighter, add **1 Might die** or **1 Skill die** to this fighter's Strike Pool.
-
-**Patient Shot:** When this fighter uses **Aim**, their next **Ranged** attack this activation may reroll 1 natural 1 in the Strike Pool.
-
-**Field Dressing:** When this fighter uses **Help** on a **Downed** friendly fighter, add **+1** to the **Help** roll.
-
-**Pathfinder:** During Survival Rolls, if this fighter is a surviving fighter and your retinue rolls natural double 1, you may ignore the Mishap. Treat the result as **3** instead.
+See [Feats — Hunters](feats.md#hunters) for the full **Hunters** archetype feat list.
 
 ---
 
@@ -200,7 +184,7 @@ The **Inquisition** and **Silver Hunt** share Hunters + **Mortal** — different
 
 *Townsfolk, guild militia, and village watches — ordinary people who picked up tools and torches when the empire stopped protecting them. Folk retinues are not professional soldiers. They are neighbors, craftsmen, and constables who learned to fight because no one else would come. In numbers they hold streets, barricade bridges, and drag horrors into the light.*
 
-**Max retinue:** up to **15** fighters. **Armor and shields:** Light armor only ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+**Max retinue:** up to **15** fighters. **Armor and shields:** Light armor; Buckler, Shield, and Tower Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
 
 ---
 
@@ -210,17 +194,9 @@ The **Inquisition** and **Silver Hunt** share Hunters + **Mortal** — different
 
 Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
-#### Folk Feats
+#### Feats
 
-**Proficiency:** Choose **One-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy. You may take this feat more than once. Each time, choose a **different** proficiency. Folk **Militiaman** has built-in **Two-Handed** proficiency.
-
-**Stubborn Lot:** When this fighter uses **Help**, a roll of **1** counts as **2** if another friendly fighter is within **1"** of this fighter or the assisted fighter.
-
-**Shoulder to Shoulder:** While this fighter is **within 1"** of at least one other friendly fighter, add **+1 Skill defense die** when rolling defense against a **Melee** attack.
-
-**Rally to Aid:** Once per battle, when a friendly fighter **within 6"** becomes **Downed**, this fighter may move up to **6"** toward that fighter. This move cannot enter engagement range.
-
-**Skilled Craftsman:** This fighter may upgrade **one** weapon they own. Apply +1 **Might** or +1 **Skill** to that weapon *(choose when you select it)*. Only **one** weapon may have this upgrade at a time. Change which weapon is upgraded between battles. Record the chosen weapon and upgrade on this fighter's roster entry.
+See [Feats — Folk](feats.md#folk) for the full **Folk** archetype feat list.
 
 ---
 
@@ -297,7 +273,7 @@ Folk + **Mortal** also supports **Alchemists** — village alchemists brewing de
 
 *Secret brotherhoods, covens, and rite-circles — those who turned to forbidden power when the old world burned. Cult retinues do not march in plate. They gather in ruins, chant in blood, and loose magic that the empire once outlawed. A Cult on the battlefield is a glass cannon: many casters, no armor, and bodies that break fast when steel finds them.*
 
-**Max retinue:** up to **10** fighters. **Armor and shields:** Cult fighters wear no armor by default. Any fighter in this retinue may equip a **Dagger** regardless of their selected feats. Cult retinues cannot have a **Mortal** domain tradition.
+**Max retinue:** up to **10** fighters. **Armor and shields:** Buckler and Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats. Cult retinues cannot have a **Mortal** domain tradition.
 
 ---
 
@@ -307,17 +283,9 @@ Folk + **Mortal** also supports **Alchemists** — village alchemists brewing de
 
 Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
-#### Cult Feats
+#### Feats
 
-**Proficiency:** Choose **One-Handed** or **Archery**. You may equip any weapon in that proficiency your retinue is allowed to buy. You may take this feat more than once. Each time, choose a **different** proficiency.
-
-**Blood for the Rite:** Once per battle, before this fighter makes an attribute check or **casting roll**, choose another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll. This Wound can reduce the chosen fighter to exactly **0 Wounds** and cause them to become **Downed**.
-
-**Magic Armor:** This fighter may equip armor and shields up to Heavy tier.
-
-**Chant:** When **2 or more** other friendly **Cult** fighters have their bases **within 1"** of this fighter, this fighter projects **Fear** as a **Sphere of Influence** with range **6"** — the chanted rite carries on the air, not through line of sight. When an enemy fighter activates while within this **Sphere of Influence**, they must pass a **Sanity** check for **Fear** with this fighter as the source. See **[Fear](conditions.md#fear)** and **[Sphere of Influence](gear.md#sphere-of-influence)**.
-
-**Convoke:** Fighter must have **Caster**. When this fighter makes a **casting roll** and **1 or more** other friendly **Cult** fighters with the **Caster** keyword are **within 6"**, add **+1** to the roll for each other friendly fighter with the **Caster** keyword.
+See [Feats — Cult](feats.md#cult) for the full **Cult** archetype feat list.
 
 ---
 

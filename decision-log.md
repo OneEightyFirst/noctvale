@@ -20,6 +20,18 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-11 — Shield access explicit in archetype chapters; feats consolidated to feats.md
+
+**Decision:** Three related changes in one pass.
+
+1. **Shield access made explicit per archetype** — Every archetype now lists its full shield access in the "Armor and shields:" line. All archetypes may use Buckler and Shield. Knights and Folk may also use Tower Shield. Cult's Magic Armor feat grants armor access only (not Tower Shield). The `gear.md` shield table's Archetype cap column updated to match.
+2. **Magic Armor (Cult feat) scope narrowed** — The feat grants armor up to Heavy tier; it does not extend to Tower Shield. Wording updated in `feats.md` and `archetypes.md`.
+3. **Archetype feats removed from archetype chapters** — The duplicate inline feat blocks in `archetypes.md` (Knights Feats, Hunters Feats, Folk Feats, Cult Feats) were replaced with a single cross-reference to `feats.md`. `feats.md` is now the sole source of truth for all feat text. The archetype chapter build order remains visible (Tradition → Feats → Recruit Fighters) but feat content lives only in the Feats chapter.
+
+**Reasoning:** The additive armor/shield wording makes access unambiguous without telling players what they can't do. Consolidating feats to one chapter matches the retinue-building workflow: choose archetype, choose tradition, then go to feats.md and pick — no cross-chapter flipping.
+
+----
+
 ## 2026-07-11 — Wiki prev/next page navigation
 
 **Decision:** Added previous/next page navigation to the bottom of every static rules page. Each page shows links to the adjacent pages in `DOCUMENT_DEFS` order, with "Previous" on the left and "Next" on the right. Edge pages (Introduction, Economy) show only the one applicable link.
