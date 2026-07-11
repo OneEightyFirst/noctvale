@@ -155,6 +155,25 @@ If the target is **Downed**, resolve a **Melee** attack against them. If the att
 
 *(See [Conditions](conditions.md#conditions).)*
 
+### Hurl
+
+**Cost:** 1 action
+
+Choose an enemy fighter within engagement range of this fighter.
+
+Make an **opposed check** — the attacker chooses **Might** or **Skill**. If the target is **Stunned**, the attacker wins automatically without rolling. Against a **Downed** target, the attacker wins tied totals.
+
+> ### Opposed Check
+>
+> Each fighter rolls **1d6** and adds their value in the chosen attribute. The fighter with the higher total wins. On a tied total, the defender wins.
+
+- **Attacker wins:** Move the chosen fighter up to this fighter's **Might** in inches in a direction you choose.
+  - If the target was **Active** or **Downed**, they become **Stunned** after moving. A **Stunned** target remains **Stunned**.
+  - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at **2 Might / 1 Skill**. If the collision involves another fighter's base, that fighter also suffers the same hit and becomes **Stunned**.
+- **Defender wins:** No effect.
+
+Resolve each hit using the **Attack Sequence**.
+
 > **Multiple Engagement**
 >
 > When a fighter is attacking multiple enemies:

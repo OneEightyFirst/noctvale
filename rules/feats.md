@@ -180,6 +180,26 @@ This fighter may field **one** **Companion** purchased from [Gear — Companions
 
 Companion rules: [Companions](companions.md#companions).
 
+#### Infiltrate
+
+If this fighter would be set up during deployment, they may be held in reserve off the battlefield instead.
+
+Immediately before the start of the first round, their controlling player may set them up anywhere on the battlefield where no enemy fighter has **line of sight** to them and they are not **within 12"** of any enemy fighter.
+
+If both players have fighters with **Infiltrate**, alternate placing one fighter at a time, starting with the winner of a roll-off (**1d6** each; reroll ties).
+
+#### Acrobat
+
+When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+
+This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
+
+> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
+>
+> - **Pass:** Resolve the **Charge** normally. - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
+
+This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
+
 ---
 
 ## Domain Feats
@@ -198,9 +218,12 @@ When this fighter is targeted by a **Melee** action that immediately follows the
 
 Resolve both attacks through the full **Attack Sequence** (Steps 1–4). Then apply Wounds, **Downed**, **Stunned**, and **Out of Action** results from both attacks together.
 
-#### Warded
+#### Reflection
 
-When this fighter is the target of a hostile spell that succeeded on its **casting roll**, they may make a **Will** check. On a pass, the spell has no effect against this fighter.
+When this fighter is the target of a hostile spell that succeeded on its **casting roll**, they may make a **Will** check. On a pass, roll a **scatter die** — the spell scatters in that direction a distance equal to the measured distance from the caster to this fighter at the time of casting.
+
+- If the spell uses a **blast template**, recenter the blast template at the new location and resolve it there.
+- If the spell does not use a **blast template**, place a **large blast template** centered at the new location. The spell targets one fighter under the template; if more than one, the original caster chooses. If no fighters are under the template, the spell dissipates.
 
 #### Absolute Faith
 
@@ -255,41 +278,19 @@ If the first roll was **Mishap**, resolve it as normal — do not reroll.
 
 ### Infernal
 
-#### Infiltrate
+#### Faceless Horror
 
-If this fighter would be set up during deployment, they may be held in reserve off the battlefield instead.
+This fighter has **−1 Sanity** (minimum 1).
 
-Immediately before the start of the first round, their controlling player may set them up anywhere on the battlefield where no enemy fighter has **line of sight** to them and they are not **within 12"** of any enemy fighter.
+When an enemy fighter ends a **Charge** within engagement range of this fighter, or when this fighter ends a **Charge** within engagement range of an enemy fighter, that enemy must make a **Sanity** check for **Insanity** with this fighter as the source. On a fail, that enemy rolls on the **Insanity Table** at the start of their next activation.
 
-If both players have fighters with **Infiltrate**, alternate placing one fighter at a time, starting with the winner of a roll-off (**1d6** each; reroll ties).
+#### In the Shadow of the Elders
 
-#### Acrobat
+This fighter may perform **Hide** while within **3"** of terrain instead of **1"**.
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+#### Luck of the Damned
 
-This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
-
-> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
->
-> - **Pass:** Resolve the **Charge** normally. - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
-
-This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
-
-#### Heave
-
-While this fighter is **Active** and **within engagement range** of at least one enemy fighter, they may perform **Hurl**.
-
-> **Hurl** — **Cost:** 1 action
->
-> Choose one enemy fighter **within engagement range** of this fighter, or one **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
->
-> The chosen fighter makes a **Skill** check.
->
-> - **Pass:** No effect. - **Fail:** Move the chosen fighter **d3"** in a direction you choose. - If the target was **Active**, they become **Stunned** after moving. - If the target was **Downed**, they become **Stunned** after moving. - A **Stunned** target remains **Stunned**. - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at 2 **Might** / 1 **Skill**. - If the collision involves another fighter's base, that fighter also suffers the same hit and becomes **Stunned**.
->
-> Resolve each hit using the **Attack Sequence**.
-
-If this fighter performs **Hurl** during an activation, they cannot make a **Melee** attack during that activation.
+After each battle, any **2d6** roll made for this fighter during the **Post-Game Sequence** that shows **doubles** must be rerolled. Accept the new result, even if it also shows doubles.
 
 #### Daemonic Wings
 
@@ -307,41 +308,21 @@ If this fighter was not **Out of Action** when the battle ended and the modified
 
 ### Nature
 
-#### Infiltrate
+#### Wild Aspect
 
-If this fighter would be set up during deployment, they may be held in reserve off the battlefield instead.
+This fighter gains one **beast mark** — choose **Wolf**, **Rat**, **Bear**, or **Serpent**. If this fighter already has a beast mark, the chosen mark must be different.
 
-Immediately before the start of the first round, their controlling player may set them up anywhere on the battlefield where no enemy fighter has **line of sight** to them and they are not **within 12"** of any enemy fighter.
+This fighter gains the chosen mark's rule. See [Traditions — Werebeasts](traditions.md#werebeasts).
 
-If both players have fighters with **Infiltrate**, alternate placing one fighter at a time, starting with the winner of a roll-off (**1d6** each; reroll ties).
+If this feat is taken at fighter creation, this fighter costs **+10 Crowns**.
 
-#### Acrobat
+#### Wind Walker
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+This fighter has **+1" Movement**, **−1 Might**, **+1 Skill**, and **−1 Will**.
 
-This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
+#### Primal Ward
 
-> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
->
-> - **Pass:** Resolve the **Charge** normally. - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
-
-This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
-
-#### Heave
-
-While this fighter is **Active** and **within engagement range** of at least one enemy fighter, they may perform **Hurl**.
-
-> **Hurl** — **Cost:** 1 action
->
-> Choose one enemy fighter **within engagement range** of this fighter, or one **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
->
-> The chosen fighter makes a **Skill** check.
->
-> - **Pass:** No effect. - **Fail:** Move the chosen fighter **d3"** in a direction you choose. - If the target was **Active**, they become **Stunned** after moving. - If the target was **Downed**, they become **Stunned** after moving. - A **Stunned** target remains **Stunned**. - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at 2 **Might** / 1 **Skill**. - If the collision involves another fighter's base, that fighter also suffers the same hit and becomes **Stunned**.
->
-> Resolve each hit using the **Attack Sequence**.
-
-If this fighter performs **Hurl** during an activation, they cannot make a **Melee** attack during that activation.
+If this fighter ended the battle **Out of Action**, roll their **Casualty Table** result twice and take the higher result.
 
 #### Sure Footed
 
@@ -353,9 +334,9 @@ While **Hidden**, this fighter cannot be targeted by **Ranged** or **Cast** acti
 
 ### Necromancy
 
-#### Hard to Kill
+#### Last Gasp
 
-When a **Help** roll or **Recover** roll is made for this fighter, add **+1** to the roll.
+Once per battle, when this fighter would be reduced to **0 or fewer Wounds**, they may make a **Might** check. On a pass, they remain **Active** with **1 Wound** instead.
 
 #### Resilient
 
@@ -377,49 +358,31 @@ Enemy fighters cannot **Retreat** while within engagement range of this fighter.
 
 ### Blood
 
-#### Infiltrate
+#### Shadow Walker
 
-If this fighter would be set up during deployment, they may be held in reserve off the battlefield instead.
+This fighter must be **Hidden** to perform **Shadow Walk**.
 
-Immediately before the start of the first round, their controlling player may set them up anywhere on the battlefield where no enemy fighter has **line of sight** to them and they are not **within 12"** of any enemy fighter.
+**Shadow Walk** — **Cost:** 2 actions. Move this fighter to any point within **12"** that is within **1"** of terrain. This move ignores intervening terrain and fighters. This fighter remains **Hidden** after this move unless they end within **6"** of an enemy fighter.
 
-If both players have fighters with **Infiltrate**, alternate placing one fighter at a time, starting with the winner of a roll-off (**1d6** each; reroll ties).
+#### Celerity
 
-#### Acrobat
+At the start of this fighter's activation, they may suffer **1 Wound** to gain **1 additional action** this activation.
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
+#### Torpor
 
-This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
+At the start of this fighter's activation, they may enter **Torpor**. While in **Torpor**, this fighter has **−1 to all attributes**.
 
-> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
->
-> - **Pass:** Resolve the **Charge** normally. - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
+At the start of each subsequent activation, this fighter may continue **Torpor** or end it.
 
-This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
+When this fighter ends **Torpor**, they gain **+1 to all attributes** for each activation spent in **Torpor**. This bonus lasts until the end of that activation.
 
-#### Heave
+#### Indomitable
 
-While this fighter is **Active** and **within engagement range** of at least one enemy fighter, they may perform **Hurl**.
-
-> **Hurl** — **Cost:** 1 action
->
-> Choose one enemy fighter **within engagement range** of this fighter, or one **Downed** or **Stunned** enemy fighter **within 1"** of this fighter.
->
-> The chosen fighter makes a **Skill** check.
->
-> - **Pass:** No effect. - **Fail:** Move the chosen fighter **d3"** in a direction you choose. - If the target was **Active**, they become **Stunned** after moving. - If the target was **Downed**, they become **Stunned** after moving. - A **Stunned** target remains **Stunned**. - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at 2 **Might** / 1 **Skill**. - If the collision involves another fighter's base, that fighter also suffers the same hit and becomes **Stunned**.
->
-> Resolve each hit using the **Attack Sequence**.
-
-If this fighter performs **Hurl** during an activation, they cannot make a **Melee** attack during that activation.
-
-#### Hard to Kill
-
-When a **Help** roll or **Recover** roll is made for this fighter, add **+1** to the roll.
+When this fighter rolls **Might** defense dice, they may reroll any dice showing **1**. Accept the new results.
 
 #### Thrill of Agony
 
-When this fighter suffers **1 or more Wounds** from an **Attack Sequence**, add **1 Might die** to their next **Melee** attack this activation.
+When this fighter suffers **1 or more Wounds** from an **Attack Sequence**, add **1 Might die** to their next **Melee** attack.
 
 ### Mortal
 
@@ -441,20 +404,6 @@ The dominant die type is whichever is higher on the **firearm's** profile (**Mig
 
 Enemy **Casters** cannot perform the **Cast** action while **within 6"** of this fighter.
 
-#### Acrobat
+#### Common Sense
 
-When this fighter falls or lands from a **Jump** from a height of up to **12"**, roll a **Skill** check. On a pass, do not resolve **Falling**. On a fail, resolve **Falling** as normal.
-
-This fighter may perform a **Diving Charge** from a height of up to **6"** above the target.
-
-> **Diving Charge** — Treat as **Charge**, but before moving roll a **Skill** check.
->
-> - **Pass:** Resolve the **Charge** normally. - **Fail:** The **Charge** fails. Resolve **Falling** from the full height.
-
-This fighter may reroll a failed **Diving Charge** **Skill** check. They must accept the second result.
-
-#### Lightning Reflexes
-
-When this fighter is targeted by a **Melee** action that immediately follows the attacker's **Charge** during the same activation, they may make **1 free Melee** attack against that attacker before either attack applies Wounds.
-
-Resolve both attacks through the full **Attack Sequence** (Steps 1–4). Then apply Wounds, **Downed**, **Stunned**, and **Out of Action** results from both attacks together.
+When this fighter is included as a scavenger in a **Survival Roll**, reroll all dice in the pool showing **1**. Accept the new results.

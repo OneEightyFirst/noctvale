@@ -59,3 +59,20 @@ During the Economy step, the retinue sells all **3 Relics** for **40 Crowns**, t
 Finally, the player awards Experience. In the **battle** pass, each fighter who did not go **Out of Action** gains **+1**. The **Captain** gains **+2** for putting the enemy **Leader** **Out of Action** by a direct action. The **Hand** went **Out of Action** and does not gain **+1** for staying active. The scenario did not list additional Experience this battle. Fighters with enough Experience may buy an advancement roll, or save it for a later battle.
 
 ---
+
+## Shadow Market
+
+Some items require a **Shadow Market** roll to purchase during the Economy step. Make one roll per post-game when your retinue attempts to buy any Shadow Market item. The result governs how many units you may purchase that post-game. Standard listed prices apply unless the result says otherwise.
+
+Apply the **Reward Roll Rule** — natural double 1 is a Mishap, natural double 6 is the Bonus result.
+
+| 2d6 | Result |
+|---|---|
+| 2 | **Mishap: Swindled** — Lose **1d6 × 5 Crowns**. May purchase **0** items. |
+| 3–4 | **Missed Contact** — May purchase **0** items this post-game. |
+| 5–6 | **Supply and Demand** — May purchase **1** item at **+1d6 × 5 Crowns** above listed price. |
+| 7–8 | **Limited Supply** — May purchase **1** item at listed price. |
+| 9–11 | **Available** — May purchase up to **3** items at listed price. |
+| 12 | **Bonus: Open Market** — May purchase any number of items at listed price. |
+
+---

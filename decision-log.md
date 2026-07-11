@@ -20,6 +20,32 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-11 — Hurl universal action, domain feat overhaul, Shadow Market, alchemical bombs
+
+**Decision:** Large rules session covering six areas.
+
+1. **Hurl moved to universal action** — Removed from Heave feat (Infernal, Nature, Blood). Hurl is now in `actions.md` as a standard Combat Action available to all fighters. Opposed Check mechanic added (stat + 1d6 vs stat + 1d6; defender wins ties vs Active, attacker wins ties vs Downed, automatic vs Stunned). Attacker chooses Might or Skill. Throw distance changed from d3" to this fighter's Might in inches. Melee restriction removed.
+
+2. **Infiltrate and Acrobat moved to Universal feats** — Both were copy-pasted across 3–4 domain lists. Now live once in Universal Feats. Domain slots freed up for distinctive feats.
+
+3. **Domain feat overhaul** — All domains brought to 5 feats with no duplicates:
+   - *Infernal*: Faceless Horror (charge trigger Insanity, −1 Sanity), In the Shadow of the Elders (Hide within 3" of terrain), Luck of the Damned (must reroll post-game doubles), Daemonic Wings, Devil's Pact.
+   - *Nature*: Wild Aspect (gain beast mark, +10 Crowns at creation), Wind Walker (+1" Move, −1 Might, +1 Skill, −1 Will), Primal Ward (Casualty Table: roll twice keep higher), Sure Footed, Camouflage.
+   - *Blood*: Shadow Walker (Hidden → 2-action teleport up to 12"), Celerity (pay 1 Wound for +1 action), Torpor (voluntarily enter −1 all attributes, release for +1 all per activation stored), Indomitable (reroll 1s on Might defense dice), Thrill of Agony (fixed — removed "this activation" restriction).
+   - *Necromancy*: Hard to Kill replaced with Last Gasp (once per battle, Might check to survive at 1 Wound).
+   - *Light*: Warded renamed to Reflection (spell scatter on Will check — scatter die, distance equals cast range; blast templates recenter, non-blast spells place large template).
+   - *Mortal*: Lightning Reflexes removed, Common Sense added (Survival Roll scavenger: reroll all 1s in pool).
+
+4. **Shadow Market table added** — Live in `economy.md`. One roll per post-game: 2 Swindled (lose 1d6×5 Crowns), 3–4 Missed Contact, 5–6 Supply and Demand (+1d6×5 price, 1 item), 7–8 Limited Supply (1 item), 9–11 Available (up to 3), 12 Open Market (unlimited). Alchemy, Bombs, and Summoning Crystals tagged as Shadow Market items in their respective files.
+
+5. **Bombs split into blackpowder and alchemical** — Mortal/Firearms Bomb stays under Firearms. Smoke Bomb moved to new Alchemical Bombs section under Alchemy: available to any fighter, any domain, Shadow Market required, Skill check throw mechanic (replaces Primer Roll), scatter d3" on fail.
+
+6. **Leech spell (Blood) removed** — Life-drain on hit was redundant with Vampire tradition's built-in life-drain on kill. Replaced with TBD placeholder.
+
+**Reasoning:** Hurl as universal action makes the displacement/control play pattern available to all retinue types, which opens design space for more distinctive domain feats. Domain feat cleanup removes generic padding and creates identities that match each domain's thematic core. Shadow Market formalizes a purchasing restriction already referenced in the Alchemists tradition. Bomb split correctly separates technology (gunpowder, Mortal only) from chemistry (alchemical, universal).
+
+----
+
 ## 2026-07-11 — Shield access explicit in archetype chapters; feats consolidated to feats.md
 
 **Decision:** Three related changes in one pass.

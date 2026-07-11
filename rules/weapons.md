@@ -160,12 +160,11 @@ A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonu
 
 ### Bombs
 
-Bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**. Require the **Firearms** domain feat.
+Bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**. Require the **Firearms** domain feat. Bombs require a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market).
 
 | Weapon | Cost | Hands | Distance | Primer | Mt | Sk | Notes |
 |---|---|---|---|---|---|---|---|
 | Bomb | 40 | 1H | d6 + Mt | 9+ | 3 | 2 | 3" blast, Single Shot, Impact |
-| Smoke Bomb | 25 | 1H | d6 + Mt | 8+ | — | — | 6" blast, Single Shot, Smoke |
 
 Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (friend and foe) within the blast radius. Use the **Ranged** action.
 
@@ -176,13 +175,26 @@ Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (fri
    - **Pass:** Bomb is on target. Roll **d6** + **Might** for maximum distance — place the blast marker anywhere along the line to the declared target up to that many **"**.
 3. All fighters (friend and foe) under the blast template suffer the Strike Pool.
 
-**Smoke:** Creates a 6" cloud that blocks line of sight for all fighters. The cloud remains until the end of the round. A fighter may choose to deliberately fail the **Primer Roll** to detonate the smoke bomb at their feet.
-
 ---
 
 ## Alchemy
 
-Alchemy is available to every retinue. Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take a weapon slot.
+Alchemy is available to every retinue, but requires a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market). Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take a weapon slot.
+
+### Alchemical Bombs
+
+Alchemical bombs are **Single Shot** (one use per battle) and available to any fighter regardless of domain or keyword. They require a **Shadow Market** roll to purchase.
+
+| Weapon | Cost | Hands | Range | Notes |
+|---|---|---|---|---|
+| Smoke Bomb | 25 | 1H | Might in" | 6" blast, Single Shot, Smoke |
+
+Use the **Ranged** action. Declare a target point within this fighter's **Might** in inches. Make a **Skill** check.
+
+- **Pass:** Place the blast template centered on the declared point.
+- **Fail:** The bomb scatters. Roll a **scatter die** for direction and **d3"** for distance — move the detonation point that far in that direction.
+
+**Smoke:** Creates a 6" cloud that blocks line of sight for all fighters. The cloud remains until the end of the round. A fighter may choose to detonate the smoke bomb at their own feet instead of throwing — the effect resolves immediately centered on that fighter.
 
 | Poison | Cost | Effect | Notes |
 | -------------- | ---- | ------ | ----- |

@@ -334,8 +334,9 @@ The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 
 ### Blood
 
-#### Leech
-**Casting:** **Sanity** 12+. **Range:** Touch. **Keywords:** **Attack**. **Attack:** **Close Combat**, 5 **Might** / +3 **Skill**. Make a touch spell attack. If the target suffers at least 1 Wound, the caster heals 1 Wound.
+#### *[TBD]*
+
+*Spell to be designed — previous Leech spell removed to avoid redundancy with Vampire tradition life-drain.*
 
 #### Bleed
 **Casting:** **Sanity** 13+. **Range:** 12". Target enemy must pass a **Will** check. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](conditions.md#bleeding). **Mishap:** The caster becomes **Bleeding** instead.
@@ -389,7 +390,7 @@ Spells and traditions that use corpses **remove** a **body token** rather than t
 
 ### Summoning Crystals
 
-**Summoning Crystals** are equipment from [Armor and Shields — Summoning gear](gear.md#summoning-gear). Assign them to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal spent during a summoning spell is consumed. Remove spent crystals from the roster after the battle.
+**Summoning Crystals** are equipment from [Armor and Shields — Summoning gear](gear.md#summoning-gear). Summoning Crystals require a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market). Assign them to fighters during roster setup. A fighter may carry up to **2 Summoning Crystals**. Each crystal spent during a summoning spell is consumed. Remove spent crystals from the roster after the battle.
 
 Summoning spells name the crystal cost and which fighter or fighters spend them.
 
