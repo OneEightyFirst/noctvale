@@ -283,8 +283,8 @@ function extractHeadings(markdown) {
   const headings = [];
 
   for (const line of markdown.split("\n")) {
-    const blockquoteMatch = line.match(/^>\s+(#{1,6})\s+(.+?)\s*#*$/);
-    const normalMatch = !blockquoteMatch && line.match(/^(#{1,6})\s+(.+?)\s*#*$/);
+    const blockquoteMatch = line.match(/^>\s+(#{1,4})\s+(.+?)\s*#*$/);
+    const normalMatch = !blockquoteMatch && line.match(/^(#{1,4})\s+(.+?)\s*#*$/);
     const match = blockquoteMatch || normalMatch;
     if (!match) continue;
 

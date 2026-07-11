@@ -10,9 +10,9 @@ Judge from the **firing fighter's point of view** (stoop to the firing fighter's
 
 #### Line of sight
 
-If you **can see** the target from the firing fighter's viewpoint, you have **line of sight**. If you cannot see the target, you do not — the target is not a valid choice for **Ranged** or **Cast**.
+If you **can see** the target from the firing fighter's viewpoint, you have **line of sight**.
 
-**Friendly fighters do not block line of sight.** Enemy fighters block line of sight normally (you must be able to see the target past them).
+**Friendly fighters do not block line of sight.** Enemy fighters block line of sight normally.
 
 #### Cover
 
@@ -61,7 +61,6 @@ Ranged weapons and spells have a **minimum range** and a **maximum range**.
 
 - A target **closer than the minimum range** cannot be targeted.
 - A target **beyond the maximum range** cannot be targeted.
-- There are no modifiers for distance — if the target is in range, the attack is at full effectiveness.
 
 Unless otherwise noted, ranged weapons have a **minimum range of 3"**.
 
@@ -245,10 +244,10 @@ When a fighter is targeted by a **Ranged** action, the target may perform a **si
 - The reaction triggers whenever the target is **selected as a target**, regardless of whether the attack hits or misses.
 - The target may choose **any single action** from the action list (Move, Charge, Melee, Ranged, Brace, Retreat, etc.).
 - If the target is **Downed or Out of Action** after the attack resolves, they may not react.
-- **A fighter may not perform a Ranged Reaction while their controlling player is activating fighters.** The active player's fighters cannot react to return fire. This means the sequence is always: shoot → react → done.
+- **A fighter may not perform a Ranged Reaction while their controlling player is activating fighters.** The active player's fighters cannot react to return fire.
 - **Cast actions do not trigger Ranged Reactions.** Only Ranged weapon attacks trigger this rule.
 - If a fighter is targeted by **multiple Ranged attacks** in the same activation (e.g., the attacker shoots twice), the target gets **one reaction per attack**.
-- **A Ranged Reaction cannot trigger another Ranged Reaction.** Reactions only trigger from actions, not from other reactions. This prevents chains.
+- **A Ranged Reaction cannot trigger another Ranged Reaction.** Reactions only trigger from actions, not from other reactions.
 
 
 

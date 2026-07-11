@@ -16,7 +16,7 @@ Heavy Armor is a net +1 die but shifts the pool Might-heavy at the cost of Skill
 
 ## Shields
 
-Shields **shift the tie rule in the defender's favor**. Shields do not use weapon slots.
+Shields **shift the tie rule in the defender's favor**. Each shield takes **1 weapon slot**.
 
 By default, when blocks equal hits in a category the attacker wins the tie and one hit of that color gets through. A shield changes this:
 

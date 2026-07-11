@@ -297,7 +297,7 @@ Folk + **Mortal** also supports **Alchemists** — village alchemists brewing de
 
 *Secret brotherhoods, covens, and rite-circles — those who turned to forbidden power when the old world burned. Cult retinues do not march in plate. They gather in ruins, chant in blood, and loose magic that the empire once outlawed. A Cult on the battlefield is a glass cannon: many casters, no armor, and bodies that break fast when steel finds them.*
 
-**Max retinue:** up to **10** fighters. **Armor and shields:** Cult fighters wear no armor by default. Any fighter in this retinue may equip a **Dagger** regardless of their selected feats. Fighters with **Cult** cannot have **Mortal** — magic and gunpowder do not mix.
+**Max retinue:** up to **10** fighters. **Armor and shields:** Cult fighters wear no armor by default. Any fighter in this retinue may equip a **Dagger** regardless of their selected feats. Cult retinues cannot have a **Mortal** domain tradition.
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Wound States
 
-Fighters who are overcome in battle become **Downed** or **Stunned** before being removed from play. A fighter reduced to exactly **0 Wounds** becomes **Downed**. A fighter reduced below **0 Wounds** is overkilled and becomes **Stunned** instead; do not track negative Wounds.
+Fighters who are overcome in battle become **Downed** or **Stunned** before being removed from play. A fighter reduced to exactly **0 Wounds** becomes **Downed**. A fighter reduced below **0 Wounds** is overkilled and becomes **Stunned** instead.
 
 ### Active
 

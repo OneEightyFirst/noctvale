@@ -95,7 +95,7 @@ Attempt to leave engagement range. Make a **Skill** check.
 >
 > **Engagement range** is **1"**.
 >
-> There is **no facing system**. Fighters are treated as aware in **all directions**.
+> Fighters are aware in **all directions**.
 
 ### Melee
 

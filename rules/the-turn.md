@@ -83,7 +83,7 @@ Overwatch compensates for numerical disadvantage.
 >
 > **Overwatch action:** During a fighter's activation, that fighter may spend **1 action** and **1 Overwatch token** to go on **Overwatch**. That fighter may later perform any **1 action** as a reaction when an enemy fighter completes an action. The fighter's remaining action may be used before or after declaring Overwatch.
 >
-> **Reaction timing:** A fighter on **Overwatch** may react whenever an enemy fighter completes an action during the round — not only while both players still have activations left. Running out of fighters to activate does not prevent Overwatch reactions from triggering.
+> **Reaction timing:** A fighter on **Overwatch** may react whenever an enemy fighter completes an action during the round — not only while both players still have activations left.
 >
 > **End of round:** Remove all unspent **Overwatch tokens**.
 

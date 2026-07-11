@@ -59,6 +59,12 @@ Open questions:
 
 ---
 
+## 2026-07-10 — Remove Defensive Writing and Fix Shield Slot
+
+**Decision:** Removed "show don't tell" violations across `rules/weapons.md`, `rules/combat.md`, `rules/actions.md`, `rules/conditions.md`, `rules/archetypes.md`, `rules/the-turn.md`, and `rules/gear.md`. Cuts include: unprompted negative statements ("Gunpowder weapons are not a proficiency," "There is no facing system"), internal design notes ("Every Crown cost is a multiple of 5 Crowns," "armor-tier gear"), redundant restatements of positive rules, and designer-explanation tails ("This prevents chains," "This means the sequence is always…"). Also corrected a factual error: shields now correctly occupy **1 weapon slot** (was incorrectly stated as not using a slot in both `weapons.md` and `gear.md`). Section headings in `weapons.md` (Firearms, Bombs, Alchemy) had parenthetical requirement notes removed. Wiki nav depth reduced to h4 and above — individual fighter entry headings (h5) no longer appear in the sidebar.
+
+**Reasoning:** Rules text should state what is true, not defend against assumptions borrowed from other games. Each removed line either contradicted the style guide's "write additive rules" principle or exposed internal design scaffolding to players.
+
 ## 2026-07-10 — Overkill and Impact Weapons
 
 **Decision:** Split **Downed** and **Stunned** into parallel wound outcomes. An **Active** fighter reduced to exactly **0 Wounds** becomes **Downed**. An **Active** fighter reduced below **0 Wounds** is overkilled and becomes **Stunned** instead, without tracking negative Wounds. **Downed** fighters can still attempt **Recover**; **Stunned** fighters cannot. **Mercy Kill** now works against both states: against **Stunned** it is automatic, while against **Downed** it requires a **Melee** attack that inflicts at least one unblocked hit. Added the **Impact** weapon keyword: when an **Impact** weapon would make an **Active** fighter **Downed**, that fighter becomes **Stunned** instead. **Mace**, **War Hammer**, **Sling**, **Bomb**, and **Long Rifle** gain **Impact**; **Long Rifle** loses the old 5+ critical reminder in builder text.

@@ -1,6 +1,6 @@
 # Weapons
 
-Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat. Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields do not use weapon slots. **Wands** take 1 slot. **Icon** and **Instrument** gear take 2 slots each.
+Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat. Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields take 1 slot. **Wands** take 1 slot. **Icon** and **Instrument** gear take 2 slots each.
 
 | Proficiency | Weapons |
 |---|---|
@@ -9,11 +9,9 @@ Most weapons belong to a **weapon proficiency** — the training a fighter needs
 | **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
 | **Thrown** | Sling, Throwing Stars |
 
-Gunpowder weapons are not a proficiency. They require the **Firearms** domain feat *(Mortal)* — see [Feats — Firearms](feats.md#firearms). When every fighter in the retinue has **Mortal**, your retinue may purchase firearms and bombs.
+Firearms require the **Firearms** domain feat *(Mortal)* — see [Feats — Firearms](feats.md#firearms). When every fighter in the retinue has **Mortal**, your retinue may purchase firearms and bombs.
 
-Shields are armor-tier gear. They do not require **One-Handed** proficiency and do not use weapon slots.
-
-Choose feats before buying weapons. Every Crown cost is a multiple of **5 Crowns**.
+Choose feats before buying weapons.
 
 ---
 
@@ -29,7 +27,7 @@ Choose feats before buying weapons. Every Crown cost is a multiple of **5 Crowns
 
 **Parry:** When this fighter defends against a **Melee** attack, reroll one failed **Skill** die in the defense pool.
 
-**Piercing:** When defending against this weapon's attacks, armor dice bonuses do not apply and shield tie benefits do not apply — build the defense pool as if the target has no armor or shield.
+**Piercing:** When defending against this weapon's attacks, ignore the target's armor dice bonus and shield tie benefit when building the defense pool.
 
 **Reach:** This weapon can engage enemies up to **2"** away.
 
@@ -113,7 +111,7 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 ---
 
-## Firearms *(requires **Mortal**; forbids **Caster**)*
+## Firearms
 
 When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms. A fighter equips a firearm only if they have the **Firearms** domain feat. Firearms use fixed **Might dice** and the shooter's **Skill**; add the profile's +**Skill** value to the shooter's **Skill** to build the **Skill dice** side of the Strike Pool. Firearms gain **critical hits against all targets** (outside the weapon triangle). *Primer column assumes **Skill** 3.*
 
@@ -161,7 +159,7 @@ A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no **Brac
 
 A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield tie benefits do not apply against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**.
 
-### Bombs *(requires **Mortal**; forbids **Caster**)*
+### Bombs
 
 Bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**. Require the **Firearms** domain feat.
 
@@ -183,7 +181,7 @@ Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (fri
 
 ---
 
-## Alchemy *(consumable)*
+## Alchemy
 
 Alchemy is available to every retinue. Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take a weapon slot.
 
