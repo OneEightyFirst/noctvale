@@ -116,3 +116,17 @@ A fighter with the **Fearless** keyword is immune to **Fear**, **Panic**, and **
 **Fearless** fighters add **+1** to **Will** checks for rout tests.
 
 ---
+
+## Permanent Conditions
+
+Permanent conditions are gained during the campaign and carried into every subsequent battle. They cannot be removed unless a rule explicitly states otherwise.
+
+### Damned
+
+A fighter branded by the hells carries **Damned** permanently.
+
+At the start of each battle, before deployment, roll 1d6. If the result is equal to or less than the number of **Damned** conditions on that fighter, a daemon bursts forth: the fighter is **Slain** and permanently removed from the retinue. Roll **2d6** on the **Summon Result** table using the **1-crystal** row. Place the daemon where the fighter stood; if its base cannot fit, place it as close as possible. The daemon is friendly to the retinue.
+
+After the battle, a remaining friendly **Caster** with **Infernal** may attempt to bind the daemon — see [Summoning — Binding](magic.md#binding). On a natural 1 during the binding roll, that fighter is **Slain** in place of the normal caster result. If no eligible **Caster** with **Infernal** remains, the daemon returns to the hells.
+
+**Damned** cannot be removed. A fighter may carry multiple **Damned** conditions; each widens the trigger range by 1.

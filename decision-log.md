@@ -20,6 +20,29 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-11 — Quick-decision batch: affliction, costs, keywords, campaign healing
+
+**Decision:** Resolved several open single-decision items in one pass.
+
+- **Infernal affliction** — named **Damned**. Full permanent-condition rule added to `rules/conditions.md`: a fighter accumulates **Damned** stacks; at the start of each battle they roll 1d6, and if the result is ≤ their stack count they are **Slain** and replaced by a daemon on the summon table. The **Summon Daemon** Mishap now inflicts **Damned** instead of taking the caster **Out of Action** outright.
+- **Bone Blast Mishap** — the caster gains **2 Affliction tokens** for 1d6 rounds (was unset; attack-against-caster wording removed).
+- **Summoning Crystal cost** — **35 Crowns** (`rules/gear.md`).
+- **Campaign upkeep** — deferred indefinitely; moved to Ideas. The Survival Roll and Casualty Table already create attrition pressure; upkeep would add bookkeeping complexity before the campaign loop is proven in play.
+- **Convalescent fighters / downtime injury healing** — resolved with a new **Barber Surgeon** post-game step (50 Crowns, accompanying fighter required, 2d6 table with outcomes from Fatal Complication to Full Recovery). A new **Scavenging** rule lets Active fighters add dice to the Survival Roll pool. Both added to `rules/post-game-sequence.md` and `rules/survival-rolls.md`.
+- **Werebeasts keyword** — kept as **Werebeasts** / **Werebeast** (not Beastmen). Updated `rules/traditions.md` and the migration shim in `app/src/lib/retinue.js`. A cleanup task to remove the shim (~2026-07-14) is tracked in `todo.md`.
+
+**Reasoning:** All six items were blocking clarity in the rules or app builder without requiring a full design session — each had an obvious answer or a clear "defer" path. Resolving them together clears the way for the heavier Phase 5–8 work.
+
+----
+
+## 2026-07-11 — Infernal Summoning scope decisions
+
+**Decision:** No variant table per daemon tier. Each tier (Imp, Hellion, Mauler) has one canonical profile — the earlier d6/d66 variant-table idea is scrapped. Summon attempts have no fixed per-battle limit beyond the crystal economy and battle caps (2 Imps / 2 Hellions / 1 Mauler per battle). Any caster may attempt **Summon Daemon** as many times per battle as they can pay for.
+
+**Reasoning:** Variant tables would require a large pool of distinct miniatures or proxies, inflate the rules surface for little gain, and complicate the alpha. One canonical profile per tier is enough to give each daemon a clear identity and keep rules lookup fast at the table. The crystal cost and sacrifice requirement already make repeated summoning expensive; adding a separate summon-count cap would be redundant and punish Cult retinues with multiple Casters without adding meaningful tension.
+
+----
+
 ## Ideas
 
 Concepts under discussion. Remove an entry when it is implemented and capture
@@ -27,6 +50,8 @@ the final rule in the dated decision-log entry for that commit.
 
 **Actionable work lives in `todo.md`.** This section holds provisional design
 only — not duplicate checklists.
+
+**Campaign upkeep.** A possible future layer where retinues pay an ongoing Crown cost between battles — larger or more expensive retinues cost more to maintain. Skipped for now to keep the campaign economy simple; the Survival Roll and Casualty Table already create attrition pressure. Revisit if playtesting shows retinues accumulate Crowns too easily.
 
 **Variable Presence ranges.** Explore replacing fixed target and charge reach with a fighter-facing **Presence** value measured in inches. Each ancestry would set a baseline **Presence** by size and silhouette: larger fighters project farther, smaller fighters project less, and effects such as **Hide** could reduce a fighter's **Presence**, potentially to **0"**. Weapons would have shorter printed ranges than they do now. A ranged attack would be able to target a fighter within the weapon's printed range plus the target's **Presence**. A **Charge** would be able to reach a target within the charging fighter's **Movement** + the charging fighter's **Presence** + the target's **Presence**.
 

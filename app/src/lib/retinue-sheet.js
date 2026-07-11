@@ -108,7 +108,7 @@ function getFighterStats(fighter, type, tradition) {
   for (const stat of fighter.statBoosts ?? []) {
     stats[stat] += 1;
   }
-  if (tradition?.id === "beastmen" && fighter.beastMark === "bear") {
+  if (tradition?.id === "werebeasts" && fighter.beastMark === "bear") {
     stats.Mt += 1;
     stats.Sa = Math.max(1, stats.Sa - 1);
   }
@@ -119,7 +119,7 @@ function getTraditionCostModifier(fighter, type, tradition, caster) {
   if (!tradition || !type) return 0;
   if (tradition.id === "spellblades") return 5;
   if (tradition.id === "damned" && !caster) return -10;
-  if (tradition.id === "beastmen") return 10;
+  if (tradition.id === "werebeasts") return 10;
   if (tradition.id === "wightlords") return 20;
   if (tradition.id === "vampires" && ["Leader", "Elite", "Specialist"].includes(type.role)) return 20;
   return 0;

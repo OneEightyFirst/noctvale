@@ -13,7 +13,7 @@ This is the campaign loop: **injuries → Survival Rolls → economy → advance
 3. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#step-3-companion-recovery))
 4. **Doom** — any fighter directed to this table rolls **2d6**
 5. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](#survival-rolls))
-6. **Economy** — sell Relics, recruit, equip ([Economy](economy.md#economy), [retinue building](retinue-building.md))
+6. **Economy** — sell Relics, recruit, equip, optional [Barber Surgeon](#barber-surgeon) ([Economy](economy.md#economy), [retinue building](retinue-building.md))
 7. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 
 ---
@@ -95,6 +95,25 @@ Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics
 1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
 2. Sell **any Relics you choose to sell** for Crowns ([Selling Relics](#selling-relics)).
 3. Recruit fighters and buy gear. Update **Roster Cost** on the roster sheet.
+4. Optionally, send fighters to the **Barber Surgeon** (see [Barber Surgeon](#barber-surgeon)).
+
+---
+
+### Barber Surgeon
+
+Any fighter who carries a permanent injury from the **Doom Table** may visit the Barber Surgeon. Visiting costs **50 Crowns** and requires one other **Active** friendly fighter to accompany them. The accompanying fighter cannot perform any other post-game action this step.
+
+Before rolling, declare which **Doom Table** injury you are attempting to remove. Then roll **2d6**.
+
+| 2d6 | Result |
+|---|---|
+| 2 | **Fatal Complication** — the fighter dies on the table. Remove them from the retinue. |
+| 3–5 | **No improvement** — the injury remains. The fee is lost. |
+| 6–8 | **Patched up** — the declared injury is removed; the fighter permanently **projects Fear (6")** — add this to their profile. |
+| 9–11 | **Healed** — the declared injury is removed. |
+| 12 | **Full recovery** — the declared injury is removed; the fighter gains **1d3 Experience**. |
+
+A fighter may only visit the Barber Surgeon once per post-game sequence.
 
 ---
 

@@ -76,7 +76,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
 >
-> **Step 4 — Roll defense:** Build the defense pool: defender **Might** + **Skill**, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, **Brace**, spells, feats, or scenario rules. Roll all dice as **Df** checks. Attacker wins ties by color; a shield shifts ties to the defender. *(See [Equipment](gear.md#equipment).)*
+> **Step 4 — Roll defense:** Build the defense pool: defender **Might** + **Skill**, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, **Brace**, spells, feats, or scenario rules. Shields modify the **Df** threshold on specific dice. Roll all dice as **Df** checks. Attacker wins ties. *(See [Equipment](gear.md#equipment).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -171,11 +171,13 @@ Each successful defense die blocks one hit of the matching color:
 
 Compare your blocks to the attacker's hits by color. If blocks equal hits in a category — a **tie** — the attacker wins that tie and one hit of that color still gets through.
 
-A **shield** shifts ties in the defender's favor:
+#### Shields
 
-- **Buckler** — the defender wins **Skill ties** (equal Skill blocks = all Skill hits blocked)
-- **Shield** — the defender wins **all ties**
-- **Tower Shield** — the defender wins **all ties** and adds **+1 Might die** to the defense pool
+Shields modify the **Defense** (**Df**) threshold on specific dice in the defender's pool — raising it makes those dice easier to succeed, lowering it makes them harder:
+
+- **Buckler** — **+1 Df** on **1 Skill die**
+- **Shield** — **+1 Df** on **1 Might die**
+- **Tower Shield** — **+1 Df** on **2 Might dice**; **−1 Df** on **1 Skill die**
 
 Armor and shield effects **stack**. *(See [Equipment](gear.md#equipment) for full tables.)*
 

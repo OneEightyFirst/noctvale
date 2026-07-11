@@ -68,7 +68,7 @@ export function buildFighterWeaponRows(fighter, tradition = null, skilledCraftsm
     ...parseWeaponProfile(item, skilledCraftsman),
   }));
 
-  if (fighter.beastMark === "wolf" && (!tradition || tradition.id === "beastmen")) {
+  if (fighter.beastMark === "wolf" && (!tradition || tradition.id === "werebeasts")) {
     rows.unshift({ id: "fighting-claws", quantity: 1, ...FIGHTING_CLAWS_WEAPON });
   }
 

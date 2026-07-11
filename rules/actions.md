@@ -172,7 +172,7 @@ If the target is **Downed**, resolve a **Melee** attack against them. If the att
 
 **Cost:** 1 action + 1 Overwatch token
 
-Place this fighter on **Overwatch**. That fighter may perform any **1 action** as a reaction when an enemy fighter completes an action later in the round. The fighter's remaining action may be used before or after declaring Overwatch.
+Place this fighter on **Overwatch**. That fighter may perform any **1 action** as a reaction when an enemy fighter completes an action later in the round.
 
 *(See [Overwatch](the-turn.md#overwatch).)*
 
@@ -202,6 +202,7 @@ The dominant die type is whichever attribute the weapon adds more of (**Might** 
 Become **Hidden**.
 
 - Must be **within 1" of terrain**
+- Cannot be performed if this fighter performed a **Ranged** action earlier this activation
 
 While **Hidden**:
 

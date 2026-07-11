@@ -19,13 +19,14 @@ export function normalizeRetinue(data) {
   const retinue = {
     ...emptyRetinue(),
     ...data,
+    traditionId: data?.traditionId === "beastmen" ? "werebeasts" : (data?.traditionId ?? ""),
     retinueChoices: data?.retinueChoices ?? {},
     fighters: (data?.fighters ?? []).map(normalizeFighter),
   };
 
   const legacyBeastMark = retinue.retinueChoices.beastMark;
   const tradition = getTradition(retinue.traditionId);
-  if (!legacyBeastMark || tradition?.id !== "beastmen") return retinue;
+  if (!legacyBeastMark || tradition?.id !== "werebeasts") return retinue;
 
   const fighters = retinue.fighters.map((fighter) =>
     fighter.beastMark ? fighter : { ...fighter, beastMark: legacyBeastMark },

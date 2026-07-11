@@ -16,17 +16,15 @@ Heavy Armor is a net +1 die but shifts the pool Might-heavy at the cost of Skill
 
 ## Shields
 
-Shields **shift the tie rule in the defender's favor**. Each shield takes **1 weapon slot**.
+Shields modify the **Defense** (**Df**) threshold on specific dice in the defender's pool. Each shield takes **1 weapon slot**.
 
-By default, when blocks equal hits in a category the attacker wins the tie and one hit of that color gets through. A shield changes this:
+| Shield | Tier | Cost | Archetype cap | Defense bonus |
+|---|---|---|---|---|
+| Buckler | Light | 10 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | +1 Df on **1 Skill die** |
+| Shield | Medium | 25 | Hunters, Knights; **Cult** with **Magic Armor** | +1 Df on **1 Might die** |
+| Tower Shield | Heavy | 50 | Knights only; **Cult** with **Magic Armor** | +1 Df on **2 Might dice**; −1 Df on **1 Skill die** |
 
-| Shield | Tier | Cost | Archetype cap | Tie benefit | Notes |
-|---|---|---|---|---|---|
-| Buckler | Light | 10 | Folk, Hunters, Knights; **Cult** with **Magic Armor** | Defender wins Skill ties | Light, parrying |
-| Shield | Medium | 25 | Hunters, Knights; **Cult** with **Magic Armor** | Defender wins all ties | Standard defense |
-| Tower Shield | Heavy | 50 | Knights only; **Cult** with **Magic Armor** | Defender wins all ties; +1 Might die to defense pool | Heavy, full cover |
-
-Armor and shield effects **stack**. A fighter in Medium Armor with a Tower Shield rolls with +1 Might die from armor and +1 Might die from the Tower Shield, and wins all ties.
+Armor and shield effects **stack**.
 
 ---
 
@@ -44,7 +42,7 @@ Multiple **Wands** or duplicate **Wand** effects do not stack.
 
 | Item | Cost | Access | Notes |
 | ---- | ---- | ------ | ----- |
-| <span id="summoning-crystal"></span>Summoning Crystal | *(TBD)* | **Binders**; any **Caster** who knows a summoning spell | Assigned to a fighter; max **2** per fighter; see [Summoning](magic.md#summoning) |
+| <span id="summoning-crystal"></span>Summoning Crystal | 35 | **Binders**; any **Caster** who knows a summoning spell | Assigned to a fighter; max **2** per fighter; see [Summoning](magic.md#summoning) |
 
 ---
 

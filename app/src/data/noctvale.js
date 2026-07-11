@@ -143,7 +143,7 @@ export function getBuiltInFeatId(type) {
 }
 
 export function getBeastMarkOption(tradition, beastMarkId) {
-  if (tradition?.id !== "beastmen" || !beastMarkId) return null;
+  if (tradition?.id !== "werebeasts" || !beastMarkId) return null;
   return tradition.fighterChoice?.options.find((option) => option.id === beastMarkId) ?? null;
 }
 
@@ -301,8 +301,8 @@ export const TRADITIONS = [
     ],
   },
   {
-    id: "beastmen",
-    name: "Beastmen",
+    id: "werebeasts",
+    name: "Werebeasts",
     domain: "Nature",
     allowed: ["hunters", "cult"],
     fighterChoice: {
@@ -332,7 +332,7 @@ export const TRADITIONS = [
       ],
     },
     rules: [
-      "When recruiting a fighter with the Beastmen keyword, choose one beast-mark for that fighter: Wolf, Rat, Bear, or Serpent.",
+      "When recruiting a fighter with the Werebeast keyword, choose one beast-mark for that fighter: Wolf, Rat, Bear, or Serpent.",
       "Each such fighter costs +10 Crowns and gains its chosen mark's rule.",
     ],
   },
@@ -798,15 +798,16 @@ export const EQUIPMENT = [
   { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 25, slots: 1, rules: ["Requires Firearms domain feat; Mortal; forbids Caster. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
   { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 40, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3" blast, Single Shot, Impact.`] },
   { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 25, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 8+. 6" blast, Single Shot, Smoke.`] },
-  { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 1, rules: ["Light tier. Defender wins Skill ties."] },
-  { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 1, rules: ["Medium tier. Defender wins all ties."] },
-  { id: "tower-shield", name: "Tower Shield", kind: "armor", group: "Armor", armorRank: 3, cost: 50, slots: 1, rules: ["Heavy tier. Defender wins all ties. Adds +1 Might die to the defense pool."] },
+  { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 1, rules: ["Light tier. +1 Df on 1 Skill die."] },
+  { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 1, rules: ["Medium tier. +1 Df on 1 Might die."] },
+  { id: "tower-shield", name: "Tower Shield", kind: "armor", group: "Armor", armorRank: 3, cost: 50, slots: 1, rules: ["Heavy tier. +1 Df on 2 Might dice; −1 Df on 1 Skill die."] },
   { id: "light-armor", name: "Light Armor", kind: "armor", group: "Armor", armorRank: 1, cost: 50, slots: 0, rules: ["Adds +1 Skill die to the defense pool before rolling."] },
   { id: "medium-armor", name: "Medium Armor", kind: "armor", group: "Armor", armorRank: 2, cost: 115, slots: 0, rules: ["Adds +1 Might die to the defense pool before rolling."] },
   { id: "heavy-armor", name: "Heavy Armor", kind: "armor", group: "Armor", armorRank: 3, cost: 185, slots: 0, rules: ["Adds +2 Might dice and removes 1 Skill die from the defense pool before rolling."] },
   { id: "icon", name: "Icon", kind: "sphere", group: "Sphere of Influence", cost: 75, slots: 2, rules: [`Friendly fighters within 6" gain +1 Sa. Passive. Icon or Instrument.`] },
   { id: "instrument", name: "Instrument", kind: "sphere", group: "Sphere of Influence", cost: 65, slots: 2, rules: [`Friendly fighters within 6" gain +1" M. Requires 1 action per turn to activate. Icon or Instrument.`] },
   { id: "wand", name: "Wand", kind: "special", group: "Spellcasting gear", cost: 35, slots: 1, requiresKeyword: "Caster", rules: ["Fighter must have Caster.", "Gain +1 to hit when resolving an Attack spell.", "Multiple Wands or duplicate Wand effects do not stack."] },
+  { id: "summoning-crystal", name: "Summoning Crystal", kind: "special", group: "Summoning gear", cost: 35, slots: 0, rules: ["Binders or any Caster who knows a summoning spell only.", "Assigned to a fighter; max 2 per fighter.", "Consumed when spent during a summoning spell."] },
   { id: "rune-stones", name: "Rune-stones", kind: "special", group: "Runecasters", cost: 15, slots: 1, requiresTradition: "runecasters", rules: ["Fighters with the Runecasters keyword only. Once per battle after a fighter carrying Rune-stones makes an attribute check, roll to hit, defense roll, or casting roll, discard the Rune-stones to reroll one die from that roll. Must accept the second result. Remove after battle."] },
   { id: "silver", name: "Silver upgrade", kind: "upgrade", group: "Material upgrades", cost: 40, slots: 0, rules: ["Added to weapon cost. +1 CC or +1 RC vs fighters with Undead or Werebeast — whichever Hit attribute the weapon uses. Record which weapon is upgraded."] },
   { id: "adders-kiss", name: "Adder's Kiss", kind: "alchemy", group: "Alchemy", cost: 25, slots: 0, rules: ["Poison. +1 Sk to the weapon's strike pool. One poison per weapon."] },

@@ -18,6 +18,14 @@ Any random reward roll uses **2d6**.
 
 ---
 
+## Scavenging
+
+Fighters who were **Active** at the end of the battle may join the Survival Roll as scavengers. A fighter escorting a patient to the **Barber Surgeon** cannot scavenge.
+
+Start with a base pool of **2d6**. Each scavenging fighter adds **1d6** to the pool. Roll all dice, keep the **2 highest**, and read them as the 2d6 result on the chosen Survival table. Apply the **Reward Roll Rule** as normal — check for natural double 1s or double 6s before adding modifiers.
+
+---
+
 ## Survival Tables
 
 After scenario rewards, each retinue makes **1 Survival Roll**.

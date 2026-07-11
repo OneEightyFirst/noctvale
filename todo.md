@@ -76,10 +76,10 @@ files used to generate the static rules pages, in priority order.
 
 - [ ] Sync the app spell picker data in `app/src/data/noctvale.js` to canonical rules values where the rules now have difficulty, range, Mt, Sk, or Mishap values.
 - [ ] Finish the Infernal spell list — **Hellfire** is the standard attack spell; three spell slots and **Summon Daemon** binding limits still TBD.
-- [ ] Set the **Summoning Crystal** Crown cost in `rules/equipment.md`.
+- [x] Set the **Summoning Crystal** Crown cost in `rules/gear.md` — **35 Crowns**.
 - [ ] Write the **Vampire** ability list for the **Vampires** Tradition.
-- [ ] Set **Bone Blast** Mishap (last Blood spell gap).
-- [ ] Name the Infernal magic affliction in `background-notes.md` *(design context only — not player-facing)*.
+- [x] Set **Bone Blast** Mishap — caster gains **2 Affliction tokens** for 1d6 rounds.
+- [x] Name the Infernal magic affliction in `background-notes.md` — **Damned**.
 - [x] Domain × Archetype × Tradition table (`rules/retinue.md#domains`).
 
 ---
@@ -210,7 +210,6 @@ From fresh-eyes rules read-through and designer responses.
 - [ ] **Combat edge-case examples** — Add more worked examples like `rules/core-rules.md#example-combat` (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
 - [ ] **Feat placement** — Decide whether archetype feats live in archetype chapters or only in `#feats`, not both.
 - [ ] **Capture and ransom** — Post-battle capture effect; ransom cost; heirloom recovery (`Dynasts` mentions capture today with no procedure).
-- [ ] **Werebeast vs Beastmen keyword** — Silver / Silversbane target **Werebeast** today; consider **Beastmen** or a gender-neutral beast keyword.
 - [ ] **Shadow Market table** — Non-**Alchemists** retinues need a black-market procedure for alchemical weapons and consumables.
 - [x] **Daemon profiles** — Imp, Hellion, and Mauler done (`rules/retinue.md`); **Summon Daemon** binding limits still TBD.
 - [ ] **Daemon binding procedure** — Flesh out post-game binding attempt, success/failure, and roster limits (currently TBD in **Summon Daemon**).
@@ -221,10 +220,6 @@ From fresh-eyes rules read-through and designer responses.
 ### Campaign layer (from decision-log Ideas)
 
 - [ ] **Mid-campaign Caster** — **Feat** advancement path to gain **Caster** mid-campaign (retired **Keyword Advancement**).
-- [ ] **Campaign upkeep** — Decide whether retinue upkeep exists.
-- [ ] **Convalescent fighters** — How injured fighters interact with minimum retinue size.
-- [ ] **Downtime injury healing** — Whether campaign downtime can heal injuries.
-
 ### Terminology
 
 - [x] **Retinue** is the player's list-for-a-fight; **Faction** remains Archetype + Domain (see decision log 2026-05-28)
@@ -250,12 +245,17 @@ From fresh-eyes rules read-through and designer responses.
 
 ---
 
+### App cleanup
+
+- [ ] **Remove Werebeasts migration shim** — `normalizeRetinue` in `app/src/lib/retinue.js` remaps `traditionId: "beastmen"` → `"werebeasts"`. Remove after ~2026-07-14 once live retinues have been resaved. Added 2026-07-11.
+
+---
+
 ### Infernal Summoning (post-alpha)
 
-Daemons are pre-game summons exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). The summoning table (1d6) determines what appears, then a second roll determines the specific variant. **For alpha, daemons are recruited like any other retinue member — summoning tables are a post-alpha feature.**
+Daemons are exclusive to the Infernal domain. Three tiers: Imps (small, winged), Hellions (4-legged, wolf-like), Maulers (large, humanoid). **For alpha, daemons are recruited like any other retinue member — summoning tables are a post-alpha feature.**
 
-- [ ] Decide variant table size per tier (d6 vs d66 — fewer variants = fewer fighters to field)
-- [ ] Decide if variants are mechanically distinct attribute profiles or cosmetic with minor trait swaps
 - [x] Confirm all daemons share a **Daemon** keyword (for Radiant Strike +1 Mt vs Daemons)
 - [x] Decide if Imp wings have a mechanical fly rule or are visual only — **Fly** keyword and rule on Imp profile
-- [ ] Decide how many summon rolls a retinue gets (caster count? fixed? points budget?)
+- [x] No variant table per tier — each tier has one canonical profile. Scrapped earlier d6/d66 variant idea.
+- [x] No summon-roll limit beyond crystals and battle caps (2 Imps / 2 Hellions / 1 Mauler).

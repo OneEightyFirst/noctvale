@@ -81,7 +81,7 @@ Overwatch compensates for numerical disadvantage.
 >
 > **Start-of-round tokens:** At the start of the round, the player with the lower **activation count** receives **Overwatch tokens** equal to the shortfall. *(See [Activation Count](the-turn.md#activation-count).)*
 >
-> **Overwatch action:** During a fighter's activation, that fighter may spend **1 action** and **1 Overwatch token** to go on **Overwatch**. That fighter may later perform any **1 action** as a reaction when an enemy fighter completes an action. The fighter's remaining action may be used before or after declaring Overwatch.
+> **Overwatch action:** During a fighter's activation, that fighter may spend **1 action** and **1 Overwatch token** to go on **Overwatch**. That fighter may later perform any **1 action** as a reaction when an enemy fighter completes an action.
 >
 > **Reaction timing:** A fighter on **Overwatch** may react whenever an enemy fighter completes an action during the round — not only while both players still have activations left.
 >

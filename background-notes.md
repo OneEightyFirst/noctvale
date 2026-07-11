@@ -104,7 +104,7 @@ condition text lives in `rules/conditions.md` (**Afflictions**).
 | **Bleeding** | Blood |
 | **Affliction tokens** | Nature poisons, alchemy, and poisonous bites |
 | **Withered** | Necromancy |
-| *(TBD)* | Infernal |
+| **Damned** | Infernal |
 
 Arcane, Light, and Nature spells could potentially remove these conditions,
 creating a cleanse / debuff dynamic between magic categories.

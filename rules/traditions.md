@@ -12,7 +12,7 @@ Each Tradition grants one retinue-wide special rule. Tradition effects apply to 
 | **Light** | Crusaders, Paladins | Paladins, Luminaries | Crusaders, Penitents | Penitents, Luminaries |
 | **Arcane** | Spellblades, Sorcerers | Spellblades, Runecasters | Ritualists, Runecasters | Ritualists, Sorcerers |
 | **Infernal** | Hellknights, Damned | Hellknights, Binders | Diabolists, Damned | Diabolists, Binders |
-| **Nature** | Grove-keepers, Hedge-walkers | Beastmen, Hedge-walkers | Witches, Grove-keepers | Witches, Beastmen |
+| **Nature** | Grove-keepers, Hedge-walkers | Werebeasts, Hedge-walkers | Witches, Grove-keepers | Witches, Werebeasts |
 | **Necromancy** | Sepulchers, Wightlords | Bone-priests, Wightlords | Bell-keepers, Sepulchers | Bell-keepers, Bone-priests |
 | **Blood** | Vampires, Dynasts | Dynasts, Revelers | Revelers, Courtiers | Vampires, Courtiers |
 | **Mortal** | Constables, Ironbound | Zealots, Alchemists | Constables, Alchemists | — |
@@ -61,7 +61,7 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 **Grove-keepers:** After terrain is set, choose one terrain piece outside both deployment zones. Friendly fighters within **1"** of it add **+1** to **Recover** rolls.
 
-**Beastmen:** When you recruit a fighter with the **Beastmen** keyword, choose one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its chosen mark's rule.
+**Werebeasts:** When you recruit a fighter with the **Werebeast** keyword, choose one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its chosen mark's rule.
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee weapon: +2 **Might**, +1 **Skill**, Axe.
 

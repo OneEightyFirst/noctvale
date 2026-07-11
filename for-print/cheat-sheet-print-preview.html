@@ -11,8 +11,8 @@
     * { box-sizing: border-box; }
     body {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 8pt;
-      line-height: 1.25;
+      font-size: 7.5pt;
+      line-height: 1.2;
       color: #240f0f;
       margin: 0;
       padding: 0;
@@ -37,29 +37,31 @@
     }
     h2 {
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 10pt;
-      margin: 0.12in 0 0.06in;
+      font-size: 9pt;
+      margin: 0.08in 0 0.04in;
       break-after: avoid;
     }
     h3 {
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 9pt;
-      margin: 0.1in 0 0.04in;
+      font-size: 8.5pt;
+      margin: 0.07in 0 0.03in;
       break-after: avoid;
     }
-    p, ul { margin: 0 0 0.06in; }
+    p, ul { margin: 0 0 0.05in; }
     ul { padding-left: 1.1em; }
-    li { margin-bottom: 0.03in; }
+    li { margin-bottom: 0.02in; }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 7.5pt;
+      font-size: 7pt;
       margin: 0 0 0.08in;
+    }
+    tr {
       break-inside: avoid;
     }
     th, td {
       border: 1px solid #240f0f;
-      padding: 2px 4px;
+      padding: 1px 4px;
       vertical-align: top;
       text-align: left;
     }
@@ -73,6 +75,9 @@
     }
     .box h3 { margin-top: 0; font-size: 9pt; }
     .box p, .box ul { font-size: 7.5pt; }
+    .step { margin: 0 0 0.04in; }
+    .step-label { font-weight: bold; display: block; }
+    .crit-block { break-inside: avoid; }
     pre {
       font-size: 7.5pt;
       margin: 0.04in 0;
@@ -137,7 +142,7 @@
   <h2>Overwatch</h2>
   <ul>
     <li><strong>Start of round:</strong> Lower <strong>activation count</strong> player receives tokens equal to the difference between the two counts.</li>
-    <li><strong>Overwatch action:</strong> During a fighter's activation, spend <strong>1 action</strong> and <strong>1 Overwatch token</strong> to go on <strong>Overwatch</strong>. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy completes an action. Their remaining action may be used before or after declaring Overwatch.</li>
+    <li><strong>Overwatch action:</strong> During a fighter's activation, spend <strong>1 action</strong> and <strong>1 Overwatch token</strong> to go on <strong>Overwatch</strong>. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy completes an action.</li>
     <li><strong>Reaction timing:</strong> A fighter on <strong>Overwatch</strong> may react whenever an enemy completes an action during the round — even after you have run out of fighters to activate.</li>
     <li><strong>End of round:</strong> Remove unspent tokens.</li>
   </ul>
@@ -157,6 +162,32 @@
     <li><strong>Multiple enemies:</strong> Split Strike Pool among standing enemies; prioritize standing over <strong>Downed</strong>/<strong>Stunned</strong>.</li>
   </ul>
 
+  <h2>Conditions</h2>
+  <table>
+    <tr><th>Condition</th><th>Effect</th></tr>
+    <tr><td><strong>Affliction 1: Weakened</strong></td><td>−1 Might</td></tr>
+    <tr><td><strong>Affliction 2: Enfeebled</strong></td><td>−1 Might, −1 Skill</td></tr>
+    <tr><td><strong>Affliction 3: Withered</strong></td><td>−1 Might, −1 Skill, −1" Movement (max 3 tokens)</td></tr>
+    <tr><td><strong>Bleeding</strong></td><td>1 Wound on apply; <strong>Will</strong> check each activation to remove or suffer 1 Wound</td></tr>
+    <tr><td><strong>Blinded</strong></td><td>Cannot <strong>Melee</strong> or <strong>Ranged</strong> until end of next activation</td></tr>
+    <tr><td><strong>Broken</strong></td><td><strong>Will</strong> check: pass → remove, activate normally; fail → flee toward nearest battlefield edge both actions</td></tr>
+    <tr><td><strong>Fear</strong></td><td>Cannot move closer to source</td></tr>
+    <tr><td><strong>Panic</strong></td><td><strong>Fear</strong>, plus spend ≥1 action moving full <strong>Movement</strong> away</td></tr>
+    <tr><td><strong>Insanity</strong></td><td><strong>Sanity</strong> check failed — roll 1d6: 1 Frenzy · 2–3 Flee · 4–5 Freeze · 6 Berserk</td></tr>
+  </table>
+
+  <h2>Keywords</h2>
+  <table>
+    <tr><th>Keyword</th><th>Effect</th></tr>
+    <tr><td><strong>Caster</strong></td><td>Knows spells; may perform <strong>Cast</strong></td></tr>
+    <tr><td><strong>Large</strong></td><td>Cannot <strong>Hide</strong></td></tr>
+    <tr><td><strong>Swarm</strong></td><td>Sk = Wounds; enemies +1 Hit vs; no <strong>Downed</strong>/<strong>Stunned</strong> — 0 Wounds → <strong>Out of Action</strong></td></tr>
+    <tr><td><strong>Hidden</strong></td><td>Cannot be targeted by <strong>Ranged</strong>/<strong>Cast</strong> beyond 6"; lost on attack, charge, or moving within 6" of an enemy</td></tr>
+    <tr><td><strong>Fly</strong></td><td>Ignore vertical distance for <strong>Move</strong> and <strong>Jump</strong></td></tr>
+    <tr><td><strong>Fearless</strong></td><td>Immune to <strong>Fear</strong>, <strong>Panic</strong>, <strong>Insanity</strong>; +1 rout <strong>Will</strong> checks</td></tr>
+    <tr><td><strong>Undead</strong></td><td>Affected by silver weapons, <strong>Radiant Strike</strong>, and similar rules</td></tr>
+  </table>
+
   <h2>Actions</h2>
   <table>
     <tr><th>Action</th><th>Effect</th></tr>
@@ -172,7 +203,7 @@
     <tr><td><strong>Cast</strong></td><td><strong>Caster</strong> only — <strong>Casting Roll</strong></td></tr>
     <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged</strong> +1 dominant die; nat <strong>6</strong> = crit (<strong>5+</strong> if weapon already crit on <strong>6</strong>)</td></tr>
     <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong>; <strong>Downed</strong> enemy within <strong>1"</strong> → <strong>Melee</strong>, unblocked hit sends them <strong>Out of Action</strong>; blocked if any other <strong>Active</strong> or <strong>Downed</strong> enemy is in engagement range</td></tr>
-    <tr><td><strong>Overwatch</strong></td><td>Spend <strong>1 Overwatch token</strong> — react with <strong>1 action</strong> when an enemy completes an action; remaining action may be used before or after</td></tr>
+    <tr><td><strong>Overwatch</strong></td><td>Spend <strong>1 Overwatch token</strong> — react with <strong>1 action</strong> when an enemy completes an action</td></tr>
     <tr><td><strong>Brace</strong></td><td><strong>+1 Might defense die</strong> until next activation</td></tr>
     <tr><td><strong>Hide</strong></td><td><strong>Hidden</strong> within <strong>1"</strong> of terrain</td></tr>
     <tr><td><strong>Recover</strong></td><td><strong>Downed</strong> — roll <strong>1d6</strong> (see back)</td></tr>
@@ -188,11 +219,11 @@
 
   <div class="box">
     <h3>Attack Sequence</h3>
-    <p><strong>Step 1 — Build the Strike Pool:</strong> Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>, to a maximum of <strong>15 dice</strong>. Firearms and damage spells use a <strong>flat Strike Pool</strong> instead.</p>
-    <p><strong>Step 2 — Roll to hit:</strong> Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> attribute modifiers.</p>
-    <p><strong>Step 3 — Determine criticals:</strong> Weapon triangle, magic triangle, <strong>Aim</strong>, or firearms. Critical hits cannot be blocked.</p>
-    <p><strong>Step 4 — Roll defense:</strong> Build the pool: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor before rolling (Light +1 Sk, Medium +1 Mt, Heavy +2 Mt −1 Sk), plus bonuses. Roll all as <strong>Df</strong> checks. Attacker wins ties by color; a shield shifts ties to the defender.</p>
-    <p><strong>Step 5 — Apply Wounds</strong> (below).</p>
+    <p class="step"><span class="step-label">Step 1</span>Build the Strike Pool: Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>, max <strong>15 dice</strong>. Firearms and damage spells use a flat Strike Pool. <em>Dual wielding: add both weapons' +Mt and +Sk, max 15 dice; primary weapon's type and rules apply; no shield.</em></p>
+    <p class="step"><span class="step-label">Step 2</span>Roll to hit: Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> attribute modifiers.</p>
+    <p class="step"><span class="step-label">Step 3</span>Determine criticals: Weapon triangle, magic triangle, <strong>Aim</strong>, or firearms. Crits cannot be blocked except by natural 6s on defense dice.</p>
+    <p class="step"><span class="step-label">Step 4</span>Roll defense: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor before rolling (Light +1 Sk, Medium +1 Mt, Heavy +2 Mt −1 Sk), plus bonuses. Roll all as <strong>Defense</strong> checks.</p>
+    <p class="step"><span class="step-label">Step 5</span>Apply Wounds (below).</p>
   </div>
 
   <div class="box">
@@ -208,31 +239,33 @@
 
   <h2>Defense</h2>
   <ul>
-    <li><strong>Dual wielding:</strong> two one-handed melee weapons add both weapon profiles to the Strike Pool, max <strong>15 dice</strong>. Use only the primary weapon's type and special rules. No shield.</li>
     <li><strong>Might</strong> blocks <strong>Might hits</strong>; <strong>Skill</strong> blocks <strong>Skill hits</strong>.</li>
     <li><strong>2 Might</strong> may block <strong>1 Skill hit</strong>; <strong>2 Skill</strong> may block <strong>1 Might hit</strong>.</li>
     <li><strong>Cover:</strong> <strong>+1 Skill defense die</strong>.</li>
+    <li><strong>Ties:</strong> equal blocks and hits — attacker wins, 1 hit gets through.</li>
   </ul>
 
   <h2>Armor &amp; Shields</h2>
-  <p style="font-size:7.5pt;margin:0 0 0.04in">Armor adds dice to the pool <strong>before rolling</strong>. Shields change who wins ties. Effects stack. <strong>Ties:</strong> when blocks = hits in a color category, attacker wins — 1 hit gets through.</p>
+  <p style="font-size:7.5pt;margin:0 0 0.04in">Armor adds dice to the pool <strong>before rolling</strong>. Shields change who wins ties. Effects stack.</p>
   <table>
     <tr><th>Gear</th><th>Effect</th></tr>
     <tr><td>Light Armor</td><td>+1 Skill die</td></tr>
     <tr><td>Medium Armor</td><td>+1 Might die</td></tr>
     <tr><td>Heavy Armor</td><td>+2 Might dice, −1 Skill die</td></tr>
-    <tr><td>Buckler</td><td>Defender wins <strong>Skill</strong> ties</td></tr>
-    <tr><td>Shield</td><td>Defender wins <strong>all</strong> ties</td></tr>
-    <tr><td>Tower Shield</td><td>Defender wins <strong>all</strong> ties; +1 Might die</td></tr>
+    <tr><td>Buckler</td><td>+1 Df on 1 Skill die</td></tr>
+    <tr><td>Shield</td><td>+1 Df on 1 Might die</td></tr>
+    <tr><td>Tower Shield</td><td>+1 Df on 2 Might dice; −1 Df on 1 Skill die</td></tr>
   </table>
 
-  <h2>Critical Hits</h2>
-  <p>A natural <strong>6</strong> in the Strike Pool is a critical hit only when the attacker has triangle advantage over the defender — weapon triangle in melee, magic triangle on spell attacks. Firearms crit against all targets. <strong>Aim</strong> adds crit on 6 to non-firearm ranged weapons, or improves an existing crit threshold to <strong>5+</strong>. Crits cannot be blocked. All other 6s are normal hits.</p>
-  <div class="triangles">
-    <img class="triangle-melee" src="../app/public/images/melee-triangle.svg" alt="Melee weapon triangle">
-    <div class="triangle-magic">
-      <img src="../app/public/images/mystical-triangle.svg" alt="Mystic magic triangle">
-      <img src="../app/public/images/natural-triangle.svg" alt="Natural magic triangle">
+  <div class="crit-block">
+    <h2>Critical Hits</h2>
+    <p>Natural <strong>6</strong> = crit when attacker has triangle advantage — weapon triangle in melee, magic triangle on spells. Firearms crit vs all. <strong>Aim</strong> adds crit on 6 to non-firearm ranged, or improves threshold to <strong>5+</strong>. All other 6s are normal hits.</p>
+    <div class="triangles">
+      <img class="triangle-melee" src="../app/public/images/melee-triangle.svg" alt="Melee weapon triangle">
+      <div class="triangle-magic">
+        <img src="../app/public/images/mystical-triangle.svg" alt="Mystic magic triangle">
+        <img src="../app/public/images/natural-triangle.svg" alt="Natural magic triangle">
+      </div>
     </div>
   </div>
 
@@ -251,7 +284,7 @@
     <tr><th>Result</th><th>Effect</th></tr>
     <tr><td><strong>Double 1s</strong></td><td><strong>Mishap</strong></td></tr>
     <tr><td>Below difficulty</td><td>Fizzles; action spent</td></tr>
-    <tr><td>Meets or exceeds</td><td><strong>Attack Sequence</strong></td></tr>
+    <tr><td>Meets or exceeds</td><td><strong>Success</strong></td></tr>
   </table>
 
   <h2>Primer Roll (2d6 + Skill)</h2>
@@ -259,43 +292,17 @@
     <tr><th>Result</th><th>Effect</th></tr>
     <tr><td><strong>Double 1s</strong></td><td><strong>Misfire</strong></td></tr>
     <tr><td>Below difficulty</td><td>Fails to fire</td></tr>
-    <tr><td>Meets or exceeds</td><td><strong>Attack Sequence</strong></td></tr>
+    <tr><td>Meets or exceeds</td><td><strong>Success</strong></td></tr>
   </table>
 
   <h2>Wound States</h2>
-  <p>Exact takedowns become <strong>Downed</strong>. Overkill and <strong>Impact</strong> weapons become <strong>Stunned</strong>.</p>
+  <p>Wounds reduced to <strong>0</strong> → <strong>Downed</strong>. Wounds reduced below <strong>0</strong> → <strong>Stunned</strong>.</p>
   <table>
     <tr><th>Roll</th><th>Recover (1d6)</th><th>Help (1d6)</th></tr>
     <tr><td>1</td><td><strong>Stunned</strong></td><td>Target <strong>Out of Action</strong></td></tr>
     <tr><td>2–3</td><td>Stay <strong>Downed</strong></td><td>No effect</td></tr>
     <tr><td>4–5</td><td>Stand with <strong>1 Wound</strong></td><td>Target becomes <strong>Downed</strong></td></tr>
     <tr><td>6</td><td>Stand with <strong>1 Wound</strong> + 1 action</td><td>Target stands with <strong>1 Wound</strong></td></tr>
-  </table>
-
-  <h2>Conditions</h2>
-  <table>
-    <tr><th>Condition</th><th>Effect</th></tr>
-    <tr><td><strong>Affliction 1: Weakened</strong></td><td>−1 Might</td></tr>
-    <tr><td><strong>Affliction 2: Enfeebled</strong></td><td>−1 Might, −1 Skill</td></tr>
-    <tr><td><strong>Affliction 3: Withered</strong></td><td>−1 Might, −1 Skill, −1" Movement</td></tr>
-    <tr><td><strong>Bleeding</strong></td><td>1 Wound; Will each activation</td></tr>
-    <tr><td><strong>Blinded</strong></td><td>No Melee/Ranged</td></tr>
-    <tr><td><strong>Broken</strong></td><td>Will check or flee toward nearest edge</td></tr>
-    <tr><td><strong>Fear / Panic</strong></td><td>Cannot close; Panic flees</td></tr>
-    <tr><td><strong>Insanity</strong></td><td>Roll 1d6 table</td></tr>
-  </table>
-
-  <h2>Keywords</h2>
-  <table>
-    <tr><th>Keyword</th><th>Effect</th></tr>
-    <tr><td><strong>Caster</strong></td><td>Spells; <strong>Cast</strong> action</td></tr>
-    <tr><td><strong>Large</strong></td><td>Cannot <strong>Hide</strong></td></tr>
-    <tr><td><strong>Swarm</strong></td><td>Sk = Wounds; +1 Hit vs; no Downed/Stunned</td></tr>
-    <tr><td><strong>Summon</strong></td><td>Duration per value</td></tr>
-    <tr><td><strong>Hidden</strong></td><td>Not targeted Ranged/Cast &gt; 6"</td></tr>
-    <tr><td><strong>Fly</strong></td><td>Ignore vertical for Move/Jump</td></tr>
-    <tr><td><strong>Fearless</strong></td><td>Immune Fear/Panic/Insanity; +1 rout</td></tr>
-    <tr><td><strong>Undead</strong></td><td>Silver, Radiant Strike, etc.</td></tr>
   </table>
 
   <div class="footer">Combat &amp; Conditions</div>

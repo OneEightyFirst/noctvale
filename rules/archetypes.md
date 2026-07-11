@@ -188,7 +188,7 @@ Named factions are optional presets — example **Archetype** + **Domain** pairi
 
 #### Nightpack
 
-**Domain:** Nature · **Tradition:** Beastmen
+**Domain:** Nature · **Tradition:** Werebeasts
 
 *Tunnel-haunting packs and knife-bearing raiders rumored to move beneath the cities. During the long war, their chittering voices, sewer paths, and blades in the dark became a terror of every walled settlement.*
 
