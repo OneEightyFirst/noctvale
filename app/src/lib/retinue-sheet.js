@@ -8,6 +8,7 @@ import {
   STAT_KEYS,
   TRADITIONS,
   UNIVERSAL_FEATS,
+  fighterHasCaster,
   getBeastMarkOption,
   getBeastMarkDisplayRules,
   getBuiltInFeatId,
@@ -89,10 +90,7 @@ function getOneHandedMeleeWeaponCount(fighter) {
 function getDualWieldingRules(fighter) {
   if (getOneHandedMeleeWeaponCount(fighter) < 2) return [];
   return [
-    "Dual wielding: choose a primary and secondary one-handed melee weapon.",
-    "Add both weapons' +Mt and +Sk to the Strike Pool, to a maximum of 15 dice.",
-    "Use only the primary weapon's type and special rules. The secondary weapon adds dice only.",
-    "A fighter cannot use a shield while dual-wielding.",
+    "Choose a primary and secondary weapon. Add both weapons' +Mt and +Sk to the Strike Pool, max 15 dice. Use only the primary weapon's type and special rules. Cannot use a shield while dual-wielding.",
   ];
 }
 

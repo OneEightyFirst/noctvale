@@ -217,10 +217,6 @@ function renderFighterHtml(fighter) {
     sections.push(renderWeaponTableHtml(fighter.weapons));
   }
 
-  if (fighter.dualWieldingRules.length) {
-    sections.push(`<div class="block"><strong>Dual wield</strong>${renderRulesList(fighter.dualWieldingRules)}</div>`);
-  }
-
   for (const feat of fighter.ruleFeats) {
     sections.push(`<div class="block"><strong>${escapeHtml(feat.name)}</strong>${renderRulesList(feat.rules)}</div>`);
   }
@@ -243,7 +239,6 @@ function renderFighterHtml(fighter) {
   }
 
   if (fighter.equipment.length) {
-    sections.push("<h3>Gear</h3>");
     for (const item of fighter.equipment) {
       sections.push(
         `<div class="block"><strong>${escapeHtml(item.name)} ×${item.quantity}</strong>${renderRulesList(item.rules)}</div>`,
@@ -270,8 +265,10 @@ export function buildRetinuePrintHtml(data) {
     .map((block) => `<div class="block"><strong>${escapeHtml(block.title)}</strong>${renderRulesList(block.rules)}</div>`)
     .join("");
 
+  const leftCol = sheet.fighters.filter((_, i) => i % 2 === 0).map(renderFighterHtml).join("");
+  const rightCol = sheet.fighters.filter((_, i) => i % 2 === 1).map(renderFighterHtml).join("");
   const fighters = sheet.fighters.length
-    ? `<div class="roster">${sheet.fighters.map(renderFighterHtml).join("")}</div>`
+    ? `<table class="roster"><tr><td class="roster-col">${leftCol}</td><td class="roster-col">${rightCol}</td></tr></table>`
     : "";
 
   return `<!DOCTYPE html>
@@ -295,9 +292,20 @@ export function buildRetinuePrintHtml(data) {
       background: #fff;
     }
     header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem 1rem;
+      align-items: start;
       margin-bottom: 0.5rem;
       padding-bottom: 0.35rem;
       border-bottom: 1px solid #999;
+    }
+    .header-left {
+      min-width: 0;
+    }
+    .header-right {
+      border-left: 1px solid #ccc;
+      padding-left: 0.75rem;
     }
     h1, h2, h3 {
       margin: 0;
@@ -399,25 +407,29 @@ export function buildRetinuePrintHtml(data) {
       margin-top: 0.1rem;
     }
     .roster {
-      column-count: 2;
-      column-gap: 0.35rem;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0.35rem 0;
+      table-layout: fixed;
+    }
+    .roster-col {
+      width: 50%;
+      vertical-align: top;
+      padding: 0;
     }
     .fighter {
       border: 1px solid #333;
       padding: 0.35rem 0.4rem;
       margin-bottom: 0.35rem;
-      display: inline-block;
-      width: 100%;
       break-inside: avoid;
       page-break-inside: avoid;
-      -webkit-column-break-inside: avoid;
     }
     @media print {
       body {
         padding: 0.35in;
       }
       .roster {
-        column-gap: 0.3rem;
+        border-spacing: 0.3rem 0;
       }
       .fighter {
         margin-bottom: 0.3rem;
@@ -427,11 +439,13 @@ export function buildRetinuePrintHtml(data) {
 </head>
 <body>
   <header>
-    <h1>${escapeHtml(sheet.name)}</h1>
-    ${identity ? `<p class="identity">${identity}</p>` : ""}
-    ${sheet.specialChoice?.name ? `<p class="identity">${escapeHtml(sheet.specialChoice.label)}: ${escapeHtml(sheet.specialChoice.name)}</p>` : ""}
-    ${sheet.tradition ? `<p class="budget">Budget: ${sheet.totalCost}c / ${sheet.budget}c</p>` : ""}
-    ${retinueRules}
+    <div class="header-left">
+      <h1>${escapeHtml(sheet.name)}</h1>
+      ${identity ? `<p class="identity">${identity}</p>` : ""}
+      ${sheet.specialChoice?.name ? `<p class="identity">${escapeHtml(sheet.specialChoice.label)}: ${escapeHtml(sheet.specialChoice.name)}</p>` : ""}
+      ${sheet.tradition ? `<p class="budget">Budget: ${sheet.totalCost}c / ${sheet.budget}c</p>` : ""}
+    </div>
+    ${retinueRules ? `<div class="header-right">${retinueRules}</div>` : ""}
   </header>
   ${fighters}
 </body>
@@ -446,41 +460,33 @@ export async function copyRetinueToClipboard(data) {
 
 export function printRetinue(data) {
   const html = buildRetinuePrintHtml(data);
+  const blob = new Blob([html], { type: "text/html" });
+  const url = URL.createObjectURL(blob);
 
   const iframe = document.createElement("iframe");
   iframe.setAttribute("title", "Retinue print preview");
   iframe.setAttribute("aria-hidden", "true");
   iframe.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0;";
-  document.body.appendChild(iframe);
-
-  const printWindow = iframe.contentWindow;
-  const doc = printWindow?.document;
-  if (!doc) {
-    iframe.remove();
-    return false;
-  }
-
-  doc.open();
-  doc.write(html);
-  doc.close();
 
   const cleanup = () => {
     iframe.remove();
+    URL.revokeObjectURL(url);
   };
 
-  printWindow.addEventListener("afterprint", cleanup, { once: true });
-  window.setTimeout(cleanup, 60_000);
-
-  const triggerPrint = () => {
+  iframe.addEventListener("load", () => {
+    const printWindow = iframe.contentWindow;
+    if (!printWindow) {
+      cleanup();
+      return;
+    }
+    printWindow.addEventListener("afterprint", cleanup, { once: true });
+    window.setTimeout(cleanup, 60_000);
     printWindow.focus();
     printWindow.print();
-  };
+  }, { once: true });
 
-  if (doc.readyState === "complete") {
-    triggerPrint();
-  } else {
-    printWindow.addEventListener("load", triggerPrint, { once: true });
-  }
+  iframe.src = url;
+  document.body.appendChild(iframe);
 
   return true;
 }
