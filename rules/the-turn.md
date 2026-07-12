@@ -20,11 +20,11 @@ After initiative is determined, that player gains **Overwatch tokens** equal to 
 
 Starting with the player who has initiative, players take turns activating **one fighter at a time**.
 
-When a fighter activates, they may perform **2 actions** chosen from the action list. Actions may be taken in any combination and in any order.
+When a fighter activates, they may perform **2 actions** selected from the action list. Actions may be taken in any combination and in any order.
 
 After a fighter's activation is complete, the other player activates one of their fighters, and so on.
 
-Only fighters who can activate may be chosen. **Stunned**, **Out of Action**, and **Escaped** fighters cannot be chosen.
+Only fighters who can activate may be selected. **Stunned**, **Out of Action**, and **Escaped** fighters cannot be selected.
 
 If a **Stunned** fighter becomes **Active** during the round before their player has finished activating fighters, they may activate later this round with **1 action**. If they become **Downed** instead, they may activate later this round, but only to **Recover**. Do not recalculate initiative or **Overwatch tokens**.
 

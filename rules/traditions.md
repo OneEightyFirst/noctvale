@@ -1,6 +1,6 @@
 # Traditions
 
-After you choose **Archetype**, choose **one Tradition** for the whole retinue. Every fighter gains that **Tradition** keyword and the matching **Domain** keyword.
+After you select your **Archetype**, select **one Tradition** for the whole retinue. Every fighter gains that **Tradition** keyword and the matching **Domain** keyword.
 
 Each Tradition grants one retinue-wide special rule. Tradition effects apply to fighters with that **Tradition** keyword unless the rule says otherwise.
 
@@ -27,7 +27,7 @@ Each Tradition grants one retinue-wide special rule. Tradition effects apply to 
 
 **Penitents:** While a friendly fighter has fewer than their starting Wounds, they gain +1" **Movement**.
 
-**Luminaries:** At the start of each round, choose one enemy fighter within line of sight of any friendly fighter. That enemy loses **Hidden**.
+**Luminaries:** At the start of each round, select one enemy fighter within line of sight of any friendly fighter. That enemy loses **Hidden**.
 
 ### Arcane
 
@@ -41,7 +41,7 @@ Each Tradition grants one retinue-wide special rule. Tradition effects apply to 
 
 **Runecasters:** Fighters with the **Runecasters** keyword may buy Rune-stones for **15 Crowns**.
 
-Rune-stones take 1 weapon slot. Once per battle, after a fighter carrying Rune-stones makes an attribute check, rolls to hit, rolls defense dice, or makes a **casting roll**, they may discard the Rune-stones to reroll **one die** from that roll. They must accept the second result. Remove the Rune-stones from the roster after the battle.
+Rune-stones take 1 kit. Once per battle, after a fighter carrying Rune-stones makes an attribute check, rolls to hit, rolls defense dice, or makes a **casting roll**, they may discard the Rune-stones to reroll **one die** from that roll. They must accept the second result. Remove the Rune-stones from the roster after the battle.
 
 ### Infernal
 
@@ -59,11 +59,11 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 **Witches:** Once per round, when an enemy fighter within **12"** of a friendly **Caster** makes an attribute check or **casting roll**, subtract **1** from that roll.
 
-**Grove-keepers:** After terrain is set, choose one terrain piece outside both deployment zones. Friendly fighters within **1"** of it add **+1** to **Recover** rolls.
+**Grove-keepers:** After terrain is set, select one terrain piece outside both deployment zones. Friendly fighters within **1"** of it add **+1** to **Recover** rolls.
 
-**Werebeasts:** When you recruit a fighter with the **Werebeast** keyword, choose one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its chosen mark's rule.
+**Werebeasts:** When you recruit a fighter with the **Werebeast** keyword, select one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its selected mark's rule.
 
-**Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a 0-slot melee weapon: +2 **Might**, +1 **Skill**, Axe.
+**Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a free melee weapon (no kit cost): +2 **Might**, +1 **Skill**, Axe.
 
 **Rat:** Fighters may carry 1 additional one-handed weapon. This extra weapon cannot be a shield, firearm, bomb, or two-handed weapon.
 
@@ -107,11 +107,11 @@ After the battle, roll on the Casualty Table for the original fighter as normal.
 
 **Vampires:** At roster creation, each fighter with **Leader**, **Elite**, or **Specialist** gains the **Vampire** keyword and costs **+20 Crowns**. Fighters with **Rank** do not gain **Vampire**. A fighter with **Vampire** counts as **Undead** for any rule that checks **Undead** (silver weapons, **Radiant Strike**, and similar). Each fighter with **Vampire** chooses **1** vampire ability *(list TBD — record on the roster sheet)*. When a fighter with **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay **2 XP** more than the normal cost to buy each post-game advancement — **Feat** **5**, **Attribute** **10** (see [Spending XP — Advancement Rolls](advancement.md#spending-xp-advancement-rolls)).
 
-**Dynasts:** At roster creation, choose up to 3 melee weapons in this retinue to be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
+**Dynasts:** At roster creation, select up to 3 melee weapons in this retinue to be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
 
 When a fighter attacks with an heirloom weapon, add +1 **Close Combat** to that **Melee** attack.
 
-If a fighter carrying an heirloom weapon is **Slain**, the weapon passes to the friendly fighter in the retinue with the highest **Might**. If there is a tie, choose one tied fighter.
+If a fighter carrying an heirloom weapon is **Slain**, the weapon passes to the friendly fighter in the retinue with the highest **Might**. If there is a tie, select one tied fighter.
 
 If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps the heirloom weapon but cannot use it. If the original retinue ransoms the captured fighter, add **+10 Crowns** to the ransom cost to recover the heirloom weapon.
 

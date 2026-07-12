@@ -93,7 +93,7 @@ Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics
 ## Step 6: Economy
 
 1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
-2. Sell **any Relics you choose to sell** for Crowns ([Selling Relics](#selling-relics)).
+2. Sell **any Relics you wish to sell** for Crowns ([Selling Relics](#selling-relics)).
 3. Recruit fighters and buy gear. Update **Roster Cost** on the roster sheet.
 4. Optionally, send fighters to the **Barber Surgeon** (see [Barber Surgeon](#barber-surgeon)).
 
@@ -125,6 +125,6 @@ After the Economy step, award **Experience** in three passes (see [Earning XP](#
 2. **Scenario** — as written in the scenario *(including for fighters later removed as **Slain**)*
 3. **Post-game** — **Hardy**, **Miraculous**, and any Survival Roll or scenario result that grants Experience to a named fighter *(not **Slain**)*
 
-Spend XP on **Advancement** rolls if you choose (see [Leveling and Advancement](#leveling-and-advancement)).
+Optionally spend XP on **Advancement** rolls (see [Leveling and Advancement](#leveling-and-advancement)).
 
 ---

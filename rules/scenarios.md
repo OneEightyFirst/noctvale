@@ -126,7 +126,7 @@ The player with fewer activations in their retinue has initiative. If both playe
 
 The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
 
-The two battlefield edges not chosen as deployment edges are the possible forest edges.
+The two battlefield edges not selected as deployment edges are the possible forest edges.
 
 Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
 

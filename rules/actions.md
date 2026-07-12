@@ -161,13 +161,13 @@ If the target is **Downed**, resolve a **Melee** attack against them. If the att
 
 Choose an enemy fighter within engagement range of this fighter.
 
-Make an **opposed check** — the attacker chooses **Might** or **Skill**. If the target is **Stunned**, the attacker wins automatically without rolling. Against a **Downed** target, the attacker wins tied totals.
+Make an **opposed check** — the attacker selects **Might** or **Skill**. If the target is **Stunned**, the attacker wins automatically without rolling. Against a **Downed** target, the attacker wins tied totals.
 
 > ### Opposed Check
 >
-> Each fighter rolls **1d6** and adds their value in the chosen attribute. The fighter with the higher total wins. On a tied total, the defender wins.
+> Each fighter rolls **1d6** and adds their value in the selected attribute. The fighter with the higher total wins. On a tied total, the defender wins.
 
-- **Attacker wins:** Move the chosen fighter up to this fighter's **Might** in inches in a direction you choose.
+- **Attacker wins:** Move the selected fighter up to this fighter's **Might** in inches in a direction you select.
   - If the target was **Active** or **Downed**, they become **Stunned** after moving. A **Stunned** target remains **Stunned**.
   - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at **2 Might / 1 Skill**. If the collision involves another fighter's base, that fighter also suffers the same hit and becomes **Stunned**.
 - **Defender wins:** No effect.
@@ -178,7 +178,7 @@ Resolve each hit using the **Attack Sequence**.
 >
 > When a fighter is attacking multiple enemies:
 >
-> - If the enemies are standing, the attacker splits their **Strike Pool** among those enemies however they choose before rolling to hit.
+> - If the enemies are standing, the attacker splits their **Strike Pool** among those enemies however they like before rolling to hit.
 > - If one enemy is standing and another is **Downed** or **Stunned**, the **standing enemy must be prioritized**.
 >
 > **Gang Up**
@@ -212,7 +212,7 @@ Prepare a careful shot for this fighter's next **Ranged** action this activation
 - Gain **+1 die of the weapon's dominant die type**
 - **Natural 6** results are critical hits on that **Ranged** action. If that **Ranged** weapon already had a critical hit on **6**, increase it to **5+**
 
-The dominant die type is whichever attribute the weapon adds more of (**Might** or **Skill**). If tied, choose **Might dice** or **Skill dice**.
+The dominant die type is whichever attribute the weapon adds more of (**Might** or **Skill**). If tied, select **Might dice** or **Skill dice**.
 
 ### Hide
 

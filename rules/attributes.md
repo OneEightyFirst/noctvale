@@ -46,11 +46,11 @@ When a rule asks you to make an attribute check, it names the attribute being te
 
 In campaign play, no attribute can be raised above **6**. If an attribute is reduced to **1**, the fighter can no longer perform actions that require that attribute. They are maimed or broken — or they have gone mad.
 
-**Rerolls:** A die can only be rerolled once. If more than one rule allows a reroll, choose one; the second result stands.
+**Rerolls:** A die can only be rerolled once. If more than one rule allows a reroll, select one; the second result stands.
 
 ## Baseline Ancestry Profiles
 
-Noctvale is full of fighters of every shape, size, and ancestry. Before the Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities and towns gathered the diversity of many peoples living peaceably together. Use these profiles to represent fighters from different backgrounds and ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk; **Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves, Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or other short, quick folk. Your retinue is yours to build; choose the profile that represents the fighter you put on the battlefield.
+Noctvale is full of fighters of every shape, size, and ancestry. Before the Fall, Valecoria came as close to a utopia as any kingdom had seen: its cities and towns gathered the diversity of many peoples living peaceably together. Use these profiles to represent fighters from different backgrounds and ancestries. **Steady** can describe Humans, Half-Elves, or other grounded folk; **Keen** fits Elves and other sharp, graceful lineages; **Stout** fits Dwarves, Orcs, or other powerful frames; **Stunty** fits Halflings, Goblins, Gnomes, or other short, quick folk. Your retinue is yours to build; select the profile that represents the fighter you put on the battlefield.
 
 
 | Ancestry profile | M   | CC  | RC  | Mt  | Sk  | Df  | Wi  | Sa  | W   |

@@ -16,7 +16,7 @@ Heavy Armor is a net +1 die but shifts the pool Might-heavy at the cost of Skill
 
 ## Shields
 
-Shields modify the **Defense** (**Df**) threshold on specific dice in the defender's pool. Each shield takes **1 weapon slot**.
+Shields modify the **Defense** (**Df**) threshold on specific dice in the defender's pool. Each shield takes **1 kit**.
 
 | Shield | Tier | Cost | Archetype cap | Defense bonus |
 |---|---|---|---|---|
@@ -30,7 +30,7 @@ Armor and shield effects **stack**.
 
 ## Spellcasting gear
 
-| Item | Slots | Cost | Access | Effect |
+| Item | Kit | Cost | Access | Effect |
 | ---- | ----- | ---- | ------ | ------ |
 | <span id="wand"></span>Wand | 1 | 35 | **Caster** | +1 to hit when resolving an **Attack** spell |
 
@@ -48,7 +48,7 @@ Multiple **Wands** or duplicate **Wand** effects do not stack.
 
 ## Adventuring gear
 
-Permanent gear any fighter may carry. Adventuring gear does not use weapon slots.
+Permanent gear any fighter may carry. Adventuring gear does not use kit.
 
 | Item | Cost | Notes |
 | ---- | ---- | ----- |
@@ -65,14 +65,14 @@ Some equipment and **Companions** project a passive effect in an area around the
 - The effect applies to all valid targets (friendly or enemy, as noted) **within the stated range**, measured from the bearer's or **Companion**'s base.
 - The bearer **is affected** by their own **Sphere of Influence**.
 - **Spheres of Influence** **do not require line of sight** — they represent presence, sound, or proximity, not vision.
-- The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions skip **Downed** and **Stunned** — see [Companions](companions.md#companions).)*
+- The source must be **Active** — **Spheres of Influence** are suppressed while the bearer or **Companion** is **Downed**, **Stunned**, or **Out of Action**. *(Companions flee instead of becoming **Downed** or **Stunned** — see [Companions](companions.md#companions).)*
 - **Spheres of Influence** from the same item or **Companion** type **do not stack**. If two friendly fighters carry **Icons**, a fighter within range of both still receives only +1 **Sanity**.
 
 ### Icon and Instrument
 
-**Icon** and **Instrument** are **permanent** (not consumed between games). Each item takes weapon slots as noted. They are roster gear — not a campaign **Relic** recovered in scenarios.
+**Icon** and **Instrument** are **permanent** (not consumed between games). Each item takes kit as noted. They are roster gear — not a campaign **Relic** recovered in scenarios.
 
-| Item | Slots | Cost | Effect (friendly) | Range | Notes |
+| Item | Kit | Cost | Effect (friendly) | Range | Notes |
 |---|---|---|---|---|---|
 | Icon | 2 | 75 | +1 Sa | 6" | Passive |
 | Instrument | 2 | 65 | +1" M | 6" | Requires 1 action to activate each turn |

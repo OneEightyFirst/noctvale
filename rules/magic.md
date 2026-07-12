@@ -60,7 +60,7 @@ Nature > Necromancy > Blood > Nature
 
 ### Spell selection
 
-Fighters with **Caster** choose spells from the list matching their **Domain** keyword. Count depends on role:
+Fighters with **Caster** select spells from the list matching their **Domain** keyword. Count depends on role:
 
 - **Leader** with **Caster** (Lord, Captain, Mayor) or **Theurge:** **2** spells
 - **Adept** with **Caster:** **1** spell
@@ -103,7 +103,7 @@ Each domain has a standard spell plus **6 additional spells**. **Casting attribu
 **Casting:** **Will** 11+. **Range:** Self. The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
 
 #### Fireball
-**Casting:** **Will** 13+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Choose a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the chosen point. **Mishap:** The blast template centers on the caster.
+**Casting:** **Will** 13+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Select a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the selected point. **Mishap:** The blast template centers on the caster.
 
 #### Telekinesis
 **Casting:** **Will** 12+. **Range:** 12". Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check. **Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
@@ -139,9 +139,9 @@ Daemons cannot be recruited normally. They enter battle through **Summon Daemon*
 
 A **4-crystal** summon requires **2** crystal-bearing fighters.
 
-After **Summon Daemon** is successfully cast, choose one or two **Active** friendly fighters within **3"** of the caster. The chosen fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Those fighters are taken **Out of Action** and removed from the battle. Spend the crystals, and roll **2d6** on the **Summon Result** table.
+After **Summon Daemon** is successfully cast, select one or two **Active** friendly fighters within **3"** of the caster. The selected fighters must be carrying enough **Summoning Crystals** to pay the crystal cost. Those fighters are taken **Out of Action** and removed from the battle. Spend the crystals, and roll **2d6** on the **Summon Result** table.
 
-Place the created fighter where one sacrificed fighter stood. If two fighters were sacrificed, choose either sacrificed fighter's position. If the created fighter's base cannot fit, place it as close as possible to that position.
+Place the created fighter where one sacrificed fighter stood. If two fighters were sacrificed, select either sacrificed fighter's position. If the created fighter's base cannot fit, place it as close as possible to that position.
 
 The summon result is separate from the **casting roll**. Double 1s and double 6s on the summon result use the table below.
 
@@ -251,7 +251,7 @@ At the end of each of that fighter's activations while **Possessed**, they make 
 **Casting:** **Sanity** 11+. **Range:** 12". Choose a point within **12"**. Place a **5" blast template** centered on that point. The template cannot overlap any fighter's base. The template counts as **impassable terrain** for the rest of the battle. **Mishap:** The **Hellmouth** opens centered on the caster instead.
 
 #### Searing Gaze
-**Casting:** **Sanity** 12+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +3 **Skill**. Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you choose. Every fighter the line touches that is in **line of sight** of the caster is hit. **Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](conditions.md#blinded).
+**Casting:** **Sanity** 12+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +3 **Skill**. Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you select. Every fighter the line touches that is in **line of sight** of the caster is hit. **Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](conditions.md#blinded).
 
 #### Nightmare Visage
 **Casting:** **Sanity** 11+. **Range:** 12". Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends.
@@ -366,7 +366,7 @@ Cannot be bound.
 **Mishap:** The **Bats** appear hostile. Your opponent controls them for their activation, then remove them from the battle.
 
 #### Enthrall
-**Casting:** **Sanity** 11+. **Range:** 8". Target enemy must pass a **Will** check or immediately take one **Move** action in a direction chosen by the caster. **Mishap:** A friendly fighter chosen by your opponent takes the move instead.
+**Casting:** **Sanity** 11+. **Range:** 8". Target enemy must pass a **Will** check or immediately take one **Move** action in a direction selected by the caster. **Mishap:** A friendly fighter selected by your opponent takes the move instead.
 
 #### Feast of Excess
 **Casting:** **Sanity** 11+. **Range:** 12". Target friendly fighter gains +1 **Might**, +1 **Skill**, and +1" **Movement**. When the effect ends, the target becomes **Stunned**. They keep their Wounds. **Mishap:** The target becomes **Stunned**.

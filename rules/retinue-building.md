@@ -1,21 +1,21 @@
 # Retinue Building
 
-Your **retinue** is the force you field in a battle. Build it in two layers: choose **Identity** (**Archetype** and one **Tradition**), then build your **Roster** (fighters, feats, gear, and spells).
+Your **retinue** is the force you field in a battle. Build it in two layers: select your **Identity** (**Archetype** and one **Tradition**), then build your **Roster** (fighters, feats, gear, and spells).
 
 ---
 
 
-**Step 1 — Choose your Archetype.** Your Archetype sets maximum roster size, role caps, equipment access, and weapon choices. Every fighter in your retinue gains the matching **Archetype** keyword (**Knights**, **Hunters**, **Folk**, or **Cult**). See [Archetypes](#archetypes) and each Archetype section below for caps and equipment access.
+**Step 1 — Select your Archetype.** Your Archetype sets maximum roster size, role caps, equipment access, and weapon choices. Every fighter in your retinue gains the matching **Archetype** keyword (**Knights**, **Hunters**, **Folk**, or **Cult**). See [Archetypes](#archetypes) and each Archetype section below for caps and equipment access.
 
-**Step 2 — Choose a Tradition.** Choose a Tradition allowed by your Archetype (see [Traditions](#traditions)). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword.
+**Step 2 — Select a Tradition.** Select a Tradition allowed by your Archetype (see [Traditions](#traditions)). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword.
 
-**Step 3 — Recruit fighters.** A new retinue starts with **1000 Crowns**. Every retinue must include exactly **1 Leader** and stay within your Archetype's caps. Choose an ancestry for each fighter, then apply the recruitment bonuses listed for that fighter below.
+**Step 3 — Recruit fighters.** A new retinue starts with **1000 Crowns**. Every retinue must include exactly **1 Leader** and stay within your Archetype's caps. Select an ancestry for each fighter, then apply the recruitment bonuses listed for that fighter below.
 
-**Step 4 — Choose feats.** Assign each fighter feats from the lists their keywords allow (see [Feats](#feats)). **Archetype** feats and **Domain** feats grant special rules; **Proficiency** feats let a fighter equip weapons from that proficiency's list. Choose **Proficiency** feats before buying weapons.
+**Step 4 — Select feats.** Assign each fighter feats from the lists their keywords allow (see [Feats](#feats)). **Archetype** feats and **Domain** feats grant special rules; **Proficiency** feats let a fighter equip weapons from that proficiency's list. Select **Proficiency** feats before buying weapons.
 
 **Step 5 — Buy equipment.** Buy gear from [Weapons](weapons.md) and [Armor and Shields](gear.md) and equip your fighters. Add the cost of each fighter's weapons and gear to that fighter's total cost.
 
-**Step 6 — Assign spells.** For fighters with the **Caster** keyword, choose spells from the list matching their **Domain** keyword, up to the spell allowance for that fighter's role. See [Magic](#magic).
+**Step 6 — Assign spells.** For fighters with the **Caster** keyword, select spells from the list matching their **Domain** keyword, up to the spell allowance for that fighter's role. See [Magic](#magic).
 
 ## Keywords
 

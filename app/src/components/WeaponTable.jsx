@@ -15,7 +15,7 @@ export default function WeaponTable({ weapons, rows = null, skilledCraftsman = n
         <thead>
           <tr className="border-b border-night-800 text-cream-500">
             <th className="px-1.5 py-1.5 font-semibold uppercase tracking-wide">Name</th>
-            <th className="px-1.5 py-1.5 font-semibold uppercase tracking-wide">Slots</th>
+            <th className="px-1.5 py-1.5 font-semibold uppercase tracking-wide">Kit</th>
             <th className="px-1.5 py-1.5 font-semibold uppercase tracking-wide">Mt</th>
             <th className="px-1.5 py-1.5 font-semibold uppercase tracking-wide">Sk</th>
           </tr>

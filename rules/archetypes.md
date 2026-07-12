@@ -143,7 +143,7 @@ Start from an ancestry profile, then apply the recruitment bonuses listed for th
 
 **Feats**: May select 1 feat from the Universal feat list, the Hunters archetype feat list, or the Domain list matching the **Domain** keyword on this fighter.
 
-This fighter starts with built-in **Marked Quarry**. The built-in feat does not count against this fighter's chosen feat pick.
+This fighter starts with built-in **Marked Quarry**. The built-in feat does not count against this fighter's selected feat pick.
 
 ##### Hand — 40 Crowns (0–4)
 *[Fluff about Hands]*

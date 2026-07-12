@@ -1,6 +1,6 @@
 # Weapons
 
-Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat. Each fighter has **3 weapon slots**. One-handed weapons take 1 slot; two-handed weapons take 2. Shields take 1 slot. **Wands** take 1 slot. **Icon** and **Instrument** gear take 2 slots each.
+Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
 
 | Proficiency | Weapons |
 |---|---|
@@ -51,7 +51,7 @@ Any fighter may equip a **Dagger** without a proficiency feat.
 
 ### Dual wielding
 
-A fighter wielding two one-handed melee weapons may attack with both as part of one **Melee** action. Before building the Strike Pool, choose one weapon as primary and one as secondary.
+A fighter wielding two one-handed melee weapons may attack with both as part of one **Melee** action. Before building the Strike Pool, select one weapon as primary and one as secondary.
 
 Add both weapons' +**Might** and +**Skill** values to the Strike Pool, to a maximum of **15 dice**. Use only the primary weapon's type and special rules for critical hits and other attack effects. The secondary weapon adds dice only.
 
@@ -80,9 +80,9 @@ A fighter cannot use a shield while dual-wielding.
 
 A fighter wielding a **Staff** has **Spell focus**.
 
-When a fighter purchases a **Staff**, choose **Will** or **Sanity** for that staff.
+When a fighter purchases a **Staff**, select **Will** or **Sanity** for that staff.
 
-When that fighter resolves a casting attack while wielding that **Staff**, use the chosen attribute instead of **Skill** to determine the spell's scaling **Skill dice**. The spell's printed +**Skill** value still applies.
+When that fighter resolves a casting attack while wielding that **Staff**, use the selected attribute instead of **Skill** to determine the spell's scaling **Skill dice**. The spell's printed +**Skill** value still applies.
 
 ---
 
@@ -123,7 +123,7 @@ When every fighter in the retinue has the **Mortal** keyword, your retinue may p
 
 | Item | Cost | Notes |
 | ------------------ | ---- | ------------------------------------------ |
-| Brace of Pistols | 25 | Requires **Mortal** — holds **2 Pistols** in **1 weapon slot** |
+| Brace of Pistols | 25 | Requires **Mortal** — holds **2 Pistols** in **1 kit** |
 
 <span id="flintlock"></span>
 
@@ -147,9 +147,9 @@ Firearms are fired with the **Ranged** action.
 
 #### Pistols
 
-A **Pistol** takes **1 weapon slot**. A fighter with **2 Pistols** and no **Brace of Pistols** uses **2 weapon slots**.
+A **Pistol** takes **1 kit**. A fighter with **2 Pistols** and no **Brace of Pistols** uses **2 kit**.
 
-**Brace of Pistols** — holster equipment that takes **1 weapon slot** and holds **2 Pistols**. The Pistols must still be purchased separately. Requires the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
+**Brace of Pistols** — holster equipment that takes **1 kit** and holds **2 Pistols**. The Pistols must still be purchased separately. Requires the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
 
 - **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**. Resolve the **Primer Roll** and **Attack Sequence** normally.
 - **Gunslinger** *(requires **Mortal**)*: One **Ranged** action fires both **Pistols** in the fighter's **Brace of Pistols** (or both equipped **Pistols** if carried without a **Brace**) — each with its own **Primer Roll** and **Attack Sequence**. The fighter cannot take another **Ranged** action during that activation. See [Feats — Gunslinger](feats.md#gunslinger).
@@ -168,7 +168,7 @@ Bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and
 
 Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (friend and foe) within the blast radius. Use the **Ranged** action.
 
-1. **Declare a target** (pick a direction/point you're aiming at).
+1. **Declare a target** (select a direction/point you're aiming at).
 2. **Roll the Primer Roll:**
    - **Double 1s:** Bomb explodes in the thrower's hand. Center the blast template on the thrower.
    - **Fail (below difficulty, not double 1s):** Bomb scatters. Roll **d6** + **Might** and move the detonation point that many **"** from the declared target using a **scatter die** for direction.
@@ -179,7 +179,7 @@ Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (fri
 
 ## Alchemy
 
-Alchemy is available to every retinue, but requires a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market). Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take a weapon slot.
+Alchemy is available to every retinue, but requires a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market). Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take kit.
 
 ### Alchemical Bombs
 
@@ -194,7 +194,7 @@ Use the **Ranged** action. Declare a target point within this fighter's **Might*
 - **Pass:** Place the blast template centered on the declared point.
 - **Fail:** The bomb scatters. Roll a **scatter die** for direction and **d3"** for distance — move the detonation point that far in that direction.
 
-**Smoke:** Creates a 6" cloud that blocks line of sight for all fighters. The cloud remains until the end of the round. A fighter may choose to detonate the smoke bomb at their own feet instead of throwing — the effect resolves immediately centered on that fighter.
+**Smoke:** Creates a 6" cloud that completely blocks line of sight in all directions — no fighter may draw line of sight through or within the cloud, regardless of which side they are on. Fighters in or behind the smoke cannot be declared as targets of **Ranged** attacks or **Cast** actions from outside the cloud, and fighters inside cannot target fighters outside. The cloud persists until the end of the round. A fighter may detonate at their own feet instead of throwing — the effect resolves immediately centered on that fighter.
 
 | Poison | Cost | Effect | Notes |
 | -------------- | ---- | ------ | ----- |

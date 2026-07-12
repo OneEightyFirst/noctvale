@@ -14,7 +14,7 @@ When you recruit each fighter, assign feats from the lists their keywords allow.
 
 Campaign advancement may grant additional feats later (see [Feat Advancement Table](advancement.md#feat-advancement-table)).
 
-Each **Proficiency** pick must choose a **different** weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
+Each **Proficiency** pick must select a **different** weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
 
 ### Built-in proficiencies and feats (Specialist)
 
@@ -25,26 +25,26 @@ Each **Proficiency** pick must choose a **different** weapon proficiency. A figh
 | **Militiaman** | Folk | **Two-Handed** proficiency |
 | **Adept** | Cult | *(none)* |
 
-The built-in proficiency or feat does not count against the Specialist's 1 chosen feat pick.
+The built-in proficiency or feat does not count against the Specialist's 1 selected feat pick.
 
 ## Archetype Feats
 
 ### Knights
 
 #### Proficiency
-Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy.
+Select one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy.
 
-You may take this feat more than once. Each time, choose a **different** proficiency.
+You may take this feat more than once. Each time, select a **different** proficiency.
 
 Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
 
 #### Hold the Line
 
-When this fighter uses **Brace**, choose another friendly fighter within **1"**. That fighter gains **+1 Might defense die** until this fighter's next activation.
+When this fighter uses **Brace**, select another friendly fighter within **1"**. That fighter gains **+1 Might defense die** until this fighter's next activation.
 
 #### To Me, Brothers!
 
-Once per battle, when this fighter uses **Brace**, choose up to 2 friendly fighters within **12"**. Each chosen fighter may move up to **6"** toward this fighter. A fighter cannot use this movement to enter engagement range.
+Once per battle, when this fighter uses **Brace**, select up to 2 friendly fighters within **12"**. Each selected fighter may move up to **6"** toward this fighter. A fighter cannot use this movement to enter engagement range.
 
 #### Iron Discipline
 
@@ -60,17 +60,17 @@ When this fighter attacks an enemy fighter that took a friendly fighter **Out of
 
 #### Proficiency
 
-Choose one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy.
+Select one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy.
 
-You may take this feat more than once. Each time, choose a **different** proficiency.
+You may take this feat more than once. Each time, select a **different** proficiency.
 
 Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
 
 #### Marked Quarry
 
-At the start of the battle, choose 1 enemy fighter.
+At the start of the battle, select 1 enemy fighter.
 
-When this fighter attacks the chosen fighter, add **1 Might die** or **1 Skill die** to this fighter's Strike Pool.
+When this fighter attacks the selected fighter, add **1 Might die** or **1 Skill die** to this fighter's Strike Pool.
 
 #### Patient Shot
 
@@ -88,9 +88,9 @@ During Survival Rolls, if this fighter is a surviving fighter and your retinue r
 
 #### Proficiency
 
-Choose one weapon proficiency: **One-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy.
+Select one weapon proficiency: **One-Handed**, **Archery**, or **Thrown**. You may equip any weapon in that proficiency your retinue is allowed to buy.
 
-You may take this feat more than once. Each time, choose a **different** proficiency.
+You may take this feat more than once. Each time, select a **different** proficiency.
 
 Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
 
@@ -108,25 +108,25 @@ Once per battle, when a friendly fighter **within 6"** becomes **Downed**, this 
 
 #### Skilled Craftsman
 
-This fighter may upgrade **one** weapon they own. Apply +1 **Might** or +1 **Skill** to that weapon *(choose when you select it)*.
+This fighter may upgrade **one** weapon they own. Apply +1 **Might** or +1 **Skill** to that weapon *(selected at purchase)*.
 
-Only **one** weapon may have this upgrade at a time. This fighter may change which weapon is upgraded between battles. Record the chosen weapon and upgrade on this fighter's roster entry.
+Only **one** weapon may have this upgrade at a time. This fighter may change which weapon is upgraded between battles. Record the selected weapon and upgrade on this fighter's roster entry.
 
 ### Cult
 
 #### Proficiency
 
-Choose one weapon proficiency: **One-Handed** or **Archery**. You may equip any weapon in that proficiency your retinue is allowed to buy.
+Select one weapon proficiency: **One-Handed** or **Archery**. You may equip any weapon in that proficiency your retinue is allowed to buy.
 
-You may take this feat more than once. Each time, choose a **different** proficiency.
+You may take this feat more than once. Each time, select a **different** proficiency.
 
 Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
 
 #### Blood for the Rite
 
-Once per battle, before this fighter makes an attribute check or **casting roll**, choose another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll.
+Once per battle, before this fighter makes an attribute check or **casting roll**, select another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll.
 
-This Wound can reduce the chosen fighter to exactly **0 Wounds** and cause them to become **Downed**.
+This Wound can reduce the selected fighter to exactly **0 Wounds** and cause them to become **Downed**.
 
 #### Magic Armor
 
@@ -158,7 +158,7 @@ When this fighter's **Melee** action immediately follows **Charge** during the s
 
 This fighter may wield **Two-Handed** weapons in one hand.
 
-A **Two-Handed** weapon still uses **2 weapon slots**.
+A **Two-Handed** weapon still uses **2 kit**.
 
 #### Dodge
 
@@ -176,9 +176,11 @@ If more than one friendly fighter with **Guard** could **Intercept**, their cont
 
 #### Animal Handling
 
-This fighter may field **one** **Companion** purchased from [Gear — Companions](companions.md#companions). Record the **Companion** on this fighter's roster entry.
+This fighter may field **one** **Companion**. Record the **Companion** on this fighter's roster entry.
 
-Companion rules: [Companions](companions.md#companions).
+**Animal Handling** may be taken more than once. Each additional pick allows this fighter to field one additional **Companion**, recorded separately on this fighter's roster entry.
+
+For purchasing options, profiles, and all companion rules, see [Companions](companions.md#companions).
 
 #### Infiltrate
 
@@ -262,7 +264,7 @@ Once per round, this fighter may move a **Downed** or **Stunned** friendly fight
 
 #### Second Sight
 
-During **Survival Rolls**, if this fighter is a surviving fighter, when your retinue rolls **2d6** for the **Survival Roll**, you may reroll **2d6** once and choose which result to use. Apply the [Reward Roll Rule](survival-rolls.md#reward-roll-rule) to the chosen result only.
+During **Survival Rolls**, if this fighter is a surviving fighter, when your retinue rolls **2d6** for the **Survival Roll**, you may reroll **2d6** once and select which result to use. Apply the [Reward Roll Rule](survival-rolls.md#reward-roll-rule) to the selected result only.
 
 Once per **Survival Roll**.
 
@@ -310,9 +312,9 @@ If this fighter was not **Out of Action** when the battle ended and the modified
 
 #### Wild Aspect
 
-This fighter gains one **beast mark** — choose **Wolf**, **Rat**, **Bear**, or **Serpent**. If this fighter already has a beast mark, the chosen mark must be different.
+This fighter gains one **beast mark** — select **Wolf**, **Rat**, **Bear**, or **Serpent**. If this fighter already has a beast mark, the selected mark must be different.
 
-This fighter gains the chosen mark's rule. See [Traditions — Werebeasts](traditions.md#werebeasts).
+This fighter gains the selected mark's rule. See [Traditions — Werebeasts](traditions.md#werebeasts).
 
 If this feat is taken at fighter creation, this fighter costs **+10 Crowns**.
 
@@ -392,13 +394,13 @@ May not have the **Caster** keyword. Your retinue may purchase firearms from [We
 
 #### Gunslinger
 
-If this fighter is equipped with **2 Pistols** *(in a **Brace of Pistols** or across **2 weapon slots**)*, they may fire both as one **Ranged** action. Resolve each **Pistol** in order with its own **Primer Roll** and **Attack Sequence**. If they do, they cannot take another **Ranged** action during this activation.
+If this fighter is equipped with **2 Pistols** *(in a **Brace of Pistols** or using **2 kit**)*, they may fire both as one **Ranged** action. Resolve each **Pistol** in order with its own **Primer Roll** and **Attack Sequence**. If they do, they cannot take another **Ranged** action during this activation.
 
 #### Deadeye
 
 When this fighter uses **Aim**, their next **Ranged** attack with a **firearm** this activation adds **1 die** of that **firearm's** dominant die type to the Strike Pool.
 
-The dominant die type is whichever is higher on the **firearm's** profile (**Might** or **Skill**). If tied, choose **Might dice** or **Skill dice**.
+The dominant die type is whichever is higher on the **firearm's** profile (**Might** or **Skill**). If tied, select **Might dice** or **Skill dice**.
 
 #### Null
 

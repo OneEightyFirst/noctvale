@@ -22,7 +22,7 @@ Any random reward roll uses **2d6**.
 
 Fighters who were **Active** at the end of the battle may join the Survival Roll as scavengers. A fighter escorting a patient to the **Barber Surgeon** cannot scavenge.
 
-Start with a base pool of **2d6**. Each scavenging fighter adds **1d6** to the pool. Roll all dice, keep the **2 highest**, and read them as the 2d6 result on the chosen Survival table. Apply the **Reward Roll Rule** as normal — check for natural double 1s or double 6s before adding modifiers.
+Start with a base pool of **2d6**. Each scavenging fighter adds **1d6** to the pool. Roll all dice, keep the **2 highest**, and read them as the 2d6 result on the selected Survival table. Apply the **Reward Roll Rule** as normal — check for natural double 1s or double 6s before adding modifiers.
 
 ---
 
@@ -36,7 +36,7 @@ After scenario rewards, each retinue makes **1 Survival Roll**.
 
 Location tables have a higher ceiling and more dangerous failures. The Generic table is steadier and helps a losing retinue return home with something useful.
 
-If a result tells you to choose a surviving fighter and your retinue has no surviving fighters, ignore that part of the result.
+If a result tells you to select a surviving fighter and your retinue has no surviving fighters, ignore that part of the result.
 
 ---
 
@@ -61,7 +61,7 @@ Use this table when the retinue lost the scenario, or when the battle was a draw
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Hounded Retreat** — choose 1 surviving fighter. That fighter misses the next battle. |
+| 2 | **Mishap: Hounded Retreat** — select 1 surviving fighter. That fighter misses the next battle. |
 | 3–4 | **Empty Road** — no reward. |
 | 5–6 | **Loose Supplies** — gain **10 Crowns**. |
 | 7–8 | **Useful Salvage** — gain **15 Crowns**. |
@@ -79,7 +79,7 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Collapse** — choose 1 surviving fighter; that fighter rolls on the [Doom Table](#step-4-doom-table). |
+| 2 | **Mishap: Collapse** — select 1 surviving fighter; that fighter rolls on the [Doom Table](#step-4-doom-table). |
 | 3–4 | **Picked Clean** — gain **10 Crowns**. |
 | 5–6 | **Broken Goods** — gain 1 legal **One-Handed** melee weapon. |
 | 7–8 | **Buried Relic** — recover **1 Relic**. |
@@ -91,19 +91,19 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Profane Omen** — choose 1 surviving fighter; that fighter has Sa −1 until the start of the next battle. |
+| 2 | **Mishap: Profane Omen** — select 1 surviving fighter; that fighter has Sa −1 until the start of the next battle. |
 | 3–4 | **Cold Ashes** — gain **10 Crowns**. |
 | 5–6 | **Votive Goods** — gain **15 Crowns**. |
 | 7–8 | **Reliquary Shard** — recover **1 Relic**. |
 | 9–10 | **Hidden Alms** — recover **1 Relic** and gain **15 Crowns**. |
 | 11 | **Consecrated Relic** — recover **2 Relics**. |
-| 12 | **Bonus: Saint's Reliquary** — recover **2 Relics** and choose 1 surviving fighter to gain **+1 Experience**. |
+| 12 | **Bonus: Saint's Reliquary** — recover **2 Relics** and select 1 surviving fighter to gain **+1 Experience**. |
 
 ### Abandoned Village
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Cellar Trap** — choose 1 surviving fighter; resolve 2 Might hits and 2 Skill hits against that fighter. The fighter rolls defense as normal. |
+| 2 | **Mishap: Cellar Trap** — select 1 surviving fighter; resolve 2 Might hits and 2 Skill hits against that fighter. The fighter rolls defense as normal. |
 | 3–4 | **Spoiled Stores** — gain **10 Crowns**. |
 | 5–6 | **Household Goods** — gain **15 Crowns**. |
 | 7–8 | **Buried Box** — recover **1 Relic**. |
@@ -115,19 +115,19 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Living Thorns** — choose 1 surviving fighter; that fighter misses the next battle. |
+| 2 | **Mishap: Living Thorns** — select 1 surviving fighter; that fighter misses the next battle. |
 | 3–4 | **Bitter Roots** — gain **10 Crowns**. |
 | 5–6 | **Useful Herbs** — gain **15 Crowns**. |
 | 7–8 | **Root-Wrapped Relic** — recover **1 Relic**. |
 | 9–10 | **Old Grove Shrine** — recover **1 Relic** and gain **15 Crowns**. |
 | 11 | **Green Hollow** — recover **2 Relics**. |
-| 12 | **Bonus: Heartwood Cache** — recover **2 Relics** and choose 1 surviving fighter to gain **+1 Experience**. |
+| 12 | **Bonus: Heartwood Cache** — recover **2 Relics** and select 1 surviving fighter to gain **+1 Experience**. |
 
 ### Ancient Road
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Roadside Ambush** — choose 1 surviving fighter; that fighter rolls on the [Doom Table](#step-4-doom-table). |
+| 2 | **Mishap: Roadside Ambush** — select 1 surviving fighter; that fighter rolls on the [Doom Table](#step-4-doom-table). |
 | 3–4 | **Empty Milestone** — gain **10 Crowns**. |
 | 5–6 | **Lost Pack** — gain **15 Crowns**. |
 | 7–8 | **Toll Relic** — recover **1 Relic**. |
@@ -139,12 +139,12 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Open Grave** — choose 1 surviving fighter; that fighter has Sa −1 until the start of the next battle. |
+| 2 | **Mishap: Open Grave** — select 1 surviving fighter; that fighter has Sa −1 until the start of the next battle. |
 | 3–4 | **Bone Scraps** — gain **10 Crowns**. |
 | 5–6 | **Grave Goods** — gain **15 Crowns**. |
 | 7–8 | **Buried Relic** — recover **1 Relic**. |
 | 9–10 | **Crypt Cache** — recover **1 Relic** and gain **15 Crowns**. |
 | 11 | **Old Mausoleum** — recover **2 Relics**. |
-| 12 | **Bonus: Noble Tomb** — recover **2 Relics** and choose 1 surviving fighter to gain **+1 Experience**. |
+| 12 | **Bonus: Noble Tomb** — recover **2 Relics** and select 1 surviving fighter to gain **+1 Experience**. |
 
 ---

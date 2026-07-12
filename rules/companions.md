@@ -2,7 +2,7 @@
 
 **Companions** are animals and familiars fielded by a **Handler** — the fighter who has **Animal Handling** and bought the **Companion** on their roster entry.
 
-Companions do **not** count toward retinue size or **activation count**. They do **not** use weapon slots.
+Companions do **not** count toward retinue size or **activation count**. They do **not** use kit.
 
 Purchase: [Equipment — Companions](companions.md#companions). Profiles: below. Feat: [Feats — Animal Handling](feats.md#animal-handling).
 
@@ -11,8 +11,8 @@ Purchase: [Equipment — Companions](companions.md#companions). Profiles: below.
 ## Roster and deployment
 
 - A fighter must have **Animal Handling** to field a **Companion**.
-- Each **Handler** may field **one** **Companion**, recorded on that fighter's roster entry.
-- Deploy the **Companion** within **1"** of its **Handler** during deployment.
+- Each **Handler** may field one **Companion** per pick of **Animal Handling**, each recorded separately on that fighter's roster entry.
+- Deploy each **Companion** within **1"** of its **Handler** during deployment.
 
 ---
 
@@ -32,9 +32,9 @@ Companions do **not** use **Downed** or **Stunned**.
 >
 > Each unblocked hit inflicts **1 Wound**.
 >
-> When a **Companion** reaches **0 Wounds**, it is **Out of Action** and is removed from the battle. Any effect that would make a fighter **Downed** or **Stunned** removes the **Companion** from the battle instead.
+> When a **Companion** is reduced to **0 or fewer Wounds**, it flees the battle and is immediately removed from the battlefield. Any effect that would make a fighter **Downed** or **Stunned** also causes the **Companion** to flee immediately.
 
-Companions are never removed permanently — see [Companion Recovery](post-game-sequence.md#step-3-companion-recovery).
+Companions removed this way are never lost permanently — see [Companion Recovery](post-game-sequence.md#step-3-companion-recovery).
 
 ---
 
@@ -47,11 +47,11 @@ When a **Handler** activates:
 
 The **Handler**'s **2 actions** are spent normally. The **Companion** action is additional and does not cost the **Handler** any actions.
 
-If the **Handler** skips their activation for **Overwatch**, spend **1 Overwatch token** and assign it to the **Handler** as normal. The **Companion** does not co-move and does not take a **Companion** action.
+If the **Handler** skips their activation for **Overwatch**, the **Companion** does not co-move and does not take a **Companion** action.
 
-While the **Handler** is **Stunned** or **Out of Action**, their **Companion** does not activate.
+While the **Handler** is **Downed**, the **Companion** acts independently at the end of the **Handler**'s activation: it may move or charge (staying within **tether** of the **Handler**), then performs **1 action**.
 
-While the **Handler** is **Downed**, the **Companion** does not co-move and does not take a **Companion** action.
+When the **Handler** becomes **Stunned** or goes **Out of Action**, the **Companion** immediately flees the battle and is removed from the battlefield.
 
 ---
 

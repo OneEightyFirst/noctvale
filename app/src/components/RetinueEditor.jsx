@@ -1629,7 +1629,7 @@ const FighterCard = memo(function FighterCard({
               ))}
               <Pill>{ancestry.name}</Pill>
               {beastMarkOption ? <Pill tone="amber">{beastMarkOption.name} Beast-mark</Pill> : null}
-              <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>
+              <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} kit</Pill>
             </div>
             <Pill tone={cost > 0 ? "amber" : "zinc"} className="shrink-0">
               {formatCrownsAmount(cost)}
@@ -2111,14 +2111,14 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
       panelTitle="Equipment"
       actionLabel="Select equipment"
       hasSelection={selectedEquipment.length > 0}
-      statusPill={<Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>}
+      statusPill={<Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} kit</Pill>}
       summary={<EquipmentSummary fighter={fighter} tradition={tradition} />}
       modalAriaLabel="Select equipment"
       modalEyebrow="Equipment selection"
       modalTitle={fighter.name}
       modalHeaderSummary={
         <>
-          <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} slots</Pill>
+          <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} kit</Pill>
           {selectedEquipment.length ? (
             selectedEquipment.map(({ item, quantity }) => (
               <div key={item.id} className="rounded border border-night-800 bg-night-900 px-2 py-1 text-xs text-cream-100">
@@ -2152,7 +2152,7 @@ function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, e
   return (
     <>
       <div className="mb-2 rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
-        Each fighter has 3 weapon slots. Any fighter may equip a Dagger. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Beastmen may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
+        Each fighter has 3 kit — 2 hands and a belt. Any fighter may equip a Dagger. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Beastmen may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
       </div>
       <div className="space-y-3">
         {Object.entries(equipmentGroups).map(([group, items]) => {
@@ -2180,7 +2180,7 @@ function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, e
                     <div className="flex flex-wrap items-start justify-between gap-2">
                       <div>
                         <div className="font-semibold text-cream-100">{item.name}</div>
-                        <div className="text-cream-500">{unitCost} Crowns - {item.slots} slots</div>
+                        <div className="text-cream-500">{unitCost} Crowns - {item.slots} kit</div>
                       </div>
                       <QuantityControl
                         value={quantity}
@@ -2354,7 +2354,7 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);
   if (!caster && fighter.spells.length) warnings.push("Non-Caster has spells selected.");
   if (fighter.feats.length > getFeatLimit(fighter, type)) warnings.push(`Too many feats selected. Limit is ${getFeatLimit(fighter, type)}.`);
-  if (slots > slotLimit) warnings.push(`Weapon slots exceed ${slotLimit} by ${slots - slotLimit}.`);
+  if (slots > slotLimit) warnings.push(`Kit exceeds ${slotLimit} by ${slots - slotLimit}.`);
   if (isRatBeastman(tradition, fighter.beastMark) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {
     warnings.push("Rat's extra weapon must be a one-handed weapon.");
   }

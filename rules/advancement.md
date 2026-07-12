@@ -39,7 +39,7 @@ Award after the **Casualty Table** and **Doom Table**, separate from battle and 
 | **Hardy** (Casualty Table d6) | +1 |
 | **Miraculous** (Doom Table 2d6) | +2 |
 
-Some **Survival Roll** or scenario results also grant **+1 Experience** to one named or chosen surviving fighter. Apply those in this pass.
+Some **Survival Roll** or scenario results also grant **+1 Experience** to one named or selected surviving fighter. Apply those in this pass.
 
 ## Spending XP — Advancement Rolls
 
@@ -60,7 +60,7 @@ Fighters with the **Vampire** keyword must pay **2 XP** more than the normal adv
 
 Roll **2d6** after spending **8 XP** on Attribute Advancement. Each result raises one attribute by **+1**. Attributes cannot exceed **6**.
 
-When a result names a pair of attributes, choose one of that pair that is not already **6**. On **12**, choose any attribute that is not already **6**.
+When a result names a pair of attributes, select one of that pair that is not already **6**. On **12**, select any attribute that is not already **6**.
 
 If both attributes in the pair are already **6**, apply the next lowest row on this table instead. Repeat until you gain **+1** to an attribute below **6**, or until no lower row applies.
 

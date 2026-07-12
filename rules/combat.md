@@ -14,11 +14,15 @@ If you **can see** the target from the firing fighter's viewpoint, you have **li
 
 **Friendly fighters do not block line of sight.** Enemy fighters block line of sight normally.
 
+Some special rules — such as the **Smoke** keyword — block line of sight completely. When a target's line of sight is completely blocked, they cannot be declared as the target of a **Ranged** attack or **Cast** action. This is distinct from **cover**, which provides a bonus die but still allows targeting. See [Alchemical Bombs](weapons.md#alchemical-bombs).
+
 #### Cover
 
 If **any intervening terrain** lies between the firing fighter and the target — and that terrain is **more than 1" from the firing fighter** — the target has **cover**.
 
 **Cover grants +1 Skill defense die** (rolled with **Skill**) when the defender rolls defense against a **Ranged** attack or a spell that resolves using the standard **Attack Sequence**.
+
+If the target is **within 1"** of the intervening terrain, cover grants **+2 Skill defense dice** instead.
 
 ### Intervening Fighters
 
@@ -33,7 +37,7 @@ Fighters may **move through** friendly fighters during **Move**, **Charge**, **S
 When declaring a target for a **Ranged** attack, if the declared enemy target is within engagement range of one or more friendly fighters other than the attacker, make a **Ranged Combat** check. On a failure, the shot hits a friendly fighter instead.
 
 - If one friendly fighter is within engagement range of the declared target, that fighter becomes the new target.
-- If two or more friendly fighters are within engagement range of the declared target, the attacker chooses one of those friendly fighters to become the new target.
+- If two or more friendly fighters are within engagement range of the declared target, the attacker selects one of those friendly fighters to become the new target.
 
 On a success, resolve the attack against the declared target. On a failure, resolve the attack normally against the new target.
 
@@ -237,7 +241,7 @@ The **Aim** action can also make natural **6** results critical hits on that fig
 When a fighter is targeted by a **Ranged** action, the target may perform a **single free action** after the **Attack Sequence** is fully resolved. This reaction does not cost the target any of their normal actions.
 
 - The reaction triggers whenever the target is **selected as a target**, regardless of whether the attack hits or misses.
-- The target may choose **any single action** from the action list (Move, Charge, Melee, Ranged, Brace, Retreat, etc.).
+- The target may select **any single action** from the action list (Move, Charge, Melee, Ranged, Brace, Retreat, etc.).
 - If the target is **Downed or Out of Action** after the attack resolves, they may not react.
 - **A fighter may not perform a Ranged Reaction while their controlling player is activating fighters.** The active player's fighters cannot react to return fire.
 - **Cast actions do not trigger Ranged Reactions.** Only Ranged weapon attacks trigger this rule.

@@ -20,6 +20,62 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-11 — Choice-language standardization: "select" as primary verb
+
+**Decision:** **Select** is now the primary discretionary-choice verb across all rules files. Full pass across all 24 files in `rules/`.
+
+- **"choose" → "select"** everywhere it appeared as a choice verb.
+- **"chosen" → "selected"** as the past-tense adjective.
+- **Three idiomatic exceptions** where "select" doesn't fit:
+  - *"however they like"* (splitting Strike Pool across multiple targets) — "however they select" reads awkwardly.
+  - *"any Relics you wish to sell"* (post-game step 6) — "select to sell" is unnatural.
+  - *"Optionally spend XP"* (post-game advancement step) — rewritten to avoid the verb entirely.
+- **"target"** remains the technical verb for declaring attack targets in combat — it is not a generic choice verb.
+- **"pick"** retained only as a noun (feat pick, Proficiency pick) — not as a verb.
+
+**Reasoning:** Consistent verb choice reduces cognitive friction for players and editors. "Select" reads as a deliberate, unambiguous decision verb that doesn't carry the informal weight of "pick" or the everyday-English softness of "choose."
+
+---
+
+## 2026-07-11 — Companion rules overhaul
+
+**Decision:** Three companion rule changes, all in `rules/companions.md` and `rules/feats.md`.
+
+1. **Multiple companions** — **Animal Handling** may now be taken more than once. Each pick allows one additional Companion, recorded separately on the fighter's roster entry. The one-per-handler cap is replaced with one-per-pick.
+
+2. **Handler wound-state behavior** — Downed handler: the Companion acts independently at the end of the handler's activation (move or charge within tether, then 1 action). Stunned or OOA handler: the Companion immediately flees the battle and is removed from the battlefield.
+
+3. **Companion wound-state language** — Reaching 0 or fewer Wounds now uses "flees the battle and is immediately removed" consistently with the handler-OOA rule. Any effect that would impose Downed or Stunned also causes immediate flight.
+
+**Reasoning:** A Downed handler shouldn't freeze the companion — the animal fights on while its handler is down, giving the opponent a target decision. Handler Stunned/OOA is a clean break: the animal panics and bolts. Multiple companions reward a dedicated handler build without requiring new keywords. Consistent "flee" language removes the ambiguity between OOA removal and permanent loss.
+
+---
+
+## 2026-07-11 — Cover tiers at terrain contact
+
+**Decision:** Cover now has two tiers based on target proximity to the intervening terrain.
+
+- **Standard cover** (+1 Skill die): any intervening terrain more than 1" from the attacker, target not adjacent to it.
+- **Hard cover** (+2 Skill dice): target is within 1" of the intervening terrain (hugging a wall, crouching behind rubble).
+
+The attacker's 1" exclusion zone is unchanged — the terrain must still be more than 1" from the attacker.
+
+**Reasoning:** Flat +1 Sk die made crouching behind a wall feel identical to a fighter merely running past one. The extra die for proximity rewards deliberate positioning, creates a meaningful decision to advance into protected ground, and gives defensive fighters a genuine mechanical advantage without adding new dice types or special keywords.
+
+---
+
+## 2026-07-11 — Smoke / LoS cross-ref patch; feat placement confirmed
+
+**Decision:** Two `todo.md` cleanup items resolved.
+
+1. **Smoke / LoS cross-ref** — Added a paragraph to `rules/combat.md#line-of-sight` distinguishing *complete* LoS blocking (untargetable) from *cover* (bonus die). Cross-references the **Smoke** keyword. Tightened the **Smoke** keyword in `rules/weapons.md` to explicitly state bidirectionality (fighters inside cannot see out; fighters outside cannot see in) and to name the targeting consequence. Corrected wrong file references in `todo.md` (`equipment.md` → `weapons.md`, `core-rules.md` → `combat.md`).
+
+2. **Feat placement** — Confirmed: archetype feats live only in `rules/feats.md`; archetype chapters cross-reference via `See [Feats — Archetype](feats.md#archetype)`. No duplication. Marked done.
+
+**Reasoning:** The prior LoS rules explained cover (+1 Sk die on partial obstruction) but gave no guidance on complete blocking — a player reading only the LoS section would find no mechanical definition for what "blocks line of sight" means in terms of targeting. Smoke was the only such effect in the game, so the cross-ref and keyword clarification closes the gap without adding new rules.
+
+---
+
 ## 2026-07-11 — Hurl universal action, domain feat overhaul, Shadow Market, alchemical bombs
 
 **Decision:** Large rules session covering six areas.

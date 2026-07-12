@@ -30,7 +30,7 @@ A fighter becomes **Stunned** when they are reduced below **0 Wounds**, from a *
 - Cannot move
 - Cannot act
 - Cannot attempt Recover
-- Cannot be chosen for activation while **Stunned**
+- Cannot be selected for activation while **Stunned**
 - Does not count toward **activation count**
 - Defends with **Might dice only** (**Might**-based defense, no Skill dice)
 
@@ -104,7 +104,7 @@ In addition to the effects of **Fear**, the fighter must spend at least **1 acti
 
 Roll on the **Insanity Table (1d6)**:
 
-- 1 — **Frenzy:** Attack the closest fighter (chosen by your opponent). They cannot be the source of the Insanity.
+- 1 — **Frenzy:** Attack the closest fighter (selected by your opponent). They cannot be the source of the Insanity.
 - 2–3 — **Flee:** Spend both actions moving toward the nearest battlefield edge.
 - 4–5 — **Freeze:** Both actions are spent. The fighter does nothing.
 - 6 — **Berserk:** The fighter snaps. If their primary weapon is melee, they charge the source of the Insanity and add **2 Might dice** and **1 Skill die** to the Strike Pool, but suffer −1 **Close Combat** on that **Melee** attack. If their primary weapon is ranged, they spend both actions firing at the source and suffer −1 **Ranged Combat** on those attacks.
