@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Survival Rolls — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=0a761fc" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=368e642" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -1706,20 +1706,14 @@
         </div></div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-domains">
+        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic-domains">
           <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/domains/" class="wiki-nav-link">Domains</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic">
-          <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-children" aria-label="Expand Magic">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-domains-children" aria-label="Expand Magic Domains">
             <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>
-            <a href="/magic/" class="wiki-nav-link">Magic</a>
+            <a href="/magic/" class="wiki-nav-link">Magic Domains</a>
           </div>
-          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-children">
+          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-domains-children">
         <div class="wiki-nav-node" data-nav-id="nav-magic-casting">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-magic-casting-children" aria-label="Expand Casting">
@@ -2069,10 +2063,10 @@
             <a href="/magic/#blood" class="wiki-nav-link">Blood</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-magic-blood-children">
-        <div class="wiki-nav-node" data-nav-id="nav-magic-tbd">
+        <div class="wiki-nav-node" data-nav-id="nav-magic-lacerate">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/magic/#tbd" class="wiki-nav-link">[TBD]</a>
+            <a href="/magic/#lacerate" class="wiki-nav-link">Lacerate</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-magic-bleed">
@@ -2969,7 +2963,7 @@
 <hr>
 <h2 id="scavenging">Scavenging</h2>
 <p>Fighters who were <strong>Active</strong> at the end of the battle may join the Survival Roll as scavengers. A fighter escorting a patient to the <strong>Barber Surgeon</strong> cannot scavenge.</p>
-<p>Start with a base pool of <strong>2d6</strong>. Each scavenging fighter adds <strong>1d6</strong> to the pool. Roll all dice, keep the <strong>2 highest</strong>, and read them as the 2d6 result on the chosen Survival table. Apply the <strong>Reward Roll Rule</strong> as normal — check for natural double 1s or double 6s before adding modifiers.</p>
+<p>Start with a base pool of <strong>2d6</strong>. Each scavenging fighter adds <strong>1d6</strong> to the pool. Roll all dice, keep the <strong>2 highest</strong>, and read them as the 2d6 result on the selected Survival table. Apply the <strong>Reward Roll Rule</strong> as normal — check for natural double 1s or double 6s before adding modifiers.</p>
 <hr>
 <h2 id="survival-tables">Survival Tables</h2>
 <p>After scenario rewards, each retinue makes <strong>1 Survival Roll</strong>.</p>
@@ -2979,7 +2973,7 @@
 <li>In a <strong>draw</strong>, both retinues roll on the Generic Survival table.</li>
 </ul>
 <p>Location tables have a higher ceiling and more dangerous failures. The Generic table is steadier and helps a losing retinue return home with something useful.</p>
-<p>If a result tells you to choose a surviving fighter and your retinue has no surviving fighters, ignore that part of the result.</p>
+<p>If a result tells you to select a surviving fighter and your retinue has no surviving fighters, ignore that part of the result.</p>
 <hr>
 <h2 id="battlefield-location-table">Battlefield Location Table</h2>
 <p>Each scenario defines its battlefield location. A scenario may name a fixed location, tell players to roll on the table below, or provide its own smaller location table.</p>
@@ -3027,7 +3021,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Hounded Retreat</strong> — choose 1 surviving fighter. That fighter misses the next battle.</td>
+<td><strong>Mishap: Hounded Retreat</strong> — select 1 surviving fighter. That fighter misses the next battle.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3067,7 +3061,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Collapse</strong> — choose 1 surviving fighter; that fighter rolls on the <a href="#step-4-doom-table">Doom Table</a>.</td>
+<td><strong>Mishap: Collapse</strong> — select 1 surviving fighter; that fighter rolls on the <a href="#step-4-doom-table">Doom Table</a>.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3104,7 +3098,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Profane Omen</strong> — choose 1 surviving fighter; that fighter has Sa −1 until the start of the next battle.</td>
+<td><strong>Mishap: Profane Omen</strong> — select 1 surviving fighter; that fighter has Sa −1 until the start of the next battle.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3128,7 +3122,7 @@
 </tr>
 <tr>
 <td>12</td>
-<td><strong>Bonus: Saint&#39;s Reliquary</strong> — recover <strong>2 Relics</strong> and choose 1 surviving fighter to gain <strong>+1 Experience</strong>.</td>
+<td><strong>Bonus: Saint&#39;s Reliquary</strong> — recover <strong>2 Relics</strong> and select 1 surviving fighter to gain <strong>+1 Experience</strong>.</td>
 </tr>
 </tbody></table>
 <h3 id="abandoned-village">Abandoned Village</h3>
@@ -3141,7 +3135,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Cellar Trap</strong> — choose 1 surviving fighter; resolve 2 Might hits and 2 Skill hits against that fighter. The fighter rolls defense as normal.</td>
+<td><strong>Mishap: Cellar Trap</strong> — select 1 surviving fighter; resolve 2 Might hits and 2 Skill hits against that fighter. The fighter rolls defense as normal.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3178,7 +3172,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Living Thorns</strong> — choose 1 surviving fighter; that fighter misses the next battle.</td>
+<td><strong>Mishap: Living Thorns</strong> — select 1 surviving fighter; that fighter misses the next battle.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3202,7 +3196,7 @@
 </tr>
 <tr>
 <td>12</td>
-<td><strong>Bonus: Heartwood Cache</strong> — recover <strong>2 Relics</strong> and choose 1 surviving fighter to gain <strong>+1 Experience</strong>.</td>
+<td><strong>Bonus: Heartwood Cache</strong> — recover <strong>2 Relics</strong> and select 1 surviving fighter to gain <strong>+1 Experience</strong>.</td>
 </tr>
 </tbody></table>
 <h3 id="ancient-road">Ancient Road</h3>
@@ -3215,7 +3209,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Roadside Ambush</strong> — choose 1 surviving fighter; that fighter rolls on the <a href="#step-4-doom-table">Doom Table</a>.</td>
+<td><strong>Mishap: Roadside Ambush</strong> — select 1 surviving fighter; that fighter rolls on the <a href="#step-4-doom-table">Doom Table</a>.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3252,7 +3246,7 @@
 </thead>
 <tbody><tr>
 <td>2</td>
-<td><strong>Mishap: Open Grave</strong> — choose 1 surviving fighter; that fighter has Sa −1 until the start of the next battle.</td>
+<td><strong>Mishap: Open Grave</strong> — select 1 surviving fighter; that fighter has Sa −1 until the start of the next battle.</td>
 </tr>
 <tr>
 <td>3–4</td>
@@ -3276,7 +3270,7 @@
 </tr>
 <tr>
 <td>12</td>
-<td><strong>Bonus: Noble Tomb</strong> — recover <strong>2 Relics</strong> and choose 1 surviving fighter to gain <strong>+1 Experience</strong>.</td>
+<td><strong>Bonus: Noble Tomb</strong> — recover <strong>2 Relics</strong> and select 1 surviving fighter to gain <strong>+1 Experience</strong>.</td>
 </tr>
 </tbody></table>
 <hr>
@@ -3296,7 +3290,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=0a761fc"></script>
-  <script src="/wiki/wiki.js?v=0a761fc" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=368e642"></script>
+  <script src="/wiki/wiki.js?v=368e642" defer></script>
 </body>
 </html>

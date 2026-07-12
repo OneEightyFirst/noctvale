@@ -20,6 +20,37 @@ Decisions made during design, with reasoning. Newest entries at the top.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-11 — Lacerate spell fills Blood's standard-attack slot
+
+**Decision:** Added **Lacerate** to `rules/magic.md`, replacing the `*[TBD]*` placeholder left after Leech was cut. **Difficulty:** **Sanity** 12+ | **Range:** 6" | **Attack:** **Ranged Combat**, 4 **Might** / +2 **Skill**. A successful hit applies **Bleeding**. **Mishap:** None.
+
+**Reasoning:** Every other domain (Light, Arcane, Nature, Infernal) has a signature Strike Pool attack spell as its standard spell; Blood lost that slot when Leech was cut for healing the caster on hit (redundant with the Vampire tradition's kill-heal). Lacerate keeps the attack-spell slot without any heal, self-Wound cost, or buff — mechanics already covered by Blood for the Rite, Celerity, Torpor, Thrill of Agony, Indomitable, Blood Frenzy, and Feast of Excess. Applying **Bleeding** on hit combos with the existing **Bleed** spell without touching any of that space. Difficulty set above Hellfire's plain-attack baseline (**Sanity** 10+) to account for the added Bleeding rider, below Bleed's dedicated-DoT difficulty (**Sanity** 13+).
+
+---
+
+## 2026-07-11 — Spell block reformat: card layout, Casting/Priming Difficulty, Magic Domains
+
+**Decision:** Three related changes to `rules/magic.md` and the wiki.
+
+1. **New spell block format** — every spell entry now follows Name → *[Placeholder]* fluff line → `**Difficulty:** X | **Range:** Y | **Attack:** Z` (pipe-separated; Attack segment omitted entirely for non-Strike-Pool spells) → dice line on its own (`4 **Might** | +2 **Skill**`, Attack spells only) → effect prose → `**Mishap:**` always present, written as `None` when the spell has no backlash. Updated `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` "Spell block (standard)" section to match. Complex multi-part spells (Summon Daemon, Summon Skeleton, Raise Dead, Stinging Swarm, Summon Bats) kept embedded tables/profiles/binding procedures in place — only the opening stat block and fluff line changed.
+2. **Casting Difficulty / Priming Difficulty** — the target numbers for the **casting roll** and **primer roll** are now capitalized defined terms, named in full where the roll is defined (`rules/magic.md`, duplicated in `rules/actions.md`; `rules/weapons.md` for firearms). Individual spell entries use the short form **Difficulty:**. Added both terms to the style guide glossary.
+3. **Magic Domains** — moved `rules/domains.md`'s one-line intro ("Each **Domain** keyword unlocks a spell list and domain feats...") to the top of `rules/magic.md` and deleted the near-empty standalone Domains page. Renamed the Magic page and nav entry to **Magic Domains**. Updated `README.md` and `_overview.md` file-list references.
+4. **Range field cleanup** — removed redundant "from caster" wording (range is drawn from the caster by default). Fixed two spells (Purge the Faithless, Bone Blast) whose blast effect is centered on the caster to use **Range: Self** with the blast template described in the effect prose instead of baking placement into the Range field. Defined **Nightfall**'s previously-unsized "bubble" as an explicit 5" blast template.
+
+**Reasoning:** The old inline stat-block-plus-prose format buried the lookup fields a player needs mid-battle inside a wall of text. Splitting fields onto their own line with pipes reads faster at the table. Capitalizing Casting/Priming Difficulty as defined terms matches how other rolls (casting roll, primer roll) are already treated as named rules rather than generic phrases. Folding Domains into Magic removes a wiki page that carried no content of its own. The Self-range and Nightfall fixes close two real ambiguities (a "blast from caster" reads like a targeting range, not a template placement; an undefined "bubble" gave no size for either player to measure).
+
+---
+
+## 2026-07-11 — Unified friendly fire mechanic
+
+**Decision:** Replaced the two-part friendly fire rules (engagement-range RC check + line-of-fire 1d6 for firearms/spells only) with a single unified mechanic applying to all **Ranged** attacks.
+
+A friendly is **at risk** if their base lies on the line from attacker to target, or if they are within engagement range of the declared target. When any at-risk friendly is present, any **natural 1** in the Strike Pool becomes a hit on the nearest such friendly (base to base from the attacker) instead of the declared target. Defense rolls apply normally. Ties in distance go to the attacking player.
+
+**Reasoning:** The old system had two separate triggers with different resolution methods (RC check vs. 1d6), excluded bows and crossbows from the line-of-fire rule, and required tracking "miss" as a specific post-resolution state. The new mechanic uses the existing Strike Pool roll — natural 1s are already the worst attack dice — so no extra rolls are needed, the risk is proportional to dice count, and it applies consistently to all ranged weapons. A fighter with a big Strike Pool has more stray 1s to worry about, which is thematically appropriate.
+
+---
+
 ## 2026-07-11 — Choice-language standardization: "select" as primary verb
 
 **Decision:** **Select** is now the primary discretionary-choice verb across all rules files. Full pass across all 24 files in `rules/`.

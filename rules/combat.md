@@ -34,20 +34,14 @@ Fighters may **move through** friendly fighters during **Move**, **Charge**, **S
 
 #### Friendly fire
 
-When declaring a target for a **Ranged** attack, if the declared enemy target is within engagement range of one or more friendly fighters other than the attacker, make a **Ranged Combat** check. On a failure, the shot hits a friendly fighter instead.
+A friendly fighter is **at risk** when making any **Ranged** attack if:
 
-- If one friendly fighter is within engagement range of the declared target, that fighter becomes the new target.
-- If two or more friendly fighters are within engagement range of the declared target, the attacker selects one of those friendly fighters to become the new target.
+- A friendly fighter's base lies on the straight line between the attacker's base center and the target's base center, **or**
+- A friendly fighter is within engagement range of the declared target.
 
-On a success, resolve the attack against the declared target. On a failure, resolve the attack normally against the new target.
+When a friendly is at risk, any die in the Strike Pool that shows a **natural 1** is a hit on the nearest at-risk friendly instead of the declared enemy target. Resolve each such die as **1 hit** from that weapon against that friendly (defense rolls apply normally). The remaining Strike Pool dice resolve normally against the declared target.
 
-When making a **Ranged** attack with a **firearm** or a **Cast** action with a damage spell, if a **friendly fighter** lies **between** the attacker and the declared enemy target — a straight line from the center of the attacker's base to the center of the target's base crosses the friendly's base — and the attack **misses**, roll **1d6**. On a **1**, that friendly is hit.
-
-**Miss** means the attack was resolved (the **casting roll** or **primer roll** succeeded) but the **declared enemy target took no Wounds** from that action. It does not include a **Mishap** or **Misfire** (**double 1s** on the **casting roll** or **primer roll**), or a failed roll (the spell fizzles or the firearm fails to fire).
-
-On a friendly hit, resolve **1 hit** from that attack against the **intervening friendly** closest to the attacker (defense rolls apply normally).
-
-The line-of-fire miss rule does not apply to **Ranged** weapon attacks without a primer roll (bows, crossbows, throwing weapons, etc.).
+If more than one friendly is at risk, the one **closest to the attacker** (base to base) takes the hit. On a tie, the attacking player selects.
 
 #### Clustered enemies
 
@@ -70,7 +64,7 @@ Unless otherwise noted, ranged weapons have a **minimum range of 3"**.
 
 ## Attack Sequence
 
-Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendly fighters in close combat or in the line of fire** may change or affect targeting — see [Intervening Fighters](combat.md#intervening-fighters).
+Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendly fire** may affect the attack — see [Intervening Fighters](combat.md#intervening-fighters).
 
 > ### Attack Sequence
 >
@@ -202,7 +196,7 @@ Critical hits **cannot be blocked.**
 
 *(See [Conditions](conditions.md#conditions) for full Wound state rules.)*
 
-After Step 5, if the attack **missed** the declared enemy target and a **friendly fighter** was in the line of fire (firearms and damage spells only), apply the line-of-fire miss rule in [Friendly Fire](combat.md#friendly-fire).
+After Step 5, if a **friendly fighter** was at risk (in the line of fire or within engagement range of the target), any natural 1s in the Strike Pool hit that friendly — see [Friendly Fire](combat.md#friendly-fire).
 
 ## The Crit Triangle
 

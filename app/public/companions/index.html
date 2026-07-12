@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Companions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=0a761fc" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=368e642" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -1706,20 +1706,14 @@
         </div></div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-domains">
+        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic-domains">
           <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/domains/" class="wiki-nav-link">Domains</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic">
-          <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-children" aria-label="Expand Magic">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-domains-children" aria-label="Expand Magic Domains">
             <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>
-            <a href="/magic/" class="wiki-nav-link">Magic</a>
+            <a href="/magic/" class="wiki-nav-link">Magic Domains</a>
           </div>
-          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-children">
+          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-domains-children">
         <div class="wiki-nav-node" data-nav-id="nav-magic-casting">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-magic-casting-children" aria-label="Expand Casting">
@@ -2069,10 +2063,10 @@
             <a href="/magic/#blood" class="wiki-nav-link">Blood</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-magic-blood-children">
-        <div class="wiki-nav-node" data-nav-id="nav-magic-tbd">
+        <div class="wiki-nav-node" data-nav-id="nav-magic-lacerate">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/magic/#tbd" class="wiki-nav-link">[TBD]</a>
+            <a href="/magic/#lacerate" class="wiki-nav-link">Lacerate</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-magic-bleed">
@@ -2954,14 +2948,14 @@
           <p class="wiki-article-summary">Companions are animals and familiars fielded by a Handler — the fighter who has Animal Handling and bought the Companion on their roster entry.</p>
         </header>
         <div class="wiki-content">
-          <p>Companions do <strong>not</strong> count toward retinue size or <strong>activation count</strong>. They do <strong>not</strong> use weapon slots.</p>
+          <p>Companions do <strong>not</strong> count toward retinue size or <strong>activation count</strong>. They do <strong>not</strong> use kit.</p>
 <p>Purchase: <a href="/companions/#companions">Equipment — Companions</a>. Profiles: below. Feat: <a href="/feats/#animal-handling">Feats — Animal Handling</a>.</p>
 <hr>
 <h2 id="roster-and-deployment">Roster and deployment</h2>
 <ul>
 <li>A fighter must have <strong>Animal Handling</strong> to field a <strong>Companion</strong>.</li>
-<li>Each <strong>Handler</strong> may field <strong>one</strong> <strong>Companion</strong>, recorded on that fighter&#39;s roster entry.</li>
-<li>Deploy the <strong>Companion</strong> within <strong>1&quot;</strong> of its <strong>Handler</strong> during deployment.</li>
+<li>Each <strong>Handler</strong> may field one <strong>Companion</strong> per pick of <strong>Animal Handling</strong>, each recorded separately on that fighter&#39;s roster entry.</li>
+<li>Deploy each <strong>Companion</strong> within <strong>1&quot;</strong> of its <strong>Handler</strong> during deployment.</li>
 </ul>
 <hr>
 <h2 id="attributes-tamed">Attributes — Tamed</h2>
@@ -2973,9 +2967,9 @@
 <blockquote>
 <h3 id="apply-wounds-companion">Apply Wounds (Companion)</h3>
 <p>Each unblocked hit inflicts <strong>1 Wound</strong>.</p>
-<p>When a <strong>Companion</strong> reaches <strong>0 Wounds</strong>, it is <strong>Out of Action</strong> and is removed from the battle. Any effect that would make a fighter <strong>Downed</strong> or <strong>Stunned</strong> removes the <strong>Companion</strong> from the battle instead.</p>
+<p>When a <strong>Companion</strong> is reduced to <strong>0 or fewer Wounds</strong>, it flees the battle and is immediately removed from the battlefield. Any effect that would make a fighter <strong>Downed</strong> or <strong>Stunned</strong> also causes the <strong>Companion</strong> to flee immediately.</p>
 </blockquote>
-<p>Companions are never removed permanently — see <a href="/post-game/#step-3-companion-recovery">Companion Recovery</a>.</p>
+<p>Companions removed this way are never lost permanently — see <a href="/post-game/#step-3-companion-recovery">Companion Recovery</a>.</p>
 <hr>
 <h2 id="activation">Activation</h2>
 <p>When a <strong>Handler</strong> activates:</p>
@@ -2984,9 +2978,9 @@
 <li><strong>Companion action</strong> — After the <strong>Handler</strong> finishes their activation, the <strong>Companion</strong> performs <strong>1 action</strong> if it is not <strong>Out of Action</strong> and is within <strong>tether</strong> of the <strong>Handler</strong>.</li>
 </ol>
 <p>The <strong>Handler</strong>&#39;s <strong>2 actions</strong> are spent normally. The <strong>Companion</strong> action is additional and does not cost the <strong>Handler</strong> any actions.</p>
-<p>If the <strong>Handler</strong> skips their activation for <strong>Overwatch</strong>, spend <strong>1 Overwatch token</strong> and assign it to the <strong>Handler</strong> as normal. The <strong>Companion</strong> does not co-move and does not take a <strong>Companion</strong> action.</p>
-<p>While the <strong>Handler</strong> is <strong>Stunned</strong> or <strong>Out of Action</strong>, their <strong>Companion</strong> does not activate.</p>
-<p>While the <strong>Handler</strong> is <strong>Downed</strong>, the <strong>Companion</strong> does not co-move and does not take a <strong>Companion</strong> action.</p>
+<p>If the <strong>Handler</strong> skips their activation for <strong>Overwatch</strong>, the <strong>Companion</strong> does not co-move and does not take a <strong>Companion</strong> action.</p>
+<p>While the <strong>Handler</strong> is <strong>Downed</strong>, the <strong>Companion</strong> acts independently at the end of the <strong>Handler</strong>&#39;s activation: it may move or charge (staying within <strong>tether</strong> of the <strong>Handler</strong>), then performs <strong>1 action</strong>.</p>
+<p>When the <strong>Handler</strong> becomes <strong>Stunned</strong> or goes <strong>Out of Action</strong>, the <strong>Companion</strong> immediately flees the battle and is removed from the battlefield.</p>
 <hr>
 <h2 id="consolidate">Consolidate</h2>
 <p>When the <strong>Handler</strong> is targeted by a <strong>Charge</strong> and the <strong>Attack Sequence</strong> resolves, the <strong>Companion</strong> (if Active and not <strong>Out of Action</strong>) may immediately move up to its <strong>tether</strong> distance toward the attacking fighter. This move does not use the <strong>Companion</strong> action.</p>
@@ -3184,7 +3178,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=0a761fc"></script>
-  <script src="/wiki/wiki.js?v=0a761fc" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=368e642"></script>
+  <script src="/wiki/wiki.js?v=368e642" defer></script>
 </body>
 </html>

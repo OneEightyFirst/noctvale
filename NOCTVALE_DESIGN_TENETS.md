@@ -130,7 +130,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Noctvale is a cursed post-imperial ruin — Valecoria fallen, the Hundred Years of War over but never ended. Rules produce stories that feel like the setting: mishaps, fear, wild shots, Survival Rolls gone wrong, magic backlash. Simulation texture earns its place when it stays lean.
 
-**Mechanically:** Mishaps on spell double-1s and random reward double-1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly in line of fire. Falling damage. Survival Roll Mishaps. Insanity table includes Berserk — fear that can snap back on the source. Open: Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
+**Mechanically:** Mishaps on spell double-1s and random reward double-1s. Fear/Panic/Insanity keyed to specific fighters (Sa tests). Friendly fire — natural 1s in the Strike Pool hit the nearest at-risk friendly when friendlies are in the line of fire or engaged with the target. Falling damage. Survival Roll Mishaps. Insanity table includes Berserk — fear that can snap back on the source. Open: Sanity (Sa) fully wired; territory/upkeep layer; death trigger on Slain.
 
 **Protects:** Mechanical bite matching grimdark tone. Player decisions to court risk through scenario objectives, Looting, and risky casts. Lore in `intro.md`; consequences in the rules.
 

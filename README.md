@@ -17,7 +17,7 @@ rules/
   intro.md               — Setting, premise, backstory, factions, and game summary
   what-you-need-to-play.md, attributes.md, battle-setup.md, the-turn.md
   actions.md, combat.md, conditions.md
-  retinue-building.md, archetypes.md, traditions.md, feats.md, domains.md, magic.md
+  retinue-building.md, archetypes.md, traditions.md, feats.md, magic.md
   crown-costs.md, weapons.md, gear.md, companions.md
   how-to-run-a-campaign.md, advancement.md, scenarios.md, post-game-sequence.md, survival-rolls.md, economy.md
   chapter-movement-log.md — Ledger for the split from combined files into chapter files

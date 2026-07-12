@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Actions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=0a761fc" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=368e642" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -1706,20 +1706,14 @@
         </div></div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-domains">
+        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic-domains">
           <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/domains/" class="wiki-nav-link">Domains</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic">
-          <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-children" aria-label="Expand Magic">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-domains-children" aria-label="Expand Magic Domains">
             <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>
-            <a href="/magic/" class="wiki-nav-link">Magic</a>
+            <a href="/magic/" class="wiki-nav-link">Magic Domains</a>
           </div>
-          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-children">
+          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-domains-children">
         <div class="wiki-nav-node" data-nav-id="nav-magic-casting">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-magic-casting-children" aria-label="Expand Casting">
@@ -2069,10 +2063,10 @@
             <a href="/magic/#blood" class="wiki-nav-link">Blood</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-magic-blood-children">
-        <div class="wiki-nav-node" data-nav-id="nav-magic-tbd">
+        <div class="wiki-nav-node" data-nav-id="nav-magic-lacerate">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/magic/#tbd" class="wiki-nav-link">[TBD]</a>
+            <a href="/magic/#lacerate" class="wiki-nav-link">Lacerate</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-magic-bleed">
@@ -3045,7 +3039,7 @@
 </ul>
 <blockquote>
 <h3 id="casting-roll-2d6-casting-attribute">Casting Roll (2d6 + Casting Attribute)</h3>
-<p>Roll <strong>2d6 + the spell&#39;s Casting attribute</strong> against the spell&#39;s casting difficulty.</p>
+<p>Roll <strong>2d6 + the spell&#39;s Casting attribute</strong> against the spell&#39;s <strong>Casting Difficulty</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -3067,7 +3061,7 @@
 </tr>
 </tbody></table>
 </blockquote>
-<p><em>(See <a href="/magic/">Magic</a>.)</em></p>
+<p><em>(See <a href="/magic/">Magic Domains</a>.)</em></p>
 <h3 id="mercy-kill">Mercy Kill</h3>
 <p><strong>Cost:</strong> 1 action</p>
 <p>Finish a <strong>Downed</strong> or <strong>Stunned</strong> enemy <strong>within 1&quot;</strong>.</p>
@@ -3080,13 +3074,13 @@
 <h3 id="hurl">Hurl</h3>
 <p><strong>Cost:</strong> 1 action</p>
 <p>Choose an enemy fighter within engagement range of this fighter.</p>
-<p>Make an <strong>opposed check</strong> — the attacker chooses <strong>Might</strong> or <strong>Skill</strong>. If the target is <strong>Stunned</strong>, the attacker wins automatically without rolling. Against a <strong>Downed</strong> target, the attacker wins tied totals.</p>
+<p>Make an <strong>opposed check</strong> — the attacker selects <strong>Might</strong> or <strong>Skill</strong>. If the target is <strong>Stunned</strong>, the attacker wins automatically without rolling. Against a <strong>Downed</strong> target, the attacker wins tied totals.</p>
 <blockquote>
 <h3 id="opposed-check">Opposed Check</h3>
-<p>Each fighter rolls <strong>1d6</strong> and adds their value in the chosen attribute. The fighter with the higher total wins. On a tied total, the defender wins.</p>
+<p>Each fighter rolls <strong>1d6</strong> and adds their value in the selected attribute. The fighter with the higher total wins. On a tied total, the defender wins.</p>
 </blockquote>
 <ul>
-<li><strong>Attacker wins:</strong> Move the chosen fighter up to this fighter&#39;s <strong>Might</strong> in inches in a direction you choose.<ul>
+<li><strong>Attacker wins:</strong> Move the selected fighter up to this fighter&#39;s <strong>Might</strong> in inches in a direction you select.<ul>
 <li>If the target was <strong>Active</strong> or <strong>Downed</strong>, they become <strong>Stunned</strong> after moving. A <strong>Stunned</strong> target remains <strong>Stunned</strong>.</li>
 <li>If the target&#39;s move stops because their base contacts <strong>terrain</strong> or an <strong>Active</strong> fighter&#39;s base, they suffer <strong>1 hit</strong> at <strong>2 Might / 1 Skill</strong>. If the collision involves another fighter&#39;s base, that fighter also suffers the same hit and becomes <strong>Stunned</strong>.</li>
 </ul>
@@ -3098,7 +3092,7 @@
 <p><strong>Multiple Engagement</strong></p>
 <p>When a fighter is attacking multiple enemies:</p>
 <ul>
-<li>If the enemies are standing, the attacker splits their <strong>Strike Pool</strong> among those enemies however they choose before rolling to hit.</li>
+<li>If the enemies are standing, the attacker splits their <strong>Strike Pool</strong> among those enemies however they like before rolling to hit.</li>
 <li>If one enemy is standing and another is <strong>Downed</strong> or <strong>Stunned</strong>, the <strong>standing enemy must be prioritized</strong>.</li>
 </ul>
 <p><strong>Gang Up</strong></p>
@@ -3120,7 +3114,7 @@
 <li>Gain <strong>+1 die of the weapon&#39;s dominant die type</strong></li>
 <li><strong>Natural 6</strong> results are critical hits on that <strong>Ranged</strong> action. If that <strong>Ranged</strong> weapon already had a critical hit on <strong>6</strong>, increase it to <strong>5+</strong></li>
 </ul>
-<p>The dominant die type is whichever attribute the weapon adds more of (<strong>Might</strong> or <strong>Skill</strong>). If tied, choose <strong>Might dice</strong> or <strong>Skill dice</strong>.</p>
+<p>The dominant die type is whichever attribute the weapon adds more of (<strong>Might</strong> or <strong>Skill</strong>). If tied, select <strong>Might dice</strong> or <strong>Skill dice</strong>.</p>
 <h3 id="hide">Hide</h3>
 <p><strong>Cost:</strong> 1 action</p>
 <p>Become <strong>Hidden</strong>.</p>
@@ -3217,7 +3211,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=0a761fc"></script>
-  <script src="/wiki/wiki.js?v=0a761fc" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=368e642"></script>
+  <script src="/wiki/wiki.js?v=368e642" defer></script>
 </body>
 </html>

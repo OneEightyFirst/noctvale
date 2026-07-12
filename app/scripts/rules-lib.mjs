@@ -92,15 +92,8 @@ export const DOCUMENT_DEFS = [
     html: "feats/index.html",
   },
   {
-    id: "domains",
-    label: "Domains",
-    category: "Retinues",
-    path: "rules/domains.md",
-    html: "domains/index.html",
-  },
-  {
     id: "magic",
-    label: "Magic",
+    label: "Magic Domains",
     category: "Retinues",
     path: "rules/magic.md",
     html: "magic/index.html",
@@ -201,8 +194,7 @@ const RULES_OUTLINE = [
       { label: "Archetypes", articleId: "archetypes", includeHeadings: true },
       { label: "Traditions", articleId: "traditions", includeHeadings: true },
       { label: "Feats", articleId: "feats", includeHeadings: true },
-      { label: "Domains", articleId: "domains", includeHeadings: true },
-      { label: "Magic", articleId: "magic", includeHeadings: true },
+      { label: "Magic Domains", articleId: "magic", includeHeadings: true },
     ],
   },
   {

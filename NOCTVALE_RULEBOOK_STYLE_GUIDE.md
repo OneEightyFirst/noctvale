@@ -157,6 +157,8 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | **engagement range** | **1"** — bases within 1" are engaged |
 | **line of sight** | Lowercase in prose; binary (can see / cannot see) |
 | **campaign** | Linked battles with post-game steps between them |
+| **Casting Difficulty** | The target number a **casting roll** must meet or beat, printed on each spell (e.g. **Will** 11+) |
+| **Priming Difficulty** | The target number a **primer roll** must meet or beat, printed on each firearm's weapon profile |
 
 ---
 
@@ -256,8 +258,8 @@ Gunpowder access: **Firearms** domain feat *(Mortal)*; retinue purchase when eve
 | One six-sided die | **1d6** or **d6** — prefer **1d6** when count matters (“Roll **1d6**”) |
 | Multiple dice | **2d6**, **3d6** — lowercase **d**, no space |
 | Attribute check | **Skill** check |
-| Casting | **casting roll** — **2d6 + Will** vs difficulty |
-| Gunpowder / firearms | **primer roll** — **2d6 + Skill** vs **primer difficulty** (weapon profile); **Ranged Combat** governs the **Attack Sequence** to-hit roll |
+| Casting | **casting roll** — **2d6 + Will** vs **Casting Difficulty** |
+| Gunpowder / firearms | **primer roll** — **2d6 + Skill** vs **Priming Difficulty** (weapon profile); **Ranged Combat** governs the **Attack Sequence** to-hit roll |
 | Difficulty shorthand | **11+**, **6+** (meaning meet or beat on the roll) |
 | Natural results | **natural 1**, **natural 6** |
 | Table roll | **Roll 1d6:** then table |
@@ -342,20 +344,26 @@ For attack accuracy, modify the **Hit** attribute for that attack: +1 **Close Co
 Use spell blocks in `rules/magic.md` instead of spell tables.
 
 ```markdown
-##### Radiant Strike
+#### Radiant Strike
 
-**Casting:** **Will** 11+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**.
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 12" | **Attack:** **Ranged Combat**
+
+5 **Might** | +2 **Skill**
 
 Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
+
+**Mishap:** None
 ```
 
-- **Casting** combines casting attribute and difficulty: **Will** 11+, **Sanity** 12+.
-- Include **Keywords:** **Attack** only when the spell builds a Strike Pool.
-- Include an **Attack:** line only when the spell resolves through the **Attack Sequence**.
-- In an **Attack** line, a plain **Might** or **Skill** value is fixed; a +**Skill** value adds to the caster's **Skill**.
-- Omit **Mishap** entirely when the spell has no Mishap.
+- **Fluff line** — *[Placeholder]* in italics until real flavor text is written; never a substitute for the effect prose below it.
+- **Difficulty** is the spell's casting attribute and target number: **Will** 11+, **Sanity** 12+. Do not write **Casting:** on the spell entry itself — the full term **Casting Difficulty** is defined once under [Casting](magic.md#casting); the spell line uses the short form **Difficulty:**.
+- Separate stat-line fields with ` | ` (pipe), not periods.
+- Include an **Attack:** field only when the spell resolves through the **Attack Sequence**. Omit the whole `| **Attack:** …` segment for spells that don't build a Strike Pool — do not print a placeholder dash.
+- When the spell has an **Attack:** field, put the Strike Pool dice on their own line below the stat line: `5 **Might** | +2 **Skill**`. A plain **Might** or **Skill** value is fixed; a +**Skill** value adds to the caster's **Skill**.
 - Write the effect as normal rules prose, not table shorthand.
-- Use **Mishap:** only when the spell has a defined backlash or a still-open *(TBD)* backlash.
+- Always include **Mishap:** as the closing line. Write **Mishap: None** when the spell has no backlash.
 
 ### Ability notation
 

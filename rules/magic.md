@@ -1,4 +1,6 @@
-# Magic
+# Magic Domains
+
+Each **Domain** keyword unlocks a spell list and domain feats. **Mortal** replaces spells with gunpowder access.
 
 ## Casting
 
@@ -9,7 +11,7 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 
 > ### Casting Roll (2d6 + Casting Attribute)
 >
-> Roll **2d6 + the spell's Casting attribute** against the spell's casting difficulty.
+> Roll **2d6 + the spell's Casting attribute** against the spell's **Casting Difficulty**.
 >
 > | Result | Effect |
 > |---|---|
@@ -74,58 +76,178 @@ Each domain has a standard spell plus **6 additional spells**. **Casting attribu
 ### Light
 
 #### Radiant Strike
-**Casting:** **Will** 11+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 5 **Might** / +2 **Skill**. Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 12" | **Attack:** **Ranged Combat**
+
+5 **Might** | +2 **Skill**
+
+Make a ranged spell attack. Against **Undead** and **Daemons**, use 6 **Might** / +2 **Skill** instead.
+
+**Mishap:** None
 
 #### Holy Light
-**Casting:** **Will** 11+. **Range:** 12" from caster. All fighters within 12" lose cover and **Hidden**. **Mishap:** The caster becomes **Blinded**.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 12"
+
+All fighters within 12" lose cover and **Hidden**.
+
+**Mishap:** The caster becomes **Blinded**.
 
 #### Heal
-**Casting:** **Will** 10+. **Range:** 1". Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 10+ | **Range:** 1"
+
+Restore 1 Wound and improve the target's wound state by one step: **Stunned** to **Downed**, or **Downed** to **Active**.
+
+**Mishap:** None
 
 #### Purge the Faithless
-**Casting:** **Will** 11+. **Range:** 3" blast from caster. **Keywords:** **Attack**. **Attack:** **Close Combat**, 3 **Might** / +1 **Skill**. All fighters within the blast are hit. **Mishap:** Resolve the attack against the caster.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** Self | **Attack:** **Close Combat**
+
+3 **Might** | +1 **Skill**
+
+Place a **3" blast template** centered on the caster. All fighters within the blast are hit.
+
+**Mishap:** Resolve the attack against the caster.
 
 #### Shield of Faith
-**Casting:** **Will** 10+. **Range:** 12". Target friendly fighter gains **+2 Might defense dice** until the start of the caster's next activation.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 10+ | **Range:** 12"
+
+Target friendly fighter gains **+2 Might defense dice** until the start of the caster's next activation.
+
+**Mishap:** None
 
 #### Horrors Relived
-**Casting:** **Will** 12+. **Range:** 12". Target enemy makes a **Sanity** check. On a failure, that fighter suffers 4 automatic hits. On a pass, that fighter suffers 1 automatic hit. **Mishap:** Resolve the failed effect against the caster.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 12+ | **Range:** 12"
+
+Target enemy makes a **Sanity** check. On a failure, that fighter suffers 4 automatic hits. On a pass, that fighter suffers 1 automatic hit.
+
+**Mishap:** Resolve the failed effect against the caster.
 
 #### Unwavering Resolve
-**Casting:** **Will** 10+. **Range:** 8" from caster. All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation. **Mishap:** The caster becomes **Broken**.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 10+ | **Range:** 8"
+
+All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation.
+
+**Mishap:** The caster becomes **Broken**.
 
 ### Arcane
 
 #### Arcane Bolt
-**Casting:** **Will** 11+. **Range:** 20". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Make a ranged spell attack.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 20" | **Attack:** **Ranged Combat**
+
+4 **Might** | +3 **Skill**
+
+Make a ranged spell attack.
+
+**Mishap:** None
 
 #### Arcane Shield
-**Casting:** **Will** 11+. **Range:** Self. The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** Self
+
+The caster is immune to all spells. At the start of the caster's next activation, roll 1d6. On 1-2, the shield disappears.
+
+**Mishap:** None
 
 #### Fireball
-**Casting:** **Will** 13+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Select a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the selected point. **Mishap:** The blast template centers on the caster.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 13+ | **Range:** 18" | **Attack:** **Ranged Combat**
+
+4 **Might** | +3 **Skill**
+
+Select a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the selected point.
+
+**Mishap:** The blast template centers on the caster.
 
 #### Telekinesis
-**Casting:** **Will** 12+. **Range:** 12". Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check. **Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 12+ | **Range:** 12"
+
+Move any fighter, friendly or enemy, up to 6" directly toward or directly away from the caster. The target does not make a check.
+
+**Mishap:** Your opponent chooses whether the target moves directly toward or directly away from the caster.
 
 #### Displacement
-**Casting:** **Will** 11+. **Range:** 12". Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base. **Mishap:** Roll a scatter die. Move the target 6" in the indicated direction. This movement ignores terrain, engagement, and intervening fighters. If the target cannot end at the full distance, place it as far as possible along that line without ending inside terrain or another fighter's base.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 12"
+
+Target friendly fighter is instantly moved up to 6" in any direction. This movement ignores terrain, engagement, and intervening fighters. The target cannot end inside terrain or another fighter's base.
+
+**Mishap:** Roll a scatter die. Move the target 6" in the indicated direction. This movement ignores terrain, engagement, and intervening fighters. If the target cannot end at the full distance, place it as far as possible along that line without ending inside terrain or another fighter's base.
 
 #### Hoarfrost
-**Casting:** **Will** 11+. **Range:** 18". Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.
 
-When a fighter ends any movement in the zone, make a **Skill** check. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound. **Mishap:** The blast template centers on the caster.
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 18"
+
+Choose a point within 18". Place a large blast template until the start of the caster's next activation. The zone affects friendly and enemy fighters.
+
+When a fighter ends any movement in the zone, make a **Skill** check. On a pass, the fighter slides d6" in the same direction they were moving. On a failure, roll a scatter die and slide the fighter d6" in that direction. If the check die was a natural 1, the fighter becomes **Downed** at the end of the slide. If the slide is stopped by terrain, a wall, or another fighter's base, the fighter suffers 1 Wound.
+
+**Mishap:** The blast template centers on the caster.
 
 #### Slow
-**Casting:** **Will** 12+. **Range:** line of sight. Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2. **Mishap:** The caster loses 1 action on their next activation. They activate with 1 action instead of 2.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 12+ | **Range:** line of sight
+
+Target enemy loses 1 action on their next activation. They activate with 1 action instead of 2.
+
+**Mishap:** The caster loses 1 action on their next activation. They activate with 1 action instead of 2.
 
 ### Infernal
 
 #### Hellfire
-**Casting:** **Sanity** 10+. **Range:** 3"–18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 4 **Might** / +3 **Skill**. Make a ranged spell attack.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 10+ | **Range:** 3"–18" | **Attack:** **Ranged Combat**
+
+4 **Might** | +3 **Skill**
+
+Make a ranged spell attack.
+
+**Mishap:** None
 
 #### Summon Daemon
-**Casting:** **Sanity** 11+. **Range:** 3". The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 3"
+
+The hells hold infinite daemonic entities of different shapes and sizes. To help organize the chaos, they are combined into three categories:
 - **Imps** — Usually small, fairly weak, with wings
 - **Hellions** — Usually 4-legged animal-like creatures, sometimes resembling wolves
 - **Maulers** — Large, bulky creatures, most of the time humanoid in shape
@@ -153,7 +275,9 @@ The summon result is separate from the **casting roll**. Double 1s and double 6s
 
 A retinue cannot summon more than **2 Imps**, **2 Hellions**, and **1 Mauler** in the same battle. If a summon result would exceed one of those caps, use the next lower result that does not exceed a cap. If no lower result is available, no fighter is summoned.
 
-A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round. **Mishap:** The caster suffers **1 Wound** and gains the **Damned** permanent condition — see [Conditions — Damned](conditions.md#damned). No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
+A fighter created by **Summon Daemon** is friendly to the caster's retinue. It cannot activate this round if the sacrificed fighter whose position it replaced had already activated this round.
+
+**Mishap:** The caster suffers **1 Wound** and gains the **Damned** permanent condition — see [Conditions — Damned](conditions.md#damned). No fighters are sacrificed, no crystals are spent, and no Daemon is summoned.
 
 **Binding the Daemon:** After the battle, each sacrificed fighter rolls on the **Casualty Table** as normal — they ended the battle **Out of Action**. If a **Daemon** (not a **Zombie** from a failed summon result) survived the battle, the controlling player may attempt to **bind** it before resolving those **Casualty Table** rolls for the sacrificed fighters. The caster makes a **Sanity** check. On **success**, the sacrificed fighters are **Slain** and removed from the retinue (skip the **Casualty Table**), and the **Daemon** joins the retinue permanently. On **failure** (not a natural **1**), resolve the **Casualty Table** for each sacrificed fighter as normal and remove the **Daemon** from the retinue. On a natural **1**, resolve the **Casualty Table** for each sacrificed fighter as normal, the **Daemon** joins the retinue permanently, and the caster is **Slain** and removed from the retinue (skip the **Casualty Table**). Remove any **Zombie** created by a failed summon result from the retinue after the battle. See [Summoning — Binding](#binding).
 
@@ -234,12 +358,24 @@ Created only when **Summon Daemon** rolls double **1**s on the **Summon Result**
 **Summon (-)** — Stays until the battle ends. Cannot be bound. Remove from the retinue after the battle.
 
 #### The Void
-**Casting:** **Sanity** 14+. **Range:** 12". Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.
 
-While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass a **Might** check or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**. **Mishap:** The marker is placed centered on the caster instead.
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 14+ | **Range:** 12"
+
+Choose a point within 12" that is at least 6" from every fighter. Place a 3" blast marker there for 1d6 activations.
+
+While the marker remains, when a fighter activates, or the first time during its activation it would come within 12" of the marker's center, it must pass a **Might** check or move d6" directly toward the marker. After this movement, the fighter may act as normal. If this movement contacts terrain, the fighter stops and its activation ends. If the fighter contacts the blast marker, it immediately goes **Out of Action**.
+
+**Mishap:** The marker is placed centered on the caster instead.
 
 #### Possession
-**Casting:** **Sanity** 13+. **Range:** Engagement range. Target enemy must pass a **Will** check. On a failure, they become **Possessed**.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 13+ | **Range:** Engagement range
+
+Target enemy must pass a **Will** check. On a failure, they become **Possessed**.
 
 While **Possessed**, the player who cast **Possession** controls that fighter's activations — not the fighter's owner. Each activation, the **Possessed** fighter has **1 action** instead of **2**.
 
@@ -248,35 +384,100 @@ At the end of each of that fighter's activations while **Possessed**, they make 
 **Mishap:** The caster becomes **Possessed** instead. Your opponent controls the caster's activations until **Possessed** ends.
 
 #### Hellmouth
-**Casting:** **Sanity** 11+. **Range:** 12". Choose a point within **12"**. Place a **5" blast template** centered on that point. The template cannot overlap any fighter's base. The template counts as **impassable terrain** for the rest of the battle. **Mishap:** The **Hellmouth** opens centered on the caster instead.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 12"
+
+Choose a point within **12"**. Place a **5" blast template** centered on that point. The template cannot overlap any fighter's base. The template counts as **impassable terrain** for the rest of the battle.
+
+**Mishap:** The **Hellmouth** opens centered on the caster instead.
 
 #### Searing Gaze
-**Casting:** **Sanity** 12+. **Range:** 18". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +3 **Skill**. Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you select. Every fighter the line touches that is in **line of sight** of the caster is hit. **Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](conditions.md#blinded).
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 12+ | **Range:** 18" | **Attack:** **Ranged Combat**
+
+3 **Might** | +3 **Skill**
+
+Draw a straight line **1 mm** thick from the caster to a point up to **18"** away in a direction you select. Every fighter the line touches that is in **line of sight** of the caster is hit.
+
+**Mishap:** Resolve the attack against the caster. The caster becomes **Blinded** until the end of their next activation — see [Conditions — Blinded](conditions.md#blinded).
 
 #### Nightmare Visage
-**Casting:** **Sanity** 11+. **Range:** 12". Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 12"
+
+Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends.
+
+**Mishap:** None
 
 
 
 ### Nature
 
 #### Thorn Volley
-**Casting:** **Will** 12+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +2 **Skill**. Make a ranged spell attack using a **standard flame template**.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 12+ | **Range:** 12" | **Attack:** **Ranged Combat**
+
+3 **Might** | +2 **Skill**
+
+Make a ranged spell attack using a **standard flame template**.
+
+**Mishap:** None
 
 #### Shadowmeld
-**Casting:** **Will** 11+. **Range:** 12". Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy. **Mishap:** Enemies add +1 **Ranged Combat** or +1 **Close Combat** — whichever **Hit** attribute the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 12"
+
+Target friendly fighter gains **Hidden**. The target does not need to remain within 1" of terrain to stay **Hidden**. **Hidden** is still lost from combat actions, **Charge**, **Climb**, **Jump**, or moving within 6" of an enemy.
+
+**Mishap:** Enemies add +1 **Ranged Combat** or +1 **Close Combat** — whichever **Hit** attribute the attack uses — when attacking the target with **Ranged** attacks or spells until the start of the caster's next activation.
 
 #### Venom
-**Casting:** **Will** 10+. **Range:** 12". Target enemy must pass a **Might** check. On a failure, the target gains **1 Affliction token** — see [Conditions — Afflictions](conditions.md#afflictions). **Mishap:** The caster gains **1 Affliction token**.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 10+ | **Range:** 12"
+
+Target enemy must pass a **Might** check. On a failure, the target gains **1 Affliction token** — see [Conditions — Afflictions](conditions.md#afflictions).
+
+**Mishap:** The caster gains **1 Affliction token**.
 
 #### Feral Form
-**Casting:** **Will** 11+. **Range:** 6". Target friendly fighter gains +2 **Might** and +1" **Movement** until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells. **Mishap:** The caster suffers −1 **Sanity** until the end of their next activation.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 6"
+
+Target friendly fighter gains +2 **Might** and +1" **Movement** until the start of the caster's next activation. While affected, the target cannot use ranged weapons or cast spells.
+
+**Mishap:** The caster suffers −1 **Sanity** until the end of their next activation.
 
 #### Entangle
-**Casting:** **Will** 12+. **Range:** 12". Target enemy has **Movement** reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast. **Mishap:** The caster has **Movement** reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 12+ | **Range:** 12"
+
+Target enemy has **Movement** reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
+
+**Mishap:** The caster has **Movement** reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
 
 #### Stinging Swarm
-**Casting:** **Will** 10+. **Range:** 3". Place a **Stinging Swarm** within **3"** of the caster — hornets, wasps, and biting insects drawn from the wild. Roll **1d3**. The **Stinging Swarm** remains for that many **activations**, counting this one. It activates immediately with **2 actions**. Remove it from the battle when those activations have finished.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 10+ | **Range:** 3"
+
+Place a **Stinging Swarm** within **3"** of the caster — hornets, wasps, and biting insects drawn from the wild. Roll **1d3**. The **Stinging Swarm** remains for that many **activations**, counting this one. It activates immediately with **2 actions**. Remove it from the battle when those activations have finished.
 
 | Stinging Swarm | M | CC | RC | Mt | Sk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|---|
@@ -291,15 +492,32 @@ At the end of each of that fighter's activations while **Possessed**, they make 
 **Mishap:** The **Stinging Swarm** appears hostile. Your opponent controls it for its activation, then remove it from the battle.
 
 #### Dread Chorus
-**Casting:** **Will** 11+. **Range:** 8" from caster. All enemy fighters within 8" must pass a **Sanity** check for **Fear** with the caster as the source.
+
+*[Placeholder]*
+
+**Difficulty:** **Will** 11+ | **Range:** 8"
+
+All enemy fighters within 8" must pass a **Sanity** check for **Fear** with the caster as the source.
+
+**Mishap:** None
 
 ### Necromancy
 
 #### Deathbolt
-**Casting:** **Sanity** 14+. **Range:** 18". Target enemy makes a **Will** check. On a failure, that fighter goes **Out of Action**. On a pass, there is no effect.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 14+ | **Range:** 18"
+
+Target enemy makes a **Will** check. On a failure, that fighter goes **Out of Action**. On a pass, there is no effect.
+
+**Mishap:** None
 
 #### Summon Skeleton
-**Casting:** **Sanity** 10+. **Range:** 3".
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 10+ | **Range:** 3"
 
 The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 
@@ -318,34 +536,100 @@ The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 **Mishap:** The **Skeleton** appears hostile. Your opponent controls it for its activation, then remove it from the battle.
 
 #### Raise Dead
-**Casting:** **Sanity** 13+. **Range:** 3". **Remove** one **friendly** **body token** within **3"** of the caster — see [Body tokens](#body-tokens). Place that fighter within **3"** of the caster with **1 Wound**, **Undead**, and **Fearless**. Roll **1d3**. The fighter remains in the battle for that many **activations**, counting this one. They activate immediately with **2 actions**. When those activations have finished, they go **Out of Action** and are removed from the battle. **Mishap:** Your opponent places and controls the raised fighter instead.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 13+ | **Range:** 3"
+
+**Remove** one **friendly** **body token** within **3"** of the caster — see [Body tokens](#body-tokens). Place that fighter within **3"** of the caster with **1 Wound**, **Undead**, and **Fearless**. Roll **1d3**. The fighter remains in the battle for that many **activations**, counting this one. They activate immediately with **2 actions**. When those activations have finished, they go **Out of Action** and are removed from the battle.
+
+**Mishap:** Your opponent places and controls the raised fighter instead.
 
 #### Cursed Ground
-**Casting:** **Sanity** 12+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 2 **Might** / +2 **Skill**. Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer −1" **Movement** and take the spell's hit unless they pass a **Skill** check. **Mishap:** The blast centers on the caster.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 12+ | **Range:** 12" | **Attack:** **Ranged Combat**
+
+2 **Might** | +2 **Skill**
+
+Choose a point within 12". Place a large blast template until the start of the caster's next activation. All fighters in the zone suffer −1" **Movement** and take the spell's hit unless they pass a **Skill** check.
+
+**Mishap:** The blast centers on the caster.
 
 #### Wither
-**Casting:** **Sanity** 11+. **Range:** 12". Target enemy suffers **Withered** until the start of the caster's next activation — see [Conditions — Afflictions](conditions.md#afflictions). **Mishap:** The caster suffers **Withered** until the start of their next activation.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 12"
+
+Target enemy suffers **Withered** until the start of the caster's next activation — see [Conditions — Afflictions](conditions.md#afflictions).
+
+**Mishap:** The caster suffers **Withered** until the start of their next activation.
 
 #### Bone Blast
-**Casting:** **Sanity** 11+. **Range:** blast from caster. **Keywords:** **Attack**. **Attack:** **Close Combat**, 4 **Might** / +3 **Skill**. Center the blast template on the caster. All fighters under the template except the caster are hit. **Mishap:** The caster gains **2 Affliction tokens** for 1d6 rounds.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** Self | **Attack:** **Close Combat**
+
+4 **Might** | +3 **Skill**
+
+Place a **5" blast template** centered on the caster. All fighters under the template except the caster are hit.
+
+**Mishap:** The caster gains **2 Affliction tokens** for 1d6 rounds.
 
 #### Bone Circle
-**Casting:** **Sanity** 12+. **Range:** 12". **Keywords:** **Attack**. **Attack:** **Ranged Combat**, 3 **Might** / +4 **Skill**. Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters. **Mishap:** The zone centers on the caster.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 12+ | **Range:** 12" | **Attack:** **Ranged Combat**
+
+3 **Might** | +4 **Skill**
+
+Choose a point within 12". Place a 3" blast template until the start of the caster's next activation. Any fighter that starts their activation in the zone, ends their activation in the zone, or moves through it is hit. Defense applies normally. The zone affects friendly and enemy fighters.
+
+**Mishap:** The zone centers on the caster.
 
 ### Blood
 
-#### *[TBD]*
+#### Lacerate
 
-*Spell to be designed — previous Leech spell removed to avoid redundancy with Vampire tradition life-drain.*
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 12+ | **Range:** 6" | **Attack:** **Ranged Combat**
+
+4 **Might** | +2 **Skill**
+
+A successful hit applies **Bleeding** — see [Conditions — Bleeding](conditions.md#bleeding).
+
+**Mishap:** None
 
 #### Bleed
-**Casting:** **Sanity** 13+. **Range:** 12". Target enemy must pass a **Will** check. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](conditions.md#bleeding). **Mishap:** The caster becomes **Bleeding** instead.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 13+ | **Range:** 12"
+
+Target enemy must pass a **Will** check. On a failure, the target becomes **Bleeding** — see [Conditions — Bleeding](conditions.md#bleeding).
+
+**Mishap:** The caster becomes **Bleeding** instead.
 
 #### Blood Frenzy
-**Casting:** **Sanity** 11+. **Range:** 6". Target friendly fighter gains +3 **Might** and suffers −1 **Close Combat** and −1 **Ranged Combat** until the start of the caster's next activation. **Mishap:** The target suffers −1 **Might**, −1 **Close Combat**, and −1" **Movement** until the start of the caster's next activation.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 6"
+
+Target friendly fighter gains +3 **Might** and suffers −1 **Close Combat** and −1 **Ranged Combat** until the start of the caster's next activation.
+
+**Mishap:** The target suffers −1 **Might**, −1 **Close Combat**, and −1" **Movement** until the start of the caster's next activation.
 
 #### Summon Bats
-**Casting:** **Sanity** 11+. **Range:** 3".
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 3"
 
 The caster must carry **1 Summoning Crystal** — see [Summoning](#summoning).
 
@@ -366,13 +650,34 @@ Cannot be bound.
 **Mishap:** The **Bats** appear hostile. Your opponent controls them for their activation, then remove them from the battle.
 
 #### Enthrall
-**Casting:** **Sanity** 11+. **Range:** 8". Target enemy must pass a **Will** check or immediately take one **Move** action in a direction selected by the caster. **Mishap:** A friendly fighter selected by your opponent takes the move instead.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 8"
+
+Target enemy must pass a **Will** check or immediately take one **Move** action in a direction selected by the caster.
+
+**Mishap:** A friendly fighter selected by your opponent takes the move instead.
 
 #### Feast of Excess
-**Casting:** **Sanity** 11+. **Range:** 12". Target friendly fighter gains +1 **Might**, +1 **Skill**, and +1" **Movement**. When the effect ends, the target becomes **Stunned**. They keep their Wounds. **Mishap:** The target becomes **Stunned**.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** 12"
+
+Target friendly fighter gains +1 **Might**, +1 **Skill**, and +1" **Movement**. When the effect ends, the target becomes **Stunned**. They keep their Wounds.
+
+**Mishap:** The target becomes **Stunned**.
 
 #### Nightfall
-**Casting:** **Sanity** 11+. **Range:** Self. The caster is engulfed in shadow until the start of the caster's next activation. No ranged weapons or spells can target into or out of the bubble. The caster gains +1 **Close Combat** on **Melee** attacks. **Mishap:** Bright light exposes the caster. Enemies gain +1 **Ranged Combat** when making **Ranged** attacks against the caster, and the caster suffers −1 **Might** until the start of their next activation.
+
+*[Placeholder]*
+
+**Difficulty:** **Sanity** 11+ | **Range:** Self
+
+The caster is engulfed in shadow until the start of the caster's next activation. Place a **5" blast template** centered on the caster — no ranged weapons or spells can target into or out of the template. The caster gains +1 **Close Combat** on **Melee** attacks.
+
+**Mishap:** Bright light exposes the caster. Enemies gain +1 **Ranged Combat** when making **Ranged** attacks against the caster, and the caster suffers −1 **Might** until the start of their next activation.
 
 ---
 

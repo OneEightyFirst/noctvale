@@ -15,7 +15,7 @@ Your **retinue** is the force you field in a battle. Build it in two layers: sel
 
 **Step 5 — Buy equipment.** Buy gear from [Weapons](weapons.md) and [Armor and Shields](gear.md) and equip your fighters. Add the cost of each fighter's weapons and gear to that fighter's total cost.
 
-**Step 6 — Assign spells.** For fighters with the **Caster** keyword, select spells from the list matching their **Domain** keyword, up to the spell allowance for that fighter's role. See [Magic](#magic).
+**Step 6 — Assign spells.** For fighters with the **Caster** keyword, select spells from the list matching their **Domain** keyword, up to the spell allowance for that fighter's role. See [Magic Domains](magic.md#magic).
 
 ## Keywords
 

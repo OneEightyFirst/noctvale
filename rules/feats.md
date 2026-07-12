@@ -274,7 +274,7 @@ If more than one friendly fighter has **Second Sight**, you may still reroll onl
 
 Fighter must have **Caster**.
 
-When this fighter makes a **casting roll** that fails to meet the spell's casting difficulty, reroll the **Casting Roll** once. Must accept the second result.
+When this fighter makes a **casting roll** that fails to meet the spell's **Casting Difficulty**, reroll the **Casting Roll** once. Must accept the second result.
 
 If the first roll was **Mishap**, resolve it as normal — do not reroll.
 

@@ -162,7 +162,7 @@ All remaining open items, ordered easiest to most time-consuming.
 - [x] **Builder quick-reference/search visibility** — Check whether players can find quick reference text and search functions while building a retinue, especially during first-playtest onboarding.
 - [x] **Choice-language standardization** — Primary verb: **select**. "Target" remains the combat-specific verb for declaring attacks. "However they like" for idiomatic split-pool language. "Wish to" / "optionally" for discretionary post-game steps where "select" doesn't fit.
 - [ ] **Tune campaign XP** earn/spend rates after first playtest.
-- [ ] **Spell table format** — Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards.
+- [x] **Spell table format** — Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards.
 - [ ] **Feat Advancement Table** — Replace placeholder in `rules/campaign.md`.
 - [ ] **Reduce gratuitous tables** — Fighter count, archetype access, and similar as short prose where a table adds no scan value (`rules/retinue.md`).
 - [ ] **Dedicated rules for enemy fighters blocking shots** — Beyond LoS; add only if playtest shows gaps.
@@ -196,7 +196,7 @@ All remaining open items, ordered easiest to most time-consuming.
 - [ ] **Armor and shield identity** — Revisit armor without adding large raw dice pools or flat +1 modifiers. Test penalty-based armor hooks such as reduced **Movement** or **Skill**, and keep shields mechanically distinct from body armor.
 - [ ] **Opposed-roll combat feel** — Explore whether "my dice against your dice" makes attacks feel more interactive without forcing a full armor and attribute rewrite.
 - [ ] **Strike Pool progression math** — Stress-test 5+ baselines, advancement, the 15-dice cap, and to-hit modifiers so leveled fighters do not collapse into 3+ / 2+ hit rates or pure natural-6 fishing.
-- [ ] **Firearm / damage-spell line-of-fire friendly fire** — Rethink whether the current miss → 1d6 → hit intervening friendly rule works in this system; may need a second check. Prior design context: `decision-log.md` (2026-06-23 — Named attribute checks and friendly fire targeting).
+- [x] **Friendly fire** — Unified mechanic: any natural 1 in the Strike Pool hits the nearest at-risk friendly (in line of fire OR within engagement range of target). Closest to attacker takes the hit; ties go to attacking player. Applies to all Ranged attacks.
 - [ ] **Combat edge-case examples** — Add more worked examples (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
 - [ ] **Capture and ransom** — Post-battle capture effect; ransom cost; heirloom recovery (`Dynasts` mentions capture today with no procedure).
 - [ ] **Summoning Pool campaign advancement** — Post-game progression for crystal pool / permanent daemon binding.

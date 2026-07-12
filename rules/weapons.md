@@ -135,9 +135,9 @@ Firearms are fired with the **Ranged** action.
 
 > #### Primer Roll (2d6 + **Skill**)
 >
-> Roll **2d6** + **Skill** against the weapon's **primer difficulty** (see weapon profile).
+> Roll **2d6** + **Skill** against the weapon's **Priming Difficulty** (see weapon profile).
 >
-> At **Skill** other than 3, use primer difficulty − 3 + **Skill**.
+> At **Skill** other than 3, use Priming Difficulty − 3 + **Skill**.
 >
 > | Result | Effect |
 > |---|---|

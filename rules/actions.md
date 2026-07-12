@@ -129,7 +129,7 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 
 > ### Casting Roll (2d6 + Casting Attribute)
 >
-> Roll **2d6 + the spell's Casting attribute** against the spell's casting difficulty.
+> Roll **2d6 + the spell's Casting attribute** against the spell's **Casting Difficulty**.
 >
 >
 > | Result                          | Effect                                                       |
@@ -139,7 +139,7 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 > | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence**          |
 >
 
-*(See [Magic](magic.md).)*
+*(See [Magic Domains](magic.md).)*
 
 ### Mercy Kill
 

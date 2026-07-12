@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Armor and Shields — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=0a761fc" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=368e642" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -1706,20 +1706,14 @@
         </div></div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-domains">
+        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic-domains">
           <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/domains/" class="wiki-nav-link">Domains</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-retinues-magic">
-          <div class="wiki-nav-row" style="padding-left:1.35rem">
-            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-children" aria-label="Expand Magic">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-retinues-magic-domains-children" aria-label="Expand Magic Domains">
             <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>
-            <a href="/magic/" class="wiki-nav-link">Magic</a>
+            <a href="/magic/" class="wiki-nav-link">Magic Domains</a>
           </div>
-          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-children">
+          <div class="wiki-nav-children is-collapsed" id="nav-retinues-magic-domains-children">
         <div class="wiki-nav-node" data-nav-id="nav-magic-casting">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
             <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-magic-casting-children" aria-label="Expand Casting">
@@ -2069,10 +2063,10 @@
             <a href="/magic/#blood" class="wiki-nav-link">Blood</a>
           </div>
           <div class="wiki-nav-children is-collapsed" id="nav-magic-blood-children">
-        <div class="wiki-nav-node" data-nav-id="nav-magic-tbd">
+        <div class="wiki-nav-node" data-nav-id="nav-magic-lacerate">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/magic/#tbd" class="wiki-nav-link">[TBD]</a>
+            <a href="/magic/#lacerate" class="wiki-nav-link">Lacerate</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-magic-bleed">
@@ -2995,7 +2989,7 @@
 <p>Heavy Armor is a net +1 die but shifts the pool Might-heavy at the cost of Skill dice.</p>
 <hr>
 <h2 id="shields">Shields</h2>
-<p>Shields modify the <strong>Defense</strong> (<strong>Df</strong>) threshold on specific dice in the defender&#39;s pool. Each shield takes <strong>1 weapon slot</strong>.</p>
+<p>Shields modify the <strong>Defense</strong> (<strong>Df</strong>) threshold on specific dice in the defender&#39;s pool. Each shield takes <strong>1 kit</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -3035,7 +3029,7 @@
 <thead>
 <tr>
 <th>Item</th>
-<th>Slots</th>
+<th>Kit</th>
 <th>Cost</th>
 <th>Access</th>
 <th>Effect</th>
@@ -3070,7 +3064,7 @@
 </tbody></table>
 <hr>
 <h2 id="adventuring-gear">Adventuring gear</h2>
-<p>Permanent gear any fighter may carry. Adventuring gear does not use weapon slots.</p>
+<p>Permanent gear any fighter may carry. Adventuring gear does not use kit.</p>
 <table>
 <thead>
 <tr>
@@ -3093,16 +3087,16 @@
 <li>The effect applies to all valid targets (friendly or enemy, as noted) <strong>within the stated range</strong>, measured from the bearer&#39;s or <strong>Companion</strong>&#39;s base.</li>
 <li>The bearer <strong>is affected</strong> by their own <strong>Sphere of Influence</strong>.</li>
 <li><strong>Spheres of Influence</strong> <strong>do not require line of sight</strong> — they represent presence, sound, or proximity, not vision.</li>
-<li>The source must be <strong>Active</strong> — <strong>Spheres of Influence</strong> are suppressed while the bearer or <strong>Companion</strong> is <strong>Downed</strong>, <strong>Stunned</strong>, or <strong>Out of Action</strong>. <em>(Companions skip <strong>Downed</strong> and <strong>Stunned</strong> — see <a href="/companions/#companions">Companions</a>.)</em></li>
+<li>The source must be <strong>Active</strong> — <strong>Spheres of Influence</strong> are suppressed while the bearer or <strong>Companion</strong> is <strong>Downed</strong>, <strong>Stunned</strong>, or <strong>Out of Action</strong>. <em>(Companions flee instead of becoming <strong>Downed</strong> or <strong>Stunned</strong> — see <a href="/companions/#companions">Companions</a>.)</em></li>
 <li><strong>Spheres of Influence</strong> from the same item or <strong>Companion</strong> type <strong>do not stack</strong>. If two friendly fighters carry <strong>Icons</strong>, a fighter within range of both still receives only +1 <strong>Sanity</strong>.</li>
 </ul>
 <h3 id="icon-and-instrument">Icon and Instrument</h3>
-<p><strong>Icon</strong> and <strong>Instrument</strong> are <strong>permanent</strong> (not consumed between games). Each item takes weapon slots as noted. They are roster gear — not a campaign <strong>Relic</strong> recovered in scenarios.</p>
+<p><strong>Icon</strong> and <strong>Instrument</strong> are <strong>permanent</strong> (not consumed between games). Each item takes kit as noted. They are roster gear — not a campaign <strong>Relic</strong> recovered in scenarios.</p>
 <table>
 <thead>
 <tr>
 <th>Item</th>
-<th>Slots</th>
+<th>Kit</th>
 <th>Cost</th>
 <th>Effect (friendly)</th>
 <th>Range</th>
@@ -3143,7 +3137,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=0a761fc"></script>
-  <script src="/wiki/wiki.js?v=0a761fc" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=368e642"></script>
+  <script src="/wiki/wiki.js?v=368e642" defer></script>
 </body>
 </html>
