@@ -1,4 +1,4 @@
-import { EQUIPMENT, FIGHTING_CLAWS_WEAPON } from "../data/noctvale.js";
+import { EQUIPMENT, FIGHTING_CLAWS_WEAPON, WEAPON_KEYWORD_RULES } from "../data/noctvale.js";
 
 const FEAT_ID_ALIASES = {
   "raise-the-watch": "rally-to-aid",
@@ -105,6 +105,11 @@ function parseMtSk(rule) {
   return { mt, sk };
 }
 
+function parseRange(rule) {
+  const range = rule.match(/Range (\d+)"-(\d+)"/i);
+  return range ? `${range[1]}"–${range[2]}"` : "—";
+}
+
 function bumpStatValue(value) {
   if (value === "—") return value;
   if (value.startsWith("+")) return `+${Number(value.slice(1)) + 1}`;
@@ -177,6 +182,50 @@ function formatRuleEntry(rule) {
   return splitRuleNameText(rule.replace(/\.$/, ""));
 }
 
+/**
+ * Bare keyword rules (e.g. "Parry", "Impact") carry no definition text of
+ * their own — the definition lives in the WEAPON_KEYWORD_RULES glossary
+ * (sourced from rules/weapons.md). This resolves a keyword token into a
+ * {name, text} pair so it can be rendered as a rule link; unrecognized
+ * tokens fall back to plain, non-linkable text.
+ */
+function resolveKeywordEntry(token) {
+  const definition = WEAPON_KEYWORD_RULES[token];
+  return definition ? { name: token, text: definition } : { name: "", text: token };
+}
+
+function splitKeywordList(text) {
+  if (!text.includes(", ")) return [text];
+  const parts = text.split(", ").map((part) => part.trim());
+  return parts.every((part) => WEAPON_KEYWORD_RULES[part]) ? parts : [text];
+}
+
+function expandSpecialRules(entries) {
+  const expanded = [];
+  let coveredText = "";
+  for (const entry of entries) {
+    if (entry.name && entry.text) {
+      expanded.push(entry);
+      coveredText = "";
+    } else if (entry.name) {
+      const definition = WEAPON_KEYWORD_RULES[entry.name];
+      expanded.push(definition ? { name: entry.name, text: definition } : entry);
+      coveredText = definition?.toLowerCase() ?? "";
+    } else if (entry.text) {
+      // Skip plain-text follow-on lines already restated inside the
+      // glossary definition just resolved above (e.g. Staff's "Spell focus").
+      if (coveredText && coveredText.includes(entry.text.toLowerCase())) continue;
+      for (const token of splitKeywordList(entry.text)) {
+        expanded.push(resolveKeywordEntry(token));
+      }
+      coveredText = "";
+    } else {
+      expanded.push(entry);
+    }
+  }
+  return expanded;
+}
+
 export function parseWeaponProfile(item, skilledCraftsman = null) {
   if (!item) {
     return { name: "", slots: "—", mt: "—", sk: "—", specialRules: [] };
@@ -186,6 +235,7 @@ export function parseWeaponProfile(item, skilledCraftsman = null) {
   const firstRule = rules[0] ?? "";
   let { mt, sk } = parseMtSk(firstRule);
   ({ mt, sk } = applySkilledCraftsman({ mt, sk }, skilledCraftsman, item.id));
+  const range = parseRange(firstRule);
 
   const specialRules = [];
   if (firstRule) {
@@ -204,9 +254,10 @@ export function parseWeaponProfile(item, skilledCraftsman = null) {
   return {
     name: item.name,
     slots: item.slots ?? "—",
+    range,
     mt,
     sk,
-    specialRules: specialRules.filter((entry) => entry.name || entry.text),
+    specialRules: expandSpecialRules(specialRules.filter((entry) => entry.name || entry.text)),
   };
 }
 

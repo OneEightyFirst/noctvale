@@ -159,6 +159,7 @@ export function getBeastMarkDisplayRules(beastMarkOption) {
 export const FIGHTING_CLAWS_WEAPON = {
   name: "Fighting Claws",
   slots: 0,
+  range: "—",
   mt: "+2",
   sk: "+1",
   specialRules: [{ name: "Axe", text: "" }],
@@ -790,6 +791,27 @@ export const SPELLS = {
     { id: "nightfall", name: "Nightfall", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "The caster is engulfed in shadow. No ranged weapons or spells can target into or out of the bubble. The caster gains +1 CC on Melee attacks until the start of the caster's next activation", mishap: "Bright light; enemies gain +1 RC when making Ranged attacks against the caster, caster suffers -1 Mt until start of next activation" },
   ],
   Mortal: [],
+};
+
+// Verbatim definitions from rules/weapons.md "Keywords" section (and the
+// Firearms / Alchemy prose for the few keywords defined outside that table).
+// Used to power rule-link modals for weapon special rules in the retinue
+// builder and the printed sheet's Rules Reference appendix.
+export const WEAPON_KEYWORD_RULES = {
+  Cleave: "When this weapon's attack reduces a fighter to 0 Wounds, make one free Melee attack against a different fighter within engagement range.",
+  Heavy: "This weapon cannot be used to make a Ranged attack if the fighter Moved or Charged this activation.",
+  Impact: "When this weapon's attack would make an Active fighter Downed, that fighter becomes Stunned instead.",
+  Parry: "When this fighter defends against a Melee attack, reroll one failed Skill die in the defense pool.",
+  Piercing: "When defending against this weapon's attacks, ignore the target's armor dice bonus and shield tie benefit when building the defense pool.",
+  Reach: `This weapon can engage enemies up to 2" away.`,
+  "Thrown(Mt)": "This weapon may be used to make a Ranged attack. Maximum range equals the fighter's Might in inches. No minimum range. Use the weapon's normal Strike Pool.",
+  "Thrown(Sk)": "This weapon may be used to make a Ranged attack. Maximum range equals the fighter's Skill in inches. No minimum range. Use the weapon's normal Strike Pool.",
+  Volley: "This weapon may target a fighter without line of sight. If it does, the target gains +2 Skill defense dice against that attack.",
+  "Spell focus": "A fighter wielding a Staff has Spell focus. When purchased, choose Will or Sanity for this Staff. When this fighter resolves a casting attack while wielding this Staff, use the chosen attribute instead of Skill to determine the spell's scaling Skill dice. The spell's printed +Skill value still applies.",
+  "Single Shot": "This weapon can be fired or thrown only once per battle.",
+  Smoke: `Creates a 6" cloud that completely blocks line of sight in all directions — no fighter may draw line of sight through or within the cloud, regardless of which side they are on. Fighters in or behind the smoke cannot be declared as targets of Ranged attacks or Cast actions from outside the cloud, and fighters inside cannot target fighters outside. The cloud persists until the end of the round. A fighter may detonate at their own feet instead of throwing — the effect resolves immediately centered on that fighter.`,
+  "Firearm critical hits": "Firearms gain critical hits against all targets (outside the weapon triangle).",
+  "Dual wielding": "Choose a primary and secondary weapon. Add both weapons' +Mt and +Sk to the Strike Pool, max 15 dice. Use only the primary weapon's type and special rules. Cannot use a shield while dual-wielding.",
 };
 
 export const EQUIPMENT = [

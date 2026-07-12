@@ -1,5 +1,5 @@
 import { STAT_KEYS } from "../data/noctvale.js";
-import { buildRetinueSheet, formatStat } from "./retinue-sheet.js";
+import { buildRetinueSheet, buildRulesReference, formatStat } from "./retinue-sheet.js";
 
 function indentLines(lines, prefix = "  ") {
   return lines.map((line) => `${prefix}${line}`);
@@ -8,6 +8,26 @@ function indentLines(lines, prefix = "  ") {
 function joinSection(title, lines) {
   if (!lines.length) return [];
   return [title, ...indentLines(lines), ""];
+}
+
+function formatSpellPlainText(spell) {
+  const keywordText = spell.keywords?.length ? ` (${spell.keywords.join(", ")})` : "";
+  const statLine = [
+    spell.difficulty ? `Difficulty ${spell.difficulty}` : null,
+    spell.range ? `Range ${spell.range}` : null,
+    spell.castingStat ? `Cast ${spell.castingStat}` : null,
+    spell.hit ? `Hit ${spell.hit}` : null,
+    spell.mt ? `Mt ${spell.mt}` : null,
+    spell.sk ? `Sk ${spell.sk}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  const lines = [`${spell.name}${keywordText}`];
+  if (statLine) lines.push(`  ${statLine}`);
+  if (spell.effect) lines.push(`  ${spell.effect}`);
+  if (spell.mishap) lines.push(`  Mishap: ${spell.mishap}`);
+  return lines;
 }
 
 function formatFighterPlainText(fighter) {
@@ -27,30 +47,20 @@ function formatFighterPlainText(fighter) {
 
   if (fighter.weapons.length) {
     lines.push("Weapons:");
-    lines.push("  Name | Slots | Mt | Sk");
+    lines.push("  Name | Slots | Rng | Mt | Sk | Rules");
     for (const weapon of fighter.weapons) {
       const name = `${weapon.name}${weapon.quantity > 1 ? ` ×${weapon.quantity}` : ""}`;
-      lines.push(`  ${name} | ${weapon.slots} | ${weapon.mt} | ${weapon.sk}`);
-      for (const rule of weapon.specialRules) {
-        if (rule.name && rule.text) {
-          lines.push(`    ${rule.name}: ${rule.text}`);
-        } else if (rule.name) {
-          lines.push(`    ${rule.name}`);
-        } else if (rule.text) {
-          lines.push(`    ${rule.text}`);
-        }
-      }
+      const ruleNames = weapon.specialRules.map((rule) => rule.name || rule.text).join(", ") || "—";
+      lines.push(`  ${name} | ${weapon.slots} | ${weapon.range ?? "—"} | ${weapon.mt} | ${weapon.sk} | ${ruleNames}`);
     }
   }
 
   if (fighter.dualWieldingRules.length) {
-    lines.push("Dual wielding:");
-    lines.push(...indentLines(fighter.dualWieldingRules));
+    lines.push("Dual wielding");
   }
 
-  for (const feat of fighter.ruleFeats) {
-    lines.push(feat.name);
-    lines.push(...indentLines(feat.rules ?? []));
+  if (fighter.ruleFeats.length) {
+    lines.push(`Feats: ${fighter.ruleFeats.map((feat) => feat.name).join(", ")}`);
   }
 
   if (fighter.companion) {
@@ -64,27 +74,48 @@ function formatFighterPlainText(fighter) {
   }
 
   if (fighter.caster) {
-    if (fighter.spells.length) {
-      lines.push("Spells:");
-      for (const spell of fighter.spells) {
-        lines.push(...indentLines(spell.lines));
-      }
-    } else {
-      lines.push("Caster");
-    }
+    lines.push(fighter.spells.length ? `Spells: ${fighter.spells.map((spell) => spell.name).join(", ")}` : "Caster");
   }
 
   if (fighter.equipment.length) {
-    lines.push("Equipment:");
-    for (const item of fighter.equipment) {
-      lines.push(`  ${item.name} ×${item.quantity}`);
-      if (item.rules.length) {
-        lines.push(...indentLines(item.rules, "    "));
-      }
-    }
+    lines.push(`Equipment: ${fighter.equipment.map((item) => `${item.name}${item.quantity > 1 ? ` ×${item.quantity}` : ""}`).join(", ")}`);
   }
 
   return lines;
+}
+
+function formatRulesReferencePlainText(reference) {
+  const lines = [];
+
+  if (reference.weaponRules.length) {
+    lines.push(...joinSection("Weapon Rules", reference.weaponRules.map((rule) => `${rule.name}: ${rule.text}`)));
+  }
+
+  if (reference.feats.length) {
+    for (const feat of reference.feats) {
+      lines.push(feat.name);
+      lines.push(...indentLines(feat.rules));
+    }
+    lines.push("");
+  }
+
+  if (reference.spells.length) {
+    for (const spell of reference.spells) {
+      lines.push(...formatSpellPlainText(spell));
+    }
+    lines.push("");
+  }
+
+  if (reference.equipment.length) {
+    for (const item of reference.equipment) {
+      lines.push(item.name);
+      lines.push(...indentLines(item.rules));
+    }
+    lines.push("");
+  }
+
+  if (!lines.length) return [];
+  return ["Rules Reference", "", ...lines];
 }
 
 export function formatRetinuePlainText(data) {
@@ -122,6 +153,12 @@ export function formatRetinuePlainText(data) {
     lines.push("");
   }
 
+  const referenceLines = formatRulesReferencePlainText(buildRulesReference(sheet));
+  if (referenceLines.length) {
+    lines.push("---");
+    lines.push(...referenceLines);
+  }
+
   return lines.join("\n").trim();
 }
 
@@ -138,17 +175,9 @@ function renderRulesList(rules) {
   return `<ul>${rules.map((rule) => `<li>${escapeHtml(rule)}</li>`).join("")}</ul>`;
 }
 
-function renderSpecialRulesHtml(rules) {
+function renderSpecialRuleNamesHtml(rules) {
   if (!rules?.length) return "—";
-  return rules
-    .map((rule) => {
-      if (rule.name && rule.text) {
-        return `<div><strong>${escapeHtml(rule.name)}</strong>: ${escapeHtml(rule.text)}</div>`;
-      }
-      if (rule.name) return `<div><strong>${escapeHtml(rule.name)}</strong></div>`;
-      return `<div>${escapeHtml(rule.text)}</div>`;
-    })
-    .join("");
+  return rules.map((rule) => escapeHtml(rule.name || rule.text)).join(", ");
 }
 
 function renderStatGridHtml(stats) {
@@ -163,16 +192,14 @@ function renderWeaponTableHtml(weapons) {
   const rows = weapons
     .map((weapon) => {
       const name = `${escapeHtml(weapon.name)}${weapon.quantity > 1 ? ` ×${weapon.quantity}` : ""}`;
-      const specialRow = weapon.specialRules.length
-        ? `<tr class="weapon-special"><td colspan="4">${renderSpecialRulesHtml(weapon.specialRules)}</td></tr>`
-        : "";
-
       return `<tr class="weapon-row">
         <td><strong>${name}</strong></td>
         <td>${escapeHtml(String(weapon.slots))}</td>
+        <td>${escapeHtml(String(weapon.range ?? "—"))}</td>
         <td>${escapeHtml(String(weapon.mt))}</td>
         <td>${escapeHtml(String(weapon.sk))}</td>
-      </tr>${specialRow}`;
+        <td>${renderSpecialRuleNamesHtml(weapon.specialRules)}</td>
+      </tr>`;
     })
     .join("");
 
@@ -181,8 +208,10 @@ function renderWeaponTableHtml(weapons) {
       <tr>
         <th>Name</th>
         <th>Slots</th>
+        <th>Rng</th>
         <th>Mt</th>
         <th>Sk</th>
+        <th>Rules</th>
       </tr>
     </thead>
     <tbody>${rows}</tbody>
@@ -217,8 +246,12 @@ function renderFighterHtml(fighter) {
     sections.push(renderWeaponTableHtml(fighter.weapons));
   }
 
-  for (const feat of fighter.ruleFeats) {
-    sections.push(`<div class="block"><strong>${escapeHtml(feat.name)}</strong>${renderRulesList(feat.rules)}</div>`);
+  if (fighter.dualWieldingRules.length) {
+    sections.push(`<p class="detail">Dual wielding</p>`);
+  }
+
+  if (fighter.ruleFeats.length) {
+    sections.push(`<p class="detail"><strong>Feats:</strong> ${fighter.ruleFeats.map((feat) => escapeHtml(feat.name)).join(", ")}</p>`);
   }
 
   if (fighter.companion) {
@@ -230,24 +263,85 @@ function renderFighterHtml(fighter) {
   }
 
   if (fighter.caster) {
-    sections.push("<h3>Spells</h3>");
-    if (fighter.spells.length) {
-      sections.push(renderRulesList(fighter.spells.flatMap((spell) => spell.lines)));
-    } else {
-      sections.push('<p class="detail">Caster</p>');
-    }
+    sections.push(
+      `<p class="detail"><strong>Spells:</strong> ${
+        fighter.spells.length ? fighter.spells.map((spell) => escapeHtml(spell.name)).join(", ") : "Caster"
+      }</p>`,
+    );
   }
 
   if (fighter.equipment.length) {
-    for (const item of fighter.equipment) {
-      sections.push(
-        `<div class="block"><strong>${escapeHtml(item.name)} ×${item.quantity}</strong>${renderRulesList(item.rules)}</div>`,
-      );
-    }
+    sections.push(
+      `<p class="detail"><strong>Equipment:</strong> ${fighter.equipment
+        .map((item) => `${escapeHtml(item.name)}${item.quantity > 1 ? ` ×${item.quantity}` : ""}`)
+        .join(", ")}</p>`,
+    );
   }
 
   sections.push("</section>");
   return sections.join("");
+}
+
+function renderSpellReferenceHtml(spell) {
+  const keywordText = spell.keywords?.length ? ` (${spell.keywords.join(", ")})` : "";
+  const statLine = [
+    spell.difficulty ? `Difficulty ${spell.difficulty}` : null,
+    spell.range ? `Range ${spell.range}` : null,
+    spell.castingStat ? `Cast ${spell.castingStat}` : null,
+    spell.hit ? `Hit ${spell.hit}` : null,
+    spell.mt ? `Mt ${spell.mt}` : null,
+    spell.sk ? `Sk ${spell.sk}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  return `<div class="ref-item">
+    <strong>${escapeHtml(spell.name)}${escapeHtml(keywordText)}</strong>
+    ${statLine ? `<div class="ref-meta">${escapeHtml(statLine)}</div>` : ""}
+    ${spell.effect ? `<div>${escapeHtml(spell.effect)}</div>` : ""}
+    ${spell.mishap ? `<div class="ref-meta">Mishap: ${escapeHtml(spell.mishap)}</div>` : ""}
+  </div>`;
+}
+
+function renderRulesReferenceHtml(reference) {
+  const groups = [];
+
+  if (reference.weaponRules.length) {
+    groups.push(`<div class="ref-group">
+      <h4>Weapon Rules</h4>
+      ${reference.weaponRules
+        .map((rule) => `<div class="ref-item"><strong>${escapeHtml(rule.name)}:</strong> ${escapeHtml(rule.text)}</div>`)
+        .join("")}
+    </div>`);
+  }
+
+  if (reference.feats.length) {
+    groups.push(`<div class="ref-group">
+      <h4>Feats</h4>
+      ${reference.feats
+        .map((feat) => `<div class="ref-item"><strong>${escapeHtml(feat.name)}</strong>${renderRulesList(feat.rules)}</div>`)
+        .join("")}
+    </div>`);
+  }
+
+  if (reference.spells.length) {
+    groups.push(`<div class="ref-group">
+      <h4>Spells</h4>
+      ${reference.spells.map(renderSpellReferenceHtml).join("")}
+    </div>`);
+  }
+
+  if (reference.equipment.length) {
+    groups.push(`<div class="ref-group">
+      <h4>Equipment</h4>
+      ${reference.equipment
+        .map((item) => `<div class="ref-item"><strong>${escapeHtml(item.name)}</strong>${renderRulesList(item.rules)}</div>`)
+        .join("")}
+    </div>`);
+  }
+
+  if (!groups.length) return "";
+  return `<section class="rules-reference"><h2>Rules Reference</h2><div class="ref-columns">${groups.join("")}</div></section>`;
 }
 
 export function buildRetinuePrintHtml(data) {
@@ -270,6 +364,7 @@ export function buildRetinuePrintHtml(data) {
   const fighters = sheet.fighters.length
     ? `<table class="roster"><tr><td class="roster-col">${leftCol}</td><td class="roster-col">${rightCol}</td></tr></table>`
     : "";
+  const rulesReference = renderRulesReferenceHtml(buildRulesReference(sheet));
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -383,10 +478,42 @@ export function buildRetinuePrintHtml(data) {
       color: #444;
       background: #f5f5f5;
     }
-    .weapon-special td {
-      border-top: none;
-      padding-top: 0;
-      color: #222;
+    .rules-reference {
+      margin-top: 0.5rem;
+      padding-top: 0.35rem;
+      border-top: 1px solid #999;
+    }
+    .rules-reference h2 {
+      margin-bottom: 0.25rem;
+    }
+    .ref-columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 0.75rem;
+    }
+    .ref-group {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 0.3rem;
+    }
+    .ref-group h4 {
+      margin: 0 0 0.15rem;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #444;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.1rem;
+    }
+    .ref-item {
+      margin-bottom: 0.2rem;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .ref-meta {
+      color: #555;
+      font-size: 8px;
     }
     .budget {
       margin-top: 0.25rem;
@@ -448,6 +575,7 @@ export function buildRetinuePrintHtml(data) {
     ${retinueRules ? `<div class="header-right">${retinueRules}</div>` : ""}
   </header>
   ${fighters}
+  ${rulesReference}
 </body>
 </html>`;
 }

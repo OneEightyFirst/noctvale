@@ -8,6 +8,7 @@ import {
   STAT_KEYS,
   TRADITIONS,
   UNIVERSAL_FEATS,
+  WEAPON_KEYWORD_RULES,
   fighterHasCaster,
   getBeastMarkOption,
   getBeastMarkDisplayRules,
@@ -89,9 +90,7 @@ function getOneHandedMeleeWeaponCount(fighter) {
 
 function getDualWieldingRules(fighter) {
   if (getOneHandedMeleeWeaponCount(fighter) < 2) return [];
-  return [
-    "Choose a primary and secondary weapon. Add both weapons' +Mt and +Sk to the Strike Pool, max 15 dice. Use only the primary weapon's type and special rules. Cannot use a shield while dual-wielding.",
-  ];
+  return [WEAPON_KEYWORD_RULES["Dual wielding"]];
 }
 
 function getSelectedEquipment(fighter) {
@@ -208,12 +207,19 @@ function buildFighterSheet(fighter, archetype, tradition, domain) {
   const spells = caster
     ? (fighter.spells ?? []).map((spellId) => {
         const spell = domainSpells.find((entry) => entry.id === spellId);
-        if (!spell) return { id: spellId, name: spellId, lines: [] };
-        const keywordText = spell.keywords?.length ? ` (${spell.keywords.join(", ")})` : "";
+        if (!spell) return { id: spellId, name: spellId, keywords: [], effect: "", mishap: "" };
         return {
           id: spell.id,
           name: spell.name,
-          lines: [`${spell.name}${keywordText}: ${spell.effect}`],
+          difficulty: spell.difficulty,
+          range: spell.range,
+          castingStat: spell.castingStat,
+          hit: spell.hit,
+          mt: spell.mt,
+          sk: spell.sk,
+          keywords: spell.keywords ?? [],
+          effect: spell.effect,
+          mishap: spell.mishap,
         };
       })
     : [];
@@ -242,6 +248,7 @@ function buildFighterSheet(fighter, archetype, tradition, domain) {
     weapons: weaponProfiles,
     dualWieldingRules,
     equipment: otherGear.map(({ item, quantity }) => ({
+      id: item.id,
       name: item.name,
       quantity,
       rules: item.rules ?? [],
@@ -292,5 +299,50 @@ export function buildRetinueSheet(data) {
     totalCost,
     retinueRules: getRetinueWideRules(tradition),
     fighters: archetype && tradition ? sortFighters(archetype, fighters).map((fighter) => buildFighterSheet(fighter, archetype, tradition, domain)) : [],
+  };
+}
+
+/**
+ * Collects every named weapon rule, feat, spell, and equipment rule used
+ * anywhere in the retinue into one deduplicated reference — cards list only
+ * names, and this reference carries the full rule text once per unique
+ * entry (for the printed sheet and plain-text export).
+ */
+export function buildRulesReference(sheet) {
+  const weaponRules = new Map();
+  const feats = new Map();
+  const spells = new Map();
+  const equipment = new Map();
+
+  for (const fighter of sheet.fighters) {
+    for (const weapon of fighter.weapons) {
+      for (const rule of weapon.specialRules ?? []) {
+        if (!rule.name || !rule.text || rule.name === "Skilled Craftsman") continue;
+        if (!weaponRules.has(rule.name)) weaponRules.set(rule.name, rule.text);
+      }
+    }
+    if (fighter.dualWieldingRules?.length && !weaponRules.has("Dual wielding")) {
+      weaponRules.set("Dual wielding", fighter.dualWieldingRules[0]);
+    }
+    for (const feat of fighter.ruleFeats ?? []) {
+      if (feat.rules?.length && !feats.has(feat.id)) {
+        feats.set(feat.id, { name: feat.name, rules: feat.rules });
+      }
+    }
+    for (const spell of fighter.spells ?? []) {
+      if (!spells.has(spell.id)) spells.set(spell.id, spell);
+    }
+    for (const item of fighter.equipment ?? []) {
+      if (item.rules?.length && !equipment.has(item.id)) {
+        equipment.set(item.id, { name: item.name, rules: item.rules });
+      }
+    }
+  }
+
+  return {
+    weaponRules: [...weaponRules.entries()].map(([name, text]) => ({ name, text })),
+    feats: [...feats.values()],
+    spells: [...spells.values()],
+    equipment: [...equipment.values()],
   };
 }

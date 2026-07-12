@@ -6,6 +6,36 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-12 08:30 EDT — Weapon keyword glossary; rule links replace inline text
+
+**Change:** Added a `WEAPON_KEYWORD_RULES` glossary to `noctvale.js`, copied verbatim
+from the **Keywords** table and surrounding prose in `rules/weapons.md` (**Cleave**,
+**Heavy**, **Impact**, **Parry**, **Piercing**, **Reach**, **Thrown(Mt)**,
+**Thrown(Sk)**, **Volley**, **Spell focus**, **Single Shot**, **Smoke**, **Firearm
+critical hits**, **Dual wielding**). `fighter.js`'s weapon-rule parser now resolves
+bare keyword tokens (e.g. `Parry`) against this glossary instead of leaving them as
+undefined plain text, and splits comma-joined keyword lists (e.g. `Piercing, Heavy,
+Impact` on **Long Rifle**) into separate named entries.
+
+On the retinue builder's read-only view page, weapon special rules, caster spells,
+feats, and equipment with rules now render as click-to-open rule links (new shared
+`RuleLink.jsx` component) instead of always-visible text — the weapon table also now
+puts special-rule links on the same row as the weapon (`Name | Kit | Mt | Sk |
+Rules`) instead of a second row underneath. Edit-mode weapon/feat displays are
+unchanged. The printed sheet and the clipboard "Copy" export now list fighter cards
+with names only (weapon rule names, spell names, feat names, equipment names) and
+collect the full text for every unique rule/spell/feat/equipment item used in the
+retinue into one deduplicated "Rules Reference" section after all the cards
+(`buildRulesReference` in `retinue-sheet.js`).
+
+**Impact:** Display/UX only; weapon costs, slots, and purchase validation did not
+change.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`, `app/src/lib/fighter.js`,
+`app/src/lib/retinue-sheet.js`, `app/src/lib/retinue-export.js`,
+`app/src/components/RetinueEditor.jsx`, `app/src/components/WeaponTable.jsx`,
+`app/src/components/RuleLink.jsx`.
+
 ## 2026-07-10 20:34 EDT — Remove Crushing keyword; fix stat grid column count
 
 **Change:** Removed **Crushing** from **Mace** and **War Hammer** in builder data. Both weapons now list only **Impact**. **Crushing** no longer appears in any weapon reminder text.

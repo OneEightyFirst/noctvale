@@ -18,6 +18,7 @@ import { CSS } from "@dnd-kit/utilities";
 import { ArrowLeft, ChevronRight, GripVertical, Pencil, Plus, Save, X } from "lucide-react";
 import ShareMenu from "./ShareMenu.jsx";
 import WeaponTable from "./WeaponTable.jsx";
+import RuleLink from "./RuleLink.jsx";
 import { useRegisterSidebar } from "../contexts/SideNavContext.jsx";
 import { useRetinue } from "../hooks/useRetinue.js";
 import { emptyRetinue } from "../lib/retinue.js";
@@ -52,6 +53,7 @@ import {
   STAT_KEYS,
   TRADITIONS,
   UNIVERSAL_FEATS,
+  WEAPON_KEYWORD_RULES,
 } from "../data/noctvale.js";
 
 const STARTING_CROWNS = 1000;
@@ -294,9 +296,7 @@ function getWeaponSlotLimit(fighter, tradition) {
 
 function getDualWieldingRules(fighter) {
   if (getOneHandedMeleeWeaponCount(fighter) < 2) return [];
-  return [
-    "Choose a primary and secondary weapon. Add both weapons' +Mt and +Sk to the Strike Pool, max 15 dice. Use only the primary weapon's type and special rules. Cannot use a shield while dual-wielding.",
-  ];
+  return [WEAPON_KEYWORD_RULES["Dual wielding"]];
 }
 
 function getGearSlotsPillTone(slots, slotLimit = 3) {
@@ -824,9 +824,16 @@ function FeatRulesWithCompanion({ feats, fighter, handlerStats, editMode = false
 
   return (
     <div className="space-y-2">
-      {playFeats.map((feat) => (
-        <RuleBlock key={feat.id} title={feat.name} rules={feat.rules} />
-      ))}
+      {playFeats.length ? (
+        <SummaryRow label="Feats">
+          {playFeats.map((feat, index) => (
+            <React.Fragment key={feat.id}>
+              <RuleLink label={feat.name} body={feat.rules} />
+              {index < playFeats.length - 1 ? ", " : ""}
+            </React.Fragment>
+          ))}
+        </SummaryRow>
+      ) : null}
       {companion ? <CompanionStats fighter={fighter} handlerStats={handlerStats} /> : null}
     </div>
   );
@@ -1392,6 +1399,22 @@ function SummaryRow({ label, children }) {
   );
 }
 
+function SpellRuleLink({ spell }) {
+  if (!spell) return null;
+  const subtitle = [spell.difficulty, spell.range].filter(Boolean).join(" / ");
+  const meta = (
+    <div className="grid gap-1 text-xs text-cream-400 sm:grid-cols-3">
+      <span>Cast {spell.castingStat}</span>
+      <span>Hit {spell.hit}</span>
+      <span>Mt {spell.mt}</span>
+      <span>Sk {spell.sk}</span>
+      {spell.keywords?.length ? <span>Keywords {spell.keywords.join(", ")}</span> : null}
+    </div>
+  );
+  const body = [spell.effect, spell.mishap ? `Mishap: ${spell.mishap}` : null].filter(Boolean);
+  return <RuleLink label={spell.name} subtitle={subtitle} meta={meta} body={body} />;
+}
+
 function FighterCardSummary({
   fighter,
   tradition,
@@ -1403,9 +1426,10 @@ function FighterCardSummary({
 }) {
   const selectedEquipment = getSelectedEquipment(fighter);
   const weaponRows = buildFighterWeaponRows(fighter, tradition, fighter.skilledCraftsman);
-  const spellNames = caster
-    ? fighter.spells.map((spellId) => domainSpells.find((entry) => entry.id === spellId)?.name ?? spellId)
+  const spells = caster
+    ? fighter.spells.map((spellId) => domainSpells.find((entry) => entry.id === spellId) ?? { id: spellId, name: spellId })
     : [];
+  const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon" && item.kind !== "companion");
 
   return (
     <div className="space-y-3">
@@ -1414,7 +1438,7 @@ function FighterCardSummary({
       {weaponRows.length ? (
         <div>
           <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-cream-500">Weapons</div>
-          <WeaponTable rows={weaponRows} compact />
+          <WeaponTable rows={weaponRows} compact linkRules />
         </div>
       ) : null}
 
@@ -1425,23 +1449,28 @@ function FighterCardSummary({
 
         {caster ? (
           <SummaryRow label="Caster">
-            {spellNames.length ? spellNames.join(", ") : "Caster"}
+            {spells.length
+              ? spells.map((spell, index) => (
+                  <React.Fragment key={spell.id}>
+                    <SpellRuleLink spell={spell} />
+                    {index < spells.length - 1 ? ", " : ""}
+                  </React.Fragment>
+                ))
+              : "Caster"}
           </SummaryRow>
         ) : null}
 
         <FeatRulesWithCompanion feats={selectedFeatRules} fighter={fighter} handlerStats={stats} />
 
-        {selectedEquipment.some(({ item }) => item.kind !== "weapon" && item.kind !== "companion") ? (
+        {otherGear.length ? (
           <SummaryRow label="Equipment">
-            <div className="flex flex-wrap gap-2">
-              {selectedEquipment
-                .filter(({ item }) => item.kind !== "weapon" && item.kind !== "companion")
-                .map(({ item, quantity }) => (
-                  <span key={item.id} className="rounded border border-night-800 bg-night-950 px-2 py-0.5 text-xs">
-                    {item.name} ×{quantity}
-                  </span>
-                ))}
-            </div>
+            {otherGear.map(({ item, quantity }, index) => (
+              <React.Fragment key={item.id}>
+                <RuleLink label={item.name} body={item.rules} />
+                {quantity > 1 ? ` ×${quantity}` : ""}
+                {index < otherGear.length - 1 ? ", " : ""}
+              </React.Fragment>
+            ))}
           </SummaryRow>
         ) : null}
       </div>
@@ -1627,7 +1656,7 @@ const FighterCard = memo(function FighterCard({
                   {keyword}
                 </Pill>
               ))}
-              <Pill>{ancestry.name}</Pill>
+              {editing ? <Pill>{ancestry.name}</Pill> : null}
               {beastMarkOption ? <Pill tone="amber">{beastMarkOption.name} Beast-mark</Pill> : null}
               <Pill tone={getGearSlotsPillTone(slots, slotLimit)}>{slots}/{slotLimit} kit</Pill>
             </div>
@@ -2061,7 +2090,7 @@ function WeaponProfileList({ fighter, tradition = null, weaponsOnly = false }) {
     if (!weaponRows.length) return null;
     return (
       <div className="space-y-2">
-        <WeaponTable rows={weaponRows} />
+        <WeaponTable rows={weaponRows} linkRules />
         {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       </div>
     );
@@ -2073,13 +2102,14 @@ function WeaponProfileList({ fighter, tradition = null, weaponsOnly = false }) {
 
   return (
     <div className="space-y-2">
-      {weaponRows.length ? <WeaponTable rows={weaponRows} /> : null}
+      {weaponRows.length ? <WeaponTable rows={weaponRows} linkRules /> : null}
       {dualWieldingRules.length ? <RuleBlock title="Dual wielding" rules={dualWieldingRules} /> : null}
       {otherGear.length ? (
         <div className="flex flex-wrap gap-2">
           {otherGear.map(({ item, quantity }) => (
             <div key={item.id} className="rounded border border-night-800 bg-night-900 px-2 py-1 text-sm text-cream-100">
-              {item.name} ×{quantity}
+              {item.name}
+              {quantity > 1 ? ` ×${quantity}` : ""}
             </div>
           ))}
         </div>
@@ -2122,7 +2152,8 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
           {selectedEquipment.length ? (
             selectedEquipment.map(({ item, quantity }) => (
               <div key={item.id} className="rounded border border-night-800 bg-night-900 px-2 py-1 text-xs text-cream-100">
-                {item.name} ×{quantity}
+                {item.name}
+                {quantity > 1 ? ` ×${quantity}` : ""}
               </div>
             ))
           ) : (
