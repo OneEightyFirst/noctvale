@@ -19,7 +19,7 @@ export function normalizeRetinue(data) {
   const retinue = {
     ...emptyRetinue(),
     ...data,
-    traditionId: data?.traditionId === "beastmen" ? "werebeasts" : (data?.traditionId ?? ""),
+    traditionId: data?.traditionId ?? "",
     retinueChoices: data?.retinueChoices ?? {},
     fighters: (data?.fighters ?? []).map(normalizeFighter),
   };
