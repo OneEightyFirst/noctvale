@@ -208,7 +208,7 @@ function getFighterStats(fighter, type, tradition) {
   for (const stat of fighter.statBoosts ?? []) {
     stats[stat] += 1;
   }
-  if (tradition?.id === "beastmen" && fighter.beastMark === "bear") {
+  if (tradition?.id === "werebeasts" && fighter.beastMark === "bear") {
     stats.Mt += 1;
     stats.Sa = Math.max(1, stats.Sa - 1);
   }
@@ -219,7 +219,7 @@ function getTraditionCostModifier(fighter, type, tradition, caster) {
   if (!tradition || !type) return 0;
   if (tradition.id === "spellblades") return 5;
   if (tradition.id === "damned" && !caster) return -10;
-  if (tradition.id === "beastmen") return 10;
+  if (tradition.id === "werebeasts") return 10;
   if (tradition.id === "wightlords") return 20;
   if (tradition.id === "vampires" && ["Leader", "Elite", "Specialist"].includes(type.role)) return 20;
   return 0;
@@ -285,12 +285,12 @@ function fighterHasShield(fighter) {
   return Object.entries(fighter.equipment ?? {}).some(([itemId, quantity]) => quantity > 0 && SHIELD_ITEM_IDS.has(itemId));
 }
 
-function isRatBeastman(tradition, beastMarkId) {
-  return tradition?.id === "beastmen" && beastMarkId === "rat";
+function isRatWerebeast(tradition, beastMarkId) {
+  return tradition?.id === "werebeasts" && beastMarkId === "rat";
 }
 
 function getWeaponSlotLimit(fighter, tradition) {
-  if (isRatBeastman(tradition, fighter.beastMark) && getRatExtraWeaponCount(fighter) > 0) return 4;
+  if (isRatWerebeast(tradition, fighter.beastMark) && getRatExtraWeaponCount(fighter) > 0) return 4;
   return 3;
 }
 
@@ -1529,7 +1529,7 @@ const FighterCard = memo(function FighterCard({
   const ancestry = getAncestry(fighter.ancestryId);
   const beastMarkOption = getBeastMarkOption(tradition, fighter.beastMark);
   const beastMarkDisplay = getBeastMarkDisplayRules(beastMarkOption);
-  const showBeastMarkPicker = tradition?.id === "beastmen";
+  const showBeastMarkPicker = tradition?.id === "werebeasts";
   const keywords = useMemo(
     () => getFighterKeywords(fighter, archetype, tradition, domain, type),
     [fighter, archetype, tradition, domain, type],
@@ -2179,11 +2179,11 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
 }
 
 function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, equipmentGroups, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
-  const ratExtraWeapon = isRatBeastman(tradition, fighter.beastMark);
+  const ratExtraWeapon = isRatWerebeast(tradition, fighter.beastMark);
   return (
     <>
       <div className="mb-2 rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
-        Each fighter has 3 kit — 2 hands and a belt. Any fighter may equip a Dagger. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Beastmen may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
+        Each fighter has 3 kit — 2 hands and a belt. Any fighter may equip a Dagger. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Werebeasts may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
       </div>
       <div className="space-y-3">
         {Object.entries(equipmentGroups).map(([group, items]) => {
@@ -2381,12 +2381,12 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
     warnings.push(`${type.name} needs ${type.boost.count} attribute boost${type.boost.count === 1 ? "" : "s"}.`);
   }
   if (type.builtInChoice && !fighter.builtInChoice) warnings.push(`${type.name} needs a built-in training choice.`);
-  if (tradition?.id === "beastmen" && !fighter.beastMark) warnings.push(`${type.name} needs a beast-mark.`);
+  if (tradition?.id === "werebeasts" && !fighter.beastMark) warnings.push(`${type.name} needs a beast-mark.`);
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);
   if (!caster && fighter.spells.length) warnings.push("Non-Caster has spells selected.");
   if (fighter.feats.length > getFeatLimit(fighter, type)) warnings.push(`Too many feats selected. Limit is ${getFeatLimit(fighter, type)}.`);
   if (slots > slotLimit) warnings.push(`Kit exceeds ${slotLimit} by ${slots - slotLimit}.`);
-  if (isRatBeastman(tradition, fighter.beastMark) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {
+  if (isRatWerebeast(tradition, fighter.beastMark) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {
     warnings.push("Rat's extra weapon must be a one-handed weapon.");
   }
   if (getOneHandedMeleeWeaponCount(fighter) >= 2 && fighterHasShield(fighter)) {

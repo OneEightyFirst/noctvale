@@ -33,8 +33,8 @@ export const ANCESTRIES = [
 ];
 
 export const PROFICIENCIES = [
-  { id: "one-handed", name: "One-Handed", weapons: "Sword, Rapier, Hand Axe, Mace, Spear" },
-  { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Great Sword, War Axe, War Hammer, Staff" },
+  { id: "one-handed", name: "One-Handed", weapons: "Sword, Rapier, Hand Axe, Battle Axe, Mace, Flail, Spear, Javelin" },
+  { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer, Staff" },
   { id: "archery", name: "Archery", weapons: "Shortbow, Longbow, Crossbow, Heavy Crossbow" },
   { id: "thrown", name: "Thrown", weapons: "Sling, Throwing Stars" },
 ];
@@ -162,7 +162,8 @@ export const FIGHTING_CLAWS_WEAPON = {
   range: "—",
   mt: "+2",
   sk: "+1",
-  specialRules: [{ name: "Axe", text: "" }],
+  type: "axe",
+  specialRules: [],
 };
 
 export const TRADITIONS = [
@@ -740,7 +741,7 @@ export const SPELLS = {
     { id: "radiant-strike", name: "Radiant Strike", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "5", sk: "+2", range: `12"`, keywords: ["Attack"], effect: "Ranged attack; use 6 Mt / +2 Sk vs Undead and Daemons", mishap: "" },
     { id: "holy-light", name: "Holy Light", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12" from caster`, effect: `All fighters within 12" lose cover and Hidden condition`, mishap: "The caster becomes Blinded" },
     { id: "heal", name: "Heal", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `1"`, effect: "Restore 1 Wound + improve Wound state by one step (Stunned -> Downed, Downed -> Active)", mishap: "" },
-    { id: "purge-the-faithless", name: "Purge the Faithless", castingStat: "Wi", hit: "CC", difficulty: "11+", mt: "3", sk: "+1", range: `3" blast from caster`, keywords: ["Attack"], effect: "Hits all fighters in radius", mishap: "Caster takes the damage" },
+    { id: "purge-the-faithless", name: "Purge the Faithless", castingStat: "Wi", hit: "CC", difficulty: "11+", mt: "3", sk: "+1", range: `3" blast from caster`, keywords: ["Attack", `Blast(3")`], effect: `This spell has Blast(3"), centered on the caster.`, mishap: "Caster takes the damage" },
     { id: "shield-of-faith", name: "Shield of Faith", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains +2 Might defense dice until the start of the caster's next activation`, mishap: "" },
     { id: "horrors-relived", name: "Horrors Relived", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: "Target makes Sa check. Fail: suffers 4 automatic hits. Pass: suffers 1 automatic hit", mishap: "Resolve the failed effect against the caster" },
     { id: "unwavering-resolve", name: "Unwavering Resolve", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `8" from caster`, effect: `All friendly fighters within 8" become immune to Fear, Panic, and Insanity until the start of the caster's next activation`, mishap: "The caster becomes Broken" },
@@ -748,7 +749,7 @@ export const SPELLS = {
   Arcane: [
     { id: "arcane-bolt", name: "Arcane Bolt", castingStat: "Wi", hit: "RC", difficulty: "11+", mt: "4", sk: "+3", range: `20"`, keywords: ["Attack"], effect: "Ranged attack; fast, high-finesse", mishap: "" },
     { id: "arcane-shield", name: "Arcane Shield", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: "Self", effect: "Caster is immune to all spells. At the start of the caster's next activation, roll 1d6; on 1-2 the shield disappears", mishap: "" },
-    { id: "fireball", name: "Fireball", castingStat: "Wi", hit: "RC", difficulty: "13+", mt: "4", sk: "+3", range: `18"`, keywords: ["Attack"], effect: `Choose a point within 18". All fighters within large blast template are hit. On normal fail, fireball scatters. On pass, blast centers on chosen point`, mishap: "Blast template centers on the caster" },
+    { id: "fireball", name: "Fireball", castingStat: "Wi", hit: "RC", difficulty: "13+", mt: "4", sk: "+3", range: `18"`, keywords: ["Attack", `Blast(5")`], effect: `Choose a point within 18". If the casting roll fails below difficulty (not Mishap), the fireball scatters and centers there instead. This spell has Blast(5") centered on the resulting point.`, mishap: `This spell's Blast(5") centers on the caster instead` },
     { id: "telekinesis", name: "Telekinesis", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: `Move any fighter up to 6" directly toward or away from the caster. No check required by the target`, mishap: "Your opponent chooses whether the target moves directly toward or directly away from the caster" },
     { id: "displacement", name: "Displacement", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter instantly moves up to 6" in any direction. Ignores terrain, engagement, and intervening fighters. Cannot end inside terrain or another fighter's base`, mishap: `Roll a scatter die. Move the target 6" in the indicated direction. If the target cannot end at the full distance, place it as far as possible along that line without ending inside terrain or another fighter's base` },
     { id: "hoarfrost", name: "Hoarfrost", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `18"`, effect: `Choose a point within 18". Place a large blast template until the start of the caster's next activation. Affects friends and enemies. Movement ending in the zone triggers a Sk check and slide`, mishap: "Blast centers on the caster" },
@@ -764,7 +765,7 @@ export const SPELLS = {
     { id: "nightmare-visage", name: "Nightmare Visage", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter within 12". That fighter projects Fear (6") while the spell remains in effect. At the end of each round, the caster makes one Sa check; on a failure, the spell ends`, mishap: "" },
   ],
   Nature: [
-    { id: "thorn-volley", name: "Thorn Volley", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "3", sk: "+2", range: `12"`, keywords: ["Attack"], effect: "Ranged attack using standard flame template", mishap: "" },
+    { id: "thorn-volley", name: "Thorn Volley", castingStat: "Wi", hit: "RC", difficulty: "12+", mt: "3", sk: "+2", range: `12"`, keywords: ["Attack", "Spread"], effect: "Make a ranged spell attack with Spread.", mishap: "" },
     { id: "shadowmeld", name: "Shadowmeld", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 RC or +1 CC — whichever Hit attribute the attack uses — when attacking the target until the start of the caster's next activation" },
     { id: "venom", name: "Venom", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: gain 1 Affliction token", mishap: "The caster gains 1 Affliction token" },
     { id: "feral-form", name: "Feral Form", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `6"`, effect: `Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation`, mishap: `The caster suffers -1 Sa until the end of their next activation` },
@@ -778,7 +779,7 @@ export const SPELLS = {
     { id: "raise-dead", name: "Raise Dead", castingStat: "Sa", hit: "-", difficulty: "13+", mt: "-", sk: "-", range: `3"`, effect: `Remove one friendly body token within 3". Place that fighter within 3" of the caster with 1 Wound, Undead, and Fearless. Roll 1d3 activations, counting this one. They activate immediately with 2 actions. When those activations finish, they go Out of Action and are removed`, mishap: "Your opponent places and controls the raised fighter instead" },
     { id: "cursed-ground", name: "Cursed Ground", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "2", sk: "+2", range: `12"`, keywords: ["Attack"], effect: `Choose a point within 12". Place a large blast template. All fighters in the zone suffer -1" M and take the spell's hit unless they pass a Sk check. Lasts until the start of the caster's next activation`, mishap: "Blast centers on the caster" },
     { id: "wither", name: "Wither", castingStat: "Sa", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy suffers Withered until the start of the caster's next activation", mishap: "The caster suffers Withered until the start of their next activation" },
-    { id: "bone-blast", name: "Bone Blast", castingStat: "Sa", hit: "CC", difficulty: "11+", mt: "4", sk: "+3", range: "Blast from caster", keywords: ["Attack"], effect: "Blast template centered on the caster. All fighters under the template except the caster are hit", mishap: "Resolve the attack against the caster" },
+    { id: "bone-blast", name: "Bone Blast", castingStat: "Sa", hit: "CC", difficulty: "11+", mt: "4", sk: "+3", range: "Blast from caster", keywords: ["Attack", `Blast(5")`], effect: `This spell has Blast(5"), centered on the caster. The caster is not hit.`, mishap: "Resolve the attack against the caster" },
     { id: "bone-circle", name: "Bone Circle", castingStat: "Sa", hit: "RC", difficulty: "12+", mt: "3", sk: "+4", range: `12"`, keywords: ["Attack"], effect: `Choose a point within 12". Place a 3" blast template. Any fighter that starts in, ends in, or moves through it is hit. Affects friends and enemies. Lasts until the start of the caster's next activation`, mishap: "Zone centers on the caster" },
   ],
   Blood: [
@@ -798,12 +799,16 @@ export const SPELLS = {
 // Used to power rule-link modals for weapon special rules in the retinue
 // builder and the printed sheet's Rules Reference appendix.
 export const WEAPON_KEYWORD_RULES = {
+  'Blast(3")': `This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.`,
+  'Blast(5")': `This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.`,
   Cleave: "When this weapon's attack reduces a fighter to 0 Wounds, make one free Melee attack against a different fighter within engagement range.",
   Heavy: "This weapon cannot be used to make a Ranged attack if the fighter Moved or Charged this activation.",
   Impact: "When this weapon's attack would make an Active fighter Downed, that fighter becomes Stunned instead.",
   Parry: "When this fighter defends against a Melee attack, reroll one failed Skill die in the defense pool.",
-  Piercing: "When defending against this weapon's attacks, ignore the target's armor dice bonus and shield tie benefit when building the defense pool.",
+  Piercing: "When defending against this weapon's attacks, ignore the target's armor dice bonus and shield Df bonus when building the defense pool.",
   Reach: `This weapon can engage enemies up to 2" away.`,
+  Spread: "This attack uses the standard flame template instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.",
+  Sunder: "When defending against this weapon's attacks, ignore the target's shield Df bonus and Parry keyword when building the defense pool.",
   "Thrown(Mt)": "This weapon may be used to make a Ranged attack. Maximum range equals the fighter's Might in inches. No minimum range. Use the weapon's normal Strike Pool.",
   "Thrown(Sk)": "This weapon may be used to make a Ranged attack. Maximum range equals the fighter's Skill in inches. No minimum range. Use the weapon's normal Strike Pool.",
   Volley: "This weapon may target a fighter without line of sight. If it does, the target gains +2 Skill defense dice against that attack.",
@@ -815,29 +820,34 @@ export const WEAPON_KEYWORD_RULES = {
 };
 
 export const EQUIPMENT = [
-  { id: "dagger", name: "Dagger", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 10, slots: 1, alwaysAllowed: true, rules: ["Hands 1H. +Sk +1. Sword. Thrown(Sk). Any fighter may equip a Dagger."] },
+  { id: "dagger", name: "Dagger", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 10, slots: 1, alwaysAllowed: true, rules: ["Hands 1H. +Sk +1. Thrown(Sk). Any fighter may equip a Dagger."] },
   { id: "sword", name: "Sword", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 25, slots: 1, rules: ["Hands 1H. +Mt +1, +Sk +1. Sword. Parry."] },
   { id: "rapier", name: "Rapier", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 40, slots: 1, rules: ["Hands 1H. +Sk +3. Sword. Parry."] },
   { id: "hand-axe", name: "Hand Axe", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 20, slots: 1, rules: ["Hands 1H. +Mt +2. Axe. Thrown(Mt)."] },
+  { id: "battle-axe", name: "Battle Axe", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 25, slots: 1, rules: ["Hands 1H. +Mt +2, +Sk +1. Axe. Baseline axe."] },
   { id: "mace", name: "Mace", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 20, slots: 1, rules: ["Hands 1H. +Mt +2. Hammer. Impact."] },
-  { id: "spear", name: "Spear", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 25, slots: 1, rules: ["Hands 1H. +Mt +1, +Sk +1. Spear. Thrown(Mt), Reach."] },
+  { id: "flail", name: "Flail", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 25, slots: 1, rules: ["Hands 1H. +Mt +1. Hammer. Sunder."] },
+  { id: "spear", name: "Spear", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 25, slots: 1, rules: ["Hands 1H. +Mt +1, +Sk +1. Spear. Reach."] },
+  { id: "javelin", name: "Javelin", kind: "weapon", group: "One-Handed melee", proficiency: "one-handed", cost: 15, slots: 1, rules: ["Hands 1H. +Mt +1. Spear. Thrown(Mt), Reach."] },
   { id: "halberd", name: "Halberd", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +2, +Sk +1. Spear. Reach."] },
+  { id: "glaive", name: "Glaive", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 50, slots: 2, rules: ["Hands 2H. +Mt +1, +Sk +1. Spear. Reach. Cleave."] },
   { id: "great-sword", name: "Great Sword", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 50, slots: 2, rules: ["Hands 2H. +Mt +2, +Sk +1. Sword. Cleave."] },
-  { id: "war-axe", name: "War Axe", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +3. Axe. Heavy hitter."] },
-  { id: "war-hammer", name: "War Hammer", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +3. Hammer. Impact."] },
-  { id: "staff", name: "Staff", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 20, slots: 2, rules: ["Hands 2H. +Mt +1, +Sk +1. Spear. Spell focus.", "When purchased, choose Will or Sanity for this Staff.", "When this fighter resolves a casting attack while wielding this Staff, use the chosen attribute instead of Skill to determine the spell's scaling Skill dice. The spell's printed +Skill value still applies."] },
+  { id: "war-axe", name: "War Axe", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +3. Axe. Cleave."] },
+  { id: "maul", name: "Maul", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 35, slots: 2, rules: ["Hands 2H. +Mt +3. Hammer. Baseline hammer."] },
+  { id: "greathammer", name: "Greathammer", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 45, slots: 2, rules: ["Hands 2H. +Mt +3. Hammer. Impact."] },
+  { id: "staff", name: "Staff", kind: "weapon", group: "Two-Handed melee", proficiency: "two-handed", cost: 20, slots: 2, rules: ["Hands 2H. +Mt +1, +Sk +1. Spear. Reach. Spell focus.", "When purchased, choose Will or Sanity for this Staff.", "When this fighter resolves a casting attack while wielding this Staff, use the chosen attribute instead of Skill to determine the spell's scaling Skill dice. The spell's printed +Skill value still applies."] },
   { id: "shortbow", name: "Shortbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 40, slots: 2, rules: [`Hands 2H. Range 3"-18". +Mt +1, fixed 4 Sk. Draw strength plus fixed accuracy.`] },
   { id: "longbow", name: "Longbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 50, slots: 2, rules: [`Hands 2H. Range 3"-24". +Mt +1, fixed 5 Sk. Volley.`] },
   { id: "crossbow", name: "Crossbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 65, slots: 2, rules: [`Hands 2H. Range 3"-24". Fixed 4 Mt, +Sk +2.`] },
   { id: "heavy-crossbow", name: "Heavy Crossbow", kind: "weapon", group: "Archery", proficiency: "archery", cost: 90, slots: 2, rules: [`Hands 2H. Range 3"-30". Fixed 5 Mt, +Sk +2. Heavy.`] },
   { id: "sling", name: "Sling", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 20, slots: 1, rules: [`Hands 1H. Range 3"-12". +Mt +1, +Sk +1. Impact.`] },
-  { id: "throwing-stars", name: "Throwing Stars", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 10, slots: 1, rules: [`Hands 1H. Range 0"-8". +Sk +1. No minimum range, thrown; additive.`] },
+  { id: "throwing-stars", name: "Throwing Stars", kind: "weapon", group: "Thrown", proficiency: "thrown", cost: 10, slots: 1, rules: [`Hands 1H. Range 1"-8". +Sk +1.`] },
   { id: "musket", name: "Musket", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 100, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 3"-24". Primer 9+. Fixed 5 Mt, +Sk +2. Firearm critical hits.`] },
-  { id: "blunderbuss", name: "Blunderbuss", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 115, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 0"-10". Primer 8+. Fixed 3 Mt, +Sk +2. Standard flame template.`] },
+  { id: "blunderbuss", name: "Blunderbuss", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 115, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 0"-10". Primer 8+. Fixed 3 Mt, +Sk +2. Spread.`] },
   { id: "pistol", name: "Pistol", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 90, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Range 0"-12". Primer 9+. Fixed 4 Mt, +Sk +2. Short range.`] },
   { id: "long-rifle", name: "Long Rifle", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 125, slots: 2, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 2H. Range 3"-30". Primer 10+. Fixed 5 Mt, +Sk +3. Piercing, Heavy, Impact.`] },
   { id: "brace-of-pistols", name: "Brace of Pistols", kind: "weapon", group: "Firearms", proficiency: "firearms", cost: 25, slots: 1, rules: ["Requires Firearms domain feat; Mortal; forbids Caster. Holds 2 Pistols in 1 weapon slot. Cost here is for the brace item from the rules table."] },
-  { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 40, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. 3" blast, Single Shot, Impact.`] },
+  { id: "bomb", name: "Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 40, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 9+. Strike Pool 3 Mt / 2 Sk. Blast(3"), Single Shot, Impact.`] },
   { id: "smoke-bomb", name: "Smoke Bomb", kind: "weapon", group: "Bombs", proficiency: "firearms", cost: 25, slots: 1, rules: [`Requires Firearms domain feat; Mortal; forbids Caster. Hands 1H. Distance d6 + Mt. Primer 8+. 6" blast, Single Shot, Smoke.`] },
   { id: "buckler", name: "Buckler", kind: "armor", group: "Armor", armorRank: 1, cost: 10, slots: 1, rules: ["Light tier. +1 Df on 1 Skill die."] },
   { id: "shield", name: "Shield", kind: "armor", group: "Armor", armorRank: 2, cost: 25, slots: 1, rules: ["Medium tier. +1 Df on 1 Might die."] },

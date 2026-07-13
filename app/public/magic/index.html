@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magic Domains — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=08c210c" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -2246,6 +2246,12 @@
             <a href="/weapons/#primer-roll-2d6-skill" class="wiki-nav-link">Primer Roll (2d6 + Skill)</a>
           </div>
         </div>
+        <div class="wiki-nav-node" data-nav-id="nav-weapons-blunderbuss">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/weapons/#blunderbuss" class="wiki-nav-link">Blunderbuss</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-weapons-pistols">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -2981,6 +2987,7 @@
 <h3 id="damage-spells">Damage Spells</h3>
 <p>Only spells with the <strong>Attack</strong> keyword build a Strike Pool. If the spell has the <strong>Attack</strong> keyword, it generates a Strike Pool from the spell&#39;s <strong>Attack</strong> line. A spell attack&#39;s <strong>Might</strong> value is fixed. Its +<strong>Skill</strong> value adds to the caster&#39;s <strong>Skill</strong>. A spell with 4 <strong>Might</strong> / +3 <strong>Skill</strong> produces 4 <strong>Might dice</strong> and the caster&#39;s <strong>Skill</strong> + 3 <strong>Skill dice</strong>.</p>
 <p>Once the spell goes off, resolve the attack using the <strong>Attack Sequence</strong>. Use the spell&#39;s <strong>Hit</strong> attribute for the roll to hit: <strong>Ranged Combat</strong> for most damage spells, <strong>Close Combat</strong> for engagement-range damage (including blasts centered on the caster). Apply <strong>Hit</strong> attribute modifiers (+1 <strong>Ranged Combat</strong>, −1 <strong>Close Combat</strong>, etc.) to that attribute.</p>
+<p>Some Attack spells use the <strong>Blast</strong> or <strong>Spread</strong> weapon keywords to hit every fighter under a template with one roll instead of targeting a single fighter — see <a href="/weapons/#keywords">Weapons — Keywords</a>.</p>
 <hr>
 <h2 id="magic-classes">Magic Classes</h2>
 <p>Six magic classes exist in Noctvale:</p>
@@ -3056,7 +3063,7 @@
 <p><em>[Placeholder]</em></p>
 <p><strong>Difficulty:</strong> <strong>Will</strong> 11+ | <strong>Range:</strong> Self | <strong>Attack:</strong> <strong>Close Combat</strong></p>
 <p>3 <strong>Might</strong> | +1 <strong>Skill</strong></p>
-<p>Place a <strong>3&quot; blast template</strong> centered on the caster. All fighters within the blast are hit.</p>
+<p>This spell has <strong>Blast(3&quot;)</strong>, centered on the caster.</p>
 <p><strong>Mishap:</strong> Resolve the attack against the caster.</p>
 <h4 id="shield-of-faith">Shield of Faith</h4>
 <p><em>[Placeholder]</em></p>
@@ -3089,8 +3096,8 @@
 <p><em>[Placeholder]</em></p>
 <p><strong>Difficulty:</strong> <strong>Will</strong> 13+ | <strong>Range:</strong> 18&quot; | <strong>Attack:</strong> <strong>Ranged Combat</strong></p>
 <p>4 <strong>Might</strong> | +3 <strong>Skill</strong></p>
-<p>Select a point within 18&quot;. All fighters within a <strong>5&quot; blast template</strong> are hit. The blast hits friendly and enemy fighters. If the <strong>casting roll</strong> fails below difficulty (not <strong>Mishap</strong>), the fireball scatters: roll a scatter die for direction and d6&quot; for distance from the target point. On a success, the blast centers on the selected point.</p>
-<p><strong>Mishap:</strong> The blast template centers on the caster.</p>
+<p>Select a point within 18&quot;. If the <strong>casting roll</strong> fails below difficulty (not <strong>Mishap</strong>), the fireball scatters: roll a scatter die for direction and d6&quot; for distance from the target point, and use that as the center instead. This spell has <strong>Blast(5&quot;)</strong> centered on the resulting point.</p>
+<p><strong>Mishap:</strong> This spell&#39;s <strong>Blast(5&quot;)</strong> centers on the caster instead.</p>
 <h4 id="telekinesis">Telekinesis</h4>
 <p><em>[Placeholder]</em></p>
 <p><strong>Difficulty:</strong> <strong>Will</strong> 12+ | <strong>Range:</strong> 12&quot;</p>
@@ -3407,7 +3414,7 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
 <p><em>[Placeholder]</em></p>
 <p><strong>Difficulty:</strong> <strong>Will</strong> 12+ | <strong>Range:</strong> 12&quot; | <strong>Attack:</strong> <strong>Ranged Combat</strong></p>
 <p>3 <strong>Might</strong> | +2 <strong>Skill</strong></p>
-<p>Make a ranged spell attack using a <strong>standard flame template</strong>.</p>
+<p>Make a ranged spell attack with <strong>Spread</strong>.</p>
 <p><strong>Mishap:</strong> None</p>
 <h4 id="shadowmeld">Shadowmeld</h4>
 <p><em>[Placeholder]</em></p>
@@ -3529,7 +3536,7 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
 <p><em>[Placeholder]</em></p>
 <p><strong>Difficulty:</strong> <strong>Sanity</strong> 11+ | <strong>Range:</strong> Self | <strong>Attack:</strong> <strong>Close Combat</strong></p>
 <p>4 <strong>Might</strong> | +3 <strong>Skill</strong></p>
-<p>Place a <strong>5&quot; blast template</strong> centered on the caster. All fighters under the template except the caster are hit.</p>
+<p>This spell has <strong>Blast(5&quot;)</strong>, centered on the caster. The caster is not hit.</p>
 <p><strong>Mishap:</strong> The caster gains <strong>2 Affliction tokens</strong> for 1d6 rounds.</p>
 <h4 id="bone-circle">Bone Circle</h4>
 <p><em>[Placeholder]</em></p>
@@ -3657,7 +3664,7 @@ Daemons cannot be recruited normally. They enter battle through <strong>Summon D
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=08c210c"></script>
-  <script src="/wiki/wiki.js?v=08c210c" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
+  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
 </body>
 </html>

@@ -18,12 +18,13 @@ rules/
   what-you-need-to-play.md, attributes.md, battle-setup.md, the-turn.md
   actions.md, combat.md, conditions.md
   retinue-building.md, archetypes.md, traditions.md, feats.md, magic.md
-  crown-costs.md, weapons.md, gear.md, companions.md
+  weapons.md, gear.md, companions.md
   how-to-run-a-campaign.md, advancement.md, scenarios.md, post-game-sequence.md, survival-rolls.md, economy.md
   chapter-movement-log.md — Ledger for the split from combined files into chapter files
 _overview.md             — Project overview, design method, and design principles
 todo.md                  — Playtest roadmap, open decisions, and phase checklist
-decision-log.md          — Design and builder decisions (one entry per commit)
+decision-log.md          — Design and builder decisions (one entry per commit, pure history)
+ideas.md                 — Provisional/unresolved design concepts, separate from the decision log
 app/                     — Playtesting retinue builder and static rules pages (React, Firebase, deploy scripts)
   rules-updates.md       — Builder game-data and enforcement changelog
 ```

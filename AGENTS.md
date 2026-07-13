@@ -68,12 +68,12 @@ or structural documentation changes:
 
 1. Run `date '+%Y-%m-%d %H:%M %Z'` in the shell. Use that date for the log
    entry; do not rely on conversation metadata.
-2. Add one new `## YYYY-MM-DD — Title` section in `decision-log.md` below the
-   `## Ideas` section and its divider.
+2. Add one new `## YYYY-MM-DD — Title` section at the very top of
+   `decision-log.md`, right after the "How to use this log" section.
 3. Use `**Decision:**` to summarize what changed and `**Reasoning:**` to capture
    why the change belongs in Noctvale.
-4. If the change implements or closes an item from `## Ideas`, remove or update
-   that idea in the same edit.
+4. If the change implements or closes an item from `ideas.md`, remove or
+   update that idea there in the same edit.
 5. Stage `decision-log.md` with the files it explains.
 
 Skip the decision log only for typo, whitespace, or link-only changes with no
@@ -132,10 +132,14 @@ head before repairing local refs.
 ## Capturing Ideas
 
 When the user introduces a concept with language such as "I have an idea,"
-"another idea," or "idea for a scenario," add it to the **Ideas** section near
-the top of `decision-log.md`.
+"another idea," or "idea for a scenario," add it to `ideas.md`.
 
 Record enough detail to preserve the concept without treating it as a finalized
 rule. Update the idea entry as the discussion develops. When the concept is
-implemented in the repository, remove it from **Ideas** and capture the final
-decision in the normal dated decision-log entry for that commit.
+implemented in the repository, remove it from `ideas.md` and capture the final
+decision in the normal dated `decision-log.md` entry for that commit.
+
+`decision-log.md` itself is a pure historical record — it never holds
+provisional or unresolved content. That separation means an agent never needs
+to read the full decision log just to check for open threads; `ideas.md` is
+small and self-contained for that purpose.

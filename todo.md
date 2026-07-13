@@ -156,7 +156,6 @@ All remaining open items, ordered easiest to most time-consuming.
 
 ### Short Tasks
 
-- [x] **Remove Werebeasts migration shim** — `normalizeRetinue` in `app/src/lib/retinue.js` remaps `traditionId: "beastmen"` → `"werebeasts"`. Remove after ~2026-07-14 once live retinues have been resaved.
 - [x] **Minis-agnostic list-building read** — Preserve the positive signal that Archetype + Domain + Tradition made it easy to map existing miniatures onto Noctvale concepts, such as armored spellcasters or ratfolk-style fighters.
 - [x] **Companion action clarity** — All companion rules live in `rules/companions.md`; Animal Handling feat references there. Multiple companions per handler (one per Animal Handling pick); Downed handler = companion acts independently; Stunned/OOA handler = companion flees; 0 wounds = companion flees.
 - [x] **Builder quick-reference/search visibility** — Check whether players can find quick reference text and search functions while building a retinue, especially during first-playtest onboarding.

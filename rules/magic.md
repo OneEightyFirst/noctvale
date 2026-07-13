@@ -25,6 +25,8 @@ Only spells with the **Attack** keyword build a Strike Pool. If the spell has th
 
 Once the spell goes off, resolve the attack using the **Attack Sequence**. Use the spell's **Hit** attribute for the roll to hit: **Ranged Combat** for most damage spells, **Close Combat** for engagement-range damage (including blasts centered on the caster). Apply **Hit** attribute modifiers (+1 **Ranged Combat**, −1 **Close Combat**, etc.) to that attribute.
 
+Some Attack spells use the **Blast** or **Spread** weapon keywords to hit every fighter under a template with one roll instead of targeting a single fighter — see [Weapons — Keywords](weapons.md#keywords).
+
 ---
 
 ## Magic Classes
@@ -115,7 +117,7 @@ Restore 1 Wound and improve the target's wound state by one step: **Stunned** to
 
 3 **Might** | +1 **Skill**
 
-Place a **3" blast template** centered on the caster. All fighters within the blast are hit.
+This spell has **Blast(3")**, centered on the caster.
 
 **Mishap:** Resolve the attack against the caster.
 
@@ -181,9 +183,9 @@ The caster is immune to all spells. At the start of the caster's next activation
 
 4 **Might** | +3 **Skill**
 
-Select a point within 18". All fighters within a **5" blast template** are hit. The blast hits friendly and enemy fighters. If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point. On a success, the blast centers on the selected point.
+Select a point within 18". If the **casting roll** fails below difficulty (not **Mishap**), the fireball scatters: roll a scatter die for direction and d6" for distance from the target point, and use that as the center instead. This spell has **Blast(5")** centered on the resulting point.
 
-**Mishap:** The blast template centers on the caster.
+**Mishap:** This spell's **Blast(5")** centers on the caster instead.
 
 #### Telekinesis
 
@@ -427,7 +429,7 @@ Target friendly fighter within **12"**. That fighter **projects Fear (6")** whil
 
 3 **Might** | +2 **Skill**
 
-Make a ranged spell attack using a **standard flame template**.
+Make a ranged spell attack with **Spread**.
 
 **Mishap:** None
 
@@ -575,7 +577,7 @@ Target enemy suffers **Withered** until the start of the caster's next activatio
 
 4 **Might** | +3 **Skill**
 
-Place a **5" blast template** centered on the caster. All fighters under the template except the caster are hit.
+This spell has **Blast(5")**, centered on the caster. The caster is not hit.
 
 **Mishap:** The caster gains **2 Affliction tokens** for 1d6 rounds.
 

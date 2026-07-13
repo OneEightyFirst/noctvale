@@ -4,14 +4,17 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 ## How to use this log
 
-`decision-log.md` is the primary handoff artifact for current design state.
+`decision-log.md` is the primary handoff artifact for current design state —
+a pure historical record of decisions. It holds no provisional or unresolved
+content; that lives in `ideas.md` instead, so this file never needs to be
+read in full just to check for open threads.
 
-- Keep `## Ideas` near the top for provisional concepts and unresolved design
-  decisions.
-- Add one dated section per commit below `## Ideas` and its divider.
+- Add one dated section per commit at the very top of the file, right after
+  this "How to use this log" section.
 - Use `## YYYY-MM-DD — Title`; match the title to the commit intent.
 - Write `**Decision:**` for what changed and `**Reasoning:**` for why it changed.
-- Remove or update Ideas entries when they become implemented rules.
+- When a change implements an idea from `ideas.md`, remove it from there and
+  capture the final decision here instead.
 - Do not include commit hashes.
 - Log **game rules and setting** changes here. Log **builder data and enforcement**
   in `app/rules-updates.md`. Log **builder UX** changes here when they are not
@@ -19,6 +22,92 @@ Decisions made during design, with reasoning. Newest entries at the top.
 
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
+
+## 2026-07-13 — Ideas extracted from decision-log.md into ideas.md; log-reading efficiency fixes
+
+**Decision:** Moved the `## Ideas` section out of `decision-log.md` entirely into a new standalone `ideas.md` at the repo root, with the same content and workflow (provisional concepts, open questions, removed when implemented). `decision-log.md` is now a pure historical record — it never holds provisional or unresolved content, and entries are always added at the very top of the file (right after "How to use this log"), not "below `## Ideas`."
+
+While doing this, fixed a structural bug this same change exposed: 12 entries dated **2026-07-11** had drifted to sit *above* where `## Ideas` used to be, while the genuinely newest entries (2026-07-12/13) sat below it — meaning the file wasn't actually newest-first at the top despite being documented that way. Relocated that block of 12 entries to its correct chronological position (between 2026-07-12 and 2026-07-10).
+
+Updated every doc/skill that referenced the old `## Ideas`-in-decision-log workflow to point at `ideas.md` and the new top-of-file insertion rule instead: `AGENTS.md` ("Decision Log Workflow" and "Capturing Ideas" sections), `.agents/skills/noctvale-decision-log/SKILL.md`, `.agents/skills/noctvale-traffic/SKILL.md` (authority ladder, task table, "do not read first" table — also fixed a stale "~1670 lines" reference and added the same "read only the top entry" guidance for `app/rules-updates.md`, which previously had none), `app/.cursor/skills/decision-log-on-commit/SKILL.md`, `_overview.md`, and `README.md`.
+
+**Reasoning:** `.agents/skills/noctvale-traffic/SKILL.md` already told agents they could skip reading the full decision log by reading `## Ideas` + the latest entry only — but that shortcut was broken by the ordering bug, and mixing "provisional, frequently-edited ideas" with "settled historical record" in one file made the file's own append-at-top convention ambiguous (creating exactly the drift that caused the bug). Splitting them removes that ambiguity going forward: decision-log.md entries always go at the top, full stop, and ideas.md stays small enough to read in full without cost. Extending the "read only the top entry" guidance to `app/rules-updates.md` closes the same gap there before it becomes the same kind of problem — that file had no read-limiting guidance at all.
+
+## 2026-07-13 — Attack spells adopt the Blast/Spread weapon keywords
+
+**Decision:** Generalized **Blast(3") / Blast(5")** and **Spread**'s definitions in `rules/weapons.md` from "This weapon's attack" to "This attack," and applied them to the four **Attack** spells in `rules/magic.md` that hit a template of fighters with one roll instead of a single target:
+
+- **Purge the Faithless** (Light) → **Blast(3")**, centered on the caster.
+- **Fireball** (Arcane) → **Blast(5")**, centered on the chosen point (or the scatter result on a failed casting roll).
+- **Bone Blast** (Necromancy) → **Blast(5")**, centered on the caster, caster excluded.
+- **Thorn Volley** (Nature) → **Spread** (was already using the flame template, just described in ad-hoc prose instead of the keyword).
+
+Added a pointer sentence to the "Damage Spells" section explaining that some Attack spells use these weapon keywords, linking to Weapons — Keywords. Mirrored all four spells' `effect`/`keywords` fields in `app/src/data/noctvale.js`'s `SPELLS` data.
+
+**Explicitly left unchanged:** **The Void**, **Hoarfrost**, **Hellmouth**, **Cursed Ground**, **Bone Circle**, and **Nightfall** — each places a blast/flame template, but none of them resolve as a single immediate Blast/Spread attack. They're persistent zones or terrain with their own re-triggering conditions (movement-into-zone checks, Skill-check-to-avoid, impassable terrain, LoS blocking) that don't match Blast's "roll once, everyone under defends individually" definition. Forcing the keyword onto them would have implied a mechanic they don't actually have.
+
+**Reasoning:** Weapons and spells already share the same **Attack Sequence**, Strike Pool, and defense-pool mechanics — there was no reason for Bomb's "3" blast" and Blunderbuss's "flame template" to become real keywords earlier this session while equivalent spell effects stayed as one-off prose repeating the same rule in slightly different words each time. Consolidating onto shared keywords means a future rules change to how blast/spread attacks resolve only needs to happen once, in the Weapons Keywords glossary, instead of being hunted down across every matching spell.
+
+## 2026-07-13 — New Blast(3")/Blast(5") keyword; Spread and Blast clarify single-roll, individual-defense resolution
+
+**Decision:** Added a new **Blast(3") / Blast(5")** keyword to `rules/weapons.md` Keywords: *"This weapon's attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll."* Reworded **Spread**'s definition to match that same explicit phrasing (was: "All fighters ... suffer the Strike Pool" — now spells out that the attacker rolls **once** and each fighter under the template defends **individually**). Updated **Bomb**'s Special Rules from the ad-hoc "3" blast" text to the new **Blast(3")** keyword, and trimmed Bomb's prose (removed the now-redundant intro clause and numbered step 3, both of which just restated what Blast(3") now defines once, centrally).
+
+**Reasoning:** "All fighters ... suffer the Strike Pool" was ambiguous about whether the attack rolls once for the whole group or once per target — worth spelling out since it changes how criticals and blocked/unblocked hits are counted. Blast formalizes what Bomb's prose already described as one-off, bespoke rules text into a reusable keyword matching the Thrown(Mt)/Thrown(Sk) pattern (one glossary heading, two sized variants) — Blast(5") isn't used by any current weapon, mirroring how not every weapon uses both Thrown variants either, but it's ready if a future weapon needs it. Left Bomb's placement/scatter procedure (steps 1-2) untouched since that's genuinely Bomb-specific and not part of what Blast defines.
+
+## 2026-07-12 — Weapon tables rename Notes to Special Rules; new Spread keyword for Blunderbuss
+
+**Decision:** Renamed the "Notes" column to **Special Rules** across every weapon-profile table in `rules/weapons.md` (One-Handed, Two-Handed, Archery, Thrown, Firearms, the Brace of Pistols item table, Bombs, and Alchemical Bombs), and pruned that column so it only lists actual keyword names:
+
+- **Throwing Stars**: "Minimum range 1"" removed — the Range column (**1"–8"**) already states this; it wasn't a keyword.
+- **Blunderbuss**: "Flame template" replaced with a new **Spread** keyword — *"This weapon's attack uses the standard flame template instead of targeting a single fighter. All fighters (friend and foe) under the template suffer the Strike Pool."* Added a **#### Blunderbuss** subsection giving it a placement procedure (declare a direction, place the flame template point-first at the shooter) matching the style of the existing Pistols/Long Rifle subsections.
+- **Brace of Pistols**: cleared to **—** — its old note ("Requires Mortal — holds 2 Pistols in 1 kit") duplicated the prose directly below the table.
+- **Smoke Bomb**: "6" blast" removed from the column — the **Smoke** keyword's own definition already states its 6" cloud size.
+- **Bomb**: kept "3" blast, Single Shot, Impact" as-is — the 3" blast size isn't stated anywhere else in the Bomb rules, so removing it would have deleted information with no other home.
+- **Poison table** (`## Alchemy`): left as **Notes**, not renamed. Its column is pure flavor text ("Subtle, fast-acting," "Weakening toxin," etc.) — the actual poison mechanics already live in a separate **Effect** column, so there's no "special rule" content to preserve there and relabeling it "Special Rules" would be inaccurate.
+
+Also fixed a related app-side bug while touching this: `app/src/lib/fighter.js`'s weapon-rule parser was unconditionally stripping the literal text "Single Shot" and "Smoke" out of any weapon's rules before keyword resolution ran, instead of resolving them through the `WEAPON_KEYWORD_RULES` glossary like every other keyword. This silently dropped **both** of Smoke Bomb's keywords from its fighter-card display (it showed no special rules at all) and dropped **Single Shot** from Bomb's. Removed both dead strip patterns so they resolve normally.
+
+**Reasoning:** The Notes column had drifted into a mix of real keywords and one-off descriptive asides, which made it unclear at a glance whether an entry was a rule you needed to track or just flavor. Renaming to Special Rules and holding it to that standard turns it into a reliable "click here for the mechanic" list. Blunderbuss needed a real keyword rather than an undefined "Flame template" aside — it was the only weapon in the book referencing a template shape without a rule attached to it, unlike Bombs (which have a full placement procedure) or Smoke (which has its own keyword). The Single Shot/Smoke parser bug was a pre-existing casualty of an earlier glossary migration (2026-07-12 08:30 EDT rules-updates entry) that never got cleaned up; it surfaced only because this pass required tracing every affected weapon's parsed output.
+
+## 2026-07-12 — Throwing Stars gain a 1" minimum range
+
+**Decision:** Throwing Stars' range changed from **0"–8"** to **1"–8"**. Notes column updated from "No minimum range" to "Minimum range 1"".
+
+**Reasoning:** Removes the edge case of throwing stars at a target in the same base-to-base position as the thrower.
+
+## 2026-07-12 — War Axe gains Cleave
+
+**Decision:** Added **Cleave** to **War Axe** (Two-Handed, Axe type). Stats and cost unchanged: +3 Might, 45 Crowns.
+
+**Reasoning:** Raised that this makes War Axe's total dice (+3) and keyword (Cleave) match Great Sword's (+2 Might +1 Skill, Cleave, 50 Crowns) while costing 5 Crowns less — the same category of overlap flagged and resolved for Battle Axe earlier this session. Confirmed Battle Axe stays keyword-less rather than picking up Cleave itself, and War Axe's price stays at 45 rather than moving to 50 for parity with Great Sword — the two weapons now differ only in Might/Skill split and price, which is an accepted tradeoff rather than a fix to make.
+
+## 2026-07-12 — Spear drops Thrown(Mt); "shield tie benefit" corrected to "shield Df bonus"
+
+**Decision:** Removed **Thrown(Mt)** from **Spear** (One-Handed) — its Notes are now just **Reach**. Also replaced the phrase "shield tie benefit" with "shield Df bonus" everywhere it appeared: **Piercing**'s and **Sunder**'s keyword definitions, and both **Long Rifle** write-ups (`rules/weapons.md`, `rules/combat.md`), plus the matching entries in `app/src/data/noctvale.js`'s `WEAPON_KEYWORD_RULES`.
+
+**Reasoning:** Now that **Javelin** exists as Spear's dedicated thrown specialist, Spear itself doesn't need to double as a thrown weapon — Spear stays the pure reach/melee pick, Javelin is the throw-first one. Separately, "shield tie benefit" was leftover language from the pre-Df-attribute defense model (see 2026-07-09 — Defense overhaul, where shields let the defender win ties). Shields haven't worked that way since defense moved to the single **Df** check system — `rules/combat.md` and `rules/gear.md` both describe shields as modifying the **Df** threshold on specific dice, not winning ties — so "shield tie benefit" no longer described anything real. "Shield Df bonus" matches the mechanic and the "Defense bonus" column header already used in `gear.md`'s shield table.
+
+## 2026-07-12 — Flail, Maul, and Glaive added; War Hammer renamed to Greathammer
+
+**Decision:** Added three weapons to `rules/weapons.md` and a new **Sunder** keyword: **Flail** (One-Handed, 25 Crowns, +1 Might, Hammer type, Sunder — *"When defending against this weapon's attacks, ignore the target's shield tie benefit and Parry keyword when building the defense pool."*), **Maul** (Two-Handed, 35 Crowns, +3 Might, Hammer type, no keyword), and **Glaive** (Two-Handed, 50 Crowns, +1 Might +1 Skill, Spear type, Reach + Cleave). Renamed the existing **War Hammer** to **Greathammer** — stats unchanged (+3 Might, Impact, 45 Crowns, Two-Handed). Mirrored all of this in `app/src/data/noctvale.js`, including fixing the `PROFICIENCIES` weapon lists, which had already drifted out of date (missing Battle Axe and Javelin from earlier this session).
+
+Considered and deliberately left out from the source brainstorm list: **Club** and a one-handed **Warhammer** (Mace already covers the One-Handed Hammer foundation slot, and Flail was chosen as its specialist over a Piercing-style Warhammer); **Greataxe** (redundant with the existing War Axe — no new niche); **Knife** (redundant with Dagger, which stays as the one typeless exception per explicit instruction).
+
+**Reasoning:** Hammer was the only type with just one entry at each hand count (Mace alone at One-Handed, War Hammer alone at Two-Handed), unlike Sword/Axe/Spear which each already had a foundation-plus-specialist pair at One-Handed. Flail fills that gap for One-Handed Hammer with a new niche — countering shields and Parry specifically, distinct from Piercing's anti-armor niche — at a lower Might than Mace to reflect being "harder to control." For Two-Handed Hammer, the source brainstorm's Maul ("maximum blunt force," no finesse) and Greathammer ("armor-crushing but more martial") read directly as a plain-foundation/technical-specialist pair, and the existing War Hammer already *was* that specialist in every way that mattered (Impact, +3 Might, 45 Crowns) — renaming it to Greathammer let Maul slot in underneath as the new plain foundation without duplicating stats. Glaive fills the same foundation/specialist gap for Two-Handed Spear that Javelin already fills for One-Handed Spear, trading Halberd's balanced utility for Cleave's aggressive payoff; giving it Reach was mandatory once Reach was established as a Spear-type trait rather than a per-weapon add-on (see "Battle Axe and Javelin added; Reach confirmed as a Spear-type trait" below).
+
+## 2026-07-12 — Battle Axe and Javelin added; Reach confirmed as a Spear-type trait
+
+**Decision:** Added two One-Handed weapons to `rules/weapons.md`: **Battle Axe** (25 Crowns, +2 Might +1 Skill, Axe type, no keyword) and **Javelin** (15 Crowns, +1 Might, Spear type, Thrown(Mt) + Reach). Also established that **Reach is a trait of the Spear type itself**, not a per-weapon add-on — added a line stating every Spear-type weapon has Reach, and gave **Staff** the Reach keyword it was previously missing (it was already Spear type). Mirrored all of this in `app/src/data/noctvale.js`.
+
+**Reasoning:** Axe and Spear were the only two melee types with just one One-Handed option each, while Sword already had two (Sword/Rapier). Battle Axe fills that gap for Axe: a first pass at +3 Might flat (matching War Axe's exact profile one-handed for barely more than Hand Axe) would have made War Axe's two-handed cost and kit strictly worse for no benefit, so it landed on a balanced +2 Might/+1 Skill split instead — Sword's existing balanced-vs-skill pattern, applied to Axe, without duplicating any two-handed weapon's numbers. Javelin fills the same gap for Spear as a cheaper, lighter, throw-first option next to Spear's balanced thrust-and-throw profile. Since Javelin needed Reach to make sense as a Spear-type weapon, and Halberd/Spear already both carry Reach, it became clear Reach isn't really an optional keyword for this type — it's what makes a weapon a Spear rather than a Sword or Axe with a longer haft. Staff had been Spear type without Reach since Crushing-keyword-era cleanup; this closes that gap.
+
+## 2026-07-12 — Dagger has no weapon type
+
+**Decision:** Dagger no longer counts as a **Sword**-type weapon. It has no weapon type at all and never grants or suffers **weapon triangle** advantage. Updated `rules/weapons.md` (Type column now shows **—** for Dagger; intro paragraph calls out the exception alongside its existing proficiency-free exception) and `app/src/data/noctvale.js` (removed the `Sword.` token from Dagger's rules text, which also drops its weapon-triangle icon in the retinue builder).
+
+**Reasoning:** Dagger is already the one weapon any fighter can equip without a proficiency feat — a low-commitment sidearm, not a primary weapon choice. Riding the Sword slot's crit-triangle advantage over Axe made it a strictly-better backup in some matchups. Dropping its type keeps it a fallback option with no triangle payoff, the same way Hammer weapons sit outside the triangle (see 2026-07-10 — Remove Crushing; Hammer Outside the Triangle Only), except Dagger carries no type designation at all rather than an explicit Hammer classification.
+
+---
 
 ## 2026-07-11 — Lacerate spell fills Blood's standard-attack slot
 
@@ -131,7 +220,7 @@ The attacker's 1" exclusion zone is unchanged — the terrain must still be more
 
 **Reasoning:** Hurl as universal action makes the displacement/control play pattern available to all retinue types, which opens design space for more distinctive domain feats. Domain feat cleanup removes generic padding and creates identities that match each domain's thematic core. Shadow Market formalizes a purchasing restriction already referenced in the Alchemists tradition. Bomb split correctly separates technology (gunpowder, Mortal only) from chemistry (alchemical, universal).
 
-----
+---
 
 ## 2026-07-11 — Shield access explicit in archetype chapters; feats consolidated to feats.md
 
@@ -143,7 +232,7 @@ The attacker's 1" exclusion zone is unchanged — the terrain must still be more
 
 **Reasoning:** The additive armor/shield wording makes access unambiguous without telling players what they can't do. Consolidating feats to one chapter matches the retinue-building workflow: choose archetype, choose tradition, then go to feats.md and pick — no cross-chapter flipping.
 
-----
+---
 
 ## 2026-07-11 — Wiki prev/next page navigation
 
@@ -151,7 +240,7 @@ The attacker's 1" exclusion zone is unchanged — the terrain must still be more
 
 **Reasoning:** Players reading the rules linearly had no clear path from one chapter to the next without returning to the sidebar. The nav bar matches the existing dark wiki aesthetic and follows the reading-order sequence already defined in `rules-lib.mjs`.
 
-----
+---
 
 ## 2026-07-11 — Quick-decision batch: affliction, costs, keywords, campaign healing
 
@@ -160,60 +249,19 @@ The attacker's 1" exclusion zone is unchanged — the terrain must still be more
 - **Infernal affliction** — named **Damned**. Full permanent-condition rule added to `rules/conditions.md`: a fighter accumulates **Damned** stacks; at the start of each battle they roll 1d6, and if the result is ≤ their stack count they are **Slain** and replaced by a daemon on the summon table. The **Summon Daemon** Mishap now inflicts **Damned** instead of taking the caster **Out of Action** outright.
 - **Bone Blast Mishap** — the caster gains **2 Affliction tokens** for 1d6 rounds (was unset; attack-against-caster wording removed).
 - **Summoning Crystal cost** — **35 Crowns** (`rules/gear.md`).
-- **Campaign upkeep** — deferred indefinitely; moved to Ideas. The Survival Roll and Casualty Table already create attrition pressure; upkeep would add bookkeeping complexity before the campaign loop is proven in play.
+- **Campaign upkeep** — deferred indefinitely; recorded in `ideas.md`. The Survival Roll and Casualty Table already create attrition pressure; upkeep would add bookkeeping complexity before the campaign loop is proven in play.
 - **Convalescent fighters / downtime injury healing** — resolved with a new **Barber Surgeon** post-game step (50 Crowns, accompanying fighter required, 2d6 table with outcomes from Fatal Complication to Full Recovery). A new **Scavenging** rule lets Active fighters add dice to the Survival Roll pool. Both added to `rules/post-game-sequence.md` and `rules/survival-rolls.md`.
-- **Werebeasts keyword** — kept as **Werebeasts** / **Werebeast** (not Beastmen). Updated `rules/traditions.md` and the migration shim in `app/src/lib/retinue.js`. A cleanup task to remove the shim (~2026-07-14) is tracked in `todo.md`.
+- **Werebeasts keyword** — kept as **Werebeasts** / **Werebeast** (not Beastmen). Updated `rules/traditions.md` and the migration shim in `app/src/lib/retinue.js`. A cleanup task to remove the shim was tracked in `todo.md` and completed 2026-07-13.
 
 **Reasoning:** All six items were blocking clarity in the rules or app builder without requiring a full design session — each had an obvious answer or a clear "defer" path. Resolving them together clears the way for the heavier Phase 5–8 work.
 
-----
+---
 
 ## 2026-07-11 — Infernal Summoning scope decisions
 
 **Decision:** No variant table per daemon tier. Each tier (Imp, Hellion, Mauler) has one canonical profile — the earlier d6/d66 variant-table idea is scrapped. Summon attempts have no fixed per-battle limit beyond the crystal economy and battle caps (2 Imps / 2 Hellions / 1 Mauler per battle). Any caster may attempt **Summon Daemon** as many times per battle as they can pay for.
 
 **Reasoning:** Variant tables would require a large pool of distinct miniatures or proxies, inflate the rules surface for little gain, and complicate the alpha. One canonical profile per tier is enough to give each daemon a clear identity and keep rules lookup fast at the table. The crystal cost and sacrifice requirement already make repeated summoning expensive; adding a separate summon-count cap would be redundant and punish Cult retinues with multiple Casters without adding meaningful tension.
-
-----
-
-## Ideas
-
-Concepts under discussion. Remove an entry when it is implemented and capture
-the final rule in the dated decision-log entry for that commit.
-
-**Actionable work lives in `todo.md`.** This section holds provisional design
-only — not duplicate checklists.
-
-**Campaign upkeep.** A possible future layer where retinues pay an ongoing Crown cost between battles — larger or more expensive retinues cost more to maintain. Skipped for now to keep the campaign economy simple; the Survival Roll and Casualty Table already create attrition pressure. Revisit if playtesting shows retinues accumulate Crowns too easily.
-
-**Variable Presence ranges.** Explore replacing fixed target and charge reach with a fighter-facing **Presence** value measured in inches. Each ancestry would set a baseline **Presence** by size and silhouette: larger fighters project farther, smaller fighters project less, and effects such as **Hide** could reduce a fighter's **Presence**, potentially to **0"**. Weapons would have shorter printed ranges than they do now. A ranged attack would be able to target a fighter within the weapon's printed range plus the target's **Presence**. A **Charge** would be able to reach a target within the charging fighter's **Movement** + the charging fighter's **Presence** + the target's **Presence**.
-
-Open questions:
-
-- Is **Presence** printed on ancestry profiles, derived from base size, or granted by keywords such as **Large**?
-- Does **Presence** replace or modify engagement range, or does it only affect targeting and **Charge** reach?
-- How much should current weapon ranges shrink if target **Presence** extends practical reach?
-- Which effects besides **Hide** can raise or lower **Presence**, and should any fighter be prevented from reducing it to **0"**?
-
-**The Mask of Many Faces.** Explore an Infernal spell or Domain feat that lets a fighter replace an enemy fighter's position with their own. If written as a spell, the swap would happen when the spell is cast. If written as a feat, the fighter could use it during their activation, possibly once per battle or under another timing limit. The acting player would pick up their fighter and place them where an enemy fighter within a set range stood. The displaced enemy fighter would not go **Out of Action**; instead, they would be removed from the battlefield and placed by their controlling player within that player's deployment zone at the start of the next round, then activate normally when eligible.
-
-Open questions:
-
-- Is this an Infernal spell, an Infernal Domain feat, or a Cult/Diabolist-style identity rule?
-- What is the range, and does the acting fighter need line of sight?
-- Can it target **Leaders**, **Large** fighters, **Summon** fighters, or fighters within engagement range?
-- Does the displaced fighter return at the start of the next round before initiative, after initiative, or before their first activation?
-- Should the effect be once per battle, require a **Sanity** or **Will** check, or carry a Mishap/backlash if it fails?
-
-**Sweeping attack (two-handed weapons).** Explore a **Sweep** or similar action for two-handed weapons that lets a fighter attack multiple enemies in one activation. One possible cost model: add **+1 Might** die per additional target beyond the first. The attack would still resolve through the normal **Attack Sequence**, but each target would be hit separately or as part of one declared sweep.
-
-Open questions:
-
-- Is this a weapon keyword, a two-handed weapon trait, or a general **Strike** option available only when wielding a two-handed weapon?
-- How many targets can be included, and must they be within engagement range of the attacker, of each other, or of the weapon's arc?
-- Does each target get its own attack roll, or does one roll apply to all targets with separate wound resolution?
-- Is the **+1 Might** die per extra target the right cost, or should sweep trade **Skill**, impose disadvantage, or limit targets by **Might** or weapon type?
-- Does sweep interact with **Overwatch**, **Riposte**, or other reactions per target or once for the whole action?
 
 ---
 

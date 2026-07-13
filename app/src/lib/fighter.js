@@ -7,6 +7,7 @@ const FEAT_ID_ALIASES = {
 const BASELINE_PHRASES = [
   /^balanced baseline$/i,
   /^baseline axe$/i,
+  /^baseline hammer$/i,
   /^heavy hitter$/i,
   /^heavy, powerful$/i,
   /^fast, finesse$/i,
@@ -17,7 +18,6 @@ const BASELINE_PHRASES = [
   /^mechanical force, trained aim$/i,
   /^slow, powerful$/i,
   /^short range$/i,
-  /^no minimum range, thrown; additive$/i,
   /^normal rc to hit$/i,
   /^any fighter may equip a dagger$/i,
 ];
@@ -130,6 +130,14 @@ function isBaselineSegment(segment) {
   return false;
 }
 
+function detectWeaponType(rule) {
+  for (const segment of rule.split(/\.\s+/)) {
+    const normalized = segment.trim().replace(/\.$/, "").toLowerCase();
+    if (WEAPON_TYPE_LABELS.has(normalized)) return normalized;
+  }
+  return null;
+}
+
 function splitRuleNameText(segment) {
   const semicolon = segment.indexOf("; ");
   if (semicolon > 0) {
@@ -163,8 +171,6 @@ function parseSpecialRulesFromFirstLine(rule) {
     .replace(/Flat Strike Pool \d+ Mt \/ \d+ Sk;?\s*/gi, "")
     .replace(/Strike Pool \d+ Mt \/ \d+ Sk\.?\s*/gi, "")
     .replace(/\d+" blast,?\s*/gi, "")
-    .replace(/Single Shot,?\s*/gi, "")
-    .replace(/Smoke\.?\s*/gi, "")
     .trim();
 
   const specialRules = [];
@@ -228,7 +234,7 @@ function expandSpecialRules(entries) {
 
 export function parseWeaponProfile(item, skilledCraftsman = null) {
   if (!item) {
-    return { name: "", slots: "—", mt: "—", sk: "—", specialRules: [] };
+    return { name: "", slots: "—", mt: "—", sk: "—", type: null, specialRules: [] };
   }
 
   const rules = item.rules ?? [];
@@ -236,6 +242,7 @@ export function parseWeaponProfile(item, skilledCraftsman = null) {
   let { mt, sk } = parseMtSk(firstRule);
   ({ mt, sk } = applySkilledCraftsman({ mt, sk }, skilledCraftsman, item.id));
   const range = parseRange(firstRule);
+  const type = detectWeaponType(firstRule);
 
   const specialRules = [];
   if (firstRule) {
@@ -257,6 +264,7 @@ export function parseWeaponProfile(item, skilledCraftsman = null) {
     range,
     mt,
     sk,
+    type,
     specialRules: expandSpecialRules(specialRules.filter((entry) => entry.name || entry.text)),
   };
 }

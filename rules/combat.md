@@ -97,7 +97,7 @@ A fighter attacking **unarmed** uses only their base **Might** and **Skill**.
 
 | Weapon | Type  | Range      | +Mt | +Sk |
 | ------ | ----- | ---------- | --- | --- |
-| Sword  | Melee | Engagement | +1  | +1  |
+| <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword  | Melee | Engagement | +1  | +1  |
 
 
 A **Keen** fighter (**Might** 3, **Skill** 4) with a Sword: **(3+1) Might + (4+1) Skill = 4 Might + 5 Skill = 9 dice**
@@ -105,9 +105,9 @@ A **Keen** fighter (**Might** 3, **Skill** 4) with a Sword: **(3+1) Might + (4+1
 
 | Fighter                 | Base Mt | Base Sk | Weapon                 | Might | Skill | Total |
 | ----------------------- | ------- | ------- | ---------------------- | ----- | ----- | ----- |
-| **Steady** (Mt 3, Sk 3) | 3       | 3       | Sword (+1 Mt, +1 Sk)   | 4     | 4     | 8     |
+| **Steady** (Mt 3, Sk 3) | 3       | 3       | <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword (+1 Mt, +1 Sk)   | 4     | 4     | 8     |
 | **Keen** (Mt 3, Sk 4)   | 3       | 4       | Shortbow (+1 Mt, 4 Sk) | 4     | 4     | 8     |
-| **Stout** (Mt 4, Sk 3)  | 4       | 3       | War Axe (+2 Mt)        | 6     | 3     | 9     |
+| **Stout** (Mt 4, Sk 3)  | 4       | 3       | <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />War Axe (+2 Mt)        | 6     | 3     | 9     |
 | **Stunty** (Mt 2, Sk 4) | 2       | 4       | Throwing Stars (+1 Sk) | 2     | 5     | 7     |
 
 
@@ -130,7 +130,7 @@ A fighter's **primary weapon** is the weapon they last attacked with this battle
 
 Any natural **6** is a **critical hit** if any of the following apply:
 
-- The attacker has **weapon triangle advantage** (see Weapon Triangle) — Sword, Axe, or Spear only
+- The attacker has **weapon triangle advantage** (see Weapon Triangle) — <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword, <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Axe, or <img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Spear only
 - The attacker has **magic advantage** (see Magic Triangles)
 - The attacker is using a **firearm** (crits against all targets)
 - The attacker used the **Aim** action before a Ranged attack
@@ -206,7 +206,7 @@ Critical hits come from printed advantage rules. A natural **6** becomes a criti
 
 ![Melee weapon triangle: Sword beats Axe, Axe beats Spear, Spear beats Sword](/images/melee-triangle.svg)
 
-Having advantage over the opposing weapon type grants critical hits on natural 6s. Only **Sword**, **Axe**, and **Spear** participate in the triangle.
+Having advantage over the opposing weapon type grants critical hits on natural 6s. Only <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />**Sword**, <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />**Axe**, and <img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />**Spear** participate in the triangle.
 
 ### Magic Triangle
 
@@ -222,7 +222,7 @@ Two separate triangles govern magic vs. magic interactions.
 
 ### Firearms
 
-Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield tie benefits do not apply when defending against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**. *(See [Weapons — Keywords](weapons.md#keywords).)*
+Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield Df bonuses do not apply when defending against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**. *(See [Weapons — Keywords](weapons.md#keywords).)*
 
 ### Outside the Triangles
 

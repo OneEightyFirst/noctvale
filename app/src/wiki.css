@@ -323,6 +323,10 @@
     @apply border-0 bg-transparent p-0;
   }
 
+  .weapon-icon {
+    @apply -mt-0.5 mr-1.5 inline-block h-[1.15em] w-auto align-middle;
+  }
+
   .wiki-content table {
     @apply my-4 min-w-full border-collapse text-left text-sm;
   }

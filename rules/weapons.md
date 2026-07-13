@@ -1,11 +1,11 @@
 # Weapons
 
-Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
+Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat, and it has no weapon type — it never grants or suffers weapon triangle advantage. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
 
 | Proficiency | Weapons |
 |---|---|
-| **One-Handed** | Sword, Rapier, Hand Axe, Mace, Spear |
-| **Two-Handed** | Halberd, Great Sword, War Axe, War Hammer, Staff |
+| **One-Handed** | Sword, Rapier, Hand Axe, Battle Axe, Mace, Flail, Spear, Javelin |
+| **Two-Handed** | Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer, Staff |
 | **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
 | **Thrown** | Sling, Throwing Stars |
 
@@ -17,6 +17,8 @@ Choose feats before buying weapons.
 
 ## Keywords
 
+**Blast(3") / Blast(5"):** This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.
+
 **Cleave:** When this weapon's attack reduces a fighter to **0 Wounds**, make one free **Melee** attack against a different fighter within engagement range.
 
 
@@ -26,9 +28,13 @@ Choose feats before buying weapons.
 
 **Parry:** When this fighter defends against a **Melee** attack, reroll one failed **Skill** die in the defense pool.
 
-**Piercing:** When defending against this weapon's attacks, ignore the target's armor dice bonus and shield tie benefit when building the defense pool.
+**Piercing:** When defending against this weapon's attacks, ignore the target's armor dice bonus and shield Df bonus when building the defense pool.
 
 **Reach:** This weapon can engage enemies up to **2"** away.
+
+**Spread:** This attack uses the standard **flame template** instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.
+
+**Sunder:** When defending against this weapon's attacks, ignore the target's shield Df bonus and Parry keyword when building the defense pool.
 
 **Thrown(Mt) / Thrown(Sk):** This weapon may be used to make a **Ranged** attack. Maximum range equals the fighter's **Might** in inches for **Thrown(Mt)**, or the fighter's **Skill** in inches for **Thrown(Sk)**. No minimum range. Use the weapon's normal Strike Pool.
 
@@ -40,14 +46,17 @@ Choose feats before buying weapons.
 
 Any fighter may equip a **Dagger** without a proficiency feat.
 
-| Weapon | Cost | Hands | +Mt | +Sk | Type | Notes |
+| Weapon | Cost | Hands | +Mt | +Sk | Type | Special Rules |
 | -------- | ---- | ----- | --- | --- | ------ | ---------------------------------- |
-| <span id="dagger"></span>Dagger | 10 | 1H | — | +1 | Sword | Thrown(Sk) |
-| <span id="sword"></span>Sword | 25 | 1H | +1 | +1 | Sword | Parry |
-| <span id="rapier"></span>Rapier | 40 | 1H | — | +3 | Sword | Parry |
-| <span id="hand-axe"></span>Hand Axe | 20 | 1H | +2 | — | Axe | Thrown(Mt) |
+| <span id="dagger"></span>Dagger | 10 | 1H | — | +1 | — | Thrown(Sk) |
+| <span id="sword"></span><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword | 25 | 1H | +1 | +1 | Sword | Parry |
+| <span id="rapier"></span><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Rapier | 40 | 1H | — | +3 | Sword | Parry |
+| <span id="hand-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Hand Axe | 20 | 1H | +2 | — | Axe | Thrown(Mt) |
+| <span id="battle-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Battle Axe | 25 | 1H | +2 | +1 | Axe | — |
 | <span id="mace"></span>Mace | 20 | 1H | +2 | — | Hammer | Impact |
-| <span id="spear"></span>Spear | 25 | 1H | +1 | +1 | Spear | Thrown(Mt), Reach |
+| <span id="flail"></span>Flail | 25 | 1H | +1 | — | Hammer | Sunder |
+| <span id="spear"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Spear | 25 | 1H | +1 | +1 | Spear | Reach |
+| <span id="javelin"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Javelin | 15 | 1H | +1 | — | Spear | Thrown(Mt), Reach |
 
 ### Dual wielding
 
@@ -61,20 +70,24 @@ A fighter cannot use a shield while dual-wielding.
 
 | Type | Critical hits |
 |---|---|
-| **Sword**, **Axe**, **Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](combat.md#weapon-triangle)) |
+| <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />**Sword**, <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />**Axe**, <img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />**Spear** | Weapon triangle — natural 6s crit when you have type advantage ([Combat](combat.md#weapon-triangle)) |
 | **Hammer** | Outside the triangle — no triangle crits |
+
+Every **Spear**-type weapon also has the **Reach** keyword.
 
 ---
 
 ## Two-Handed
 
-| Weapon | Cost | Hands | +Mt | +Sk | Type | Notes |
+| Weapon | Cost | Hands | +Mt | +Sk | Type | Special Rules |
 | ----------- | ---- | ----- | --- | --- | ------ | ---------------------------------- |
-| <span id="halberd"></span>Halberd | 45 | 2H | +2 | +1 | Spear | Reach |
-| <span id="great-sword"></span>Great Sword | 50 | 2H | +2 | +1 | Sword | Cleave |
-| <span id="war-axe"></span>War Axe | 45 | 2H | +3 | — | Axe | — |
-| <span id="war-hammer"></span>War Hammer | 45 | 2H | +3 | — | Hammer | Impact |
-| <span id="staff"></span>Staff | 20 | 2H | +1 | +1 | Spear | Spell focus |
+| <span id="halberd"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Halberd | 45 | 2H | +2 | +1 | Spear | Reach |
+| <span id="glaive"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Glaive | 50 | 2H | +1 | +1 | Spear | Reach, Cleave |
+| <span id="great-sword"></span><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Great Sword | 50 | 2H | +2 | +1 | Sword | Cleave |
+| <span id="war-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />War Axe | 45 | 2H | +3 | — | Axe | Cleave |
+| <span id="maul"></span>Maul | 35 | 2H | +3 | — | Hammer | — |
+| <span id="greathammer"></span>Greathammer | 45 | 2H | +3 | — | Hammer | Impact |
+| <span id="staff"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Staff | 20 | 2H | +1 | +1 | Spear | Reach, Spell focus |
 
 ### Staff — Spell focus
 
@@ -90,7 +103,7 @@ When that fighter resolves a casting attack while wielding that **Staff**, use t
 
 Minimum range **3"** unless noted. Archery weapons are available to **all retinues**. Bows use the archer's **Might** with fixed **Skill dice**. Crossbows use fixed **Might dice** with the shooter's **Skill**. A number with a `+` adds to the attacker's matching attribute; a number without a `+` is fixed.
 
-| Weapon | Cost | Hands | Range | Mt | Sk | Notes |
+| Weapon | Cost | Hands | Range | Mt | Sk | Special Rules |
 | -------------- | ---- | ----- | ------ | --- | --- | ------------------------------------------ |
 | <span id="shortbow"></span>Shortbow | 40 | 2H | 3"–18" | +1 | 4 | — |
 | <span id="longbow"></span>Longbow | 50 | 2H | 3"–24" | +1 | 5 | Volley |
@@ -103,10 +116,10 @@ Minimum range **3"** unless noted. Archery weapons are available to **all retinu
 
 Minimum range **3"** unless noted. Thrown weapons are available to **all retinues**.
 
-| Weapon | Cost | Hands | Range | Mt | Sk | Notes |
+| Weapon | Cost | Hands | Range | Mt | Sk | Special Rules |
 | -------------- | ---- | ----- | ------ | --- | --- | ------------------------------------------ |
 | <span id="sling"></span>Sling | 20 | 1H | 3"–12" | +1 | +1 | Impact |
-| <span id="throwing-stars"></span>Throwing Stars | 10 | 1H | 0"–8" | — | +1 | No minimum range |
+| <span id="throwing-stars"></span>Throwing Stars | 10 | 1H | 1"–8" | — | +1 | — |
 
 ---
 
@@ -114,16 +127,16 @@ Minimum range **3"** unless noted. Thrown weapons are available to **all retinue
 
 When every fighter in the retinue has the **Mortal** keyword, your retinue may purchase firearms. A fighter equips a firearm only if they have the **Firearms** domain feat. Firearms use fixed **Might dice** and the shooter's **Skill**; add the profile's +**Skill** value to the shooter's **Skill** to build the **Skill dice** side of the Strike Pool. Firearms gain **critical hits against all targets** (outside the weapon triangle). *Primer column assumes **Skill** 3.*
 
-| Weapon | Cost | Hands | Range | Primer | Mt | Sk | Notes |
+| Weapon | Cost | Hands | Range | Primer | Mt | Sk | Special Rules |
 | ----------- | ---- | ----- | ------ | ------ | --- | --- | ------------------------- |
 | <span id="musket"></span>Musket | 100 | 2H | 3"–24" | 9+ | 5 | +2 | — |
-| <span id="blunderbuss"></span>Blunderbuss | 115 | 2H | 0"–10" | 8+ | 3 | +2 | Flame template |
+| <span id="blunderbuss"></span>Blunderbuss | 115 | 2H | 0"–10" | 8+ | 3 | +2 | Spread |
 | <span id="pistol"></span>Pistol | 90 | 1H | 0"–12" | 9+ | 4 | +2 | — |
 | <span id="long-rifle"></span>Long Rifle | 125 | 2H | 3"–30" | 10+ | 5 | +3 | Piercing, Heavy, Impact |
 
-| Item | Cost | Notes |
+| Item | Cost | Special Rules |
 | ------------------ | ---- | ------------------------------------------ |
-| Brace of Pistols | 25 | Requires **Mortal** — holds **2 Pistols** in **1 kit** |
+| Brace of Pistols | 25 | — |
 
 <span id="flintlock"></span>
 
@@ -145,6 +158,10 @@ Firearms are fired with the **Ranged** action.
 > | **Below difficulty** | The gun fails to fire. The action is spent |
 > | **Meets or exceeds difficulty** | The gun fires. Resolve the **Attack Sequence** |
 
+#### Blunderbuss
+
+A **Blunderbuss** has **Spread**. Declare a direction, then place the standard **flame template** with its point touching the shooter and extending toward that direction. Resolve the **Primer Roll**, then the **Attack Sequence** against every fighter (friend and foe) under the template.
+
 #### Pistols
 
 A **Pistol** takes **1 kit**. A fighter with **2 Pistols** and no **Brace of Pistols** uses **2 kit**.
@@ -156,24 +173,23 @@ A **Pistol** takes **1 kit**. A fighter with **2 Pistols** and no **Brace of Pis
 
 #### Long Rifle
 
-A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield tie benefits do not apply against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**.
+A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield Df bonuses do not apply against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**.
 
 ### Bombs
 
 Bombs are **Single Shot** (one use per battle). Fighter must have **Mortal** and must lack **Caster**. Require the **Firearms** domain feat. Bombs require a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market).
 
-| Weapon | Cost | Hands | Distance | Primer | Mt | Sk | Notes |
+| Weapon | Cost | Hands | Distance | Primer | Mt | Sk | Special Rules |
 |---|---|---|---|---|---|---|---|
-| Bomb | 40 | 1H | d6 + Mt | 9+ | 3 | 2 | 3" blast, Single Shot, Impact |
+| Bomb | 40 | 1H | d6 + Mt | 9+ | 3 | 2 | Blast(3"), Single Shot, Impact |
 
-Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (friend and foe) within the blast radius. Use the **Ranged** action.
+Bombs are thrown explosives with a fixed Strike Pool. Use the **Ranged** action.
 
 1. **Declare a target** (select a direction/point you're aiming at).
 2. **Roll the Primer Roll:**
    - **Double 1s:** Bomb explodes in the thrower's hand. Center the blast template on the thrower.
    - **Fail (below difficulty, not double 1s):** Bomb scatters. Roll **d6** + **Might** and move the detonation point that many **"** from the declared target using a **scatter die** for direction.
    - **Pass:** Bomb is on target. Roll **d6** + **Might** for maximum distance — place the blast marker anywhere along the line to the declared target up to that many **"**.
-3. All fighters (friend and foe) under the blast template suffer the Strike Pool.
 
 ---
 
@@ -185,9 +201,9 @@ Alchemy is available to every retinue, but requires a **Shadow Market** roll to 
 
 Alchemical bombs are **Single Shot** (one use per battle) and available to any fighter regardless of domain or keyword. They require a **Shadow Market** roll to purchase.
 
-| Weapon | Cost | Hands | Range | Notes |
+| Weapon | Cost | Hands | Range | Special Rules |
 |---|---|---|---|---|
-| Smoke Bomb | 25 | 1H | Might in" | 6" blast, Single Shot, Smoke |
+| Smoke Bomb | 25 | 1H | Might in" | Single Shot, Smoke |
 
 Use the **Ranged** action. Declare a target point within this fighter's **Might** in inches. Make a **Skill** check.
 

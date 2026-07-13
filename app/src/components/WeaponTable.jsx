@@ -6,6 +6,24 @@ function cx(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+const WEAPON_TYPE_ICONS = {
+  sword: "/images/weapon-icon-sword.svg",
+  axe: "/images/weapon-icon-axe.svg",
+  spear: "/images/weapon-icon-spear.svg",
+};
+
+function WeaponTypeIcon({ type }) {
+  const src = WEAPON_TYPE_ICONS[type];
+  if (!src) return null;
+  return (
+    <img
+      src={src}
+      alt=""
+      className="-mt-0.5 mr-1.5 inline-block h-[1.15em] w-auto align-middle"
+    />
+  );
+}
+
 function RuleCell({ specialRules }) {
   if (!specialRules.length) return <span className="text-cream-600">—</span>;
   return (
@@ -46,6 +64,7 @@ export default function WeaponTable({ weapons, rows = null, skilledCraftsman = n
             {displayRows.map((row) => (
               <tr key={row.id ?? row.name} className="border-b border-night-800/80 align-top text-cream-100">
                 <td className="px-1.5 py-1.5 font-semibold">
+                  <WeaponTypeIcon type={row.type} />
                   {row.name}
                   {row.quantity > 1 ? ` ×${row.quantity}` : ""}
                 </td>
@@ -83,6 +102,7 @@ export default function WeaponTable({ weapons, rows = null, skilledCraftsman = n
               <React.Fragment key={row.id ?? row.name}>
                 <tr className="border-b border-night-800/80 align-top text-cream-100">
                   <td className="px-1.5 py-1.5 font-semibold">
+                    <WeaponTypeIcon type={row.type} />
                     {row.name}
                     {row.quantity > 1 ? ` ×${row.quantity}` : ""}
                   </td>

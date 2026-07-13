@@ -6,6 +6,209 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-13 12:06 EDT — Fixed dead "beastmen" checks in RetinueEditor.jsx
+
+**Change:** Five checks in `RetinueEditor.jsx` still compared
+`tradition?.id` against the retired `"beastmen"` id instead of the current
+`"werebeasts"` id (`TRADITIONS` has never defined a `"beastmen"` entry —
+only `"werebeasts"`), so they could never match: `getFighterStats`'s Bear
+stat modifier, `getTraditionCostModifier`'s cost bump, `isRatBeastman`
+(renamed to `isRatWerebeast`) gating the Rat extra-weapon-slot allowance,
+`showBeastMarkPicker`, and the "needs a beast-mark" validation warning.
+Updated all five to check `"werebeasts"`, renamed `isRatBeastman` to
+`isRatWerebeast` (all 3 call sites), and fixed a "Rat Beastmen may carry..."
+UI string to "Rat Werebeasts...". Also removed the completed
+"Remove Werebeasts migration shim" line from `todo.md` and its `"beastmen"`
+mention, since that task is done — see `decision-log.md` for the historical
+record.
+
+**Impact:** Real behavior fix, not just cleanup — Bear's Might/Sanity stat
+swap, Rat's extra weapon slot, the beast-mark picker, and the "needs a
+beast-mark" warning were all silently inert for Werebeasts retinues before
+this fix, regardless of the now-removed `normalizeRetinue` migration shim
+(that shim only affected the stored `traditionId` string, not these
+UI-level checks). Confirmed no other `"beastmen"` references remain outside
+`decision-log.md` and this file's own historical entries.
+
+**Source:** `app/src/components/RetinueEditor.jsx`, `todo.md`.
+
+## 2026-07-13 11:46 EDT — Attack spells adopt Blast/Spread keywords in SPELLS data
+
+**Change:** Updated four entries in `SPELLS` (`app/src/data/noctvale.js`) to
+match the `rules/magic.md` wording: `purge-the-faithless` and `bone-blast`
+now use `Blast(5")`/`Blast(3")` per their spell, `fireball` uses `Blast(5")`
+with its scatter logic condensed, and `thorn-volley` uses `Spread`. Each
+spell's `keywords` array now includes the Blast/Spread token alongside
+`Attack` (e.g. `["Attack", 'Blast(3")']`), matching the pattern already used
+for the `Attack` keyword itself.
+
+**Impact:** Display-text only — `effect`/`keywords` are plain strings
+rendered directly in `RetinueEditor.jsx` (spells don't go through the same
+`WEAPON_KEYWORD_RULES` rule-link resolution as weapons do), so this doesn't
+change any casting math. No other spells were touched — The Void,
+Hoarfrost, Hellmouth, Cursed Ground, Bone Circle, and Nightfall all place
+templates but don't resolve as a single immediate Blast/Spread attack, so
+forcing the keyword onto them would have misdescribed their actual
+mechanic (persistent zones/terrain with their own re-trigger conditions).
+
+**Source:** `rules/magic.md`, `rules/weapons.md`, `app/src/data/noctvale.js`.
+
+## 2026-07-13 11:36 EDT — Blast(3")/Blast(5") keyword; Bomb uses it instead of ad-hoc text
+
+**Change:** Added `'Blast(3")'` and `'Blast(5")'` entries to
+`WEAPON_KEYWORD_RULES` (identical body text for both sizes, matching the
+`Thrown(Mt)`/`Thrown(Sk)` two-keys-one-concept pattern). Reworded `Spread`'s
+text to match the same "roll once, defend individually" phrasing. Updated
+`bomb`'s rules text from `... Strike Pool 3 Mt / 2 Sk. 3" blast, Single
+Shot, Impact.` to `... Blast(3"), Single Shot, Impact.` so it resolves
+through the keyword glossary like `Single Shot` and `Impact` already do,
+instead of being silently stripped by the `\d+" blast,?\s*` regex in
+`fighter.js` (that regex is unchanged and still applies to `smoke-bomb`,
+which intentionally keeps its blast size out of the rule-chip display since
+it's redundant with `Smoke`'s own definition).
+
+**Impact:** Bomb's fighter card now shows a real, clickable `Blast(3")`
+keyword instead of having its blast size silently dropped. Traced
+`parseWeaponProfile()` for `bomb`, `smoke-bomb`, and `blunderbuss` to confirm
+all three resolve correctly.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`.
+
+## 2026-07-12 21:37 EDT — Spread keyword for Blunderbuss; Single Shot/Smoke parser bug fixed
+
+**Change:** Added a `Spread` entry to `WEAPON_KEYWORD_RULES` and updated
+`blunderbuss`'s rules text from `... Standard flame template.` to `...
+Spread.` so it resolves as a real keyword chip instead of unlinked plain
+text. Removed two dead patterns from `parseSpecialRulesFromFirstLine()` in
+`fighter.js` — `.replace(/Single Shot,?\s*/gi, "")` and
+`.replace(/Smoke\.?\s*/gi, "")` — which were unconditionally deleting those
+words from any weapon's rules text before keyword resolution ran, instead of
+letting them resolve through `WEAPON_KEYWORD_RULES` like every other
+keyword.
+
+**Impact:** Fixes a real display bug — **Smoke Bomb** previously showed **no
+special rules at all** on the fighter card (both `Single Shot` and `Smoke`
+were being silently stripped); it now correctly shows both. **Bomb**
+previously showed only `Impact` (missing `Single Shot`); it now shows both.
+**Blunderbuss** previously showed unlinked plain text "Standard flame
+template"; it now shows a proper `Spread` rule link. Traced
+`parseWeaponProfile()` for `blunderbuss`, `smoke-bomb`, `bomb`, `musket`, and
+`long-rifle` to confirm the fix and rule out regressions on unaffected
+weapons.
+
+**Source:** `app/src/data/noctvale.js`, `app/src/lib/fighter.js`.
+
+## 2026-07-12 21:23 EDT — Throwing Stars gain a 1" minimum range
+
+**Change:** `throwing-stars`' rules text range changed from `Range 0"-8"` to
+`Range 1"-8"` in `EQUIPMENT`, matching the `rules/weapons.md` update. Dropped
+the now-inaccurate `No minimum range, thrown; additive` flavor phrase from
+the rules text (it was already suppressed from the card's rule-chip display
+via `BASELINE_PHRASES` and isn't needed for `parseRange()` to work) and
+removed its now-dead pattern from `BASELINE_PHRASES` in `fighter.js`.
+
+**Impact:** Throwing Stars can no longer target a fighter at 0" range.
+Verified with a `parseWeaponProfile()` trace: range resolves to `1"–8"`,
+Mt/Sk and the empty special-rules list are unaffected.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`,
+`app/src/lib/fighter.js`.
+
+## 2026-07-12 21:19 EDT — War Axe gains Cleave
+
+**Change:** Replaced `war-axe`'s baseline flavor text with a real keyword in
+`EQUIPMENT`: `Hands 2H. +Mt +3. Axe. Cleave.` (was `... Heavy hitter.`, a
+no-keyword placeholder). Cost and dice unchanged (45 Crowns, +3 Mt).
+
+**Impact:** War Axe now grants a free Melee attack on a kill, same as Great
+Sword. Confirmed with a `parseWeaponProfile()` trace that `war-axe` resolves
+`Cleave` correctly and `battle-axe`/`hand-axe` are unaffected.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`.
+
+## 2026-07-12 20:49 EDT — Spear loses Thrown(Mt); shield terminology fix
+
+**Change:** Removed the `Thrown(Mt)` token from `spear`'s rules text in
+`EQUIPMENT` (now just `Hands 1H. +Mt +1, +Sk +1. Spear. Reach.`). Replaced
+"shield tie benefit" with "shield Df bonus" in the `Piercing` and `Sunder`
+entries of `WEAPON_KEYWORD_RULES`.
+
+**Impact:** Spear can no longer be used to make a Ranged attack — Javelin is
+now the only One-Handed Spear-type weapon with Thrown(Mt). Piercing and
+Sunder's mechanical effect is unchanged; only the wording was corrected to
+match the current Df-threshold shield mechanic instead of the old
+tie-winning shield model it was still describing.
+
+**Source:** `rules/weapons.md`, `rules/combat.md`, `app/src/data/noctvale.js`.
+
+## 2026-07-12 16:57 EDT — Added Flail, Maul, Glaive; renamed War Hammer to Greathammer
+
+**Change:** Added three `EQUIPMENT` entries: `flail` (One-Handed melee, 25
+Crowns, 1 slot, `+Mt +1. Hammer. Sunder.`), `maul` (Two-Handed melee, 35
+Crowns, 2 slots, `+Mt +3. Hammer. Baseline hammer.`), and `glaive`
+(Two-Handed melee, 50 Crowns, 2 slots, `+Mt +1, +Sk +1. Spear. Reach.
+Cleave.`). Renamed the `war-hammer` entry's `id` and `name` to `greathammer`
+(rules text unchanged: `+Mt +3. Hammer. Impact.`). Added a new `Sunder` entry
+to `WEAPON_KEYWORD_RULES`, and a `baseline hammer` pattern to
+`BASELINE_PHRASES` in `fighter.js` (mirrors the existing `baseline axe`
+pattern used by War Axe) so Maul correctly shows no special-rule chip.
+Fixed `PROFICIENCIES`' One-Handed and Two-Handed weapon lists, which had
+drifted out of date (missing Battle Axe/Javelin from the prior entry below,
+and now updated for this entry's additions and the rename).
+
+Traced `parseWeaponProfile()` output for `flail`, `maul`, `glaive`,
+`greathammer`, `mace`, `war-axe`, and `halberd` with a one-off script —
+stats, type, and special-rule chips all resolved correctly, and the rename
+left no other weapon or PROFICIENCIES reference to the old `war-hammer` id.
+
+**Impact:** New purchasable weapons; one rename. Any existing saved retinue
+with `war-hammer` equipped will no longer resolve that item (the id no
+longer exists in `EQUIPMENT`) — flagging this since it's a live-data
+consequence of the rename, not just a source change.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`,
+`app/src/lib/fighter.js`.
+
+## 2026-07-12 15:44 EDT — Added Battle Axe and Javelin; Staff gains Reach
+
+**Change:** Added two `EQUIPMENT` entries: `battle-axe` (One-Handed melee, 25
+Crowns, 1 slot, `+Mt +2, +Sk +1. Axe. Baseline axe.`) and `javelin`
+(One-Handed melee, 15 Crowns, 1 slot, `+Mt +1. Spear. Thrown(Mt), Reach.`).
+Added `Reach.` to `staff`'s rules text (it was Spear type but missing the
+keyword). Both new weapons and the Staff fix appear correctly in
+`parseWeaponProfile()` output (icons, stats, and rule chips traced manually
+with a one-off script — no discrepancies).
+
+**Impact:** New purchasable weapons under the existing `one-handed`
+proficiency; no changes to proficiency-gating logic itself. Staff's Reach
+addition is a small rules buff (2" engagement) for existing Staff-wielders.
+
+**Source:** `rules/weapons.md`, `app/src/data/noctvale.js`.
+
+## 2026-07-12 15:35 EDT — Weapon triangle icons on fighter cards; Dagger drops Sword type
+
+**Change:** `fighter.js`'s `parseWeaponProfile()` now derives a `type` field
+(`sword` / `axe` / `spear`, or `null`) from the `Sword.` / `Axe.` / `Spear.` /
+`Hammer.` token already present in each weapon's first rules line, instead of
+just discarding it. `WeaponTable.jsx` renders the matching
+`/images/weapon-icon-{sword,axe,spear}.svg` before the weapon name on fighter
+cards (both the compact summary and full edit-mode tables); Hammer weapons and
+untyped weapons get no icon. `FIGHTING_CLAWS_WEAPON` (Werebeast claws) gained
+an explicit `type: "axe"` field and had its redundant hardcoded `{ name:
+"Axe" }` special-rule entry removed, since the icon now covers it.
+
+Separately, **Dagger** no longer carries the `Sword.` token in its rules text
+— it has no weapon type and no triangle icon, matching the
+`rules/weapons.md` change in the same session (see `decision-log.md`
+2026-07-12 — Dagger has no weapon type).
+
+**Impact:** Display/UX only on the card, plus one rules change: Dagger no
+longer grants or suffers weapon triangle advantage. No cost, slot, or
+purchase-validation changes.
+
+**Source:** `app/src/lib/fighter.js`, `app/src/data/noctvale.js`,
+`app/src/components/WeaponTable.jsx`, `rules/weapons.md`, `rules/combat.md`.
+
 ## 2026-07-12 08:30 EDT — Weapon keyword glossary; rule links replace inline text
 
 **Change:** Added a `WEAPON_KEYWORD_RULES` glossary to `noctvale.js`, copied verbatim

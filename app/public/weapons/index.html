@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weapons — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=08c210c" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -2246,6 +2246,12 @@
             <a href="/weapons/#primer-roll-2d6-skill" class="wiki-nav-link">Primer Roll (2d6 + Skill)</a>
           </div>
         </div>
+        <div class="wiki-nav-node" data-nav-id="nav-weapons-blunderbuss">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/weapons/#blunderbuss" class="wiki-nav-link">Blunderbuss</a>
+          </div>
+        </div>
         <div class="wiki-nav-node" data-nav-id="nav-weapons-pistols">
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
@@ -2945,7 +2951,7 @@
         <header class="wiki-article-header wiki-article-header--bordered">
           <div class="wiki-article-eyebrow">Equipment</div>
           <h1 class="wiki-article-title" id="weapons">Weapons</h1>
-          <p class="wiki-article-summary">Most weapons belong to a weapon proficiency — the training a fighter needs to equip it — and a weapon type (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the Proficiency feat at roster creation (see Feats). Dagger is the only exception: any fighter may equip a Dagger without a proficiency feat. Each fighter has 3 kit — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. Wands take 1 kit. Icon and Instrument gear take 2 kit each.</p>
+          <p class="wiki-article-summary">Most weapons belong to a weapon proficiency — the training a fighter needs to equip it — and a weapon type (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the Proficiency feat at roster creation (see Feats). Dagger is the only exception: any fighter may equip a Dagger without a proficiency feat, and it has no weapon type — it never grants or suffers weapon triangle advantage. Each fighter has 3 kit — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. Wands take 1 kit. Icon and Instrument gear take 2 kit each.</p>
         </header>
         <div class="wiki-content">
           <table>
@@ -2957,11 +2963,11 @@
 </thead>
 <tbody><tr>
 <td><strong>One-Handed</strong></td>
-<td>Sword, Rapier, Hand Axe, Mace, Spear</td>
+<td>Sword, Rapier, Hand Axe, Battle Axe, Mace, Flail, Spear, Javelin</td>
 </tr>
 <tr>
 <td><strong>Two-Handed</strong></td>
-<td>Halberd, Great Sword, War Axe, War Hammer, Staff</td>
+<td>Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer, Staff</td>
 </tr>
 <tr>
 <td><strong>Archery</strong></td>
@@ -2976,12 +2982,15 @@
 <p>Choose feats before buying weapons.</p>
 <hr>
 <h2 id="keywords">Keywords</h2>
+<p><strong>Blast(3&quot;) / Blast(5&quot;):</strong> This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.</p>
 <p><strong>Cleave:</strong> When this weapon&#39;s attack reduces a fighter to <strong>0 Wounds</strong>, make one free <strong>Melee</strong> attack against a different fighter within engagement range.</p>
 <p><strong>Heavy:</strong> This weapon cannot be used to make a <strong>Ranged</strong> attack if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation.</p>
 <p><strong>Impact:</strong> When this weapon&#39;s attack would make an <strong>Active</strong> fighter <strong>Downed</strong>, that fighter becomes <strong>Stunned</strong> instead.</p>
 <p><strong>Parry:</strong> When this fighter defends against a <strong>Melee</strong> attack, reroll one failed <strong>Skill</strong> die in the defense pool.</p>
-<p><strong>Piercing:</strong> When defending against this weapon&#39;s attacks, ignore the target&#39;s armor dice bonus and shield tie benefit when building the defense pool.</p>
+<p><strong>Piercing:</strong> When defending against this weapon&#39;s attacks, ignore the target&#39;s armor dice bonus and shield Df bonus when building the defense pool.</p>
 <p><strong>Reach:</strong> This weapon can engage enemies up to <strong>2&quot;</strong> away.</p>
+<p><strong>Spread:</strong> This attack uses the standard <strong>flame template</strong> instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.</p>
+<p><strong>Sunder:</strong> When defending against this weapon&#39;s attacks, ignore the target&#39;s shield Df bonus and Parry keyword when building the defense pool.</p>
 <p><strong>Thrown(Mt) / Thrown(Sk):</strong> This weapon may be used to make a <strong>Ranged</strong> attack. Maximum range equals the fighter&#39;s <strong>Might</strong> in inches for <strong>Thrown(Mt)</strong>, or the fighter&#39;s <strong>Skill</strong> in inches for <strong>Thrown(Sk)</strong>. No minimum range. Use the weapon&#39;s normal Strike Pool.</p>
 <p><strong>Volley:</strong> This weapon may target a fighter without <strong>line of sight</strong>. If it does, the target gains <strong>+2 Skill defense dice</strong> against that attack.</p>
 <hr>
@@ -2996,7 +3005,7 @@
 <th>+Mt</th>
 <th>+Sk</th>
 <th>Type</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3005,11 +3014,11 @@
 <td>1H</td>
 <td>—</td>
 <td>+1</td>
-<td>Sword</td>
+<td>—</td>
 <td>Thrown(Sk)</td>
 </tr>
 <tr>
-<td><span id="sword"></span>Sword</td>
+<td><span id="sword"></span><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword</td>
 <td>25</td>
 <td>1H</td>
 <td>+1</td>
@@ -3018,7 +3027,7 @@
 <td>Parry</td>
 </tr>
 <tr>
-<td><span id="rapier"></span>Rapier</td>
+<td><span id="rapier"></span><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Rapier</td>
 <td>40</td>
 <td>1H</td>
 <td>—</td>
@@ -3027,13 +3036,22 @@
 <td>Parry</td>
 </tr>
 <tr>
-<td><span id="hand-axe"></span>Hand Axe</td>
+<td><span id="hand-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Hand Axe</td>
 <td>20</td>
 <td>1H</td>
 <td>+2</td>
 <td>—</td>
 <td>Axe</td>
 <td>Thrown(Mt)</td>
+</tr>
+<tr>
+<td><span id="battle-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Battle Axe</td>
+<td>25</td>
+<td>1H</td>
+<td>+2</td>
+<td>+1</td>
+<td>Axe</td>
+<td>—</td>
 </tr>
 <tr>
 <td><span id="mace"></span>Mace</td>
@@ -3045,11 +3063,29 @@
 <td>Impact</td>
 </tr>
 <tr>
-<td><span id="spear"></span>Spear</td>
+<td><span id="flail"></span>Flail</td>
+<td>25</td>
+<td>1H</td>
+<td>+1</td>
+<td>—</td>
+<td>Hammer</td>
+<td>Sunder</td>
+</tr>
+<tr>
+<td><span id="spear"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Spear</td>
 <td>25</td>
 <td>1H</td>
 <td>+1</td>
 <td>+1</td>
+<td>Spear</td>
+<td>Reach</td>
+</tr>
+<tr>
+<td><span id="javelin"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Javelin</td>
+<td>15</td>
+<td>1H</td>
+<td>+1</td>
+<td>—</td>
 <td>Spear</td>
 <td>Thrown(Mt), Reach</td>
 </tr>
@@ -3067,7 +3103,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Sword</strong>, <strong>Axe</strong>, <strong>Spear</strong></td>
+<td><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" /><strong>Sword</strong>, <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" /><strong>Axe</strong>, <img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" /><strong>Spear</strong></td>
 <td>Weapon triangle — natural 6s crit when you have type advantage (<a href="/combat/#weapon-triangle">Combat</a>)</td>
 </tr>
 <tr>
@@ -3075,6 +3111,7 @@
 <td>Outside the triangle — no triangle crits</td>
 </tr>
 </tbody></table>
+<p>Every <strong>Spear</strong>-type weapon also has the <strong>Reach</strong> keyword.</p>
 <hr>
 <h2 id="two-handed">Two-Handed</h2>
 <table>
@@ -3086,11 +3123,11 @@
 <th>+Mt</th>
 <th>+Sk</th>
 <th>Type</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><span id="halberd"></span>Halberd</td>
+<td><span id="halberd"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Halberd</td>
 <td>45</td>
 <td>2H</td>
 <td>+2</td>
@@ -3099,7 +3136,16 @@
 <td>Reach</td>
 </tr>
 <tr>
-<td><span id="great-sword"></span>Great Sword</td>
+<td><span id="glaive"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Glaive</td>
+<td>50</td>
+<td>2H</td>
+<td>+1</td>
+<td>+1</td>
+<td>Spear</td>
+<td>Reach, Cleave</td>
+</tr>
+<tr>
+<td><span id="great-sword"></span><img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Great Sword</td>
 <td>50</td>
 <td>2H</td>
 <td>+2</td>
@@ -3108,16 +3154,25 @@
 <td>Cleave</td>
 </tr>
 <tr>
-<td><span id="war-axe"></span>War Axe</td>
+<td><span id="war-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />War Axe</td>
 <td>45</td>
 <td>2H</td>
 <td>+3</td>
 <td>—</td>
 <td>Axe</td>
+<td>Cleave</td>
+</tr>
+<tr>
+<td><span id="maul"></span>Maul</td>
+<td>35</td>
+<td>2H</td>
+<td>+3</td>
+<td>—</td>
+<td>Hammer</td>
 <td>—</td>
 </tr>
 <tr>
-<td><span id="war-hammer"></span>War Hammer</td>
+<td><span id="greathammer"></span>Greathammer</td>
 <td>45</td>
 <td>2H</td>
 <td>+3</td>
@@ -3126,13 +3181,13 @@
 <td>Impact</td>
 </tr>
 <tr>
-<td><span id="staff"></span>Staff</td>
+<td><span id="staff"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Staff</td>
 <td>20</td>
 <td>2H</td>
 <td>+1</td>
 <td>+1</td>
 <td>Spear</td>
-<td>Spell focus</td>
+<td>Reach, Spell focus</td>
 </tr>
 </tbody></table>
 <h3 id="staff-spell-focus">Staff — Spell focus</h3>
@@ -3151,7 +3206,7 @@
 <th>Range</th>
 <th>Mt</th>
 <th>Sk</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3203,7 +3258,7 @@
 <th>Range</th>
 <th>Mt</th>
 <th>Sk</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3219,10 +3274,10 @@
 <td><span id="throwing-stars"></span>Throwing Stars</td>
 <td>10</td>
 <td>1H</td>
-<td>0&quot;–8&quot;</td>
+<td>1&quot;–8&quot;</td>
 <td>—</td>
 <td>+1</td>
-<td>No minimum range</td>
+<td>—</td>
 </tr>
 </tbody></table>
 <hr>
@@ -3238,7 +3293,7 @@
 <th>Primer</th>
 <th>Mt</th>
 <th>Sk</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3259,7 +3314,7 @@
 <td>8+</td>
 <td>3</td>
 <td>+2</td>
-<td>Flame template</td>
+<td>Spread</td>
 </tr>
 <tr>
 <td><span id="pistol"></span>Pistol</td>
@@ -3287,13 +3342,13 @@
 <tr>
 <th>Item</th>
 <th>Cost</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>Brace of Pistols</td>
 <td>25</td>
-<td>Requires <strong>Mortal</strong> — holds <strong>2 Pistols</strong> in <strong>1 kit</strong></td>
+<td>—</td>
 </tr>
 </tbody></table>
 <p><span id="flintlock"></span></p>
@@ -3325,6 +3380,8 @@
 </tr>
 </tbody></table>
 </blockquote>
+<h4 id="blunderbuss">Blunderbuss</h4>
+<p>A <strong>Blunderbuss</strong> has <strong>Spread</strong>. Declare a direction, then place the standard <strong>flame template</strong> with its point touching the shooter and extending toward that direction. Resolve the <strong>Primer Roll</strong>, then the <strong>Attack Sequence</strong> against every fighter (friend and foe) under the template.</p>
 <h4 id="pistols">Pistols</h4>
 <p>A <strong>Pistol</strong> takes <strong>1 kit</strong>. A fighter with <strong>2 Pistols</strong> and no <strong>Brace of Pistols</strong> uses <strong>2 kit</strong>.</p>
 <p><strong>Brace of Pistols</strong> — holster equipment that takes <strong>1 kit</strong> and holds <strong>2 Pistols</strong>. The Pistols must still be purchased separately. Requires the <strong>Firearms</strong> domain feat. Fighter must have <strong>Mortal</strong> and must lack <strong>Caster</strong>.</p>
@@ -3333,7 +3390,7 @@
 <li><strong>Gunslinger</strong> <em>(requires <strong>Mortal</strong>)</em>: One <strong>Ranged</strong> action fires both <strong>Pistols</strong> in the fighter&#39;s <strong>Brace of Pistols</strong> (or both equipped <strong>Pistols</strong> if carried without a <strong>Brace</strong>) — each with its own <strong>Primer Roll</strong> and <strong>Attack Sequence</strong>. The fighter cannot take another <strong>Ranged</strong> action during that activation. See <a href="/feats/#gunslinger">Feats — Gunslinger</a>.</li>
 </ul>
 <h4 id="long-rifle">Long Rifle</h4>
-<p>A <strong>Long Rifle</strong> has <strong>Piercing</strong>, <strong>Heavy</strong>, and <strong>Impact</strong> — armor dice bonuses and shield tie benefits do not apply against its attacks, it cannot be fired if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation, and it makes exact takedowns become <strong>Stunned</strong> instead of <strong>Downed</strong>.</p>
+<p>A <strong>Long Rifle</strong> has <strong>Piercing</strong>, <strong>Heavy</strong>, and <strong>Impact</strong> — armor dice bonuses and shield Df bonuses do not apply against its attacks, it cannot be fired if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation, and it makes exact takedowns become <strong>Stunned</strong> instead of <strong>Downed</strong>.</p>
 <h3 id="bombs">Bombs</h3>
 <p>Bombs are <strong>Single Shot</strong> (one use per battle). Fighter must have <strong>Mortal</strong> and must lack <strong>Caster</strong>. Require the <strong>Firearms</strong> domain feat. Bombs require a <strong>Shadow Market</strong> roll to purchase — see <a href="/economy/#shadow-market">Economy — Shadow Market</a>.</p>
 <table>
@@ -3346,7 +3403,7 @@
 <th>Primer</th>
 <th>Mt</th>
 <th>Sk</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3357,10 +3414,10 @@
 <td>9+</td>
 <td>3</td>
 <td>2</td>
-<td>3&quot; blast, Single Shot, Impact</td>
+<td>Blast(3&quot;), Single Shot, Impact</td>
 </tr>
 </tbody></table>
-<p>Bombs are thrown explosives with a fixed Strike Pool that hits all fighters (friend and foe) within the blast radius. Use the <strong>Ranged</strong> action.</p>
+<p>Bombs are thrown explosives with a fixed Strike Pool. Use the <strong>Ranged</strong> action.</p>
 <ol>
 <li><strong>Declare a target</strong> (select a direction/point you&#39;re aiming at).</li>
 <li><strong>Roll the Primer Roll:</strong><ul>
@@ -3369,7 +3426,6 @@
 <li><strong>Pass:</strong> Bomb is on target. Roll <strong>d6</strong> + <strong>Might</strong> for maximum distance — place the blast marker anywhere along the line to the declared target up to that many <strong>&quot;</strong>.</li>
 </ul>
 </li>
-<li>All fighters (friend and foe) under the blast template suffer the Strike Pool.</li>
 </ol>
 <hr>
 <h2 id="alchemy">Alchemy</h2>
@@ -3383,7 +3439,7 @@
 <th>Cost</th>
 <th>Hands</th>
 <th>Range</th>
-<th>Notes</th>
+<th>Special Rules</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3391,7 +3447,7 @@
 <td>25</td>
 <td>1H</td>
 <td>Might in&quot;</td>
-<td>6&quot; blast, Single Shot, Smoke</td>
+<td>Single Shot, Smoke</td>
 </tr>
 </tbody></table>
 <p>Use the <strong>Ranged</strong> action. Declare a target point within this fighter&#39;s <strong>Might</strong> in inches. Make a <strong>Skill</strong> check.</p>
@@ -3472,7 +3528,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=08c210c"></script>
-  <script src="/wiki/wiki.js?v=08c210c" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
+  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
 </body>
 </html>
