@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feats — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=cd093a3" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -624,6 +624,12 @@
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-defensive-maneuvers">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#defensive-maneuvers" class="wiki-nav-link">Defensive Maneuvers</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
@@ -1390,12 +1396,6 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/feats/#blacksmiths-arms" class="wiki-nav-link">Blacksmith's Arms</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-feats-dodge">
-          <div class="wiki-nav-row" style="padding-left:3.05rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/feats/#dodge" class="wiki-nav-link">Dodge</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-feats-guard">
@@ -2497,23 +2497,38 @@
           </div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement-rolls">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-advancement-spending-xp-advancement-children" aria-label="Expand Spending XP — Advancement">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/advancement/#spending-xp-advancement" class="wiki-nav-link">Spending XP — Advancement</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-advancement-spending-xp-advancement-children">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#spending-xp-advancement-rolls" class="wiki-nav-link">Spending XP — Advancement Rolls</a>
+            <a href="/advancement/#feat" class="wiki-nav-link">Feat</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-outside-archetype-or-domain">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#feat-advancement-table" class="wiki-nav-link">Feat Advancement Table</a>
+            <a href="/advancement/#feat-outside-archetype-or-domain" class="wiki-nav-link">Feat — Outside Archetype or Domain</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#attribute-advancement-table" class="wiki-nav-link">Attribute Advancement Table</a>
+            <a href="/advancement/#attribute-advancement" class="wiki-nav-link">Attribute Advancement</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-caster">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/advancement/#caster" class="wiki-nav-link">Caster</a>
+          </div>
+        </div></div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-campaign-scenarios">
@@ -2962,7 +2977,7 @@
 </ul>
 <p>If two copies of the same named feat would affect one fighter at the same time, apply the feat once.</p>
 <p>When you recruit each fighter, assign feats from the lists their keywords allow.</p>
-<p>Campaign advancement may grant additional feats later (see <a href="/advancement/#feat-advancement-table">Feat Advancement Table</a>).</p>
+<p>Campaign advancement lets a fighter buy an additional feat with XP (see <a href="/advancement/#spending-xp-advancement">Spending XP — Advancement</a>).</p>
 <p>Each <strong>Proficiency</strong> pick must select a <strong>different</strong> weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a <strong>Dagger</strong>.</p>
 <h3 id="built-in-proficiencies-and-feats-specialist">Built-in proficiencies and feats (Specialist)</h3>
 <table>
@@ -3019,7 +3034,7 @@
 <p>At the start of the battle, select 1 enemy fighter.</p>
 <p>When this fighter attacks the selected fighter, add <strong>1 Might die</strong> or <strong>1 Skill die</strong> to this fighter&#39;s Strike Pool.</p>
 </div><div class="feat-card"><h4 id="patient-shot">Patient Shot</h4>
-<p>When this fighter uses <strong>Aim</strong>, their next <strong>Ranged</strong> attack this activation may reroll 1 natural 1 in the Strike Pool.</p>
+<p>When this fighter uses <strong>Aim</strong>, their next <strong>Ranged Attack Action</strong> this activation may reroll 1 natural 1 in the Strike Pool.</p>
 </div><div class="feat-card"><h4 id="field-dressing">Field Dressing</h4>
 <p>When this fighter uses <strong>Help</strong> on a <strong>Downed</strong> friendly fighter, add <strong>+1</strong> to the <strong>Help</strong> roll.</p>
 </div><div class="feat-card"><h4 id="pathfinder">Pathfinder</h4>
@@ -3032,7 +3047,7 @@
 </div><div class="feat-card"><h4 id="stubborn-lot">Stubborn Lot</h4>
 <p>When this fighter uses <strong>Help</strong>, a roll of <strong>1</strong> counts as <strong>2</strong> if another friendly fighter is within <strong>1&quot;</strong> of this fighter or the assisted fighter.</p>
 </div><div class="feat-card"><h4 id="shoulder-to-shoulder">Shoulder to Shoulder</h4>
-<p>While this fighter is <strong>within 1&quot;</strong> of at least one other friendly fighter, add <strong>+1 Skill defense die</strong> when rolling defense against a <strong>Melee</strong> attack.</p>
+<p>While this fighter is <strong>within 1&quot;</strong> of at least one other friendly fighter, add <strong>+1 Might defense die</strong> when rolling defense against a <strong>Melee</strong> attack.</p>
 </div><div class="feat-card"><h4 id="rally-to-aid">Rally to Aid</h4>
 <p>Once per battle, when a friendly fighter <strong>within 6&quot;</strong> becomes <strong>Downed</strong>, this fighter may move up to <strong>6&quot;</strong> toward that fighter. This move cannot enter engagement range.</p>
 </div><div class="feat-card"><h4 id="skilled-craftsman">Skilled Craftsman</h4>
@@ -3044,7 +3059,7 @@
 <p>You may take this feat more than once. Each time, select a <strong>different</strong> proficiency.</p>
 <p>Weapon lists: <a href="/weapons/#weapon-proficiencies">Equipment — Weapon proficiencies</a>.</p>
 </div><div class="feat-card"><h4 id="blood-for-the-rite">Blood for the Rite</h4>
-<p>Once per battle, before this fighter makes an attribute check or <strong>casting roll</strong>, select another friendly fighter within <strong>12&quot;</strong>. That fighter suffers <strong>1 Wound</strong>. Add <strong>+1</strong> to the roll.</p>
+<p>Once per battle, before this fighter makes an attribute check or <strong>casting roll</strong>, select another friendly fighter within <strong>12&quot;</strong>. That fighter suffers <strong>1 Wound</strong>. Add <strong>1d6</strong> to that roll, then discard the lowest single die.</p>
 <p>This Wound can reduce the selected fighter to exactly <strong>0 Wounds</strong> and cause them to become <strong>Downed</strong>.</p>
 </div><div class="feat-card"><h4 id="magic-armor">Magic Armor</h4>
 <p>This fighter may equip armor up to Heavy tier.</p>
@@ -3061,9 +3076,6 @@
 </div><div class="feat-card"><h4 id="blacksmith39s-arms">Blacksmith&#39;s Arms</h4>
 <p>This fighter may wield <strong>Two-Handed</strong> weapons in one hand.</p>
 <p>A <strong>Two-Handed</strong> weapon still uses <strong>2 kit</strong>.</p>
-</div><div class="feat-card"><h4 id="dodge">Dodge</h4>
-<p>When this fighter is the target of a <strong>Ranged</strong> attack, roll <strong>2d6</strong>. On <strong>10+</strong>, that attack has no effect against this fighter.</p>
-<p><strong>Cast</strong> actions are not <strong>Ranged</strong> attacks.</p>
 </div><div class="feat-card"><h4 id="guard">Guard</h4>
 <p>Once per round, when a hostile <strong>Ranged</strong> attack or <strong>Cast</strong> action selects a friendly <strong>Leader</strong>, <strong>Elite</strong>, or <strong>Caster</strong> fighter <strong>within 3&quot;</strong> of this fighter as its target, this fighter may <strong>Intercept</strong>.</p>
 <blockquote>
@@ -3096,6 +3108,7 @@
 </div><div class="feat-card"><h4 id="lightning-reflexes">Lightning Reflexes</h4>
 <p>When this fighter is targeted by a <strong>Melee</strong> action that immediately follows the attacker&#39;s <strong>Charge</strong> during the same activation, they may make <strong>1 free Melee</strong> attack against that attacker before either attack applies Wounds.</p>
 <p>Resolve both attacks through the full <strong>Attack Sequence</strong> (Steps 1–4). Then apply Wounds, <strong>Downed</strong>, <strong>Stunned</strong>, and <strong>Out of Action</strong> results from both attacks together.</p>
+<p>If either attack generates defensive maneuver movement, apply that movement after Wounds from both attacks are applied.</p>
 </div><div class="feat-card"><h4 id="reflection">Reflection</h4>
 <p>When this fighter is the target of a hostile spell that succeeded on its <strong>casting roll</strong>, they may make a <strong>Will</strong> check. On a pass, roll a <strong>scatter die</strong> — the spell scatters in that direction a distance equal to the measured distance from the caster to this fighter at the time of casting.</p>
 <ul>
@@ -3150,7 +3163,7 @@
 <p>If this fighter was not <strong>Out of Action</strong> when the battle ended and the modified roll is <strong>2</strong> or <strong>12</strong>, roll <strong>2d6</strong> again, apply the same modifier, and resolve on the <strong>Doom Table</strong>. They must accept the second result.</p>
 </div></div><h3 id="nature">Nature</h3>
 <div class="feat-cards"><div class="feat-card"><h4 id="wild-aspect">Wild Aspect</h4>
-<p>This fighter gains one <strong>beast mark</strong> — select <strong>Wolf</strong>, <strong>Rat</strong>, <strong>Bear</strong>, or <strong>Serpent</strong>. If this fighter already has a beast mark, the selected mark must be different.</p>
+<p>This fighter gains the <strong>Werebeast</strong> keyword and one <strong>beast mark</strong> — select <strong>Wolf</strong>, <strong>Rat</strong>, <strong>Bear</strong>, or <strong>Serpent</strong>. If this fighter already has a beast mark, the selected mark must be different. A fighter cannot have more than <strong>2</strong> beast marks in total.</p>
 <p>This fighter gains the selected mark&#39;s rule. See <a href="/traditions/#werebeasts">Traditions — Werebeasts</a>.</p>
 <p>If this feat is taken at fighter creation, this fighter costs <strong>+10 Crowns</strong>.</p>
 </div><div class="feat-card"><h4 id="wind-walker">Wind Walker</h4>
@@ -3189,11 +3202,12 @@
 <p>When this fighter suffers <strong>1 or more Wounds</strong> from an <strong>Attack Sequence</strong>, add <strong>1 Might die</strong> to their next <strong>Melee</strong> attack.</p>
 </div></div><h3 id="mortal">Mortal</h3>
 <div class="feat-cards"><div class="feat-card"><h4 id="firearms">Firearms</h4>
-<p>May not have the <strong>Caster</strong> keyword. Your retinue may purchase firearms from <a href="/weapons/#firearms">Weapons — Firearms</a>. You may equip muskets, blunderbusses, pistols, long rifles, and bombs.</p>
+<p>Fighter must have the <strong>Mortal</strong> keyword and may not have the <strong>Caster</strong> keyword. Your retinue may purchase firearms from <a href="/weapons/#firearms">Weapons — Firearms</a>. You may equip muskets, blunderbusses, pistols, long rifles, and bombs.</p>
 </div><div class="feat-card"><h4 id="gunslinger">Gunslinger</h4>
-<p>If this fighter is equipped with <strong>2 Pistols</strong> <em>(in a <strong>Brace of Pistols</strong> or using <strong>2 kit</strong>)</em>, they may fire both as one <strong>Ranged</strong> action. Resolve each <strong>Pistol</strong> in order with its own <strong>Primer Roll</strong> and <strong>Attack Sequence</strong>. If they do, they cannot take another <strong>Ranged</strong> action during this activation.</p>
+<p>Fighter must have the <strong>Mortal</strong> keyword.</p>
+<p>If this fighter is equipped with <strong>2 Pistols</strong> <em>(in a <strong>Brace of Pistols</strong> or using <strong>2 kit</strong>)</em>, they may fire both as one <strong>Ranged</strong> action — each <strong>Pistol</strong> resolves as its own <strong>Ranged Attack Action</strong>, in order, with its own <strong>Primer Roll</strong> and <strong>Attack Sequence</strong>. If they do, they cannot take another <strong>Ranged</strong> action during this activation.</p>
 </div><div class="feat-card"><h4 id="deadeye">Deadeye</h4>
-<p>When this fighter uses <strong>Aim</strong>, their next <strong>Ranged</strong> attack with a <strong>firearm</strong> this activation adds <strong>1 die</strong> of that <strong>firearm&#39;s</strong> dominant die type to the Strike Pool.</p>
+<p>When this fighter uses <strong>Aim</strong>, their next <strong>Ranged Attack Action</strong> with a <strong>firearm</strong> this activation adds <strong>1 die</strong> of that <strong>firearm&#39;s</strong> dominant die type to the Strike Pool.</p>
 <p>The dominant die type is whichever is higher on the <strong>firearm&#39;s</strong> profile (<strong>Might</strong> or <strong>Skill</strong>). If tied, select <strong>Might dice</strong> or <strong>Skill dice</strong>.</p>
 </div><div class="feat-card"><h4 id="null">Null</h4>
 <p>Enemy <strong>Casters</strong> cannot perform the <strong>Cast</strong> action while <strong>within 6&quot;</strong> of this fighter.</p>
@@ -3215,7 +3229,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
-  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=cd093a3"></script>
+  <script src="/wiki/wiki.js?v=cd093a3" defer></script>
 </body>
 </html>

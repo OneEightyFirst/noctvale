@@ -15,7 +15,7 @@ Each Tradition grants one retinue-wide special rule. Tradition effects apply to 
 | **Nature** | Grove-keepers, Hedge-walkers | Werebeasts, Hedge-walkers | Witches, Grove-keepers | Witches, Werebeasts |
 | **Necromancy** | Sepulchers, Wightlords | Bone-priests, Wightlords | Bell-keepers, Sepulchers | Bell-keepers, Bone-priests |
 | **Blood** | Vampires, Dynasts | Dynasts, Revelers | Revelers, Courtiers | Vampires, Courtiers |
-| **Mortal** | Constables, Ironbound | Zealots, Alchemists | Constables, Alchemists | — |
+| **Mortal** | Ironbound | Zealots, Alchemists | Alchemists | — |
 
 ## Tradition Special Rules
 
@@ -61,7 +61,7 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 **Grove-keepers:** After terrain is set, select one terrain piece outside both deployment zones. Friendly fighters within **1"** of it add **+1** to **Recover** rolls.
 
-**Werebeasts:** When you recruit a fighter with the **Werebeast** keyword, select one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its selected mark's rule.
+**Werebeasts:** When you recruit a fighter with the **Werebeast** keyword, select one beast-mark for that fighter: **Wolf**, **Rat**, **Bear**, or **Serpent**. Each such fighter costs **+10 Crowns** and gains its selected mark's rule. A fighter cannot have more than **2** beast marks in total — see [Feats — Wild Aspect](feats.md#wild-aspect).
 
 **Wolf:** Fighters gain **Fighting Claws**. Fighting Claws are a free melee weapon (no kit cost): +2 **Might**, +1 **Skill**, Axe.
 
@@ -122,8 +122,6 @@ If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps
 ### Mortal
 
 **Zealots:** When a friendly fighter attacks an enemy **Caster**, add **+1** **Close Combat** or +1 **Ranged Combat** to that attack — whichever **Hit** attribute the attack uses.
-
-**Constables:** Enemy fighters cannot **Retreat** while within engagement range of a friendly fighter from this retinue.
 
 **Alchemists:** This retinue may buy alchemical weapons and alchemical consumables without rolling on the **Shadow Market** table.
 

@@ -19,7 +19,7 @@ Choose feats before buying weapons.
 
 **Blast(3") / Blast(5"):** This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.
 
-**Cleave:** When this weapon's attack reduces a fighter to **0 Wounds**, make one free **Melee** attack against a different fighter within engagement range.
+**Cleave:** When this weapon's attack reduces a fighter to **0 Wounds**, apply any defensive maneuver movement from that attack, then make one free **Melee** attack against a different fighter within engagement range.
 
 
 **Heavy:** This weapon cannot be used to make a **Ranged** attack if the fighter **Moved** or **Charged** this activation.
@@ -169,7 +169,7 @@ A **Pistol** takes **1 kit**. A fighter with **2 Pistols** and no **Brace of Pis
 **Brace of Pistols** — holster equipment that takes **1 kit** and holds **2 Pistols**. The Pistols must still be purchased separately. Requires the **Firearms** domain feat. Fighter must have **Mortal** and must lack **Caster**.
 
 - **Fire a Pistol:** One **Ranged** action. Choose one equipped **Pistol**. Resolve the **Primer Roll** and **Attack Sequence** normally.
-- **Gunslinger** *(requires **Mortal**)*: One **Ranged** action fires both **Pistols** in the fighter's **Brace of Pistols** (or both equipped **Pistols** if carried without a **Brace**) — each with its own **Primer Roll** and **Attack Sequence**. The fighter cannot take another **Ranged** action during that activation. See [Feats — Gunslinger](feats.md#gunslinger).
+- **Gunslinger** *(requires **Mortal**)*: One **Ranged** action fires both **Pistols** in the fighter's **Brace of Pistols** (or both equipped **Pistols** if carried without a **Brace**) — each **Pistol** resolves as its own **Ranged Attack Action**, with its own **Primer Roll** and **Attack Sequence**. The fighter cannot take another **Ranged** action during that activation. See [Feats — Gunslinger](feats.md#gunslinger).
 
 #### Long Rifle
 

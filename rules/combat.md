@@ -133,7 +133,7 @@ Any natural **6** is a **critical hit** if any of the following apply:
 - The attacker has **weapon triangle advantage** (see Weapon Triangle) — <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword, <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Axe, or <img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Spear only
 - The attacker has **magic advantage** (see Magic Triangles)
 - The attacker is using a **firearm** (crits against all targets)
-- The attacker used the **Aim** action before a Ranged attack
+- The attacker used the **Aim** action before that **Ranged Attack Action**
 
 Critical hits **cannot be blocked.** Critical hits retain their color for tracking purposes.
 
@@ -162,8 +162,16 @@ Each successful defense die blocks one hit of the matching color:
 
 - **Might defense blocks Might hits**
 - **Skill defense blocks Skill hits**
-- **Two successful Might defense dice may block one Skill hit** (brute force can overcome finesse, but at 2:1 cost)
-- **Two successful Skill defense dice may block one Might hit** (finesse can overcome brute force, but at 2:1 cost)
+
+#### Defensive Maneuvers
+
+An **Active** fighter may use successful defense dice for defensive maneuvers. **Downed** and **Stunned** fighters cannot use defensive maneuvers.
+
+**Dodge:** When defending against a **Melee** or **Ranged** attack, spend **2 Skill defense successes** to block **1 Might hit**. If this fighter remains **Active** after all Wounds from the attack are applied, move them up to **2"** directly away from the attacker. This movement can leave engagement range and can end within engagement range of another enemy fighter.
+
+**Shove:** When defending against a **Melee** attack while within engagement range of the attacker, spend **2 Might defense successes** to block **1 Skill hit**. If this fighter remains **Active** after all Wounds from the attack are applied, push the attacker up to **2"** directly away from this fighter. If this movement would bring the attacker into contact with terrain or another fighter, friendly or enemy, stop the movement at the point of contact. If this movement would push the attacker over a ledge or into open air, the attacker makes a **Skill** check. On a pass, stop the movement before they go over the edge. On a fail, they fall and resolve **Falling**, including any fall damage.
+
+Defensive maneuver movement is not an action, reaction, **Move**, **Retreat**, or **Charge**. It does not trigger **Overwatch**, **Ranged Reaction**, **Companion** co-movement, or the free **Melee** attack from a failed **Retreat**. This movement cannot move through another fighter's base and does not inflict hits or Wounds by itself. Except for the **Shove** check above, if defensive maneuver movement causes a fighter to fall, resolve **Falling** normally.
 
 #### Ties
 
@@ -228,18 +236,18 @@ Firearms are fired with the **Ranged** action. They use the **primer roll** and 
 
 **Hammer** is outside the triangle. If either fighter wields a Hammer, **weapon triangle advantage does not apply** to that melee exchange — neither fighter scores triangle crits. *(See [Weapons — Keywords](weapons.md#keywords).)*
 
-The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged** action during the same activation. If that **Ranged** weapon already scores critical hits on **6**, **Aim** increases it to **5+**.
+The **Aim** action can also make natural **6** results critical hits on that fighter's next **Ranged Attack Action** during the same activation. If that **Ranged** weapon already scores critical hits on **6**, **Aim** increases it to **5+**.
 
 ## Ranged Reaction
 
-When a fighter is targeted by a **Ranged** action, the target may perform a **single free action** after the **Attack Sequence** is fully resolved. This reaction does not cost the target any of their normal actions.
+When a fighter is targeted by a **Ranged Attack Action**, the target may perform a **single free action** after the **Attack Sequence** is fully resolved. This reaction does not cost the target any of their normal actions.
 
 - The reaction triggers whenever the target is **selected as a target**, regardless of whether the attack hits or misses.
 - The target may select **any single action** from the action list (Move, Charge, Melee, Ranged, Brace, Retreat, etc.).
 - If the target is **Downed or Out of Action** after the attack resolves, they may not react.
 - **A fighter may not perform a Ranged Reaction while their controlling player is activating fighters.** The active player's fighters cannot react to return fire.
 - **Cast actions do not trigger Ranged Reactions.** Only Ranged weapon attacks trigger this rule.
-- If a fighter is targeted by **multiple Ranged attacks** in the same activation (e.g., the attacker shoots twice), the target gets **one reaction per attack**.
+- If a fighter is targeted by **multiple Ranged Attack Actions** in the same activation (e.g., a **Gunslinger** firing both Pistols), the target gets **one reaction per Ranged Attack Action**.
 - **A Ranged Reaction cannot trigger another Ranged Reaction.** Reactions only trigger from actions, not from other reactions.
 
 
@@ -303,7 +311,7 @@ Defense results: **3 Might successes, 2 Skill successes**
 
 - **Might:** 3 successes vs 1 hit → Might hit blocked. 2 Might successes remaining.
 - **Skill:** 2 successes vs 2 normal Skill hits → **tie**. The **Stout** fighter has no shield, so the attacker wins the tie — 1 Skill hit still gets through. The 2 Skill successes block 1 of the 2 normal Skill hits.
-- The 2 leftover Might successes cross-block the remaining normal Skill hit at 2:1.
+- The 2 leftover Might successes are spent on **Shove** to block the remaining normal Skill hit. After Wounds are applied, **Stout** may move **Keen** up to **2"** directly away.
 - The critical Skill hit **cannot be blocked**.
 
 **Step 5:** 1 unblocked hit (the crit). The **Stout** fighter takes 1 Wound (3 → 2).

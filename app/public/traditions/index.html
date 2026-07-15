@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Traditions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=cd093a3" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -624,6 +624,12 @@
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-defensive-maneuvers">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#defensive-maneuvers" class="wiki-nav-link">Defensive Maneuvers</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
@@ -1390,12 +1396,6 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/feats/#blacksmiths-arms" class="wiki-nav-link">Blacksmith's Arms</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-feats-dodge">
-          <div class="wiki-nav-row" style="padding-left:3.05rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/feats/#dodge" class="wiki-nav-link">Dodge</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-feats-guard">
@@ -2497,23 +2497,38 @@
           </div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement-rolls">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-advancement-spending-xp-advancement-children" aria-label="Expand Spending XP — Advancement">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/advancement/#spending-xp-advancement" class="wiki-nav-link">Spending XP — Advancement</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-advancement-spending-xp-advancement-children">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#spending-xp-advancement-rolls" class="wiki-nav-link">Spending XP — Advancement Rolls</a>
+            <a href="/advancement/#feat" class="wiki-nav-link">Feat</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-outside-archetype-or-domain">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#feat-advancement-table" class="wiki-nav-link">Feat Advancement Table</a>
+            <a href="/advancement/#feat-outside-archetype-or-domain" class="wiki-nav-link">Feat — Outside Archetype or Domain</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#attribute-advancement-table" class="wiki-nav-link">Attribute Advancement Table</a>
+            <a href="/advancement/#attribute-advancement" class="wiki-nav-link">Attribute Advancement</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-caster">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/advancement/#caster" class="wiki-nav-link">Caster</a>
+          </div>
+        </div></div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-campaign-scenarios">
@@ -3010,9 +3025,9 @@
 </tr>
 <tr>
 <td><strong>Mortal</strong></td>
-<td>Constables, Ironbound</td>
+<td>Ironbound</td>
 <td>Zealots, Alchemists</td>
-<td>Constables, Alchemists</td>
+<td>Alchemists</td>
 <td>—</td>
 </tr>
 </tbody></table>
@@ -3040,7 +3055,7 @@
 <h3 id="nature">Nature</h3>
 <p><strong>Witches:</strong> Once per round, when an enemy fighter within <strong>12&quot;</strong> of a friendly <strong>Caster</strong> makes an attribute check or <strong>casting roll</strong>, subtract <strong>1</strong> from that roll.</p>
 <p><strong>Grove-keepers:</strong> After terrain is set, select one terrain piece outside both deployment zones. Friendly fighters within <strong>1&quot;</strong> of it add <strong>+1</strong> to <strong>Recover</strong> rolls.</p>
-<p><strong>Werebeasts:</strong> When you recruit a fighter with the <strong>Werebeast</strong> keyword, select one beast-mark for that fighter: <strong>Wolf</strong>, <strong>Rat</strong>, <strong>Bear</strong>, or <strong>Serpent</strong>. Each such fighter costs <strong>+10 Crowns</strong> and gains its selected mark&#39;s rule.</p>
+<p><strong>Werebeasts:</strong> When you recruit a fighter with the <strong>Werebeast</strong> keyword, select one beast-mark for that fighter: <strong>Wolf</strong>, <strong>Rat</strong>, <strong>Bear</strong>, or <strong>Serpent</strong>. Each such fighter costs <strong>+10 Crowns</strong> and gains its selected mark&#39;s rule. A fighter cannot have more than <strong>2</strong> beast marks in total — see <a href="/feats/#wild-aspect">Feats — Wild Aspect</a>.</p>
 <p><strong>Wolf:</strong> Fighters gain <strong>Fighting Claws</strong>. Fighting Claws are a free melee weapon (no kit cost): +2 <strong>Might</strong>, +1 <strong>Skill</strong>, Axe.</p>
 <p><strong>Rat:</strong> Fighters may carry 1 additional one-handed weapon. This extra weapon cannot be a shield, firearm, bomb, or two-handed weapon.</p>
 <p><strong>Bear:</strong> Fighters gain +1 <strong>Might</strong> and −1 <strong>Sanity</strong>. <strong>Sanity</strong> cannot be reduced below 1.</p>
@@ -3119,7 +3134,6 @@
 <p><strong>Courtiers:</strong> This retinue starts with <strong>+100 Crowns</strong>. Each fighter in this retinue starts each battle with 1 fewer Wound than their <strong>Wounds</strong> value, to a minimum of 1 Wound.</p>
 <h3 id="mortal">Mortal</h3>
 <p><strong>Zealots:</strong> When a friendly fighter attacks an enemy <strong>Caster</strong>, add <strong>+1</strong> <strong>Close Combat</strong> or +1 <strong>Ranged Combat</strong> to that attack — whichever <strong>Hit</strong> attribute the attack uses.</p>
-<p><strong>Constables:</strong> Enemy fighters cannot <strong>Retreat</strong> while within engagement range of a friendly fighter from this retinue.</p>
 <p><strong>Alchemists:</strong> This retinue may buy alchemical weapons and alchemical consumables without rolling on the <strong>Shadow Market</strong> table.</p>
 <p><strong>Ironbound:</strong> Friendly fighters within <strong>1&quot;</strong> of at least one other friendly fighter <strong>project Fear (6&quot;)</strong>.</p>
 <hr>
@@ -3139,7 +3153,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
-  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=cd093a3"></script>
+  <script src="/wiki/wiki.js?v=cd093a3" defer></script>
 </body>
 </html>

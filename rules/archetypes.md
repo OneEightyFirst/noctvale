@@ -255,17 +255,17 @@ Named factions are optional presets — example **Archetype** + **Domain** pairi
 
 #### Village Watch
 
-**Domain:** Mortal · **Tradition:** Constables
+**Domain:** Mortal · **Tradition:** Alchemists
 
 *Ordinary townsfolk defending their homes. Villages formed watches during the long war to protect their homes from the horrors that roam the land. Not led by sheriffs — led by whoever still had the nerve to stand on the wall.*
 
 #### Iron Law
 
-**Domain:** Mortal · **Tradition:** Constables
+**Domain:** Mortal · **Tradition:** Ironbound
 
 *Corrupted remnants of imperial law and constabulary. In the absence of the empire's authority, those who once enforced the law took power for themselves. They now rule through fear, chains, and the barrel of a gun.*
 
-Folk + **Mortal** also supports **Alchemists** — village alchemists brewing defenses against things in the night. Folk + **Nature** (**Witches**, **Grove-keepers**), Folk + **Infernal** (**Diabolists**), and other combinations are fully legal.
+Folk + **Mortal** supports **Alchemists** — village alchemists brewing defenses against things in the night. Folk + **Nature** (**Witches**, **Grove-keepers**), Folk + **Infernal** (**Diabolists**), and other combinations are fully legal.
 
 ---
 

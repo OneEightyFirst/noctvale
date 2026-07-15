@@ -41,35 +41,44 @@ Award after the **Casualty Table** and **Doom Table**, separate from battle and 
 
 Some **Survival Roll** or scenario results also grant **+1 Experience** to one named or selected surviving fighter. Apply those in this pass.
 
-## Spending XP — Advancement Rolls
+## Spending XP — Advancement
 
-Spend XP from a fighter's bank to roll on **one** advancement table. Pay the cost **before** rolling; deduct XP immediately. You may spend multiple times on the same fighter in one post-game if they can afford it.
+Spend XP from a fighter's bank to buy **one** advancement below. Pay the cost immediately; deduct it from the fighter's XP bank before applying the advancement. You may buy multiple advancements on the same fighter in one post-game if they can afford them.
 
-| Advancement | XP cost | Roll |
-|---|---|---|
-| **Feat** | **3** | 2d6 on [Feat Advancement Table](#feat-advancement-table) |
-| **Attribute** | **8** | 2d6 on Attribute Advancement Table |
-
-Fighters with the **Vampire** keyword must pay **2 XP** more than the normal advancement cost before they may buy that advancement — **Feat** **5**, **Attribute** **10**. This adds to the **XP** price only; it does not modify the **2d6** result.
-
-## Feat Advancement Table
-
-[Placeholder advancement table]
-
-## Attribute Advancement Table
-
-Roll **2d6** after spending **8 XP** on Attribute Advancement. Each result raises one attribute by **+1**. Attributes cannot exceed **6**.
-
-When a result names a pair of attributes, select one of that pair that is not already **6**. On **12**, select any attribute that is not already **6**.
-
-If both attributes in the pair are already **6**, apply the next lowest row on this table instead. Repeat until you gain **+1** to an attribute below **6**, or until no lower row applies.
-
-| 2d6 | Result |
+| Advancement | XP cost |
 |---|---|
-| 2–4 | +1 to **CC** or **RC**. |
-| 5–7 | +1 to **Mt** or **Sk**. |
-| 8–10 | +1 to **Wi** or **Sa**. |
-| 11 | +1 to **M** or **W**. |
-| 12 | +1 to any attribute. |
+| **Feat** | **3** |
+| **Wi** or **Sa** +1 | **6** |
+| **Mt** or **Sk** +1 | **7** |
+| **W** +1 | **8** |
+| **Caster** | **9** |
+| **M** +1 | **10** |
+| **Df** +1 | **11** |
+| **CC** or **RC** +1 | **12** |
+| **Feat** *(outside Archetype or Domain)* | **15** |
+
+Fighters with the **Vampire** keyword must pay **2 XP** more than the listed cost for any advancement on this table. This adds to the **XP** price only; it does not change what the advancement grants.
+
+### Feat
+
+Select any feat this fighter qualifies for from the [Feats](feats.md#feats) lists — **Archetype**, **Domain**, or **Universal** — under the same keyword and prerequisite rules as at recruitment.
+
+### Feat — Outside Archetype or Domain
+
+Select any feat other than **Proficiency** from an **Archetype** feat list or **Domain** feat list this fighter's own keywords do not grant. The fighter must still meet any other prerequisite the feat itself lists, such as requiring the **Caster** keyword.
+
+This does not grant the matching **Archetype** or **Domain** keyword — the fighter is borrowing training, not switching allegiance.
+
+### Attribute Advancement
+
+Buying an attribute advancement raises the chosen attribute by **+1**, to a maximum of **6**.
+
+If this purchase would raise an attribute more than **+1** above that fighter's [ancestry baseline](attributes.md#baseline-ancestry-profiles) for it — not the value after recruitment bonuses, feats, or prior advancement — select a different attribute on this fighter and reduce it by **1**, to a minimum of **1**, for each point beyond that first **+1**.
+
+### Caster
+
+A fighter may buy **Caster** only if they have **Wi 4** or higher, or **Sa 4** or higher — whichever attribute governs their **Domain**'s casting roll. Buying **Caster** grants the **Cast** action and **1 spell** from the fighter's **Domain** list, chosen at purchase.
+
+The recruitment restrictions on **Caster** still apply: only **1** fighter in the retinue may have the **Caster** keyword, and no fighter may buy **Caster** if any fighter in the retinue has the **Mortal** keyword.
 
 ---

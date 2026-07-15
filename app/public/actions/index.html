@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Actions — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=cd093a3" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -624,6 +624,12 @@
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-defensive-maneuvers">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#defensive-maneuvers" class="wiki-nav-link">Defensive Maneuvers</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
@@ -1390,12 +1396,6 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/feats/#blacksmiths-arms" class="wiki-nav-link">Blacksmith's Arms</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-feats-dodge">
-          <div class="wiki-nav-row" style="padding-left:3.05rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/feats/#dodge" class="wiki-nav-link">Dodge</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-feats-guard">
@@ -2497,23 +2497,38 @@
           </div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement-rolls">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-advancement-spending-xp-advancement-children" aria-label="Expand Spending XP — Advancement">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/advancement/#spending-xp-advancement" class="wiki-nav-link">Spending XP — Advancement</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-advancement-spending-xp-advancement-children">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#spending-xp-advancement-rolls" class="wiki-nav-link">Spending XP — Advancement Rolls</a>
+            <a href="/advancement/#feat" class="wiki-nav-link">Feat</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-outside-archetype-or-domain">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#feat-advancement-table" class="wiki-nav-link">Feat Advancement Table</a>
+            <a href="/advancement/#feat-outside-archetype-or-domain" class="wiki-nav-link">Feat — Outside Archetype or Domain</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#attribute-advancement-table" class="wiki-nav-link">Attribute Advancement Table</a>
+            <a href="/advancement/#attribute-advancement" class="wiki-nav-link">Attribute Advancement</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-caster">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/advancement/#caster" class="wiki-nav-link">Caster</a>
+          </div>
+        </div></div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-campaign-scenarios">
@@ -3034,6 +3049,7 @@
 <li>Target must be within the weapon&#39;s minimum and maximum range</li>
 <li>Target must be within <strong>line of sight</strong></li>
 </ul>
+<p>Resolving one weapon&#39;s <strong>Primer Roll</strong> (if any) and <strong>Attack Sequence</strong> is a <strong>Ranged Attack Action</strong>. A <strong>Ranged</strong> action normally resolves <strong>1 Ranged Attack Action</strong>. A rule that lets a fighter fire more than one weapon during a single <strong>Ranged</strong> action (such as <strong>Gunslinger</strong>) resolves <strong>1 Ranged Attack Action per weapon fired</strong>.</p>
 <p><strong>Bow or crossbow:</strong> Resolve the attack using the <strong>Attack Sequence</strong> (below).</p>
 <p><strong>Firearm:</strong> Roll the <strong>Primer Roll</strong> (below). If the gun fires, resolve the attack using the <strong>Attack Sequence</strong>.</p>
 <h3 id="cast">Cast</h3>
@@ -3115,10 +3131,10 @@
 <p>Gain <strong>+1 Might defense die</strong> (rolled with <strong>Might</strong>) until this fighter&#39;s next activation.</p>
 <h3 id="aim">Aim</h3>
 <p><strong>Cost:</strong> 1 action</p>
-<p>Prepare a careful shot for this fighter&#39;s next <strong>Ranged</strong> action this activation.</p>
+<p>Prepare a careful shot for this fighter&#39;s next <strong>Ranged Attack Action</strong> this activation.</p>
 <ul>
 <li>Gain <strong>+1 die of the weapon&#39;s dominant die type</strong></li>
-<li><strong>Natural 6</strong> results are critical hits on that <strong>Ranged</strong> action. If that <strong>Ranged</strong> weapon already had a critical hit on <strong>6</strong>, increase it to <strong>5+</strong></li>
+<li><strong>Natural 6</strong> results are critical hits on that <strong>Ranged Attack Action</strong>. If that <strong>Ranged</strong> weapon already had a critical hit on <strong>6</strong>, increase it to <strong>5+</strong></li>
 </ul>
 <p>The dominant die type is whichever attribute the weapon adds more of (<strong>Might</strong> or <strong>Skill</strong>). If tied, select <strong>Might dice</strong> or <strong>Skill dice</strong>.</p>
 <h3 id="hide">Hide</h3>
@@ -3217,7 +3233,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
-  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=cd093a3"></script>
+  <script src="/wiki/wiki.js?v=cd093a3" defer></script>
 </body>
 </html>

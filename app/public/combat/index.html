@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Combat — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=cd093a3" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -624,6 +624,12 @@
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-defensive-maneuvers">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#defensive-maneuvers" class="wiki-nav-link">Defensive Maneuvers</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
@@ -1390,12 +1396,6 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/feats/#blacksmiths-arms" class="wiki-nav-link">Blacksmith's Arms</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-feats-dodge">
-          <div class="wiki-nav-row" style="padding-left:3.05rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/feats/#dodge" class="wiki-nav-link">Dodge</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-feats-guard">
@@ -2497,23 +2497,38 @@
           </div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement-rolls">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-advancement-spending-xp-advancement-children" aria-label="Expand Spending XP — Advancement">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/advancement/#spending-xp-advancement" class="wiki-nav-link">Spending XP — Advancement</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-advancement-spending-xp-advancement-children">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#spending-xp-advancement-rolls" class="wiki-nav-link">Spending XP — Advancement Rolls</a>
+            <a href="/advancement/#feat" class="wiki-nav-link">Feat</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-outside-archetype-or-domain">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#feat-advancement-table" class="wiki-nav-link">Feat Advancement Table</a>
+            <a href="/advancement/#feat-outside-archetype-or-domain" class="wiki-nav-link">Feat — Outside Archetype or Domain</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#attribute-advancement-table" class="wiki-nav-link">Attribute Advancement Table</a>
+            <a href="/advancement/#attribute-advancement" class="wiki-nav-link">Attribute Advancement</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-caster">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/advancement/#caster" class="wiki-nav-link">Caster</a>
+          </div>
+        </div></div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-campaign-scenarios">
@@ -3098,7 +3113,7 @@
 <li>The attacker has <strong>weapon triangle advantage</strong> (see Weapon Triangle) — <img src="/images/weapon-icon-sword.svg" alt="" class="weapon-icon" />Sword, <img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />Axe, or <img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Spear only</li>
 <li>The attacker has <strong>magic advantage</strong> (see Magic Triangles)</li>
 <li>The attacker is using a <strong>firearm</strong> (crits against all targets)</li>
-<li>The attacker used the <strong>Aim</strong> action before a Ranged attack</li>
+<li>The attacker used the <strong>Aim</strong> action before that <strong>Ranged Attack Action</strong></li>
 </ul>
 <p>Critical hits <strong>cannot be blocked.</strong> Critical hits retain their color for tracking purposes.</p>
 <p>If none of the above apply, 6s are normal hits.</p>
@@ -3121,9 +3136,12 @@
 <ul>
 <li><strong>Might defense blocks Might hits</strong></li>
 <li><strong>Skill defense blocks Skill hits</strong></li>
-<li><strong>Two successful Might defense dice may block one Skill hit</strong> (brute force can overcome finesse, but at 2:1 cost)</li>
-<li><strong>Two successful Skill defense dice may block one Might hit</strong> (finesse can overcome brute force, but at 2:1 cost)</li>
 </ul>
+<h4 id="defensive-maneuvers">Defensive Maneuvers</h4>
+<p>An <strong>Active</strong> fighter may use successful defense dice for defensive maneuvers. <strong>Downed</strong> and <strong>Stunned</strong> fighters cannot use defensive maneuvers.</p>
+<p><strong>Dodge:</strong> When defending against a <strong>Melee</strong> or <strong>Ranged</strong> attack, spend <strong>2 Skill defense successes</strong> to block <strong>1 Might hit</strong>. If this fighter remains <strong>Active</strong> after all Wounds from the attack are applied, move them up to <strong>2&quot;</strong> directly away from the attacker. This movement can leave engagement range and can end within engagement range of another enemy fighter.</p>
+<p><strong>Shove:</strong> When defending against a <strong>Melee</strong> attack while within engagement range of the attacker, spend <strong>2 Might defense successes</strong> to block <strong>1 Skill hit</strong>. If this fighter remains <strong>Active</strong> after all Wounds from the attack are applied, push the attacker up to <strong>2&quot;</strong> directly away from this fighter. If this movement would bring the attacker into contact with terrain or another fighter, friendly or enemy, stop the movement at the point of contact. If this movement would push the attacker over a ledge or into open air, the attacker makes a <strong>Skill</strong> check. On a pass, stop the movement before they go over the edge. On a fail, they fall and resolve <strong>Falling</strong>, including any fall damage.</p>
+<p>Defensive maneuver movement is not an action, reaction, <strong>Move</strong>, <strong>Retreat</strong>, or <strong>Charge</strong>. It does not trigger <strong>Overwatch</strong>, <strong>Ranged Reaction</strong>, <strong>Companion</strong> co-movement, or the free <strong>Melee</strong> attack from a failed <strong>Retreat</strong>. This movement cannot move through another fighter&#39;s base and does not inflict hits or Wounds by itself. Except for the <strong>Shove</strong> check above, if defensive maneuver movement causes a fighter to fall, resolve <strong>Falling</strong> normally.</p>
 <h4 id="ties">Ties</h4>
 <p>Compare your blocks to the attacker&#39;s hits by color. If blocks equal hits in a category — a <strong>tie</strong> — the attacker wins that tie and one hit of that color still gets through.</p>
 <h4 id="shields">Shields</h4>
@@ -3164,16 +3182,16 @@
 <p>Firearms are fired with the <strong>Ranged</strong> action. They use the <strong>primer roll</strong> and gain criticals against <strong>all targets</strong>, regardless of weapon type. A <strong>Long Rifle</strong> has <strong>Piercing</strong>, <strong>Heavy</strong>, and <strong>Impact</strong> — armor dice bonuses and shield Df bonuses do not apply when defending against its attacks, it cannot be fired if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation, and it makes exact takedowns become <strong>Stunned</strong> instead of <strong>Downed</strong>. <em>(See <a href="/weapons/#keywords">Weapons — Keywords</a>.)</em></p>
 <h3 id="outside-the-triangles">Outside the Triangles</h3>
 <p><strong>Hammer</strong> is outside the triangle. If either fighter wields a Hammer, <strong>weapon triangle advantage does not apply</strong> to that melee exchange — neither fighter scores triangle crits. <em>(See <a href="/weapons/#keywords">Weapons — Keywords</a>.)</em></p>
-<p>The <strong>Aim</strong> action can also make natural <strong>6</strong> results critical hits on that fighter&#39;s next <strong>Ranged</strong> action during the same activation. If that <strong>Ranged</strong> weapon already scores critical hits on <strong>6</strong>, <strong>Aim</strong> increases it to <strong>5+</strong>.</p>
+<p>The <strong>Aim</strong> action can also make natural <strong>6</strong> results critical hits on that fighter&#39;s next <strong>Ranged Attack Action</strong> during the same activation. If that <strong>Ranged</strong> weapon already scores critical hits on <strong>6</strong>, <strong>Aim</strong> increases it to <strong>5+</strong>.</p>
 <h2 id="ranged-reaction">Ranged Reaction</h2>
-<p>When a fighter is targeted by a <strong>Ranged</strong> action, the target may perform a <strong>single free action</strong> after the <strong>Attack Sequence</strong> is fully resolved. This reaction does not cost the target any of their normal actions.</p>
+<p>When a fighter is targeted by a <strong>Ranged Attack Action</strong>, the target may perform a <strong>single free action</strong> after the <strong>Attack Sequence</strong> is fully resolved. This reaction does not cost the target any of their normal actions.</p>
 <ul>
 <li>The reaction triggers whenever the target is <strong>selected as a target</strong>, regardless of whether the attack hits or misses.</li>
 <li>The target may select <strong>any single action</strong> from the action list (Move, Charge, Melee, Ranged, Brace, Retreat, etc.).</li>
 <li>If the target is <strong>Downed or Out of Action</strong> after the attack resolves, they may not react.</li>
 <li><strong>A fighter may not perform a Ranged Reaction while their controlling player is activating fighters.</strong> The active player&#39;s fighters cannot react to return fire.</li>
 <li><strong>Cast actions do not trigger Ranged Reactions.</strong> Only Ranged weapon attacks trigger this rule.</li>
-<li>If a fighter is targeted by <strong>multiple Ranged attacks</strong> in the same activation (e.g., the attacker shoots twice), the target gets <strong>one reaction per attack</strong>.</li>
+<li>If a fighter is targeted by <strong>multiple Ranged Attack Actions</strong> in the same activation (e.g., a <strong>Gunslinger</strong> firing both Pistols), the target gets <strong>one reaction per Ranged Attack Action</strong>.</li>
 <li><strong>A Ranged Reaction cannot trigger another Ranged Reaction.</strong> Reactions only trigger from actions, not from other reactions.</li>
 </ul>
 <h2 id="example-a-round">Example: A Round</h2>
@@ -3219,7 +3237,7 @@
 <ul>
 <li><strong>Might:</strong> 3 successes vs 1 hit → Might hit blocked. 2 Might successes remaining.</li>
 <li><strong>Skill:</strong> 2 successes vs 2 normal Skill hits → <strong>tie</strong>. The <strong>Stout</strong> fighter has no shield, so the attacker wins the tie — 1 Skill hit still gets through. The 2 Skill successes block 1 of the 2 normal Skill hits.</li>
-<li>The 2 leftover Might successes cross-block the remaining normal Skill hit at 2:1.</li>
+<li>The 2 leftover Might successes are spent on <strong>Shove</strong> to block the remaining normal Skill hit. After Wounds are applied, <strong>Stout</strong> may move <strong>Keen</strong> up to <strong>2&quot;</strong> directly away.</li>
 <li>The critical Skill hit <strong>cannot be blocked</strong>.</li>
 </ul>
 <p><strong>Step 5:</strong> 1 unblocked hit (the crit). The <strong>Stout</strong> fighter takes 1 Wound (3 → 2).</p>
@@ -3240,7 +3258,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
-  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=cd093a3"></script>
+  <script src="/wiki/wiki.js?v=cd093a3" defer></script>
 </body>
 </html>

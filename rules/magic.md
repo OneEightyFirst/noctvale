@@ -469,9 +469,9 @@ Target friendly fighter gains +2 **Might** and +1" **Movement** until the start 
 
 **Difficulty:** **Will** 12+ | **Range:** 12"
 
-Target enemy has **Movement** reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
+Target enemy has **Movement** reduced to 0 until the start of the caster's next activation. The target cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, **Retreat**, or use defensive maneuvers. They can still fight, shoot, and cast.
 
-**Mishap:** The caster has **Movement** reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, or **Retreat**. They can still fight, shoot, and cast.
+**Mishap:** The caster has **Movement** reduced to 0 until the start of their next activation. They cannot **Move**, **Charge**, **Climb**, **Scramble**, **Jump**, **Retreat**, or use defensive maneuvers. They can still fight, shoot, and cast.
 
 #### Stinging Swarm
 

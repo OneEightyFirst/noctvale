@@ -114,6 +114,8 @@ Attack with a **ranged weapon** — bows, crossbows, firearms, and other weapons
 - Target must be within the weapon's minimum and maximum range
 - Target must be within **line of sight**
 
+Resolving one weapon's **Primer Roll** (if any) and **Attack Sequence** is a **Ranged Attack Action**. A **Ranged** action normally resolves **1 Ranged Attack Action**. A rule that lets a fighter fire more than one weapon during a single **Ranged** action (such as **Gunslinger**) resolves **1 Ranged Attack Action per weapon fired**.
+
 **Bow or crossbow:** Resolve the attack using the **Attack Sequence** (below).
 
 **Firearm:** Roll the **Primer Roll** (below). If the gun fires, resolve the attack using the **Attack Sequence**.
@@ -207,10 +209,10 @@ Gain **+1 Might defense die** (rolled with **Might**) until this fighter's next 
 
 **Cost:** 1 action
 
-Prepare a careful shot for this fighter's next **Ranged** action this activation.
+Prepare a careful shot for this fighter's next **Ranged Attack Action** this activation.
 
 - Gain **+1 die of the weapon's dominant die type**
-- **Natural 6** results are critical hits on that **Ranged** action. If that **Ranged** weapon already had a critical hit on **6**, increase it to **5+**
+- **Natural 6** results are critical hits on that **Ranged Attack Action**. If that **Ranged** weapon already had a critical hit on **6**, increase it to **5+**
 
 The dominant die type is whichever attribute the weapon adds more of (**Might** or **Skill**). If tied, select **Might dice** or **Skill dice**.
 

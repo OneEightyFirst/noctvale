@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weapons — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=cd093a3" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -624,6 +624,12 @@
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-defensive-maneuvers">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#defensive-maneuvers" class="wiki-nav-link">Defensive Maneuvers</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
@@ -1390,12 +1396,6 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/feats/#blacksmiths-arms" class="wiki-nav-link">Blacksmith's Arms</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-feats-dodge">
-          <div class="wiki-nav-row" style="padding-left:3.05rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/feats/#dodge" class="wiki-nav-link">Dodge</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-feats-guard">
@@ -2497,23 +2497,38 @@
           </div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement-rolls">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-advancement-spending-xp-advancement-children" aria-label="Expand Spending XP — Advancement">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/advancement/#spending-xp-advancement" class="wiki-nav-link">Spending XP — Advancement</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-advancement-spending-xp-advancement-children">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#spending-xp-advancement-rolls" class="wiki-nav-link">Spending XP — Advancement Rolls</a>
+            <a href="/advancement/#feat" class="wiki-nav-link">Feat</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-outside-archetype-or-domain">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#feat-advancement-table" class="wiki-nav-link">Feat Advancement Table</a>
+            <a href="/advancement/#feat-outside-archetype-or-domain" class="wiki-nav-link">Feat — Outside Archetype or Domain</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#attribute-advancement-table" class="wiki-nav-link">Attribute Advancement Table</a>
+            <a href="/advancement/#attribute-advancement" class="wiki-nav-link">Attribute Advancement</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-caster">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/advancement/#caster" class="wiki-nav-link">Caster</a>
+          </div>
+        </div></div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-campaign-scenarios">
@@ -2983,7 +2998,7 @@
 <hr>
 <h2 id="keywords">Keywords</h2>
 <p><strong>Blast(3&quot;) / Blast(5&quot;):</strong> This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.</p>
-<p><strong>Cleave:</strong> When this weapon&#39;s attack reduces a fighter to <strong>0 Wounds</strong>, make one free <strong>Melee</strong> attack against a different fighter within engagement range.</p>
+<p><strong>Cleave:</strong> When this weapon&#39;s attack reduces a fighter to <strong>0 Wounds</strong>, apply any defensive maneuver movement from that attack, then make one free <strong>Melee</strong> attack against a different fighter within engagement range.</p>
 <p><strong>Heavy:</strong> This weapon cannot be used to make a <strong>Ranged</strong> attack if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation.</p>
 <p><strong>Impact:</strong> When this weapon&#39;s attack would make an <strong>Active</strong> fighter <strong>Downed</strong>, that fighter becomes <strong>Stunned</strong> instead.</p>
 <p><strong>Parry:</strong> When this fighter defends against a <strong>Melee</strong> attack, reroll one failed <strong>Skill</strong> die in the defense pool.</p>
@@ -3387,7 +3402,7 @@
 <p><strong>Brace of Pistols</strong> — holster equipment that takes <strong>1 kit</strong> and holds <strong>2 Pistols</strong>. The Pistols must still be purchased separately. Requires the <strong>Firearms</strong> domain feat. Fighter must have <strong>Mortal</strong> and must lack <strong>Caster</strong>.</p>
 <ul>
 <li><strong>Fire a Pistol:</strong> One <strong>Ranged</strong> action. Choose one equipped <strong>Pistol</strong>. Resolve the <strong>Primer Roll</strong> and <strong>Attack Sequence</strong> normally.</li>
-<li><strong>Gunslinger</strong> <em>(requires <strong>Mortal</strong>)</em>: One <strong>Ranged</strong> action fires both <strong>Pistols</strong> in the fighter&#39;s <strong>Brace of Pistols</strong> (or both equipped <strong>Pistols</strong> if carried without a <strong>Brace</strong>) — each with its own <strong>Primer Roll</strong> and <strong>Attack Sequence</strong>. The fighter cannot take another <strong>Ranged</strong> action during that activation. See <a href="/feats/#gunslinger">Feats — Gunslinger</a>.</li>
+<li><strong>Gunslinger</strong> <em>(requires <strong>Mortal</strong>)</em>: One <strong>Ranged</strong> action fires both <strong>Pistols</strong> in the fighter&#39;s <strong>Brace of Pistols</strong> (or both equipped <strong>Pistols</strong> if carried without a <strong>Brace</strong>) — each <strong>Pistol</strong> resolves as its own <strong>Ranged Attack Action</strong>, with its own <strong>Primer Roll</strong> and <strong>Attack Sequence</strong>. The fighter cannot take another <strong>Ranged</strong> action during that activation. See <a href="/feats/#gunslinger">Feats — Gunslinger</a>.</li>
 </ul>
 <h4 id="long-rifle">Long Rifle</h4>
 <p>A <strong>Long Rifle</strong> has <strong>Piercing</strong>, <strong>Heavy</strong>, and <strong>Impact</strong> — armor dice bonuses and shield Df bonuses do not apply against its attacks, it cannot be fired if the fighter <strong>Moved</strong> or <strong>Charged</strong> this activation, and it makes exact takedowns become <strong>Stunned</strong> instead of <strong>Downed</strong>.</p>
@@ -3528,7 +3543,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
-  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=cd093a3"></script>
+  <script src="/wiki/wiki.js?v=cd093a3" defer></script>
 </body>
 </html>

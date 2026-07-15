@@ -12,7 +12,7 @@ If two copies of the same named feat would affect one fighter at the same time, 
 
 When you recruit each fighter, assign feats from the lists their keywords allow.
 
-Campaign advancement may grant additional feats later (see [Feat Advancement Table](advancement.md#feat-advancement-table)).
+Campaign advancement lets a fighter buy an additional feat with XP (see [Spending XP — Advancement](advancement.md#spending-xp-advancement)).
 
 Each **Proficiency** pick must select a **different** weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
 
@@ -74,7 +74,7 @@ When this fighter attacks the selected fighter, add **1 Might die** or **1 Skill
 
 #### Patient Shot
 
-When this fighter uses **Aim**, their next **Ranged** attack this activation may reroll 1 natural 1 in the Strike Pool.
+When this fighter uses **Aim**, their next **Ranged Attack Action** this activation may reroll 1 natural 1 in the Strike Pool.
 
 #### Field Dressing
 
@@ -100,7 +100,7 @@ When this fighter uses **Help**, a roll of **1** counts as **2** if another frie
 
 #### Shoulder to Shoulder
 
-While this fighter is **within 1"** of at least one other friendly fighter, add **+1 Skill defense die** when rolling defense against a **Melee** attack.
+While this fighter is **within 1"** of at least one other friendly fighter, add **+1 Might defense die** when rolling defense against a **Melee** attack.
 
 #### Rally to Aid
 
@@ -124,7 +124,7 @@ Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficienci
 
 #### Blood for the Rite
 
-Once per battle, before this fighter makes an attribute check or **casting roll**, select another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **+1** to the roll.
+Once per battle, before this fighter makes an attribute check or **casting roll**, select another friendly fighter within **12"**. That fighter suffers **1 Wound**. Add **1d6** to that roll, then discard the lowest single die.
 
 This Wound can reduce the selected fighter to exactly **0 Wounds** and cause them to become **Downed**.
 
@@ -159,12 +159,6 @@ When this fighter's **Melee** action immediately follows **Charge** during the s
 This fighter may wield **Two-Handed** weapons in one hand.
 
 A **Two-Handed** weapon still uses **2 kit**.
-
-#### Dodge
-
-When this fighter is the target of a **Ranged** attack, roll **2d6**. On **10+**, that attack has no effect against this fighter.
-
-**Cast** actions are not **Ranged** attacks.
 
 #### Guard
 
@@ -219,6 +213,8 @@ When a **Help** roll or **Recover** roll is made for this fighter, add **+1** to
 When this fighter is targeted by a **Melee** action that immediately follows the attacker's **Charge** during the same activation, they may make **1 free Melee** attack against that attacker before either attack applies Wounds.
 
 Resolve both attacks through the full **Attack Sequence** (Steps 1–4). Then apply Wounds, **Downed**, **Stunned**, and **Out of Action** results from both attacks together.
+
+If either attack generates defensive maneuver movement, apply that movement after Wounds from both attacks are applied.
 
 #### Reflection
 
@@ -312,7 +308,7 @@ If this fighter was not **Out of Action** when the battle ended and the modified
 
 #### Wild Aspect
 
-This fighter gains one **beast mark** — select **Wolf**, **Rat**, **Bear**, or **Serpent**. If this fighter already has a beast mark, the selected mark must be different.
+This fighter gains the **Werebeast** keyword and one **beast mark** — select **Wolf**, **Rat**, **Bear**, or **Serpent**. If this fighter already has a beast mark, the selected mark must be different. A fighter cannot have more than **2** beast marks in total.
 
 This fighter gains the selected mark's rule. See [Traditions — Werebeasts](traditions.md#werebeasts).
 
@@ -390,15 +386,17 @@ When this fighter suffers **1 or more Wounds** from an **Attack Sequence**, add 
 
 #### Firearms
 
-May not have the **Caster** keyword. Your retinue may purchase firearms from [Weapons — Firearms](weapons.md#firearms). You may equip muskets, blunderbusses, pistols, long rifles, and bombs.
+Fighter must have the **Mortal** keyword and may not have the **Caster** keyword. Your retinue may purchase firearms from [Weapons — Firearms](weapons.md#firearms). You may equip muskets, blunderbusses, pistols, long rifles, and bombs.
 
 #### Gunslinger
 
-If this fighter is equipped with **2 Pistols** *(in a **Brace of Pistols** or using **2 kit**)*, they may fire both as one **Ranged** action. Resolve each **Pistol** in order with its own **Primer Roll** and **Attack Sequence**. If they do, they cannot take another **Ranged** action during this activation.
+Fighter must have the **Mortal** keyword.
+
+If this fighter is equipped with **2 Pistols** *(in a **Brace of Pistols** or using **2 kit**)*, they may fire both as one **Ranged** action — each **Pistol** resolves as its own **Ranged Attack Action**, in order, with its own **Primer Roll** and **Attack Sequence**. If they do, they cannot take another **Ranged** action during this activation.
 
 #### Deadeye
 
-When this fighter uses **Aim**, their next **Ranged** attack with a **firearm** this activation adds **1 die** of that **firearm's** dominant die type to the Strike Pool.
+When this fighter uses **Aim**, their next **Ranged Attack Action** with a **firearm** this activation adds **1 die** of that **firearm's** dominant die type to the Strike Pool.
 
 The dominant die type is whichever is higher on the **firearm's** profile (**Might** or **Skill**). If tied, select **Might dice** or **Skill dice**.
 

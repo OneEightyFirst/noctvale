@@ -21,15 +21,6 @@ only — not duplicate checklists.
 
 **Campaign upkeep.** A possible future layer where retinues pay an ongoing Crown cost between battles — larger or more expensive retinues cost more to maintain. Skipped for now to keep the campaign economy simple; the Survival Roll and Casualty Table already create attrition pressure. Revisit if playtesting shows retinues accumulate Crowns too easily.
 
-**Attribute boost tradeoffs.** Explore a retinue-building restriction where raising an **Attribute** more than **+1** over that fighter's baseline requires subtracting from another **Attribute**. The intent is to preserve extreme specialists while forcing a visible weakness once a fighter pushes beyond ordinary improvement.
-
-Open questions:
-
-- Does the tradeoff apply only during recruitment, only to purchased boosts, or also to later advancement?
-- Is the subtraction one time when any **Attribute** reaches **+2**, or one subtraction per point beyond **+1**?
-- Which **Attributes** can be reduced, and do **Movement**, **Wounds**, or **Defense** need special handling?
-- Can the same **Attribute** be reduced more than once, and what minimum values are allowed?
-
 **Variable Presence ranges.** Explore replacing fixed target and charge reach with a fighter-facing **Presence** value measured in inches. Each ancestry would set a baseline **Presence** by size and silhouette: larger fighters project farther, smaller fighters project less, and effects such as **Hide** could reduce a fighter's **Presence**, potentially to **0"**. Weapons would have shorter printed ranges than they do now. A ranged attack would be able to target a fighter within the weapon's printed range plus the target's **Presence**. A **Charge** would be able to reach a target within the charging fighter's **Movement** + the charging fighter's **Presence** + the target's **Presence**.
 
 Open questions:

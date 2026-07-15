@@ -26,7 +26,7 @@ Finalize the combat resolution loop (to-hit, St/T modifiers, defense target, ste
 - [x] To-hit: d6 + CC ≥ 8 (melee) / d6 + RC ≥ 8 (ranged)
 - [x] Criticals from weapon triangle advantage (natural 6s)
 - [x] Defense pool: base 1R + 1B, +dice from Mt/Sk comparison, +armor
-- [x] 2:1 crossover blocking
+- [x] Defensive maneuvers replace 2:1 crossover blocking
 - [x] Wound application → Downed → Stunned → OOA
 - [x] Full worked combat example in `rules/core-rules.md#combat`
 - [x] Define armor values for at least light/medium/heavy tiers
@@ -162,9 +162,10 @@ All remaining open items, ordered easiest to most time-consuming.
 - [x] **Choice-language standardization** — Primary verb: **select**. "Target" remains the combat-specific verb for declaring attacks. "However they like" for idiomatic split-pool language. "Wish to" / "optionally" for discretionary post-game steps where "select" doesn't fit.
 - [ ] **Tune campaign XP** earn/spend rates after first playtest.
 - [x] **Spell table format** — Refine spell entry layout per `NOCTVALE_RULEBOOK_STYLE_GUIDE.md` — column set, Effect/Mishap wording, reminder text on cards.
-- [ ] **Feat Advancement Table** — Replace placeholder in `rules/campaign.md`.
+- [x] **Feat Advancement Table** — Replace placeholder in `rules/campaign.md`.
 - [ ] **Reduce gratuitous tables** — Fighter count, archetype access, and similar as short prose where a table adds no scan value (`rules/retinue.md`).
 - [ ] **Dedicated rules for enemy fighters blocking shots** — Beyond LoS; add only if playtest shows gaps.
+- [ ] **Replacement Mortal Tradition for Constables** — Constables' **Retreat** lock was removed during the defensive maneuver update. Create a new Mortal Tradition rule that keeps the law-and-order identity without duplicating engagement-control mechanics.
 
 ---
 
@@ -172,7 +173,7 @@ All remaining open items, ordered easiest to most time-consuming.
 
 - [ ] **Feat guardrail pass** — Audit lists against design guardrails: no broad permanent +1 to-hit, extra full actions, reusable rerolls, or spell-feats without a **casting roll**; no feat may require another named feat.
 - [ ] **Confirm feats don't duplicate or conflict** with spells, equipment, or special rules.
-- [ ] **Mid-campaign Caster** — **Feat** advancement path to gain **Caster** mid-campaign.
+- [x] **Mid-campaign Caster** — **Feat** advancement path to gain **Caster** mid-campaign.
 - [ ] **Weapon triangle and tie handling** — Test whether the weapon triangle should break tied attack results, what happens when the triangle does not apply, whether the attacker wins ordinary ties, and whether shields should make the defender win ties.
 - [ ] **Wound-state pacing** — Recheck whether the current **Downed** to **Stunned** progression slows lethality too much. Explore **Stunned** as a parallel condition rather than an extra injury step while preserving "miraculous return" moments for **Downed** fighters.
 - [ ] **Death trigger mechanic** — Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination.

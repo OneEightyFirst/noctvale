@@ -6,6 +6,42 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-14 20:32 EDT — Defensive maneuvers and Mortal tradition cleanup
+
+**Change:** Synced builder reference data with the defensive maneuver rules update.
+Removed the Universal **Dodge** feat from `UNIVERSAL_FEATS`, changed **Shoulder to
+Shoulder** from +1 Skill defense die to +1 Might defense die, updated
+**Entangle** to prevent defensive maneuvers while Movement is 0, updated the
+**Cleave** keyword reminder so it checks for the free Melee target after
+defensive maneuver movement, and removed **Constables** from the Mortal
+Traditions list.
+
+**Impact:** Builder display and selection data changed. New retinues can no
+longer select **Dodge** or **Constables**. Existing saved rosters that already
+contain those ids may need manual cleanup when opened because the builder no
+longer has canonical reference text for those retired options.
+
+## 2026-07-13 14:50 EDT — Synced feat/tradition text for cross-domain feat fixes
+
+**Change:** Updated `FEATS` entries for `patient-shot`, `deadeye`, `gunslinger`, and
+`wild-aspect`, plus the `werebeasts` tradition's `rules` text, in `noctvale.js` to
+match the `rules/feats.md` and `rules/traditions.md` wording changes: the new
+**Ranged Attack Action** term (Aim/Deadeye/Patient Shot/Gunslinger), an explicit
+**Mortal** keyword prerequisite on **Gunslinger** (Firearms already stated it),
+`wild-aspect` now granting the **Werebeast** keyword itself instead of requiring
+it, and the new 2-beast-mark cap. Text only — the app does not yet implement
+post-game Advancement (including the "Feat outside Archetype/Domain" purchase)
+or multi-mark stacking in the builder UI, so no `RetinueEditor.jsx` logic
+changed. Note for whoever wires this up: once outside-domain Advancement
+purchases exist, `wild-aspect` taken that way should be allowed to set
+`fighter.beastMark` even when `tradition?.id !== "werebeasts"` — the current
+`showBeastMarkPicker`/`isRatWerebeast` helpers gate entirely on tradition id
+and will need a second path for a feat-granted **Werebeast** keyword.
+
+**Impact:** None on current builder behavior; keeps the reference text fighters
+see in the app consistent with the corrected canonical rules ahead of
+Advancement being built into the UI.
+
 ## 2026-07-13 12:06 EDT — Fixed dead "beastmen" checks in RetinueEditor.jsx
 
 **Change:** Five checks in `RetinueEditor.jsx` still compared

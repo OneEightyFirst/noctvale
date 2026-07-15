@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leveling and Advancement — Noctvale Rules</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/wiki/wiki.css?v=78e9c9a" />
+  <link rel="stylesheet" href="/wiki/wiki.css?v=cd093a3" />
 </head>
 <body class="wiki-body">
   <div class="wiki-backdrop" id="wiki-backdrop" hidden></div>
@@ -624,6 +624,12 @@
           <div class="wiki-nav-row" style="padding-left:3.9rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/combat/#blocking-hits" class="wiki-nav-link">Blocking Hits</a>
+          </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-combat-defensive-maneuvers">
+          <div class="wiki-nav-row" style="padding-left:3.9rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/combat/#defensive-maneuvers" class="wiki-nav-link">Defensive Maneuvers</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-combat-ties">
@@ -1390,12 +1396,6 @@
           <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
             <a href="/feats/#blacksmiths-arms" class="wiki-nav-link">Blacksmith's Arms</a>
-          </div>
-        </div>
-        <div class="wiki-nav-node" data-nav-id="nav-feats-dodge">
-          <div class="wiki-nav-row" style="padding-left:3.05rem">
-            <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/feats/#dodge" class="wiki-nav-link">Dodge</a>
           </div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-feats-guard">
@@ -2497,23 +2497,38 @@
           </div>
         </div></div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement-rolls">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-spending-xp-advancement">
           <div class="wiki-nav-row" style="padding-left:2.2rem">
+            <button type="button" class="wiki-nav-toggle" aria-expanded="false" aria-controls="nav-advancement-spending-xp-advancement-children" aria-label="Expand Spending XP — Advancement">
+            <svg class="wiki-nav-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+            <a href="/advancement/#spending-xp-advancement" class="wiki-nav-link">Spending XP — Advancement</a>
+          </div>
+          <div class="wiki-nav-children is-collapsed" id="nav-advancement-spending-xp-advancement-children">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#spending-xp-advancement-rolls" class="wiki-nav-link">Spending XP — Advancement Rolls</a>
+            <a href="/advancement/#feat" class="wiki-nav-link">Feat</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-feat-outside-archetype-or-domain">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#feat-advancement-table" class="wiki-nav-link">Feat Advancement Table</a>
+            <a href="/advancement/#feat-outside-archetype-or-domain" class="wiki-nav-link">Feat — Outside Archetype or Domain</a>
           </div>
         </div>
-        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement-table">
-          <div class="wiki-nav-row" style="padding-left:2.2rem">
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-attribute-advancement">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
             <span class="wiki-nav-spacer" aria-hidden="true"></span>
-            <a href="/advancement/#attribute-advancement-table" class="wiki-nav-link">Attribute Advancement Table</a>
+            <a href="/advancement/#attribute-advancement" class="wiki-nav-link">Attribute Advancement</a>
           </div>
+        </div>
+        <div class="wiki-nav-node" data-nav-id="nav-advancement-caster">
+          <div class="wiki-nav-row" style="padding-left:3.05rem">
+            <span class="wiki-nav-spacer" aria-hidden="true"></span>
+            <a href="/advancement/#caster" class="wiki-nav-link">Caster</a>
+          </div>
+        </div></div>
         </div></div>
         </div>
         <div class="wiki-nav-node" data-nav-id="nav-campaign-scenarios">
@@ -3004,62 +3019,64 @@
 </tr>
 </tbody></table>
 <p>Some <strong>Survival Roll</strong> or scenario results also grant <strong>+1 Experience</strong> to one named or selected surviving fighter. Apply those in this pass.</p>
-<h2 id="spending-xp-advancement-rolls">Spending XP — Advancement Rolls</h2>
-<p>Spend XP from a fighter&#39;s bank to roll on <strong>one</strong> advancement table. Pay the cost <strong>before</strong> rolling; deduct XP immediately. You may spend multiple times on the same fighter in one post-game if they can afford it.</p>
+<h2 id="spending-xp-advancement">Spending XP — Advancement</h2>
+<p>Spend XP from a fighter&#39;s bank to buy <strong>one</strong> advancement below. Pay the cost immediately; deduct it from the fighter&#39;s XP bank before applying the advancement. You may buy multiple advancements on the same fighter in one post-game if they can afford them.</p>
 <table>
 <thead>
 <tr>
 <th>Advancement</th>
 <th>XP cost</th>
-<th>Roll</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><strong>Feat</strong></td>
 <td><strong>3</strong></td>
-<td>2d6 on <a href="#feat-advancement-table">Feat Advancement Table</a></td>
 </tr>
 <tr>
-<td><strong>Attribute</strong></td>
+<td><strong>Wi</strong> or <strong>Sa</strong> +1</td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td><strong>Mt</strong> or <strong>Sk</strong> +1</td>
+<td><strong>7</strong></td>
+</tr>
+<tr>
+<td><strong>W</strong> +1</td>
 <td><strong>8</strong></td>
-<td>2d6 on Attribute Advancement Table</td>
+</tr>
+<tr>
+<td><strong>Caster</strong></td>
+<td><strong>9</strong></td>
+</tr>
+<tr>
+<td><strong>M</strong> +1</td>
+<td><strong>10</strong></td>
+</tr>
+<tr>
+<td><strong>Df</strong> +1</td>
+<td><strong>11</strong></td>
+</tr>
+<tr>
+<td><strong>CC</strong> or <strong>RC</strong> +1</td>
+<td><strong>12</strong></td>
+</tr>
+<tr>
+<td><strong>Feat</strong> <em>(outside Archetype or Domain)</em></td>
+<td><strong>15</strong></td>
 </tr>
 </tbody></table>
-<p>Fighters with the <strong>Vampire</strong> keyword must pay <strong>2 XP</strong> more than the normal advancement cost before they may buy that advancement — <strong>Feat</strong> <strong>5</strong>, <strong>Attribute</strong> <strong>10</strong>. This adds to the <strong>XP</strong> price only; it does not modify the <strong>2d6</strong> result.</p>
-<h2 id="feat-advancement-table">Feat Advancement Table</h2>
-<p>[Placeholder advancement table]</p>
-<h2 id="attribute-advancement-table">Attribute Advancement Table</h2>
-<p>Roll <strong>2d6</strong> after spending <strong>8 XP</strong> on Attribute Advancement. Each result raises one attribute by <strong>+1</strong>. Attributes cannot exceed <strong>6</strong>.</p>
-<p>When a result names a pair of attributes, select one of that pair that is not already <strong>6</strong>. On <strong>12</strong>, select any attribute that is not already <strong>6</strong>.</p>
-<p>If both attributes in the pair are already <strong>6</strong>, apply the next lowest row on this table instead. Repeat until you gain <strong>+1</strong> to an attribute below <strong>6</strong>, or until no lower row applies.</p>
-<table>
-<thead>
-<tr>
-<th>2d6</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2–4</td>
-<td>+1 to <strong>CC</strong> or <strong>RC</strong>.</td>
-</tr>
-<tr>
-<td>5–7</td>
-<td>+1 to <strong>Mt</strong> or <strong>Sk</strong>.</td>
-</tr>
-<tr>
-<td>8–10</td>
-<td>+1 to <strong>Wi</strong> or <strong>Sa</strong>.</td>
-</tr>
-<tr>
-<td>11</td>
-<td>+1 to <strong>M</strong> or <strong>W</strong>.</td>
-</tr>
-<tr>
-<td>12</td>
-<td>+1 to any attribute.</td>
-</tr>
-</tbody></table>
+<p>Fighters with the <strong>Vampire</strong> keyword must pay <strong>2 XP</strong> more than the listed cost for any advancement on this table. This adds to the <strong>XP</strong> price only; it does not change what the advancement grants.</p>
+<h3 id="feat">Feat</h3>
+<p>Select any feat this fighter qualifies for from the <a href="/feats/#feats">Feats</a> lists — <strong>Archetype</strong>, <strong>Domain</strong>, or <strong>Universal</strong> — under the same keyword and prerequisite rules as at recruitment.</p>
+<h3 id="feat-outside-archetype-or-domain">Feat — Outside Archetype or Domain</h3>
+<p>Select any feat other than <strong>Proficiency</strong> from an <strong>Archetype</strong> feat list or <strong>Domain</strong> feat list this fighter&#39;s own keywords do not grant. The fighter must still meet any other prerequisite the feat itself lists, such as requiring the <strong>Caster</strong> keyword.</p>
+<p>This does not grant the matching <strong>Archetype</strong> or <strong>Domain</strong> keyword — the fighter is borrowing training, not switching allegiance.</p>
+<h3 id="attribute-advancement">Attribute Advancement</h3>
+<p>Buying an attribute advancement raises the chosen attribute by <strong>+1</strong>, to a maximum of <strong>6</strong>.</p>
+<p>If this purchase would raise an attribute more than <strong>+1</strong> above that fighter&#39;s <a href="/attributes/#baseline-ancestry-profiles">ancestry baseline</a> for it — not the value after recruitment bonuses, feats, or prior advancement — select a different attribute on this fighter and reduce it by <strong>1</strong>, to a minimum of <strong>1</strong>, for each point beyond that first <strong>+1</strong>.</p>
+<h3 id="caster">Caster</h3>
+<p>A fighter may buy <strong>Caster</strong> only if they have <strong>Wi 4</strong> or higher, or <strong>Sa 4</strong> or higher — whichever attribute governs their <strong>Domain</strong>&#39;s casting roll. Buying <strong>Caster</strong> grants the <strong>Cast</strong> action and <strong>1 spell</strong> from the fighter&#39;s <strong>Domain</strong> list, chosen at purchase.</p>
+<p>The recruitment restrictions on <strong>Caster</strong> still apply: only <strong>1</strong> fighter in the retinue may have the <strong>Caster</strong> keyword, and no fighter may buy <strong>Caster</strong> if any fighter in the retinue has the <strong>Mortal</strong> keyword.</p>
 <hr>
 
         </div>
@@ -3077,7 +3094,7 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="/wiki/wiki-auth.js?v=78e9c9a"></script>
-  <script src="/wiki/wiki.js?v=78e9c9a" defer></script>
+  <script type="module" src="/wiki/wiki-auth.js?v=cd093a3"></script>
+  <script src="/wiki/wiki.js?v=cd093a3" defer></script>
 </body>
 </html>

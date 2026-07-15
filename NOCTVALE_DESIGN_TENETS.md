@@ -66,7 +66,7 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Players make meaningful choices before dice hit the table. Resolution is fast to explain and rich in outcome. Natural English over jargon. One roll forks into several consequences.
 
-**Mechanically:** Strike Pool = Mt + Sk + weapon (one roll phase). To-hit: d6 + CC/RC ≥ 8. Defense: Might blocks Might, Skill blocks Skill, 2:1 crossover. Casting: **casting roll** / **primer roll** with Mishap/Misfire forks. Binary line of sight; cover is +1 Skill defense die. Post-game: table roll → apply result → move on.
+**Mechanically:** Strike Pool = Mt + Sk + weapon (one roll phase). To-hit: d6 + CC/RC ≥ 8. Defense: Might blocks Might, Skill blocks Skill, and defensive maneuvers turn mismatched defense successes into movement. Casting: **casting roll** / **primer roll** with Mishap/Misfire forks. Binary line of sight; cover is +1 Skill defense die. Post-game: table roll → apply result → move on.
 
 **Protects:** Single-phase melee (attacker strikes, defender defends). Counterplay on your own activation. Table speed without sacrificing texture.
 

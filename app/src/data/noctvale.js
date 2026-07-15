@@ -335,7 +335,7 @@ export const TRADITIONS = [
     },
     rules: [
       "When recruiting a fighter with the Werebeast keyword, choose one beast-mark for that fighter: Wolf, Rat, Bear, or Serpent.",
-      "Each such fighter costs +10 Crowns and gains its chosen mark's rule.",
+      "Each such fighter costs +10 Crowns and gains its chosen mark's rule. A fighter cannot have more than 2 beast marks in total (see the Wild Aspect feat).",
     ],
   },
   {
@@ -390,7 +390,7 @@ export const TRADITIONS = [
       "At roster creation, each fighter with Leader, Elite, or Specialist gains the Vampire keyword and costs +20 Crowns. Fighters with Rank do not gain Vampire.",
       "Each fighter with Vampire chooses 1 vampire ability. The list is still TBD in the source rules.",
       "When a fighter with Vampire takes an enemy fighter Out of Action with Melee or Mercy Kill, restore 1 Wound to that fighter.",
-      "Fighters with Vampire pay 2 XP more than the normal cost to buy each post-game advancement (Feat 5, Attribute 10).",
+      "Fighters with Vampire pay 2 XP more than the normal cost to buy each post-game advancement (Feat 5, Wi/Sa 8, Mt/Sk 9, W 10, Caster 11, M 12, Df 13, CC/RC 14, outside-Archetype/Domain Feat 17).",
     ],
   },
   {
@@ -428,13 +428,6 @@ export const TRADITIONS = [
     domain: "Mortal",
     allowed: ["hunters"],
     rules: ["When a friendly fighter attacks an enemy Caster, add +1 CC or +1 RC — whichever Hit attribute the attack uses."],
-  },
-  {
-    id: "constables",
-    name: "Constables",
-    domain: "Mortal",
-    allowed: ["knights", "folk"],
-    rules: ["Enemy fighters cannot Retreat while within engagement range of a friendly fighter from this retinue."],
   },
   {
     id: "alchemists",
@@ -563,7 +556,7 @@ export const ARCHETYPES = {
     ],
     feats: [
       { id: "marked-quarry", name: "Marked Quarry", rules: ["At the start of the battle, choose 1 enemy fighter.", "When this fighter attacks the chosen fighter, add 1 Might die or 1 Skill die to this fighter's Strike Pool."] },
-      { id: "patient-shot", name: "Patient Shot", rules: ["When this fighter uses Aim, their next Ranged attack this activation may reroll 1 natural 1 in the Strike Pool."] },
+      { id: "patient-shot", name: "Patient Shot", rules: ["When this fighter uses Aim, their next Ranged Attack Action this activation may reroll 1 natural 1 in the Strike Pool."] },
       { id: "field-dressing", name: "Field Dressing", rules: ["When this fighter uses Help on a Downed friendly fighter, add +1 to the Help roll."] },
       { id: "pathfinder", name: "Pathfinder", rules: ["During Survival Rolls, if this fighter is a surviving fighter and your retinue rolls natural double 1, you may ignore the Mishap. Treat the result as 3 instead."] },
     ],
@@ -621,7 +614,7 @@ export const ARCHETYPES = {
     ],
     feats: [
       { id: "stubborn-lot", name: "Stubborn Lot", rules: [`When this fighter uses Help, a roll of 1 counts as 2 if another friendly fighter is within 1" of this fighter or the assisted fighter.`] },
-      { id: "shoulder-to-shoulder", name: "Shoulder to Shoulder", rules: [`While this fighter is within 1" of at least one other friendly fighter, add +1 Skill defense die when rolling defense against a Melee attack.`] },
+      { id: "shoulder-to-shoulder", name: "Shoulder to Shoulder", rules: [`While this fighter is within 1" of at least one other friendly fighter, add +1 Might defense die when rolling defense against a Melee attack.`] },
       { id: "rally-to-aid", name: "Rally to Aid", rules: [`Once per battle, when a friendly fighter within 6" becomes Downed, this fighter may move up to 6" toward that fighter. This move cannot enter engagement range.`] },
       { id: "skilled-craftsman", name: "Skilled Craftsman", rules: ["This fighter may upgrade one weapon they own. Apply +1 Mt or +1 Sk to that weapon, chosen when you select it.", "Only one weapon may have this upgrade at a time. This fighter may change which weapon is upgraded between battles. Record the chosen weapon and upgrade on this fighter's roster entry."] },
     ],
@@ -665,11 +658,11 @@ export const ARCHETYPES = {
         role: "Rank",
         cap: 7,
         cost: 40,
-        rules: ["Ancestry baseline only.", "Does not start with Caster. Mid-campaign Caster gain TBD (feat advancement)."],
+        rules: ["Ancestry baseline only.", "Does not start with Caster. May buy Caster mid-campaign through Advancement (requires Wi 4+ or Sa 4+, whichever attribute governs this retinue's Domain)."],
       },
     ],
     feats: [
-      { id: "blood-for-the-rite", name: "Blood for the Rite", rules: [`Once per battle, before this fighter makes an attribute check or casting roll, choose another friendly fighter within 12". That fighter suffers 1 Wound. Add +1 to the roll.`, "This Wound can reduce the chosen fighter to exactly 0 Wounds and cause them to become Downed."] },
+      { id: "blood-for-the-rite", name: "Blood for the Rite", rules: [`Once per battle, before this fighter makes an attribute check or casting roll, choose another friendly fighter within 12". That fighter suffers 1 Wound. Add 1d6 to that roll, then discard the lowest single die.`, "This Wound can reduce the chosen fighter to exactly 0 Wounds and cause them to become Downed."] },
       { id: "magic-armor", name: "Magic Armor", rules: ["This fighter may equip Light Armor, Medium Armor, or Heavy Armor."] },
       { id: "chant", name: "Chant", rules: [`When 2 or more other friendly Cult fighters have their bases within 1" of this fighter, this fighter projects Fear as a Sphere of Influence with range 6" — the chanted rite carries on the air, not through line of sight.`, "When an enemy fighter activates while within this Sphere of Influence, they must pass a Sa check for Fear with this fighter as the source."] },
       { id: "convoke", name: "Convoke", casterOnly: true, rules: [`Fighter must have Caster. When this fighter makes a casting roll and 1 or more other friendly Cult fighters with Caster are within 6", add +1 to the roll.`] },
@@ -680,7 +673,6 @@ export const ARCHETYPES = {
 export const UNIVERSAL_FEATS = [
   { id: "line-breaker", name: "Line Breaker", rules: ["When this fighter's Melee action immediately follows Charge during the same activation, add 1 Might die to this fighter's Strike Pool for that Melee attack."] },
   { id: "blacksmiths-arms", name: "Blacksmith's Arms", rules: ["This fighter may wield Two-Handed weapons in one hand.", "A Two-Handed weapon still uses 2 weapon slots."] },
-  { id: "dodge", name: "Dodge", rules: ["When this fighter is the target of a Ranged attack, roll 2d6. On 10+, that attack has no effect against this fighter.", "Cast actions are not Ranged attacks."] },
   { id: "guard", name: "Guard", rules: [`Once per round, when a hostile Ranged attack or Cast action selects a friendly Leader, Elite, or Caster fighter within 3" of this fighter as its target, this fighter may Intercept.`, "Intercept: Move this fighter base to base with the targeted fighter, placed between that fighter and the attacking enemy along the straight line from the attacker's base to the targeted fighter's base. This fighter becomes the target instead.", "If more than one friendly fighter with Guard could Intercept, their controlling player chooses one."] },
   { id: "animal-handling", name: "Animal Handling", rules: ["This fighter may field one Companion purchased from Gear - Companions. Record the Companion on this fighter's roster entry."] },
   { id: "infiltrate", name: "Infiltrate", rules: ["If this fighter would be set up during deployment, they may be held in reserve off the battlefield instead.", `Immediately before the start of the first round, their controlling player may set them up anywhere on the battlefield where no enemy fighter has line of sight to them and they are not within 12" of any enemy fighter.`, "If both players have fighters with Infiltrate, alternate placing one fighter at a time, starting with the winner of a roll-off."] },
@@ -707,7 +699,7 @@ export const DOMAIN_FEATS = [
   { id: "daemonic-wings", name: "Daemonic Wings", domains: ["Infernal"], rules: ["Once per battle, at the start of this fighter's activation, they may suffer 1 Wound to gain Fly until the end of that activation.", "Fly: Ignore vertical distance for Move, Charge, and Jump. This fighter keeps their normal M for those actions."] },
   { id: "devils-pact", name: "Devil's Pact", domains: ["Infernal"], rules: ["During this fighter's activation, they may spend both actions to regain 1 Wound, cannot exceed starting W.", "After the battle, if this fighter used Devil's Pact one or more times, roll 2d6 and subtract 1 for each time they used Devil's Pact this battle. Resolve the result on the Doom Table.", "If this fighter was not Out of Action when the battle ended and the modified roll is 2 or 12, roll 2d6 again, apply the same modifier, and resolve on the Doom Table. They must accept the second result."] },
   // Nature
-  { id: "wild-aspect", name: "Wild Aspect", domains: ["Nature"], rules: ["This fighter gains one beast mark — choose Wolf, Rat, Bear, or Serpent. If this fighter already has a beast mark, the chosen mark must be different.", "This fighter gains the chosen mark's rule. If this feat is taken at fighter creation, this fighter costs +10 Crowns."] },
+  { id: "wild-aspect", name: "Wild Aspect", domains: ["Nature"], rules: ["This fighter gains the Werebeast keyword and one beast mark — choose Wolf, Rat, Bear, or Serpent. If this fighter already has a beast mark, the chosen mark must be different. A fighter cannot have more than 2 beast marks in total.", "This fighter gains the chosen mark's rule. If this feat is taken at fighter creation, this fighter costs +10 Crowns."] },
   { id: "wind-walker", name: "Wind Walker", domains: ["Nature"], rules: ["This fighter has +1\" Movement, −1 Might, +1 Skill, and −1 Will."] },
   { id: "primal-ward", name: "Primal Ward", domains: ["Nature"], rules: ["If this fighter ended the battle Out of Action, roll their Casualty Table result twice and take the higher result."] },
   { id: "sure-footed", name: "Sure Footed", domains: ["Nature"], rules: ["When this fighter uses Scramble, they move at full M instead of half M."] },
@@ -730,8 +722,8 @@ export const DOMAIN_FEATS = [
     "When every fighter in the retinue has Mortal, your retinue may purchase firearms from Equipment.",
     "You may equip muskets, blunderbusses, pistols, long rifles, and bombs your retinue is allowed to buy.",
   ] },
-  { id: "gunslinger", name: "Gunslinger", domains: ["Mortal"], rules: ["If this fighter is equipped with 2 Pistols, in a Brace of Pistols or across 2 weapon slots, they may fire both as one Ranged action.", "Resolve each Pistol in order with its own Primer Roll and Attack Sequence. If they do, they cannot take another Ranged action during this activation."] },
-  { id: "deadeye", name: "Deadeye", domains: ["Mortal"], rules: ["When this fighter uses Aim, their next Ranged attack with a firearm this activation adds 1 die of that firearm's dominant die type to the Strike Pool.", "The dominant die type is whichever is higher on the firearm's profile: Mt or Sk. If tied, choose Might dice or Skill dice."] },
+  { id: "gunslinger", name: "Gunslinger", domains: ["Mortal"], rules: ["Fighter must have Mortal.", "If this fighter is equipped with 2 Pistols, in a Brace of Pistols or across 2 weapon slots, they may fire both as one Ranged action — each Pistol resolves as its own Ranged Attack Action, in order, with its own Primer Roll and Attack Sequence.", "If they do, they cannot take another Ranged action during this activation."] },
+  { id: "deadeye", name: "Deadeye", domains: ["Mortal"], rules: ["When this fighter uses Aim, their next Ranged Attack Action with a firearm this activation adds 1 die of that firearm's dominant die type to the Strike Pool.", "The dominant die type is whichever is higher on the firearm's profile: Mt or Sk. If tied, choose Might dice or Skill dice."] },
   { id: "null", name: "Null", domains: ["Mortal"], rules: [`Enemy Casters cannot perform the Cast action while within 6" of this fighter.`] },
   { id: "common-sense", name: "Common Sense", domains: ["Mortal"], rules: ["When this fighter is included as a scavenger in a Survival Roll, reroll all dice in the pool showing 1. Accept the new results."] },
 ];
@@ -769,7 +761,7 @@ export const SPELLS = {
     { id: "shadowmeld", name: "Shadowmeld", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `12"`, effect: `Target friendly fighter gains Hidden and does not need to remain within 1" of terrain to stay Hidden. Hidden is still lost from combat actions, Charge, Climb, Jump, or moving within 6" of an enemy`, mishap: "Enemies add +1 RC or +1 CC — whichever Hit attribute the attack uses — when attacking the target until the start of the caster's next activation" },
     { id: "venom", name: "Venom", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy must pass Mt check (d6 + Mt ≥ 8). Fail: gain 1 Affliction token", mishap: "The caster gains 1 Affliction token" },
     { id: "feral-form", name: "Feral Form", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `6"`, effect: `Target friendly fighter gains +2 Mt, +1" M, but cannot use ranged weapons or cast spells for the duration. Lasts until the start of the caster's next activation`, mishap: `The caster suffers -1 Sa until the end of their next activation` },
-    { id: "entangle", name: "Entangle", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy has M reduced to 0 and cannot Move, Charge, Climb, Scramble, Jump, or Retreat. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation", mishap: "The caster has M reduced to 0 until the start of their next activation and cannot Move, Charge, Climb, Scramble, Jump, or Retreat" },
+    { id: "entangle", name: "Entangle", castingStat: "Wi", hit: "-", difficulty: "12+", mt: "-", sk: "-", range: `12"`, effect: "Target enemy has M reduced to 0 and cannot Move, Charge, Climb, Scramble, Jump, Retreat, or use defensive maneuvers. Can still fight, shoot, and cast. Lasts until the start of the caster's next activation", mishap: "The caster has M reduced to 0 until the start of their next activation and cannot Move, Charge, Climb, Scramble, Jump, Retreat, or use defensive maneuvers" },
     { id: "stinging-swarm", name: "Stinging Swarm", castingStat: "Wi", hit: "-", difficulty: "10+", mt: "-", sk: "-", range: `3"`, effect: `Place a Stinging Swarm within 3" (W 5, Sk 5, M 7", Fly). Roll 1d3; remains for that many activations, counting this one. Activates immediately with 2 actions`, mishap: "The Stinging Swarm appears hostile; your opponent controls it for its activation, then remove it" },
     { id: "dread-chorus", name: "Dread Chorus", castingStat: "Wi", hit: "-", difficulty: "11+", mt: "-", sk: "-", range: `8" from caster`, effect: `All enemy fighters within 8" must pass Sa test for Fear with the caster as the source`, mishap: "" },
   ],
@@ -801,7 +793,7 @@ export const SPELLS = {
 export const WEAPON_KEYWORD_RULES = {
   'Blast(3")': `This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.`,
   'Blast(5")': `This attack uses a blast template of the printed size instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.`,
-  Cleave: "When this weapon's attack reduces a fighter to 0 Wounds, make one free Melee attack against a different fighter within engagement range.",
+  Cleave: "When this weapon's attack reduces a fighter to 0 Wounds, apply any defensive maneuver movement from that attack, then make one free Melee attack against a different fighter within engagement range.",
   Heavy: "This weapon cannot be used to make a Ranged attack if the fighter Moved or Charged this activation.",
   Impact: "When this weapon's attack would make an Active fighter Downed, that fighter becomes Stunned instead.",
   Parry: "When this fighter defends against a Melee attack, reroll one failed Skill die in the defense pool.",
