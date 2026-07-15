@@ -138,7 +138,10 @@ function getFighterStats(fighter, type, tradition) {
 function getTraditionCostModifier(fighter, type, tradition, caster) {
   if (!tradition || !type) return 0;
   if (tradition.id === "spellblades") return 5;
-  if (tradition.id === "sorcerers" && caster && fighter.sorcerersExtraSpell) return 10;
+  if (tradition.id === "sorcerers" && caster) {
+    const baseSpells = type.caster?.spells ?? 0;
+    if ((fighter.spells?.length ?? 0) > baseSpells) return 10;
+  }
   if (tradition.id === "damned" && !caster) return -10;
   if (tradition.id === "werebeasts") return 10;
   if (tradition.id === "wightlords") return 20;

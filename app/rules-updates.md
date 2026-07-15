@@ -6,6 +6,12 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-15 19:58 EDT — Sorcerers extra spell no longer requires a toggle
+
+**Change:** Simplified Sorcerers spell-slot enforcement in `RetinueEditor.jsx` and `retinue-sheet.js`. Instead of requiring a per-fighter checkbox to unlock the extra Sorcerers spell, Caster fighters in Sorcerers now always receive `base + 1` selectable spell capacity. The +10 Crowns cost now applies automatically when the fighter actually uses that extra slot (selected spell count exceeds the base caster spell count). Removed the temporary `sorcerersExtraSpell`-based gating/check/warning path and updated the Caster panel helper text to reflect the automatic behavior.
+
+**Impact:** Fixes the blocked flow where players could not add the additional Sorcerers spell even though the tradition rule allowed it. Costing remains correct and now follows actual spell selection rather than an extra UI toggle state.
+
 ## 2026-07-15 19:55 EDT — Sorcerers extra spell + Staff focus selection wired into builder
 
 **Change:** Updated builder enforcement and fighter state so Sorcerers tradition now supports the optional extra spell purchase on a per-fighter basis. In `RetinueEditor.jsx`, Caster fighters in Sorcerers now have a toggle for `Learn 1 extra spell (+10 Crowns)`, spell limit increases by 1 when enabled, and fighter cost includes +10 Crowns. Added per-fighter Staff focus selection (`Wi`/`Sa`) in the equipment picker when a Staff is equipped, persisted on the fighter record, and reset to default when Staff is removed. Spell UI now shows when Staff focus overrides +Sk scaling for qualifying attack spells.

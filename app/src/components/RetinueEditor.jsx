@@ -164,12 +164,8 @@ function getFighterKeywords(fighter, archetype, tradition, domain, type) {
 function getSpellLimit(fighter, type, domain, tradition) {
   if (!isCaster(fighter, type, domain)) return 0;
   const baseSpells = type.caster?.spells ?? 0;
-  if (tradition?.id === "sorcerers" && fighter.sorcerersExtraSpell) return baseSpells + 1;
+  if (tradition?.id === "sorcerers") return baseSpells + 1;
   return baseSpells;
-}
-
-function canTakeSorcerersExtraSpell(fighter, type, domain, tradition) {
-  return Boolean(tradition?.id === "sorcerers" && isCaster(fighter, type, domain));
 }
 
 function getStaffCastingAttribute(fighter) {
@@ -245,7 +241,10 @@ function getFighterStats(fighter, type, tradition) {
 function getTraditionCostModifier(fighter, type, tradition, caster) {
   if (!tradition || !type) return 0;
   if (tradition.id === "spellblades") return 5;
-  if (tradition.id === "sorcerers" && caster && fighter.sorcerersExtraSpell) return 10;
+  if (tradition.id === "sorcerers" && caster) {
+    const baseSpells = type.caster?.spells ?? 0;
+    if ((fighter.spells?.length ?? 0) > baseSpells) return 10;
+  }
   if (tradition.id === "damned" && !caster) return -10;
   if (tradition.id === "werebeasts") return 10;
   if (tradition.id === "wightlords") return 20;
@@ -439,7 +438,6 @@ function createFighter(archetype, typeId, domain, existingCount) {
     beastMark: "",
     feats: [],
     spells: [],
-    sorcerersExtraSpell: false,
     equipment: {},
     staffCastingAttribute: "Wi",
     skilledCraftsman: null,
@@ -1573,7 +1571,6 @@ const FighterCard = memo(function FighterCard({
   );
   const caster = isCaster(fighter, type, domain);
   const spellLimit = getSpellLimit(fighter, type, domain, tradition);
-  const canBuySorcerersExtraSpell = canTakeSorcerersExtraSpell(fighter, type, domain, tradition);
   const staffCastingAttribute = getStaffCastingAttribute(fighter);
   const staffEquipped = hasEquippedStaff(fighter);
   const staffFocusActive = caster && staffEquipped;
@@ -1627,20 +1624,8 @@ const FighterCard = memo(function FighterCard({
     updateFighter(fighter.id, (current) => ({
       ...current,
       caster: nextCaster,
-      sorcerersExtraSpell: nextCaster ? current.sorcerersExtraSpell : false,
       spells: nextCaster ? current.spells : [],
     }));
-  }
-
-  function updateSorcerersExtraSpell(nextEnabled) {
-    updateFighter(fighter.id, (current) => {
-      const nextFighter = { ...current, sorcerersExtraSpell: nextEnabled };
-      const nextLimit = getSpellLimit(nextFighter, type, domain, tradition);
-      if ((nextFighter.spells ?? []).length > nextLimit) {
-        nextFighter.spells = nextFighter.spells.slice(0, nextLimit);
-      }
-      return nextFighter;
-    });
   }
 
   function updateStaffCastingAttribute(nextAttribute) {
@@ -1961,16 +1946,8 @@ const FighterCard = memo(function FighterCard({
                 {casterToggleDisabled ? <span className="text-xs text-accent-200">Caster cap reached.</span> : null}
               </label>
             )}
-            {canBuySorcerersExtraSpell ? (
-              <label className="mt-2 flex items-center gap-2 text-sm text-cream-200">
-                <input
-                  type="checkbox"
-                  checked={Boolean(fighter.sorcerersExtraSpell)}
-                  onChange={(event) => updateSorcerersExtraSpell(event.target.checked)}
-                  className="h-4 w-4 rounded border-night-700 bg-night-950"
-                />
-                Learn 1 extra spell (+10 Crowns)
-              </label>
+            {tradition?.id === "sorcerers" && caster ? (
+              <div className="mt-2 text-xs text-cream-400">Sorcerers: this fighter may choose one additional spell. If they do, this fighter costs +10 Crowns.</div>
             ) : null}
           </Panel>
         ) : null}
@@ -2503,9 +2480,6 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
   if (tradition?.id === "werebeasts" && !fighter.beastMark) warnings.push(`${type.name} needs a beast-mark.`);
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);
   if (!caster && fighter.spells.length) warnings.push("Non-Caster has spells selected.");
-  if (fighter.sorcerersExtraSpell && !canTakeSorcerersExtraSpell(fighter, type, domain, tradition)) {
-    warnings.push("Extra Sorcerers spell requires Sorcerers tradition and Caster.");
-  }
   if (hasEquippedStaff(fighter) && !["Wi", "Sa"].includes(fighter.staffCastingAttribute ?? "Wi")) {
     warnings.push("Staff focus must choose Will (Wi) or Sanity (Sa).");
   }
