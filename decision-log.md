@@ -23,6 +23,12 @@ read in full just to check for open threads.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-15 — Staff made a neutral weapon exception like Dagger
+
+**Decision:** Updated weapon access and typing so **Staff** now follows the same exception pattern as **Dagger**. In `rules/weapons.md`, Staff is no longer listed under **Two-Handed** proficiency, its table **Type** is now **—** (neutral), and the opening weapon-access text now states both **Dagger** and **Staff** can be equipped without a matching proficiency and do not participate in weapon triangle advantage/disadvantage. Added explicit Staff access wording in the Staff subsection. Synced downstream references by updating `rules/feats.md` (proficiency exception now includes Staff) and `rules/archetypes.md` (archetype summaries that called out Dagger access now call out Dagger or Staff).
+
+**Reasoning:** Staff's prior **Spear** typing and two-handed proficiency gate conflicted with intended table behavior. Making Staff neutral and universally equipable aligns it with its role as a baseline casting/focus weapon and removes avoidable list-building friction, while preserving its existing **Spell focus** behavior and profile stats.
+
 ## 2026-07-14 — Defensive maneuvers replace cross-blocking
 
 **Decision:** Replaced the old 2:1 cross-color blocking rule with **Defensive Maneuvers**. An **Active** fighter may spend **2 Skill defense successes** to **Dodge** and block **1 Might hit**, then move up to **2"** directly away from the attacker after all Wounds from the attack are applied if they remain **Active**. This movement may leave engagement range and may end within engagement range of another enemy fighter. An **Active** fighter defending against a **Melee** attack while within engagement range may spend **2 Might defense successes** to **Shove** and block **1 Skill hit**, then push the attacker up to **2"** directly away after all Wounds from the attack are applied if the defender remains **Active**. Shove movement stops at terrain or another fighter, friendly or enemy. If it would push the attacker over a ledge or into open air, the attacker makes a **Skill** check to stop before the edge; on a fail they fall and resolve **Falling**. Maneuver movement is not an action, reaction, **Move**, **Retreat**, or **Charge**, and does not trigger **Overwatch**, **Ranged Reaction**, **Companion** co-movement, or failed-**Retreat** punishment.

@@ -14,7 +14,7 @@ When you recruit each fighter, assign feats from the lists their keywords allow.
 
 Campaign advancement lets a fighter buy an additional feat with XP (see [Spending XP — Advancement](advancement.md#spending-xp-advancement)).
 
-Each **Proficiency** pick must select a **different** weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger**.
+Each **Proficiency** pick must select a **different** weapon proficiency. A fighter cannot equip a weapon unless they have the matching proficiency, except any fighter may equip a **Dagger** or **Staff**.
 
 ### Built-in proficiencies and feats (Specialist)
 

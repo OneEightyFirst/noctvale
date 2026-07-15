@@ -6,7 +6,7 @@
 
 *Armored champions and sworn companies — the heirs of Valecoria's martial orders. When the Kingdom fell, the knightly houses did not vanish. Some guard ruined roads and broken shrines. Some serve vampire courts for coin or conviction. Some hunt monsters under old banners. All of them fight as a disciplined fist: few in number, heavy in steel, dangerous in a charge.*
 
-**Max retinue:** up to **10** fighters. **Armor and shields:** Light, Medium, and Heavy armor; Buckler, Shield, and Tower Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+**Max retinue:** up to **10** fighters. **Armor and shields:** Light, Medium, and Heavy armor; Buckler, Shield, and Tower Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** or **Staff** regardless of their selected feats.
 
 ---
 
@@ -89,7 +89,7 @@ Named factions are optional presets — example **Archetype** + **Domain** pairi
 
 **Max retinue:** up to **12** fighters. **Armor and shields:** Light and Medium armor; Buckler and Shield ([Armor and Shields](gear.md)).
 
-Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+Any fighter in this retinue may equip a **Dagger** or **Staff** regardless of their selected feats.
 
 ---
 
@@ -184,7 +184,7 @@ The **Inquisition** and **Silver Hunt** share Hunters + **Mortal** — different
 
 *Townsfolk, guild militia, and village watches — ordinary people who picked up tools and torches when the empire stopped protecting them. Folk retinues are not professional soldiers. They are neighbors, craftsmen, and constables who learned to fight because no one else would come. In numbers they hold streets, barricade bridges, and drag horrors into the light.*
 
-**Max retinue:** up to **15** fighters. **Armor and shields:** Light armor; Buckler, Shield, and Tower Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats.
+**Max retinue:** up to **15** fighters. **Armor and shields:** Light armor; Buckler, Shield, and Tower Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** or **Staff** regardless of their selected feats.
 
 ---
 
@@ -273,7 +273,7 @@ Folk + **Mortal** supports **Alchemists** — village alchemists brewing defense
 
 *Secret brotherhoods, covens, and rite-circles — those who turned to forbidden power when the old world burned. Cult retinues do not march in plate. They gather in ruins, chant in blood, and loose magic that the empire once outlawed. A Cult on the battlefield is a glass cannon: many casters, no armor, and bodies that break fast when steel finds them.*
 
-**Max retinue:** up to **10** fighters. **Armor and shields:** Buckler and Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** regardless of their selected feats. Cult retinues cannot have a **Mortal** domain tradition.
+**Max retinue:** up to **10** fighters. **Armor and shields:** Buckler and Shield ([Armor and Shields](gear.md)). Any fighter in this retinue may equip a **Dagger** or **Staff** regardless of their selected feats. Cult retinues cannot have a **Mortal** domain tradition.
 
 ---
 

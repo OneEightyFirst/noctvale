@@ -1,11 +1,11 @@
 # Weapons
 
-Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** is the only exception: any fighter may equip a **Dagger** without a proficiency feat, and it has no weapon type — it never grants or suffers weapon triangle advantage. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
+Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** and **Staff** are exceptions: any fighter may equip either without a proficiency feat, and both have no weapon type — they never grant or suffer weapon triangle advantage. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
 
 | Proficiency | Weapons |
 |---|---|
 | **One-Handed** | Sword, Rapier, Hand Axe, Battle Axe, Mace, Flail, Spear, Javelin |
-| **Two-Handed** | Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer, Staff |
+| **Two-Handed** | Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer |
 | **Archery** | Shortbow, Longbow, Crossbow, Heavy Crossbow |
 | **Thrown** | Sling, Throwing Stars |
 
@@ -87,11 +87,13 @@ Every **Spear**-type weapon also has the **Reach** keyword.
 | <span id="war-axe"></span><img src="/images/weapon-icon-axe.svg" alt="" class="weapon-icon" />War Axe | 45 | 2H | +3 | — | Axe | Cleave |
 | <span id="maul"></span>Maul | 35 | 2H | +3 | — | Hammer | — |
 | <span id="greathammer"></span>Greathammer | 45 | 2H | +3 | — | Hammer | Impact |
-| <span id="staff"></span><img src="/images/weapon-icon-spear.svg" alt="" class="weapon-icon" />Staff | 20 | 2H | +1 | +1 | Spear | Reach, Spell focus |
+| <span id="staff"></span>Staff | 20 | 2H | +1 | +1 | — | Reach, Spell focus |
 
 ### Staff — Spell focus
 
 A fighter wielding a **Staff** has **Spell focus**.
+
+Any fighter may equip a **Staff** without a proficiency feat.
 
 When a fighter purchases a **Staff**, select **Will** or **Sanity** for that staff.
 

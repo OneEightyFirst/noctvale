@@ -6,6 +6,12 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-15 19:46 EDT — Staff now uses neutral, always-allowed access in builder data
+
+**Change:** Updated the `staff` equipment entry in `app/src/data/noctvale.js` to match the canonical rules change. Added `alwaysAllowed: true` so Staff bypasses proficiency gating like Dagger, and updated its first rules line from `Spear` to `Neutral` while adding explicit text that any fighter may equip a Staff.
+
+**Impact:** Builder eligibility now allows Staff for fighters without **Two-Handed** proficiency, and staff profile text no longer implies weapon-triangle participation. This is a game-data/enforcement sync; no `RetinueEditor.jsx` logic changes were needed because existing `alwaysAllowed` handling already applies.
+
 ## 2026-07-14 20:32 EDT — Defensive maneuvers and Mortal tradition cleanup
 
 **Change:** Synced builder reference data with the defensive maneuver rules update.
