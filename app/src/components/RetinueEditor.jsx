@@ -161,9 +161,36 @@ function getFighterKeywords(fighter, archetype, tradition, domain, type) {
   return resolveFighterKeywords(fighter, archetype, tradition, domain, type);
 }
 
-function getSpellLimit(fighter, type, domain) {
+function getSpellLimit(fighter, type, domain, tradition) {
   if (!isCaster(fighter, type, domain)) return 0;
-  return type.caster?.spells ?? 0;
+  const baseSpells = type.caster?.spells ?? 0;
+  if (tradition?.id === "sorcerers" && fighter.sorcerersExtraSpell) return baseSpells + 1;
+  return baseSpells;
+}
+
+function canTakeSorcerersExtraSpell(fighter, type, domain, tradition) {
+  return Boolean(tradition?.id === "sorcerers" && isCaster(fighter, type, domain));
+}
+
+function getStaffCastingAttribute(fighter) {
+  return fighter.staffCastingAttribute === "Sa" ? "Sa" : "Wi";
+}
+
+function hasEquippedStaff(fighter) {
+  return (fighter.equipment?.staff ?? 0) > 0;
+}
+
+function isScalingSpellAttack(spell) {
+  if (!spell) return false;
+  if (typeof spell.sk !== "string" || !spell.sk.startsWith("+")) return false;
+  if (spell.keywords?.includes("Attack")) return true;
+  return spell.hit === "CC" || spell.hit === "RC";
+}
+
+function getSpellScalingStatOverride(spell, fighter) {
+  if (!hasEquippedStaff(fighter)) return null;
+  if (!isScalingSpellAttack(spell)) return null;
+  return getStaffCastingAttribute(fighter);
 }
 
 function getBuiltInProficiencies(fighter, type) {
@@ -218,6 +245,7 @@ function getFighterStats(fighter, type, tradition) {
 function getTraditionCostModifier(fighter, type, tradition, caster) {
   if (!tradition || !type) return 0;
   if (tradition.id === "spellblades") return 5;
+  if (tradition.id === "sorcerers" && caster && fighter.sorcerersExtraSpell) return 10;
   if (tradition.id === "damned" && !caster) return -10;
   if (tradition.id === "werebeasts") return 10;
   if (tradition.id === "wightlords") return 20;
@@ -384,7 +412,11 @@ function setEquipmentQuantity(fighter, itemId, nextQuantity) {
     skilledCraftsman = null;
   }
 
-  return { ...fighter, equipment, skilledCraftsman };
+  const nextFighter = { ...fighter, equipment, skilledCraftsman };
+  if (itemId === "staff" && nextQuantity <= 0) {
+    nextFighter.staffCastingAttribute = "Wi";
+  }
+  return nextFighter;
 }
 
 function setSkilledCraftsmanUpgrade(fighter, weaponId, boost) {
@@ -407,7 +439,9 @@ function createFighter(archetype, typeId, domain, existingCount) {
     beastMark: "",
     feats: [],
     spells: [],
+    sorcerersExtraSpell: false,
     equipment: {},
+    staffCastingAttribute: "Wi",
     skilledCraftsman: null,
     notes: "",
   };
@@ -1399,15 +1433,17 @@ function SummaryRow({ label, children }) {
   );
 }
 
-function SpellRuleLink({ spell }) {
+function SpellRuleLink({ spell, scalingStatOverride = null }) {
   if (!spell) return null;
   const subtitle = [spell.difficulty, spell.range].filter(Boolean).join(" / ");
+  const scalingInfo = scalingStatOverride ? `+Sk scales from ${scalingStatOverride} (Staff focus)` : null;
   const meta = (
     <div className="grid gap-1 text-xs text-cream-400 sm:grid-cols-3">
       <span>Cast {spell.castingStat}</span>
       <span>Hit {spell.hit}</span>
       <span>Mt {spell.mt}</span>
       <span>Sk {spell.sk}</span>
+      {scalingInfo ? <span>{scalingInfo}</span> : null}
       {spell.keywords?.length ? <span>Keywords {spell.keywords.join(", ")}</span> : null}
     </div>
   );
@@ -1430,6 +1466,7 @@ function FighterCardSummary({
     ? fighter.spells.map((spellId) => domainSpells.find((entry) => entry.id === spellId) ?? { id: spellId, name: spellId })
     : [];
   const otherGear = selectedEquipment.filter(({ item }) => item.kind !== "weapon" && item.kind !== "companion");
+  const staffFocusActive = caster && hasEquippedStaff(fighter);
 
   return (
     <div className="space-y-3">
@@ -1452,7 +1489,7 @@ function FighterCardSummary({
             {spells.length
               ? spells.map((spell, index) => (
                   <React.Fragment key={spell.id}>
-                    <SpellRuleLink spell={spell} />
+                    <SpellRuleLink spell={spell} scalingStatOverride={staffFocusActive ? getSpellScalingStatOverride(spell, fighter) : null} />
                     {index < spells.length - 1 ? ", " : ""}
                   </React.Fragment>
                 ))
@@ -1535,7 +1572,12 @@ const FighterCard = memo(function FighterCard({
     [fighter, archetype, tradition, domain, type],
   );
   const caster = isCaster(fighter, type, domain);
-  const spellLimit = getSpellLimit(fighter, type, domain);
+  const spellLimit = getSpellLimit(fighter, type, domain, tradition);
+  const canBuySorcerersExtraSpell = canTakeSorcerersExtraSpell(fighter, type, domain, tradition);
+  const staffCastingAttribute = getStaffCastingAttribute(fighter);
+  const staffEquipped = hasEquippedStaff(fighter);
+  const staffFocusActive = caster && staffEquipped;
+  const baseSpellChoices = type?.caster?.spells ?? 0;
   const stats = getFighterStats(fighter, type, tradition);
   const domainSpells = SPELLS[domain] ?? [];
   const domainFeats = getSelectableDomainFeats(domain);
@@ -1585,8 +1627,24 @@ const FighterCard = memo(function FighterCard({
     updateFighter(fighter.id, (current) => ({
       ...current,
       caster: nextCaster,
+      sorcerersExtraSpell: nextCaster ? current.sorcerersExtraSpell : false,
       spells: nextCaster ? current.spells : [],
     }));
+  }
+
+  function updateSorcerersExtraSpell(nextEnabled) {
+    updateFighter(fighter.id, (current) => {
+      const nextFighter = { ...current, sorcerersExtraSpell: nextEnabled };
+      const nextLimit = getSpellLimit(nextFighter, type, domain, tradition);
+      if ((nextFighter.spells ?? []).length > nextLimit) {
+        nextFighter.spells = nextFighter.spells.slice(0, nextLimit);
+      }
+      return nextFighter;
+    });
+  }
+
+  function updateStaffCastingAttribute(nextAttribute) {
+    updateFighter(fighter.id, (current) => ({ ...current, staffCastingAttribute: nextAttribute === "Sa" ? "Sa" : "Wi" }));
   }
 
   function updateEquipment(item, nextQuantity) {
@@ -1886,7 +1944,7 @@ const FighterCard = memo(function FighterCard({
         {showCasterOptions ? (
           <Panel title="Caster">
             <div className="rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
-              {type.caster.when} {type.caster.spells ? `Spell choices: ${type.caster.spells}.` : ""}
+              {type.caster.when} {baseSpellChoices ? `Spell choices: ${caster ? spellLimit : baseSpellChoices}.` : ""}
             </div>
             {type.caster.mode === "required" ? (
               <div className="mt-2"><Pill tone="cyan">Required Caster</Pill></div>
@@ -1903,6 +1961,17 @@ const FighterCard = memo(function FighterCard({
                 {casterToggleDisabled ? <span className="text-xs text-accent-200">Caster cap reached.</span> : null}
               </label>
             )}
+            {canBuySorcerersExtraSpell ? (
+              <label className="mt-2 flex items-center gap-2 text-sm text-cream-200">
+                <input
+                  type="checkbox"
+                  checked={Boolean(fighter.sorcerersExtraSpell)}
+                  onChange={(event) => updateSorcerersExtraSpell(event.target.checked)}
+                  className="h-4 w-4 rounded border-night-700 bg-night-950"
+                />
+                Learn 1 extra spell (+10 Crowns)
+              </label>
+            ) : null}
           </Panel>
         ) : null}
 
@@ -1964,6 +2033,9 @@ const FighterCard = memo(function FighterCard({
                         <span>Hit {spell.hit}</span>
                         <span>Mt {spell.mt}</span>
                         <span>Sk {spell.sk}</span>
+                        {staffFocusActive && getSpellScalingStatOverride(spell, fighter) ? (
+                          <span>+Sk scales from {staffCastingAttribute} (Staff focus)</span>
+                        ) : null}
                         {spell.keywords?.length ? <span>Keywords {spell.keywords.join(", ")}</span> : null}
                         {spell.mishap ? <span>Mishap {spell.mishap}</span> : null}
                       </div>
@@ -2005,6 +2077,7 @@ const FighterCard = memo(function FighterCard({
           slots={slots}
           slotLimit={slotLimit}
           onUpdateQuantity={updateEquipment}
+          onUpdateStaffCastingAttribute={updateStaffCastingAttribute}
           onSkilledCraftsmanUpgrade={updateSkilledCraftsman}
         />
             </div>
@@ -2132,7 +2205,19 @@ function RuleBlock({ title, rules }) {
   );
 }
 
-function EquipmentField({ fighter, archetype, type, tradition, domain, equipmentGroups, slots, slotLimit, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+function EquipmentField({
+  fighter,
+  archetype,
+  type,
+  tradition,
+  domain,
+  equipmentGroups,
+  slots,
+  slotLimit,
+  onUpdateQuantity,
+  onUpdateStaffCastingAttribute,
+  onSkilledCraftsmanUpgrade,
+}) {
   const selectedEquipment = getSelectedEquipment(fighter);
 
   return (
@@ -2171,6 +2256,7 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
           domain={domain}
           equipmentGroups={equipmentGroups}
           onUpdateQuantity={onUpdateQuantity}
+          onUpdateStaffCastingAttribute={onUpdateStaffCastingAttribute}
           onSkilledCraftsmanUpgrade={onSkilledCraftsmanUpgrade}
         />
       )}
@@ -2178,12 +2264,23 @@ function EquipmentField({ fighter, archetype, type, tradition, domain, equipment
   );
 }
 
-function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, equipmentGroups, onUpdateQuantity, onSkilledCraftsmanUpgrade }) {
+function EquipmentPickerContent({
+  fighter,
+  archetype,
+  type,
+  tradition,
+  domain,
+  equipmentGroups,
+  onUpdateQuantity,
+  onUpdateStaffCastingAttribute,
+  onSkilledCraftsmanUpgrade,
+}) {
   const ratExtraWeapon = isRatWerebeast(tradition, fighter.beastMark);
+  const staffCastingAttribute = getStaffCastingAttribute(fighter);
   return (
     <>
       <div className="mb-2 rounded border border-night-800 bg-night-950 p-2 text-xs text-cream-400">
-        Each fighter has 3 kit — 2 hands and a belt. Any fighter may equip a Dagger. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Werebeasts may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
+        Each fighter has 3 kit — 2 hands and a belt. Any fighter may equip a Dagger or Staff. Other weapons require matching proficiency. {ratExtraWeapon ? "Rat Werebeasts may carry 1 additional one-handed weapon." : ""} Two one-handed melee weapons can dual-wield, max 15 Strike Pool dice, but cannot use a shield while dual-wielding.
       </div>
       <div className="space-y-3">
         {Object.entries(equipmentGroups).map(([group, items]) => {
@@ -2225,6 +2322,28 @@ function EquipmentPickerContent({ fighter, archetype, type, tradition, domain, e
                       rules={item.kind === "weapon" ? formatWeaponRules(item, fighter.skilledCraftsman) : item.rules}
                       compact
                     />
+                    {item.id === "staff" && quantity > 0 ? (
+                      <div className="mt-2 rounded border border-night-700 bg-night-900 p-2">
+                        <div className="text-[10px] font-semibold uppercase tracking-wider text-cream-500">Staff focus attribute</div>
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          {["Wi", "Sa"].map((attribute) => (
+                            <button
+                              key={attribute}
+                              type="button"
+                              onClick={() => onUpdateStaffCastingAttribute(attribute)}
+                              className={cx(
+                                "rounded border px-2 py-1 text-xs uppercase",
+                                staffCastingAttribute === attribute
+                                  ? "border-accent-400 bg-accent-500/10 text-accent-100"
+                                  : "border-night-700 bg-night-950 text-cream-300 hover:border-cream-500",
+                              )}
+                            >
+                              {attribute}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
                     <SkilledCraftsmanControls fighter={fighter} item={item} onUpgrade={onSkilledCraftsmanUpgrade} />
                     {reason && quantity ? <div className="mt-1 text-accent-200">{reason}</div> : null}
                   </div>
@@ -2384,6 +2503,12 @@ function getFighterWarnings(fighter, type, archetype, tradition, domain, spellLi
   if (tradition?.id === "werebeasts" && !fighter.beastMark) warnings.push(`${type.name} needs a beast-mark.`);
   if (caster && fighter.spells.length !== spellLimit) warnings.push(`Choose ${spellLimit} spell${spellLimit === 1 ? "" : "s"}.`);
   if (!caster && fighter.spells.length) warnings.push("Non-Caster has spells selected.");
+  if (fighter.sorcerersExtraSpell && !canTakeSorcerersExtraSpell(fighter, type, domain, tradition)) {
+    warnings.push("Extra Sorcerers spell requires Sorcerers tradition and Caster.");
+  }
+  if (hasEquippedStaff(fighter) && !["Wi", "Sa"].includes(fighter.staffCastingAttribute ?? "Wi")) {
+    warnings.push("Staff focus must choose Will (Wi) or Sanity (Sa).");
+  }
   if (fighter.feats.length > getFeatLimit(fighter, type)) warnings.push(`Too many feats selected. Limit is ${getFeatLimit(fighter, type)}.`);
   if (slots > slotLimit) warnings.push(`Kit exceeds ${slotLimit} by ${slots - slotLimit}.`);
   if (isRatWerebeast(tradition, fighter.beastMark) && slots > 3 && getRatExtraWeaponCount(fighter) === 0) {

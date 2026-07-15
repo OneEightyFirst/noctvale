@@ -20,6 +20,8 @@ const BASELINE_PHRASES = [
   /^short range$/i,
   /^normal rc to hit$/i,
   /^any fighter may equip a dagger$/i,
+  /^any fighter may equip a staff$/i,
+  /^neutral$/i,
 ];
 
 const WEAPON_TYPE_LABELS = new Set(["sword", "axe", "hammer", "spear"]);
@@ -51,6 +53,8 @@ export function normalizeFighter(fighter) {
     ancestryId,
     feats: [...new Set(feats)],
     skilledCraftsman,
+    sorcerersExtraSpell: Boolean(fighter.sorcerersExtraSpell),
+    staffCastingAttribute: fighter.staffCastingAttribute === "Sa" ? "Sa" : "Wi",
   };
 }
 

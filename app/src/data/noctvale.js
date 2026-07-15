@@ -34,7 +34,7 @@ export const ANCESTRIES = [
 
 export const PROFICIENCIES = [
   { id: "one-handed", name: "One-Handed", weapons: "Sword, Rapier, Hand Axe, Battle Axe, Mace, Flail, Spear, Javelin" },
-  { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer, Staff" },
+  { id: "two-handed", name: "Two-Handed", weapons: "Halberd, Glaive, Great Sword, War Axe, Maul, Greathammer" },
   { id: "archery", name: "Archery", weapons: "Shortbow, Longbow, Crossbow, Heavy Crossbow" },
   { id: "thrown", name: "Thrown", weapons: "Sling, Throwing Stars" },
 ];

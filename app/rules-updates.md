@@ -6,6 +6,14 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-15 19:55 EDT — Sorcerers extra spell + Staff focus selection wired into builder
+
+**Change:** Updated builder enforcement and fighter state so Sorcerers tradition now supports the optional extra spell purchase on a per-fighter basis. In `RetinueEditor.jsx`, Caster fighters in Sorcerers now have a toggle for `Learn 1 extra spell (+10 Crowns)`, spell limit increases by 1 when enabled, and fighter cost includes +10 Crowns. Added per-fighter Staff focus selection (`Wi`/`Sa`) in the equipment picker when a Staff is equipped, persisted on the fighter record, and reset to default when Staff is removed. Spell UI now shows when Staff focus overrides +Sk scaling for qualifying attack spells.
+
+Also synced adjacent builder data/parsing to match current rules wording: removed Staff from the Two-Handed proficiency list in `noctvale.js`, updated equipment helper copy to reflect that Staff is always allowed like Dagger, and taught weapon-profile parsing to treat `Neutral` / `Any fighter may equip a Staff` as baseline text instead of special-rule noise.
+
+**Impact:** Builder now enforces Sorcerers extra-spell costs and limits correctly, exposes Staff Wi/Sa choice at selection time, and surfaces Staff scaling behavior consistently in editor/export spell metadata without requiring manual notes.
+
 ## 2026-07-15 19:46 EDT — Staff now uses neutral, always-allowed access in builder data
 
 **Change:** Updated the `staff` equipment entry in `app/src/data/noctvale.js` to match the canonical rules change. Added `alwaysAllowed: true` so Staff bypasses proficiency gating like Dagger, and updated its first rules line from `Spear` to `Neutral` while adding explicit text that any fighter may equip a Staff.

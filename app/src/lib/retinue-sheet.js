@@ -48,6 +48,27 @@ function isCaster(fighter, type, domain) {
   return fighterHasCaster(fighter, type, domain);
 }
 
+function hasEquippedStaff(fighter) {
+  return (fighter.equipment?.staff ?? 0) > 0;
+}
+
+function getStaffCastingAttribute(fighter) {
+  return fighter.staffCastingAttribute === "Sa" ? "Sa" : "Wi";
+}
+
+function isScalingSpellAttack(spell) {
+  if (!spell) return false;
+  if (typeof spell.sk !== "string" || !spell.sk.startsWith("+")) return false;
+  if (spell.keywords?.includes("Attack")) return true;
+  return spell.hit === "CC" || spell.hit === "RC";
+}
+
+function getSpellScalingStatOverride(spell, fighter) {
+  if (!hasEquippedStaff(fighter)) return null;
+  if (!isScalingSpellAttack(spell)) return null;
+  return getStaffCastingAttribute(fighter);
+}
+
 function getFighterKeywords(fighter, archetype, tradition, domain, type) {
   return resolveFighterKeywords(fighter, archetype, tradition, domain, type);
 }
@@ -117,6 +138,7 @@ function getFighterStats(fighter, type, tradition) {
 function getTraditionCostModifier(fighter, type, tradition, caster) {
   if (!tradition || !type) return 0;
   if (tradition.id === "spellblades") return 5;
+  if (tradition.id === "sorcerers" && caster && fighter.sorcerersExtraSpell) return 10;
   if (tradition.id === "damned" && !caster) return -10;
   if (tradition.id === "werebeasts") return 10;
   if (tradition.id === "wightlords") return 20;
@@ -208,6 +230,7 @@ function buildFighterSheet(fighter, archetype, tradition, domain) {
     ? (fighter.spells ?? []).map((spellId) => {
         const spell = domainSpells.find((entry) => entry.id === spellId);
         if (!spell) return { id: spellId, name: spellId, keywords: [], effect: "", mishap: "" };
+        const scalingStat = getSpellScalingStatOverride(spell, fighter);
         return {
           id: spell.id,
           name: spell.name,
@@ -217,6 +240,7 @@ function buildFighterSheet(fighter, archetype, tradition, domain) {
           hit: spell.hit,
           mt: spell.mt,
           sk: spell.sk,
+          scalingStat,
           keywords: spell.keywords ?? [],
           effect: spell.effect,
           mishap: spell.mishap,
