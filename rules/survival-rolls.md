@@ -1,6 +1,6 @@
 # Survival Rolls
 
-Part of the [Post-Game Sequence](#post-game-sequence) (Step 5). After scenario rewards, retinues make Survival Rolls to see what they salvage after the battle.
+Part of the [Post-Game Sequence](post-game-sequence.md#step-6-survival-rolls) (Step 6). After scenario rewards, retinues make Survival Rolls to see what they salvage after the battle.
 
 ## Reward Roll Rule
 
@@ -79,7 +79,7 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Collapse** — select 1 surviving fighter; that fighter rolls on the [Doom Table](#step-4-doom-table). |
+| 2 | **Mishap: Collapse** — select 1 surviving fighter; that fighter rolls on the [Doom Table](post-game-sequence.md#step-5-doom-table). |
 | 3–4 | **Picked Clean** — gain **10 Crowns**. |
 | 5–6 | **Broken Goods** — gain 1 legal **One-Handed** melee weapon. |
 | 7–8 | **Buried Relic** — recover **1 Relic**. |
@@ -127,7 +127,7 @@ Use the battlefield location's table when the retinue won the scenario.
 
 | 2d6 | Result |
 |---|---|
-| 2 | **Mishap: Roadside Ambush** — select 1 surviving fighter; that fighter rolls on the [Doom Table](#step-4-doom-table). |
+| 2 | **Mishap: Roadside Ambush** — select 1 surviving fighter; that fighter rolls on the [Doom Table](post-game-sequence.md#step-5-doom-table). |
 | 3–4 | **Empty Milestone** — gain **10 Crowns**. |
 | 5–6 | **Lost Pack** — gain **15 Crowns**. |
 | 7–8 | **Toll Relic** — recover **1 Relic**. |

@@ -6,7 +6,7 @@ XP is a **bank per fighter** — earned from specific deeds, **spent** to buy ad
 
 Track **Experience** on the fighter card as a running total. Unspent XP carries forward.
 
-Award XP during [Step 7: Experience & Advancement](#step-7-experience--advancement) in three passes — **battle**, **scenario**, then **post-game** — so casualty and Doom awards stay separate from in-battle deeds.
+Award XP during [Step 8: Experience & Advancement](post-game-sequence.md#step-8-experience--advancement) in three passes — **battle**, **scenario**, then **post-game** — so casualty, Captured, and Doom awards stay separate from in-battle deeds.
 
 A fighter removed as **Slain** still receives **battle** and **scenario** Experience from that battle — for example, a fighter who puts an enemy **Out of Action** and is later **Slain** on the **Casualty Table** keeps the **Out of Action** XP. **Slain** fighters do not receive the **Did not go Out of Action** award, **Hardy**, **Miraculous**, or other **post-game** Experience.
 

@@ -145,7 +145,7 @@ Use colder, precise voice for tables, fighter cards, gear entries, spell lines, 
 | **activation** | One fighter's turn — **2 actions** |
 | **activation count** | Fighters who can activate this round — **Active** and **Downed** only; not **Stunned**, **Out of Action**, or **Escaped** |
 | **action** | One thing a fighter does during an activation (**Move**, **Melee**, etc.) |
-| **reaction** | A free single action outside the fighter's activation (**Ranged Reaction**, Overwatch) |
+| **reaction** | A free single action outside the fighter's activation (**Ranged Reaction**) |
 | **player** | Person controlling a retinue |
 | **opposing player** | The other player in the battle |
 | **retinue** | One player's roster for a battle |
@@ -402,13 +402,13 @@ Use reminders to point at canonical rules — not to sneak in new mechanics. Rem
 
 1. **Prose lead** — what the action does, what it costs, what to roll
 2. **Exception bullets** — prohibitions, timing, edge cases
-3. **Cross-ref** — *(See [Overwatch](rules/the-turn.md#overwatch).)* when the full rule lives elsewhere
+3. **Cross-ref** — *(See [Pass Tokens](rules/the-turn.md#pass-tokens).)* when the full rule lives elsewhere
 
 ### Complex actions (when prose is not enough)
 
 Use this block order:
 
-1. **Cost** — `**Cost:** 1 action` (or spend **1 Overwatch token** to **skip activation** and assign it to that fighter)
+1. **Cost** — `**Cost:** 1 action`
 2. **Target / range** — who or what the action affects
 3. **Procedure** — what to roll or resolve; cross-ref shared sub-routines where needed
 4. **Restrictions** — bullet list of limits and exceptions

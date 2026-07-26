@@ -97,7 +97,7 @@ Any fighter may equip a **Staff** without a proficiency feat.
 
 When a fighter purchases a **Staff**, select **Will** or **Sanity** for that staff.
 
-When that fighter resolves a casting attack while wielding that **Staff**, use the selected attribute instead of **Skill** to determine the spell's scaling **Skill dice**. The spell's printed +**Skill** value still applies.
+When that fighter resolves an **Attack** spell while wielding that **Staff**, add the spell's printed +**Skill** value to the selected attribute instead of the fighter's **Skill**. For example, a fighter with **Will** 4 using a **Will**-focused Staff and a spell with +2 **Skill** rolls 6 **Skill dice**. A fixed **Skill** value is not affected.
 
 ---
 
@@ -197,7 +197,7 @@ Bombs are thrown explosives with a fixed Strike Pool. Use the **Ranged** action.
 
 ## Alchemy
 
-Alchemy is available to every retinue, but requires a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market). Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take kit.
+Alchemy is available to every retinue, but requires a **Shadow Market** roll to purchase — see [Economy — Shadow Market](economy.md#shadow-market). Because the Shadow Market only rolls during a post-game Economy step, retinues without a Shadow Market exception cannot buy Alchemy items at creation — **Alchemists** are the only Tradition with immediate creation access; every other retinue gains access starting its first post-game Shadow Market roll. Alchemical items are **consumable** (one battle only). Poisons are applied to a single weapon during retinue setup — **one poison per weapon** — and do not take kit.
 
 ### Alchemical Bombs
 

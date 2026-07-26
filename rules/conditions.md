@@ -38,11 +38,11 @@ Any **unblocked hit** on a **Stunned** fighter pushes them to **Out of Action**.
 
 A **Mercy Kill** against a **Stunned** fighter bypasses defense entirely — the **Stunned** fighter is immediately **Out of Action**.
 
-If a **Stunned** fighter becomes **Active** during the round before their player has finished activating fighters, they may activate later this round with **1 action**. If they become **Downed**, they may activate later this round, but can only use that activation to **Recover**. Do not recalculate initiative or **Overwatch tokens**.
+If a **Stunned** fighter becomes **Active** during the round before their player has finished activating fighters, they may activate later this round with **1 action**. If they become **Downed**, they may activate later this round, but can only use that activation to **Recover**. Do not recalculate initiative or **Pass tokens**.
 
 ### Out of Action
 
-A fighter is removed from the battle. Resolve post-game consequences in the [Casualty Table](post-game-sequence.md#step-2-casualty-table) and [Doom Table](post-game-sequence.md#step-4-doom-table).
+A fighter is removed from the battle. Resolve post-game consequences in the [Casualty Table](post-game-sequence.md#step-2-casualty-table) and [Doom Table](post-game-sequence.md#step-5-doom-table).
 
 ## Wound State Actions
 
@@ -53,6 +53,8 @@ A fighter is removed from the battle. Resolve post-game consequences in the [Cas
 Afflictions are conditions that sap a fighter's attributes. They are tracked with **Affliction tokens**.
 
 A fighter can have up to **3 Affliction tokens**. If an effect would add more, keep only **3**. Unless a rule gives a duration, Affliction tokens remain for the rest of the battle.
+
+A fighter cannot gain more than **1 Affliction token from attacks during each round**. After a fighter gains an Affliction token from an attack, any further Affliction tokens from attacks that round have no effect. Attacks can add another Affliction token to that fighter during each subsequent round, up to the normal maximum of **3**. Spells and other effects that explicitly add multiple Affliction tokens or apply a named Affliction tier are not limited by this rule.
 
 | Affliction tokens | Name | Effect |
 |---|---|---|

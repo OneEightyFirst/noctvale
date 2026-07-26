@@ -13,7 +13,7 @@ Your **retinue** is the force you field in a battle. Build it in two layers: sel
 
 **Step 4 — Select feats.** Assign each fighter feats from the lists their keywords allow (see [Feats](#feats)). **Archetype** feats and **Domain** feats grant special rules; **Proficiency** feats let a fighter equip weapons from that proficiency's list. Select **Proficiency** feats before buying weapons.
 
-**Step 5 — Buy equipment.** Buy gear from [Weapons](weapons.md) and [Armor and Shields](gear.md) and equip your fighters. Add the cost of each fighter's weapons and gear to that fighter's total cost.
+**Step 5 — Buy equipment.** Buy gear from [Weapons](weapons.md) and [Armor and Shields](gear.md) and equip your fighters. Add the cost of each fighter's weapons and gear to that fighter's total cost. Some items require a **Shadow Market** roll and are not available at creation unless your Tradition grants an exception — see [Weapons — Alchemy](weapons.md#alchemy).
 
 **Step 6 — Assign spells.** For fighters with the **Caster** keyword, select spells from the list matching their **Domain** keyword, up to the spell allowance for that fighter's role. See [Magic Domains](magic.md#magic).
 

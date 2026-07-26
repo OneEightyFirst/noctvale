@@ -98,11 +98,11 @@ Tenets are ordered **1 (highest) → 7 (lowest)**. When evaluating a proposal:
 
 **Explanation:** Being outnumbered should hurt — without freezing you out of the round. Negative feedback loops prevent activation snowballs. The player behind on the table gets initiative tools and reaction options so comeback swings stay plausible.
 
-**Mechanically:** Fewer activations = go first each round. Overwatch tokens equal to activation difference at round start; spend a token to skip a fighter's activation and assign it for reactions. Ranged Reactions give targets agency when shot at. Open: Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
+**Mechanically:** Fewer activations = go first each round. Pass tokens equal to the activation difference at the start of the round; spend a token instead of activating a fighter to delay without losing that fighter's activation. Pass tokens cannot be spent on consecutive turns to activate. Ranged Reactions give targets agency when shot at. Open: Death Trigger on Out of Action — morale cascade, faction payoff, or environmental response.
 
 **Protects:** Meaningful decisions when losing. Fixed underdog compensation over random activation order.
 
-**Apply it:** When the leader is ahead, give the trailing player Overwatch, underdog initiative, or scenario objectives that still matter.
+**Apply it:** When the leader is ahead, give the trailing player Pass tokens, underdog initiative, or scenario objectives that still matter.
 
 **vs. peers:** Similar spirit to **Age of Sigmar** Spearhead underdog mechanics. More explicit than **Malifaux**'s alternating activation. **Bolt Action**'s dice-bag activation is a comparison point — Noctvale uses fixed compensation.
 

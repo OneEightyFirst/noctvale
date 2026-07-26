@@ -34,7 +34,7 @@ Companions do **not** use **Downed** or **Stunned**.
 >
 > When a **Companion** is reduced to **0 or fewer Wounds**, it flees the battle and is immediately removed from the battlefield. Any effect that would make a fighter **Downed** or **Stunned** also causes the **Companion** to flee immediately.
 
-Companions removed this way are never lost permanently — see [Companion Recovery](post-game-sequence.md#step-3-companion-recovery).
+Companions removed this way are never lost permanently — see [Companion Recovery](post-game-sequence.md#step-4-companion-recovery).
 
 ---
 
@@ -47,7 +47,7 @@ When a **Handler** activates:
 
 The **Handler**'s **2 actions** are spent normally. The **Companion** action is additional and does not cost the **Handler** any actions.
 
-If the **Handler** skips their activation for **Overwatch**, the **Companion** does not co-move and does not take a **Companion** action.
+If the controlling player spends a **Pass token** instead of activating the **Handler**, the **Companion** does not co-move and does not take a **Companion** action.
 
 While the **Handler** is **Downed**, the **Companion** acts independently at the end of the **Handler**'s activation: it may move or charge (staying within **tether** of the **Handler**), then performs **1 action**.
 
@@ -83,6 +83,8 @@ The **Handler** must have **Animal Handling** and field that **Companion**. The 
 ---
 
 ## Companion profiles
+
+**Poison** — Unblocked hits from this attack add **1 Affliction token** in addition to normal Wounds — see [Conditions — Afflictions](conditions.md#afflictions).
 
 ### Hound
 
@@ -144,11 +146,53 @@ No attack.
 
 **Movement** *(Tamed)*
 
-**Bite** — **Melee** attack using profile **Might** / **Skill**. Unblocked hits add **1 Affliction token** in addition to normal Wounds — see [Conditions — Afflictions](conditions.md#afflictions).
+**Bite** — **Melee** attack using profile **Might** / **Skill**. **Poison**.
 
 **Hide** — May use **Hide** as its **Companion** action.
 
 **Keywords:** **Tamed**
+
+---
+
+### Bear
+
+**Cost:** **150 Crowns**
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 3 | — | 5 | 2 | *(Tamed)* | *(Tamed)* | 3 | **3"** |
+
+**Movement** *(Tamed)*
+
+**Maul** — **Melee** attack using profile **Might** / **Skill** (no weapon).
+
+**Thick Hide** — For the purpose of building its defense pool, this **Companion** is treated as wearing **Light Armor** and adds **1 Skill defense die**. This is natural armor, not equipped gear.
+
+**Large** — Cannot perform the **Hide** action.
+
+**Keywords:** **Large**, **Tamed**
+
+---
+
+### Giant Spider
+
+**Cost:** **100 Crowns**
+
+| CC | RC | Mt | Sk | Wi | Sa | W | Tether |
+|---|---|---|---|---|---|---|---|
+| 3 | — | 2 | 4 | *(Tamed)* | *(Tamed)* | 1 | **6"** |
+
+**Movement** *(Tamed)*
+
+**Bite** — **Melee** attack using profile **Might** / **Skill** (no weapon). **Poison**.
+
+**Wall-Crawler** — This **Companion** moves up to its full **Movement** when performing **Climb** instead of half **Movement**.
+
+**Webbed** — When this **Companion** performs **Mercy Kill**, it may capture the target instead. Resolve **Mercy Kill** normally. If the target would go **Out of Action**, they become **Captured** and go **Out of Action**. See [Captives and Ransom](post-game-sequence.md#step-3-captives-and-ransom).
+
+**Large** — Cannot perform the **Hide** action.
+
+**Keywords:** **Large**, **Tamed**
 
 ---
 

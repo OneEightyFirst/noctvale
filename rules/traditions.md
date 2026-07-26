@@ -15,7 +15,7 @@ Each Tradition grants one retinue-wide special rule. Tradition effects apply to 
 | **Nature** | Grove-keepers, Hedge-walkers | Werebeasts, Hedge-walkers | Witches, Grove-keepers | Witches, Werebeasts |
 | **Necromancy** | Sepulchers, Wightlords | Bone-priests, Wightlords | Bell-keepers, Sepulchers | Bell-keepers, Bone-priests |
 | **Blood** | Vampires, Dynasts | Dynasts, Revelers | Revelers, Courtiers | Vampires, Courtiers |
-| **Mortal** | Ironbound | Zealots, Alchemists | Alchemists | — |
+| **Mortal** | Constables, Ironbound | Zealots, Alchemists | Constables, Alchemists | — |
 
 ## Tradition Special Rules
 
@@ -113,7 +113,7 @@ When a fighter attacks with an heirloom weapon, add +1 **Close Combat** to that 
 
 If a fighter carrying an heirloom weapon is **Slain**, the weapon passes to the friendly fighter in the retinue with the highest **Might**. If there is a tie, select one tied fighter.
 
-If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps the heirloom weapon but cannot use it. If the original retinue ransoms the captured fighter, add **+10 Crowns** to the ransom cost to recover the heirloom weapon.
+If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps the heirloom weapon but cannot use it. When recommending a ransom, value the heirloom weapon at **10 Crowns** in addition to the fighter's other weapons and gear. Return the heirloom weapon when the fighter is returned through ransom, exchange, or release.
 
 **Revelers:** At the start of a friendly fighter's activation, they may suffer **1 Wound** to gain +2" **Movement** until the end of that activation.
 
@@ -122,6 +122,8 @@ If a fighter carrying an heirloom weapon is captured, the opposing retinue keeps
 ### Mortal
 
 **Zealots:** When a friendly fighter attacks an enemy **Caster**, add **+1** **Close Combat** or +1 **Ranged Combat** to that attack — whichever **Hit** attribute the attack uses.
+
+**Constables:** When a friendly fighter performs **Mercy Kill**, they may capture the target instead. Resolve **Mercy Kill** normally. If the target would go **Out of Action**, they become **Captured** and go **Out of Action**. See [Captives and Ransom](post-game-sequence.md#step-3-captives-and-ransom).
 
 **Alchemists:** This retinue may buy alchemical weapons and alchemical consumables without rolling on the **Shadow Market** table.
 

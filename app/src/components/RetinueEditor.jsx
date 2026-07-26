@@ -372,6 +372,10 @@ function getEquipmentBlockReason(item, archetype, fighter, type, tradition, doma
     return hasFeat(fighter, "animal-handling") ? "" : "Requires Animal Handling.";
   }
 
+  if (item.kind === "alchemy") {
+    return tradition.id === "alchemists" ? "" : "Alchemy requires the Alchemists Tradition at creation.";
+  }
+
   return "";
 }
 
@@ -801,14 +805,27 @@ function AddFighterButton({ onClick, disabled }) {
 }
 
 function StatGrid({ stats }) {
+  const attributeKeys = STAT_KEYS.filter((key) => key !== "M" && key !== "W");
+  const vitalKeys = ["M", "W"];
+
   return (
-    <div className="grid w-full grid-cols-9 border border-night-800">
-      {STAT_KEYS.map((key) => (
-        <div key={key} className="min-w-0 border-r border-night-800 text-center last:border-r-0">
-          <div className="border-b border-night-800 px-0.5 py-0.5 text-[10px] uppercase text-cream-500">{key}</div>
-          <div className="truncate px-0.5 py-1 text-xs font-semibold text-cream-100">{formatStat(key, stats[key])}</div>
-        </div>
-      ))}
+    <div className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-start gap-2">
+      <div className="grid min-w-0 grid-cols-7 border border-night-800">
+        {attributeKeys.map((key) => (
+          <div key={key} className="min-w-0 border-r border-night-800 text-center last:border-r-0">
+            <div className="border-b border-night-800 px-0.5 py-0.5 text-[10px] uppercase text-cream-500">{key}</div>
+            <div className="truncate px-0.5 py-1 text-xs font-semibold text-cream-100">{formatStat(key, stats[key])}</div>
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-2 gap-1">
+        {vitalKeys.map((key) => (
+          <div key={key} className="min-w-10 rounded border border-accent-500/40 bg-accent-500/10 text-center">
+            <div className="border-b border-accent-500/30 px-1 py-0.5 text-[10px] uppercase text-accent-200">{key}</div>
+            <div className="px-1 py-1 text-xs font-semibold text-cream-50">{formatStat(key, stats[key])}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -1434,7 +1451,7 @@ function SummaryRow({ label, children }) {
 function SpellRuleLink({ spell, scalingStatOverride = null }) {
   if (!spell) return null;
   const subtitle = [spell.difficulty, spell.range].filter(Boolean).join(" / ");
-  const scalingInfo = scalingStatOverride ? `+Sk scales from ${scalingStatOverride} (Staff focus)` : null;
+  const scalingInfo = scalingStatOverride ? `Add printed +Sk to ${scalingStatOverride} instead of Sk (Staff focus)` : null;
   const meta = (
     <div className="grid gap-1 text-xs text-cream-400 sm:grid-cols-3">
       <span>Cast {spell.castingStat}</span>
@@ -2011,7 +2028,7 @@ const FighterCard = memo(function FighterCard({
                         <span>Mt {spell.mt}</span>
                         <span>Sk {spell.sk}</span>
                         {staffFocusActive && getSpellScalingStatOverride(spell, fighter) ? (
-                          <span>+Sk scales from {staffCastingAttribute} (Staff focus)</span>
+                          <span>Add printed +Sk to {staffCastingAttribute} instead of Sk (Staff focus)</span>
                         ) : null}
                         {spell.keywords?.length ? <span>Keywords {spell.keywords.join(", ")}</span> : null}
                         {spell.mishap ? <span>Mishap {spell.mishap}</span> : null}

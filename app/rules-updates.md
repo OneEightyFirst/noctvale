@@ -6,6 +6,36 @@ dated section before each commit that changes rules — not UI-only work. Run
 
 Game design decisions go in `../decision-log.md` at the repo root.
 
+## 2026-07-26 18:31 EDT — Staff focus, maintained spells, and fighter-card vitals
+
+**Change:** Reworded **Spell focus** so the selected **Will** or **Sanity** attribute explicitly replaces the fighter's **Skill** before the spell's printed +**Skill** value is added; fixed **Skill** values are unchanged. Updated **Nightmare Visage** to state that it is maintained and ends immediately if its caster becomes **Downed** or **Stunned**, or goes **Out of Action**. Moved **Movement** and **Wounds** out of the fighter-card attribute grid into separate highlighted callouts.
+
+**Impact:** Staff calculations are now described as a concrete substitution instead of “scaling.” The builder's spell reference displays the maintained-spell interruption rule, and fighter cards visually separate mobility and health from rolled attributes.
+
+## 2026-07-21 09:45 EDT — Added Giant Spider companion
+
+**Change:** Added **Giant Spider** to companion equipment data at **100 Crowns**, requiring **Animal Handling**. Synced its **CC 3**, **Might 2**, **Skill 4**, **1 Wound**, **6" tether**, **Large**, **Tamed**, poisoned **Bite**, **Wall-Crawler**, and **Webbed** rules with the canonical profile. Added the same standardized **Poison** reminder to the Giant Rat's existing venomous Bite.
+
+**Impact:** The retinue builder now offers a mobile control Companion that climbs using its full Movement, inflicts **Affliction tokens** with Bite, and can capture a target through **Mercy Kill** using the Constables procedure. Its one-Wound profile and inability to **Hide** keep the utility fragile.
+
+## 2026-07-21 09:19 EDT — Added Bear companion
+
+**Change:** Added the **Bear** to companion equipment data at **150 Crowns**, requiring **Animal Handling**. Synced its **CC 3**, **Might 5**, **Skill 2**, **3 Wounds**, **3" tether**, **Large**, **Tamed**, **Maul**, and **Thick Hide** rules with the canonical companion profile.
+
+**Impact:** The retinue builder now offers Bear as a high-cost combat Companion. Its displayed rules explain that Thick Hide adds **1 Skill defense die** by treating the Bear as wearing **Light Armor** for defense-pool construction, without making it equipped gear.
+
+## 2026-07-21 07:44 EDT — Constables restored with capture rule
+
+**Change:** Restored **Constables** to the builder's Mortal Tradition data for Knights and Folk. Their rule now allows a friendly fighter performing **Mercy Kill** to capture the target instead. Updated the Dynasts reminder so an heirloom weapon adds 10 Crowns to the recommended player-set ransom and returns with an exchanged, ransomed, or released fighter.
+
+**Impact:** New Knights and Folk retinues may select **Constables** again, and the builder displays the canonical capture and heirloom-ransom rules. Post-game captive tracking remains a roster procedure rather than a new equipment purchase.
+
+## 2026-07-16 10:18 EDT — Alchemy gated to Alchemists at creation; Smoke Bomb recategorized
+
+**Change:** `getEquipmentBlockReason` in `RetinueEditor.jsx` now blocks any `kind: "alchemy"` item (poisons, Smoke Bomb) unless the retinue's Tradition is `alchemists`, matching the creation-time restriction now documented in `rules/weapons.md#alchemy`. Previously there was no gate at all, so any Tradition could buy poisons at creation. Also fixed `smoke-bomb` in `noctvale.js`: it was mistakenly typed as `kind: "weapon"` / `proficiency: "firearms"` and grouped with the blackpowder `Bombs`, requiring the Firearms domain feat, Mortal, and no Caster — none of which match its canonical rules entry under `### Alchemical Bombs`. It's now `kind: "alchemy"`, `group: "Alchemy"`, with corrected rules text (no domain/keyword restriction, Skill-check-to-hit throw instead of a Primer Roll) and is subject to the same new Alchemists-at-creation gate as poisons.
+
+**Impact:** Non-Alchemists retinues can no longer add poisons or the Smoke Bomb at creation; the option disappears from the equipment list for those fighters. Existing saved rosters that already carry these items on a non-Alchemists retinue will surface a warning rather than silently keep the item. Alchemists retinues are unaffected. Smoke Bomb is no longer available to fighters solely because they have the Firearms domain feat — it now requires the Alchemists Tradition instead, same as other Alchemy items.
+
 ## 2026-07-15 19:58 EDT — Sorcerers extra spell no longer requires a toggle
 
 **Change:** Simplified Sorcerers spell-slot enforcement in `RetinueEditor.jsx` and `retinue-sheet.js`. Instead of requiring a per-fighter checkbox to unlock the extra Sorcerers spell, Caster fighters in Sorcerers now always receive `base + 1` selectable spell capacity. The +10 Crowns cost now applies automatically when the fighter actually uses that extra slot (selected spell count exceeds the base caster spell count). Removed the temporary `sorcerersExtraSpell`-based gating/check/warning path and updated the Caster panel helper text to reflect the automatic behavior.

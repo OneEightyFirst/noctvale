@@ -134,16 +134,16 @@
 
   <div class="box">
     <h3>Round at a Glance</h3>
-    <p><strong>Start of round:</strong> Count each player's <strong>Active</strong> and <strong>Downed</strong> fighters — that is their <strong>activation count</strong>. Do not count <strong>Stunned</strong>, <strong>Out of Action</strong>, or <strong>Escaped</strong> fighters. The player with the lower <strong>activation count</strong> has initiative and gains <strong>Overwatch tokens</strong> equal to the difference between the two counts. Do not recalculate activation count, initiative, or tokens during the round.</p>
-    <p><strong>Activations:</strong> Starting with the player who has initiative, players alternate activating <strong>one fighter</strong> at a time. Each fighter performs <strong>2 actions</strong> in any order.</p>
-    <p><strong>End of round:</strong> The round ends when every fighter who can activate has activated. Remove unspent <strong>Overwatch tokens</strong>. Begin a new round.</p>
+    <p><strong>Start of round:</strong> Count each player's <strong>Active</strong> and <strong>Downed</strong> fighters — that is their <strong>activation count</strong>. Do not count <strong>Stunned</strong>, <strong>Out of Action</strong>, or <strong>Escaped</strong> fighters. Round 1 uses battle-set-up initiative. Later rounds: lower count has initiative; on a tie, initiative switches. The lower-count player gains <strong>Pass tokens</strong> equal to the difference. Do not recalculate during the round.</p>
+    <p><strong>Activations:</strong> Starting with the player who has initiative, players alternate activating <strong>one fighter</strong> at a time. Each fighter performs <strong>2 actions</strong> in any order. A player may spend a <strong>Pass token</strong> instead of activating a fighter, but cannot pass on consecutive turns to activate. A <strong>Stunned</strong> fighter restored before its player finishes activating may act later this round: <strong>1 action</strong> if Active, or <strong>Recover only</strong> if Downed.</p>
+    <p><strong>End of round:</strong> If one player runs out of fighters first, the other activates all remaining fighters normally. The round ends when every eligible fighter has activated. Remove unspent <strong>Pass tokens</strong>.</p>
   </div>
 
-  <h2>Overwatch</h2>
+  <h2>Pass Tokens</h2>
   <ul>
     <li><strong>Start of round:</strong> Lower <strong>activation count</strong> player receives tokens equal to the difference between the two counts.</li>
-    <li><strong>Overwatch action:</strong> During a fighter's activation, spend <strong>1 action</strong> and <strong>1 Overwatch token</strong> to go on <strong>Overwatch</strong>. That fighter may later perform any <strong>1 action</strong> as a reaction when an enemy completes an action.</li>
-    <li><strong>Reaction timing:</strong> A fighter on <strong>Overwatch</strong> may react whenever an enemy completes an action during the round — even after you have run out of fighters to activate.</li>
+    <li><strong>Pass:</strong> When it is your turn to activate a fighter, spend <strong>1 Pass token</strong> instead. No fighter activates, and the opposing player takes the next activation.</li>
+    <li><strong>No consecutive passes:</strong> After passing, you must activate a fighter on your next turn to activate before you can spend another token.</li>
     <li><strong>End of round:</strong> Remove unspent tokens.</li>
   </ul>
 
@@ -151,7 +151,7 @@
   <ul>
     <li><strong>Lost:</strong> <strong>Out of Action</strong> or <strong>Stunned</strong>. <strong>Active</strong> and <strong>Downed</strong> are not <strong>lost</strong>.</li>
     <li><strong>Routing:</strong> More than <strong>half</strong> of the retinue's starting fighters are <strong>lost</strong> (e.g. <strong>5</strong> deployed → routing at <strong>3</strong> lost).</li>
-    <li><strong>Test:</strong> At the <strong>start of each activation</strong> while routing, before actions — <strong>Will</strong> check. <strong>Summon</strong> auto-pass if any friendly within <strong>6"</strong> and line of sight. Modifiers: <strong>+1</strong> per friendly within <strong>6"</strong>; <strong>+2</strong> for <strong>Leader</strong> within <strong>6"</strong>; <strong>+1</strong> if <strong>Fearless</strong>.</li>
+    <li><strong>Test:</strong> At the <strong>start of each activation</strong> while routing, before actions — <strong>Will</strong> check. <strong>Summon</strong> auto-pass if any friendly within <strong>6"</strong> and line of sight. Modifiers: <strong>+1</strong> per other friendly within <strong>6"</strong>; a <strong>Leader</strong> gives <strong>+2 instead of +1</strong>; <strong>+1</strong> if <strong>Fearless</strong>.</li>
     <li><strong>Fail:</strong> Spend <strong>both actions</strong> fleeing toward nearest <strong>battlefield edge</strong>.</li>
   </ul>
 
@@ -163,27 +163,28 @@
   </ul>
 
   <h2>Conditions</h2>
+  <p><strong>Affliction:</strong> Maximum 3 tokens. Attacks can add no more than 1 Affliction token to a fighter each round.</p>
   <table>
     <tr><th>Condition</th><th>Effect</th></tr>
     <tr><td><strong>Affliction 1: Weakened</strong></td><td>−1 Might</td></tr>
     <tr><td><strong>Affliction 2: Enfeebled</strong></td><td>−1 Might, −1 Skill</td></tr>
-    <tr><td><strong>Affliction 3: Withered</strong></td><td>−1 Might, −1 Skill, −1" Movement (max 3 tokens)</td></tr>
-    <tr><td><strong>Bleeding</strong></td><td>1 Wound on apply; <strong>Will</strong> check each activation to remove or suffer 1 Wound</td></tr>
-    <tr><td><strong>Blinded</strong></td><td>Cannot <strong>Melee</strong> or <strong>Ranged</strong> until end of next activation</td></tr>
+    <tr><td><strong>Affliction 3: Withered</strong></td><td>−1 Might, −1 Skill, −1" Movement</td></tr>
+    <tr><td><strong>Bleeding</strong></td><td>1 Wound on apply; at start of activation, <strong>Will</strong> check to remove or suffer 1 Wound</td></tr>
+    <tr><td><strong>Blinded</strong></td><td>Cannot <strong>Melee</strong> or <strong>Ranged</strong>; if no duration, lasts through next activation</td></tr>
     <tr><td><strong>Broken</strong></td><td><strong>Will</strong> check: pass → remove, activate normally; fail → flee toward nearest battlefield edge both actions</td></tr>
     <tr><td><strong>Fear</strong></td><td>Cannot move closer to source</td></tr>
     <tr><td><strong>Panic</strong></td><td><strong>Fear</strong>, plus spend ≥1 action moving full <strong>Movement</strong> away</td></tr>
     <tr><td><strong>Insanity</strong></td><td><strong>Sanity</strong> check failed — roll 1d6: 1 Frenzy · 2–3 Flee · 4–5 Freeze · 6 Berserk</td></tr>
   </table>
 
-  <h2>Keywords</h2>
+  <h2>Keywords &amp; States</h2>
   <table>
     <tr><th>Keyword</th><th>Effect</th></tr>
     <tr><td><strong>Caster</strong></td><td>Knows spells; may perform <strong>Cast</strong></td></tr>
     <tr><td><strong>Large</strong></td><td>Cannot <strong>Hide</strong></td></tr>
     <tr><td><strong>Swarm</strong></td><td>Sk = Wounds; enemies +1 Hit vs; no <strong>Downed</strong>/<strong>Stunned</strong> — 0 Wounds → <strong>Out of Action</strong></td></tr>
-    <tr><td><strong>Hidden</strong></td><td>Cannot be targeted by <strong>Ranged</strong>/<strong>Cast</strong> beyond 6"; lost on attack, charge, or moving within 6" of an enemy</td></tr>
-    <tr><td><strong>Fly</strong></td><td>Ignore vertical distance for <strong>Move</strong> and <strong>Jump</strong></td></tr>
+    <tr><td><strong>Hidden</strong></td><td>Remain within 1" of terrain; cannot be targeted by <strong>Ranged</strong>/<strong>Cast</strong> beyond 6"; lost on Combat action, <strong>Charge</strong>, <strong>Climb</strong>, <strong>Jump</strong>, or moving within 6" of an enemy</td></tr>
+    <tr><td><strong>Fly</strong></td><td>Ignore vertical distance for <strong>Move</strong>, <strong>Charge</strong>, and <strong>Jump</strong></td></tr>
     <tr><td><strong>Fearless</strong></td><td>Immune to <strong>Fear</strong>, <strong>Panic</strong>, <strong>Insanity</strong>; +1 rout <strong>Will</strong> checks</td></tr>
     <tr><td><strong>Undead</strong></td><td>Affected by silver weapons, <strong>Radiant Strike</strong>, and similar rules</td></tr>
   </table>
@@ -191,24 +192,25 @@
   <h2>Actions</h2>
   <table>
     <tr><th>Action</th><th>Effect</th></tr>
-    <tr><td><strong>Move</strong></td><td>Move up to <strong>Movement</strong>; pass through friendlies</td></tr>
+    <tr><td><strong>Move</strong></td><td>Horizontal, up to <strong>Movement</strong>; cross terrain ≤1"; pass through friendlies</td></tr>
     <tr><td><strong>Crawl</strong></td><td><strong>Downed</strong> only — horizontal, half <strong>Movement</strong></td></tr>
     <tr><td><strong>Charge</strong></td><td>Horizontal — up to <strong>Movement</strong>; end in engagement; cross terrain <strong>1"</strong> or lower freely</td></tr>
-    <tr><td><strong>Climb</strong></td><td>Up to half <strong>Movement</strong> per action; may chain 2 <strong>Climb</strong> actions</td></tr>
-    <tr><td><strong>Scramble</strong></td><td>Half <strong>Movement</strong> through difficult terrain</td></tr>
-    <tr><td><strong>Jump</strong></td><td>Open space up to <strong>Movement</strong>; <strong>Skill</strong> check</td></tr>
-    <tr><td><strong>Retreat</strong></td><td>Leave engagement — <strong>Skill</strong> check; fail → free enemy <strong>Melee</strong></td></tr>
+    <tr><td><strong>Climb</strong></td><td>Up to half <strong>Movement</strong>; may chain 2; cannot end engaged</td></tr>
+    <tr><td><strong>Scramble</strong></td><td>Half <strong>Movement</strong> through difficult terrain; cannot end engaged</td></tr>
+    <tr><td><strong>Jump</strong></td><td>Horizontal over open space up to <strong>Movement</strong>; <strong>Skill</strong> check; cannot end engaged</td></tr>
+    <tr><td><strong>Retreat</strong></td><td>Leave engagement — <strong>Skill</strong> check; fail → free enemy <strong>Melee</strong> if that enemy is not engaged with another fighter</td></tr>
     <tr><td><strong>Melee</strong></td><td>Attack in engagement; <strong>Attack Sequence</strong></td></tr>
     <tr><td><strong>Ranged</strong></td><td>Bow/crossbow → <strong>Attack Sequence</strong>; firearm → <strong>Primer Roll</strong></td></tr>
-    <tr><td><strong>Cast</strong></td><td><strong>Caster</strong> only — <strong>Casting Roll</strong></td></tr>
-    <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged</strong> +1 dominant die; nat <strong>6</strong> = crit (<strong>5+</strong> if weapon already crit on <strong>6</strong>)</td></tr>
+    <tr><td><strong>Cast</strong></td><td><strong>Caster</strong> only — <strong>Casting Roll</strong>; allowed while engaged; does not trigger Ranged Reaction</td></tr>
+    <tr><td><strong>Aim</strong></td><td>Next <strong>Ranged Attack Action</strong> this activation: +1 die of whichever attribute the weapon adds more of (choose if tied); nat <strong>6</strong> = crit (<strong>5+</strong> if already 6)</td></tr>
     <tr><td><strong>Mercy Kill</strong></td><td><strong>Stunned</strong> enemy within <strong>1"</strong> → <strong>Out of Action</strong>; <strong>Downed</strong> enemy within <strong>1"</strong> → <strong>Melee</strong>, unblocked hit sends them <strong>Out of Action</strong>; blocked if any other <strong>Active</strong> or <strong>Downed</strong> enemy is in engagement range</td></tr>
-    <tr><td><strong>Overwatch</strong></td><td>Spend <strong>1 Overwatch token</strong> — react with <strong>1 action</strong> when an enemy completes an action</td></tr>
+    <tr><td><strong>Hurl</strong></td><td>Engaged enemy — attacker chooses opposed <strong>Might</strong>/<strong>Skill</strong>; defender wins ties (attacker wins vs Downed; auto-wins vs Stunned). Win → move target up to attacker's Might in" <strong>in a direction the attacker chooses</strong>. Hurl does not change wound state; collisions may inflict 2 Mt / 1 Sk, and falls resolve normally</td></tr>
     <tr><td><strong>Brace</strong></td><td><strong>+1 Might defense die</strong> until next activation</td></tr>
-    <tr><td><strong>Hide</strong></td><td><strong>Hidden</strong> within <strong>1"</strong> of terrain</td></tr>
+    <tr><td><strong>Hide</strong></td><td><strong>Hidden</strong> within <strong>1"</strong> of terrain; unavailable after a <strong>Ranged</strong> action this activation</td></tr>
     <tr><td><strong>Recover</strong></td><td><strong>Downed</strong> — roll <strong>1d6</strong> (see back)</td></tr>
     <tr><td><strong>Help</strong></td><td><strong>Downed</strong>/<strong>Stunned</strong> friendly within <strong>1"</strong> — <strong>1d6</strong></td></tr>
     <tr><td><strong>Interact</strong></td><td>Doors, scenario objects, items</td></tr>
+    <tr><td><strong>Loot</strong></td><td>Search a building for valuables</td></tr>
   </table>
 
   <div class="footer">Turn &amp; Actions</div>
@@ -219,18 +221,19 @@
 
   <div class="box">
     <h3>Attack Sequence</h3>
-    <p class="step"><span class="step-label">Step 1</span>Build the Strike Pool: Fighter <strong>Might</strong> + <strong>Skill</strong> + weapon +<strong>Might</strong> / +<strong>Skill</strong>, max <strong>15 dice</strong>. Firearms and damage spells use a flat Strike Pool. <em>Dual wielding: add both weapons' +Mt and +Sk, max 15 dice; primary weapon's type and rules apply; no shield.</em></p>
-    <p class="step"><span class="step-label">Step 2</span>Roll to hit: Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> attribute modifiers.</p>
-    <p class="step"><span class="step-label">Step 3</span>Determine criticals: Weapon triangle, magic triangle, <strong>Aim</strong>, or firearms. Crits cannot be blocked except by natural 6s on defense dice.</p>
+    <p class="step"><span class="step-label">Step 1</span>Build the Strike Pool from the attack profile, max <strong>15 dice</strong>. A value with a <strong>+</strong> adds to the fighter's matching attribute. Some weapons and spells list a fixed <strong>Might</strong> or <strong>Skill</strong> value without a <strong>+</strong>; use exactly that many dice instead of adding the fighter's matching attribute. <em>Dual wielding: add both weapons' +Mt and +Sk, max 15 dice; primary weapon's type and rules apply; no shield.</em></p>
+    <p class="step"><span class="step-label">Step 2</span>Roll to hit: Melee → <strong>Close Combat</strong>. Ranged → <strong>Ranged Combat</strong>. Apply <strong>Hit</strong> attribute modifiers. Natural <strong>1</strong> always misses; natural <strong>6</strong> always hits.</p>
+    <p class="step"><span class="step-label">Step 3</span>Determine criticals: Weapon triangle, magic triangle, <strong>Aim</strong>, or firearms. Critical hits cannot be blocked.</p>
     <p class="step"><span class="step-label">Step 4</span>Roll defense: defender <strong>Might</strong> + <strong>Skill</strong>, modified by armor before rolling (Light +1 Sk, Medium +1 Mt, Heavy +2 Mt −1 Sk), plus bonuses. Roll all as <strong>Defense</strong> checks.</p>
     <p class="step"><span class="step-label">Step 5</span>Apply Wounds (below).</p>
   </div>
 
   <div class="box">
     <h3>Apply Wounds</h3>
-    <p>Each unblocked hit inflicts <strong>1 Wound</strong>.</p>
+    <p>Resolve all unblocked hits from one attack together. Each inflicts <strong>1 Wound</strong>.</p>
     <ul>
-      <li><strong>0 Wounds</strong> → <strong>Downed</strong></li>
+      <li>Active reduced to exactly <strong>0 Wounds</strong> → <strong>Downed</strong></li>
+      <li>Active reduced below <strong>0 Wounds</strong> → set to <strong>0 Wounds</strong> and become <strong>Stunned</strong></li>
       <li>Unblocked hit on <strong>Downed</strong> → <strong>Stunned</strong></li>
       <li>Unblocked hit on <strong>Stunned</strong> → <strong>Out of Action</strong></li>
     </ul>
@@ -240,13 +243,16 @@
   <h2>Defense</h2>
   <ul>
     <li><strong>Might</strong> blocks <strong>Might hits</strong>; <strong>Skill</strong> blocks <strong>Skill hits</strong>.</li>
-    <li><strong>2 Might</strong> may block <strong>1 Skill hit</strong>; <strong>2 Skill</strong> may block <strong>1 Might hit</strong>.</li>
-    <li><strong>Cover:</strong> <strong>+1 Skill defense die</strong>.</li>
+    <li><strong>Dodge:</strong> Active only; vs Melee/Ranged, spend <strong>2 Skill successes</strong> to block <strong>1 Might hit</strong>. If still Active after Wounds, move up to <strong>2"</strong> directly away from attacker.</li>
+    <li><strong>Shove:</strong> Active only; vs engaged Melee attacker, spend <strong>2 Might successes</strong> to block <strong>1 Skill hit</strong>. If still Active after Wounds, push attacker up to <strong>2"</strong> directly away; stop at contact. Skill check to avoid a ledge.</li>
+    <li><strong>Maneuver movement:</strong> not an action/reaction/Move/Retreat/Charge; does not trigger <strong>Ranged Reaction</strong>, Companion co-movement, or failed-Retreat attacks. Cannot pass through bases.</li>
+    <li><strong>Downed/Stunned:</strong> cannot use defensive maneuvers.</li>
+    <li><strong>Cover:</strong> <strong>+1 Skill defense die</strong>; <strong>+2</strong> if target is within <strong>1"</strong> of the intervening terrain.</li>
     <li><strong>Ties:</strong> equal blocks and hits — attacker wins, 1 hit gets through.</li>
   </ul>
 
   <h2>Armor &amp; Shields</h2>
-  <p style="font-size:7.5pt;margin:0 0 0.04in">Armor adds dice to the pool <strong>before rolling</strong>. Shields change who wins ties. Effects stack.</p>
+  <p style="font-size:7.5pt;margin:0 0 0.04in">Armor modifies the pool <strong>before rolling</strong>. Shields modify the <strong>Df threshold</strong> on specific dice. Effects stack.</p>
   <table>
     <tr><th>Gear</th><th>Effect</th></tr>
     <tr><td>Light Armor</td><td>+1 Skill die</td></tr>
@@ -271,11 +277,11 @@
 
   <h2>Ranged</h2>
   <ul>
-    <li>LoS required; friendlies do not block; enemies do.</li>
-    <li><strong>Cover:</strong> terrain &gt; <strong>1"</strong> from attacker → <strong>+1 Sk defense die</strong>.</li>
-    <li><strong>Clustered enemies</strong> within <strong>1"</strong> → <strong>Skill</strong> check.</li>
+    <li>LoS required; friendlies do not block; enemies do. Minimum range is <strong>3"</strong> unless noted.</li>
+    <li><strong>Cover:</strong> intervening terrain &gt; <strong>1"</strong> from attacker → <strong>+1 Sk defense die</strong>; target within <strong>1"</strong> of that terrain → <strong>+2 Sk dice</strong> instead.</li>
+    <li><strong>Clustered enemies</strong> within <strong>1"</strong> → <strong>Skill</strong> check; on a fail, redirect to the other nearby enemy (randomly select if multiple).</li>
     <li><strong>Friendly fire:</strong> if a friendly is in the line of fire or engaged with the target, natural <strong>1s</strong> in the Strike Pool hit the nearest at-risk friendly instead.</li>
-    <li><strong>Ranged Reaction:</strong> 1 free action after being targeted by <strong>Ranged</strong> (not <strong>Cast</strong>).</li>
+    <li><strong>Ranged Reaction:</strong> after a <strong>Ranged Attack Action</strong> fully resolves, an Active target may take 1 free action. Not during its player's activations; not after <strong>Cast</strong>; cannot trigger another Ranged Reaction.</li>
   </ul>
 
   <h2>Casting Roll (2d6 + Casting Attribute)</h2>
@@ -287,6 +293,7 @@
   </table>
 
   <h2>Primer Roll (2d6 + Skill)</h2>
+  <p>Adjusted difficulty = profile difficulty − 3 + fighter's <strong>Skill</strong>.</p>
   <table>
     <tr><th>Result</th><th>Effect</th></tr>
     <tr><td><strong>Double 1s</strong></td><td><strong>Misfire</strong></td></tr>
@@ -294,14 +301,24 @@
     <tr><td>Meets or exceeds</td><td><strong>Success</strong></td></tr>
   </table>
 
-  <h2>Wound States</h2>
-  <p>Wounds reduced to <strong>0</strong> → <strong>Downed</strong>. Wounds reduced below <strong>0</strong> → <strong>Stunned</strong>.</p>
+  <h2>Recover</h2>
+  <p><strong>1 action:</strong> A <strong>Downed</strong> fighter rolls <strong>1d6</strong>.</p>
   <table>
-    <tr><th>Roll</th><th>Recover (1d6)</th><th>Help (1d6)</th></tr>
-    <tr><td>1</td><td><strong>Stunned</strong></td><td>Target <strong>Out of Action</strong></td></tr>
-    <tr><td>2–3</td><td>Stay <strong>Downed</strong></td><td>No effect</td></tr>
-    <tr><td>4–5</td><td>Stand with <strong>1 Wound</strong></td><td>Target becomes <strong>Downed</strong></td></tr>
-    <tr><td>6</td><td>Stand with <strong>1 Wound</strong> + 1 action</td><td>Target stands with <strong>1 Wound</strong></td></tr>
+    <tr><th>Roll</th><th>Result</th></tr>
+    <tr><td>1</td><td>Become <strong>Stunned</strong></td></tr>
+    <tr><td>2–3</td><td>Remain <strong>Downed</strong></td></tr>
+    <tr><td>4–5</td><td>Stand with <strong>1 Wound</strong></td></tr>
+    <tr><td>6</td><td>Stand with <strong>1 Wound</strong> and perform 1 additional action</td></tr>
+  </table>
+
+  <h2>Help</h2>
+  <p><strong>1 action:</strong> Assist a <strong>Downed</strong> or <strong>Stunned</strong> friendly within <strong>1"</strong>; roll <strong>1d6</strong>.</p>
+  <table>
+    <tr><th>Roll</th><th>Result</th></tr>
+    <tr><td>1</td><td>Fighter goes <strong>Out of Action</strong></td></tr>
+    <tr><td>2–3</td><td>No effect</td></tr>
+    <tr><td>4–5</td><td>Fighter becomes <strong>Downed</strong> (if Stunned)</td></tr>
+    <tr><td>6</td><td>Fighter stands with <strong>1 Wound</strong></td></tr>
   </table>
 
   <div class="footer">Combat &amp; Conditions</div>

@@ -11,7 +11,7 @@ Design and write the complete turn structure (initiative, activation pattern, ro
 - [x] Alternating activations defined
 - [x] Underdog initiative (fewer activations = go first)
 - [x] Scenario-determined tiebreaker for round 1
-- [x] Overwatch tokens distributed at start of round
+- [x] Pass tokens distributed at start of round
 - [x] End-of-round cleanup defined
 - [x] Confirm round sequence is complete — no missing steps between start-of-round and end-of-round
 - [x] Write a concise "round at a glance" reference box
@@ -154,8 +154,27 @@ All remaining open items, ordered easiest to most time-consuming.
 
 ---
 
+### 2026-07-25 Feedback Sync
+
+- [x] **Basic terrain movement clarification** — Stairs and ladders use normal movement unless agreed to be difficult or impassable; the movement rules explicitly allow fighters to move along them.
+- [x] **Half-Movement rounding** — Whenever a rule requires half **Movement**, round fractions up to the next whole **"**.
+- [ ] **Brace token** — Create a physical reminder token for **Brace**.
+- [x] **Ranged target priority for vulnerable fighters** — **Downed** and **Stunned** fighters cannot be selected for ranged attacks or hostile spells while an **Active** fighter is otherwise eligible.
+- [x] **Miniature abstraction guidance** — **Hide** now explains that static miniature poses do not override the fighter's position and actions.
+- [x] **Pass activation mechanic** — Replaced **Overwatch** with **Pass tokens**. Spending one passes the activation opportunity without activating a fighter; a player cannot pass on consecutive turns to activate.
+- [ ] **Strike Pool lethality and cap** — Recheck whether the **15-dice** cap is too high and whether unblocked criticals become too strong at large pool sizes. Explore giving criticals weapon- or attack-specific effects instead of making them unblockable.
+- [x] **Spell focus wording** — The selected **Will** or **Sanity** replaces the fighter's **Skill**, then the spell's printed +**Skill** value is added. Fixed **Skill** values are unchanged.
+- [ ] **One-off battle scoring** — Define Victory Point scoring for standalone battles where campaign loot is not relevant.
+- [ ] **Strike Pool explanation** — Add a clearer explanation of how a Strike Pool is built, split, rolled, and resolved.
+- [x] **Movement and Wounds relationship** — Moved **Movement** and **Wounds** out of the app's attribute grid into separate highlighted fighter-card callouts.
+- [x] **Maintained spell interruption** — A maintained spell ends immediately if its caster becomes **Downed** or **Stunned**, or goes **Out of Action**; **Nightmare Visage** repeats the rule.
+- [x] **Friendly fire against vulnerable fighters** — **Downed** and **Stunned** friendly fighters are excluded from friendly fire.
+
+---
+
 ### Short Tasks
 
+- [ ] **Single-choice picker replacement behavior** — In app pickers where all options are visible and the user may select only one—especially two-option choices—selecting a different option should replace the current selection immediately. Do not require the user to deselect the first option before selecting the other.
 - [x] **Minis-agnostic list-building read** — Preserve the positive signal that Archetype + Domain + Tradition made it easy to map existing miniatures onto Noctvale concepts, such as armored spellcasters or ratfolk-style fighters.
 - [x] **Companion action clarity** — All companion rules live in `rules/companions.md`; Animal Handling feat references there. Multiple companions per handler (one per Animal Handling pick); Downed handler = companion acts independently; Stunned/OOA handler = companion flees; 0 wounds = companion flees.
 - [x] **Builder quick-reference/search visibility** — Check whether players can find quick reference text and search functions while building a retinue, especially during first-playtest onboarding.
@@ -165,20 +184,23 @@ All remaining open items, ordered easiest to most time-consuming.
 - [x] **Feat Advancement Table** — Replace placeholder in `rules/campaign.md`.
 - [ ] **Reduce gratuitous tables** — Fighter count, archetype access, and similar as short prose where a table adds no scan value (`rules/retinue.md`).
 - [ ] **Dedicated rules for enemy fighters blocking shots** — Beyond LoS; add only if playtest shows gaps.
-- [ ] **Replacement Mortal Tradition for Constables** — Constables' **Retreat** lock was removed during the defensive maneuver update. Create a new Mortal Tradition rule that keeps the law-and-order identity without duplicating engagement-control mechanics.
+- [x] **Replacement Mortal Tradition for Constables** — Constables may capture an enemy instead of completing **Mercy Kill**, feeding into the post-game ransom procedure.
 
 ---
 
 ### Medium Tasks
 
+- [ ] **Surrounded fighter Strike Pool tradeoff** — Playtest letting a fighter attacking multiple standing enemies add **1 Might die** or **1 Skill die** to their Strike Pool for each engaged enemy, but suffer **−1 Close Combat** on the attacks against all of them. The fighter still splits the pool among the enemies before rolling. Decide whether the bonus counts every engaged enemy or only each enemy after the first; check the 15-dice cap, **Gang Up**, mixed standing/Downed/Stunned engagements, and whether −1 to hit across the full split pool makes the option too punitive.
+- [ ] **Elite and Specialist recruitment bonuses** — Review reversing their attribute choices: let **Elites** add +1 to any one of **Close Combat**, **Ranged Combat**, **Might**, **Skill**, **Will**, or **Sanity**, while limiting **Specialists** to +1 **Might** or +1 **Skill**. Currently every Specialist, including the **Militiaman**, has the flexible choice while the more expensive Elite is restricted. Check the change across Knights, Hunters, Folk, and the Elite-less Cult, accounting for each Specialist's built-in feat or proficiency and the archery progression review.
 - [ ] **Feat guardrail pass** — Audit lists against design guardrails: no broad permanent +1 to-hit, extra full actions, reusable rerolls, or spell-feats without a **casting roll**; no feat may require another named feat.
 - [ ] **Confirm feats don't duplicate or conflict** with spells, equipment, or special rules.
 - [x] **Mid-campaign Caster** — **Feat** advancement path to gain **Caster** mid-campaign.
-- [ ] **Weapon triangle and tie handling** — Test whether the weapon triangle should break tied attack results, what happens when the triangle does not apply, whether the attacker wins ordinary ties, and whether shields should make the defender win ties.
+- [x] **Weapon triangle and tie handling** — Resolved. The weapon triangle applies only when a fighter is the attacker; the defender's weapon type does not affect the attack. Defense is resolved through the current **Df** system, and shields modify **Df** rather than changing tie handling.
 - [ ] **Wound-state pacing** — Recheck whether the current **Downed** to **Stunned** progression slows lethality too much. Explore **Stunned** as a parallel condition rather than an extra injury step while preserving "miraculous return" moments for **Downed** fighters.
 - [ ] **Death trigger mechanic** — Something that happens in-game when a fighter goes Out of Action — morale cascade (Sa tests for nearby allies), environmental reaction (cursed land responds to death), factional payoff (Necromancy/Blood benefit from kills), death rattle (dying fighter gets a final effect), or some combination.
 - [ ] **Beastmark flexibility** — Review Beastmark names and mechanics so rat, snake, wolf, bear, and similar marks support beastfolk analogues without making the Tradition feel limited to literal animals.
-- [ ] **Shadow Market table** — Non-**Alchemists** retinues need a black-market procedure for alchemical weapons and consumables.
+- [x] **Shadow Market table** — Non-**Alchemists** retinues have no creation-time access to Alchemy; access starts with their first post-game Shadow Market roll (`rules/weapons.md#alchemy`).
+- [ ] **Shadow Market creation gap — Bombs and Summoning Crystals** — Same creation-availability question as Alchemy applies to blackpowder **Bombs** (`rules/weapons.md#bombs`) and **Summoning Crystals** (`rules/magic.md#summoning-crystals`), which are also Shadow Market items with no creation-time exception defined. Decide whether they follow Alchemy's no-creation-access rule or need their own Tradition/procedure.
 - [ ] **Terrain rules** — Buildings ("inside"), scenario terrain standards *(difficult terrain agreement is in `rules/core-rules.md#difficult-terrain`)*.
 - [ ] **Daemon binding procedure** — Flesh out post-game binding attempt, success/failure, and roster limits (currently TBD in **Summon Daemon**).
 - [ ] **Agency consistency pass** — Decide when rules should give agency to the **player**, **retinue**, or **fighter**. The goal is not universal agency, but a clear rule for when each subject is used.
@@ -191,18 +213,19 @@ All remaining open items, ordered easiest to most time-consuming.
 
 ### Heavy Tasks
 
-- [ ] **Phase 5c Playtest Rosters** — Assign attribute profiles, weapons and equipment, Domain spells (Nightpack: **Nature**; Silver Hunt: **Mortal**, no caster), and feats for Silver Hunt and Nightpack. Calculate total retinue cost and verify balance parity.
-- [ ] **High-impact action economy** — Review whether firearms, damage spells, and similar high-impact actions should cost both actions, require **Priming** as a separate action, or be limited to once per activation. Confirm how **Overwatch** interacts with primed attacks.
+- [ ] **Archery attribute progression** — Rework ranged weapon scaling so improving **Skill** is an intuitive path to becoming a better archer. Bows currently scale their Strike Pool from the archer's **Might** and use fixed **Skill dice**, which makes **Might** the advancement choice for a bow specialist. Review bows alongside crossbows, firearms, **Ranged Combat**, weapon identity, defense interactions, and the 15-dice cap before adopting a replacement.
+- [ ] **Remaining roster playtests** — Not all completed rosters have been tested. Playtest the remaining roster matchups and record balance, usability, and faction-identity observations before treating roster validation as complete.
+- [ ] **High-impact action economy** — Review whether firearms, damage spells, and similar high-impact actions should cost both actions, require **Priming** as a separate action, or be limited to once per activation. Confirm how **Pass tokens** affect the timing of primed attacks.
 - [ ] **Armor and shield identity** — Revisit armor without adding large raw dice pools or flat +1 modifiers. Test penalty-based armor hooks such as reduced **Movement** or **Skill**, and keep shields mechanically distinct from body armor.
 - [ ] **Opposed-roll combat feel** — Explore whether "my dice against your dice" makes attacks feel more interactive without forcing a full armor and attribute rewrite.
 - [ ] **Strike Pool progression math** — Stress-test 5+ baselines, advancement, the 15-dice cap, and to-hit modifiers so leveled fighters do not collapse into 3+ / 2+ hit rates or pure natural-6 fishing.
 - [x] **Friendly fire** — Unified mechanic: any natural 1 in the Strike Pool hits the nearest at-risk friendly (in line of fire OR within engagement range of target). Closest to attacker takes the hit; ties go to attacking player. Applies to all Ranged attacks.
-- [ ] **Combat edge-case examples** — Add more worked examples (Overwatch reactions, Downed recovery, friendly fire, magic triangles, etc.).
-- [ ] **Capture and ransom** — Post-battle capture effect; ransom cost; heirloom recovery (`Dynasts` mentions capture today with no procedure).
+- [ ] **Combat edge-case examples** — Add more worked examples (Pass tokens, Downed recovery, friendly fire, magic triangles, etc.).
+- [x] **Capture and ransom** — Constables capture through **Mercy Kill**; captured fighters skip Casualties, may be ransomed or exchanged, and roll on the **Captured Table** when returned. Dynast heirloom recovery is defined.
 - [ ] **Summoning Pool campaign advancement** — Post-game progression for crystal pool / permanent daemon binding.
 - [ ] **Sync app spell picker data** — `app/src/data/noctvale.js` update to canonical rules values where the rules now have difficulty, range, Mt, Sk, or Mishap values.
 - [ ] **Write Vampire ability list** — Full ability list for the **Vampires** Tradition.
-- [ ] **Finish the Infernal spell list** — **Hellfire** is the standard attack spell; three spell slots and **Summon Daemon** binding limits still TBD.
+- [x] **Finish the Infernal spell list** — Complete: **Hellfire**, **Summon Daemon**, **The Void**, **Possession**, **Hellmouth**, **Searing Gaze**, and **Nightmare Visage**. Remaining permanent-daemon roster limits stay tracked separately under **Daemon binding procedure**.
 - [ ] **Battlefield effects table** — Optional **d66** table including hostile monsters, zombies, animals, and other neutral or environmental complications. Cross-check creature-profile needs against `rules/profiles.md`.
 - [ ] **Playtest and tune the unicorn** — Profile, Horn token flow, and rewards in `rules/campaign.md` (There's a Reason They Have a Horn).
 - [ ] **Territory / campaign layer** — Duchies/holdings, feeding costs by retinue size, territory exchange minigame.

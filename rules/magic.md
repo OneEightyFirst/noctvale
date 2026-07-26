@@ -19,6 +19,10 @@ Only fighters with the **Caster** keyword know spells. Casting a spell is a sing
 > | **Below difficulty** | The spell fizzles. The action is spent |
 > | **Meets or exceeds difficulty** | The spell goes off. Resolve the **Attack Sequence** |
 
+### Maintaining Spells
+
+Some spells remain in effect only while their caster maintains them. If a caster maintaining a spell becomes **Downed** or **Stunned**, or goes **Out of Action**, that spell ends immediately. Each maintained spell states any additional check or condition that can end it.
+
 ### Damage Spells
 
 Only spells with the **Attack** keyword build a Strike Pool. If the spell has the **Attack** keyword, it generates a Strike Pool from the spell's **Attack** line. A spell attack's **Might** value is fixed. Its +**Skill** value adds to the caster's **Skill**. A spell with 4 **Might** / +3 **Skill** produces 4 **Might dice** and the caster's **Skill** + 3 **Skill dice**.
@@ -413,7 +417,7 @@ Draw a straight line **1 mm** thick from the caster to a point up to **18"** awa
 
 **Difficulty:** **Sanity** 11+ | **Range:** 12"
 
-Target friendly fighter within **12"**. That fighter **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends.
+Target friendly fighter within **12"**. The caster maintains this spell, and the target **projects Fear (6")** while the spell remains in effect. At the end of each **round**, the caster makes a **Sanity** check. On a failure, the spell ends. The spell also ends immediately if the caster becomes **Downed** or **Stunned**, or goes **Out of Action**.
 
 **Mishap:** None
 

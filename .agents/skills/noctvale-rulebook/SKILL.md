@@ -92,7 +92,7 @@ Every major chapter follows this structure. Do not skip steps.
 - **Prose first, bullets for exceptions** — default format
 - Use **Cost / Target / Procedure / Restrictions** blocks only for complex actions (**Hide**, **Ranged** with weapon forks, multi-step spells)
 - One idea per sentence in procedures; front-load conditions
-- Cross-ref with markdown links: **[Overwatch](core-rules.md#overwatch)** — not raw paths in backticks
+- Cross-ref with markdown links: **[Pass Tokens](the-turn.md#pass-tokens)** — not raw paths in backticks
 - Shared sub-routines: copy **verbatim** from `rules/_shared-snippets.md` when they appear in a chapter
 - Do not embed lore, designer notes, or “compare to Mordheim” asides in procedure text
 
@@ -118,14 +118,14 @@ Use Mordheim-style flow when restructuring core rules chapter files:
 | What You Need | Components, board, dice |
 | Fighters & Attributes | Profiles, attribute checks, species baselines |
 | Setting Up a Battle | Deployment, initiative, groups |
-| The Turn | Rounds, activations, Overwatch tokens — see gold standard chapter |
+| The Turn | Rounds, activations, Pass tokens — see gold standard chapter |
 | Movement | Move, Charge, Climb, Scramble, Jump, Retreat, Escape |
 | Shooting | Ranged, Aim, LoS, cover, clustered targets |
 | Hand-to-Hand | Melee, engagement, gang up, weapon triangle, Attack Sequence |
 | Magic & Gunpowder | Cast, primer roll, triangles |
 | Injuries | Downed, Stunned, Out of Action, Recover, Help, Mercy Kill |
 | Psychology | Sanity, Fear, Panic, Insanity |
-| Special Situations | Falling, difficult terrain, modifiers, ending battle, Overwatch detail |
+| Special Situations | Falling, difficult terrain, modifiers, ending battle, Pass token detail |
 
 Draft rulebook prose directly in canonical `rules/*.md` chapter files. Use `*[Placeholder]*` for fluff until late-stage writing.
 

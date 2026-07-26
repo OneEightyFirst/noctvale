@@ -272,3 +272,57 @@ The winning retinue also:
 - Gains **30 Crowns**.
 
 If a fighter **Escaped** with the Horn token, that fighter gains **+1 Experience**.
+
+---
+
+## Scorched Stores
+
+*The dead don't need grain, but the living cannot fight without it.*
+
+*Somewhere among the ruins, two retinues have found the same stores — sacks of grain, casks of oil, crates of dried meat that mean the difference between marching and starving. Neither side means to share.*
+
+*Burn what you cannot carry. Guard what you cannot spare. When the smoke clears, only one larder still stands.*
+
+---
+
+### Battlefield Location
+
+Roll on the [Battlefield Location Table](survival-rolls.md#battlefield-location-table).
+
+### Terrain
+
+Set up a **3' × 3'** battlefield with normal-density terrain. Include **3–5** buildings of varying sizes. Before deployment, players agree which terrain pieces are these buildings.
+
+### Deployment
+
+The player with fewer activations in their retinue has initiative. If both players have the same number of activations, each player rolls **2d6**. The player with the highest result has initiative. Reroll ties.
+
+The player with initiative chooses a **battlefield edge** for deployment. The opposing player uses the opposite **battlefield edge**. Each deployment zone extends **6"** inward from that **battlefield edge**.
+
+After choosing battlefield edges, each player sets up one **Stockpile** marker anywhere on their own half of the battlefield, on the ground floor. A Stockpile cannot be placed on elevated terrain. The player with initiative places their Stockpile first, then the opposing player places theirs.
+
+Each player divides their retinue into **3 deployment groups** as evenly as possible. If the fighters cannot be divided evenly, that player chooses which groups contain the additional fighters.
+
+Starting with the player with initiative, players alternate setting up one deployment group at a time within their deployment zones until both retinues have been deployed.
+
+### Looting
+
+Each building set up for this scenario holds a hidden store of its own. A fighter inside one of these buildings may use a **Loot** action to search it. The first fighter to search a building finds **1 Relic** for their retinue — no roll is required. Mark that building as searched; it cannot be searched again this battle.
+
+### Torching the Stockpile
+
+A fighter **within 1"** of an enemy Stockpile may use **Interact** to douse it in oil and set it alight. The first fighter to do this places a Blaze token in base contact with that Stockpile.
+
+If a second fighter from the same retinue — a different fighter than the one who placed the Blaze token — uses **Interact** against a Stockpile that already has a Blaze token on it, the Stockpile is destroyed immediately. Remove the Stockpile and the Blaze token from the battlefield. The two fighters do not need to act in the same round.
+
+### Ending the Battle
+
+The battle ends immediately when a Stockpile is destroyed. The retinue that destroyed the enemy Stockpile wins.
+
+The battle also ends immediately when one retinue's [activation count](the-turn.md#activation-count) reaches **0**. The opposing retinue wins.
+
+### Rewards
+
+Each retinue keeps any Relics it found through Looting.
+
+The winning retinue also recovers **1d6 Relics**.

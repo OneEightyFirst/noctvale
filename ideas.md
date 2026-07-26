@@ -48,7 +48,28 @@ Open questions:
 - How many targets can be included, and must they be within engagement range of the attacker, of each other, or of the weapon's arc?
 - Does each target get its own attack roll, or does one roll apply to all targets with separate wound resolution?
 - Is the **+1 Might** die per extra target the right cost, or should sweep trade **Skill**, impose disadvantage, or limit targets by **Might** or weapon type?
-- Does sweep interact with **Overwatch**, **Riposte**, or other reactions per target or once for the whole action?
+- Does sweep interact with **Ranged Reaction**, **Riposte**, or other reactions per target or once for the whole action?
+
+**Race to the Top (scenario).** A central tower dominates the battlefield. Each retinue splits into two deployment groups and deploys in opposite corners, interleaved so each retinue's two groups sit diagonally across from each other rather than side by side with the enemy. The goal is to reach the top of the tower and perform an **Interact** action there — the first fighter from either retinue to do so wins the battle immediately.
+
+Open questions:
+
+- Tower dimensions and climbing cost: how tall is the tower, and is there only one legal climbing route (a ladder/stair terrain piece) or can any fighter **Climb** the exterior?
+- Can fighters fight atop or on the tower itself, or is it narrow enough that only one fighter can be at the top at a time?
+- Does reaching the top and interacting end the battle immediately (like **Loot the Dead**'s last-retinue-standing check), or does the interacting fighter need to survive a round, escape, or hold the position?
+- What happens if the round limit is reached before anyone interacts at the top — draw, or decide by proximity to the top?
+- Rewards: does the winning fighter get bonus Experience for the interact (similar to the Horn-carrier bonus in **There's a Reason They Have a Horn**), separate from the retinue-wide battle reward?
+- Does looting or other scenario business happen on the way up, or is this a pure race with no secondary objective?
+
+**Ritual interruption (scenario).** One retinue is the defender and must include a **Caster**. The defender's **Caster** performs a ritual at a fixed location on the ground while the attacking retinue tries to interrupt it. Completing the ritual currently requires 6 actions. If only one retinue includes a **Caster**, that retinue defends; if both include one, the players roll off to determine the defender.
+
+Open questions:
+
+- Must the same **Caster** spend all 6 actions, and must those actions be consecutive?
+- Is ritual progress retained if the **Caster** moves, becomes **Downed** or **Stunned**, or another friendly **Caster** takes over?
+- How close must the **Caster** remain to the ritual location, and can enemy fighters occupy or interact with it?
+- What are the round limit, deployment zones, attacker victory condition, and rewards?
+- What happens if neither retinue includes a **Caster**?
 
 **Opposed-roll combat.** Explored replacing the sequential attack-then-defense resolution (attacker's **Attack Sequence**, then defender's **Might**/**Skill** defense pool) with a single opposed roll: both fighters roll their pools at once, and whichever side rolls more successes deals the difference in **Wounds** to the other. Discussed as an alternative during a 2026-07 playtest, but the current split-pool system was kept — it already feels distinct from the Kill Team / Trench Crusade opposed-roll pattern those games use, and the split resolution is what gives **Might** and **Skill** their separate identities in combat. Recorded here as a fallback direction in case the current combat loop needs to change later.
 

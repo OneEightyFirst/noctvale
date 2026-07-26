@@ -19,7 +19,7 @@ function formatSpellPlainText(spell) {
     spell.hit ? `Hit ${spell.hit}` : null,
     spell.mt ? `Mt ${spell.mt}` : null,
     spell.sk ? `Sk ${spell.sk}` : null,
-    spell.scalingStat ? `+Sk scales from ${spell.scalingStat} (Staff focus)` : null,
+    spell.scalingStat ? `Add printed +Sk to ${spell.scalingStat} instead of Sk (Staff focus)` : null,
   ]
     .filter(Boolean)
     .join(" · ");
@@ -292,7 +292,7 @@ function renderSpellReferenceHtml(spell) {
     spell.hit ? `Hit ${spell.hit}` : null,
     spell.mt ? `Mt ${spell.mt}` : null,
     spell.sk ? `Sk ${spell.sk}` : null,
-    spell.scalingStat ? `+Sk scales from ${spell.scalingStat} (Staff focus)` : null,
+    spell.scalingStat ? `Add printed +Sk to ${spell.scalingStat} instead of Sk (Staff focus)` : null,
   ]
     .filter(Boolean)
     .join(" · ");

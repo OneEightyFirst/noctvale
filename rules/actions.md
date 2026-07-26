@@ -10,15 +10,17 @@ You may measure distances whenever you wish.
 
 When a fighter moves, they may pivot freely so long as the total distance they travel does not exceed that action's allowance — and no part of the fighter ends further from their starting position than that allowance permits.
 
+Whenever a rule tells a fighter to move at half **Movement**, round any fraction up to the next whole **"**.
+
 ## Movement Actions
 
-During **Move**, **Charge**, **Crawl**, **Scramble**, and **Retreat**, a fighter moves horizontally. These actions do not allow vertical movement. The fighter may cross terrain **1"** tall or lower freely, except during **Crawl**. To change elevation by more than **1"**, use **Climb**.
+During **Move**, **Charge**, **Scramble**, and **Retreat**, a fighter moves horizontally or follows stairs and ladders. These actions do not otherwise allow vertical movement. **Crawl** allows horizontal movement only. A fighter may cross terrain **1"** tall or lower freely, except during **Crawl**. To change elevation by more than **1"** without stairs or a ladder, use **Climb**.
 
 ### Move
 
 **Cost:** 1 action
 
-Move up to this fighter's **Movement**. Movement is horizontal — no vertical movement.
+Move up to this fighter's **Movement**. The fighter may move horizontally or up and down stairs and ladders, but cannot otherwise move vertically.
 
 - May cross terrain **1"** tall or lower freely
 - May move through friendly fighters
@@ -39,7 +41,7 @@ Move up to this fighter's **Movement**. Movement is horizontal — no vertical m
 
 **Cost:** 1 action
 
-Move up to this fighter's **Movement**. Must end **within engagement range** of an enemy. Movement is horizontal — no vertical movement.
+Move up to this fighter's **Movement**. Must end **within engagement range** of an enemy. The fighter may move horizontally or up and down stairs and ladders, but cannot otherwise move vertically.
 
 - May cross terrain **1"** tall or lower freely
 - May move through friendly fighters during the charge
@@ -170,11 +172,12 @@ Make an **opposed check** — the attacker selects **Might** or **Skill**. If th
 > Each fighter rolls **1d6** and adds their value in the selected attribute. The fighter with the higher total wins. On a tied total, the defender wins.
 
 - **Attacker wins:** Move the selected fighter up to this fighter's **Might** in inches in a direction you select.
-  - If the target was **Active** or **Downed**, they become **Stunned** after moving. A **Stunned** target remains **Stunned**.
-  - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at **2 Might / 1 Skill**. If the collision involves another fighter's base, that fighter also suffers the same hit and becomes **Stunned**.
+  - If the target's move stops because their base contacts **terrain** or an **Active** fighter's base, they suffer **1 hit** at **2 Might / 1 Skill**. If the collision involves another fighter's base, that fighter also suffers the same hit.
 - **Defender wins:** No effect.
 
 Resolve each hit using the **Attack Sequence**.
+
+**Hurl** does not change either fighter's wound state by itself. Apply wound-state changes only when required by an unblocked collision hit, **Falling**, or another rule.
 
 > **Multiple Engagement**
 >
@@ -188,14 +191,6 @@ Resolve each hit using the **Attack Sequence**.
 > If a friendly fighter is **also engaged** with the same enemy, add **+1 die to the Strike Pool** (attacker's choice of **Might** or **Skill**).
 
 ## Tactical Actions
-
-### Overwatch
-
-**Cost:** 1 action + 1 Overwatch token
-
-Place this fighter on **Overwatch**. That fighter may perform any **1 action** as a reaction when an enemy fighter completes an action later in the round.
-
-*(See [Overwatch](the-turn.md#overwatch).)*
 
 ### Brace
 
@@ -224,6 +219,8 @@ Become **Hidden**.
 
 - Must be **within 1" of terrain**
 - Cannot be performed if this fighter performed a **Ranged** action earlier this activation
+
+Miniatures hold a single static pose, while a battle represents movement unfolding over seconds. A fighter may therefore be within **1"** of terrain and use **Hide** even when the miniature's pose appears completely exposed. The fighter's position and actions determine whether they are **Hidden**, not whether the miniature itself looks concealed.
 
 While **Hidden**:
 

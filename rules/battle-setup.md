@@ -12,6 +12,8 @@ Scatter terrain across the battlefield to set the scene — ruins, walls, woods,
 
 Pack the battlefield densely. Noctvale rewards cover, **Hide**, and short-range firefights; a sparse battlefield leaves every fighter exposed and the fight flat. Before you deploy, agree which pieces count as **difficult terrain**, which are **impassable**, and how each major piece affects cover and line of sight.
 
+Stairs and ladders use normal movement unless the players agree that a particular piece is **difficult terrain** or **impassable terrain**.
+
 If the scenario uses **Looting Buildings**, mark each building's footprint before deployment so everyone knows which area counts as inside when fighters **Loot**.
 
 ### 2. Place Objectives

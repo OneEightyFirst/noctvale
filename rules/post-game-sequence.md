@@ -10,11 +10,12 @@ This is the campaign loop: **injuries → Survival Rolls → economy → advance
 
 1. **Scenario Results** — victory rewards and Relics recovered on the battlefield
 2. **Casualties** — every fighter who ended the battle **Out of Action** rolls on the **Casualty Table**
-3. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#step-3-companion-recovery))
-4. **Doom** — any fighter directed to this table rolls **2d6**
-5. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](#survival-rolls))
-6. **Economy** — sell Relics, recruit, equip, optional [Barber Surgeon](#barber-surgeon) ([Economy](economy.md#economy), [retinue building](retinue-building.md))
-7. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
+3. **Captives and Ransom** — ransom or exchange captured fighters, then roll on the **Captured Table**
+4. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#step-4-companion-recovery))
+5. **Doom** — any fighter directed to this table rolls **2d6**
+6. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](#survival-rolls))
+7. **Economy** — sell Relics, recruit, equip, optional [Barber Surgeon](#barber-surgeon) ([Economy](economy.md#economy), [retinue building](retinue-building.md))
+8. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 
 ---
 
@@ -24,7 +25,7 @@ Resolve the scenario's victory rewards and any Relics recovered on the battlefie
 
 Scenario rewards are static. Do not roll for scenario rewards unless the scenario tells you to make a **random reward roll** (see [Reward Roll Rule](#reward-roll-rule)).
 
-Set recovered Relics aside until Step 6.
+Set recovered Relics aside until Step 7.
 
 ---
 
@@ -34,7 +35,9 @@ Each fighter who was **Out of Action** when the battle ended rolls **1d6** on th
 
 Fighters who were **Downed or Stunned** but not Out of Action skip this table — they are battered but return next battle with no roll.
 
-**Companions** are not fighters — they never roll on this table. See [Companion Recovery](#step-3-companion-recovery).
+**Captured** fighters skip this table. Resolve them during [Captives and Ransom](#step-3-captives-and-ransom).
+
+**Companions** are not fighters — they never roll on this table. See [Companion Recovery](#step-4-companion-recovery).
 
 | d6 | Result |
 |---|---|
@@ -47,7 +50,31 @@ Fighters who were **Downed or Stunned** but not Out of Action skip this table �
 
 ---
 
-## Step 3: Companion Recovery
+## Step 3: Captives and Ransom
+
+For each **Captured** fighter, the capturing player may name a ransom, offer an exchange for an enemy fighter, or release the fighter without payment. The captured fighter's player decides whether to accept the ransom or exchange. A recommended ransom is slightly less than the fighter's current full value, including their recruitment cost, ancestry, weapons, gear, and advancements.
+
+If both players agree, transfer any Crowns or exchanged fighters and return the captured fighter to their retinue. Then roll **2d6** on the **Captured Table**. If no agreement is reached, the fighter remains **Captured** and cannot take part in battles or post-game actions. The capturing player may make a different offer during a later post-game sequence.
+
+| 2d6 | Result |
+|---|---|
+| 2 | **Broken Mind** — permanently −1 **Sanity** and −1 **Will**. |
+| 3 | **Memory Loss** — lose up to **5 Experience**, to a minimum of 0. |
+| 4 | **Tormented** — permanently −1 **Sanity**. |
+| 5 | **Interrogated** — permanently −1 **Will**. |
+| 6 | **Shaken** — miss the next battle. |
+| 7 | **Released** — no additional effect. |
+| 8 | **Defiant** — gain **+1 Experience**. |
+| 9 | **Unbowed** — gain **+2 Experience**. |
+| 10 | **Escape Artist** — gain **+3 Experience**. |
+| 11 | **Horrible Scars** — permanently **projects Fear (6\")**. |
+| 12 | **Hardened** — permanently increase **Sanity** or **Will** by +1, to a maximum of 6. |
+
+Permanent reductions cannot lower an attribute below 1.
+
+---
+
+## Step 4: Companion Recovery
 
 Each **Companion** that was **Out of Action** when the battle ended rolls **1d6**:
 
@@ -60,7 +87,7 @@ Each **Companion** that was **Out of Action** when the battle ended rolls **1d6*
 
 ---
 
-## Step 4: Doom Table
+## Step 5: Doom Table
 
 Roll **2d6** when directed from the **Casualty Table** (Grievous), or from a Survival Roll Mishap if noted.
 
@@ -82,15 +109,15 @@ Permanent injuries reduce attributes. Attributes cannot drop below **1**. Campai
 
 ---
 
-## Step 5: Survival Rolls
+## Step 6: Survival Rolls
 
 Run [Survival Rolls](#survival-rolls).
 
-Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics aside until Step 6.
+Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics aside until Step 7.
 
 ---
 
-## Step 6: Economy
+## Step 7: Economy
 
 1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
 2. Sell **any Relics you wish to sell** for Crowns ([Selling Relics](#selling-relics)).
@@ -117,7 +144,7 @@ A fighter may only visit the Barber Surgeon once per post-game sequence.
 
 ---
 
-## Step 7: Experience & Advancement
+## Step 8: Experience & Advancement
 
 After the Economy step, award **Experience** in three passes (see [Earning XP](#earning-xp)):
 

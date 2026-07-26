@@ -6,6 +6,8 @@
 
 **Ranged** attacks and **Cast** actions that select an enemy target require **line of sight** unless a rule says otherwise. *(See [Actions](actions.md#actions).)*
 
+A **Downed** or **Stunned** fighter cannot be selected as the target of a **Ranged** attack or hostile **Cast** action while any **Active** enemy fighter is otherwise an eligible target for that attack or spell. Check range, line of sight, and any other targeting restrictions before determining whether another fighter is eligible.
+
 Judge from the **firing fighter's point of view** (stoop to the firing fighter's height if needed). Use the target's body on and above its base. **Ignore** any part extending past the edge of the base (weapons, banners, cloaks, etc.).
 
 #### Line of sight
@@ -34,12 +36,14 @@ Fighters may **move through** friendly fighters during **Move**, **Charge**, **S
 
 #### Friendly fire
 
-A friendly fighter is **at risk** when making any **Ranged** attack if:
+An **Active** friendly fighter is **at risk** when making any **Ranged** attack if:
 
-- A friendly fighter's base lies on the straight line between the attacker's base center and the target's base center, **or**
-- A friendly fighter is within engagement range of the declared target.
+- Their base lies on the straight line between the attacker's base center and the target's base center, **or**
+- They are within engagement range of the declared target.
 
 When a friendly is at risk, any die in the Strike Pool that shows a **natural 1** is a hit on the nearest at-risk friendly instead of the declared enemy target. Resolve each such die as **1 hit** from that weapon against that friendly (defense rolls apply normally). The remaining Strike Pool dice resolve normally against the declared target.
+
+**Downed** and **Stunned** friendly fighters are never at risk from friendly fire.
 
 If more than one friendly is at risk, the one **closest to the attacker** (base to base) takes the hit. On a tie, the attacking player selects.
 
@@ -171,7 +175,7 @@ An **Active** fighter may use successful defense dice for defensive maneuvers. *
 
 **Shove:** When defending against a **Melee** attack while within engagement range of the attacker, spend **2 Might defense successes** to block **1 Skill hit**. If this fighter remains **Active** after all Wounds from the attack are applied, push the attacker up to **2"** directly away from this fighter. If this movement would bring the attacker into contact with terrain or another fighter, friendly or enemy, stop the movement at the point of contact. If this movement would push the attacker over a ledge or into open air, the attacker makes a **Skill** check. On a pass, stop the movement before they go over the edge. On a fail, they fall and resolve **Falling**, including any fall damage.
 
-Defensive maneuver movement is not an action, reaction, **Move**, **Retreat**, or **Charge**. It does not trigger **Overwatch**, **Ranged Reaction**, **Companion** co-movement, or the free **Melee** attack from a failed **Retreat**. This movement cannot move through another fighter's base and does not inflict hits or Wounds by itself. Except for the **Shove** check above, if defensive maneuver movement causes a fighter to fall, resolve **Falling** normally.
+Defensive maneuver movement is not an action, reaction, **Move**, **Retreat**, or **Charge**. It does not trigger a **Ranged Reaction**, **Companion** co-movement, or the free **Melee** attack from a failed **Retreat**. This movement cannot move through another fighter's base and does not inflict hits or Wounds by itself. Except for the **Shove** check above, if defensive maneuver movement causes a fighter to fall, resolve **Falling** normally.
 
 #### Ties
 
@@ -256,13 +260,15 @@ When a fighter is targeted by a **Ranged Attack Action**, the target may perform
 
 Two retinues clash in ruined tollhouse walls. The Phoenix Guard player has four fighters still standing (**Active** or **Downed**); the Grave Wardens player has six — activation counts **4** and **6**.
 
-**Start of round.** The Phoenix Guard have fewer activations, so they have initiative and receive **2 Overwatch tokens**.
+**Start of round.** The Phoenix Guard have fewer activations, so they have initiative and receive **2 Pass tokens**.
 
 The Phoenix Guard player activates a crossbow wielding **Squire** first. He **Aims**, then performs a **Ranged** attack at an enemy **Adept**. The **Adept** survives and **Moves** behind cover — a **Ranged Reaction** after the shot resolves (See Ranged Combat).
 
 The Grave Wardens activate an **Acolyte**, who **Charges** a Phoenix Guard spearman and uses a **Melee action**. The spearman takes a Wound but remains **Active**. On the Phoenix Guard player's next activation, the spearman **Retreats** and fails the check. The **Acolyte's** free **Melee** leaves the spearman **Downed**.
 
-Activations continue until every eligible fighter has activated or **skipped their activation**. Then round two begins - activation counts, initiative, and Overwatch tokens are reset.
+On their next turn to activate, the Phoenix Guard player spends a **Pass token** instead of selecting a fighter. The Grave Wardens activate another fighter. The Phoenix Guard must activate a fighter on their following turn before they can spend their second **Pass token**.
+
+Activations continue until every eligible fighter has activated. Then round two begins — activation counts, initiative, and Pass tokens are reset.
 
 ## Example: Combat
 

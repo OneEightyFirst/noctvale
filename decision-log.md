@@ -23,6 +23,56 @@ read in full just to check for open threads.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-07-26 — Replace Overwatch with Pass tokens and resolve playtest clarifications
+
+**Decision:** Replaced **Overwatch** with **Pass tokens**. At the start of each round, the player with the lower activation count receives tokens equal to the difference; on their turn to activate, they may spend one instead of activating a fighter, but must activate a fighter before passing again. Clarified that stairs and ladders use normal movement, half **Movement** always rounds up, and static miniature poses do not prevent **Hide** when its positional requirements are met. **Downed** and **Stunned** fighters cannot be selected by ranged attacks or hostile spells while an **Active** fighter is otherwise eligible, and they are excluded from friendly fire.
+
+Maintained spells now end immediately when their caster becomes **Downed** or **Stunned**, or goes **Out of Action**; **Nightmare Visage** repeats that interruption rule. **Spell focus** now states the calculation directly: add the spell's printed +**Skill** to the Staff's selected **Will** or **Sanity** instead of the fighter's **Skill**, while fixed **Skill** values remain unchanged. In the builder, **Movement** and **Wounds** now sit in highlighted callouts beside the seven rolled attributes.
+
+**Reasoning:** Pass tokens preserve the underdog's ability to control activation timing without introducing delayed reactions or another fighter state to track. The movement, targeting, hiding, friendly-fire, and spell-maintenance clarifications turn playtest assumptions into explicit rules at their points of use. The Staff formula removes an unclear “scaling” term, while separating Movement and Wounds in the builder makes mobility and health easier to scan without changing their mechanics.
+
+## 2026-07-25 — Hurl is forced movement, not an automatic wound-state change
+
+**Decision:** **Hurl** no longer makes an **Active** or **Downed** target become **Stunned** after moving, and a fighter struck by the hurled target is no longer automatically **Stunned**. A successful Hurl moves the target only. Collision hits still resolve at **2 Might / 1 Skill**, and forced movement can still cause **Falling**; either can change wound state through its normal resolution.
+
+**Reasoning:** Winning one opposed check already provides strong positional control. Automatically applying **Stunned** made Hurl function as both displacement and a reliable injury-state attack, bypassing the normal combat and defense sequence. Keeping injury tied to collisions, falls, and other explicit effects preserves the action's terrain-driven payoff without making it universally stronger than attacking.
+
+## 2026-07-21 — Capped attack-applied Affliction tokens per round
+
+**Decision:** A fighter can gain no more than **1 Affliction token from attacks during each round**. After gaining one, further attack-applied Affliction tokens that round have no effect; they are not delayed or carried into a later round. Attacks may add another token during each subsequent round, up to the existing maximum of **3**. Spells and other effects that explicitly add multiple tokens or apply a named Affliction tier are exempt.
+
+**Reasoning:** Poison should create accumulating pressure over several rounds rather than let multiple hits or attackers immediately drive a fighter to **Withered**. Limiting only attack-applied tokens preserves deliberate non-attack effects such as **Bone Blast**'s two-token Mishap and spells that directly apply **Weakened**, **Enfeebled**, or **Withered**.
+
+## 2026-07-21 — Added Giant Spider companion
+
+**Decision:** Added **Giant Spider** as a **100-Crown Companion** requiring **Animal Handling**. It has **CC 3**, **Might 2**, **Skill 4**, **1 Wound**, and a **6" tether**. Its **Bite** has the new **Poison** keyword: unblocked hits add **1 Affliction token** in addition to normal Wounds. **Wall-Crawler** lets it move its full **Movement** while performing **Climb**, matching **Climbing Rope**. **Webbed** lets it capture a target through **Mercy Kill**, using the same procedure as **Constables**. It also has **Large**, preventing it from using **Hide**. The Giant Rat's existing venomous Bite now uses the same **Poison** keyword with no mechanical change.
+
+**Reasoning:** The Giant Spider is a mobile control and campaign-utility Companion rather than another durable combat body. Its full-speed climbing and longer tether let it reach awkward positions, while **Webbed** gives it a thematic reason to finish vulnerable enemies. **Poison** adds direct attrition value, justifying the increase to **100 Crowns**. One Wound, low Might, and Large keep those tools answerable, while the price remains below the 150-Crown Bear. Standardizing Poison also removes duplicated venom wording without changing the Giant Rat.
+
+## 2026-07-21 — Added Bear companion
+
+**Decision:** Added **Bear** as a **150-Crown Companion** requiring **Animal Handling**. It has **CC 3**, **Might 5**, **Skill 2**, **3 Wounds**, a **3" tether**, and a profile-based **Maul** attack. **Thick Hide** treats it as wearing **Light Armor** only when building its defense pool, adding **1 Skill defense die**; it is natural armor rather than equipped gear. The Bear also has **Large**, preventing it from using **Hide**.
+
+**Reasoning:** A Bear should be a serious roster commitment rather than a cheap source of an additional attack. Its high cost reflects the Companion action it gains alongside its Handler's normal activation, while the narrow Might-heavy attack profile, close tether, vulnerable Handler, and immediate flight at 0 Wounds preserve counterplay. Three Wounds and the Light Armor-equivalent defense bonus make it durable without giving it the full injury-state resilience of a normal fighter.
+
+## 2026-07-21 — Constables capture fighters for ransom
+
+**Decision:** Restored **Constables** as a **Mortal** Tradition for Knights and Folk. A Constables fighter performing **Mercy Kill** may capture the target instead; a successfully captured fighter goes **Out of Action**, skips the Casualty Table, and enters the new post-game **Captives and Ransom** step. The capturing player names the ransom, offers an exchange, or releases the fighter; the other player decides whether to accept. The recommended ransom is slightly less than the fighter's full current value, including recruitment, ancestry, equipment, and advancements. Returned fighters roll **2d6** on the **Captured Table**, which ranges from permanent **Will** or **Sanity** loss and −5 banked Experience to bonus Experience, **Fear**, or a +1 **Will**/**Sanity** increase. Dynast heirloom weapons add **10 Crowns** to the recommended ransom and return with their bearer.
+
+**Reasoning:** Capture now belongs to a law-and-order Tradition rather than universally purchasable gear, giving Constables a readable identity without improving their ability to defeat an Active enemy. Reusing **Mercy Kill** preserves the existing **Downed**/**Stunned** survival window and keeps battlefield resolution lean. Player-set ransom makes a captive's value part of campaign negotiation instead of forcing every fighter into one price, while the recommendation gives players a practical starting point. The table gives imprisonment lasting campaign consequences without simply duplicating the Casualty or Doom tables.
+
+## 2026-07-17 — Add Scorched Stores scenario
+
+**Decision:** Add **Scorched Stores** to `rules/scenarios.md`. Each retinue sets up one **Stockpile** marker on their own half of the battlefield, on the ground floor, after battlefield edges are chosen. A fighter within 1" of an enemy Stockpile may use **Interact** to place a Blaze token on it; a second, different fighter from the same retinue using **Interact** on a Stockpile that already carries a Blaze token destroys it immediately, and the two triggering actions do not need to land in the same round. The battle ends immediately when a Stockpile is destroyed (that retinue's opponent — the one who destroyed it — wins) or when one retinue's [activation count](rules/the-turn.md#activation-count) reaches 0 (the opposing retinue wins). The scenario also sets up 3–5 buildings that each guarantee **1 Relic** on the first **Loot** action against them, no roll required. The winning retinue recovers **1d6 Relics**; each retinue keeps any Relics found through Looting.
+
+**Reasoning:** Implements the scenario idea from `ideas.md`. Cumulative (not same-round) two-fighter destruction keeps the objective achievable without forcing awkward simultaneous coordination, while still requiring two different fighters to commit actions near the enemy's half of the battlefield — risk that mirrors defending their own Stockpile. Guaranteed-Relic looting (rather than the standard mixed Looting Buildings table) matches the user's request for straightforward per-building rewards and gives this scenario a distinct pacing from **Loot the Dead** and **The Forest Creeps Ever Onward**, which already cover the mixed-table and guaranteed-marker looting patterns respectively.
+
+## 2026-07-16 — Alchemy has no creation-time access without Alchemists
+
+**Decision:** Clarified in `rules/weapons.md#alchemy` that Alchemy items (poisons and Alchemical Bombs) cannot be bought at creation by any retinue except **Alchemists** — the Shadow Market roll that gates Alchemy only exists during a post-game Economy step, so retinues without the Alchemists exception have no roll to make until their first post-game. Alchemists keep unrestricted access from creation onward, matching their existing Shadow-Market-bypass rule in `rules/traditions.md`.
+
+**Reasoning:** The Shadow Market table (`rules/economy.md#shadow-market`) was only ever defined as a post-game mechanic, leaving creation-time access to Alchemy undefined. Rather than invent a new dice procedure for list-building — which would add randomness to an otherwise deterministic creation step and cut against Tenet 3 (Roll few, decide many) — creation simply has no access path for non-Alchemists, matching how Bombs and Summoning Crystals already work as scarce, campaign-earned items. This also closes a retinue builder bug where any Tradition could buy poisons at creation; see `app/rules-updates.md` for the enforcement fix. Flagged the same open question for Bombs and Summoning Crystals in `todo.md` rather than deciding it here.
+
 ## 2026-07-15 — Staff made a neutral weapon exception like Dagger
 
 **Decision:** Updated weapon access and typing so **Staff** now follows the same exception pattern as **Dagger**. In `rules/weapons.md`, Staff is no longer listed under **Two-Handed** proficiency, its table **Type** is now **—** (neutral), and the opening weapon-access text now states both **Dagger** and **Staff** can be equipped without a matching proficiency and do not participate in weapon triangle advantage/disadvantage. Added explicit Staff access wording in the Staff subsection. Synced downstream references by updating `rules/feats.md` (proficiency exception now includes Staff) and `rules/archetypes.md` (archetype summaries that called out Dagger access now call out Dagger or Staff).

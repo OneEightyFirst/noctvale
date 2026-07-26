@@ -84,6 +84,14 @@ design meaning.
 For Noctvale design and rules work, use a proposal-first workflow when the
 user is exploring an idea or asking to think through tradeoffs.
 
+## Inbox Sync Before Todo Answers
+
+When the user asks to sync the Noctvale inbox, or asks about the current todo,
+roadmap, open work, status, or blockers, use
+`.agents/skills/noctvale-inbox-sync/SKILL.md` before reading or answering from
+`todo.md`. The sync sources are the Google Form response sheet and the Drive
+recordings/transcripts inbox recorded in that skill.
+
 Do not edit files immediately when the user uses exploratory language such as
 "what about this?", "let's think through this", "I have an idea", or asks for
 options. First propose the change, explain the design tradeoffs, and wait for

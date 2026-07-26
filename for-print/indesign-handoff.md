@@ -19,7 +19,7 @@ Brand assets: [`../misc-files/noctvale-logo_onlight.svg`](../misc-files/noctvale
 
 | Column | Content (top to bottom) |
 |---|---|
-| Left | Round at a Glance box → Overwatch → Morale |
+| Left | Round at a Glance box → Pass Tokens → Morale |
 | Right | Engagement → Actions table (17 rows) |
 
 **Footer:** `Turn & Actions` + small mark, bottom outside corner.
