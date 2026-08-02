@@ -1049,6 +1049,7 @@ export default function RetinueEditor({ retinueId, editing, onToggleEditing, onB
     const current = fighter[key] ?? [];
     const exists = current.includes(value);
     if (exists) return { ...fighter, [key]: current.filter((entry) => entry !== value) };
+    if (max === 1) return { ...fighter, [key]: [value] };
     if (max && current.length >= max) return fighter;
     return { ...fighter, [key]: [...current, value] };
   }, []);
@@ -1625,7 +1626,9 @@ const FighterCard = memo(function FighterCard({
         if (feat.id === "skilled-craftsman") next = { ...next, skilledCraftsman: null };
         return next;
       }
-      return toggleArrayValue(current, "feats", feat.id, featLimit);
+      const replacesSkilledCraftsman = featLimit === 1 && current.feats.some((id) => normalizeFeatId(id) === "skilled-craftsman");
+      const next = toggleArrayValue(current, "feats", feat.id, featLimit);
+      return replacesSkilledCraftsman ? { ...next, skilledCraftsman: null } : next;
     });
   }
 
@@ -2451,7 +2454,7 @@ function FeatPickerContent({ archetype, caster, domain, domainFeats, featLimit, 
             const firearmsLocked = feat.id === "firearms" && !canTakeFirearmsFeat(keywords);
             const firearmsBuiltIn = feat.id === "firearms" && builtInFirearms;
             const casterLocked = feat.casterOnly && !caster;
-            const limitLocked = !selected && selectedCount >= featLimit;
+            const limitLocked = featLimit !== 1 && !selected && selectedCount >= featLimit;
             const locked = builtIn || builtInFeat || firearmsBuiltIn || firearmsLocked || casterLocked || limitLocked;
             return (
               <button
