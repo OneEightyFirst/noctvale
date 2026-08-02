@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Legacy rules wiki paths.
+  RewriteRule ^rules/?$ / [R=301,L]
+  RewriteRule ^rules/(.+)$ /$1 [R=301,L]
+
+  # Retinue builder SPA fallback.
+  RewriteRule ^retinue-builder/?$ /retinue-builder/index.html [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^retinue-builder/.+ /retinue-builder/index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # HTML entry points — revalidate so new script/style URLs are picked up.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Vite bundles — filenames include content hashes.
+  <LocationMatch "^/assets/">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </LocationMatch>
+
+  # Rules wiki static bundles — unhashed filenames, revalidate each visit.
+  <LocationMatch "^/wiki/.*\.(js|css)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </LocationMatch>
+</IfModule>
