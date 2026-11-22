@@ -6,7 +6,7 @@ XP is a **bank per fighter** — earned from specific deeds, **spent** to buy ad
 
 Track **Experience** on the fighter card as a running total. Unspent XP carries forward.
 
-Award XP during [Step 8: Experience & Advancement](post-game-sequence.md#step-8-experience--advancement) in three passes — **battle**, **scenario**, then **post-game** — so casualty, Captured, and Doom awards stay separate from in-battle deeds.
+Award XP during [Step 8: Experience & Advancement](post-game-sequence.md#step-8-experience-advancement) in three passes — **battle**, **scenario**, then **post-game** — so casualty, Captured, and Doom awards stay separate from in-battle deeds.
 
 A fighter removed as **Slain** still receives **battle** and **scenario** Experience from that battle — for example, a fighter who puts an enemy **Out of Action** and is later **Slain** on the **Casualty Table** keeps the **Out of Action** XP. **Slain** fighters do not receive the **Did not go Out of Action** award, **Hardy**, **Miraculous**, or other **post-game** Experience.
 
@@ -77,7 +77,7 @@ If this purchase would raise an attribute more than **+1** above that fighter's 
 
 ### Caster
 
-A fighter may buy **Caster** only if they have **Wi 4** or higher, or **Sa 4** or higher — whichever attribute governs their **Domain**'s casting roll. Buying **Caster** grants the **Cast** action and **1 spell** from the fighter's **Domain** list, chosen at purchase.
+A fighter may buy **Caster** only if they have **Will** 4 or higher, or **Sanity** 4 or higher — whichever attribute governs their **Domain**'s casting roll. Buying **Caster** grants the **Cast** action and **1 spell** from the fighter's **Domain** list, chosen at purchase.
 
 The recruitment restrictions on **Caster** still apply: only **1** fighter in the retinue may have the **Caster** keyword, and no fighter may buy **Caster** if any fighter in the retinue has the **Mortal** keyword.
 

@@ -695,7 +695,7 @@ Some spells call fighters onto the battlefield during a battle. Those fighters c
 
 When any fighter goes **Out of Action**, place a **body token** where that fighter stood — unless that fighter was created by **Summon Skeleton**. A **body token** marks that fighter's body. Remove unused tokens at the end of the battle.
 
-When a **friendly** **body token** is placed, the controlling player may **remove** it immediately to use **Bell-keepers** — see [Tradition Special Rules — Necromancy](#tradition-special-rules) — if that ability has not been used this battle. Otherwise leave the token on the battlefield.
+When a **friendly** **body token** is placed, the controlling player may **remove** it immediately to use **Bell-keepers** — see [Tradition Special Rules — Necromancy](traditions.md#necromancy) — if that ability has not been used this battle. Otherwise leave the token on the battlefield.
 
 Spells and traditions that use corpses **remove** a **body token** rather than targeting fighters who went **Out of Action**.
 

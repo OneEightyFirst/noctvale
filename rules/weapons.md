@@ -1,6 +1,6 @@
 # Weapons
 
-Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](retinue-building.md)). **Dagger** and **Staff** are exceptions: any fighter may equip either without a proficiency feat, and both have no weapon type — they never grant or suffer weapon triangle advantage. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
+Most weapons belong to a **weapon proficiency** — the training a fighter needs to equip it — and a **weapon type** (Sword, Axe, Spear, or Hammer), which determines critical hit behavior in melee. Fighters gain proficiencies through the **Proficiency** feat at roster creation (see [Feats](feats.md)). **Dagger** and **Staff** are exceptions: any fighter may equip either without a proficiency feat, and both have no weapon type — they never grant or suffer weapon triangle advantage. Each fighter has **3 kit** — 2 hands and a belt. One-handed weapons take 1 kit; two-handed weapons take 2. Shields take 1 kit. **Wands** take 1 kit. **Icon** and **Instrument** gear take 2 kit each.
 
 | Proficiency | Weapons |
 |---|---|
@@ -28,13 +28,13 @@ Choose feats before buying weapons.
 
 **Parry:** When this fighter defends against a **Melee** attack, reroll one failed **Skill** die in the defense pool.
 
-**Piercing:** When defending against this weapon's attacks, ignore the target's armor dice bonus and shield Df bonus when building the defense pool.
+**Piercing:** When defending against this weapon's attacks, ignore the target's armor dice bonus and shield **Defense** bonus when building the defense pool.
 
 **Reach:** This weapon can engage enemies up to **2"** away.
 
 **Spread:** This attack uses the standard **flame template** instead of targeting a single fighter. Build and roll the Strike Pool once — every fighter (friend and foe) under the template rolls their own defense pool against that roll.
 
-**Sunder:** When defending against this weapon's attacks, ignore the target's shield Df bonus and Parry keyword when building the defense pool.
+**Sunder:** When defending against this weapon's attacks, ignore the target's shield **Defense** bonus and Parry keyword when building the defense pool.
 
 **Thrown(Mt) / Thrown(Sk):** This weapon may be used to make a **Ranged** attack. Maximum range equals the fighter's **Might** in inches for **Thrown(Mt)**, or the fighter's **Skill** in inches for **Thrown(Sk)**. No minimum range. Use the weapon's normal Strike Pool.
 
@@ -175,7 +175,7 @@ A **Pistol** takes **1 kit**. A fighter with **2 Pistols** and no **Brace of Pis
 
 #### Long Rifle
 
-A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield Df bonuses do not apply against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**.
+A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield **Defense** bonuses do not apply against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**.
 
 ### Bombs
 

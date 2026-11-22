@@ -224,12 +224,23 @@ function wrapFeatCards(html) {
   return result.join("");
 }
 
+// marked escapes "&" etc. in heading text; decode before slugging so heading ids
+// match the anchors that rules-lib generates for nav and cross-file links.
+function decodeEntities(text) {
+  return text
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
+
 function markdownToHtml(markdown) {
   const html = marked.parse(markdown, { gfm: true, breaks: false });
   const slugUsed = new Map();
 
   return html.replace(/<h([1-6])>([\s\S]*?)<\/h\1>/gi, (match, level, inner) => {
-    const label = stripMarkdown(inner.replace(/<[^>]+>/g, ""));
+    const label = stripMarkdown(decodeEntities(inner.replace(/<[^>]+>/g, "")));
     const id = uniqueSlug(slugify(label), slugUsed);
     return `<h${level} id="${id}">${inner}</h${level}>`;
   });

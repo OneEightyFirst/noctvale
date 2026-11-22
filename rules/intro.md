@@ -52,7 +52,7 @@ Meanwhile darker powers took root in the shadows.
 
 Witches were forced to band together in secret covens to protect themselves from those who believed that all magic — and all who were different — were evil and deserved to be purged.
 
-The Infernal Pact formed secret brotherhoods devoted to demonic powers, performing dark rights under moonless skies. The Grave Wardens learned to command the restless dead rising from endless battlefields, turning the power of death to their own ends. In the cities, rumors spread of things slinking through drains and forgotten underways: knives in the dark, chittering voices behind brick, and a hidden force moving beneath the streets.
+The Infernal Pact formed secret brotherhoods devoted to demonic powers, performing dark rites under moonless skies. The Grave Wardens learned to command the restless dead rising from endless battlefields, turning the power of death to their own ends. In the cities, rumors spread of things slinking through drains and forgotten underways: knives in the dark, chittering voices behind brick, and a hidden force moving beneath the streets.
 
 The war became more than rebellion. It became a struggle for the soul of the world.
 
@@ -60,7 +60,7 @@ The war became more than rebellion. It became a struggle for the soul of the wor
 
 After a century of devastation, the High King's reign finally ended.
 
-A coalition led by the Phoenix Guard, decendants of his very own personal guard, breached the royal capital in the final years of the war. There, beneath burning skies and collapsing towers, the vampire king was finally destroyed.
+A coalition led by the Phoenix Guard, descendants of his very own personal guard, breached the royal capital in the final years of the war. There, beneath burning skies and collapsing towers, the vampire king was finally destroyed.
 
 But victory came far too late.
 

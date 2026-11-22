@@ -23,6 +23,20 @@ read in full just to check for open threads.
 Before writing a dated entry, run `date '+%Y-%m-%d %H:%M %Z'` and use the shell
 date.
 
+## 2026-11-22 — Site audit cleanup: cross-file links, Defense column, prose abbreviations
+
+**Decision:** Mechanical cleanup from a full audit of the live site (noctvale.com).
+
+1. **Cross-file links** — Repointed links that still used same-file anchors from before the chapter split (Retinue Building, Archetypes, Traditions, Feats, Magic, Combat, Weapons, Advancement, Scenarios, Post-Game Sequence) to the chapter that now holds the section. Removed two stale "below" references in Retinue Building.
+2. **Heading ids** — `build-rules.mjs` now decodes HTML entities before slugging heading text, so headings containing "&" (e.g. **Step 8: Experience & Advancement**) get the same id that nav and cross-file links use.
+3. **Defense in Archetypes** — Added the **Df** column to all four Archetype ancestry tables to match `rules/attributes.md` and the builder data.
+4. **Prose abbreviations** — Spelled out **Defense**, **Might**, **Skill**, **Close Combat**, **Will**, and **Sanity** where abbreviations appeared outside tables (Attributes, Combat, Gear, Weapons, Advancement).
+5. **Typos** — "marked in inches" (What You Need to Play); "rites", "descendants" (Intro).
+
+**Reasoning:** No rule changes. Broken anchors and stale "below" references were leftovers of the split into per-chapter pages; the Archetypes tables predated Defense becoming an attribute. Style guide rules 15 (link cross-references) and the stat-names-in-full convention.
+
+---
+
 ## 2026-07-26 — Replace Overwatch with Pass tokens and resolve playtest clarifications
 
 **Decision:** Replaced **Overwatch** with **Pass tokens**. At the start of each round, the player with the lower activation count receives tokens equal to the difference; on their turn to activate, they may spend one instead of activating a fighter, but must activate a fighter before passing again. Clarified that stairs and ladders use normal movement, half **Movement** always rounds up, and static miniature poses do not prevent **Hide** when its positional requirements are met. **Downed** and **Stunned** fighters cannot be selected by ranged attacks or hostile spells while an **Active** fighter is otherwise eligible, and they are excluded from friendly fire.

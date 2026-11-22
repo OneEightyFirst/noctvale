@@ -36,7 +36,7 @@ Select one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or *
 
 You may take this feat more than once. Each time, select a **different** proficiency.
 
-Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
+Weapon lists: [Equipment — Weapon proficiencies](weapons.md).
 
 #### Hold the Line
 
@@ -64,7 +64,7 @@ Select one weapon proficiency: **One-Handed**, **Two-Handed**, **Archery**, or *
 
 You may take this feat more than once. Each time, select a **different** proficiency.
 
-Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
+Weapon lists: [Equipment — Weapon proficiencies](weapons.md).
 
 #### Marked Quarry
 
@@ -92,7 +92,7 @@ Select one weapon proficiency: **One-Handed**, **Archery**, or **Thrown**. You m
 
 You may take this feat more than once. Each time, select a **different** proficiency.
 
-Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
+Weapon lists: [Equipment — Weapon proficiencies](weapons.md).
 
 #### Stubborn Lot
 
@@ -120,7 +120,7 @@ Select one weapon proficiency: **One-Handed** or **Archery**. You may equip any 
 
 You may take this feat more than once. Each time, select a **different** proficiency.
 
-Weapon lists: [Equipment — Weapon proficiencies](weapons.md#weapon-proficiencies).
+Weapon lists: [Equipment — Weapon proficiencies](weapons.md).
 
 #### Blood for the Rite
 
@@ -310,7 +310,7 @@ If this fighter was not **Out of Action** when the battle ended and the modified
 
 This fighter gains the **Werebeast** keyword and one **beast mark** — select **Wolf**, **Rat**, **Bear**, or **Serpent**. If this fighter already has a beast mark, the selected mark must be different. A fighter cannot have more than **2** beast marks in total.
 
-This fighter gains the selected mark's rule. See [Traditions — Werebeasts](traditions.md#werebeasts).
+This fighter gains the selected mark's rule. See [Traditions — Werebeasts](traditions.md#nature).
 
 If this feat is taken at fighter creation, this fighter costs **+10 Crowns**.
 

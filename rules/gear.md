@@ -2,7 +2,7 @@
 
 ## Armor
 
-Armor **adds dice to the defense pool before rolling**. Apply the armor's bonus when building your pool in Step 4, then roll all dice as **Df** checks as normal. Archetype caps apply — see your archetype entry.
+Armor **adds dice to the defense pool before rolling**. Apply the armor's bonus when building your pool in Step 4, then roll all dice as **Defense** checks as normal. Archetype caps apply — see your archetype entry.
 
 | Armor | Tier | Cost | Archetype cap | Pool modifier | Notes |
 |---|---|---|---|---|---|

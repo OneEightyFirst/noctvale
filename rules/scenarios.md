@@ -4,9 +4,9 @@
 
 Use these rules in every scenario unless the scenario states otherwise.
 
-Random reward rolls use the [Reward Roll Rule](#reward-roll-rule).
+Random reward rolls use the [Reward Roll Rule](survival-rolls.md#reward-roll-rule).
 
-Each scenario's **Rewards** section lists **Experience** awards, if any. Awards are always **per fighter** — see [Scenario Experience](#scenario-experience).
+Each scenario's **Rewards** section lists **Experience** awards, if any. Awards are always **per fighter** — see [Scenario Experience](advancement.md#scenario-experience).
 
 ### Battle Setup
 
@@ -15,7 +15,7 @@ Choose or roll a scenario first. The scenario then tells players how to determin
 A scenario may:
 
 - Name a fixed battlefield location.
-- Tell players to roll on the [Battlefield Location Table](#battlefield-location-table).
+- Tell players to roll on the [Battlefield Location Table](survival-rolls.md#battlefield-location-table).
 - Provide its own smaller battlefield location table.
 
 The battlefield location determines which Survival table the winning retinue uses after the battle.
@@ -50,7 +50,7 @@ Roll **2d6**:
 
 ### Battlefield Location
 
-Roll on the [Battlefield Location Table](#battlefield-location-table).
+Roll on the [Battlefield Location Table](survival-rolls.md#battlefield-location-table).
 
 ### Terrain
 
