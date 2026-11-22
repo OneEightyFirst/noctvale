@@ -78,7 +78,7 @@ Before Step 1, declare a valid enemy target. **Clustered enemies** and **friendl
 >
 > **Step 3 — Determine criticals:** Weapon triangle (attacker only), magic triangle, **Aim**, or firearms (crits vs all). Critical hits cannot be blocked.
 >
-> **Step 4 — Roll defense:** Build the defense pool: defender **Might** + **Skill**, modified by armor (Light Armor +1 Sk, Medium Armor +1 Mt, Heavy Armor +2 Mt −1 Sk), plus any bonus dice from cover, **Brace**, spells, feats, or scenario rules. Shields modify the **Df** threshold on specific dice. Roll all dice as **Df** checks. Attacker wins ties. *(See [Equipment](gear.md#equipment).)*
+> **Step 4 — Roll defense:** Build the defense pool: defender **Might** + **Skill**, modified by armor (Light Armor +1 **Skill** die, Medium Armor +1 **Might** die, Heavy Armor +2 **Might** dice and −1 **Skill** die), plus any bonus dice from cover, **Brace**, spells, feats, or scenario rules. Shields modify the **Defense** threshold on specific dice. Roll all dice as **Defense** checks. Attacker wins ties. *(See [Equipment](gear.md).)*
 >
 > **Step 5 — Apply Wounds:** See **Apply Wounds** (below).
 
@@ -189,7 +189,7 @@ Shields modify the **Defense** (**Df**) threshold on specific dice in the defend
 - **Shield** — **+1 Df** on **1 Might die**
 - **Tower Shield** — **+1 Df** on **2 Might dice**; **−1 Df** on **1 Skill die**
 
-Armor and shield effects **stack**. *(See [Equipment](gear.md#equipment) for full tables.)*
+Armor and shield effects **stack**. *(See [Equipment](gear.md) for full tables.)*
 
 Critical hits **cannot be blocked.**
 
@@ -234,7 +234,7 @@ Two separate triangles govern magic vs. magic interactions.
 
 ### Firearms
 
-Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield Df bonuses do not apply when defending against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**. *(See [Weapons — Keywords](weapons.md#keywords).)*
+Firearms are fired with the **Ranged** action. They use the **primer roll** and gain criticals against **all targets**, regardless of weapon type. A **Long Rifle** has **Piercing**, **Heavy**, and **Impact** — armor dice bonuses and shield **Defense** bonuses do not apply when defending against its attacks, it cannot be fired if the fighter **Moved** or **Charged** this activation, and it makes exact takedowns become **Stunned** instead of **Downed**. *(See [Weapons — Keywords](weapons.md#keywords).)*
 
 ### Outside the Triangles
 
@@ -278,7 +278,7 @@ Activations continue until every eligible fighter has activated. Then round two 
 
 **Step 1:** **Keen** Strike Pool = (**Might** 3 + Sword 1) Might + (**Skill** 4 + Sword 1) Skill = **4 Might + 5 Skill = 9 dice**
 
-**Step 2:** Roll each die as a **Close Combat** check (CC 3, need 5+).
+**Step 2:** Roll each die as a **Close Combat** check (**Close Combat** 3, need 5+).
 
 - Might die 1: rolls 5 → pass → **Might hit**
 - Might die 2: rolls 2 → fail
@@ -300,7 +300,7 @@ Base pool: **Might** 4 → 4 Might dice; **Skill** 3 → 3 Skill dice.
 
 Medium Armor adds **+1 Might die**: pool becomes **5 Might + 3 Skill = 8 dice**.
 
-Roll all 8 as **Df** checks (**Df** 4, need 4+):
+Roll all 8 as **Defense** checks (**Defense** 4, need 4+):
 
 - Might die 1: rolls 5 → **success**
 - Might die 2: rolls 2 → fail

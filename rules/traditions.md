@@ -75,7 +75,7 @@ If that fighter becomes **Downed**, they lose this bonus and suffer −1 **Might
 
 ### Necromancy
 
-**Bell-keepers:** Once per battle, when this retinue **removes** a **friendly** **body token** — see [Body tokens](#body-tokens) — place a **Zombie** where the token was. The **Zombie** joins your retinue for the rest of the battle. This is not summoning — the **Zombie** does not have the **Summon** keyword. Friendly fighters add **+1** to **Will** checks for rout tests *(see [Morale](the-turn.md#morale))*.
+**Bell-keepers:** Once per battle, when this retinue **removes** a **friendly** **body token** — see [Body tokens](magic.md#body-tokens) — place a **Zombie** where the token was. The **Zombie** joins your retinue for the rest of the battle. This is not summoning — the **Zombie** does not have the **Summon** keyword. Friendly fighters add **+1** to **Will** checks for rout tests *(see [Morale](the-turn.md#morale))*.
 
 | Zombie | M | CC | RC | Mt | Sk | Wi | Sa | W |
 |---|---|---|---|---|---|---|---|---|
@@ -105,7 +105,7 @@ After the battle, roll on the Casualty Table for the original fighter as normal.
 
 ### Blood
 
-**Vampires:** At roster creation, each fighter with **Leader**, **Elite**, or **Specialist** gains the **Vampire** keyword and costs **+20 Crowns**. Fighters with **Rank** do not gain **Vampire**. A fighter with **Vampire** counts as **Undead** for any rule that checks **Undead** (silver weapons, **Radiant Strike**, and similar). Each fighter with **Vampire** chooses **1** vampire ability *(list TBD — record on the roster sheet)*. When a fighter with **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay **2 XP** more than the normal cost to buy each post-game advancement — **Feat** **5**, **Attribute** **10** (see [Spending XP — Advancement Rolls](advancement.md#spending-xp-advancement-rolls)).
+**Vampires:** At roster creation, each fighter with **Leader**, **Elite**, or **Specialist** gains the **Vampire** keyword and costs **+20 Crowns**. Fighters with **Rank** do not gain **Vampire**. A fighter with **Vampire** counts as **Undead** for any rule that checks **Undead** (silver weapons, **Radiant Strike**, and similar). Each fighter with **Vampire** chooses **1** vampire ability *(list TBD — record on the roster sheet)*. When a fighter with **Vampire** takes an enemy fighter **Out of Action** with **Melee** or **Mercy Kill**, restore **1 Wound** to that fighter. Fighters with **Vampire** pay **2 XP** more than the normal cost to buy each post-game advancement — **Feat** **5**, **Attribute** **10** (see [Spending XP — Advancement](advancement.md#spending-xp-advancement)).
 
 **Dynasts:** At roster creation, select up to 3 melee weapons in this retinue to be heirloom weapons. No fighter may carry more than 1 heirloom weapon.
 

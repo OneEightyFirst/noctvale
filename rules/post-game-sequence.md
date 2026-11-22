@@ -13,7 +13,7 @@ This is the campaign loop: **injuries → Survival Rolls → economy → advance
 3. **Captives and Ransom** — ransom or exchange captured fighters, then roll on the **Captured Table**
 4. **Companion Recovery** — every **Companion** who ended the battle **Out of Action** rolls **1d6** ([Companion Recovery](#step-4-companion-recovery))
 5. **Doom** — any fighter directed to this table rolls **2d6**
-6. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](#survival-rolls))
+6. **Survival Rolls** — winner rolls location; loser rolls Generic ([survival rolls](survival-rolls.md))
 7. **Economy** — sell Relics, recruit, equip, optional [Barber Surgeon](#barber-surgeon) ([Economy](economy.md#economy), [retinue building](retinue-building.md))
 8. **Experience & Advancement** — award XP; spend on **Advancement** (optional — only if the player buys rolls)
 
@@ -23,7 +23,7 @@ This is the campaign loop: **injuries → Survival Rolls → economy → advance
 
 Resolve the scenario's victory rewards and any Relics recovered on the battlefield.
 
-Scenario rewards are static. Do not roll for scenario rewards unless the scenario tells you to make a **random reward roll** (see [Reward Roll Rule](#reward-roll-rule)).
+Scenario rewards are static. Do not roll for scenario rewards unless the scenario tells you to make a **random reward roll** (see [Reward Roll Rule](survival-rolls.md#reward-roll-rule)).
 
 Set recovered Relics aside until Step 7.
 
@@ -111,7 +111,7 @@ Permanent injuries reduce attributes. Attributes cannot drop below **1**. Campai
 
 ## Step 6: Survival Rolls
 
-Run [Survival Rolls](#survival-rolls).
+Run [Survival Rolls](survival-rolls.md).
 
 Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics aside until Step 7.
 
@@ -120,7 +120,7 @@ Survival Rolls may award Relics, Crowns, gear, and Mishaps. Set recovered Relics
 ## Step 7: Economy
 
 1. Total **Relics** recovered this battle from scenario rewards, Looting, and Survival Rolls.
-2. Sell **any Relics you wish to sell** for Crowns ([Selling Relics](#selling-relics)).
+2. Sell **any Relics you wish to sell** for Crowns ([Selling Relics](economy.md#selling-relics)).
 3. Recruit fighters and buy gear. Update **Roster Cost** on the roster sheet.
 4. Optionally, send fighters to the **Barber Surgeon** (see [Barber Surgeon](#barber-surgeon)).
 
@@ -146,12 +146,12 @@ A fighter may only visit the Barber Surgeon once per post-game sequence.
 
 ## Step 8: Experience & Advancement
 
-After the Economy step, award **Experience** in three passes (see [Earning XP](#earning-xp)):
+After the Economy step, award **Experience** in three passes (see [Earning XP](advancement.md#earning-xp)):
 
 1. **Battle** — did not go **Out of Action**, direct **Out of Action**, enemy **Leader** **Out of Action**
 2. **Scenario** — as written in the scenario *(including for fighters later removed as **Slain**)*
 3. **Post-game** — **Hardy**, **Miraculous**, and any Survival Roll or scenario result that grants Experience to a named fighter *(not **Slain**)*
 
-Optionally spend XP on **Advancement** rolls (see [Leveling and Advancement](#leveling-and-advancement)).
+Optionally spend XP on **Advancement** rolls (see [Leveling and Advancement](advancement.md)).
 
 ---

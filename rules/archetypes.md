@@ -14,7 +14,7 @@
 
 #### Tradition
 
-Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
+Choose **one Tradition** allowed for this Archetype — see [Traditions](traditions.md#tradition-special-rules). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
 #### Feats
 
@@ -28,12 +28,12 @@ See [Feats — Knights](feats.md#knights) for the full **Knights** archetype fea
 
 Start from an ancestry profile, then apply the recruitment bonuses listed for that fighter below.
 
-| Ancestry profile | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| **Keen** | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| **Stout** | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
-| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
+| Ancestry profile | M | CC | RC | Mt | Sk | Df | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | 7" | 3 | 3 | 3 | 4 | 3 | 4 | 3 | 3 | +10 |
+| **Stout** | 5" | 3 | 3 | 4 | 3 | 4 | 3 | 3 | 3 | +10 |
+| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 3 | 2 | -10 |
 
 ##### Lord — 125 Crowns (1)
 *[Fluff about Lords]*
@@ -97,7 +97,7 @@ Any fighter in this retinue may equip a **Dagger** or **Staff** regardless of th
 
 #### Tradition
 
-Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
+Choose **one Tradition** allowed for this Archetype — see [Traditions](traditions.md#tradition-special-rules). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
 #### Feats
 
@@ -111,12 +111,12 @@ See [Feats — Hunters](feats.md#hunters) for the full **Hunters** archetype fea
 
 Start from an ancestry profile, then apply the recruitment bonuses listed for that fighter below.
 
-| Ancestry profile | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| **Keen** | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| **Stout** | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
-| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
+| Ancestry profile | M | CC | RC | Mt | Sk | Df | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | 7" | 3 | 3 | 3 | 4 | 3 | 4 | 3 | 3 | +10 |
+| **Stout** | 5" | 3 | 3 | 4 | 3 | 4 | 3 | 3 | 3 | +10 |
+| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 3 | 2 | -10 |
 
 ##### Captain — 125 Crowns (1)
 *[Fluff about Captains]*
@@ -192,7 +192,7 @@ The **Inquisition** and **Silver Hunt** share Hunters + **Mortal** — different
 
 #### Tradition
 
-Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
+Choose **one Tradition** allowed for this Archetype — see [Traditions](traditions.md#tradition-special-rules). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
 #### Feats
 
@@ -206,12 +206,12 @@ See [Feats — Folk](feats.md#folk) for the full **Folk** archetype feat list.
 
 Start from an ancestry profile, then apply the recruitment bonuses listed for that fighter below.
 
-| Ancestry profile | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| **Keen** | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| **Stout** | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
-| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
+| Ancestry profile | M | CC | RC | Mt | Sk | Df | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | 7" | 3 | 3 | 3 | 4 | 3 | 4 | 3 | 3 | +10 |
+| **Stout** | 5" | 3 | 3 | 4 | 3 | 4 | 3 | 3 | 3 | +10 |
+| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 3 | 2 | -10 |
 
 ##### Mayor — 125 Crowns (1)
 *[Fluff about Mayors]*
@@ -281,7 +281,7 @@ Folk + **Mortal** supports **Alchemists** — village alchemists brewing defense
 
 #### Tradition
 
-Choose **one Tradition** allowed for this Archetype — see [Traditions](#traditions). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
+Choose **one Tradition** allowed for this Archetype — see [Traditions](traditions.md#tradition-special-rules). Every fighter gains that **Tradition** keyword and the matching **Domain** keyword. Record the special rule and apply cost modifiers when recruiting.
 
 #### Feats
 
@@ -295,12 +295,12 @@ See [Feats — Cult](feats.md#cult) for the full **Cult** archetype feat list.
 
 Start from an ancestry profile, then apply the recruitment bonuses listed for that fighter below.
 
-| Ancestry profile | M | CC | RC | Mt | Sk | Wi | Sa | W | Cost |
-|---|---|---|---|---|---|---|---|---|---|
-| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
-| **Keen** | 7" | 3 | 3 | 3 | 4 | 4 | 3 | 3 | +10 |
-| **Stout** | 5" | 3 | 3 | 4 | 3 | 3 | 3 | 3 | +10 |
-| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 2 | -10 |
+| Ancestry profile | M | CC | RC | Mt | Sk | Df | Wi | Sa | W | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Steady** | 6" | 3 | 3 | 3 | 3 | 3 | 3 | 4 | 3 | — |
+| **Keen** | 7" | 3 | 3 | 3 | 4 | 3 | 4 | 3 | 3 | +10 |
+| **Stout** | 5" | 3 | 3 | 4 | 3 | 4 | 3 | 3 | 3 | +10 |
+| **Stunty** | 6" | 3 | 3 | 2 | 4 | 3 | 3 | 3 | 2 | -10 |
 
 ##### Theurge — 125 Crowns (1)
 *[Fluff about Theurges]*

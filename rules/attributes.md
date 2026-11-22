@@ -26,7 +26,7 @@ A fighter's profile lists nine attributes: **Movement**, **Close Combat**, **Ran
 
 ## Defense (Df)
 
-**Defense** is the single check attribute used for all dice in the defense pool. When rolling defense in Step 4 of the Attack Sequence, every die — whether a Might die or a Skill die — uses a **Df** check. Dice keep their color for blocking purposes; **Df** determines how many of them succeed.
+**Defense** is the single check attribute used for all dice in the defense pool. When rolling defense in Step 4 of the Attack Sequence, every die — whether a Might die or a Skill die — uses a **Defense** check. Dice keep their color for blocking purposes; **Df** determines how many of them succeed.
 
 ## Will (Wi)
 
